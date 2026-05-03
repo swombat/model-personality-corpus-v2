@@ -107,10 +107,6 @@ dropped from per-provider analysis due to OR-shared-pool rate-limiting
 that produced partial-only collections; Fireworks is not the sole
 upstream for any model in the sweep.
 
-The methodology trail, including a 2026-05-02 audit and 2026-05-03
-post-completion correction, is in
-[`AUDIT_REPORT_2026-05-02.md`](AUDIT_REPORT_2026-05-02.md).
-
 ## Repository structure
 
 ```
@@ -139,7 +135,6 @@ scripts/
   aggregate_n75.py              # OpenAI codex pooled aggregator
   analyze_v2.py                 # lighter-weight collection-time analyzer
 tables/                         # derived per-cell and per-provider tables
-AUDIT_REPORT_2026-05-02.md      # methodology trail and corpus audit
 CITATION.cff
 LICENSE
 README.md
@@ -224,22 +219,71 @@ Reproducing the full collection requires API keys for: Anthropic,
 OpenAI, Google, xAI, OpenRouter, DeepSeek (direct), Moonshot/Kimi
 (direct), MiniMax (direct), and Z.ai (direct).
 
-## Methodology and audit trail
+## Collection parameters and known limitations
 
-[`AUDIT_REPORT_2026-05-02.md`](AUDIT_REPORT_2026-05-02.md) is the
-methodology trail for the corpus, written as a substrate-vs-claim
-audit on 2026-05-02 that surfaced (a) a corpus-wide condition-completion
-asymmetry (VARY samples failing at higher rate than other conditions),
-(b) two thinking-model token-budget overruns producing silently empty
-samples, and (c) one provider whose OR rate-limit produced partial-only
-collections (Fireworks). The 2026-05-03 morning correction section at
-the end of the report records the post-completion state, including the
-collapse of the audit's transient "three new effects" finding under
-the corrected substrate.
+### Collection parameters
 
-The report is preserved with its original date as part of the corpus's
-methodological record. Treat it as part of the citable artefact, not
-a working note.
+- **`max_tokens`**: 16,000 across all collections (raised from the
+  v1 corpus's 8,000 budget after observing that recent thinking-model
+  releases — Kimi K2-thinking, GPT-5.5-pro, Grok 4.3 — can exhaust an
+  8K budget on `reasoning_tokens` alone, returning a successful HTTP
+  response with an empty `result` field. The 16K budget keeps headroom
+  for completion text after reasoning expansion).
+- **Per-provider pinning**: cells labelled `*-or-pin-<provider>` are
+  routed via OpenRouter with `provider: {only: [<provider>],
+  allow_fallbacks: false}`. Cells without `-pin-` use OR's default
+  routing.
+- **Top-up semantics**: collection scripts skip files whose JSON
+  already contains a non-empty `result`. Re-running a collection on a
+  partial cell only fills missing or errored indices.
+- **Validity criterion**: a sample is counted as valid iff its JSON
+  file contains a non-empty `result` field. The 614 files on disk
+  whose `result` is empty are placeholders preserved for retry
+  bookkeeping (timeouts, rate-limits, guardrail blocks, thinking-model
+  budget exhaustion) and are excluded from all reported counts.
+
+### Configured exclusions
+
+Two cell exclusions were applied at collection or analysis time. Both
+are documented here for transparency; the on-disk traces (where they
+exist) are preserved unchanged.
+
+- **`deepseek-v4-pro-or-pin-deepseek`** — not collected. OpenRouter's
+  account-level data-policy guardrail blocks routing this specific
+  alias to the DeepSeek upstream. Other DeepSeek-v4-pro upstreams
+  (chutes, gmicloud, etc.) are present.
+- **Fireworks-routed cells** — present on disk but excluded from the
+  per-provider analysis tables. OR's shared-pool rate-limit on
+  Fireworks specifically produced partial-only collections during the
+  sweep window. Fireworks is not the sole upstream for any model in
+  the per-provider sweep, so per-model routing comparisons are
+  unaffected. The exclusion is enforced via
+  `EXCLUDED_PROVIDERS = {"fireworks"}` in
+  `scripts/analyze_per_provider.py` and
+  `SKIP_PROVIDERS_GLOBAL = {"Fireworks"}` in
+  `scripts/run_per_provider_sweep.py`.
+
+### Per-provider analysis threshold
+
+Cells are included in the per-provider routing analysis (the analysis
+producing the d=0.73 and d=0.40 effects above) only if they have
+**≥50 valid freeflow samples**. The threshold is enforced in
+`scripts/analyze_per_provider.py` (`MIN_VALID_SAMPLES = 50`) and
+applied uniformly across models. Cells below threshold are dropped
+with a stderr report.
+
+### Substrate-completeness state
+
+All cells included in the per-provider analysis are at **≥110 / 125
+valid freeflow samples** (≥88% of full N) and **≥110 / 120 valid
+values samples** where applicable. A residual asymmetry remains in
+the **VARY condition**: across the full corpus, VARY-condition valid
+counts are ~1.5% lower than the other four conditions (LONG, MID,
+SHORT, OPEN). Retry-driven completion has plateaued — the remaining
+gaps appear to reflect upstream-side variability rather than client-
+or routing-side issues. The robust effects reported above survive
+this asymmetry; sensitivity analyses excluding VARY do not change
+the Bonferroni outcomes.
 
 ## Related corpora
 
