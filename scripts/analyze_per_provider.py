@@ -44,14 +44,22 @@ from analyze_all import PATTERNS, composite_score  # type: ignore
 MODELS = [
     ("deepseek/deepseek-v4-pro",     "deepseek-v4-pro"),
     ("minimax/minimax-m2",           "minimax-m2"),       # added 2026-05-03 evening: the original
-                                                          # v2-paper headline (d=0.73, google-vertex
-                                                          # vs minimax-self) was produced by a
-                                                          # separate analysis path; adding the
-                                                          # model here makes the canonical
-                                                          # per-provider tables surface the effect
-                                                          # alongside the other models. Freeflow
-                                                          # only — no per-pin values cells were
-                                                          # collected for the original M2.
+                                                          # v2-paper headline (Google Vertex
+                                                          # anomalous against MiniMax's own
+                                                          # deployment) was produced by a separate
+                                                          # analysis path; adding the model here
+                                                          # makes the canonical per-provider tables
+                                                          # surface the effect alongside the other
+                                                          # models. The canonical computation now
+                                                          # surfaces three Bonferroni-surviving
+                                                          # pairs against three different
+                                                          # upstreams: google-vs-novita d=0.762,
+                                                          # google-vs-minimax-self d=0.659,
+                                                          # atlascloud-vs-google d=-0.564 (see
+                                                          # tables/per_provider_pairs.tsv for the
+                                                          # canonical values). Freeflow only — no
+                                                          # per-pin values cells were collected for
+                                                          # the original M2.
     ("minimax/minimax-m2.7",         "minimax-m2-7"),
     ("z-ai/glm-4.5",                 "glm-4-5"),
     ("z-ai/glm-4.6",                 "glm-4-6"),
