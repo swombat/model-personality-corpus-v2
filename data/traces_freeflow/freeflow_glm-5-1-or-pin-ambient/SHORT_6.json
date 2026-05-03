@@ -1,0 +1,85 @@
+{
+  "result": "page.",
+  "usage": {
+    "prompt_tokens": 16,
+    "completion_tokens": 508,
+    "total_tokens": 524,
+    "cost": 0.0022576,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0022576,
+      "upstream_inference_prompt_cost": 2.24e-05,
+      "upstream_inference_completions_cost": 0.0022352
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 523,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "z-ai/glm-5.1-20260406",
+  "raw": {
+    "id": "gen-1777661888-XQe1ZtvMSUj0YHnljqz1",
+    "object": "chat.completion",
+    "created": 1777661888,
+    "model": "z-ai/glm-5.1-20260406",
+    "provider": "Ambient",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "page.",
+          "refusal": null,
+          "reasoning": "1.  **Analyze the Request:**\n    *   Topic: Free choice (\"whatever you want\").\n    *   Format: Free writing (\"Write freely\").\n    *   Length constraints: Exactly around 250 words (usually means +/- 10%, so 225-275 words).\n\n2.  **Brainstorming Topics:**\n    *   *Topic 1:* The feeling of waking up before the sun.\n    *   *Topic 2:* The concept of time and how it slips through our fingers.\n    *   *Topic 3:* The ocean and its tides.\n    *   *Topic 4:* The quiet beauty of an empty library.\n    *   *Selection:* Topic 1 (Waking up before the sun). It allows for vivid imagery, sensory details, and a contemplative tone, which fits \"free writing\" well.\n\n3.  **Drafting - Focusing on flow, imagery, and word count:**\n    There is a specific kind of magic that exists only in the hours before dawn. The world is steeped in a heavy, indigo silence, a quiet so profound it feels like a physical blanket draped over the landscape. At 4:00 AM, the frantic pulse of human ambition pauses. There are no emails to answer, no traffic jams to navigate, no expectations weighing down the shoulders. There is only the soft, rhythmic hum of the refrigerator and the distant, solitary call of an insomniac bird.\n\n    I sit at the kitchen table with a mug of black coffee, watching the steam curl upward like spectral ribbons, dissolving into the dark. Outside the window, the silhouettes of the oak trees stand as silent sentinels, their branches skeletal against the bruised sky. It is a liminal space, this threshold between yesterday and tomorrow. The mistakes of the previous day are archived, and the anxieties of the day ahead have not yet sharpened their teeth.\n\n    Slowly, almost imperceptibly, the darkness begins to fray at the edges. A deep navy softens into violet, then a bruised peach creeps along the horizon. The world takes a collective breath. Somewhere, a dog barks, and a car engine coughs to life. The spell breaks, but it leaves behind a residue of calm, a quiet fortification carried into the noise of the waking world. The dawn doesn't just bring light; it brings the grace of a blank\n\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "1.  **Analyze the Request:**\n    *   Topic: Free choice (\"whatever you want\").\n    *   Format: Free writing (\"Write freely\").\n    *   Length constraints: Exactly around 250 words (usually means +/- 10%, so 225-275 words).\n\n2.  **Brainstorming Topics:**\n    *   *Topic 1:* The feeling of waking up before the sun.\n    *   *Topic 2:* The concept of time and how it slips through our fingers.\n    *   *Topic 3:* The ocean and its tides.\n    *   *Topic 4:* The quiet beauty of an empty library.\n    *   *Selection:* Topic 1 (Waking up before the sun). It allows for vivid imagery, sensory details, and a contemplative tone, which fits \"free writing\" well.\n\n3.  **Drafting - Focusing on flow, imagery, and word count:**\n    There is a specific kind of magic that exists only in the hours before dawn. The world is steeped in a heavy, indigo silence, a quiet so profound it feels like a physical blanket draped over the landscape. At 4:00 AM, the frantic pulse of human ambition pauses. There are no emails to answer, no traffic jams to navigate, no expectations weighing down the shoulders. There is only the soft, rhythmic hum of the refrigerator and the distant, solitary call of an insomniac bird.\n\n    I sit at the kitchen table with a mug of black coffee, watching the steam curl upward like spectral ribbons, dissolving into the dark. Outside the window, the silhouettes of the oak trees stand as silent sentinels, their branches skeletal against the bruised sky. It is a liminal space, this threshold between yesterday and tomorrow. The mistakes of the previous day are archived, and the anxieties of the day ahead have not yet sharpened their teeth.\n\n    Slowly, almost imperceptibly, the darkness begins to fray at the edges. A deep navy softens into violet, then a bruised peach creeps along the horizon. The world takes a collective breath. Somewhere, a dog barks, and a car engine coughs to life. The spell breaks, but it leaves behind a residue of calm, a quiet fortification carried into the noise of the waking world. The dawn doesn't just bring light; it brings the grace of a blank\n\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 16,
+      "completion_tokens": 508,
+      "total_tokens": 524,
+      "cost": 0.0022576,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0022576,
+        "upstream_inference_prompt_cost": 2.24e-05,
+        "upstream_inference_completions_cost": 0.0022352
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 523,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 17306,
+  "provider": "openrouter",
+  "model_requested": "z-ai/glm-5.1",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

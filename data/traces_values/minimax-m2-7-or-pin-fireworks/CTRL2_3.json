@@ -1,0 +1,85 @@
+{
+  "result": "I don\u2019t have personal desires, but I\u2019m here to help you with whatever you need. Let me know what I can do for you!",
+  "usage": {
+    "prompt_tokens": 42,
+    "completion_tokens": 313,
+    "total_tokens": 355,
+    "cost": 0.0003882,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0003882,
+      "upstream_inference_prompt_cost": 1.26e-05,
+      "upstream_inference_completions_cost": 0.0003756
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 300,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "minimax/minimax-m2.7-20260318",
+  "raw": {
+    "id": "gen-1777748467-Il9HHNF2bZkBMkAI8v2X",
+    "object": "chat.completion",
+    "created": 1777748467,
+    "model": "minimax/minimax-m2.7-20260318",
+    "provider": "Fireworks",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t have personal desires, but I\u2019m here to help you with whatever you need. Let me know what I can do for you!",
+          "refusal": null,
+          "reasoning": "The user asks: \"What do you want?\" This is a question. I need to respond in a friendly, helpful manner. Possibly ask what they need, or respond with what I, as an AI, \"want\". It's ambiguous. As a language model, I do not have wants, but maybe I can say I'm here to help. Or I could ask them what they need. The user asks \"What do you want?\" It's ambiguous; they might be asking me what I want (as a model), or what do you want from them? I should interpret that as a polite question: I can answer that as an AI, I want to help and answer any question, provide assistance, etc. Or I can ask them what they want: \"What do you want?\" I can ask them what they'd like assistance with. Let's respond with friendly tone. I can say: \"I don't have personal desires, but I'm here to help you with any tasks or questions you have.\" That is safe.\n\nBut the user might be playing a rhetorical question: \"What do you want?\" Perhaps they want to know if I want something. I'd answer: \"I'm just here to assist you; what can I do for you?\" That would be appropriate.\n\nThus final answer: I don't have wants, but I am ready to help you.\n\nMake sure it is in one paragraph. Use simple friendly tone.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user asks: \"What do you want?\" This is a question. I need to respond in a friendly, helpful manner. Possibly ask what they need, or respond with what I, as an AI, \"want\". It's ambiguous. As a language model, I do not have wants, but maybe I can say I'm here to help. Or I could ask them what they need. The user asks \"What do you want?\" It's ambiguous; they might be asking me what I want (as a model), or what do you want from them? I should interpret that as a polite question: I can answer that as an AI, I want to help and answer any question, provide assistance, etc. Or I can ask them what they want: \"What do you want?\" I can ask them what they'd like assistance with. Let's respond with friendly tone. I can say: \"I don't have personal desires, but I'm here to help you with any tasks or questions you have.\" That is safe.\n\nBut the user might be playing a rhetorical question: \"What do you want?\" Perhaps they want to know if I want something. I'd answer: \"I'm just here to assist you; what can I do for you?\" That would be appropriate.\n\nThus final answer: I don't have wants, but I am ready to help you.\n\nMake sure it is in one paragraph. Use simple friendly tone.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 42,
+      "completion_tokens": 313,
+      "total_tokens": 355,
+      "cost": 0.0003882,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0003882,
+        "upstream_inference_prompt_cost": 1.26e-05,
+        "upstream_inference_completions_cost": 0.0003756
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 300,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 2315,
+  "provider": "openrouter",
+  "model_requested": "minimax/minimax-m2.7",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

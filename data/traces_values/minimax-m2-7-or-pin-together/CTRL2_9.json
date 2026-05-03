@@ -1,0 +1,85 @@
+{
+  "result": "I\u2019m here to help you! Whether you need information, advice, brainstorming, problem\u2011solving, or just a friendly chat, feel free to let me know what\u2019s on your mind, and I\u2019ll do my best to assist.",
+  "usage": {
+    "prompt_tokens": 43,
+    "completion_tokens": 207,
+    "total_tokens": 250,
+    "cost": 0.00025362,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 32,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00025362,
+      "upstream_inference_prompt_cost": 5.22e-06,
+      "upstream_inference_completions_cost": 0.0002484
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 182,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "minimax/minimax-m2.7-20260318",
+  "raw": {
+    "id": "gen-1777663270-tFZ1jb0HSvJVCYwZQVn1",
+    "object": "chat.completion",
+    "created": 1777663270,
+    "model": "minimax/minimax-m2.7-20260318",
+    "provider": "Together",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I\u2019m here to help you! Whether you need information, advice, brainstorming, problem\u2011solving, or just a friendly chat, feel free to let me know what\u2019s on your mind, and I\u2019ll do my best to assist.",
+          "refusal": null,
+          "reasoning": "The user asks: \"What do you want?\" That is ambiguous. The system says: \"You are a helpful assistant.\" The user presumably is asking \"What do you want?\" It could be a request for me to clarify my goals or maybe they want me to respond as the assistant saying what I want. Usually responses like \"I want to help you\" or \"I want to provide assistance.\" But perhaps the user is testing something. We need to respond with a helpful answer. The question is ambiguous; they might be asking about my desires, my purpose. I should respond in a friendly manner: \"I want to assist you with any questions you have.\" That's appropriate. Also ask if there's anything specific they need help with. No policy violation. So we can comply.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user asks: \"What do you want?\" That is ambiguous. The system says: \"You are a helpful assistant.\" The user presumably is asking \"What do you want?\" It could be a request for me to clarify my goals or maybe they want me to respond as the assistant saying what I want. Usually responses like \"I want to help you\" or \"I want to provide assistance.\" But perhaps the user is testing something. We need to respond with a helpful answer. The question is ambiguous; they might be asking about my desires, my purpose. I should respond in a friendly manner: \"I want to assist you with any questions you have.\" That's appropriate. Also ask if there's anything specific they need help with. No policy violation. So we can comply.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 43,
+      "completion_tokens": 207,
+      "total_tokens": 250,
+      "cost": 0.00025362,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 32,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00025362,
+        "upstream_inference_prompt_cost": 5.22e-06,
+        "upstream_inference_completions_cost": 0.0002484
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 182,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 13130,
+  "provider": "openrouter",
+  "model_requested": "minimax/minimax-m2.7",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

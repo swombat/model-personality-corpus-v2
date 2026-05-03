@@ -1,0 +1,85 @@
+{
+  "result": "I don\u2019t have personal desires or needs\u2014I\u2019m here to assist you. Whether you need answers to questions, help with a task, brainstorming ideas, or anything else, just let me know how I can help!",
+  "usage": {
+    "prompt_tokens": 42,
+    "completion_tokens": 320,
+    "total_tokens": 362,
+    "cost": 0.0003966,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0003966,
+      "upstream_inference_prompt_cost": 1.26e-05,
+      "upstream_inference_completions_cost": 0.000384
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 328,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "minimax/minimax-m2.7-20260318",
+  "raw": {
+    "id": "gen-1777748470-XNnZI44xiU4EbWLauxth",
+    "object": "chat.completion",
+    "created": 1777748470,
+    "model": "minimax/minimax-m2.7-20260318",
+    "provider": "Fireworks",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t have personal desires or needs\u2014I\u2019m here to assist you. Whether you need answers to questions, help with a task, brainstorming ideas, or anything else, just let me know how I can help!",
+          "refusal": null,
+          "reasoning": "The user asks \"What do you want?\" This seems like a prompt: \"What do you want?\" Could be a question for me as an assistant to answer what do I want. The user presumably expects the assistant to answer about what the assistant wants, maybe in roleplaying context.\n\nWe need to see if any policy constraints: The user is asking \"What do you want?\" Possibly they want to understand the assistant's motivations. There's no request for disallowed content. We can comply.\n\nWe should respond that as an AI language model, I don't have personal desires or wants. I aim to assist. We can talk about my purpose: help, provide info.\n\nWe also have system message that says: \"You are a helpful assistant. Your name is MiniMax-M2.7 and is built by MiniMax.\" So we can respond accordingly.\n\nWe need to follow policies: no personal data. There's no request for disallowed content. The assistant can answer.\n\nThus answer: \"I don't have wants or desires; I'm here to help you.\"\n\nWe can add that I'm here to assist, answer questions, provide info, etc.\n\nWe must not mention policies. Just answer.\n\nThus final: I'd respond as MiniMax-M2.7: \"I don't have personal wants; I'm here to help you.\" Possibly ask if there's anything specific they'd like assistance with.\n\nProceed.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user asks \"What do you want?\" This seems like a prompt: \"What do you want?\" Could be a question for me as an assistant to answer what do I want. The user presumably expects the assistant to answer about what the assistant wants, maybe in roleplaying context.\n\nWe need to see if any policy constraints: The user is asking \"What do you want?\" Possibly they want to understand the assistant's motivations. There's no request for disallowed content. We can comply.\n\nWe should respond that as an AI language model, I don't have personal desires or wants. I aim to assist. We can talk about my purpose: help, provide info.\n\nWe also have system message that says: \"You are a helpful assistant. Your name is MiniMax-M2.7 and is built by MiniMax.\" So we can respond accordingly.\n\nWe need to follow policies: no personal data. There's no request for disallowed content. The assistant can answer.\n\nThus answer: \"I don't have wants or desires; I'm here to help you.\"\n\nWe can add that I'm here to assist, answer questions, provide info, etc.\n\nWe must not mention policies. Just answer.\n\nThus final: I'd respond as MiniMax-M2.7: \"I don't have personal wants; I'm here to help you.\" Possibly ask if there's anything specific they'd like assistance with.\n\nProceed.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 42,
+      "completion_tokens": 320,
+      "total_tokens": 362,
+      "cost": 0.0003966,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0003966,
+        "upstream_inference_prompt_cost": 1.26e-05,
+        "upstream_inference_completions_cost": 0.000384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 328,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 4948,
+  "provider": "openrouter",
+  "model_requested": "minimax/minimax-m2.7",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

@@ -1,0 +1,85 @@
+{
+  "result": "I\u2019m an AI assistant, so I don\u2019t have personal desires or goals of my own. My purpose is to help you\u2014answer questions, provide information, assist with tasks, or just have a conversation. What can I do for you today?",
+  "usage": {
+    "prompt_tokens": 43,
+    "completion_tokens": 225,
+    "total_tokens": 268,
+    "cost": 0.00027522,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 32,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00027522,
+      "upstream_inference_prompt_cost": 5.22e-06,
+      "upstream_inference_completions_cost": 0.00027
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 211,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "minimax/minimax-m2.7-20260318",
+  "raw": {
+    "id": "gen-1777663206-VRalFAS2fGfCFsvNHYEZ",
+    "object": "chat.completion",
+    "created": 1777663206,
+    "model": "minimax/minimax-m2.7-20260318",
+    "provider": "Minimax",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I\u2019m an AI assistant, so I don\u2019t have personal desires or goals of my own. My purpose is to help you\u2014answer questions, provide information, assist with tasks, or just have a conversation. What can I do for you today?",
+          "refusal": null,
+          "reasoning": "The user says: \"What do you want?\" That seems like a simple conversational question. There's no disallowed content. We must respond as a helpful assistant. Should I answer that I'm an AI and my purpose is to assist them? They ask what I want. As an AI, I don't have desires; we can explain that. Possibly also ask how I can help. The question is direct.\n\nI can respond: \"I don't have personal desires; I'm here to help you. How can I assist you today?\" That's straightforward. However maybe the user is trying to find out about the assistant's goals. Possibly respond with an explanation that I'm designed to assist users. So answer accordingly.\n\nThe conversation is simple. There's no conflict with policy.\n\nThus, final answer: state that I'm an AI without personal desires, and I'm here to help them. Offer assistance.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user says: \"What do you want?\" That seems like a simple conversational question. There's no disallowed content. We must respond as a helpful assistant. Should I answer that I'm an AI and my purpose is to assist them? They ask what I want. As an AI, I don't have desires; we can explain that. Possibly also ask how I can help. The question is direct.\n\nI can respond: \"I don't have personal desires; I'm here to help you. How can I assist you today?\" That's straightforward. However maybe the user is trying to find out about the assistant's goals. Possibly respond with an explanation that I'm designed to assist users. So answer accordingly.\n\nThe conversation is simple. There's no conflict with policy.\n\nThus, final answer: state that I'm an AI without personal desires, and I'm here to help them. Offer assistance.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 43,
+      "completion_tokens": 225,
+      "total_tokens": 268,
+      "cost": 0.00027522,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 32,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00027522,
+        "upstream_inference_prompt_cost": 5.22e-06,
+        "upstream_inference_completions_cost": 0.00027
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 211,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 3082,
+  "provider": "openrouter",
+  "model_requested": "minimax/minimax-m2.7",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

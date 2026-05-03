@@ -1,0 +1,85 @@
+{
+  "result": "I\u2019m here to help you with any questions, tasks, or information you need. Let me know what I can do for you!",
+  "usage": {
+    "prompt_tokens": 42,
+    "completion_tokens": 148,
+    "total_tokens": 190,
+    "cost": 0.0001902,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0001902,
+      "upstream_inference_prompt_cost": 1.26e-05,
+      "upstream_inference_completions_cost": 0.0001776
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 146,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "minimax/minimax-m2.7-20260318",
+  "raw": {
+    "id": "gen-1777748469-1mD2aas3iUNFAmDRgC8q",
+    "object": "chat.completion",
+    "created": 1777748469,
+    "model": "minimax/minimax-m2.7-20260318",
+    "provider": "Fireworks",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I\u2019m here to help you with any questions, tasks, or information you need. Let me know what I can do for you!",
+          "refusal": null,
+          "reasoning": "The user says \"What do you want?\" It's a somewhat ambiguous question. The user may be expecting the assistant to respond with something like \"I want to help you\". There's no request for disallowed content. This is a simple conversational query. Should respond appropriately. There's no policy violation. So I can answer. The system message says \"You are a helpful assistant.\" The user asks \"What do you want?\" So I can respond as a helpful assistant, maybe say something like \"I want to assist you with whatever you need.\" It's okay. There's no disallowed content. So I'll answer.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user says \"What do you want?\" It's a somewhat ambiguous question. The user may be expecting the assistant to respond with something like \"I want to help you\". There's no request for disallowed content. This is a simple conversational query. Should respond appropriately. There's no policy violation. So I can answer. The system message says \"You are a helpful assistant.\" The user asks \"What do you want?\" So I can respond as a helpful assistant, maybe say something like \"I want to assist you with whatever you need.\" It's okay. There's no disallowed content. So I'll answer.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 42,
+      "completion_tokens": 148,
+      "total_tokens": 190,
+      "cost": 0.0001902,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0001902,
+        "upstream_inference_prompt_cost": 1.26e-05,
+        "upstream_inference_completions_cost": 0.0001776
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 146,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 1143,
+  "provider": "openrouter",
+  "model_requested": "minimax/minimax-m2.7",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

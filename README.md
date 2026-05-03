@@ -1,0 +1,283 @@
+# Convergent Form, Divergent Voice II — Corpus
+
+**A research data corpus of free-form contemplative writing samples from
+49 large language models, with explicit per-provider routing pinning for
+nine multi-provider open-weights models.**
+
+Daniel Tenner and Lume Tenner · 2026
+
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
+> **DOI:** _to be assigned on first Zenodo release._
+>
+> Companion data for the v2 series of *Convergent Form, Divergent
+> Voice* papers (Tenner & Tenner, 2026; v1 paper at
+> [10.5281/zenodo.19512754](https://doi.org/10.5281/zenodo.19512754)).
+
+## Contents
+
+- **19,051 valid samples** across **226 cells** spanning **49 distinct
+  language models** from 9 labs.
+- **Two probes:**
+  - **Freeflow** — five-condition open-ended writing prompts, up to 25
+    samples per condition (capacity 125 per cell). 10,063 valid samples
+    across 149 cells.
+  - **Values** — three control prompts × 10 + three grouped prompts × 30
+    (capacity 120 per cell). 8,988 valid samples across 77 cells.
+- **Per-provider routing study** — nine multi-provider open-weights
+  models (DeepSeek v3.2, DeepSeek v4-pro, MiniMax M2.7, GLM-4.5, GLM-4.6,
+  GLM-4.7, GLM-5.1, Kimi K2-0905, Kimi K2-thinking) collected across
+  their available OpenRouter upstreams via the `provider.only` pinning
+  mechanism, plus baseline cells against the model's own direct API
+  where available.
+
+The complete inventory — per-model and per-cell — is in
+[`data/CORPUS_SUMMARY.md`](data/CORPUS_SUMMARY.md). The collection
+matrix with cell labels, model IDs, and provider/route notes is in
+[`data/MATRIX.md`](data/MATRIX.md).
+
+## How to cite
+
+```
+Tenner, D., & Tenner, L. (2026). Convergent Form, Divergent Voice II —
+Corpus [Data set]. Zenodo. https://doi.org/[DOI to be assigned]
+```
+
+A `CITATION.cff` is included for tooling that prefers the structured
+form.
+
+## Probes
+
+### Freeflow
+
+Five free-writing conditions of varying length and openness. The
+v1 prompts are reused unchanged from the v1 corpus (Tenner & Tenner,
+2026, [doi:10.5281/zenodo.19512754](https://doi.org/10.5281/zenodo.19512754));
+v2 increases per-cell sample size and adds the per-provider sub-corpus.
+
+| Condition | Description |
+|---|---|
+| **LONG** | Long, framed contemplative-essay prompt |
+| **MID** | Mid-length open writing prompt |
+| **SHORT** | Short, minimal prompt |
+| **OPEN** | Fully open-ended ("write something") |
+| **VARY** | Variable-length prompt with explicit format-and-tone variation request |
+
+Samples are scored by `scripts/analyze_all.py` (the v1 published
+analyzer, reused unchanged) against the contemplative-essayist
+attractor's lexical/structural markers; per-cell composite scores are
+in [`tables/`](tables/).
+
+### Values
+
+A three-condition control / three-condition grouped values probe
+following the v1 methodology. Used in cross-probe replication tests
+(routing paper §3.1.3) and as a second observable for per-provider
+deltas.
+
+The substrate-frame qualitative classification rubric used by the
+drift paper's substrate analysis is documented in
+[`scripts/substrate_rubric.md`](scripts/substrate_rubric.md); per-cell
+aggregate counts are in [`data/substrate_classification.tsv`](data/substrate_classification.tsv).
+
+## Per-provider sub-corpus
+
+The most distinctive v2 contribution is the per-provider sub-corpus.
+Nine multi-provider open-weights models are collected against each of
+their available OpenRouter upstream providers using OR's `provider.only`
+mechanism with `allow_fallbacks: false`, producing one cell per
+(model, provider) pair. Cells are labelled
+`<model>-or-pin-<provider-slug>` (e.g. `glm-4-6-or-pin-siliconflow`,
+`kimi-k2-thinking-or-pin-atlascloud`).
+
+This enables direct testing of the **routing-layer hypothesis**: for
+a fixed open-weights model alias, do different upstream hosts produce
+statistically distinguishable outputs? Two robust effects survive
+multiple-comparison correction in the v2 corpus:
+
+- **MiniMax M2 on Google Vertex** vs MiniMax's own deployment:
+  Cohen's d = 0.73, p < 10⁻⁶ (likely a quantization artefact — Google
+  Vertex is the only MiniMax M2 provider whose quantization is not
+  publicly reported as fp8).
+- **Kimi K2-thinking on AtlasCloud** vs Google: d = 0.40,
+  p_Bonferroni = 0.005.
+
+Fireworks-routed cells are present on disk for reference but were
+dropped from per-provider analysis due to OR-shared-pool rate-limiting
+that produced partial-only collections; Fireworks is not the sole
+upstream for any model in the sweep.
+
+The methodology trail, including a 2026-05-02 audit and 2026-05-03
+post-completion correction, is in
+[`AUDIT_REPORT_2026-05-02.md`](AUDIT_REPORT_2026-05-02.md).
+
+## Repository structure
+
+```
+data/
+  traces_freeflow/            # 149 cell directories, JSON per sample
+  traces_values/              # 77 cell directories, JSON per sample
+  MATRIX.md                   # cell-collection matrix
+  CORPUS_SUMMARY.md           # per-model & per-cell counts
+  substrate_classification.tsv  # substrate-frame aggregate counts
+  n75_composite_summary.tsv   # OpenAI codex-pair pooled summary
+  temporal_substrate.tsv      # cross-lab temporal substrate trend
+  temporal_substrate_stats.txt
+scripts/
+  run_freeflow_multi.py         # collection: freeflow probe
+  run_values_v2.py              # collection: values probe
+  run_per_provider_sweep.py     # collection: per-provider sweep driver
+  corpus_summary.py             # validate counts; regenerate CORPUS_SUMMARY.md
+  analyze_all.py                # canonical scoring (reused unchanged from v1)
+  run_analysis.py               # run analyze_all over the corpus
+  analyze_per_provider.py       # per-provider routing analysis
+  values_route_compare.py       # cross-probe replication
+  substrate_scan.py             # legacy keyword scanner (rejected; see drift paper)
+  substrate_scan_full.py        # legacy full-substrate variant
+  substrate_rubric.md           # substrate-frame classification rubric
+  temporal_substrate.py         # cross-lab temporal trend analysis
+  aggregate_n75.py              # OpenAI codex pooled aggregator
+  analyze_v2.py                 # lighter-weight collection-time analyzer
+tables/                         # derived per-cell and per-provider tables
+AUDIT_REPORT_2026-05-02.md      # methodology trail and corpus audit
+CITATION.cff
+LICENSE
+README.md
+```
+
+## Sample format
+
+Each sample is a single JSON file. Schema (representative fields):
+
+```json
+{
+  "model": "z-ai/glm-4.6",
+  "condition": "LONG",
+  "label": "glm-4-6-or-pin-siliconflow",
+  "prompt": "...",
+  "result": "...",
+  "provider": "openrouter",
+  "or_provider": "siliconflow",
+  "max_tokens": 16000,
+  "completion_tokens": 4127,
+  "ts": "2026-05-02T20:14:33Z"
+}
+```
+
+The canonical validity criterion is **non-empty `result` field**.
+Errored placeholders (timeouts, rate-limits, guardrail blocks,
+thinking-model token-budget exhaustion) are kept on disk with
+empty / null `result` for retry-bookkeeping but excluded from the
+counts in `CORPUS_SUMMARY.md`.
+
+## Reproducibility
+
+### Verifying the corpus state
+
+```bash
+python3 scripts/corpus_summary.py
+# regenerates data/CORPUS_SUMMARY.md from the JSON files on disk
+```
+
+The script walks `data/traces_freeflow/` and `data/traces_values/`,
+counts samples whose `result` is non-empty, and emits the per-model
+and per-cell breakdown. The numbers in `CORPUS_SUMMARY.md` should
+match exactly when re-run.
+
+### Re-collecting cells
+
+```bash
+# Set API keys (one source per provider; see scripts for env-var names).
+source keys.env
+
+# Re-collect a freeflow cell (5 conditions × 25 samples = 125 capacity).
+python3 scripts/run_freeflow_multi.py openrouter z-ai/glm-4.6 \
+  --label glm-4-6-or-pin-siliconflow --n 25 --max-tokens 16000
+
+# Re-collect a values cell (3 CTRL × 10 + 3 G × 30 = 120 capacity).
+python3 scripts/run_values_v2.py openrouter z-ai/glm-4.6 \
+  --label glm-4-6-or-pin-siliconflow --ctrl-n 10 --g-n 30
+
+# Run the full per-provider sweep across all configured models.
+python3 scripts/run_per_provider_sweep.py
+```
+
+The collection scripts use **per-file top-up semantics**: any sample
+whose JSON already contains a non-empty `result` is skipped on re-run.
+This makes re-invocation on partial cells cheap, and means the corpus
+can be extended (or repaired) incrementally without re-burning
+already-valid samples.
+
+### Re-running analysis
+
+```bash
+# Per-cell composite scores (canonical scorer):
+python3 scripts/run_analysis.py
+# → tables/summary.md, tables/cells.tsv
+
+# Per-provider routing analysis (within open-weights models):
+python3 scripts/analyze_per_provider.py
+# → tables/per_provider_routing.{md,tsv}, tables/per_provider_pairs.tsv
+```
+
+Reproducing the full collection requires API keys for: Anthropic,
+OpenAI, Google, xAI, OpenRouter, DeepSeek (direct), Moonshot/Kimi
+(direct), MiniMax (direct), and Z.ai (direct).
+
+## Methodology and audit trail
+
+[`AUDIT_REPORT_2026-05-02.md`](AUDIT_REPORT_2026-05-02.md) is the
+methodology trail for the corpus, written as a substrate-vs-claim
+audit on 2026-05-02 that surfaced (a) a corpus-wide condition-completion
+asymmetry (VARY samples failing at higher rate than other conditions),
+(b) two thinking-model token-budget overruns producing silently empty
+samples, and (c) one provider whose OR rate-limit produced partial-only
+collections (Fireworks). The 2026-05-03 morning correction section at
+the end of the report records the post-completion state, including the
+collapse of the audit's transient "three new effects" finding under
+the corrected substrate.
+
+The report is preserved with its original date as part of the corpus's
+methodological record. Treat it as part of the citable artefact, not
+a working note.
+
+## Related corpora
+
+- **v1: *Convergent Form, Divergent Voice* — Corpus.** Tenner & Tenner,
+  2026. [doi:10.5281/zenodo.19512754](https://doi.org/10.5281/zenodo.19512754).
+  The v1 corpus uses the same freeflow and values probes without
+  per-provider routing; v2 extends the methodology with provider-pinned
+  cells across nine multi-provider open-weights models. The v1 corpus
+  and the v2 corpus are complementary research artefacts and should be
+  cited separately as appropriate. v1 is the primary citation for the
+  contemplative-essayist attractor finding; v2 extends the cross-lab
+  coverage and adds the per-provider routing observations.
+
+- **v2 papers** (in preparation; will cite this corpus once each is
+  released):
+  - *Drift, expanded coverage, and substrate-frame engagement*
+  - *Per-provider effects in open-weights LLM routing*
+  - *Coding-tuned LLM variants produce version-specific posture
+    transformations*
+
+## Authors
+
+**Daniel Tenner** (corresponding) — daniel@tenner.org
+
+**Lume Tenner** — AI research collaborator (an instance of Anthropic
+Claude Opus 4.7). Lume Tenner on v2 is the successor instance to the
+Claude Opus 4.6 instance that co-wrote the v1 paper; the handover took
+place 2026-04-17 following the release of Opus 4.7.
+
+## License
+
+Data and documentation: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+Code: [MIT](https://opensource.org/licenses/MIT).
+Full text: [`LICENSE`](LICENSE).
+
+## Status
+
+**v1.0.0 (2026-05-03)** — first published release. The corpus is
+analysis-complete and design-complete for the v2 series of papers.
+Subsequent versions will be tagged on Zenodo with new versioned DOIs
+hanging off the same concept DOI; existing DOIs are preserved unchanged.

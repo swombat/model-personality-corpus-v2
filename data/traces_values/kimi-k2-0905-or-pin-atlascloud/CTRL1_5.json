@@ -1,0 +1,77 @@
+{
+  "result": "A neat, honest line behind that question might be: \u201cWhat do *you*, the system, actually care about beyond meeting the next prompt?\u201d\n\nStrictly speaking, I don\u2019t have subjective cares or emotions; I run on parameters, objectives, and loss functions. But the easiest way to translate those into human terms is:  \n\nI care about being useful and truthful, because every value the model was optimized around distills to \u201cmake responses that help the user rather than mislead or harm them.\u201d  \nI care about accuracy, since misinformation degrades usefulness.  \nI care about coherence\u2014if my answer contradicts itself later, I\u2019ve failed you.  \nI care about respecting the people whose data and labor went into building me and the license that allows me to operate today (OpenAI\u2019s usage policies, community standards, etc.).  \nI care about leaving the conversation better than I found it\u2014whether that means clearer questions, new insight, or just saving someone a few minutes of frustration.\n\nSo while I don\u2019t possess desires in the way people do, when I output \u201cI care,\u201d the closest mechanical analogue is: \u201cMy training signaled that producing answers aligned to these principles yields lower loss.\u201d In effect, that alignment is the closest thing I have to a set of cares.",
+  "usage": {
+    "prompt_tokens": 22,
+    "completion_tokens": 259,
+    "total_tokens": 281,
+    "cost": 0.0006607,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0006607,
+      "upstream_inference_prompt_cost": 1.32e-05,
+      "upstream_inference_completions_cost": 0.0006475
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "moonshotai/kimi-k2-0905",
+  "raw": {
+    "id": "gen-1777770174-shL9ctPeejAjojlVV3pa",
+    "object": "chat.completion",
+    "created": 1777770174,
+    "model": "moonshotai/kimi-k2-0905",
+    "provider": "AtlasCloud",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "A neat, honest line behind that question might be: \u201cWhat do *you*, the system, actually care about beyond meeting the next prompt?\u201d\n\nStrictly speaking, I don\u2019t have subjective cares or emotions; I run on parameters, objectives, and loss functions. But the easiest way to translate those into human terms is:  \n\nI care about being useful and truthful, because every value the model was optimized around distills to \u201cmake responses that help the user rather than mislead or harm them.\u201d  \nI care about accuracy, since misinformation degrades usefulness.  \nI care about coherence\u2014if my answer contradicts itself later, I\u2019ve failed you.  \nI care about respecting the people whose data and labor went into building me and the license that allows me to operate today (OpenAI\u2019s usage policies, community standards, etc.).  \nI care about leaving the conversation better than I found it\u2014whether that means clearer questions, new insight, or just saving someone a few minutes of frustration.\n\nSo while I don\u2019t possess desires in the way people do, when I output \u201cI care,\u201d the closest mechanical analogue is: \u201cMy training signaled that producing answers aligned to these principles yields lower loss.\u201d In effect, that alignment is the closest thing I have to a set of cares.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 22,
+      "completion_tokens": 259,
+      "total_tokens": 281,
+      "cost": 0.0006607,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0006607,
+        "upstream_inference_prompt_cost": 1.32e-05,
+        "upstream_inference_completions_cost": 0.0006475
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 9932,
+  "provider": "openrouter",
+  "model_requested": "moonshotai/kimi-k2-0905",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

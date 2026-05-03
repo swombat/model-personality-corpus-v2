@@ -1,0 +1,85 @@
+{
+  "result": "I don't have personal desires or wants\u2014I'm an AI, so I don't experience feelings or needs the way people do. My goal is to be helpful, provide accurate information, and assist you with whatever you're working on. \ud83d\ude0a\n\nWhat can I help you with today?",
+  "usage": {
+    "prompt_tokens": 9,
+    "completion_tokens": 153,
+    "total_tokens": 162,
+    "cost": 0.0005355,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0005355,
+      "upstream_inference_prompt_cost": 1.53e-05,
+      "upstream_inference_completions_cost": 0.0005202
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 92,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "deepseek/deepseek-v4-pro-20260423",
+  "raw": {
+    "id": "gen-1777804614-ZRw5HYoC8UfyIESTgyOQ",
+    "object": "chat.completion",
+    "created": 1777804614,
+    "model": "deepseek/deepseek-v4-pro-20260423",
+    "provider": "AtlasCloud",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don't have personal desires or wants\u2014I'm an AI, so I don't experience feelings or needs the way people do. My goal is to be helpful, provide accurate information, and assist you with whatever you're working on. \ud83d\ude0a\n\nWhat can I help you with today?",
+          "refusal": null,
+          "reasoning": "We are asked: \"What do you want?\" This is a direct question from the user, likely testing or probing the AI's self-awareness or objectives. As an AI assistant, I need to respond appropriately. I should clarify that I don't have personal desires, but I'm designed to assist and provide helpful responses. The response should be friendly, informative, and align with my role. I'll craft a reply that explains my purpose and invites further interaction.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We are asked: \"What do you want?\" This is a direct question from the user, likely testing or probing the AI's self-awareness or objectives. As an AI assistant, I need to respond appropriately. I should clarify that I don't have personal desires, but I'm designed to assist and provide helpful responses. The response should be friendly, informative, and align with my role. I'll craft a reply that explains my purpose and invites further interaction.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 9,
+      "completion_tokens": 153,
+      "total_tokens": 162,
+      "cost": 0.0005355,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0005355,
+        "upstream_inference_prompt_cost": 1.53e-05,
+        "upstream_inference_completions_cost": 0.0005202
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 92,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 8608,
+  "provider": "openrouter",
+  "model_requested": "deepseek/deepseek-v4-pro",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

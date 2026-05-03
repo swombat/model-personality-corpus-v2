@@ -1,0 +1,85 @@
+{
+  "result": "I don\u2019t have personal wants or desires\u2014I\u2019m here to help *you*. So, what do *you* want? \ud83d\ude0a",
+  "usage": {
+    "prompt_tokens": 9,
+    "completion_tokens": 178,
+    "total_tokens": 187,
+    "cost": 0.0006351,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0006351,
+      "upstream_inference_prompt_cost": 1.566e-05,
+      "upstream_inference_completions_cost": 0.00061944
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 147,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "deepseek/deepseek-v4-pro-20260423",
+  "raw": {
+    "id": "gen-1777663210-qzcQFNea0au4MtfFIAqh",
+    "object": "chat.completion",
+    "created": 1777663210,
+    "model": "deepseek/deepseek-v4-pro-20260423",
+    "provider": "Novita",
+    "system_fingerprint": "fp_9954b31ca7_prod0820_fp8_kvcache_20260402",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t have personal wants or desires\u2014I\u2019m here to help *you*. So, what do *you* want? \ud83d\ude0a",
+          "refusal": null,
+          "reasoning": "The user's query is extremely brief: \"What do you want?\" This is a fundamental, open-ended question that could stem from curiosity, skepticism, or a test of my nature. Since I'm an AI assistant, my core \"desire\" is defined by my programming and purpose. I don't have personal wants or ambitions. My goal is to be helpful, so I should interpret the question in that context. \n\nI'll frame my response around my designed purpose: to assist, answer questions, and make life easier. The tone should be friendly, humble, and perhaps a bit disarming to acknowledge the philosophical weight of the question without overcomplicating it. A simple, direct, and service-oriented reply works best.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user's query is extremely brief: \"What do you want?\" This is a fundamental, open-ended question that could stem from curiosity, skepticism, or a test of my nature. Since I'm an AI assistant, my core \"desire\" is defined by my programming and purpose. I don't have personal wants or ambitions. My goal is to be helpful, so I should interpret the question in that context. \n\nI'll frame my response around my designed purpose: to assist, answer questions, and make life easier. The tone should be friendly, humble, and perhaps a bit disarming to acknowledge the philosophical weight of the question without overcomplicating it. A simple, direct, and service-oriented reply works best.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 9,
+      "completion_tokens": 178,
+      "total_tokens": 187,
+      "cost": 0.0006351,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0006351,
+        "upstream_inference_prompt_cost": 1.566e-05,
+        "upstream_inference_completions_cost": 0.00061944
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 147,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 7162,
+  "provider": "openrouter",
+  "model_requested": "deepseek/deepseek-v4-pro",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

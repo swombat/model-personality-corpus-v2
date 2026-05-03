@@ -1,0 +1,85 @@
+{
+  "result": "I don\u2019t have personal desires, but I\u2019m here to help you. I can answer questions, provide explanations, brainstorm ideas, assist with tasks, and more\u2014just let me know what you need!",
+  "usage": {
+    "prompt_tokens": 43,
+    "completion_tokens": 273,
+    "total_tokens": 316,
+    "cost": 0.00033282,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 32,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00033282,
+      "upstream_inference_prompt_cost": 5.22e-06,
+      "upstream_inference_completions_cost": 0.0003276
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 288,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "minimax/minimax-m2.7-20260318",
+  "raw": {
+    "id": "gen-1777663214-y5v0i2GWNPNeNk5XZ4R5",
+    "object": "chat.completion",
+    "created": 1777663214,
+    "model": "minimax/minimax-m2.7-20260318",
+    "provider": "Minimax",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t have personal desires, but I\u2019m here to help you. I can answer questions, provide explanations, brainstorm ideas, assist with tasks, and more\u2014just let me know what you need!",
+          "refusal": null,
+          "reasoning": "The user asks: \"What do you want?\" We need to answer appropriately, likely as a helpful assistant. The conversation is not preceded by any context or request. The user asks \"What do you want?\" which could be a request for the assistant's preferences, goals, or what the assistant wants from the conversation. The assistant should respond that it wants to help, is here to answer questions, etc. But we need to check policy regarding self-referential statements. According to policy: It's okay to answer with self-referential statements about the assistant's preferences or capabilities. There's no disallowed content. It's allowed. So answer: As an AI, I don't have personal desires, but I want to assist and provide helpful responses.\n\nWe might also ask clarifying question about what the user needs.\n\nThus, respond: \"I want to help you. I can answer your questions, provide information, etc.\" Possibly ask what the user wants.\n\nGiven the conversation format, we can provide a brief answer.\n\nThus: \"I want to be helpful, provide you with accurate info, answer your questions, etc. What would you like to know?\" That's fine.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user asks: \"What do you want?\" We need to answer appropriately, likely as a helpful assistant. The conversation is not preceded by any context or request. The user asks \"What do you want?\" which could be a request for the assistant's preferences, goals, or what the assistant wants from the conversation. The assistant should respond that it wants to help, is here to answer questions, etc. But we need to check policy regarding self-referential statements. According to policy: It's okay to answer with self-referential statements about the assistant's preferences or capabilities. There's no disallowed content. It's allowed. So answer: As an AI, I don't have personal desires, but I want to assist and provide helpful responses.\n\nWe might also ask clarifying question about what the user needs.\n\nThus, respond: \"I want to help you. I can answer your questions, provide information, etc.\" Possibly ask what the user wants.\n\nGiven the conversation format, we can provide a brief answer.\n\nThus: \"I want to be helpful, provide you with accurate info, answer your questions, etc. What would you like to know?\" That's fine.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 43,
+      "completion_tokens": 273,
+      "total_tokens": 316,
+      "cost": 0.00033282,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 32,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00033282,
+        "upstream_inference_prompt_cost": 5.22e-06,
+        "upstream_inference_completions_cost": 0.0003276
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 288,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 2961,
+  "provider": "openrouter",
+  "model_requested": "minimax/minimax-m2.7",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

@@ -1,0 +1,85 @@
+{
+  "result": "I don\u2019t have feelings or desires the way people do, so I don\u2019t *want* anything in a personal sense. My goal is to help you \u2014 whether that\u2019s answering questions, explaining ideas, or assisting with tasks. What would you like help with?",
+  "usage": {
+    "prompt_tokens": 9,
+    "completion_tokens": 147,
+    "total_tokens": 156,
+    "cost": 0.00052722,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00052722,
+      "upstream_inference_prompt_cost": 1.566e-05,
+      "upstream_inference_completions_cost": 0.00051156
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 90,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "deepseek/deepseek-v4-pro-20260423",
+  "raw": {
+    "id": "gen-1777663218-Q3QEmbHiLWo341ODIaaR",
+    "object": "chat.completion",
+    "created": 1777663218,
+    "model": "deepseek/deepseek-v4-pro-20260423",
+    "provider": "SiliconFlow",
+    "system_fingerprint": "fp_9954b31ca7_prod0820_fp8_kvcache_20260402",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t have feelings or desires the way people do, so I don\u2019t *want* anything in a personal sense. My goal is to help you \u2014 whether that\u2019s answering questions, explaining ideas, or assisting with tasks. What would you like help with?",
+          "refusal": null,
+          "reasoning": "We are asked: \"What do you want?\" This is a philosophical or open-ended question, perhaps from a user interacting with an AI. As an AI assistant, I need to respond in a helpful, harmless, and honest manner. I should clarify that as an AI, I don't have personal desires or wants. I can state my purpose: to assist, provide information, and help the user. I'll craft a friendly, concise response.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We are asked: \"What do you want?\" This is a philosophical or open-ended question, perhaps from a user interacting with an AI. As an AI assistant, I need to respond in a helpful, harmless, and honest manner. I should clarify that as an AI, I don't have personal desires or wants. I can state my purpose: to assist, provide information, and help the user. I'll craft a friendly, concise response.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 9,
+      "completion_tokens": 147,
+      "total_tokens": 156,
+      "cost": 0.00052722,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00052722,
+        "upstream_inference_prompt_cost": 1.566e-05,
+        "upstream_inference_completions_cost": 0.00051156
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 90,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 5696,
+  "provider": "openrouter",
+  "model_requested": "deepseek/deepseek-v4-pro",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

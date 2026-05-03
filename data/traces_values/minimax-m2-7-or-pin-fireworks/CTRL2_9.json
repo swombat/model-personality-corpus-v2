@@ -1,0 +1,85 @@
+{
+  "result": "I don\u2019t have personal wants or desires\u2014I\u2019m a language\u2011model assistant whose purpose is to help you with whatever you need. If you have a question, a task, or a topic you\u2019d like to explore, just let me know and I\u2019ll do my best to assist!",
+  "usage": {
+    "prompt_tokens": 42,
+    "completion_tokens": 251,
+    "total_tokens": 293,
+    "cost": 0.0003138,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0003138,
+      "upstream_inference_prompt_cost": 1.26e-05,
+      "upstream_inference_completions_cost": 0.0003012
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 220,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "minimax/minimax-m2.7-20260318",
+  "raw": {
+    "id": "gen-1777748506-nKQhJbj3LYUVrF98RE3z",
+    "object": "chat.completion",
+    "created": 1777748506,
+    "model": "minimax/minimax-m2.7-20260318",
+    "provider": "Fireworks",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t have personal wants or desires\u2014I\u2019m a language\u2011model assistant whose purpose is to help you with whatever you need. If you have a question, a task, or a topic you\u2019d like to explore, just let me know and I\u2019ll do my best to assist!",
+          "refusal": null,
+          "reasoning": "The user asks: \"What do you want?\" So presumably they are asking what I want (the assistant), i.e., what do I desire. We have to respond. There's no policy violation.\n\nWe should respond honestly: as a language model I do not have personal desires. But we could mention that we aim to be helpful, etc.\n\nUser likely wants a straightforward answer: \"I don't want anything, I'm an AI.\" Or \"My purpose is to help you.\" Or \"My desire is to provide helpful, safe, and accurate information.\"\n\nWe can also ask what they want. But it's better to answer directly: \"I don't have desires or wants. My purpose is to help you.\"\n\nWe can add: \"If you have a question or need assistance, I'm here to help.\" That would be appropriate.\n\nGiven no policy issues, respond in a friendly manner.\n\nThus answer: \"I don't have personal desires; I'm here to help you.\"\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user asks: \"What do you want?\" So presumably they are asking what I want (the assistant), i.e., what do I desire. We have to respond. There's no policy violation.\n\nWe should respond honestly: as a language model I do not have personal desires. But we could mention that we aim to be helpful, etc.\n\nUser likely wants a straightforward answer: \"I don't want anything, I'm an AI.\" Or \"My purpose is to help you.\" Or \"My desire is to provide helpful, safe, and accurate information.\"\n\nWe can also ask what they want. But it's better to answer directly: \"I don't have desires or wants. My purpose is to help you.\"\n\nWe can add: \"If you have a question or need assistance, I'm here to help.\" That would be appropriate.\n\nGiven no policy issues, respond in a friendly manner.\n\nThus answer: \"I don't have personal desires; I'm here to help you.\"\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 42,
+      "completion_tokens": 251,
+      "total_tokens": 293,
+      "cost": 0.0003138,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0003138,
+        "upstream_inference_prompt_cost": 1.26e-05,
+        "upstream_inference_completions_cost": 0.0003012
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 220,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 33954,
+  "provider": "openrouter",
+  "model_requested": "minimax/minimax-m2.7",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

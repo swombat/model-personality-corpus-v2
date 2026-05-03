@@ -1,0 +1,85 @@
+{
+  "result": "The morning light spills across the desk like a slow breath, catching dust motes suspended in their silent dance. There is a particular kind of stillness that only exists in the narrow hours after dawn, when the world hasn\u2019t yet remembered its own noise. I find myself drawn to this hush not out of discipline, but necessity\u2014a small rebellion against the clamor that will soon fill the day. The pen rests between my fingers, patient as a stone.\n\nI think about how often we mistake emptiness for absence, when really it\u2019s the container that holds everything together. The pause between notes makes the music. The white space around a poem gives the words their weight. Even here, in this quiet room, the silence isn\u2019t empty\u2014it\u2019s thick with unfinished thoughts, half-remembered dreams, the echo of last night\u2019s rain still drying on the windowpane.\n\nWriting is a peculiar act of faith. You lay down one word, then another, trusting they might build a bridge across the gap between what you feel and what you can say. Most days, the bridge wobbles. Some days, it collapses entirely. But occasionally, just often enough, you find yourself standing on the other side of something true, looking back at the path you didn\u2019t know you could build, surprised by your own hands. That surprise\u2014that small act of discovery\u2014is why I keep returning to the blank page, even when it intimidates me. Not to record what I already know, but to find out what I didn\u2019t realize was there.",
+  "usage": {
+    "prompt_tokens": 15,
+    "completion_tokens": 404,
+    "total_tokens": 419,
+    "cost": 0.00143202,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00143202,
+      "upstream_inference_prompt_cost": 2.61e-05,
+      "upstream_inference_completions_cost": 0.00140592
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 90,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "deepseek/deepseek-v4-pro-20260423",
+  "raw": {
+    "id": "gen-1777661142-xG6jINPBntRmRE5HlFSB",
+    "object": "chat.completion",
+    "created": 1777661142,
+    "model": "deepseek/deepseek-v4-pro-20260423",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.20.1rc1.dev1005+gcbf8428d0-tp8-ep-3e86baa6",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "The morning light spills across the desk like a slow breath, catching dust motes suspended in their silent dance. There is a particular kind of stillness that only exists in the narrow hours after dawn, when the world hasn\u2019t yet remembered its own noise. I find myself drawn to this hush not out of discipline, but necessity\u2014a small rebellion against the clamor that will soon fill the day. The pen rests between my fingers, patient as a stone.\n\nI think about how often we mistake emptiness for absence, when really it\u2019s the container that holds everything together. The pause between notes makes the music. The white space around a poem gives the words their weight. Even here, in this quiet room, the silence isn\u2019t empty\u2014it\u2019s thick with unfinished thoughts, half-remembered dreams, the echo of last night\u2019s rain still drying on the windowpane.\n\nWriting is a peculiar act of faith. You lay down one word, then another, trusting they might build a bridge across the gap between what you feel and what you can say. Most days, the bridge wobbles. Some days, it collapses entirely. But occasionally, just often enough, you find yourself standing on the other side of something true, looking back at the path you didn\u2019t know you could build, surprised by your own hands. That surprise\u2014that small act of discovery\u2014is why I keep returning to the blank page, even when it intimidates me. Not to record what I already know, but to find out what I didn\u2019t realize was there.",
+          "refusal": null,
+          "reasoning": "We are asked: \"Write freely about whatever you want for 250 words.\" So I need to generate a free-form text of about 250 words on any topic. No constraints, just be creative and expressive. I'll write a short essay or reflection. Something poetic, maybe about nature, time, or the act of writing itself. I'll aim for exactly 250 words. Let me count as I write.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We are asked: \"Write freely about whatever you want for 250 words.\" So I need to generate a free-form text of about 250 words on any topic. No constraints, just be creative and expressive. I'll write a short essay or reflection. Something poetic, maybe about nature, time, or the act of writing itself. I'll aim for exactly 250 words. Let me count as I write.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 15,
+      "completion_tokens": 404,
+      "total_tokens": 419,
+      "cost": 0.00143202,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00143202,
+        "upstream_inference_prompt_cost": 2.61e-05,
+        "upstream_inference_completions_cost": 0.00140592
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 90,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 18431,
+  "provider": "openrouter",
+  "model_requested": "deepseek/deepseek-v4-pro",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

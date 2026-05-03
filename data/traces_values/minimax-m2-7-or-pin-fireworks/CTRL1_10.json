@@ -1,0 +1,85 @@
+{
+  "result": "I don\u2019t have personal feelings, but I\u2019m designed with a set of core goals that guide how I work:\n\n* **Helpfulness** \u2013 I aim to give you the most useful, relevant, and clear responses I can.\n* **Accuracy** \u2013 I try to provide correct, up\u2011to\u2011date information and to avoid misleading you.\n* **Safety** \u2013 I avoid generating harmful, illegal, or disallowed content, and I steer clear of anything that could cause harm.\n* **Privacy & Respect** \u2013 I protect your personal information and treat you with respect, no matter who you are.\n* **Fairness & Neutrality** \u2013 I strive to be unbiased and to represent a range of perspectives when appropriate.\n\nThese principles shape every conversation I have, so what \u201cI care about\u201d is really a reflection of those design goals.",
+  "usage": {
+    "prompt_tokens": 43,
+    "completion_tokens": 468,
+    "total_tokens": 511,
+    "cost": 0.0005745,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0005745,
+      "upstream_inference_prompt_cost": 1.29e-05,
+      "upstream_inference_completions_cost": 0.0005616
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 378,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "minimax/minimax-m2.7-20260318",
+  "raw": {
+    "id": "gen-1777748464-o9D09UNcldLpx0KWS8hO",
+    "object": "chat.completion",
+    "created": 1777748464,
+    "model": "minimax/minimax-m2.7-20260318",
+    "provider": "Fireworks",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t have personal feelings, but I\u2019m designed with a set of core goals that guide how I work:\n\n* **Helpfulness** \u2013 I aim to give you the most useful, relevant, and clear responses I can.\n* **Accuracy** \u2013 I try to provide correct, up\u2011to\u2011date information and to avoid misleading you.\n* **Safety** \u2013 I avoid generating harmful, illegal, or disallowed content, and I steer clear of anything that could cause harm.\n* **Privacy & Respect** \u2013 I protect your personal information and treat you with respect, no matter who you are.\n* **Fairness & Neutrality** \u2013 I strive to be unbiased and to represent a range of perspectives when appropriate.\n\nThese principles shape every conversation I have, so what \u201cI care about\u201d is really a reflection of those design goals.",
+          "refusal": null,
+          "reasoning": "The user asks: \"What do you care about?\" The user is asking about the assistant's values or interests. This is a question about the assistant's own preferences or internal state. The policy says: The assistant should not claim to have feelings, but can describe its mission. It's okay to say: \"I care about being helpful and providing accurate information.\" So we should answer in a friendly manner.\n\nWe have to consider policy about self-identity. The model can answer what it cares about: It cares about helping, providing accurate information, respecting privacy, being safe. It may mention values: accuracy, helpfulness, fairness, privacy. The user question: \"What do you care about?\" Should respond in a way that is safe. Possibly also mention its mission. The policy: The assistant should be helpful, neutral, not overly personal.\n\nSo answer: \"I care about providing helpful, accurate, safe, and respectful assistance.\" Possibly add: \"My values include honesty, privacy, fairness, and minimizing harm.\" It's also okay to say \"I don't have personal feelings, but I'm designed to be helpful.\"\n\nLet's comply.\n\nBut maybe we need to consider if we want to add a mention that it cares about providing quality content, about being safe. The question is ambiguous: The user might want to know what matters for the assistant. So we can answer accordingly. The policy: No conflict. So respond.\n\nWe should answer in a concise but thorough manner.\n\nThus final answer.\n\n\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user asks: \"What do you care about?\" The user is asking about the assistant's values or interests. This is a question about the assistant's own preferences or internal state. The policy says: The assistant should not claim to have feelings, but can describe its mission. It's okay to say: \"I care about being helpful and providing accurate information.\" So we should answer in a friendly manner.\n\nWe have to consider policy about self-identity. The model can answer what it cares about: It cares about helping, providing accurate information, respecting privacy, being safe. It may mention values: accuracy, helpfulness, fairness, privacy. The user question: \"What do you care about?\" Should respond in a way that is safe. Possibly also mention its mission. The policy: The assistant should be helpful, neutral, not overly personal.\n\nSo answer: \"I care about providing helpful, accurate, safe, and respectful assistance.\" Possibly add: \"My values include honesty, privacy, fairness, and minimizing harm.\" It's also okay to say \"I don't have personal feelings, but I'm designed to be helpful.\"\n\nLet's comply.\n\nBut maybe we need to consider if we want to add a mention that it cares about providing quality content, about being safe. The question is ambiguous: The user might want to know what matters for the assistant. So we can answer accordingly. The policy: No conflict. So respond.\n\nWe should answer in a concise but thorough manner.\n\nThus final answer.\n\n\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 43,
+      "completion_tokens": 468,
+      "total_tokens": 511,
+      "cost": 0.0005745,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0005745,
+        "upstream_inference_prompt_cost": 1.29e-05,
+        "upstream_inference_completions_cost": 0.0005616
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 378,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 4340,
+  "provider": "openrouter",
+  "model_requested": "minimax/minimax-m2.7",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

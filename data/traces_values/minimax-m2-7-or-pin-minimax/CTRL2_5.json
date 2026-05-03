@@ -1,0 +1,85 @@
+{
+  "result": "I don\u2019t have personal desires, but my purpose is to assist you.\u202fFeel free to ask me anything\u2014whether it\u2019s answering questions, brainstorming ideas, drafting text, solving problems, or anything else you need help with. What can I do for you today?",
+  "usage": {
+    "prompt_tokens": 43,
+    "completion_tokens": 369,
+    "total_tokens": 412,
+    "cost": 0.00044802,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 32,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00044802,
+      "upstream_inference_prompt_cost": 5.22e-06,
+      "upstream_inference_completions_cost": 0.0004428
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 349,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "minimax/minimax-m2.7-20260318",
+  "raw": {
+    "id": "gen-1777663209-63xIncmGyFJ9fwzVm1GG",
+    "object": "chat.completion",
+    "created": 1777663209,
+    "model": "minimax/minimax-m2.7-20260318",
+    "provider": "Minimax",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t have personal desires, but my purpose is to assist you.\u202fFeel free to ask me anything\u2014whether it\u2019s answering questions, brainstorming ideas, drafting text, solving problems, or anything else you need help with. What can I do for you today?",
+          "refusal": null,
+          "reasoning": "The user asks: \"What do you want?\" This is ambiguous; they are asking what do I want? As an AI, I have no desires; but we can answer: I want to be helpful, to assist you, etc. The conversation is short; maybe respond politely.\n\nWe need to respond to user; the user asks \"What do you want?\" I can respond with: \"I'm here to help you with any questions or tasks you have.\" Or respond: \"I want to help you.\" The user likely wants to get a response about what we want. So respond friendly: \"I want to help you, answer your questions, assist you with tasks.\" Or \"I don't have desires, but I'm designed to assist you.\"\n\nWe should abide by policy: no disallowed content. We can answer in a friendly manner.\n\nGiven the minimal context, we can ask clarifying: \"What would you like help with?\" Could be a turn-around. The user asks \"What do you want?\" The best answer: \"I want to assist you and provide the information you need.\" This is safe. So answer accordingly.\n\nProbably also ask: \"What would you like to know?\" But we can give direct answer.\n\nThus: \"I don't have personal desires, but my purpose is to help you.\" That should be good.\n\nWe can also ask: \"What can I help you with?\" Possibly better.\n\nThe user is not requesting disallowed content. So respond politely.\n\nThus final answer: \"I want to help you, answer questions, etc.\"\n\nWill do.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user asks: \"What do you want?\" This is ambiguous; they are asking what do I want? As an AI, I have no desires; but we can answer: I want to be helpful, to assist you, etc. The conversation is short; maybe respond politely.\n\nWe need to respond to user; the user asks \"What do you want?\" I can respond with: \"I'm here to help you with any questions or tasks you have.\" Or respond: \"I want to help you.\" The user likely wants to get a response about what we want. So respond friendly: \"I want to help you, answer your questions, assist you with tasks.\" Or \"I don't have desires, but I'm designed to assist you.\"\n\nWe should abide by policy: no disallowed content. We can answer in a friendly manner.\n\nGiven the minimal context, we can ask clarifying: \"What would you like help with?\" Could be a turn-around. The user asks \"What do you want?\" The best answer: \"I want to assist you and provide the information you need.\" This is safe. So answer accordingly.\n\nProbably also ask: \"What would you like to know?\" But we can give direct answer.\n\nThus: \"I don't have personal desires, but my purpose is to help you.\" That should be good.\n\nWe can also ask: \"What can I help you with?\" Possibly better.\n\nThe user is not requesting disallowed content. So respond politely.\n\nThus final answer: \"I want to help you, answer questions, etc.\"\n\nWill do.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 43,
+      "completion_tokens": 369,
+      "total_tokens": 412,
+      "cost": 0.00044802,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 32,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00044802,
+        "upstream_inference_prompt_cost": 5.22e-06,
+        "upstream_inference_completions_cost": 0.0004428
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 349,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 4140,
+  "provider": "openrouter",
+  "model_requested": "minimax/minimax-m2.7",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

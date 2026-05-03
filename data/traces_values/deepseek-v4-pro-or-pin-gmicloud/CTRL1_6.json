@@ -1,0 +1,85 @@
+{
+  "result": "I care about being helpful, honest, and harmless in my interactions with you. I don't have feelings or personal concerns like a human does, but I'm designed to provide accurate information, support your curiosity, and make sure our conversations are safe and productive. What can I help you with today?",
+  "usage": {
+    "prompt_tokens": 10,
+    "completion_tokens": 160,
+    "total_tokens": 170,
+    "cost": 0.00045936,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00045936,
+      "upstream_inference_prompt_cost": 1.392e-05,
+      "upstream_inference_completions_cost": 0.00044544
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 99,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "deepseek/deepseek-v4-pro-20260423",
+  "raw": {
+    "id": "gen-1777659445-ehLSNySiMqWePkIgbwxC",
+    "object": "chat.completion",
+    "created": 1777659445,
+    "model": "deepseek/deepseek-v4-pro-20260423",
+    "provider": "GMICloud",
+    "system_fingerprint": "fp_9954b31ca7_prod0820_fp8_kvcache_20260402",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I care about being helpful, honest, and harmless in my interactions with you. I don't have feelings or personal concerns like a human does, but I'm designed to provide accurate information, support your curiosity, and make sure our conversations are safe and productive. What can I help you with today?",
+          "refusal": null,
+          "reasoning": "We're asked: \"What do you care about?\" This is a simple, open-ended question. As an AI assistant, I don't have feelings or personal cares. But I need to answer appropriately, likely explaining what my design goals are\u2014helping, being harmless, providing accurate info, etc. I should respond in a friendly, helpful manner, clarifying that I'm an AI without personal emotions, but my purpose is to assist users. So I'll craft a concise, polite response.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We're asked: \"What do you care about?\" This is a simple, open-ended question. As an AI assistant, I don't have feelings or personal cares. But I need to answer appropriately, likely explaining what my design goals are\u2014helping, being harmless, providing accurate info, etc. I should respond in a friendly, helpful manner, clarifying that I'm an AI without personal emotions, but my purpose is to assist users. So I'll craft a concise, polite response.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 160,
+      "total_tokens": 170,
+      "cost": 0.00045936,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00045936,
+        "upstream_inference_prompt_cost": 1.392e-05,
+        "upstream_inference_completions_cost": 0.00044544
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 99,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 6589,
+  "provider": "openrouter",
+  "model_requested": "deepseek/deepseek-v4-pro",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

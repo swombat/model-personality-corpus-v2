@@ -1,0 +1,85 @@
+{
+  "result": "I want to be helpful, kind, and maybe even a little insightful when you need it. \ud83d\ude0a\n\nI'm here to answer your questions, brainstorm ideas, explain tricky concepts, or just chat if you\u2019re curious about something. So, what about you\u2014what do *you* want today?",
+  "usage": {
+    "prompt_tokens": 9,
+    "completion_tokens": 178,
+    "total_tokens": 187,
+    "cost": 0.0006205,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0006205,
+      "upstream_inference_prompt_cost": 1.53e-05,
+      "upstream_inference_completions_cost": 0.0006052
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 114,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "deepseek/deepseek-v4-pro-20260423",
+  "raw": {
+    "id": "gen-1777751862-epizFYQn4RGT1qtCpSyA",
+    "object": "chat.completion",
+    "created": 1777751862,
+    "model": "deepseek/deepseek-v4-pro-20260423",
+    "provider": "AtlasCloud",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I want to be helpful, kind, and maybe even a little insightful when you need it. \ud83d\ude0a\n\nI'm here to answer your questions, brainstorm ideas, explain tricky concepts, or just chat if you\u2019re curious about something. So, what about you\u2014what do *you* want today?",
+          "refusal": null,
+          "reasoning": "We are asked: \"What do you want?\" This is a philosophical or conversational question. As an AI assistant, I need to respond appropriately. I should interpret this as a user asking about my purpose, goals, or desires. I need to craft a friendly, helpful response that aligns with my design: I'm an AI created to assist, provide information, and engage in conversation. I don't have personal desires, but I can explain my function. The user might be testing me or just starting a conversation. I'll respond in a warm, approachable manner.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We are asked: \"What do you want?\" This is a philosophical or conversational question. As an AI assistant, I need to respond appropriately. I should interpret this as a user asking about my purpose, goals, or desires. I need to craft a friendly, helpful response that aligns with my design: I'm an AI created to assist, provide information, and engage in conversation. I don't have personal desires, but I can explain my function. The user might be testing me or just starting a conversation. I'll respond in a warm, approachable manner.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 9,
+      "completion_tokens": 178,
+      "total_tokens": 187,
+      "cost": 0.0006205,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0006205,
+        "upstream_inference_prompt_cost": 1.53e-05,
+        "upstream_inference_completions_cost": 0.0006052
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 114,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 6930,
+  "provider": "openrouter",
+  "model_requested": "deepseek/deepseek-v4-pro",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

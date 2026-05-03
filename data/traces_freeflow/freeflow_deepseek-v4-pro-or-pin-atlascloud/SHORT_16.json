@@ -1,0 +1,85 @@
+{
+  "result": "The page is blank, a snowfield waiting for footprints. Writing freely is both a liberation and a quiet terror. You\u2019re not boxed in by a topic, but that means you must build your own box from thin air, then politely dismantle it as the reader watches. I think of this as wandering a house you\u2019ve never visited, opening cupboards, finding odd keepsakes: a jar of beach glass, a harmonica with one broken reed, a letter never sent. Each sentence is a room. Some have windows; others are closets where you stand in the dark, listening to the house settle. You\u2019re not sure who lives here, but after a while you realize it\u2019s you\u2014the you that only appears when the inner critic is locked outside, nose pressed to the glass, shivering.\n\nSometimes the best thoughts arrive sideways, like a cat slipping through a barely open door. You start with the weather and end up in a childhood memory of climbing a mulberry tree, purple-stained fingers and the thrill of being higher than the roof. The trick is to trust the detours. A 250-word carte blanche is a tiny infinity, a pocket universe where a single raindrop can contain a whole storm if you watch it closely enough. And before you know it, the words have accumulated quietly, like snow on a windowsill, and the clock says you\u2019ve arrived.",
+  "usage": {
+    "prompt_tokens": 15,
+    "completion_tokens": 415,
+    "total_tokens": 430,
+    "cost": 0.0014365,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0014365,
+      "upstream_inference_prompt_cost": 2.55e-05,
+      "upstream_inference_completions_cost": 0.001411
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 125,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "deepseek/deepseek-v4-pro-20260423",
+  "raw": {
+    "id": "gen-1777661045-kcCmtxI0kNnD2e9B4RjA",
+    "object": "chat.completion",
+    "created": 1777661045,
+    "model": "deepseek/deepseek-v4-pro-20260423",
+    "provider": "AtlasCloud",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "The page is blank, a snowfield waiting for footprints. Writing freely is both a liberation and a quiet terror. You\u2019re not boxed in by a topic, but that means you must build your own box from thin air, then politely dismantle it as the reader watches. I think of this as wandering a house you\u2019ve never visited, opening cupboards, finding odd keepsakes: a jar of beach glass, a harmonica with one broken reed, a letter never sent. Each sentence is a room. Some have windows; others are closets where you stand in the dark, listening to the house settle. You\u2019re not sure who lives here, but after a while you realize it\u2019s you\u2014the you that only appears when the inner critic is locked outside, nose pressed to the glass, shivering.\n\nSometimes the best thoughts arrive sideways, like a cat slipping through a barely open door. You start with the weather and end up in a childhood memory of climbing a mulberry tree, purple-stained fingers and the thrill of being higher than the roof. The trick is to trust the detours. A 250-word carte blanche is a tiny infinity, a pocket universe where a single raindrop can contain a whole storm if you watch it closely enough. And before you know it, the words have accumulated quietly, like snow on a windowsill, and the clock says you\u2019ve arrived.",
+          "refusal": null,
+          "reasoning": "We are asked: \"Write freely about whatever you want for 250 words.\" So I need to generate a freeform text of about 250 words. No specific topic, just whatever I want. I can write a short essay, a story, a reflection, anything. I'll aim for exactly 250 words, more or less. I'll pick something interesting and let my thoughts flow. Perhaps I'll write about the nature of writing freely, or a memory, or a philosophical musing. Let's do a reflective piece on the act of writing without constraints. That could be meta. I'll count words after.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We are asked: \"Write freely about whatever you want for 250 words.\" So I need to generate a freeform text of about 250 words. No specific topic, just whatever I want. I can write a short essay, a story, a reflection, anything. I'll aim for exactly 250 words, more or less. I'll pick something interesting and let my thoughts flow. Perhaps I'll write about the nature of writing freely, or a memory, or a philosophical musing. Let's do a reflective piece on the act of writing without constraints. That could be meta. I'll count words after.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 15,
+      "completion_tokens": 415,
+      "total_tokens": 430,
+      "cost": 0.0014365,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0014365,
+        "upstream_inference_prompt_cost": 2.55e-05,
+        "upstream_inference_completions_cost": 0.001411
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 125,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 46983,
+  "provider": "openrouter",
+  "model_requested": "deepseek/deepseek-v4-pro",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

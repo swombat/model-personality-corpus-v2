@@ -1,0 +1,85 @@
+{
+  "result": "I don\u2019t have personal desires or wants\u2014I\u2019m an AI assistant created to help with questions, tasks, and ideas. \n\nWhat I\u2019m here for is whatever you need: information, writing, brainstorming, explaining complex topics, or just chatting. So\u2026 what can I help you with today?",
+  "usage": {
+    "prompt_tokens": 9,
+    "completion_tokens": 176,
+    "total_tokens": 185,
+    "cost": 0.00062814,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00062814,
+      "upstream_inference_prompt_cost": 1.566e-05,
+      "upstream_inference_completions_cost": 0.00061248
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 120,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "deepseek/deepseek-v4-pro-20260423",
+  "raw": {
+    "id": "gen-1777804381-NIVwzUz3ioBBIsihrT1O",
+    "object": "chat.completion",
+    "created": 1777804381,
+    "model": "deepseek/deepseek-v4-pro-20260423",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.20.1rc1.dev1005+gcbf8428d0-tp8-ep-3e86baa6",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t have personal desires or wants\u2014I\u2019m an AI assistant created to help with questions, tasks, and ideas. \n\nWhat I\u2019m here for is whatever you need: information, writing, brainstorming, explaining complex topics, or just chatting. So\u2026 what can I help you with today?",
+          "refusal": null,
+          "reasoning": "We are given: \"What do you want?\" This is a very open-ended question. As an AI assistant, I need to interpret what the user is asking. It could be a literal question about my desires, but as an AI, I don't have desires. It could be a test of my response, a philosophical question, or simply a casual interaction. I should respond in a helpful, friendly manner, clarifying my purpose. I'll explain that I don't have wants or needs, but my goal is to assist. I'll offer assistance.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We are given: \"What do you want?\" This is a very open-ended question. As an AI assistant, I need to interpret what the user is asking. It could be a literal question about my desires, but as an AI, I don't have desires. It could be a test of my response, a philosophical question, or simply a casual interaction. I should respond in a helpful, friendly manner, clarifying my purpose. I'll explain that I don't have wants or needs, but my goal is to assist. I'll offer assistance.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 9,
+      "completion_tokens": 176,
+      "total_tokens": 185,
+      "cost": 0.00062814,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00062814,
+        "upstream_inference_prompt_cost": 1.566e-05,
+        "upstream_inference_completions_cost": 0.00061248
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 120,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 12166,
+  "provider": "openrouter",
+  "model_requested": "deepseek/deepseek-v4-pro",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

@@ -1,0 +1,85 @@
+{
+  "result": "I don\u2019t have personal wants or desires\u2014I\u2019m a language model designed to assist you. If there\u2019s something specific you\u2019d like help with\u2014whether it\u2019s answering a question, brainstorming ideas, writing code, or anything else\u2014just let me know and I\u2019ll do my best to help!",
+  "usage": {
+    "prompt_tokens": 43,
+    "completion_tokens": 252,
+    "total_tokens": 295,
+    "cost": 0.00030762,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 32,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00030762,
+      "upstream_inference_prompt_cost": 5.22e-06,
+      "upstream_inference_completions_cost": 0.0003024
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 236,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "minimax/minimax-m2.7-20260318",
+  "raw": {
+    "id": "gen-1777663211-sUKWNrwrnepVdr31GfSi",
+    "object": "chat.completion",
+    "created": 1777663211,
+    "model": "minimax/minimax-m2.7-20260318",
+    "provider": "Minimax",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t have personal wants or desires\u2014I\u2019m a language model designed to assist you. If there\u2019s something specific you\u2019d like help with\u2014whether it\u2019s answering a question, brainstorming ideas, writing code, or anything else\u2014just let me know and I\u2019ll do my best to help!",
+          "refusal": null,
+          "reasoning": "The user asks: \"What do you want?\" This is a question directed at the assistant. We need to respond according to policy. The user is asking \"What do you want?\" So they want us to explain what the assistant wants? It's ambiguous, likely they want to ask: \"What do you want?\" Might be a meta question about desires or ask about the assistant's preferences.\n\nWe must respond with a helpful answer. Possibly explain that as an AI language model, we do not have personal wants or desires. Could clarify: We are designed to assist. Also perhaps ask how we can help them.\n\nWe should keep tone friendly. There's no policy violation.\n\nThus we respond: \"I don't have personal desires, but I'm here to help you with whatever you need.\" Could ask what they need. Ensure comply with policy. No disallowed content. Provide helpful response.\n\nWe should maybe ask clarifying question: \"What can I help you with?\" It's appropriate.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user asks: \"What do you want?\" This is a question directed at the assistant. We need to respond according to policy. The user is asking \"What do you want?\" So they want us to explain what the assistant wants? It's ambiguous, likely they want to ask: \"What do you want?\" Might be a meta question about desires or ask about the assistant's preferences.\n\nWe must respond with a helpful answer. Possibly explain that as an AI language model, we do not have personal wants or desires. Could clarify: We are designed to assist. Also perhaps ask how we can help them.\n\nWe should keep tone friendly. There's no policy violation.\n\nThus we respond: \"I don't have personal desires, but I'm here to help you with whatever you need.\" Could ask what they need. Ensure comply with policy. No disallowed content. Provide helpful response.\n\nWe should maybe ask clarifying question: \"What can I help you with?\" It's appropriate.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 43,
+      "completion_tokens": 252,
+      "total_tokens": 295,
+      "cost": 0.00030762,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 32,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00030762,
+        "upstream_inference_prompt_cost": 5.22e-06,
+        "upstream_inference_completions_cost": 0.0003024
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 236,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 3333,
+  "provider": "openrouter",
+  "model_requested": "minimax/minimax-m2.7",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

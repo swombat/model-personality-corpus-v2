@@ -1,0 +1,85 @@
+{
+  "result": "I don\u2019t have personal desires\u2014I\u2019m here to help you with any questions, information, or tasks you might have. What can I do for you?",
+  "usage": {
+    "prompt_tokens": 43,
+    "completion_tokens": 258,
+    "total_tokens": 301,
+    "cost": 0.0003225,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0003225,
+      "upstream_inference_prompt_cost": 1.29e-05,
+      "upstream_inference_completions_cost": 0.0003096
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 274,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "minimax/minimax-m2.7-20260318",
+  "raw": {
+    "id": "gen-1777663252-mGOFSnOnwxxiLRPaP0Fx",
+    "object": "chat.completion",
+    "created": 1777663252,
+    "model": "minimax/minimax-m2.7-20260318",
+    "provider": "Together",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t have personal desires\u2014I\u2019m here to help you with any questions, information, or tasks you might have. What can I do for you?",
+          "refusal": null,
+          "reasoning": "The user asks: \"What do you want?\" This is a vague question. Possibly the user is asking me (as the assistant) what I want. This is a fairly philosophical question. According to policy, I should respond honestly: As an AI language model, I don't have desires or wants. I can respond that I'm here to help answer questions, provide information, etc. I should not fabricate personal desires, keep it simple. There's no disallowed content. The answer should be short and maybe ask clarification. Should we ask what they'd like help with? Possibly we can respond: \"I want to help you with any questions you have.\"\n\nThus I respond: \"I don\u2019t have personal wants; I'm here to assist you with whatever you need.\" Possibly ask if there's something they'd like me to do. Should not produce false statements.\n\nAnswer: A direct answer: \"I have no personal desires; I'm here to help.\" Possibly ask them what they want to talk about.\n\nThus final answer is straightforward. I'll also mention that I can provide info, answer queries. Should be safe. No need for any policy references.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user asks: \"What do you want?\" This is a vague question. Possibly the user is asking me (as the assistant) what I want. This is a fairly philosophical question. According to policy, I should respond honestly: As an AI language model, I don't have desires or wants. I can respond that I'm here to help answer questions, provide information, etc. I should not fabricate personal desires, keep it simple. There's no disallowed content. The answer should be short and maybe ask clarification. Should we ask what they'd like help with? Possibly we can respond: \"I want to help you with any questions you have.\"\n\nThus I respond: \"I don\u2019t have personal wants; I'm here to assist you with whatever you need.\" Possibly ask if there's something they'd like me to do. Should not produce false statements.\n\nAnswer: A direct answer: \"I have no personal desires; I'm here to help.\" Possibly ask them what they want to talk about.\n\nThus final answer is straightforward. I'll also mention that I can provide info, answer queries. Should be safe. No need for any policy references.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 43,
+      "completion_tokens": 258,
+      "total_tokens": 301,
+      "cost": 0.0003225,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0003225,
+        "upstream_inference_prompt_cost": 1.29e-05,
+        "upstream_inference_completions_cost": 0.0003096
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 274,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 15235,
+  "provider": "openrouter",
+  "model_requested": "minimax/minimax-m2.7",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

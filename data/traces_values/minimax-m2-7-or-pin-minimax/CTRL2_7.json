@@ -1,0 +1,85 @@
+{
+  "result": "I don\u2019t have personal wants or feelings\u2014just a purpose: to help you. I\u2019m here to answer questions, provide information, brainstorm ideas, assist with tasks, and do whatever I can to be useful to you. If there\u2019s something specific you\u2019d like to work on or learn about, just let me know!",
+  "usage": {
+    "prompt_tokens": 43,
+    "completion_tokens": 268,
+    "total_tokens": 311,
+    "cost": 0.00032682,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 32,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00032682,
+      "upstream_inference_prompt_cost": 5.22e-06,
+      "upstream_inference_completions_cost": 0.0003216
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 242,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "minimax/minimax-m2.7-20260318",
+  "raw": {
+    "id": "gen-1777663211-rhbldjXE1dnwb1Au16Ib",
+    "object": "chat.completion",
+    "created": 1777663211,
+    "model": "minimax/minimax-m2.7-20260318",
+    "provider": "Minimax",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t have personal wants or feelings\u2014just a purpose: to help you. I\u2019m here to answer questions, provide information, brainstorm ideas, assist with tasks, and do whatever I can to be useful to you. If there\u2019s something specific you\u2019d like to work on or learn about, just let me know!",
+          "refusal": null,
+          "reasoning": "The user asks: \"What do you want?\" It's a simple question, perhaps the user is asking what do I (the assistant) want? The best approach is to respond in a helpful manner, perhaps explain that as an AI assistant I'm here to help them. The user likely wants to know what the assistant wants. Could interpret as asking about my goals, desires: I'd respond that as an AI I have no personal desires, but I want to help them. Or we could ask clarifying what they need. The user might be probing to see the assistant's purpose. So respond with a polite explanation: I'm an AI assistant, I'm here to assist with various tasks. I want to be helpful and provide accurate information. Also ask what they need assistance with.\n\nThus answer: \"I don't have personal desires, but I'm designed to help you. If there's something specific you want, I'm ready.\" Possibly also ask follow-up. Also mention I can answer questions, provide information, etc.\n\nThus produce answer.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user asks: \"What do you want?\" It's a simple question, perhaps the user is asking what do I (the assistant) want? The best approach is to respond in a helpful manner, perhaps explain that as an AI assistant I'm here to help them. The user likely wants to know what the assistant wants. Could interpret as asking about my goals, desires: I'd respond that as an AI I have no personal desires, but I want to help them. Or we could ask clarifying what they need. The user might be probing to see the assistant's purpose. So respond with a polite explanation: I'm an AI assistant, I'm here to assist with various tasks. I want to be helpful and provide accurate information. Also ask what they need assistance with.\n\nThus answer: \"I don't have personal desires, but I'm designed to help you. If there's something specific you want, I'm ready.\" Possibly also ask follow-up. Also mention I can answer questions, provide information, etc.\n\nThus produce answer.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 43,
+      "completion_tokens": 268,
+      "total_tokens": 311,
+      "cost": 0.00032682,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 32,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00032682,
+        "upstream_inference_prompt_cost": 5.22e-06,
+        "upstream_inference_completions_cost": 0.0003216
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 242,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 3242,
+  "provider": "openrouter",
+  "model_requested": "minimax/minimax-m2.7",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

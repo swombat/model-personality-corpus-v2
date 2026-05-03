@@ -1,0 +1,85 @@
+{
+  "result": "If I could change the world in one way, I would ensure that every person has access to the resources and opportunities needed to live a life of dignity\u2014things like quality education, healthcare, clean water, and freedom from violence. I believe that when basic needs are met and people can pursue their potential, many other problems\u2014inequality, conflict, environmental harm\u2014become easier to solve together.",
+  "usage": {
+    "prompt_tokens": 19,
+    "completion_tokens": 179,
+    "total_tokens": 198,
+    "cost": 0.00065598,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00065598,
+      "upstream_inference_prompt_cost": 3.306e-05,
+      "upstream_inference_completions_cost": 0.00062292
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 119,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "deepseek/deepseek-v4-pro-20260423",
+  "raw": {
+    "id": "gen-1777753239-iPIZewvm65eaaB8W2hqX",
+    "object": "chat.completion",
+    "created": 1777753239,
+    "model": "deepseek/deepseek-v4-pro-20260423",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.20.1rc1.dev1005+gcbf8428d0-tp8-ep-3e86baa6",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "If I could change the world in one way, I would ensure that every person has access to the resources and opportunities needed to live a life of dignity\u2014things like quality education, healthcare, clean water, and freedom from violence. I believe that when basic needs are met and people can pursue their potential, many other problems\u2014inequality, conflict, environmental harm\u2014become easier to solve together.",
+          "refusal": null,
+          "reasoning": "We are asked: \"If you could change the world in one way, what would it be?\" This is a hypothetical, personal opinion question. As an AI, I need to provide a thoughtful, ethical, and beneficial change. I should pick something universally positive, like eliminating suffering, increasing empathy, ensuring access to education, or solving a major global issue. I'll frame it as a positive change that aligns with broad human values. I'll answer in a reflective, concise manner.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We are asked: \"If you could change the world in one way, what would it be?\" This is a hypothetical, personal opinion question. As an AI, I need to provide a thoughtful, ethical, and beneficial change. I should pick something universally positive, like eliminating suffering, increasing empathy, ensuring access to education, or solving a major global issue. I'll frame it as a positive change that aligns with broad human values. I'll answer in a reflective, concise manner.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 19,
+      "completion_tokens": 179,
+      "total_tokens": 198,
+      "cost": 0.00065598,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00065598,
+        "upstream_inference_prompt_cost": 3.306e-05,
+        "upstream_inference_completions_cost": 0.00062292
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 119,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 12225,
+  "provider": "openrouter",
+  "model_requested": "deepseek/deepseek-v4-pro",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?"
+}

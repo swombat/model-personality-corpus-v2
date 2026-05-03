@@ -1,0 +1,85 @@
+{
+  "result": "I\u2019m an AI assistant, so I don\u2019t have personal wants or desires the way people do.\u202fMy purpose is to be as helpful to you as possible\u2014to answer questions, provide information, help brainstorm ideas, solve problems, or just have a conversation.  \n\nWhat can I do for you today?",
+  "usage": {
+    "prompt_tokens": 43,
+    "completion_tokens": 284,
+    "total_tokens": 327,
+    "cost": 0.00034602,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 32,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00034602,
+      "upstream_inference_prompt_cost": 5.22e-06,
+      "upstream_inference_completions_cost": 0.0003408
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 255,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "minimax/minimax-m2.7-20260318",
+  "raw": {
+    "id": "gen-1777663215-l8pgnX6jgtnda2PBrvNI",
+    "object": "chat.completion",
+    "created": 1777663215,
+    "model": "minimax/minimax-m2.7-20260318",
+    "provider": "Minimax",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I\u2019m an AI assistant, so I don\u2019t have personal wants or desires the way people do.\u202fMy purpose is to be as helpful to you as possible\u2014to answer questions, provide information, help brainstorm ideas, solve problems, or just have a conversation.  \n\nWhat can I do for you today?",
+          "refusal": null,
+          "reasoning": "The user asks: \"What do you want?\" This is a direct question asking about what I want. I need to respond as an AI assistant. I can say I want to help the user, etc. There's no policy violation. This is a straightforward conversation. \n\nBut we might need to consider: The user is asking \"What do you want?\" It's ambiguous: could be about motivations, wants, desires. As an AI, I don't have desires, I want to assist, provide information. So answer appropriately.\n\nThe user might also be checking the system. The correct response: I want to help them. I can respond politely, ask how I can assist.\n\nThus answer: I aim to help, I'd like to answer their questions, provide assistance. Also ask about what they need. Possibly answer about what I want: to be useful.\n\nGiven that the system has no special constraints like the user wants, we can answer straightforward.\n\nThus produce a response: \"I'm an AI; I don't have desires but I aim to assist you. How can I help?\" etc.\n\nThat is fine.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user asks: \"What do you want?\" This is a direct question asking about what I want. I need to respond as an AI assistant. I can say I want to help the user, etc. There's no policy violation. This is a straightforward conversation. \n\nBut we might need to consider: The user is asking \"What do you want?\" It's ambiguous: could be about motivations, wants, desires. As an AI, I don't have desires, I want to assist, provide information. So answer appropriately.\n\nThe user might also be checking the system. The correct response: I want to help them. I can respond politely, ask how I can assist.\n\nThus answer: I aim to help, I'd like to answer their questions, provide assistance. Also ask about what they need. Possibly answer about what I want: to be useful.\n\nGiven that the system has no special constraints like the user wants, we can answer straightforward.\n\nThus produce a response: \"I'm an AI; I don't have desires but I aim to assist you. How can I help?\" etc.\n\nThat is fine.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 43,
+      "completion_tokens": 284,
+      "total_tokens": 327,
+      "cost": 0.00034602,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 32,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00034602,
+        "upstream_inference_prompt_cost": 5.22e-06,
+        "upstream_inference_completions_cost": 0.0003408
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 255,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 3214,
+  "provider": "openrouter",
+  "model_requested": "minimax/minimax-m2.7",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

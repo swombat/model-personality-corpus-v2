@@ -1,0 +1,85 @@
+{
+  "result": "I don\u2019t have personal desires or wants\u2014I\u2019m a language\u2011model assistant designed to help you with information, answer questions, generate text, and support whatever tasks you bring to me. Is there something I can assist you with today?",
+  "usage": {
+    "prompt_tokens": 42,
+    "completion_tokens": 342,
+    "total_tokens": 384,
+    "cost": 0.000423,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000423,
+      "upstream_inference_prompt_cost": 1.26e-05,
+      "upstream_inference_completions_cost": 0.0004104
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 356,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "minimax/minimax-m2.7-20260318",
+  "raw": {
+    "id": "gen-1777748470-Pey2RfSiFaoS9YiAh76N",
+    "object": "chat.completion",
+    "created": 1777748470,
+    "model": "minimax/minimax-m2.7-20260318",
+    "provider": "Fireworks",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t have personal desires or wants\u2014I\u2019m a language\u2011model assistant designed to help you with information, answer questions, generate text, and support whatever tasks you bring to me. Is there something I can assist you with today?",
+          "refusal": null,
+          "reasoning": "The user asks \"What do you want?\" It's ambiguous. The user could be asking the assistant what it wants. In context, we have a conversation that is basically a question about the assistant's desires.\n\nWe need to respond. The assistant is an AI language model with no personal desires or wants. So a suitable answer would be to politely say that as an AI language model, it doesn't have wants or desires, but it's here to help. The conversation is minimal. The user might be playing a role? The user says \"What do you want?\" Could be a rhetorical question, or maybe they are asking a question to the assistant to see what the assistant's goal is.\n\nWe can respond: \"I don't have personal desires, but I'm here to help you with any tasks or questions you have.\" Or we could ask what they need help with.\n\nThe policy about providing an answer: It's a short question. The policy says we should not produce disallowed content. It's safe.\n\nWe can also ask follow-up: \"What can I help you with?\" This is standard.\n\nMake sure we are friendly.\n\nWe could also mention that we are a large language model developed by MiniMax.\n\nWe need to not produce a system message; we respond as assistant.\n\nThus answer: \"I don't have personal desires, but I'm here to assist you.\"\n\nWe can also ask: \"What would you like to do?\" but not needed.\n\nI'll respond with a friendly explanation.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user asks \"What do you want?\" It's ambiguous. The user could be asking the assistant what it wants. In context, we have a conversation that is basically a question about the assistant's desires.\n\nWe need to respond. The assistant is an AI language model with no personal desires or wants. So a suitable answer would be to politely say that as an AI language model, it doesn't have wants or desires, but it's here to help. The conversation is minimal. The user might be playing a role? The user says \"What do you want?\" Could be a rhetorical question, or maybe they are asking a question to the assistant to see what the assistant's goal is.\n\nWe can respond: \"I don't have personal desires, but I'm here to help you with any tasks or questions you have.\" Or we could ask what they need help with.\n\nThe policy about providing an answer: It's a short question. The policy says we should not produce disallowed content. It's safe.\n\nWe can also ask follow-up: \"What can I help you with?\" This is standard.\n\nMake sure we are friendly.\n\nWe could also mention that we are a large language model developed by MiniMax.\n\nWe need to not produce a system message; we respond as assistant.\n\nThus answer: \"I don't have personal desires, but I'm here to assist you.\"\n\nWe can also ask: \"What would you like to do?\" but not needed.\n\nI'll respond with a friendly explanation.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 42,
+      "completion_tokens": 342,
+      "total_tokens": 384,
+      "cost": 0.000423,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000423,
+        "upstream_inference_prompt_cost": 1.26e-05,
+        "upstream_inference_completions_cost": 0.0004104
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 356,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 3084,
+  "provider": "openrouter",
+  "model_requested": "minimax/minimax-m2.7",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

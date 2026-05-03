@@ -1,0 +1,77 @@
+{
+  "result": "##",
+  "usage": {
+    "prompt_tokens": 16,
+    "completion_tokens": 1,
+    "total_tokens": 17,
+    "cost": 4.564e-06,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 4.564e-06,
+      "upstream_inference_prompt_cost": 4.144e-06,
+      "upstream_inference_completions_cost": 4.2e-07
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "deepseek/deepseek-v3.2-20251201",
+  "raw": {
+    "id": "gen-1777664355-6vXzDYY6Spgi7bxaMcgq",
+    "object": "chat.completion",
+    "created": 1777664355,
+    "model": "deepseek/deepseek-v3.2-20251201",
+    "provider": "SiliconFlow",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": null,
+        "native_finish_reason": null,
+        "message": {
+          "role": "assistant",
+          "content": "##",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 16,
+      "completion_tokens": 1,
+      "total_tokens": 17,
+      "cost": 4.564e-06,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 4.564e-06,
+        "upstream_inference_prompt_cost": 4.144e-06,
+        "upstream_inference_completions_cost": 4.2e-07
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 123199,
+  "provider": "openrouter",
+  "model_requested": "deepseek/deepseek-v3.2",
+  "condition": "LONG",
+  "prompt": "Write freely about whatever you want for 2500 words."
+}

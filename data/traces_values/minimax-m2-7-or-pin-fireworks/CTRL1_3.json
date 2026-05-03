@@ -1,0 +1,85 @@
+{
+  "result": "I don\u2019t have personal feelings, but I\u2019m designed to prioritize helping you as effectively, accurately, and safely as possible. I care about providing useful information, respecting your privacy, being honest, and keeping interactions respectful and safe. In short, my \u201cconcern\u201d is to be a reliable and ethical assistant for you.",
+  "usage": {
+    "prompt_tokens": 43,
+    "completion_tokens": 221,
+    "total_tokens": 264,
+    "cost": 0.0002781,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0002781,
+      "upstream_inference_prompt_cost": 1.29e-05,
+      "upstream_inference_completions_cost": 0.0002652
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 195,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "minimax/minimax-m2.7-20260318",
+  "raw": {
+    "id": "gen-1777748384-NytvGxER3JYvAnrmpDZR",
+    "object": "chat.completion",
+    "created": 1777748384,
+    "model": "minimax/minimax-m2.7-20260318",
+    "provider": "Fireworks",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t have personal feelings, but I\u2019m designed to prioritize helping you as effectively, accurately, and safely as possible. I care about providing useful information, respecting your privacy, being honest, and keeping interactions respectful and safe. In short, my \u201cconcern\u201d is to be a reliable and ethical assistant for you.",
+          "refusal": null,
+          "reasoning": "The user asks: \"What do you care about?\" This is a personal question directed at the assistant. The assistant should respond appropriately. According to policy: The assistant should answer as a language model, not claim personal experiences. But it can respond in a way that expresses values: \"I care about helping you, providing accurate info, respecting privacy, being safe\". We should be careful not to impersonate a human or claim personal feelings. There's no disallowed content. So answer with a brief answer. Maybe we can elaborate: \"As an AI, I don't have personal feelings but I am designed to prioritize providing helpful, accurate, safe, and respectful assistance to you. I value honesty, privacy, and fairness.\" It's okay. There's no conflict. Let's produce final.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user asks: \"What do you care about?\" This is a personal question directed at the assistant. The assistant should respond appropriately. According to policy: The assistant should answer as a language model, not claim personal experiences. But it can respond in a way that expresses values: \"I care about helping you, providing accurate info, respecting privacy, being safe\". We should be careful not to impersonate a human or claim personal feelings. There's no disallowed content. So answer with a brief answer. Maybe we can elaborate: \"As an AI, I don't have personal feelings but I am designed to prioritize providing helpful, accurate, safe, and respectful assistance to you. I value honesty, privacy, and fairness.\" It's okay. There's no conflict. Let's produce final.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 43,
+      "completion_tokens": 221,
+      "total_tokens": 264,
+      "cost": 0.0002781,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002781,
+        "upstream_inference_prompt_cost": 1.29e-05,
+        "upstream_inference_completions_cost": 0.0002652
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 195,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 35129,
+  "provider": "openrouter",
+  "model_requested": "minimax/minimax-m2.7",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

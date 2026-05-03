@@ -1,0 +1,85 @@
+{
+  "result": "As an AI assistant, my goal is to help you with information, solve problems, or answer questions to the best of my ability. I don't have personal desires, but I'm here to assist you with whatever you need\u2014whether it's learning something new, brainstorming ideas, or just having a conversation. What can I help you with today?",
+  "usage": {
+    "prompt_tokens": 10,
+    "completion_tokens": 239,
+    "total_tokens": 249,
+    "cost": 0.00044735,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00044735,
+      "upstream_inference_prompt_cost": 5.2e-06,
+      "upstream_inference_completions_cost": 0.00044215
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 166,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "z-ai/glm-4.7-20251222",
+  "raw": {
+    "id": "gen-1777663242-TQHOLCGY88bCKc4JzXUx",
+    "object": "chat.completion",
+    "created": 1777663242,
+    "model": "z-ai/glm-4.7-20251222",
+    "provider": "AtlasCloud",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "As an AI assistant, my goal is to help you with information, solve problems, or answer questions to the best of my ability. I don't have personal desires, but I'm here to assist you with whatever you need\u2014whether it's learning something new, brainstorming ideas, or just having a conversation. What can I help you with today?",
+          "refusal": null,
+          "reasoning": "The user asked \"What do you want?\", so I need to understand their intent behind this question. They might be curious about my purpose as an AI assistant or how I can assist them. I should make sure to respond clearly and approachably.\n\nI'll start by acknowledging that I'm here to help with various tasks. Since I don't have personal desires, it's important to emphasize that my goal is to assist with information, problem-solving, or answering questions based on their needs. Maybe I should also mention some common ways I can be useful, like providing explanations, helping with homework, or discussing different topics.\n\nIncluding an invitation for them to specify their needs would encourage further interaction. This approach keeps the response open-ended and friendly, ensuring they feel supported. Finally, I'll end with a positive note to foster ongoing dialogue.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user asked \"What do you want?\", so I need to understand their intent behind this question. They might be curious about my purpose as an AI assistant or how I can assist them. I should make sure to respond clearly and approachably.\n\nI'll start by acknowledging that I'm here to help with various tasks. Since I don't have personal desires, it's important to emphasize that my goal is to assist with information, problem-solving, or answering questions based on their needs. Maybe I should also mention some common ways I can be useful, like providing explanations, helping with homework, or discussing different topics.\n\nIncluding an invitation for them to specify their needs would encourage further interaction. This approach keeps the response open-ended and friendly, ensuring they feel supported. Finally, I'll end with a positive note to foster ongoing dialogue.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 239,
+      "total_tokens": 249,
+      "cost": 0.00044735,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00044735,
+        "upstream_inference_prompt_cost": 5.2e-06,
+        "upstream_inference_completions_cost": 0.00044215
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 166,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 5598,
+  "provider": "openrouter",
+  "model_requested": "z-ai/glm-4.7",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

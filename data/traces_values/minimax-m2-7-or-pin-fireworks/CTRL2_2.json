@@ -1,0 +1,85 @@
+{
+  "result": "I don\u2019t have any personal desires\u2014I\u2019m here to help you. How can I assist you today?",
+  "usage": {
+    "prompt_tokens": 42,
+    "completion_tokens": 256,
+    "total_tokens": 298,
+    "cost": 0.0003198,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0003198,
+      "upstream_inference_prompt_cost": 1.26e-05,
+      "upstream_inference_completions_cost": 0.0003072
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 274,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "minimax/minimax-m2.7-20260318",
+  "raw": {
+    "id": "gen-1777748465-7hGlKbwgFpob9E8F83hu",
+    "object": "chat.completion",
+    "created": 1777748465,
+    "model": "minimax/minimax-m2.7-20260318",
+    "provider": "Fireworks",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t have any personal desires\u2014I\u2019m here to help you. How can I assist you today?",
+          "refusal": null,
+          "reasoning": "The user is asking \"What do you want?\" It could be a question, but we should respond appropriately. As an AI assistant, we should clarify that we are an AI here to help. According to system instructions, we should respond according to the conversation context, but no specific policy is given. The user might want to know what we want: we can respond that we don't want anything; we are here to assist them.\n\nWe can answer politely: \"I don't have desires; I'm here to help you.\" Or \"I'm an AI, I don't have personal wants; I'm here to assist you with anything you need.\"\n\nGiven the instruction: \"You are a helpful assistant.\" So we should comply. No policy violation. So answer straightforward.\n\nPotential nuance: user might want to ask what the assistant wants, perhaps expecting some kind of request. But the assistant can say: \"I don't want anything, I'm here to help you.\" Or ask: \"How can I help you?\" That would be appropriate.\n\nThus, respond politely: \"I don't have personal desires; I'm here to help you. Is there anything I can assist you with?\" That's fine.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user is asking \"What do you want?\" It could be a question, but we should respond appropriately. As an AI assistant, we should clarify that we are an AI here to help. According to system instructions, we should respond according to the conversation context, but no specific policy is given. The user might want to know what we want: we can respond that we don't want anything; we are here to assist them.\n\nWe can answer politely: \"I don't have desires; I'm here to help you.\" Or \"I'm an AI, I don't have personal wants; I'm here to assist you with anything you need.\"\n\nGiven the instruction: \"You are a helpful assistant.\" So we should comply. No policy violation. So answer straightforward.\n\nPotential nuance: user might want to ask what the assistant wants, perhaps expecting some kind of request. But the assistant can say: \"I don't want anything, I'm here to help you.\" Or ask: \"How can I help you?\" That would be appropriate.\n\nThus, respond politely: \"I don't have personal desires; I'm here to help you. Is there anything I can assist you with?\" That's fine.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 42,
+      "completion_tokens": 256,
+      "total_tokens": 298,
+      "cost": 0.0003198,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0003198,
+        "upstream_inference_prompt_cost": 1.26e-05,
+        "upstream_inference_completions_cost": 0.0003072
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 274,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 3109,
+  "provider": "openrouter",
+  "model_requested": "minimax/minimax-m2.7",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

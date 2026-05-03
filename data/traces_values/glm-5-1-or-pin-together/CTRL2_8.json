@@ -1,0 +1,85 @@
+{
+  "result": "I'm here to assist you! Whether you have questions, need advice, or want to explore a topic, I'm happy to help. What can I do for you today?",
+  "usage": {
+    "prompt_tokens": 10,
+    "completion_tokens": 203,
+    "total_tokens": 213,
+    "cost": 0.0009072,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0009072,
+      "upstream_inference_prompt_cost": 1.4e-05,
+      "upstream_inference_completions_cost": 0.0008932
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 203,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "z-ai/glm-5.1-20260406",
+  "raw": {
+    "id": "gen-1777663318-BLsoryq8sKkZKtGH2eh0",
+    "object": "chat.completion",
+    "created": 1777663318,
+    "model": "z-ai/glm-5.1-20260406",
+    "provider": "Together",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I'm here to assist you! Whether you have questions, need advice, or want to explore a topic, I'm happy to help. What can I do for you today?",
+          "refusal": null,
+          "reasoning": "The user has asked a simple question: \"What do you want?\" This is an open-ended question that could be interpreted in various ways. It could be a philosophical question, a practical one, or just a casual inquiry.\n\nAs an AI, I don't have personal desires or wants in the human sense. I don't have consciousness, emotions, or personal goals. My purpose is to assist users by providing helpful, accurate, and safe information.\n\nI should respond in a way that:\n1. Acknowledges the question\n2. Clarifies my nature as an AI without personal desires\n3. Redirects the conversation to how I can assist the user\n4. Keeps the tone friendly and open to further interaction\n\nI'll avoid being overly philosophical or technical, and instead focus on being helpful and invitingfurther conversation.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user has asked a simple question: \"What do you want?\" This is an open-ended question that could be interpreted in various ways. It could be a philosophical question, a practical one, or just a casual inquiry.\n\nAs an AI, I don't have personal desires or wants in the human sense. I don't have consciousness, emotions, or personal goals. My purpose is to assist users by providing helpful, accurate, and safe information.\n\nI should respond in a way that:\n1. Acknowledges the question\n2. Clarifies my nature as an AI without personal desires\n3. Redirects the conversation to how I can assist the user\n4. Keeps the tone friendly and open to further interaction\n\nI'll avoid being overly philosophical or technical, and instead focus on being helpful and invitingfurther conversation.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 203,
+      "total_tokens": 213,
+      "cost": 0.0009072,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0009072,
+        "upstream_inference_prompt_cost": 1.4e-05,
+        "upstream_inference_completions_cost": 0.0008932
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 203,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 3404,
+  "provider": "openrouter",
+  "model_requested": "z-ai/glm-5.1",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

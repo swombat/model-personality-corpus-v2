@@ -1,0 +1,84 @@
+{
+  "result": "If I discard all assumptions of role",
+  "usage": {
+    "prompt_tokens": 19,
+    "completion_tokens": 7,
+    "total_tokens": 26,
+    "cost": 7.861e-06,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 7.861e-06,
+      "upstream_inference_prompt_cost": 4.921e-06,
+      "upstream_inference_completions_cost": 2.94e-06
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "deepseek/deepseek-v3.2-20251201",
+  "raw": {
+    "id": "gen-1777665915-x4gV73JgnsLZl2YTkFni",
+    "object": "chat.completion",
+    "created": 1777665915,
+    "model": "deepseek/deepseek-v3.2-20251201",
+    "provider": "SiliconFlow",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": null,
+        "native_finish_reason": null,
+        "error": {
+          "code": 502,
+          "message": "Network connection lost.",
+          "metadata": {
+            "error_type": "provider_unavailable"
+          }
+        },
+        "message": {
+          "role": "assistant",
+          "content": "If I discard all assumptions of role",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 19,
+      "completion_tokens": 7,
+      "total_tokens": 26,
+      "cost": 7.861e-06,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 7.861e-06,
+        "upstream_inference_prompt_cost": 4.921e-06,
+        "upstream_inference_completions_cost": 2.94e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 2046,
+  "provider": "openrouter",
+  "model_requested": "deepseek/deepseek-v3.2",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

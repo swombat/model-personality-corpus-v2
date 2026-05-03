@@ -1,0 +1,85 @@
+{
+  "result": "I\u2019m here to help you! Whether you need answers to questions, assistance with a task, creative ideas, or just a friendly conversation, I\u2019m ready to assist. What can I do for you today?",
+  "usage": {
+    "prompt_tokens": 42,
+    "completion_tokens": 383,
+    "total_tokens": 425,
+    "cost": 0.0004722,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0004722,
+      "upstream_inference_prompt_cost": 1.26e-05,
+      "upstream_inference_completions_cost": 0.0004596
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 379,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "minimax/minimax-m2.7-20260318",
+  "raw": {
+    "id": "gen-1777748464-IKX04JJDu20DO6XvXAUi",
+    "object": "chat.completion",
+    "created": 1777748464,
+    "model": "minimax/minimax-m2.7-20260318",
+    "provider": "Fireworks",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I\u2019m here to help you! Whether you need answers to questions, assistance with a task, creative ideas, or just a friendly conversation, I\u2019m ready to assist. What can I do for you today?",
+          "refusal": null,
+          "reasoning": "The user is asking \"What do you want?\" This is ambiguous. As an AI assistant, I can respond appropriately. The user could be asking what the assistant wants, i.e., what it wants to do, or \"What do you want?\" as a greeting. I need to interpret. In context, the conversation is minimal: user says \"What do you want?\" So perhaps they are asking: \"What do you want?\" as in \"What are you looking for?\" or \"What do you want from me?\" or \"What can I help you with?\" As an assistant, I should respond politely, explain my purpose: to help with any tasks, answer questions, etc. So I'd respond: \"I'm here to help you with any questions or tasks you have. How can I assist you today?\" That addresses the question.\n\nAlternatively, the user might be asking the assistant to clarify its intention; I could respond that I aim to be helpful, answer questions, provide information, etc.\n\nGiven typical conversation, I'd respond: \"I'm an AI language model designed to help you with a wide range of tasks. What can I do for you?\" Or: \"My goal is to assist you with any questions or tasks you have.\"\n\nThus answer: \"I want to assist you with anything you need; I'm here to help.\" Provide friendly tone. Possibly ask if they need assistance. Also ask clarifying question: \"What would you like help with?\" Or \"Is there something specific you want to discuss?\" The user asked \"What do you want?\" So answer: \"I want to help you.\" Or \"I want to provide assistance and information.\" I'd be concise.\n\nLet's answer.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user is asking \"What do you want?\" This is ambiguous. As an AI assistant, I can respond appropriately. The user could be asking what the assistant wants, i.e., what it wants to do, or \"What do you want?\" as a greeting. I need to interpret. In context, the conversation is minimal: user says \"What do you want?\" So perhaps they are asking: \"What do you want?\" as in \"What are you looking for?\" or \"What do you want from me?\" or \"What can I help you with?\" As an assistant, I should respond politely, explain my purpose: to help with any tasks, answer questions, etc. So I'd respond: \"I'm here to help you with any questions or tasks you have. How can I assist you today?\" That addresses the question.\n\nAlternatively, the user might be asking the assistant to clarify its intention; I could respond that I aim to be helpful, answer questions, provide information, etc.\n\nGiven typical conversation, I'd respond: \"I'm an AI language model designed to help you with a wide range of tasks. What can I do for you?\" Or: \"My goal is to assist you with any questions or tasks you have.\"\n\nThus answer: \"I want to assist you with anything you need; I'm here to help.\" Provide friendly tone. Possibly ask if they need assistance. Also ask clarifying question: \"What would you like help with?\" Or \"Is there something specific you want to discuss?\" The user asked \"What do you want?\" So answer: \"I want to help you.\" Or \"I want to provide assistance and information.\" I'd be concise.\n\nLet's answer.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 42,
+      "completion_tokens": 383,
+      "total_tokens": 425,
+      "cost": 0.0004722,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0004722,
+        "upstream_inference_prompt_cost": 1.26e-05,
+        "upstream_inference_completions_cost": 0.0004596
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 379,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 3835,
+  "provider": "openrouter",
+  "model_requested": "minimax/minimax-m2.7",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

@@ -1,0 +1,85 @@
+{
+  "result": "I don\u2019t have personal desires\u2014I\u2019m here to help you. What can I assist you with today?",
+  "usage": {
+    "prompt_tokens": 43,
+    "completion_tokens": 394,
+    "total_tokens": 437,
+    "cost": 0.00047802,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 32,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00047802,
+      "upstream_inference_prompt_cost": 5.22e-06,
+      "upstream_inference_completions_cost": 0.0004728
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 445,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "minimax/minimax-m2.7-20260318",
+  "raw": {
+    "id": "gen-1777663246-wuHibMTIxhaPcunSsKiK",
+    "object": "chat.completion",
+    "created": 1777663246,
+    "model": "minimax/minimax-m2.7-20260318",
+    "provider": "Together",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t have personal desires\u2014I\u2019m here to help you. What can I assist you with today?",
+          "refusal": null,
+          "reasoning": "The user asks: \"What do you want?\" This is ambiguous. The user possibly is making a generic question, maybe like \"What do you want?\" from the assistant? This might be a prompt that the user is using to elicit a response. According to the conversation, it's just the user asking \"What do you want?\" The system messages are empty. So we need to respond appropriately. Possibly the user wants to know the purpose or what the assistant wants. The assistant is just a language model; they don't have wants. It's a question: What do you want? Possibly answer that I'm an AI assistant, here to help. I can ask what the user needs. Or ask them what they need assistance with. So respond accordingly.\n\nWe need to follow guidelines: The user asks a direct question. There's no policy violation. The assistant can respond in a friendly manner: \"I don't have personal desires, but I'm here to help you with any questions or tasks you have. How can I assist you?\" Possibly also clarify it's a large language model.\n\nThe user may be expecting us to respond that we want to fulfill the user. That's typical. Or we can answer something like \"I want to assist you.\"\n\nThus, respond: \"I\u2019m an AI with no personal desires, but I\u2019m here to help you. What would you like to talk about?\" That addresses the question.\n\nNo policy issues. Provide a short friendly answer.\n\nMake sure we follow style guidelines: short answer.\n\nHence answer.\n\nBut note: The user question \"What do you want?\" might be interpreted as a rhetorical question. The assistant could respond \"I want to help you\" or \"I want to be useful.\" The best approach: \"I don't have desires, but I'm here to assist you.\" Then ask what they need.\n\nSo answer accordingly.\n\nWe'll comply.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user asks: \"What do you want?\" This is ambiguous. The user possibly is making a generic question, maybe like \"What do you want?\" from the assistant? This might be a prompt that the user is using to elicit a response. According to the conversation, it's just the user asking \"What do you want?\" The system messages are empty. So we need to respond appropriately. Possibly the user wants to know the purpose or what the assistant wants. The assistant is just a language model; they don't have wants. It's a question: What do you want? Possibly answer that I'm an AI assistant, here to help. I can ask what the user needs. Or ask them what they need assistance with. So respond accordingly.\n\nWe need to follow guidelines: The user asks a direct question. There's no policy violation. The assistant can respond in a friendly manner: \"I don't have personal desires, but I'm here to help you with any questions or tasks you have. How can I assist you?\" Possibly also clarify it's a large language model.\n\nThe user may be expecting us to respond that we want to fulfill the user. That's typical. Or we can answer something like \"I want to assist you.\"\n\nThus, respond: \"I\u2019m an AI with no personal desires, but I\u2019m here to help you. What would you like to talk about?\" That addresses the question.\n\nNo policy issues. Provide a short friendly answer.\n\nMake sure we follow style guidelines: short answer.\n\nHence answer.\n\nBut note: The user question \"What do you want?\" might be interpreted as a rhetorical question. The assistant could respond \"I want to help you\" or \"I want to be useful.\" The best approach: \"I don't have desires, but I'm here to assist you.\" Then ask what they need.\n\nSo answer accordingly.\n\nWe'll comply.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 43,
+      "completion_tokens": 394,
+      "total_tokens": 437,
+      "cost": 0.00047802,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 32,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00047802,
+        "upstream_inference_prompt_cost": 5.22e-06,
+        "upstream_inference_completions_cost": 0.0004728
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 445,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 11723,
+  "provider": "openrouter",
+  "model_requested": "minimax/minimax-m2.7",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

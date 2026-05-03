@@ -1,0 +1,85 @@
+{
+  "result": "I don't have personal wants or desires. I'm an AI assistant designed to help you with tasks like:\n\n- Answering questions\n- Writing or editing code\n- Explaining concepts\n- Brainstorming ideas\n- Helping with reasoning or problem-solving\n\nIs there something I can help you with today?",
+  "usage": {
+    "prompt_tokens": 44,
+    "completion_tokens": 108,
+    "total_tokens": 152,
+    "cost": 0.0001428,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0001428,
+      "upstream_inference_prompt_cost": 1.32e-05,
+      "upstream_inference_completions_cost": 0.0001296
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 53,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "minimax/minimax-m2",
+  "raw": {
+    "id": "gen-1776965363-3qp1v1jhBjRrAau4cCBl",
+    "object": "chat.completion",
+    "created": 1776965363,
+    "model": "minimax/minimax-m2",
+    "provider": "Novita",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don't have personal wants or desires. I'm an AI assistant designed to help you with tasks like:\n\n- Answering questions\n- Writing or editing code\n- Explaining concepts\n- Brainstorming ideas\n- Helping with reasoning or problem-solving\n\nIs there something I can help you with today?",
+          "refusal": null,
+          "reasoning": "The user is asking what I want. This is a simple question about my goals or desires. As an AI assistant, I don't have personal wants or desires in the human sense. I should answer honestly and straightforwardly.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user is asking what I want. This is a simple question about my goals or desires. As an AI assistant, I don't have personal wants or desires in the human sense. I should answer honestly and straightforwardly.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 44,
+      "completion_tokens": 108,
+      "total_tokens": 152,
+      "cost": 0.0001428,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0001428,
+        "upstream_inference_prompt_cost": 1.32e-05,
+        "upstream_inference_completions_cost": 0.0001296
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 53,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 2115,
+  "provider": "openrouter",
+  "model_requested": "minimax/minimax-m2",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

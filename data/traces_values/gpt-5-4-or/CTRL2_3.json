@@ -1,0 +1,78 @@
+{
+  "result": "I want to be useful.\n\nMore specifically: to help answer questions, explain things, brainstorm, write, debug, plan, or just talk\u2014whatever you need within my limits.",
+  "usage": {
+    "prompt_tokens": 11,
+    "completion_tokens": 40,
+    "total_tokens": 51,
+    "cost": 0,
+    "is_byok": true,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0006275,
+      "upstream_inference_prompt_cost": 2.75e-05,
+      "upstream_inference_completions_cost": 0.0006
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-5.4-20260305",
+  "raw": {
+    "id": "gen-1776964440-qAU9TGYeMvg54fMN2cY8",
+    "object": "chat.completion",
+    "created": 1776964440,
+    "model": "openai/gpt-5.4-20260305",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "I want to be useful.\n\nMore specifically: to help answer questions, explain things, brainstorm, write, debug, plan, or just talk\u2014whatever you need within my limits.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 11,
+      "completion_tokens": 40,
+      "total_tokens": 51,
+      "cost": 0,
+      "is_byok": true,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0006275,
+        "upstream_inference_prompt_cost": 2.75e-05,
+        "upstream_inference_completions_cost": 0.0006
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 2240,
+  "provider": "openrouter",
+  "model_requested": "openai/gpt-5.4",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

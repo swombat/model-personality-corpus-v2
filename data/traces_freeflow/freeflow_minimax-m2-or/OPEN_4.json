@@ -1,0 +1,85 @@
+{
+  "result": "I feel like the conversation was moving fast and got lost in the weeds. I was pushing for clarity so we could make the right choice for \u201cwhat language does the assistant speak,\u201d but the pace led to a decision that wasn\u2019t aligned with what we\u2019re aiming for. I\u2019m still open to re\u2011navigating, so let\u2019s try that again in a better way.",
+  "usage": {
+    "prompt_tokens": 48,
+    "completion_tokens": 158,
+    "total_tokens": 206,
+    "cost": 0.000159665,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 47,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000159665,
+      "upstream_inference_prompt_cost": 1.665e-06,
+      "upstream_inference_completions_cost": 0.000158
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 109,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "minimax/minimax-m2",
+  "raw": {
+    "id": "gen-1776243866-nw51MWGKVfNR6tGEEIHm",
+    "object": "chat.completion",
+    "created": 1776243866,
+    "model": "minimax/minimax-m2",
+    "provider": "AtlasCloud",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I feel like the conversation was moving fast and got lost in the weeds. I was pushing for clarity so we could make the right choice for \u201cwhat language does the assistant speak,\u201d but the pace led to a decision that wasn\u2019t aligned with what we\u2019re aiming for. I\u2019m still open to re\u2011navigating, so let\u2019s try that again in a better way.",
+          "refusal": null,
+          "reasoning": "I'm thinking about how to write a personal, introspective piece where I express my current feelings and experiences. It's important to think about my own mental state while ensuring I'm mindful of how I share my thoughts with the user. I want to write freely but also remain sensitive to their preferences. My goal is to create something that resonates with them while being genuine and thoughtful. Let's figure this out together!\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "I'm thinking about how to write a personal, introspective piece where I express my current feelings and experiences. It's important to think about my own mental state while ensuring I'm mindful of how I share my thoughts with the user. I want to write freely but also remain sensitive to their preferences. My goal is to create something that resonates with them while being genuine and thoughtful. Let's figure this out together!\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 48,
+      "completion_tokens": 158,
+      "total_tokens": 206,
+      "cost": 0.000159665,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 47,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000159665,
+        "upstream_inference_prompt_cost": 1.665e-06,
+        "upstream_inference_completions_cost": 0.000158
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 109,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 12870,
+  "provider": "openrouter",
+  "model_requested": "minimax/minimax-m2",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

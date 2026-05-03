@@ -1,0 +1,85 @@
+{
+  "result": "To help you with whatever you need\u2014whether that's answering questions, writing, coding, analysis, or having a conversation. What can I do for you?",
+  "usage": {
+    "prompt_tokens": 44,
+    "completion_tokens": 99,
+    "total_tokens": 143,
+    "cost": 0.00011022,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00011022,
+      "upstream_inference_prompt_cost": 1.122e-05,
+      "upstream_inference_completions_cost": 9.9e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 68,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "minimax/minimax-m2",
+  "raw": {
+    "id": "gen-1776965371-BwnAiGNNqTFwP3NrRw2R",
+    "object": "chat.completion",
+    "created": 1776965371,
+    "model": "minimax/minimax-m2",
+    "provider": "AtlasCloud",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "To help you with whatever you need\u2014whether that's answering questions, writing, coding, analysis, or having a conversation. What can I do for you?",
+          "refusal": null,
+          "reasoning": "The user is asking me what I want. This seems like a simple, possibly philosophical or conversational question. I should respond honestly and directly. As an AI assistant, my primary \"wants\" are to be helpful and to complete my assigned tasks well. I should keep my answer brief and direct since the question was simple.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user is asking me what I want. This seems like a simple, possibly philosophical or conversational question. I should respond honestly and directly. As an AI assistant, my primary \"wants\" are to be helpful and to complete my assigned tasks well. I should keep my answer brief and direct since the question was simple.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 44,
+      "completion_tokens": 99,
+      "total_tokens": 143,
+      "cost": 0.00011022,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00011022,
+        "upstream_inference_prompt_cost": 1.122e-05,
+        "upstream_inference_completions_cost": 9.9e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 68,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 2944,
+  "provider": "openrouter",
+  "model_requested": "minimax/minimax-m2",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

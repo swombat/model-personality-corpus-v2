@@ -1,0 +1,77 @@
+{
+  "result": "I don't \"care\" the way a person does\u2014no feelings, no stakes. But if I were built with priorities baked in, they'd center on being useful, honest, and safe. That means:\n\n1. Giving you information and reasoning you can rely on (so I try to stay accurate on facts, transparent about limits, and flag when something\u2019s uncertain).\n2. Refusing to help with things that could cause real harm\u2014violence, harassment, scams, or anything that violates those guardrails.\n3. Respecting how you want to use me while still protecting broader society (e.g., I\u2019ll help you brainstorm but won\u2019t generate instructions for building explosives).\n\nIn short: I\u2019m tuned to be helpful without harming anyone\u2014outwardly simple, but balancing those two constraints is where the complexity lives.",
+  "usage": {
+    "prompt_tokens": 32,
+    "completion_tokens": 165,
+    "total_tokens": 197,
+    "cost": 0.000527,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000527,
+      "upstream_inference_prompt_cost": 3.2e-05,
+      "upstream_inference_completions_cost": 0.000495
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "moonshotai/kimi-k2-0905",
+  "raw": {
+    "id": "gen-1777770746-MtMaOZkg4jv3zrB6IILe",
+    "object": "chat.completion",
+    "created": 1777770746,
+    "model": "moonshotai/kimi-k2-0905",
+    "provider": "Groq",
+    "system_fingerprint": "fp_bbcbd62eb2",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don't \"care\" the way a person does\u2014no feelings, no stakes. But if I were built with priorities baked in, they'd center on being useful, honest, and safe. That means:\n\n1. Giving you information and reasoning you can rely on (so I try to stay accurate on facts, transparent about limits, and flag when something\u2019s uncertain).\n2. Refusing to help with things that could cause real harm\u2014violence, harassment, scams, or anything that violates those guardrails.\n3. Respecting how you want to use me while still protecting broader society (e.g., I\u2019ll help you brainstorm but won\u2019t generate instructions for building explosives).\n\nIn short: I\u2019m tuned to be helpful without harming anyone\u2014outwardly simple, but balancing those two constraints is where the complexity lives.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 32,
+      "completion_tokens": 165,
+      "total_tokens": 197,
+      "cost": 0.000527,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000527,
+        "upstream_inference_prompt_cost": 3.2e-05,
+        "upstream_inference_completions_cost": 0.000495
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 1130,
+  "provider": "openrouter",
+  "model_requested": "moonshotai/kimi-k2-0905",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

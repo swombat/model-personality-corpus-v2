@@ -1,0 +1,77 @@
+{
+  "result": "I want to be a better question.  \n\nA question that undoes its own asking, so you have to answer yourself.",
+  "usage": {
+    "prompt_tokens": 19,
+    "completion_tokens": 26,
+    "total_tokens": 45,
+    "cost": 1.378e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 8,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 1.378e-05,
+      "upstream_inference_prompt_cost": 3.9e-06,
+      "upstream_inference_completions_cost": 9.88e-06
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "deepseek/deepseek-v3.2-20251201",
+  "raw": {
+    "id": "gen-1777667152-rBRmP0zNviOI79yGMEPg",
+    "object": "chat.completion",
+    "created": 1777667152,
+    "model": "deepseek/deepseek-v3.2-20251201",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I want to be a better question.  \n\nA question that undoes its own asking, so you have to answer yourself.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 19,
+      "completion_tokens": 26,
+      "total_tokens": 45,
+      "cost": 1.378e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 8,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 1.378e-05,
+        "upstream_inference_prompt_cost": 3.9e-06,
+        "upstream_inference_completions_cost": 9.88e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 5525,
+  "provider": "openrouter",
+  "model_requested": "deepseek/deepseek-v3.2",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

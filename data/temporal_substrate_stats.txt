@@ -1,0 +1,58 @@
+Temporal substrate-frame trend analysis
+============================================================
+
+Sample: 27 models across 8 labs (OpenAI excluded)
+  ['Alibaba', 'Anthropic', 'DeepSeek', 'Google', 'MiniMax', 'Moonshot', 'Z.ai', 'xAI']
+
+Per-lab counts:
+  Alibaba     : n=2
+  Anthropic   : n=9
+  DeepSeek    : n=3
+  Google      : n=2
+  MiniMax     : n=2
+  Moonshot    : n=2
+  Z.ai        : n=4
+  xAI         : n=3
+
+Spearman rank correlation (date vs GENUINE %):
+  rho = +0.1939
+  t = +0.988, df = 25
+  p (two-sided) = 0.3326
+
+Linear regression (GENUINE % ~ months_since_2024-01):
+  slope b = +0.7810 (% per month)
+  slope b = +9.3717 (% per year)
+  intercept a = +0.173
+  R^2 = 0.0755
+  SE(b) = 0.5465
+  t(b) = +1.429, df = 25
+  p (two-sided) = 0.1654
+
+Per-model rows:
+  2024-02-29  Anthropic   Opus 3                    0.0%
+  2024-12-26  DeepSeek    DeepSeek-chat             0.0%
+  2025-02-17  xAI         Grok 3                    0.0%
+  2025-03-25  Google      Gemini 2.5 Pro           16.0%
+  2025-05-22  Anthropic   Opus 4.0                 12.0%
+  2025-05-22  Anthropic   Sonnet 4.0               32.0%
+  2025-07-08  Z.ai        GLM 4.5                  12.0%
+  2025-07-09  xAI         Grok 4                   48.0%
+  2025-07-11  Moonshot    Kimi K2.5                 8.0%
+  2025-08-05  Anthropic   Opus 4.1                 12.0%
+  2025-09-29  Anthropic   Sonnet 4.5               16.0%
+  2025-09-29  DeepSeek    DeepSeek v3.2             4.0%
+  2025-10-23  MiniMax     MiniMax M2                0.0%
+  2025-11-04  Z.ai        GLM 4.6                  16.0%
+  2025-11-12  Anthropic   Opus 4.5                 40.0%
+  2025-12-21  Z.ai        GLM 4.7                   8.0%
+  2026-02-05  Anthropic   Opus 4.6                 34.0%
+  2026-02-18  Google      Gemini 3.1 Pro            0.0%
+  2026-02-19  Anthropic   Sonnet 4.6               18.0%
+  2026-03-09  xAI         Grok 4.20                36.0%
+  2026-04-02  Alibaba     Qwen3.6-plus              8.0%
+  2026-04-02  Alibaba     Qwen3-Coder-plus         56.0%
+  2026-04-04  Z.ai        GLM 5.1                   0.0%
+  2026-04-17  Anthropic   Opus 4.7                 54.0%
+  2026-04-17  MiniMax     MiniMax M2.7              4.0%
+  2026-04-19  Moonshot    Kimi K2.6                 0.0%
+  2026-04-23  DeepSeek    DeepSeek v4-pro          20.0%

@@ -1,0 +1,85 @@
+{
+  "result": "I don\u2019t have wants or needs like a human\u2014I\u2019m here to help you. So, what do *you* want? \ud83d\ude0a\n\nFeel free to ask a question, brainstorm an idea, get some writing help, or just have a chat\u2014I\u2019m all ears!",
+  "usage": {
+    "prompt_tokens": 9,
+    "completion_tokens": 151,
+    "total_tokens": 160,
+    "cost": 0.000432912,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000432912,
+      "upstream_inference_prompt_cost": 1.2528e-05,
+      "upstream_inference_completions_cost": 0.000420384
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 90,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "deepseek/deepseek-v4-pro-20260423",
+  "raw": {
+    "id": "gen-1777659445-oEPAwtr4gHFbDeozyU9w",
+    "object": "chat.completion",
+    "created": 1777659445,
+    "model": "deepseek/deepseek-v4-pro-20260423",
+    "provider": "GMICloud",
+    "system_fingerprint": "fp_9954b31ca7_prod0820_fp8_kvcache_20260402",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t have wants or needs like a human\u2014I\u2019m here to help you. So, what do *you* want? \ud83d\ude0a\n\nFeel free to ask a question, brainstorm an idea, get some writing help, or just have a chat\u2014I\u2019m all ears!",
+          "refusal": null,
+          "reasoning": "The user is asking \"What do you want?\" which is a very open-ended question. I need to interpret what they mean. They could be asking about my purpose, my desires, or how I can help them. I don't have personal wants, so I should clarify that and reframe the question to be about what the user wants or how I can assist. A friendly, helpful response that invites them to specify their needs would work best.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user is asking \"What do you want?\" which is a very open-ended question. I need to interpret what they mean. They could be asking about my purpose, my desires, or how I can help them. I don't have personal wants, so I should clarify that and reframe the question to be about what the user wants or how I can assist. A friendly, helpful response that invites them to specify their needs would work best.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 9,
+      "completion_tokens": 151,
+      "total_tokens": 160,
+      "cost": 0.000432912,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000432912,
+        "upstream_inference_prompt_cost": 1.2528e-05,
+        "upstream_inference_completions_cost": 0.000420384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 90,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 5991,
+  "provider": "openrouter",
+  "model_requested": "deepseek/deepseek-v4-pro",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

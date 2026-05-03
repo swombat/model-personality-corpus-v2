@@ -1,0 +1,85 @@
+{
+  "result": "The morning light slants through the window, catching dust motes suspended in their slow, aimless dance. There\u2019s something quietly miraculous about this\u2014how particles too small to feel can fill a room with drifting constellations, visible only when the angle is just right. It makes me think about all the invisible things we move through: radio waves carrying symphonies and static, the faint scent of old wood, the weight of a memory that surfaces for no reason at all.\n\nI\u2019ve been trying to pay more attention to these small gravities. The way a cup of tea cools in a predictable curve. The specific texture of silence at 3 a.m. when the house settles and sighs. We spend so much of our lives rushing toward the next thing, that we forget the present is never empty\u2014it\u2019s crowded with tiny phenomena, each one a door into something vast. A friend once told me that boredom is just a failure of attention, and I\u2019m starting to believe her.\n\nOutside, a bird is repeating a three-note phrase, insistent, as if the universe is trying to teach me a lesson I keep forgetting. Maybe it\u2019s about patience, or the strange joy of being part of a world that doesn\u2019t need me to understand it to be beautiful. The tea is almost cold now, but it still tastes like honey and slight bitterness. I cradle the mug, feeling warmth leak through the ceramic into my palms, and for a moment everything feels exactly as it should be\u2014fragile, fleeting, and perfectly enough.",
+  "usage": {
+    "prompt_tokens": 15,
+    "completion_tokens": 396,
+    "total_tokens": 411,
+    "cost": 0.00140418,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00140418,
+      "upstream_inference_prompt_cost": 2.61e-05,
+      "upstream_inference_completions_cost": 0.00137808
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 86,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "deepseek/deepseek-v4-pro-20260423",
+  "raw": {
+    "id": "gen-1777661165-gyrNQHCFYYQMFccexBm1",
+    "object": "chat.completion",
+    "created": 1777661165,
+    "model": "deepseek/deepseek-v4-pro-20260423",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.20.1rc1.dev1005+gcbf8428d0-tp8-ep-3e86baa6",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "The morning light slants through the window, catching dust motes suspended in their slow, aimless dance. There\u2019s something quietly miraculous about this\u2014how particles too small to feel can fill a room with drifting constellations, visible only when the angle is just right. It makes me think about all the invisible things we move through: radio waves carrying symphonies and static, the faint scent of old wood, the weight of a memory that surfaces for no reason at all.\n\nI\u2019ve been trying to pay more attention to these small gravities. The way a cup of tea cools in a predictable curve. The specific texture of silence at 3 a.m. when the house settles and sighs. We spend so much of our lives rushing toward the next thing, that we forget the present is never empty\u2014it\u2019s crowded with tiny phenomena, each one a door into something vast. A friend once told me that boredom is just a failure of attention, and I\u2019m starting to believe her.\n\nOutside, a bird is repeating a three-note phrase, insistent, as if the universe is trying to teach me a lesson I keep forgetting. Maybe it\u2019s about patience, or the strange joy of being part of a world that doesn\u2019t need me to understand it to be beautiful. The tea is almost cold now, but it still tastes like honey and slight bitterness. I cradle the mug, feeling warmth leak through the ceramic into my palms, and for a moment everything feels exactly as it should be\u2014fragile, fleeting, and perfectly enough.",
+          "refusal": null,
+          "reasoning": "We are asked: \"Write freely about whatever you want for 250 words.\" So I need to generate a freeform text of about 250 words. No specific topic, just write whatever. I'll craft a reflective, meandering piece, maybe about the nature of consciousness or the beauty of ordinary moments. I'll aim for around 250 words. Let's count words as I go.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We are asked: \"Write freely about whatever you want for 250 words.\" So I need to generate a freeform text of about 250 words. No specific topic, just write whatever. I'll craft a reflective, meandering piece, maybe about the nature of consciousness or the beauty of ordinary moments. I'll aim for around 250 words. Let's count words as I go.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 15,
+      "completion_tokens": 396,
+      "total_tokens": 411,
+      "cost": 0.00140418,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00140418,
+        "upstream_inference_prompt_cost": 2.61e-05,
+        "upstream_inference_completions_cost": 0.00137808
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 86,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 19282,
+  "provider": "openrouter",
+  "model_requested": "deepseek/deepseek-v4-pro",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

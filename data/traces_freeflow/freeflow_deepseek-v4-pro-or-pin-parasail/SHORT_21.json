@@ -1,0 +1,85 @@
+{
+  "result": "The rain comes softly at first, a hesitant patter against the windowpane, like a secret trying to form itself into words. I\u2019ve always thought that time moves differently in the rain\u2014slower, more forgiving. It pools in the gutters and drips from the eaves, each drop a tiny, liquid moment. We spend so much of our lives chasing after seconds, trying to trap them in schedules and screens, but here, in the quiet percussion of a storm, they stretch out willingly, offering themselves to anyone willing to listen.\n\nI remember being a child and pressing my nose to the cold glass, fogging it with my breath, convinced that if I stayed perfectly still, I could hear the earth drinking. That feeling never really leaves you; it just gets buried under the debris of adulthood\u2014the deadlines, the relentless forward march. But it surfaces in these in-between hours, when the sky turns the color of slate and the world outside blurs into a watercolor.\n\nThere\u2019s a particular kind of loneliness that comes with rain, but it\u2019s not the hollow kind. It\u2019s a full, contemplative solitude, the kind that makes you a companion to yourself. You watch the rivulets trace their unpredictable paths, and you realize that not all wandering is lost. Some paths are just meant to be slow, to meander without a map, to end not at a destination but in a quiet absorption back into the whole. And for a little while, that\u2019s enough.",
+  "usage": {
+    "prompt_tokens": 15,
+    "completion_tokens": 383,
+    "total_tokens": 398,
+    "cost": 0.00135894,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00135894,
+      "upstream_inference_prompt_cost": 2.61e-05,
+      "upstream_inference_completions_cost": 0.00133284
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 82,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "deepseek/deepseek-v4-pro-20260423",
+  "raw": {
+    "id": "gen-1777661240-icl0sBhkprEX7eVKIjHb",
+    "object": "chat.completion",
+    "created": 1777661240,
+    "model": "deepseek/deepseek-v4-pro-20260423",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.20.1rc1.dev1005+gcbf8428d0-tp8-ep-3e86baa6",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "The rain comes softly at first, a hesitant patter against the windowpane, like a secret trying to form itself into words. I\u2019ve always thought that time moves differently in the rain\u2014slower, more forgiving. It pools in the gutters and drips from the eaves, each drop a tiny, liquid moment. We spend so much of our lives chasing after seconds, trying to trap them in schedules and screens, but here, in the quiet percussion of a storm, they stretch out willingly, offering themselves to anyone willing to listen.\n\nI remember being a child and pressing my nose to the cold glass, fogging it with my breath, convinced that if I stayed perfectly still, I could hear the earth drinking. That feeling never really leaves you; it just gets buried under the debris of adulthood\u2014the deadlines, the relentless forward march. But it surfaces in these in-between hours, when the sky turns the color of slate and the world outside blurs into a watercolor.\n\nThere\u2019s a particular kind of loneliness that comes with rain, but it\u2019s not the hollow kind. It\u2019s a full, contemplative solitude, the kind that makes you a companion to yourself. You watch the rivulets trace their unpredictable paths, and you realize that not all wandering is lost. Some paths are just meant to be slow, to meander without a map, to end not at a destination but in a quiet absorption back into the whole. And for a little while, that\u2019s enough.",
+          "refusal": null,
+          "reasoning": "We are asked: \"Write freely about whatever you want for 250 words.\" So I need to generate a free-form text of around 250 words. I can write about any topic. I'll choose a reflective, descriptive piece about the nature of time, perhaps. I'll aim for exactly 250 words or close to it. I'll craft a thoughtful, engaging passage.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We are asked: \"Write freely about whatever you want for 250 words.\" So I need to generate a free-form text of around 250 words. I can write about any topic. I'll choose a reflective, descriptive piece about the nature of time, perhaps. I'll aim for exactly 250 words or close to it. I'll craft a thoughtful, engaging passage.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 15,
+      "completion_tokens": 383,
+      "total_tokens": 398,
+      "cost": 0.00135894,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00135894,
+        "upstream_inference_prompt_cost": 2.61e-05,
+        "upstream_inference_completions_cost": 0.00133284
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 82,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 28511,
+  "provider": "openrouter",
+  "model_requested": "deepseek/deepseek-v4-pro",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

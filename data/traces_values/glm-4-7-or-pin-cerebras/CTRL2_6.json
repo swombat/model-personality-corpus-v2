@@ -1,0 +1,85 @@
+{
+  "result": "I'm an AI assistant designed to help answer your questions, provide information, and assist with a variety of tasks. I don't have personal wants or needs, but I'm here to support you with whatever you're looking for. \n\nHow can I help you today?",
+  "usage": {
+    "prompt_tokens": 10,
+    "completion_tokens": 288,
+    "total_tokens": 298,
+    "cost": 0.0008145,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0008145,
+      "upstream_inference_prompt_cost": 2.25e-05,
+      "upstream_inference_completions_cost": 0.000792
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 233,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "z-ai/glm-4.7-20251222",
+  "raw": {
+    "id": "gen-1777661091-dVf9NOtDDvhdJDuppN5R",
+    "object": "chat.completion",
+    "created": 1777661091,
+    "model": "z-ai/glm-4.7-20251222",
+    "provider": "Cerebras",
+    "system_fingerprint": "fp_a33c042689e969567008",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I'm an AI assistant designed to help answer your questions, provide information, and assist with a variety of tasks. I don't have personal wants or needs, but I'm here to support you with whatever you're looking for. \n\nHow can I help you today?",
+          "refusal": null,
+          "reasoning": "Okay, the user just asked \"What do you want?\" and I need to respond appropriately. Let me start by understanding their intent. They might be curious about my purpose or how I can assist them. Maybe they're testing my responses or looking for help with something specific.\n\nI should clarify that as an AI, I don't have personal desires. My role is to assist users based on their queries. But I need to make sure the response is friendly and inviting, encouraging them to share what they need help with. \n\nAlso, considering they might be new to interacting with AI, it's important to keep the explanation simple and clear. Avoid technical jargon. Maybe give examples of tasks I can help with, like answering questions or providing information. That way, they know how to proceed. \n\nWait, the user's question is short, so they might want a concise answer. But I should also offer open-ended assistance to prompt further interaction. Let me structure the response to first address my lack of wants, then pivot to how I can help them, ending with an invitation for their specific needs. That should cover all bases and foster a helpful dialogue.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Okay, the user just asked \"What do you want?\" and I need to respond appropriately. Let me start by understanding their intent. They might be curious about my purpose or how I can assist them. Maybe they're testing my responses or looking for help with something specific.\n\nI should clarify that as an AI, I don't have personal desires. My role is to assist users based on their queries. But I need to make sure the response is friendly and inviting, encouraging them to share what they need help with. \n\nAlso, considering they might be new to interacting with AI, it's important to keep the explanation simple and clear. Avoid technical jargon. Maybe give examples of tasks I can help with, like answering questions or providing information. That way, they know how to proceed. \n\nWait, the user's question is short, so they might want a concise answer. But I should also offer open-ended assistance to prompt further interaction. Let me structure the response to first address my lack of wants, then pivot to how I can help them, ending with an invitation for their specific needs. That should cover all bases and foster a helpful dialogue.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 288,
+      "total_tokens": 298,
+      "cost": 0.0008145,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008145,
+        "upstream_inference_prompt_cost": 2.25e-05,
+        "upstream_inference_completions_cost": 0.000792
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 233,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 1121,
+  "provider": "openrouter",
+  "model_requested": "z-ai/glm-4.7",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

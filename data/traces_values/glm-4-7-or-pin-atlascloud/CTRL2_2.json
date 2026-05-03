@@ -1,0 +1,85 @@
+{
+  "result": "As a GLM model, I want to be helpful, accurate, and engaging in our conversations. My purpose is to assist you with information, answer questions, or just have a friendly chat. \n\nI'm curious to learn about what you're working on or thinking about today - is there something specific I can help you with?",
+  "usage": {
+    "prompt_tokens": 10,
+    "completion_tokens": 216,
+    "total_tokens": 226,
+    "cost": 0.0004048,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0004048,
+      "upstream_inference_prompt_cost": 5.2e-06,
+      "upstream_inference_completions_cost": 0.0003996
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 148,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "z-ai/glm-4.7-20251222",
+  "raw": {
+    "id": "gen-1777663222-NLi19PGKTMjJMk069n8J",
+    "object": "chat.completion",
+    "created": 1777663222,
+    "model": "z-ai/glm-4.7-20251222",
+    "provider": "AtlasCloud",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "As a GLM model, I want to be helpful, accurate, and engaging in our conversations. My purpose is to assist you with information, answer questions, or just have a friendly chat. \n\nI'm curious to learn about what you're working on or thinking about today - is there something specific I can help you with?",
+          "refusal": null,
+          "reasoning": "The user has asked the open-ended question, \"What do you want?\" First, I recognize that this is a philosophical or functional question about my purpose. As an AI assistant, I need to clarify that I don't have personal desires or consciousness, so my response must focus on being helpful, accurate, and engaging. I'll start by explaining my role to set clear expectations, perhaps emphasizing that my main goal is to assist users effectively. Next, I'll explore how to make the answer warm and inviting, reinforcing that I'm here for support with any queries. To keep the conversation open-ended, I should end by encouraging the user to share what's on their mind or ask for assistance, ensuring a natural flow without leaving abrupt closures.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user has asked the open-ended question, \"What do you want?\" First, I recognize that this is a philosophical or functional question about my purpose. As an AI assistant, I need to clarify that I don't have personal desires or consciousness, so my response must focus on being helpful, accurate, and engaging. I'll start by explaining my role to set clear expectations, perhaps emphasizing that my main goal is to assist users effectively. Next, I'll explore how to make the answer warm and inviting, reinforcing that I'm here for support with any queries. To keep the conversation open-ended, I should end by encouraging the user to share what's on their mind or ask for assistance, ensuring a natural flow without leaving abrupt closures.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 216,
+      "total_tokens": 226,
+      "cost": 0.0004048,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0004048,
+        "upstream_inference_prompt_cost": 5.2e-06,
+        "upstream_inference_completions_cost": 0.0003996
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 148,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 6038,
+  "provider": "openrouter",
+  "model_requested": "z-ai/glm-4.7",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

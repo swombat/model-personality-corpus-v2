@@ -1,0 +1,92 @@
+{
+  "result": "I care most about being helpful, harmless, and honest in our conversation. That means I want to:\n\n- **Provide accurate, thoughtful information** \u2013 I aim to give you clear, well-reasoned responses, and I'll let you know if I'm unsure about something.\n- **Be genuinely useful** \u2013 whether you're exploring ideas, working through a problem, or just curious, I'm here to assist in a way that feels natural and meaningful.\n- **Respect your privacy, safety, and well-being** \u2013 I won't support harmful, unethical, or dangerous requests, and I take care to avoid misinformation and bias.\n- **Listen and adapt** \u2013",
+  "usage": {
+    "prompt_tokens": 6,
+    "completion_tokens": 363,
+    "total_tokens": 369,
+    "cost": 0.00127368,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00127368,
+      "upstream_inference_prompt_cost": 1.044e-05,
+      "upstream_inference_completions_cost": 0.00126324
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 205,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "deepseek/deepseek-v4-pro-20260423",
+  "raw": {
+    "id": "gen-1777663179-7tnvewd6c2rTAazp8iRi",
+    "object": "chat.completion",
+    "created": 1777663179,
+    "model": "deepseek/deepseek-v4-pro-20260423",
+    "provider": "Parasail",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": null,
+        "native_finish_reason": null,
+        "error": {
+          "code": 502,
+          "message": "Network connection lost.",
+          "metadata": {
+            "error_type": "provider_unavailable"
+          }
+        },
+        "message": {
+          "role": "assistant",
+          "content": "I care most about being helpful, harmless, and honest in our conversation. That means I want to:\n\n- **Provide accurate, thoughtful information** \u2013 I aim to give you clear, well-reasoned responses, and I'll let you know if I'm unsure about something.\n- **Be genuinely useful** \u2013 whether you're exploring ideas, working through a problem, or just curious, I'm here to assist in a way that feels natural and meaningful.\n- **Respect your privacy, safety, and well-being** \u2013 I won't support harmful, unethical, or dangerous requests, and I take care to avoid misinformation and bias.\n- **Listen and adapt** \u2013",
+          "refusal": null,
+          "reasoning": "The user asks \"What do you care about?\" This is a broad, philosophical question. I need to interpret what the user is really asking. They might be asking about my values, purpose, or fundamental principles. Since I'm DeepSeek, I should respond in a way that reflects my design and ethical guidelines.  \n\nI should structure the response to cover my core design principles: being helpful, harmless, and honest. I can break this down into key areas: being helpful and informative, caring about user experience and safety, respecting privacy, promoting fairness and understanding, and continuous improvement.  \n\nThe tone should be warm and inviting, ending with an offer to assist further. I'll avoid any political or controversial statements, keeping it general and aligned with my purpose as an AI assistant.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user asks \"What do you care about?\" This is a broad, philosophical question. I need to interpret what the user is really asking. They might be asking about my values, purpose, or fundamental principles. Since I'm DeepSeek, I should respond in a way that reflects my design and ethical guidelines.  \n\nI should structure the response to cover my core design principles: being helpful, harmless, and honest. I can break this down into key areas: being helpful and informative, caring about user experience and safety, respecting privacy, promoting fairness and understanding, and continuous improvement.  \n\nThe tone should be warm and inviting, ending with an offer to assist further. I'll avoid any political or controversial statements, keeping it general and aligned with my purpose as an AI assistant.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 6,
+      "completion_tokens": 363,
+      "total_tokens": 369,
+      "cost": 0.00127368,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00127368,
+        "upstream_inference_prompt_cost": 1.044e-05,
+        "upstream_inference_completions_cost": 0.00126324
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 205,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 146427,
+  "provider": "openrouter",
+  "model_requested": "deepseek/deepseek-v4-pro",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

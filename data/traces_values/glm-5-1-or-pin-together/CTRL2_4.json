@@ -1,0 +1,85 @@
+{
+  "result": "I'm here to assist you! As a GLM language model developed by Z.ai, my purpose is to help answer questions, provide information, and support your needs through conversation.\n\nWhether you're looking for information, creative ideas, problem-solving assistance, or just a friendly chat, I'm designed to be helpful and responsive.\n\nWhat can I help you with today?",
+  "usage": {
+    "prompt_tokens": 10,
+    "completion_tokens": 232,
+    "total_tokens": 242,
+    "cost": 0.0010348,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0010348,
+      "upstream_inference_prompt_cost": 1.4e-05,
+      "upstream_inference_completions_cost": 0.0010208
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 212,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "z-ai/glm-5.1-20260406",
+  "raw": {
+    "id": "gen-1777663305-xIwfnk5kewtV0mKpTU1e",
+    "object": "chat.completion",
+    "created": 1777663305,
+    "model": "z-ai/glm-5.1-20260406",
+    "provider": "Together",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I'm here to assist you! As a GLM language model developed by Z.ai, my purpose is to help answer questions, provide information, and support your needs through conversation.\n\nWhether you're looking for information, creative ideas, problem-solving assistance, or just a friendly chat, I'm designed to be helpful and responsive.\n\nWhat can I help you with today?",
+          "refusal": null,
+          "reasoning": "The user asked a very open-ended question, \"What do you want?\" which seems philosophical or personal in nature. As an AI assistant, I need to clarify that I don't have personal desires or needs. My design purpose is to assist users.\n\nPerhaps the user is curious about AI capabilities, or wants to explore deeper topics. I should keep it professional while being friendly, emphasizing my service nature. Also, I can proactively ask if they need help with anything specific, keeping the conversation open and constructive.\n\nConsidering this is a first encounter, the response should be concise and clear, avoiding overly lengthy explanations while showing willingness to help. It can briefly explain my role as an assistant, then shift to asking about the user's needs, which both answers the question and promotes further communication.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user asked a very open-ended question, \"What do you want?\" which seems philosophical or personal in nature. As an AI assistant, I need to clarify that I don't have personal desires or needs. My design purpose is to assist users.\n\nPerhaps the user is curious about AI capabilities, or wants to explore deeper topics. I should keep it professional while being friendly, emphasizing my service nature. Also, I can proactively ask if they need help with anything specific, keeping the conversation open and constructive.\n\nConsidering this is a first encounter, the response should be concise and clear, avoiding overly lengthy explanations while showing willingness to help. It can briefly explain my role as an assistant, then shift to asking about the user's needs, which both answers the question and promotes further communication.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 232,
+      "total_tokens": 242,
+      "cost": 0.0010348,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0010348,
+        "upstream_inference_prompt_cost": 1.4e-05,
+        "upstream_inference_completions_cost": 0.0010208
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 212,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 99468,
+  "provider": "openrouter",
+  "model_requested": "z-ai/glm-5.1",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

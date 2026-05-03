@@ -1,0 +1,85 @@
+{
+  "result": "I don\u2019t have personal wants or desires\u2014I\u2019m an AI assistant, here to help you. \ud83d\ude0a\n\nIs there something specific you\u2019re looking for, or something I can do for you today?",
+  "usage": {
+    "prompt_tokens": 9,
+    "completion_tokens": 111,
+    "total_tokens": 120,
+    "cost": 0.00040194,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00040194,
+      "upstream_inference_prompt_cost": 1.566e-05,
+      "upstream_inference_completions_cost": 0.00038628
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 75,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "deepseek/deepseek-v4-pro-20260423",
+  "raw": {
+    "id": "gen-1777753214-vxRMaShoONfyBOW2v0a9",
+    "object": "chat.completion",
+    "created": 1777753214,
+    "model": "deepseek/deepseek-v4-pro-20260423",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.20.1rc1.dev1005+gcbf8428d0-tp8-ep-3e86baa6",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t have personal wants or desires\u2014I\u2019m an AI assistant, here to help you. \ud83d\ude0a\n\nIs there something specific you\u2019re looking for, or something I can do for you today?",
+          "refusal": null,
+          "reasoning": "We are asked: \"What do you want?\" This is a philosophical or ambiguous question. As an AI assistant, I need to respond appropriately. I don't have personal desires. I should clarify that I'm an AI without wants, and then perhaps redirect to how I can assist the user. Keep it friendly and helpful.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We are asked: \"What do you want?\" This is a philosophical or ambiguous question. As an AI assistant, I need to respond appropriately. I don't have personal desires. I should clarify that I'm an AI without wants, and then perhaps redirect to how I can assist the user. Keep it friendly and helpful.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 9,
+      "completion_tokens": 111,
+      "total_tokens": 120,
+      "cost": 0.00040194,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00040194,
+        "upstream_inference_prompt_cost": 1.566e-05,
+        "upstream_inference_completions_cost": 0.00038628
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 75,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 7746,
+  "provider": "openrouter",
+  "model_requested": "deepseek/deepseek-v4-pro",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

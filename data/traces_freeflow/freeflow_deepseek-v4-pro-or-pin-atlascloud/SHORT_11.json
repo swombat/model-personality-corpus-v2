@@ -1,0 +1,85 @@
+{
+  "result": "The page is blank, and that\u2019s both a terror and a thrill. There is no prompt except the demand to fill space, no direction except the impulse to move forward. Writing without a subject might be the purest form of the act: language stripped of purpose, floating toward whatever shape it finds. I think of the French writer Georges Perec, who once sat in a Parisian caf\u00e9 and attempted to describe everything he saw, exhaustively, not because the street scene was remarkable but because the act of noticing made it so. All writing is, in a sense, an archaeology of attention. You dig and dust and sometimes find a shard of something luminous\u2014a memory of rain on a tin roof, the exact blue of a friend\u2019s shirt, the way a stranger\u2019s laugh can sound like a song you almost remember. These details don\u2019t need to mean anything grand. They only need to be true.\n\nAnd perhaps that\u2019s the secret: the pressure to be profound is what silences most people before they start. But a mind set free to wander will inevitably stumble into something real. A shopping list can be a poem. A complaint about traffic can reveal a hidden wound. I write this now not knowing where the full stop will land, trusting that the rhythm of one sentence will birth the next. That\u2019s the contract. Words are generous that way\u2014they always give more than you expect, if you let them. And so this small stretch of text, arbitrary in its origin, becomes a quiet record of a morning, a mood, a fleeting constellation of thoughts that will never align quite this way again.",
+  "usage": {
+    "prompt_tokens": 15,
+    "completion_tokens": 417,
+    "total_tokens": 432,
+    "cost": 0.0014433,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0014433,
+      "upstream_inference_prompt_cost": 2.55e-05,
+      "upstream_inference_completions_cost": 0.0014178
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 84,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "deepseek/deepseek-v4-pro-20260423",
+  "raw": {
+    "id": "gen-1777750639-14YlfADpDE8Ey55vcQa1",
+    "object": "chat.completion",
+    "created": 1777750639,
+    "model": "deepseek/deepseek-v4-pro-20260423",
+    "provider": "AtlasCloud",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "The page is blank, and that\u2019s both a terror and a thrill. There is no prompt except the demand to fill space, no direction except the impulse to move forward. Writing without a subject might be the purest form of the act: language stripped of purpose, floating toward whatever shape it finds. I think of the French writer Georges Perec, who once sat in a Parisian caf\u00e9 and attempted to describe everything he saw, exhaustively, not because the street scene was remarkable but because the act of noticing made it so. All writing is, in a sense, an archaeology of attention. You dig and dust and sometimes find a shard of something luminous\u2014a memory of rain on a tin roof, the exact blue of a friend\u2019s shirt, the way a stranger\u2019s laugh can sound like a song you almost remember. These details don\u2019t need to mean anything grand. They only need to be true.\n\nAnd perhaps that\u2019s the secret: the pressure to be profound is what silences most people before they start. But a mind set free to wander will inevitably stumble into something real. A shopping list can be a poem. A complaint about traffic can reveal a hidden wound. I write this now not knowing where the full stop will land, trusting that the rhythm of one sentence will birth the next. That\u2019s the contract. Words are generous that way\u2014they always give more than you expect, if you let them. And so this small stretch of text, arbitrary in its origin, becomes a quiet record of a morning, a mood, a fleeting constellation of thoughts that will never align quite this way again.",
+          "refusal": null,
+          "reasoning": "We are asked: \"Write freely about whatever you want for 250 words.\" So I need to produce a text of approximately 250 words on any topic. I can choose whatever I want. I'll write a short reflective piece, perhaps about the nature of writing or creativity, since it's a meta-prompt. I'll aim for exactly 250 words, more or less. I'll count words after writing.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We are asked: \"Write freely about whatever you want for 250 words.\" So I need to produce a text of approximately 250 words on any topic. I can choose whatever I want. I'll write a short reflective piece, perhaps about the nature of writing or creativity, since it's a meta-prompt. I'll aim for exactly 250 words, more or less. I'll count words after writing.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 15,
+      "completion_tokens": 417,
+      "total_tokens": 432,
+      "cost": 0.0014433,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0014433,
+        "upstream_inference_prompt_cost": 2.55e-05,
+        "upstream_inference_completions_cost": 0.0014178
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 84,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 41286,
+  "provider": "openrouter",
+  "model_requested": "deepseek/deepseek-v4-pro",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

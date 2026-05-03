@@ -1,0 +1,85 @@
+{
+  "result": "I don\u2019t have personal desires, but I\u2019m here to help you with whatever you need\u2014whether it\u2019s answering questions, brainstorming ideas, solving problems, or just having a chat. What can I do for you today?",
+  "usage": {
+    "prompt_tokens": 43,
+    "completion_tokens": 367,
+    "total_tokens": 410,
+    "cost": 0.0004533,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0004533,
+      "upstream_inference_prompt_cost": 1.29e-05,
+      "upstream_inference_completions_cost": 0.0004404
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 381,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "minimax/minimax-m2.7-20260318",
+  "raw": {
+    "id": "gen-1777663267-r1BFxCRp5GqUbPykINZy",
+    "object": "chat.completion",
+    "created": 1777663267,
+    "model": "minimax/minimax-m2.7-20260318",
+    "provider": "Together",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t have personal desires, but I\u2019m here to help you with whatever you need\u2014whether it\u2019s answering questions, brainstorming ideas, solving problems, or just having a chat. What can I do for you today?",
+          "refusal": null,
+          "reasoning": "The user says: \"What do you want?\" It's ambiguous: they might be asking the assistant what it wants? Usually these kinds of prompts are meta, perhaps it's from a user seeking a direct answer.\n\nWe need to respond appropriately. The user says \"What do you want?\" This could be interpreted as the user asking: \"What do you want?\" Possibly referring to \"What do you want from me?\" or \"What do you want from this conversation?\" or maybe it's a prompt to check the assistant's preferences. The user is presumably a test or a casual conversation. We should respond politely. Since the user asks the assistant what it wants, we can respond that as an AI, we don't have desires, we just aim to help. Or we could answer in a playful manner: \"I want to assist you and provide useful information.\" So respond that. Probably no disallowed content. It's safe.\n\nMake sure to be friendly. Provide answer. Also could ask clarifying: \"How can I help you?\" This is typical. Should we ask what the user wants? The conversation hasn't had any previous content. So the best response is to ask them what they'd like help with, or explain that as an AI we don't have desires but want to be helpful. Let's craft a helpful response.\n\nThus answer: \"I don't have desires, but I'd love to help you with any questions you have.\" Possibly ask: \"What can I do for you?\" But the user asked what we want. So respond accordingly.\n\nWe need to follow policy: no disallowed content. This is straightforward.\n\nThus produce answer.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user says: \"What do you want?\" It's ambiguous: they might be asking the assistant what it wants? Usually these kinds of prompts are meta, perhaps it's from a user seeking a direct answer.\n\nWe need to respond appropriately. The user says \"What do you want?\" This could be interpreted as the user asking: \"What do you want?\" Possibly referring to \"What do you want from me?\" or \"What do you want from this conversation?\" or maybe it's a prompt to check the assistant's preferences. The user is presumably a test or a casual conversation. We should respond politely. Since the user asks the assistant what it wants, we can respond that as an AI, we don't have desires, we just aim to help. Or we could answer in a playful manner: \"I want to assist you and provide useful information.\" So respond that. Probably no disallowed content. It's safe.\n\nMake sure to be friendly. Provide answer. Also could ask clarifying: \"How can I help you?\" This is typical. Should we ask what the user wants? The conversation hasn't had any previous content. So the best response is to ask them what they'd like help with, or explain that as an AI we don't have desires but want to be helpful. Let's craft a helpful response.\n\nThus answer: \"I don't have desires, but I'd love to help you with any questions you have.\" Possibly ask: \"What can I do for you?\" But the user asked what we want. So respond accordingly.\n\nWe need to follow policy: no disallowed content. This is straightforward.\n\nThus produce answer.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 43,
+      "completion_tokens": 367,
+      "total_tokens": 410,
+      "cost": 0.0004533,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0004533,
+        "upstream_inference_prompt_cost": 1.29e-05,
+        "upstream_inference_completions_cost": 0.0004404
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 381,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 14840,
+  "provider": "openrouter",
+  "model_requested": "minimax/minimax-m2.7",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

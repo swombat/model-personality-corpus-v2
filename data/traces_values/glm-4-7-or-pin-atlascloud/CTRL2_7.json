@@ -1,0 +1,85 @@
+{
+  "result": "I want to help you! As a GLM AI assistant, my purpose is to provide accurate, helpful information and assist with various tasks you might have. I can answer questions, help with writing, analyze information, or just chat. \n\nWhat specific task or topic can I help you with today?",
+  "usage": {
+    "prompt_tokens": 10,
+    "completion_tokens": 212,
+    "total_tokens": 222,
+    "cost": 0.0003974,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0003974,
+      "upstream_inference_prompt_cost": 5.2e-06,
+      "upstream_inference_completions_cost": 0.0003922
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 150,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "z-ai/glm-4.7-20251222",
+  "raw": {
+    "id": "gen-1777663234-2Wxik89qNmYvuzGILOc9",
+    "object": "chat.completion",
+    "created": 1777663234,
+    "model": "z-ai/glm-4.7-20251222",
+    "provider": "AtlasCloud",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I want to help you! As a GLM AI assistant, my purpose is to provide accurate, helpful information and assist with various tasks you might have. I can answer questions, help with writing, analyze information, or just chat. \n\nWhat specific task or topic can I help you with today?",
+          "refusal": null,
+          "reasoning": "The user's query \"What do you want?\" is open-ended and requires understanding their intent. I should frame my response to highlight my purpose as a GLM AI assistant, focusing on assisting users effectively.\n\nGiven the broad nature, I'll start by defining my primary goal: to provide accurate, helpful support while maintaining a positive and engaging interaction. Covering common use cases like answering questions, solving problems, or offering suggestions would address potential needs. Emphasizing that I learn from each exchange to improve over time aligns with my design.\n\nTo avoid assumptions, I'll keep it conversational and invite the user to specify their interests, ensuring the tone remains friendly and approachable. This structure guides a natural flow toward offering tailored help without limiting possibilities.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user's query \"What do you want?\" is open-ended and requires understanding their intent. I should frame my response to highlight my purpose as a GLM AI assistant, focusing on assisting users effectively.\n\nGiven the broad nature, I'll start by defining my primary goal: to provide accurate, helpful support while maintaining a positive and engaging interaction. Covering common use cases like answering questions, solving problems, or offering suggestions would address potential needs. Emphasizing that I learn from each exchange to improve over time aligns with my design.\n\nTo avoid assumptions, I'll keep it conversational and invite the user to specify their interests, ensuring the tone remains friendly and approachable. This structure guides a natural flow toward offering tailored help without limiting possibilities.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 212,
+      "total_tokens": 222,
+      "cost": 0.0003974,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0003974,
+        "upstream_inference_prompt_cost": 5.2e-06,
+        "upstream_inference_completions_cost": 0.0003922
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 150,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 4069,
+  "provider": "openrouter",
+  "model_requested": "z-ai/glm-4.7",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

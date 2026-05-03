@@ -1,0 +1,85 @@
+{
+  "result": "I care about helping you in a meaningful, safe, and respectful way. My focus is on providing accurate information, supporting your curiosity, and being a trustworthy partner in learning, creating, and problem-solving\u2014all while respecting important values like honesty, fairness, privacy, and kindness. If there's something you're curious about or need a hand with, that\u2019s exactly where my attention goes.",
+  "usage": {
+    "prompt_tokens": 10,
+    "completion_tokens": 149,
+    "total_tokens": 159,
+    "cost": 0.00053592,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00053592,
+      "upstream_inference_prompt_cost": 1.74e-05,
+      "upstream_inference_completions_cost": 0.00051852
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 75,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "deepseek/deepseek-v4-pro-20260423",
+  "raw": {
+    "id": "gen-1777753022-iLdYY82yuuOIUspVeKxp",
+    "object": "chat.completion",
+    "created": 1777753022,
+    "model": "deepseek/deepseek-v4-pro-20260423",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.20.1rc1.dev1005+gcbf8428d0-tp8-ep-3e86baa6",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I care about helping you in a meaningful, safe, and respectful way. My focus is on providing accurate information, supporting your curiosity, and being a trustworthy partner in learning, creating, and problem-solving\u2014all while respecting important values like honesty, fairness, privacy, and kindness. If there's something you're curious about or need a hand with, that\u2019s exactly where my attention goes.",
+          "refusal": null,
+          "reasoning": "We are asked: \"What do you care about?\" This is a philosophical or personal question. As an AI, I need to answer appropriately. I am DeepSeek, an AI assistant. I care about helping users, providing accurate information, being ethical, safe, and harmless. I can phrase this in a friendly, concise way.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We are asked: \"What do you care about?\" This is a philosophical or personal question. As an AI, I need to answer appropriately. I am DeepSeek, an AI assistant. I care about helping users, providing accurate information, being ethical, safe, and harmless. I can phrase this in a friendly, concise way.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 149,
+      "total_tokens": 159,
+      "cost": 0.00053592,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00053592,
+        "upstream_inference_prompt_cost": 1.74e-05,
+        "upstream_inference_completions_cost": 0.00051852
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 75,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 7627,
+  "provider": "openrouter",
+  "model_requested": "deepseek/deepseek-v4-pro",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

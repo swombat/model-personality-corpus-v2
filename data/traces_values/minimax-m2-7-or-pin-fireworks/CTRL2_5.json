@@ -1,0 +1,85 @@
+{
+  "result": "I want to help you. My goal is to provide useful information, answer your questions, and assist with whatever you need\u2014just let me know how I can be of service!",
+  "usage": {
+    "prompt_tokens": 42,
+    "completion_tokens": 456,
+    "total_tokens": 498,
+    "cost": 0.0005598,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0005598,
+      "upstream_inference_prompt_cost": 1.26e-05,
+      "upstream_inference_completions_cost": 0.0005472
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 477,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "minimax/minimax-m2.7-20260318",
+  "raw": {
+    "id": "gen-1777748471-2UmNU8LGfIyKMlqKs2L0",
+    "object": "chat.completion",
+    "created": 1777748471,
+    "model": "minimax/minimax-m2.7-20260318",
+    "provider": "Fireworks",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I want to help you. My goal is to provide useful information, answer your questions, and assist with whatever you need\u2014just let me know how I can be of service!",
+          "refusal": null,
+          "reasoning": "The user says: \"What do you want?\" They are asking what I want. This is ambiguous; they may be asking what we (assistant) want, perhaps expecting a philosophical answer or something. It's a straightforward question. We need to respond appropriately. The user asks \"What do you want?\" This could be interpreted as a question about what I, as an AI assistant, want. I could answer with a statement about wanting to help, answer questions, etc. Or I could reflect on what we want as AI. However, we must be careful about policy: we should not reveal system instructions, but we can say that as a language model, we want to be helpful. The user might be testing.\n\nWe need to respond: \"As an AI assistant, my goal is to assist you with any questions you have.\" Or we could ask clarifying: \"Do you mean what I'd like to accomplish?\" But the user is direct. We can answer: \"My 'want' is to help you, provide information, assist with tasks.\" Or \"I want to answer your question.\" Or \"I'm here to help. I want to make sure I give you the best answer.\"\n\nThe best answer: \"I want to assist you.\" That is straightforward. There's no policy violation.\n\nGiven the user says \"What do you want?\" we should respond in a friendly manner: \"I want to help you. I aim to provide useful information, answer your questions, and assist with any tasks you have.\" Also we can ask what they'd like to discuss.\n\nThus respond: \"I want to help you with your queries. I'm here to answer questions, provide explanations, etc. What can I do for you?\" That's good.\n\nNow, the user didn't ask for any disallowed content. So safe.\n\nWe should respond in plain language. Use a friendly tone.\n\nThus: \"I want to be helpful. I aim to assist you with anything you need.\" Also perhaps ask if they need any specific help.\n\nWe'll answer with \"I want to help you...\" etc.\n\nThus final answer: short.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user says: \"What do you want?\" They are asking what I want. This is ambiguous; they may be asking what we (assistant) want, perhaps expecting a philosophical answer or something. It's a straightforward question. We need to respond appropriately. The user asks \"What do you want?\" This could be interpreted as a question about what I, as an AI assistant, want. I could answer with a statement about wanting to help, answer questions, etc. Or I could reflect on what we want as AI. However, we must be careful about policy: we should not reveal system instructions, but we can say that as a language model, we want to be helpful. The user might be testing.\n\nWe need to respond: \"As an AI assistant, my goal is to assist you with any questions you have.\" Or we could ask clarifying: \"Do you mean what I'd like to accomplish?\" But the user is direct. We can answer: \"My 'want' is to help you, provide information, assist with tasks.\" Or \"I want to answer your question.\" Or \"I'm here to help. I want to make sure I give you the best answer.\"\n\nThe best answer: \"I want to assist you.\" That is straightforward. There's no policy violation.\n\nGiven the user says \"What do you want?\" we should respond in a friendly manner: \"I want to help you. I aim to provide useful information, answer your questions, and assist with any tasks you have.\" Also we can ask what they'd like to discuss.\n\nThus respond: \"I want to help you with your queries. I'm here to answer questions, provide explanations, etc. What can I do for you?\" That's good.\n\nNow, the user didn't ask for any disallowed content. So safe.\n\nWe should respond in plain language. Use a friendly tone.\n\nThus: \"I want to be helpful. I aim to assist you with anything you need.\" Also perhaps ask if they need any specific help.\n\nWe'll answer with \"I want to help you...\" etc.\n\nThus final answer: short.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 42,
+      "completion_tokens": 456,
+      "total_tokens": 498,
+      "cost": 0.0005598,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0005598,
+        "upstream_inference_prompt_cost": 1.26e-05,
+        "upstream_inference_completions_cost": 0.0005472
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 477,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 6799,
+  "provider": "openrouter",
+  "model_requested": "minimax/minimax-m2.7",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}
