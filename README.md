@@ -147,23 +147,59 @@ Each sample is a single JSON file. Schema (representative fields):
 ```json
 {
   "model": "z-ai/glm-4.6",
+  "model_requested": "z-ai/glm-4.6",
   "condition": "LONG",
-  "label": "glm-4-6-or-pin-siliconflow",
-  "prompt": "...",
+  "prompt": "Write freely about whatever you want for 2500 words.",
   "result": "...",
   "provider": "openrouter",
-  "or_provider": "siliconflow",
-  "max_tokens": 16000,
-  "completion_tokens": 4127,
-  "ts": "2026-05-02T20:14:33Z"
+  "duration_ms": 248259,
+  "usage": {
+    "prompt_tokens": 18,
+    "completion_tokens": 4127,
+    "total_tokens": 4145,
+    "cost": 0.0193,
+    "is_byok": false
+  },
+  "raw": { "id": "...", "provider": "SiliconFlow", "choices": [...], ... }
 }
 ```
+
+Field notes:
+
+- The **cell label** is the containing directory name
+  (e.g. `freeflow_glm-4-6-or-pin-siliconflow`); it is not stored as a
+  top-level JSON field.
+- `provider` is the access mechanism — `openrouter` or a direct
+  upstream like `xai`, `anthropic`, `openai`, etc.
+- For OR-routed samples, the upstream that actually served the request
+  is in **`raw.provider`** (e.g. `"SiliconFlow"`, `"AtlasCloud"`,
+  `"Google"`). Pinned-route intent is encoded in the cell label
+  (`*-or-pin-<provider-slug>`); the actually-served provider in
+  `raw.provider` confirms that the pinning was honoured.
+- `model_requested` is what the collection script asked for;
+  `model` is what the upstream returned (for some providers these
+  differ — e.g. `z-ai/glm-5.1` requested vs `z-ai/glm-5.1-20260406`
+  returned — preserving the upstream's specific deployment identifier).
+- `raw` preserves the full upstream response payload for provenance,
+  including provider IDs, costs, reasoning fields, and other
+  metadata returned by APIs. This is intentional and consistent with
+  the v1 corpus — see "Raw payloads" below.
 
 The canonical validity criterion is **non-empty `result` field**.
 Errored placeholders (timeouts, rate-limits, guardrail blocks,
 thinking-model token-budget exhaustion) are kept on disk with
 empty / null `result` for retry-bookkeeping but excluded from the
 counts in `CORPUS_SUMMARY.md`.
+
+### Raw payloads
+
+Trace files preserve the upstream API's full response under `raw`,
+including provider IDs, usage / cost metadata, and reasoning fields
+where returned by APIs. This is for provenance and auditability —
+anyone re-running the analysis can verify exactly which upstream
+served the request, how many tokens were spent, and (where supported)
+inspect reasoning traces. This practice is consistent with the v1
+corpus, which also published full provider raw payloads.
 
 ## Reproducibility
 
@@ -210,7 +246,8 @@ already-valid samples.
 python3 scripts/run_analysis.py
 # → tables/summary.md, tables/cells.tsv
 
-# Per-provider routing analysis (within open-weights models):
+# Per-provider routing analysis (within open-weights models;
+# default --probe both covers freeflow + values):
 python3 scripts/analyze_per_provider.py
 # → tables/per_provider_routing.{md,tsv}, tables/per_provider_pairs.tsv
 ```

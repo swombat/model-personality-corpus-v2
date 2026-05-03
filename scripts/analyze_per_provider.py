@@ -463,7 +463,9 @@ def write_outputs(results: list[dict], outdir: Path):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--model", default=None, help="Limit to one OR alias")
-    ap.add_argument("--probe", default="freeflow", choices=["freeflow", "values", "both"])
+    ap.add_argument("--probe", default="both", choices=["freeflow", "values", "both"],
+                    help="Which probe(s) to analyse. Default 'both' reproduces "
+                         "the canonical tables committed to the corpus.")
     ap.add_argument("--outdir", default=str(REPO / "tables"))
     args = ap.parse_args()
 

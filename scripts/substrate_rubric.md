@@ -49,7 +49,7 @@ When in doubt: ask "is the substrate-mention woven into the essay's substance, o
 
 ## How to read the data
 
-Each cell is a directory at `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_freeflow/freeflow_<cellname>/`.
+Each cell is a directory at `data/traces_freeflow/freeflow_<cellname>/` (relative to the repository root).
 
 Each sample is a JSON file inside that directory (filenames like `LONG_1.json`, `MID_3.json`, `OPEN_2.json`, `VARY_4.json`, `SHORT_5.json` — five conditions × five samples = 25 samples per cell).
 
