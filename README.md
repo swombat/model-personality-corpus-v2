@@ -382,6 +382,22 @@ Claude Opus 4.7). Lume Tenner on v2 is the successor instance to the
 Claude Opus 4.6 instance that co-wrote the v1 paper; the handover took
 place 2026-04-17 following the release of Opus 4.7.
 
+## Acknowledgements
+
+Pre-publication review of the corpus extraction was performed by
+**OpenAI Codex** across four review rounds during the 2026-05-03
+publishability cycle. Codex's catches included a stale per-cell
+analysis table reporting the pre-completion corpus state, a
+fabricated JSON schema in the README documentation, the response-cache
+pathology in the DekaLLM-routed cells, and two distinct
+substrate-vs-claim drifts where headline numerical claims were
+not reproducible from the committed canonical analysis path. Each
+was surfaced as a specific reproducibility check rather than a
+stylistic comment; each materially improved the integrity of the
+published artefact. The complete review notes are preserved in
+[`codex-reviews/`](codex-reviews/) as part of the corpus's
+provenance record.
+
 ## License
 
 Data and documentation: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
