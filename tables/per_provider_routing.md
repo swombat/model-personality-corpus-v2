@@ -7,6 +7,7 @@ Scope of within-model variation across upstream providers. **Per-25 spread** is 
 | Model | Probe | Providers | Per-25 spread | Max \|d\| | Pairs | N(sig FDR) | N(sig Bonf) |
 |---|---|---:|---:|---:|---:|---:|---:|
 | deepseek/deepseek-v4-pro | freeflow | 6 | 13.4 | 0.22 | 15 | 0 | 0 |
+| minimax/minimax-m2 | freeflow | 4 | 74.1 | 0.76 | 6 | 4 | 3 |
 | minimax/minimax-m2.7 | freeflow | 2 | 6.8 | 0.16 | 1 | 0 | 0 |
 | z-ai/glm-4.5 | freeflow | 2 | 2.8 | 0.04 | 1 | 0 | 0 |
 | z-ai/glm-4.6 | freeflow | 6 | 17.2 | 0.35 | 15 | 0 | 0 |
@@ -47,6 +48,27 @@ Top 5 pairwise comparisons by |Cohen's d|:
 | atlascloud | gmicloud | -0.13 | -1.03 | 0.305 | 1.000 | 0.770 |
 
 _No pairwise comparisons reach significance under FDR or Bonferroni at α=0.05._
+
+## minimax/minimax-m2 (freeflow)
+
+| Provider | n | Σ comp | Mean | SD | Per-25 | Bin |
+|---|---:|---:|---:|---:|---:|:---:|
+| atlascloud | 120 | 201 | 1.68 | 2.56 | 41.9 | in |
+| google | 119 | 478 | 4.02 | 5.29 | 100.4 | in |
+| minimax | 116 | 145 | 1.25 | 2.63 | 31.2 | in |
+| novita | 113 | 119 | 1.05 | 1.25 | 26.3 | in |
+
+Top 5 pairwise comparisons by |Cohen's d|:
+
+| A | B | Cohen's d | t | p (raw) | p (Bonf) | q (FDR) |
+|---|---|---:|---:|---:|---:|---:|
+| google | novita | 0.76 | 5.94 | <1e-6 | <1e-6 | <1e-6 |
+| google | minimax | 0.66 | 5.09 | <1e-6 | 5.5e-06 | 2.7e-06 |
+| atlascloud | google | -0.56 | -4.35 | 2.4e-05 | 1.4e-04 | 4.7e-05 |
+| atlascloud | novita | 0.31 | 2.38 | 0.019 | 0.112 | 0.028 |
+| atlascloud | minimax | 0.16 | 1.26 | 0.210 | 1.000 | 0.252 |
+
+**3 pairwise comparisons survive Bonferroni at α=0.05.**
 
 ## minimax/minimax-m2.7 (freeflow)
 
@@ -247,6 +269,10 @@ Top 5 pairwise comparisons by |Cohen's d|:
 | gmicloud | novita | 0.13 | 1.01 | 0.316 | 1.000 | 0.588 |
 
 _No pairwise comparisons reach significance under FDR or Bonferroni at α=0.05._
+
+## minimax/minimax-m2 (values)
+
+_No data yet_
 
 ## minimax/minimax-m2.7 (values)
 

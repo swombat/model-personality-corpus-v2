@@ -15,7 +15,12 @@ The intent: produce the per-model tables that drop into the routing paper's
 extended Results section once collection finishes.
 
 Usage:
-  python scripts/analyze_per_provider.py [--model <or-alias>] [--values]
+  python scripts/analyze_per_provider.py [--model <or-alias>] [--probe freeflow|values|both]
+
+The default --probe is `both`, which produces a unified table covering both
+the freeflow and values probes. This reproduces the canonical
+tables/per_provider_routing.{md,tsv} and tables/per_provider_pairs.tsv
+committed to the corpus.
 """
 
 import argparse
@@ -38,6 +43,15 @@ from analyze_all import PATTERNS, composite_score  # type: ignore
 # Must match run_per_provider_sweep.py.
 MODELS = [
     ("deepseek/deepseek-v4-pro",     "deepseek-v4-pro"),
+    ("minimax/minimax-m2",           "minimax-m2"),       # added 2026-05-03 evening: the original
+                                                          # v2-paper headline (d=0.73, google-vertex
+                                                          # vs minimax-self) was produced by a
+                                                          # separate analysis path; adding the
+                                                          # model here makes the canonical
+                                                          # per-provider tables surface the effect
+                                                          # alongside the other models. Freeflow
+                                                          # only — no per-pin values cells were
+                                                          # collected for the original M2.
     ("minimax/minimax-m2.7",         "minimax-m2-7"),
     ("z-ai/glm-4.5",                 "glm-4-5"),
     ("z-ai/glm-4.6",                 "glm-4-6"),

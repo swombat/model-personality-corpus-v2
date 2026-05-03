@@ -92,13 +92,18 @@ mechanism with `allow_fallbacks: false`, producing one cell per
 
 This enables direct testing of the **routing-layer hypothesis**: for
 a fixed open-weights model alias, do different upstream hosts produce
-statistically distinguishable outputs? Two robust effects survive
+statistically distinguishable outputs? Two model-level findings survive
 multiple-comparison correction in the v2 corpus:
 
-- **MiniMax M2 on Google Vertex** vs MiniMax's own deployment:
-  Cohen's d = 0.73, p < 10⁻⁶ (likely a quantization artefact — Google
-  Vertex is the only MiniMax M2 provider whose quantization is not
-  publicly reported as fp8).
+- **MiniMax M2 on Google Vertex** is anomalous against all three other
+  M2 upstreams (atlascloud, minimax-self, novita). Three pairwise
+  comparisons in the canonical per-provider tables survive Bonferroni
+  at α=0.05: google-vs-novita (d=0.76, p<10⁻⁶), google-vs-minimax-self
+  (d=0.66, p_Bonf=5.5×10⁻⁶), and atlascloud-vs-google (d=−0.56,
+  p_Bonf=1.4×10⁻⁴). Per-25 composite scores: Google Vertex 100.4 vs
+  AtlasCloud 41.9 / MiniMax-self 31.2 / Novita 26.3. The likely
+  mechanism is quantization — Google Vertex is the only MiniMax M2
+  upstream whose quantization is not publicly reported as fp8.
 - **Kimi K2-thinking on AtlasCloud** vs Google: d = 0.40,
   p_Bonferroni = 0.005.
 
@@ -330,11 +335,11 @@ pathology; only the analysis layer filters it).
 ### Per-provider analysis threshold
 
 Cells are included in the per-provider routing analysis (the analysis
-producing the d=0.73 and d=0.40 effects above) only if they have
-**≥50 valid freeflow samples**. The threshold is enforced in
-`scripts/analyze_per_provider.py` (`MIN_VALID_SAMPLES = 50`) and
-applied uniformly across models. Cells below threshold are dropped
-with a stderr report.
+producing the M2-Google-Vertex and K2-thinking-AtlasCloud effects
+above) only if they have **≥50 valid freeflow samples**. The threshold
+is enforced in `scripts/analyze_per_provider.py`
+(`MIN_VALID_SAMPLES = 50`) and applied uniformly across models.
+Cells below threshold are dropped with a stderr report.
 
 ### Substrate-completeness state
 
