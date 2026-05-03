@@ -95,12 +95,28 @@ def load_cell(traces_dir: Path) -> list[int]:
 # the audit was specifically looking for.
 MIN_VALID_SAMPLES = 50
 
-# Providers excluded from analysis on routing-quality grounds. Fireworks
-# added 2026-05-03 — OR shared-pool rate-limit produced unreliable / partial
-# collections across both models that route through it (glm-5.1, minimax-m2.7).
-# Not the only provider for any model, so excluding is harmless. The cell
-# data-files remain on disk but are filtered out of pairwise comparisons.
-EXCLUDED_PROVIDERS = {"fireworks"}
+# Providers excluded from analysis on routing-quality grounds.
+#
+# fireworks (added 2026-05-03 audit pass): OR shared-pool rate-limit produced
+# unreliable / partial collections across both models that route through it
+# (glm-5.1, minimax-m2.7). Not the only provider for any model, so excluding
+# is harmless.
+#
+# dekallm (added 2026-05-03 evening): observed near-deterministic outputs in
+# the glm-4.7-or-pin-dekallm cell — 245 valid samples collapsed into 34
+# distinct outputs, with a median per-sample duration of 489 ms for ~3,900-
+# completion-token responses (vs 16-262 seconds on every other GLM-4.7
+# upstream including specialized fast-inference hardware). The timing
+# falsifies forced-determinism — only an upstream response cache can return
+# a multi-thousand-token completion in sub-second wall time. DekaLLM is
+# therefore returning cached responses keyed on prompt hash, which makes its
+# samples non-independent and inflates between-cell effect sizes when included.
+# DekaLLM is not the only provider for any model in the sweep (z-ai/glm-4.7
+# has 11 OR upstreams), so excluding is harmless. The cell data files remain
+# on disk as evidence of the cache-pathology pattern and are referenced by
+# the routing paper as a third category of provider-identity effect
+# (alongside quantization and configuration).
+EXCLUDED_PROVIDERS = {"fireworks", "dekallm"}
 
 
 def find_provider_cells(label_prefix: str, probe: str = "freeflow") -> dict[str, list[int]]:

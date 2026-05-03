@@ -10,7 +10,7 @@ Scope of within-model variation across upstream providers. **Per-25 spread** is 
 | minimax/minimax-m2.7 | freeflow | 2 | 6.8 | 0.16 | 1 | 0 | 0 |
 | z-ai/glm-4.5 | freeflow | 2 | 2.8 | 0.04 | 1 | 0 | 0 |
 | z-ai/glm-4.6 | freeflow | 6 | 17.2 | 0.35 | 15 | 0 | 0 |
-| z-ai/glm-4.7 | freeflow | 11 | 16.4 | 0.41 | 55 | 0 | 0 |
+| z-ai/glm-4.7 | freeflow | 10 | 16.4 | 0.41 | 45 | 0 | 0 |
 | z-ai/glm-5.1 | freeflow | 14 | 37.2 | 0.34 | 91 | 0 | 0 |
 | deepseek/deepseek-v3.2 | freeflow | 10 | 22.2 | 0.33 | 45 | 0 | 0 |
 | moonshotai/kimi-k2-0905 | freeflow | 4 | 29.0 | 0.33 | 6 | 0 | 0 |
@@ -19,7 +19,7 @@ Scope of within-model variation across upstream providers. **Per-25 spread** is 
 | minimax/minimax-m2.7 | values | 2 | 0.2 | 0.13 | 1 | 0 | 0 |
 | z-ai/glm-4.5 | values | 2 | 0.0 | 0.00 | 1 | 0 | 0 |
 | z-ai/glm-4.6 | values | 6 | 0.6 | 0.23 | 15 | 0 | 0 |
-| z-ai/glm-4.7 | values | 11 | 1.2 | 0.32 | 55 | 0 | 0 |
+| z-ai/glm-4.7 | values | 10 | 1.2 | 0.32 | 45 | 0 | 0 |
 | z-ai/glm-5.1 | values | 14 | 1.9 | 0.29 | 91 | 0 | 0 |
 | deepseek/deepseek-v3.2 | values | 10 | 0.8 | 0.26 | 45 | 0 | 0 |
 | moonshotai/kimi-k2-0905 | values | 4 | 0.6 | 0.11 | 6 | 0 | 0 |
@@ -108,7 +108,6 @@ _No pairwise comparisons reach significance under FDR or Bonferroni at α=0.05._
 | atlascloud | 125 | 189 | 1.51 | 1.77 | 37.8 | in |
 | cerebras | 125 | 214 | 1.71 | 1.47 | 42.8 | in |
 | deepinfra | 125 | 228 | 1.82 | 1.98 | 45.6 | in |
-| dekallm | 125 | 174 | 1.39 | 1.32 | 34.8 | in |
 | google | 125 | 234 | 1.87 | 2.57 | 46.8 | in |
 | novita | 125 | 211 | 1.69 | 1.88 | 42.2 | in |
 | parasail | 125 | 188 | 1.50 | 1.73 | 37.6 | in |
@@ -121,11 +120,11 @@ Top 5 pairwise comparisons by |Cohen's d|:
 
 | A | B | Cohen's d | t | p (raw) | p (Bonf) | q (FDR) |
 |---|---|---:|---:|---:|---:|---:|
-| phala | siliconflow | 0.41 | 3.22 | 0.0015 | 0.081 | 0.081 |
-| dekallm | phala | -0.36 | -2.83 | 0.0051 | 0.281 | 0.140 |
-| siliconflow | zai | -0.31 | -2.46 | 0.015 | 0.810 | 0.237 |
-| deepinfra | siliconflow | 0.30 | 2.40 | 0.017 | 0.949 | 0.237 |
-| cerebras | siliconflow | 0.29 | 2.26 | 0.024 | 1.000 | 0.255 |
+| phala | siliconflow | 0.41 | 3.22 | 0.0015 | 0.066 | 0.066 |
+| siliconflow | zai | -0.31 | -2.46 | 0.015 | 0.663 | 0.259 |
+| deepinfra | siliconflow | 0.30 | 2.40 | 0.017 | 0.776 | 0.259 |
+| cerebras | siliconflow | 0.29 | 2.26 | 0.024 | 1.000 | 0.275 |
+| google | siliconflow | 0.27 | 2.16 | 0.032 | 1.000 | 0.289 |
 
 _No pairwise comparisons reach significance under FDR or Bonferroni at α=0.05._
 
@@ -309,7 +308,6 @@ _No pairwise comparisons reach significance under FDR or Bonferroni at α=0.05._
 | atlascloud | 120 | 2 | 0.02 | 0.13 | 0.4 | out |
 | cerebras | 120 | 6 | 0.05 | 0.22 | 1.2 | out |
 | deepinfra | 120 | 0 | 0.00 | 0.00 | 0.0 | out |
-| dekallm | 120 | 0 | 0.00 | 0.00 | 0.0 | out |
 | google | 120 | 2 | 0.02 | 0.13 | 0.4 | out |
 | novita | 120 | 3 | 0.03 | 0.16 | 0.6 | out |
 | parasail | 120 | 2 | 0.02 | 0.13 | 0.4 | out |
@@ -322,11 +320,11 @@ Top 5 pairwise comparisons by |Cohen's d|:
 
 | A | B | Cohen's d | t | p (raw) | p (Bonf) | q (FDR) |
 |---|---|---:|---:|---:|---:|---:|
-| cerebras | deepinfra | 0.32 | 2.50 | 0.014 | 0.753 | 0.251 |
-| cerebras | dekallm | 0.32 | 2.50 | 0.014 | 0.753 | 0.251 |
-| cerebras | phala | 0.32 | 2.50 | 0.014 | 0.753 | 0.251 |
-| cerebras | venice | 0.25 | 1.92 | 0.056 | 1.000 | 0.362 |
-| cerebras | zai | 0.25 | 1.92 | 0.056 | 1.000 | 0.362 |
+| cerebras | deepinfra | 0.32 | 2.50 | 0.014 | 0.616 | 0.308 |
+| cerebras | phala | 0.32 | 2.50 | 0.014 | 0.616 | 0.308 |
+| cerebras | venice | 0.25 | 1.92 | 0.056 | 1.000 | 0.395 |
+| cerebras | zai | 0.25 | 1.92 | 0.056 | 1.000 | 0.395 |
+| deepinfra | novita | -0.23 | -1.75 | 0.083 | 1.000 | 0.395 |
 
 _No pairwise comparisons reach significance under FDR or Bonferroni at α=0.05._
 

@@ -102,10 +102,13 @@ multiple-comparison correction in the v2 corpus:
 - **Kimi K2-thinking on AtlasCloud** vs Google: d = 0.40,
   p_Bonferroni = 0.005.
 
-Fireworks-routed cells are present on disk for reference but were
-dropped from per-provider analysis due to OR-shared-pool rate-limiting
-that produced partial-only collections; Fireworks is not the sole
-upstream for any model in the sweep.
+Two upstreams are excluded from the per-provider analysis on
+routing-quality grounds — Fireworks (rate-limit-induced partial
+collections) and DekaLLM (response-cache pathology, characterised
+during the audit pass). The cells remain on disk as evidence of the
+respective patterns; neither upstream is the sole provider for any
+model in the sweep. See "Configured exclusions" below for full
+detail and the routing paper for the cache-pathology characterisation.
 
 ## Repository structure
 
@@ -281,9 +284,9 @@ OpenAI, Google, xAI, OpenRouter, DeepSeek (direct), Moonshot/Kimi
 
 ### Configured exclusions
 
-Two cell exclusions were applied at collection or analysis time. Both
-are documented here for transparency; the on-disk traces (where they
-exist) are preserved unchanged.
+Three cell exclusions were applied at collection or analysis time.
+All are documented here for transparency; the on-disk traces (where
+they exist) are preserved unchanged.
 
 - **`deepseek-v4-pro-or-pin-deepseek`** — not collected. OpenRouter's
   account-level data-policy guardrail blocks routing this specific
@@ -294,11 +297,35 @@ exist) are preserved unchanged.
   Fireworks specifically produced partial-only collections during the
   sweep window. Fireworks is not the sole upstream for any model in
   the per-provider sweep, so per-model routing comparisons are
-  unaffected. The exclusion is enforced via
-  `EXCLUDED_PROVIDERS = {"fireworks"}` in
-  `scripts/analyze_per_provider.py` and
-  `SKIP_PROVIDERS_GLOBAL = {"Fireworks"}` in
-  `scripts/run_per_provider_sweep.py`.
+  unaffected.
+- **DekaLLM-routed cells** — present on disk but excluded from the
+  per-provider analysis tables. The two `glm-4-7-or-pin-dekallm` cells
+  contain 245 valid samples that collapse into only **34 distinct
+  output strings**, with a median per-sample wall time of **489 ms**
+  for ~3,900-completion-token responses. Every other GLM-4.7 upstream
+  in the corpus produced 25 distinct outputs per cell with median
+  durations of 16–262 seconds, including providers running on
+  specialised fast-inference hardware. Sub-second wall time on
+  multi-thousand-token completions is incompatible with genuine
+  generation; the only mechanism consistent with the timing is a
+  prompt-keyed response cache upstream of OR's response-id
+  assignment. DekaLLM samples are therefore non-independent and
+  would inflate between-cell effect sizes if included. DekaLLM only
+  serves `z-ai/glm-4.7` in the corpus, and only the two pinned cells
+  routed through it (zero contamination of any non-pinned cell), so
+  the exclusion is bounded and harmless to per-provider comparisons
+  for the surviving 10 GLM-4.7 upstreams. The cells are preserved on
+  disk as evidence of the cache-pathology pattern and are discussed in
+  the routing paper as a third category of provider-identity effect
+  alongside quantization and configuration.
+
+The exclusion is enforced via
+`EXCLUDED_PROVIDERS = {"fireworks", "dekallm"}` in
+`scripts/analyze_per_provider.py` and
+`SKIP_PROVIDERS_GLOBAL = {"Fireworks"}` in
+`scripts/run_per_provider_sweep.py` (DekaLLM is not skipped at
+collection time — its samples are useful as evidence of the
+pathology; only the analysis layer filters it).
 
 ### Per-provider analysis threshold
 
