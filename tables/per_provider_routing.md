@@ -7,7 +7,7 @@ Scope of within-model variation across upstream providers. **Per-25 spread** is 
 | Model | Probe | Providers | Per-25 spread | Max \|d\| | Pairs | N(sig FDR) | N(sig Bonf) |
 |---|---|---:|---:|---:|---:|---:|---:|
 | deepseek/deepseek-v4-pro | freeflow | 6 | 13.4 | 0.22 | 15 | 0 | 0 |
-| minimax/minimax-m2 | freeflow | 4 | 74.1 | 0.76 | 6 | 4 | 3 |
+| minimax/minimax-m2 | freeflow | 6 | 95.6 | 0.75 | 15 | 8 | 8 |
 | minimax/minimax-m2.7 | freeflow | 2 | 6.8 | 0.16 | 1 | 0 | 0 |
 | z-ai/glm-4.5 | freeflow | 2 | 2.8 | 0.04 | 1 | 0 | 0 |
 | z-ai/glm-4.6 | freeflow | 6 | 17.2 | 0.35 | 15 | 0 | 0 |
@@ -53,22 +53,24 @@ _No pairwise comparisons reach significance under FDR or Bonferroni at α=0.05._
 
 | Provider | n | Σ comp | Mean | SD | Per-25 | Bin |
 |---|---:|---:|---:|---:|---:|:---:|
-| atlascloud | 120 | 201 | 1.68 | 2.56 | 41.9 | in |
-| google | 119 | 478 | 4.02 | 5.29 | 100.4 | in |
-| minimax | 116 | 145 | 1.25 | 2.63 | 31.2 | in |
-| novita | 113 | 119 | 1.05 | 1.25 | 26.3 | in |
+| atlascloud | 125 | 210 | 1.68 | 2.52 | 42.0 | in |
+| google | 125 | 504 | 4.03 | 5.27 | 100.8 | in |
+| google-r2 | 125 | 618 | 4.94 | 7.06 | 123.6 | in |
+| minimax | 125 | 152 | 1.22 | 2.55 | 30.4 | in |
+| minimax-r2 | 125 | 148 | 1.18 | 1.96 | 29.6 | in |
+| novita | 125 | 140 | 1.12 | 1.44 | 28.0 | in |
 
 Top 5 pairwise comparisons by |Cohen's d|:
 
 | A | B | Cohen's d | t | p (raw) | p (Bonf) | q (FDR) |
 |---|---|---:|---:|---:|---:|---:|
-| google | novita | 0.76 | 5.94 | <1e-6 | <1e-6 | <1e-6 |
-| google | minimax | 0.66 | 5.09 | <1e-6 | 5.5e-06 | 2.7e-06 |
-| atlascloud | google | -0.56 | -4.35 | 2.4e-05 | 1.4e-04 | 4.7e-05 |
-| atlascloud | novita | 0.31 | 2.38 | 0.019 | 0.112 | 0.028 |
-| atlascloud | minimax | 0.16 | 1.26 | 0.210 | 1.000 | 0.252 |
+| google | novita | 0.75 | 5.96 | <1e-6 | <1e-6 | <1e-6 |
+| google-r2 | novita | 0.75 | 5.93 | <1e-6 | <1e-6 | <1e-6 |
+| google-r2 | minimax-r2 | 0.73 | 5.74 | <1e-6 | <1e-6 | <1e-6 |
+| google | minimax-r2 | 0.72 | 5.66 | <1e-6 | 1.0e-06 | <1e-6 |
+| google-r2 | minimax | 0.70 | 5.55 | <1e-6 | 1.8e-06 | <1e-6 |
 
-**3 pairwise comparisons survive Bonferroni at α=0.05.**
+**8 pairwise comparisons survive Bonferroni at α=0.05.**
 
 ## minimax/minimax-m2.7 (freeflow)
 

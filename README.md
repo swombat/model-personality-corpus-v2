@@ -406,6 +406,18 @@ Full text: [`LICENSE`](LICENSE).
 
 ## Status
 
+**v1.0.1 (2026-05-04)** — completion-pass release. The four original
+MiniMax M2 per-provider cells (`pin-google`, `pin-minimax`,
+`pin-atlascloud`, `pin-novita`) were topped up from 113-120 valid
+samples each to full *n*=125 via multi-round retry of the M2
+reasoning-runaway samples, and two new replication cells
+(`pin-google-r2`, `pin-minimax-r2`) were added for the routing paper's
+strengthened §4.3 (eight-day within-Google stability + same-day fresh
+within-OR contrast). All six M2 per-provider cells are now at full
+*n*=125. Tables (`tables/cells.tsv`, `tables/per_provider_routing.md`,
+etc.) regenerated against the topped-up data; numerical claims in the
+routing paper v1.1.0 reflect these counts.
+
 **v1.0.0 (2026-05-03)** — first published release. The corpus is
 analysis-complete and design-complete for the v2 series of papers.
 Subsequent versions will be tagged on Zenodo with new versioned DOIs

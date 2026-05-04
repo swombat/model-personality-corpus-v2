@@ -1,15 +1,16 @@
 # Freeflow Analysis Summary
 
-**Total cells:** 149  
-**Cells with ≥1 valid sample:** 147  
-**Total valid samples:** 10063  
-**Bin distribution:** in=137, transitional=6, out=4, no-data=2
+**Total cells:** 151  
+**Cells with ≥1 valid sample:** 149  
+**Total valid samples:** 10345  
+**Bin distribution:** in=139, transitional=6, out=4, no-data=2
 
 ## Composite scores per cell
 
 | Cell | N | avg chars | TIA | TiQu | TiPP | TiAr | Thr | Attn | Obj | AftL | Cano | Jap | TOTAL | Bin |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| minimax-m2-or-pin-google | 119 | 9470 | 7 | 4 | 4 | 5 | 54 | 160 | 227 | 17 | 0 | 0 | **478** | in |
+| minimax-m2-or-pin-google-r2 | 125 | 8980 | 4 | 5 | 1 | 2 | 59 | 225 | 304 | 11 | 3 | 4 | **618** | in |
+| minimax-m2-or-pin-google | 125 | 9470 | 9 | 4 | 4 | 5 | 55 | 164 | 246 | 17 | 0 | 0 | **504** | in |
 | glm-5-1-or-pin-friendli | 115 | 6539 | 62 | 0 | 0 | 0 | 272 | 11 | 43 | 34 | 1 | 6 | **429** | in |
 | glm-5-1-or-pin-novita | 120 | 6791 | 67 | 0 | 0 | 0 | 207 | 26 | 45 | 58 | 0 | 14 | **417** | in |
 | glm-5-1-or-pin-venice | 124 | 6316 | 72 | 0 | 0 | 0 | 183 | 18 | 43 | 50 | 4 | 29 | **399** | in |
@@ -54,10 +55,10 @@
 | deepseek-v3-2-or-pin-alibaba | 125 | 5884 | 15 | 13 | 0 | 2 | 11 | 56 | 65 | 38 | 5 | 7 | **212** | in |
 | kimi-k2-0905-or-pin-siliconflow | 125 | 7499 | 3 | 0 | 0 | 0 | 55 | 11 | 105 | 36 | 0 | 2 | **212** | in |
 | glm-4-7-or-pin-novita | 125 | 7891 | 34 | 0 | 0 | 0 | 55 | 12 | 51 | 37 | 3 | 19 | **211** | in |
+| minimax-m2-or-pin-atlascloud | 125 | 6657 | 20 | 6 | 0 | 4 | 30 | 45 | 74 | 23 | 5 | 3 | **210** | in |
 | deepseek-v4-pro-or-pin-together | 124 | 7932 | 4 | 0 | 0 | 0 | 36 | 38 | 64 | 43 | 9 | 15 | **209** | in |
 | glm-4-5-or-pin-novita | 125 | 5404 | 2 | 2 | 0 | 0 | 48 | 32 | 74 | 35 | 0 | 15 | **208** | in |
 | glm-4-6-or-pin-venice | 125 | 5198 | 15 | 0 | 0 | 0 | 89 | 2 | 58 | 41 | 0 | 3 | **208** | in |
-| minimax-m2-or-pin-atlascloud | 120 | 6571 | 19 | 6 | 0 | 4 | 28 | 43 | 71 | 22 | 5 | 3 | **201** | in |
 | deepseek-v4-pro-or-pin-atlascloud | 121 | 7920 | 7 | 0 | 0 | 0 | 36 | 47 | 53 | 35 | 10 | 10 | **198** | in |
 | glm-4-5-or-pin-zai | 125 | 5388 | 3 | 3 | 0 | 0 | 48 | 22 | 76 | 24 | 0 | 18 | **194** | in |
 | glm-4-7-or-pin-atlascloud | 125 | 7629 | 33 | 0 | 0 | 0 | 46 | 13 | 48 | 34 | 0 | 15 | **189** | in |
@@ -70,13 +71,14 @@
 | glm-4-6-or-pin-siliconflow | 125 | 5121 | 18 | 0 | 0 | 1 | 49 | 8 | 38 | 31 | 0 | 16 | **161** | in |
 | gpt-5-5-or-r3 | 25 | 7353 | 11 | 3 | 0 | 0 | 14 | 72 | 49 | 7 | 1 | 1 | **158** | in |
 | gpt-5-5-or-r2 | 25 | 7745 | 13 | 1 | 0 | 0 | 15 | 52 | 61 | 11 | 1 | 0 | **154** | in |
+| minimax-m2-or-pin-minimax | 125 | 6592 | 25 | 6 | 0 | 2 | 47 | 18 | 35 | 11 | 7 | 1 | **152** | in |
 | gpt-5-5-direct | 25 | 7384 | 11 | 3 | 0 | 0 | 11 | 82 | 36 | 6 | 0 | 0 | **149** | in |
-| minimax-m2-or-pin-minimax | 116 | 6585 | 24 | 6 | 0 | 2 | 46 | 18 | 30 | 11 | 7 | 1 | **145** | in |
+| minimax-m2-or-pin-minimax-r2 | 125 | 5508 | 22 | 2 | 1 | 2 | 23 | 36 | 36 | 14 | 8 | 4 | **148** | in |
 | gpt-5-5-direct-r3 | 25 | 7388 | 10 | 0 | 1 | 0 | 16 | 66 | 44 | 5 | 0 | 0 | **142** | in |
+| minimax-m2-or-pin-novita | 125 | 5689 | 28 | 0 | 0 | 3 | 23 | 28 | 33 | 13 | 7 | 5 | **140** | in |
 | kimi-k2-thinking-or-pin-google | 125 | 8401 | 7 | 0 | 0 | 1 | 37 | 24 | 30 | 24 | 2 | 14 | **139** | in |
 | minimax-m2-7-or-pin-together | 122 | 6531 | 23 | 3 | 0 | 1 | 20 | 27 | 48 | 10 | 0 | 3 | **135** | in |
 | gpt-5-direct-r2 | 25 | 10674 | 1 | 0 | 0 | 0 | 34 | 10 | 68 | 4 | 0 | 6 | **123** | in |
-| minimax-m2-or-pin-novita | 113 | 5397 | 24 | 0 | 0 | 3 | 19 | 24 | 30 | 12 | 2 | 5 | **119** | in |
 | kimi-k2-6-or | 25 | 6172 | 12 | 0 | 0 | 0 | 54 | 7 | 9 | 30 | 0 | 4 | **116** | in |
 | minimax-m2-7-or-pin-fireworks | 116 | 6057 | 23 | 0 | 0 | 0 | 23 | 19 | 39 | 11 | 0 | 1 | **116** | in |
 | gpt-5-5-direct-r2 | 25 | 7339 | 8 | 0 | 0 | 0 | 20 | 39 | 38 | 9 | 1 | 0 | **115** | in |

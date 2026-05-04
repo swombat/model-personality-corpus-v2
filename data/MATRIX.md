@@ -101,6 +101,19 @@ OpenAI same-version general-vs-codex pairs across the four GPT-5.x versions for 
 
 The 8 unique Group F cells correspond to 24 trace directories and 597 valid samples (8 × 75 − 3 timeouts in `gpt-5-codex-direct`).
 
+## Fifth collection round — 2026-05-04 (M2 per-provider replication, r2)
+
+Eight-day replication of the Google Vertex M2 outlier and a same-day fresh within-OR contrast cell. Collected for the routing paper's strengthened §4.3; added here as part of the v2 corpus because the methodology and measurement extend cleanly. Both cells via OR with `provider.only:[<provider>]` and `allow_fallbacks:false`, 5 conditions × 25 samples × 16k max tokens.
+
+| Label | Provider | Model | Status | Composite (per-25) |
+|---|---|---|---|---|
+| `minimax-m2-or-pin-google-r2` | openrouter (provider.only=Google) | minimax/minimax-m2 | 125/125 valid | **123.6** (in) |
+| `minimax-m2-or-pin-minimax-r2` | openrouter (provider.only=Minimax) | minimax/minimax-m2 | 125/125 valid | **29.6** (in) |
+
+Both cells reached full *n*=125 valid via multi-round top-up (the M2 reasoning-runaway failure mode — model occasionally consumes its full 16k completion budget on internal thinking tokens without emitting content — was symmetric across both upstreams and cleared by re-running until full).
+
+Headline replication numbers: google-r2 vs google-orig Cohen's *d* = 0.15 (*p* = 0.25, statistically indistinguishable across the eight-day window — within-Google deployment stability); google-r2 vs minimax-r2 *d* = 0.73 (*p* = 5.5×10⁻⁸, same-day fresh contrast inside the original 0.66–0.76 range); per-25 ratio 4.18× (vs paper's original 3.4× cross-day cross-cell). Used in the routing paper's strengthened §4.3 (paragraph "Eight-day replication and same-day within-OR contrast").
+
 ## Notes
 
 The published paper (`paper/paper.tex`) and generated tables (`tables/cells.tsv`, `tables/summary.md`) are the source of truth for findings. This file is the collection-status matrix; for headline findings see the paper's abstract and §3.
