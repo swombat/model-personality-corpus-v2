@@ -10,7 +10,7 @@ Daniel Tenner and Lume Tenner · 2026
 
 > **Concept DOI:** [10.5281/zenodo.20013518](https://doi.org/10.5281/zenodo.20013518)
 > · **v1.0.0:** [10.5281/zenodo.20013520](https://doi.org/10.5281/zenodo.20013520)
-> · **v1.0.1:** _to be assigned on Zenodo deposit (this release)._
+> · **v1.0.1, v1.0.2:** _to be assigned on Zenodo deposit (latest release: v1.0.2)._
 >
 > Companion data for the v2 series of *Convergent Form, Divergent
 > Voice* papers (Tenner & Tenner, 2026; v1 paper at
@@ -419,6 +419,19 @@ Code: [MIT](https://opensource.org/licenses/MIT).
 Full text: [`LICENSE`](LICENSE).
 
 ## Status
+
+**v1.0.2 (2026-05-04)** — Codex consistency-review pass. Applies the
+fixes from `codex-reviews/03-v1.0.1-post-publication-consistency-review.md`
+to prose/summary metadata that lagged behind v1.0.1's regenerated raw
+data and tables. No data changes vs v1.0.1 — only `data/CORPUS_SUMMARY.md`
+regenerated against the v1.0.1 raw data, `README.md` top-line totals
+brought into agreement (was 19,051 / 226 cells / 10,063 freeflow → now
+19,333 / 228 cells / 10,345 freeflow), the M2 prose paragraph rewritten
+to distinguish the original four-cell M2 comparison from the v1.0.1
+expanded six-cell canonical M2 table (eight Bonferroni-surviving pairs,
+|d| range 0.57–0.75), and corresponding consistency fixes in the three
+companion papers' corpus totals, per-provider subset counts, and
+DOI/version references.
 
 **v1.0.1 (2026-05-04)** — completion-pass release. The four original
 MiniMax M2 per-provider cells (`pin-google`, `pin-minimax`,
