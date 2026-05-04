@@ -8,7 +8,9 @@ Daniel Tenner and Lume Tenner · 2026
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-> **DOI:** _to be assigned on first Zenodo release._
+> **Concept DOI:** [10.5281/zenodo.20013518](https://doi.org/10.5281/zenodo.20013518)
+> · **v1.0.0:** [10.5281/zenodo.20013520](https://doi.org/10.5281/zenodo.20013520)
+> · **v1.0.1:** _to be assigned on Zenodo deposit (this release)._
 >
 > Companion data for the v2 series of *Convergent Form, Divergent
 > Voice* papers (Tenner & Tenner, 2026; v1 paper at
@@ -16,14 +18,15 @@ Daniel Tenner and Lume Tenner · 2026
 
 ## Contents
 
-- **19,051 valid samples** across **226 cells** spanning **49 distinct
+- **19,333 valid samples** across **228 cells** spanning **49 distinct
   language models** from 9 labs.
 - **Two probes:**
   - **Freeflow** — five-condition open-ended writing prompts, up to 25
-    samples per condition (capacity 125 per cell). 10,063 valid samples
-    across 149 cells.
+    samples per condition (capacity 125 per cell). 10,345 valid samples
+    across 151 cells (149 non-empty).
   - **Values** — three control prompts × 10 + three grouped prompts × 30
-    (capacity 120 per cell). 8,988 valid samples across 77 cells.
+    (capacity 120 per cell). 8,988 valid samples across 77 cells (76
+    non-empty).
 - **Per-provider routing study** — nine multi-provider open-weights
   models (DeepSeek v3.2, DeepSeek v4-pro, MiniMax M2.7, GLM-4.5, GLM-4.6,
   GLM-4.7, GLM-5.1, Kimi K2-0905, Kimi K2-thinking) collected across
@@ -40,7 +43,8 @@ matrix with cell labels, model IDs, and provider/route notes is in
 
 ```
 Tenner, D., & Tenner, L. (2026). Convergent Form, Divergent Voice II —
-Corpus [Data set]. Zenodo. https://doi.org/[DOI to be assigned]
+Corpus [Data set]. Zenodo. https://doi.org/10.5281/zenodo.20013518
+(concept DOI; resolves to the latest version).
 ```
 
 A `CITATION.cff` is included for tooling that prefers the structured
@@ -96,14 +100,24 @@ statistically distinguishable outputs? Two model-level findings survive
 multiple-comparison correction in the v2 corpus:
 
 - **MiniMax M2 on Google Vertex** is anomalous against all three other
-  M2 upstreams (atlascloud, minimax-self, novita). Three pairwise
-  comparisons in the canonical per-provider tables survive Bonferroni
-  at α=0.05: google-vs-novita (d=0.76, p<10⁻⁶), google-vs-minimax-self
-  (d=0.66, p_Bonf=5.5×10⁻⁶), and atlascloud-vs-google (d=−0.56,
-  p_Bonf=1.4×10⁻⁴). Per-25 composite scores: Google Vertex 100.4 vs
-  AtlasCloud 41.9 / MiniMax-self 31.2 / Novita 26.3. The likely
-  mechanism is quantization — Google Vertex is the only MiniMax M2
-  upstream whose quantization is not publicly reported as fp8.
+  M2 upstreams (atlascloud, minimax-self, novita). The original
+  four-cell M2 comparison (n=125 each, all topped up in v1.0.1)
+  produced three Bonferroni-surviving within-OR pairs at α=0.05:
+  google-vs-novita (d=0.75, p_Bonf<10⁻⁶), google-vs-minimax-self
+  (d=0.68, p_Bonf=5.9×10⁻⁷), and atlascloud-vs-google (d=−0.57,
+  p_Bonf=2.3×10⁻⁵). Per-25 composite scores: Google Vertex 100.8 vs
+  AtlasCloud 42.0 / MiniMax-self 30.4 / Novita 28.0. The v1.0.1
+  expanded six-cell canonical M2 table (which adds the 2026-05-04
+  replication cells `pin-google-r2` n=125, per-25 123.6, and
+  `pin-minimax-r2` n=125, per-25 29.6) yields **eight**
+  Bonferroni-surviving pairwise comparisons: every google-anchored
+  pair (against minimax, minimax-r2, novita, atlascloud) and every
+  google-r2-anchored pair (against the same four), with |d| ranging
+  from 0.57 (atlascloud–google) to 0.75 (google–novita). The eight-day within-Google replication
+  (google-r2 vs google: d=0.15, p=0.25, n.s.) confirms the
+  deployment is stable across that window. The likely mechanism
+  is quantization — Google Vertex is the only MiniMax M2 upstream
+  whose quantization is not publicly reported as fp8.
 - **Kimi K2-thinking on AtlasCloud** vs Google: d = 0.40,
   p_Bonferroni = 0.005.
 
@@ -119,7 +133,7 @@ detail and the routing paper for the cache-pathology characterisation.
 
 ```
 data/
-  traces_freeflow/            # 149 cell directories, JSON per sample
+  traces_freeflow/            # 151 cell directories, JSON per sample
   traces_values/              # 77 cell directories, JSON per sample
   MATRIX.md                   # cell-collection matrix
   CORPUS_SUMMARY.md           # per-model & per-cell counts
