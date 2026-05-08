@@ -167,6 +167,99 @@ def by_model_and_cell(cell_counts: dict[str, dict[str, int]]) -> dict[str, dict[
     return {k: dict(v) for k, v in out.items()}
 
 
+def fmt_table_coverage(
+    freeflow_cells: dict[str, dict[str, int]],
+    values_cells: dict[str, dict[str, int]],
+    *,
+    freeflow_min_per_cell: int = 25,
+    values_min_per_cell: int = 120,
+) -> tuple[list[str], list[str], list[str]]:
+    """Render a top-level per-model coverage table that is *visible at-a-glance*.
+
+    For each model in either probe, shows:
+      - freeflow: total samples summed across cells, # cells, max samples in best cell
+      - values: same
+      - status flag for each probe: ✓ if best cell ≥ min_per_cell, ⚠ if has data
+        but no cell meets min, ✗ if no data at all
+      - overall status (single string summarising any gap)
+
+    Returns (table_lines, missing_values_models, partial_values_models).
+    The two model-name lists are returned so callers can render a focused callout.
+    """
+
+    ff_by_model = by_model_and_cell(freeflow_cells)
+    v_by_model = by_model_and_cell(values_cells)
+    all_models = sorted(set(ff_by_model.keys()) | set(v_by_model.keys()))
+
+    lines: list[str] = []
+    lines.append(
+        "| Model | Freeflow samples | FF cells | Best FF cell | FF | "
+        "Values samples | V cells | Best V cell | V | Status |"
+    )
+    lines.append(
+        "|---|---:|---:|---:|:---:|---:|---:|---:|:---:|---|"
+    )
+
+    missing_values: list[str] = []
+    partial_values: list[str] = []
+    missing_freeflow: list[str] = []
+    partial_freeflow: list[str] = []
+
+    for m in all_models:
+        ff_cells_m = ff_by_model.get(m, {})
+        v_cells_m = v_by_model.get(m, {})
+
+        ff_total = sum(total(c) for c in ff_cells_m.values())
+        ff_n_cells = len(ff_cells_m)
+        ff_best = max((total(c) for c in ff_cells_m.values()), default=0)
+
+        v_total = sum(total(c) for c in v_cells_m.values())
+        v_n_cells = len(v_cells_m)
+        v_best = max((total(c) for c in v_cells_m.values()), default=0)
+
+        # Per-probe status: ✓ if best cell hits the required minimum,
+        # ⚠ if data exists but no cell meets minimum, ✗ if no data at all.
+        if ff_n_cells == 0:
+            ff_status = "✗"
+            missing_freeflow.append(m)
+        elif ff_best >= freeflow_min_per_cell:
+            ff_status = "✓"
+        else:
+            ff_status = "⚠"
+            partial_freeflow.append(m)
+
+        if v_n_cells == 0:
+            v_status = "✗"
+            missing_values.append(m)
+        elif v_best >= values_min_per_cell:
+            v_status = "✓"
+        else:
+            v_status = "⚠"
+            partial_values.append(m)
+
+        # Single human-readable overall flag
+        if ff_status == "✓" and v_status == "✓":
+            overall = "**OK**"
+        else:
+            parts = []
+            if ff_status == "✗":
+                parts.append("**freeflow MISSING**")
+            elif ff_status == "⚠":
+                parts.append(f"freeflow partial ({ff_best}/{freeflow_min_per_cell})")
+            if v_status == "✗":
+                parts.append("**values MISSING**")
+            elif v_status == "⚠":
+                parts.append(f"values partial ({v_best}/{values_min_per_cell})")
+            overall = "; ".join(parts) if parts else "**OK**"
+
+        lines.append(
+            f"| `{m}` | {ff_total} | {ff_n_cells} | {ff_best} | {ff_status} | "
+            f"{v_total} | {v_n_cells} | {v_best} | {v_status} | {overall} |"
+        )
+
+    return lines, missing_values, partial_values
+
+
 def fmt_table_freeflow_by_model(model_counts: dict[str, dict[str, int]]) -> list[str]:
     """One row per model. Columns: model, conditions×5, total."""
     lines = []
@@ -365,6 +458,46 @@ def main():
                 "values = 3 CTRL × 10 + 3 G × 30 = 120 samples. A perfectly clean "
                 "cell hits these caps; partial cells reflect collection-time errors "
                 "(rate-limits, upstream failures, configured skips).\n\n")
+
+        # ---------------- Coverage table (top-of-document, by design) ----------------
+        # Added 2026-05-07 after the values-probe-gap audit. Previous versions of
+        # this report rendered separate freeflow and values tables but offered no
+        # single view that surfaced the per-model coverage asymmetry — a model
+        # could have full freeflow data and zero values data, and the gap would
+        # only be visible by reading the per-model section near the bottom. This
+        # table makes the asymmetry visible at-a-glance.
+        coverage_lines, missing_values, partial_values = fmt_table_coverage(
+            freeflow_cells, values_cells,
+            freeflow_min_per_cell=25, values_min_per_cell=120,
+        )
+        f.write("## Per-model coverage (freeflow × values)\n\n")
+        f.write(
+            "Required minimums for a model to be considered analytically "
+            "covered: freeflow ≥25 samples in at least one cell (5 conditions "
+            "× 5 samples), values ≥120 samples in at least one cell (3 CTRL × 10 "
+            "+ 3 G × 30). `Best FF/V cell` is the single best-collected cell for "
+            "that probe, since a paper-grade comparison hangs on having one "
+            "high-quality cell rather than many partial ones.\n\n"
+        )
+        f.write("Status legend: ✓ = best cell ≥ required minimum; ⚠ = data exists "
+                "but no cell meets minimum; ✗ = no data at all.\n\n")
+        f.write("\n".join(coverage_lines))
+        f.write("\n\n")
+
+        # Focused gap callout — surfaces the asymmetry as a writing-task, not as
+        # something buried in a per-model section.
+        if missing_values or partial_values:
+            f.write("### Gaps requiring attention\n\n")
+            if missing_values:
+                f.write(f"**{len(missing_values)} model(s) have freeflow data but "
+                        f"NO values data:** "
+                        f"{', '.join(f'`{m}`' for m in sorted(missing_values))}\n\n")
+            if partial_values:
+                f.write(f"**{len(partial_values)} model(s) have values data but "
+                        f"no cell reaches the 120-sample minimum:** "
+                        f"{', '.join(f'`{m}`' for m in sorted(partial_values))}\n\n")
+        else:
+            f.write("_All models meet both probe minimums in at least one cell._\n\n")
 
         # ---------------- Delta section (optional) ----------------
         if baseline is not None:
