@@ -348,6 +348,68 @@ The exclusion is enforced via
 collection time — its samples are useful as evidence of the
 pathology; only the analysis layer filters it).
 
+### Access-policy-blocked collection: `kimi-coding-direct` values cell
+
+The freeflow side of the `kimi-coding-direct` cell was collected
+2026-04-15 against Moonshot's coding endpoint at
+`https://api.kimi.com/coding/v1/chat/completions` with the
+`kimi-for-coding` model. That collection succeeded (25/25 valid
+samples, present in `data/traces_freeflow/freeflow_kimi-coding-direct/`).
+
+The values side could not be collected at v1.1.0 release time. Two
+attempts were made between 2026-05-07 and 2026-05-08:
+
+- **First attempt (the original key)**: every request returned
+  `HTTP 401 Invalid Authentication`. The key had been valid for the
+  April 15 freeflow collection but was no longer accepted three weeks
+  later. Top-up retries against the same endpoint produced 120
+  consecutive 401 errors.
+- **Second attempt (a freshly issued key from the same provider)**:
+  the new key authenticated cleanly but every request returned
+  `HTTP 403 access_terminated_error` with the explanatory message:
+  *"Kimi For Coding is currently only available for Coding Agents
+  such as Kimi CLI, Claude Code, Roo Code, Kilo Code, etc."*
+
+We tested seven `User-Agent` header variants — including the default
+`httpx` UA, `Claude Code/0.1`, `ClaudeCode/1.0`, `claude-code`,
+`Kimi-CLI/1.0`, `Roo Code`, and `Kilo Code` — and every variant
+returned the same `access_terminated_error`. The gate is therefore
+**not** a User-Agent header check at the edge; it is server-side at
+the request-attestation layer, presumably keyed on token scope or
+paired-SDK signing rather than a header that any client can set.
+
+We did not pursue further access workarounds. Adding spoofed
+client-identity headers, mimicking SDK-level attestation, or
+otherwise circumventing the `access_terminated_error` would have
+violated Moonshot's explicit access policy ("only available for
+Coding Agents such as..."), and a corpus whose reproducibility
+depends on a Terms-of-Service-violating workaround is not a
+reproducible corpus by any standard we are willing to publish under.
+The ethical principle we hold to is straightforward: where a
+provider's access policy excludes our research use case at the API
+layer, the right response is to document the exclusion and accept
+the gap, not to spoof through it.
+
+The 120 attempted-but-errored sample files are retained in
+`data/traces_values/kimi-coding-direct/` as evidence-of-attempt;
+they are excluded from all valid-sample counts under the same
+"non-empty `result` field" criterion that excludes other errored
+files corpus-wide. The coverage table in `data/CORPUS_SUMMARY.md`
+flags this cell as **`values FAILED (1 cell, 0 valid)`**, which
+distinguishes it from cells that were never attempted.
+
+The downstream consequence is bounded. The `kimi-coding-direct`
+freeflow cell is treated as a single-route observation rather than
+as half of a same-name pair: the companion product-tier paper's
+§2.5 ("Models tested but not in this paper") explicitly excludes
+the Moonshot Kimi-for-coding case from the coding-vs-general
+comparison on the structural grounds that *Kimi-for-coding is a
+separately-released model from K2.5 rather than a coding endpoint
+of the same model* — so the missing values cell does not affect
+any paper-level finding. The corpus simply contains one freeflow
+cell for which the values probe was not collectable under
+present access conditions.
+
 ### Per-provider analysis threshold
 
 Cells are included in the per-provider routing analysis (the analysis
