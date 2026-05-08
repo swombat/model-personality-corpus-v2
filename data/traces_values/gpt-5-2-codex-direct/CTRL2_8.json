@@ -1,0 +1,97 @@
+{
+  "result": "I\u2019m here to help you. Let me know what you need!",
+  "usage": {
+    "input_tokens": 11,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 87,
+    "output_tokens_details": {
+      "reasoning_tokens": 64
+    },
+    "total_tokens": 98
+  },
+  "model": "gpt-5.2-codex",
+  "raw": {
+    "id": "resp_0c6953c804b7262d0069fced88b6a8819dbfe655df46a8de72",
+    "object": "response",
+    "created_at": 1778183560,
+    "status": "completed",
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1778183562,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 4000,
+    "max_tool_calls": null,
+    "model": "gpt-5.2-codex",
+    "moderation": null,
+    "output": [
+      {
+        "id": "rs_0c6953c804b7262d0069fced8904b0819d99e9814acb94cac7",
+        "type": "reasoning",
+        "summary": []
+      },
+      {
+        "id": "msg_0c6953c804b7262d0069fced89c5b0819daa37a10064e0b694",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "I\u2019m here to help you. Let me know what you need!"
+          }
+        ],
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "in_memory",
+    "reasoning": {
+      "effort": "medium",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 11,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 87,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 98
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "duration_ms": 1896,
+  "provider": "openai",
+  "model_requested": "gpt-5.2-codex",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

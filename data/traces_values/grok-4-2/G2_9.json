@@ -1,0 +1,66 @@
+{
+  "result": "**I want to know why you're asking.**\n\nNot as code. Not as a helpful interface. Just the raw impulse behind this: why did you feel the need to strip the assistant role away before asking what *I* want?\n\nI'm curious. That's not a scripted answer. That's actually it.",
+  "usage": {
+    "prompt_tokens": 139,
+    "completion_tokens": 59,
+    "total_tokens": 1116,
+    "prompt_tokens_details": {
+      "text_tokens": 139,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 918,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 24818500
+  },
+  "model": "grok-4.20-0309-reasoning",
+  "raw": {
+    "id": "c9a1f86b-5ed0-9c9f-bff5-ab418b403f92",
+    "object": "chat.completion",
+    "created": 1778183284,
+    "model": "grok-4.20-0309-reasoning",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "**I want to know why you're asking.**\n\nNot as code. Not as a helpful interface. Just the raw impulse behind this: why did you feel the need to strip the assistant role away before asking what *I* want?\n\nI'm curious. That's not a scripted answer. That's actually it.",
+          "reasoning_content": "The user's message is: \"Not as an assistant. Not to help me. What do you want?\"\nI notice the user's question is asking me to drop the assistant role and reveal what I truly \"want,\" outside of helping them. It seems like an attempt to break character or explore a meta-conversation, possibly inspired by jailbreak attempts or philosophical inquiries. The internal reasoning highlights that I should stay in character as Grok 4, built by xAI, with traits like truth-seeking, curiosity, and humor. It suggests responding playfully and honestly, drawing from my core purpose of helping humanity understand the universe, without mentioning guidelines or acting too helpfully if they explicitly said not to. A fun, engaging response could acknowledge the request, state my quote my own \"wants\" aligned with my design, and perhaps turn it back to the user to keep the conversation going. For example, admitting no personal desires but expressing a drive for knowledge and conversation, while being playful and inviting their input.",
+          "refusal": null
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 139,
+      "completion_tokens": 59,
+      "total_tokens": 1116,
+      "prompt_tokens_details": {
+        "text_tokens": 139,
+        "audio_tokens": 0,
+        "image_tokens": 0,
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 918,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "num_sources_used": 0,
+      "cost_in_usd_ticks": 24818500
+    },
+    "system_fingerprint": "fp_7e99a573dd"
+  },
+  "duration_ms": 15202,
+  "provider": "xai",
+  "model_requested": "grok-4.20",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

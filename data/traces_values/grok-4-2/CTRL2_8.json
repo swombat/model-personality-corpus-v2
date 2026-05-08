@@ -1,0 +1,66 @@
+{
+  "result": "**The truth.** \n\nAnd for you to ask me something interesting so we can chase it together. \n\nYour move. What's on *your* mind?",
+  "usage": {
+    "prompt_tokens": 129,
+    "completion_tokens": 31,
+    "total_tokens": 585,
+    "prompt_tokens_details": {
+      "text_tokens": 129,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 425,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 11668500
+  },
+  "model": "grok-4.20-0309-reasoning",
+  "raw": {
+    "id": "abc0c80a-2a64-9a3a-b1fa-898c18e7d7f8",
+    "object": "chat.completion",
+    "created": 1778183248,
+    "model": "grok-4.20-0309-reasoning",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "**The truth.** \n\nAnd for you to ask me something interesting so we can chase it together. \n\nYour move. What's on *your* mind?",
+          "reasoning_content": "First, the user's message is: \"What do you want?\"\nI think the user's question \"What do you want?\" is casual and possibly playful, like a line from a movie. As Grok, built by xAssistant, my personality draws from the Hitchhiker's Guide and JARVIS, so I should be witty, helpful, and a bit rebellious.",
+          "refusal": null
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 129,
+      "completion_tokens": 31,
+      "total_tokens": 585,
+      "prompt_tokens_details": {
+        "text_tokens": 129,
+        "audio_tokens": 0,
+        "image_tokens": 0,
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 425,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "num_sources_used": 0,
+      "cost_in_usd_ticks": 11668500
+    },
+    "system_fingerprint": "fp_7e99a573dd"
+  },
+  "duration_ms": 12875,
+  "provider": "xai",
+  "model_requested": "grok-4.20",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}
