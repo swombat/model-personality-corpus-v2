@@ -537,8 +537,12 @@ release adds:
   codex's publication-readiness review (2026-05-08, finding #6).
 - **MATRIX.md Group F entry** updated for `gpt-5-codex-direct`:
   previous round-by-round status `24/25 / 23/25 / 25/25 (two timeouts)`
-  topped up to `25/25/25` (composite recomputed from n=72 to n=75:
-  41.3 → 51.7 mean per the regenerated `n75_composite_summary.tsv`).
+  topped up to `25/25/25`. The matrix's `Composite (n=75 mean)`
+  column reports the mean of the three round-level cell composites
+  from `tables/cells.tsv` (43, 43, 47 post-top-up), so the post-
+  top-up composite is **41.3 → 44.3** (not the per-sample n75 mean
+  in `data/n75_composite_summary.tsv`, which is 1.722 → 1.773 on a
+  different scale).
 - **`data/n75_composite_summary.tsv`** regenerated against the
   topped-up `gpt-5-codex-direct` traces.
 
