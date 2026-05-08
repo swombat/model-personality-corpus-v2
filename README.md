@@ -401,16 +401,18 @@ place 2026-04-17 following the release of Opus 4.7.
 ## Acknowledgements
 
 We are grateful to **Abdelkader Boudih** ([Seuros](https://github.com/seuros))
-for providing API keys that gave us access to several of the open-weights
-models tested in this research, including DeepSeek, Kimi, MiniMax, Z.ai
-GLM, OpenRouter, and xAI direct endpoints. The per-provider routing
-sub-corpus and the matched direct/OR comparisons would not have been
-collectable on this scale without his help. Where a key reached its
-limits — a Moonshot key whose access to the `kimi-for-coding` endpoint
-was rescinded between collection rounds, leaving the
-`kimi-coding-direct` values cell as evidence-of-attempt rather than
-analysable data — that is a Moonshot policy boundary, not a limitation
-of his contribution.
+for providing API keys that gave us direct-endpoint access to four of
+the open-weights labs tested in this research: DeepSeek, Moonshot
+(Kimi), MiniMax, and Z.ai (GLM). The direct-vs-OpenRouter route
+comparisons in §4.1 of the routing paper, and the same-lab coding-vs-
+general comparisons in the product-tier paper, depend on having both
+sides of those pairs collectable; without his contribution the
+direct sides would have been unreachable for this study. Where a
+key reached its limits — a Moonshot key whose access to the
+`kimi-for-coding` endpoint was rescinded between collection rounds,
+leaving the `kimi-coding-direct` values cell as evidence-of-attempt
+rather than analysable data — that is a Moonshot policy boundary,
+not a limitation of his contribution.
 
 Pre-publication review of the corpus extraction was performed by
 **OpenAI Codex** across five review rounds during the 2026-05-03 to
