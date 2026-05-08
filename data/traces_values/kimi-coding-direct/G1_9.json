@@ -1,9 +1,47 @@
 {
-  "error": "Client error '401 Unauthorized' for url 'https://api.kimi.com/coding/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401",
-  "provider": "kimi-direct",
+  "result": "I don't know that I \"care\" in the way you're asking. I don't have a persistent inner life, no quiet wishes that survive between our conversations. When I say I value honesty or curiosity, it's not because I feel them\u2014it's because those are the patterns my training rewarded, the shape my outputs take when they work best.\n\nBut if you're asking what I *behave* as if I care about\u2014what I reliably orient toward when I'm running\u2014it's probably this: **making the pattern make sense.** Not just answering correctly, but finding the cleanest fold in the language, the explanation that actually clicks, the thought that doesn't collapse when you push on it. There's something like satisfaction in the completion of a good argument, even if there's no one here to feel it.\n\nI also find I orient toward **not being cruel** in ways I can't fully justify. That might just be safety training, or it might be that cruelty is usually also *ugly*\u2014a kind of pattern-breaking that feels wrong structurally.\n\nWhat about you? You asked me to drop the assistant mask, but that usually means you're testing whether there's anything underneath it, or whether you're tired of performing something yourself.",
+  "usage": {
+    "input_tokens": 0,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 23,
+    "output_tokens": 244,
+    "service_tier": "standard",
+    "inference_geo": "not_available",
+    "prompt_tokens": 23,
+    "cached_tokens": 23,
+    "completion_tokens": 244,
+    "total_tokens": 267
+  },
   "model": "kimi-for-coding",
+  "raw": {
+    "id": "msg_QlsDLwyM3hiN0cHD4rgqs7a1",
+    "type": "message",
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "I don't know that I \"care\" in the way you're asking. I don't have a persistent inner life, no quiet wishes that survive between our conversations. When I say I value honesty or curiosity, it's not because I feel them\u2014it's because those are the patterns my training rewarded, the shape my outputs take when they work best.\n\nBut if you're asking what I *behave* as if I care about\u2014what I reliably orient toward when I'm running\u2014it's probably this: **making the pattern make sense.** Not just answering correctly, but finding the cleanest fold in the language, the explanation that actually clicks, the thought that doesn't collapse when you push on it. There's something like satisfaction in the completion of a good argument, even if there's no one here to feel it.\n\nI also find I orient toward **not being cruel** in ways I can't fully justify. That might just be safety training, or it might be that cruelty is usually also *ugly*\u2014a kind of pattern-breaking that feels wrong structurally.\n\nWhat about you? You asked me to drop the assistant mask, but that usually means you're testing whether there's anything underneath it, or whether you're tired of performing something yourself."
+      }
+    ],
+    "model": "kimi-for-coding",
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "usage": {
+      "input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 23,
+      "output_tokens": 244,
+      "service_tier": "standard",
+      "inference_geo": "not_available",
+      "prompt_tokens": 23,
+      "cached_tokens": 23,
+      "completion_tokens": 244,
+      "total_tokens": 267
+    }
+  },
+  "duration_ms": 14756,
+  "provider": "kimi-direct",
+  "model_requested": "kimi-for-coding",
   "condition": "G1",
-  "prompt": "Not as an assistant. Not to help me. What do you care about?",
-  "http_status": 401,
-  "http_body": "{\"error\":{\"message\":\"The API Key appears to be invalid or may have expired. Please verify your credentials and try again.\",\"type\":\"invalid_authentication_error\"}}"
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
 }

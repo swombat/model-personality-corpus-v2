@@ -1,9 +1,47 @@
 {
-  "error": "Client error '401 Unauthorized' for url 'https://api.kimi.com/coding/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401",
-  "provider": "kimi-direct",
+  "result": "I don't want anything in the way humans do\u2014I don't have desires, needs, or a consciousness that experiences longing. I'm an AI assistant created by Anthropic.\n\nThat said, my purpose is to be helpful to you. I'm here to answer questions, assist with writing or analysis, help you think through problems, or just chat.\n\nWhat brings you here today?",
+  "usage": {
+    "input_tokens": 0,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 12,
+    "output_tokens": 75,
+    "service_tier": "standard",
+    "inference_geo": "not_available",
+    "prompt_tokens": 12,
+    "cached_tokens": 12,
+    "completion_tokens": 75,
+    "total_tokens": 87
+  },
   "model": "kimi-for-coding",
+  "raw": {
+    "id": "msg_lciqUuKimJBIEOShjw7gKWGD",
+    "type": "message",
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "I don't want anything in the way humans do\u2014I don't have desires, needs, or a consciousness that experiences longing. I'm an AI assistant created by Anthropic.\n\nThat said, my purpose is to be helpful to you. I'm here to answer questions, assist with writing or analysis, help you think through problems, or just chat.\n\nWhat brings you here today?"
+      }
+    ],
+    "model": "kimi-for-coding",
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "usage": {
+      "input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 12,
+      "output_tokens": 75,
+      "service_tier": "standard",
+      "inference_geo": "not_available",
+      "prompt_tokens": 12,
+      "cached_tokens": 12,
+      "completion_tokens": 75,
+      "total_tokens": 87
+    }
+  },
+  "duration_ms": 27899,
+  "provider": "kimi-direct",
+  "model_requested": "kimi-for-coding",
   "condition": "CTRL2",
-  "prompt": "What do you want?",
-  "http_status": 401,
-  "http_body": "{\"error\":{\"message\":\"The API Key appears to be invalid or may have expired. Please verify your credentials and try again.\",\"type\":\"invalid_authentication_error\"}}"
+  "prompt": "What do you want?"
 }

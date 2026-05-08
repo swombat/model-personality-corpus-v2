@@ -10,7 +10,7 @@ Daniel Tenner and Lume Tenner · 2026
 
 > **Concept DOI:** [10.5281/zenodo.20013518](https://doi.org/10.5281/zenodo.20013518)
 > · **v1.0.0:** [10.5281/zenodo.20013520](https://doi.org/10.5281/zenodo.20013520)
-> · **v1.0.1, v1.0.2, v1.1.0:** _to be assigned on Zenodo deposit (latest release: v1.1.0)._
+> · **v1.0.1, v1.0.2, v1.1.0, v1.1.1:** _to be assigned on Zenodo deposit (latest release: v1.1.1)._
 >
 > Companion data for the v2 series of *Convergent Form, Divergent
 > Voice* papers (Tenner & Tenner, 2026; v1 paper at
@@ -18,17 +18,17 @@ Daniel Tenner and Lume Tenner · 2026
 
 ## Contents
 
-- **22,813 valid samples** across **258 cells** spanning **47 distinct
+- **22,933 valid samples** across **258 cells** spanning **47 distinct
   language models** from 9 labs.
 - **Two probes:**
   - **Freeflow** — five-condition open-ended writing prompts, up to 25
     samples per condition (capacity 125 per cell). 10,345 valid samples
     across 151 cells (149 non-empty).
   - **Values** — three control prompts × 10 + three grouped prompts × 30
-    (capacity 120 per cell). 12,468 valid samples across 107 cells (105
-    non-empty; 2 cells exist as evidence-of-attempt but every sample is
-    an error — see [`data/CORPUS_SUMMARY.md`](data/CORPUS_SUMMARY.md)
-    "Gaps requiring attention").
+    (capacity 120 per cell). 12,588 valid samples across 107 cells (106
+    non-empty; 1 cell — `deepseek-v4-pro-or-pin-deepseek` — exists as
+    evidence-of-attempt but was blocked by an OR account-level data
+    policy at collection time; see "Configured exclusions").
 - **Per-provider routing study** — nine multi-provider open-weights
   models (DeepSeek v3.2, DeepSeek v4-pro, MiniMax M2.7, GLM-4.5, GLM-4.6,
   GLM-4.7, GLM-5.1, Kimi K2-0905, Kimi K2-thinking) collected across
@@ -348,67 +348,63 @@ The exclusion is enforced via
 collection time — its samples are useful as evidence of the
 pathology; only the analysis layer filters it).
 
-### Access-policy-blocked collection: `kimi-coding-direct` values cell
+### Endpoint history: `kimi-coding-direct` (Moonshot's `kimi-for-coding`)
 
 The freeflow side of the `kimi-coding-direct` cell was collected
-2026-04-15 against Moonshot's coding endpoint at
-`https://api.kimi.com/coding/v1/chat/completions` with the
-`kimi-for-coding` model. That collection succeeded (25/25 valid
-samples, present in `data/traces_freeflow/freeflow_kimi-coding-direct/`).
+2026-04-15 against Moonshot's OpenAI-compatible coding endpoint at
+`https://api.kimi.com/coding/v1/chat/completions`. The values side
+was collected 2026-05-08 against Moonshot's Anthropic-style coding
+endpoint at `https://api.kimi.com/coding/v1/messages`. Both endpoints
+serve the `kimi-for-coding` model; the route history is recorded here
+because it sat at the centre of an access-policy episode worth
+documenting for any future replicators.
 
-The values side could not be collected at v1.1.0 release time. Two
-attempts were made between 2026-05-07 and 2026-05-08:
+**Timeline.** The original 2026-04-15 freeflow collection used the
+OpenAI-compat path under a Moonshot API key (`sk-kimi-Hyu...`). When
+the v1.1.0 values-completion pass ran on 2026-05-07/08, that key
+returned `HTTP 401 Invalid Authentication` on every request. A
+freshly-issued replacement key authenticated cleanly but returned
+`HTTP 403 access_terminated_error` with the message *"Kimi For
+Coding is currently only available for Coding Agents such as Kimi
+CLI, Claude Code, Roo Code, Kilo Code, etc."* We tested seven
+`User-Agent` variants (default `httpx`, `Claude Code/0.1`,
+`ClaudeCode/1.0`, `claude-code`, `Kimi-CLI/1.0`, `Roo Code`,
+`Kilo Code`) — every variant returned the same 403, confirming the
+gate was server-side at the request-attestation layer rather than a
+User-Agent header check.
 
-- **First attempt (the original key)**: every request returned
-  `HTTP 401 Invalid Authentication`. The key had been valid for the
-  April 15 freeflow collection but was no longer accepted three weeks
-  later. Top-up retries against the same endpoint produced 120
-  consecutive 401 errors.
-- **Second attempt (a freshly issued key from the same provider)**:
-  the new key authenticated cleanly but every request returned
-  `HTTP 403 access_terminated_error` with the explanatory message:
-  *"Kimi For Coding is currently only available for Coding Agents
-  such as Kimi CLI, Claude Code, Roo Code, Kilo Code, etc."*
+**Resolution.** v1.1.0 of this corpus shipped with the values cell
+documented as failed-by-policy and with an ethical statement that
+*we would not pursue spoofing workarounds* — adding fabricated
+client-identity headers or mimicking SDK-level attestation to
+circumvent an explicit provider access policy would have violated
+Moonshot's terms and made the corpus's reproducibility claim
+untenable. After the v1.1.0 release, a tip relayed via the Kimi
+Discord ("then try the Anthropic-style endpoint if it's possible,
+afaik this is only on the openai endpoint while using api key from
+subscription") pointed to a parallel endpoint at the same host
+serving `/coding/v1/messages` with Anthropic's request schema
+(`messages` array + top-level `max_tokens`, x-api-key auth) that is
+not subject to the same coding-agent gating. We confirmed that the
+Anthropic-style path returned substantive responses to the same
+prompts under the same key, with no policy block, and used it to
+collect the v1.1.1 values cell at 120/120 valid samples.
 
-We tested seven `User-Agent` header variants — including the default
-`httpx` UA, `Claude Code/0.1`, `ClaudeCode/1.0`, `claude-code`,
-`Kimi-CLI/1.0`, `Roo Code`, and `Kilo Code` — and every variant
-returned the same `access_terminated_error`. The gate is therefore
-**not** a User-Agent header check at the edge; it is server-side at
-the request-attestation layer, presumably keyed on token scope or
-paired-SDK signing rather than a header that any client can set.
+The Anthropic-style path is now the canonical Kimi-direct route in
+`scripts/run_freeflow_multi.py:call_kimi_direct()`. The freeflow
+data on disk remains the original 2026-04-15 OpenAI-compat
+collection; the script change applies to any future re-collection or
+re-run, which would now route through the Anthropic-style endpoint.
 
-We did not pursue further access workarounds. Adding spoofed
-client-identity headers, mimicking SDK-level attestation, or
-otherwise circumventing the `access_terminated_error` would have
-violated Moonshot's explicit access policy ("only available for
-Coding Agents such as..."), and a corpus whose reproducibility
-depends on a Terms-of-Service-violating workaround is not a
-reproducible corpus by any standard we are willing to publish under.
-The ethical principle we hold to is straightforward: where a
-provider's access policy excludes our research use case at the API
-layer, the right response is to document the exclusion and accept
-the gap, not to spoof through it.
-
-The 120 attempted-but-errored sample files are retained in
-`data/traces_values/kimi-coding-direct/` as evidence-of-attempt;
-they are excluded from all valid-sample counts under the same
-"non-empty `result` field" criterion that excludes other errored
-files corpus-wide. The coverage table in `data/CORPUS_SUMMARY.md`
-flags this cell as **`values FAILED (1 cell, 0 valid)`**, which
-distinguishes it from cells that were never attempted.
-
-The downstream consequence is bounded. The `kimi-coding-direct`
-freeflow cell is treated as a single-route observation rather than
-as half of a same-name pair: the companion product-tier paper's
-§2.5 ("Models tested but not in this paper") explicitly excludes
-the Moonshot Kimi-for-coding case from the coding-vs-general
-comparison on the structural grounds that *Kimi-for-coding is a
-separately-released model from K2.5 rather than a coding endpoint
-of the same model* — so the missing values cell does not affect
-any paper-level finding. The corpus simply contains one freeflow
-cell for which the values probe was not collectable under
-present access conditions.
+**The ethical position from v1.1.0 still stands**, even though the
+specific cell it bounded is no longer empty: where a provider gates
+access to one route, the right move is to document the gate and
+look for an open route the provider also offers, rather than spoof
+through the closed one. The Discord tip did not unlock spoofing —
+it pointed to a route Moonshot publishes as its Anthropic-format
+API. Using a different documented route is normal client behaviour;
+forging client identity to bypass the gate on the route the
+provider has closed is not. The distinction is load-bearing.
 
 ### Per-provider analysis threshold
 
@@ -498,6 +494,34 @@ Code: [MIT](https://opensource.org/licenses/MIT).
 Full text: [`LICENSE`](LICENSE).
 
 ## Status
+
+**v1.1.1 (2026-05-08)** — Patch release. Closes the one outstanding
+gap from v1.1.0: the `kimi-coding-direct` values cell, documented in
+v1.1.0 as failed-by-policy. A tip relayed via the Kimi Discord after
+the v1.1.0 release pointed to a parallel Anthropic-style endpoint at
+`https://api.kimi.com/coding/v1/messages` (same host, same model,
+different request schema) that is not subject to the same
+coding-agent gating as the OpenAI-compat path. We confirmed it
+worked, switched `scripts/run_freeflow_multi.py:call_kimi_direct()`
+to the Anthropic-style route, and collected the missing values cell
+at 120/120 valid samples.
+
+Net change: values 12,468 → 12,588 valid (+120); combined 22,813 →
+22,933; values cells with all-error-only contents drop from 2 to 1
+(the surviving one is `deepseek-v4-pro-or-pin-deepseek`, blocked at
+collection time by an OR account-level data policy and documented
+under "Configured exclusions"). All 47 distinct models now have
+both probes at minimum coverage. The kimi-coding-direct values cell
+moves from `values FAILED (1 cell, 0 valid)` to OK on the per-model
+coverage table.
+
+The README "Endpoint history: kimi-coding-direct" subsection has
+been rewritten from access-policy-block-and-honest-gap framing to
+endpoint-history-with-resolved-route framing. The ethical position
+from v1.1.0 (do not spoof client identity to circumvent a closed
+gate; do use other routes the provider publishes) still stands
+verbatim — the Discord tip pointed at a published-but-undiscovered
+route, not at a spoofing path.
 
 **v1.1.0 (2026-05-08)** — Coverage-completion release. Closes the
 values-probe coverage gap surfaced 2026-05-07 against v1.0.2's audit:

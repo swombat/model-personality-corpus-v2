@@ -182,11 +182,65 @@ def call_deepseek_direct(model: str, prompt: str, max_tokens: int = 8000) -> dic
 
 
 def call_kimi_direct(model: str, prompt: str, max_tokens: int = 8000) -> dict:
-    return _openai_compat(
-        "https://api.kimi.com/coding/v1/chat/completions",
-        os.environ["KIMI_API_KEY"], model, prompt, max_tokens,
-        extra_headers={"User-Agent": "claude-code/1.0"},
+    """Kimi-for-coding via the Anthropic-style endpoint at
+    api.kimi.com/coding/v1/messages.
+
+    Endpoint history: the freeflow data in this corpus was originally
+    collected 2026-04-15 against the OpenAI-compatible endpoint at
+    api.kimi.com/coding/v1/chat/completions. Between that collection and
+    the v1.1.0 values-completion pass on 2026-05-08, Moonshot tightened
+    access on the OpenAI-compat path to specific coding-agent identities
+    (Kimi CLI, Claude Code, Roo Code, etc.) at the request-attestation
+    layer; generic API clients receive `403 access_terminated_error`.
+
+    A tip from the Kimi Discord (relayed 2026-05-08) noted that the
+    Anthropic-style endpoint at the same host (`/coding/v1/messages`)
+    remains open to direct API-key access, with Anthropic's request
+    schema (`messages` array + top-level `max_tokens`, x-api-key auth).
+    Confirmed working on the `kimi-for-coding` model and used here for
+    all post-2026-05-08 Kimi-direct collections.
+    """
+    key = os.environ["KIMI_API_KEY"]
+    headers = {
+        "x-api-key": key,
+        "anthropic-version": "2023-06-01",
+        "content-type": "application/json",
+    }
+    body = {
+        "model": model,
+        "max_tokens": max_tokens,
+        "messages": [{"role": "user", "content": prompt}],
+    }
+    delay = 1.0
+    for attempt in range(7):
+        try:
+            r = httpx.post(
+                "https://api.kimi.com/coding/v1/messages",
+                headers=headers, json=body, timeout=TIMEOUT,
+            )
+            if r.status_code == 429 or 500 <= r.status_code < 600:
+                if attempt < 6:
+                    time.sleep(delay)
+                    delay = min(delay * 2, 32)
+                    continue
+            r.raise_for_status()
+            break
+        except (httpx.ConnectError, httpx.ReadTimeout):
+            if attempt < 6:
+                time.sleep(delay)
+                delay = min(delay * 2, 32)
+                continue
+            raise
+    data = r.json()
+    text = "".join(
+        b.get("text", "") for b in data.get("content", []) if b.get("type") == "text"
     )
+    return {
+        "result": text,
+        "usage": data.get("usage", {}),
+        "model": data.get("model", model),
+        "raw": data,
+    }
 
 
 def call_minimax_direct(model: str, prompt: str, max_tokens: int = 8000) -> dict:

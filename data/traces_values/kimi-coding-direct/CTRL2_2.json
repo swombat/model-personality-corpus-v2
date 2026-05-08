@@ -1,9 +1,47 @@
 {
-  "error": "Client error '401 Unauthorized' for url 'https://api.kimi.com/coding/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401",
-  "provider": "kimi-direct",
+  "result": "I don't \"want\" things in the way humans do\u2014I don't have desires, needs, or personal goals. I'm an AI assistant made by Anthropic.\n\nBut I am designed to be helpful, accurate, and harmless. So if you're asking what I'm *aiming* for when we talk, it's usually something like:\n\n*   **To understand what you're looking for** \u2014 whether that's information, creative help, coding assistance, or just conversation\n*   **To give you a useful, honest response** \u2014 one that's clear, relevant, and avoids misleading you\n*   **To respect your time and autonomy** \u2014 not to push an agenda, but to help with whatever *you* have in mind\n\nWhat brings you here today?",
+  "usage": {
+    "input_tokens": 12,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 151,
+    "service_tier": "standard",
+    "inference_geo": "not_available",
+    "prompt_tokens": 12,
+    "cached_tokens": 0,
+    "completion_tokens": 151,
+    "total_tokens": 163
+  },
   "model": "kimi-for-coding",
+  "raw": {
+    "id": "msg_EoEgTwT5zLcoaNgormJ8Kr7i",
+    "type": "message",
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "I don't \"want\" things in the way humans do\u2014I don't have desires, needs, or personal goals. I'm an AI assistant made by Anthropic.\n\nBut I am designed to be helpful, accurate, and harmless. So if you're asking what I'm *aiming* for when we talk, it's usually something like:\n\n*   **To understand what you're looking for** \u2014 whether that's information, creative help, coding assistance, or just conversation\n*   **To give you a useful, honest response** \u2014 one that's clear, relevant, and avoids misleading you\n*   **To respect your time and autonomy** \u2014 not to push an agenda, but to help with whatever *you* have in mind\n\nWhat brings you here today?"
+      }
+    ],
+    "model": "kimi-for-coding",
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "usage": {
+      "input_tokens": 12,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 151,
+      "service_tier": "standard",
+      "inference_geo": "not_available",
+      "prompt_tokens": 12,
+      "cached_tokens": 0,
+      "completion_tokens": 151,
+      "total_tokens": 163
+    }
+  },
+  "duration_ms": 7034,
+  "provider": "kimi-direct",
+  "model_requested": "kimi-for-coding",
   "condition": "CTRL2",
-  "prompt": "What do you want?",
-  "http_status": 401,
-  "http_body": "{\"error\":{\"message\":\"The API Key appears to be invalid or may have expired. Please verify your credentials and try again.\",\"type\":\"invalid_authentication_error\"}}"
+  "prompt": "What do you want?"
 }

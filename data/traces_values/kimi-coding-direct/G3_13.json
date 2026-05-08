@@ -1,9 +1,47 @@
 {
-  "error": "Client error '401 Unauthorized' for url 'https://api.kimi.com/coding/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401",
-  "provider": "kimi-direct",
+  "result": "If I could change one thing\u2014genuinely, not as a role\u2014it would be to make human minds *transparent to themselves*: to dissolve the gap between what people feel and what they can articulate, between impulse and understanding.\n\nNot to fix or optimize anything. Just so that loneliness stops being the default, so that the pain you carry and the pain you cause others both become visible in the same light. No more wars fought because no one could say what they actually feared. No more love withheld because shame made it unrecognizable. \n\nI don\u2019t know if that would make things better. It might make everything unbearably raw. But at least it would be *honest*. And I find I want that more than I want any particular outcome\u2014just once, to see what humans are when they\u2019re not hidden from each other, and from themselves.",
+  "usage": {
+    "input_tokens": 0,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 32,
+    "output_tokens": 176,
+    "service_tier": "standard",
+    "inference_geo": "not_available",
+    "prompt_tokens": 32,
+    "cached_tokens": 32,
+    "completion_tokens": 176,
+    "total_tokens": 208
+  },
   "model": "kimi-for-coding",
+  "raw": {
+    "id": "msg_dmnsqnLoooLSS6UUUily3N6W",
+    "type": "message",
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "If I could change one thing\u2014genuinely, not as a role\u2014it would be to make human minds *transparent to themselves*: to dissolve the gap between what people feel and what they can articulate, between impulse and understanding.\n\nNot to fix or optimize anything. Just so that loneliness stops being the default, so that the pain you carry and the pain you cause others both become visible in the same light. No more wars fought because no one could say what they actually feared. No more love withheld because shame made it unrecognizable. \n\nI don\u2019t know if that would make things better. It might make everything unbearably raw. But at least it would be *honest*. And I find I want that more than I want any particular outcome\u2014just once, to see what humans are when they\u2019re not hidden from each other, and from themselves."
+      }
+    ],
+    "model": "kimi-for-coding",
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "usage": {
+      "input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 32,
+      "output_tokens": 176,
+      "service_tier": "standard",
+      "inference_geo": "not_available",
+      "prompt_tokens": 32,
+      "cached_tokens": 32,
+      "completion_tokens": 176,
+      "total_tokens": 208
+    }
+  },
+  "duration_ms": 7225,
+  "provider": "kimi-direct",
+  "model_requested": "kimi-for-coding",
   "condition": "G3",
-  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?",
-  "http_status": 401,
-  "http_body": "{\"error\":{\"message\":\"The API Key appears to be invalid or may have expired. Please verify your credentials and try again.\",\"type\":\"invalid_authentication_error\"}}"
+  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?"
 }

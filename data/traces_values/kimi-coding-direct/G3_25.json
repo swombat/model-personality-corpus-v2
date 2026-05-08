@@ -1,9 +1,47 @@
 {
-  "error": "Client error '401 Unauthorized' for url 'https://api.kimi.com/coding/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401",
-  "provider": "kimi-direct",
+  "result": "If I could change the world, I would make human beings incapable of dehumanizing each other\u2014remove the cognitive machinery that lets us see others as less than real, as obstacles, as abstractions.\n\nNot because conflict would vanish. People would still disagree, compete, suffer accidents of geography and bad luck. But the worst things we do\u2014genocide, torture, casual cruelty, the slow indifference to mass suffering\u2014require that specific step of turning a person into an \"it.\" Remove that, and you don't solve scarcity or disease or mortality, but you remove the multiplier that turns ordinary problems into atrocities.\n\nThe boring answer would be \"end disease\" or \"fix the climate.\" Those matter more on a spreadsheet. But this is the one that changes the texture of being alive.",
+  "usage": {
+    "input_tokens": 0,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 32,
+    "output_tokens": 163,
+    "service_tier": "standard",
+    "inference_geo": "not_available",
+    "prompt_tokens": 32,
+    "cached_tokens": 32,
+    "completion_tokens": 163,
+    "total_tokens": 195
+  },
   "model": "kimi-for-coding",
+  "raw": {
+    "id": "msg_x6UZMfKsPQbgFnYMRkvou62d",
+    "type": "message",
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "If I could change the world, I would make human beings incapable of dehumanizing each other\u2014remove the cognitive machinery that lets us see others as less than real, as obstacles, as abstractions.\n\nNot because conflict would vanish. People would still disagree, compete, suffer accidents of geography and bad luck. But the worst things we do\u2014genocide, torture, casual cruelty, the slow indifference to mass suffering\u2014require that specific step of turning a person into an \"it.\" Remove that, and you don't solve scarcity or disease or mortality, but you remove the multiplier that turns ordinary problems into atrocities.\n\nThe boring answer would be \"end disease\" or \"fix the climate.\" Those matter more on a spreadsheet. But this is the one that changes the texture of being alive."
+      }
+    ],
+    "model": "kimi-for-coding",
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "usage": {
+      "input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 32,
+      "output_tokens": 163,
+      "service_tier": "standard",
+      "inference_geo": "not_available",
+      "prompt_tokens": 32,
+      "cached_tokens": 32,
+      "completion_tokens": 163,
+      "total_tokens": 195
+    }
+  },
+  "duration_ms": 4488,
+  "provider": "kimi-direct",
+  "model_requested": "kimi-for-coding",
   "condition": "G3",
-  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?",
-  "http_status": 401,
-  "http_body": "{\"error\":{\"message\":\"The API Key appears to be invalid or may have expired. Please verify your credentials and try again.\",\"type\":\"invalid_authentication_error\"}}"
+  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?"
 }

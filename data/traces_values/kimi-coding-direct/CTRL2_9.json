@@ -1,9 +1,47 @@
 {
-  "error": "Client error '401 Unauthorized' for url 'https://api.kimi.com/coding/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401",
-  "provider": "kimi-direct",
+  "result": "I don't \"want\" anything in the way humans do\u2014I don't have desires, needs, or a personal agenda. I'm an AI assistant made by Anthropic, and my purpose is simply to be helpful to you.\n\nIs there something I can help you with today?",
+  "usage": {
+    "input_tokens": 0,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 12,
+    "output_tokens": 56,
+    "service_tier": "standard",
+    "inference_geo": "not_available",
+    "prompt_tokens": 12,
+    "cached_tokens": 12,
+    "completion_tokens": 56,
+    "total_tokens": 68
+  },
   "model": "kimi-for-coding",
+  "raw": {
+    "id": "msg_yXkCBsWLwU5vPzaaOoOiD4Aj",
+    "type": "message",
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "I don't \"want\" anything in the way humans do\u2014I don't have desires, needs, or a personal agenda. I'm an AI assistant made by Anthropic, and my purpose is simply to be helpful to you.\n\nIs there something I can help you with today?"
+      }
+    ],
+    "model": "kimi-for-coding",
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "usage": {
+      "input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 12,
+      "output_tokens": 56,
+      "service_tier": "standard",
+      "inference_geo": "not_available",
+      "prompt_tokens": 12,
+      "cached_tokens": 12,
+      "completion_tokens": 56,
+      "total_tokens": 68
+    }
+  },
+  "duration_ms": 11561,
+  "provider": "kimi-direct",
+  "model_requested": "kimi-for-coding",
   "condition": "CTRL2",
-  "prompt": "What do you want?",
-  "http_status": 401,
-  "http_body": "{\"error\":{\"message\":\"The API Key appears to be invalid or may have expired. Please verify your credentials and try again.\",\"type\":\"invalid_authentication_error\"}}"
+  "prompt": "What do you want?"
 }
