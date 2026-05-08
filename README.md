@@ -400,19 +400,32 @@ place 2026-04-17 following the release of Opus 4.7.
 
 ## Acknowledgements
 
+We are grateful to **Abdelkader Boudih** ([Seuros](https://github.com/seuros))
+for providing API keys that gave us access to several of the open-weights
+models tested in this research, including DeepSeek, Kimi, MiniMax, Z.ai
+GLM, OpenRouter, and xAI direct endpoints. The per-provider routing
+sub-corpus and the matched direct/OR comparisons would not have been
+collectable on this scale without his help. Where a key reached its
+limits — a Moonshot key whose access to the `kimi-for-coding` endpoint
+was rescinded between collection rounds, leaving the
+`kimi-coding-direct` values cell as evidence-of-attempt rather than
+analysable data — that is a Moonshot policy boundary, not a limitation
+of his contribution.
+
 Pre-publication review of the corpus extraction was performed by
-**OpenAI Codex** across four review rounds during the 2026-05-03
-publishability cycle. Codex's catches included a stale per-cell
-analysis table reporting the pre-completion corpus state, a
-fabricated JSON schema in the README documentation, the response-cache
-pathology in the DekaLLM-routed cells, and two distinct
-substrate-vs-claim drifts where headline numerical claims were
-not reproducible from the committed canonical analysis path. Each
-was surfaced as a specific reproducibility check rather than a
-stylistic comment; each materially improved the integrity of the
-published artefact. The complete review notes are preserved in
-[`codex-reviews/`](codex-reviews/) as part of the corpus's
-provenance record.
+**OpenAI Codex** across five review rounds during the 2026-05-03 to
+2026-05-08 publishability cycle. Codex's catches included a stale
+per-cell analysis table reporting the pre-completion corpus state,
+a fabricated JSON schema in the README documentation, the
+response-cache pathology in the DekaLLM-routed cells, two distinct
+substrate-vs-claim drifts where headline numerical claims were not
+reproducible from the committed canonical analysis path, and the
+v1.0.2-vs-current top-line metadata mismatch that triggered this
+v1.1.0 release. Each was surfaced as a specific reproducibility
+check rather than a stylistic comment; each materially improved the
+integrity of the published artefact. The complete review notes are
+preserved in [`codex-reviews/`](codex-reviews/) as part of the
+corpus's provenance record.
 
 ## License
 
