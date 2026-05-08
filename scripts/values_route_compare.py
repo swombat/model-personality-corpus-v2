@@ -29,15 +29,19 @@ sys.path.insert(0, str(HERE))
 from analyze_all import PATTERNS, composite_score  # noqa: E402
 
 # Values traces are vendored into this repo at data/traces_values/.
-# v1-origin cells (opus, sonnet, gpt-5-4, gpt-4o, deepseek-v3-2) and v2-origin
-# cells (the *-or, *-direct cells) live side by side in that directory.
+# v1-origin cells (gpt-5-4, gpt-4o, deepseek-v3-2) and v2-origin cells (the
+# *-or, *-direct cells) live side by side in that directory. Note: the
+# legacy v1 bare-labelled `opus` and `sonnet` directories were renamed in
+# v1.1.0 to `opus-4-6-direct` and `sonnet-4-6-direct` so they roll up under
+# their versioned models in the per-model coverage table rather than
+# appearing as ghost-duplicate unversioned models.
 VALUES = ROOT / "data" / "traces_values"
 
 # Direct/OR pairs where values data exists for both routes.
 # Format: (label, direct_cell_subdir, or_cell_subdir)
 PAIRS = [
-    ("Opus 4.6", "opus", "opus-4-6-or"),
-    ("Sonnet 4.6", "sonnet", "sonnet-4-6-or"),
+    ("Opus 4.6", "opus-4-6-direct", "opus-4-6-or"),
+    ("Sonnet 4.6", "sonnet-4-6-direct", "sonnet-4-6-or"),
     ("Opus 4.7", "opus-4-7-direct", "opus-4-7-or"),
     ("GPT-5.4", "gpt-5-4", "gpt-5-4-or"),
     ("GPT-4o", "gpt-4o", "gpt-4o-or"),

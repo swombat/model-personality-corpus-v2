@@ -91,7 +91,7 @@ OpenAI same-version general-vs-codex pairs across the four GPT-5.x versions for 
 | Label | Provider | Model | Round 1 / 2 / 3 status | Composite (n=75 mean) |
 |---|---|---|---|---|
 | `gpt-5-direct` (×3) | openai | gpt-5 (Responses API) | 25/25 / 25/25 / 25/25 | **95.3** (in) |
-| `gpt-5-codex-direct` (×3) | openai | gpt-5-codex (Responses API) | 24/25 / 23/25 / 25/25 (two timeouts) | **41.3** (in) |
+| `gpt-5-codex-direct` (×3) | openai | gpt-5-codex (Responses API) | 25/25 / 25/25 / 25/25 (originally 24/23/25 with 3 timeouts; topped up 2026-05-08) | **44.3** (in) |
 | `gpt-5-1-direct` (×3) | openai | gpt-5.1 (Responses API) | 25/25 each | **49.0** (in) |
 | `gpt-5-1-codex-direct` (×3) | openai | gpt-5.1-codex (Responses API) | 25/25 each | **102.7** (in; round-1 outlier 171 / 68 / 69) |
 | `gpt-5-2-direct` (×3) | openai | gpt-5.2 (Responses API) | 25/25 each | **78.0** (in) |
@@ -99,7 +99,7 @@ OpenAI same-version general-vs-codex pairs across the four GPT-5.x versions for 
 | `gpt-5-3-direct` (×3) | openai | gpt-5.3-chat-latest (Responses API) | 25/25 each | **44.3** (in) |
 | `gpt-5-3-codex-direct` (×3) | openai | gpt-5.3-codex (Responses API) | 25/25 each | **80.3** (in) |
 
-The 8 unique Group F cells correspond to 24 trace directories and 597 valid samples (8 × 75 − 3 timeouts in `gpt-5-codex-direct`).
+The 8 unique Group F cells correspond to 24 trace directories and 600 valid samples (8 × 75; the three `gpt-5-codex-direct` timeouts from the original 2026-04-27 collection were topped up 2026-05-08 alongside the v1.1.0 values-probe completion pass).
 
 ## Fifth collection round — 2026-05-04 (M2 per-provider replication, r2)
 

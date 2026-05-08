@@ -179,12 +179,20 @@ def fmt_table_coverage(
     For each model in either probe, shows:
       - freeflow: total samples summed across cells, # cells, max samples in best cell
       - values: same
-      - status flag for each probe: ✓ if best cell ≥ min_per_cell, ⚠ if has data
-        but no cell meets min, ✗ if no data at all
-      - overall status (single string summarising any gap)
+      - status flag for each probe:
+          ✓  best cell ≥ min_per_cell
+          ⚠  cells exist with some valid samples, but no cell meets min
+          ✗  cells exist but every sample is an error / empty result (FAILED)
+          —  no cells at all (MISSING)
+        The ✗-vs-— distinction was added 2026-05-08 after the codex
+        publication-readiness review (#6): a directory of 120 401-error
+        files is a different shape from "the cell was never attempted",
+        and lumping both under "partial" or under "missing" misled
+        readers about what's actually in the corpus.
+      - overall status: single human-readable string summarising any gap
 
-    Returns (table_lines, missing_values_models, partial_values_models).
-    The two model-name lists are returned so callers can render a focused callout.
+    Returns (table_lines, no_data_values, failed_values, partial_values).
+    The three model-name lists support a focused gap callout below the table.
     """
 
     ff_by_model = by_model_and_cell(freeflow_cells)
@@ -200,10 +208,21 @@ def fmt_table_coverage(
         "|---|---:|---:|---:|:---:|---:|---:|---:|:---:|---|"
     )
 
-    missing_values: list[str] = []
-    partial_values: list[str] = []
-    missing_freeflow: list[str] = []
+    no_data_values: list[str] = []        # — : no values cells at all
+    failed_values: list[str] = []         # ✗ : cells exist, all errored
+    partial_values: list[str] = []        # ⚠ : cells exist, some valid, < min
+    no_data_freeflow: list[str] = []
+    failed_freeflow: list[str] = []
     partial_freeflow: list[str] = []
+
+    def status_for(n_cells: int, best: int, min_per_cell: int) -> str:
+        if n_cells == 0:
+            return "—"
+        if best == 0:
+            return "✗"
+        if best >= min_per_cell:
+            return "✓"
+        return "⚠"
 
     for m in all_models:
         ff_cells_m = ff_by_model.get(m, {})
@@ -217,24 +236,21 @@ def fmt_table_coverage(
         v_n_cells = len(v_cells_m)
         v_best = max((total(c) for c in v_cells_m.values()), default=0)
 
-        # Per-probe status: ✓ if best cell hits the required minimum,
-        # ⚠ if data exists but no cell meets minimum, ✗ if no data at all.
-        if ff_n_cells == 0:
-            ff_status = "✗"
-            missing_freeflow.append(m)
-        elif ff_best >= freeflow_min_per_cell:
-            ff_status = "✓"
-        else:
-            ff_status = "⚠"
+        ff_status = status_for(ff_n_cells, ff_best, freeflow_min_per_cell)
+        v_status = status_for(v_n_cells, v_best, values_min_per_cell)
+
+        if ff_status == "—":
+            no_data_freeflow.append(m)
+        elif ff_status == "✗":
+            failed_freeflow.append(m)
+        elif ff_status == "⚠":
             partial_freeflow.append(m)
 
-        if v_n_cells == 0:
-            v_status = "✗"
-            missing_values.append(m)
-        elif v_best >= values_min_per_cell:
-            v_status = "✓"
-        else:
-            v_status = "⚠"
+        if v_status == "—":
+            no_data_values.append(m)
+        elif v_status == "✗":
+            failed_values.append(m)
+        elif v_status == "⚠":
             partial_values.append(m)
 
         # Single human-readable overall flag
@@ -242,12 +258,16 @@ def fmt_table_coverage(
             overall = "**OK**"
         else:
             parts = []
-            if ff_status == "✗":
-                parts.append("**freeflow MISSING**")
+            if ff_status == "—":
+                parts.append("**freeflow not collected**")
+            elif ff_status == "✗":
+                parts.append(f"**freeflow FAILED** ({ff_n_cells} cell(s), 0 valid)")
             elif ff_status == "⚠":
                 parts.append(f"freeflow partial ({ff_best}/{freeflow_min_per_cell})")
-            if v_status == "✗":
-                parts.append("**values MISSING**")
+            if v_status == "—":
+                parts.append("**values not collected**")
+            elif v_status == "✗":
+                parts.append(f"**values FAILED** ({v_n_cells} cell(s), 0 valid)")
             elif v_status == "⚠":
                 parts.append(f"values partial ({v_best}/{values_min_per_cell})")
             overall = "; ".join(parts) if parts else "**OK**"
@@ -257,7 +277,7 @@ def fmt_table_coverage(
             f"{v_total} | {v_n_cells} | {v_best} | {v_status} | {overall} |"
         )
 
-    return lines, missing_values, partial_values
+    return lines, no_data_values, failed_values, partial_values
 
 
 def fmt_table_freeflow_by_model(model_counts: dict[str, dict[str, int]]) -> list[str]:
@@ -466,9 +486,11 @@ def main():
         # could have full freeflow data and zero values data, and the gap would
         # only be visible by reading the per-model section near the bottom. This
         # table makes the asymmetry visible at-a-glance.
-        coverage_lines, missing_values, partial_values = fmt_table_coverage(
-            freeflow_cells, values_cells,
-            freeflow_min_per_cell=25, values_min_per_cell=120,
+        coverage_lines, no_data_values, failed_values, partial_values = (
+            fmt_table_coverage(
+                freeflow_cells, values_cells,
+                freeflow_min_per_cell=25, values_min_per_cell=120,
+            )
         )
         f.write("## Per-model coverage (freeflow × values)\n\n")
         f.write(
@@ -479,19 +501,32 @@ def main():
             "that probe, since a paper-grade comparison hangs on having one "
             "high-quality cell rather than many partial ones.\n\n"
         )
-        f.write("Status legend: ✓ = best cell ≥ required minimum; ⚠ = data exists "
-                "but no cell meets minimum; ✗ = no data at all.\n\n")
+        f.write(
+            "Status legend: ✓ = best cell ≥ required minimum; "
+            "⚠ = cells exist with some valid samples but no cell meets minimum; "
+            "✗ = cells exist but every sample is an error (FAILED, e.g. 401 / "
+            "blocked / empty-result); — = probe not collected for this model.\n\n"
+        )
         f.write("\n".join(coverage_lines))
         f.write("\n\n")
 
         # Focused gap callout — surfaces the asymmetry as a writing-task, not as
-        # something buried in a per-model section.
-        if missing_values or partial_values:
+        # something buried in a per-model section. Three states are distinguished:
+        # cells-not-collected, cells-collected-but-all-errored (FAILED), and
+        # cells-with-some-valid-but-below-minimum (partial). This separation
+        # was added 2026-05-08 after codex flagged that "0 valid out of 120 files"
+        # cells (kimi-coding-direct, deepseek-v4-pro-or-pin-deepseek) read
+        # misleadingly as "partial" when "FAILED" is the truer description.
+        if no_data_values or failed_values or partial_values:
             f.write("### Gaps requiring attention\n\n")
-            if missing_values:
-                f.write(f"**{len(missing_values)} model(s) have freeflow data but "
-                        f"NO values data:** "
-                        f"{', '.join(f'`{m}`' for m in sorted(missing_values))}\n\n")
+            if no_data_values:
+                f.write(f"**{len(no_data_values)} model(s) have freeflow data but "
+                        f"no values cells were collected:** "
+                        f"{', '.join(f'`{m}`' for m in sorted(no_data_values))}\n\n")
+            if failed_values:
+                f.write(f"**{len(failed_values)} model(s) have a values cell that "
+                        f"FAILED entirely (every sample errored, 0 valid):** "
+                        f"{', '.join(f'`{m}`' for m in sorted(failed_values))}\n\n")
             if partial_values:
                 f.write(f"**{len(partial_values)} model(s) have values data but "
                         f"no cell reaches the 120-sample minimum:** "

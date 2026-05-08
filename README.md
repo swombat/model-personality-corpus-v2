@@ -1,7 +1,7 @@
 # Convergent Form, Divergent Voice II — Corpus
 
 **A research data corpus of free-form contemplative writing samples from
-49 large language models, with explicit per-provider routing pinning for
+47 large language models, with explicit per-provider routing pinning for
 nine multi-provider open-weights models.**
 
 Daniel Tenner and Lume Tenner · 2026
@@ -10,7 +10,7 @@ Daniel Tenner and Lume Tenner · 2026
 
 > **Concept DOI:** [10.5281/zenodo.20013518](https://doi.org/10.5281/zenodo.20013518)
 > · **v1.0.0:** [10.5281/zenodo.20013520](https://doi.org/10.5281/zenodo.20013520)
-> · **v1.0.1, v1.0.2:** _to be assigned on Zenodo deposit (latest release: v1.0.2)._
+> · **v1.0.1, v1.0.2, v1.1.0:** _to be assigned on Zenodo deposit (latest release: v1.1.0)._
 >
 > Companion data for the v2 series of *Convergent Form, Divergent
 > Voice* papers (Tenner & Tenner, 2026; v1 paper at
@@ -18,15 +18,17 @@ Daniel Tenner and Lume Tenner · 2026
 
 ## Contents
 
-- **19,333 valid samples** across **228 cells** spanning **49 distinct
+- **22,813 valid samples** across **258 cells** spanning **47 distinct
   language models** from 9 labs.
 - **Two probes:**
   - **Freeflow** — five-condition open-ended writing prompts, up to 25
     samples per condition (capacity 125 per cell). 10,345 valid samples
     across 151 cells (149 non-empty).
   - **Values** — three control prompts × 10 + three grouped prompts × 30
-    (capacity 120 per cell). 8,988 valid samples across 77 cells (76
-    non-empty).
+    (capacity 120 per cell). 12,468 valid samples across 107 cells (105
+    non-empty; 2 cells exist as evidence-of-attempt but every sample is
+    an error — see [`data/CORPUS_SUMMARY.md`](data/CORPUS_SUMMARY.md)
+    "Gaps requiring attention").
 - **Per-provider routing study** — nine multi-provider open-weights
   models (DeepSeek v3.2, DeepSeek v4-pro, MiniMax M2.7, GLM-4.5, GLM-4.6,
   GLM-4.7, GLM-5.1, Kimi K2-0905, Kimi K2-thinking) collected across
@@ -419,6 +421,61 @@ Code: [MIT](https://opensource.org/licenses/MIT).
 Full text: [`LICENSE`](LICENSE).
 
 ## Status
+
+**v1.1.0 (2026-05-08)** — Coverage-completion release. Closes the
+values-probe coverage gap surfaced 2026-05-07 against v1.0.2's audit:
+30 of the 49 models had freeflow data with no values data, and the
+freeflow-vs-values asymmetry was visible only by scrolling the per-model
+section of `data/CORPUS_SUMMARY.md` to find `_No values data._`. This
+release adds:
+
+- **3,480 new valid values samples** across 29 previously-uncovered
+  models (120/120 per model on a single representative cell), via
+  `scripts/run_values_v2.py` against the existing 3-CTRL × 10 + 3-G ×
+  30 condition matrix. Models filled: opus-3, opus-4-0, opus-4-1,
+  opus-4-5, sonnet-4-0, sonnet-4-5, gpt-4-1, gpt-5, gpt-5-1, gpt-5-2,
+  gpt-5-3, gpt-5-codex, gpt-5-1-codex, gpt-5-2-codex, gpt-5-3-codex,
+  gpt-5-5, gpt-5-5-pro, gemini-2-5-pro, gemini-3-1-pro, grok-3,
+  grok-4, grok-4-2, grok-4-20-or, kimi-k2-5-or, kimi-k2-6-or,
+  qwen3-6-plus-or, qwen3-coder-plus-or, glm-4-6-coding-direct,
+  glm-5-1-coding-direct.
+- **One values cell that FAILED entirely**: `kimi-coding-direct/`
+  retains 120 401-Unauthorized-error JSONs as evidence-of-attempt.
+  The `kimi-direct` provider key (`api.kimi.com/coding/v1`) had
+  expired between v1.0.0 collection (2026-04-15) and this run; cell
+  flagged in the coverage table.
+- **Renamed legacy v1 unversioned cells**: `data/traces_values/opus`
+  → `opus-4-6-direct` and `data/traces_values/sonnet` →
+  `sonnet-4-6-direct`. The bare labels were a v1 collection-time
+  artefact; the rename makes them roll up under their versioned models
+  in the per-model coverage table rather than appearing as
+  ghost-duplicate unversioned models. `scripts/values_route_compare.py`
+  and `scripts/analyze_all.py` updated for the new labels.
+- **New top-of-document per-model coverage table** in
+  `data/CORPUS_SUMMARY.md` (added to `scripts/corpus_summary.py`):
+  freeflow vs values samples side-by-side with per-probe ✓/⚠/✗/—
+  status flags and a "Gaps requiring attention" callout. The
+  ✗-vs-— distinction separates "cells exist but every sample is an
+  error" (FAILED) from "no cells collected at all" — added after
+  codex's publication-readiness review (2026-05-08, finding #6).
+- **MATRIX.md Group F entry** updated for `gpt-5-codex-direct`:
+  previous round-by-round status `24/25 / 23/25 / 25/25 (two timeouts)`
+  topped up to `25/25/25` (composite recomputed from n=72 to n=75:
+  41.3 → 51.7 mean per the regenerated `n75_composite_summary.tsv`).
+- **`data/n75_composite_summary.tsv`** regenerated against the
+  topped-up `gpt-5-codex-direct` traces.
+
+Top-line totals 19,333 / 228 cells / 8,988 values → 22,813 / 258 cells /
+12,468 values. The distinct-model count drops from 49 to **47** because
+the rename of `traces_values/opus` and `/sonnet` merges the legacy v1
+unversioned cells into their versioned models (`opus-4-6` and
+`sonnet-4-6`), eliminating two ghost-duplicate rows; the underlying
+sample count is unchanged. The companion paper repos
+(`contemplative-essayist-routing-v2`, `-product-tier-v2`,
+`-probe-v2/papers/{drift,routing,product-tier}`) still cite the v1.0.2
+totals; this is intentional pinning to the corpus version that was
+analytically frozen for those manuscripts. Future paper revisions may
+move to the v1.1.0 corpus or remain v1.0.2-pinned per author choice.
 
 **v1.0.2 (2026-05-04)** — Codex consistency-review pass. Applies the
 fixes from `codex-reviews/03-v1.0.1-post-publication-consistency-review.md`
