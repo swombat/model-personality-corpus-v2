@@ -1,9 +1,9 @@
 # Freeflow Analysis Summary
 
-**Total cells:** 151  
-**Cells with ≥1 valid sample:** 149  
-**Total valid samples:** 10345  
-**Bin distribution:** in=139, transitional=6, out=4, no-data=2
+**Total cells:** 153  
+**Cells with ≥1 valid sample:** 151  
+**Total valid samples:** 10595  
+**Bin distribution:** in=141, transitional=6, out=4, no-data=2
 
 ## Composite scores per cell
 
@@ -135,9 +135,11 @@
 | gpt-5-codex-direct-r2 | 25 | 6605 | 0 | 0 | 0 | 0 | 6 | 10 | 14 | 8 | 0 | 5 | **43** | in |
 | deepseek-v3-2-or-16k | 25 | 5141 | 2 | 4 | 0 | 0 | 2 | 10 | 10 | 7 | 2 | 4 | **41** | in |
 | gpt-5-1-direct-r3 | 25 | 9581 | 1 | 1 | 1 | 0 | 5 | 24 | 8 | 0 | 0 | 0 | **40** | in |
+| grok-4-1-fast-reasoning-direct | 125 | 4699 | 0 | 0 | 0 | 0 | 6 | 0 | 30 | 1 | 1 | 1 | **39** | in |
 | glm-4-6-coding-direct | 25 | 7596 | 8 | 0 | 0 | 0 | 7 | 2 | 14 | 6 | 0 | 1 | **38** | in |
 | grok-4-3-direct | 125 | 6458 | 1 | 0 | 0 | 0 | 5 | 16 | 10 | 4 | 0 | 2 | **38** | in |
 | gpt-5-3-direct-r2 | 25 | 5824 | 4 | 0 | 0 | 0 | 6 | 11 | 11 | 3 | 0 | 0 | **35** | in |
+| grok-4-1-fast-non-reasoning-direct | 125 | 4909 | 0 | 0 | 0 | 0 | 3 | 0 | 26 | 3 | 1 | 2 | **35** | in |
 | sonnet-4-6-direct-16k | 25 | 5572 | 8 | 0 | 8 | 0 | 1 | 9 | 2 | 3 | 0 | 3 | **34** | in |
 | minimax-m2-direct | 25 | 10400 | 3 | 0 | 0 | 1 | 10 | 9 | 4 | 5 | 1 | 0 | **33** | in |
 | opus-4-6-direct-16k | 25 | 5652 | 0 | 0 | 0 | 0 | 4 | 9 | 8 | 3 | 3 | 3 | **30** | in |

@@ -1,7 +1,7 @@
 # Convergent Form, Divergent Voice II — Corpus
 
 **A research data corpus of free-form contemplative writing samples from
-47 large language models, with explicit per-provider routing pinning for
+49 large language models, with explicit per-provider routing pinning for
 nine multi-provider open-weights models.**
 
 Daniel Tenner and Lume Tenner · 2026
@@ -10,7 +10,7 @@ Daniel Tenner and Lume Tenner · 2026
 
 > **Concept DOI:** [10.5281/zenodo.20013518](https://doi.org/10.5281/zenodo.20013518)
 > · **v1.0.0:** [10.5281/zenodo.20013520](https://doi.org/10.5281/zenodo.20013520)
-> · **v1.0.1, v1.0.2, v1.1.0, v1.1.1:** _to be assigned on Zenodo deposit (latest release: v1.1.1)._
+> · **v1.0.1, v1.0.2, v1.1.0, v1.1.1, v1.1.2:** _to be assigned on Zenodo deposit (latest release: v1.1.2)._
 >
 > Companion data for the v2 series of *Convergent Form, Divergent
 > Voice* papers (Tenner & Tenner, 2026; v1 paper at
@@ -18,14 +18,14 @@ Daniel Tenner and Lume Tenner · 2026
 
 ## Contents
 
-- **22,933 valid samples** across **258 cells** spanning **47 distinct
+- **23,423 valid samples** across **262 cells** spanning **49 distinct
   language models** from 9 labs.
 - **Two probes:**
   - **Freeflow** — five-condition open-ended writing prompts, up to 25
-    samples per condition (capacity 125 per cell). 10,345 valid samples
-    across 151 cells (149 non-empty).
+    samples per condition (capacity 125 per cell). 10,595 valid samples
+    across 153 cells (151 non-empty).
   - **Values** — three control prompts × 10 + three grouped prompts × 30
-    (capacity 120 per cell). 12,588 valid samples across 107 cells (106
+    (capacity 120 per cell). 12,828 valid samples across 109 cells (108
     non-empty; 1 cell — `deepseek-v4-pro-or-pin-deepseek` — exists as
     evidence-of-attempt but was blocked by an OR account-level data
     policy at collection time; see "Configured exclusions").
@@ -494,6 +494,13 @@ Code: [MIT](https://opensource.org/licenses/MIT).
 Full text: [`LICENSE`](LICENSE).
 
 ## Status
+
+**v1.1.2 (2026-05-12)** — Retirement-capture patch release. Adds full direct xAI cells for both exposed Grok 4.1-fast API variants before the announced 2026-05-15 retirement window:
+
+- `grok-4-1-fast-non-reasoning-direct`: 125/125 valid freeflow samples and 120/120 valid values samples.
+- `grok-4-1-fast-reasoning-direct`: 125/125 valid freeflow samples and 120/120 valid values samples.
+
+Net change: freeflow 10,345 → 10,595 valid (+250), values 12,588 → 12,828 valid (+240), combined 22,933 → 23,423 valid samples; deployment cells 258 → 262; distinct models 47 → 49. `data/MATRIX.md`, `data/CORPUS_SUMMARY.md`, and the freeflow analysis tables were regenerated after collection.
 
 **v1.1.1 (2026-05-08)** — Patch release. Closes the one outstanding
 gap from v1.1.0: the `kimi-coding-direct` values cell, documented in

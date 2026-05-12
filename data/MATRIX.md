@@ -114,6 +114,15 @@ Both cells reached full *n*=125 valid via multi-round top-up (the M2 reasoning-r
 
 Headline replication numbers: google-r2 vs google-orig Cohen's *d* = 0.15 (*p* = 0.25, statistically indistinguishable across the eight-day window — within-Google deployment stability); google-r2 vs minimax-r2 *d* = 0.73 (*p* = 5.5×10⁻⁸, same-day fresh contrast inside the original 0.66–0.76 range); per-25 ratio 4.18× (vs paper's original 3.4× cross-day cross-cell). Used in the routing paper's strengthened §4.3 (paragraph "Eight-day replication and same-day within-OR contrast").
 
+## Sixth collection round — 2026-05-12 (Grok 4.1-fast retirement capture)
+
+Direct xAI collection of the two exposed Grok 4.1-fast API variants before the announced 2026-05-15 retirement window. Collected as full cells using the documented v2 capacities: freeflow 5 conditions × 25 samples (=125) with 16k max tokens, and values 3 CTRL × 10 + 3 grouped × 30 (=120) with 2k max tokens.
+
+| Label | Provider | Model | Freeflow status | Values status |
+|---|---|---|---|---|
+| `grok-4-1-fast-non-reasoning-direct` | xai | `grok-4-1-fast-non-reasoning` | 125/125 valid | 120/120 valid |
+| `grok-4-1-fast-reasoning-direct` | xai | `grok-4-1-fast-reasoning` | 125/125 valid | 120/120 valid |
+
 ## Notes
 
 The published paper (`paper/paper.tex`) and generated tables (`tables/cells.tsv`, `tables/summary.md`) are the source of truth for findings. This file is the collection-status matrix; for headline findings see the paper's abstract and §3.
