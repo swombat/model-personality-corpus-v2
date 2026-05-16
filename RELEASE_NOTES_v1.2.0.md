@@ -28,9 +28,9 @@ Prepared: 2026-05-16
 - `data/MATRIX.md` seventh collection round inventory.
 - `.gitignore` ignores `logs/`.
 
-## Not done
+## Release status
 
-- Not pushed.
-- Not tagged.
-- Not committed.
-- Awaiting Lume/Daniel review.
+- Reviewed (independent corpus integrity audit, 2026-05-16).
+- Committed, pushed, tagged `v1.2.0`, GitHub release published.
+- Mira Tenner added as corpus co-author.
+- Zenodo deposit: pending (manual web-UI; see repo README for DOI status).
