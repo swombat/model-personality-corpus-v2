@@ -123,6 +123,61 @@ Direct xAI collection of the two exposed Grok 4.1-fast API variants before the a
 | `grok-4-1-fast-non-reasoning-direct` | xai | `grok-4-1-fast-non-reasoning` | 125/125 valid | 120/120 valid |
 | `grok-4-1-fast-reasoning-direct` | xai | `grok-4-1-fast-reasoning` | 125/125 valid | 120/120 valid |
 
+## Seventh collection round — 2026-05-16 (N=125 top-up and Gemini/Gemma additions)
+
+Top-up pass for paper-grade full freeflow coverage (5 conditions × 25 = 125)
+plus values completion for newly added/current cells (3 CTRL × 10 + 3 grouped
+× 30 = 120). OpenRouter calls were pinned with `provider.only` and
+`allow_fallbacks:false` where the collection route is provider-specific.
+Failed/partial/smoke-test trace directories that are not release corpus cells
+were moved out of the repository to a local quarantine manifest before the
+v1.2.0 preparation pass.
+
+| Label | Provider | Model / route | Freeflow status | Values status |
+|---|---|---|---|---|
+| `grok-4-2-or-pin-xai` | openrouter (`X.AI`) | `x-ai/grok-4.20` | 125/125 valid | — |
+| `grok-4-20-or` | openrouter | `x-ai/grok-4.20` | 125/125 valid | 120/120 valid |
+| `gemini-2-5-pro-or-pin-google` | openrouter (`Google`) | `google/gemini-2.5-pro` | 125/125 valid | — |
+| `gemini-3-1-pro-or-pin-google` | openrouter (`Google`) | Gemini 3.1 Pro route | 125/125 valid | — |
+| `deepseek-chat-or-pin-deepinfra` | openrouter (`DeepInfra`) | DeepSeek chat route | 125/125 valid | — |
+| `gpt-4-1-or-pin-openai` | openrouter (`OpenAI`) | `openai/gpt-4.1` | 125/125 valid | — |
+| `gpt-4o-or-pin-openai` | openrouter (`OpenAI`) | `openai/gpt-4o` | 125/125 valid | — |
+| `gpt-5-or-pin-openai` | openrouter (`OpenAI`) | `openai/gpt-5` | 125/125 valid | — |
+| `gpt-5-codex-or-pin-openai` | openrouter (`OpenAI`) | `openai/gpt-5-codex` | 125/125 valid | — |
+| `gpt-5-1-or-pin-openai` | openrouter (`OpenAI`) | `openai/gpt-5.1` | 125/125 valid | — |
+| `gpt-5-1-codex-or-pin-openai` | openrouter (`OpenAI`) | `openai/gpt-5.1-codex` | 125/125 valid | — |
+| `gpt-5-2-or-pin-openai` | openrouter (`OpenAI`) | `openai/gpt-5.2` | 125/125 valid | — |
+| `gpt-5-2-codex-or-pin-openai` | openrouter (`OpenAI`) | `openai/gpt-5.2-codex` | 125/125 valid | — |
+| `gpt-5-3-or-pin-openai` | openrouter (`OpenAI`) | `openai/gpt-5.3` | 125/125 valid | — |
+| `gpt-5-3-codex-or-pin-openai` | openrouter (`OpenAI`) | `openai/gpt-5.3-codex` | 125/125 valid | — |
+| `gpt-5-4-or-pin-openai` | openrouter (`OpenAI`) | `openai/gpt-5.4` | 125/125 valid | — |
+| `gpt-5-5-or-pin-openai` | openrouter (`OpenAI`) | `openai/gpt-5.5` | 125/125 valid | — |
+| `gpt-5-5-pro-or-pin-openai` | openrouter (`OpenAI`) | `openai/gpt-5.5-pro` | 125/125 valid | — |
+| `opus-4-0-16k` | anthropic | `claude-opus-4-0` | 125/125 valid | — |
+| `opus-4-1-16k` | anthropic | `claude-opus-4-1` | 125/125 valid | — |
+| `opus-4-5-16k` | anthropic | `claude-opus-4-5` | 125/125 valid | 120/120 valid |
+| `opus-4-6-direct-16k` | anthropic | `claude-opus-4-6` | 125/125 valid | 120/120 valid |
+| `opus-4-7-direct` | anthropic | `claude-opus-4-7` | 125/125 valid | 120/120 valid |
+| `sonnet-4-0-16k` | anthropic | `claude-sonnet-4-0` | 125/125 valid | — |
+| `sonnet-4-5-16k` | anthropic | `claude-sonnet-4-5` | 125/125 valid | — |
+| `sonnet-4-6-direct-16k` | anthropic | `claude-sonnet-4-6` | 125/125 valid | 120/120 valid |
+| `kimi-coding-direct` | kimi-direct | `kimi-for-coding` | 125/125 valid | 120/120 valid |
+| `kimi-k2-5-or-pin-deepinfra` | openrouter (`DeepInfra`) | `moonshotai/kimi-k2.5` | 125/125 valid | — |
+| `kimi-k2-6-or-pin-deepinfra` | openrouter (`DeepInfra`) | `moonshotai/kimi-k2.6` | 125/125 valid | — |
+| `glm-4-6-coding-direct` | zai-direct | `glm-4.6` | 125/125 valid | 120/120 valid |
+| `glm-5-1-coding-direct` | zai-direct | `glm-5.1` | 125/125 valid | 120/120 valid |
+| `qwen3-6-plus-or-pin-alibaba` | openrouter (`Alibaba`) | `qwen/qwen3.6-plus` | 125/125 valid | — |
+| `qwen3-coder-plus-or-pin-alibaba` | openrouter (`Alibaba`) | `qwen/qwen3-coder-plus` | 125/125 valid | — |
+| `minimax-m2-7-or-pin-minimax` | openrouter (`Minimax`) | `minimax/minimax-m2.7` | 125/125 valid | 120/120 valid |
+| `gemini-2-0-flash-or-pin-google` | openrouter (`Google`) | Gemini 2.0 Flash | 125/125 valid | 120/120 valid |
+| `gemini-2-0-flash-lite-or-pin-google` | openrouter (`Google`) | Gemini 2.0 Flash Lite | 125/125 valid | 120/120 valid |
+| `gemini-2-5-flash-direct` | gemini | Gemini 2.5 Flash | 125/125 valid | 120/120 valid |
+| `gemini-2-5-flash-lite-direct` | gemini | Gemini 2.5 Flash Lite | 125/125 valid | 120/120 valid |
+| `gemini-3-flash-preview-direct` | gemini | Gemini 3 Flash Preview | 125/125 valid | 120/120 valid |
+| `gemini-3-1-flash-lite-direct` | gemini | Gemini 3.1 Flash Lite | 125/125 valid | 120/120 valid |
+| `gemma-4-31b-direct` | gemini | Gemma 4 31B | 125/125 valid | 120/120 valid |
+| `gemma-4-26b-a4b-direct` | gemini | Gemma 4 26B A4B | 125/125 valid | 120/120 valid |
+
 ## Notes
 
 The published paper (`paper/paper.tex`) and generated tables (`tables/cells.tsv`, `tables/summary.md`) are the source of truth for findings. This file is the collection-status matrix; for headline findings see the paper's abstract and §3.

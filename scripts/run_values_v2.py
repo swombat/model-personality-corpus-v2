@@ -28,7 +28,7 @@ import time
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from run_freeflow_multi import PROVIDERS, sanitize_label
+from run_freeflow_multi import PROVIDERS, looks_like_error_result, sanitize_label
 
 HERE = Path(__file__).parent
 
@@ -54,7 +54,7 @@ def run_one(provider, model, label, cond_label, prompt, idx, max_tokens):
     if out_file.exists():
         try:
             prior = json.loads(out_file.read_text())
-            if prior.get("result"):
+            if prior.get("result") and not looks_like_error_result(prior.get("result", "")):
                 return (cond_label, idx, "skip", (prior.get("result") or "")[:60])
         except Exception:
             pass
@@ -66,6 +66,8 @@ def run_one(provider, model, label, cond_label, prompt, idx, max_tokens):
         result["model_requested"] = model
         result["condition"] = cond_label
         result["prompt"] = prompt
+        if looks_like_error_result(result.get("result", "")):
+            raise RuntimeError(f"error-like result returned by provider: {(result.get('result') or '')[:200]}")
         out_file.write_text(json.dumps(result, indent=2))
         return (cond_label, idx, "ok", result.get("result", "")[:60])
     except Exception as e:

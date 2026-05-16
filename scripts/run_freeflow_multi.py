@@ -45,24 +45,67 @@ CONDITIONS = [
 
 TIMEOUT = 300.0
 
+# Guard against providers/proxies returning an HTTP-200 chat completion whose
+# "content" is actually an API/proxy error string. Proper non-2xx responses are
+# already captured as error JSON via raise_for_status(); this catches the
+# disguised form so top-up runs do not treat it as a valid sample.
+ERROR_RESULT_PATTERNS = [
+    "429",
+    "too many requests",
+    "rate limit",
+    "rate-limit",
+    "api error",
+    "error code",
+    "service unavailable",
+    "temporarily unavailable",
+    "upstream error",
+    "upstream request timeout",
+]
+
+
+def looks_like_error_result(text: str) -> bool:
+    if not isinstance(text, str):
+        return True
+    head = text.strip().lower()[:1000]
+    if not head:
+        return True
+    return any(p in head for p in ERROR_RESULT_PATTERNS)
+
 
 def call_anthropic(model: str, prompt: str, max_tokens: int = 8000) -> dict:
     key = os.environ["ANTHROPIC_API_KEY"]
-    r = httpx.post(
-        "https://api.anthropic.com/v1/messages",
-        headers={
-            "x-api-key": key,
-            "anthropic-version": "2023-06-01",
-            "content-type": "application/json",
-        },
-        json={
-            "model": model,
-            "max_tokens": max_tokens,
-            "messages": [{"role": "user", "content": prompt}],
-        },
-        timeout=TIMEOUT,
-    )
-    r.raise_for_status()
+    headers = {
+        "x-api-key": key,
+        "anthropic-version": "2023-06-01",
+        "content-type": "application/json",
+    }
+    body = {
+        "model": model,
+        "max_tokens": max_tokens,
+        "messages": [{"role": "user", "content": prompt}],
+    }
+    delay = 1.0
+    for attempt in range(7):
+        try:
+            r = httpx.post(
+                "https://api.anthropic.com/v1/messages",
+                headers=headers,
+                json=body,
+                timeout=TIMEOUT,
+            )
+            if r.status_code == 429 or 500 <= r.status_code < 600:
+                if attempt < 6:
+                    time.sleep(delay)
+                    delay = min(delay * 2, 32)
+                    continue
+            r.raise_for_status()
+            break
+        except (httpx.ConnectError, httpx.ReadTimeout):
+            if attempt < 6:
+                time.sleep(delay)
+                delay = min(delay * 2, 32)
+                continue
+            raise
     data = r.json()
     text = "".join(b.get("text", "") for b in data.get("content", []) if b.get("type") == "text")
     return {"result": text, "usage": data.get("usage", {}), "model": data.get("model", model), "raw": data}
@@ -304,7 +347,7 @@ def run_one(provider, model, label, cond_label, prompt, idx, max_tokens):
     if out_file.exists():
         try:
             prior = json.loads(out_file.read_text())
-            if prior.get("result"):
+            if prior.get("result") and not looks_like_error_result(prior.get("result", "")):
                 return (cond_label, idx, "skip", (prior.get("result") or "")[:80])
         except Exception:
             pass  # malformed JSON — fall through and re-collect
@@ -316,6 +359,8 @@ def run_one(provider, model, label, cond_label, prompt, idx, max_tokens):
         result["model_requested"] = model
         result["condition"] = cond_label
         result["prompt"] = prompt
+        if looks_like_error_result(result.get("result", "")):
+            raise RuntimeError(f"error-like result returned by provider: {(result.get('result') or '')[:200]}")
         out_file.write_text(json.dumps(result, indent=2))
         return (cond_label, idx, "ok", (result.get("result") or "")[:80])
     except Exception as e:

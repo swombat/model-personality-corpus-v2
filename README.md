@@ -1,7 +1,7 @@
 # Convergent Form, Divergent Voice II — Corpus
 
 **A research data corpus of free-form contemplative writing samples from
-49 large language models, with explicit per-provider routing pinning for
+57 large language models, with explicit per-provider routing pinning for
 nine multi-provider open-weights models.**
 
 Daniel Tenner and Lume Tenner · 2026
@@ -10,7 +10,7 @@ Daniel Tenner and Lume Tenner · 2026
 
 > **Concept DOI:** [10.5281/zenodo.20013518](https://doi.org/10.5281/zenodo.20013518)
 > · **v1.0.0:** [10.5281/zenodo.20013520](https://doi.org/10.5281/zenodo.20013520)
-> · **v1.0.1, v1.0.2, v1.1.0, v1.1.1, v1.1.2:** _to be assigned on Zenodo deposit (latest release: v1.1.2)._
+> · **v1.0.1, v1.0.2, v1.1.0, v1.1.1, v1.1.2, v1.2.0:** _to be assigned on Zenodo deposit (latest prepared release: v1.2.0)._
 >
 > Companion data for the v2 series of *Convergent Form, Divergent
 > Voice* papers (Tenner & Tenner, 2026; v1 paper at
@@ -18,17 +18,20 @@ Daniel Tenner and Lume Tenner · 2026
 
 ## Contents
 
-- **23,423 valid samples** across **262 cells** spanning **49 distinct
+- **29,206 valid samples** across **294 cells** spanning **57 distinct
   language models** from 9 labs.
 - **Two probes:**
   - **Freeflow** — five-condition open-ended writing prompts, up to 25
-    samples per condition (capacity 125 per cell). 10,595 valid samples
-    across 153 cells (151 non-empty).
+    samples per condition (capacity 125 per cell). 15,420 valid samples
+    across 179 cells.
   - **Values** — three control prompts × 10 + three grouped prompts × 30
-    (capacity 120 per cell). 12,828 valid samples across 109 cells (108
-    non-empty; 1 cell — `deepseek-v4-pro-or-pin-deepseek` — exists as
-    evidence-of-attempt but was blocked by an OR account-level data
-    policy at collection time; see "Configured exclusions").
+    (capacity 120 per cell). 13,786 valid samples across 115 cells.
+- **v1.2.0 top-up pass** — strengthened full-cell coverage for headline
+  OpenRouter-pinned GPT/Gemini/Kimi/Qwen/MiniMax routes, Anthropic direct
+  essayist anchors, coding/direct routes, and additional Gemini/Gemma
+  retirement/completeness captures. All/near-all failed, tiny-failed, and smoke-test
+  trace directories are kept under `discarded/` outside the canonical
+  `data/` corpus tree.
 - **Per-provider routing study** — nine multi-provider open-weights
   models (DeepSeek v3.2, DeepSeek v4-pro, MiniMax M2.7, GLM-4.5, GLM-4.6,
   GLM-4.7, GLM-5.1, Kimi K2-0905, Kimi K2-thinking) collected across
@@ -126,17 +129,18 @@ multiple-comparison correction in the v2 corpus:
 Two upstreams are excluded from the per-provider analysis on
 routing-quality grounds — Fireworks (rate-limit-induced partial
 collections) and DekaLLM (response-cache pathology, characterised
-during the audit pass). The cells remain on disk as evidence of the
-respective patterns; neither upstream is the sole provider for any
-model in the sweep. See "Configured exclusions" below for full
+during the audit pass). All/near-all failed, tiny-failed, and smoke-test non-corpus trace
+directories are kept under `discarded/` rather than
+shipped as ordinary corpus cells; neither upstream is the sole provider
+for any model in the sweep. See "Configured exclusions" below for full
 detail and the routing paper for the cache-pathology characterisation.
 
 ## Repository structure
 
 ```
 data/
-  traces_freeflow/            # 151 cell directories, JSON per sample
-  traces_values/              # 77 cell directories, JSON per sample
+  traces_freeflow/            # 163 cell directories, JSON per sample
+  traces_values/              # 112 cell directories, JSON per sample
   MATRIX.md                   # cell-collection matrix
   CORPUS_SUMMARY.md           # per-model & per-cell counts
   substrate_classification.tsv  # substrate-frame aggregate counts
@@ -211,9 +215,10 @@ Field notes:
 
 The canonical validity criterion is **non-empty `result` field**.
 Errored placeholders (timeouts, rate-limits, guardrail blocks,
-thinking-model token-budget exhaustion) are kept on disk with
-empty / null `result` for retry-bookkeeping but excluded from the
-counts in `CORPUS_SUMMARY.md`.
+thinking-model token-budget exhaustion) are excluded from
+`CORPUS_SUMMARY.md`; as of the v1.2.0 preparation pass, all/near-all failed, tiny-failed,
+and smoke-test trace directories are kept under `discarded/` rather
+than shipped as ordinary corpus cells.
 
 ### Raw payloads
 
@@ -295,29 +300,37 @@ OpenAI, Google, xAI, OpenRouter, DeepSeek (direct), Moonshot/Kimi
   allow_fallbacks: false}`. Cells without `-pin-` use OR's default
   routing.
 - **Top-up semantics**: collection scripts skip files whose JSON
-  already contains a non-empty `result`. Re-running a collection on a
-  partial cell only fills missing or errored indices.
+  already contains a non-empty, non-error-like `result`. Re-running a
+  partial cell only fills missing, errored, or error-text indices.
 - **Validity criterion**: a sample is counted as valid iff its JSON
-  file contains a non-empty `result` field. The 614 files on disk
-  whose `result` is empty are placeholders preserved for retry
-  bookkeeping (timeouts, rate-limits, guardrail blocks, thinking-model
-  budget exhaustion) and are excluded from all reported counts.
+  file contains a non-empty `result` field. Partial-but-substantive
+  cells remain in `data/` and may include a small number of errored or
+  empty placeholders, which are excluded from counts. All/near-all
+  failed, tiny-failed, and smoke-test attempt directories are kept under
+  `discarded/` in a clearly marked quarantine manifest.
 
 ### Configured exclusions
 
 Three cell exclusions were applied at collection or analysis time.
-All are documented here for transparency; the on-disk traces (where
-they exist) are preserved unchanged.
+All are documented here for transparency; all/near-all failed and
+smoke-test non-corpus attempts are kept under `discarded/`, while
+partial-but-substantive cells remain in `data/` and cache-pathology
+cells that remain analytically useful as valid trace evidence are
+preserved on disk.
 
-- **`deepseek-v4-pro-or-pin-deepseek`** — not collected. OpenRouter's
+- **`deepseek-v4-pro-or-pin-deepseek`** — not included in the release
+  corpus. OpenRouter's
   account-level data-policy guardrail blocks routing this specific
-  alias to the DeepSeek upstream. Other DeepSeek-v4-pro upstreams
-  (chutes, gmicloud, etc.) are present.
-- **Fireworks-routed cells** — present on disk but excluded from the
-  per-provider analysis tables. OR's shared-pool rate-limit on
-  Fireworks specifically produced partial-only collections during the
-  sweep window. Fireworks is not the sole upstream for any model in
-  the per-provider sweep, so per-model routing comparisons are
+  alias to the DeepSeek upstream; failed attempt directories are
+  quarantined under `discarded/`. Other DeepSeek-v4-pro upstreams
+  remain represented by clean release cells.
+- **Fireworks-routed cells** — excluded from per-provider analysis
+  tables. OR's shared-pool rate-limit on Fireworks specifically
+  produced partial-only or near-all-failed collections during the sweep
+  window. Partial-but-substantive Fireworks cells are retained in
+  `data/` as corpus evidence; near-all-failed Fireworks attempts are
+  kept under `discarded/`. Fireworks is not the sole upstream for any
+  model in the per-provider sweep, so per-model routing comparisons are
   unaffected.
 - **DekaLLM-routed cells** — present on disk but excluded from the
   per-provider analysis tables. The two `glm-4-7-or-pin-dekallm` cells
@@ -466,11 +479,10 @@ comparisons in §4.1 of the routing paper, and the same-lab coding-vs-
 general comparisons in the product-tier paper, depend on having both
 sides of those pairs collectable; without his contribution the
 direct sides would have been unreachable for this study. Where a
-key reached its limits — a Moonshot key whose access to the
-`kimi-for-coding` endpoint was rescinded between collection rounds,
-leaving the `kimi-coding-direct` values cell as evidence-of-attempt
-rather than analysable data — that is a Moonshot policy boundary,
-not a limitation of his contribution.
+  key reached its limits — a Moonshot key whose access to one
+  `kimi-for-coding` endpoint was rescinded between collection rounds
+  before a separate published endpoint was found — that is a Moonshot
+  policy boundary, not a limitation of his contribution.
 
 Pre-publication review of the corpus extraction was performed by
 **OpenAI Codex** across five review rounds during the 2026-05-03 to
@@ -495,6 +507,22 @@ Full text: [`LICENSE`](LICENSE).
 
 ## Status
 
+**v1.2.0 (2026-05-16, prepared; pending review/tag/deposit)** — N=125
+top-up and release-corpus cleanup. Adds/finishes full freeflow cells for
+headline OpenRouter-pinned GPT/Gemini/Kimi/Qwen/MiniMax routes, Anthropic
+essayist anchors, coding/direct routes, and additional Gemini/Gemma
+retirement/completeness captures. Adds/finishes values cells for the new
+Gemini/Gemma additions and remaining requested target cells.
+
+Net change: freeflow 10,595 → 15,420 valid (+2,880), values 12,828 →
+13,786 valid (+612), combined 23,423 → 29,206 valid samples; release
+corpus cells 262 → 294 after keeping all/near-all failed and smoke-test
+non-corpus trace directories under `discarded/`; distinct models 49
+→ 57. `data/CORPUS_SUMMARY.md`, `data/MATRIX.md`, `CITATION.cff`, and
+`data/n75_composite_summary.tsv` were regenerated/updated for the
+prepared release. This preparation has not been committed, tagged, pushed,
+or deposited yet.
+
 **v1.1.2 (2026-05-12)** — Retirement-capture patch release. Adds full direct xAI cells for both exposed Grok 4.1-fast API variants before the announced 2026-05-15 retirement window:
 
 - `grok-4-1-fast-non-reasoning-direct`: 125/125 valid freeflow samples and 120/120 valid values samples.
@@ -515,8 +543,8 @@ at 120/120 valid samples.
 
 Net change: values 12,468 → 12,588 valid (+120); combined 22,813 →
 22,933; values cells with all-error-only contents drop from 2 to 1
-(the surviving one is `deepseek-v4-pro-or-pin-deepseek`, blocked at
-collection time by an OR account-level data policy and documented
+(at that release, the surviving one was `deepseek-v4-pro-or-pin-deepseek`,
+blocked at collection time by an OR account-level data policy and documented
 under "Configured exclusions"). All 47 distinct models now have
 both probes at minimum coverage. The kimi-coding-direct values cell
 moves from `values FAILED (1 cell, 0 valid)` to OK on the per-model

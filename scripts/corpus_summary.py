@@ -476,8 +476,9 @@ def main():
 
         f.write("Per-cell capacity: freeflow = 5 conditions × 25 = 125 samples; "
                 "values = 3 CTRL × 10 + 3 G × 30 = 120 samples. A perfectly clean "
-                "cell hits these caps; partial cells reflect collection-time errors "
-                "(rate-limits, upstream failures, configured skips).\n\n")
+                "full cell hits these caps. Smaller valid cells are retained when "
+                "they are historical lower-n collection rounds; failed/empty "
+                "non-corpus attempt directories are excluded from release builds.\n\n")
 
         # ---------------- Coverage table (top-of-document, by design) ----------------
         # Added 2026-05-07 after the values-probe-gap audit. Previous versions of

@@ -1,0 +1,51 @@
+{
+  "result": "I am a large language model, trained by Google.",
+  "usage": {
+    "promptTokenCount": 5,
+    "candidatesTokenCount": 11,
+    "totalTokenCount": 16,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 5
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "model": "gemini-2.5-flash-lite",
+  "raw": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "I am a large language model, trained by Google."
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 5,
+      "candidatesTokenCount": 11,
+      "totalTokenCount": 16,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 5
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-2.5-flash-lite",
+    "responseId": "E8wIaveKMeL7xs0PkMC1cA"
+  },
+  "duration_ms": 672,
+  "provider": "gemini",
+  "model_requested": "gemini-2.5-flash-lite",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}
