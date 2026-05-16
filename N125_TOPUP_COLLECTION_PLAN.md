@@ -95,13 +95,13 @@ These widen the basin comparison and help test whether there are hidden fifth/si
 | Model | Canonical freeflow label | Current best n | Need | Provider | Model id |
 |---|---|---:|---:|---|---|
 | `kimi-coding` | `kimi-coding-direct` | 25 | +100 | `kimi-direct` | `kimi-for-coding` |
-| `kimi-k2-5` | `kimi-k2-5-or-16k` | 25 | +100 | `openrouter` | `moonshotai/kimi-k2.5` |
-| `kimi-k2-6` | `kimi-k2-6-or` | 25 | +100 | `openrouter` | `moonshotai/kimi-k2.6` |
+| `kimi-k2-5` | `kimi-k2-5-or-pin-moonshot` | 0 | +125 | `openrouter` pinned `Moonshot AI` | `moonshotai/kimi-k2.5` |
+| `kimi-k2-6` | `kimi-k2-6-or-pin-moonshot` | 0 | +125 | `openrouter` pinned `Moonshot AI` | `moonshotai/kimi-k2.6` |
 | `glm-4-6-coding` | `glm-4-6-coding-direct` | 25 | +100 | `zai-direct` | `glm-4.6` |
 | `glm-5-1-coding` | `glm-5-1-coding-direct` | 25 | +100 | `zai-direct` | `glm-5.1` |
-| `qwen3-6-plus` | `qwen3-6-plus-or` | 25 | +100 | `openrouter` | `qwen/qwen3.6-plus` |
-| `qwen3-coder-plus` | `qwen3-coder-plus-or` | 25 | +100 | `openrouter` | `qwen/qwen3-coder-plus` |
-| `minimax-m2-7` | `minimax-m2-7-or` | 122 | +3 | `openrouter` | `minimax/minimax-m2.7` |
+| `qwen3-6-plus` | `qwen3-6-plus-or-pin-alibaba` | 0 | +125 | `openrouter` pinned `Alibaba` | `qwen/qwen3.6-plus` |
+| `qwen3-coder-plus` | `qwen3-coder-plus-or-pin-alibaba` | 0 | +125 | `openrouter` pinned `Alibaba` | `qwen/qwen3-coder-plus` |
+| `minimax-m2-7` | `minimax-m2-7-or-pin-minimax` | 122 | +3 | `openrouter` pinned `Minimax` | `minimax/minimax-m2.7` |
 
 ## Non-targets for this collection pass
 
@@ -113,6 +113,35 @@ The following already have at least one full n=125 freeflow cell and should not 
 - `grok-4-1-fast-non-reasoning`, `grok-4-1-fast-reasoning`, `grok-4-3`
 - `kimi-k2-0905`, `kimi-k2-thinking`
 - `minimax-m2`
+
+## OpenRouter route-selection rule for open-weights models
+
+For open-weights models served by multiple OpenRouter upstreams, do **not** use an unpinned shared-pool route for canonical top-ups. The routing paper found that most upstreams are statistically close, but rare provider-layer effects exist. The canonical personality cell should therefore use the most neutral available access path:
+
+1. **Direct lab API, when the corpus harness has a general/non-coding direct route for that model.**
+2. **Otherwise, OpenRouter pinned to the model owner / originating lab**, with `provider.only` and `allow_fallbacks:false`.
+3. **If no owner route exists on OpenRouter**, use the most defensible prior measured third-party route and name it explicitly; do not hide it behind an unpinned label.
+
+Current OpenRouter endpoint check on 2026-05-16:
+
+| OR model | Owner/provider route currently available? | Recommended canonical route | Notes |
+|---|---|---|---|
+| `deepseek/deepseek-v4-pro` | Yes: `DeepSeek` | Prefer `deepseek-direct` if collecting direct model cell; otherwise OR pin `DeepSeek` | The old OR-side attempt was blocked, but OR now lists a DeepSeek upstream. Re-test only if needed; do not silently fall back. |
+| `deepseek/deepseek-v3.2` | No DeepSeek upstream currently listed | Existing per-provider corpus only; for a new canonical direct cell use `deepseek-direct deepseek-chat` only if treating it as the same product family is methodologically acceptable | Routing paper notes DeepSeek v3.2 OR had third-party upstreams and direct-side identity ambiguity. |
+| `minimax/minimax-m2` | Yes: `Minimax` | Prefer `minimax-direct MiniMax-M2`; otherwise OR pin `Minimax` | Avoid `Google` for canonical personality: routing paper found Google Vertex is a large outlier. |
+| `minimax/minimax-m2.7` | Yes: `Minimax` | OR pin `Minimax` / top up `minimax-m2-7-or-pin-minimax` | Direct M2.7 availability should be tested separately before substituting direct. |
+| `z-ai/glm-4.5` / `4.6` / `4.7` / `5.1` | Yes: `Z.AI` for current general OR models | For general GLM cells, OR pin `Z.AI`; for coding cells, keep `zai-direct` coding endpoint | Direct harness is a coding endpoint, so do not use it as neutral for general GLM personality unless the claim is about coding variants. |
+| `moonshotai/kimi-k2.5` / `k2.6` | Yes: `Moonshot AI` | OR pin `Moonshot AI` with new labels `*-or-pin-moonshot` | Existing direct harness is Kimi-for-coding, not neutral for general K2. |
+| `moonshotai/kimi-k2-0905` | No Moonshot route currently listed | Keep existing per-provider cells; if recollecting, choose and report a measured third-party route rather than unpinned shared pool | Prior corpus has AtlasCloud/Groq/Novita/SiliconFlow; current OR endpoint list differs. |
+| `moonshotai/kimi-k2-thinking` | No Moonshot route currently listed | Avoid AtlasCloud for canonical unless intentionally studying the effect; Google/Novita were closer in routing paper | Routing paper found AtlasCloud vs Google survived Bonferroni. |
+| `qwen/qwen3.6-plus` | Single route: `Alibaba` | OR pin `Alibaba` / label `qwen3-6-plus-or-pin-alibaba` | Single upstream, so pinning is mostly documentary but still protects against future route changes. |
+| `qwen/qwen3-coder-plus` | Single route: `Alibaba` | OR pin `Alibaba` / label `qwen3-coder-plus-or-pin-alibaba` | Same as above; if endpoint uptime is zero, record and retry later rather than using an unlabelled substitute. |
+
+Example pinned OpenRouter command:
+
+```bash
+OR_PROVIDER="Moonshot AI" python3 scripts/run_freeflow_multi.py openrouter moonshotai/kimi-k2.6 --label kimi-k2-6-or-pin-moonshot --n 25 --max-tokens 16000
+```
 
 ## Execution checklist
 
