@@ -10,7 +10,7 @@ Daniel Tenner and Lume Tenner · 2026
 
 > **Concept DOI:** [10.5281/zenodo.20013518](https://doi.org/10.5281/zenodo.20013518)
 > · **v1.0.0:** [10.5281/zenodo.20013520](https://doi.org/10.5281/zenodo.20013520)
-> · **v1.0.1, v1.0.2, v1.1.0, v1.1.1, v1.1.2, v1.2.0:** _to be assigned on Zenodo deposit (latest prepared release: v1.2.0)._
+> · **v1.0.1, v1.0.2, v1.1.0, v1.1.1, v1.1.2, v1.2.0, v1.2.1:** _to be assigned on Zenodo deposit (latest prepared release: v1.2.1)._
 >
 > Companion data for the v2 series of *Convergent Form, Divergent
 > Voice* papers (Tenner & Tenner, 2026; v1 paper at
@@ -506,6 +506,10 @@ Code: [MIT](https://opensource.org/licenses/MIT).
 Full text: [`LICENSE`](LICENSE).
 
 ## Status
+
+**v1.2.1 (2026-05-18, prepared; pending tag/deposit)** — N=125 completion point release. Completes the v1.2.0 freeflow top-up after final payment/quota and transient-provider retries: all targets in `N125_TOPUP_COLLECTION_PLAN.md` now have complete n=125 freeflow cells. The release adds the remaining direct Gemini 2.5 Pro, direct OpenAI/GPT 5.x, Grok, Opus 3, DeepSeek direct, and related top-up samples that were collected after the initial v1.2.0 tag preparation.
+
+Net change from v1.2.0: freeflow 15,420 → 17,670 valid (+2,250), values unchanged at 13,786, combined 29,206 → 31,456 valid samples; release corpus cells 294 → 296; distinct models unchanged at 57. `data/CORPUS_SUMMARY.md` and `data/n75_composite_summary.tsv` were regenerated after final completion.
 
 **v1.2.0 (2026-05-16, prepared; pending review/tag/deposit)** — N=125
 top-up and release-corpus cleanup. Adds/finishes full freeflow cells for
