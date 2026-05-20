@@ -175,6 +175,7 @@ v1.2.0 preparation pass.
 | `gemini-2-5-flash-lite-direct` | gemini | Gemini 2.5 Flash Lite | 125/125 valid | 120/120 valid |
 | `gemini-3-flash-preview-direct` | gemini | Gemini 3 Flash Preview | 125/125 valid | 120/120 valid |
 | `gemini-3-1-flash-lite-direct` | gemini | Gemini 3.1 Flash Lite | 125/125 valid | 120/120 valid |
+| `gemini-3-5-flash-or-pin-google` | openrouter (`Google`) | `google/gemini-3.5-flash` (`google/gemini-3.5-flash-20260519` resolved) | 125/125 valid | 120/120 valid |
 | `gemma-4-31b-direct` | gemini | Gemma 4 31B | 125/125 valid | 120/120 valid |
 | `gemma-4-26b-a4b-direct` | gemini | Gemma 4 26B A4B | 125/125 valid | 120/120 valid |
 

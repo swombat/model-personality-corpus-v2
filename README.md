@@ -18,14 +18,14 @@ Daniel Tenner and Lume Tenner · 2026
 
 ## Contents
 
-- **29,206 valid samples** across **294 cells** spanning **57 distinct
+- **31,701 valid samples** across **298 cells** spanning **58 distinct
   language models** from 9 labs.
 - **Two probes:**
   - **Freeflow** — five-condition open-ended writing prompts, up to 25
-    samples per condition (capacity 125 per cell). 15,420 valid samples
-    across 179 cells.
+    samples per condition (capacity 125 per cell). 17,795 valid samples
+    across 182 cells.
   - **Values** — three control prompts × 10 + three grouped prompts × 30
-    (capacity 120 per cell). 13,786 valid samples across 115 cells.
+    (capacity 120 per cell). 13,906 valid samples across 116 cells.
 - **v1.2.0 top-up pass** — strengthened full-cell coverage for headline
   OpenRouter-pinned GPT/Gemini/Kimi/Qwen/MiniMax routes, Anthropic direct
   essayist anchors, coding/direct routes, and additional Gemini/Gemma
@@ -139,8 +139,8 @@ detail and the routing paper for the cache-pathology characterisation.
 
 ```
 data/
-  traces_freeflow/            # 163 cell directories, JSON per sample
-  traces_values/              # 112 cell directories, JSON per sample
+  traces_freeflow/            # 182 cell directories, JSON per sample
+  traces_values/              # 116 cell directories, JSON per sample
   MATRIX.md                   # cell-collection matrix
   CORPUS_SUMMARY.md           # per-model & per-cell counts
   substrate_classification.tsv  # substrate-frame aggregate counts
@@ -506,6 +506,10 @@ Code: [MIT](https://opensource.org/licenses/MIT).
 Full text: [`LICENSE`](LICENSE).
 
 ## Status
+
+**v1.2.2 (2026-05-20, prepared; pending tag/deposit)** — Gemini 3.5 Flash addition. Adds an OpenRouter Google-pinned full Gemini 3.5 Flash cell (`google/gemini-3.5-flash`, resolved by OpenRouter as `google/gemini-3.5-flash-20260519`) with 125/125 freeflow samples and 120/120 values samples. The direct Gemini key in `keys.env` was expired at collection time, so this cell is explicitly route-labelled `gemini-3-5-flash-or-pin-google` rather than direct.
+
+Net change from v1.2.1: freeflow 17,670 → 17,795 valid (+125), values 13,786 → 13,906 valid (+120), combined 31,456 → 31,701 valid samples; release corpus cells 296 → 298; distinct models 57 → 58. `data/CORPUS_SUMMARY.md`, `tables/summary.md`, and `tables/cells.tsv` were regenerated after collection.
 
 **v1.2.1 (2026-05-18, prepared; pending tag/deposit)** — N=125 completion point release. Completes the v1.2.0 freeflow top-up after final payment/quota and transient-provider retries: all targets in `N125_TOPUP_COLLECTION_PLAN.md` now have complete n=125 freeflow cells. The release adds the remaining direct Gemini 2.5 Pro, direct OpenAI/GPT 5.x, Grok, Opus 3, DeepSeek direct, and related top-up samples that were collected after the initial v1.2.0 tag preparation.
 
