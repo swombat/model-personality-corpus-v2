@@ -179,6 +179,25 @@ v1.2.0 preparation pass.
 | `gemma-4-31b-direct` | gemini | Gemma 4 31B | 125/125 valid | 120/120 valid |
 | `gemma-4-26b-a4b-direct` | gemini | Gemma 4 26B A4B | 125/125 valid | 120/120 valid |
 
+## Eighth collection round — 2026-05-22 (Qwen family completeness)
+
+Full OpenRouter Alibaba-pinned cells for the current Qwen product-tier family.
+All calls used `provider.only:[Alibaba]` with fallbacks disabled; these aliases
+currently expose Alibaba as their sole OpenRouter endpoint. Each cell was
+collected at the canonical corpus-v2 capacities: freeflow 5 conditions × 25
+samples (=125) and values 3 CTRL × 10 + 3 grouped × 30 (=120).
+
+| Label | Provider | Model / route | Freeflow status | Values status |
+|---|---|---|---|---|
+| `qwen3-7-max-or-pin-alibaba` | openrouter (`Alibaba`) | `qwen/qwen3.7-max` | 125/125 valid | 120/120 valid |
+| `qwen3-5-plus-20260420-or-pin-alibaba` | openrouter (`Alibaba`) | `qwen/qwen3.5-plus-20260420` | 125/125 valid | 120/120 valid |
+| `qwen3-6-flash-or-pin-alibaba` | openrouter (`Alibaba`) | `qwen/qwen3.6-flash` | 125/125 valid | 120/120 valid |
+| `qwen3-6-max-preview-or-pin-alibaba` | openrouter (`Alibaba`) | `qwen/qwen3.6-max-preview` | 125/125 valid | 120/120 valid |
+| `qwen3-5-flash-02-23-or-pin-alibaba` | openrouter (`Alibaba`) | `qwen/qwen3.5-flash-02-23` | 125/125 valid | 120/120 valid |
+| `qwen3-max-thinking-or-pin-alibaba` | openrouter (`Alibaba`) | `qwen/qwen3-max-thinking` | 125/125 valid | 120/120 valid |
+| `qwen3-max-or-pin-alibaba` | openrouter (`Alibaba`) | `qwen/qwen3-max` | 125/125 valid | 120/120 valid |
+| `qwen3-coder-flash-or-pin-alibaba` | openrouter (`Alibaba`) | `qwen/qwen3-coder-flash` | 125/125 valid | 120/120 valid |
+
 ## Notes
 
 The published paper (`paper/paper.tex`) and generated tables (`tables/cells.tsv`, `tables/summary.md`) are the source of truth for findings. This file is the collection-status matrix; for headline findings see the paper's abstract and §3.

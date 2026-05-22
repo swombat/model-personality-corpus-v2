@@ -1,7 +1,7 @@
 # Convergent Form, Divergent Voice II — Corpus
 
 **A research data corpus of free-form contemplative writing samples from
-57 large language models, with explicit per-provider routing pinning for
+66 large language models, with explicit per-provider routing pinning for
 nine multi-provider open-weights models.**
 
 Daniel Tenner and Lume Tenner · 2026
@@ -10,7 +10,7 @@ Daniel Tenner and Lume Tenner · 2026
 
 > **Concept DOI:** [10.5281/zenodo.20013518](https://doi.org/10.5281/zenodo.20013518)
 > · **v1.0.0:** [10.5281/zenodo.20013520](https://doi.org/10.5281/zenodo.20013520)
-> · **v1.0.1, v1.0.2, v1.1.0, v1.1.1, v1.1.2, v1.2.0, v1.2.1:** _to be assigned on Zenodo deposit (latest prepared release: v1.2.1)._
+> · **v1.0.1, v1.0.2, v1.1.0, v1.1.1, v1.1.2, v1.2.0, v1.2.1, v1.2.2, v1.2.3:** _to be assigned on Zenodo deposit (latest prepared release: v1.2.3)._
 >
 > Companion data for the v2 series of *Convergent Form, Divergent
 > Voice* papers (Tenner & Tenner, 2026; v1 paper at
@@ -18,14 +18,14 @@ Daniel Tenner and Lume Tenner · 2026
 
 ## Contents
 
-- **31,701 valid samples** across **298 cells** spanning **58 distinct
+- **33,661 valid samples** across **314 cells** spanning **66 distinct
   language models** from 9 labs.
 - **Two probes:**
   - **Freeflow** — five-condition open-ended writing prompts, up to 25
-    samples per condition (capacity 125 per cell). 17,795 valid samples
-    across 182 cells.
+    samples per condition (capacity 125 per cell). 18,795 valid samples
+    across 190 cells.
   - **Values** — three control prompts × 10 + three grouped prompts × 30
-    (capacity 120 per cell). 13,906 valid samples across 116 cells.
+    (capacity 120 per cell). 14,866 valid samples across 124 cells.
 - **v1.2.0 top-up pass** — strengthened full-cell coverage for headline
   OpenRouter-pinned GPT/Gemini/Kimi/Qwen/MiniMax routes, Anthropic direct
   essayist anchors, coding/direct routes, and additional Gemini/Gemma
@@ -506,6 +506,10 @@ Code: [MIT](https://opensource.org/licenses/MIT).
 Full text: [`LICENSE`](LICENSE).
 
 ## Status
+
+**v1.2.3 (2026-05-22, prepared; pending tag/deposit)** — Qwen family completeness release. Adds eight Alibaba-pinned OpenRouter Qwen product-tier cells, each with complete freeflow and values coverage: `qwen3-7-max`, `qwen3-5-plus-20260420`, `qwen3-6-flash`, `qwen3-6-max-preview`, `qwen3-5-flash-02-23`, `qwen3-max-thinking`, `qwen3-max`, and `qwen3-coder-flash`.
+
+Net change from v1.2.2: freeflow 17,795 → 18,795 valid (+1,000), values 13,906 → 14,866 valid (+960), combined 31,701 → 33,661 valid samples; release corpus cells 298 → 314; distinct models 58 → 66. `data/MATRIX.md`, `data/CORPUS_SUMMARY.md`, and `CITATION.cff` were updated/regenerated after collection.
 
 **v1.2.2 (2026-05-20, prepared; pending tag/deposit)** — Gemini 3.5 Flash addition. Adds an OpenRouter Google-pinned full Gemini 3.5 Flash cell (`google/gemini-3.5-flash`, resolved by OpenRouter as `google/gemini-3.5-flash-20260519`) with 125/125 freeflow samples and 120/120 values samples. The direct Gemini key in `keys.env` was expired at collection time, so this cell is explicitly route-labelled `gemini-3-5-flash-or-pin-google` rather than direct.
 
