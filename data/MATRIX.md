@@ -198,6 +198,18 @@ samples (=125) and values 3 CTRL × 10 + 3 grouped × 30 (=120).
 | `qwen3-max-or-pin-alibaba` | openrouter (`Alibaba`) | `qwen/qwen3-max` | 125/125 valid | 120/120 valid |
 | `qwen3-coder-flash-or-pin-alibaba` | openrouter (`Alibaba`) | `qwen/qwen3-coder-flash` | 125/125 valid | 120/120 valid |
 
+## Ninth collection round — 2026-05-28 (Claude Opus 4.8 release capture)
+
+Initial direct Anthropic capture for the newly exposed Claude Opus 4.8 model.
+Collected at the current corpus-v2 complete-cell sizes: freeflow 5 conditions ×
+25 samples (=125) and values 3 CTRL × 10 + 3 grouped × 30 (=120). No
+OpenRouter cell was collected in this pass. Anthropic `/v1/models` reported `claude-opus-4-8`
+as `Claude Opus 4.8` with `created_at` 2026-05-28T00:00:00Z.
+
+| Label | Provider | Model / route | Freeflow status | Values status | Composite |
+|---|---|---|---|---|---:|
+| `opus-4-8-direct` | anthropic | `claude-opus-4-8` | 125/125 valid | 120/120 valid | 537 |
+
 ## Notes
 
 The published paper (`paper/paper.tex`) and generated tables (`tables/cells.tsv`, `tables/summary.md`) are the source of truth for findings. This file is the collection-status matrix; for headline findings see the paper's abstract and §3.
