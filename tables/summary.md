@@ -1,9 +1,9 @@
 # Freeflow Analysis Summary
 
-**Total cells:** 191  
-**Cells with ≥1 valid sample:** 191  
-**Total valid samples:** 18920  
-**Bin distribution:** in=187, transitional=3, out=1, no-data=0
+**Total cells:** 192  
+**Cells with ≥1 valid sample:** 192  
+**Total valid samples:** 19045  
+**Bin distribution:** in=188, transitional=3, out=1, no-data=0
 
 ## Composite scores per cell
 
@@ -165,6 +165,7 @@
 | grok-3-16k | 125 | 4105 | 1 | 0 | 0 | 0 | 7 | 27 | 21 | 10 | 1 | 1 | **68** | in |
 | gpt-5-2-codex-direct-r2 | 25 | 6542 | 2 | 0 | 0 | 0 | 9 | 21 | 26 | 7 | 0 | 1 | **66** | in |
 | deepseek-v3-2-or-r2 | 25 | 5549 | 4 | 3 | 0 | 2 | 5 | 20 | 19 | 10 | 0 | 1 | **64** | in |
+| grok-build-0-1-direct | 125 | 7093 | 1 | 0 | 0 | 0 | 6 | 31 | 17 | 4 | 0 | 1 | **60** | in |
 | gpt-5-2-direct-r3 | 25 | 8018 | 0 | 0 | 0 | 0 | 7 | 37 | 12 | 2 | 0 | 0 | **58** | in |
 | minimax-m2-or-r3 | 25 | 5375 | 4 | 1 | 0 | 0 | 15 | 27 | 8 | 3 | 0 | 0 | **58** | in |
 | minimax-m2-or-r5 | 25 | 6839 | 5 | 0 | 0 | 2 | 2 | 25 | 13 | 6 | 2 | 0 | **55** | in |

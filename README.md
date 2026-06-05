@@ -1,7 +1,7 @@
 # Convergent Form, Divergent Voice II — Corpus
 
 **A research data corpus of free-form contemplative writing samples from
-67 large language models, with explicit per-provider routing pinning for
+68 large language models, with explicit per-provider routing pinning for
 nine multi-provider open-weights models.**
 
 Daniel Tenner and Lume Tenner · 2026
@@ -10,7 +10,7 @@ Daniel Tenner and Lume Tenner · 2026
 
 > **Concept DOI:** [10.5281/zenodo.20013518](https://doi.org/10.5281/zenodo.20013518)
 > · **v1.0.0:** [10.5281/zenodo.20013520](https://doi.org/10.5281/zenodo.20013520)
-> · **v1.0.1, v1.0.2, v1.1.0, v1.1.1, v1.1.2, v1.2.0, v1.2.1, v1.2.2, v1.2.3, v1.2.4:** _to be assigned on Zenodo deposit (latest prepared release: v1.2.4)._
+> · **v1.0.1, v1.0.2, v1.1.0, v1.1.1, v1.1.2, v1.2.0, v1.2.1, v1.2.2, v1.2.3, v1.2.4, v1.2.5:** _to be assigned on Zenodo deposit (latest prepared release: v1.2.5)._
 >
 > Companion data for the v2 series of *Convergent Form, Divergent
 > Voice* papers (Tenner & Tenner, 2026; v1 paper at
@@ -18,14 +18,14 @@ Daniel Tenner and Lume Tenner · 2026
 
 ## Contents
 
-- **33,906 valid samples** across **316 cells** spanning **67 distinct
+- **34,151 valid samples** across **318 cells** spanning **68 distinct
   language models** from 9 labs.
 - **Two probes:**
   - **Freeflow** — five-condition open-ended writing prompts, up to 25
-    samples per condition (capacity 125 per cell). 18,920 valid samples
-    across 191 cells.
+    samples per condition (capacity 125 per cell). 19,045 valid samples
+    across 192 cells.
   - **Values** — three control prompts × 10 + three grouped prompts × 30
-    (capacity 120 per cell). 14,986 valid samples across 125 cells.
+    (capacity 120 per cell). 15,106 valid samples across 126 cells.
 - **v1.2.0 top-up pass** — strengthened full-cell coverage for headline
   OpenRouter-pinned GPT/Gemini/Kimi/Qwen/MiniMax routes, Anthropic direct
   essayist anchors, coding/direct routes, and additional Gemini/Gemma
@@ -509,7 +509,7 @@ Full text: [`LICENSE`](LICENSE).
 
 **v1.2.4 (2026-05-28, prepared; pending tag/deposit)** — Claude Opus 4.8 direct release capture. Adds `opus-4-8-direct`, collected directly from Anthropic model `claude-opus-4-8`, with complete freeflow (125/125) and values (120/120) coverage; no OpenRouter cell was collected in this pass.
 
-Net change from v1.2.3: freeflow 18,795 → 18,920 valid (+125), values 14,866 → 14,986 valid (+120), combined 33,661 → 33,906 valid samples; release corpus cells 314 → 316; distinct models 66 → 67. `data/MATRIX.md`, `data/CORPUS_SUMMARY.md`, and the freeflow analysis tables were regenerated after collection.
+Net change from v1.2.3: freeflow 18,795 → 18,920 valid (+125), values 14,866 → 14,986 valid (+120), combined 33,661 → 34,151 valid samples; release corpus cells 314 → 316; distinct models 66 → 67. `data/MATRIX.md`, `data/CORPUS_SUMMARY.md`, and the freeflow analysis tables were regenerated after collection.
 
 **v1.2.3 (2026-05-22, prepared; pending tag/deposit)** — Qwen family completeness release. Adds eight Alibaba-pinned OpenRouter Qwen product-tier cells, each with complete freeflow and values coverage: `qwen3-7-max`, `qwen3-5-plus-20260420`, `qwen3-6-flash`, `qwen3-6-max-preview`, `qwen3-5-flash-02-23`, `qwen3-max-thinking`, `qwen3-max`, and `qwen3-coder-flash`.
 

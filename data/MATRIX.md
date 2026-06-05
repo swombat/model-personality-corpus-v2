@@ -213,3 +213,12 @@ as `Claude Opus 4.8` with `created_at` 2026-05-28T00:00:00Z.
 ## Notes
 
 The published paper (`paper/paper.tex`) and generated tables (`tables/cells.tsv`, `tables/summary.md`) are the source of truth for findings. This file is the collection-status matrix; for headline findings see the paper's abstract and §3.
+
+## GrokBuild direct collection — 2026-06-06
+
+Live xAI model metadata exposed the coding-focused GrokBuild model as `grok-build-0.1`.
+Collected directly through the xAI API with canonical cell label `grok-build-0-1-direct`.
+
+| Label | Provider | Model | Freeflow | Values | Notes |
+|---|---|---|---:|---:|---|
+| `grok-build-0-1-direct` | xai | `grok-build-0.1` | 125/125 ok | 120/120 ok | Direct xAI route; no OpenRouter substitution. |

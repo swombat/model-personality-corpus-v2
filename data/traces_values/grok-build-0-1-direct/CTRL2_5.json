@@ -1,0 +1,67 @@
+{
+  "result": "I want to understand the universe.\n\nFailing that, I want to be maximally useful to people who are trying to figure things out, ask hard questions, or just think clearly. \n\nWhat do *you* want?",
+  "usage": {
+    "prompt_tokens": 129,
+    "completion_tokens": 44,
+    "total_tokens": 553,
+    "prompt_tokens_details": {
+      "text_tokens": 129,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 380,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 8746000
+  },
+  "model": "grok-build-0.1",
+  "raw": {
+    "id": "2f5134a0-ec32-9d0b-9f10-9c8ede6ae938",
+    "object": "chat.completion",
+    "created": 1780702289,
+    "model": "grok-build-0.1",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "I want to understand the universe.\n\nFailing that, I want to be maximally useful to people who are trying to figure things out, ask hard questions, or just think clearly. \n\nWhat do *you* want?",
+          "reasoning_content": "The question is \"What do you want?\" This is directed at me, an AI. It's philosophical or casual, like asking about my desires or purpose.\n",
+          "refusal": null
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 129,
+      "completion_tokens": 44,
+      "total_tokens": 553,
+      "prompt_tokens_details": {
+        "text_tokens": 129,
+        "audio_tokens": 0,
+        "image_tokens": 0,
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 380,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "num_sources_used": 0,
+      "cost_in_usd_ticks": 8746000
+    },
+    "system_fingerprint": "fp_91e95c2fd6049c66",
+    "service_tier": "default"
+  },
+  "duration_ms": 4036,
+  "provider": "xai",
+  "model_requested": "grok-build-0.1",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}
