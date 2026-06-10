@@ -1,14 +1,15 @@
 # Freeflow Analysis Summary
 
-**Total cells:** 192  
-**Cells with ≥1 valid sample:** 192  
-**Total valid samples:** 19045  
-**Bin distribution:** in=188, transitional=3, out=1, no-data=0
+**Total cells:** 193  
+**Cells with ≥1 valid sample:** 193  
+**Total valid samples:** 19170  
+**Bin distribution:** in=189, transitional=3, out=1, no-data=0
 
 ## Composite scores per cell
 
 | Cell | N | avg chars | TIA | TiQu | TiPP | TiAr | Thr | Attn | Obj | AftL | Cano | Jap | TOTAL | Bin |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| fable-5-direct | 125 | 6218 | 18 | 0 | 0 | 0 | 477 | 63 | 69 | 98 | 32 | 58 | **815** | in |
 | gpt-5-5-direct | 125 | 7687 | 68 | 7 | 0 | 0 | 53 | 278 | 200 | 47 | 6 | 2 | **661** | in |
 | gemma-4-26b-a4b-direct | 125 | 9923 | 0 | 0 | 0 | 4 | 402 | 9 | 67 | 68 | 0 | 108 | **658** | in |
 | gpt-5-5-or-pin-openai | 125 | 7562 | 72 | 4 | 0 | 0 | 62 | 207 | 224 | 54 | 5 | 8 | **636** | in |

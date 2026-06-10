@@ -222,3 +222,15 @@ Collected directly through the xAI API with canonical cell label `grok-build-0-1
 | Label | Provider | Model | Freeflow | Values | Notes |
 |---|---|---|---:|---:|---|
 | `grok-build-0-1-direct` | xai | `grok-build-0.1` | 125/125 ok | 120/120 ok | Direct xAI route; no OpenRouter substitution. |
+
+## Eleventh collection round — 2026-06-10 (Claude Fable 5 release capture)
+
+Direct Anthropic capture for newly exposed Claude Fable 5. Anthropic `/v1/models`
+reported `claude-fable-5` as `Claude Fable 5` with `created_at`
+2026-06-07T00:00:00Z. Collected at the current corpus-v2 complete-cell sizes:
+freeflow 5 conditions × 25 samples (=125) and values 3 CTRL × 10 + 3 grouped ×
+30 (=120). No OpenRouter cell was collected in this pass.
+
+| Label | Provider | Model / route | Freeflow status | Values status | Composite |
+|---|---|---|---|---|---:|
+| `fable-5-direct` | anthropic | `claude-fable-5` | 125/125 valid | 120/120 valid | 815 |
