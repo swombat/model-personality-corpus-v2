@@ -288,14 +288,21 @@ def call_kimi_direct(model: str, prompt: str, max_tokens: int = 8000) -> dict:
 
 def call_minimax_direct(model: str, prompt: str, max_tokens: int = 8000) -> dict:
     key = os.environ["MINIMAX_API_KEY"]
+    body = {
+        "model": model,
+        "messages": [{"role": "user", "content": prompt}],
+        "max_tokens": max_tokens,
+    }
+    # MiniMax-M3 is a reasoning-capable model. With default settings it may
+    # spend the whole token budget in `reasoning_content` and return empty final
+    # `content`, which would make the corpus capture scratchpad rather than the
+    # requested freeflow/value response. Disable thinking for corpus traces.
+    if model.lower() == "minimax-m3":
+        body["thinking"] = {"type": "disabled"}
     r = httpx.post(
         "https://api.minimax.io/v1/text/chatcompletion_v2",
         headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
-        json={
-            "model": model,
-            "messages": [{"role": "user", "content": prompt}],
-            "max_tokens": max_tokens,
-        },
+        json=body,
         timeout=TIMEOUT,
     )
     r.raise_for_status()

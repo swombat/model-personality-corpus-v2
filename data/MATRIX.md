@@ -162,6 +162,7 @@ v1.2.0 preparation pass.
 | `sonnet-4-5-16k` | anthropic | `claude-sonnet-4-5` | 125/125 valid | — |
 | `sonnet-4-6-direct-16k` | anthropic | `claude-sonnet-4-6` | 125/125 valid | 120/120 valid |
 | `kimi-coding-direct` | kimi-direct | `kimi-for-coding` | 125/125 valid | 120/120 valid |
+| `kimi-k2-7-code-direct` | kimi-direct | `kimi-k2.7-code` | 125/125 valid | 120/120 valid |
 | `kimi-k2-5-or-pin-deepinfra` | openrouter (`DeepInfra`) | `moonshotai/kimi-k2.5` | 125/125 valid | — |
 | `kimi-k2-6-or-pin-deepinfra` | openrouter (`DeepInfra`) | `moonshotai/kimi-k2.6` | 125/125 valid | — |
 | `glm-4-6-coding-direct` | zai-direct | `glm-4.6` | 125/125 valid | 120/120 valid |
@@ -169,6 +170,7 @@ v1.2.0 preparation pass.
 | `qwen3-6-plus-or-pin-alibaba` | openrouter (`Alibaba`) | `qwen/qwen3.6-plus` | 125/125 valid | — |
 | `qwen3-coder-plus-or-pin-alibaba` | openrouter (`Alibaba`) | `qwen/qwen3-coder-plus` | 125/125 valid | — |
 | `minimax-m2-7-or-pin-minimax` | openrouter (`Minimax`) | `minimax/minimax-m2.7` | 125/125 valid | 120/120 valid |
+| `minimax-m3-direct` | minimax-direct | `MiniMax-M3` | 125/125 valid | 120/120 valid |
 | `gemini-2-0-flash-or-pin-google` | openrouter (`Google`) | Gemini 2.0 Flash | 125/125 valid | 120/120 valid |
 | `gemini-2-0-flash-lite-or-pin-google` | openrouter (`Google`) | Gemini 2.0 Flash Lite | 125/125 valid | 120/120 valid |
 | `gemini-2-5-flash-direct` | gemini | Gemini 2.5 Flash | 125/125 valid | 120/120 valid |
@@ -234,3 +236,19 @@ freeflow 5 conditions × 25 samples (=125) and values 3 CTRL × 10 + 3 grouped �
 | Label | Provider | Model / route | Freeflow status | Values status | Composite |
 |---|---|---|---|---|---:|
 | `fable-5-direct` | anthropic | `claude-fable-5` | 125/125 valid | 120/120 valid | 815 |
+
+## Twelfth collection round — 2026-06-13 (Kimi K2.7-code and MiniMax M3 direct capture)
+
+Direct capture for two newly requested coding/model releases. Kimi K2.7-code was
+collected through the Kimi coding Anthropic-style endpoint at
+`https://api.kimi.com/coding/v1/messages`; the endpoint accepted both
+`kimi-k2.7-code` and `kimi-k2-7-code`, and the corpus uses the dotted upstream
+model ID with canonical cell label `kimi-k2-7-code-direct`. MiniMax M3 was
+collected through the MiniMax direct chat-completion endpoint as `MiniMax-M3`.
+MiniMax M3 calls include `thinking: {"type": "disabled"}` to prevent reasoning
+scratchpad from occupying the response field.
+
+| Label | Provider | Model / route | Freeflow status | Values status | Composite |
+|---|---|---|---|---|---:|
+| `kimi-k2-7-code-direct` | kimi-direct | `kimi-k2.7-code` | 125/125 valid | 120/120 valid | 290 |
+| `minimax-m3-direct` | minimax-direct | `MiniMax-M3` | 125/125 valid | 120/120 valid | 361 |

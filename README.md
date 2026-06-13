@@ -1,7 +1,7 @@
 # Convergent Form, Divergent Voice II — Corpus
 
 **A research data corpus of free-form contemplative writing samples from
-69 large language models, with explicit per-provider routing pinning for
+71 large language models, with explicit per-provider routing pinning for
 nine multi-provider open-weights models.**
 
 Daniel Tenner and Lume Tenner · 2026
@@ -10,7 +10,7 @@ Daniel Tenner and Lume Tenner · 2026
 
 > **Concept DOI:** [10.5281/zenodo.20013518](https://doi.org/10.5281/zenodo.20013518)
 > · **v1.0.0:** [10.5281/zenodo.20013520](https://doi.org/10.5281/zenodo.20013520)
-> · **v1.0.1, v1.0.2, v1.1.0, v1.1.1, v1.1.2, v1.2.0, v1.2.1, v1.2.2, v1.2.3, v1.2.4, v1.2.5, v1.2.6:** _to be assigned on Zenodo deposit (latest prepared release: v1.2.6)._
+> · **v1.0.1, v1.0.2, v1.1.0, v1.1.1, v1.1.2, v1.2.0, v1.2.1, v1.2.2, v1.2.3, v1.2.4, v1.2.5, v1.2.6, v1.2.7:** _to be assigned on Zenodo deposit (latest prepared release: v1.2.7)._
 >
 > Companion data for the v2 series of *Convergent Form, Divergent
 > Voice* papers (Tenner & Tenner, 2026; v1 paper at
@@ -18,14 +18,14 @@ Daniel Tenner and Lume Tenner · 2026
 
 ## Contents
 
-- **34,396 valid samples** across **320 cells** spanning **69 distinct
+- **34,886 valid samples** across **324 cells** spanning **71 distinct
   language models** from 9 labs.
 - **Two probes:**
   - **Freeflow** — five-condition open-ended writing prompts, up to 25
-    samples per condition (capacity 125 per cell). 19,170 valid samples
-    across 193 cells.
+    samples per condition (capacity 125 per cell). 19,420 valid samples
+    across 195 cells.
   - **Values** — three control prompts × 10 + three grouped prompts × 30
-    (capacity 120 per cell). 15,226 valid samples across 127 cells.
+    (capacity 120 per cell). 15,466 valid samples across 129 cells.
 - **v1.2.0 top-up pass** — strengthened full-cell coverage for headline
   OpenRouter-pinned GPT/Gemini/Kimi/Qwen/MiniMax routes, Anthropic direct
   essayist anchors, coding/direct routes, and additional Gemini/Gemma
@@ -506,6 +506,10 @@ Code: [MIT](https://opensource.org/licenses/MIT).
 Full text: [`LICENSE`](LICENSE).
 
 ## Status
+
+**v1.2.7 (2026-06-13, prepared; pending deposit)** — Kimi K2.7-code and MiniMax M3 direct release capture. Adds `kimi-k2-7-code-direct` from Kimi coding endpoint model `kimi-k2.7-code` and `minimax-m3-direct` from MiniMax model `MiniMax-M3`, each with complete freeflow (125/125) and values (120/120) coverage. MiniMax M3 collection explicitly sends `thinking: {"type": "disabled"}` so traces capture final response text rather than reasoning scratchpad.
+
+Net change from v1.2.6: freeflow 19,170 → 19,420 valid (+250), values 15,226 → 15,466 valid (+240), combined 34,396 → 34,886 valid samples; release corpus cells 320 → 324; distinct models 69 → 71. `data/MATRIX.md`, `data/CORPUS_SUMMARY.md`, and the freeflow analysis tables were regenerated after collection.
 
 **v1.2.6 (2026-06-10, prepared; pending deposit)** — Claude Fable 5 direct release capture. Adds `fable-5-direct`, collected directly from Anthropic model `claude-fable-5` (`Claude Fable 5`, created_at 2026-06-07), with complete freeflow (125/125) and values (120/120) coverage; no OpenRouter cell was collected in this pass.
 

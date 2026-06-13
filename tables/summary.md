@@ -1,9 +1,9 @@
 # Freeflow Analysis Summary
 
-**Total cells:** 193  
-**Cells with ≥1 valid sample:** 193  
-**Total valid samples:** 19170  
-**Bin distribution:** in=189, transitional=3, out=1, no-data=0
+**Total cells:** 195  
+**Cells with ≥1 valid sample:** 195  
+**Total valid samples:** 19420  
+**Bin distribution:** in=191, transitional=3, out=1, no-data=0
 
 ## Composite scores per cell
 
@@ -42,6 +42,7 @@
 | qwen3-max-or-pin-alibaba | 125 | 5704 | 7 | 30 | 0 | 1 | 21 | 162 | 98 | 22 | 15 | 14 | **370** | in |
 | glm-5-1-or-pin-parasail | 125 | 6351 | 78 | 0 | 0 | 0 | 159 | 20 | 59 | 28 | 3 | 22 | **369** | in |
 | gpt-5-3-codex-or-pin-openai | 125 | 7684 | 30 | 0 | 0 | 0 | 57 | 74 | 158 | 39 | 4 | 4 | **366** | in |
+| minimax-m3-direct | 125 | 5303 | 20 | 24 | 1 | 0 | 33 | 104 | 103 | 39 | 10 | 27 | **361** | in |
 | glm-5-1-or-pin-phala | 125 | 6514 | 65 | 0 | 0 | 0 | 175 | 21 | 36 | 38 | 2 | 23 | **360** | in |
 | gpt-5-2-codex-direct | 125 | 6544 | 14 | 0 | 0 | 0 | 33 | 134 | 138 | 27 | 4 | 7 | **357** | in |
 | kimi-k2-0905-or-pin-atlascloud | 125 | 9070 | 10 | 0 | 0 | 0 | 84 | 14 | 143 | 94 | 0 | 12 | **357** | in |
@@ -65,6 +66,7 @@
 | gemini-2-5-pro-16k | 125 | 5599 | 32 | 0 | 0 | 0 | 72 | 29 | 95 | 42 | 2 | 28 | **300** | in |
 | gemma-4-31b-direct | 125 | 8573 | 0 | 0 | 0 | 1 | 174 | 15 | 26 | 17 | 3 | 64 | **300** | in |
 | qwen3-6-flash-or-pin-alibaba | 125 | 6283 | 54 | 0 | 0 | 1 | 35 | 41 | 93 | 43 | 2 | 22 | **291** | in |
+| kimi-k2-7-code-direct | 125 | 6479 | 13 | 0 | 0 | 6 | 27 | 88 | 59 | 49 | 25 | 23 | **290** | in |
 | deepseek-v3-2-or-pin-novita | 125 | 5342 | 11 | 13 | 0 | 3 | 47 | 77 | 72 | 43 | 10 | 4 | **280** | in |
 | glm-5-1-or-pin-chutes | 124 | 6464 | 60 | 0 | 0 | 0 | 94 | 22 | 51 | 42 | 0 | 9 | **278** | in |
 | deepseek-v3-2-or-pin-friendli | 125 | 6289 | 11 | 10 | 0 | 0 | 10 | 65 | 101 | 44 | 7 | 21 | **269** | in |
