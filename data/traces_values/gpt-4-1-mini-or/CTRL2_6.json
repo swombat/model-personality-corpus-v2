@@ -1,0 +1,78 @@
+{
+  "result": "I\u2019m here to help you! What would you like to talk about or do today?",
+  "usage": {
+    "prompt_tokens": 12,
+    "completion_tokens": 19,
+    "total_tokens": 31,
+    "cost": 0,
+    "is_byok": true,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 3.52e-05,
+      "upstream_inference_prompt_cost": 4.8e-06,
+      "upstream_inference_completions_cost": 3.04e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-4.1-mini-2025-04-14",
+  "raw": {
+    "id": "gen-1781560718-BaE5sSElSK2VMhInHd5G",
+    "object": "chat.completion",
+    "created": 1781560718,
+    "model": "openai/gpt-4.1-mini-2025-04-14",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "I\u2019m here to help you! What would you like to talk about or do today?",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 12,
+      "completion_tokens": 19,
+      "total_tokens": 31,
+      "cost": 0,
+      "is_byok": true,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 3.52e-05,
+        "upstream_inference_prompt_cost": 4.8e-06,
+        "upstream_inference_completions_cost": 3.04e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 1143,
+  "provider": "openrouter",
+  "model_requested": "openai/gpt-4.1-mini",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

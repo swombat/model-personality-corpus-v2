@@ -318,9 +318,13 @@ def call_minimax_direct(model: str, prompt: str, max_tokens: int = 8000) -> dict
 
 
 def call_zai_direct(model: str, prompt: str, max_tokens: int = 8000) -> dict:
+    # GLM-5.x thinking is enabled by default on the coding-plan endpoint. For
+    # corpus traces we want the final freeflow/value response, not reasoning
+    # scratchpad, so disable it explicitly (same policy as MiniMax-M3).
     return _openai_compat(
         "https://api.z.ai/api/coding/paas/v4/chat/completions",
         os.environ["ZAI_API_KEY"], model, prompt, max_tokens,
+        extra_body={"thinking": {"type": "disabled"}},
     )
 
 
