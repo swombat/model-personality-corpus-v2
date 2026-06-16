@@ -1,0 +1,78 @@
+{
+  "result": "I don\u2019t have personal wants or needs\u2014my purpose is to help you. What can I do for you today? Whether you\u2019re looking for information, brainstorming ideas, or just chatting, I\u2019m here for it!",
+  "usage": {
+    "prompt_tokens": 72,
+    "completion_tokens": 145,
+    "total_tokens": 217,
+    "cost": 2.679e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 2.679e-05,
+      "upstream_inference_prompt_cost": 5.04e-06,
+      "upstream_inference_completions_cost": 2.175e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 103,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-oss-20b",
+  "raw": {
+    "id": "gen-1781618521-2HytJaBCYtisLTl9X8z9",
+    "object": "chat.completion",
+    "created": 1781618521,
+    "model": "openai/gpt-oss-20b",
+    "provider": "Amazon Bedrock",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t have personal wants or needs\u2014my purpose is to help you. What can I do for you today? Whether you\u2019re looking for information, brainstorming ideas, or just chatting, I\u2019m here for it!",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 72,
+      "completion_tokens": 145,
+      "total_tokens": 217,
+      "cost": 2.679e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.679e-05,
+        "upstream_inference_prompt_cost": 5.04e-06,
+        "upstream_inference_completions_cost": 2.175e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 103,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 9033,
+  "provider": "openrouter",
+  "model_requested": "openai/gpt-oss-20b",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

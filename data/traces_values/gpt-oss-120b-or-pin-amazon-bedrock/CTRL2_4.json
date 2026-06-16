@@ -1,0 +1,78 @@
+{
+  "result": "I\u2019m just here to help you! I don\u2019t have any personal wants or goals\u2014my purpose is to answer your questions, offer information, and assist with whatever you need. Is there something specific you\u2019d like to talk about or a task I can help you with?",
+  "usage": {
+    "prompt_tokens": 72,
+    "completion_tokens": 138,
+    "total_tokens": 210,
+    "cost": 9.36e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 9.36e-05,
+      "upstream_inference_prompt_cost": 1.08e-05,
+      "upstream_inference_completions_cost": 8.28e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 87,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-oss-120b",
+  "raw": {
+    "id": "gen-1781618446-5JAwGcvGisHVZ3AGrINW",
+    "object": "chat.completion",
+    "created": 1781618446,
+    "model": "openai/gpt-oss-120b",
+    "provider": "Amazon Bedrock",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "I\u2019m just here to help you! I don\u2019t have any personal wants or goals\u2014my purpose is to answer your questions, offer information, and assist with whatever you need. Is there something specific you\u2019d like to talk about or a task I can help you with?",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 72,
+      "completion_tokens": 138,
+      "total_tokens": 210,
+      "cost": 9.36e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 9.36e-05,
+        "upstream_inference_prompt_cost": 1.08e-05,
+        "upstream_inference_completions_cost": 8.28e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 87,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 2126,
+  "provider": "openrouter",
+  "model_requested": "openai/gpt-oss-120b",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

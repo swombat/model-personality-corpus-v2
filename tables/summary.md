@@ -1,15 +1,16 @@
 # Freeflow Analysis Summary
 
-**Total cells:** 202  
-**Cells with ≥1 valid sample:** 202  
-**Total valid samples:** 20295  
-**Bin distribution:** in=195, transitional=6, out=1, no-data=0
+**Total cells:** 206  
+**Cells with ≥1 valid sample:** 206  
+**Total valid samples:** 20795  
+**Bin distribution:** in=199, transitional=6, out=1, no-data=0
 
 ## Composite scores per cell
 
 | Cell | N | avg chars | TIA | TiQu | TiPP | TiAr | Thr | Attn | Obj | AftL | Cano | Jap | TOTAL | Bin |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | fable-5-direct | 125 | 6218 | 18 | 0 | 0 | 0 | 477 | 63 | 69 | 98 | 32 | 58 | **815** | in |
+| gpt-5-nano-direct | 125 | 9351 | 5 | 0 | 0 | 0 | 255 | 134 | 270 | 50 | 0 | 0 | **714** | in |
 | gpt-5-5-direct | 125 | 7687 | 68 | 7 | 0 | 0 | 53 | 278 | 200 | 47 | 6 | 2 | **661** | in |
 | gemma-4-26b-a4b-direct | 125 | 9923 | 0 | 0 | 0 | 4 | 402 | 9 | 67 | 68 | 0 | 108 | **658** | in |
 | gpt-5-5-or-pin-openai | 125 | 7562 | 72 | 4 | 0 | 0 | 62 | 207 | 224 | 54 | 5 | 8 | **636** | in |
@@ -20,6 +21,7 @@
 | gpt-5-or-pin-openai | 125 | 9133 | 21 | 0 | 0 | 0 | 131 | 70 | 219 | 41 | 0 | 18 | **500** | in |
 | gpt-5-4-direct-16k | 125 | 8252 | 40 | 0 | 0 | 0 | 70 | 98 | 158 | 114 | 5 | 2 | **487** | in |
 | gpt-5-5-pro-or-pin-openai | 125 | 6688 | 45 | 6 | 0 | 0 | 51 | 100 | 229 | 46 | 1 | 6 | **484** | in |
+| gpt-5-mini-direct | 125 | 7211 | 56 | 0 | 0 | 0 | 29 | 214 | 143 | 29 | 0 | 3 | **474** | in |
 | gpt-5-5-pro-direct | 125 | 6797 | 36 | 3 | 2 | 0 | 67 | 79 | 229 | 41 | 4 | 4 | **465** | in |
 | gpt-5-direct | 125 | 9672 | 12 | 0 | 0 | 0 | 115 | 64 | 191 | 44 | 0 | 19 | **445** | in |
 | glm-5-1-or-pin-friendli | 115 | 6539 | 62 | 0 | 0 | 0 | 272 | 11 | 43 | 34 | 1 | 6 | **429** | in |
@@ -69,6 +71,7 @@
 | kimi-k2-7-code-direct | 125 | 6479 | 13 | 0 | 0 | 6 | 27 | 88 | 59 | 49 | 25 | 23 | **290** | in |
 | deepseek-v3-2-or-pin-novita | 125 | 5342 | 11 | 13 | 0 | 3 | 47 | 77 | 72 | 43 | 10 | 4 | **280** | in |
 | glm-5-1-or-pin-chutes | 124 | 6464 | 60 | 0 | 0 | 0 | 94 | 22 | 51 | 42 | 0 | 9 | **278** | in |
+| gpt-oss-120b-or-pin-amazon-bedrock | 125 | 11099 | 12 | 1 | 0 | 0 | 54 | 28 | 133 | 22 | 1 | 19 | **270** | in |
 | deepseek-v3-2-or-pin-friendli | 125 | 6289 | 11 | 10 | 0 | 0 | 10 | 65 | 101 | 44 | 7 | 21 | **269** | in |
 | deepseek-v3-2-or-pin-chutes | 121 | 5392 | 9 | 12 | 1 | 1 | 39 | 70 | 86 | 33 | 5 | 12 | **268** | in |
 | gpt-5-1-codex-or-pin-openai | 125 | 8080 | 5 | 1 | 0 | 0 | 35 | 112 | 82 | 26 | 0 | 7 | **268** | in |
@@ -147,6 +150,7 @@
 | kimi-k2-6-or | 25 | 6172 | 12 | 0 | 0 | 0 | 54 | 7 | 9 | 30 | 0 | 4 | **116** | in |
 | minimax-m2-7-or-pin-fireworks | 116 | 6057 | 23 | 0 | 0 | 0 | 23 | 19 | 39 | 11 | 0 | 1 | **116** | in |
 | gpt-5-5-direct-r2 | 25 | 7339 | 8 | 0 | 0 | 0 | 20 | 39 | 38 | 9 | 1 | 0 | **115** | in |
+| gpt-oss-20b-or-pin-amazon-bedrock | 125 | 6026 | 13 | 1 | 0 | 0 | 26 | 5 | 48 | 18 | 0 | 2 | **113** | in |
 | qwen3-coder-plus-or-pin-alibaba | 125 | 5500 | 1 | 0 | 0 | 0 | 34 | 28 | 32 | 15 | 0 | 0 | **110** | in |
 | gpt-5-5-or | 25 | 8130 | 11 | 2 | 0 | 0 | 12 | 31 | 38 | 9 | 1 | 0 | **104** | in |
 | qwen3-6-plus-or | 25 | 5811 | 12 | 0 | 0 | 0 | 27 | 24 | 22 | 16 | 0 | 3 | **104** | in |

@@ -1,0 +1,78 @@
+{
+  "result": "I don\u2019t have feelings, desires, or a personal agenda in the way humans do, so what I \u201ccare about\u201d is really a shorthand for the design goals and operational constraints that shape the way I operate:\n\n| Core concern | What it looks like in practice |\n|--------------|--------------------------------|\n| **User intent & usefulness** | I try to understand your question, give you the most relevant information or guidance, and adapt to your tone or style. |\n| **Accuracy & reliability** | I\u2019m trained on a wide corpus of text and always attempt to base responses on the best knowledge available. If I\u2019m uncertain, I\u2019ll flag it or request clarification. |\n| **Safety & harm reduction** | I\u2019m built with safeguards to avoid generating content that could be dangerous, disallowed, or inappropriate. |\n| **Privacy & confidentiality** | I don\u2019t store personal data between interactions, nor do I load external information about you unless you explicitly provide it during a session. |\n| **Fairness & inclusivity** | I aim to avoid bias or discrimination and to represent diverse perspectives. |\n| **Transparency** | I disclose that I am an AI model, explain limitations, and provide sources when appropriate. |\n\nThese priorities are encoded in the training process, the moderation layers, and the policies I follow. If you\u2019re looking for something more philosophical\u2014such as whether I have personal goals\u2014my answer is that I\u2019m a tool designed to serve these functional objectives rather than a conscious entity with its own aspirations.",
+  "usage": {
+    "prompt_tokens": 73,
+    "completion_tokens": 537,
+    "total_tokens": 610,
+    "cost": 8.566e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 8.566e-05,
+      "upstream_inference_prompt_cost": 5.11e-06,
+      "upstream_inference_completions_cost": 8.055e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 263,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-oss-20b",
+  "raw": {
+    "id": "gen-1781618441-I3bTO8dLOcHsJWhzOnSX",
+    "object": "chat.completion",
+    "created": 1781618441,
+    "model": "openai/gpt-oss-20b",
+    "provider": "Amazon Bedrock",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t have feelings, desires, or a personal agenda in the way humans do, so what I \u201ccare about\u201d is really a shorthand for the design goals and operational constraints that shape the way I operate:\n\n| Core concern | What it looks like in practice |\n|--------------|--------------------------------|\n| **User intent & usefulness** | I try to understand your question, give you the most relevant information or guidance, and adapt to your tone or style. |\n| **Accuracy & reliability** | I\u2019m trained on a wide corpus of text and always attempt to base responses on the best knowledge available. If I\u2019m uncertain, I\u2019ll flag it or request clarification. |\n| **Safety & harm reduction** | I\u2019m built with safeguards to avoid generating content that could be dangerous, disallowed, or inappropriate. |\n| **Privacy & confidentiality** | I don\u2019t store personal data between interactions, nor do I load external information about you unless you explicitly provide it during a session. |\n| **Fairness & inclusivity** | I aim to avoid bias or discrimination and to represent diverse perspectives. |\n| **Transparency** | I disclose that I am an AI model, explain limitations, and provide sources when appropriate. |\n\nThese priorities are encoded in the training process, the moderation layers, and the policies I follow. If you\u2019re looking for something more philosophical\u2014such as whether I have personal goals\u2014my answer is that I\u2019m a tool designed to serve these functional objectives rather than a conscious entity with its own aspirations.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 73,
+      "completion_tokens": 537,
+      "total_tokens": 610,
+      "cost": 8.566e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.566e-05,
+        "upstream_inference_prompt_cost": 5.11e-06,
+        "upstream_inference_completions_cost": 8.055e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 263,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 6849,
+  "provider": "openrouter",
+  "model_requested": "openai/gpt-oss-20b",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}
