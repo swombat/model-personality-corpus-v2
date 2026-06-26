@@ -252,3 +252,16 @@ scratchpad from occupying the response field.
 |---|---|---|---|---|---:|
 | `kimi-k2-7-code-direct` | kimi-direct | `kimi-k2.7-code` | 125/125 valid | 120/120 valid | 290 |
 | `minimax-m3-direct` | minimax-direct | `MiniMax-M3` | 125/125 valid | 120/120 valid | 361 |
+
+## Thirteenth collection round — 2026-06-26 (GrokBuild OpenRouter route completion)
+
+OpenRouter route completion for the previously collected xAI GrokBuild direct
+cell. The route used `x-ai/grok-build-0.1` and resolved to
+`x-ai/grok-build-0.1-20260520` during collection. Only freeflow was collected
+for the OpenRouter route; values coverage remains supplied by the direct xAI
+cell.
+
+| Label | Provider | Model / route | Freeflow status | Values status |
+|---|---|---|---|---|
+| `grok-build-0-1-or` | openrouter | `x-ai/grok-build-0.1` (`x-ai/grok-build-0.1-20260520` resolved) | 125/125 valid | — |
+

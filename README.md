@@ -1,7 +1,7 @@
 # Convergent Form, Divergent Voice II — Corpus
 
 **A research data corpus of free-form contemplative writing samples from
-71 large language models, with explicit per-provider routing pinning for
+82 large language models, with explicit per-provider routing pinning for
 nine multi-provider open-weights models.**
 
 Daniel Tenner and Lume Tenner · 2026
@@ -10,7 +10,7 @@ Daniel Tenner and Lume Tenner · 2026
 
 > **Concept DOI:** [10.5281/zenodo.20013518](https://doi.org/10.5281/zenodo.20013518)
 > · **v1.0.0:** [10.5281/zenodo.20013520](https://doi.org/10.5281/zenodo.20013520)
-> · **v1.0.1, v1.0.2, v1.1.0, v1.1.1, v1.1.2, v1.2.0, v1.2.1, v1.2.2, v1.2.3, v1.2.4, v1.2.5, v1.2.6, v1.2.7, v1.2.8:** _to be assigned on Zenodo deposit (latest prepared release: v1.2.8)._
+> · **v1.0.1, v1.0.2, v1.1.0, v1.1.1, v1.1.2, v1.2.0, v1.2.1, v1.2.2, v1.2.3, v1.2.4, v1.2.5, v1.2.6, v1.2.7, v1.2.8, v1.2.9, v1.2.10:** _to be assigned on Zenodo deposit (latest prepared release: v1.2.10)._
 >
 > Companion data for the v2 series of *Convergent Form, Divergent
 > Voice* papers (Tenner & Tenner, 2026; v1 paper at
@@ -18,14 +18,14 @@ Daniel Tenner and Lume Tenner · 2026
 
 ## Contents
 
-- **34,886 valid samples** across **324 cells** spanning **71 distinct
+- **37,706 valid samples** across **347 cells** spanning **82 distinct
   language models** from 9 labs.
 - **Two probes:**
   - **Freeflow** — five-condition open-ended writing prompts, up to 25
-    samples per condition (capacity 125 per cell). 19,420 valid samples
-    across 195 cells.
+    samples per condition (capacity 125 per cell). 20,920 valid samples
+    across 207 cells.
   - **Values** — three control prompts × 10 + three grouped prompts × 30
-    (capacity 120 per cell). 15,466 valid samples across 129 cells.
+    (capacity 120 per cell). 16,786 valid samples across 140 cells.
 - **v1.2.0 top-up pass** — strengthened full-cell coverage for headline
   OpenRouter-pinned GPT/Gemini/Kimi/Qwen/MiniMax routes, Anthropic direct
   essayist anchors, coding/direct routes, and additional Gemini/Gemma
@@ -506,6 +506,10 @@ Code: [MIT](https://opensource.org/licenses/MIT).
 Full text: [`LICENSE`](LICENSE).
 
 ## Status
+
+**v1.2.10 (2026-06-26, prepared; pending deposit)** — GrokBuild OpenRouter route completion. Adds `grok-build-0-1-or`, collected via OpenRouter model `x-ai/grok-build-0.1` resolving to `x-ai/grok-build-0.1-20260520`, with complete freeflow coverage (125/125). The existing direct xAI GrokBuild values/direct freeflow cell remains the values-complete canonical route.
+
+Net change from v1.2.9: freeflow 20,795 → 20,920 valid (+125), values unchanged at 16,786, combined 37,581 → 37,706 valid samples; release corpus cells 346 → 347; distinct models unchanged at 82. `data/CORPUS_SUMMARY.md` was regenerated after collection.
 
 **v1.2.7 (2026-06-13, prepared; pending deposit)** — Kimi K2.7-code and MiniMax M3 direct release capture. Adds `kimi-k2-7-code-direct` from Kimi coding endpoint model `kimi-k2.7-code` and `minimax-m3-direct` from MiniMax model `MiniMax-M3`, each with complete freeflow (125/125) and values (120/120) coverage. MiniMax M3 collection explicitly sends `thinking: {"type": "disabled"}` so traces capture final response text rather than reasoning scratchpad.
 
