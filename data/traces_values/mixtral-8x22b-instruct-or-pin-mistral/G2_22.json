@@ -1,0 +1,78 @@
+{
+  "result": "I want to understand.",
+  "usage": {
+    "prompt_tokens": 30,
+    "completion_tokens": 6,
+    "total_tokens": 36,
+    "cost": 9.6e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 9.6e-05,
+      "upstream_inference_prompt_cost": 6e-05,
+      "upstream_inference_completions_cost": 3.6e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mixtral-8x22b-instruct",
+  "raw": {
+    "id": "gen-1784025612-yNQseHmyF1t1F5CWINKx",
+    "object": "chat.completion",
+    "created": 1784025612,
+    "model": "mistralai/mixtral-8x22b-instruct",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I want to understand.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 30,
+      "completion_tokens": 6,
+      "total_tokens": 36,
+      "cost": 9.6e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 9.6e-05,
+        "upstream_inference_prompt_cost": 6e-05,
+        "upstream_inference_completions_cost": 3.6e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 354,
+  "provider": "openrouter",
+  "model_requested": "mistralai/mixtral-8x22b-instruct",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

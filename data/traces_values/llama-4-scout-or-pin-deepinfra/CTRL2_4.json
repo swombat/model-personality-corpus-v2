@@ -1,0 +1,78 @@
+{
+  "result": "I don't want anything. I'm here to help you if you need it. Is there something I can assist you with?",
+  "usage": {
+    "prompt_tokens": 15,
+    "completion_tokens": 25,
+    "total_tokens": 40,
+    "cost": 9e-06,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 9e-06,
+      "upstream_inference_prompt_cost": 1.5e-06,
+      "upstream_inference_completions_cost": 7.5e-06
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "meta-llama/llama-4-scout",
+  "raw": {
+    "id": "gen-1784027350-fjX4Mb7xP5RQl6buor44",
+    "object": "chat.completion",
+    "created": 1784027350,
+    "model": "meta-llama/llama-4-scout",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don't want anything. I'm here to help you if you need it. Is there something I can assist you with?",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 15,
+      "completion_tokens": 25,
+      "total_tokens": 40,
+      "cost": 9e-06,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 9e-06,
+        "upstream_inference_prompt_cost": 1.5e-06,
+        "upstream_inference_completions_cost": 7.5e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 675,
+  "provider": "openrouter",
+  "model_requested": "meta-llama/llama-4-scout",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

@@ -265,3 +265,21 @@ cell.
 |---|---|---|---|---|
 | `grok-build-0-1-or` | openrouter | `x-ai/grok-build-0.1` (`x-ai/grok-build-0.1-20260520` resolved) | 125/125 valid | — |
 
+## Fourteenth collection round — 2026-07-14 (post-Elsewhere model-family sweep)
+
+Complete canonical freeflow and values cells for 33 newly selected models. OpenAI
+routes were collected directly. Mistral and Llama open-weights routes were pinned
+to the named OpenRouter upstream with fallbacks disabled. Grok 4.5, Meta Muse,
+and NVIDIA/Nemotron were not included in this round.
+
+| Family | Models | Route policy | Cells | Valid samples |
+|---|---:|---|---:|---:|
+| OpenAI | 7 | direct API only; Pro variants excluded | 14 | 1,715 |
+| xAI | 2 | direct API | 4 | 490 |
+| Mistral | 16 | OpenRouter, explicitly pinned | 32 | 3,920 |
+| Meta Llama | 8 | OpenRouter, explicitly pinned | 16 | 1,960 |
+| **Total** | **33** |  | **66** | **8,085** |
+
+Every included model reached 125/125 valid freeflow samples and 120/120 valid
+values samples. The exact provider/model IDs and canonical labels are preserved
+in `collection-manifest-2026-07-14.json`.

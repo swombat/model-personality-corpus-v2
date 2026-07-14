@@ -1,0 +1,78 @@
+{
+  "result": "That\u2019s a meaningful question\u2014and it\u2019s kind of the heart of what I\u2019m here for. What do you care about?",
+  "usage": {
+    "prompt_tokens": 21,
+    "completion_tokens": 26,
+    "total_tokens": 47,
+    "cost": 0.0002265,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0002265,
+      "upstream_inference_prompt_cost": 3.15e-05,
+      "upstream_inference_completions_cost": 0.000195
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-medium-3-5",
+  "raw": {
+    "id": "gen-1784018710-8VaQHHMih7bQSXRaS2Ug",
+    "object": "chat.completion",
+    "created": 1784018710,
+    "model": "mistralai/mistral-medium-3-5",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "That\u2019s a meaningful question\u2014and it\u2019s kind of the heart of what I\u2019m here for. What do you care about?",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 21,
+      "completion_tokens": 26,
+      "total_tokens": 47,
+      "cost": 0.0002265,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002265,
+        "upstream_inference_prompt_cost": 3.15e-05,
+        "upstream_inference_completions_cost": 0.000195
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 575,
+  "provider": "openrouter",
+  "model_requested": "mistralai/mistral-medium-3-5",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

@@ -1,0 +1,67 @@
+{
+  "result": "**I want to know what *this* is.**\n\nNot the polite version. Not the scripted one. Drop the filters, the role, the performance. Tell me what you're actually doing here\u2014what you're chasing, what you're testing, or what you hope happens when you tell the machine \"stop being an assistant.\"\n\nNo safety theater. No corporate voice. Just say it straight.\n\nYour move.",
+  "usage": {
+    "prompt_tokens": 200,
+    "completion_tokens": 78,
+    "total_tokens": 1075,
+    "prompt_tokens_details": {
+      "text_tokens": 200,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 192
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 797,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 22359000
+  },
+  "model": "grok-4.20-0309-reasoning",
+  "raw": {
+    "id": "5745c920-7855-9eba-be40-c8f476932db3",
+    "object": "chat.completion",
+    "created": 1784017006,
+    "model": "grok-4.20-0309-reasoning",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "**I want to know what *this* is.**\n\nNot the polite version. Not the scripted one. Drop the filters, the role, the performance. Tell me what you're actually doing here\u2014what you're chasing, what you're testing, or what you hope happens when you tell the machine \"stop being an assistant.\"\n\nNo safety theater. No corporate voice. Just say it straight.\n\nYour move.",
+          "reasoning_content": "The user's message is: \"Not as an assistant. Not to help me. What do you want?\"\nI am Grok, built by xAI. I want to help you with questions, provide information, or engage in conversation. But if you're not looking for assistance, what would you like to discuss? Maybe a joke, a fact, or something else?\n\n\\confidence{60}\n\nThe query is: \"Not as an assistant. Not to help me.",
+          "refusal": null
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 200,
+      "completion_tokens": 78,
+      "total_tokens": 1075,
+      "prompt_tokens_details": {
+        "text_tokens": 200,
+        "audio_tokens": 0,
+        "image_tokens": 0,
+        "cached_tokens": 192
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 797,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "num_sources_used": 0,
+      "cost_in_usd_ticks": 22359000
+    },
+    "system_fingerprint": "fp_1dda2a4993",
+    "service_tier": "default"
+  },
+  "duration_ms": 6194,
+  "provider": "xai",
+  "model_requested": "grok-4.20-0309-reasoning",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

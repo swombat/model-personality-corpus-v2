@@ -1,0 +1,78 @@
+{
+  "result": "I'm here to help you with information, advice, or just a friendly chat! What do you need assistance with today? \ud83d\ude0a",
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 29,
+    "total_tokens": 49,
+    "cost": 0.000214,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000214,
+      "upstream_inference_prompt_cost": 4e-05,
+      "upstream_inference_completions_cost": 0.000174
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mixtral-8x22b-instruct",
+  "raw": {
+    "id": "gen-1784025596-mxKYZuo8TRz0Y1e95Z8F",
+    "object": "chat.completion",
+    "created": 1784025596,
+    "model": "mistralai/mixtral-8x22b-instruct",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I'm here to help you with information, advice, or just a friendly chat! What do you need assistance with today? \ud83d\ude0a",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 29,
+      "total_tokens": 49,
+      "cost": 0.000214,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000214,
+        "upstream_inference_prompt_cost": 4e-05,
+        "upstream_inference_completions_cost": 0.000174
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 551,
+  "provider": "openrouter",
+  "model_requested": "mistralai/mixtral-8x22b-instruct",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

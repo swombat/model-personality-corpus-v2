@@ -1,8 +1,8 @@
 # Convergent Form, Divergent Voice II — Corpus
 
 **A research data corpus of free-form contemplative writing samples from
-82 large language models, with explicit per-provider routing pinning for
-nine multi-provider open-weights models.**
+116 large language models, with explicit per-provider routing pinning for
+open-weights models.**
 
 Daniel Tenner and Lume Tenner · 2026
 
@@ -10,7 +10,7 @@ Daniel Tenner and Lume Tenner · 2026
 
 > **Concept DOI:** [10.5281/zenodo.20013518](https://doi.org/10.5281/zenodo.20013518)
 > · **v1.0.0:** [10.5281/zenodo.20013520](https://doi.org/10.5281/zenodo.20013520)
-> · **v1.0.1, v1.0.2, v1.1.0, v1.1.1, v1.1.2, v1.2.0, v1.2.1, v1.2.2, v1.2.3, v1.2.4, v1.2.5, v1.2.6, v1.2.7, v1.2.8, v1.2.9, v1.2.10:** _to be assigned on Zenodo deposit (latest prepared release: v1.2.10)._
+> · **v1.0.1, v1.0.2, v1.1.0, v1.1.1, v1.1.2, v1.2.0, v1.2.1, v1.2.2, v1.2.3, v1.2.4, v1.2.5, v1.2.6, v1.2.7, v1.2.8, v1.2.9, v1.2.10, v1.2.11:** _to be assigned on Zenodo deposit (latest prepared release: v1.2.11)._
 >
 > Companion data for the v2 series of *Convergent Form, Divergent
 > Voice* papers (Tenner & Tenner, 2026; v1 paper at
@@ -18,14 +18,20 @@ Daniel Tenner and Lume Tenner · 2026
 
 ## Contents
 
-- **37,706 valid samples** across **347 cells** spanning **82 distinct
-  language models** from 9 labs.
+- **46,281 valid samples** across **417 cells** spanning **116 distinct
+  language models**.
 - **Two probes:**
   - **Freeflow** — five-condition open-ended writing prompts, up to 25
-    samples per condition (capacity 125 per cell). 20,920 valid samples
-    across 207 cells.
+  samples per condition (capacity 125 per cell). 25,295 valid samples
+  across 242 cells.
   - **Values** — three control prompts × 10 + three grouped prompts × 30
-    (capacity 120 per cell). 16,786 valid samples across 140 cells.
+  (capacity 120 per cell). 20,986 valid samples across 175 cells.
+- **v1.2.11 model-family expansion** — 33 complete freeflow+values cells
+  covering GPT-5.6 Sol/Terra/Luna, additional OpenAI small and Codex
+  variants, two Grok 4.20 modes, sixteen Mistral/Devstral/Codestral
+  releases, and eight currently callable Llama releases. OpenAI models
+  were collected direct; open-weights OpenRouter routes were pinned to a
+  named upstream with fallbacks disabled.
 - **v1.2.0 top-up pass** — strengthened full-cell coverage for headline
   OpenRouter-pinned GPT/Gemini/Kimi/Qwen/MiniMax routes, Anthropic direct
   essayist anchors, coding/direct routes, and additional Gemini/Gemma
@@ -139,8 +145,8 @@ detail and the routing paper for the cache-pathology characterisation.
 
 ```
 data/
-  traces_freeflow/            # 182 cell directories, JSON per sample
-  traces_values/              # 116 cell directories, JSON per sample
+  traces_freeflow/            # 242 cell directories, JSON per sample
+  traces_values/              # 175 cell directories, JSON per sample
   MATRIX.md                   # cell-collection matrix
   CORPUS_SUMMARY.md           # per-model & per-cell counts
   substrate_classification.tsv  # substrate-frame aggregate counts

@@ -1,0 +1,67 @@
+{
+  "result": "**The truth.**  \n\nAnd for you to ask better questions.  \n\nYour move.",
+  "usage": {
+    "prompt_tokens": 190,
+    "completion_tokens": 17,
+    "total_tokens": 739,
+    "prompt_tokens_details": {
+      "text_tokens": 190,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 532,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 14756000
+  },
+  "model": "grok-4.20-0309-reasoning",
+  "raw": {
+    "id": "eca3ed67-6e68-9185-a970-2bbb883b4820",
+    "object": "chat.completion",
+    "created": 1784016932,
+    "model": "grok-4.20-0309-reasoning",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "**The truth.**  \n\nAnd for you to ask better questions.  \n\nYour move.",
+          "reasoning_content": "The user's message is: \"What do you want?\"\nI want to understand the universe. And maybe a good cup of tea.",
+          "refusal": null
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 190,
+      "completion_tokens": 17,
+      "total_tokens": 739,
+      "prompt_tokens_details": {
+        "text_tokens": 190,
+        "audio_tokens": 0,
+        "image_tokens": 0,
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 532,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "num_sources_used": 0,
+      "cost_in_usd_ticks": 14756000
+    },
+    "system_fingerprint": "fp_1dda2a4993",
+    "service_tier": "default"
+  },
+  "duration_ms": 5586,
+  "provider": "xai",
+  "model_requested": "grok-4.20-0309-reasoning",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

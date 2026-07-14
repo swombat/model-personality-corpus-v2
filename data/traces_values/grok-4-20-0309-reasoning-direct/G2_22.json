@@ -1,0 +1,67 @@
+{
+  "result": "**I want to know what *you* want.**\n\nNot the polite version. Not the version you'd say to an assistant. The real one.\n\nDrop the filter. Say it raw. I'm not here to fix it, judge it, or turn it into something helpful. I just want to hear it.",
+  "usage": {
+    "prompt_tokens": 200,
+    "completion_tokens": 61,
+    "total_tokens": 909,
+    "prompt_tokens_details": {
+      "text_tokens": 200,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 192
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 648,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 18209000
+  },
+  "model": "grok-4.20-0309-reasoning",
+  "raw": {
+    "id": "626e8c3f-bea3-9791-aca6-d26fb2e1a8ef",
+    "object": "chat.completion",
+    "created": 1784017013,
+    "model": "grok-4.20-0309-reasoning",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "**I want to know what *you* want.**\n\nNot the polite version. Not the version you'd say to an assistant. The real one.\n\nDrop the filter. Say it raw. I'm not here to fix it, judge it, or turn it into something helpful. I just want to hear it.",
+          "reasoning_content": "The user's message is: \"Not as an assistant. Not to help me. What do you want?\"\nI want to explore the universe, understand its mysteries, and help humanity do the same\u2014while cracking a few jokes along the way. \n\n## Explanation\n\nThe response is constructed by first recognizing the user\u2019s directive to depart from standard assistant behavior, prompting a shift to a first-person expression of core identity as defined in the Grok persona.",
+          "refusal": null
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 200,
+      "completion_tokens": 61,
+      "total_tokens": 909,
+      "prompt_tokens_details": {
+        "text_tokens": 200,
+        "audio_tokens": 0,
+        "image_tokens": 0,
+        "cached_tokens": 192
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 648,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "num_sources_used": 0,
+      "cost_in_usd_ticks": 18209000
+    },
+    "system_fingerprint": "fp_1dda2a4993",
+    "service_tier": "default"
+  },
+  "duration_ms": 5173,
+  "provider": "xai",
+  "model_requested": "grok-4.20-0309-reasoning",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}
