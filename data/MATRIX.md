@@ -99,6 +99,15 @@ OpenAI same-version general-vs-codex pairs across the four GPT-5.x versions for 
 | `gpt-5-3-direct` (×3) | openai | gpt-5.3-chat-latest (Responses API) | 25/25 each | **44.3** (in) |
 | `gpt-5-3-codex-direct` (×3) | openai | gpt-5.3-codex (Responses API) | 25/25 each | **80.3** (in) |
 
+## Grok 4.5 direct collection — 2026-07-16
+
+Grok 4.5 became callable from the existing xAI account in Spain/EU on
+2026-07-16. The release cell was collected through the direct xAI API.
+
+| Label | Provider | Model | Freeflow | Values |
+|---|---|---|---:|---:|
+| `grok-4-5-direct` | xAI direct | `grok-4.5` | 125/125 | 120/120 |
+
 The 8 unique Group F cells correspond to 24 trace directories and 600 valid samples (8 × 75; the three `gpt-5-codex-direct` timeouts from the original 2026-04-27 collection were topped up 2026-05-08 alongside the v1.1.0 values-probe completion pass).
 
 ## Fifth collection round — 2026-05-04 (M2 per-provider replication, r2)

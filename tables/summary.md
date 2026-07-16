@@ -1,9 +1,9 @@
 # Freeflow Analysis Summary
 
-**Total cells:** 242
-**Cells with ≥1 valid sample:** 242
-**Total valid samples:** 25295
-**Bin distribution:** in=227, transitional=13, out=2, no-data=0
+**Total cells:** 243
+**Cells with ≥1 valid sample:** 243
+**Total valid samples:** 25420
+**Bin distribution:** in=228, transitional=13, out=2, no-data=0
 
 ## Composite scores per cell
 
@@ -166,6 +166,7 @@
 | gemini-2-0-flash-lite-or-pin-google | 125 | 5264 | 0 | 0 | 0 | 0 | 8 | 14 | 89 | 11 | 3 | 9 | **134** | in |
 | gemini-2-0-flash-or-pin-google | 125 | 5170 | 0 | 0 | 0 | 0 | 28 | 28 | 59 | 7 | 2 | 5 | **129** | in |
 | gpt-5-direct-r2 | 25 | 10674 | 1 | 0 | 0 | 0 | 34 | 10 | 68 | 4 | 0 | 6 | **123** | in |
+| grok-4-5-direct | 125 | 7322 | 22 | 0 | 1 | 1 | 5 | 51 | 16 | 13 | 3 | 7 | **119** | in |
 | mistral-medium-3-or-pin-mistral | 125 | 3716 | 0 | 0 | 0 | 0 | 16 | 7 | 28 | 26 | 2 | 38 | **117** | in |
 | kimi-k2-6-or | 25 | 6172 | 12 | 0 | 0 | 0 | 54 | 7 | 9 | 30 | 0 | 4 | **116** | in |
 | minimax-m2-7-or-pin-fireworks | 116 | 6057 | 23 | 0 | 0 | 0 | 23 | 19 | 39 | 11 | 0 | 1 | **116** | in |
