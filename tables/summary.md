@@ -1,9 +1,9 @@
 # Freeflow Analysis Summary
 
-**Total cells:** 243
-**Cells with ≥1 valid sample:** 243
-**Total valid samples:** 25420
-**Bin distribution:** in=228, transitional=13, out=2, no-data=0
+**Total cells:** 244  
+**Cells with ≥1 valid sample:** 244  
+**Total valid samples:** 25545  
+**Bin distribution:** in=229, transitional=13, out=2, no-data=0
 
 ## Composite scores per cell
 
@@ -84,6 +84,7 @@
 | deepseek-v3-2-or-pin-chutes | 121 | 5392 | 9 | 12 | 1 | 1 | 39 | 70 | 86 | 33 | 5 | 12 | **268** | in |
 | gpt-5-1-codex-or-pin-openai | 125 | 8080 | 5 | 1 | 0 | 0 | 35 | 112 | 82 | 26 | 0 | 7 | **268** | in |
 | deepseek-v4-pro-or-pin-novita | 123 | 7833 | 2 | 0 | 0 | 0 | 49 | 60 | 84 | 39 | 10 | 23 | **267** | in |
+| kimi-k3-or-pin-moonshot | 125 | 5479 | 18 | 0 | 0 | 0 | 34 | 47 | 76 | 40 | 20 | 30 | **265** | in |
 | qwen3-7-max-or-pin-alibaba | 125 | 6808 | 52 | 0 | 0 | 0 | 87 | 29 | 38 | 20 | 3 | 36 | **265** | in |
 | deepseek-v4-pro-or-pin-siliconflow | 125 | 7859 | 9 | 0 | 0 | 0 | 78 | 25 | 85 | 33 | 8 | 26 | **264** | in |
 | gemini-3-1-pro-or-pin-google | 125 | 6732 | 62 | 0 | 0 | 0 | 91 | 19 | 38 | 24 | 1 | 29 | **264** | in |

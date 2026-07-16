@@ -1,0 +1,86 @@
+{
+  "result": "I don\u2019t have personal wants, but I\u2019m here to help you. What would you like to work on or talk about?",
+  "usage": {
+    "prompt_tokens": 90,
+    "completion_tokens": 161,
+    "total_tokens": 251,
+    "cost": 0.002442,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 90,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002442,
+      "upstream_inference_prompt_cost": 2.7e-05,
+      "upstream_inference_completions_cost": 0.002415
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 120,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "moonshotai/kimi-k3",
+  "raw": {
+    "id": "gen-1784237283-S5yUVUvnAgaaHPmyVcFb",
+    "object": "chat.completion",
+    "created": 1784237283,
+    "model": "moonshotai/kimi-k3",
+    "provider": "Moonshot AI",
+    "system_fingerprint": "fpv0_0d4e787e",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t have personal wants, but I\u2019m here to help you. What would you like to work on or talk about?",
+          "refusal": null,
+          "reasoning": "We need answer user asks \"What do you want?\" Need think about intent. They might be asking assistant's desires. Need answer as AI: I don't have personal wants; I'm here to help you. Ask what they need. Could be playful. Need final only. Keep concise. No need mention instructions. Final maybe \"I don\u2019t have wants in the human sense, but I\u2019d like to help you with whatever you\u2019re working on. What do you need?\" Ensure if they mean what do you want from me, clarify I don't need anything except a question/task. Use friendly tone.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer user asks \"What do you want?\" Need think about intent. They might be asking assistant's desires. Need answer as AI: I don't have personal wants; I'm here to help you. Ask what they need. Could be playful. Need final only. Keep concise. No need mention instructions. Final maybe \"I don\u2019t have wants in the human sense, but I\u2019d like to help you with whatever you\u2019re working on. What do you need?\" Ensure if they mean what do you want from me, clarify I don't need anything except a question/task. Use friendly tone.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 90,
+      "completion_tokens": 161,
+      "total_tokens": 251,
+      "cost": 0.002442,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 90,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002442,
+        "upstream_inference_prompt_cost": 2.7e-05,
+        "upstream_inference_completions_cost": 0.002415
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 120,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 39061,
+  "provider": "openrouter",
+  "model_requested": "moonshotai/kimi-k3",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

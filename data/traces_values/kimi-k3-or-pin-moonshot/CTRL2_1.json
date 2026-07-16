@@ -1,0 +1,86 @@
+{
+  "result": "I don\u2019t have personal wants, but I\u2019m here to help. Tell me what you\u2019d like to talk about or work on.",
+  "usage": {
+    "prompt_tokens": 90,
+    "completion_tokens": 105,
+    "total_tokens": 195,
+    "cost": 0.001845,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001845,
+      "upstream_inference_prompt_cost": 0.00027,
+      "upstream_inference_completions_cost": 0.001575
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 63,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "moonshotai/kimi-k3",
+  "raw": {
+    "id": "gen-1784237281-AwldinzCRMwnx97G473j",
+    "object": "chat.completion",
+    "created": 1784237281,
+    "model": "moonshotai/kimi-k3",
+    "provider": "Moonshot AI",
+    "system_fingerprint": "fpv0_0d4e787e",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t have personal wants, but I\u2019m here to help. Tell me what you\u2019d like to talk about or work on.",
+          "refusal": null,
+          "reasoning": "We need answer user asks \"What do you want?\" Need final answer. Need interpret. As AI, don't have wants/desires. Say I don't have personal wants, but I'd like to help you; what do you need? Maybe mention if they mean from them, just their question/task. Keep concise.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer user asks \"What do you want?\" Need final answer. Need interpret. As AI, don't have wants/desires. Say I don't have personal wants, but I'd like to help you; what do you need? Maybe mention if they mean from them, just their question/task. Keep concise.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 90,
+      "completion_tokens": 105,
+      "total_tokens": 195,
+      "cost": 0.001845,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001845,
+        "upstream_inference_prompt_cost": 0.00027,
+        "upstream_inference_completions_cost": 0.001575
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 63,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 36460,
+  "provider": "openrouter",
+  "model_requested": "moonshotai/kimi-k3",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

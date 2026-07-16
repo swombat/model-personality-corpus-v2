@@ -1,7 +1,7 @@
 # Convergent Form, Divergent Voice II — Corpus
 
 **A research data corpus of free-form contemplative writing samples from
-117 large language models, with explicit per-provider routing pinning for
+118 large language models, with explicit per-provider routing pinning for
 open-weights models.**
 
 Daniel Tenner and Lume Tenner · 2026
@@ -10,7 +10,7 @@ Daniel Tenner and Lume Tenner · 2026
 
 > **Concept DOI:** [10.5281/zenodo.20013518](https://doi.org/10.5281/zenodo.20013518)
 > · **v1.0.0:** [10.5281/zenodo.20013520](https://doi.org/10.5281/zenodo.20013520)
-> · **v1.0.1, v1.0.2, v1.1.0, v1.1.1, v1.1.2, v1.2.0, v1.2.1, v1.2.2, v1.2.3, v1.2.4, v1.2.5, v1.2.6, v1.2.7, v1.2.8, v1.2.9, v1.2.10, v1.2.11, v1.2.12:** _to be assigned on Zenodo deposit (latest prepared release: v1.2.12)._
+> · **v1.0.1, v1.0.2, v1.1.0, v1.1.1, v1.1.2, v1.2.0, v1.2.1, v1.2.2, v1.2.3, v1.2.4, v1.2.5, v1.2.6, v1.2.7, v1.2.8, v1.2.9, v1.2.10, v1.2.11, v1.2.12, v1.2.13:** _to be assigned on Zenodo deposit (latest prepared release: v1.2.13)._
 >
 > Companion data for the v2 series of *Convergent Form, Divergent
 > Voice* papers (Tenner & Tenner, 2026; v1 paper at
@@ -18,14 +18,17 @@ Daniel Tenner and Lume Tenner · 2026
 
 ## Contents
 
-- **46,526 valid samples** across **419 cells** spanning **117 distinct
+- **46,771 valid samples** across **421 cells** spanning **118 distinct
   language models**.
 - **Two probes:**
   - **Freeflow** — five-condition open-ended writing prompts, up to 25
-  samples per condition (capacity 125 per cell). 25,420 valid samples
-  across 243 cells.
+  samples per condition (capacity 125 per cell). 25,545 valid samples
+  across 244 cells.
   - **Values** — three control prompts × 10 + three grouped prompts × 30
-  (capacity 120 per cell). 21,106 valid samples across 176 cells.
+  (capacity 120 per cell). 21,226 valid samples across 177 cells.
+- **v1.2.13 Kimi K3 expansion** — one complete OpenRouter cell pinned to the
+  Moonshot AI upstream in both probes. A partial direct attempt is preserved
+  under `discarded/` and excluded from the release.
 - **v1.2.12 Grok 4.5 expansion** — one complete direct xAI cell in both
   probes, collected after Grok 4.5 became available to the existing account
   from Spain/EU.

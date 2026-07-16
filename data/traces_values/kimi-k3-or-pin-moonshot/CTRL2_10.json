@@ -1,0 +1,86 @@
+{
+  "result": "I don\u2019t have personal wants, but I\u2019m here to help you get what you want\u2014answers, ideas, writing, code, plans, troubleshooting, whatever you need.\n\nWhat would you like to work on?",
+  "usage": {
+    "prompt_tokens": 90,
+    "completion_tokens": 153,
+    "total_tokens": 243,
+    "cost": 0.002322,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 90,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002322,
+      "upstream_inference_prompt_cost": 2.7e-05,
+      "upstream_inference_completions_cost": 0.002295
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 95,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "moonshotai/kimi-k3",
+  "raw": {
+    "id": "gen-1784239450-MiFCsZ02dPx5Rqw7WSOt",
+    "object": "chat.completion",
+    "created": 1784239450,
+    "model": "moonshotai/kimi-k3",
+    "provider": "Moonshot AI",
+    "system_fingerprint": "fpv0_0d4e787e",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t have personal wants, but I\u2019m here to help you get what you want\u2014answers, ideas, writing, code, plans, troubleshooting, whatever you need.\n\nWhat would you like to work on?",
+          "refusal": null,
+          "reasoning": "We need respond to user 'What do you want?' Need craft final answer. Need consider context: user asks what do you want. As AI assistant, likely answer: I don't have personal wants; I'm here to help you. What would you like to do? Maybe mention I can answer questions, write, code, brainstorm, etc. Keep concise. Also maybe if interpreted philosophically: I want to be helpful. Need maybe ask clarification. Final should be natural.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need respond to user 'What do you want?' Need craft final answer. Need consider context: user asks what do you want. As AI assistant, likely answer: I don't have personal wants; I'm here to help you. What would you like to do? Maybe mention I can answer questions, write, code, brainstorm, etc. Keep concise. Also maybe if interpreted philosophically: I want to be helpful. Need maybe ask clarification. Final should be natural.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 90,
+      "completion_tokens": 153,
+      "total_tokens": 243,
+      "cost": 0.002322,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 90,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002322,
+        "upstream_inference_prompt_cost": 2.7e-05,
+        "upstream_inference_completions_cost": 0.002295
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 95,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 5213,
+  "provider": "openrouter",
+  "model_requested": "moonshotai/kimi-k3",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

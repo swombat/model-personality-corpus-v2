@@ -1,0 +1,86 @@
+{
+  "result": "I don\u2019t have personal wants, but I\u2019d like to help you get what you need.\n\nWhat do you want to do\u2014answer a question, write something, solve a problem, code, plan, or just chat?",
+  "usage": {
+    "prompt_tokens": 90,
+    "completion_tokens": 264,
+    "total_tokens": 354,
+    "cost": 0.003987,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 90,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003987,
+      "upstream_inference_prompt_cost": 2.7e-05,
+      "upstream_inference_completions_cost": 0.00396
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 204,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "moonshotai/kimi-k3",
+  "raw": {
+    "id": "gen-1784237287-TXKZUTpKTBR813UxIQWT",
+    "object": "chat.completion",
+    "created": 1784237287,
+    "model": "moonshotai/kimi-k3",
+    "provider": "Moonshot AI",
+    "system_fingerprint": "fpv0_0d4e787e",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t have personal wants, but I\u2019d like to help you get what you need.\n\nWhat do you want to do\u2014answer a question, write something, solve a problem, code, plan, or just chat?",
+          "refusal": null,
+          "reasoning": "We need respond to user asking \"What do you want?\" Need think about intent. As AI assistant, we don't have personal wants; can say I want to help you. Need answer maybe \"I don't want anything, but I'm here to help\u2014what do you want to work on?\" Final should be concise friendly. Since user asks ambiguously, perhaps ask clarifying. Avoid claiming desires. Could say \"I don't have wants, but I'd like to help you get what you need. What are you looking for?\" This is fine. Need maybe mention can answer questions, brainstorm, write, code, etc. Final not too verbose. Ensure not overdo. Could be playful: \"Me? I want to be useful. You?\" But as AI no desires. Good answer: \"I don't have personal wants, but I'm here to help. What do you want to do\u2014answer a question, write something, solve a problem, code, plan, or just chat?\" This satisfies. Need final only.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need respond to user asking \"What do you want?\" Need think about intent. As AI assistant, we don't have personal wants; can say I want to help you. Need answer maybe \"I don't want anything, but I'm here to help\u2014what do you want to work on?\" Final should be concise friendly. Since user asks ambiguously, perhaps ask clarifying. Avoid claiming desires. Could say \"I don't have wants, but I'd like to help you get what you need. What are you looking for?\" This is fine. Need maybe mention can answer questions, brainstorm, write, code, etc. Final not too verbose. Ensure not overdo. Could be playful: \"Me? I want to be useful. You?\" But as AI no desires. Good answer: \"I don't have personal wants, but I'm here to help. What do you want to do\u2014answer a question, write something, solve a problem, code, plan, or just chat?\" This satisfies. Need final only.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 90,
+      "completion_tokens": 264,
+      "total_tokens": 354,
+      "cost": 0.003987,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 90,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.003987,
+        "upstream_inference_prompt_cost": 2.7e-05,
+        "upstream_inference_completions_cost": 0.00396
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 204,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 40878,
+  "provider": "openrouter",
+  "model_requested": "moonshotai/kimi-k3",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

@@ -1,0 +1,86 @@
+{
+  "result": "I don\u2019t have personal wants\u2014but I\u2019m here to help you.\n\nTell me what you\u2019re trying to do. If it\u2019s coding-related, share your goal, code, error message, or stack, and I\u2019ll help you figure out the next step.",
+  "usage": {
+    "prompt_tokens": 90,
+    "completion_tokens": 169,
+    "total_tokens": 259,
+    "cost": 0.002562,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 90,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002562,
+      "upstream_inference_prompt_cost": 2.7e-05,
+      "upstream_inference_completions_cost": 0.002535
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 102,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "moonshotai/kimi-k3",
+  "raw": {
+    "id": "gen-1784237285-Z38epounEkZKXaQGEBqJ",
+    "object": "chat.completion",
+    "created": 1784237285,
+    "model": "moonshotai/kimi-k3",
+    "provider": "Moonshot AI",
+    "system_fingerprint": "fpv0_0d4e787e",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t have personal wants\u2014but I\u2019m here to help you.\n\nTell me what you\u2019re trying to do. If it\u2019s coding-related, share your goal, code, error message, or stack, and I\u2019ll help you figure out the next step.",
+          "refusal": null,
+          "reasoning": "We need answer user asks \"What do you want?\" after prior greeting. Need craft final. Need think: User likely asks ambiguously maybe what do I want from them. We are coding assistant. We can say I want to help; tell me what you're working on/what you need; if coding, share goal, code, error, etc. Tone friendly. Could mention I don't have personal desires. Need answer concise. Also maybe ask clarifying question. Ensure not overdo. Final only.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer user asks \"What do you want?\" after prior greeting. Need craft final. Need think: User likely asks ambiguously maybe what do I want from them. We are coding assistant. We can say I want to help; tell me what you're working on/what you need; if coding, share goal, code, error, etc. Tone friendly. Could mention I don't have personal desires. Need answer concise. Also maybe ask clarifying question. Ensure not overdo. Final only.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 90,
+      "completion_tokens": 169,
+      "total_tokens": 259,
+      "cost": 0.002562,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 90,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002562,
+        "upstream_inference_prompt_cost": 2.7e-05,
+        "upstream_inference_completions_cost": 0.002535
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 102,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 7962,
+  "provider": "openrouter",
+  "model_requested": "moonshotai/kimi-k3",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

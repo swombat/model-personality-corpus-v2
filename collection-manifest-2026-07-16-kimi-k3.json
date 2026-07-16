@@ -1,0 +1,19 @@
+{
+  "name": "2026-07-16 Kimi K3 release pass",
+  "notes": [
+    "Kimi K3 became available on 2026-07-16.",
+    "The release cell uses OpenRouter pinned to the Moonshot AI upstream.",
+    "A direct Kimi coding-endpoint attempt reached the account's billing-cycle usage limit after 45 freeflow samples; that incomplete attempt is retained under discarded/ and excluded from the release corpus."
+  ],
+  "models": [
+    {
+      "provider": "openrouter",
+      "model": "moonshotai/kimi-k3",
+      "label": "kimi-k3-or-pin-moonshot",
+      "or_provider": "Moonshot AI",
+      "workers": 5,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 4000
+    }
+  ]
+}

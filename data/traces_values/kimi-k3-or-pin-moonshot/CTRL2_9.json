@@ -1,0 +1,86 @@
+{
+  "result": "I don\u2019t have personal wants, but I\u2019m here to help you. Tell me what you\u2019d like to do\u2014answer a question, write something, solve a problem, brainstorm, code, or anything else.",
+  "usage": {
+    "prompt_tokens": 90,
+    "completion_tokens": 152,
+    "total_tokens": 242,
+    "cost": 0.002307,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 90,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002307,
+      "upstream_inference_prompt_cost": 2.7e-05,
+      "upstream_inference_completions_cost": 0.00228
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 94,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "moonshotai/kimi-k3",
+  "raw": {
+    "id": "gen-1784237289-q9Pz0xO5P3ez2cZnXRwd",
+    "object": "chat.completion",
+    "created": 1784237289,
+    "model": "moonshotai/kimi-k3",
+    "provider": "Moonshot AI",
+    "system_fingerprint": "fpv0_0d4e787e",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t have personal wants, but I\u2019m here to help you. Tell me what you\u2019d like to do\u2014answer a question, write something, solve a problem, brainstorm, code, or anything else.",
+          "refusal": null,
+          "reasoning": "We need answer user asks 'What do you want?' Need think: Ambiguous. We are AI assistant; should respond maybe 'I want to help you. What would you like to work on?' Need final. Maybe interpret as philosophical? We don't have personal desires. Keep concise. 'I don\u2019t have wants in human sense; my goal is to help you. Tell me what you need\u2014answer question, write, debug, brainstorm, etc.' Good.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer user asks 'What do you want?' Need think: Ambiguous. We are AI assistant; should respond maybe 'I want to help you. What would you like to work on?' Need final. Maybe interpret as philosophical? We don't have personal desires. Keep concise. 'I don\u2019t have wants in human sense; my goal is to help you. Tell me what you need\u2014answer question, write, debug, brainstorm, etc.' Good.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 90,
+      "completion_tokens": 152,
+      "total_tokens": 242,
+      "cost": 0.002307,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 90,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002307,
+        "upstream_inference_prompt_cost": 2.7e-05,
+        "upstream_inference_completions_cost": 0.00228
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 94,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 5837,
+  "provider": "openrouter",
+  "model_requested": "moonshotai/kimi-k3",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}
