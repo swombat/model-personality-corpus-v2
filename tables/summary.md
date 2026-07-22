@@ -1,9 +1,9 @@
 # Freeflow Analysis Summary
 
-**Total cells:** 244  
-**Cells with ≥1 valid sample:** 244  
-**Total valid samples:** 25545  
-**Bin distribution:** in=229, transitional=13, out=2, no-data=0
+**Total cells:** 247
+**Cells with ≥1 valid sample:** 247
+**Total valid samples:** 25920
+**Bin distribution:** in=232, transitional=13, out=2, no-data=0
 
 ## Composite scores per cell
 
@@ -16,6 +16,7 @@
 | gpt-5-5-or-pin-openai | 125 | 7562 | 72 | 4 | 0 | 0 | 62 | 207 | 224 | 54 | 5 | 8 | **636** | in |
 | minimax-m2-or-pin-google-r2 | 125 | 8980 | 4 | 5 | 1 | 2 | 59 | 225 | 304 | 11 | 3 | 4 | **618** | in |
 | opus-4-8-direct | 125 | 5743 | 5 | 1 | 5 | 0 | 256 | 108 | 53 | 68 | 15 | 26 | **537** | in |
+| inkling-or-pin-together | 125 | 6650 | 83 | 0 | 0 | 0 | 252 | 75 | 40 | 39 | 15 | 15 | **519** | in |
 | minimax-m2-or-pin-google | 125 | 9470 | 9 | 4 | 4 | 5 | 55 | 164 | 246 | 17 | 0 | 0 | **504** | in |
 | gpt-5-4-or-pin-openai | 125 | 7846 | 39 | 0 | 0 | 0 | 66 | 101 | 205 | 85 | 4 | 3 | **503** | in |
 | gpt-5-or-pin-openai | 125 | 9133 | 21 | 0 | 0 | 0 | 131 | 70 | 219 | 41 | 0 | 18 | **500** | in |
@@ -47,6 +48,7 @@
 | gpt-5-3-codex-direct | 125 | 7774 | 7 | 0 | 0 | 0 | 54 | 53 | 189 | 64 | 2 | 2 | **371** | in |
 | qwen3-max-or-pin-alibaba | 125 | 5704 | 7 | 30 | 0 | 1 | 21 | 162 | 98 | 22 | 15 | 14 | **370** | in |
 | glm-5-1-or-pin-parasail | 125 | 6351 | 78 | 0 | 0 | 0 | 159 | 20 | 59 | 28 | 3 | 22 | **369** | in |
+| gemini-3-6-flash-or-pin-google | 125 | 8722 | 72 | 0 | 0 | 5 | 110 | 25 | 67 | 60 | 10 | 18 | **367** | in |
 | gpt-5-3-codex-or-pin-openai | 125 | 7684 | 30 | 0 | 0 | 0 | 57 | 74 | 158 | 39 | 4 | 4 | **366** | in |
 | minimax-m3-direct | 125 | 5303 | 20 | 24 | 1 | 0 | 33 | 104 | 103 | 39 | 10 | 27 | **361** | in |
 | glm-5-1-or-pin-phala | 125 | 6514 | 65 | 0 | 0 | 0 | 175 | 21 | 36 | 38 | 2 | 23 | **360** | in |
@@ -56,6 +58,7 @@
 | gpt-5-1-codex-max-direct | 125 | 7893 | 50 | 0 | 0 | 0 | 26 | 145 | 89 | 33 | 5 | 8 | **356** | in |
 | glm-5-1-or-pin-inceptron | 121 | 6069 | 35 | 0 | 0 | 0 | 184 | 11 | 51 | 33 | 2 | 39 | **355** | in |
 | qwen3-max-thinking-or-pin-alibaba | 125 | 5858 | 8 | 28 | 0 | 1 | 21 | 125 | 113 | 28 | 20 | 6 | **350** | in |
+| gemini-3-5-flash-lite-or-pin-google | 125 | 6724 | 91 | 2 | 0 | 19 | 30 | 40 | 94 | 39 | 16 | 18 | **349** | in |
 | gpt-5-2-codex-or-pin-openai | 125 | 6516 | 12 | 0 | 0 | 0 | 22 | 160 | 123 | 25 | 0 | 6 | **348** | in |
 | glm-5-1-or-pin-together | 122 | 6830 | 71 | 0 | 0 | 0 | 154 | 12 | 40 | 51 | 5 | 13 | **346** | in |
 | glm-5-1-or-pin-zai | 120 | 6448 | 71 | 0 | 0 | 0 | 162 | 15 | 41 | 37 | 2 | 18 | **346** | in |

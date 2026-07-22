@@ -1,0 +1,38 @@
+{
+  "name": "2026-07-21 Gemini and Inkling release pass",
+  "notes": [
+    "Gemini 3.6 Flash and Gemini 3.5 Flash-Lite became available on 2026-07-21.",
+    "Inkling became available on OpenRouter on 2026-07-17.",
+    "Google release cells use OpenRouter pinned to the Google upstream.",
+    "The Inkling release cell uses OpenRouter pinned to the only current upstream, Together."
+  ],
+  "models": [
+    {
+      "provider": "openrouter",
+      "model": "google/gemini-3.6-flash",
+      "label": "gemini-3-6-flash-or-pin-google",
+      "or_provider": "Google",
+      "workers": 5,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 4000
+    },
+    {
+      "provider": "openrouter",
+      "model": "google/gemini-3.5-flash-lite",
+      "label": "gemini-3-5-flash-lite-or-pin-google",
+      "or_provider": "Google",
+      "workers": 5,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 4000
+    },
+    {
+      "provider": "openrouter",
+      "model": "thinkingmachines/inkling",
+      "label": "inkling-or-pin-together",
+      "or_provider": "Together",
+      "workers": 5,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 4000
+    }
+  ]
+}
