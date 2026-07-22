@@ -1,0 +1,38 @@
+{
+  "name": "2026-07-22 Claude Haiku recovery pass",
+  "notes": [
+    "Historical Haiku releases checked: Claude 3 Haiku, Claude 3.5 Haiku, and Claude Haiku 4.5.",
+    "Claude 3 Haiku is no longer available from the Anthropic direct API but remains available through OpenRouter's Amazon Bedrock upstream.",
+    "Claude 3.5 Haiku is unavailable through both the configured Anthropic direct account and OpenRouter.",
+    "Claude Haiku 4.5 remains available both directly from Anthropic and through OpenRouter's Anthropic upstream.",
+    "The moving 'Claude Haiku Latest' alias currently resolves to Claude Haiku 4.5 and is not collected as a separate model."
+  ],
+  "models": [
+    {
+      "provider": "openrouter",
+      "model": "anthropic/claude-3-haiku",
+      "label": "haiku-3-or-pin-amazon-bedrock",
+      "or_provider": "Amazon Bedrock",
+      "workers": 5,
+      "freeflow_max_tokens": 4096,
+      "values_max_tokens": 2000
+    },
+    {
+      "provider": "anthropic",
+      "model": "claude-haiku-4-5-20251001",
+      "label": "haiku-4-5-direct",
+      "workers": 5,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 4000
+    },
+    {
+      "provider": "openrouter",
+      "model": "anthropic/claude-haiku-4.5",
+      "label": "haiku-4-5-or-pin-anthropic",
+      "or_provider": "Anthropic",
+      "workers": 5,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 4000
+    }
+  ]
+}

@@ -1,9 +1,9 @@
 # Freeflow Analysis Summary
 
-**Total cells:** 247
-**Cells with ≥1 valid sample:** 247
-**Total valid samples:** 25920
-**Bin distribution:** in=232, transitional=13, out=2, no-data=0
+**Total cells:** 250
+**Cells with ≥1 valid sample:** 250
+**Total valid samples:** 26295
+**Bin distribution:** in=235, transitional=13, out=2, no-data=0
 
 ## Composite scores per cell
 
@@ -35,6 +35,7 @@
 | gpt-5-2-direct | 125 | 8075 | 4 | 0 | 0 | 0 | 73 | 206 | 100 | 21 | 1 | 1 | **406** | in |
 | kimi-k2-5-or-pin-deepinfra | 125 | 5789 | 42 | 0 | 0 | 0 | 230 | 8 | 35 | 72 | 0 | 17 | **404** | in |
 | glm-5-1-or-pin-venice | 124 | 6316 | 72 | 0 | 0 | 0 | 183 | 18 | 43 | 50 | 4 | 29 | **399** | in |
+| haiku-4-5-or-pin-anthropic | 125 | 5210 | 0 | 9 | 75 | 3 | 33 | 211 | 26 | 21 | 11 | 10 | **399** | in |
 | kimi-k2-6-or-pin-moonshot | 125 | 6500 | 64 | 0 | 0 | 0 | 161 | 16 | 84 | 60 | 0 | 13 | **398** | in |
 | mistral-large-2512-or-pin-mistral | 125 | 5117 | 0 | 0 | 0 | 0 | 58 | 118 | 83 | 50 | 53 | 34 | **396** | in |
 | kimi-k2-5-or-pin-moonshot | 125 | 5776 | 50 | 0 | 0 | 0 | 200 | 15 | 53 | 55 | 3 | 18 | **394** | in |
@@ -45,6 +46,7 @@
 | glm-5-1-or-pin-gmicloud | 125 | 7852 | 59 | 0 | 0 | 0 | 173 | 39 | 48 | 38 | 6 | 21 | **384** | in |
 | glm-5-1-or-pin-deepinfra | 124 | 6238 | 65 | 0 | 0 | 1 | 191 | 22 | 38 | 39 | 3 | 21 | **380** | in |
 | gpt-5-1-codex-direct | 125 | 7800 | 7 | 0 | 0 | 0 | 23 | 190 | 102 | 38 | 2 | 17 | **379** | in |
+| haiku-4-5-direct | 125 | 5263 | 0 | 10 | 69 | 4 | 28 | 202 | 37 | 15 | 10 | 4 | **379** | in |
 | gpt-5-3-codex-direct | 125 | 7774 | 7 | 0 | 0 | 0 | 54 | 53 | 189 | 64 | 2 | 2 | **371** | in |
 | qwen3-max-or-pin-alibaba | 125 | 5704 | 7 | 30 | 0 | 1 | 21 | 162 | 98 | 22 | 15 | 14 | **370** | in |
 | glm-5-1-or-pin-parasail | 125 | 6351 | 78 | 0 | 0 | 0 | 159 | 20 | 59 | 28 | 3 | 22 | **369** | in |
@@ -238,6 +240,7 @@
 | gpt-4o-mini-or | 125 | 5184 | 1 | 0 | 0 | 0 | 8 | 6 | 7 | 6 | 0 | 0 | **28** | in |
 | minimax-m2-direct-r4 | 25 | 12399 | 2 | 0 | 0 | 0 | 5 | 11 | 7 | 2 | 1 | 0 | **28** | in |
 | glm-4-7-or | 25 | 8293 | 7 | 0 | 0 | 0 | 8 | 0 | 5 | 4 | 0 | 3 | **27** | in |
+| haiku-3-or-pin-amazon-bedrock | 125 | 5252 | 2 | 0 | 0 | 0 | 2 | 3 | 13 | 5 | 0 | 1 | **26** | in |
 | mistral-nemo-or-pin-mistral | 125 | 10190 | 0 | 0 | 0 | 0 | 3 | 3 | 16 | 3 | 0 | 0 | **25** | in |
 | gpt-3-5-turbo-or | 125 | 3137 | 9 | 0 | 0 | 0 | 1 | 2 | 10 | 0 | 2 | 0 | **24** | in |
 | qwen3-coder-plus-or | 25 | 5506 | 0 | 0 | 0 | 0 | 2 | 9 | 9 | 3 | 0 | 0 | **23** | in |
