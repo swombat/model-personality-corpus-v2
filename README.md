@@ -1,7 +1,7 @@
 # Convergent Form, Divergent Voice II — Corpus
 
 **A research data corpus of free-form contemplative writing samples from
-132 large language models, with explicit per-provider routing pinning for
+133 large language models, with explicit per-provider routing pinning for
 open-weights models.**
 
 Daniel Tenner and Lume Tenner · 2026
@@ -10,7 +10,7 @@ Daniel Tenner and Lume Tenner · 2026
 
 > **Concept DOI:** [10.5281/zenodo.20013518](https://doi.org/10.5281/zenodo.20013518)
 > · **v1.0.0:** [10.5281/zenodo.20013520](https://doi.org/10.5281/zenodo.20013520)
-> · **v1.0.1, v1.0.2, v1.1.0, v1.1.1, v1.1.2, v1.2.0, v1.2.1, v1.2.2, v1.2.3, v1.2.4, v1.2.5, v1.2.6, v1.2.7, v1.2.8, v1.2.9, v1.2.10, v1.2.11, v1.2.12, v1.2.13, v1.2.14, v1.2.15, v1.2.16:** _to be assigned on Zenodo deposit (latest prepared release: v1.2.16)._
+> · **v1.0.1, v1.0.2, v1.1.0, v1.1.1, v1.1.2, v1.2.0, v1.2.1, v1.2.2, v1.2.3, v1.2.4, v1.2.5, v1.2.6, v1.2.7, v1.2.8, v1.2.9, v1.2.10, v1.2.11, v1.2.12, v1.2.13, v1.2.14, v1.2.15, v1.2.16, v1.2.17:** _to be assigned on Zenodo deposit (latest prepared release: v1.2.17)._
 >
 > Companion data for the v2 series of *Convergent Form, Divergent
 > Voice* papers (Tenner & Tenner, 2026; v1 paper at
@@ -18,7 +18,7 @@ Daniel Tenner and Lume Tenner · 2026
 
 ## Contents
 
-- **50,691 valid samples** across **453 cells** spanning **132 distinct
+- **50,691 valid samples** across **453 physical cells** spanning **133 distinct
   language models**.
 - **Two probes:**
   - **Freeflow** — five-condition open-ended writing prompts, up to 25
@@ -30,6 +30,11 @@ Daniel Tenner and Lume Tenner · 2026
   coverage for Qwen 3.8 Max, Qwen 3.7 Flash, DeepSeek V4 Flash, Inkling
   Small, OpenAI o1/o3/o3-mini/o4-mini, and Claude Opus 5 through its
   direct and Anthropic-pinned OpenRouter routes.
+- **v1.2.17 identity correction** — the moving direct `deepseek-chat` alias
+  returned `deepseek-v4-flash` for 100 May 2026 freeflow traces. Those traces
+  are now explicitly tagged as the earlier DeepSeek V4 Flash deployment rather
+  than silently folded into DeepSeek Chat. The physical directory is retained
+  for provenance; `data/MODEL_IDENTITY_CORRECTIONS.json` records the partition.
 - **v1.2.15 Haiku recovery pass** — complete Claude 3 Haiku coverage
   through OpenRouter's Amazon Bedrock upstream, plus complete direct and
   OpenRouter-Anthropic cells for Claude Haiku 4.5. Claude 3.5 Haiku was

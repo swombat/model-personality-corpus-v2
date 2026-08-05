@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "corrections": [
+    {
+      "physical_cell": "deepseek-chat-direct",
+      "probe": "freeflow",
+      "requested_model": "deepseek-chat",
+      "partitions": [
+        {
+          "returned_model": "deepseek-chat",
+          "sample_selector": "*_1.json through *_5.json",
+          "samples": 25
+        },
+        {
+          "returned_model": "deepseek-v4-flash",
+          "sample_selector": "*_6.json through *_25.json",
+          "samples": 100,
+          "collected_at": "2026-05-18",
+          "system_fingerprint": "fp_8b330d02d0_prod0820_fp8_kvcache_20260402"
+        }
+      ],
+      "note": "The direct API alias moved between the initial collection and the n=125 top-up. Returned model identity is authoritative for this partition; files remain in their original directory to preserve provenance."
+    }
+  ]
+}
