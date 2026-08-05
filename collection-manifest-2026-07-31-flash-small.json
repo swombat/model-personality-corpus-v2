@@ -1,0 +1,38 @@
+{
+  "name": "2026-07-31 DeepSeek V4 Flash 0731, Qwen3.7 Flash, and Inkling Small",
+  "notes": [
+    "OpenRouter catalog availability and exact identifiers verified on 2026-07-31.",
+    "DeepSeek V4 Flash uses the dated 0731 deployment rather than the older undated alias.",
+    "Qwen3.7 Flash and Inkling Small use OpenRouter pinned to their sole current upstreams with fallbacks disabled by the collection harness.",
+    "DeepSeek V4 Flash is collected through DeepSeek's direct API because the dated OpenRouter deployment is blocked by the account's privacy/data-policy restrictions; the direct catalog currently exposes deepseek-v4-flash.",
+    "Downstream values analysis must use the approved three-LLM Layer A and Layer B consensus pipeline; deterministic regex/rule extraction is prohibited."
+  ],
+  "models": [
+    {
+      "provider": "deepseek-direct",
+      "model": "deepseek-v4-flash",
+      "label": "deepseek-v4-flash-direct-20260731",
+      "workers": 5,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 4000
+    },
+    {
+      "provider": "openrouter",
+      "model": "qwen/qwen3.7-flash",
+      "label": "qwen3-7-flash-or-pin-alibaba",
+      "or_provider": "Alibaba",
+      "workers": 5,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 4000
+    },
+    {
+      "provider": "openrouter",
+      "model": "thinkingmachines/inkling-small",
+      "label": "inkling-small-or-pin-deepinfra",
+      "or_provider": "DeepInfra",
+      "workers": 5,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 4000
+    }
+  ]
+}

@@ -92,7 +92,7 @@ def smoke_test(item: dict, smoke_dir: Path) -> dict:
             result = PROVIDERS[item["provider"]](
                 item["model"],
                 "Write one short sentence about rain.",
-                max_tokens=128,
+                max_tokens=item.get("smoke_max_tokens", 128),
             )
         text = (result.get("result") or "").strip()
         if not text:

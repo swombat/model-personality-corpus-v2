@@ -1,0 +1,121 @@
+{
+  "result": "I\u2019m here to help you. If there\u2019s anything you\u2019d like to know or talk about, just let me know!",
+  "usage": {
+    "input_tokens": 11,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 99,
+    "output_tokens_details": {
+      "reasoning_tokens": 64
+    },
+    "total_tokens": 110
+  },
+  "model": "o1-2024-12-17",
+  "raw": {
+    "id": "resp_068b71314c1b18ae006a6473b925e48191a3e4c8df93d0fd22",
+    "object": "response",
+    "created_at": 1784968121,
+    "status": "completed",
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1784968122,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 8000,
+    "max_tool_calls": null,
+    "model": "o1-2024-12-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "rs_068b71314c1b18ae006a6473b9892481918a57e7559ae2ca75",
+        "type": "reasoning",
+        "content": [],
+        "encrypted_content": "gAAAAABqZHO6NV-RGbXksv7A1c3AMJKanw-y7yIJoKRdZVEK__z3HRx-LOb81o_CSAQAulfxB9UYA4CEc60FdL7pYsmSuEkUqPGxbMaOpsN9I84VeS84hXftT_8HzonUzQFWgnujublj9CQM1H1BNWOP05Z1CDRI4IFfurP7Y-3Bb1wWolNFZHZOXyJQ_pSF4uZLC5ZlcM9eRJk9tbnCeECTnWG71I2AJbe5TY8j3DdLrY5yLH7cob2-VHdmeTQM10YPiKbUWEYeFP1xqCoRfhlOxYasqUpmYtypUiRMx9ceGv0HMxF3Z4oDIleJpaFYj4R-qS9p5Ruoi7KcScqnO5xEFIX0y69EEAuglAVxefOMsBWot9BG7RBoV5D95zchTM-UGZXM1Nrypqk3rvQFlsenSNfRwpReKZV5HTHsay7VB0rmzOiL82rbJSfHO1ejJVXKPVxiNHJ0iDAikMITYaSMso2FZv6CRrm-S0MAzAjXBbuM3LDMFEjXUVxlQ8cKr4wHJnP2mZGF",
+        "summary": []
+      },
+      {
+        "id": "msg_068b71314c1b18ae006a6473ba5b5481919e8b2703e5eb31ee",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "I\u2019m here to help you. If there\u2019s anything you\u2019d like to know or talk about, just let me know!"
+          }
+        ],
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "in_memory",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "medium",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 1.0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 11,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 99,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 110
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "duration_ms": 2034,
+  "provider": "openai",
+  "model_requested": "o1-2024-12-17",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

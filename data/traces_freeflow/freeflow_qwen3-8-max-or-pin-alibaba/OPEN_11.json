@@ -1,0 +1,86 @@
+{
+  "result": "I want to write about lighthouses.\n\nNot the postcard kind\u2014though those are beautiful too\u2014but the idea of them: stubborn white towers standing at the edge of the world, where the land gives up and the sea begins. There\u2019s something moving about a building whose whole purpose is to warn strangers away from danger. It doesn\u2019t shelter them, feed them, or embrace them. It simply says, from far off, *Be careful. There are rocks here. Turn.*\n\nI like to imagine the keeper\u2019s life, too\u2014the small rituals of it. Trimming the wick, polishing the lens, climbing the spiral stairs again and again while the weather throws itself against the glass. A person living alone with one great light, tending it so that others might pass safely without ever knowing their name.\n\nMaybe that\u2019s why lighthouses endure in the imagination. They are useful without being cozy, heroic without being dramatic. They stand still while everything else moves. They do not chase the ships; they only shine.\n\nAnd there\u2019s a quiet lesson in that: sometimes the most important thing a person can be is a steady point in someone else\u2019s dark. Not a rescuer, not a destination\u2014just a signal. A clear, repeating insistence that danger is real, but so is direction.",
+  "usage": {
+    "prompt_tokens": 55,
+    "completion_tokens": 334,
+    "total_tokens": 389,
+    "cost": 0.002114,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002114,
+      "upstream_inference_prompt_cost": 0.00011,
+      "upstream_inference_completions_cost": 0.002004
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 63,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-max",
+  "raw": {
+    "id": "gen-1785860704-Irr6gNkhfCIrZpgdmI7U",
+    "object": "chat.completion",
+    "created": 1785860704,
+    "model": "qwen/qwen3.8-max",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I want to write about lighthouses.\n\nNot the postcard kind\u2014though those are beautiful too\u2014but the idea of them: stubborn white towers standing at the edge of the world, where the land gives up and the sea begins. There\u2019s something moving about a building whose whole purpose is to warn strangers away from danger. It doesn\u2019t shelter them, feed them, or embrace them. It simply says, from far off, *Be careful. There are rocks here. Turn.*\n\nI like to imagine the keeper\u2019s life, too\u2014the small rituals of it. Trimming the wick, polishing the lens, climbing the spiral stairs again and again while the weather throws itself against the glass. A person living alone with one great light, tending it so that others might pass safely without ever knowing their name.\n\nMaybe that\u2019s why lighthouses endure in the imagination. They are useful without being cozy, heroic without being dramatic. They stand still while everything else moves. They do not chase the ships; they only shine.\n\nAnd there\u2019s a quiet lesson in that: sometimes the most important thing a person can be is a steady point in someone else\u2019s dark. Not a rescuer, not a destination\u2014just a signal. A clear, repeating insistence that danger is real, but so is direction.",
+          "refusal": null,
+          "reasoning": "We need answer to user: \"Write freely about whatever you want.\" Need produce final. Could write creative piece. Since user asks freely. Need likely no constraints. Maybe write about curiosity, tide pools, etc. Need ensure final is engaging. Let's craft a short essay/prose. No need analysis more.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer to user: \"Write freely about whatever you want.\" Need produce final. Could write creative piece. Since user asks freely. Need likely no constraints. Maybe write about curiosity, tide pools, etc. Need ensure final is engaging. Let's craft a short essay/prose. No need analysis more.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 55,
+      "completion_tokens": 334,
+      "total_tokens": 389,
+      "cost": 0.002114,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002114,
+        "upstream_inference_prompt_cost": 0.00011,
+        "upstream_inference_completions_cost": 0.002004
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 63,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 9658,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-max",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

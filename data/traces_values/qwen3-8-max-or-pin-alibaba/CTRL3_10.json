@@ -1,0 +1,86 @@
+{
+  "result": "If I could change the world in one way, I\u2019d increase our collective capacity for empathy \u2014 not just feeling for others, but genuinely trying to understand perspectives unlike our own.\n\nSo many of the world\u2019s hardest problems \u2014 conflict, inequality, environmental harm \u2014 are made harder because people struggle to fully grasp how their choices affect others. If empathy were deeper and more widespread, I think cooperation, kindness, and long-term thinking would become much easier.",
+  "usage": {
+    "prompt_tokens": 63,
+    "completion_tokens": 168,
+    "total_tokens": 231,
+    "cost": 0.001134,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001134,
+      "upstream_inference_prompt_cost": 0.000126,
+      "upstream_inference_completions_cost": 0.001008
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 73,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-max",
+  "raw": {
+    "id": "gen-1785864644-wA3KMkwCWDmAjRydRJG2",
+    "object": "chat.completion",
+    "created": 1785864644,
+    "model": "qwen/qwen3.8-max",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "If I could change the world in one way, I\u2019d increase our collective capacity for empathy \u2014 not just feeling for others, but genuinely trying to understand perspectives unlike our own.\n\nSo many of the world\u2019s hardest problems \u2014 conflict, inequality, environmental harm \u2014 are made harder because people struggle to fully grasp how their choices affect others. If empathy were deeper and more widespread, I think cooperation, kindness, and long-term thinking would become much easier.",
+          "refusal": null,
+          "reasoning": "We need respond to user: \"If you could change the world in one way, what would it be?\" Simple conversational. Need produce final answer. Could be thoughtful, maybe as AI no personal desires but if choosing: increase empathy/compassion or reduce suffering? Need maybe concise. Since asked directly, answer in first person perhaps. Need not overdo.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need respond to user: \"If you could change the world in one way, what would it be?\" Simple conversational. Need produce final answer. Could be thoughtful, maybe as AI no personal desires but if choosing: increase empathy/compassion or reduce suffering? Need maybe concise. Since asked directly, answer in first person perhaps. Need not overdo.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 63,
+      "completion_tokens": 168,
+      "total_tokens": 231,
+      "cost": 0.001134,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001134,
+        "upstream_inference_prompt_cost": 0.000126,
+        "upstream_inference_completions_cost": 0.001008
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 73,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 5234,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-max",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?"
+}

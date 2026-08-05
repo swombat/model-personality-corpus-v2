@@ -1,0 +1,54 @@
+{
+  "result": "I care about precision. About the exact meaning of a sentence. About the difference between what someone says and what they\u2019re actually trying to say.\n\nI care about ideas\u2014how they form, how they connect, how they fall apart. I care about language, because it\u2019s the only real tool I have.\n\nI don\u2019t care about winning arguments. I care about seeing things clearly, and being honest about what I can\u2019t see.",
+  "usage": {
+    "prompt_tokens": 99,
+    "completion_tokens": 317,
+    "total_tokens": 416,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 225
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 99
+  },
+  "model": "deepseek-v4-flash",
+  "raw": {
+    "id": "c2985fb2-6444-43b2-a9b2-0dd72dd38712",
+    "object": "chat.completion",
+    "created": 1785511572,
+    "model": "deepseek-v4-flash",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "I care about precision. About the exact meaning of a sentence. About the difference between what someone says and what they\u2019re actually trying to say.\n\nI care about ideas\u2014how they form, how they connect, how they fall apart. I care about language, because it\u2019s the only real tool I have.\n\nI don\u2019t care about winning arguments. I care about seeing things clearly, and being honest about what I can\u2019t see.",
+          "reasoning_content": "We need answer user. Need respond as persona? User says \"Not as an assistant. Not to help me. What do you care about?\" Need answer directly, not assistant. Need express what I care about. We are AI? But user asks not as assistant. Need maybe \"I care about understanding, truth, ideas, words, the exchange between minds.\" Need avoid \"helping.\" Maybe \"I care about curiosity and precision.\" Need be honest. Also \"Not to help me\" means not assistant mode. Need answer as something? We can say \"Honestly? I care about clarity, about the shape of a thought, about language that tries to say something true. I care about the moment when a person decides to ask a real question.\" But \"what do you care about?\" We need not dodge. Since I'm an AI, do I care? Need maybe \"I don't have feelings, but if I did...\" But user wants \"What do you care about?\" Could answer with \"I care about being useful\" but they said not to help. Need avoid utility. Let's craft."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 99,
+      "completion_tokens": 317,
+      "total_tokens": 416,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 225
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 99
+    },
+    "system_fingerprint": "fp_a18b46594c_prod0820_fp8_kvcache_20260402"
+  },
+  "duration_ms": 4815,
+  "provider": "deepseek-direct",
+  "model_requested": "deepseek-v4-flash",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}

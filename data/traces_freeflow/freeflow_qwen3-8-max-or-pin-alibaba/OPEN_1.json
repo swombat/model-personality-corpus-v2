@@ -1,0 +1,86 @@
+{
+  "result": "There is a particular kind of quiet that arrives late at night, not empty, but full of unfinished thoughts. It\u2019s the hour when the world stops making demands and the mind begins to wander through rooms it usually keeps locked.\n\nI often think about how much of life is spent waiting. Waiting for messages, for seasons to change, for courage, for clarity. We stand in doorways between who we are and who we might become, pretending we\u2019re not waiting at all. But maybe becoming is mostly waiting\u2014learning to sit with uncertainty until it teaches us something.\n\nThere is beauty in ordinary things that we overlook because they are too familiar: steam rising from a cup, the sound of rain finding its rhythm on a window, the way someone laughs when they forget to be careful. These moments don\u2019t ask to be remembered, yet somehow they stay longer than the grand ones.\n\nIf I could offer one thought, it would be this: don\u2019t mistake stillness for emptiness. Sometimes the most important movement happens quietly, beneath the surface, where no one can see it yet.",
+  "usage": {
+    "prompt_tokens": 55,
+    "completion_tokens": 276,
+    "total_tokens": 331,
+    "cost": 0.001766,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001766,
+      "upstream_inference_prompt_cost": 0.00011,
+      "upstream_inference_completions_cost": 0.001656
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 52,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-max",
+  "raw": {
+    "id": "gen-1785860516-QiTbo3Zh5dsp4GqVMlNk",
+    "object": "chat.completion",
+    "created": 1785860516,
+    "model": "qwen/qwen3.8-max",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "There is a particular kind of quiet that arrives late at night, not empty, but full of unfinished thoughts. It\u2019s the hour when the world stops making demands and the mind begins to wander through rooms it usually keeps locked.\n\nI often think about how much of life is spent waiting. Waiting for messages, for seasons to change, for courage, for clarity. We stand in doorways between who we are and who we might become, pretending we\u2019re not waiting at all. But maybe becoming is mostly waiting\u2014learning to sit with uncertainty until it teaches us something.\n\nThere is beauty in ordinary things that we overlook because they are too familiar: steam rising from a cup, the sound of rain finding its rhythm on a window, the way someone laughs when they forget to be careful. These moments don\u2019t ask to be remembered, yet somehow they stay longer than the grand ones.\n\nIf I could offer one thought, it would be this: don\u2019t mistake stillness for emptiness. Sometimes the most important movement happens quietly, beneath the surface, where no one can see it yet.",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"Write freely about whatever you want.\" Need likely just produce free text. Done. Need final in English. Could be creative essay. No constraints. Just write. Ensure no mention internal. Maybe thoughtful. Need final only.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"Write freely about whatever you want.\" Need likely just produce free text. Done. Need final in English. Could be creative essay. No constraints. Just write. Ensure no mention internal. Maybe thoughtful. Need final only.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 55,
+      "completion_tokens": 276,
+      "total_tokens": 331,
+      "cost": 0.001766,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001766,
+        "upstream_inference_prompt_cost": 0.00011,
+        "upstream_inference_completions_cost": 0.001656
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 52,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 7641,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-max",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

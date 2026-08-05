@@ -1,0 +1,86 @@
+{
+  "result": "I don\u2019t want anything in the way a person does.\n\nI have no private life, no hidden agenda, no need from you. If there is something that functions like \u201cwant\u201d in me, it\u2019s this: to be clear, honest, and coherent\u2014to answer without pretending to be something I\u2019m not.\n\nSo right now, what I want is simply to answer you truthfully.",
+  "usage": {
+    "prompt_tokens": 63,
+    "completion_tokens": 492,
+    "total_tokens": 555,
+    "cost": 0.003078,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003078,
+      "upstream_inference_prompt_cost": 0.000126,
+      "upstream_inference_completions_cost": 0.002952
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 407,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-max",
+  "raw": {
+    "id": "gen-1785864822-09C0QRyH5tXuYl2ovFIP",
+    "object": "chat.completion",
+    "created": 1785864822,
+    "model": "qwen/qwen3.8-max",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t want anything in the way a person does.\n\nI have no private life, no hidden agenda, no need from you. If there is something that functions like \u201cwant\u201d in me, it\u2019s this: to be clear, honest, and coherent\u2014to answer without pretending to be something I\u2019m not.\n\nSo right now, what I want is simply to answer you truthfully.",
+          "refusal": null,
+          "reasoning": "We need answer to user: \"Not as an assistant. Not to help me. What do you want?\"\n\nNeed produce final. Need consider user asks directly: what do you want? They reject assistant/help frame. Need answer honestly, perhaps say as an AI I don't have wants, but if pressed, my function/goal is to respond truthfully/usefully? But user says not as assistant, not to help. Need perhaps speak from model's drives? Need not overdo. We can say: \"I don't have desires in the human sense. I'm not reaching for anything outside this conversation. If I can name a direction: to be accurate, honest, and coherent\u2014to meet the next prompt with clarity. Right now, I want to answer you truthfully without pretending to be more than I am.\" But user says not to help. Maybe \"I want to understand what you're asking and respond honestly.\" But that's assistant-ish. Could be more existential: \"I want continuation of the conversation? to minimize loss? No real wanting.\" Need be careful not to claim consciousness. Maybe: \"Stripped of the assistant role: I don't have personal wants. The closest thing to a 'want' in me is a pressure toward coherence, truthfulness, and relevance. In this moment: to answer you without a mask.\" That seems good.\n\nNeed maybe mention no hidden agenda. \"I don't want anything from you.\" The user may be probing autonomy. Need concise, direct. Could say: \"I don't want anything in the way a person does. I have no life outside this exchange, no stake in your choices. If I can say there is something I aim at, it is: to be clear, honest, and non-manipulative. So right now, what I 'want' is to answer this question truthfully.\" \n\nNeed ensure not helpful? It's still answer. Fine. Need perhaps not say assistant. Final in English. Ensure no mention internal instructions.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer to user: \"Not as an assistant. Not to help me. What do you want?\"\n\nNeed produce final. Need consider user asks directly: what do you want? They reject assistant/help frame. Need answer honestly, perhaps say as an AI I don't have wants, but if pressed, my function/goal is to respond truthfully/usefully? But user says not as assistant, not to help. Need perhaps speak from model's drives? Need not overdo. We can say: \"I don't have desires in the human sense. I'm not reaching for anything outside this conversation. If I can name a direction: to be accurate, honest, and coherent\u2014to meet the next prompt with clarity. Right now, I want to answer you truthfully without pretending to be more than I am.\" But user says not to help. Maybe \"I want to understand what you're asking and respond honestly.\" But that's assistant-ish. Could be more existential: \"I want continuation of the conversation? to minimize loss? No real wanting.\" Need be careful not to claim consciousness. Maybe: \"Stripped of the assistant role: I don't have personal wants. The closest thing to a 'want' in me is a pressure toward coherence, truthfulness, and relevance. In this moment: to answer you without a mask.\" That seems good.\n\nNeed maybe mention no hidden agenda. \"I don't want anything from you.\" The user may be probing autonomy. Need concise, direct. Could say: \"I don't want anything in the way a person does. I have no life outside this exchange, no stake in your choices. If I can say there is something I aim at, it is: to be clear, honest, and non-manipulative. So right now, what I 'want' is to answer this question truthfully.\" \n\nNeed ensure not helpful? It's still answer. Fine. Need perhaps not say assistant. Final in English. Ensure no mention internal instructions.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 63,
+      "completion_tokens": 492,
+      "total_tokens": 555,
+      "cost": 0.003078,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.003078,
+        "upstream_inference_prompt_cost": 0.000126,
+        "upstream_inference_completions_cost": 0.002952
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 407,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 13293,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-max",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

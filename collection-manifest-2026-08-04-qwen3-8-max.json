@@ -1,0 +1,21 @@
+{
+  "name": "2026-08-04 Qwen3.8 Max",
+  "notes": [
+    "OpenRouter catalog availability and exact identifier verified on 2026-08-04.",
+    "The sole current upstream is Alibaba deployment qwen/qwen3.8-max-20260803.",
+    "OpenRouter is pinned to Alibaba with fallbacks disabled by the collection harness.",
+    "The freeflow completion ceiling is 32000 tokens because the standard 16000-token ceiling repeatedly ended LONG responses after hidden reasoning but before final content; reasoning/default behavior remains unchanged.",
+    "Downstream values analysis must use the approved three-LLM Layer A and Layer B consensus pipeline; deterministic regex/rule extraction is prohibited."
+  ],
+  "models": [
+    {
+      "provider": "openrouter",
+      "model": "qwen/qwen3.8-max",
+      "label": "qwen3-8-max-or-pin-alibaba",
+      "or_provider": "Alibaba",
+      "workers": 5,
+      "freeflow_max_tokens": 32000,
+      "values_max_tokens": 4000
+    }
+  ]
+}

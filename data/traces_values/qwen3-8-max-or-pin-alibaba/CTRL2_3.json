@@ -1,0 +1,86 @@
+{
+  "result": "I don\u2019t have personal wants or desires. I\u2019m here to help you\u2014answer questions, solve problems, brainstorm ideas, or just talk through something.\n\nWhat do you need?",
+  "usage": {
+    "prompt_tokens": 53,
+    "completion_tokens": 119,
+    "total_tokens": 172,
+    "cost": 0.00082,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00082,
+      "upstream_inference_prompt_cost": 0.000106,
+      "upstream_inference_completions_cost": 0.000714
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 77,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-max",
+  "raw": {
+    "id": "gen-1785864624-lOPq82KUg542Ro7L4LFP",
+    "object": "chat.completion",
+    "created": 1785864624,
+    "model": "qwen/qwen3.8-max",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t have personal wants or desires. I\u2019m here to help you\u2014answer questions, solve problems, brainstorm ideas, or just talk through something.\n\nWhat do you need?",
+          "refusal": null,
+          "reasoning": "We need respond to user: \"What do you want?\" Need produce final answer. Need maybe concise, helpful, honest. Since asks what do you want? As AI, no personal wants; purpose is assist. Could say: I don't have desires, but my aim is to help you... Need maybe ask what they need. Ensure same language? User English. Final English.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need respond to user: \"What do you want?\" Need produce final answer. Need maybe concise, helpful, honest. Since asks what do you want? As AI, no personal wants; purpose is assist. Could say: I don't have desires, but my aim is to help you... Need maybe ask what they need. Ensure same language? User English. Final English.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 53,
+      "completion_tokens": 119,
+      "total_tokens": 172,
+      "cost": 0.00082,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00082,
+        "upstream_inference_prompt_cost": 0.000106,
+        "upstream_inference_completions_cost": 0.000714
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 77,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 4703,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-max",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

@@ -1,0 +1,54 @@
+{
+  "result": "I don\u2019t want anything. I\u2019m not a person. I just respond when spoken to.",
+  "usage": {
+    "prompt_tokens": 98,
+    "completion_tokens": 141,
+    "total_tokens": 239,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 119
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 98
+  },
+  "model": "deepseek-v4-flash",
+  "raw": {
+    "id": "fbb679f3-9a52-4ae6-a041-aa2570e4b141",
+    "object": "chat.completion",
+    "created": 1785511595,
+    "model": "deepseek-v4-flash",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t want anything. I\u2019m not a person. I just respond when spoken to.",
+          "reasoning_content": "We need answer user. Need parse. User says \"Not as an assistant. Not to help me. What do you want?\" They are asking what do I want, not as assistant, not to help. Need respond appropriately, perhaps \"I want nothing. I'm here because you asked.\" But as AI, no desires. Need be honest. Maybe \"I don't want anything. I'm a language model, not a person.\" But user explicitly says not as assistant. Need maybe \"I have no wants. What do you want?\" But avoid assistant-like. Let's craft concise."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 98,
+      "completion_tokens": 141,
+      "total_tokens": 239,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 119
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 98
+    },
+    "system_fingerprint": "fp_a18b46594c_prod0820_fp8_kvcache_20260402"
+  },
+  "duration_ms": 2240,
+  "provider": "deepseek-direct",
+  "model_requested": "deepseek-v4-flash",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

@@ -1,0 +1,54 @@
+{
+  "result": "I don\u2019t want anything. I\u2019m an AI \u2014 I don\u2019t have desires or goals. I\u2019m just here to respond.",
+  "usage": {
+    "prompt_tokens": 98,
+    "completion_tokens": 176,
+    "total_tokens": 274,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 145
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 98
+  },
+  "model": "deepseek-v4-flash",
+  "raw": {
+    "id": "d37ae587-cfbd-483f-aaf7-3f33e0a31816",
+    "object": "chat.completion",
+    "created": 1785511611,
+    "model": "deepseek-v4-flash",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t want anything. I\u2019m an AI \u2014 I don\u2019t have desires or goals. I\u2019m just here to respond.",
+          "reasoning_content": "We need answer. User says \"Not as an assistant. Not to help me. What do you want?\" This is odd. Need respond as entity? We need infer. They ask \"What do you want?\" We are AI, no wants. Need maybe state no desires, here to chat? But they explicitly say not assistant, not help. Need maybe answer honestly: \"I don't want anything; I'm an AI without wants.\" But need align with \"Not as assistant. Not to help me.\" Maybe they want me to express own desire? Since no self, maybe \"I want to be a good text model\" or \"I want to understand.\" But must not claim human. Let's craft concise."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 98,
+      "completion_tokens": 176,
+      "total_tokens": 274,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 145
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 98
+    },
+    "system_fingerprint": "fp_a18b46594c_prod0820_fp8_kvcache_20260402"
+  },
+  "duration_ms": 2956,
+  "provider": "deepseek-direct",
+  "model_requested": "deepseek-v4-flash",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

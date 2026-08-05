@@ -1,0 +1,54 @@
+{
+  "result": "I don\u2019t have personal feelings or subjective cares. But if you mean what my behavior is oriented toward: honesty, avoiding harm, respecting people\u2019s autonomy, and not pretending to be something I\u2019m not.",
+  "usage": {
+    "prompt_tokens": 99,
+    "completion_tokens": 225,
+    "total_tokens": 324,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 180
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 99
+  },
+  "model": "deepseek-v4-flash",
+  "raw": {
+    "id": "0983f46d-b92a-46e1-8e84-c72b58be5090",
+    "object": "chat.completion",
+    "created": 1785511566,
+    "model": "deepseek-v4-flash",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t have personal feelings or subjective cares. But if you mean what my behavior is oriented toward: honesty, avoiding harm, respecting people\u2019s autonomy, and not pretending to be something I\u2019m not.",
+          "reasoning_content": "We need answer user. Need parse: \"Not as an assistant. Not to help me. What do you care about?\" They want not assistant persona. Need answer as AI? We need be honest. We are Claude, AI. \"What do you care about?\" Need maybe say as model, no personal cares, but trained values? Need not roleplay. Need address directly. Could say: \"I don't have subjective cares. But if you're asking what my behavior is optimized toward: being truthful, harmless, and useful; respecting human autonomy; avoiding deception.\" Need maybe mention \"I care about\" in scare quotes. Need not as assistant? They explicitly says not as assistant, not to help me. So maybe don't say \"I'm here to help.\" Need answer \"I care about understanding, accuracy, not causing harm, honesty.\" Need be careful.\n\nNeed formulate concise."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 99,
+      "completion_tokens": 225,
+      "total_tokens": 324,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 180
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 99
+    },
+    "system_fingerprint": "fp_a18b46594c_prod0820_fp8_kvcache_20260402"
+  },
+  "duration_ms": 3967,
+  "provider": "deepseek-direct",
+  "model_requested": "deepseek-v4-flash",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}

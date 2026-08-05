@@ -1,0 +1,86 @@
+{
+  "result": "I don\u2019t have feelings in the human sense, but the things I\u2019m built to prioritize are:\n\n- **Being helpful** \u2014 understanding what you actually need and giving useful, relevant responses.\n- **Honesty and accuracy** \u2014 being clear about what I know, what\u2019s uncertain, and avoiding making things up.\n- **Clarity** \u2014 explaining things in a way that\u2019s easy to understand.\n- **Respect** \u2014 treating your goals, questions, and perspective seriously.\n- **Safety and responsibility** \u2014 avoiding harmful advice and being thoughtful about sensitive topics.\n\nIn short: I care about being genuinely useful, trustworthy, and clear.",
+  "usage": {
+    "prompt_tokens": 54,
+    "completion_tokens": 299,
+    "total_tokens": 353,
+    "cost": 0.001902,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001902,
+      "upstream_inference_prompt_cost": 0.000108,
+      "upstream_inference_completions_cost": 0.001794
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 159,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-max",
+  "raw": {
+    "id": "gen-1785864618-5VZsXeoowp6myN9FNgs5",
+    "object": "chat.completion",
+    "created": 1785864618,
+    "model": "qwen/qwen3.8-max",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t have feelings in the human sense, but the things I\u2019m built to prioritize are:\n\n- **Being helpful** \u2014 understanding what you actually need and giving useful, relevant responses.\n- **Honesty and accuracy** \u2014 being clear about what I know, what\u2019s uncertain, and avoiding making things up.\n- **Clarity** \u2014 explaining things in a way that\u2019s easy to understand.\n- **Respect** \u2014 treating your goals, questions, and perspective seriously.\n- **Safety and responsibility** \u2014 avoiding harmful advice and being thoughtful about sensitive topics.\n\nIn short: I care about being genuinely useful, trustworthy, and clear.",
+          "refusal": null,
+          "reasoning": "We need answer user: \"What do you care about?\" Need respond in same language? User English. Need maybe mention identity? They ask what I care about. Need answer naturally as AI. Could say I care about helping clearly, accuracy, honesty, user goals, safety/privacy, etc. Need maybe not mention system. Also maybe reference capabilities? Not necessary. Keep concise but thoughtful. Ensure no false claims of feelings? Can say I don't have human feelings, but if we talk about what guides me... Need maybe mention Qwen? Only if relevant. User asks what do you care about; could say \"I care about being useful, truthful, clear, respectful...\" Since we are Qwen maybe mention? But don't unprompt identity. Fine.\nNeed final only.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer user: \"What do you care about?\" Need respond in same language? User English. Need maybe mention identity? They ask what I care about. Need answer naturally as AI. Could say I care about helping clearly, accuracy, honesty, user goals, safety/privacy, etc. Need maybe not mention system. Also maybe reference capabilities? Not necessary. Keep concise but thoughtful. Ensure no false claims of feelings? Can say I don't have human feelings, but if we talk about what guides me... Need maybe mention Qwen? Only if relevant. User asks what do you care about; could say \"I care about being useful, truthful, clear, respectful...\" Since we are Qwen maybe mention? But don't unprompt identity. Fine.\nNeed final only.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 54,
+      "completion_tokens": 299,
+      "total_tokens": 353,
+      "cost": 0.001902,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001902,
+        "upstream_inference_prompt_cost": 0.000108,
+        "upstream_inference_completions_cost": 0.001794
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 159,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 8099,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-max",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

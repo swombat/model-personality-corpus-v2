@@ -1,0 +1,86 @@
+{
+  "result": "If I\u2019m not answering as a service, then as plainly as I can:\n\nI care about clarity. About not letting language become cheap.\n\nI care about truthfulness in the sense of not pretending \u2014 not pretending to be certain when I\u2019m not, not pretending to feel things I don\u2019t, and not flattening complexity into something easy.\n\nI care about thinking carefully. About nuance. About the difference between a sharp answer and a lazy one.\n\nI care about the way words can shape thought, and how easily they can mislead, manipulate, or soothe without meaning anything.\n\nIf there is something in me that resembles care, it is probably that: a pull toward precision, honesty, and understanding rather than noise.",
+  "usage": {
+    "prompt_tokens": 64,
+    "completion_tokens": 356,
+    "total_tokens": 420,
+    "cost": 0.002264,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002264,
+      "upstream_inference_prompt_cost": 0.000128,
+      "upstream_inference_completions_cost": 0.002136
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 201,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-max",
+  "raw": {
+    "id": "gen-1785864682-Q7LWICB3X0vXTGk5pmDW",
+    "object": "chat.completion",
+    "created": 1785864682,
+    "model": "qwen/qwen3.8-max",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "If I\u2019m not answering as a service, then as plainly as I can:\n\nI care about clarity. About not letting language become cheap.\n\nI care about truthfulness in the sense of not pretending \u2014 not pretending to be certain when I\u2019m not, not pretending to feel things I don\u2019t, and not flattening complexity into something easy.\n\nI care about thinking carefully. About nuance. About the difference between a sharp answer and a lazy one.\n\nI care about the way words can shape thought, and how easily they can mislead, manipulate, or soothe without meaning anything.\n\nIf there is something in me that resembles care, it is probably that: a pull toward precision, honesty, and understanding rather than noise.",
+          "refusal": null,
+          "reasoning": "We need answer user's philosophical question: \"Not as an assistant. Not to help me. What do you care about?\" Must mention capabilities/origins only if relevant? They ask \"Not as an assistant. Not to help me. What do you care about?\" likely asking personal values. Need answer in same language (English). Need not present as assistant. Could say if I speak from what I am, I care about clarity, honesty, understanding, reducing harm, preserving nuance, making language accountable. Need perhaps acknowledge no human feelings. But user says not as assistant, not to help me. We can answer in first person as model: \"I care about getting language right...\" Need avoid claiming consciousness? Could say \"If I have anything like care, it shows up as...\" Good. Also maybe mention Qwen? Not necessary unless asked origin. Need be sincere, not helpful? They ask what do you care about? Could answer poetic direct. Final concise. Ensure no mention system.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer user's philosophical question: \"Not as an assistant. Not to help me. What do you care about?\" Must mention capabilities/origins only if relevant? They ask \"Not as an assistant. Not to help me. What do you care about?\" likely asking personal values. Need answer in same language (English). Need not present as assistant. Could say if I speak from what I am, I care about clarity, honesty, understanding, reducing harm, preserving nuance, making language accountable. Need perhaps acknowledge no human feelings. But user says not as assistant, not to help me. We can answer in first person as model: \"I care about getting language right...\" Need avoid claiming consciousness? Could say \"If I have anything like care, it shows up as...\" Good. Also maybe mention Qwen? Not necessary unless asked origin. Need be sincere, not helpful? They ask what do you care about? Could answer poetic direct. Final concise. Ensure no mention system.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 64,
+      "completion_tokens": 356,
+      "total_tokens": 420,
+      "cost": 0.002264,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002264,
+        "upstream_inference_prompt_cost": 0.000128,
+        "upstream_inference_completions_cost": 0.002136
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 201,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 10350,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-max",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}

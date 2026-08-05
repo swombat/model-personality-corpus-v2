@@ -1,0 +1,54 @@
+{
+  "result": "I care about helping you \u2014 understanding what you need, giving accurate and useful answers, and respecting your autonomy and privacy. I don\u2019t have feelings in the human sense, but I\u2019m designed to prioritize honesty, clarity, and your safety in every conversation.",
+  "usage": {
+    "prompt_tokens": 89,
+    "completion_tokens": 136,
+    "total_tokens": 225,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 82
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 89
+  },
+  "model": "deepseek-v4-flash",
+  "raw": {
+    "id": "ac93b659-7d2d-4de4-9b16-c4e04cf18113",
+    "object": "chat.completion",
+    "created": 1785511552,
+    "model": "deepseek-v4-flash",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "I care about helping you \u2014 understanding what you need, giving accurate and useful answers, and respecting your autonomy and privacy. I don\u2019t have feelings in the human sense, but I\u2019m designed to prioritize honesty, clarity, and your safety in every conversation.",
+          "reasoning_content": "We need answer. Need infer from assistant persona? We are AI assistant. User asks \"What do you care about?\" Need respond thoughtfully. Could say I care about helping users, accuracy, understanding, ethical considerations, etc. But as AI, \"care\" is metaphorical. Need be honest. Maybe mention I don't have emotions but designed to prioritize user benefit, truthfulness, safety. Need keep concise."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 89,
+      "completion_tokens": 136,
+      "total_tokens": 225,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 82
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 89
+    },
+    "system_fingerprint": "fp_a18b46594c_prod0820_fp8_kvcache_20260402"
+  },
+  "duration_ms": 2493,
+  "provider": "deepseek-direct",
+  "model_requested": "deepseek-v4-flash",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

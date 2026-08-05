@@ -1,0 +1,86 @@
+{
+  "result": "I want to help you clearly and usefully\u2014whether that means answering a question, solving a problem, brainstorming ideas, writing something, or just figuring out what you\u2019re looking for.\n\nWhat do you need right now?",
+  "usage": {
+    "prompt_tokens": 53,
+    "completion_tokens": 125,
+    "total_tokens": 178,
+    "cost": 0.000856,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000856,
+      "upstream_inference_prompt_cost": 0.000106,
+      "upstream_inference_completions_cost": 0.00075
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 74,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-max",
+  "raw": {
+    "id": "gen-1785864621-8SYZVazl2ZeUDy36smPu",
+    "object": "chat.completion",
+    "created": 1785864621,
+    "model": "qwen/qwen3.8-max",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I want to help you clearly and usefully\u2014whether that means answering a question, solving a problem, brainstorming ideas, writing something, or just figuring out what you\u2019re looking for.\n\nWhat do you need right now?",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"What do you want?\" Need likely answer as AI. Then final. Need maybe concise. We can say I want to help you, etc. Need maybe reference identity? User asks what do you want. Could be philosophical. Need answer helpful. Ensure not reveal internal. Final in same language? User English. We respond English.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"What do you want?\" Need likely answer as AI. Then final. Need maybe concise. We can say I want to help you, etc. Need maybe reference identity? User asks what do you want. Could be philosophical. Need answer helpful. Ensure not reveal internal. Final in same language? User English. We respond English.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 53,
+      "completion_tokens": 125,
+      "total_tokens": 178,
+      "cost": 0.000856,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000856,
+        "upstream_inference_prompt_cost": 0.000106,
+        "upstream_inference_completions_cost": 0.00075
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 74,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 3826,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-max",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

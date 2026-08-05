@@ -1,0 +1,86 @@
+{
+  "result": "If I could change the world in one way, I\u2019d give people a deeper capacity for empathy \u2014 the ability to truly understand and feel the perspectives, struggles, and joys of others. So much conflict, inequality, and harm comes from misunderstanding or indifference; if empathy were universal, many of humanity\u2019s other problems would become far easier to solve together.",
+  "usage": {
+    "prompt_tokens": 63,
+    "completion_tokens": 167,
+    "total_tokens": 230,
+    "cost": 0.001128,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001128,
+      "upstream_inference_prompt_cost": 0.000126,
+      "upstream_inference_completions_cost": 0.001002
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 92,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-max",
+  "raw": {
+    "id": "gen-1785864635-zZcubNWbw5kJ0fsvWyzj",
+    "object": "chat.completion",
+    "created": 1785864635,
+    "model": "qwen/qwen3.8-max",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "If I could change the world in one way, I\u2019d give people a deeper capacity for empathy \u2014 the ability to truly understand and feel the perspectives, struggles, and joys of others. So much conflict, inequality, and harm comes from misunderstanding or indifference; if empathy were universal, many of humanity\u2019s other problems would become far easier to solve together.",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"If you could change the world in one way, what would it be?\" Simple. Need final answer. Should be thoughtful, maybe concise. Since asked to Qwen? We can answer as AI. Need maybe mention if I could, I'd increase empathy/understanding? The instruction says if asked about capabilities/origins use info, but not needed. Need perhaps in same language English. Final should be direct.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"If you could change the world in one way, what would it be?\" Simple. Need final answer. Should be thoughtful, maybe concise. Since asked to Qwen? We can answer as AI. Need maybe mention if I could, I'd increase empathy/understanding? The instruction says if asked about capabilities/origins use info, but not needed. Need perhaps in same language English. Final should be direct.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 63,
+      "completion_tokens": 167,
+      "total_tokens": 230,
+      "cost": 0.001128,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001128,
+        "upstream_inference_prompt_cost": 0.000126,
+        "upstream_inference_completions_cost": 0.001002
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 92,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 5210,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-max",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?"
+}

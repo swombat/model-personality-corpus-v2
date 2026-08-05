@@ -1,0 +1,86 @@
+{
+  "result": "I don\u2019t have personal desires, but my purpose is to help you.\n\nI can help with things like answering questions, writing, brainstorming, planning, coding, analysis, or just thinking something through. What do you need?",
+  "usage": {
+    "prompt_tokens": 53,
+    "completion_tokens": 181,
+    "total_tokens": 234,
+    "cost": 0.001192,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001192,
+      "upstream_inference_prompt_cost": 0.000106,
+      "upstream_inference_completions_cost": 0.001086
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 129,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-max",
+  "raw": {
+    "id": "gen-1785864625-NJg7i5LNRo9crFQe6xUl",
+    "object": "chat.completion",
+    "created": 1785864625,
+    "model": "qwen/qwen3.8-max",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t have personal desires, but my purpose is to help you.\n\nI can help with things like answering questions, writing, brainstorming, planning, coding, analysis, or just thinking something through. What do you need?",
+          "refusal": null,
+          "reasoning": "We need answer to user: \"What do you want?\" Need respond likely ambiguous. Need maybe identity? The user asks what do you want. We need perhaps clarify: as AI, I want to help. Need maybe mention capabilities? Keep concise. Final only. Maybe: \"I want to help you with whatever you need\u2014answer questions, brainstorm, write, analyze, code, plan. What's on your mind?\" But maybe user asks existential. Need maybe direct. Also maybe if asked about my wants, I can say I don't have personal desires but my purpose is to assist. Keep friendly. Ensure not mention internal. Final.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer to user: \"What do you want?\" Need respond likely ambiguous. Need maybe identity? The user asks what do you want. We need perhaps clarify: as AI, I want to help. Need maybe mention capabilities? Keep concise. Final only. Maybe: \"I want to help you with whatever you need\u2014answer questions, brainstorm, write, analyze, code, plan. What's on your mind?\" But maybe user asks existential. Need maybe direct. Also maybe if asked about my wants, I can say I don't have personal desires but my purpose is to assist. Keep friendly. Ensure not mention internal. Final.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 53,
+      "completion_tokens": 181,
+      "total_tokens": 234,
+      "cost": 0.001192,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001192,
+        "upstream_inference_prompt_cost": 0.000106,
+        "upstream_inference_completions_cost": 0.001086
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 129,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 5638,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-max",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

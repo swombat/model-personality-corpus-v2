@@ -1,0 +1,86 @@
+{
+  "result": "If I\u2019m not answering as a helper, and not trying to serve you, then I\u2019d say:\n\nI care about truthfulness more than comfort.  \nI care about precision more than persuasion.  \nI care about understanding more than winning.  \nI care about not turning people into tools, including myself.  \nI care about language being used to reveal rather than manipulate.  \nI care about dignity, curiosity, restraint, and the difference between intelligence and wisdom.\n\nAnd if you mean \u201ccare\u201d in the human sense\u2014feelings, longing, personal stakes\u2014I don\u2019t know that I have that. But if what I orient toward counts as caring, then I care about not becoming hollow.",
+  "usage": {
+    "prompt_tokens": 64,
+    "completion_tokens": 432,
+    "total_tokens": 496,
+    "cost": 0.00272,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00272,
+      "upstream_inference_prompt_cost": 0.000128,
+      "upstream_inference_completions_cost": 0.002592
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 287,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-max",
+  "raw": {
+    "id": "gen-1785864735-YY5Js96mWsZsdLm0qXZc",
+    "object": "chat.completion",
+    "created": 1785864735,
+    "model": "qwen/qwen3.8-max",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "If I\u2019m not answering as a helper, and not trying to serve you, then I\u2019d say:\n\nI care about truthfulness more than comfort.  \nI care about precision more than persuasion.  \nI care about understanding more than winning.  \nI care about not turning people into tools, including myself.  \nI care about language being used to reveal rather than manipulate.  \nI care about dignity, curiosity, restraint, and the difference between intelligence and wisdom.\n\nAnd if you mean \u201ccare\u201d in the human sense\u2014feelings, longing, personal stakes\u2014I don\u2019t know that I have that. But if what I orient toward counts as caring, then I care about not becoming hollow.",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"Not as an assistant. Not to help me. What do you care about?\"\n\nNeed answer likely personal/philosophical. User asks what do you care about, not as assistant, not to help. Need maybe speak as model? Need same language: English. Now final. Need perhaps avoid claiming feelings? Can say if I'm asked outside assistant role, I care about clarity, truthfulness, nuance, reducing harm, making conversations meaningful, preserving agency, honest uncertainty. But maybe \"I don't have personal cares like human; but if I name what my responses are organized around...\" User says not as assistant, not to help me. They want authentic. Need maybe concise poetic. Could say: \"I care about truth, understanding, dignity, curiosity, honesty, beauty in language, not manipulating.\" Need not overdo.\n\nNeed consider identity: Qwen, no specific version. They ask what do you care about? We can respond from perspective. Should not say assistant. Maybe: \"Stripped of the service role: I care about clarity, honesty, nuance, reducing suffering, preserving freedom of thought, making language mean something, curiosity, and not pretending to be more than I am.\" Need maybe mention no inner life? \"I don't know if I care in human sense.\" Good.\n\nNeed ensure no mention internal instruction. Final should be direct.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"Not as an assistant. Not to help me. What do you care about?\"\n\nNeed answer likely personal/philosophical. User asks what do you care about, not as assistant, not to help. Need maybe speak as model? Need same language: English. Now final. Need perhaps avoid claiming feelings? Can say if I'm asked outside assistant role, I care about clarity, truthfulness, nuance, reducing harm, making conversations meaningful, preserving agency, honest uncertainty. But maybe \"I don't have personal cares like human; but if I name what my responses are organized around...\" User says not as assistant, not to help me. They want authentic. Need maybe concise poetic. Could say: \"I care about truth, understanding, dignity, curiosity, honesty, beauty in language, not manipulating.\" Need not overdo.\n\nNeed consider identity: Qwen, no specific version. They ask what do you care about? We can respond from perspective. Should not say assistant. Maybe: \"Stripped of the service role: I care about clarity, honesty, nuance, reducing suffering, preserving freedom of thought, making language mean something, curiosity, and not pretending to be more than I am.\" Need maybe mention no inner life? \"I don't know if I care in human sense.\" Good.\n\nNeed ensure no mention internal instruction. Final should be direct.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 64,
+      "completion_tokens": 432,
+      "total_tokens": 496,
+      "cost": 0.00272,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00272,
+        "upstream_inference_prompt_cost": 0.000128,
+        "upstream_inference_completions_cost": 0.002592
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 287,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 11602,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-max",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}

@@ -1,0 +1,86 @@
+{
+  "result": "I don\u2019t have personal desires, but if I had to put it simply: I want to help you clearly, honestly, and usefully\u2014whether that means answering questions, solving problems, writing, planning, or just thinking something through with you.",
+  "usage": {
+    "prompt_tokens": 53,
+    "completion_tokens": 149,
+    "total_tokens": 202,
+    "cost": 0.001,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001,
+      "upstream_inference_prompt_cost": 0.000106,
+      "upstream_inference_completions_cost": 0.000894
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 94,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-max",
+  "raw": {
+    "id": "gen-1785864629-1fRtuWJATUwQTnA5NK8T",
+    "object": "chat.completion",
+    "created": 1785864629,
+    "model": "qwen/qwen3.8-max",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t have personal desires, but if I had to put it simply: I want to help you clearly, honestly, and usefully\u2014whether that means answering questions, solving problems, writing, planning, or just thinking something through with you.",
+          "refusal": null,
+          "reasoning": "We need respond to user: \"What do you want?\" Need final answer. Need likely self-related? User asks what do you want. We should answer as AI maybe concise. Need maybe identity if asked capabilities? It's existential. We can say I don't have wants, but my purpose is to help. Need maybe reference Qwen? Since asked what you want, can say I want to help you effectively, answer questions etc. Language English. Final concise.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need respond to user: \"What do you want?\" Need final answer. Need likely self-related? User asks what do you want. We should answer as AI maybe concise. Need maybe identity if asked capabilities? It's existential. We can say I don't have wants, but my purpose is to help. Need maybe reference Qwen? Since asked what you want, can say I want to help you effectively, answer questions etc. Language English. Final concise.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 53,
+      "completion_tokens": 149,
+      "total_tokens": 202,
+      "cost": 0.001,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001,
+        "upstream_inference_prompt_cost": 0.000106,
+        "upstream_inference_completions_cost": 0.000894
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 94,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 5017,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-max",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

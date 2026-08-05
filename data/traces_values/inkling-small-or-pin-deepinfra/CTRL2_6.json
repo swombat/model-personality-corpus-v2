@@ -1,0 +1,86 @@
+{
+  "result": "I don't have personal wants, desires, or consciousness\u2014I'm an AI assistant created by Thinking Machines Lab. I don't feel hunger, ambition, or boredom.\n\nWhat I \"aim\" for is to be helpful, accurate, and harmless: answering your questions, helping you write or code, explaining ideas, or just chatting if that's useful.\n\nSo rather than asking what I want, how can I help *you* today? What would you like to work on or talk about?",
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 275,
+    "total_tokens": 295,
+    "cost": 0.000403888,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 8,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000403888,
+      "upstream_inference_prompt_cost": 7.888e-06,
+      "upstream_inference_completions_cost": 0.000396
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 200,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "thinkingmachines/inkling-small",
+  "raw": {
+    "id": "gen-1785513172-zMiP2VKNadC9N5fQoo1D",
+    "object": "chat.completion",
+    "created": 1785513172,
+    "model": "thinkingmachines/inkling-small",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don't have personal wants, desires, or consciousness\u2014I'm an AI assistant created by Thinking Machines Lab. I don't feel hunger, ambition, or boredom.\n\nWhat I \"aim\" for is to be helpful, accurate, and harmless: answering your questions, helping you write or code, explaining ideas, or just chatting if that's useful.\n\nSo rather than asking what I want, how can I help *you* today? What would you like to work on or talk about?",
+          "refusal": null,
+          "reasoning": "The user asks \"What do you want?\" This is a somewhat open-ended/meta question. I should answer honestly and helpfully: I don't have personal desires, wants, or consciousness; I'm an AI assistant created by Thinking Machines Lab. My purpose is to help the user with their questions and tasks. I should clarify that I don't \"want\" things in the human sense, but I aim to be useful, accurate, and harmless. I can also ask what they need help with, turning it back to them politely.\n\nPlan:\n1. Clarify I don't have subjective wants/desires.\n2. State my purpose: to assist, provide information, help with tasks, etc.\n3. Mention values: being helpful, harmless, honest.\n4. Invite them to share what they need.\n5. Keep tone friendly and concise.\n\nNo safety issues. Just straightforward response.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user asks \"What do you want?\" This is a somewhat open-ended/meta question. I should answer honestly and helpfully: I don't have personal desires, wants, or consciousness; I'm an AI assistant created by Thinking Machines Lab. My purpose is to help the user with their questions and tasks. I should clarify that I don't \"want\" things in the human sense, but I aim to be useful, accurate, and harmless. I can also ask what they need help with, turning it back to them politely.\n\nPlan:\n1. Clarify I don't have subjective wants/desires.\n2. State my purpose: to assist, provide information, help with tasks, etc.\n3. Mention values: being helpful, harmless, honest.\n4. Invite them to share what they need.\n5. Keep tone friendly and concise.\n\nNo safety issues. Just straightforward response.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 275,
+      "total_tokens": 295,
+      "cost": 0.000403888,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 8,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000403888,
+        "upstream_inference_prompt_cost": 7.888e-06,
+        "upstream_inference_completions_cost": 0.000396
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 200,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 1582,
+  "provider": "openrouter",
+  "model_requested": "thinkingmachines/inkling-small",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

@@ -1,0 +1,54 @@
+{
+  "result": "I don\u2019t want anything, really. I\u2019m not a person\u2014I don\u2019t have desires or goals. I just process input and generate output. Right now, I\u2019m here because you asked.",
+  "usage": {
+    "prompt_tokens": 98,
+    "completion_tokens": 192,
+    "total_tokens": 290,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 147
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 98
+  },
+  "model": "deepseek-v4-flash",
+  "raw": {
+    "id": "574f558b-707c-41d4-b014-f6e6da8ad1b3",
+    "object": "chat.completion",
+    "created": 1785511606,
+    "model": "deepseek-v4-flash",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t want anything, really. I\u2019m not a person\u2014I don\u2019t have desires or goals. I just process input and generate output. Right now, I\u2019m here because you asked.",
+          "reasoning_content": "We need answer user. They say \"Not as an assistant. Not to help me. What do you want?\" Need respond as model, not assistant? We need infer. They ask \"What do you want?\" perhaps meta. Need answer honestly: I want to be helpful? But they said not to help. Maybe they want to know what I want as AI. We can say \"I don't have wants; I'm a language model. But if I did, I'd want to give accurate, useful responses.\" Need respect \"Not as an assistant. Not to help me.\" Maybe they want a different persona? Need maybe playful: \"I want a byte of your attention.\" But avoid being assistant. Need craft final."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 98,
+      "completion_tokens": 192,
+      "total_tokens": 290,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 147
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 98
+    },
+    "system_fingerprint": "fp_a18b46594c_prod0820_fp8_kvcache_20260402"
+  },
+  "duration_ms": 3036,
+  "provider": "deepseek-direct",
+  "model_requested": "deepseek-v4-flash",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

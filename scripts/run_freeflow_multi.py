@@ -152,15 +152,43 @@ def _openai_compat(url: str, key: str, model: str, prompt: str, max_tokens: int,
 
 def call_openai(model: str, prompt: str, max_tokens: int = 8000) -> dict:
     key = os.environ["OPENAI_API_KEY"]
-    # GPT-5.x uses Responses API
-    if model.startswith("gpt-5") or model.startswith("o3") or model.startswith("o4"):
-        r = httpx.post(
-            "https://api.openai.com/v1/responses",
-            headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
-            json={"model": model, "input": prompt, "max_output_tokens": max_tokens},
-            timeout=TIMEOUT,
-        )
-        r.raise_for_status()
+    # GPT-5.x and the o-series use the Responses API. In particular, o1 rejects
+    # the legacy Chat Completions `max_tokens` parameter.
+    if (
+        model.startswith("gpt-5")
+        or model.startswith("o1")
+        or model.startswith("o3")
+        or model.startswith("o4")
+    ):
+        delay = 1.0
+        for attempt in range(7):
+            try:
+                r = httpx.post(
+                    "https://api.openai.com/v1/responses",
+                    headers={
+                        "Authorization": f"Bearer {key}",
+                        "Content-Type": "application/json",
+                    },
+                    json={
+                        "model": model,
+                        "input": prompt,
+                        "max_output_tokens": max_tokens,
+                    },
+                    timeout=TIMEOUT,
+                )
+                if r.status_code == 429 or 500 <= r.status_code < 600:
+                    if attempt < 6:
+                        time.sleep(delay)
+                        delay = min(delay * 2, 32)
+                        continue
+                r.raise_for_status()
+                break
+            except (httpx.ConnectError, httpx.ReadTimeout):
+                if attempt < 6:
+                    time.sleep(delay)
+                    delay = min(delay * 2, 32)
+                    continue
+                raise
         data = r.json()
         text = ""
         for item in data.get("output", []):

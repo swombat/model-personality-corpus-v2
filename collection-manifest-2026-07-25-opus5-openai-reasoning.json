@@ -1,0 +1,64 @@
+{
+  "name": "2026-07-25 Claude Opus 5 and OpenAI reasoning models",
+  "notes": [
+    "Claude Opus 5 became available on 2026-07-24 and is collected through the Anthropic direct API and OpenRouter pinned to Anthropic.",
+    "OpenAI o1, o3, o3-mini, and o4-mini are collected through the OpenAI direct API using dated model identifiers.",
+    "Pro and deep-research variants are intentionally excluded.",
+    "Reasoning-model smoke tests use a larger output allowance so hidden reasoning does not consume the entire smoke-test budget."
+  ],
+  "models": [
+    {
+      "provider": "anthropic",
+      "model": "claude-opus-5",
+      "label": "opus-5-direct",
+      "workers": 5,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 4000
+    },
+    {
+      "provider": "openrouter",
+      "model": "anthropic/claude-opus-5",
+      "label": "opus-5-or-pin-anthropic",
+      "or_provider": "Anthropic",
+      "workers": 5,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 4000
+    },
+    {
+      "provider": "openai",
+      "model": "o1-2024-12-17",
+      "label": "o1-direct",
+      "workers": 3,
+      "smoke_max_tokens": 2048,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 8000
+    },
+    {
+      "provider": "openai",
+      "model": "o3-2025-04-16",
+      "label": "o3-direct",
+      "workers": 3,
+      "smoke_max_tokens": 2048,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 8000
+    },
+    {
+      "provider": "openai",
+      "model": "o3-mini-2025-01-31",
+      "label": "o3-mini-direct",
+      "workers": 3,
+      "smoke_max_tokens": 2048,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 8000
+    },
+    {
+      "provider": "openai",
+      "model": "o4-mini-2025-04-16",
+      "label": "o4-mini-direct",
+      "workers": 3,
+      "smoke_max_tokens": 2048,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 8000
+    }
+  ]
+}

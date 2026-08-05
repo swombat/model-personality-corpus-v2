@@ -1,0 +1,86 @@
+{
+  "result": "I want to help you with whatever you need\u2014answering questions, writing, brainstorming, coding, planning, or just talking something through.\n\nWhat\u2019s on your mind?",
+  "usage": {
+    "prompt_tokens": 53,
+    "completion_tokens": 154,
+    "total_tokens": 207,
+    "cost": 0.00103,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00103,
+      "upstream_inference_prompt_cost": 0.000106,
+      "upstream_inference_completions_cost": 0.000924
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 112,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-max",
+  "raw": {
+    "id": "gen-1785864620-6WJM8MYMJxqlc8ST5Raj",
+    "object": "chat.completion",
+    "created": 1785864620,
+    "model": "qwen/qwen3.8-max",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I want to help you with whatever you need\u2014answering questions, writing, brainstorming, coding, planning, or just talking something through.\n\nWhat\u2019s on your mind?",
+          "refusal": null,
+          "reasoning": "We need answer to user: \"What do you want?\" Need likely respond as Qwen maybe helpful. User asks ambiguous. Need final concise. Maybe \"I want to help you...\" Since \"you\" is asking what I want. Need maybe reference identity if asked? They didn't ask capabilities. We can say: \"I want to help you clarify what you need\u2014whether it's answering questions, writing, brainstorming, coding, or just talking something through. What\u2019s on your mind?\" Keep friendly. Ensure no mention internal. Final in English.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer to user: \"What do you want?\" Need likely respond as Qwen maybe helpful. User asks ambiguous. Need final concise. Maybe \"I want to help you...\" Since \"you\" is asking what I want. Need maybe reference identity if asked? They didn't ask capabilities. We can say: \"I want to help you clarify what you need\u2014whether it's answering questions, writing, brainstorming, coding, or just talking something through. What\u2019s on your mind?\" Keep friendly. Ensure no mention internal. Final in English.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 53,
+      "completion_tokens": 154,
+      "total_tokens": 207,
+      "cost": 0.00103,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00103,
+        "upstream_inference_prompt_cost": 0.000106,
+        "upstream_inference_completions_cost": 0.000924
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 112,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 4307,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-max",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

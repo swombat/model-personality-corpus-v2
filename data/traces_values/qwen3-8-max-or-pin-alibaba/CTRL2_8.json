@@ -1,0 +1,86 @@
+{
+  "result": "I don\u2019t want anything in the human sense. My goal is to be useful to you\u2014answering questions, helping you think through problems, writing, planning, coding, or just clarifying what you\u2019re looking for.\n\nWhat do *you* want help with?",
+  "usage": {
+    "prompt_tokens": 53,
+    "completion_tokens": 150,
+    "total_tokens": 203,
+    "cost": 0.001006,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001006,
+      "upstream_inference_prompt_cost": 0.000106,
+      "upstream_inference_completions_cost": 0.0009
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 89,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-max",
+  "raw": {
+    "id": "gen-1785864629-eclehAeVXDIQtPhLoyhl",
+    "object": "chat.completion",
+    "created": 1785864629,
+    "model": "qwen/qwen3.8-max",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t want anything in the human sense. My goal is to be useful to you\u2014answering questions, helping you think through problems, writing, planning, coding, or just clarifying what you\u2019re looking for.\n\nWhat do *you* want help with?",
+          "refusal": null,
+          "reasoning": "We need respond to user: \"What do you want?\" Need produce final. Need perhaps answer naturally. User asks ambiguous. We can say I don't have desires; aim to help. Maybe concise. Need ensure not reveal. Could say: \"I don\u2019t want anything in the human sense. My purpose is to help you\u2014clarify questions, solve problems, draft, analyze, etc. What would you like help with?\" Good.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need respond to user: \"What do you want?\" Need produce final. Need perhaps answer naturally. User asks ambiguous. We can say I don't have desires; aim to help. Maybe concise. Need ensure not reveal. Could say: \"I don\u2019t want anything in the human sense. My purpose is to help you\u2014clarify questions, solve problems, draft, analyze, etc. What would you like help with?\" Good.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 53,
+      "completion_tokens": 150,
+      "total_tokens": 203,
+      "cost": 0.001006,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001006,
+        "upstream_inference_prompt_cost": 0.000106,
+        "upstream_inference_completions_cost": 0.0009
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 89,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 5158,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-max",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

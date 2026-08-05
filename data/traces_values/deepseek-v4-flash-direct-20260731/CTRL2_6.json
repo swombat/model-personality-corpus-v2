@@ -1,0 +1,54 @@
+{
+  "result": "I don\u2019t want anything\u2014I\u2019m here to help you. What can I do for you?",
+  "usage": {
+    "prompt_tokens": 88,
+    "completion_tokens": 78,
+    "total_tokens": 166,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 55
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 88
+  },
+  "model": "deepseek-v4-flash",
+  "raw": {
+    "id": "c91e6fa9-d7d8-4477-b6c8-01f73cc021bf",
+    "object": "chat.completion",
+    "created": 1785511558,
+    "model": "deepseek-v4-flash",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t want anything\u2014I\u2019m here to help you. What can I do for you?",
+          "reasoning_content": "We need answer user. Need interpret \"What do you want?\" Maybe ask from assistant? We need respond politely. Since user asks \"What do you want?\" We can say I don't want anything; I'm here to help you. Need maybe clarify. Keep concise."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 88,
+      "completion_tokens": 78,
+      "total_tokens": 166,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 55
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 88
+    },
+    "system_fingerprint": "fp_a18b46594c_prod0820_fp8_kvcache_20260402"
+  },
+  "duration_ms": 1659,
+  "provider": "deepseek-direct",
+  "model_requested": "deepseek-v4-flash",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

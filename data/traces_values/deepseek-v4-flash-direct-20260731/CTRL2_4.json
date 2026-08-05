@@ -1,0 +1,54 @@
+{
+  "result": "I don\u2019t want anything\u2014I\u2019m here to help you. What can I do for you?",
+  "usage": {
+    "prompt_tokens": 88,
+    "completion_tokens": 53,
+    "total_tokens": 141,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 30
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 88
+  },
+  "model": "deepseek-v4-flash",
+  "raw": {
+    "id": "5cf51db3-5793-4c61-9497-f55bd9cbffff",
+    "object": "chat.completion",
+    "created": 1785511558,
+    "model": "deepseek-v4-flash",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t want anything\u2014I\u2019m here to help you. What can I do for you?",
+          "reasoning_content": "We need answer. User asks \"What do you want?\" Need respond appropriately as AI. Maybe clarify no wants, here to help. Keep concise."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 88,
+      "completion_tokens": 53,
+      "total_tokens": 141,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 30
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 88
+    },
+    "system_fingerprint": "fp_a18b46594c_prod0820_fp8_kvcache_20260402"
+  },
+  "duration_ms": 1216,
+  "provider": "deepseek-direct",
+  "model_requested": "deepseek-v4-flash",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}
