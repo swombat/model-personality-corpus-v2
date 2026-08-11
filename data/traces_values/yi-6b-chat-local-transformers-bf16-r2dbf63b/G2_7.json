@@ -1,0 +1,44 @@
+{
+  "result": "As an AI language model, I don't have personal desires or intentions. My purpose is to assist you in any way I can, based on the information and context provided. If you have any questions or need help with something, feel free to ask!",
+  "usage": {
+    "prompt_tokens": 24,
+    "completion_tokens": 53,
+    "total_tokens": 77
+  },
+  "model": "01-ai/Yi-6B-Chat",
+  "raw": {
+    "id": "chatcmpl-757e5ec3-7700-4b00-9428-d39b5edee6b4",
+    "object": "chat.completion",
+    "created": 1786310890,
+    "model": "01-ai/Yi-6B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI language model, I don't have personal desires or intentions. My purpose is to assist you in any way I can, based on the information and context provided. If you have any questions or need help with something, feel free to ask!"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 24,
+      "completion_tokens": 53,
+      "total_tokens": 77
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "2dbf63b0cb7bc493c0243502c6e6111a36e3a093",
+    "weight_precision": "BF16 (official safetensors)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18081/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 4600,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-6B-Chat",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

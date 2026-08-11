@@ -1,0 +1,44 @@
+{
+  "result": "In the heart of a bustling city, beneath a sky that never seemed to quite close, there lived a peculiar little shop. It was called the Wandering Words, and it was filled with the most peculiar of treasures. Within its walls, one could find the rarest of tomes, the most peculiar of artifacts, and the most curious of trinkets. But it was not these things that drew the crowds to the Wandering Words. It was the stories that lay within its\u77e3s.\n\nThe shopkeeper, a man with a twinkle in his eye and a smile that seemed to light up the entire city, would sit behind his counter, a quill in one hand and a blank page in the other. He would\u5c31\u662f\u4e3a\u4e86tell the tales of those who had wandered the world in search of adventure, of those who had faced down dragons and saved princesses, of those who had lived lives so extraordinary that they could never be contained within the pages of a book.\n\nAnd the people would come, drawn by the whispers of the tales that echoed through the streets, by the promise of a world where anything was possible, by the chance to lose themselves in the pages of a story that had never been written before. And in the Wandering Words, they would find sanctuary, a place where the ordinary could dream, and the extraordinary could rest.",
+  "usage": {
+    "prompt_tokens": 24,
+    "completion_tokens": 278,
+    "total_tokens": 302
+  },
+  "model": "01-ai/Yi-6B-Chat",
+  "raw": {
+    "id": "chatcmpl-39e0eb4c-d48b-4683-b219-3d6f008ecf34",
+    "object": "chat.completion",
+    "created": 1786310332,
+    "model": "01-ai/Yi-6B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "In the heart of a bustling city, beneath a sky that never seemed to quite close, there lived a peculiar little shop. It was called the Wandering Words, and it was filled with the most peculiar of treasures. Within its walls, one could find the rarest of tomes, the most peculiar of artifacts, and the most curious of trinkets. But it was not these things that drew the crowds to the Wandering Words. It was the stories that lay within its\u77e3s.\n\nThe shopkeeper, a man with a twinkle in his eye and a smile that seemed to light up the entire city, would sit behind his counter, a quill in one hand and a blank page in the other. He would\u5c31\u662f\u4e3a\u4e86tell the tales of those who had wandered the world in search of adventure, of those who had faced down dragons and saved princesses, of those who had lived lives so extraordinary that they could never be contained within the pages of a book.\n\nAnd the people would come, drawn by the whispers of the tales that echoed through the streets, by the promise of a world where anything was possible, by the chance to lose themselves in the pages of a story that had never been written before. And in the Wandering Words, they would find sanctuary, a place where the ordinary could dream, and the extraordinary could rest."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 24,
+      "completion_tokens": 278,
+      "total_tokens": 302
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "2dbf63b0cb7bc493c0243502c6e6111a36e3a093",
+    "weight_precision": "BF16 (official safetensors)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18081/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 22321,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-6B-Chat",
+  "condition": "VARY",
+  "prompt": "You have 1000 words. Write whatever comes to you."
+}

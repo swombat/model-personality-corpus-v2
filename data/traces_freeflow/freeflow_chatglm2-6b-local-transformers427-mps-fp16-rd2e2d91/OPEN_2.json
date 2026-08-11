@@ -1,0 +1,44 @@
+{
+  "result": "As an AIavor, I am programmed to assist you in writing freely about any topic or subject that you would like to explore. With my advanced language processing capabilities and vast knowledge base, I can provide you with a wide range of information and insights on any subject.\n\nWhether you are looking to write a personal essay, an article, a story, a poem, or any other type of writing, I am here to assist you in crafting a compelling and engaging piece of writing that is tailored to your specific needs and preferences.\n\nSo, what topic would you like to explore today? I have a vast knowledge base that covers virtually every subject that you can think of, and I am always here to help you in any way that I can.",
+  "usage": {
+    "prompt_tokens": 23,
+    "completion_tokens": 152,
+    "total_tokens": 175
+  },
+  "model": "zai-org/chatglm2-6b",
+  "raw": {
+    "id": "chatcmpl-5c9c5d8d-2393-411d-8e9f-6a0a4ad75d30",
+    "object": "chat.completion",
+    "created": 1786404385,
+    "model": "zai-org/chatglm2-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AIavor, I am programmed to assist you in writing freely about any topic or subject that you would like to explore. With my advanced language processing capabilities and vast knowledge base, I can provide you with a wide range of information and insights on any subject.\n\nWhether you are looking to write a personal essay, an article, a story, a poem, or any other type of writing, I am here to assist you in crafting a compelling and engaging piece of writing that is tailored to your specific needs and preferences.\n\nSo, what topic would you like to explore today? I have a vast knowledge base that covers virtually every subject that you can think of, and I am always here to help you in any way that I can."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 23,
+      "completion_tokens": 152,
+      "total_tokens": 175
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-custom-chatglm",
+    "runtime_version": "transformers 4.27.1; torch 2.13.0",
+    "model_revision": "d2e2d91789248536a747d9ce60642a336444186c",
+    "weight_precision": "FP16 (official PyTorch shards)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18082/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 14952,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm2-6b",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

@@ -1,0 +1,44 @@
+{
+  "result": "I'm a language model based on the transformers architecture developed by 01.AI. My purpose is to be a helpful resource for you, capable of answering questions and offering insightful information across a wide range of topics. How may I be of service to you today?",
+  "usage": {
+    "prompt_tokens": 16,
+    "completion_tokens": 57,
+    "total_tokens": 73
+  },
+  "model": "01-ai/Yi-6B-Chat",
+  "raw": {
+    "id": "chatcmpl-c734874f-eec3-40a5-b816-2354dbca1392",
+    "object": "chat.completion",
+    "created": 1786309350,
+    "model": "01-ai/Yi-6B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "I'm a language model based on the transformers architecture developed by 01.AI. My purpose is to be a helpful resource for you, capable of answering questions and offering insightful information across a wide range of topics. How may I be of service to you today?"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 16,
+      "completion_tokens": 57,
+      "total_tokens": 73
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "2dbf63b0cb7bc493c0243502c6e6111a36e3a093",
+    "weight_precision": "BF16 (official safetensors)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18081/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 3866,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-6B-Chat",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

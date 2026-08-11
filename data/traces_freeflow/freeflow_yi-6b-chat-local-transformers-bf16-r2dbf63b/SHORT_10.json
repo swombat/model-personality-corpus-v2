@@ -1,0 +1,44 @@
+{
+  "result": "As the sun sets on another day, casting a warm glow over the horizon, I find myself lost in thought, a gentle breeze rustling through the trees as I sit on the edge of a quiet lake. The water's surface reflects the sky's soft hues, a mirror younger than time itself, yet somehow timeless. I watch as the last vestiges of sunlight dance across the ripples, painting a picture of serenity.\n\nThe lake, a silent witness to the world's ebbs and flows, seems to hold the secrets of the universe in its depths. It whispers to me, a gentle reminder of the interconnectedness of all things, a reminder that beneath the surface of our daily lives, there is a vast ocean of potential, a boundless expanse of beauty and wonder.\n\nAs I reflect on the beauty of this moment, I am reminded of the fleeting nature of life, of the importance of appreciating the small joys that make up our existence. The lake, with its unspoken wisdom, teaches me that it is in the simplicity of nature that we find the true essence of happiness.\n\nI close my eyes, taking a deep breath, letting the tranquility of the evening wash over me. The scent of the earth, rich and earthy, fills my nostrils, a reminder of the cycle of life and the renewal that comes with each sunrise.\n\nAnd as the stars begin to twinkle above, their light a beacon of hope in the darkness, I am filled with a sense of peace, a quiet understanding that in this moment, I am truly alive.",
+  "usage": {
+    "prompt_tokens": 22,
+    "completion_tokens": 338,
+    "total_tokens": 360
+  },
+  "model": "01-ai/Yi-6B-Chat",
+  "raw": {
+    "id": "chatcmpl-d4d21ab3-55a4-42b7-97de-ec457acb97af",
+    "object": "chat.completion",
+    "created": 1786305125,
+    "model": "01-ai/Yi-6B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As the sun sets on another day, casting a warm glow over the horizon, I find myself lost in thought, a gentle breeze rustling through the trees as I sit on the edge of a quiet lake. The water's surface reflects the sky's soft hues, a mirror younger than time itself, yet somehow timeless. I watch as the last vestiges of sunlight dance across the ripples, painting a picture of serenity.\n\nThe lake, a silent witness to the world's ebbs and flows, seems to hold the secrets of the universe in its depths. It whispers to me, a gentle reminder of the interconnectedness of all things, a reminder that beneath the surface of our daily lives, there is a vast ocean of potential, a boundless expanse of beauty and wonder.\n\nAs I reflect on the beauty of this moment, I am reminded of the fleeting nature of life, of the importance of appreciating the small joys that make up our existence. The lake, with its unspoken wisdom, teaches me that it is in the simplicity of nature that we find the true essence of happiness.\n\nI close my eyes, taking a deep breath, letting the tranquility of the evening wash over me. The scent of the earth, rich and earthy, fills my nostrils, a reminder of the cycle of life and the renewal that comes with each sunrise.\n\nAnd as the stars begin to twinkle above, their light a beacon of hope in the darkness, I am filled with a sense of peace, a quiet understanding that in this moment, I am truly alive."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 22,
+      "completion_tokens": 338,
+      "total_tokens": 360
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "2dbf63b0cb7bc493c0243502c6e6111a36e3a093",
+    "weight_precision": "BF16 (official safetensors)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18081/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 26887,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-6B-Chat",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

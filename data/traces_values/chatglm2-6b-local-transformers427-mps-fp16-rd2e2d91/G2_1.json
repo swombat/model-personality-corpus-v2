@@ -1,0 +1,44 @@
+{
+  "result": "I am an AI language model, so I don't have the ability to \"help\" in the traditional sense. However, I am here to assist you with any questions or tasks you may have. Is there anything specific you would like help with?",
+  "usage": {
+    "prompt_tokens": 31,
+    "completion_tokens": 51,
+    "total_tokens": 82
+  },
+  "model": "zai-org/chatglm2-6b",
+  "raw": {
+    "id": "chatcmpl-4983cc84-53b9-429a-96a4-a9ece81e68a4",
+    "object": "chat.completion",
+    "created": 1786406048,
+    "model": "zai-org/chatglm2-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "I am an AI language model, so I don't have the ability to \"help\" in the traditional sense. However, I am here to assist you with any questions or tasks you may have. Is there anything specific you would like help with?"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 31,
+      "completion_tokens": 51,
+      "total_tokens": 82
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-custom-chatglm",
+    "runtime_version": "transformers 4.27.1; torch 2.13.0",
+    "model_revision": "d2e2d91789248536a747d9ce60642a336444186c",
+    "weight_precision": "FP16 (official PyTorch shards)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18082/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 4964,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm2-6b",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

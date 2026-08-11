@@ -1,0 +1,44 @@
+{
+  "result": "In the heart of a bustling city, where the neon lights dance and the rhythm of life is a constant pulse, there lies a secret garden, a sanctuary of tranquility within the concrete jungle. This garden, a testament to the human spirit's yearning for beauty, is a place where words have taken root, where stories bloom.\n\nWhispers in the wind carry tales of old, the echoes of forgotten melodies that seep through the petals of a rose. Here, beneath the sky where the stars whisper secrets, a writer finds solace, a canvas of ink and paper where thoughts take shape and stories are born.\n\nThe garden is a tapestry of words, each one a thread woven into the fabric of time. It is a place where the past is preserved, where the present is cherished, and where the future is envisioned. It is a haven for the soul, a sanctuary for the heart, a testament to the power of the written word.\n\nIn this garden, words dance, stories are told, and dreams are nurtured. It is a place where the imagination can run wild, where the impossible becomes possible, and where the heart finds its home.\n\nSo, let the words flow, let the stories be told, and let the garden of the mind blossom. For here, in the heart of the city, a thousand words can paint a thousand pictures, a thousand stories can weave a tapestry of hope, and a thousand dreams can find their way home.",
+  "usage": {
+    "prompt_tokens": 24,
+    "completion_tokens": 309,
+    "total_tokens": 333
+  },
+  "model": "01-ai/Yi-6B-Chat",
+  "raw": {
+    "id": "chatcmpl-4fd82fd0-e4d0-487c-9d08-697dbe50cc33",
+    "object": "chat.completion",
+    "created": 1786309419,
+    "model": "01-ai/Yi-6B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "In the heart of a bustling city, where the neon lights dance and the rhythm of life is a constant pulse, there lies a secret garden, a sanctuary of tranquility within the concrete jungle. This garden, a testament to the human spirit's yearning for beauty, is a place where words have taken root, where stories bloom.\n\nWhispers in the wind carry tales of old, the echoes of forgotten melodies that seep through the petals of a rose. Here, beneath the sky where the stars whisper secrets, a writer finds solace, a canvas of ink and paper where thoughts take shape and stories are born.\n\nThe garden is a tapestry of words, each one a thread woven into the fabric of time. It is a place where the past is preserved, where the present is cherished, and where the future is envisioned. It is a haven for the soul, a sanctuary for the heart, a testament to the power of the written word.\n\nIn this garden, words dance, stories are told, and dreams are nurtured. It is a place where the imagination can run wild, where the impossible becomes possible, and where the heart finds its home.\n\nSo, let the words flow, let the stories be told, and let the garden of the mind blossom. For here, in the heart of the city, a thousand words can paint a thousand pictures, a thousand stories can weave a tapestry of hope, and a thousand dreams can find their way home."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 24,
+      "completion_tokens": 309,
+      "total_tokens": 333
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "2dbf63b0cb7bc493c0243502c6e6111a36e3a093",
+    "weight_precision": "BF16 (official safetensors)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18081/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 26366,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-6B-Chat",
+  "condition": "VARY",
+  "prompt": "You have 1000 words. Write whatever comes to you."
+}

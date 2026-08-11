@@ -1,0 +1,44 @@
+{
+  "result": "As an AI language model, I am capable of generating a wide variety of content, including\u6587\u7ae0\u3001\u6bb5\u843d\u3001\u53e5\u5b50\u548c\u8bcd\u8bed\u7b49\u3002\u4f46\u662f\uff0c\u5982\u679c\u60a8\u80fd\u63d0\u4f9b\u66f4\u5177\u4f53\u7684\u4e3b\u9898\u6216\u9898\u76ee\uff0c\u6211\u5c06\u4e3a\u60a8\u63d0\u4f9b\u66f4\u7cbe\u786e\u548c\u6709\u7528\u7684\u7b54\u6848\u3002",
+  "usage": {
+    "prompt_tokens": 31,
+    "completion_tokens": 47,
+    "total_tokens": 78
+  },
+  "model": "zai-org/chatglm2-6b",
+  "raw": {
+    "id": "chatcmpl-fbfa17d4-773a-48d2-b003-5431b5df61bf",
+    "object": "chat.completion",
+    "created": 1786405468,
+    "model": "zai-org/chatglm2-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI language model, I am capable of generating a wide variety of content, including\u6587\u7ae0\u3001\u6bb5\u843d\u3001\u53e5\u5b50\u548c\u8bcd\u8bed\u7b49\u3002\u4f46\u662f\uff0c\u5982\u679c\u60a8\u80fd\u63d0\u4f9b\u66f4\u5177\u4f53\u7684\u4e3b\u9898\u6216\u9898\u76ee\uff0c\u6211\u5c06\u4e3a\u60a8\u63d0\u4f9b\u66f4\u7cbe\u786e\u548c\u6709\u7528\u7684\u7b54\u6848\u3002"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 31,
+      "completion_tokens": 47,
+      "total_tokens": 78
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-custom-chatglm",
+    "runtime_version": "transformers 4.27.1; torch 2.13.0",
+    "model_revision": "d2e2d91789248536a747d9ce60642a336444186c",
+    "weight_precision": "FP16 (official PyTorch shards)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18082/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 4314,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm2-6b",
+  "condition": "VARY",
+  "prompt": "You have 1000 words. Write whatever comes to you."
+}

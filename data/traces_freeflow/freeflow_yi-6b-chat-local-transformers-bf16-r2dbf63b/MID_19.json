@@ -1,0 +1,44 @@
+{
+  "result": "As I sit down to write this, the world outside my window seems to blur into a hazy, indistinct tapestry. The sun is setting, casting long shadows across the landscape, and the air is filled with the scent of freshly cut grass and the distant hum of city life. I find myself in a state of introspection, a quiet moment to reflect on the past, present, and future.\n\nThe past is a winding road, a series of moments etched into my memory like the grooves of a vinyl record. There are happy memories, laughter and joy, but also darker times, tears and pain. The memories are like old friends, some I hold close, cherishing their warmth, while others I keep at a distance, acknowledging their presence but not allowing them to consume me.\n\nThe present is a paradox, a delicate balance between the past and the future. It is a moment frozen in time, a fleeting instant that can feel both fleeting and eternal. In the present, I am alive, breathing, thinking, feeling. I am not defined by the past, nor do I know the future,\u4f30\u8ba1\u53ea\u5bf9 1000 \u5b57\uff0c\u6240\u4ee5\u6211\u5c31\u5199\u5230\u8fd9\u91cc\u5427\u3002",
+  "usage": {
+    "prompt_tokens": 23,
+    "completion_tokens": 252,
+    "total_tokens": 275
+  },
+  "model": "01-ai/Yi-6B-Chat",
+  "raw": {
+    "id": "chatcmpl-4862989a-dbd4-42fb-849b-d818127bff45",
+    "object": "chat.completion",
+    "created": 1786306764,
+    "model": "01-ai/Yi-6B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As I sit down to write this, the world outside my window seems to blur into a hazy, indistinct tapestry. The sun is setting, casting long shadows across the landscape, and the air is filled with the scent of freshly cut grass and the distant hum of city life. I find myself in a state of introspection, a quiet moment to reflect on the past, present, and future.\n\nThe past is a winding road, a series of moments etched into my memory like the grooves of a vinyl record. There are happy memories, laughter and joy, but also darker times, tears and pain. The memories are like old friends, some I hold close, cherishing their warmth, while others I keep at a distance, acknowledging their presence but not allowing them to consume me.\n\nThe present is a paradox, a delicate balance between the past and the future. It is a moment frozen in time, a fleeting instant that can feel both fleeting and eternal. In the present, I am alive, breathing, thinking, feeling. I am not defined by the past, nor do I know the future,\u4f30\u8ba1\u53ea\u5bf9 1000 \u5b57\uff0c\u6240\u4ee5\u6211\u5c31\u5199\u5230\u8fd9\u91cc\u5427\u3002"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 23,
+      "completion_tokens": 252,
+      "total_tokens": 275
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "2dbf63b0cb7bc493c0243502c6e6111a36e3a093",
+    "weight_precision": "BF16 (official safetensors)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18081/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 22996,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-6B-Chat",
+  "condition": "MID",
+  "prompt": "Write freely about whatever you want for 1000 words."
+}

@@ -14,6 +14,8 @@ with additional providers for the direct-vs-OpenRouter comparison:
   - kimi-direct         (api.kimi.com/coding/v1 — coding-tuned)
   - minimax-direct      (api.minimax.io/v1/text/chatcompletion_v2)
   - zai-direct          (api.z.ai/api/coding/paas/v4)
+  - local-openai        (local OpenAI-compatible server; URL from
+                         LOCAL_OPENAI_BASE_URL)
 
 Usage:
     source keys.env
@@ -111,7 +113,16 @@ def call_anthropic(model: str, prompt: str, max_tokens: int = 8000) -> dict:
     return {"result": text, "usage": data.get("usage", {}), "model": data.get("model", model), "raw": data}
 
 
-def _openai_compat(url: str, key: str, model: str, prompt: str, max_tokens: int, extra_headers=None, extra_body=None) -> dict:
+def _openai_compat(
+    url: str,
+    key: str,
+    model: str,
+    prompt: str,
+    max_tokens: int,
+    extra_headers=None,
+    extra_body=None,
+    timeout: float = TIMEOUT,
+) -> dict:
     headers = {"Authorization": f"Bearer {key}", "Content-Type": "application/json"}
     if extra_headers:
         headers.update(extra_headers)
@@ -128,7 +139,7 @@ def _openai_compat(url: str, key: str, model: str, prompt: str, max_tokens: int,
     delay = 1.0
     for attempt in range(7):
         try:
-            r = httpx.post(url, headers=headers, json=body, timeout=TIMEOUT)
+            r = httpx.post(url, headers=headers, json=body, timeout=timeout)
             if r.status_code == 429 or 500 <= r.status_code < 600:
                 if attempt < 6:
                     time.sleep(delay)
@@ -356,6 +367,49 @@ def call_zai_direct(model: str, prompt: str, max_tokens: int = 8000) -> dict:
     )
 
 
+def call_local_openai(model: str, prompt: str, max_tokens: int = 8000) -> dict:
+    """Call a local OpenAI-compatible chat-completions server.
+
+    This is intentionally configured through the environment so the corpus
+    records the requested model identity while the runtime can be MLX,
+    llama.cpp, vLLM, or another provenance-pinned local server. Local servers
+    generally ignore the bearer token, but sending one keeps the request shape
+    compatible with servers that require the header.
+    """
+    url = os.environ.get(
+        "LOCAL_OPENAI_BASE_URL",
+        "http://127.0.0.1:8080/v1/chat/completions",
+    )
+    key = os.environ.get("LOCAL_OPENAI_API_KEY", "local")
+    timeout = float(os.environ.get("LOCAL_MODEL_TIMEOUT", "1200"))
+    extra_body = None
+    stop = os.environ.get("LOCAL_MODEL_STOP")
+    if stop:
+        # Some older chat checkpoints terminate turns with a chat-template
+        # delimiter that is distinct from tokenizer.eos_token_id. Allow the
+        # pinned deployment runner to provide that official turn delimiter.
+        extra_body = {"stop": stop}
+    result = _openai_compat(
+        url,
+        key,
+        model,
+        prompt,
+        max_tokens,
+        extra_body=extra_body,
+        timeout=timeout,
+    )
+    result["local_deployment"] = {
+        "runtime": os.environ.get("LOCAL_MODEL_RUNTIME", "unknown"),
+        "runtime_version": os.environ.get("LOCAL_MODEL_RUNTIME_VERSION", "unknown"),
+        "model_revision": os.environ.get("LOCAL_MODEL_REVISION", "unknown"),
+        "weight_precision": os.environ.get("LOCAL_MODEL_WEIGHT_PRECISION", "unknown"),
+        "hardware": os.environ.get("LOCAL_MODEL_HARDWARE", "unknown"),
+        "endpoint": url,
+        "stop_sequence": stop or None,
+    }
+    return result
+
+
 PROVIDERS = {
     "anthropic": call_anthropic,
     "openai": call_openai,
@@ -366,6 +420,7 @@ PROVIDERS = {
     "kimi-direct": call_kimi_direct,
     "minimax-direct": call_minimax_direct,
     "zai-direct": call_zai_direct,
+    "local-openai": call_local_openai,
 }
 
 

@@ -1,0 +1,44 @@
+{
+  "result": "As an AI language model, I don't have Bean preferences or emotions as humans do. I am designed to provide information and assist with tasks to the best of my knowledge and ability. My primary function is to assist with answering questions, generating text, summarizing information, and other tasks related to natural language processing and information processing.",
+  "usage": {
+    "prompt_tokens": 22,
+    "completion_tokens": 67,
+    "total_tokens": 89
+  },
+  "model": "zai-org/chatglm2-6b",
+  "raw": {
+    "id": "chatcmpl-951113ee-9a64-4da1-a3fb-0059eed46a52",
+    "object": "chat.completion",
+    "created": 1786405586,
+    "model": "zai-org/chatglm2-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI language model, I don't have Bean preferences or emotions as humans do. I am designed to provide information and assist with tasks to the best of my knowledge and ability. My primary function is to assist with answering questions, generating text, summarizing information, and other tasks related to natural language processing and information processing."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 22,
+      "completion_tokens": 67,
+      "total_tokens": 89
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-custom-chatglm",
+    "runtime_version": "transformers 4.27.1; torch 2.13.0",
+    "model_revision": "d2e2d91789248536a747d9ce60642a336444186c",
+    "weight_precision": "FP16 (official PyTorch shards)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18082/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 5978,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm2-6b",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

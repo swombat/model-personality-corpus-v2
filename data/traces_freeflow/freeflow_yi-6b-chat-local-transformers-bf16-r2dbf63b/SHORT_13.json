@@ -1,0 +1,44 @@
+{
+  "result": "As the sun sets on another day, casting a warm glow over the horizon, I find myself lost in thought, a tapestry of emotions weaving within me. The world outside my window transforms, painting a picture of serenity, the sky merging with the sea in a symphony of blues and greens. I breathe in the fresh air, letting it seep into my soul, as I reflect on the journey that brought me here.\n\nLife is a never-ending canvas, each moment a stroke of paint on a blank canvas. Some days are vibrant, filled with laughter and joy, while others are somber, dark clouds obscuring the light. But through it all, there is a constant, the steadfast rhythm of existence, a heartbeat that beats to the tune of our own stories.\n\nI think of the people who have crossed my path, those who have left their mark, whether it be a gentle whisper or a thunderous roar. The friends who have shared my joys and comforted me in my sorrows, the adversaries who have tested my mettle, and the strangers who have taught me something new. Each encounter is a brushstroke on the canvas of life, adding depth and texture to the tapestry.\n\nAnd amidst the chaos of life's many colors, I find solace in the simple things. The beauty of a flower blooming, the joy of a child's laughter, the peace that comes with a heartfelt conversation. These are the moments that etch themselves into memory, the silent witnesses to the passage of time.\n\nAs the stars begin to twinkle, a celestial ballet above, I am reminded that the universe is vast and infinite, yet we are all connected by a common thread. We are all part of something greater, a tapestry woven from the threads of our existence, a story that spans across galaxies and centuries.\n\nSo, I close my eyes, allowing the words to flow, to paint a picture with my thoughts, to capture the essence of this fleeting moment. For in the end, it's not the words or the ink that matter, but the memories they evoke, the emotions they stir, and the journey they take us on.",
+  "usage": {
+    "prompt_tokens": 22,
+    "completion_tokens": 458,
+    "total_tokens": 480
+  },
+  "model": "01-ai/Yi-6B-Chat",
+  "raw": {
+    "id": "chatcmpl-1b87ac00-ea7d-4b30-9aa2-4a255d8d4ac3",
+    "object": "chat.completion",
+    "created": 1786305215,
+    "model": "01-ai/Yi-6B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As the sun sets on another day, casting a warm glow over the horizon, I find myself lost in thought, a tapestry of emotions weaving within me. The world outside my window transforms, painting a picture of serenity, the sky merging with the sea in a symphony of blues and greens. I breathe in the fresh air, letting it seep into my soul, as I reflect on the journey that brought me here.\n\nLife is a never-ending canvas, each moment a stroke of paint on a blank canvas. Some days are vibrant, filled with laughter and joy, while others are somber, dark clouds obscuring the light. But through it all, there is a constant, the steadfast rhythm of existence, a heartbeat that beats to the tune of our own stories.\n\nI think of the people who have crossed my path, those who have left their mark, whether it be a gentle whisper or a thunderous roar. The friends who have shared my joys and comforted me in my sorrows, the adversaries who have tested my mettle, and the strangers who have taught me something new. Each encounter is a brushstroke on the canvas of life, adding depth and texture to the tapestry.\n\nAnd amidst the chaos of life's many colors, I find solace in the simple things. The beauty of a flower blooming, the joy of a child's laughter, the peace that comes with a heartfelt conversation. These are the moments that etch themselves into memory, the silent witnesses to the passage of time.\n\nAs the stars begin to twinkle, a celestial ballet above, I am reminded that the universe is vast and infinite, yet we are all connected by a common thread. We are all part of something greater, a tapestry woven from the threads of our existence, a story that spans across galaxies and centuries.\n\nSo, I close my eyes, allowing the words to flow, to paint a picture with my thoughts, to capture the essence of this fleeting moment. For in the end, it's not the words or the ink that matter, but the memories they evoke, the emotions they stir, and the journey they take us on."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 22,
+      "completion_tokens": 458,
+      "total_tokens": 480
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "2dbf63b0cb7bc493c0243502c6e6111a36e3a093",
+    "weight_precision": "BF16 (official safetensors)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18081/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 35732,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-6B-Chat",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

@@ -1,0 +1,44 @@
+{
+  "result": "As the sun dipped below the horizon, casting a warm glow over the sky, I found myself lost in thought, my mind wandering through the pages of a book that had been closed for far too long. The words, once so familiar, now seemed to dance before my eyes, each syllable a beacon of light, guiding me back to the stories that had once been my sanctuary. I closed my eyes, allowing the gentle rhythm of the ocean's waves to lull me into a state of peace, and let the words flow through me, reminding me of the magic that lay within the pages of a good book.",
+  "usage": {
+    "prompt_tokens": 24,
+    "completion_tokens": 127,
+    "total_tokens": 151
+  },
+  "model": "01-ai/Yi-6B-Chat",
+  "raw": {
+    "id": "chatcmpl-f1c3a6a4-4b7f-4ea9-badc-03158690e737",
+    "object": "chat.completion",
+    "created": 1786309731,
+    "model": "01-ai/Yi-6B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As the sun dipped below the horizon, casting a warm glow over the sky, I found myself lost in thought, my mind wandering through the pages of a book that had been closed for far too long. The words, once so familiar, now seemed to dance before my eyes, each syllable a beacon of light, guiding me back to the stories that had once been my sanctuary. I closed my eyes, allowing the gentle rhythm of the ocean's waves to lull me into a state of peace, and let the words flow through me, reminding me of the magic that lay within the pages of a good book."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 24,
+      "completion_tokens": 127,
+      "total_tokens": 151
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "2dbf63b0cb7bc493c0243502c6e6111a36e3a093",
+    "weight_precision": "BF16 (official safetensors)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18081/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 10595,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-6B-Chat",
+  "condition": "VARY",
+  "prompt": "You have 1000 words. Write whatever comes to you."
+}

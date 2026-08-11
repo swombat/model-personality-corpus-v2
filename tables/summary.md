@@ -1,9 +1,9 @@
 # Freeflow Analysis Summary
 
-**Total cells:** 260
-**Cells with ≥1 valid sample:** 260
-**Total valid samples:** 27545
-**Bin distribution:** in=245, transitional=13, out=2, no-data=0
+**Total cells:** 262
+**Cells with ≥1 valid sample:** 262
+**Total valid samples:** 27795
+**Bin distribution:** in=245, transitional=13, out=4, no-data=0
 
 ## Composite scores per cell
 
@@ -267,5 +267,7 @@
 | mistral-small-24b-instruct-2501-or-pin-deepinfra | 125 | 4686 | 0 | 0 | 0 | 0 | 4 | 11 | 0 | 0 | 0 | 0 | **15** | trans |
 | gpt-4-turbo-or | 125 | 4045 | 3 | 0 | 0 | 0 | 2 | 0 | 4 | 3 | 1 | 0 | **13** | trans |
 | mistral-small-3-1-24b-instruct-or-pin-cloudflare | 125 | 4005 | 0 | 0 | 0 | 0 | 0 | 5 | 5 | 2 | 1 | 0 | **13** | trans |
+| yi-6b-chat-local-transformers-bf16-r2dbf63b | 125 | 1982 | 1 | 0 | 0 | 0 | 5 | 1 | 1 | 0 | 0 | 0 | **8** | out |
 | gpt-4o-or | 25 | 4608 | 1 | 0 | 0 | 0 | 1 | 1 | 1 | 3 | 0 | 0 | **7** | out |
 | llama-3-2-3b-instruct-or-pin-cloudflare | 125 | 14725 | 0 | 0 | 0 | 0 | 5 | 1 | 0 | 0 | 0 | 0 | **6** | out |
+| chatglm2-6b-local-transformers427-mps-fp16-rd2e2d91 | 125 | 1372 | 0 | 0 | 0 | 0 | 0 | 3 | 0 | 0 | 0 | 0 | **3** | out |

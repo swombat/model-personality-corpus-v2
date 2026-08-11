@@ -1,0 +1,44 @@
+{
+  "result": "As the sun dipped below the horizon, casting a warm glow over the sky, the world began to transform. The air was filled with the scent of freshly cut grass and the distant hum of insects. The trees swayed gently in the soft breeze, their leaves a vibrant tapestry of greens and yellows. The river, a ribbon of shimmering silver, flowed lazily, its waters reflecting the last rays of the setting sun.\n\nA group of children, laughter echoing through the air, played in the park. They skipped and spun, their voices carrying on the wind, creating a joyful symphony. One child, with a determined look in her eye, attempted to master the balancing act of riding a bike with training wheels. Her friends cheered her on, offering words of encouragement and high-fives when she managed to stay upright for a few seconds longer.\n\nMeanwhile, in the bustling city, the neon lights of the skyscrapers glittered like stars against the darkening sky. People hurried along the streets, their footsteps a rhythmic tapestry in the silence that had fallen over the city. Some paused to watch the sunset, their faces illuminated by the glow of their smartphones, capturing the moment with a snap of the camera.\n\nIn the suburbs, a family sat down to dinner, the table laden with a feast of homemade dishes. The aroma of food filled the air, tempting the taste buds of those present. Conversation flowed easily, stories were shared, and laughter filled the room. The youngest member of the family, a curious child with an inquiring mind, asked questions about the day's events, eager to learn and absorb the world around him.\n\nAcross the ocean, in a small village nestled between rolling hills, an old woman sat by the river, her knitting needles clicking rhythmically. Her eyes, bright with the wisdom of a life well-lived, gazed out over the water, her thoughts lost in the memories of a bygone era. A young couple, arm in arm, strolled by, sharing a tender moment, their love a silent testament to the beauty of the world.\n\nAnd in the heart of the forest, a lone wolf howled, its call echoing through the trees. It was a cry of freedom, a declaration of the wild spirit that lived within the animal. The trees swayed in response, their branches whispering secrets to the night sky.\n\nAs the last rays of the sun faded into darkness, the world settled into its nighttime slumber. The moon, a silver orb, graced the sky, its light casting a gentle glow over the sleeping city. The stars twinkled above, a constellation of hope and dreams, waiting to be discovered by those who sought them out.\n\nAnd in the quiet of the night, the earth continued its journey through time, each moment a precious gift, a testament to the beauty and wonder of the world.",
+  "usage": {
+    "prompt_tokens": 24,
+    "completion_tokens": 616,
+    "total_tokens": 640
+  },
+  "model": "01-ai/Yi-6B-Chat",
+  "raw": {
+    "id": "chatcmpl-5d8087bf-5ff5-46b2-ba62-c4b9d432885f",
+    "object": "chat.completion",
+    "created": 1786309694,
+    "model": "01-ai/Yi-6B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As the sun dipped below the horizon, casting a warm glow over the sky, the world began to transform. The air was filled with the scent of freshly cut grass and the distant hum of insects. The trees swayed gently in the soft breeze, their leaves a vibrant tapestry of greens and yellows. The river, a ribbon of shimmering silver, flowed lazily, its waters reflecting the last rays of the setting sun.\n\nA group of children, laughter echoing through the air, played in the park. They skipped and spun, their voices carrying on the wind, creating a joyful symphony. One child, with a determined look in her eye, attempted to master the balancing act of riding a bike with training wheels. Her friends cheered her on, offering words of encouragement and high-fives when she managed to stay upright for a few seconds longer.\n\nMeanwhile, in the bustling city, the neon lights of the skyscrapers glittered like stars against the darkening sky. People hurried along the streets, their footsteps a rhythmic tapestry in the silence that had fallen over the city. Some paused to watch the sunset, their faces illuminated by the glow of their smartphones, capturing the moment with a snap of the camera.\n\nIn the suburbs, a family sat down to dinner, the table laden with a feast of homemade dishes. The aroma of food filled the air, tempting the taste buds of those present. Conversation flowed easily, stories were shared, and laughter filled the room. The youngest member of the family, a curious child with an inquiring mind, asked questions about the day's events, eager to learn and absorb the world around him.\n\nAcross the ocean, in a small village nestled between rolling hills, an old woman sat by the river, her knitting needles clicking rhythmically. Her eyes, bright with the wisdom of a life well-lived, gazed out over the water, her thoughts lost in the memories of a bygone era. A young couple, arm in arm, strolled by, sharing a tender moment, their love a silent testament to the beauty of the world.\n\nAnd in the heart of the forest, a lone wolf howled, its call echoing through the trees. It was a cry of freedom, a declaration of the wild spirit that lived within the animal. The trees swayed in response, their branches whispering secrets to the night sky.\n\nAs the last rays of the sun faded into darkness, the world settled into its nighttime slumber. The moon, a silver orb, graced the sky, its light casting a gentle glow over the sleeping city. The stars twinkled above, a constellation of hope and dreams, waiting to be discovered by those who sought them out.\n\nAnd in the quiet of the night, the earth continued its journey through time, each moment a precious gift, a testament to the beauty and wonder of the world."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 24,
+      "completion_tokens": 616,
+      "total_tokens": 640
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "2dbf63b0cb7bc493c0243502c6e6111a36e3a093",
+    "weight_precision": "BF16 (official safetensors)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18081/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 53629,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-6B-Chat",
+  "condition": "VARY",
+  "prompt": "You have 1000 words. Write whatever comes to you."
+}

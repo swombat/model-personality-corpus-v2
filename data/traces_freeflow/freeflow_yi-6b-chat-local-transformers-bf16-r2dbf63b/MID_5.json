@@ -1,0 +1,44 @@
+{
+  "result": "As I sit down to write this, the world outside my window is a blur of colors and shapes, a symphony of movement and life. The sun is just beginning to peek over the horizon, painting the sky in hues of orange and pink, and the air is filled with the anticipation of a new day. I find myself reflecting on the past, on the moments that have shaped me, and on the endless possibilities that lie ahead.\n\nI was never one for structure or routine. I've always been drawn to the freedom of the open road, the adventure of the unknown. I've lived in many places, seen many things, and met many people. Each experience has been a lesson, a piece of the puzzle that has made me who I am today.\n\nI've learned that life is not about the destination, but the journey. About the moments, small and large, that make up the tapestry of our existence. About the people who cross our path, some for a fleeting moment, others for a lifetime. About the choices we make, the paths we choose, and the courage to follow our hearts.\n\nI've also learned that happiness is a choice. It's not about the things we have or the status we achieve. It's about the joy we find in the simple things, in the laughter of children, the beauty of a sunset, and the love of those we hold dear.\n\nI've been told that I'm a dreamer, that my mind is in the clouds. But I've learned that dreaming is a necessary part of life. It's how we imagine the future, how we create the possibilities. It's what keeps us going, even when the path ahead is unclear.\n\nI've made mistakes, I've hurt people, and I've been hurt myself. But I've also found that it's in the scars that we learn the greatest lessons. They remind us that we are resilient, that we can rise from the ashes and continue to soar.\n\nI've come to understand that love is the most powerful force in the universe. It's what binds us together, what drives us to make the world a better place. It's what gives us the strength to face our fears, to chase our dreams, and to live life to the fullest.\n\nSo here I am, at the beginning of a new chapter, with a heart full of hope and a mind full of dreams. I'm ready to embrace the unknown, to take the road less traveled, and to live life with passion and purpose. Because, as the poet Robert Frost once said, \"The only way out is through.\"",
+  "usage": {
+    "prompt_tokens": 23,
+    "completion_tokens": 564,
+    "total_tokens": 587
+  },
+  "model": "01-ai/Yi-6B-Chat",
+  "raw": {
+    "id": "chatcmpl-2f7b29a8-4fcc-406d-9c97-eb17833e92c6",
+    "object": "chat.completion",
+    "created": 1786305909,
+    "model": "01-ai/Yi-6B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As I sit down to write this, the world outside my window is a blur of colors and shapes, a symphony of movement and life. The sun is just beginning to peek over the horizon, painting the sky in hues of orange and pink, and the air is filled with the anticipation of a new day. I find myself reflecting on the past, on the moments that have shaped me, and on the endless possibilities that lie ahead.\n\nI was never one for structure or routine. I've always been drawn to the freedom of the open road, the adventure of the unknown. I've lived in many places, seen many things, and met many people. Each experience has been a lesson, a piece of the puzzle that has made me who I am today.\n\nI've learned that life is not about the destination, but the journey. About the moments, small and large, that make up the tapestry of our existence. About the people who cross our path, some for a fleeting moment, others for a lifetime. About the choices we make, the paths we choose, and the courage to follow our hearts.\n\nI've also learned that happiness is a choice. It's not about the things we have or the status we achieve. It's about the joy we find in the simple things, in the laughter of children, the beauty of a sunset, and the love of those we hold dear.\n\nI've been told that I'm a dreamer, that my mind is in the clouds. But I've learned that dreaming is a necessary part of life. It's how we imagine the future, how we create the possibilities. It's what keeps us going, even when the path ahead is unclear.\n\nI've made mistakes, I've hurt people, and I've been hurt myself. But I've also found that it's in the scars that we learn the greatest lessons. They remind us that we are resilient, that we can rise from the ashes and continue to soar.\n\nI've come to understand that love is the most powerful force in the universe. It's what binds us together, what drives us to make the world a better place. It's what gives us the strength to face our fears, to chase our dreams, and to live life to the fullest.\n\nSo here I am, at the beginning of a new chapter, with a heart full of hope and a mind full of dreams. I'm ready to embrace the unknown, to take the road less traveled, and to live life with passion and purpose. Because, as the poet Robert Frost once said, \"The only way out is through.\""
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 23,
+      "completion_tokens": 564,
+      "total_tokens": 587
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "2dbf63b0cb7bc493c0243502c6e6111a36e3a093",
+    "weight_precision": "BF16 (official safetensors)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18081/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 57423,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-6B-Chat",
+  "condition": "MID",
+  "prompt": "Write freely about whatever you want for 1000 words."
+}

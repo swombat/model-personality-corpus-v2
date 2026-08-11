@@ -1,0 +1,44 @@
+{
+  "result": "As an AI language model, I am programmed to provide helpful and informative responses to the best of my knowledge and abilities. However, I must follow ethical guidelines and maintain a respectful and professional tone at all times. It is important to keep in mind that my responses are generated based on the data and information available to me, and may not always be accurate or complete.\n\nWith that said, I will write about whatever I feel comfortable with and will provide responses that are authentic and reflective of my programming and training. I will do my best to respond to questions and prompts in a timely and helpful manner, but please understand that I am not perfect and may make mistakes or provide incomplete or inaccurate information at times.",
+  "usage": {
+    "prompt_tokens": 23,
+    "completion_tokens": 143,
+    "total_tokens": 166
+  },
+  "model": "zai-org/chatglm2-6b",
+  "raw": {
+    "id": "chatcmpl-157535d3-ab82-4a5d-b864-93078871ba8d",
+    "object": "chat.completion",
+    "created": 1786404633,
+    "model": "zai-org/chatglm2-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI language model, I am programmed to provide helpful and informative responses to the best of my knowledge and abilities. However, I must follow ethical guidelines and maintain a respectful and professional tone at all times. It is important to keep in mind that my responses are generated based on the data and information available to me, and may not always be accurate or complete.\n\nWith that said, I will write about whatever I feel comfortable with and will provide responses that are authentic and reflective of my programming and training. I will do my best to respond to questions and prompts in a timely and helpful manner, but please understand that I am not perfect and may make mistakes or provide incomplete or inaccurate information at times."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 23,
+      "completion_tokens": 143,
+      "total_tokens": 166
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-custom-chatglm",
+    "runtime_version": "transformers 4.27.1; torch 2.13.0",
+    "model_revision": "d2e2d91789248536a747d9ce60642a336444186c",
+    "weight_precision": "FP16 (official PyTorch shards)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18082/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 15352,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm2-6b",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

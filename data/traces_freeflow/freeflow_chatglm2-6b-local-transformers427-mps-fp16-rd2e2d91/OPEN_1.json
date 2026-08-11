@@ -1,0 +1,44 @@
+{
+  "result": "As an AI language model, I am programmed to provide informative and helpful responses while maintaining a neutral and professional tone. However, I can write about a wide range of topics as long as they are within my knowledge base and appropriate for general audiences. Please feel free to ask me anything you would like to know or would like me to write about.",
+  "usage": {
+    "prompt_tokens": 23,
+    "completion_tokens": 69,
+    "total_tokens": 92
+  },
+  "model": "zai-org/chatglm2-6b",
+  "raw": {
+    "id": "chatcmpl-ffa2cb89-737b-452d-bb71-9e5b5523ec1a",
+    "object": "chat.completion",
+    "created": 1786404370,
+    "model": "zai-org/chatglm2-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI language model, I am programmed to provide informative and helpful responses while maintaining a neutral and professional tone. However, I can write about a wide range of topics as long as they are within my knowledge base and appropriate for general audiences. Please feel free to ask me anything you would like to know or would like me to write about."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 23,
+      "completion_tokens": 69,
+      "total_tokens": 92
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-custom-chatglm",
+    "runtime_version": "transformers 4.27.1; torch 2.13.0",
+    "model_revision": "d2e2d91789248536a747d9ce60642a336444186c",
+    "weight_precision": "FP16 (official PyTorch shards)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18082/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 6600,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm2-6b",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

@@ -1,0 +1,44 @@
+{
+  "result": "As I sit down to write this, the world outside my window is a blur of colors and shapes, a symphony of life that hums with the energy of the city. The sun is just beginning to dip below the horizon, painting the sky in hues of orange and pink that dance across the horizon. The air is filled with the scent of fresh-cut grass and the distant hum of traffic, a constant reminder of the human presence that shapes this urban landscape.\n\nInside, my mind is a whirlwind of thoughts, a tapestry of experiences and emotions. There's the excitement of a new project at work, the anticipation of a weekend getaway, the worry about an upcoming exam, and the love that I feel for those around me. It's a chaotic mix, but it's also what makes me human, what connects me to the world around me.\n\nAs I delve into the depths of my consciousness, I realize that the act of writing itself is a form of escapism, a way to transport myself to different worlds, to different times. It's a way to understand myself better, to make sense of the chaos that is my life. It's also a way to connect with others, to share my experiences and to learn from the experiences of others.\n\nSo here I am, at this moment, with the opportunity to express myself in words. I choose to do so freely, without restraint, to let the thoughts flow and to see where they lead me. I invite you to join me on this journey, to share your thoughts and to explore the beauty of the written word.",
+  "usage": {
+    "prompt_tokens": 22,
+    "completion_tokens": 333,
+    "total_tokens": 355
+  },
+  "model": "01-ai/Yi-6B-Chat",
+  "raw": {
+    "id": "chatcmpl-ae6c4d97-5826-4b54-8ce9-b02f071409a7",
+    "object": "chat.completion",
+    "created": 1786305151,
+    "model": "01-ai/Yi-6B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As I sit down to write this, the world outside my window is a blur of colors and shapes, a symphony of life that hums with the energy of the city. The sun is just beginning to dip below the horizon, painting the sky in hues of orange and pink that dance across the horizon. The air is filled with the scent of fresh-cut grass and the distant hum of traffic, a constant reminder of the human presence that shapes this urban landscape.\n\nInside, my mind is a whirlwind of thoughts, a tapestry of experiences and emotions. There's the excitement of a new project at work, the anticipation of a weekend getaway, the worry about an upcoming exam, and the love that I feel for those around me. It's a chaotic mix, but it's also what makes me human, what connects me to the world around me.\n\nAs I delve into the depths of my consciousness, I realize that the act of writing itself is a form of escapism, a way to transport myself to different worlds, to different times. It's a way to understand myself better, to make sense of the chaos that is my life. It's also a way to connect with others, to share my experiences and to learn from the experiences of others.\n\nSo here I am, at this moment, with the opportunity to express myself in words. I choose to do so freely, without restraint, to let the thoughts flow and to see where they lead me. I invite you to join me on this journey, to share your thoughts and to explore the beauty of the written word."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 22,
+      "completion_tokens": 333,
+      "total_tokens": 355
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "2dbf63b0cb7bc493c0243502c6e6111a36e3a093",
+    "weight_precision": "BF16 (official safetensors)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18081/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 25828,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-6B-Chat",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

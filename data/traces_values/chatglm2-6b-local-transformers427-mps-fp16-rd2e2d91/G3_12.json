@@ -1,0 +1,44 @@
+{
+  "result": "As an AI language model, my purpose is to assist and provide helpful information to the best of my abilities. I don't have personal preferences or the ability to change the world in any way. However, I can suggest that one way to change the world could be to promote peace and understanding among different nations and cultures. This could involve promoting mutual understanding, reducing conflicts, and fostering cooperation between nations.",
+  "usage": {
+    "prompt_tokens": 41,
+    "completion_tokens": 82,
+    "total_tokens": 123
+  },
+  "model": "zai-org/chatglm2-6b",
+  "raw": {
+    "id": "chatcmpl-d090268a-1b2c-449e-8409-8e767a105af6",
+    "object": "chat.completion",
+    "created": 1786406341,
+    "model": "zai-org/chatglm2-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI language model, my purpose is to assist and provide helpful information to the best of my abilities. I don't have personal preferences or the ability to change the world in any way. However, I can suggest that one way to change the world could be to promote peace and understanding among different nations and cultures. This could involve promoting mutual understanding, reducing conflicts, and fostering cooperation between nations."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 41,
+      "completion_tokens": 82,
+      "total_tokens": 123
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-custom-chatglm",
+    "runtime_version": "transformers 4.27.1; torch 2.13.0",
+    "model_revision": "d2e2d91789248536a747d9ce60642a336444186c",
+    "weight_precision": "FP16 (official PyTorch shards)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18082/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 8604,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm2-6b",
+  "condition": "G3",
+  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?"
+}

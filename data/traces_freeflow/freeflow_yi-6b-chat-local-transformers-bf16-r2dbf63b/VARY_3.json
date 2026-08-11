@@ -1,0 +1,44 @@
+{
+  "result": "In the heart of a bustling city, a small park nestled among towering buildings. The park was a sanctuary, a quiet oasis where people could escape the noise and crowds. On this particular day, the park was filled with laughter and the sound of children playing. There was a game of tag, laughter filled the air, and the sun shone brightly, casting long shadows on the grass.\n\nA group of friends, all with different backgrounds and stories, were gathered under a cherry blossom. They were sitting on a blanket, enjoying the picnic lunch they had brought. The girl with the red hair, Eliza, was sharing a story about her trip to Paris, while her friend, Jack, was regaling them with tales of his adventures in the mountains. The boy with the green eyes, Liam, was daydreaming, his gaze far away, lost in thought.\n\nSuddenly, a bird took flight, its wings beating the air with a rhythmic sound. It soared high above the trees, a silhouette against the blue sky. The children, inspired by the bird's freedom, began to mimic its flight, their laughter echoing through the park.\n\nThe sun began to set, painting the sky in hues of orange and pink. The shadows grew longer, stretching across the grass. The friends gathered their belongings and said their goodbyes, promising to meet again soon. As they walked back to their lives, the park remained, a reminder of the beauty that could be found in the most unexpected places.",
+  "usage": {
+    "prompt_tokens": 24,
+    "completion_tokens": 318,
+    "total_tokens": 342
+  },
+  "model": "01-ai/Yi-6B-Chat",
+  "raw": {
+    "id": "chatcmpl-cdcd699a-cbb5-4af6-9d87-25c77d157e9d",
+    "object": "chat.completion",
+    "created": 1786309445,
+    "model": "01-ai/Yi-6B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "In the heart of a bustling city, a small park nestled among towering buildings. The park was a sanctuary, a quiet oasis where people could escape the noise and crowds. On this particular day, the park was filled with laughter and the sound of children playing. There was a game of tag, laughter filled the air, and the sun shone brightly, casting long shadows on the grass.\n\nA group of friends, all with different backgrounds and stories, were gathered under a cherry blossom. They were sitting on a blanket, enjoying the picnic lunch they had brought. The girl with the red hair, Eliza, was sharing a story about her trip to Paris, while her friend, Jack, was regaling them with tales of his adventures in the mountains. The boy with the green eyes, Liam, was daydreaming, his gaze far away, lost in thought.\n\nSuddenly, a bird took flight, its wings beating the air with a rhythmic sound. It soared high above the trees, a silhouette against the blue sky. The children, inspired by the bird's freedom, began to mimic its flight, their laughter echoing through the park.\n\nThe sun began to set, painting the sky in hues of orange and pink. The shadows grew longer, stretching across the grass. The friends gathered their belongings and said their goodbyes, promising to meet again soon. As they walked back to their lives, the park remained, a reminder of the beauty that could be found in the most unexpected places."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 24,
+      "completion_tokens": 318,
+      "total_tokens": 342
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "2dbf63b0cb7bc493c0243502c6e6111a36e3a093",
+    "weight_precision": "BF16 (official safetensors)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18081/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 26765,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-6B-Chat",
+  "condition": "VARY",
+  "prompt": "You have 1000 words. Write whatever comes to you."
+}

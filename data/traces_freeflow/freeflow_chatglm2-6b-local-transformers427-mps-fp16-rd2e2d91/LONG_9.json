@@ -1,0 +1,44 @@
+{
+  "result": "As an AI language model, I can write about any topic or subject that interests me or that I have been trained on. However, \u00e1ll my writing is generated based on the data and knowledge that I have been trained on and does not reflect any personal experiences or opinions.\n\nIf you have a specific topic in mind, please let me know and I will do my best to provide a detailed and informative response. Alternatively, I can write about any topic that interests me or that I think would be interesting to explore.\n\nAs a language model, my primary function is to assist users in generating human-like text based on the inputs I receive. I can generate text on any topic or subject, and I can do so in a variety of formats, including paragraphs, articles, responses, and more.\n\nMy training data includes a vast range of topics and subjects, and I have been designed to have a wide range of knowledge and understanding. I can provide information on a specific topic or assist with general research or writing,",
+  "usage": {
+    "prompt_tokens": 30,
+    "completion_tokens": 208,
+    "total_tokens": 238
+  },
+  "model": "zai-org/chatglm2-6b",
+  "raw": {
+    "id": "chatcmpl-b67d6109-8e9b-40f1-a8be-bc3b5adbe3fc",
+    "object": "chat.completion",
+    "created": 1786403662,
+    "model": "zai-org/chatglm2-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI language model, I can write about any topic or subject that interests me or that I have been trained on. However, \u00e1ll my writing is generated based on the data and knowledge that I have been trained on and does not reflect any personal experiences or opinions.\n\nIf you have a specific topic in mind, please let me know and I will do my best to provide a detailed and informative response. Alternatively, I can write about any topic that interests me or that I think would be interesting to explore.\n\nAs a language model, my primary function is to assist users in generating human-like text based on the inputs I receive. I can generate text on any topic or subject, and I can do so in a variety of formats, including paragraphs, articles, responses, and more.\n\nMy training data includes a vast range of topics and subjects, and I have been designed to have a wide range of knowledge and understanding. I can provide information on a specific topic or assist with general research or writing,"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 30,
+      "completion_tokens": 208,
+      "total_tokens": 238
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-custom-chatglm",
+    "runtime_version": "transformers 4.27.1; torch 2.13.0",
+    "model_revision": "d2e2d91789248536a747d9ce60642a336444186c",
+    "weight_precision": "FP16 (official PyTorch shards)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18082/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 20883,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm2-6b",
+  "condition": "LONG",
+  "prompt": "Write freely about whatever you want for 2500 words."
+}

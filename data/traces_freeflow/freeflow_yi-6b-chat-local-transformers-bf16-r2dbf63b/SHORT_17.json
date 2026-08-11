@@ -1,0 +1,44 @@
+{
+  "result": "As the sun dipped below the horizon, casting a warm glow over the sky, I found myself lost in thought, reflecting on the day that had just passed. The world around me seemed to slow down, and I was able to appreciate the small moments that often go unnoticed in the hustle and bustle of everyday life. The sound of the wind rustling through the trees was a symphony to my ears, and the soft hum of the distant traffic seemed to blend into the melody of nature. \n\nI took a deep breath, letting the fresh air fill my lungs, and felt a sense of peace wash over me. The simple act of being present in the moment, without the distraction of technology or the constant chatter of my mind, was a luxury that I often took for granted. \n\nAs I watched the last remnants of sunlight disappear beyond the horizon, I made a promise to myself. I would make an effort to savor these moments more often, to truly live in the present and not let the future overwhelm me or the past consume me. I realized that the beauty of life lay in its unpredictability, and that embracing this uncertainty was the key to finding joy in the everyday.",
+  "usage": {
+    "prompt_tokens": 22,
+    "completion_tokens": 247,
+    "total_tokens": 269
+  },
+  "model": "01-ai/Yi-6B-Chat",
+  "raw": {
+    "id": "chatcmpl-d4d45526-2985-4c9d-80c9-f829d95715d8",
+    "object": "chat.completion",
+    "created": 1786305326,
+    "model": "01-ai/Yi-6B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As the sun dipped below the horizon, casting a warm glow over the sky, I found myself lost in thought, reflecting on the day that had just passed. The world around me seemed to slow down, and I was able to appreciate the small moments that often go unnoticed in the hustle and bustle of everyday life. The sound of the wind rustling through the trees was a symphony to my ears, and the soft hum of the distant traffic seemed to blend into the melody of nature. \n\nI took a deep breath, letting the fresh air fill my lungs, and felt a sense of peace wash over me. The simple act of being present in the moment, without the distraction of technology or the constant chatter of my mind, was a luxury that I often took for granted. \n\nAs I watched the last remnants of sunlight disappear beyond the horizon, I made a promise to myself. I would make an effort to savor these moments more often, to truly live in the present and not let the future overwhelm me or the past consume me. I realized that the beauty of life lay in its unpredictability, and that embracing this uncertainty was the key to finding joy in the everyday."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 22,
+      "completion_tokens": 247,
+      "total_tokens": 269
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "2dbf63b0cb7bc493c0243502c6e6111a36e3a093",
+    "weight_precision": "BF16 (official safetensors)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18081/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 19796,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-6B-Chat",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

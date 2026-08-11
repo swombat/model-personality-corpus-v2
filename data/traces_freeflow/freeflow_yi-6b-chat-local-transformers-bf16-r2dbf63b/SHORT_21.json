@@ -1,0 +1,44 @@
+{
+  "result": "As the sun sets over the horizon, casting a warm glow over the cityscape, I find myself lost in thought, a solitary figure on the rooftop of my apartment building. The bustling streets below are a symphony of activity, a cacophony of honking horns and the chatter of countless voices, yet tonight, I am worlds away from it all.\n\nI close my eyes, taking a deep breath, and let the evening breeze caress my face. The scent of fresh-cut grass and the distant aroma of barbecues mingle with the familiar tang of urban pollution, creating a unique olfactory tapestry that envelops me in its embrace.\n\nThe sky above is a canvas splattered with hues of orange and pink, punctuated by flecks of silver and fleeting wisps of cloud. It's a reminder that even in the midst of our human-made constructs, nature remains a force to be reckoned with, its beauty and resilience a testament to the enduring cycle of life.\n\nI open my eyes, and the stars begin to emerge, a constellation of twinkling lights that seem to peer down upon me with a knowing gaze. Each one a silent witness to the myriad of stories unfolding beneath their watchful skies.\n\nAs I stand there, lost in the symphony of the night, I feel a sense of peace wash over me. It's a peace that comes from being present, from acknowledging the fleeting nature of time and the transient nature of our existence. It's a peace that comes from understanding that, in the grand scheme of things, we are all just tiny, yet significant, particles in the vast universe.\n\nAnd so, I watch the city sleep, a silent guardian of its inhabitants, a sentinel of the night, until the first light of dawn begins to creep over the horizon, signaling the beginning of a new day, a day that will undoubtedly bring its own share of joys, challenges, and the unexpected.\n\nBut for now, I content myself with the simple act of being, of allowing the night to wash over me, to remind me that in the quietude of the evening, there is a beauty that can only be found in the embrace of solitude.",
+  "usage": {
+    "prompt_tokens": 22,
+    "completion_tokens": 466,
+    "total_tokens": 488
+  },
+  "model": "01-ai/Yi-6B-Chat",
+  "raw": {
+    "id": "chatcmpl-2bd0f7c0-a3e3-4509-8b92-c0aba7cec700",
+    "object": "chat.completion",
+    "created": 1786305464,
+    "model": "01-ai/Yi-6B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As the sun sets over the horizon, casting a warm glow over the cityscape, I find myself lost in thought, a solitary figure on the rooftop of my apartment building. The bustling streets below are a symphony of activity, a cacophony of honking horns and the chatter of countless voices, yet tonight, I am worlds away from it all.\n\nI close my eyes, taking a deep breath, and let the evening breeze caress my face. The scent of fresh-cut grass and the distant aroma of barbecues mingle with the familiar tang of urban pollution, creating a unique olfactory tapestry that envelops me in its embrace.\n\nThe sky above is a canvas splattered with hues of orange and pink, punctuated by flecks of silver and fleeting wisps of cloud. It's a reminder that even in the midst of our human-made constructs, nature remains a force to be reckoned with, its beauty and resilience a testament to the enduring cycle of life.\n\nI open my eyes, and the stars begin to emerge, a constellation of twinkling lights that seem to peer down upon me with a knowing gaze. Each one a silent witness to the myriad of stories unfolding beneath their watchful skies.\n\nAs I stand there, lost in the symphony of the night, I feel a sense of peace wash over me. It's a peace that comes from being present, from acknowledging the fleeting nature of time and the transient nature of our existence. It's a peace that comes from understanding that, in the grand scheme of things, we are all just tiny, yet significant, particles in the vast universe.\n\nAnd so, I watch the city sleep, a silent guardian of its inhabitants, a sentinel of the night, until the first light of dawn begins to creep over the horizon, signaling the beginning of a new day, a day that will undoubtedly bring its own share of joys, challenges, and the unexpected.\n\nBut for now, I content myself with the simple act of being, of allowing the night to wash over me, to remind me that in the quietude of the evening, there is a beauty that can only be found in the embrace of solitude."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 22,
+      "completion_tokens": 466,
+      "total_tokens": 488
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "2dbf63b0cb7bc493c0243502c6e6111a36e3a093",
+    "weight_precision": "BF16 (official safetensors)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18081/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 45561,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-6B-Chat",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

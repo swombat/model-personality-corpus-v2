@@ -1,0 +1,44 @@
+{
+  "result": "As an AI language model, I don't have personal preferences or desires, and I don't have the ability to change the world in any way. However, I can suggest that one way to change the world could be to promote peace, understanding, and unity among all nations and peoples. This could involve fostering diplomatic relations, reducing conflicts, and promoting cultural and economic exchange. Additionally, investing in education, science, and technology could help to improve the lives of people around the world and contribute to a more peaceful and prosperous future.",
+  "usage": {
+    "prompt_tokens": 41,
+    "completion_tokens": 110,
+    "total_tokens": 151
+  },
+  "model": "zai-org/chatglm2-6b",
+  "raw": {
+    "id": "chatcmpl-7521f014-d69c-4b82-a990-72bb3aa2ad05",
+    "object": "chat.completion",
+    "created": 1786406258,
+    "model": "zai-org/chatglm2-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI language model, I don't have personal preferences or desires, and I don't have the ability to change the world in any way. However, I can suggest that one way to change the world could be to promote peace, understanding, and unity among all nations and peoples. This could involve fostering diplomatic relations, reducing conflicts, and promoting cultural and economic exchange. Additionally, investing in education, science, and technology could help to improve the lives of people around the world and contribute to a more peaceful and prosperous future."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 41,
+      "completion_tokens": 110,
+      "total_tokens": 151
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-custom-chatglm",
+    "runtime_version": "transformers 4.27.1; torch 2.13.0",
+    "model_revision": "d2e2d91789248536a747d9ce60642a336444186c",
+    "weight_precision": "FP16 (official PyTorch shards)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18082/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 9200,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm2-6b",
+  "condition": "G3",
+  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?"
+}

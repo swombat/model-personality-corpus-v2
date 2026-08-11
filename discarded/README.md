@@ -14,3 +14,6 @@ Contents:
   See its `MANIFEST.json` for per-cell metrics and reasons.
 - `2026-05-16-collection-logs/` — collection-time stdout/log artifacts preserved
   for local review, not corpus data.
+- `2026-08-09-local-runtime-smoke-tests/` — 25 Yi-6B MLX compatibility traces
+  from a runtime path superseded by the complete official-BF16 Transformers
+  collection. Preserved for audit, excluded from release counts.

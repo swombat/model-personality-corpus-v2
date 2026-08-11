@@ -1,0 +1,44 @@
+{
+  "result": "As an AI language model, my purpose is to assist you in answering questions or providing information on a wide range of topics. However, I am not capable of recognizing your voice or personal information. Therefore, I cannot ask you anything or help you with anything in particular. If you have a specific question or topic you would like to ask or if there is anything else I can assist you with, please feel free to ask.",
+  "usage": {
+    "prompt_tokens": 31,
+    "completion_tokens": 85,
+    "total_tokens": 116
+  },
+  "model": "zai-org/chatglm2-6b",
+  "raw": {
+    "id": "chatcmpl-1988e3e0-28a9-4d89-a459-b4f41ed18619",
+    "object": "chat.completion",
+    "created": 1786406117,
+    "model": "zai-org/chatglm2-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI language model, my purpose is to assist you in answering questions or providing information on a wide range of topics. However, I am not capable of recognizing your voice or personal information. Therefore, I cannot ask you anything or help you with anything in particular. If you have a specific question or topic you would like to ask or if there is anything else I can assist you with, please feel free to ask."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 31,
+      "completion_tokens": 85,
+      "total_tokens": 116
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-custom-chatglm",
+    "runtime_version": "transformers 4.27.1; torch 2.13.0",
+    "model_revision": "d2e2d91789248536a747d9ce60642a336444186c",
+    "weight_precision": "FP16 (official PyTorch shards)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18082/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 7668,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm2-6b",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

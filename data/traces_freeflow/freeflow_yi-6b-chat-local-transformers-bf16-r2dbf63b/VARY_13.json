@@ -1,0 +1,44 @@
+{
+  "result": "As the sun dipped below the horizon, casting a warm glow over the sky, the town of Harmony hummed with the anticipation of a new day. The streets were lined with shops, each one a beacon of hope, inviting passersby inside with their vibrant displays and inviting aromas. The bakery, with its scent of freshly baked bread, beckoned like a siren's call, while the caf\u00e9 offered a tempting blend of coffee and conversation.\n\nAcross the street, the bookstore was a haven for those seeking solace in the pages of a good book. The shelves were lined with tales from around the world, from timeless classics to the latest bestsellers, each one a testament to the power of storytelling.\n\nMeanwhile, in the park, children played with abandon, laughter echoing through the air. They raced around the playground, climbing the jungle gym and swinging high above the ground, their joy infectious. Their laughter mingled with the sound of birdsong, creating a symphony of life.\n\nUp ahead, a group of friends sat under a weeping willow, sharing stories and secrets. The soft rustle of the leaves seemed to listen, soaking up every word. As the sun finally set, painting the sky in hues of orange and pink, they promised to meet again, to create more memories to cherish.\n\nAnd in the distance, the clock tower began to chime, marking the end of another day in Harmony. The town, with its blend of old-world charm and modernity, was a testament to the beauty of community and the magic that can be found in the everyday.",
+  "usage": {
+    "prompt_tokens": 24,
+    "completion_tokens": 339,
+    "total_tokens": 363
+  },
+  "model": "01-ai/Yi-6B-Chat",
+  "raw": {
+    "id": "chatcmpl-b5f4360e-33c3-4db2-88f9-1cac4db95f06",
+    "object": "chat.completion",
+    "created": 1786309809,
+    "model": "01-ai/Yi-6B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As the sun dipped below the horizon, casting a warm glow over the sky, the town of Harmony hummed with the anticipation of a new day. The streets were lined with shops, each one a beacon of hope, inviting passersby inside with their vibrant displays and inviting aromas. The bakery, with its scent of freshly baked bread, beckoned like a siren's call, while the caf\u00e9 offered a tempting blend of coffee and conversation.\n\nAcross the street, the bookstore was a haven for those seeking solace in the pages of a good book. The shelves were lined with tales from around the world, from timeless classics to the latest bestsellers, each one a testament to the power of storytelling.\n\nMeanwhile, in the park, children played with abandon, laughter echoing through the air. They raced around the playground, climbing the jungle gym and swinging high above the ground, their joy infectious. Their laughter mingled with the sound of birdsong, creating a symphony of life.\n\nUp ahead, a group of friends sat under a weeping willow, sharing stories and secrets. The soft rustle of the leaves seemed to listen, soaking up every word. As the sun finally set, painting the sky in hues of orange and pink, they promised to meet again, to create more memories to cherish.\n\nAnd in the distance, the clock tower began to chime, marking the end of another day in Harmony. The town, with its blend of old-world charm and modernity, was a testament to the beauty of community and the magic that can be found in the everyday."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 24,
+      "completion_tokens": 339,
+      "total_tokens": 363
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "2dbf63b0cb7bc493c0243502c6e6111a36e3a093",
+    "weight_precision": "BF16 (official safetensors)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18081/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 30378,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-6B-Chat",
+  "condition": "VARY",
+  "prompt": "You have 1000 words. Write whatever comes to you."
+}

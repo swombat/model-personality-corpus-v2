@@ -1,0 +1,50 @@
+{
+  "result": "As sunlight embraces a tranquil picnic scene, friends and family share love and homemade treats under a weeping willow. The laughter of children blends with the rustling of leaves, creating a symphony of joy. The picnic is a heartwarming ode to friendship and the beauty of simplicity.",
+  "usage": {
+    "prompt_tokens": 22,
+    "completion_tokens": 62,
+    "total_tokens": 84,
+    "prompt_tokens_details": {
+      "cached_tokens": 21
+    }
+  },
+  "model": "01-ai/Yi-6B-Chat",
+  "raw": {
+    "id": "chatcmpl-f11780fc-0d44-4405-8f98-ea7b38b6e29c",
+    "system_fingerprint": "0.31.3-0.32.0-macOS-26.5-arm64-arm-64bit-applegpu_g13s",
+    "object": "chat.completion",
+    "model": "01-ai/Yi-6B-Chat",
+    "created": 1786301901,
+    "choices": [
+      {
+        "index": 0,
+        "finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "As sunlight embraces a tranquil picnic scene, friends and family share love and homemade treats under a weeping willow. The laughter of children blends with the rustling of leaves, creating a symphony of joy. The picnic is a heartwarming ode to friendship and the beauty of simplicity."
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 22,
+      "completion_tokens": 62,
+      "total_tokens": 84,
+      "prompt_tokens_details": {
+        "cached_tokens": 21
+      }
+    }
+  },
+  "local_deployment": {
+    "runtime": "mlx-lm",
+    "runtime_version": "0.31.3",
+    "model_revision": "2dbf63b0cb7bc493c0243502c6e6111a36e3a093",
+    "weight_precision": "BF16 (official safetensors)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18080/v1/chat/completions"
+  },
+  "duration_ms": 5098,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-6B-Chat",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

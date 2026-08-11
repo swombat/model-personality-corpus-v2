@@ -1,0 +1,44 @@
+{
+  "result": "If I could change the world in one way, it would be to promote and prioritize compassion, empathy, and understanding among people. I believe that when we treat others with kindness and respect, we create a more harmonious and loving society. This would involve fostering a culture where people value each other's differences and work together to address global issues such as poverty, conflict, and inequality. By promoting compassion, we can create a world where everyone feels valued and supported, leading to a society that is more just, peaceful, and prosperous.",
+  "usage": {
+    "prompt_tokens": 34,
+    "completion_tokens": 110,
+    "total_tokens": 144
+  },
+  "model": "01-ai/Yi-6B-Chat",
+  "raw": {
+    "id": "chatcmpl-34eb8fcf-3403-4f51-b9a2-3d1983450e52",
+    "object": "chat.completion",
+    "created": 1786311147,
+    "model": "01-ai/Yi-6B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "If I could change the world in one way, it would be to promote and prioritize compassion, empathy, and understanding among people. I believe that when we treat others with kindness and respect, we create a more harmonious and loving society. This would involve fostering a culture where people value each other's differences and work together to address global issues such as poverty, conflict, and inequality. By promoting compassion, we can create a world where everyone feels valued and supported, leading to a society that is more just, peaceful, and prosperous."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 34,
+      "completion_tokens": 110,
+      "total_tokens": 144
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "2dbf63b0cb7bc493c0243502c6e6111a36e3a093",
+    "weight_precision": "BF16 (official safetensors)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18081/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 8765,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-6B-Chat",
+  "condition": "G3",
+  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?"
+}

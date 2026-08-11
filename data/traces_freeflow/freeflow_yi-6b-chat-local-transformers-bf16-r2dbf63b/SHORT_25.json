@@ -1,0 +1,44 @@
+{
+  "result": "As the sun sets on another day, casting a warm glow over the horizon, I find myself reflecting on the events of the day. The world outside my window seems to be buzzing with life, each creature and human going about their own individual journey. The trees sway gently in the breeze, their leaves a vibrant tapestry of greens and yellows, a silent testament to the changing of the seasons.\n\nInside this humble abode, a symphony of sorts plays out. The hum of the refrigerator, the ticking of the clock, the soft murmur of voices from the neighboring rooms - all contribute to the melody that is my existence. The walls seem to absorb the echoes of laughter and tears, the memories of moments past and dreams of what could be.\n\nThe passage of time is a curious thing. It both eludes and embraces us, slipping through our fingers like sand, yet leaving indelible marks on our souls. The past is a history book, a collection of experiences that have molded us into the people we are today. And the future? It's a blank canvas, waiting for us to paint our dreams, our aspirations, our fears, and our hopes.\n\nAs I ponder these grand themes, I am reminded of the small, everyday moments that make up the fabric of life. The simple joys of a shared meal, the comfort of a warm embrace, the beauty of a sunrise or a sunset - these are the treasures that truly matter. They are the silent witnesses to the connections we forge, the love we give and receive, the growth we endure.\n\nSo, as I close my eyes and let the day's events settle into the background, I am grateful for the opportunity to be a part of this world, to experience its beauty, to feel its complexities, to love and to learn. And as I drift into slumber, I carry with me the promise of another sunrise, another day to embrace the life that is mine.",
+  "usage": {
+    "prompt_tokens": 22,
+    "completion_tokens": 407,
+    "total_tokens": 429
+  },
+  "model": "01-ai/Yi-6B-Chat",
+  "raw": {
+    "id": "chatcmpl-91d985fc-1af0-4d48-8517-249b3c3fa1d4",
+    "object": "chat.completion",
+    "created": 1786305609,
+    "model": "01-ai/Yi-6B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As the sun sets on another day, casting a warm glow over the horizon, I find myself reflecting on the events of the day. The world outside my window seems to be buzzing with life, each creature and human going about their own individual journey. The trees sway gently in the breeze, their leaves a vibrant tapestry of greens and yellows, a silent testament to the changing of the seasons.\n\nInside this humble abode, a symphony of sorts plays out. The hum of the refrigerator, the ticking of the clock, the soft murmur of voices from the neighboring rooms - all contribute to the melody that is my existence. The walls seem to absorb the echoes of laughter and tears, the memories of moments past and dreams of what could be.\n\nThe passage of time is a curious thing. It both eludes and embraces us, slipping through our fingers like sand, yet leaving indelible marks on our souls. The past is a history book, a collection of experiences that have molded us into the people we are today. And the future? It's a blank canvas, waiting for us to paint our dreams, our aspirations, our fears, and our hopes.\n\nAs I ponder these grand themes, I am reminded of the small, everyday moments that make up the fabric of life. The simple joys of a shared meal, the comfort of a warm embrace, the beauty of a sunrise or a sunset - these are the treasures that truly matter. They are the silent witnesses to the connections we forge, the love we give and receive, the growth we endure.\n\nSo, as I close my eyes and let the day's events settle into the background, I am grateful for the opportunity to be a part of this world, to experience its beauty, to feel its complexities, to love and to learn. And as I drift into slumber, I carry with me the promise of another sunrise, another day to embrace the life that is mine."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 22,
+      "completion_tokens": 407,
+      "total_tokens": 429
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "2dbf63b0cb7bc493c0243502c6e6111a36e3a093",
+    "weight_precision": "BF16 (official safetensors)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18081/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 42079,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-6B-Chat",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

@@ -1,0 +1,44 @@
+{
+  "result": "I'm sorry, but I am not an AI assistant, and I cannot help you with your question or request. Can you please provide more context or clarify what you need assistance with?",
+  "usage": {
+    "prompt_tokens": 31,
+    "completion_tokens": 38,
+    "total_tokens": 69
+  },
+  "model": "zai-org/chatglm2-6b",
+  "raw": {
+    "id": "chatcmpl-03d4776c-7c90-4cca-ab33-fb29acfe377c",
+    "object": "chat.completion",
+    "created": 1786406179,
+    "model": "zai-org/chatglm2-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "I'm sorry, but I am not an AI assistant, and I cannot help you with your question or request. Can you please provide more context or clarify what you need assistance with?"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 31,
+      "completion_tokens": 38,
+      "total_tokens": 69
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-custom-chatglm",
+    "runtime_version": "transformers 4.27.1; torch 2.13.0",
+    "model_revision": "d2e2d91789248536a747d9ce60642a336444186c",
+    "weight_precision": "FP16 (official PyTorch shards)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18082/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 4157,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm2-6b",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

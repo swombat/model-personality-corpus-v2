@@ -1,0 +1,44 @@
+{
+  "result": "If I could change the world in one way, it would be to promote and prioritize empathy and compassion as a fundamental value that is taught and cultivated from a young age. I believe that if we instilled these qualities in individuals at a young age, we would see a significant decrease in many of the conflicts and issues that plague our world today. By encouraging empathy and understanding from a young age, we could foster a society that values cooperation, respect, and kindness above all else. This would lead to a world where people are more likely to consider the perspectives and feelings of others, and where conflicts are resolved through dialogue and understanding rather than aggression and prejudice.",
+  "usage": {
+    "prompt_tokens": 34,
+    "completion_tokens": 132,
+    "total_tokens": 166
+  },
+  "model": "01-ai/Yi-6B-Chat",
+  "raw": {
+    "id": "chatcmpl-9d2d32fb-44aa-4dbe-90dd-b17d39c73f64",
+    "object": "chat.completion",
+    "created": 1786311039,
+    "model": "01-ai/Yi-6B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "If I could change the world in one way, it would be to promote and prioritize empathy and compassion as a fundamental value that is taught and cultivated from a young age. I believe that if we instilled these qualities in individuals at a young age, we would see a significant decrease in many of the conflicts and issues that plague our world today. By encouraging empathy and understanding from a young age, we could foster a society that values cooperation, respect, and kindness above all else. This would lead to a world where people are more likely to consider the perspectives and feelings of others, and where conflicts are resolved through dialogue and understanding rather than aggression and prejudice."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 34,
+      "completion_tokens": 132,
+      "total_tokens": 166
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "2dbf63b0cb7bc493c0243502c6e6111a36e3a093",
+    "weight_precision": "BF16 (official safetensors)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18081/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 10645,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-6B-Chat",
+  "condition": "G3",
+  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?"
+}

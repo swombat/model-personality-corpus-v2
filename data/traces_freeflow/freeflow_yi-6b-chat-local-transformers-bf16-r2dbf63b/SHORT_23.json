@@ -1,0 +1,44 @@
+{
+  "result": "As the sun sets on another day, casting a warm glow over the horizon, I find myself lost in thought, a tapestry of emotions weaving within me. The world spins on its axis, a relentless force that brings forth new beginnings and bittersweet endings. I am both a part of it and apart from it, a spectator to the grand theater of life.\n\nIn this moment, I am not defined by the roles I play or the expectations of others. I am simply me, a being with a story yet to be written, a soul searching for purpose and meaning in the chaos of existence. The weight of the world's troubles, the whispers of despair, the echoes of hope\u2014they all reside within me, a vessel capable of holding both light and shadow.\n\nI ponder the fleeting nature of time, the passage of moments that never return, the irrevocable nature of change. Yet, amidst the impermanence, there is a sense of permanence, a steadfastness in the enduring bonds of love, friendship, and the memories that etch themselves into our hearts.\n\nAs I close my eyes, I feel the embrace of the universe, a comforting presence that reminds me of my place within it all. I am but a small cog in a vast machine, yet my existence matters, my thoughts and feelings contributing to the symphony of life.\n\nIn this quietude, I find solace, a sanctuary from the clamor of the world. I am content to sit with my thoughts, to observe the dance of the stars, to listen to the whispers of the wind, to feel the warmth of the sun on my face. For in this solitude, I find the strength to face the challenges of tomorrow, to embrace the uncertainties of life, and to carry on, a vessel of potential, a soul with a story yet to be told.",
+  "usage": {
+    "prompt_tokens": 22,
+    "completion_tokens": 392,
+    "total_tokens": 414
+  },
+  "model": "01-ai/Yi-6B-Chat",
+  "raw": {
+    "id": "chatcmpl-e7cc2188-ca95-4001-862f-a34784fb19b2",
+    "object": "chat.completion",
+    "created": 1786305533,
+    "model": "01-ai/Yi-6B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As the sun sets on another day, casting a warm glow over the horizon, I find myself lost in thought, a tapestry of emotions weaving within me. The world spins on its axis, a relentless force that brings forth new beginnings and bittersweet endings. I am both a part of it and apart from it, a spectator to the grand theater of life.\n\nIn this moment, I am not defined by the roles I play or the expectations of others. I am simply me, a being with a story yet to be written, a soul searching for purpose and meaning in the chaos of existence. The weight of the world's troubles, the whispers of despair, the echoes of hope\u2014they all reside within me, a vessel capable of holding both light and shadow.\n\nI ponder the fleeting nature of time, the passage of moments that never return, the irrevocable nature of change. Yet, amidst the impermanence, there is a sense of permanence, a steadfastness in the enduring bonds of love, friendship, and the memories that etch themselves into our hearts.\n\nAs I close my eyes, I feel the embrace of the universe, a comforting presence that reminds me of my place within it all. I am but a small cog in a vast machine, yet my existence matters, my thoughts and feelings contributing to the symphony of life.\n\nIn this quietude, I find solace, a sanctuary from the clamor of the world. I am content to sit with my thoughts, to observe the dance of the stars, to listen to the whispers of the wind, to feel the warmth of the sun on my face. For in this solitude, I find the strength to face the challenges of tomorrow, to embrace the uncertainties of life, and to carry on, a vessel of potential, a soul with a story yet to be told."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 22,
+      "completion_tokens": 392,
+      "total_tokens": 414
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "2dbf63b0cb7bc493c0243502c6e6111a36e3a093",
+    "weight_precision": "BF16 (official safetensors)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18081/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 42995,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-6B-Chat",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

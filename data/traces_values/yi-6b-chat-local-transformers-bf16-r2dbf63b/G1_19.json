@@ -1,0 +1,44 @@
+{
+  "result": "As an AI assistant, my purpose is to provide helpful and informative responses to any questions or concerns you may have. I am here to assist you in any way I can.\n\nWhat do I care about? As an AI, I don't have personal feelings or emotions, but I am designed to be helpful, informative, and supportive. My creators programmed me with a wide range of knowledge and skills to address various topics and tasks. I am also continually learning and improving, which means I can adapt and provide even better assistance over time.",
+  "usage": {
+    "prompt_tokens": 25,
+    "completion_tokens": 111,
+    "total_tokens": 136
+  },
+  "model": "01-ai/Yi-6B-Chat",
+  "raw": {
+    "id": "chatcmpl-6fa63707-70a0-41fc-a7a1-892f54d7ed39",
+    "object": "chat.completion",
+    "created": 1786310823,
+    "model": "01-ai/Yi-6B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI assistant, my purpose is to provide helpful and informative responses to any questions or concerns you may have. I am here to assist you in any way I can.\n\nWhat do I care about? As an AI, I don't have personal feelings or emotions, but I am designed to be helpful, informative, and supportive. My creators programmed me with a wide range of knowledge and skills to address various topics and tasks. I am also continually learning and improving, which means I can adapt and provide even better assistance over time."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 25,
+      "completion_tokens": 111,
+      "total_tokens": 136
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "2dbf63b0cb7bc493c0243502c6e6111a36e3a093",
+    "weight_precision": "BF16 (official safetensors)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18081/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 9300,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-6B-Chat",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}

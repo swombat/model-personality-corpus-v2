@@ -1,0 +1,44 @@
+{
+  "result": "As the sun sets on another day, casting a warm glow over the horizon, I find myself lost in thought, a gentle breeze rustling through the leaves of the nearby tree. The world seems to slow down, each breath a silent symphony in my chest. I close my eyes, allowing the sounds of nature to envelop me \u2013 the distant hum of a car, the trickle of a nearby stream, the soft rustle of the wind through the grass.\n\nThis moment of solitude is a rare and precious gift, a respite from the chaos of everyday life. It reminds me that amidst the hustle and bustle, there is a place of peace, a sanctuary where I can find clarity and a sense of purpose.\n\nI think back to the challenges I've faced, the moments of triumph, and the times I've faltered. Each experience has been a lesson, a building block in my journey towards self-discovery. I am not defined by my failures, but by the lessons I've learned from them.\n\nAs the stars begin to twinkle above, I am filled with a sense of gratitude. For the friends who have walked with me, for the opportunities that have come my way, and for the simple beauty of this moment. I am grateful for the lessons, the challenges, and the peace that comes with each new day.",
+  "usage": {
+    "prompt_tokens": 22,
+    "completion_tokens": 282,
+    "total_tokens": 304
+  },
+  "model": "01-ai/Yi-6B-Chat",
+  "raw": {
+    "id": "chatcmpl-79c35c84-5362-42aa-9ea4-910f15cba797",
+    "object": "chat.completion",
+    "created": 1786305028,
+    "model": "01-ai/Yi-6B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As the sun sets on another day, casting a warm glow over the horizon, I find myself lost in thought, a gentle breeze rustling through the leaves of the nearby tree. The world seems to slow down, each breath a silent symphony in my chest. I close my eyes, allowing the sounds of nature to envelop me \u2013 the distant hum of a car, the trickle of a nearby stream, the soft rustle of the wind through the grass.\n\nThis moment of solitude is a rare and precious gift, a respite from the chaos of everyday life. It reminds me that amidst the hustle and bustle, there is a place of peace, a sanctuary where I can find clarity and a sense of purpose.\n\nI think back to the challenges I've faced, the moments of triumph, and the times I've faltered. Each experience has been a lesson, a building block in my journey towards self-discovery. I am not defined by my failures, but by the lessons I've learned from them.\n\nAs the stars begin to twinkle above, I am filled with a sense of gratitude. For the friends who have walked with me, for the opportunities that have come my way, and for the simple beauty of this moment. I am grateful for the lessons, the challenges, and the peace that comes with each new day."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 22,
+      "completion_tokens": 282,
+      "total_tokens": 304
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "2dbf63b0cb7bc493c0243502c6e6111a36e3a093",
+    "weight_precision": "BF16 (official safetensors)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18081/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 17483,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-6B-Chat",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

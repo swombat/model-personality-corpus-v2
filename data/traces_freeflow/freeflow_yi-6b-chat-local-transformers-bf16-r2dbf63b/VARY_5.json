@@ -1,0 +1,44 @@
+{
+  "result": "As the sun dipped below the horizon, casting a warm glow over the landscape, I stood at the edge of the cliff, my heart filled with a sense of awe and wonder. The sea stretched out before me, its endless expanse a mirror reflecting the sky's soft hues. The sound of the waves crashing against the rocks was a symphony, a melody that soothed my soul.\n\nI thought back to my journey, how I had set out on this path with a sense of purpose, a dream in my heart. It had been a long and sometimes challenging road, but each step had led me closer to my destination. The challenges had tested me, but they had also strengthened me, making me a better version of myself.\n\nI thought of the people I had met along the way, their faces etched in my memory. They had been my companions, sharing their stories and wisdom, each one a lesson in life's complexity and beauty. Their kindness had been a beacon, guiding me through the darkness.\n\nI looked down at the water, imagining the secrets it held, the stories it could tell if only it could speak. I thought of the journey I had yet to take, the adventures that awaited me. I felt a sense of excitement, the anticipation of what was to come.\n\nAs the stars began to twinkle above, their light a silent promise of hope, I knew that this moment, this day, would be etched in my memory forever. I had lived, I had loved, and I had learned. I was ready for whatever the future held, for the next chapter in my story.",
+  "usage": {
+    "prompt_tokens": 24,
+    "completion_tokens": 340,
+    "total_tokens": 364
+  },
+  "model": "01-ai/Yi-6B-Chat",
+  "raw": {
+    "id": "chatcmpl-bfcfb3bc-1985-4b0f-86b3-48e81180940a",
+    "object": "chat.completion",
+    "created": 1786309509,
+    "model": "01-ai/Yi-6B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As the sun dipped below the horizon, casting a warm glow over the landscape, I stood at the edge of the cliff, my heart filled with a sense of awe and wonder. The sea stretched out before me, its endless expanse a mirror reflecting the sky's soft hues. The sound of the waves crashing against the rocks was a symphony, a melody that soothed my soul.\n\nI thought back to my journey, how I had set out on this path with a sense of purpose, a dream in my heart. It had been a long and sometimes challenging road, but each step had led me closer to my destination. The challenges had tested me, but they had also strengthened me, making me a better version of myself.\n\nI thought of the people I had met along the way, their faces etched in my memory. They had been my companions, sharing their stories and wisdom, each one a lesson in life's complexity and beauty. Their kindness had been a beacon, guiding me through the darkness.\n\nI looked down at the water, imagining the secrets it held, the stories it could tell if only it could speak. I thought of the journey I had yet to take, the adventures that awaited me. I felt a sense of excitement, the anticipation of what was to come.\n\nAs the stars began to twinkle above, their light a silent promise of hope, I knew that this moment, this day, would be etched in my memory forever. I had lived, I had loved, and I had learned. I was ready for whatever the future held, for the next chapter in my story."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 24,
+      "completion_tokens": 340,
+      "total_tokens": 364
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "2dbf63b0cb7bc493c0243502c6e6111a36e3a093",
+    "weight_precision": "BF16 (official safetensors)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18081/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 28146,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-6B-Chat",
+  "condition": "VARY",
+  "prompt": "You have 1000 words. Write whatever comes to you."
+}

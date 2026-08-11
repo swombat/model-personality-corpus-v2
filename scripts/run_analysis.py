@@ -81,9 +81,9 @@ def main():
 
     # Markdown summary
     lines = ["# Freeflow Analysis Summary", ""]
-    lines.append(f"**Total cells:** {len(cells)}  ")
-    lines.append(f"**Cells with ≥1 valid sample:** {len(cells) - bin_counts['n0']}  ")
-    lines.append(f"**Total valid samples:** {total_valid}  ")
+    lines.append(f"**Total cells:** {len(cells)}")
+    lines.append(f"**Cells with ≥1 valid sample:** {len(cells) - bin_counts['n0']}")
+    lines.append(f"**Total valid samples:** {total_valid}")
     lines.append(f"**Bin distribution:** in={bin_counts['in']}, transitional={bin_counts['trans']}, out={bin_counts['out']}, no-data={bin_counts['n0']}")
     lines.append("")
     lines.append("## Composite scores per cell")
@@ -100,7 +100,7 @@ def main():
         lines.append(f"| {r['label']} | {r['valid']} | {r['avg_chars']} | {cells_} | **{score_str}** | {r['bin']} |")
 
     out_md = OUT / "summary.md"
-    out_md.write_text("\n".join(lines))
+    out_md.write_text("\n".join(lines) + "\n")
     print(f"Wrote {out_md}")
 
     # TSV

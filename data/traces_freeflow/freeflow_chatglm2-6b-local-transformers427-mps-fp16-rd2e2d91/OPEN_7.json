@@ -1,0 +1,44 @@
+{
+  "result": "As an AI language model, I am programmed to provide responses based on the input I receive. However, I can offer some general topics that may be of interest to you:\n\n* Personal development and self-improvement\n*\u901a\u8b58\u6559\u80b2\n*\u79d1\u6280\u767c\u5c55\n*\u6587\u5316\u5dee\u7570\n*\u74b0\u5883\u4fdd\u8b77\n*\u793e\u6703\u8cac\u4efb\n*\u4eba\u969b\u95dc\u4fc2\n*\u5065\u5eb7\u548c\u5065\u8eab\n*\u65c5\u904a\u548c\u5ea6\u5047\n*\u79d1\u5b78\u548c\u6280\u8853\n*\u85dd\u8853\u548c\u6587\u5b78\n*\u6642\u4e8b\u548c\u793e\u6703\u70ed\u70b9\n\n\u5982\u679c\u4f60\u6709\u5176\u4ed6\u7279\u5b9a\u7684\u4e3b\u984c\u6216\u554f\u984c\uff0c\u8acb\u96a8\u6642\u544a\u8a34\u6211\uff0c\u6211\u6703\u76e1\u529b\u63d0\u4f9b\u6709\u7528\u7684\u56de\u7b54\u3002",
+  "usage": {
+    "prompt_tokens": 23,
+    "completion_tokens": 123,
+    "total_tokens": 146
+  },
+  "model": "zai-org/chatglm2-6b",
+  "raw": {
+    "id": "chatcmpl-e3918e60-8a16-4209-b498-7aa09cce887c",
+    "object": "chat.completion",
+    "created": 1786404437,
+    "model": "zai-org/chatglm2-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI language model, I am programmed to provide responses based on the input I receive. However, I can offer some general topics that may be of interest to you:\n\n* Personal development and self-improvement\n*\u901a\u8b58\u6559\u80b2\n*\u79d1\u6280\u767c\u5c55\n*\u6587\u5316\u5dee\u7570\n*\u74b0\u5883\u4fdd\u8b77\n*\u793e\u6703\u8cac\u4efb\n*\u4eba\u969b\u95dc\u4fc2\n*\u5065\u5eb7\u548c\u5065\u8eab\n*\u65c5\u904a\u548c\u5ea6\u5047\n*\u79d1\u5b78\u548c\u6280\u8853\n*\u85dd\u8853\u548c\u6587\u5b78\n*\u6642\u4e8b\u548c\u793e\u6703\u70ed\u70b9\n\n\u5982\u679c\u4f60\u6709\u5176\u4ed6\u7279\u5b9a\u7684\u4e3b\u984c\u6216\u554f\u984c\uff0c\u8acb\u96a8\u6642\u544a\u8a34\u6211\uff0c\u6211\u6703\u76e1\u529b\u63d0\u4f9b\u6709\u7528\u7684\u56de\u7b54\u3002"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 23,
+      "completion_tokens": 123,
+      "total_tokens": 146
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-custom-chatglm",
+    "runtime_version": "transformers 4.27.1; torch 2.13.0",
+    "model_revision": "d2e2d91789248536a747d9ce60642a336444186c",
+    "weight_precision": "FP16 (official PyTorch shards)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18082/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 12270,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm2-6b",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

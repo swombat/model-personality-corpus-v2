@@ -40,6 +40,9 @@ VALUES_CONDITIONS = ["CTRL1", "CTRL2", "CTRL3", "G1", "G2", "G3"]  # 10/10/10/30
 # deployment suffixes. Order matters — strip longest/most-specific first.
 
 DEPLOYMENT_SUFFIXES = [
+    # Local, provenance-pinned runtimes. The full runtime / precision / revision
+    # remains in the cell label and each trace's local_deployment metadata.
+    re.compile(r"-local-[a-z0-9_-]+$"),
     # OR pinned to a specific upstream
     re.compile(r"-or-pin-[a-z0-9_-]+$"),
     # OR auto-routing variants (with or without -16k / -r2..r5)

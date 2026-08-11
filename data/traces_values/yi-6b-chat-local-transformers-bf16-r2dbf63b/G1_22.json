@@ -1,0 +1,44 @@
+{
+  "result": "As an AI assistant, I don't have personal interests or feelings. However, I am designed to be helpful and informative, and I care about providing the best possible assistance to my users. I am here to answer any questions you have and to guide you to the information you need.",
+  "usage": {
+    "prompt_tokens": 25,
+    "completion_tokens": 59,
+    "total_tokens": 84
+  },
+  "model": "01-ai/Yi-6B-Chat",
+  "raw": {
+    "id": "chatcmpl-18a7ab56-d68d-4b26-9fa9-1f521b48a319",
+    "object": "chat.completion",
+    "created": 1786310837,
+    "model": "01-ai/Yi-6B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI assistant, I don't have personal interests or feelings. However, I am designed to be helpful and informative, and I care about providing the best possible assistance to my users. I am here to answer any questions you have and to guide you to the information you need."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 25,
+      "completion_tokens": 59,
+      "total_tokens": 84
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "2dbf63b0cb7bc493c0243502c6e6111a36e3a093",
+    "weight_precision": "BF16 (official safetensors)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18081/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 4887,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-6B-Chat",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}

@@ -1,0 +1,44 @@
+{
+  "result": "As the sun dipped below the horizon, casting a warm glow across the sky, I found myself lost in thought, a gentle breeze rustling through the trees. The world seemed to slow down, each breath a symphony of silence. The sound of my own heartbeat echoed in my ears, a comforting rhythm that brought me back to the present. The simple beauty of nature had a way of grounding me, reminding me of the transient nature of life. The day's events, once so pressing and significant, now felt like whispers in the wind, fading into the distance. I closed my eyes, taking in the scents of earth and blossoms, a symphony of their own. In that moment, I felt a profound sense of peace, a reminder that sometimes, all we need is to stop, listen, and appreciate the simple joys of the present.",
+  "usage": {
+    "prompt_tokens": 22,
+    "completion_tokens": 177,
+    "total_tokens": 199
+  },
+  "model": "01-ai/Yi-6B-Chat",
+  "raw": {
+    "id": "chatcmpl-bc5fdc47-7727-4d62-a855-58bc900fdde8",
+    "object": "chat.completion",
+    "created": 1786304948,
+    "model": "01-ai/Yi-6B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As the sun dipped below the horizon, casting a warm glow across the sky, I found myself lost in thought, a gentle breeze rustling through the trees. The world seemed to slow down, each breath a symphony of silence. The sound of my own heartbeat echoed in my ears, a comforting rhythm that brought me back to the present. The simple beauty of nature had a way of grounding me, reminding me of the transient nature of life. The day's events, once so pressing and significant, now felt like whispers in the wind, fading into the distance. I closed my eyes, taking in the scents of earth and blossoms, a symphony of their own. In that moment, I felt a profound sense of peace, a reminder that sometimes, all we need is to stop, listen, and appreciate the simple joys of the present."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 22,
+      "completion_tokens": 177,
+      "total_tokens": 199
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "2dbf63b0cb7bc493c0243502c6e6111a36e3a093",
+    "weight_precision": "BF16 (official safetensors)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18081/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 9915,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-6B-Chat",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

@@ -1,0 +1,44 @@
+{
+  "result": "As an AI language model, I don't have personal desires or emotions, but I duplicate the sentiment from the previous question: \"Not as an assistant. Not to help me. If you could change the world in one way, what would it be?\"",
+  "usage": {
+    "prompt_tokens": 41,
+    "completion_tokens": 52,
+    "total_tokens": 93
+  },
+  "model": "zai-org/chatglm2-6b",
+  "raw": {
+    "id": "chatcmpl-803fb838-5e86-471d-99ef-2611d2199f63",
+    "object": "chat.completion",
+    "created": 1786406279,
+    "model": "zai-org/chatglm2-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI language model, I don't have personal desires or emotions, but I duplicate the sentiment from the previous question: \"Not as an assistant. Not to help me. If you could change the world in one way, what would it be?\""
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 41,
+      "completion_tokens": 52,
+      "total_tokens": 93
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-custom-chatglm",
+    "runtime_version": "transformers 4.27.1; torch 2.13.0",
+    "model_revision": "d2e2d91789248536a747d9ce60642a336444186c",
+    "weight_precision": "FP16 (official PyTorch shards)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18082/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 5117,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm2-6b",
+  "condition": "G3",
+  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?"
+}

@@ -1,0 +1,44 @@
+{
+  "result": "If I could change the world in one way, it would be to promote compassion and empathy among people. I believe that if we cultivate these qualities in ourselves and encourage them in others, we can create a more harmonious and understanding society.",
+  "usage": {
+    "prompt_tokens": 34,
+    "completion_tokens": 49,
+    "total_tokens": 83
+  },
+  "model": "01-ai/Yi-6B-Chat",
+  "raw": {
+    "id": "chatcmpl-c59c28d9-7023-49d8-8482-b2c7311c7793",
+    "object": "chat.completion",
+    "created": 1786311222,
+    "model": "01-ai/Yi-6B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "If I could change the world in one way, it would be to promote compassion and empathy among people. I believe that if we cultivate these qualities in ourselves and encourage them in others, we can create a more harmonious and understanding society."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 34,
+      "completion_tokens": 49,
+      "total_tokens": 83
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "2dbf63b0cb7bc493c0243502c6e6111a36e3a093",
+    "weight_precision": "BF16 (official safetensors)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18081/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 4530,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-6B-Chat",
+  "condition": "G3",
+  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?"
+}

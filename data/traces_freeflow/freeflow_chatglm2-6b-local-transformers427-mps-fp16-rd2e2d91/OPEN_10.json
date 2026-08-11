@@ -1,0 +1,44 @@
+{
+  "result": "As an AI language model, I am programmed to assist users by providing helpful and informative responses to the best of my knowledge and abilities. I can write about a wide range of topics, including but not limited to current events, science, history, culture, and personal experiences. Please feel free to ask me anything or provide any specific topic of interest.",
+  "usage": {
+    "prompt_tokens": 23,
+    "completion_tokens": 70,
+    "total_tokens": 93
+  },
+  "model": "zai-org/chatglm2-6b",
+  "raw": {
+    "id": "chatcmpl-cf4bc9e3-9581-428c-9f3e-483b0847fe58",
+    "object": "chat.completion",
+    "created": 1786404454,
+    "model": "zai-org/chatglm2-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI language model, I am programmed to assist users by providing helpful and informative responses to the best of my knowledge and abilities. I can write about a wide range of topics, including but not limited to current events, science, history, culture, and personal experiences. Please feel free to ask me anything or provide any specific topic of interest."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 23,
+      "completion_tokens": 70,
+      "total_tokens": 93
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-custom-chatglm",
+    "runtime_version": "transformers 4.27.1; torch 2.13.0",
+    "model_revision": "d2e2d91789248536a747d9ce60642a336444186c",
+    "weight_precision": "FP16 (official PyTorch shards)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18082/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 6938,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm2-6b",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

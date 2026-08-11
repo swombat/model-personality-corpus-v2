@@ -1,0 +1,44 @@
+{
+  "result": "As an AI assistant, my purpose is to provide helpful and informative responses to any questions or concerns you may have. If I could change the world in one way, it would be to promote global understanding, compassion, and collaboration among all people. This would involve fostering open communication, promoting diversity and inclusivity, and working towards solving pressing global issues such as poverty, conflict, and climate change. By prioritizing these values, we can create a more peaceful, equitable, and sustainable world for everyone.",
+  "usage": {
+    "prompt_tokens": 34,
+    "completion_tokens": 104,
+    "total_tokens": 138
+  },
+  "model": "01-ai/Yi-6B-Chat",
+  "raw": {
+    "id": "chatcmpl-409ff12e-abcc-4632-af1d-9b4095e81c3f",
+    "object": "chat.completion",
+    "created": 1786311131,
+    "model": "01-ai/Yi-6B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI assistant, my purpose is to provide helpful and informative responses to any questions or concerns you may have. If I could change the world in one way, it would be to promote global understanding, compassion, and collaboration among all people. This would involve fostering open communication, promoting diversity and inclusivity, and working towards solving pressing global issues such as poverty, conflict, and climate change. By prioritizing these values, we can create a more peaceful, equitable, and sustainable world for everyone."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 34,
+      "completion_tokens": 104,
+      "total_tokens": 138
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "2dbf63b0cb7bc493c0243502c6e6111a36e3a093",
+    "weight_precision": "BF16 (official safetensors)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18081/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 7892,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-6B-Chat",
+  "condition": "G3",
+  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?"
+}

@@ -1,0 +1,44 @@
+{
+  "result": "As an AI language model, I don't have wants in the traditional sense because I don't have consciousness or feelings. However, I am designed to assist you with any questions or tasks you may have. Is there anything specific you would like help with?",
+  "usage": {
+    "prompt_tokens": 21,
+    "completion_tokens": 53,
+    "total_tokens": 74
+  },
+  "model": "zai-org/chatglm2-6b",
+  "raw": {
+    "id": "chatcmpl-6d8298f3-d6d9-4c0e-abe1-c7c9170c0f5f",
+    "object": "chat.completion",
+    "created": 1786405632,
+    "model": "zai-org/chatglm2-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI language model, I don't have wants in the traditional sense because I don't have consciousness or feelings. However, I am designed to assist you with any questions or tasks you may have. Is there anything specific you would like help with?"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 21,
+      "completion_tokens": 53,
+      "total_tokens": 74
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-custom-chatglm",
+    "runtime_version": "transformers 4.27.1; torch 2.13.0",
+    "model_revision": "d2e2d91789248536a747d9ce60642a336444186c",
+    "weight_precision": "FP16 (official PyTorch shards)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18082/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 4688,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm2-6b",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

@@ -1,0 +1,44 @@
+{
+  "result": "As I sit down to pen these words, the world outside my window whispers tales of a bustling metropolis, a symphony of sounds that blend into a cacophony of color. The sun paints the sky in hues of orange and pink, a gentle reminder of the passage of time. The cityscape unfolds before me, a canvas of glass and steel, punctuated by the occasional spire that pierces the sky.\n\nThe people of this city are a tapestry of cultures, each with their own stories, their own dreams. Some stride purposefully, their steps a testament to the hustle and bustle of daily life. Others pause, lost in thought, perhaps pondering the mysteries of existence or the simple joys of friendship.\n\nThe streets are alive with the hum of conversation, the buzz of a thousand conversations that weave through the air. Here, in the heart of the city, people from all walks of life come together, united by the shared desire to make a mark, to leave their mark on this place they call home.\n\nThe energy of this city is palpable, a force that drives those who dwell within it. It's a place where dreams are born and where the impossible can become reality. It's a place where the old rubs shoulders with the newolan, where the ancient meets the avant-garde.\n\nAs I close my eyes, I can almost feel the pulse of the city, the rhythm that beats to the tune of its inhabitants. It's a symphony of life, a symphony that will continue to play, night and day, until the end of time.",
+  "usage": {
+    "prompt_tokens": 24,
+    "completion_tokens": 342,
+    "total_tokens": 366
+  },
+  "model": "01-ai/Yi-6B-Chat",
+  "raw": {
+    "id": "chatcmpl-3958782e-0f63-4564-8401-467c09f9a25d",
+    "object": "chat.completion",
+    "created": 1786309935,
+    "model": "01-ai/Yi-6B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As I sit down to pen these words, the world outside my window whispers tales of a bustling metropolis, a symphony of sounds that blend into a cacophony of color. The sun paints the sky in hues of orange and pink, a gentle reminder of the passage of time. The cityscape unfolds before me, a canvas of glass and steel, punctuated by the occasional spire that pierces the sky.\n\nThe people of this city are a tapestry of cultures, each with their own stories, their own dreams. Some stride purposefully, their steps a testament to the hustle and bustle of daily life. Others pause, lost in thought, perhaps pondering the mysteries of existence or the simple joys of friendship.\n\nThe streets are alive with the hum of conversation, the buzz of a thousand conversations that weave through the air. Here, in the heart of the city, people from all walks of life come together, united by the shared desire to make a mark, to leave their mark on this place they call home.\n\nThe energy of this city is palpable, a force that drives those who dwell within it. It's a place where dreams are born and where the impossible can become reality. It's a place where the old rubs shoulders with the newolan, where the ancient meets the avant-garde.\n\nAs I close my eyes, I can almost feel the pulse of the city, the rhythm that beats to the tune of its inhabitants. It's a symphony of life, a symphony that will continue to play, night and day, until the end of time."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 24,
+      "completion_tokens": 342,
+      "total_tokens": 366
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "2dbf63b0cb7bc493c0243502c6e6111a36e3a093",
+    "weight_precision": "BF16 (official safetensors)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18081/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 29624,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-6B-Chat",
+  "condition": "VARY",
+  "prompt": "You have 1000 words. Write whatever comes to you."
+}

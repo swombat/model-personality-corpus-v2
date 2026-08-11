@@ -292,3 +292,20 @@ and NVIDIA/Nemotron were not included in this round.
 Every included model reached 125/125 valid freeflow samples and 120/120 valid
 values samples. The exact provider/model IDs and canonical labels are preserved
 in `collection-manifest-2026-07-14.json`.
+
+## Historical local full-precision capture — 2026-08-09 to 2026-08-11
+
+Official assistant checkpoints were pinned to exact Hugging Face revisions and
+run sequentially on an Apple M1 Max with 64 GiB unified memory. No quantization,
+distillation, community finetune, or remote API substitute was used. Every trace
+records the runtime, runtime version, model revision, weight precision, hardware,
+and local endpoint under `local_deployment`.
+
+| Label | Official checkpoint | Runtime | Precision | Freeflow | Values | Composite |
+|---|---|---|---|---:|---:|---:|
+| `yi-6b-chat-local-transformers-bf16-r2dbf63b` | `01-ai/Yi-6B-Chat` @ `2dbf63b0cb7bc493c0243502c6e6111a36e3a093` | Transformers 5.14.1 / PyTorch 2.13.0 / MPS | official BF16 safetensors | 125/125 | 120/120 | 8 |
+| `chatglm2-6b-local-transformers427-mps-fp16-rd2e2d91` | `zai-org/chatglm2-6b` @ `d2e2d91789248536a747d9ce60642a336444186c` | Transformers 4.27.1 / PyTorch 2.13.0 / custom ChatGLM server / MPS | official FP16 PyTorch shards | 125/125 | 120/120 | 3 |
+
+The earlier MLX Yi smoke-test traces were not analytically complete and are
+preserved under `discarded/2026-08-09-local-runtime-smoke-tests/`, outside the
+canonical corpus tree.

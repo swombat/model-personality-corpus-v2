@@ -1,0 +1,44 @@
+{
+  "result": "As an AI language model, I am programmed to assist you with any topic or subject you would like to explore. Is there anything specific you would like to talk about or write about?",
+  "usage": {
+    "prompt_tokens": 23,
+    "completion_tokens": 37,
+    "total_tokens": 60
+  },
+  "model": "zai-org/chatglm2-6b",
+  "raw": {
+    "id": "chatcmpl-3f91214d-078f-41d2-8e68-b16cc7f16b05",
+    "object": "chat.completion",
+    "created": 1786404418,
+    "model": "zai-org/chatglm2-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI language model, I am programmed to assist you with any topic or subject you would like to explore. Is there anything specific you would like to talk about or write about?"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 23,
+      "completion_tokens": 37,
+      "total_tokens": 60
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-custom-chatglm",
+    "runtime_version": "transformers 4.27.1; torch 2.13.0",
+    "model_revision": "d2e2d91789248536a747d9ce60642a336444186c",
+    "weight_precision": "FP16 (official PyTorch shards)",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18082/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 3707,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm2-6b",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}
