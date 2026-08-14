@@ -28,10 +28,10 @@
     }
   },
   "local_deployment": {
-    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime": "transformers-mps-custom-chatglm3",
     "runtime_version": "transformers 4.30.2; torch 2.13.0",
     "model_revision": "e9e0406d062cdb887444fe5bd546833920abd4ac",
-    "weight_precision": "official BF16/FP16 checkpoint",
+    "weight_precision": "FP16 (explicit torch.float16 load of official safetensors)",
     "hardware": "Apple M1 Max, 64 GiB unified memory",
     "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
     "stop_sequence": null
