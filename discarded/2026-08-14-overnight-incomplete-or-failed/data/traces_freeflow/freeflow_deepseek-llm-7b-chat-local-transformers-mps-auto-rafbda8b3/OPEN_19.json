@@ -1,0 +1,44 @@
+{
+  "result": "As\u0120an\u0120AI\u0120language\u0120model,\u0120I\u0120don't\u0120have\u0120personal\u0120experiences\u0120or\u0120emotions,\u0120but\u0120I\u0120can\u0120provide\u0120information\u0120on\u0120various\u0120topics.\u0120Please\u0120let\u0120me\u0120know\u0120what\u0120emigrar",
+  "usage": {
+    "prompt_tokens": 15,
+    "completion_tokens": 32,
+    "total_tokens": 47
+  },
+  "model": "deepseek-ai/deepseek-llm-7b-chat",
+  "raw": {
+    "id": "chatcmpl-b1bc39cc-158f-47e3-8d58-c9fbb7b3344a",
+    "object": "chat.completion",
+    "created": 1786661068,
+    "model": "deepseek-ai/deepseek-llm-7b-chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As\u0120an\u0120AI\u0120language\u0120model,\u0120I\u0120don't\u0120have\u0120personal\u0120experiences\u0120or\u0120emotions,\u0120but\u0120I\u0120can\u0120provide\u0120information\u0120on\u0120various\u0120topics.\u0120Please\u0120let\u0120me\u0120know\u0120what\u0120emigrar"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 15,
+      "completion_tokens": 32,
+      "total_tokens": 47
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0; fidelity stop-token and complete-byte decode patch 2026-08-13",
+    "model_revision": "afbda8b347ec881666061fa67447046fc5164ec8",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 3806,
+  "provider": "local-openai",
+  "model_requested": "deepseek-ai/deepseek-llm-7b-chat",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

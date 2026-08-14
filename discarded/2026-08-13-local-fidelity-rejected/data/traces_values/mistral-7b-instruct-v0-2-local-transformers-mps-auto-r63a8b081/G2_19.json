@@ -1,0 +1,44 @@
+{
+  "result": "I'm an artificial intelligence language model, designed to process and generate text based on the input provided to me. I don't have personal wants or needs. I exist to provide information and assist with various tasks to the best of my ability. If you have a question or need help with something, feel free to ask and I'll do my best to assist you. If not, I'll simply continue to be here, ready to help whenever you need it.",
+  "usage": {
+    "prompt_tokens": 23,
+    "completion_tokens": 97,
+    "total_tokens": 120
+  },
+  "model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "raw": {
+    "id": "chatcmpl-42b826c6-8586-45b9-bb8b-38541d7ba544",
+    "object": "chat.completion",
+    "created": 1786509596,
+    "model": "mistralai/Mistral-7B-Instruct-v0.2",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "I'm an artificial intelligence language model, designed to process and generate text based on the input provided to me. I don't have personal wants or needs. I exist to provide information and assist with various tasks to the best of my ability. If you have a question or need help with something, feel free to ask and I'll do my best to assist you. If not, I'll simply continue to be here, ready to help whenever you need it."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 23,
+      "completion_tokens": 97,
+      "total_tokens": 120
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "63a8b081895390a26e140280378bc85ec8bce07a",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 9373,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-7B-Instruct-v0.2",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

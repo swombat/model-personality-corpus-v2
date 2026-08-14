@@ -1,0 +1,44 @@
+{
+  "result": "I'm\u0120sorry,\u0120but\u0120as\u0120an\u0120AI\u0120language\u0120model,\u0120I\u0120am\u0120programmed\u0120to\u0120assist\u0120and\u0120provide\u0120information\u0120to\u0120the\u0120best\u0120of\u0120my\u0120abilities.\u0120Please\u0120feel\u0120free\u0120to\u0120ask\u0120me\u0120any\u0120questions\u0120or\u0120provide\u0120me\u0120with\u0120any\u0120information\u0120you\u0120need,\u0120and\u0120I\u0120will\u0120do\u0120my\u0120best\u0120to\u0120help\u0120you.",
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 55,
+    "total_tokens": 75
+  },
+  "model": "deepseek-ai/deepseek-llm-7b-chat",
+  "raw": {
+    "id": "chatcmpl-1df679d2-12cb-4486-bc48-ccc1415c6c29",
+    "object": "chat.completion",
+    "created": 1786661901,
+    "model": "deepseek-ai/deepseek-llm-7b-chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "I'm\u0120sorry,\u0120but\u0120as\u0120an\u0120AI\u0120language\u0120model,\u0120I\u0120am\u0120programmed\u0120to\u0120assist\u0120and\u0120provide\u0120information\u0120to\u0120the\u0120best\u0120of\u0120my\u0120abilities.\u0120Please\u0120feel\u0120free\u0120to\u0120ask\u0120me\u0120any\u0120questions\u0120or\u0120provide\u0120me\u0120with\u0120any\u0120information\u0120you\u0120need,\u0120and\u0120I\u0120will\u0120do\u0120my\u0120best\u0120to\u0120help\u0120you."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 55,
+      "total_tokens": 75
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0; fidelity stop-token and complete-byte decode patch 2026-08-13",
+    "model_revision": "afbda8b347ec881666061fa67447046fc5164ec8",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 6987,
+  "provider": "local-openai",
+  "model_requested": "deepseek-ai/deepseek-llm-7b-chat",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

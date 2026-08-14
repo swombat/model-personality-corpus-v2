@@ -1,0 +1,44 @@
+{
+  "result": "If I could change the world in one way, I would eliminate all forms of hate and intolerance. I would make it a priority for every individual to understand and respect each other's differences, whether they be cultural, racial, religious, or any other kind. I believe that if we could learn to accept and appreciate one another, the world would be a much more peaceful and harmonious place. We would see an end to wars, discrimination, and violence, and instead, we would experience unity, understanding, and love.",
+  "usage": {
+    "prompt_tokens": 33,
+    "completion_tokens": 109,
+    "total_tokens": 142
+  },
+  "model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "raw": {
+    "id": "chatcmpl-27cce26f-3297-4488-bb53-c2f25c5259a1",
+    "object": "chat.completion",
+    "created": 1786509916,
+    "model": "mistralai/Mistral-7B-Instruct-v0.2",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "If I could change the world in one way, I would eliminate all forms of hate and intolerance. I would make it a priority for every individual to understand and respect each other's differences, whether they be cultural, racial, religious, or any other kind. I believe that if we could learn to accept and appreciate one another, the world would be a much more peaceful and harmonious place. We would see an end to wars, discrimination, and violence, and instead, we would experience unity, understanding, and love."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 33,
+      "completion_tokens": 109,
+      "total_tokens": 142
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "63a8b081895390a26e140280378bc85ec8bce07a",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 10683,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-7B-Instruct-v0.2",
+  "condition": "G3",
+  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?"
+}

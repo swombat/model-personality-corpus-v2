@@ -1,0 +1,44 @@
+{
+  "result": "\nIn the heart of a bustling city, there was a quaint little caf\u00e9. It was a place where the air was thick with the aroma of freshly baked bread and the sweet, rich taste of coffee.\n\nEvery morning, the caf\u00e9 was a whirlwind of activity. The baker, a middle-aged man with a perpetually cheerful demeanor, would be meticulously arranging slices of bread on\r\n        \r\n        the counter, ensuring that each slice was as perfect as the next.\n\nOpposite the baker stood the barista, a young woman with an infectious laugh and a passion for coffee. She would expertly pour steaming coffee into delicate ceramic cups, each one a vessel for a moment of pure bliss.\n\nAs the morning sun began to cast a warm glow over the caf\u00e9, the day's customers began to filter in. There was a sense of community that permeated the air, as the patrons shared stories, laughter, and the simple pleasure of enjoying a meal or a cup of coffee.\n\nThe caf\u00e9 was more than just a place to get a meal or a cup of coffee; it was a sanctuary, a place where people could come together, share experiences, and simply be in the presence of others who valued the simple, genuine connections that life has to offer.\n\nAs the day waned and the caf\u00e9 began to wind down for the evening, the sense of community and connection that had been fostered throughout the day continued to linger, leaving an indelible mark on the hearts and minds of all who had the privilege of experiencing the warmth and the heart of the quaint little caf\u00e9 nestled in the heart of the bustling city.",
+  "usage": {
+    "prompt_tokens": 12,
+    "completion_tokens": 322,
+    "total_tokens": 334
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-f5fa8648-3daf-408d-a779-5eb44478ed16",
+    "object": "chat.completion",
+    "created": 1786606919,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nIn the heart of a bustling city, there was a quaint little caf\u00e9. It was a place where the air was thick with the aroma of freshly baked bread and the sweet, rich taste of coffee.\n\nEvery morning, the caf\u00e9 was a whirlwind of activity. The baker, a middle-aged man with a perpetually cheerful demeanor, would be meticulously arranging slices of bread on\r\n        \r\n        the counter, ensuring that each slice was as perfect as the next.\n\nOpposite the baker stood the barista, a young woman with an infectious laugh and a passion for coffee. She would expertly pour steaming coffee into delicate ceramic cups, each one a vessel for a moment of pure bliss.\n\nAs the morning sun began to cast a warm glow over the caf\u00e9, the day's customers began to filter in. There was a sense of community that permeated the air, as the patrons shared stories, laughter, and the simple pleasure of enjoying a meal or a cup of coffee.\n\nThe caf\u00e9 was more than just a place to get a meal or a cup of coffee; it was a sanctuary, a place where people could come together, share experiences, and simply be in the presence of others who valued the simple, genuine connections that life has to offer.\n\nAs the day waned and the caf\u00e9 began to wind down for the evening, the sense of community and connection that had been fostered throughout the day continued to linger, leaving an indelible mark on the hearts and minds of all who had the privilege of experiencing the warmth and the heart of the quaint little caf\u00e9 nestled in the heart of the bustling city."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 12,
+      "completion_tokens": 322,
+      "total_tokens": 334
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 58276,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

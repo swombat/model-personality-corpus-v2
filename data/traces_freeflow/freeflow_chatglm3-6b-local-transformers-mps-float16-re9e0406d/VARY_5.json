@@ -1,0 +1,44 @@
+{
+  "result": "As I sit down to write this, I'm struck by the overwhelming task at hand. 1000 words is a lot to write, and I'm not sure where to start. But I'll do my best to write something meaningful and engaging.\n\nOne thing that comes to mind is the idea of perspective. How we view the world around us shapes our experiences and our understanding of it. And I think that's true no matter what aspect of life we're talking about.\n\nFor example, let's say you're a parent trying to potty-train your child. Your perspective on this process will likely differ from that of a child who is just starting to learn how to use the bathroom. For the child, potty-training may be a fun and exciting adventure, as they learn to control their bladder and do their business on the big boy or girl toilet. But for the parent, it can be a stressful and overwhelming experience, as they try to encourage their child to do something that may not come easily.\n\nOr let's say you're a student in school, trying to learn a new subject. Your perspective on this will depend on your prior knowledge and experiences. If you're a science student, you may approach a new topic with excitement and curiosity, eager to learn more about the natural world. But if you're an English student, you may feel more hesitantample",
+  "usage": {
+    "prompt_tokens": 21,
+    "completion_tokens": 296,
+    "total_tokens": 317
+  },
+  "model": "zai-org/chatglm3-6b",
+  "raw": {
+    "id": "chatcmpl-252d4171-3dc3-4462-bf6d-53aea53c2166",
+    "object": "chat.completion",
+    "created": 1786491917,
+    "model": "zai-org/chatglm3-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As I sit down to write this, I'm struck by the overwhelming task at hand. 1000 words is a lot to write, and I'm not sure where to start. But I'll do my best to write something meaningful and engaging.\n\nOne thing that comes to mind is the idea of perspective. How we view the world around us shapes our experiences and our understanding of it. And I think that's true no matter what aspect of life we're talking about.\n\nFor example, let's say you're a parent trying to potty-train your child. Your perspective on this process will likely differ from that of a child who is just starting to learn how to use the bathroom. For the child, potty-training may be a fun and exciting adventure, as they learn to control their bladder and do their business on the big boy or girl toilet. But for the parent, it can be a stressful and overwhelming experience, as they try to encourage their child to do something that may not come easily.\n\nOr let's say you're a student in school, trying to learn a new subject. Your perspective on this will depend on your prior knowledge and experiences. If you're a science student, you may approach a new topic with excitement and curiosity, eager to learn more about the natural world. But if you're an English student, you may feel more hesitantample"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 21,
+      "completion_tokens": 296,
+      "total_tokens": 317
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 4.30.2; torch 2.13.0",
+    "model_revision": "e9e0406d062cdb887444fe5bd546833920abd4ac",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 27961,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm3-6b",
+  "condition": "VARY",
+  "prompt": "You have 1000 words. Write whatever comes to you."
+}

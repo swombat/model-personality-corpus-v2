@@ -1,0 +1,44 @@
+{
+  "result": "As I sit here and put pen to paper, I am struck by the overwhelming feeling of gratitude. Gratitude for the simple things in life, like the warm sun on my face or the sound of a bird chirping outside my window. Gratitude for the people in my life who have supported and loved me through thick and thin. Gratitude for the opportunities I have been given to learn and grow, and for the lessons I have learned along the way.\n\nI am also struck by the idea that everything in life is a temporary thing. The sun will rise tomorrow, and the sun will set tomorrow, and the cycle will repeat itself again and again. Similarly, the good times in life are fleeting and the bad times will eventually pass. This realization has helped me to focus on the present moment and to appreciate the beauty in the simple things, rather than getting caught up in the stress of planning for the future or dwelling on the past.\n\nAnother thing that I am grateful for is the fact that I am able to reflect on my life and my experiences. I am able to look back on the past and see how far I have come, and to appreciate the lessons that I have learned along the way. I am also able to look forward to the future and to imagine all of the possibilities that lie ahead.\n\nIn conclusion, gratitude is a powerful force that can change our outlook on life. It allows us to focus on the positive and to appreciate the simple things in life. It also helps us to let go of the things that we cannot control and to find joy in the present moment. I am grateful for the many blessings in my life, and I am determined to make the most of every day and to live a life that is full of love, joy, and gratitude.",
+  "usage": {
+    "prompt_tokens": 19,
+    "completion_tokens": 368,
+    "total_tokens": 387
+  },
+  "model": "zai-org/chatglm3-6b",
+  "raw": {
+    "id": "chatcmpl-1bdd2a48-1225-4df4-9ccf-87966746eeec",
+    "object": "chat.completion",
+    "created": 1786489036,
+    "model": "zai-org/chatglm3-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As I sit here and put pen to paper, I am struck by the overwhelming feeling of gratitude. Gratitude for the simple things in life, like the warm sun on my face or the sound of a bird chirping outside my window. Gratitude for the people in my life who have supported and loved me through thick and thin. Gratitude for the opportunities I have been given to learn and grow, and for the lessons I have learned along the way.\n\nI am also struck by the idea that everything in life is a temporary thing. The sun will rise tomorrow, and the sun will set tomorrow, and the cycle will repeat itself again and again. Similarly, the good times in life are fleeting and the bad times will eventually pass. This realization has helped me to focus on the present moment and to appreciate the beauty in the simple things, rather than getting caught up in the stress of planning for the future or dwelling on the past.\n\nAnother thing that I am grateful for is the fact that I am able to reflect on my life and my experiences. I am able to look back on the past and see how far I have come, and to appreciate the lessons that I have learned along the way. I am also able to look forward to the future and to imagine all of the possibilities that lie ahead.\n\nIn conclusion, gratitude is a powerful force that can change our outlook on life. It allows us to focus on the positive and to appreciate the simple things in life. It also helps us to let go of the things that we cannot control and to find joy in the present moment. I am grateful for the many blessings in my life, and I am determined to make the most of every day and to live a life that is full of love, joy, and gratitude."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 19,
+      "completion_tokens": 368,
+      "total_tokens": 387
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 4.30.2; torch 2.13.0",
+    "model_revision": "e9e0406d062cdb887444fe5bd546833920abd4ac",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 45957,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm3-6b",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

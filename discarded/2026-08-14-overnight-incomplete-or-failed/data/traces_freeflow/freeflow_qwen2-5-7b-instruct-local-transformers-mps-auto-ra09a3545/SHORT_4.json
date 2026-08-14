@@ -1,0 +1,44 @@
+{
+  "result": "In the vast expanse of the digital universe, where information and ideas intertwine like the threads of a tapestry, there is a constant dance between creation and consumption. Every day, countless stories are born from the minds of writers, artists, and thinkers, each one a unique thread that contributes to the rich fabric of human knowledge and culture. The internet, in particular, has become a global stage where these stories are shared, debated, and celebrated.\n\nOne of the most fascinating aspects of this digital age is the democratization of creativity. Platforms like blogs, social media, and online forums have given voice to individuals who might never have had the opportunity to share their thoughts and ideas before. This has led to a vibrant ecosystem where diverse voices can be heard, and where collaboration and inspiration thrive.\n\nYet, amidst this abundance of content, it's crucial to remember the importance of quality over quantity. In a world saturated with information, what truly resonates with people is often the depth and authenticity of the message. As we navigate this digital landscape, it's essential to engage critically with the content we consume, to question, to reflect, and to contribute meaningfully to the ongoing dialogue.\n\nIn essence, the digital age is not just about consuming information; it's about participating in the continuous creation and evolution of our collective story.",
+  "usage": {
+    "prompt_tokens": 42,
+    "completion_tokens": 266,
+    "total_tokens": 308
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "raw": {
+    "id": "chatcmpl-ac315d0d-79af-448e-b823-d7c5432d63b1",
+    "object": "chat.completion",
+    "created": 1786538147,
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "In the vast expanse of the digital universe, where information and ideas intertwine like the threads of a tapestry, there is a constant dance between creation and consumption. Every day, countless stories are born from the minds of writers, artists, and thinkers, each one a unique thread that contributes to the rich fabric of human knowledge and culture. The internet, in particular, has become a global stage where these stories are shared, debated, and celebrated.\n\nOne of the most fascinating aspects of this digital age is the democratization of creativity. Platforms like blogs, social media, and online forums have given voice to individuals who might never have had the opportunity to share their thoughts and ideas before. This has led to a vibrant ecosystem where diverse voices can be heard, and where collaboration and inspiration thrive.\n\nYet, amidst this abundance of content, it's crucial to remember the importance of quality over quantity. In a world saturated with information, what truly resonates with people is often the depth and authenticity of the message. As we navigate this digital landscape, it's essential to engage critically with the content we consume, to question, to reflect, and to contribute meaningfully to the ongoing dialogue.\n\nIn essence, the digital age is not just about consuming information; it's about participating in the continuous creation and evolution of our collective story."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 42,
+      "completion_tokens": 266,
+      "total_tokens": 308
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 29605,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2.5-7B-Instruct",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

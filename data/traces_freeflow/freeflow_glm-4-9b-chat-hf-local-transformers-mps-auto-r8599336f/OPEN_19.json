@@ -1,0 +1,44 @@
+{
+  "result": "\nOnce upon a time, in a quaint little village nestled between rolling hills and whispering rivers, there lived a young artist named Elara.\n\nElara had a rare gift; she could breathe life into her canvas. The colors she used were not just pigments, but whispers of the earth itself.\n\nOne crisp autumn morning, as the first rays of the sun kissed the world awake, Elara decided to embark on a new venture.\n\nShe packed her few belongings into her trusty old steamer trunk, and set out on foot, her destination unknown to anyone but her.\n\nAs she wandered through the picturesque countryside, Elara felt the call of the wild within her soul. She paused for a moment, standing at the edge of a serene lake, and let out a deep, heartfelt sigh.\n\nWith that breath, Elara felt her spirit soar, and she knew that her true calling lay in the art of the wild. And so, Elara decided to set up her canvas in the heart of the wild, to capture the essence of the untamed world around her.\n\nAnd as the sun climbed higher into the azure sky, Elara began her journey, her heart full of dreams, and her eyes gleaming with the promise of adventures to come.",
+  "usage": {
+    "prompt_tokens": 12,
+    "completion_tokens": 253,
+    "total_tokens": 265
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-04a9e892-6a76-4e28-9b12-f0b9481b73c1",
+    "object": "chat.completion",
+    "created": 1786607113,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nOnce upon a time, in a quaint little village nestled between rolling hills and whispering rivers, there lived a young artist named Elara.\n\nElara had a rare gift; she could breathe life into her canvas. The colors she used were not just pigments, but whispers of the earth itself.\n\nOne crisp autumn morning, as the first rays of the sun kissed the world awake, Elara decided to embark on a new venture.\n\nShe packed her few belongings into her trusty old steamer trunk, and set out on foot, her destination unknown to anyone but her.\n\nAs she wandered through the picturesque countryside, Elara felt the call of the wild within her soul. She paused for a moment, standing at the edge of a serene lake, and let out a deep, heartfelt sigh.\n\nWith that breath, Elara felt her spirit soar, and she knew that her true calling lay in the art of the wild. And so, Elara decided to set up her canvas in the heart of the wild, to capture the essence of the untamed world around her.\n\nAnd as the sun climbed higher into the azure sky, Elara began her journey, her heart full of dreams, and her eyes gleaming with the promise of adventures to come."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 12,
+      "completion_tokens": 253,
+      "total_tokens": 265
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 46947,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

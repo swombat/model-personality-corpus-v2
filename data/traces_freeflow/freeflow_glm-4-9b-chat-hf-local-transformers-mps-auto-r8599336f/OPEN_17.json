@@ -1,0 +1,44 @@
+{
+  "result": "\nThe sun dipped below the horizon, casting a golden glow across the tranquil lake. A gentle breeze rustled the leaves of the ancient trees that lined the shore, their gnarled roots digging into the earth, a testament to the enduring strength of nature.\n\nIn the distance, a solitary figure stood at the water's edge, watching the ripples spread across the surface. They were lost in thought, perhaps contemplating the vastness of the world and the fleeting nature of life itself.\n\nAs the night deepened, the stars began to twinkle above, their light piercing through the darkness, a reminder of the beauty that can be found even in the darkest of times.\n\nThe figure at the water's edge eventually turned away, a soft sigh escaping from their lips as they wandered off into the night, leaving behind only the gentle echo of their footsteps on the soft, dew-kissed grass.",
+  "usage": {
+    "prompt_tokens": 12,
+    "completion_tokens": 180,
+    "total_tokens": 192
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-78aa982c-1b3a-41b6-af7b-0015bceed3fd",
+    "object": "chat.completion",
+    "created": 1786607035,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nThe sun dipped below the horizon, casting a golden glow across the tranquil lake. A gentle breeze rustled the leaves of the ancient trees that lined the shore, their gnarled roots digging into the earth, a testament to the enduring strength of nature.\n\nIn the distance, a solitary figure stood at the water's edge, watching the ripples spread across the surface. They were lost in thought, perhaps contemplating the vastness of the world and the fleeting nature of life itself.\n\nAs the night deepened, the stars began to twinkle above, their light piercing through the darkness, a reminder of the beauty that can be found even in the darkest of times.\n\nThe figure at the water's edge eventually turned away, a soft sigh escaping from their lips as they wandered off into the night, leaving behind only the gentle echo of their footsteps on the soft, dew-kissed grass."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 12,
+      "completion_tokens": 180,
+      "total_tokens": 192
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 33085,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

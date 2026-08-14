@@ -1,0 +1,44 @@
+{
+  "result": "\nI find myself standing at the precipice of a vast, uncharted forest. The trees, a tapestry of greens, browns, and golds, stretch towards the sky, their leaves whispering secrets of the ancient world they belong to.\n\nA gentle stream meanders through the forest, its waters clear and cold, reflecting the azure sky above. The stream, in its own way, tells the story of the forest, its currents carrying the echoes of life that have unfolded over countless generations.\n\nBirdsong, a symphony of melodies, fills the air, each note a testament to the vibrant life that thrives in the forest's embrace.\n\nAs I wander deeper into the woods, the path before me, like the stream below, carries the whispers of the forest. Each step I take is a dance WHERE I become one with the ancient, living spirit of the forest.",
+  "usage": {
+    "prompt_tokens": 12,
+    "completion_tokens": 178,
+    "total_tokens": 190
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-0206b16d-ca6a-411e-a3af-0b87a322a5ae",
+    "object": "chat.completion",
+    "created": 1786607277,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nI find myself standing at the precipice of a vast, uncharted forest. The trees, a tapestry of greens, browns, and golds, stretch towards the sky, their leaves whispering secrets of the ancient world they belong to.\n\nA gentle stream meanders through the forest, its waters clear and cold, reflecting the azure sky above. The stream, in its own way, tells the story of the forest, its currents carrying the echoes of life that have unfolded over countless generations.\n\nBirdsong, a symphony of melodies, fills the air, each note a testament to the vibrant life that thrives in the forest's embrace.\n\nAs I wander deeper into the woods, the path before me, like the stream below, carries the whispers of the forest. Each step I take is a dance WHERE I become one with the ancient, living spirit of the forest."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 12,
+      "completion_tokens": 178,
+      "total_tokens": 190
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 33963,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

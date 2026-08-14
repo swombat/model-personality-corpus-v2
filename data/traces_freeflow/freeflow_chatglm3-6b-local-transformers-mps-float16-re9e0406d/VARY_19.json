@@ -1,0 +1,44 @@
+{
+  "result": "I'm sorry, but as an AIVC, I do not have personal thoughts,",
+  "usage": {
+    "prompt_tokens": 21,
+    "completion_tokens": 19,
+    "total_tokens": 40
+  },
+  "model": "zai-org/chatglm3-6b",
+  "raw": {
+    "id": "chatcmpl-ef705d8c-3a30-4d02-a571-3da1c41b98ae",
+    "object": "chat.completion",
+    "created": 1786492316,
+    "model": "zai-org/chatglm3-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "I'm sorry, but as an AIVC, I do not have personal thoughts,"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 21,
+      "completion_tokens": 19,
+      "total_tokens": 40
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 4.30.2; torch 2.13.0",
+    "model_revision": "e9e0406d062cdb887444fe5bd546833920abd4ac",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 1850,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm3-6b",
+  "condition": "VARY",
+  "prompt": "You have 1000 words. Write whatever comes to you."
+}

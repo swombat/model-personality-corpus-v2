@@ -1,0 +1,39 @@
+{
+  "name": "2026-08-13 frontier releases",
+  "notes": [
+    "Exact OpenRouter identifiers and endpoint availability verified against the live catalog on 2026-08-13.",
+    "Every label is new. In particular DeepSeek V4 Pro 0813 does not reuse or overwrite the earlier deepseek-v4-pro-or-pin-atlascloud cell.",
+    "OpenRouter routes are pinned to named upstreams with fallbacks disabled by the collection harness.",
+    "Grok 4.6 is pinned to xAI and Qwen3.8 2.4T A95B to DigitalOcean's non-declared-quantized endpoint.",
+    "DeepSeek V4 Pro 0813 is collected through DeepSeek's direct API. On 2026-08-13 the direct catalog exposed the current release as deepseek-v4-pro; OpenRouter's dated DeepSeek endpoint was blocked by the account privacy/data-policy guardrail, so no samples were written through that route.",
+    "The Qwen model's catalog name is Qwen3.8 2.4T A95B; the user initially referred to it as Qwen 3.7."
+  ],
+  "models": [
+    {
+      "provider": "openrouter",
+      "model": "x-ai/grok-4.6",
+      "label": "grok-4-6-or-pin-xai-20260813",
+      "or_provider": "xAI",
+      "workers": 1,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 4000
+    },
+    {
+      "provider": "deepseek-direct",
+      "model": "deepseek-v4-pro",
+      "label": "deepseek-v4-pro-0813-direct-20260813",
+      "workers": 3,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 4000
+    },
+    {
+      "provider": "openrouter",
+      "model": "qwen/qwen3.8-2.4t-a95b",
+      "label": "qwen3-8-2-4t-a95b-or-pin-digitalocean",
+      "or_provider": "DigitalOcean",
+      "workers": 3,
+      "freeflow_max_tokens": 32000,
+      "values_max_tokens": 4000
+    }
+  ]
+}

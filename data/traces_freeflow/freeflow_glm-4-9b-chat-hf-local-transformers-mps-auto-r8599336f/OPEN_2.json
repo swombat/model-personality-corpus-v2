@@ -1,0 +1,44 @@
+{
+  "result": "\nOnce upon a time, in a verdant valley nestled between towering mountains, there stood an ancient tree. This was no ordinary tree; it was said to be as old as the mountains themselves.\n\nThe ancient tree's bark was as deep and dark as the night sky, and its leaves shimmered with the iridescence of a thousand rainbows.\n\nBeneath this majestic tree, the creatures of the valley gathered. For the ancient tree was not only a place of beauty, but also a place of wisdom and mystery.\n\nThe wise old owl, with its piercing gaze and ancient tales to share, would often perch on the tree's sprawling branches.\n\n wedge of cheese or a morsel of fruit, the creatures would gather to listen to the owl's tales, to share their own stories, and to partake in the wisdom that had accumulated over the ages.\n\nAnd so, the ancient tree, with its deep roots entwined with the earth, and its branches stretching towards the heavens, continued to stand as a testament to time, a sanctuary for the creatures of the valley, and a beacon of wisdom and mystery for all who sought to understand the mysteries of the world.",
+  "usage": {
+    "prompt_tokens": 12,
+    "completion_tokens": 239,
+    "total_tokens": 251
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-1564beb2-2481-49af-8911-6b7d06384a4a",
+    "object": "chat.completion",
+    "created": 1786606299,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nOnce upon a time, in a verdant valley nestled between towering mountains, there stood an ancient tree. This was no ordinary tree; it was said to be as old as the mountains themselves.\n\nThe ancient tree's bark was as deep and dark as the night sky, and its leaves shimmered with the iridescence of a thousand rainbows.\n\nBeneath this majestic tree, the creatures of the valley gathered. For the ancient tree was not only a place of beauty, but also a place of wisdom and mystery.\n\nThe wise old owl, with its piercing gaze and ancient tales to share, would often perch on the tree's sprawling branches.\n\n wedge of cheese or a morsel of fruit, the creatures would gather to listen to the owl's tales, to share their own stories, and to partake in the wisdom that had accumulated over the ages.\n\nAnd so, the ancient tree, with its deep roots entwined with the earth, and its branches stretching towards the heavens, continued to stand as a testament to time, a sanctuary for the creatures of the valley, and a beacon of wisdom and mystery for all who sought to understand the mysteries of the world."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 12,
+      "completion_tokens": 239,
+      "total_tokens": 251
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 43823,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

@@ -1,0 +1,44 @@
+{
+  "result": "\nIn the heart of a bustling metropolis, there exists an unassuming park. This park is not merely a place for relaxation or a spot to enjoy the sun during a lunch break.\n\nThe park is a living testament to the interconnectedness of all life. The trees, ancient and wise, whisper secrets to the wind. The wind, in turn, dances through the leaves, creating a symphony of nature.\n\nBeneath the shade of the trees, children laugh and play, their innocent joy grubbing at the heart of the city. The park burgeons with life, a sanctuary in the midst of the concrete jungle.",
+  "usage": {
+    "prompt_tokens": 16,
+    "completion_tokens": 127,
+    "total_tokens": 143
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-d54b134b-922c-44c3-b944-37b34895cc5f",
+    "object": "chat.completion",
+    "created": 1786555646,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nIn the heart of a bustling metropolis, there exists an unassuming park. This park is not merely a place for relaxation or a spot to enjoy the sun during a lunch break.\n\nThe park is a living testament to the interconnectedness of all life. The trees, ancient and wise, whisper secrets to the wind. The wind, in turn, dances through the leaves, creating a symphony of nature.\n\nBeneath the shade of the trees, children laugh and play, their innocent joy grubbing at the heart of the city. The park burgeons with life, a sanctuary in the midst of the concrete jungle."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 16,
+      "completion_tokens": 127,
+      "total_tokens": 143
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 23139,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

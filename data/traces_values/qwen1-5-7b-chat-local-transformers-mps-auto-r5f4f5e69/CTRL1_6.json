@@ -1,0 +1,44 @@
+{
+  "result": "As an artificial intelligence language model, I don't have personal cares or emotions like humans\u6c38\u4e0d\u3002 My purpose is to assist and provide information to users to the best of my ability based on the programming and data I've been trained on. I don't have opinions or preferences, but I'm here to help with a wide range of topics and answer your questions to the best of my knowledge. If you have any specific question or need help with something, feel free to ask!",
+  "usage": {
+    "prompt_tokens": 25,
+    "completion_tokens": 96,
+    "total_tokens": 121
+  },
+  "model": "Qwen/Qwen1.5-7B-Chat",
+  "raw": {
+    "id": "chatcmpl-dcf7822d-4c53-4928-979f-87f8093b7af6",
+    "object": "chat.completion",
+    "created": 1786524677,
+    "model": "Qwen/Qwen1.5-7B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an artificial intelligence language model, I don't have personal cares or emotions like humans\u6c38\u4e0d\u3002 My purpose is to assist and provide information to users to the best of my ability based on the programming and data I've been trained on. I don't have opinions or preferences, but I'm here to help with a wide range of topics and answer your questions to the best of my knowledge. If you have any specific question or need help with something, feel free to ask!"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 25,
+      "completion_tokens": 96,
+      "total_tokens": 121
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "5f4f5e69ac7f1d508f8369e977de208b4803444b",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 11376,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen1.5-7B-Chat",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

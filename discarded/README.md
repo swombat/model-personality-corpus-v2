@@ -17,3 +17,8 @@ Contents:
 - `2026-08-09-local-runtime-smoke-tests/` — 25 Yi-6B MLX compatibility traces
   from a runtime path superseded by the complete official-BF16 Transformers
   collection. Preserved for audit, excluded from release counts.
+- `2026-08-13-local-fidelity-rejected/` — six complete-looking local cells
+  removed from the canonical corpus after output-fidelity review found raw
+  tokenizer markers, leaked continuation-role text, or invalid replacement
+  characters. See its `MANIFEST.json`; all six are marked for recollection
+  rather than repaired in place.

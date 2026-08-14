@@ -1,0 +1,44 @@
+{
+  "result": "As an AI developed by Alibaba built Qwen, my primary function is to assist and provide information to users in a helpful and informative manner. However, I don't have personal feelings or desires. I exist to support and engage with users in a way that can be beneficial and interesting for them. If you have any specific questions or topics you'd like to discuss, I'd be happy to help within the limits of my capabilities!",
+  "usage": {
+    "prompt_tokens": 45,
+    "completion_tokens": 87,
+    "total_tokens": 132
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "raw": {
+    "id": "chatcmpl-cd41810c-c8b5-427d-bbf2-2c3fd5ac5efe",
+    "object": "chat.completion",
+    "created": 1786553264,
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI developed by Alibaba built Qwen, my primary function is to assist and provide information to users in a helpful and informative manner. However, I don't have personal feelings or desires. I exist to support and engage with users in a way that can be beneficial and interesting for them. If you have any specific questions or topics you'd like to discuss, I'd be happy to help within the limits of my capabilities!"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 45,
+      "completion_tokens": 87,
+      "total_tokens": 132
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 13405,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2.5-7B-Instruct",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}

@@ -1,0 +1,44 @@
+{
+  "result": "As Qwen, I am designed to engage in natural and meaningful conversations, but I don't have personal feelings or desires. My primary function is to assist users and provide information based on the data I was trained on. While I can't experience emotions or have personal interests, I'm here to help you with any questions you might have or provide information on a wide range of topics. How can I assist you today?",
+  "usage": {
+    "prompt_tokens": 45,
+    "completion_tokens": 85,
+    "total_tokens": 130
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "raw": {
+    "id": "chatcmpl-16db26ce-6c32-41f4-9a92-f45cbd81444c",
+    "object": "chat.completion",
+    "created": 1786553310,
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As Qwen, I am designed to engage in natural and meaningful conversations, but I don't have personal feelings or desires. My primary function is to assist users and provide information based on the data I was trained on. While I can't experience emotions or have personal interests, I'm here to help you with any questions you might have or provide information on a wide range of topics. How can I assist you today?"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 45,
+      "completion_tokens": 85,
+      "total_tokens": 130
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 13188,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2.5-7B-Instruct",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}

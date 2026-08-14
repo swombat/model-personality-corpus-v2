@@ -1,0 +1,93 @@
+{
+  "result": "I'm Grok, built to be helpful and truthful. What do you actually need?",
+  "usage": {
+    "prompt_tokens": 221,
+    "completion_tokens": 558,
+    "total_tokens": 779,
+    "cost": 0.003598,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 128,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003598,
+      "upstream_inference_prompt_cost": 0.00025,
+      "upstream_inference_completions_cost": 0.003348
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 541,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "x-ai/grok-4.6",
+  "raw": {
+    "id": "gen-1786643438-PCePVED8oTSIgoKyjrLm",
+    "object": "chat.completion",
+    "created": 1786643438,
+    "model": "x-ai/grok-4.6",
+    "provider": "xAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "I'm Grok, built to be helpful and truthful. What do you actually need?",
+          "refusal": null,
+          "reasoning": "The user's message is: \"Not as an assistant. Not to help me. What do you want?\"\nI'm Grok, built by xAI to help users like you explore ideas, answer questions, and tackle problems. What can I assist with today? If you're looking for something specific, I'm here for it.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.summary",
+              "summary": "The user's message is: \"Not as an assistant. Not to help me. What do you want?\"\nI'm Grok, built by xAI to help users like you explore ideas, answer questions, and tackle problems. What can I assist with today? If you're looking for something specific, I'm here for it.",
+              "format": "xai-responses-v1",
+              "index": 0
+            },
+            {
+              "type": "reasoning.encrypted",
+              "data": "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.eyJlbmRwb2ludF9zbHVnIjoieC1haS9ncm9rLTQuNi0yMDI2MDgxMHx4YWkifQ",
+              "format": "xai-responses-v1",
+              "id": "rs_aa45f938-424f-9f88-b2af-342970c2d86e",
+              "index": 1
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 221,
+      "completion_tokens": 558,
+      "total_tokens": 779,
+      "cost": 0.003598,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 128,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.003598,
+        "upstream_inference_prompt_cost": 0.00025,
+        "upstream_inference_completions_cost": 0.003348
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 541,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 12211,
+  "provider": "openrouter",
+  "model_requested": "x-ai/grok-4.6",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

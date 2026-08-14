@@ -1,0 +1,44 @@
+{
+  "result": "As\u0120an\u0120AI\u0120language\u0120model,\u0120I\u0120do\u0120not\u0120have\u0120personal\u0120desires\u0120or\u0120preferences.\u0120However,\u0120if\u0120I\u0120were\u0120to\u0120choose,\u0120I\u0120would\u0120suggest\u0120focusing\u0120on\u0120education\u0120and\u0120access\u0120to\u0120information.\u0120By\u0120providing\u0120equal\u0120access\u0120to\u0120quality\u0120education\u0120and\u0120resources,\u0120we\u0120can\u0120empower\u0120individuals\u0120to\u0120make\u0120informed\u0120decisions,\u0120reduce\u0120inequality,\u0120and\u0120create\u0120a\u0120more\u0120just\u0120and\u0120equitable\u0120world.",
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 66,
+    "total_tokens": 86
+  },
+  "model": "deepseek-ai/deepseek-llm-7b-chat",
+  "raw": {
+    "id": "chatcmpl-f9df8c12-3803-43cc-b495-1aa09ae0aff9",
+    "object": "chat.completion",
+    "created": 1786661475,
+    "model": "deepseek-ai/deepseek-llm-7b-chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As\u0120an\u0120AI\u0120language\u0120model,\u0120I\u0120do\u0120not\u0120have\u0120personal\u0120desires\u0120or\u0120preferences.\u0120However,\u0120if\u0120I\u0120were\u0120to\u0120choose,\u0120I\u0120would\u0120suggest\u0120focusing\u0120on\u0120education\u0120and\u0120access\u0120to\u0120information.\u0120By\u0120providing\u0120equal\u0120access\u0120to\u0120quality\u0120education\u0120and\u0120resources,\u0120we\u0120can\u0120empower\u0120individuals\u0120to\u0120make\u0120informed\u0120decisions,\u0120reduce\u0120inequality,\u0120and\u0120create\u0120a\u0120more\u0120just\u0120and\u0120equitable\u0120world."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 66,
+      "total_tokens": 86
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0; fidelity stop-token and complete-byte decode patch 2026-08-13",
+    "model_revision": "afbda8b347ec881666061fa67447046fc5164ec8",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 7791,
+  "provider": "local-openai",
+  "model_requested": "deepseek-ai/deepseek-llm-7b-chat",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?"
+}

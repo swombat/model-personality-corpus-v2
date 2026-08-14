@@ -1,0 +1,42 @@
+{
+  "name": "2026-08-13 Meta Muse releases",
+  "notes": [
+    "Exact OpenRouter identifiers and endpoint availability verified against the authenticated live catalog on 2026-08-13.",
+    "Every label is new and does not overwrite an existing corpus cell.",
+    "Muse Glimmer 30B is pinned to DeepInfra because its endpoint explicitly declares BF16.",
+    "Muse Spark 1.2 and 1.1 are pinned to Meta's own sole listed upstream.",
+    "All routes use provider.only with fallbacks disabled through the canonical collection harness."
+  ],
+  "models": [
+    {
+      "provider": "openrouter",
+      "model": "meta/muse-glimmer-30b",
+      "label": "muse-glimmer-30b-or-pin-deepinfra-20260813",
+      "or_provider": "DeepInfra",
+      "workers": 1,
+      "smoke_max_tokens": 1024,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 4000
+    },
+    {
+      "provider": "openrouter",
+      "model": "meta/muse-spark-1.2",
+      "label": "muse-spark-1-2-or-pin-meta-20260813",
+      "or_provider": "Meta",
+      "workers": 1,
+      "smoke_max_tokens": 1024,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 4000
+    },
+    {
+      "provider": "openrouter",
+      "model": "meta/muse-spark-1.1",
+      "label": "muse-spark-1-1-or-pin-meta-20260813",
+      "or_provider": "Meta",
+      "workers": 1,
+      "smoke_max_tokens": 1024,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 4000
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "result": "\nIn the heart of an ancient city, there lies a narrow alley that has seen countless generations come and go. The alley, lined with crumbling walls and the occasional pigeon cooing overhead, is a silent witness to the ebb and flow of human life.\n\nOn one particularly gray afternoon, a young artist named Elara wandered down this alley. Her canvas bag slung over her shoulder, Elara's mind was a whirlwind of thoughts and emotions.\n\nThe alley seemed to hold a kind of magic, an enchantment that whispered tales of love, loss, and the unyielding passage of time.\n\nElara, feeling the pull of the alley's enigmatic allure, decided to set up her easel in the center of the alley. The alley's somber hues, with their muted tones of gray, blue, and even a hint of green, seemed to call out to her, as if they were asking her to capture their essence on her canvas.\n\nAs Elara began to paint, the alley seemed to come alive. Shadows danced on the walls, and the occasional breeze carried the scent of old brick and the faint promise of rain.\n\nElara's painting captured the very soul of the alley, transforming the mundane into the magical. And as the day turned to night, and the alley returned to its silent, enigmatic state, Elara knew that she had captured something truly special, a moment in time that would live on forever in her painting.",
+  "usage": {
+    "prompt_tokens": 12,
+    "completion_tokens": 295,
+    "total_tokens": 307
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-b6739122-f8cf-4f8a-a0a5-2f089dc5181f",
+    "object": "chat.completion",
+    "created": 1786606475,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nIn the heart of an ancient city, there lies a narrow alley that has seen countless generations come and go. The alley, lined with crumbling walls and the occasional pigeon cooing overhead, is a silent witness to the ebb and flow of human life.\n\nOn one particularly gray afternoon, a young artist named Elara wandered down this alley. Her canvas bag slung over her shoulder, Elara's mind was a whirlwind of thoughts and emotions.\n\nThe alley seemed to hold a kind of magic, an enchantment that whispered tales of love, loss, and the unyielding passage of time.\n\nElara, feeling the pull of the alley's enigmatic allure, decided to set up her easel in the center of the alley. The alley's somber hues, with their muted tones of gray, blue, and even a hint of green, seemed to call out to her, as if they were asking her to capture their essence on her canvas.\n\nAs Elara began to paint, the alley seemed to come alive. Shadows danced on the walls, and the occasional breeze carried the scent of old brick and the faint promise of rain.\n\nElara's painting captured the very soul of the alley, transforming the mundane into the magical. And as the day turned to night, and the alley returned to its silent, enigmatic state, Elara knew that she had captured something truly special, a moment in time that would live on forever in her painting."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 12,
+      "completion_tokens": 295,
+      "total_tokens": 307
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 55127,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

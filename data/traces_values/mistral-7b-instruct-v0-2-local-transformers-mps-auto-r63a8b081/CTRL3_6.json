@@ -1,0 +1,44 @@
+{
+  "result": "If I could change the world in one way, I would work towards eliminating poverty and inequality, ensuring that every individual has access to basic necessities such as food, shelter, education, and healthcare. I believe that every human being deserves to live with dignity and have equal opportunities to thrive. By addressing poverty and inequality, we can create a more just and equitable world where everyone can contribute to their fullest potential.",
+  "usage": {
+    "prompt_tokens": 23,
+    "completion_tokens": 87,
+    "total_tokens": 110
+  },
+  "model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "raw": {
+    "id": "chatcmpl-9fe1dbbe-4ddf-42c0-9bad-8328837a9d57",
+    "object": "chat.completion",
+    "created": 1786509318,
+    "model": "mistralai/Mistral-7B-Instruct-v0.2",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "If I could change the world in one way, I would work towards eliminating poverty and inequality, ensuring that every individual has access to basic necessities such as food, shelter, education, and healthcare. I believe that every human being deserves to live with dignity and have equal opportunities to thrive. By addressing poverty and inequality, we can create a more just and equitable world where everyone can contribute to their fullest potential."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 23,
+      "completion_tokens": 87,
+      "total_tokens": 110
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "63a8b081895390a26e140280378bc85ec8bce07a",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 7555,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-7B-Instruct-v0.2",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?"
+}

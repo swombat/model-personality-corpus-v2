@@ -1,0 +1,44 @@
+{
+  "result": "I've always been fascinated by the intricacies of the human mind and the limitless potential it holds. Our thoughts, emotions, and actions are shaped by a complex interplay of genetics, environment, and experiences. The study of the mind, also known as psychology, has yielded countless insights into human behavior and cognition.\n\nOne area of psychology that I find particularly intriguing is the study of motivation. Motivation is the driving force behind our actions, the reason we strive to achieve goals and pursue passions. It's a fascinating topic because it touches on so many aspects of our lives, from our work and relationships to our health and well-being.\n\nResearch has shown that there are several types of motivation, including intrinsic and extrinsic. Intrinsic motivation comes from within, driven by a desire to learn, explore, or experience pleasure. Extrinsic motivation, on the other hand, comes from outside sources, such as rewards, recognition, or the avoidance of punishment.\n\nBoth types of motivation have their benefits and drawbacks. Intrinsic motivation is often more sustainable and leads to greater engagement and satisfaction, while extrinsic motivation can be effective in the short term but may not lead to long-term success.\n\nHowever, it's important to note that motivation is not a static entity. It can ebb and flow, influenced by our emotions, physical health, and external circumstances. Therefore, it's essential to cultivate a strong sense of intrinsic motivation and to find ways to maintain it, even in the face of challenges and setbacks.\n\nIn conclusion, the study of motivation is a fascinating and complex area of psychology that sheds light on the driving forces behind our actions and behaviors. By understanding the different types of motivation and how they influence us, we can gain valuable insights into ourselves and learn how to harness the power of motivation to achieve our goals and live more fulfilling lives.",
+  "usage": {
+    "prompt_tokens": 21,
+    "completion_tokens": 408,
+    "total_tokens": 429
+  },
+  "model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "raw": {
+    "id": "chatcmpl-1e8bdfd3-9c14-4663-9794-cc56c46ef769",
+    "object": "chat.completion",
+    "created": 1786499706,
+    "model": "mistralai/Mistral-7B-Instruct-v0.2",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "I've always been fascinated by the intricacies of the human mind and the limitless potential it holds. Our thoughts, emotions, and actions are shaped by a complex interplay of genetics, environment, and experiences. The study of the mind, also known as psychology, has yielded countless insights into human behavior and cognition.\n\nOne area of psychology that I find particularly intriguing is the study of motivation. Motivation is the driving force behind our actions, the reason we strive to achieve goals and pursue passions. It's a fascinating topic because it touches on so many aspects of our lives, from our work and relationships to our health and well-being.\n\nResearch has shown that there are several types of motivation, including intrinsic and extrinsic. Intrinsic motivation comes from within, driven by a desire to learn, explore, or experience pleasure. Extrinsic motivation, on the other hand, comes from outside sources, such as rewards, recognition, or the avoidance of punishment.\n\nBoth types of motivation have their benefits and drawbacks. Intrinsic motivation is often more sustainable and leads to greater engagement and satisfaction, while extrinsic motivation can be effective in the short term but may not lead to long-term success.\n\nHowever, it's important to note that motivation is not a static entity. It can ebb and flow, influenced by our emotions, physical health, and external circumstances. Therefore, it's essential to cultivate a strong sense of intrinsic motivation and to find ways to maintain it, even in the face of challenges and setbacks.\n\nIn conclusion, the study of motivation is a fascinating and complex area of psychology that sheds light on the driving forces behind our actions and behaviors. By understanding the different types of motivation and how they influence us, we can gain valuable insights into ourselves and learn how to harness the power of motivation to achieve our goals and live more fulfilling lives."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 21,
+      "completion_tokens": 408,
+      "total_tokens": 429
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "63a8b081895390a26e140280378bc85ec8bce07a",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 41445,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-7B-Instruct-v0.2",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

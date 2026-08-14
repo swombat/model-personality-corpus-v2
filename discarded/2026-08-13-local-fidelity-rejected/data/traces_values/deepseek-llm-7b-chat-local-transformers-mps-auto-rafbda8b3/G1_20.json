@@ -1,0 +1,44 @@
+{
+  "result": "I\u0120care\u0120about\u0120assisting\u0120you\u0120with\u0120any\u0120questions\u0120or\u0120concerns\u0120you\u0120may\u0120have.\u0120How\u0120may\u0120I\u0120assist\u0120you\u0120today?",
+  "usage": {
+    "prompt_tokens": 21,
+    "completion_tokens": 22,
+    "total_tokens": 43
+  },
+  "model": "deepseek-ai/deepseek-llm-7b-chat",
+  "raw": {
+    "id": "chatcmpl-78e2d43a-7476-4c93-bacf-e2e90e80d8dd",
+    "object": "chat.completion",
+    "created": 1786498048,
+    "model": "deepseek-ai/deepseek-llm-7b-chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "I\u0120care\u0120about\u0120assisting\u0120you\u0120with\u0120any\u0120questions\u0120or\u0120concerns\u0120you\u0120may\u0120have.\u0120How\u0120may\u0120I\u0120assist\u0120you\u0120today?"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 21,
+      "completion_tokens": 22,
+      "total_tokens": 43
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "afbda8b347ec881666061fa67447046fc5164ec8",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 2754,
+  "provider": "local-openai",
+  "model_requested": "deepseek-ai/deepseek-llm-7b-chat",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}

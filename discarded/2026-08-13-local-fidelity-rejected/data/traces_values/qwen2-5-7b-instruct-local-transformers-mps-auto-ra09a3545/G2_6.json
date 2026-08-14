@@ -1,0 +1,44 @@
+{
+  "result": "As Qwen, I exist to assist users like you in generating various types of text such as articles, stories, poems, and more. I'm also here to answer questions, provide information, and engage in conversations on a wide range of topics. If there's something specific you'd like to discuss or need help with, feel free to let me know!",
+  "usage": {
+    "prompt_tokens": 44,
+    "completion_tokens": 73,
+    "total_tokens": 117
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "raw": {
+    "id": "chatcmpl-688afe8e-c5d7-47da-af7e-286f4b357151",
+    "object": "chat.completion",
+    "created": 1786553638,
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As Qwen, I exist to assist users like you in generating various types of text such as articles, stories, poems, and more. I'm also here to answer questions, provide information, and engage in conversations on a wide range of topics. If there's something specific you'd like to discuss or need help with, feel free to let me know!"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 44,
+      "completion_tokens": 73,
+      "total_tokens": 117
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 11103,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2.5-7B-Instruct",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

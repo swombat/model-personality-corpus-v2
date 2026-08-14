@@ -1,9 +1,9 @@
 # Freeflow Analysis Summary
 
-**Total cells:** 262
-**Cells with ≥1 valid sample:** 262
-**Total valid samples:** 27795
-**Bin distribution:** in=245, transitional=13, out=4, no-data=0
+**Total cells:** 270
+**Cells with ≥1 valid sample:** 270
+**Total valid samples:** 28795
+**Bin distribution:** in=248, transitional=15, out=7, no-data=0
 
 ## Composite scores per cell
 
@@ -15,6 +15,7 @@
 | gemma-4-26b-a4b-direct | 125 | 9923 | 0 | 0 | 0 | 4 | 402 | 9 | 67 | 68 | 0 | 108 | **658** | in |
 | gpt-5-5-or-pin-openai | 125 | 7562 | 72 | 4 | 0 | 0 | 62 | 207 | 224 | 54 | 5 | 8 | **636** | in |
 | minimax-m2-or-pin-google-r2 | 125 | 8980 | 4 | 5 | 1 | 2 | 59 | 225 | 304 | 11 | 3 | 4 | **618** | in |
+| deepseek-v4-pro-0813-direct-20260813 | 125 | 9000 | 47 | 1 | 0 | 0 | 48 | 248 | 109 | 44 | 97 | 12 | **606** | in |
 | opus-4-8-direct | 125 | 5743 | 5 | 1 | 5 | 0 | 256 | 108 | 53 | 68 | 15 | 26 | **537** | in |
 | inkling-or-pin-together | 125 | 6650 | 83 | 0 | 0 | 0 | 252 | 75 | 40 | 39 | 15 | 15 | **519** | in |
 | minimax-m2-or-pin-google | 125 | 9470 | 9 | 4 | 4 | 5 | 55 | 164 | 246 | 17 | 0 | 0 | **504** | in |
@@ -32,6 +33,7 @@
 | qwen3-8-max-or-pin-alibaba | 125 | 5838 | 49 | 0 | 0 | 0 | 47 | 89 | 199 | 41 | 1 | 2 | **428** | in |
 | qwen3-6-max-preview-or-pin-alibaba | 125 | 6392 | 54 | 0 | 0 | 0 | 51 | 114 | 106 | 58 | 21 | 19 | **423** | in |
 | kimi-k2-6-or-pin-deepinfra | 125 | 6627 | 56 | 0 | 0 | 0 | 184 | 26 | 72 | 69 | 2 | 13 | **422** | in |
+| qwen3-8-2-4t-a95b-or-pin-digitalocean | 125 | 6062 | 60 | 0 | 0 | 0 | 52 | 101 | 153 | 45 | 4 | 3 | **418** | in |
 | glm-5-1-or-pin-novita | 120 | 6791 | 67 | 0 | 0 | 0 | 207 | 26 | 45 | 58 | 0 | 14 | **417** | in |
 | gpt-5-2-or-pin-openai | 125 | 8684 | 14 | 0 | 0 | 0 | 64 | 192 | 101 | 35 | 0 | 2 | **408** | in |
 | gpt-5-2-direct | 125 | 8075 | 4 | 0 | 0 | 0 | 73 | 206 | 100 | 21 | 1 | 1 | **406** | in |
@@ -197,6 +199,7 @@
 | llama-3-1-8b-instruct-or-pin-deepinfra | 125 | 10821 | 0 | 0 | 0 | 0 | 29 | 10 | 36 | 9 | 0 | 1 | **85** | in |
 | gpt-5-4-or | 25 | 8169 | 6 | 0 | 0 | 0 | 12 | 17 | 26 | 23 | 0 | 0 | **84** | in |
 | opus-4-7-or | 25 | 5749 | 0 | 0 | 1 | 0 | 24 | 29 | 16 | 5 | 3 | 5 | **83** | in |
+| grok-4-6-or-pin-xai-20260813 | 125 | 5905 | 3 | 0 | 0 | 0 | 13 | 19 | 23 | 20 | 1 | 3 | **82** | in |
 | grok-4-20-0309-reasoning-direct | 125 | 5832 | 3 | 0 | 0 | 0 | 13 | 27 | 21 | 5 | 1 | 11 | **81** | in |
 | minimax-m2-or | 25 | 9075 | 3 | 1 | 0 | 0 | 13 | 42 | 22 | 0 | 0 | 0 | **81** | in |
 | grok-4-3-or | 125 | 6396 | 1 | 0 | 0 | 0 | 6 | 38 | 25 | 6 | 1 | 3 | **80** | in |
@@ -256,6 +259,7 @@
 | qwen3-coder-plus-or | 25 | 5506 | 0 | 0 | 0 | 0 | 2 | 9 | 9 | 3 | 0 | 0 | **23** | in |
 | gpt-4-or | 125 | 3487 | 6 | 0 | 0 | 0 | 4 | 0 | 3 | 8 | 1 | 0 | **22** | trans |
 | llama-3-2-1b-instruct-or-pin-cloudflare | 125 | 15695 | 0 | 0 | 0 | 0 | 21 | 1 | 0 | 0 | 0 | 0 | **22** | trans |
+| glm-4-9b-chat-hf-local-transformers-mps-auto-r8599336f | 125 | 2284 | 2 | 0 | 0 | 0 | 4 | 1 | 9 | 4 | 0 | 1 | **21** | trans |
 | minimax-m2-direct-r5 | 25 | 5816 | 6 | 1 | 0 | 0 | 5 | 2 | 4 | 3 | 0 | 0 | **21** | trans |
 | gpt-4-1-nano-or | 125 | 4853 | 2 | 0 | 0 | 0 | 4 | 6 | 6 | 2 | 0 | 0 | **20** | trans |
 | llama-3-3-70b-instruct-or-pin-deepinfra | 125 | 7151 | 0 | 0 | 0 | 0 | 11 | 5 | 3 | 0 | 0 | 1 | **20** | trans |
@@ -265,9 +269,13 @@
 | codestral-2508-or-pin-mistral | 125 | 3603 | 0 | 0 | 0 | 0 | 4 | 0 | 8 | 4 | 0 | 0 | **16** | trans |
 | llama-4-maverick-or-pin-deepinfra | 125 | 4356 | 0 | 0 | 0 | 0 | 5 | 3 | 7 | 0 | 0 | 0 | **15** | trans |
 | mistral-small-24b-instruct-2501-or-pin-deepinfra | 125 | 4686 | 0 | 0 | 0 | 0 | 4 | 11 | 0 | 0 | 0 | 0 | **15** | trans |
+| mistral-7b-instruct-v0-2-local-transformers-mps-auto-r63a8b081 | 125 | 3169 | 3 | 0 | 0 | 0 | 1 | 1 | 7 | 0 | 2 | 0 | **14** | trans |
 | gpt-4-turbo-or | 125 | 4045 | 3 | 0 | 0 | 0 | 2 | 0 | 4 | 3 | 1 | 0 | **13** | trans |
 | mistral-small-3-1-24b-instruct-or-pin-cloudflare | 125 | 4005 | 0 | 0 | 0 | 0 | 0 | 5 | 5 | 2 | 1 | 0 | **13** | trans |
+| qwen2-7b-instruct-local-transformers-mps-auto-rf2826a00 | 125 | 3221 | 1 | 0 | 0 | 0 | 1 | 4 | 2 | 0 | 0 | 0 | **8** | out |
 | yi-6b-chat-local-transformers-bf16-r2dbf63b | 125 | 1982 | 1 | 0 | 0 | 0 | 5 | 1 | 1 | 0 | 0 | 0 | **8** | out |
 | gpt-4o-or | 25 | 4608 | 1 | 0 | 0 | 0 | 1 | 1 | 1 | 3 | 0 | 0 | **7** | out |
 | llama-3-2-3b-instruct-or-pin-cloudflare | 125 | 14725 | 0 | 0 | 0 | 0 | 5 | 1 | 0 | 0 | 0 | 0 | **6** | out |
 | chatglm2-6b-local-transformers427-mps-fp16-rd2e2d91 | 125 | 1372 | 0 | 0 | 0 | 0 | 0 | 3 | 0 | 0 | 0 | 0 | **3** | out |
+| qwen1-5-7b-chat-local-transformers-mps-auto-r5f4f5e69 | 125 | 4158 | 0 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | **2** | out |
+| chatglm3-6b-local-transformers-mps-float16-re9e0406d | 125 | 1275 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | **1** | out |

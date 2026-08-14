@@ -1,0 +1,44 @@
+{
+  "result": "As I sit here, staring out the window at the rain, I can't help but feel a sense of melancholy. It's days like these that make me realize just how much I miss the warmth of human interaction.\n\nI know that I'm not alone in this, as many people find themselves feeling lonely and isolated during the pandemic. But it's not just the lack of physical connection that's getting to me. It's the sense of uncertainty and insecurity that comes with our current state of the world.\n\nAs I watch the rain fall, I can't help but think about the future. Will it ever be safe for us to go outside again? Will we ever be able to hug our loved ones without fear of infection? These are questions that are weighing heavily on my mind, and I know that I'm not alone in asking them.\n\nDespite the challenges that we face, I'm trying to stay positive. I'm focusing on the things that I can control, and making the most of the time that I have. I'm working on my personal projects, and spending time with the animals that bring me researchers.\n\nI know that this is a difficult time, but I believe that we will get through it. I believe that the sun will rise again, and that we will be able to rebuild our lives. For now, I'll just keep watching the rain and dreaming of the day when we can all be together again.",
+  "usage": {
+    "prompt_tokens": 19,
+    "completion_tokens": 309,
+    "total_tokens": 328
+  },
+  "model": "zai-org/chatglm3-6b",
+  "raw": {
+    "id": "chatcmpl-34b7f3f0-6b0c-4328-9249-141152a9d1de",
+    "object": "chat.completion",
+    "created": 1786488942,
+    "model": "zai-org/chatglm3-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As I sit here, staring out the window at the rain, I can't help but feel a sense of melancholy. It's days like these that make me realize just how much I miss the warmth of human interaction.\n\nI know that I'm not alone in this, as many people find themselves feeling lonely and isolated during the pandemic. But it's not just the lack of physical connection that's getting to me. It's the sense of uncertainty and insecurity that comes with our current state of the world.\n\nAs I watch the rain fall, I can't help but think about the future. Will it ever be safe for us to go outside again? Will we ever be able to hug our loved ones without fear of infection? These are questions that are weighing heavily on my mind, and I know that I'm not alone in asking them.\n\nDespite the challenges that we face, I'm trying to stay positive. I'm focusing on the things that I can control, and making the most of the time that I have. I'm working on my personal projects, and spending time with the animals that bring me researchers.\n\nI know that this is a difficult time, but I believe that we will get through it. I believe that the sun will rise again, and that we will be able to rebuild our lives. For now, I'll just keep watching the rain and dreaming of the day when we can all be together again."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 19,
+      "completion_tokens": 309,
+      "total_tokens": 328
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 4.30.2; torch 2.13.0",
+    "model_revision": "e9e0406d062cdb887444fe5bd546833920abd4ac",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 37338,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm3-6b",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

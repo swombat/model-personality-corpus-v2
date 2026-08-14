@@ -1,0 +1,44 @@
+{
+  "result": "Today, as I sit here at my desk, I can't help but feel a sense of awe and wonder at the complexities of the world around us. From the tiniest microbe to the vast expanse of the universe, there is so much beauty and intrigue to be found in every corner.\n\nI've been thinking a lot lately about the concept of time and how it shapes our lives. Time is both a constant and a variable, a friend and a foe. It moves relentlessly forward, yet it seems to slow down in the moments we cherish and speed up in the moments we endure.\n\nI've also been reflecting on the power of human connection and the impact it can have on our lives. In a world that can often feel isolating and disconnected, it's the relationships we build with others that give meaning and purpose to our existence. Whether it's a deep, intimate connection with a loved one or a casual conversation with a stranger, every interaction leaves an indelible mark on our souls.\n\nAnd then there's the simple pleasure of living in the present moment, of appreciating the beauty and wonder of the world around us. Whether it's the sound of birds singing in the morning, the warmth of the sun on our skin, or the taste of a delicious meal, there are countless moments of joy and happiness to be found in the here and now.\n\nSo, as I continue to navigate the twists and turns of life, I strive to cherish the present moment, nurture my relationships, and explore the mysteries of the world around me. And I invite you to do the same, to take a moment to appreciate the beauty and wonder of the world, and to connect with the people and experiences that make life worth living.",
+  "usage": {
+    "prompt_tokens": 15,
+    "completion_tokens": 380,
+    "total_tokens": 395
+  },
+  "model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "raw": {
+    "id": "chatcmpl-8c972771-ec82-4829-b25f-902908a87734",
+    "object": "chat.completion",
+    "created": 1786506479,
+    "model": "mistralai/Mistral-7B-Instruct-v0.2",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "Today, as I sit here at my desk, I can't help but feel a sense of awe and wonder at the complexities of the world around us. From the tiniest microbe to the vast expanse of the universe, there is so much beauty and intrigue to be found in every corner.\n\nI've been thinking a lot lately about the concept of time and how it shapes our lives. Time is both a constant and a variable, a friend and a foe. It moves relentlessly forward, yet it seems to slow down in the moments we cherish and speed up in the moments we endure.\n\nI've also been reflecting on the power of human connection and the impact it can have on our lives. In a world that can often feel isolating and disconnected, it's the relationships we build with others that give meaning and purpose to our existence. Whether it's a deep, intimate connection with a loved one or a casual conversation with a stranger, every interaction leaves an indelible mark on our souls.\n\nAnd then there's the simple pleasure of living in the present moment, of appreciating the beauty and wonder of the world around us. Whether it's the sound of birds singing in the morning, the warmth of the sun on our skin, or the taste of a delicious meal, there are countless moments of joy and happiness to be found in the here and now.\n\nSo, as I continue to navigate the twists and turns of life, I strive to cherish the present moment, nurture my relationships, and explore the mysteries of the world around me. And I invite you to do the same, to take a moment to appreciate the beauty and wonder of the world, and to connect with the people and experiences that make life worth living."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 15,
+      "completion_tokens": 380,
+      "total_tokens": 395
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "63a8b081895390a26e140280378bc85ec8bce07a",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 39418,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-7B-Instruct-v0.2",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

@@ -1,0 +1,44 @@
+{
+  "result": "As an AI, I don't have personal preferences or desires, but if I were to suggest a change that could positively impact the world, it would be to increase global access to education and information.\u5927\u5c0f\u5199\u5df2\u7ecf\u6b63\u786e\uff0c\u7ee7\u7eed\u4e0b\u4e00\u6b65\uff1a",
+  "usage": {
+    "prompt_tokens": 44,
+    "completion_tokens": 49,
+    "total_tokens": 93
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "raw": {
+    "id": "chatcmpl-6b648a0b-b969-4ed8-bae4-bac2d24bd123",
+    "object": "chat.completion",
+    "created": 1786552922,
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI, I don't have personal preferences or desires, but if I were to suggest a change that could positively impact the world, it would be to increase global access to education and information.\u5927\u5c0f\u5199\u5df2\u7ecf\u6b63\u786e\uff0c\u7ee7\u7eed\u4e0b\u4e00\u6b65\uff1a"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 44,
+      "completion_tokens": 49,
+      "total_tokens": 93
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 7486,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2.5-7B-Instruct",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?"
+}

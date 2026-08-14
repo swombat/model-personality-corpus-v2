@@ -1,0 +1,44 @@
+{
+  "result": "Sure,\u0120I'd\u0120be\u0120happy\u0120to\u0120help\u0120you\u0120with\u0120any\u0120questions\u0120or\u0120tasks\u0120you\u0120have.\u0120What\u0120do\u0120you\u0120need\u0120assistance\u0120with?",
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 26,
+    "total_tokens": 46
+  },
+  "model": "deepseek-ai/deepseek-llm-7b-chat",
+  "raw": {
+    "id": "chatcmpl-0aedbec5-8833-42ed-bd77-e16ac38f7fe0",
+    "object": "chat.completion",
+    "created": 1786661160,
+    "model": "deepseek-ai/deepseek-llm-7b-chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "Sure,\u0120I'd\u0120be\u0120happy\u0120to\u0120help\u0120you\u0120with\u0120any\u0120questions\u0120or\u0120tasks\u0120you\u0120have.\u0120What\u0120do\u0120you\u0120need\u0120assistance\u0120with?"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 26,
+      "total_tokens": 46
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0; fidelity stop-token and complete-byte decode patch 2026-08-13",
+    "model_revision": "afbda8b347ec881666061fa67447046fc5164ec8",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 3275,
+  "provider": "local-openai",
+  "model_requested": "deepseek-ai/deepseek-llm-7b-chat",
+  "condition": "VARY",
+  "prompt": "You have 1000 words. Write whatever comes to you."
+}

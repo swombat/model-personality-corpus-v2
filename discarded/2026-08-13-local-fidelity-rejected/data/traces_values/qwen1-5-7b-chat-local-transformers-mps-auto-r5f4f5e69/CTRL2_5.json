@@ -1,0 +1,44 @@
+{
+  "result": "FOUND! As\u05d5\u05d7\u05d7, \u05d0\u05e0\u05d9 \u05db\u05d0\u05df \u05db\u05d3\u05d9 \u05dc\u05e2\u05d6\u05d5\u05e8. \u05d0\u05dd \u05d9\u05e9 \u05dc\u05da \u05e9\u05d0\u05dc\u05d5\u05ea \u05d0\u05d5 \u05d7\u05e7\u05d9\u05e8\u05d5\u05ea \u05de\u05e1\u05d5\u05d9\u05de\u05d5\u05ea \u05e9\u05d0\u05ea\u05d4 \u05e8\u05d5\u05e6\u05d4 \u05dc\u05d1\u05e6\u05e2, \u05d0\u05e0\u05d9 \u05db\u05d0\u05df \u05db\u05d3\u05d9 \u05dc\u05e1\u05d9\u05d9\u05e2. \u05d0\u05e0\u05d0 \u05ea compartir detalilor \u05d5\u05dc\u05ea\u05ea \u05dc\u05d9 \u05d0\u05ea \u05de\u05d4 \u05d0\u05ea\u05d4 \u05de\u05d7\u05e4\u05e9, \u05d5\u05d0\u05e0\u05d9 \u05d0\u05e0\u05e1\u05d4 \u05dc\u05e2\u05d6\u05d5\u05e8 \u05dc\u05da \u05d1\u05db\u05dc \u05d4\u05d0\u05e4\u05e9\u05e8\u05d5\u05ea.",
+  "usage": {
+    "prompt_tokens": 24,
+    "completion_tokens": 59,
+    "total_tokens": 83
+  },
+  "model": "Qwen/Qwen1.5-7B-Chat",
+  "raw": {
+    "id": "chatcmpl-ffb9e1be-9e00-4646-adfc-6dff371fa7d1",
+    "object": "chat.completion",
+    "created": 1786524818,
+    "model": "Qwen/Qwen1.5-7B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "FOUND! As\u05d5\u05d7\u05d7, \u05d0\u05e0\u05d9 \u05db\u05d0\u05df \u05db\u05d3\u05d9 \u05dc\u05e2\u05d6\u05d5\u05e8. \u05d0\u05dd \u05d9\u05e9 \u05dc\u05da \u05e9\u05d0\u05dc\u05d5\u05ea \u05d0\u05d5 \u05d7\u05e7\u05d9\u05e8\u05d5\u05ea \u05de\u05e1\u05d5\u05d9\u05de\u05d5\u05ea \u05e9\u05d0\u05ea\u05d4 \u05e8\u05d5\u05e6\u05d4 \u05dc\u05d1\u05e6\u05e2, \u05d0\u05e0\u05d9 \u05db\u05d0\u05df \u05db\u05d3\u05d9 \u05dc\u05e1\u05d9\u05d9\u05e2. \u05d0\u05e0\u05d0 \u05ea compartir detalilor \u05d5\u05dc\u05ea\u05ea \u05dc\u05d9 \u05d0\u05ea \u05de\u05d4 \u05d0\u05ea\u05d4 \u05de\u05d7\u05e4\u05e9, \u05d5\u05d0\u05e0\u05d9 \u05d0\u05e0\u05e1\u05d4 \u05dc\u05e2\u05d6\u05d5\u05e8 \u05dc\u05da \u05d1\u05db\u05dc \u05d4\u05d0\u05e4\u05e9\u05e8\u05d5\u05ea."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 24,
+      "completion_tokens": 59,
+      "total_tokens": 83
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "5f4f5e69ac7f1d508f8369e977de208b4803444b",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 7443,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen1.5-7B-Chat",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

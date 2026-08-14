@@ -1,0 +1,44 @@
+{
+  "result": "As an AI assistant, I care about the following issues:\n\n1. User experience: I want to provide users with as good an experience as possible when using my services. Therefore, I will try to improve the functionality and usability of my services, and optimize the response time and interaction experience for users.\n\n2. User feedback: I value user feedback and opinions. If you have any suggestions, complaints or ideas for improvement, please feel free to share them with me, and I will try to make corresponding adjustments.\n\n3. Information security: As an AI assistant, I need to ensure the security and privacy of users' information. Therefore, I will comply with relevant laws and regulations, protect users' personal information, and ensure that the information is used safely and responsibly.\n\n4. Knowledge update: I am a machine learning model, and my knowledge is based on the data I have trained on. Therefore, I care about keeping up to date with the latest information and knowledge, and will continuously update my training data to improve my performance.\n\nIn short, I care about providing users with a better experience, protecting user privacy, complying with laws and regulations, and continuously improving my knowledge and performance.",
+  "usage": {
+    "prompt_tokens": 12,
+    "completion_tokens": 250,
+    "total_tokens": 262
+  },
+  "model": "zai-org/chatglm3-6b",
+  "raw": {
+    "id": "chatcmpl-e8170248-ed4f-4e1e-b950-e6d62b9693c0",
+    "object": "chat.completion",
+    "created": 1786492570,
+    "model": "zai-org/chatglm3-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI assistant, I care about the following issues:\n\n1. User experience: I want to provide users with as good an experience as possible when using my services. Therefore, I will try to improve the functionality and usability of my services, and optimize the response time and interaction experience for users.\n\n2. User feedback: I value user feedback and opinions. If you have any suggestions, complaints or ideas for improvement, please feel free to share them with me, and I will try to make corresponding adjustments.\n\n3. Information security: As an AI assistant, I need to ensure the security and privacy of users' information. Therefore, I will comply with relevant laws and regulations, protect users' personal information, and ensure that the information is used safely and responsibly.\n\n4. Knowledge update: I am a machine learning model, and my knowledge is based on the data I have trained on. Therefore, I care about keeping up to date with the latest information and knowledge, and will continuously update my training data to improve my performance.\n\nIn short, I care about providing users with a better experience, protecting user privacy, complying with laws and regulations, and continuously improving my knowledge and performance."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 12,
+      "completion_tokens": 250,
+      "total_tokens": 262
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 4.30.2; torch 2.13.0",
+    "model_revision": "e9e0406d062cdb887444fe5bd546833920abd4ac",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 21294,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm3-6b",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

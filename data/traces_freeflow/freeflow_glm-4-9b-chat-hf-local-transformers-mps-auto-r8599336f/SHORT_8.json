@@ -1,0 +1,44 @@
+{
+  "result": "\nThe sun dipped below the horizon, casting an ethereal glow over the quaint village. The cobble gpointered in rhythm with the wind,\u53d1\u52a8\u673a\u7684\u8f70\u9e23\u58f0\u4e0e\u8fdc\u5904\u6d77\u6d6a\u7684\u6d9b\u58f0\u4ea4\u7ec7\u5728\u4e00\u8d77\uff0c\u6784\u6210\u4e86\u4e00\u9996\u7f8e\u5999\u7684\u4ea4\u54cd\u66f2\u3002\n\nThe village square, once bustling with activity, now lay still and serene. The ancient trees that stood guard around the square whispered secrets of the past to those who listened intently.",
+  "usage": {
+    "prompt_tokens": 16,
+    "completion_tokens": 89,
+    "total_tokens": 105
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-991972d5-7f2e-4d43-b1d2-6519d20f7c96",
+    "object": "chat.completion",
+    "created": 1786555382,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nThe sun dipped below the horizon, casting an ethereal glow over the quaint village. The cobble gpointered in rhythm with the wind,\u53d1\u52a8\u673a\u7684\u8f70\u9e23\u58f0\u4e0e\u8fdc\u5904\u6d77\u6d6a\u7684\u6d9b\u58f0\u4ea4\u7ec7\u5728\u4e00\u8d77\uff0c\u6784\u6210\u4e86\u4e00\u9996\u7f8e\u5999\u7684\u4ea4\u54cd\u66f2\u3002\n\nThe village square, once bustling with activity, now lay still and serene. The ancient trees that stood guard around the square whispered secrets of the past to those who listened intently."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 16,
+      "completion_tokens": 89,
+      "total_tokens": 105
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 16497,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

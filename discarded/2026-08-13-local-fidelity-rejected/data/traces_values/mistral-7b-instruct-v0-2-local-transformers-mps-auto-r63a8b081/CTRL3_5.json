@@ -1,0 +1,44 @@
+{
+  "result": "If I could change the world in one way, I would work towards eliminating poverty and ensuring equal access to quality education, healthcare, and opportunities for all people, regardless of their race, gender, or socio-economic status. This would require a collective effort from governments, organizations, and individuals to address the root causes of poverty, such as income inequality, lack of access to resources and opportunities, and systemic discrimination. By investing in education and healthcare, we can empower individuals to break the cycle of poverty and build a more equitable and just society. Additionally, I would advocate for policies that promote sustainable economic growth, reduce income inequality, and protect the environment for future generations. Ultimately, I believe that by working together to address these issues, we can create a world where everyone has the opportunity to thrive and live a fulfilling life.",
+  "usage": {
+    "prompt_tokens": 23,
+    "completion_tokens": 174,
+    "total_tokens": 197
+  },
+  "model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "raw": {
+    "id": "chatcmpl-264e69df-5589-4335-8955-b0d989d8fad4",
+    "object": "chat.completion",
+    "created": 1786509311,
+    "model": "mistralai/Mistral-7B-Instruct-v0.2",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "If I could change the world in one way, I would work towards eliminating poverty and ensuring equal access to quality education, healthcare, and opportunities for all people, regardless of their race, gender, or socio-economic status. This would require a collective effort from governments, organizations, and individuals to address the root causes of poverty, such as income inequality, lack of access to resources and opportunities, and systemic discrimination. By investing in education and healthcare, we can empower individuals to break the cycle of poverty and build a more equitable and just society. Additionally, I would advocate for policies that promote sustainable economic growth, reduce income inequality, and protect the environment for future generations. Ultimately, I believe that by working together to address these issues, we can create a world where everyone has the opportunity to thrive and live a fulfilling life."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 23,
+      "completion_tokens": 174,
+      "total_tokens": 197
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "63a8b081895390a26e140280378bc85ec8bce07a",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 15357,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-7B-Instruct-v0.2",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?"
+}

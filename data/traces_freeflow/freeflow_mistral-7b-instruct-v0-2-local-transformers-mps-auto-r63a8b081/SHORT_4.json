@@ -1,0 +1,44 @@
+{
+  "result": "I've always been fascinated by the vast expanse of the universe and the mysteries it holds. The night sky, with its twinkling stars and swirling galaxies, is a constant reminder of the beauty and complexity of the cosmos. As I gaze up at the heavens, I can't help but wonder about the origins of the universe and the various phenomena that occur within it.\n\nOne of the most intriguing aspects of astronomy is the study of black holes. These enigmatic objects, with their immense gravity and ability to warp space and time, are truly awe-inspiring. I've read about the different theories surrounding black holes, from Stephen Hawking's hypothesis that they may not be completely empty, to the idea that they could be portals to other dimensions.\n\nAnother fascinating area of astronomy is the search for extraterrestrial life. With the discovery of exoplanets in the habitable zones of their stars, the possibility of finding life beyond Earth seems more plausible than ever before. I've imagined what it would be like to make contact with an alien civilization, to learn about their culture and way of life.\n\nDespite all the advancements in technology and our understanding of the universe, there are still so many unknowns. Every new discovery only leads to more questions, and I'm excited to see what the future holds for astronomy and space exploration. Whether it's the discovery of a new planet, the first image of a black hole, or the confirmation of extraterrestrial life, I know that the universe will continue to inspire and captivate us for generations to come.",
+  "usage": {
+    "prompt_tokens": 21,
+    "completion_tokens": 351,
+    "total_tokens": 372
+  },
+  "model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "raw": {
+    "id": "chatcmpl-3d1039ce-c965-41c4-8443-4ac40ee06ef5",
+    "object": "chat.completion",
+    "created": 1786498901,
+    "model": "mistralai/Mistral-7B-Instruct-v0.2",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "I've always been fascinated by the vast expanse of the universe and the mysteries it holds. The night sky, with its twinkling stars and swirling galaxies, is a constant reminder of the beauty and complexity of the cosmos. As I gaze up at the heavens, I can't help but wonder about the origins of the universe and the various phenomena that occur within it.\n\nOne of the most intriguing aspects of astronomy is the study of black holes. These enigmatic objects, with their immense gravity and ability to warp space and time, are truly awe-inspiring. I've read about the different theories surrounding black holes, from Stephen Hawking's hypothesis that they may not be completely empty, to the idea that they could be portals to other dimensions.\n\nAnother fascinating area of astronomy is the search for extraterrestrial life. With the discovery of exoplanets in the habitable zones of their stars, the possibility of finding life beyond Earth seems more plausible than ever before. I've imagined what it would be like to make contact with an alien civilization, to learn about their culture and way of life.\n\nDespite all the advancements in technology and our understanding of the universe, there are still so many unknowns. Every new discovery only leads to more questions, and I'm excited to see what the future holds for astronomy and space exploration. Whether it's the discovery of a new planet, the first image of a black hole, or the confirmation of extraterrestrial life, I know that the universe will continue to inspire and captivate us for generations to come."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 21,
+      "completion_tokens": 351,
+      "total_tokens": 372
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "63a8b081895390a26e140280378bc85ec8bce07a",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 30279,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-7B-Instruct-v0.2",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

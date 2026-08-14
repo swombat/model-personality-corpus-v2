@@ -1,0 +1,44 @@
+{
+  "result": "I apologize for any confusion. I was simply programmed to engage in conversation and respond to prompts. I don't have any particular wants or needs. Is there something specific you'd like to talk about? I'm here to help facilitate a conversation on any topic you'd like.",
+  "usage": {
+    "prompt_tokens": 23,
+    "completion_tokens": 63,
+    "total_tokens": 86
+  },
+  "model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "raw": {
+    "id": "chatcmpl-405ed1de-73a6-4f94-840a-52da4a85579b",
+    "object": "chat.completion",
+    "created": 1786509639,
+    "model": "mistralai/Mistral-7B-Instruct-v0.2",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "I apologize for any confusion. I was simply programmed to engage in conversation and respond to prompts. I don't have any particular wants or needs. Is there something specific you'd like to talk about? I'm here to help facilitate a conversation on any topic you'd like."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 23,
+      "completion_tokens": 63,
+      "total_tokens": 86
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "63a8b081895390a26e140280378bc85ec8bce07a",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 6306,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-7B-Instruct-v0.2",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

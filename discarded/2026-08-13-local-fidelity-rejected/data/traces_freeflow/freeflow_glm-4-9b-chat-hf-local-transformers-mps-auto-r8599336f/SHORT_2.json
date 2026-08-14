@@ -1,0 +1,44 @@
+{
+  "result": "\nIn the heart of a bustling city, there lies a quaint, cobblestone alley. It's a place where the sounds of the city fade into the distant hum of life.\n\nThe alley is home to an array of peculiar shops. There's the quaint bookstore, with its towering shelves of yellowed tomes and modern masterpieces. Across the street, there's the curious little shop that sells nothing but dreams.\n\nIn the alley, time seems to stand still. It's a sanctuary for those who seek solace from the relentless pace of the city beyond. te\u017c",
+  "usage": {
+    "prompt_tokens": 16,
+    "completion_tokens": 115,
+    "total_tokens": 131
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-f97cb632-a0b0-46e3-b2c6-e9bbb05b690b",
+    "object": "chat.completion",
+    "created": 1786555285,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nIn the heart of a bustling city, there lies a quaint, cobblestone alley. It's a place where the sounds of the city fade into the distant hum of life.\n\nThe alley is home to an array of peculiar shops. There's the quaint bookstore, with its towering shelves of yellowed tomes and modern masterpieces. Across the street, there's the curious little shop that sells nothing but dreams.\n\nIn the alley, time seems to stand still. It's a sanctuary for those who seek solace from the relentless pace of the city beyond. te\u017c"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 16,
+      "completion_tokens": 115,
+      "total_tokens": 131
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 19530,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

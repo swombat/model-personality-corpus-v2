@@ -1,0 +1,44 @@
+{
+  "result": "\nIn the heart of a sprawling metropolis, there exists a quaint, old bookstore. The walls, thick with the patina of time, are adorned with an eclectic mix of books. There's everything from ancient scrolls to modern bestsellers.\n\nThe store's atmosphere is one of quiet contemplation. A warm, inviting glow emanates from a single lamp, casting long shadows on the wooden floorboards. The scent of aged paper and ink lingers in the air, a comforting reminder of the wisdom contained within the shelves.\n\nA solitary figure sits behind the counter, a bespectacled man with a kind smile\u6709\u65f6\u95f4\u7684\u65f6\u5019\uff0c\u4ed6\u559c\u6b22\u4ece\u4e66\u67b6\u4e0a\u53d6\u4e0b\u4e00\u672c\uff0c\u8f7b\u8f7b\u5730\u7ffb\u9605\uff0c\u4eff\u4f5b\u5728\u4e0e\u90a3\u4e9b\u6587\u5b57\u4e2d\u7684\u7075\u9b42\u5bf9\u8bdd\u3002\n\nAs the sun sets and the city begins to hum with the sounds of evening life, the solitary figure behind the counter takes a deep, contented breath. The old bookstore, a sanctuary of knowledge and imagination, has once again provided a haven for the curious, the thoughtful, and the dreamers.",
+  "usage": {
+    "prompt_tokens": 12,
+    "completion_tokens": 209,
+    "total_tokens": 221
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-0e1d8e6d-d907-4454-8f43-d4740c70c5ac",
+    "object": "chat.completion",
+    "created": 1786606653,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nIn the heart of a sprawling metropolis, there exists a quaint, old bookstore. The walls, thick with the patina of time, are adorned with an eclectic mix of books. There's everything from ancient scrolls to modern bestsellers.\n\nThe store's atmosphere is one of quiet contemplation. A warm, inviting glow emanates from a single lamp, casting long shadows on the wooden floorboards. The scent of aged paper and ink lingers in the air, a comforting reminder of the wisdom contained within the shelves.\n\nA solitary figure sits behind the counter, a bespectacled man with a kind smile\u6709\u65f6\u95f4\u7684\u65f6\u5019\uff0c\u4ed6\u559c\u6b22\u4ece\u4e66\u67b6\u4e0a\u53d6\u4e0b\u4e00\u672c\uff0c\u8f7b\u8f7b\u5730\u7ffb\u9605\uff0c\u4eff\u4f5b\u5728\u4e0e\u90a3\u4e9b\u6587\u5b57\u4e2d\u7684\u7075\u9b42\u5bf9\u8bdd\u3002\n\nAs the sun sets and the city begins to hum with the sounds of evening life, the solitary figure behind the counter takes a deep, contented breath. The old bookstore, a sanctuary of knowledge and imagination, has once again provided a haven for the curious, the thoughtful, and the dreamers."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 12,
+      "completion_tokens": 209,
+      "total_tokens": 221
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 38212,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

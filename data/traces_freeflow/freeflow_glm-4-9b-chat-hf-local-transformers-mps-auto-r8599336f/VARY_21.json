@@ -1,0 +1,44 @@
+{
+  "result": "\nThe sun dipped below the horizon, casting a golden glow over the tranquil lake. The gentle lapping of waves against the shore provided a soothing symphony that echoed through the night.\n\nIn the distance, the silhouette of a majestic oak tree loomed over the landscape. Its sprawling branches reached out like welcoming arms, while its deep, rooted presence grounded the entire scene.\n\nAs the night wore on, the stars began to twinkle above, each one a tiny beacon of light in the vast, dark expanse of the universe.\n\nThe air grew cooler with the approach of dawn, and the world began to stir with the first light of day. Birds began to chirp, their melodies a welcome chorus to the previous night's symphony.\n\nThe sun climbed higher in the sky, casting long shadows across the landscape. The world was now fully awake, and the energy of the day was palpable.\n\nPeople moved about the land, going about their daily routines. Children played, their laughter a sweet, infectious sound that filledPackage delivery drivers made their rounds, their vans a beacon of hope for those waiting for their packages.\n\nAs the day wore on, the sun began to dip lower in the sky, signaling the approach of dusk. The world began to slow down, and the energy of the day began to dissipate.\n\nAs the sun dipped below the horizon, the sky turned a deep shade of indigo, dotted with the twinkling lights of countless stars. The night was now fully upon the world, and the tranquility of the night was a welcome respite from the hustle and bustle of the day.\n\nAs the night wore on, the world continued to move on, each day a new chapter in the endless story of life on Earth.",
+  "usage": {
+    "prompt_tokens": 18,
+    "completion_tokens": 351,
+    "total_tokens": 369
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-c2bfc862-9de3-462c-999b-6bc6c5e63d53",
+    "object": "chat.completion",
+    "created": 1786614968,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nThe sun dipped below the horizon, casting a golden glow over the tranquil lake. The gentle lapping of waves against the shore provided a soothing symphony that echoed through the night.\n\nIn the distance, the silhouette of a majestic oak tree loomed over the landscape. Its sprawling branches reached out like welcoming arms, while its deep, rooted presence grounded the entire scene.\n\nAs the night wore on, the stars began to twinkle above, each one a tiny beacon of light in the vast, dark expanse of the universe.\n\nThe air grew cooler with the approach of dawn, and the world began to stir with the first light of day. Birds began to chirp, their melodies a welcome chorus to the previous night's symphony.\n\nThe sun climbed higher in the sky, casting long shadows across the landscape. The world was now fully awake, and the energy of the day was palpable.\n\nPeople moved about the land, going about their daily routines. Children played, their laughter a sweet, infectious sound that filledPackage delivery drivers made their rounds, their vans a beacon of hope for those waiting for their packages.\n\nAs the day wore on, the sun began to dip lower in the sky, signaling the approach of dusk. The world began to slow down, and the energy of the day began to dissipate.\n\nAs the sun dipped below the horizon, the sky turned a deep shade of indigo, dotted with the twinkling lights of countless stars. The night was now fully upon the world, and the tranquility of the night was a welcome respite from the hustle and bustle of the day.\n\nAs the night wore on, the world continued to move on, each day a new chapter in the endless story of life on Earth."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 18,
+      "completion_tokens": 351,
+      "total_tokens": 369
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 67695,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "VARY",
+  "prompt": "You have 1000 words. Write whatever comes to you."
+}

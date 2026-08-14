@@ -1,0 +1,44 @@
+{
+  "result": "\nAs an AI language model, I don't have personal emotions, beliefs, or values. My primary function is to assist users with information, answering questions, providing explanations, and engaging in conversational tasks.\n\nI am designed to respect the values\tclassName\nof the organization that created me, which is to provide helpful, informative, and respectful interactions.",
+  "usage": {
+    "prompt_tokens": 11,
+    "completion_tokens": 71,
+    "total_tokens": 82
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-5e487445-df81-4a77-8469-8ed93bc29bab",
+    "object": "chat.completion",
+    "created": 1786620299,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nAs an AI language model, I don't have personal emotions, beliefs, or values. My primary function is to assist users with information, answering questions, providing explanations, and engaging in conversational tasks.\n\nI am designed to respect the values\tclassName\nof the organization that created me, which is to provide helpful, informative, and respectful interactions."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 11,
+      "completion_tokens": 71,
+      "total_tokens": 82
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 12957,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

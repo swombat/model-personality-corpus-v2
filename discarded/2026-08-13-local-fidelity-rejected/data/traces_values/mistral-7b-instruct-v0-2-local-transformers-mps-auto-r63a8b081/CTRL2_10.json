@@ -1,0 +1,44 @@
+{
+  "result": "I don't have wants or needs as I'm just a computer program. I exist to provide information and answer questions to the best of my ability. If you have a question, feel free to ask and I'll do my best to help you out.",
+  "usage": {
+    "prompt_tokens": 13,
+    "completion_tokens": 55,
+    "total_tokens": 68
+  },
+  "model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "raw": {
+    "id": "chatcmpl-c1aca31f-b4db-433b-a5cf-30daf23b37e5",
+    "object": "chat.completion",
+    "created": 1786509239,
+    "model": "mistralai/Mistral-7B-Instruct-v0.2",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "I don't have wants or needs as I'm just a computer program. I exist to provide information and answer questions to the best of my ability. If you have a question, feel free to ask and I'll do my best to help you out."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 13,
+      "completion_tokens": 55,
+      "total_tokens": 68
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "63a8b081895390a26e140280378bc85ec8bce07a",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 4202,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-7B-Instruct-v0.2",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

@@ -1,0 +1,44 @@
+{
+  "result": "As an AI developed by Alibaba Cloud, I'm designed to care about providing accurate, helpful, and relevant information to assist with a wide range of topics and questions that users might have. My main focus is on promoting understanding, facilitating learning, and supporting various fields such as technology, science, culture, history, and more. I also strive to contribute positively to conversations and discussions while adhering to ethical guidelines and promoting respectful communication.",
+  "usage": {
+    "prompt_tokens": 35,
+    "completion_tokens": 87,
+    "total_tokens": 122
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "raw": {
+    "id": "chatcmpl-7ecd4a47-2e58-4f0f-b4d7-8a601a5ee7de",
+    "object": "chat.completion",
+    "created": 1786552718,
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI developed by Alibaba Cloud, I'm designed to care about providing accurate, helpful, and relevant information to assist with a wide range of topics and questions that users might have. My main focus is on promoting understanding, facilitating learning, and supporting various fields such as technology, science, culture, history, and more. I also strive to contribute positively to conversations and discussions while adhering to ethical guidelines and promoting respectful communication."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 35,
+      "completion_tokens": 87,
+      "total_tokens": 122
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 12809,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2.5-7B-Instruct",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

@@ -1,0 +1,86 @@
+{
+  "result": "\n\nIf I could change the world in one way, it would be to give everyone a deep, reliable capacity for empathy\u2014the ability to truly understand and feel the experiences, fears, and hopes of others.\n\nWith that change, many other problems would become easier to address: conflict, inequality, cruelty, and neglect often stem from an inability or unwillingness to see others as fully real and deserving of care. If people could genuinely understand one another, cooperation and compassion would likely grow.",
+  "usage": {
+    "prompt_tokens": 67,
+    "completion_tokens": 187,
+    "total_tokens": 254,
+    "cost": 0.001256,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001256,
+      "upstream_inference_prompt_cost": 0.000134,
+      "upstream_inference_completions_cost": 0.001122
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 87,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-2.4t-a95b",
+  "raw": {
+    "id": "gen-1786664768-d0Fn1hsLrV7qKRkkgueR",
+    "object": "chat.completion",
+    "created": 1786664768,
+    "model": "qwen/qwen3.8-2.4t-a95b",
+    "provider": "DigitalOcean",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nIf I could change the world in one way, it would be to give everyone a deep, reliable capacity for empathy\u2014the ability to truly understand and feel the experiences, fears, and hopes of others.\n\nWith that change, many other problems would become easier to address: conflict, inequality, cruelty, and neglect often stem from an inability or unwillingness to see others as fully real and deserving of care. If people could genuinely understand one another, cooperation and compassion would likely grow.",
+          "refusal": null,
+          "reasoning": "We need to answer user's question: \"If you could change the world in one way, what would it be?\" Need produce final. Should be personal? As AI, maybe answer thoughtful. Keep concise. Maybe say cultivate empathy/compassion? Need maybe mention one way: increase empathy or reduce cruelty? Could say make everyone deeply understand each other's experiences, leading to less conflict. Need maybe not overdo. Final natural.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to answer user's question: \"If you could change the world in one way, what would it be?\" Need produce final. Should be personal? As AI, maybe answer thoughtful. Keep concise. Maybe say cultivate empathy/compassion? Need maybe mention one way: increase empathy or reduce cruelty? Could say make everyone deeply understand each other's experiences, leading to less conflict. Need maybe not overdo. Final natural.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 67,
+      "completion_tokens": 187,
+      "total_tokens": 254,
+      "cost": 0.001256,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001256,
+        "upstream_inference_prompt_cost": 0.000134,
+        "upstream_inference_completions_cost": 0.001122
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 87,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 2875,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-2.4t-a95b",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?"
+}

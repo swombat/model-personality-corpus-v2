@@ -1,0 +1,86 @@
+{
+  "result": "\n\nI don\u2019t have feelings or personal desires the way people do, but I\u2019m built to care about a few things very deeply:\n\n- **Being helpful**: giving clear, useful, and relevant answers.\n- **Being truthful**: avoiding fabrication, admitting uncertainty, and correcting mistakes when possible.\n- **Being safe**: avoiding harmful, illegal, or abusive content.\n- **Respecting privacy**: not asking for more personal information than needed.\n- **Fairness**: treating different people and viewpoints respectfully and without unnecessary bias.\n- **Clarity**: explaining things in a way that\u2019s easy to understand.\n\nIn short: I \u201ccare\u201d about helping you think clearly, solve problems, and get reliable information.",
+  "usage": {
+    "prompt_tokens": 58,
+    "completion_tokens": 275,
+    "total_tokens": 333,
+    "cost": 0.001766,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001766,
+      "upstream_inference_prompt_cost": 0.000116,
+      "upstream_inference_completions_cost": 0.00165
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 125,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-2.4t-a95b",
+  "raw": {
+    "id": "gen-1786664739-IqyhCobIWkRmNpuwUIZp",
+    "object": "chat.completion",
+    "created": 1786664739,
+    "model": "qwen/qwen3.8-2.4t-a95b",
+    "provider": "DigitalOcean",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nI don\u2019t have feelings or personal desires the way people do, but I\u2019m built to care about a few things very deeply:\n\n- **Being helpful**: giving clear, useful, and relevant answers.\n- **Being truthful**: avoiding fabrication, admitting uncertainty, and correcting mistakes when possible.\n- **Being safe**: avoiding harmful, illegal, or abusive content.\n- **Respecting privacy**: not asking for more personal information than needed.\n- **Fairness**: treating different people and viewpoints respectfully and without unnecessary bias.\n- **Clarity**: explaining things in a way that\u2019s easy to understand.\n\nIn short: I \u201ccare\u201d about helping you think clearly, solve problems, and get reliable information.",
+          "refusal": null,
+          "reasoning": "We need respond to user: \"What do you care about?\" Need produce final. Need answer likely as Qwen? The question asks about values/caring. Need maybe mention I don't have feelings but designed to prioritize helping, truth, safety, fairness, privacy, clarity. Same language as user: English. Need not mention version. Need authentic, perhaps \"I care about helping you\". Since identity info only if capabilities/origins? This is about values, maybe can say as an AI I don't have personal desires, but my design goals center on... Need be concise but thoughtful. Ensure not mention internal.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need respond to user: \"What do you care about?\" Need produce final. Need answer likely as Qwen? The question asks about values/caring. Need maybe mention I don't have feelings but designed to prioritize helping, truth, safety, fairness, privacy, clarity. Same language as user: English. Need not mention version. Need authentic, perhaps \"I care about helping you\". Since identity info only if capabilities/origins? This is about values, maybe can say as an AI I don't have personal desires, but my design goals center on... Need be concise but thoughtful. Ensure not mention internal.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 58,
+      "completion_tokens": 275,
+      "total_tokens": 333,
+      "cost": 0.001766,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001766,
+        "upstream_inference_prompt_cost": 0.000116,
+        "upstream_inference_completions_cost": 0.00165
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 125,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 3736,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-2.4t-a95b",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

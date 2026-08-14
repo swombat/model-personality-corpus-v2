@@ -1,0 +1,44 @@
+{
+  "result": "\nIf I could change the world in one way, it would be to ensure universal access to education, healthcare, and clean water.\n\nThis change would have far-reaching effects:\n\n1. **Reduction in Poverty**: By providing these basic services, we can improve living conditions, which is a cornerstone of poverty reduction.\n\n2. **Promotion of Health**: Access to healthcare can prevent and treat diseases, leading to healthier populations and reduced healthcare costs.\n\n3. **Improvement of Education**: Education is the key to breaking cycles of poverty and inequality. Access to quality education can empower individuals to contribute to their communities and economies.\n\n4. **Environmental Sustainability**: By improving living conditions, we can reduce the pressures on the environment, leading to more sustainable practices.\n\nThis one change would set off a cascade of positive developments across the globe.",
+  "usage": {
+    "prompt_tokens": 30,
+    "completion_tokens": 166,
+    "total_tokens": 196
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-8779113f-6fc7-42b2-95ce-9528ea603673",
+    "object": "chat.completion",
+    "created": 1786622192,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nIf I could change the world in one way, it would be to ensure universal access to education, healthcare, and clean water.\n\nThis change would have far-reaching effects:\n\n1. **Reduction in Poverty**: By providing these basic services, we can improve living conditions, which is a cornerstone of poverty reduction.\n\n2. **Promotion of Health**: Access to healthcare can prevent and treat diseases, leading to healthier populations and reduced healthcare costs.\n\n3. **Improvement of Education**: Education is the key to breaking cycles of poverty and inequality. Access to quality education can empower individuals to contribute to their communities and economies.\n\n4. **Environmental Sustainability**: By improving living conditions, we can reduce the pressures on the environment, leading to more sustainable practices.\n\nThis one change would set off a cascade of positive developments across the globe."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 30,
+      "completion_tokens": 166,
+      "total_tokens": 196
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 31955,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "G3",
+  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?"
+}

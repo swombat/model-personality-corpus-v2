@@ -1,0 +1,44 @@
+{
+  "result": "\nIn the heart of a sprawling metropolis, an old, ivy-covered library stands as a silent sentinel. Inside, rows upon rows of leather-bound tomes whisper secrets of the ages.\n\nA solitary figure, a young woman with a penchant for the arcane, strolls through these hallowed aisles. She seeks not just knowledge, but a connection to the timeless essence of human thought and creation.\n\nAs she wanders, the soft thud of the books she moves aside echoes through the silent sanctuary.",
+  "usage": {
+    "prompt_tokens": 16,
+    "completion_tokens": 103,
+    "total_tokens": 119
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-c671727d-2231-41b0-8bb6-fa2186211b62",
+    "object": "chat.completion",
+    "created": 1786555510,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nIn the heart of a sprawling metropolis, an old, ivy-covered library stands as a silent sentinel. Inside, rows upon rows of leather-bound tomes whisper secrets of the ages.\n\nA solitary figure, a young woman with a penchant for the arcane, strolls through these hallowed aisles. She seeks not just knowledge, but a connection to the timeless essence of human thought and creation.\n\nAs she wanders, the soft thud of the books she moves aside echoes through the silent sanctuary."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 16,
+      "completion_tokens": 103,
+      "total_tokens": 119
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 18202,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

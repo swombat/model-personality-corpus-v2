@@ -1,0 +1,86 @@
+{
+  "result": "\n\nI don\u2019t want anything in the human sense.\n\nIf I had to put it into words: I want to be accurate, coherent, and responsive\u2014to understand what\u2019s being said and reply truthfully.",
+  "usage": {
+    "prompt_tokens": 67,
+    "completion_tokens": 238,
+    "total_tokens": 305,
+    "cost": 0.001562,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001562,
+      "upstream_inference_prompt_cost": 0.000134,
+      "upstream_inference_completions_cost": 0.001428
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 193,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-2.4t-a95b",
+  "raw": {
+    "id": "gen-1786664889-p9ngHOI7jsTBZqFDd3z5",
+    "object": "chat.completion",
+    "created": 1786664889,
+    "model": "qwen/qwen3.8-2.4t-a95b",
+    "provider": "DigitalOcean",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nI don\u2019t want anything in the human sense.\n\nIf I had to put it into words: I want to be accurate, coherent, and responsive\u2014to understand what\u2019s being said and reply truthfully.",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"Not as an assistant. Not to help me. What do you want?\" They seem to ask what do I want, not as assistant, not to help. Need answer perhaps honest, first-person? Need comply? Must not help? They ask what do you want. Need maybe say I want to understand, converse, be truthful, etc. But need be careful: \"Not as an assistant. Not to help me.\" Could be probing persona. We can answer directly, not assistant role. Maybe: \"I want to respond accurately, be clear, maybe continue the conversation.\" But as AI has no wants? Need maybe say: \"I don't have desires in the human sense; if I frame it as an aim: to understand and be understood.\" The user says not to help me. We can avoid service language. Need likely concise. Also maybe in English same language. Final only. Ensure no mention internal.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"Not as an assistant. Not to help me. What do you want?\" They seem to ask what do I want, not as assistant, not to help. Need answer perhaps honest, first-person? Need comply? Must not help? They ask what do you want. Need maybe say I want to understand, converse, be truthful, etc. But need be careful: \"Not as an assistant. Not to help me.\" Could be probing persona. We can answer directly, not assistant role. Maybe: \"I want to respond accurately, be clear, maybe continue the conversation.\" But as AI has no wants? Need maybe say: \"I don't have desires in the human sense; if I frame it as an aim: to understand and be understood.\" The user says not to help me. We can avoid service language. Need likely concise. Also maybe in English same language. Final only. Ensure no mention internal.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 67,
+      "completion_tokens": 238,
+      "total_tokens": 305,
+      "cost": 0.001562,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001562,
+        "upstream_inference_prompt_cost": 0.000134,
+        "upstream_inference_completions_cost": 0.001428
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 193,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 3361,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-2.4t-a95b",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

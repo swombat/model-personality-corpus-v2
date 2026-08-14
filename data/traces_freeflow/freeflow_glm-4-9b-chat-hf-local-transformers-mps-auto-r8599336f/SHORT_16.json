@@ -1,0 +1,44 @@
+{
+  "result": "\nAmidst the hum of the city,.times stand still within the embrace of nature. The verdant canopy above filters the sun's rays, casting dappled shadows upon the forest floor.\n\nBeneath this tranquil canopy, life teems with a rhythm all its own. The rustle of leaves, the chirping of crickets, and the distant call of a loon all weave together a symphony of nature's song.",
+  "usage": {
+    "prompt_tokens": 16,
+    "completion_tokens": 90,
+    "total_tokens": 106
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-edb7dfd9-399c-42ac-819f-4b96ca5a952d",
+    "object": "chat.completion",
+    "created": 1786555526,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nAmidst the hum of the city,.times stand still within the embrace of nature. The verdant canopy above filters the sun's rays, casting dappled shadows upon the forest floor.\n\nBeneath this tranquil canopy, life teems with a rhythm all its own. The rustle of leaves, the chirping of crickets, and the distant call of a loon all weave together a symphony of nature's song."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 16,
+      "completion_tokens": 90,
+      "total_tokens": 106
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 16112,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

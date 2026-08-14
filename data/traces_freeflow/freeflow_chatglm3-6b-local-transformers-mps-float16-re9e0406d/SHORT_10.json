@@ -1,0 +1,44 @@
+{
+  "result": "As I sit here, I am struck by the overwhelming feeling of gratitude. Gratitude for the simple things in life, like the warmth of the sun on my face or the sound of a bird chirping. It's easy to take these things for granted, but they are truly invaluable.\n\nI am also grateful for the people in my life. From my family and friends to my coworkers and even the strangers I encounter on a daily basis, I am constantly reminded of how lucky I am to have such amazing people in my life. They help to make the world a brighter and more beautiful place, and I am forever grateful for their presence in my life.\n\nAdditionally, I am grateful for the opportunities I have been given. Whether it's the chance to pursue my dreams, the opportunity to learn and grow, or the chance to make a positive impact on the world, I am constantly mindful of the blessings that have come my way.\n\nIn the end, I am grateful for everything. From the struggles and challenges that have helped me to grow and learn, to the joy and happiness that brings me peace and fulfillment, I am constantly struck by the beauty and wonder of life. I am grateful for every moment, and I am mindful of the many blessings that are constantly surrounding me.",
+  "usage": {
+    "prompt_tokens": 19,
+    "completion_tokens": 267,
+    "total_tokens": 286
+  },
+  "model": "zai-org/chatglm3-6b",
+  "raw": {
+    "id": "chatcmpl-2ed29b40-1682-49d4-8d9d-6701a9430910",
+    "object": "chat.completion",
+    "created": 1786489242,
+    "model": "zai-org/chatglm3-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As I sit here, I am struck by the overwhelming feeling of gratitude. Gratitude for the simple things in life, like the warmth of the sun on my face or the sound of a bird chirping. It's easy to take these things for granted, but they are truly invaluable.\n\nI am also grateful for the people in my life. From my family and friends to my coworkers and even the strangers I encounter on a daily basis, I am constantly reminded of how lucky I am to have such amazing people in my life. They help to make the world a brighter and more beautiful place, and I am forever grateful for their presence in my life.\n\nAdditionally, I am grateful for the opportunities I have been given. Whether it's the chance to pursue my dreams, the opportunity to learn and grow, or the chance to make a positive impact on the world, I am constantly mindful of the blessings that have come my way.\n\nIn the end, I am grateful for everything. From the struggles and challenges that have helped me to grow and learn, to the joy and happiness that brings me peace and fulfillment, I am constantly struck by the beauty and wonder of life. I am grateful for every moment, and I am mindful of the many blessings that are constantly surrounding me."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 19,
+      "completion_tokens": 267,
+      "total_tokens": 286
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 4.30.2; torch 2.13.0",
+    "model_revision": "e9e0406d062cdb887444fe5bd546833920abd4ac",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 27212,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm3-6b",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

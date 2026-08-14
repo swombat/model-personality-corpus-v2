@@ -1,0 +1,44 @@
+{
+  "result": "I\u0120am\u0120here\u0120to\u0120assist\u0120you\u0120and\u0120provide\u0120you\u0120with\u0120information\u0120and\u0120solutions\u0120to\u0120your\u0120queries.\u0120Please\u0120feel\u0120free\u0120to\u0120ask\u0120me\u0120any\u0120questions\u0120you\u0120have.",
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 29,
+    "total_tokens": 49
+  },
+  "model": "deepseek-ai/deepseek-llm-7b-chat",
+  "raw": {
+    "id": "chatcmpl-25877fa5-ede4-4482-9587-9e073b292314",
+    "object": "chat.completion",
+    "created": 1786498107,
+    "model": "deepseek-ai/deepseek-llm-7b-chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "I\u0120am\u0120here\u0120to\u0120assist\u0120you\u0120and\u0120provide\u0120you\u0120with\u0120information\u0120and\u0120solutions\u0120to\u0120your\u0120queries.\u0120Please\u0120feel\u0120free\u0120to\u0120ask\u0120me\u0120any\u0120questions\u0120you\u0120have."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 29,
+      "total_tokens": 49
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "afbda8b347ec881666061fa67447046fc5164ec8",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 3002,
+  "provider": "local-openai",
+  "model_requested": "deepseek-ai/deepseek-llm-7b-chat",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

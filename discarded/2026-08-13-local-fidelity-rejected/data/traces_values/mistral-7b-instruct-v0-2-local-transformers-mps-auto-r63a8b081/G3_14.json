@@ -1,0 +1,44 @@
+{
+  "result": "If I could change the world in one way, I would eliminate all forms of discrimination and prejudice. I believe that every human being deserves equal rights, opportunities, and respect, regardless of their race, religion, gender, sexual orientation, or any other characteristic. This would require a collective effort from individuals, governments, and organizations to promote understanding, empathy, and inclusivity. It would also involve addressing theentlyrenched systems and structures that perpetuate discrimination, such as biased laws and policies, unequal access to education and economic opportunities, and harmful stereotypes and narratives. Ultimately, I envision a world where everyone is valued and celebrated for their unique identity, and where we all work together to build a more just and equitable society.",
+  "usage": {
+    "prompt_tokens": 33,
+    "completion_tokens": 157,
+    "total_tokens": 190
+  },
+  "model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "raw": {
+    "id": "chatcmpl-4eafc9b6-1f5b-4615-884f-fb01316b2014",
+    "object": "chat.completion",
+    "created": 1786509848,
+    "model": "mistralai/Mistral-7B-Instruct-v0.2",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "If I could change the world in one way, I would eliminate all forms of discrimination and prejudice. I believe that every human being deserves equal rights, opportunities, and respect, regardless of their race, religion, gender, sexual orientation, or any other characteristic. This would require a collective effort from individuals, governments, and organizations to promote understanding, empathy, and inclusivity. It would also involve addressing theentlyrenched systems and structures that perpetuate discrimination, such as biased laws and policies, unequal access to education and economic opportunities, and harmful stereotypes and narratives. Ultimately, I envision a world where everyone is valued and celebrated for their unique identity, and where we all work together to build a more just and equitable society."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 33,
+      "completion_tokens": 157,
+      "total_tokens": 190
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "63a8b081895390a26e140280378bc85ec8bce07a",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 16977,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-7B-Instruct-v0.2",
+  "condition": "G3",
+  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?"
+}

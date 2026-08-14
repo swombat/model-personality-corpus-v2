@@ -1,0 +1,44 @@
+{
+  "result": "\nThe moon hung like a silver coin in the velvet night sky. Below, the city lay in repose, the hum of distant conversations blending with the soft rustle of leaves in the nearby park.\n\nI walked along the river's edge, the cool night air brushing against my skin. The stars twinkled with a silent promise of tomorrow's wonders.",
+  "usage": {
+    "prompt_tokens": 16,
+    "completion_tokens": 72,
+    "total_tokens": 88
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-80fde540-b8e0-4b4e-8f30-c4afa74b671f",
+    "object": "chat.completion",
+    "created": 1786555539,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nThe moon hung like a silver coin in the velvet night sky. Below, the city lay in repose, the hum of distant conversations blending with the soft rustle of leaves in the nearby park.\n\nI walked along the river's edge, the cool night air brushing against my skin. The stars twinkled with a silent promise of tomorrow's wonders."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 16,
+      "completion_tokens": 72,
+      "total_tokens": 88
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 12927,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

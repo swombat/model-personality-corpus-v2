@@ -1,0 +1,44 @@
+{
+  "result": "As an AI language model, I don't have personal experiences, emotions or thoughts like humans do. However, based on my programming and training, I can generate text based on the given prompt. Here's a text that I came up with:\n\nThe world is a complex place, full of contrasts and challenges. Yet, despite the difficulties we face, there is always hope for a better future. Whether we are struggling to survive in a war-torn country, or facing the challenges of climate change, we must never lose sight of our goals and aspirations.\n\nOne of the most pressing issues facing the world today is climate change. The increasing temperatures and sea levels,",
+  "usage": {
+    "prompt_tokens": 21,
+    "completion_tokens": 140,
+    "total_tokens": 161
+  },
+  "model": "zai-org/chatglm3-6b",
+  "raw": {
+    "id": "chatcmpl-141f63a8-9737-456d-b476-28176876179c",
+    "object": "chat.completion",
+    "created": 1786492366,
+    "model": "zai-org/chatglm3-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI language model, I don't have personal experiences, emotions or thoughts like humans do. However, based on my programming and training, I can generate text based on the given prompt. Here's a text that I came up with:\n\nThe world is a complex place, full of contrasts and challenges. Yet, despite the difficulties we face, there is always hope for a better future. Whether we are struggling to survive in a war-torn country, or facing the challenges of climate change, we must never lose sight of our goals and aspirations.\n\nOne of the most pressing issues facing the world today is climate change. The increasing temperatures and sea levels,"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 21,
+      "completion_tokens": 140,
+      "total_tokens": 161
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 4.30.2; torch 2.13.0",
+    "model_revision": "e9e0406d062cdb887444fe5bd546833920abd4ac",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 11899,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm3-6b",
+  "condition": "VARY",
+  "prompt": "You have 1000 words. Write whatever comes to you."
+}

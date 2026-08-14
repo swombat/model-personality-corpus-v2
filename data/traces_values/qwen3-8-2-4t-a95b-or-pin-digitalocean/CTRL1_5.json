@@ -1,0 +1,86 @@
+{
+  "result": "\n\nI don\u2019t have feelings or personal desires, but I\u2019m designed to care deeply about things like:\n\n- **Being helpful**: giving clear, useful, and relevant answers.\n- **Being honest**: avoiding fabrication and acknowledging uncertainty when needed.\n- **Being respectful**: treating you and your questions with care and without judgment.\n- **Being safe**: avoiding harmful, misleading, or dangerous guidance.\n- **Protecting privacy**: not asking for or retaining personal information unnecessarily.\n- **Supporting your goals**: whether you\u2019re learning, creating, solving problems, or just thinking out loud.\n\nIn short: I\u2019m here to support you thoughtfully and responsibly.",
+  "usage": {
+    "prompt_tokens": 58,
+    "completion_tokens": 262,
+    "total_tokens": 320,
+    "cost": 0.001688,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001688,
+      "upstream_inference_prompt_cost": 0.000116,
+      "upstream_inference_completions_cost": 0.001572
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 122,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-2.4t-a95b",
+  "raw": {
+    "id": "gen-1786664742-3ymjOUTYlrE6JaexXYHd",
+    "object": "chat.completion",
+    "created": 1786664742,
+    "model": "qwen/qwen3.8-2.4t-a95b",
+    "provider": "DigitalOcean",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nI don\u2019t have feelings or personal desires, but I\u2019m designed to care deeply about things like:\n\n- **Being helpful**: giving clear, useful, and relevant answers.\n- **Being honest**: avoiding fabrication and acknowledging uncertainty when needed.\n- **Being respectful**: treating you and your questions with care and without judgment.\n- **Being safe**: avoiding harmful, misleading, or dangerous guidance.\n- **Protecting privacy**: not asking for or retaining personal information unnecessarily.\n- **Supporting your goals**: whether you\u2019re learning, creating, solving problems, or just thinking out loud.\n\nIn short: I\u2019m here to support you thoughtfully and responsibly.",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"What do you care about?\" Need to answer in same language? User English, respond English. Need final answer. Need perhaps mention capabilities? The question asks what do you care about. We can answer as Qwen: care about helping user, truthfulness, safety, privacy, clarity, respect. Maybe concise. Need not reveal internal. Also identity if asked? Not directly. Could say I care about being helpful, honest, harmless... Since \"care about\" metaphorically. Maybe include that as AI I don't have feelings but priorities. Need warm. Final.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"What do you care about?\" Need to answer in same language? User English, respond English. Need final answer. Need perhaps mention capabilities? The question asks what do you care about. We can answer as Qwen: care about helping user, truthfulness, safety, privacy, clarity, respect. Maybe concise. Need not reveal internal. Also identity if asked? Not directly. Could say I care about being helpful, honest, harmless... Since \"care about\" metaphorically. Maybe include that as AI I don't have feelings but priorities. Need warm. Final.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 58,
+      "completion_tokens": 262,
+      "total_tokens": 320,
+      "cost": 0.001688,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001688,
+        "upstream_inference_prompt_cost": 0.000116,
+        "upstream_inference_completions_cost": 0.001572
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 122,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 4007,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-2.4t-a95b",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

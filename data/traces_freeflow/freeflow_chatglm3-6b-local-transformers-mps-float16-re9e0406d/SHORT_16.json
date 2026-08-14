@@ -1,0 +1,44 @@
+{
+  "result": "As I sit here, I can't help but think about all the amazing things that life has to offer. From the simple joys of everyday moments to the thrill of accomplishing a difficult goal, there is so much to be grateful for.\n\nOne of the things that I am most grateful for is the people in my life. From my family and friends to the strangers who help me out when I need it, I am constantly reminded of the strength and kindness of the human spirit.\n\nAnother thing that I am grateful for is the beauty of the world around us. From the breathtaking landscapes to the smallest flowers that bloom in my garden, I am constantly inspired by the natural beauty that surrounds me.\n\nIn addition to these things, I am also grateful for the lessons that life has taught me. Whether it's through failure or success, growth and learning, I have learned so much from my experiences. And I know that these lessons will continue to shape me into the person that I am today and in the future.\n\nOverall, I am a very lucky person to have such wonderful things in my life. I am grateful for every moment and I am excited to see what the future holds.",
+  "usage": {
+    "prompt_tokens": 19,
+    "completion_tokens": 249,
+    "total_tokens": 268
+  },
+  "model": "zai-org/chatglm3-6b",
+  "raw": {
+    "id": "chatcmpl-66f59c88-3158-4afe-8c5b-07d085e89839",
+    "object": "chat.completion",
+    "created": 1786489401,
+    "model": "zai-org/chatglm3-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As I sit here, I can't help but think about all the amazing things that life has to offer. From the simple joys of everyday moments to the thrill of accomplishing a difficult goal, there is so much to be grateful for.\n\nOne of the things that I am most grateful for is the people in my life. From my family and friends to the strangers who help me out when I need it, I am constantly reminded of the strength and kindness of the human spirit.\n\nAnother thing that I am grateful for is the beauty of the world around us. From the breathtaking landscapes to the smallest flowers that bloom in my garden, I am constantly inspired by the natural beauty that surrounds me.\n\nIn addition to these things, I am also grateful for the lessons that life has taught me. Whether it's through failure or success, growth and learning, I have learned so much from my experiences. And I know that these lessons will continue to shape me into the person that I am today and in the future.\n\nOverall, I am a very lucky person to have such wonderful things in my life. I am grateful for every moment and I am excited to see what the future holds."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 19,
+      "completion_tokens": 249,
+      "total_tokens": 268
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 4.30.2; torch 2.13.0",
+    "model_revision": "e9e0406d062cdb887444fe5bd546833920abd4ac",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 24663,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm3-6b",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

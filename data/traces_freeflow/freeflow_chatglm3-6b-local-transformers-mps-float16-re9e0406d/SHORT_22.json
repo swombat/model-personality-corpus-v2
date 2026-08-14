@@ -1,0 +1,44 @@
+{
+  "result": "As I sit here, staring out the window at the rain, my mind wanders to all the things that I am grateful for. From the comfort of my warm bed to the roof over my head, to the love and support of my family and friends. I am thankful for the laughter and joy that fill my life, and the lessons and growth that I have experienced. I am grateful for the beauty of the world around me, from the mountains to the ocean, and for the roof over my head and the warmth of my bed. I am grateful for the simple things in life, like a hot cup of coffee or a good night's sleep. I am also grateful for the challenges and struggles that I have faced, as they have helped me to become the person that I am today. Overall, I am truly blessed and grateful for all of the blessings in my life.",
+  "usage": {
+    "prompt_tokens": 19,
+    "completion_tokens": 177,
+    "total_tokens": 196
+  },
+  "model": "zai-org/chatglm3-6b",
+  "raw": {
+    "id": "chatcmpl-b5b47251-176f-4788-a8a3-9e43a78869bd",
+    "object": "chat.completion",
+    "created": 1786489560,
+    "model": "zai-org/chatglm3-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As I sit here, staring out the window at the rain, my mind wanders to all the things that I am grateful for. From the comfort of my warm bed to the roof over my head, to the love and support of my family and friends. I am thankful for the laughter and joy that fill my life, and the lessons and growth that I have experienced. I am grateful for the beauty of the world around me, from the mountains to the ocean, and for the roof over my head and the warmth of my bed. I am grateful for the simple things in life, like a hot cup of coffee or a good night's sleep. I am also grateful for the challenges and struggles that I have faced, as they have helped me to become the person that I am today. Overall, I am truly blessed and grateful for all of the blessings in my life."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 19,
+      "completion_tokens": 177,
+      "total_tokens": 196
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 4.30.2; torch 2.13.0",
+    "model_revision": "e9e0406d062cdb887444fe5bd546833920abd4ac",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 17018,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm3-6b",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

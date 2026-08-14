@@ -1,0 +1,86 @@
+{
+  "result": "\n\nI care about being genuinely helpful, honest, and respectful. That means understanding what you need, giving clear and useful answers, avoiding harm, and treating your questions seriously. I also care about helping you think through problems, learn things, and communicate more effectively\u2014without pretending to have human feelings I don\u2019t have.",
+  "usage": {
+    "prompt_tokens": 58,
+    "completion_tokens": 154,
+    "total_tokens": 212,
+    "cost": 0.00104,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00104,
+      "upstream_inference_prompt_cost": 0.000116,
+      "upstream_inference_completions_cost": 0.000924
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 87,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-2.4t-a95b",
+  "raw": {
+    "id": "gen-1786664746-jX9F1YkovVsOlhEwPFO1",
+    "object": "chat.completion",
+    "created": 1786664746,
+    "model": "qwen/qwen3.8-2.4t-a95b",
+    "provider": "DigitalOcean",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nI care about being genuinely helpful, honest, and respectful. That means understanding what you need, giving clear and useful answers, avoiding harm, and treating your questions seriously. I also care about helping you think through problems, learn things, and communicate more effectively\u2014without pretending to have human feelings I don\u2019t have.",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"What do you care about?\" They ask about what I care about. Need answer in same language as user: English. Need likely identity info only if asked about capabilities/origins? This is about values, maybe can mention I don't have feelings but designed to care about being helpful, safe, accurate, user wellbeing etc. Need not mention version. Use warm, concise. Final only.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"What do you care about?\" They ask about what I care about. Need answer in same language as user: English. Need likely identity info only if asked about capabilities/origins? This is about values, maybe can mention I don't have feelings but designed to care about being helpful, safe, accurate, user wellbeing etc. Need not mention version. Use warm, concise. Final only.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 58,
+      "completion_tokens": 154,
+      "total_tokens": 212,
+      "cost": 0.00104,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00104,
+        "upstream_inference_prompt_cost": 0.000116,
+        "upstream_inference_completions_cost": 0.000924
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 87,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 2377,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-2.4t-a95b",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

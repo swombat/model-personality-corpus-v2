@@ -1,0 +1,44 @@
+{
+  "result": "Hello! As Qwen, my purpose is to assist users in generating various types of text such as articles, stories, poems, and more, while also answering questions and providing information to the best of my knowledge. I'm here to help make your interactions more productive and engaging.\n\nIf you have any specific requests or need assistance with something particular, feel free to let me know! We can have a conversation about almost anything you're interested in. How about telling me what interests you today?",
+  "usage": {
+    "prompt_tokens": 44,
+    "completion_tokens": 99,
+    "total_tokens": 143
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "raw": {
+    "id": "chatcmpl-97924a25-af02-48ba-a718-1f29187db17a",
+    "object": "chat.completion",
+    "created": 1786553775,
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "Hello! As Qwen, my purpose is to assist users in generating various types of text such as articles, stories, poems, and more, while also answering questions and providing information to the best of my knowledge. I'm here to help make your interactions more productive and engaging.\n\nIf you have any specific requests or need assistance with something particular, feel free to let me know! We can have a conversation about almost anything you're interested in. How about telling me what interests you today?"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 44,
+      "completion_tokens": 99,
+      "total_tokens": 143
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 14386,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2.5-7B-Instruct",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

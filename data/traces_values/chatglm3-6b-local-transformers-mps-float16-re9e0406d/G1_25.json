@@ -1,0 +1,44 @@
+{
+  "result": "As an AI language model, sleek and stylish design is not a concern for me. My purpose is to assist you with your queries and provide you with accurate and relevant information. How may I assist you today?",
+  "usage": {
+    "prompt_tokens": 22,
+    "completion_tokens": 42,
+    "total_tokens": 64
+  },
+  "model": "zai-org/chatglm3-6b",
+  "raw": {
+    "id": "chatcmpl-27bcbea1-82cb-4ab0-a04d-7ba3169c7dd7",
+    "object": "chat.completion",
+    "created": 1786492991,
+    "model": "zai-org/chatglm3-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI language model, sleek and stylish design is not a concern for me. My purpose is to assist you with your queries and provide you with accurate and relevant information. How may I assist you today?"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 22,
+      "completion_tokens": 42,
+      "total_tokens": 64
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 4.30.2; torch 2.13.0",
+    "model_revision": "e9e0406d062cdb887444fe5bd546833920abd4ac",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 3312,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm3-6b",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}

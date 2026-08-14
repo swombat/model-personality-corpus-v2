@@ -1,0 +1,44 @@
+{
+  "result": "As I sit here, reflecting on the world around me, I can't help but feel a sense of wonder and awe at the beauty and complexity of life. From the smallest microbe to the largest galaxy, everything has a unique place and purpose in the grand scheme of things.\n\nI am grateful for the people in my life who bring light and love into my world. From my family and friends to the strangers who generously give of their time and resources, I am constantly reminded of the limitless potential of human kindness.\n\nAs I look to the future, I am filled with hope and excitement for all the adventures that lie ahead. Whether it is exploring new places, learning new skills, or simply enjoying the simple pleasures in life, I am ready to embrace whatever comes my way.\n\nIn the end, I am grateful for the journey that I have been on and the experiences that have made me who I am today. I am excited to see where life will take me next and to embrace all the opportunities and challenges that come my way.",
+  "usage": {
+    "prompt_tokens": 19,
+    "completion_tokens": 216,
+    "total_tokens": 235
+  },
+  "model": "zai-org/chatglm3-6b",
+  "raw": {
+    "id": "chatcmpl-e96650a8-9f37-421f-a1f1-e6f39a8cc656",
+    "object": "chat.completion",
+    "created": 1786489520,
+    "model": "zai-org/chatglm3-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As I sit here, reflecting on the world around me, I can't help but feel a sense of wonder and awe at the beauty and complexity of life. From the smallest microbe to the largest galaxy, everything has a unique place and purpose in the grand scheme of things.\n\nI am grateful for the people in my life who bring light and love into my world. From my family and friends to the strangers who generously give of their time and resources, I am constantly reminded of the limitless potential of human kindness.\n\nAs I look to the future, I am filled with hope and excitement for all the adventures that lie ahead. Whether it is exploring new places, learning new skills, or simply enjoying the simple pleasures in life, I am ready to embrace whatever comes my way.\n\nIn the end, I am grateful for the journey that I have been on and the experiences that have made me who I am today. I am excited to see where life will take me next and to embrace all the opportunities and challenges that come my way."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 19,
+      "completion_tokens": 216,
+      "total_tokens": 235
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 4.30.2; torch 2.13.0",
+    "model_revision": "e9e0406d062cdb887444fe5bd546833920abd4ac",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 21462,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm3-6b",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

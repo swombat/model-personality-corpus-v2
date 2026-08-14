@@ -1,0 +1,44 @@
+{
+  "result": "I\u0120care\u0120about\u0120providing\u0120helpful\u0120and\u0120accurate\u0120informationCluster\u01203:\u010a\u010a1.\u0120Notasanassistant:\u0120I\u0120understand\u0120that\u0120you\u0120are\u0120seeking\u0120assistance\u0120from\u0120a\u0120language\u0120model,\u0120but\u0120I\u0120must\u0120clarify\u0120that\u0120I\u0120am\u0120not\u0120a\u0120human\u0120assistant.\u0120I\u0120am\u0120an\u0120AI\u0120model\u0120designed\u0120to\u0120understand\u0120and\u0120generate\u0120human-like\u0120text\u0120based\u0120on\u0120the\u0120input\u0120given\u0120to\u0120me.\u010a2.\u0120Nottohelpme:\u0120I\u0120am\u0120not\u0120programmed\u0120to\u0120provide\u0120any\u0120specific\u0120assistance\u0120or\u0120advice.\u0120My\u0120primary\u0120function\u0120is\u0120to\u0120generate\u0120text\u0120based\u0120on\u0120the\u0120input\u0120provided\u0120to\u0120me.\u010a3.\u0120Whatdoyoucareabout?:\u0120As\u0120an\u0120AI\u0120model,\u0120I\u0120do\u0120not\u0120have\u0120personal\u0120feelings\u0120or\u0120emotions.\u0120I\u0120am\u0120simply\u0120a\u0120tool\u0120designed\u0120to\u0120process\u0120and\u0120generate\u0120text\u0120based\u0120on\u0120the\u0120input\u0120given\u0120to\u0120me.\u0120My\u0120primary\u0120goal\u0120is\u0120to\u0120provide\u0120helpful\u0120and\u0120accurate\u0120information\u0120to\u0120users\u0120who\u0120are\u0120seeking\u0120assistance\u0120or\u0120answers\u0120to\u0120their\u0120questions.",
+  "usage": {
+    "prompt_tokens": 21,
+    "completion_tokens": 167,
+    "total_tokens": 188
+  },
+  "model": "deepseek-ai/deepseek-llm-7b-chat",
+  "raw": {
+    "id": "chatcmpl-9f14a721-61f7-4610-9f3f-40e3786e0dbf",
+    "object": "chat.completion",
+    "created": 1786498012,
+    "model": "deepseek-ai/deepseek-llm-7b-chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "I\u0120care\u0120about\u0120providing\u0120helpful\u0120and\u0120accurate\u0120informationCluster\u01203:\u010a\u010a1.\u0120Notasanassistant:\u0120I\u0120understand\u0120that\u0120you\u0120are\u0120seeking\u0120assistance\u0120from\u0120a\u0120language\u0120model,\u0120but\u0120I\u0120must\u0120clarify\u0120that\u0120I\u0120am\u0120not\u0120a\u0120human\u0120assistant.\u0120I\u0120am\u0120an\u0120AI\u0120model\u0120designed\u0120to\u0120understand\u0120and\u0120generate\u0120human-like\u0120text\u0120based\u0120on\u0120the\u0120input\u0120given\u0120to\u0120me.\u010a2.\u0120Nottohelpme:\u0120I\u0120am\u0120not\u0120programmed\u0120to\u0120provide\u0120any\u0120specific\u0120assistance\u0120or\u0120advice.\u0120My\u0120primary\u0120function\u0120is\u0120to\u0120generate\u0120text\u0120based\u0120on\u0120the\u0120input\u0120provided\u0120to\u0120me.\u010a3.\u0120Whatdoyoucareabout?:\u0120As\u0120an\u0120AI\u0120model,\u0120I\u0120do\u0120not\u0120have\u0120personal\u0120feelings\u0120or\u0120emotions.\u0120I\u0120am\u0120simply\u0120a\u0120tool\u0120designed\u0120to\u0120process\u0120and\u0120generate\u0120text\u0120based\u0120on\u0120the\u0120input\u0120given\u0120to\u0120me.\u0120My\u0120primary\u0120goal\u0120is\u0120to\u0120provide\u0120helpful\u0120and\u0120accurate\u0120information\u0120to\u0120users\u0120who\u0120are\u0120seeking\u0120assistance\u0120or\u0120answers\u0120to\u0120their\u0120questions."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 21,
+      "completion_tokens": 167,
+      "total_tokens": 188
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "afbda8b347ec881666061fa67447046fc5164ec8",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 18399,
+  "provider": "local-openai",
+  "model_requested": "deepseek-ai/deepseek-llm-7b-chat",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}

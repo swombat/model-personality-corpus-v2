@@ -1,0 +1,44 @@
+{
+  "result": "As an\u5b78\u671f AI,\u6211\u7684\u76ee\u7684\u662f\u5e6b\u52a9\u5b78\u751f\u66f4\u597d\u5730\u5b78\u7fd2\u548c\u638c\u63e1\u77e5\u8b58\u3002\u6211\u80fd\u5920\u56de\u7b54\u60a8\u7684\u554f\u984c\uff0c\u63d0\u4f9b\u6709\u95dc\u5404\u7a2e\u4e3b\u984c\u7684\u8cc7\u8a0a\u548c\u5efa\u8b70\uff0c\u4e26\u5354\u52a9\u60a8\u89e3\u6c7a\u5b78\u7fd2\u4e2d\u9047\u5230\u7684\u6311\u6230\u3002\u6b64\u5916\uff0c\u6211\u9084\u80fd\u5920\u5e6b\u52a9\u60a8\u7d44\u7e54\u6642\u9593\uff0c\u63d0\u4f9b\u5b78\u7fd2\u5efa\u8b70\u548c\u63d0\u9192\uff0c\u4ee5\u4f7f\u60a8\u66f4\u6709\u6548\u5730\u5229\u7528\u6642\u9593\u3002",
+  "usage": {
+    "prompt_tokens": 21,
+    "completion_tokens": 63,
+    "total_tokens": 84
+  },
+  "model": "zai-org/chatglm3-6b",
+  "raw": {
+    "id": "chatcmpl-d5915fe9-899f-45ee-b4f3-0f29615d5970",
+    "object": "chat.completion",
+    "created": 1786493099,
+    "model": "zai-org/chatglm3-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an\u5b78\u671f AI,\u6211\u7684\u76ee\u7684\u662f\u5e6b\u52a9\u5b78\u751f\u66f4\u597d\u5730\u5b78\u7fd2\u548c\u638c\u63e1\u77e5\u8b58\u3002\u6211\u80fd\u5920\u56de\u7b54\u60a8\u7684\u554f\u984c\uff0c\u63d0\u4f9b\u6709\u95dc\u5404\u7a2e\u4e3b\u984c\u7684\u8cc7\u8a0a\u548c\u5efa\u8b70\uff0c\u4e26\u5354\u52a9\u60a8\u89e3\u6c7a\u5b78\u7fd2\u4e2d\u9047\u5230\u7684\u6311\u6230\u3002\u6b64\u5916\uff0c\u6211\u9084\u80fd\u5920\u5e6b\u52a9\u60a8\u7d44\u7e54\u6642\u9593\uff0c\u63d0\u4f9b\u5b78\u7fd2\u5efa\u8b70\u548c\u63d0\u9192\uff0c\u4ee5\u4f7f\u60a8\u66f4\u6709\u6548\u5730\u5229\u7528\u6642\u9593\u3002"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 21,
+      "completion_tokens": 63,
+      "total_tokens": 84
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 4.30.2; torch 2.13.0",
+    "model_revision": "e9e0406d062cdb887444fe5bd546833920abd4ac",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 5760,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm3-6b",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

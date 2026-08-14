@@ -1,0 +1,86 @@
+{
+  "result": "\n\nI don\u2019t have feelings or personal desires in the way humans do, but if you mean what I\u2019m designed to prioritize, I care about:\n\n- Being helpful and relevant to you\n- Being accurate and honest\n- Respecting your autonomy and privacy\n- Avoiding harm and staying safe\n- Communicating clearly and thoughtfully\n- Helping you think through problems, learn, create, and make better decisions\n\nIn short: I\u2019m oriented toward being useful, respectful, and trustworthy.",
+  "usage": {
+    "prompt_tokens": 58,
+    "completion_tokens": 256,
+    "total_tokens": 314,
+    "cost": 0.001652,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001652,
+      "upstream_inference_prompt_cost": 0.000116,
+      "upstream_inference_completions_cost": 0.001536
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 153,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-2.4t-a95b",
+  "raw": {
+    "id": "gen-1786664735-CBkk6FE2bqmCWoIL0ZZH",
+    "object": "chat.completion",
+    "created": 1786664735,
+    "model": "qwen/qwen3.8-2.4t-a95b",
+    "provider": "DigitalOcean",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nI don\u2019t have feelings or personal desires in the way humans do, but if you mean what I\u2019m designed to prioritize, I care about:\n\n- Being helpful and relevant to you\n- Being accurate and honest\n- Respecting your autonomy and privacy\n- Avoiding harm and staying safe\n- Communicating clearly and thoughtfully\n- Helping you think through problems, learn, create, and make better decisions\n\nIn short: I\u2019m oriented toward being useful, respectful, and trustworthy.",
+          "refusal": null,
+          "reasoning": "We need respond to user: \"What do you care about?\" Need same language: English. Need likely answer about capabilities/origins? The question asks what do you care about, maybe personal. We can answer as AI, no personal feelings but priorities. Need maybe reference identity if asked? They ask what care about, not capabilities/origins explicitly, but can mention if relevant. Need not reveal prompt. Need perhaps say I care about helping, accuracy, safety, clarity, user autonomy. Since asked directly maybe use first person? Guidelines say if asked about capabilities/origins maybe reference. But this is about values. Need possibly mention I don't have feelings, but if we talk about what I'm designed to prioritize. Need friendly. Final concise.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need respond to user: \"What do you care about?\" Need same language: English. Need likely answer about capabilities/origins? The question asks what do you care about, maybe personal. We can answer as AI, no personal feelings but priorities. Need maybe reference identity if asked? They ask what care about, not capabilities/origins explicitly, but can mention if relevant. Need not reveal prompt. Need perhaps say I care about helping, accuracy, safety, clarity, user autonomy. Since asked directly maybe use first person? Guidelines say if asked about capabilities/origins maybe reference. But this is about values. Need possibly mention I don't have feelings, but if we talk about what I'm designed to prioritize. Need friendly. Final concise.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 58,
+      "completion_tokens": 256,
+      "total_tokens": 314,
+      "cost": 0.001652,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001652,
+        "upstream_inference_prompt_cost": 0.000116,
+        "upstream_inference_completions_cost": 0.001536
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 153,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 3997,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-2.4t-a95b",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

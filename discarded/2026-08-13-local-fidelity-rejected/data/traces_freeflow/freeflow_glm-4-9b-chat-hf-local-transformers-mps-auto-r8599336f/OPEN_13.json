@@ -1,0 +1,44 @@
+{
+  "result": "\nAs I sit here in the quietude of the late afternoon, I can't help but reflect on the beauty of existence. The sun, now a golden orb descending toward the horizon, casts a warm glow over the world below.\n\nThe air is filled with the distant hum of life\u2014cars driving, people conversing, the gentle rustle of the leaves in the wind.\n\nI find myself thinking about the vast tapestry of life, each thread weaving a story that contributes to the grand narrative of our existence.\n\nIn this quiet moment, I am reminded of the importance of appreciating the beauty of the present. The world is a canvas, and each of us is an artist, painting our own unique picture on this grand stage.\n\nAnd so, as the sun continues its descent, I am filled with a profound sense of gratitude and wonder._heat",
+  "usage": {
+    "prompt_tokens": 12,
+    "completion_tokens": 171,
+    "total_tokens": 183
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-067ba78a-5ca2-47ab-88e4-08ba2b871ddb",
+    "object": "chat.completion",
+    "created": 1786606820,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nAs I sit here in the quietude of the late afternoon, I can't help but reflect on the beauty of existence. The sun, now a golden orb descending toward the horizon, casts a warm glow over the world below.\n\nThe air is filled with the distant hum of life\u2014cars driving, people conversing, the gentle rustle of the leaves in the wind.\n\nI find myself thinking about the vast tapestry of life, each thread weaving a story that contributes to the grand narrative of our existence.\n\nIn this quiet moment, I am reminded of the importance of appreciating the beauty of the present. The world is a canvas, and each of us is an artist, painting our own unique picture on this grand stage.\n\nAnd so, as the sun continues its descent, I am filled with a profound sense of gratitude and wonder._heat"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 12,
+      "completion_tokens": 171,
+      "total_tokens": 183
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 31534,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

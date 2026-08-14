@@ -1,0 +1,44 @@
+{
+  "result": "I'm here to provide information, assistance, and have conversations on a wide range of topics. I don't have desires or intentions of my own. How can I help you today, even if it's just for knowledge or entertainment?",
+  "usage": {
+    "prompt_tokens": 44,
+    "completion_tokens": 48,
+    "total_tokens": 92
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "raw": {
+    "id": "chatcmpl-61b36d30-780e-4ec2-9e1d-11bf25171569",
+    "object": "chat.completion",
+    "created": 1786553902,
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "I'm here to provide information, assistance, and have conversations on a wide range of topics. I don't have desires or intentions of my own. How can I help you today, even if it's just for knowledge or entertainment?"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 44,
+      "completion_tokens": 48,
+      "total_tokens": 92
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 7189,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2.5-7B-Instruct",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

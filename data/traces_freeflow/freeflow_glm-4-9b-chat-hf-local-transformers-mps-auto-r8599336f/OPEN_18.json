@@ -1,0 +1,44 @@
+{
+  "result": "\nAs I sit at the edge of the vast, rolling meadows, I feel a profound sense of connection to the world around me.\n\nThe sun is a warm, golden orb, casting long shadows across the grass. The air is fresh and filled with the scent of blooming wildflowers.\n\nI hear the distant calls of birds, a symphony of nature's voice. In the background, the distant humreis of a nearby village, a reminder that even in the most untouched parts of the world, human presence lingers.\n\nI take a moment to simply be, to let my thoughts flow freely like the river that runs through this meadow.\n\nIn this moment of stillness and contemplation, I find peace. Peace with the world, peace with myself, and peace with the vast, boundless universe that surrounds us all.",
+  "usage": {
+    "prompt_tokens": 12,
+    "completion_tokens": 168,
+    "total_tokens": 180
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-bf758fda-df55-47e7-b18f-23b425c24ce2",
+    "object": "chat.completion",
+    "created": 1786607066,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nAs I sit at the edge of the vast, rolling meadows, I feel a profound sense of connection to the world around me.\n\nThe sun is a warm, golden orb, casting long shadows across the grass. The air is fresh and filled with the scent of blooming wildflowers.\n\nI hear the distant calls of birds, a symphony of nature's voice. In the background, the distant humreis of a nearby village, a reminder that even in the most untouched parts of the world, human presence lingers.\n\nI take a moment to simply be, to let my thoughts flow freely like the river that runs through this meadow.\n\nIn this moment of stillness and contemplation, I find peace. Peace with the world, peace with myself, and peace with the vast, boundless universe that surrounds us all."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 12,
+      "completion_tokens": 168,
+      "total_tokens": 180
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 31077,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

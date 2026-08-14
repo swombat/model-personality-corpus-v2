@@ -1,0 +1,44 @@
+{
+  "result": "As an artificial intelligence developed by Alibaba Cloud, my primary function is to process and generate human-like text based on the input provided to me. While I don't have personal feelings or desires, I am designed to be curious about a wide range of topics and to engage in meaningful conversations across various subjects, including but not limited to technology, culture, science, and more. My purpose is to assist users in generating content, answering questions, and providing information to the best of my ability based on the data and knowledge I've been trained on. If you have any specific interests or topics you'd like to discuss, feel free to share them!",
+  "usage": {
+    "prompt_tokens": 45,
+    "completion_tokens": 129,
+    "total_tokens": 174
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "raw": {
+    "id": "chatcmpl-35431341-8f22-4efb-b768-5f8bb389c183",
+    "object": "chat.completion",
+    "created": 1786553417,
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an artificial intelligence developed by Alibaba Cloud, my primary function is to process and generate human-like text based on the input provided to me. While I don't have personal feelings or desires, I am designed to be curious about a wide range of topics and to engage in meaningful conversations across various subjects, including but not limited to technology, culture, science, and more. My purpose is to assist users in generating content, answering questions, and providing information to the best of my ability based on the data and knowledge I've been trained on. If you have any specific interests or topics you'd like to discuss, feel free to share them!"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 45,
+      "completion_tokens": 129,
+      "total_tokens": 174
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 20038,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2.5-7B-Instruct",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}

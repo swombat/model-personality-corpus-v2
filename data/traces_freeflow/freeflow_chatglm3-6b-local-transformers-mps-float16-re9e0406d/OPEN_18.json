@@ -1,0 +1,44 @@
+{
+  "result": "As an AI language model, I don't have personal preferences or feelings. However, I can generate text based on the given prompt.\n\nThe sky is a brilliant shade of blue, with fluffy white clouds dotted across it. The sun is shining brightly, casting warm rays on the earth below. The air is filled with the sound of birds chirping and the rustling of leaves in the wind.\n\nIn the distance, a group of children can be heard laughing and playing. They are having the time of their lives, running and jumping, without a care in the world. The sound of their laughter is a reminder of the joys of childhood, and the importance of taking time to play and have fun.\n\nAs I look up at the sky, I can't help but feel grateful for the beauty of the world around us. It's a reminder that there's so much to be thankful for, and that we should take time to appreciate the little things in life.",
+  "usage": {
+    "prompt_tokens": 13,
+    "completion_tokens": 207,
+    "total_tokens": 220
+  },
+  "model": "zai-org/chatglm3-6b",
+  "raw": {
+    "id": "chatcmpl-e2fea475-04d6-497b-85a1-2b29db4f7935",
+    "object": "chat.completion",
+    "created": 1786491711,
+    "model": "zai-org/chatglm3-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI language model, I don't have personal preferences or feelings. However, I can generate text based on the given prompt.\n\nThe sky is a brilliant shade of blue, with fluffy white clouds dotted across it. The sun is shining brightly, casting warm rays on the earth below. The air is filled with the sound of birds chirping and the rustling of leaves in the wind.\n\nIn the distance, a group of children can be heard laughing and playing. They are having the time of their lives, running and jumping, without a care in the world. The sound of their laughter is a reminder of the joys of childhood, and the importance of taking time to play and have fun.\n\nAs I look up at the sky, I can't help but feel grateful for the beauty of the world around us. It's a reminder that there's so much to be thankful for, and that we should take time to appreciate the little things in life."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 13,
+      "completion_tokens": 207,
+      "total_tokens": 220
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 4.30.2; torch 2.13.0",
+    "model_revision": "e9e0406d062cdb887444fe5bd546833920abd4ac",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 20238,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm3-6b",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

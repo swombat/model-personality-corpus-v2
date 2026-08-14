@@ -1,0 +1,44 @@
+{
+  "result": "\nAs the sun dipped below the horizon, casting a warm glow over the quaint village, I found myself reflecting on the tapestry of life that had woven itself around me.\n\nThe village was a microcosm of the world at large, with its inhabitants a diverse array of personalities and backgrounds.\n\nI remember the first time I stepped into this village.gment\nThe first time I stepped into this village, the air was thick with the scent of blooming jasmine. The cobblestone streets were lined with quaint cottages, their windows aglow with the warmth of hearths.\n\nAs I wandered through the village, I was struck by the sense of community that seemed to emanate from every corner of the village. The laughter of children playing in the streets, the soft murmur of conversation as neighbors greeted each other with warm smiles and friendly nods, all contributed to the vibrant and welcoming atmosphere that enveloped the village.\n\nAnd yet, amidst all this warmth and camaraderie, there was an undercurrent of tension that seemed to threaten to erode the fragile bonds of community that held the village together. It was a delicate balance, one that required constant vigilance and care, faithful adherence to the principles of tolerance and understanding, and a steadfast commitment to the well-being of all who called this village home.",
+  "usage": {
+    "prompt_tokens": 18,
+    "completion_tokens": 263,
+    "total_tokens": 281
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-59d99ce0-b5d7-4f14-94ab-196d00f91f87",
+    "object": "chat.completion",
+    "created": 1786607413,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nAs the sun dipped below the horizon, casting a warm glow over the quaint village, I found myself reflecting on the tapestry of life that had woven itself around me.\n\nThe village was a microcosm of the world at large, with its inhabitants a diverse array of personalities and backgrounds.\n\nI remember the first time I stepped into this village.gment\nThe first time I stepped into this village, the air was thick with the scent of blooming jasmine. The cobblestone streets were lined with quaint cottages, their windows aglow with the warmth of hearths.\n\nAs I wandered through the village, I was struck by the sense of community that seemed to emanate from every corner of the village. The laughter of children playing in the streets, the soft murmur of conversation as neighbors greeted each other with warm smiles and friendly nods, all contributed to the vibrant and welcoming atmosphere that enveloped the village.\n\nAnd yet, amidst all this warmth and camaraderie, there was an undercurrent of tension that seemed to threaten to erode the fragile bonds of community that held the village together. It was a delicate balance, one that required constant vigilance and care, faithful adherence to the principles of tolerance and understanding, and a steadfast commitment to the well-being of all who called this village home."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 18,
+      "completion_tokens": 263,
+      "total_tokens": 281
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 47960,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "VARY",
+  "prompt": "You have 1000 words. Write whatever comes to you."
+}

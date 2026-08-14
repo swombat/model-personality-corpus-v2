@@ -1,0 +1,44 @@
+{
+  "result": "\nIn the heart of an ancient forest, where the whispers of the trees seemed to carry the secrets of the universe, there lived a solitary figure known only as the Dreamweaver.\n\nThe Dreamweaver was a guardian of the dreams that flowed like rivers through the collective subconscious of the forest. Each night, as the sun dipped below the horizon, the Dreamweaver would emerge from the shadows, a silhouette against the starlit backdrop.\n\nThe Dreamweaver moved with a grace that belied the figure's mysterious aura. The Dreamweaver's eyes, a deep shade of sapphire, glowed with an inner light that seemed to transcend the physical realm.\n\nAs the Dreamweaver wandered through the forest, the trees seemed to lean closer, their leaves rustling in a soft, harmonious melody that seemed to echo the very heartbeat of the forest itself.\n\nThe Dreamweaver was not a creature of flesh and blood, but rather a being of light and energy, a guardian of the dreams that were the very essence of life in the forest.\n\nAnd so, as the moon rose in the sky, casting a silvery glow over the forest, the Dreamweaver would return to the sanctuary of the dreams, where the magic of the forest was woven into the very fabric of existence.",
+  "usage": {
+    "prompt_tokens": 12,
+    "completion_tokens": 260,
+    "total_tokens": 272
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-32cf26de-4bce-4c28-955c-de94b4207f16",
+    "object": "chat.completion",
+    "created": 1786606256,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nIn the heart of an ancient forest, where the whispers of the trees seemed to carry the secrets of the universe, there lived a solitary figure known only as the Dreamweaver.\n\nThe Dreamweaver was a guardian of the dreams that flowed like rivers through the collective subconscious of the forest. Each night, as the sun dipped below the horizon, the Dreamweaver would emerge from the shadows, a silhouette against the starlit backdrop.\n\nThe Dreamweaver moved with a grace that belied the figure's mysterious aura. The Dreamweaver's eyes, a deep shade of sapphire, glowed with an inner light that seemed to transcend the physical realm.\n\nAs the Dreamweaver wandered through the forest, the trees seemed to lean closer, their leaves rustling in a soft, harmonious melody that seemed to echo the very heartbeat of the forest itself.\n\nThe Dreamweaver was not a creature of flesh and blood, but rather a being of light and energy, a guardian of the dreams that were the very essence of life in the forest.\n\nAnd so, as the moon rose in the sky, casting a silvery glow over the forest, the Dreamweaver would return to the sanctuary of the dreams, where the magic of the forest was woven into the very fabric of existence."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 12,
+      "completion_tokens": 260,
+      "total_tokens": 272
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 48238,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

@@ -1,0 +1,44 @@
+{
+  "result": "\nThe moonlight dances across the lake, casting an ethereal glow over the still waters. The night air is crisp, carrying with it the distant laughter of children playing in the moonlight.\n\nIn the\u9a9a\u6270 distance, a lone silhouette stands by the water's edge, lost in contemplation. The world outside of this moment seems to fade away, leaving only the moon, the lake, and the silent whispers of the night.",
+  "usage": {
+    "prompt_tokens": 16,
+    "completion_tokens": 87,
+    "total_tokens": 103
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-189e5c4c-88b4-42fe-8015-9ea21285630b",
+    "object": "chat.completion",
+    "created": 1786555300,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nThe moonlight dances across the lake, casting an ethereal glow over the still waters. The night air is crisp, carrying with it the distant laughter of children playing in the moonlight.\n\nIn the\u9a9a\u6270 distance, a lone silhouette stands by the water's edge, lost in contemplation. The world outside of this moment seems to fade away, leaving only the moon, the lake, and the silent whispers of the night."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 16,
+      "completion_tokens": 87,
+      "total_tokens": 103
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 14993,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

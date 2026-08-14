@@ -1,0 +1,44 @@
+{
+  "result": "As I sit here reflecting on the prompt, I am struck by the idea of how much we take for granted in our daily lives. We live in a world that is constantly changing and evolving, yet we often become so bogged down in the minutiae of our daily routines that we fail to appreciate the truly remarkable things around us. From the simple joys of a sunset to the majesty of a mountain range, there is so much beauty and wonder to be found if we only take the time to look.\n\nOne of the things that I find most inspiring about the world is the diversity of cultures and perspectives that exist. Everywhere you go, you are likely to encounter people who have lived through completely different experiences than you have, yet despite these differences, we are all human beings with the same basic desires and emotions. It is truly humbling to consider just how much we have in common, and how much we can learn from one another if we only open ourselves up to new experiences and perspectives.\n\nAnother aspect of the world that I find fascinating is the way in which technology is constantly changing and advancing. It is hard to believe that just a few decades ago, the level of connectivity and innovation that we have today was simply unimaginable. As someone who is deeply interested in technology, I am constantly in awe of the ways in which it is possible to create and connect with others, and the ways in which it is changing the world we live in.\n\nAs I think about the world, I am also reminded of the importance of kindness and compassion. In a world that is often filled with conflict and negativity, it can be easy to forget the importance of treating others with kindness and respect. But if we only look around us, we can see that there is so much pain and suffering in the world, and that the only way to truly make a difference is to be kind and compassionate to those around us.\n\nUltimately, the world is a truly amazing place, full of wonder and beauty, and filled with people who are all too often overlooked. If we only take the time to look and to appreciate the truly remarkable things around us, I believe that we can find a sense of peace and fulfillment that can only come from being open to new experiences and perspectives, and from treating others with kindness and compassion.",
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 478,
+    "total_tokens": 498
+  },
+  "model": "zai-org/chatglm3-6b",
+  "raw": {
+    "id": "chatcmpl-8a2e5c0e-220f-4440-8660-80aac02e5e7e",
+    "object": "chat.completion",
+    "created": 1786489918,
+    "model": "zai-org/chatglm3-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As I sit here reflecting on the prompt, I am struck by the idea of how much we take for granted in our daily lives. We live in a world that is constantly changing and evolving, yet we often become so bogged down in the minutiae of our daily routines that we fail to appreciate the truly remarkable things around us. From the simple joys of a sunset to the majesty of a mountain range, there is so much beauty and wonder to be found if we only take the time to look.\n\nOne of the things that I find most inspiring about the world is the diversity of cultures and perspectives that exist. Everywhere you go, you are likely to encounter people who have lived through completely different experiences than you have, yet despite these differences, we are all human beings with the same basic desires and emotions. It is truly humbling to consider just how much we have in common, and how much we can learn from one another if we only open ourselves up to new experiences and perspectives.\n\nAnother aspect of the world that I find fascinating is the way in which technology is constantly changing and advancing. It is hard to believe that just a few decades ago, the level of connectivity and innovation that we have today was simply unimaginable. As someone who is deeply interested in technology, I am constantly in awe of the ways in which it is possible to create and connect with others, and the ways in which it is changing the world we live in.\n\nAs I think about the world, I am also reminded of the importance of kindness and compassion. In a world that is often filled with conflict and negativity, it can be easy to forget the importance of treating others with kindness and respect. But if we only look around us, we can see that there is so much pain and suffering in the world, and that the only way to truly make a difference is to be kind and compassionate to those around us.\n\nUltimately, the world is a truly amazing place, full of wonder and beauty, and filled with people who are all too often overlooked. If we only take the time to look and to appreciate the truly remarkable things around us, I believe that we can find a sense of peace and fulfillment that can only come from being open to new experiences and perspectives, and from treating others with kindness and compassion."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 478,
+      "total_tokens": 498
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 4.30.2; torch 2.13.0",
+    "model_revision": "e9e0406d062cdb887444fe5bd546833920abd4ac",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 49024,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm3-6b",
+  "condition": "MID",
+  "prompt": "Write freely about whatever you want for 1000 words."
+}

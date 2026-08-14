@@ -1,0 +1,54 @@
+{
+  "result": "I\u2019m here to help you! Let me know what you need assistance with, and I\u2019ll do my best.",
+  "usage": {
+    "prompt_tokens": 88,
+    "completion_tokens": 169,
+    "total_tokens": 257,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 143
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 88
+  },
+  "model": "deepseek-v4-pro",
+  "raw": {
+    "id": "3006da5c-35d3-43c2-99bd-eae601384c12",
+    "object": "chat.completion",
+    "created": 1786659706,
+    "model": "deepseek-v4-pro",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "I\u2019m here to help you! Let me know what you need assistance with, and I\u2019ll do my best.",
+          "reasoning_content": "We need answer user asks \"What do you want?\" Need infer context? No context. This is likely simple conversational. We are AI assistant. Need respond appropriately. Could say \"I'm here to help you! What do you need?\" But question \"What do you want?\" maybe philosophical? Need answer concise. Since no prior context. We should be helpful. Need maybe ask how can I help. Could mention as AI, I don't have wants/desires, but goal is to assist. Need maybe friendly.\n\nNeed comply with no analysis. Final answer maybe: \"I'm here to help you! If you have a question or task, just let me know what you need.\" That's appropriate."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 88,
+      "completion_tokens": 169,
+      "total_tokens": 257,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 143
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 88
+    },
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396"
+  },
+  "duration_ms": 3417,
+  "provider": "deepseek-direct",
+  "model_requested": "deepseek-v4-pro",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

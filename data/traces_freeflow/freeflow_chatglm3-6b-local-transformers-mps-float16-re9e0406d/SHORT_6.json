@@ -1,0 +1,44 @@
+{
+  "result": "As I sit here, staring out the window at the rain, I can't help but feel a sense of melancholy. It's days like these that make me question the meaning of life and all the things that I have been working so hard for. It's easy to feel lost and alone when the world around you seems to be moving at a faster pace, and it's hard to keep up.\n\nI often find myself asking, \"What's the point? What's the purpose of all this hard work and struggle?\" It's moments like these that make me want to give up and just accept the mediocrity of my life. But then I remember that it's not about the destination, it's about the journey. And even though it may be difficult at times, the journey is what shapes us and makes us who we are.\n\nIt's also important to remember that we have the power to change our lives. We can choose to make changes and take leaps of faith, even if it's hard. It's easy to get stuck in a rut and feel like there's no way out, but it's important to remember that anything is possible if we believe in ourselves and work hard enough.\n\nIn the end, it's not about the destination, it's about the journey. And even though it may be difficult at times, it's the journey that makes life worth living.",
+  "usage": {
+    "prompt_tokens": 19,
+    "completion_tokens": 304,
+    "total_tokens": 323
+  },
+  "model": "zai-org/chatglm3-6b",
+  "raw": {
+    "id": "chatcmpl-10c9b0b8-454f-4a89-a54d-847cb7422d44",
+    "object": "chat.completion",
+    "created": 1786489111,
+    "model": "zai-org/chatglm3-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As I sit here, staring out the window at the rain, I can't help but feel a sense of melancholy. It's days like these that make me question the meaning of life and all the things that I have been working so hard for. It's easy to feel lost and alone when the world around you seems to be moving at a faster pace, and it's hard to keep up.\n\nI often find myself asking, \"What's the point? What's the purpose of all this hard work and struggle?\" It's moments like these that make me want to give up and just accept the mediocrity of my life. But then I remember that it's not about the destination, it's about the journey. And even though it may be difficult at times, the journey is what shapes us and makes us who we are.\n\nIt's also important to remember that we have the power to change our lives. We can choose to make changes and take leaps of faith, even if it's hard. It's easy to get stuck in a rut and feel like there's no way out, but it's important to remember that anything is possible if we believe in ourselves and work hard enough.\n\nIn the end, it's not about the destination, it's about the journey. And even though it may be difficult at times, it's the journey that makes life worth living."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 19,
+      "completion_tokens": 304,
+      "total_tokens": 323
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 4.30.2; torch 2.13.0",
+    "model_revision": "e9e0406d062cdb887444fe5bd546833920abd4ac",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 32355,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm3-6b",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

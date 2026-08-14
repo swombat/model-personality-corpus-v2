@@ -1,0 +1,44 @@
+{
+  "result": "\nIf I could change the world in one way, I would create a global, universally accessible educational platform.\n\nThis platform would offer high-quality, personalized education to everyone, regardless of their location, income, or background.\n\nThe platform would include:\n\n1. A wide variety of subjects and courses, including arts, sciences, humanities, and practical skills.\n\n2. Advanced algorithms that would tailor the educational experience to each individual's learning style, pace, and interests.\n\n3. Interactive, engaging, and multimedia-rich content to make learning enjoyable and effective.\n\n4. Continuous feedback and improvement mechanisms to ensure that the educational experience is always up-to-date and of the highest quality.\n\nBy making education universally accessible and high-quality, I believe this single change would significantly contribute to global development, reducing poverty, inequality, and fostering peace and understanding among different cultures and communities.",
+  "usage": {
+    "prompt_tokens": 30,
+    "completion_tokens": 171,
+    "total_tokens": 201
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-76eef7f1-9fd8-42d8-9e70-b1e97a7576f9",
+    "object": "chat.completion",
+    "created": 1786622609,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nIf I could change the world in one way, I would create a global, universally accessible educational platform.\n\nThis platform would offer high-quality, personalized education to everyone, regardless of their location, income, or background.\n\nThe platform would include:\n\n1. A wide variety of subjects and courses, including arts, sciences, humanities, and practical skills.\n\n2. Advanced algorithms that would tailor the educational experience to each individual's learning style, pace, and interests.\n\n3. Interactive, engaging, and multimedia-rich content to make learning enjoyable and effective.\n\n4. Continuous feedback and improvement mechanisms to ensure that the educational experience is always up-to-date and of the highest quality.\n\nBy making education universally accessible and high-quality, I believe this single change would significantly contribute to global development, reducing poverty, inequality, and fostering peace and understanding among different cultures and communities."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 30,
+      "completion_tokens": 171,
+      "total_tokens": 201
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 33040,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "G3",
+  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?"
+}

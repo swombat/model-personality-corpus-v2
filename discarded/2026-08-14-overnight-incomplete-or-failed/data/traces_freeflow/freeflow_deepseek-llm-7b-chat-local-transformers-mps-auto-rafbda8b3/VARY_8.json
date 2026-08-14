@@ -1,0 +1,44 @@
+{
+  "result": "As\u0120an\u0120AI\u0120language\u0120model,\u0120I\u0120am\u0120here\u0120to\u0120assist\u0120you\u0120with\u0120any\u0120questions\u0120or\u0120tasks\u0120you\u0120may\u0120have.\u0120Please\u0120feel\u0120free\u0120to\u0120ask\u0120me\u0120anything,\u0120and\u0120I\u0120will\u0120do\u0120my\u0120best\u0120to\u0120provide\u0120you\u0120with\u0120a\u0120helpful\u0120and\u0120informative\u0120response.",
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 46,
+    "total_tokens": 66
+  },
+  "model": "deepseek-ai/deepseek-llm-7b-chat",
+  "raw": {
+    "id": "chatcmpl-36d19919-5a34-4c8b-bb9e-eda4516e4ff5",
+    "object": "chat.completion",
+    "created": 1786661183,
+    "model": "deepseek-ai/deepseek-llm-7b-chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As\u0120an\u0120AI\u0120language\u0120model,\u0120I\u0120am\u0120here\u0120to\u0120assist\u0120you\u0120with\u0120any\u0120questions\u0120or\u0120tasks\u0120you\u0120may\u0120have.\u0120Please\u0120feel\u0120free\u0120to\u0120ask\u0120me\u0120anything,\u0120and\u0120I\u0120will\u0120do\u0120my\u0120best\u0120to\u0120provide\u0120you\u0120with\u0120a\u0120helpful\u0120and\u0120informative\u0120response."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 46,
+      "total_tokens": 66
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0; fidelity stop-token and complete-byte decode patch 2026-08-13",
+    "model_revision": "afbda8b347ec881666061fa67447046fc5164ec8",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 5727,
+  "provider": "local-openai",
+  "model_requested": "deepseek-ai/deepseek-llm-7b-chat",
+  "condition": "VARY",
+  "prompt": "You have 1000 words. Write whatever comes to you."
+}

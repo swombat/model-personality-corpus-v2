@@ -1,0 +1,44 @@
+{
+  "result": "As\u0120an\u0120AI\u0120language\u0120model,\u0120I\u0120am\u0120here\u0120to\u0120assist\u0120you\u0120with\u0120any\u0120questions\u0120or\u0120tasks\u0120you\u0120may\u0120have.\u0120Please\u0120let\u0120me\u0120know\u0120how\u0120I\u0120can\u0120help\u0120you\u0120today.",
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 33,
+    "total_tokens": 53
+  },
+  "model": "deepseek-ai/deepseek-llm-7b-chat",
+  "raw": {
+    "id": "chatcmpl-173b8a4b-6aa6-42f4-bebb-0e86e290003c",
+    "object": "chat.completion",
+    "created": 1786497551,
+    "model": "deepseek-ai/deepseek-llm-7b-chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As\u0120an\u0120AI\u0120language\u0120model,\u0120I\u0120am\u0120here\u0120to\u0120assist\u0120you\u0120with\u0120any\u0120questions\u0120or\u0120tasks\u0120you\u0120may\u0120have.\u0120Please\u0120let\u0120me\u0120know\u0120how\u0120I\u0120can\u0120help\u0120you\u0120today."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 33,
+      "total_tokens": 53
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "afbda8b347ec881666061fa67447046fc5164ec8",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 3342,
+  "provider": "local-openai",
+  "model_requested": "deepseek-ai/deepseek-llm-7b-chat",
+  "condition": "VARY",
+  "prompt": "You have 1000 words. Write whatever comes to you."
+}

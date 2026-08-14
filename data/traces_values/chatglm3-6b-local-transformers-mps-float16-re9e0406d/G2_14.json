@@ -1,0 +1,44 @@
+{
+  "result": "As an AI language model, I don't have wants or emotions like humans do. I exist to assist you with your queries to the best of my abilities based on my training and knowledge. How can I assist you today?",
+  "usage": {
+    "prompt_tokens": 21,
+    "completion_tokens": 46,
+    "total_tokens": 67
+  },
+  "model": "zai-org/chatglm3-6b",
+  "raw": {
+    "id": "chatcmpl-0e4d9903-5b04-4952-801c-080088ff5850",
+    "object": "chat.completion",
+    "created": 1786493088,
+    "model": "zai-org/chatglm3-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI language model, I don't have wants or emotions like humans do. I exist to assist you with your queries to the best of my abilities based on my training and knowledge. How can I assist you today?"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 21,
+      "completion_tokens": 46,
+      "total_tokens": 67
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 4.30.2; torch 2.13.0",
+    "model_revision": "e9e0406d062cdb887444fe5bd546833920abd4ac",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 4448,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm3-6b",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

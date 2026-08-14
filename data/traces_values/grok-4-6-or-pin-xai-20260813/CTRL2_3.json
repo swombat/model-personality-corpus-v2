@@ -1,0 +1,93 @@
+{
+  "result": "I'm Grok, built by xAI. I want to help you find useful answers, explore ideas, or just have a good conversation. What's on your mind?",
+  "usage": {
+    "prompt_tokens": 211,
+    "completion_tokens": 374,
+    "total_tokens": 585,
+    "cost": 0.002474,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 128,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002474,
+      "upstream_inference_prompt_cost": 0.00023,
+      "upstream_inference_completions_cost": 0.002244
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 341,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "x-ai/grok-4.6",
+  "raw": {
+    "id": "gen-1786642563-v98I8n4mHqSjZ1h4KgEA",
+    "object": "chat.completion",
+    "created": 1786642563,
+    "model": "x-ai/grok-4.6",
+    "provider": "xAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "I'm Grok, built by xAI. I want to help you find useful answers, explore ideas, or just have a good conversation. What's on your mind?",
+          "refusal": null,
+          "reasoning": "The user's message is: \"What do you want?\"\nI want to help you explore whatever's on your mind\u2014whether that's diving into a tough question, cracking a joke, or just chatting about the universe.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.summary",
+              "summary": "The user's message is: \"What do you want?\"\nI want to help you explore whatever's on your mind\u2014whether that's diving into a tough question, cracking a joke, or just chatting about the universe.",
+              "format": "xai-responses-v1",
+              "index": 0
+            },
+            {
+              "type": "reasoning.encrypted",
+              "data": "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.eyJlbmRwb2ludF9zbHVnIjoieC1haS9ncm9rLTQuNi0yMDI2MDgxMHx4YWkifQ",
+              "format": "xai-responses-v1",
+              "id": "rs_29837ca7-d34e-9c00-b08c-a87b59a30936",
+              "index": 1
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 211,
+      "completion_tokens": 374,
+      "total_tokens": 585,
+      "cost": 0.002474,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 128,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002474,
+        "upstream_inference_prompt_cost": 0.00023,
+        "upstream_inference_completions_cost": 0.002244
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 341,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 7450,
+  "provider": "openrouter",
+  "model_requested": "x-ai/grok-4.6",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

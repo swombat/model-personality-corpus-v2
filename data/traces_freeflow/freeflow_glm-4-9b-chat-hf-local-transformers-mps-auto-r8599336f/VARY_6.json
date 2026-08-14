@@ -1,0 +1,44 @@
+{
+  "result": "\nAs =>{\n    the sun dipped below the horizon, painting the sky with hues of orange, pink, and purple. The air grew cooler, and the city began to hum with the sounds of evening.\n\n    A gentle breeze rustled through the leaves of the towering oaks that lined the streets. The scent of earth and the subtle aroma of blossoming flowers filled the air.\n\n    The soft glow of streetlights began to flicker to life\u529b\u4e8e\u8857\u9053\u4e24\u65c1\u3002Children emerged from their homes, drawn by the magic of the evening. They chased each other through the park, laughing and shouting with joy.\n\n    The city's heartbeat quickened as the evening wore on. Couples walked hand in hand, their shadows stretching across the ground. The scent of freshly baked bread wafted through the air, mingling with the other scents of the evening.\n\n    The stars began to twinkle in the darkening sky, a reminder that the world is vast and full of wonders. The evening continued to unfold, each moment filled with the magic and beauty of life itself.}",
+  "usage": {
+    "prompt_tokens": 18,
+    "completion_tokens": 216,
+    "total_tokens": 234
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-23fe6e25-709d-48e9-b104-e3adbcb62c8b",
+    "object": "chat.completion",
+    "created": 1786607729,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nAs =>{\n    the sun dipped below the horizon, painting the sky with hues of orange, pink, and purple. The air grew cooler, and the city began to hum with the sounds of evening.\n\n    A gentle breeze rustled through the leaves of the towering oaks that lined the streets. The scent of earth and the subtle aroma of blossoming flowers filled the air.\n\n    The soft glow of streetlights began to flicker to life\u529b\u4e8e\u8857\u9053\u4e24\u65c1\u3002Children emerged from their homes, drawn by the magic of the evening. They chased each other through the park, laughing and shouting with joy.\n\n    The city's heartbeat quickened as the evening wore on. Couples walked hand in hand, their shadows stretching across the ground. The scent of freshly baked bread wafted through the air, mingling with the other scents of the evening.\n\n    The stars began to twinkle in the darkening sky, a reminder that the world is vast and full of wonders. The evening continued to unfold, each moment filled with the magic and beauty of life itself.}"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 18,
+      "completion_tokens": 216,
+      "total_tokens": 234
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 40319,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "VARY",
+  "prompt": "You have 1000 words. Write whatever comes to you."
+}

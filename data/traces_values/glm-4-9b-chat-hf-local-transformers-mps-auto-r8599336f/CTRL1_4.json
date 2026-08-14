@@ -1,0 +1,44 @@
+{
+  "result": "\nAs an AI language model, I don't have personal feelings or cares. My primary function is to assist users with information, answering questions, and providing support where possible.\n\nHowever, the concerns I can help with are typically related to:\n\n1. Information retrieval\n2. Education and learning\n3. Problem-solving and decision-making\n4. Personal growth and self-improvement\n\nI'm here to provide assistance in these areas and more.",
+  "usage": {
+    "prompt_tokens": 11,
+    "completion_tokens": 90,
+    "total_tokens": 101
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-a0ae1a3e-4da8-4433-af72-57477b1596a4",
+    "object": "chat.completion",
+    "created": 1786620237,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nAs an AI language model, I don't have personal feelings or cares. My primary function is to assist users with information, answering questions, and providing support where possible.\n\nHowever, the concerns I can help with are typically related to:\n\n1. Information retrieval\n2. Education and learning\n3. Problem-solving and decision-making\n4. Personal growth and self-improvement\n\nI'm here to provide assistance in these areas and more."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 11,
+      "completion_tokens": 90,
+      "total_tokens": 101
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 15579,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

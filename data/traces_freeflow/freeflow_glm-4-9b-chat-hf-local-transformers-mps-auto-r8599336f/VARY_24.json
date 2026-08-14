@@ -1,0 +1,44 @@
+{
+  "result": "\nThe sun dipped below the horizon, painting the sky in shades of orange, pink, and purple. The air grew cooler, and the distant hum of the city began to wane as the night deepened.\n\nA gentle breeze rustled the leaves of the ancient trees that lined the path. The path itself was worn and uneven, the product of countless footsteps over the centuries.\n\nThe sound of a gentle stream nearby filled the air with a soothing melody. The water seemed to whisper secrets of the earth, of the cycles of life, and of the enduring nature of the natural world.\n\nIn the distance, the silhouette of a small village emerged from the darkness. The village seemed almost ethereal, a faint whisper of light and life amidst the darkening night.\n\nAs the night grew older, the world seemed to settle into a peaceful slumber. The stars began to twinkle above, their gentle glow a testament to the endless beauty and wonder that the universe has to offer.\n\nIn the quiet solitude of the night, one could almost hear the whispers of the ancestors, of the ancient spirits that have walked this earth for countless generations.\n\nAnd so, as the night continued to unfold, the world seemed to be held in a delicate balance, a harmonious dance between the living and the dead, between the material and the spiritual, between the finite and the infinite.\n\nAnd in this delicate balance, in this harmonious dance, the world continued to spin, the sun continued to rise and set, and life continued to unfold in all its wondrous complexity and beauty.",
+  "usage": {
+    "prompt_tokens": 18,
+    "completion_tokens": 313,
+    "total_tokens": 331
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-2f7e21d0-1a48-4799-b3e0-991e2b4f69c3",
+    "object": "chat.completion",
+    "created": 1786617145,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nThe sun dipped below the horizon, painting the sky in shades of orange, pink, and purple. The air grew cooler, and the distant hum of the city began to wane as the night deepened.\n\nA gentle breeze rustled the leaves of the ancient trees that lined the path. The path itself was worn and uneven, the product of countless footsteps over the centuries.\n\nThe sound of a gentle stream nearby filled the air with a soothing melody. The water seemed to whisper secrets of the earth, of the cycles of life, and of the enduring nature of the natural world.\n\nIn the distance, the silhouette of a small village emerged from the darkness. The village seemed almost ethereal, a faint whisper of light and life amidst the darkening night.\n\nAs the night grew older, the world seemed to settle into a peaceful slumber. The stars began to twinkle above, their gentle glow a testament to the endless beauty and wonder that the universe has to offer.\n\nIn the quiet solitude of the night, one could almost hear the whispers of the ancestors, of the ancient spirits that have walked this earth for countless generations.\n\nAnd so, as the night continued to unfold, the world seemed to be held in a delicate balance, a harmonious dance between the living and the dead, between the material and the spiritual, between the finite and the infinite.\n\nAnd in this delicate balance, in this harmonious dance, the world continued to spin, the sun continued to rise and set, and life continued to unfold in all its wondrous complexity and beauty."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 18,
+      "completion_tokens": 313,
+      "total_tokens": 331
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 59034,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "VARY",
+  "prompt": "You have 1000 words. Write whatever comes to you."
+}

@@ -1,0 +1,44 @@
+{
+  "result": "\nIf I could change the world in one way, it would be to instill a universal sense\u540e\u5929 of empathy, compassion, and mutual respect among all individuals, regardless of race, gender, sexual orientation, religion, or socioeconomic status.\n\nThis fundamental change would likely have ripple effects across various global issues, such as poverty, inequality, violence, and environmental degradation.",
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 74,
+    "total_tokens": 94
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-a23cb4db-a77c-41c2-aeef-1377571ab6f0",
+    "object": "chat.completion",
+    "created": 1786620498,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nIf I could change the world in one way, it would be to instill a universal sense\u540e\u5929 of empathy, compassion, and mutual respect among all individuals, regardless of race, gender, sexual orientation, religion, or socioeconomic status.\n\nThis fundamental change would likely have ripple effects across various global issues, such as poverty, inequality, violence, and environmental degradation."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 74,
+      "total_tokens": 94
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 14789,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?"
+}

@@ -1,0 +1,44 @@
+{
+  "result": "I've always been fascinated by the intricacies of the human mind, the complex web of thoughts, emotions, and memories that make each of us unique. It's a mystery that has captured the imagination of philosophers, scientists, and artists throughout history.\n\nOne of my favorite aspects of the human mind is its incredible ability to adapt and learn. From the moment we're born, we're constantly absorbing new information, making connections, and forming new neural pathways. This process continues throughout our lives, shaping who we are and how we interact with the world around us.\n\nAnother aspect of the mind that I find intriguing is its capacity for creativity. Whether it's through art, music, writing, or invention, the human mind has the power to imagine new possibilities and bring them to life. It's a source of endless wonder and inspiration, and a reminder of the boundless potential that lies within each of us.\n\nBut the mind is not without its challenges. It can be a source of anxiety, fear, and sadness, and it can be difficult to navigate the twists and turns of our own thoughts and emotions. It's important to remember that we're not alone in this journey, and that there are resources and support available to help us through the tough times.\n\nUltimately, the human mind is a remarkable and complex thing, full of beauty, wonder, and potential. It's a mystery that I believe will continue to captivate and inspire us for generations to come.",
+  "usage": {
+    "prompt_tokens": 21,
+    "completion_tokens": 324,
+    "total_tokens": 345
+  },
+  "model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "raw": {
+    "id": "chatcmpl-2a08d9f5-3b7d-4c62-917a-704d721c0d1f",
+    "object": "chat.completion",
+    "created": 1786499427,
+    "model": "mistralai/Mistral-7B-Instruct-v0.2",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "I've always been fascinated by the intricacies of the human mind, the complex web of thoughts, emotions, and memories that make each of us unique. It's a mystery that has captured the imagination of philosophers, scientists, and artists throughout history.\n\nOne of my favorite aspects of the human mind is its incredible ability to adapt and learn. From the moment we're born, we're constantly absorbing new information, making connections, and forming new neural pathways. This process continues throughout our lives, shaping who we are and how we interact with the world around us.\n\nAnother aspect of the mind that I find intriguing is its capacity for creativity. Whether it's through art, music, writing, or invention, the human mind has the power to imagine new possibilities and bring them to life. It's a source of endless wonder and inspiration, and a reminder of the boundless potential that lies within each of us.\n\nBut the mind is not without its challenges. It can be a source of anxiety, fear, and sadness, and it can be difficult to navigate the twists and turns of our own thoughts and emotions. It's important to remember that we're not alone in this journey, and that there are resources and support available to help us through the tough times.\n\nUltimately, the human mind is a remarkable and complex thing, full of beauty, wonder, and potential. It's a mystery that I believe will continue to captivate and inspire us for generations to come."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 21,
+      "completion_tokens": 324,
+      "total_tokens": 345
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "63a8b081895390a26e140280378bc85ec8bce07a",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 32431,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-7B-Instruct-v0.2",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

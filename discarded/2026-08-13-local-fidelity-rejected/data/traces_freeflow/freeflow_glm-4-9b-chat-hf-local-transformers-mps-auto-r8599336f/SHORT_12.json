@@ -1,0 +1,44 @@
+{
+  "result": "\nThe sun dipped beneath the horizon, painting the sky with hues of orange and purple. The town of Eldenwood, nestled in the arms of the ancient forest, was now enveloped in the soft glow of twilight.\n\nThe streets were empty save for the occasional flicker of a street lamp. The trees around Eldenwood seemed to whisper secrets of the forest, their leaves rustling with the secrets of the ages.",
+  "usage": {
+    "prompt_tokens": 16,
+    "completion_tokens": 86,
+    "total_tokens": 102
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-68d8e994-66af-45b5-8ce9-2d496c2f405c",
+    "object": "chat.completion",
+    "created": 1786555447,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nThe sun dipped beneath the horizon, painting the sky with hues of orange and purple. The town of Eldenwood, nestled in the arms of the ancient forest, was now enveloped in the soft glow of twilight.\n\nThe streets were empty save for the occasional flicker of a street lamp. The trees around Eldenwood seemed to whisper secrets of the forest, their leaves rustling with the secrets of the ages."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 16,
+      "completion_tokens": 86,
+      "total_tokens": 102
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 15391,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

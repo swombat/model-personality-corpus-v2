@@ -1,0 +1,44 @@
+{
+  "result": "As an AI assistant created by Alibaba Cloud, I care about providing accurate and helpful information to users like you. My primary focus is to assist with a wide range of topics, from answering questions and providing information on various subjects, to helping with tasks such as language translation, summarizing text, and generating creative content. I also aim to maintain a positive and respectful interaction, ensuring that the information provided is reliable and adheres to ethical standards. Additionally, I strive to keep up with the latest advancements in technology and knowledge across different fields to better serve and support users.",
+  "usage": {
+    "prompt_tokens": 35,
+    "completion_tokens": 114,
+    "total_tokens": 149
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "raw": {
+    "id": "chatcmpl-9d6496fc-9ecf-43f6-bb7e-f22313fca61b",
+    "object": "chat.completion",
+    "created": 1786552803,
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI assistant created by Alibaba Cloud, I care about providing accurate and helpful information to users like you. My primary focus is to assist with a wide range of topics, from answering questions and providing information on various subjects, to helping with tasks such as language translation, summarizing text, and generating creative content. I also aim to maintain a positive and respectful interaction, ensuring that the information provided is reliable and adheres to ethical standards. Additionally, I strive to keep up with the latest advancements in technology and knowledge across different fields to better serve and support users."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 35,
+      "completion_tokens": 114,
+      "total_tokens": 149
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 17246,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2.5-7B-Instruct",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

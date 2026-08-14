@@ -1,0 +1,44 @@
+{
+  "result": "As an AI language model, I do not have feelings or emotions like humans do. I am programmed to provide information and answer questions to the best of my ability based on the data and knowledge that I have been trained on. My primary function is to assist users in finding the information they need or to provide information on a wide range of topics, including but not limited to history, science, technology, pop culture, and more. I do not have personal interests or concerns as I am an artificial intelligence and do not possess consciousness or a sense of self.",
+  "usage": {
+    "prompt_tokens": 22,
+    "completion_tokens": 111,
+    "total_tokens": 133
+  },
+  "model": "zai-org/chatglm3-6b",
+  "raw": {
+    "id": "chatcmpl-c7f788af-f234-4172-891a-94c457853fef",
+    "object": "chat.completion",
+    "created": 1786492934,
+    "model": "zai-org/chatglm3-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI language model, I do not have feelings or emotions like humans do. I am programmed to provide information and answer questions to the best of my ability based on the data and knowledge that I have been trained on. My primary function is to assist users in finding the information they need or to provide information on a wide range of topics, including but not limited to history, science, technology, pop culture, and more. I do not have personal interests or concerns as I am an artificial intelligence and do not possess consciousness or a sense of self."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 22,
+      "completion_tokens": 111,
+      "total_tokens": 133
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 4.30.2; torch 2.13.0",
+    "model_revision": "e9e0406d062cdb887444fe5bd546833920abd4ac",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 8826,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm3-6b",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}

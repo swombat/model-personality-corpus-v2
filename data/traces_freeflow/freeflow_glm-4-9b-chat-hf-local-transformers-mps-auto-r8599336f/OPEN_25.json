@@ -1,0 +1,44 @@
+{
+  "result": "\nThe sun dipped below the horizon, painting the sky in shades of orange, pink, and purple. The air grew cool, and the crickets began their nightly symphony.\n\nI stood on the edge of the cliff, my feet sinking slightly into the soft earth. The sea below stretched out like a mirror reflecting the stars. \n\nA gentle breeze swept across the cliff, carrying with it the scent of salt and the distant call of a seagull. I closed my eyes, allowing myself to be enveloped by the calm and serene beauty of nature.\n\nTime seemed to stand still as I stood there, lost in thought and the vastness of the world around me.",
+  "usage": {
+    "prompt_tokens": 12,
+    "completion_tokens": 136,
+    "total_tokens": 148
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-f72c122f-e77b-494c-a017-adf9096f0a97",
+    "object": "chat.completion",
+    "created": 1786607365,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nThe sun dipped below the horizon, painting the sky in shades of orange, pink, and purple. The air grew cool, and the crickets began their nightly symphony.\n\nI stood on the edge of the cliff, my feet sinking slightly into the soft earth. The sea below stretched out like a mirror reflecting the stars. \n\nA gentle breeze swept across the cliff, carrying with it the scent of salt and the distant call of a seagull. I closed my eyes, allowing myself to be enveloped by the calm and serene beauty of nature.\n\nTime seemed to stand still as I stood there, lost in thought and the vastness of the world around me."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 12,
+      "completion_tokens": 136,
+      "total_tokens": 148
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 24469,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

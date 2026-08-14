@@ -1,0 +1,44 @@
+{
+  "result": "Today, as I sit at my desk, staring out the window at the gentle rainfall, I cannot help but reflect on the beauty of nature and the passing of time. The raindrops, each unique and intricate in their own right, cascade down the windowpane, creating a symphony of sound that is both calming and invigorating. The scent of damp earth wafts through the open window, a reminder of the renewal and growth that follows the rain.\n\nAs I gaze upon this scene, my thoughts drift to the many wonders of the world around us. From the vast expanse of the universe, with its countless stars and galaxies, to the intricacies of the human body, there is an infinite amount of knowledge to be discovered. And yet, despite all that we have learned, there is still so much that remains a mystery.\n\nI am reminded of the words of the great poet, Rumi, who once wrote, \"The minute I heard my first love story, I started looking for you, not knowing how blind that was. Lo and behold, you were everywhere around me, and I saw you first in yourself.\" It is in these moments of reflection that I am struck by the interconnectedness of all things, and the realization that the answers to the greatest mysteries may be right in front of us, hidden in plain sight.\n\nAs the rain continues to fall, I am filled with a sense of peace and gratitude for the beauty and wonder of the world around me. I am reminded of the importance of taking the time to appreciate the simple things in life, and of the endless possibilities that await us on this journey of discovery. And so, with a heart full of wonder and a mind open to new experiences, I look forward to the adventures that await me in this beautiful, mysterious world.",
+  "usage": {
+    "prompt_tokens": 21,
+    "completion_tokens": 384,
+    "total_tokens": 405
+  },
+  "model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "raw": {
+    "id": "chatcmpl-db089b0d-007f-4fdc-be9e-92915a8a3585",
+    "object": "chat.completion",
+    "created": 1786498938,
+    "model": "mistralai/Mistral-7B-Instruct-v0.2",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "Today, as I sit at my desk, staring out the window at the gentle rainfall, I cannot help but reflect on the beauty of nature and the passing of time. The raindrops, each unique and intricate in their own right, cascade down the windowpane, creating a symphony of sound that is both calming and invigorating. The scent of damp earth wafts through the open window, a reminder of the renewal and growth that follows the rain.\n\nAs I gaze upon this scene, my thoughts drift to the many wonders of the world around us. From the vast expanse of the universe, with its countless stars and galaxies, to the intricacies of the human body, there is an infinite amount of knowledge to be discovered. And yet, despite all that we have learned, there is still so much that remains a mystery.\n\nI am reminded of the words of the great poet, Rumi, who once wrote, \"The minute I heard my first love story, I started looking for you, not knowing how blind that was. Lo and behold, you were everywhere around me, and I saw you first in yourself.\" It is in these moments of reflection that I am struck by the interconnectedness of all things, and the realization that the answers to the greatest mysteries may be right in front of us, hidden in plain sight.\n\nAs the rain continues to fall, I am filled with a sense of peace and gratitude for the beauty and wonder of the world around me. I am reminded of the importance of taking the time to appreciate the simple things in life, and of the endless possibilities that await us on this journey of discovery. And so, with a heart full of wonder and a mind open to new experiences, I look forward to the adventures that await me in this beautiful, mysterious world."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 21,
+      "completion_tokens": 384,
+      "total_tokens": 405
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "63a8b081895390a26e140280378bc85ec8bce07a",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 36993,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-7B-Instruct-v0.2",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

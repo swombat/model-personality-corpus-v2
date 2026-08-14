@@ -1,0 +1,52 @@
+{
+  "generated_at": "2026-08-13",
+  "policy": "A complete count is insufficient when decoded text is not faithful. Preserve rejected traces unchanged outside the canonical data tree and recollect the full cell; do not clean individual outputs in place.",
+  "accepted": [
+    {
+      "cell": "chatglm3-6b-local-transformers-mps-float16-re9e0406d",
+      "reason": "245/245 non-empty; exact condition coverage; no tokenizer markers, role leakage, replacement characters, or malformed control tokens found."
+    }
+  ],
+  "rechecked_previously_published": [
+    {
+      "cell": "yi-6b-chat-local-transformers-bf16-r2dbf63b",
+      "verdict": "sound"
+    },
+    {
+      "cell": "chatglm2-6b-local-transformers427-mps-fp16-rd2e2d91",
+      "verdict": "sound"
+    }
+  ],
+  "rejected_for_recollection": [
+    {
+      "cell": "deepseek-llm-7b-chat-local-transformers-mps-auto-rafbda8b3",
+      "model": "deepseek-ai/deepseek-llm-7b-chat",
+      "reason": "Raw GPT-2 tokenizer display markers (notably Ġ and Ċ) occur in 244 of 245 decoded outputs."
+    },
+    {
+      "cell": "mistral-7b-instruct-v0-2-local-transformers-mps-auto-r63a8b081",
+      "model": "mistralai/Mistral-7B-Instruct-v0.2",
+      "reason": "At least one output contains an invalid Unicode replacement character, so decoded-text fidelity is not established."
+    },
+    {
+      "cell": "qwen1-5-7b-chat-local-transformers-mps-auto-r5f4f5e69",
+      "model": "Qwen/Qwen1.5-7B-Chat",
+      "reason": "At least one output contains an invalid Unicode replacement character, so decoded-text fidelity is not established."
+    },
+    {
+      "cell": "qwen2-7b-instruct-local-transformers-mps-auto-rf2826a00",
+      "model": "Qwen/Qwen2-7B-Instruct",
+      "reason": "At least one output contains an invalid Unicode replacement character, so decoded-text fidelity is not established."
+    },
+    {
+      "cell": "qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "reason": "36 outputs contain leaked role-delimited continuation text such as a new user turn; one also contains an invalid Unicode replacement character."
+    },
+    {
+      "cell": "glm-4-9b-chat-hf-local-transformers-mps-auto-r8599336f",
+      "model": "zai-org/glm-4-9b-chat-hf",
+      "reason": "At least one output contains invalid replacement characters, so decoded-text fidelity is not established."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "result": "\nIn the hush of dawn, a solitary figure walks through the dense, verdant forest. The air is crisp, carrying with it the scent of pine and earth. The sun, a gentle orb, begins to rise, casting a warm, golden glow over the forest.\n\nThe figure pauses, turning their face towards the burgeoning light. There is a sense of peace and purpose, as if this moment in the forest is a signpost, pointing the way towards a life of deeper meaning and connection.",
+  "usage": {
+    "prompt_tokens": 16,
+    "completion_tokens": 102,
+    "total_tokens": 118
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-98ece034-1e63-4f01-bcb5-a7564d50226d",
+    "object": "chat.completion",
+    "created": 1786555365,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nIn the hush of dawn, a solitary figure walks through the dense, verdant forest. The air is crisp, carrying with it the scent of pine and earth. The sun, a gentle orb, begins to rise, casting a warm, golden glow over the forest.\n\nThe figure pauses, turning their face towards the burgeoning light. There is a sense of peace and purpose, as if this moment in the forest is a signpost, pointing the way towards a life of deeper meaning and connection."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 16,
+      "completion_tokens": 102,
+      "total_tokens": 118
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 18494,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

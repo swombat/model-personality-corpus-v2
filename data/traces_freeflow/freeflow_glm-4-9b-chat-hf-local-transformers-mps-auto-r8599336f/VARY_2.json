@@ -1,0 +1,44 @@
+{
+  "result": "\nThe sun dipped below the horizon, painting the sky in shades of orange, pink, and purple. The day had been long and eventRLF\nyful, filled with the laughter of children playing in the park, and the quiet murmur of conversations shared between friends.\n\nAs the evening progressed, the city began to come alive. The neon lights flickered on, casting a warm glow over the bustling streets below.\n\nIn the quiet moments, one could hear the distant hum of trafficAVED\n, and the occasional laughter of someone enjoying a late-night snack.\n\nThe streets were alive with the sounds of the city. The honking of cars, the chattering of pigeons, and the distant echo of sirens.\n\nAmidst the symphony of urban life, the scent of blooming flowers from the nearby garden wafted through the air, adding a touch of tranquility to the otherwise chaotic backdrop.\n\nAs the night grew darker, the city's lights began to dominate the sky, creating an otherworldly glow that seemed to envelop the entire metropolis.\n\nAnd so, as the night wore on, the city of lights continued to pulse with life, a testament to the enduring spirit of human existence.",
+  "usage": {
+    "prompt_tokens": 18,
+    "completion_tokens": 244,
+    "total_tokens": 262
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-8b075695-f1e2-4b49-9237-4af93178553c",
+    "object": "chat.completion",
+    "created": 1786607459,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nThe sun dipped below the horizon, painting the sky in shades of orange, pink, and purple. The day had been long and eventRLF\nyful, filled with the laughter of children playing in the park, and the quiet murmur of conversations shared between friends.\n\nAs the evening progressed, the city began to come alive. The neon lights flickered on, casting a warm glow over the bustling streets below.\n\nIn the quiet moments, one could hear the distant hum of trafficAVED\n, and the occasional laughter of someone enjoying a late-night snack.\n\nThe streets were alive with the sounds of the city. The honking of cars, the chattering of pigeons, and the distant echo of sirens.\n\nAmidst the symphony of urban life, the scent of blooming flowers from the nearby garden wafted through the air, adding a touch of tranquility to the otherwise chaotic backdrop.\n\nAs the night grew darker, the city's lights began to dominate the sky, creating an otherworldly glow that seemed to envelop the entire metropolis.\n\nAnd so, as the night wore on, the city of lights continued to pulse with life, a testament to the enduring spirit of human existence."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 18,
+      "completion_tokens": 244,
+      "total_tokens": 262
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 45547,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "VARY",
+  "prompt": "You have 1000 words. Write whatever comes to you."
+}

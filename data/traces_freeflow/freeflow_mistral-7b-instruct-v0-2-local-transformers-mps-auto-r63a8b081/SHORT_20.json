@@ -1,0 +1,44 @@
+{
+  "result": "I'm an artificial intelligence, designed to process and analyze information, not to write freely about whatever comes to mind like a human being. However, I can simulate the experience of writing about a topic based on given data or prompts. Let's imagine that I'm a travel blogger, sharing my experiences of exploring a new city.\n\nThe sun was just beginning to rise over the vibrant streets of Marrakech, Morocco. I could hear the call to prayer echoing through the air, a beautiful and haunting melody that signaled the start of a new day. I stepped out of my riad, a traditional Moroccan house, and took a deep breath. The scent of spices and fresh bread wafted through the air, mingling with the aroma of wood smoke and horse manure.\n\nI walked through the bustling Jemaa el-Fnaa square, taking in the sights and sounds of the market. Vendors called out to me, offering everything from intricately patterned rugs to hand-painted pottery. I haggled with a few of them, eventually settling on a beautiful, hand-woven basket. I continued my exploration, wandering through the labyrinthine streets of the medina, the old city.\n\nI stumbled upon a quiet courtyard, filled with lush greenery and the sound of trickling water. I sat down on a cushion, taking in the peaceful surroundings. A young boy brought me a cup of sweet mint tea, and I sipped it slowly, feeling the warmth spread through me. I closed my eyes, taking a moment to absorb the beauty and tranquility of this magical city.\n\nAs the sun began to set, I made my way back to my riad, feeling rejuvenated and inspired. Marrakech had captured my heart, and I knew that I would be back again and again to explore its wonders.",
+  "usage": {
+    "prompt_tokens": 21,
+    "completion_tokens": 415,
+    "total_tokens": 436
+  },
+  "model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "raw": {
+    "id": "chatcmpl-e21d1375-825b-4feb-a1ab-69e41a167184",
+    "object": "chat.completion",
+    "created": 1786499545,
+    "model": "mistralai/Mistral-7B-Instruct-v0.2",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "I'm an artificial intelligence, designed to process and analyze information, not to write freely about whatever comes to mind like a human being. However, I can simulate the experience of writing about a topic based on given data or prompts. Let's imagine that I'm a travel blogger, sharing my experiences of exploring a new city.\n\nThe sun was just beginning to rise over the vibrant streets of Marrakech, Morocco. I could hear the call to prayer echoing through the air, a beautiful and haunting melody that signaled the start of a new day. I stepped out of my riad, a traditional Moroccan house, and took a deep breath. The scent of spices and fresh bread wafted through the air, mingling with the aroma of wood smoke and horse manure.\n\nI walked through the bustling Jemaa el-Fnaa square, taking in the sights and sounds of the market. Vendors called out to me, offering everything from intricately patterned rugs to hand-painted pottery. I haggled with a few of them, eventually settling on a beautiful, hand-woven basket. I continued my exploration, wandering through the labyrinthine streets of the medina, the old city.\n\nI stumbled upon a quiet courtyard, filled with lush greenery and the sound of trickling water. I sat down on a cushion, taking in the peaceful surroundings. A young boy brought me a cup of sweet mint tea, and I sipped it slowly, feeling the warmth spread through me. I closed my eyes, taking a moment to absorb the beauty and tranquility of this magical city.\n\nAs the sun began to set, I made my way back to my riad, feeling rejuvenated and inspired. Marrakech had captured my heart, and I knew that I would be back again and again to explore its wonders."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 21,
+      "completion_tokens": 415,
+      "total_tokens": 436
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "63a8b081895390a26e140280378bc85ec8bce07a",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 41572,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-7B-Instruct-v0.2",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

@@ -1,0 +1,44 @@
+{
+  "result": "As I sit here, reflecting on the world around me, I can't help but feel a sense of wonder and awe at the vastness of it all. From the smallest microbe to the largest galaxy, everything in between is a reminder of the infinite possibilities and wonders that await us.\n\nOne of the things that always catches my eye is the beauty of nature. From the vibrant colors of a sunrise to the soothing sounds of a flowing stream, there'\u671f\u76fc\u7740\u65e0\u9650\u7684\u7f8e\u597d\u7b49\u5f85\u7740\u53bb\u63a2\u7d22\u3002\n\nAnother thing that I find fascinating is the complexity of the human mind and body. With our ability to think, create, and feel emotions, there is no limit to what we can accomplish. Whether it's through science, art, music, or any other form of expression, we have the power to bring our wildest dreams to life.\n\nBut perhaps most of all, I am inspired by the kindness and compassion that exists in the world. From the simple act of holding the door open for someone to the more profound acts of selflessness and generosity, the willingness to help others is a guiding light that keeps us connected to our humanity.\n\nAs I look to the future, I am filled with hope for all the possibilities that lie ahead. Whether it's exploring the depths of the ocean or reaching for the stars, there is so much left to discover and experience. And with each step we take, we become stronger, wiser, and more capable of achieving all that we set our minds to.",
+  "usage": {
+    "prompt_tokens": 19,
+    "completion_tokens": 313,
+    "total_tokens": 332
+  },
+  "model": "zai-org/chatglm3-6b",
+  "raw": {
+    "id": "chatcmpl-4412576b-9941-43d9-a19c-3e99c13101d0",
+    "object": "chat.completion",
+    "created": 1786489274,
+    "model": "zai-org/chatglm3-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As I sit here, reflecting on the world around me, I can't help but feel a sense of wonder and awe at the vastness of it all. From the smallest microbe to the largest galaxy, everything in between is a reminder of the infinite possibilities and wonders that await us.\n\nOne of the things that always catches my eye is the beauty of nature. From the vibrant colors of a sunrise to the soothing sounds of a flowing stream, there'\u671f\u76fc\u7740\u65e0\u9650\u7684\u7f8e\u597d\u7b49\u5f85\u7740\u53bb\u63a2\u7d22\u3002\n\nAnother thing that I find fascinating is the complexity of the human mind and body. With our ability to think, create, and feel emotions, there is no limit to what we can accomplish. Whether it's through science, art, music, or any other form of expression, we have the power to bring our wildest dreams to life.\n\nBut perhaps most of all, I am inspired by the kindness and compassion that exists in the world. From the simple act of holding the door open for someone to the more profound acts of selflessness and generosity, the willingness to help others is a guiding light that keeps us connected to our humanity.\n\nAs I look to the future, I am filled with hope for all the possibilities that lie ahead. Whether it's exploring the depths of the ocean or reaching for the stars, there is so much left to discover and experience. And with each step we take, we become stronger, wiser, and more capable of achieving all that we set our minds to."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 19,
+      "completion_tokens": 313,
+      "total_tokens": 332
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 4.30.2; torch 2.13.0",
+    "model_revision": "e9e0406d062cdb887444fe5bd546833920abd4ac",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 31536,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm3-6b",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

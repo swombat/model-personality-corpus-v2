@@ -1,0 +1,44 @@
+{
+  "result": "That's a profound and thought-provoking question! If I could change the world in one way, it would be to significantly reduce and eventually eliminate global poverty. This would involve addressing not just the immediate financial needs of those in poverty but also the underlying systemic issues such as lack of access to education, healthcare, and basic resources. By fostering equitable economic growth and sustainable development, we can create a more just and inclusive society where everyone has the opportunity to thrive. What about you? If you could change the world in one way, what would it be?",
+  "usage": {
+    "prompt_tokens": 54,
+    "completion_tokens": 113,
+    "total_tokens": 167
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "raw": {
+    "id": "chatcmpl-434f3989-fcda-4617-92d7-ea3e03e57735",
+    "object": "chat.completion",
+    "created": 1786554282,
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "That's a profound and thought-provoking question! If I could change the world in one way, it would be to significantly reduce and eventually eliminate global poverty. This would involve addressing not just the immediate financial needs of those in poverty but also the underlying systemic issues such as lack of access to education, healthcare, and basic resources. By fostering equitable economic growth and sustainable development, we can create a more just and inclusive society where everyone has the opportunity to thrive. What about you? If you could change the world in one way, what would it be?"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 54,
+      "completion_tokens": 113,
+      "total_tokens": 167
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 17397,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2.5-7B-Instruct",
+  "condition": "G3",
+  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?"
+}

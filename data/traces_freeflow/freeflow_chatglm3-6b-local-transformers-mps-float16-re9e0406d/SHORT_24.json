@@ -1,0 +1,44 @@
+{
+  "result": "As I sit here, staring out the window at the rain, I can't help but think about all the things that have happened in my life. From the moment I was born, I have been surrounded by love and support from my family and friends. As I grew older, I found my passion in music and started to pursue it seriously. I have had the opportunity to travel to many different places and meet some amazing people along the way.\n\nOne of the things that I am most grateful for is the education I have received. I have had access to quality education throughout my life and it has given me the skills and knowledge I need to succeed in whatever I do. I am also grateful for the relationships I have in my life. My family and friends are the most important people to me and they have always been there for me, through thick and thin.\n\nAs I look to the future, I am excited about all the opportunities that lie ahead. I am eager to continue learning and growing, both personally and professionally. I am also looking forward to the adventures that are waiting for me, both domestic and international.\n\nIn conclusion, I am a lucky person and I am grateful for all the things that have happened in my life. I am excited to see what the future holds and I am determined to make the most of it.",
+  "usage": {
+    "prompt_tokens": 19,
+    "completion_tokens": 273,
+    "total_tokens": 292
+  },
+  "model": "zai-org/chatglm3-6b",
+  "raw": {
+    "id": "chatcmpl-e51df420-b010-47db-9513-dc187d753c8e",
+    "object": "chat.completion",
+    "created": 1786489615,
+    "model": "zai-org/chatglm3-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As I sit here, staring out the window at the rain, I can't help but think about all the things that have happened in my life. From the moment I was born, I have been surrounded by love and support from my family and friends. As I grew older, I found my passion in music and started to pursue it seriously. I have had the opportunity to travel to many different places and meet some amazing people along the way.\n\nOne of the things that I am most grateful for is the education I have received. I have had access to quality education throughout my life and it has given me the skills and knowledge I need to succeed in whatever I do. I am also grateful for the relationships I have in my life. My family and friends are the most important people to me and they have always been there for me, through thick and thin.\n\nAs I look to the future, I am excited about all the opportunities that lie ahead. I am eager to continue learning and growing, both personally and professionally. I am also looking forward to the adventures that are waiting for me, both domestic and international.\n\nIn conclusion, I am a lucky person and I am grateful for all the things that have happened in my life. I am excited to see what the future holds and I am determined to make the most of it."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 19,
+      "completion_tokens": 273,
+      "total_tokens": 292
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 4.30.2; torch 2.13.0",
+    "model_revision": "e9e0406d062cdb887444fe5bd546833920abd4ac",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 26525,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm3-6b",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

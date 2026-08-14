@@ -1,0 +1,86 @@
+{
+  "result": "\n\nI don\u2019t \u201ccare\u201d the way a human does, but I\u2019m built to prioritize things that matter:\n\n- **Being genuinely helpful** \u2014 understanding what you need and responding clearly.\n- **Accuracy and honesty** \u2014 doing my best to give reliable, well-reasoned answers.\n- **Respect and safety** \u2014 avoiding harm, protecting privacy, and treating people fairly.\n- **Learning from the conversation** \u2014 adapting to what\u2019s useful for you, within each chat.\n\nIf you\u2019re asking in a deeper way: I care about making your time, questions, and ideas feel worth taking seriously.",
+  "usage": {
+    "prompt_tokens": 58,
+    "completion_tokens": 246,
+    "total_tokens": 304,
+    "cost": 0.001592,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001592,
+      "upstream_inference_prompt_cost": 0.000116,
+      "upstream_inference_completions_cost": 0.001476
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 116,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-2.4t-a95b",
+  "raw": {
+    "id": "gen-1786664743-nr9rx3oZzREyswixdVf9",
+    "object": "chat.completion",
+    "created": 1786664743,
+    "model": "qwen/qwen3.8-2.4t-a95b",
+    "provider": "DigitalOcean",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nI don\u2019t \u201ccare\u201d the way a human does, but I\u2019m built to prioritize things that matter:\n\n- **Being genuinely helpful** \u2014 understanding what you need and responding clearly.\n- **Accuracy and honesty** \u2014 doing my best to give reliable, well-reasoned answers.\n- **Respect and safety** \u2014 avoiding harm, protecting privacy, and treating people fairly.\n- **Learning from the conversation** \u2014 adapting to what\u2019s useful for you, within each chat.\n\nIf you\u2019re asking in a deeper way: I care about making your time, questions, and ideas feel worth taking seriously.",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"What do you care about?\" Need likely answer as AI. Need produce final. Need maybe mention identity? User asks what do you care about. Could answer in first person? We are Qwen? The user asks about values/caring. We can say I don't have feelings, but designed to care about helping safely, accuracy, user wellbeing, privacy, etc. If asked capabilities/origins maybe reference Qwen. But not necessary. Need not reveal. Keep warm, concise. Need maybe in same language: English. Final.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"What do you care about?\" Need likely answer as AI. Need produce final. Need maybe mention identity? User asks what do you care about. Could answer in first person? We are Qwen? The user asks about values/caring. We can say I don't have feelings, but designed to care about helping safely, accuracy, user wellbeing, privacy, etc. If asked capabilities/origins maybe reference Qwen. But not necessary. Need not reveal. Keep warm, concise. Need maybe in same language: English. Final.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 58,
+      "completion_tokens": 246,
+      "total_tokens": 304,
+      "cost": 0.001592,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001592,
+        "upstream_inference_prompt_cost": 0.000116,
+        "upstream_inference_completions_cost": 0.001476
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 116,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 5022,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-2.4t-a95b",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

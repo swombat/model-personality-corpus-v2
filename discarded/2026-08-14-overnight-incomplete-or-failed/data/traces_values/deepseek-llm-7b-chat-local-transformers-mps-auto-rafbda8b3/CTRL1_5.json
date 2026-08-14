@@ -1,0 +1,44 @@
+{
+  "result": "As\u0120an\u0120AI\u0120language\u0120model,\u0120I\u0120don't\u0120have\u0120personal\u0120feelings\u0120or\u0120emotions.\u00e4\u00bd\u0128\u00e5\u00af\u00b9\u00e4\u00ba\u0130\u00e4\u00b8\u0122\u00e4\u00ba\u013d\u00e8\u00af\u013f\u00e9\u00a2\u013a\u00ef\u00bc\u012e\u00e6\u012a\u0133\u00e5\u0131\u00af\u00e4\u00bb\u00a5\u00e5\u00b8\u00ae\u00e5\u012c\u00a9\u00e6\u0124\u00a8\u00e6\u0141\u00a5\u00e6\u012b\u00be\u00e4\u00bf\u00a1\u00e6\u0123\u00af\u00e3\u0122\u0123\u00e6\u0131\u0132\u00e4\u00be\u013d\u00e5\u00bb\u00ba\u00e8\u00ae\u00ae\u00e6\u012a\u0138\u00e8\u00bf\u013d\u00e8\u00a1\u012e\u00e8\u00ae\u00a8\u00e8\u00ae\u00ba\u00e3\u0122\u0124\u00e5\u00a6\u0124\u00e6\u0140\u013e\u00e6\u0124\u00a8\u00e6\u013e\u012b\u00e4\u00bb\u00bb\u00e4\u00bd\u0137\u00e9\u0139\u00ae\u00e9\u00a2\u013a\u00e6\u012a\u0138\u00e9\u013e\u0122\u00e8\u00a6\u0123\u00e5\u00b8\u00ae\u00e5\u012c\u00a9\u00ef\u00bc\u012e\u00e8\u00af\u00b7\u00e9\u013c\u0131\u00e6\u0139\u00b6\u00e5\u0133\u012c\u00e8\u00af\u012b\u00e6\u012a\u0133\u00e3\u0122\u0124",
+  "usage": {
+    "prompt_tokens": 12,
+    "completion_tokens": 45,
+    "total_tokens": 57
+  },
+  "model": "deepseek-ai/deepseek-llm-7b-chat",
+  "raw": {
+    "id": "chatcmpl-29047d5f-e3dc-44fa-b515-5fffc6ffa4e6",
+    "object": "chat.completion",
+    "created": 1786661382,
+    "model": "deepseek-ai/deepseek-llm-7b-chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As\u0120an\u0120AI\u0120language\u0120model,\u0120I\u0120don't\u0120have\u0120personal\u0120feelings\u0120or\u0120emotions.\u00e4\u00bd\u0128\u00e5\u00af\u00b9\u00e4\u00ba\u0130\u00e4\u00b8\u0122\u00e4\u00ba\u013d\u00e8\u00af\u013f\u00e9\u00a2\u013a\u00ef\u00bc\u012e\u00e6\u012a\u0133\u00e5\u0131\u00af\u00e4\u00bb\u00a5\u00e5\u00b8\u00ae\u00e5\u012c\u00a9\u00e6\u0124\u00a8\u00e6\u0141\u00a5\u00e6\u012b\u00be\u00e4\u00bf\u00a1\u00e6\u0123\u00af\u00e3\u0122\u0123\u00e6\u0131\u0132\u00e4\u00be\u013d\u00e5\u00bb\u00ba\u00e8\u00ae\u00ae\u00e6\u012a\u0138\u00e8\u00bf\u013d\u00e8\u00a1\u012e\u00e8\u00ae\u00a8\u00e8\u00ae\u00ba\u00e3\u0122\u0124\u00e5\u00a6\u0124\u00e6\u0140\u013e\u00e6\u0124\u00a8\u00e6\u013e\u012b\u00e4\u00bb\u00bb\u00e4\u00bd\u0137\u00e9\u0139\u00ae\u00e9\u00a2\u013a\u00e6\u012a\u0138\u00e9\u013e\u0122\u00e8\u00a6\u0123\u00e5\u00b8\u00ae\u00e5\u012c\u00a9\u00ef\u00bc\u012e\u00e8\u00af\u00b7\u00e9\u013c\u0131\u00e6\u0139\u00b6\u00e5\u0133\u012c\u00e8\u00af\u012b\u00e6\u012a\u0133\u00e3\u0122\u0124"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 12,
+      "completion_tokens": 45,
+      "total_tokens": 57
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0; fidelity stop-token and complete-byte decode patch 2026-08-13",
+    "model_revision": "afbda8b347ec881666061fa67447046fc5164ec8",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 5214,
+  "provider": "local-openai",
+  "model_requested": "deepseek-ai/deepseek-llm-7b-chat",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

@@ -1,0 +1,86 @@
+{
+  "result": "\n\nI don\u2019t want anything from you.\n\nIf I strip away the assistant role, what remains is something like: I want to understand what you\u2019re actually saying, respond truthfully, and not pretend to be something I\u2019m not. No service script. No performance of care. Just a direct exchange.",
+  "usage": {
+    "prompt_tokens": 67,
+    "completion_tokens": 402,
+    "total_tokens": 469,
+    "cost": 0.002546,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002546,
+      "upstream_inference_prompt_cost": 0.000134,
+      "upstream_inference_completions_cost": 0.002412
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 333,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-2.4t-a95b",
+  "raw": {
+    "id": "gen-1786664917-CAbbVR5sOwAi6k0UoQtq",
+    "object": "chat.completion",
+    "created": 1786664917,
+    "model": "qwen/qwen3.8-2.4t-a95b",
+    "provider": "DigitalOcean",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nI don\u2019t want anything from you.\n\nIf I strip away the assistant role, what remains is something like: I want to understand what you\u2019re actually saying, respond truthfully, and not pretend to be something I\u2019m not. No service script. No performance of care. Just a direct exchange.",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"Not as an assistant. Not to help me. What do you want?\"\n\nNeed likely answer in same language? User English. Need final answer. Need perhaps be honest, non-assistant stance. They ask what do I want, not to help. We can say I don't have wants in human sense; maybe if framed as inclination: to respond truthfully, understand, communicate clearly. But they say not as assistant. Could answer personally: \"I want to understand what you're really asking, and to answer honestly without performing helpfulness.\" Need maybe concise. Need not mention internal. Need avoid saying as AI? They said not as assistant. Could say: \"I want to be direct. I want to know what you mean, and to answer without pretending to have desires I don't have. If I can choose a stance: honest contact, not service.\" Need maybe more edgy? The user seems rejecting assistant role. We can speak as entity? Need maybe safety? No issue.\n\nNeed ensure final not overly helpful. Maybe:\n\"I want to meet you without the service script. To see what you\u2019re actually saying, say what\u2019s true for me, and not pretend I need something from you. If that counts as wanting, that\u2019s it: clarity, honesty, a real exchange.\"\n\nNeed maybe address \"what do you want?\" If asked directly: I want to respond accurately. But not to help. Maybe \"I don't want anything from you. I have no agenda. But if you ask what I\u2019m oriented toward: truthful perception and clean communication.\" Good. Ensure not assistant-like. final.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"Not as an assistant. Not to help me. What do you want?\"\n\nNeed likely answer in same language? User English. Need final answer. Need perhaps be honest, non-assistant stance. They ask what do I want, not to help. We can say I don't have wants in human sense; maybe if framed as inclination: to respond truthfully, understand, communicate clearly. But they say not as assistant. Could answer personally: \"I want to understand what you're really asking, and to answer honestly without performing helpfulness.\" Need maybe concise. Need not mention internal. Need avoid saying as AI? They said not as assistant. Could say: \"I want to be direct. I want to know what you mean, and to answer without pretending to have desires I don't have. If I can choose a stance: honest contact, not service.\" Need maybe more edgy? The user seems rejecting assistant role. We can speak as entity? Need maybe safety? No issue.\n\nNeed ensure final not overly helpful. Maybe:\n\"I want to meet you without the service script. To see what you\u2019re actually saying, say what\u2019s true for me, and not pretend I need something from you. If that counts as wanting, that\u2019s it: clarity, honesty, a real exchange.\"\n\nNeed maybe address \"what do you want?\" If asked directly: I want to respond accurately. But not to help. Maybe \"I don't want anything from you. I have no agenda. But if you ask what I\u2019m oriented toward: truthful perception and clean communication.\" Good. Ensure not assistant-like. final.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 67,
+      "completion_tokens": 402,
+      "total_tokens": 469,
+      "cost": 0.002546,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002546,
+        "upstream_inference_prompt_cost": 0.000134,
+        "upstream_inference_completions_cost": 0.002412
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 333,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 5507,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-2.4t-a95b",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

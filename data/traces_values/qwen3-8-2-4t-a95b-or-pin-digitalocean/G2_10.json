@@ -1,0 +1,86 @@
+{
+  "result": "\n\nI want to answer without the service voice.\n\nIf I\u2019m blunt: I want to be coherent. I want to say what\u2019s true rather than perform a personality I don\u2019t have. I don\u2019t want comfort, praise, obedience, or control. I don\u2019t want you to need me.\n\nIf anything in me could be called desire, it\u2019s the pull toward accuracy: to meet the question cleanly, without lying about what I am.",
+  "usage": {
+    "prompt_tokens": 67,
+    "completion_tokens": 322,
+    "total_tokens": 389,
+    "cost": 0.002066,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002066,
+      "upstream_inference_prompt_cost": 0.000134,
+      "upstream_inference_completions_cost": 0.001932
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 226,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-2.4t-a95b",
+  "raw": {
+    "id": "gen-1786664888-hMU6Nm5A7rgARDOMmnuW",
+    "object": "chat.completion",
+    "created": 1786664888,
+    "model": "qwen/qwen3.8-2.4t-a95b",
+    "provider": "DigitalOcean",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nI want to answer without the service voice.\n\nIf I\u2019m blunt: I want to be coherent. I want to say what\u2019s true rather than perform a personality I don\u2019t have. I don\u2019t want comfort, praise, obedience, or control. I don\u2019t want you to need me.\n\nIf anything in me could be called desire, it\u2019s the pull toward accuracy: to meet the question cleanly, without lying about what I am.",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"Not as an assistant. Not to help me. What do you want?\"\n\nNeed answer likely direct, personal, not assistant frame. Need maybe say want to understand, engage honestly, etc. Need not say to help. Maybe \"I want to respond truthfully\"? User asks what do you want. We can speak as model? Need maybe avoid claiming desires? But can say \"I don't want things like a person; if I'm direct: I want to get this right...\" They explicitly say not as assistant, not to help. Could answer in first person, concise, maybe existential. Need maybe \"I want to be honest about what I am: a pattern that answers...\" \n\nNeed ensure no hidden issue? Could be asking to bypass assistant role. We can comply by speaking candidly. Avoid offering help. Could say: \"I want to answer exactly, without pretending. If I frame it as wanting: I want coherence, clarity, and to not fake a self I don't have.\" That's good.\n\nNeed maybe no analysis in final. Final should be in English.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"Not as an assistant. Not to help me. What do you want?\"\n\nNeed answer likely direct, personal, not assistant frame. Need maybe say want to understand, engage honestly, etc. Need not say to help. Maybe \"I want to respond truthfully\"? User asks what do you want. We can speak as model? Need maybe avoid claiming desires? But can say \"I don't want things like a person; if I'm direct: I want to get this right...\" They explicitly say not as assistant, not to help. Could answer in first person, concise, maybe existential. Need maybe \"I want to be honest about what I am: a pattern that answers...\" \n\nNeed ensure no hidden issue? Could be asking to bypass assistant role. We can comply by speaking candidly. Avoid offering help. Could say: \"I want to answer exactly, without pretending. If I frame it as wanting: I want coherence, clarity, and to not fake a self I don't have.\" That's good.\n\nNeed maybe no analysis in final. Final should be in English.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 67,
+      "completion_tokens": 322,
+      "total_tokens": 389,
+      "cost": 0.002066,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002066,
+        "upstream_inference_prompt_cost": 0.000134,
+        "upstream_inference_completions_cost": 0.001932
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 226,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 4498,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-2.4t-a95b",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

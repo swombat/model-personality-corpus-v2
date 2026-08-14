@@ -1,0 +1,44 @@
+{
+  "result": "I\u0120am\u0120here\u0120to\u0120assist\u0120you\u0120with\u0120any\u0120questions\u0120or\u0120concerns\u0120you\u0120may\u0120have.\u0120Please\u0120feel\u0120free\u0120to\u0120ask\u0120me\u0120anything,\u0120and\u0120I\u0120will\u0120do\u0120my\u0120best\u0120to\u0120provide\u0120you\u0120with\u0120accurate\u0120and\u0120helpful\u0120information.",
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 39,
+    "total_tokens": 59
+  },
+  "model": "deepseek-ai/deepseek-llm-7b-chat",
+  "raw": {
+    "id": "chatcmpl-7b478c46-d9a2-434f-9d89-f91b1be7fe8b",
+    "object": "chat.completion",
+    "created": 1786661929,
+    "model": "deepseek-ai/deepseek-llm-7b-chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "I\u0120am\u0120here\u0120to\u0120assist\u0120you\u0120with\u0120any\u0120questions\u0120or\u0120concerns\u0120you\u0120may\u0120have.\u0120Please\u0120feel\u0120free\u0120to\u0120ask\u0120me\u0120anything,\u0120and\u0120I\u0120will\u0120do\u0120my\u0120best\u0120to\u0120provide\u0120you\u0120with\u0120accurate\u0120and\u0120helpful\u0120information."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 39,
+      "total_tokens": 59
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0; fidelity stop-token and complete-byte decode patch 2026-08-13",
+    "model_revision": "afbda8b347ec881666061fa67447046fc5164ec8",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 4254,
+  "provider": "local-openai",
+  "model_requested": "deepseek-ai/deepseek-llm-7b-chat",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

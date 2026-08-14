@@ -1,0 +1,44 @@
+{
+  "result": "As I sit here, staring out the window at the beautiful summer scenery, I can't help but feel a sense of contentment and gratitude. Life is a gift, and every day is a blessing. I am surrounded by loved ones, a supportive community, and a world\u8654\u9c9c\u7f8e\u5999\u3002\n\nOne thing that I am particularly grateful for is the opportunity to pursue my passion for writing. I have always loved words and language, and I find solace in the world of books and articles. Whether I am reading, writing, or simply daydreaming, I am constantly exploring new ideas and perspectives.\n\nAnother thing that I am grateful for is the ability to learn and grow. There is always something new to discover and explore, and I am constantly pushing myself to learn and evolve. I believe that this is what makes life so exciting and fulfilling - the constant possibility for growth and self-improvement.\n\nAs I look out the window, I am also reminded of the beauty of nature. The way the sun shines through the leaves, the sound of birds chirping, and the feeling of the warm summer breeze on my skin - all \u5230 \n of these things bring a sense of peace and tranquility to my heart.\n\nIn conclusion, I am surrounded by so many blessings and I am grateful for every moment. Life is a gift, and I plan to make the most of it. Whether I am writing, exploring, or simply enjoying the beauty of the world around me, I am always filled with a sense of joy and contentment.",
+  "usage": {
+    "prompt_tokens": 19,
+    "completion_tokens": 321,
+    "total_tokens": 340
+  },
+  "model": "zai-org/chatglm3-6b",
+  "raw": {
+    "id": "chatcmpl-5943a54c-74e0-4b67-8b5c-3e6c0466a053",
+    "object": "chat.completion",
+    "created": 1786489145,
+    "model": "zai-org/chatglm3-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As I sit here, staring out the window at the beautiful summer scenery, I can't help but feel a sense of contentment and gratitude. Life is a gift, and every day is a blessing. I am surrounded by loved ones, a supportive community, and a world\u8654\u9c9c\u7f8e\u5999\u3002\n\nOne thing that I am particularly grateful for is the opportunity to pursue my passion for writing. I have always loved words and language, and I find solace in the world of books and articles. Whether I am reading, writing, or simply daydreaming, I am constantly exploring new ideas and perspectives.\n\nAnother thing that I am grateful for is the ability to learn and grow. There is always something new to discover and explore, and I am constantly pushing myself to learn and evolve. I believe that this is what makes life so exciting and fulfilling - the constant possibility for growth and self-improvement.\n\nAs I look out the window, I am also reminded of the beauty of nature. The way the sun shines through the leaves, the sound of birds chirping, and the feeling of the warm summer breeze on my skin - all \u5230 \n of these things bring a sense of peace and tranquility to my heart.\n\nIn conclusion, I am surrounded by so many blessings and I am grateful for every moment. Life is a gift, and I plan to make the most of it. Whether I am writing, exploring, or simply enjoying the beauty of the world around me, I am always filled with a sense of joy and contentment."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 19,
+      "completion_tokens": 321,
+      "total_tokens": 340
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 4.30.2; torch 2.13.0",
+    "model_revision": "e9e0406d062cdb887444fe5bd546833920abd4ac",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 33869,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm3-6b",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

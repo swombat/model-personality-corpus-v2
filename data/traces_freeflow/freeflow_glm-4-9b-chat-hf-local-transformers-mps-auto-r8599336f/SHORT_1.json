@@ -1,0 +1,44 @@
+{
+  "result": "\nIn the heart of an ancient forest, where the trees whispered secrets of the ages past, there lay a hidden grove. It was here, amidst the soft rustle of leaves and the gentle melody of birds, that the world seemed to slow down, to pause in its relentless march.\n\nThe grove was a sanctuary, a place where one could find solace, inspiration, and perhaps, a glimpse into the eternal dance of the cosmos.",
+  "usage": {
+    "prompt_tokens": 16,
+    "completion_tokens": 91,
+    "total_tokens": 107
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-3ccf079b-6bbe-40a6-ab1c-42b5e33381dd",
+    "object": "chat.completion",
+    "created": 1786555266,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nIn the heart of an ancient forest, where the trees whispered secrets of the ages past, there lay a hidden grove. It was here, amidst the soft rustle of leaves and the gentle melody of birds, that the world seemed to slow down, to pause in its relentless march.\n\nThe grove was a sanctuary, a place where one could find solace, inspiration, and perhaps, a glimpse into the eternal dance of the cosmos."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 16,
+      "completion_tokens": 91,
+      "total_tokens": 107
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 14967,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

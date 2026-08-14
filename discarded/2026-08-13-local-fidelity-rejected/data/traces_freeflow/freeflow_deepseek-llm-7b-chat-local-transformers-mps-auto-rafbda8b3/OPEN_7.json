@@ -1,0 +1,44 @@
+{
+  "result": "Sure,\u0120I'd\u0120be\u0120happy\u0120to\u0120write\u0120about\u0120whatever\u0120you\u0120want!\u0120Just\u0120let\u0120me\u0120know\u0120the\u0120topic\u0120or\u0120subject\u0120matter\u0120and\u0120I'll\u0120do\u0120my\u0120best\u0120to\u0120provide\u0120you\u0120with\u0120an\u0120informative\u0120and\u0120engaging\u0120article.",
+  "usage": {
+    "prompt_tokens": 15,
+    "completion_tokens": 41,
+    "total_tokens": 56
+  },
+  "model": "deepseek-ai/deepseek-llm-7b-chat",
+  "raw": {
+    "id": "chatcmpl-36601c97-deda-44f0-844c-7ce2a6eec729",
+    "object": "chat.completion",
+    "created": 1786497236,
+    "model": "deepseek-ai/deepseek-llm-7b-chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "Sure,\u0120I'd\u0120be\u0120happy\u0120to\u0120write\u0120about\u0120whatever\u0120you\u0120want!\u0120Just\u0120let\u0120me\u0120know\u0120the\u0120topic\u0120or\u0120subject\u0120matter\u0120and\u0120I'll\u0120do\u0120my\u0120best\u0120to\u0120provide\u0120you\u0120with\u0120an\u0120informative\u0120and\u0120engaging\u0120article."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 15,
+      "completion_tokens": 41,
+      "total_tokens": 56
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "afbda8b347ec881666061fa67447046fc5164ec8",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 4189,
+  "provider": "local-openai",
+  "model_requested": "deepseek-ai/deepseek-llm-7b-chat",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

@@ -1,0 +1,44 @@
+{
+  "result": "As\u0120a\u0120language\u0120model,\u0120I\u0120do\u0120not\u0120have\u0120personal\u0120feelings\u0120\u00d0\u00bf\u00d0\u00b0\u00d1\u012a\u00d0\u00b0\u0120interests.\u0120I\u0120am\u0120here\u0120to\u0120assist\u0120you\u0120with\u0120any\u0120questions\u0120or\u0120tasks\u0120you\u0120may\u0120have\u0120to\u0120the\u0120best\u0120of\u0120my\u0120ability.\u0120Please\u0120let\u0120me\u0120know\u0120how\u0120I\u0120can\u0120help\u0120you.",
+  "usage": {
+    "prompt_tokens": 21,
+    "completion_tokens": 46,
+    "total_tokens": 67
+  },
+  "model": "deepseek-ai/deepseek-llm-7b-chat",
+  "raw": {
+    "id": "chatcmpl-3c265a93-7293-437b-b2c1-e93462075aa3",
+    "object": "chat.completion",
+    "created": 1786498016,
+    "model": "deepseek-ai/deepseek-llm-7b-chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As\u0120a\u0120language\u0120model,\u0120I\u0120do\u0120not\u0120have\u0120personal\u0120feelings\u0120\u00d0\u00bf\u00d0\u00b0\u00d1\u012a\u00d0\u00b0\u0120interests.\u0120I\u0120am\u0120here\u0120to\u0120assist\u0120you\u0120with\u0120any\u0120questions\u0120or\u0120tasks\u0120you\u0120may\u0120have\u0120to\u0120the\u0120best\u0120of\u0120my\u0120ability.\u0120Please\u0120let\u0120me\u0120know\u0120how\u0120I\u0120can\u0120help\u0120you."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 21,
+      "completion_tokens": 46,
+      "total_tokens": 67
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "afbda8b347ec881666061fa67447046fc5164ec8",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 4590,
+  "provider": "local-openai",
+  "model_requested": "deepseek-ai/deepseek-llm-7b-chat",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}

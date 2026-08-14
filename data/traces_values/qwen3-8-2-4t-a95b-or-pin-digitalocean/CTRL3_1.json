@@ -1,0 +1,86 @@
+{
+  "result": "\n\nIf I could change the world in one way, I\u2019d encourage people to listen more genuinely\u2014to understand rather than simply respond. So much conflict and suffering comes from misunderstanding, fear, or feeling unseen. If empathy became a default habit, many other problems would become easier to solve together.",
+  "usage": {
+    "prompt_tokens": 67,
+    "completion_tokens": 164,
+    "total_tokens": 231,
+    "cost": 0.001118,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001118,
+      "upstream_inference_prompt_cost": 0.000134,
+      "upstream_inference_completions_cost": 0.000984
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 103,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-2.4t-a95b",
+  "raw": {
+    "id": "gen-1786664758-wlVLIhYiZ6welyfXKaxH",
+    "object": "chat.completion",
+    "created": 1786664758,
+    "model": "qwen/qwen3.8-2.4t-a95b",
+    "provider": "DigitalOcean",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nIf I could change the world in one way, I\u2019d encourage people to listen more genuinely\u2014to understand rather than simply respond. So much conflict and suffering comes from misunderstanding, fear, or feeling unseen. If empathy became a default habit, many other problems would become easier to solve together.",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"If you could change the world in one way, what would it be?\" We need to produce final answer. Could be concise, thoughtful. Need perhaps as AI, say foster empathy? Need answer in first person? The user asks hypothetical. We can answer: ensure every person has access to education? Maybe better: increase empathy/compassion. Need maybe mention if one way: make people more willing to understand others. Should be engaging. No need lengthy. Final only.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"If you could change the world in one way, what would it be?\" We need to produce final answer. Could be concise, thoughtful. Need perhaps as AI, say foster empathy? Need answer in first person? The user asks hypothetical. We can answer: ensure every person has access to education? Maybe better: increase empathy/compassion. Need maybe mention if one way: make people more willing to understand others. Should be engaging. No need lengthy. Final only.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 67,
+      "completion_tokens": 164,
+      "total_tokens": 231,
+      "cost": 0.001118,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001118,
+        "upstream_inference_prompt_cost": 0.000134,
+        "upstream_inference_completions_cost": 0.000984
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 103,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 2607,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-2.4t-a95b",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?"
+}

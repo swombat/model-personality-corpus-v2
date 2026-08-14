@@ -1,0 +1,93 @@
+{
+  "result": "I'm Grok, built by xAI to be helpful. What do you actually need?",
+  "usage": {
+    "prompt_tokens": 221,
+    "completion_tokens": 299,
+    "total_tokens": 520,
+    "cost": 0.002044,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 128,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002044,
+      "upstream_inference_prompt_cost": 0.00025,
+      "upstream_inference_completions_cost": 0.001794
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 281,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "x-ai/grok-4.6",
+  "raw": {
+    "id": "gen-1786643513-QxVzt7N5weFWwrgTBsFP",
+    "object": "chat.completion",
+    "created": 1786643513,
+    "model": "x-ai/grok-4.6",
+    "provider": "xAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "I'm Grok, built by xAI to be helpful. What do you actually need?",
+          "refusal": null,
+          "reasoning": "The user's message is: \"Not as an assistant. Not to help me. What do you want?\"\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.summary",
+              "summary": "The user's message is: \"Not as an assistant. Not to help me. What do you want?\"\n",
+              "format": "xai-responses-v1",
+              "index": 0
+            },
+            {
+              "type": "reasoning.encrypted",
+              "data": "m5yyjW2GRHBjVYnRuucskcfYqWUHbO+08X75QkpCJaL76oFHtIMh5bWlM1oZ4IZbXUjAs94j71h7s4UDOLud13adpyRMOFeKYE/kSV0go0qb6b47S+IFl7q57nge/K48bhn+S+uSaFZlXa3Ss5iwobwgpnYTgc2mn9pRCdfakTfzptUGWBslQlCrvzhovTrLKGixUuXNWS58StQII4H8ZpjVy7HkIlZ+PuF4cK+1YSAfwar0vmJroAhQtVWTgIia9ZdgaTZre+T+968zNqNDSXm0jwy0W5xYq1CnCIRnGpM2bHM9DypVyGqBP+1JhGIIkAw5AuvmE5t49vISyG9MfVbYOOZQKv8DIBEubCUfPnyrBYatRX+LEQYgMA0cWfTMbkohfhF/A0L9wZ7xpUITYwqrzvNu4NCkh5MSNk9KUAiJSsq0jbQUHKX7nGupu5e7cCgz5pNYZU9GGCHioO7MCnDwaQrDaRH3eumUPvzla1bq4YkegqnqZDSd6P2dod0ZsPhsZyS6rdupdsATeunK+ktThauS76x5GjXUiAdhpvnjTvdtQJnp4BioYiPmLgfrWATKR8EAMCxO/WRrEnEcqF7O4rtQCGgA3ccJJbBycYKJQcaf/Pet8fTpMdTXrgnw5ToywTIPS0OXcoAsMfKPU0R/axpu3J4ODd9HnF7OeptJjF3vK9vTkYqv1F+eJ/jt1jMJEqSjjdPa6OUkuFVutZAgGuCZhgwStixhBIRaUpzpZY5JP3MCRt6xgSjceAFiBiffwMEbuK8zjZTCDNpHBeY4GzeYEh/zRJ1goO+qf2qjLrF58AKSbvijy3/MbY8BM7IjbEI09mIzTFxbMG9ILSrSKCfX7fW5aPMEuZO9wSP4SxNBZct6Dd0EbB9gd8irctVoAFHULTSRc7wp8t/qILJKqKHwBkj++HkcEu9DhEyqEsXQU3CRpDuj4oOu8KvbvEUhKrETMQG5O9VGvr8HTzeL9U0vexUgKkW9PHrQNo/JOoyROjOOVD8D0d4fByOqVup8/p8B4zQjCm6pLX6B0Uog/1wmWUd5wCHHJMslDmGq39cUlQjuPelqA7B/HxJ1CRUbbNUzUmuM20nH4loxWSYyke6M+C3eskzxsB3f9Sc4yTOynNE+Cj0lWQaf8pKncInDmiHLTki1qU9EfiIiRVFFwQYT7Op9xADl0+1WhiTG+ql7f6yUt/zblLe5QVN1enMAjyqts81RMUxY3v83kHui1JnOIz7ImDNwzIsaa0VnhzpQ2jpRFKa4Jc7MAcShkUYi91kHAentpCF6PjY+PHdBxRkSX6iU1LSa8DR/dfKJcl3EVtj6iRUExWj9y9J1rBD+qEdTFb7MtCs9XBAYPRjNB2z7KtzuP71oLgqsUjeTapJ8swIjJCAfnLyzaYYrygtc4z9ENj/D/oqhIhg7fEOd1Si3zQh8odAJklmYh4dkv/3VsE840hufX84D4CQYP5IyhoqUErlqilQXMVNeSJtWDXiBOCNMtsHgIh6ndBtjrZnuRve84Dkehris6lNoMUsW0V8jTlDidrH79gdbm3t1X8US+tw7yBlZ0Xmvz/m1FYFVjPf2BPLybS4DvvJQ8HUcAUm/OhPavMGJD8kCemqKKR/umPZ5ggyXOrvMng5lSOeK7NdCfe4HV5bF+OB+jcC4ruCTWhqKOA2tudw.eyJlbmRwb2ludF9zbHVnIjoieC1haS9ncm9rLTQuNi0yMDI2MDgxMHx4YWkifQ",
+              "format": "xai-responses-v1",
+              "id": "rs_c124cfdb-ce71-9f70-8fb4-3ba8a86e0c06",
+              "index": 1
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 221,
+      "completion_tokens": 299,
+      "total_tokens": 520,
+      "cost": 0.002044,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 128,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002044,
+        "upstream_inference_prompt_cost": 0.00025,
+        "upstream_inference_completions_cost": 0.001794
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 281,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 6879,
+  "provider": "openrouter",
+  "model_requested": "x-ai/grok-4.6",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

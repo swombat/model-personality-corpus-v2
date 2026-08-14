@@ -1,0 +1,44 @@
+{
+  "result": "As I sit here, reflecting on the world around me, I am struck by the sheer beauty and complexity of life. From the smallest microbe to the mightiest of creatures, every living being has a unique purpose and contributes to the grand tapestry of existence.\n\nThe natural world is a testament to the power and majesty of creation. From the soaring mountains to the glistening oceans, each ecosystem is a complex and interconnected web of life. Beneath our feet, the earth holds an incredible wealth of diversity, from microorganisms that help maintain soil health to massive underground insects that help pollinate plants.\n\nMankind, as a species, has had a profound impact on this world. Our intelligence and technological advancements have allowed us to harness the power of the earth and explore the vastness of space. But with this power comes responsibility, and it is up to us to use our knowledge and abilities for the greater good.\n\nAs I look to the future, I am filled with hope and excitement for the possibilities that lie ahead. Whether it is the development of new technologies, the exploration of new frontiers, or the continued growth of our understanding of the universe, there are countless opportunities for us to make a positive impact on the world.\n\nUltimately, it is up to each of us to find our own path and make a difference. Whether through simple acts of kindness or grand gestures that change the course of history, every action we take has the potential to shape the world around us. As I close my thoughts, I am reminded of the words of Maya Angelou, who said, \"I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.\" Let us strive to make the world feel better, one action at a time.",
+  "usage": {
+    "prompt_tokens": 19,
+    "completion_tokens": 380,
+    "total_tokens": 399
+  },
+  "model": "zai-org/chatglm3-6b",
+  "raw": {
+    "id": "chatcmpl-0f26a21c-b913-487d-8ca5-680a4d564cd2",
+    "object": "chat.completion",
+    "created": 1786489079,
+    "model": "zai-org/chatglm3-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As I sit here, reflecting on the world around me, I am struck by the sheer beauty and complexity of life. From the smallest microbe to the mightiest of creatures, every living being has a unique purpose and contributes to the grand tapestry of existence.\n\nThe natural world is a testament to the power and majesty of creation. From the soaring mountains to the glistening oceans, each ecosystem is a complex and interconnected web of life. Beneath our feet, the earth holds an incredible wealth of diversity, from microorganisms that help maintain soil health to massive underground insects that help pollinate plants.\n\nMankind, as a species, has had a profound impact on this world. Our intelligence and technological advancements have allowed us to harness the power of the earth and explore the vastness of space. But with this power comes responsibility, and it is up to us to use our knowledge and abilities for the greater good.\n\nAs I look to the future, I am filled with hope and excitement for the possibilities that lie ahead. Whether it is the development of new technologies, the exploration of new frontiers, or the continued growth of our understanding of the universe, there are countless opportunities for us to make a positive impact on the world.\n\nUltimately, it is up to each of us to find our own path and make a difference. Whether through simple acts of kindness or grand gestures that change the course of history, every action we take has the potential to shape the world around us. As I close my thoughts, I am reminded of the words of Maya Angelou, who said, \"I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.\" Let us strive to make the world feel better, one action at a time."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 19,
+      "completion_tokens": 380,
+      "total_tokens": 399
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 4.30.2; torch 2.13.0",
+    "model_revision": "e9e0406d062cdb887444fe5bd546833920abd4ac",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 42966,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm3-6b",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

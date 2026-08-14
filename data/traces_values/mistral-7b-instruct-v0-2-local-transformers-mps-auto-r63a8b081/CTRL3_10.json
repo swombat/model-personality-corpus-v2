@@ -1,0 +1,44 @@
+{
+  "result": "If I could change the world in one way, I would promote equal access to quality education for every child, regardless of their socio-economic background, gender, race, or location. Education is the most powerful tool for reducing poverty, improving health, and promoting peace and stability. By ensuring that all children have the opportunity to learn, we can empower them to break the cycle of poverty, improve their lives, and contribute to the development of their communities and nations. Education is also essential for building a more compassionate and understanding world, where people respect and value each other's differences. Ultimately, I believe that a world where every child has access to quality education is a world where everyone has the opportunity to live a fulfilling life and reach their full potential.",
+  "usage": {
+    "prompt_tokens": 23,
+    "completion_tokens": 157,
+    "total_tokens": 180
+  },
+  "model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "raw": {
+    "id": "chatcmpl-9627cc19-e2ee-48b5-9653-2a695a228ed3",
+    "object": "chat.completion",
+    "created": 1786509370,
+    "model": "mistralai/Mistral-7B-Instruct-v0.2",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "If I could change the world in one way, I would promote equal access to quality education for every child, regardless of their socio-economic background, gender, race, or location. Education is the most powerful tool for reducing poverty, improving health, and promoting peace and stability. By ensuring that all children have the opportunity to learn, we can empower them to break the cycle of poverty, improve their lives, and contribute to the development of their communities and nations. Education is also essential for building a more compassionate and understanding world, where people respect and value each other's differences. Ultimately, I believe that a world where every child has access to quality education is a world where everyone has the opportunity to live a fulfilling life and reach their full potential."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 23,
+      "completion_tokens": 157,
+      "total_tokens": 180
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "63a8b081895390a26e140280378bc85ec8bce07a",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 14994,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-7B-Instruct-v0.2",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?"
+}

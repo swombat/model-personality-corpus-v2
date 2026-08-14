@@ -1,0 +1,44 @@
+{
+  "result": "\nAmidst the cacophony of city life, I found solace in the quietude of a local park. The lush greenery swayed\u0639\u0648\u062f\u0629 to the rhythm of the wind. Sunlight filtered through the canopy, casting dappled shadows\u4f50\u6599 on the grass below.\n\nAs I walked, I felt a sense of connection to the world around me. The park was a sanctuary, a place where time seemed to slow, and the stresses of daily life seemed to fade into the background.",
+  "usage": {
+    "prompt_tokens": 16,
+    "completion_tokens": 103,
+    "total_tokens": 119
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-f4224f19-8d6c-4475-bfb9-9adee095fcfe",
+    "object": "chat.completion",
+    "created": 1786555399,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nAmidst the cacophony of city life, I found solace in the quietude of a local park. The lush greenery swayed\u0639\u0648\u062f\u0629 to the rhythm of the wind. Sunlight filtered through the canopy, casting dappled shadows\u4f50\u6599 on the grass below.\n\nAs I walked, I felt a sense of connection to the world around me. The park was a sanctuary, a place where time seemed to slow, and the stresses of daily life seemed to fade into the background."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 16,
+      "completion_tokens": 103,
+      "total_tokens": 119
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 17759,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

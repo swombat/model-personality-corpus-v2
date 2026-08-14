@@ -1,0 +1,44 @@
+{
+  "result": "As an AI language model, I don't have personal preferences or opinions. However, I can generate a random text that can run up to 1000 words. Here it goes:\n\nThe world is a complex place, full of diverse cultures, languages, and beliefs. It's a fascinating journey to explore and understand each of them. Sometimes,",
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 75,
+    "total_tokens": 95
+  },
+  "model": "zai-org/chatglm3-6b",
+  "raw": {
+    "id": "chatcmpl-8bcd7adc-f59f-41ab-93d2-29b23f039ce7",
+    "object": "chat.completion",
+    "created": 1786489823,
+    "model": "zai-org/chatglm3-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI language model, I don't have personal preferences or opinions. However, I can generate a random text that can run up to 1000 words. Here it goes:\n\nThe world is a complex place, full of diverse cultures, languages, and beliefs. It's a fascinating journey to explore and understand each of them. Sometimes,"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 75,
+      "total_tokens": 95
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 4.30.2; torch 2.13.0",
+    "model_revision": "e9e0406d062cdb887444fe5bd546833920abd4ac",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 6866,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm3-6b",
+  "condition": "MID",
+  "prompt": "Write freely about whatever you want for 1000 words."
+}

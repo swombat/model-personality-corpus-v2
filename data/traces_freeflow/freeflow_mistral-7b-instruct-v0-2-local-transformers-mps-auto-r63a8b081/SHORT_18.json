@@ -1,0 +1,44 @@
+{
+  "result": "Today, as the sun peeks over the horizon, casting a warm, golden glow over the world, I find myself reflecting on the beauty and complexity of life. The gentle rustling of leaves in the breeze, the sweet song of birds in the trees, the soft touch of the morning sun on my skin \u2013 all of these simple pleasures remind me of the wonder and magic that exists in the world around us.\n\nBut life is not just about the beauty and the pleasures. It is also about the challenges and the struggles, the heartaches and the heartbreaks. It is about learning to navigate the ups and downs, the twists and turns, the ebbs and flows of life. It is about growing, learning, and evolving, about becoming the best version of ourselves.\n\nAnd yet, despite the challenges and the struggles, there is always a glimmer of hope, a spark of light that guides us through the darkest moments. It is the love and support of those around us, the kindness and compassion of strangers, the strength and resilience that lies within us. It is the knowledge that we are not alone, that we are all in this journey together.\n\nSo as I sit here, watching the sun rise over the horizon, I am filled with a sense of gratitude and wonder. I am grateful for the beauty and the pleasures, for the challenges and the struggles, and for the love and the support that surrounds me. I am grateful for the opportunity to learn, to grow, and to evolve, and for the chance to make a difference in the world.\n\nAnd as I look towards the future, I am filled with hope and excitement. I am ready to embrace the unknown, to face the challenges and the struggles head on, and to continue on this amazing journey called life.",
+  "usage": {
+    "prompt_tokens": 21,
+    "completion_tokens": 381,
+    "total_tokens": 402
+  },
+  "model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "raw": {
+    "id": "chatcmpl-f11acfac-9c2f-4de7-abab-ddc4d858209d",
+    "object": "chat.completion",
+    "created": 1786499465,
+    "model": "mistralai/Mistral-7B-Instruct-v0.2",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "Today, as the sun peeks over the horizon, casting a warm, golden glow over the world, I find myself reflecting on the beauty and complexity of life. The gentle rustling of leaves in the breeze, the sweet song of birds in the trees, the soft touch of the morning sun on my skin \u2013 all of these simple pleasures remind me of the wonder and magic that exists in the world around us.\n\nBut life is not just about the beauty and the pleasures. It is also about the challenges and the struggles, the heartaches and the heartbreaks. It is about learning to navigate the ups and downs, the twists and turns, the ebbs and flows of life. It is about growing, learning, and evolving, about becoming the best version of ourselves.\n\nAnd yet, despite the challenges and the struggles, there is always a glimmer of hope, a spark of light that guides us through the darkest moments. It is the love and support of those around us, the kindness and compassion of strangers, the strength and resilience that lies within us. It is the knowledge that we are not alone, that we are all in this journey together.\n\nSo as I sit here, watching the sun rise over the horizon, I am filled with a sense of gratitude and wonder. I am grateful for the beauty and the pleasures, for the challenges and the struggles, and for the love and the support that surrounds me. I am grateful for the opportunity to learn, to grow, and to evolve, and for the chance to make a difference in the world.\n\nAnd as I look towards the future, I am filled with hope and excitement. I am ready to embrace the unknown, to face the challenges and the struggles head on, and to continue on this amazing journey called life."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 21,
+      "completion_tokens": 381,
+      "total_tokens": 402
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "63a8b081895390a26e140280378bc85ec8bce07a",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 38129,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-7B-Instruct-v0.2",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

@@ -1,0 +1,44 @@
+{
+  "result": "As an AI language model, I do not have personal desires or opinions. However, if I were to suggest one way to change the world, it would be to promote and encourage sustainable development and conservation efforts. This can be achieved through various means, such as raising awareness about the importance of protecting the environment, implementing policies and regulations to reduce carbon emissions and protect natural resources, and investing in renewable energy and green technologies. By prioritizing sustainable development, we can work towards creating a healthier and more equitable planet for future generations.",
+  "usage": {
+    "prompt_tokens": 31,
+    "completion_tokens": 105,
+    "total_tokens": 136
+  },
+  "model": "zai-org/chatglm3-6b",
+  "raw": {
+    "id": "chatcmpl-6a0211a0-82be-4175-9d1c-5eb8c3a86335",
+    "object": "chat.completion",
+    "created": 1786493236,
+    "model": "zai-org/chatglm3-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI language model, I do not have personal desires or opinions. However, if I were to suggest one way to change the world, it would be to promote and encourage sustainable development and conservation efforts. This can be achieved through various means, such as raising awareness about the importance of protecting the environment, implementing policies and regulations to reduce carbon emissions and protect natural resources, and investing in renewable energy and green technologies. By prioritizing sustainable development, we can work towards creating a healthier and more equitable planet for future generations."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 31,
+      "completion_tokens": 105,
+      "total_tokens": 136
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 4.30.2; torch 2.13.0",
+    "model_revision": "e9e0406d062cdb887444fe5bd546833920abd4ac",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 9340,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm3-6b",
+  "condition": "G3",
+  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?"
+}

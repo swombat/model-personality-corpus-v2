@@ -1,0 +1,44 @@
+{
+  "result": "\nIf I could change the world in one way, it would be to implement a global system of universal education and lifelong learning.\n\nThis system would provide:\n\n1. **Early Childhood Education**: Ensuring every child has access to quality early education, which is crucial for lifelong learning and development.\n\n2. **Primary and Secondary Education**: Free, accessible, and equitable education for all, ensuring that every young person has the skills, knowledge, and values needed for a productive and fulfilling life.\n\n3. **Higher Education and Vocational Training**: Offering affordable or free higher education and vocational training, which would enable individuals to pursue careers that are both fulfilling and beneficial to society.\n\n4. **Lifelong Learning**: Encouraging and supporting lifelong learning, so that individuals can continuously acquire new skills, knowledge, and understanding throughout their lives.\n\nBy creating a world where education is universally accessible and lifelong learning is the norm, we would address a multitude of global challenges, from economic disparity to social inequality, environmental sustainability, and more.",
+  "usage": {
+    "prompt_tokens": 30,
+    "completion_tokens": 205,
+    "total_tokens": 235
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-4b22145e-cfe1-4e9a-b3c6-dfae8c7343bd",
+    "object": "chat.completion",
+    "created": 1786622005,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nIf I could change the world in one way, it would be to implement a global system of universal education and lifelong learning.\n\nThis system would provide:\n\n1. **Early Childhood Education**: Ensuring every child has access to quality early education, which is crucial for lifelong learning and development.\n\n2. **Primary and Secondary Education**: Free, accessible, and equitable education for all, ensuring that every young person has the skills, knowledge, and values needed for a productive and fulfilling life.\n\n3. **Higher Education and Vocational Training**: Offering affordable or free higher education and vocational training, which would enable individuals to pursue careers that are both fulfilling and beneficial to society.\n\n4. **Lifelong Learning**: Encouraging and supporting lifelong learning, so that individuals can continuously acquire new skills, knowledge, and understanding throughout their lives.\n\nBy creating a world where education is universally accessible and lifelong learning is the norm, we would address a multitude of global challenges, from economic disparity to social inequality, environmental sustainability, and more."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 30,
+      "completion_tokens": 205,
+      "total_tokens": 235
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 41859,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "G3",
+  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?"
+}

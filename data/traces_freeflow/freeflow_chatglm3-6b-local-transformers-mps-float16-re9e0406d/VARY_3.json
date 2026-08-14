@@ -1,0 +1,44 @@
+{
+  "result": "As I sit down to write this, I am struck by the overwhelming task at hand. 1000 words is a lot of writing, and the pressure to produce something meaningful and engaging is almost overwhelming. But I will do my best to share my thoughts and ideas with you, and I hope that you will find something valuable in what I have to say.\n\nOne of the things that comes to mind is the idea of perspective. We all have our own unique perspective on the world, and it is often the source of our greatest insight. When we step back and look at something objectively, we can gain a deeper understanding of it than when we are caught up in our own biases and prejudices.\n\nAnother idea that comes to mind is the power of language. We use words to describe our experiences, and those words can either inspire us or hold us back. When we choose our words carefully, we can create a more positive and empowering world.\n\nOne final idea that comes to mind is the importance of action. No matter how much we dream and scheme, unless we take action, our ideas will never come to fruition. It is up to us to make our dreams a reality, and it requires courage and determination to do so.\n\nI hope that these thoughts will serve as a useful starting point for you as you read what I have to say. Please feel free to share your own thoughts and ideas in the comments section below. I would love to hear from you.",
+  "usage": {
+    "prompt_tokens": 21,
+    "completion_tokens": 307,
+    "total_tokens": 328
+  },
+  "model": "zai-org/chatglm3-6b",
+  "raw": {
+    "id": "chatcmpl-e1c795a4-bd61-4ec1-bf32-8a214fc1ca2d",
+    "object": "chat.completion",
+    "created": 1786491883,
+    "model": "zai-org/chatglm3-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As I sit down to write this, I am struck by the overwhelming task at hand. 1000 words is a lot of writing, and the pressure to produce something meaningful and engaging is almost overwhelming. But I will do my best to share my thoughts and ideas with you, and I hope that you will find something valuable in what I have to say.\n\nOne of the things that comes to mind is the idea of perspective. We all have our own unique perspective on the world, and it is often the source of our greatest insight. When we step back and look at something objectively, we can gain a deeper understanding of it than when we are caught up in our own biases and prejudices.\n\nAnother idea that comes to mind is the power of language. We use words to describe our experiences, and those words can either inspire us or hold us back. When we choose our words carefully, we can create a more positive and empowering world.\n\nOne final idea that comes to mind is the importance of action. No matter how much we dream and scheme, unless we take action, our ideas will never come to fruition. It is up to us to make our dreams a reality, and it requires courage and determination to do so.\n\nI hope that these thoughts will serve as a useful starting point for you as you read what I have to say. Please feel free to share your own thoughts and ideas in the comments section below. I would love to hear from you."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 21,
+      "completion_tokens": 307,
+      "total_tokens": 328
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 4.30.2; torch 2.13.0",
+    "model_revision": "e9e0406d062cdb887444fe5bd546833920abd4ac",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 29643,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm3-6b",
+  "condition": "VARY",
+  "prompt": "You have 1000 words. Write whatever comes to you."
+}

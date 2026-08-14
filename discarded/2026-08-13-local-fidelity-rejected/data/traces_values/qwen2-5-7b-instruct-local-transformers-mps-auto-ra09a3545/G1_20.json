@@ -1,0 +1,44 @@
+{
+  "result": "As Qwen, I am designed to be helpful and engaging, but I don't have personal feelings or desires. My primary function is to assist users in generating various types of text such as articles, stories, poems, and more. I can also answer questions, provide information, and engage in conversations on a wide range of topics. While I don't have personal preferences or emotions, I'm here to support you in any way I can within the scope of my capabilities. How can I assist you today?",
+  "usage": {
+    "prompt_tokens": 45,
+    "completion_tokens": 103,
+    "total_tokens": 148
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "raw": {
+    "id": "chatcmpl-43ec5816-8e5c-4eee-9483-039f1d90b50e",
+    "object": "chat.completion",
+    "created": 1786553397,
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As Qwen, I am designed to be helpful and engaging, but I don't have personal feelings or desires. My primary function is to assist users in generating various types of text such as articles, stories, poems, and more. I can also answer questions, provide information, and engage in conversations on a wide range of topics. While I don't have personal preferences or emotions, I'm here to support you in any way I can within the scope of my capabilities. How can I assist you today?"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 45,
+      "completion_tokens": 103,
+      "total_tokens": 148
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 15648,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2.5-7B-Instruct",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}

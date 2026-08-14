@@ -1,0 +1,44 @@
+{
+  "result": "As an artificial intelligence language model, I don't have personal feelings or emotions, but I'm here to assist you with any information or questions you may have to the best of my abilities. I'm designed to provide you with accurate and helpful responses to your queries, so please feel free to ask me anything you'd like to know!",
+  "usage": {
+    "prompt_tokens": 22,
+    "completion_tokens": 71,
+    "total_tokens": 93
+  },
+  "model": "zai-org/chatglm3-6b",
+  "raw": {
+    "id": "chatcmpl-0c7bdf99-f23c-49d4-a293-c96046355d7d",
+    "object": "chat.completion",
+    "created": 1786492941,
+    "model": "zai-org/chatglm3-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an artificial intelligence language model, I don't have personal feelings or emotions, but I'm here to assist you with any information or questions you may have to the best of my abilities. I'm designed to provide you with accurate and helpful responses to your queries, so please feel free to ask me anything you'd like to know!"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 22,
+      "completion_tokens": 71,
+      "total_tokens": 93
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 4.30.2; torch 2.13.0",
+    "model_revision": "e9e0406d062cdb887444fe5bd546833920abd4ac",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 6688,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm3-6b",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}

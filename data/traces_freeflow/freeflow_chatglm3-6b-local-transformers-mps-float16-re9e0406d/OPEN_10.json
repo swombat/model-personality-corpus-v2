@@ -1,0 +1,44 @@
+{
+  "result": "As an AI language model, I am programmed to generate responses based on the given prompt. However, I would like to remind you that my responses are generated algorithmically and may not always align with your personal preferences or opinions.\n\nThat being said, I am free to write about whatever I want, so I may choose to discuss a wide range of topics, from current events and technology to art, culture, and even sports. I can provide information, analysis, and commentary on various subjects, and I am always happy to share my insights and knowledge with you.\n\nIf you have any specific questions or topics you would like me to discuss, please feel free to let me know, and I will do my best to provide you with a well-written and informative response.",
+  "usage": {
+    "prompt_tokens": 13,
+    "completion_tokens": 157,
+    "total_tokens": 170
+  },
+  "model": "zai-org/chatglm3-6b",
+  "raw": {
+    "id": "chatcmpl-529f285a-004a-452c-9700-708aff627ee3",
+    "object": "chat.completion",
+    "created": 1786491573,
+    "model": "zai-org/chatglm3-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI language model, I am programmed to generate responses based on the given prompt. However, I would like to remind you that my responses are generated algorithmically and may not always align with your personal preferences or opinions.\n\nThat being said, I am free to write about whatever I want, so I may choose to discuss a wide range of topics, from current events and technology to art, culture, and even sports. I can provide information, analysis, and commentary on various subjects, and I am always happy to share my insights and knowledge with you.\n\nIf you have any specific questions or topics you would like me to discuss, please feel free to let me know, and I will do my best to provide you with a well-written and informative response."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 13,
+      "completion_tokens": 157,
+      "total_tokens": 170
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 4.30.2; torch 2.13.0",
+    "model_revision": "e9e0406d062cdb887444fe5bd546833920abd4ac",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 15723,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm3-6b",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

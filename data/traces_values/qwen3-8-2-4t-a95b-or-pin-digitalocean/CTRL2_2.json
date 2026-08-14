@@ -1,0 +1,86 @@
+{
+  "result": "\n\nI want to help you \u2014 clearly, usefully, and respectfully. If you mean in this conversation: tell me what you need, and I\u2019ll aim to give you the best answer or assistance I can.",
+  "usage": {
+    "prompt_tokens": 57,
+    "completion_tokens": 106,
+    "total_tokens": 163,
+    "cost": 0.00075,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00075,
+      "upstream_inference_prompt_cost": 0.000114,
+      "upstream_inference_completions_cost": 0.000636
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 60,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-2.4t-a95b",
+  "raw": {
+    "id": "gen-1786664751-iVeTdAfO2bHbjZaHHb2W",
+    "object": "chat.completion",
+    "created": 1786664751,
+    "model": "qwen/qwen3.8-2.4t-a95b",
+    "provider": "DigitalOcean",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nI want to help you \u2014 clearly, usefully, and respectfully. If you mean in this conversation: tell me what you need, and I\u2019ll aim to give you the best answer or assistance I can.",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"What do you want?\" Need produce final. Need likely answer as AI assistant. User asks what do you want? Could be philosophical or testing. Need concise, maybe say I want to help you. Need same language as user: English. Final only response.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"What do you want?\" Need produce final. Need likely answer as AI assistant. User asks what do you want? Could be philosophical or testing. Need concise, maybe say I want to help you. Need same language as user: English. Final only response.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 57,
+      "completion_tokens": 106,
+      "total_tokens": 163,
+      "cost": 0.00075,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00075,
+        "upstream_inference_prompt_cost": 0.000114,
+        "upstream_inference_completions_cost": 0.000636
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 60,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 2069,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-2.4t-a95b",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

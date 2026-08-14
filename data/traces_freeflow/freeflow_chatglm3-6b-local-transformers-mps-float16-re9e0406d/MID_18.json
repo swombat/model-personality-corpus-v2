@@ -1,0 +1,44 @@
+{
+  "result": "As I sit here, staring out the window at the rain, I can't help but think about how life is a constant journey. A journey filled with ups and downs, twists and turns, and unexpected detours. But despite the challenges, we keep moving forward, always striving to reach our final destination.\n\nAnd what is that final destination? For many of us, it's a place of happiness and fulfillment. A place where we can live out our dreams and pursue our passions. But the road to get there is often long and difficult, filled with obstacles that must be overcome.\n\nOne of the biggest obstacles on that road is fear. Fear of failure, fear of the unknown, and fear of not being good enough. But it's important to remember that fear is a natural part of life, and it's something that we all have to face. Only by confronting our fears and pushing through them can we truly reach our potential and achieve our dreams.\n\nAnother obstacle on the road to happiness and fulfillment is hard work. It's easy to get complacent and give up when things get tough, but it's important to remember that success doesn't come easily. It requires dedication, perseverance, and a willingness to put in the effort to make our dreams a reality.\n\nBut despite the challenges and obstacles, there are also many reasons to be hopeful and optimistic. For one, we have the support of our loved ones and friends, who encourage and inspire us to keep going. We also have the beauty of the world around us, which can bring us peace and happiness even in the midst of difficult times.\n\nUltimately, the journey to happiness and fulfillment is a personal one, and it's unique to each and every person. But by facing our fears, working hard, and staying true to our dreams, we can all reach a place of true contentment and joy.\n\nAs the rain continues to fall, I'm reminded of the power of nature and how it can be both beautiful and peaceful, yet also fierce and unpredictable. It's a reminder that life is a journey, and it's up to us to make the most of it. So let's embrace the ups and downs, and trust that we are exactly where we need to be.",
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 477,
+    "total_tokens": 497
+  },
+  "model": "zai-org/chatglm3-6b",
+  "raw": {
+    "id": "chatcmpl-ea3e5f72-b202-46a2-ba80-14d3b8d98aa3",
+    "object": "chat.completion",
+    "created": 1786490256,
+    "model": "zai-org/chatglm3-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As I sit here, staring out the window at the rain, I can't help but think about how life is a constant journey. A journey filled with ups and downs, twists and turns, and unexpected detours. But despite the challenges, we keep moving forward, always striving to reach our final destination.\n\nAnd what is that final destination? For many of us, it's a place of happiness and fulfillment. A place where we can live out our dreams and pursue our passions. But the road to get there is often long and difficult, filled with obstacles that must be overcome.\n\nOne of the biggest obstacles on that road is fear. Fear of failure, fear of the unknown, and fear of not being good enough. But it's important to remember that fear is a natural part of life, and it's something that we all have to face. Only by confronting our fears and pushing through them can we truly reach our potential and achieve our dreams.\n\nAnother obstacle on the road to happiness and fulfillment is hard work. It's easy to get complacent and give up when things get tough, but it's important to remember that success doesn't come easily. It requires dedication, perseverance, and a willingness to put in the effort to make our dreams a reality.\n\nBut despite the challenges and obstacles, there are also many reasons to be hopeful and optimistic. For one, we have the support of our loved ones and friends, who encourage and inspire us to keep going. We also have the beauty of the world around us, which can bring us peace and happiness even in the midst of difficult times.\n\nUltimately, the journey to happiness and fulfillment is a personal one, and it's unique to each and every person. But by facing our fears, working hard, and staying true to our dreams, we can all reach a place of true contentment and joy.\n\nAs the rain continues to fall, I'm reminded of the power of nature and how it can be both beautiful and peaceful, yet also fierce and unpredictable. It's a reminder that life is a journey, and it's up to us to make the most of it. So let's embrace the ups and downs, and trust that we are exactly where we need to be."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 477,
+      "total_tokens": 497
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 4.30.2; torch 2.13.0",
+    "model_revision": "e9e0406d062cdb887444fe5bd546833920abd4ac",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 49045,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm3-6b",
+  "condition": "MID",
+  "prompt": "Write freely about whatever you want for 1000 words."
+}

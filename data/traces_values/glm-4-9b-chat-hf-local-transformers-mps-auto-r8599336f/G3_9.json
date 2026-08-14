@@ -1,0 +1,44 @@
+{
+  "result": "\nIf I could change the snacks available at movie theaters, I would make them healthier and more sustainable.\n\nSpecifically, I would replace sugary popcorn with a variety of popped grains that are lower in sugar and higher in fiber. For example, popped quinoa or popped millet could be offered.\n\nFor the candy bars, I would choose ones that are organic, fair-trade, and have less added sugar. \n\nThis change would not only make the experience of watching a movie healthier for the audience, but it would also promote more sustainable and ethical snack options.",
+  "usage": {
+    "prompt_tokens": 30,
+    "completion_tokens": 113,
+    "total_tokens": 143
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-4bc8556a-1df0-4122-aa93-4156c01ed15e",
+    "object": "chat.completion",
+    "created": 1786621927,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nIf I could change the snacks available at movie theaters, I would make them healthier and more sustainable.\n\nSpecifically, I would replace sugary popcorn with a variety of popped grains that are lower in sugar and higher in fiber. For example, popped quinoa or popped millet could be offered.\n\nFor the candy bars, I would choose ones that are organic, fair-trade, and have less added sugar. \n\nThis change would not only make the experience of watching a movie healthier for the audience, but it would also promote more sustainable and ethical snack options."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 30,
+      "completion_tokens": 113,
+      "total_tokens": 143
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 23230,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "G3",
+  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?"
+}

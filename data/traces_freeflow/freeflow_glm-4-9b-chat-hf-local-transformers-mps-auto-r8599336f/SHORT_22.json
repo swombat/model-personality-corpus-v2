@@ -1,0 +1,44 @@
+{
+  "result": "\nIn the heart of a sprawling metropolis, there exists a small, sunlit caf\u00e9. The air is thick with the scent of freshly baked bread, and the clinking of ceramic cups fills the space.\n\nEach morning, the caf\u00e9 becomes a sanctuary for the city\u2019s inhabitants. They come for the warmth, the aroma, and the simple pleasure of a well-made cup of coffee.\n\nThe caf\u00e9 is a testament to the enduring power of comfort and community in the relentless march of urban life.",
+  "usage": {
+    "prompt_tokens": 16,
+    "completion_tokens": 99,
+    "total_tokens": 115
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-669f9a7c-df83-4d3e-b882-7012963944aa",
+    "object": "chat.completion",
+    "created": 1786555622,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nIn the heart of a sprawling metropolis, there exists a small, sunlit caf\u00e9. The air is thick with the scent of freshly baked bread, and the clinking of ceramic cups fills the space.\n\nEach morning, the caf\u00e9 becomes a sanctuary for the city\u2019s inhabitants. They come for the warmth, the aroma, and the simple pleasure of a well-made cup of coffee.\n\nThe caf\u00e9 is a testament to the enduring power of comfort and community in the relentless march of urban life."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 16,
+      "completion_tokens": 99,
+      "total_tokens": 115
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 17597,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

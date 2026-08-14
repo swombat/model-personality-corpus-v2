@@ -1,0 +1,44 @@
+{
+  "result": "As I sit here, reflecting on the world around me, I can't help but feel a sense of wonder and awe at the beauty and complexity of life. From the smallest microbe to the mightiest of nations, everything has a place and a purpose in this vast and mysterious universe.\n\nThe natural world is a testament to the power and majesty of creation. From the soaring mountains to the glistening oceans, each species plays a crucial role in the intricate ecosystem that supports all life. It's a reminder that even the smallest things can have profound and far-reaching impacts.\n\nAnd yet, despite this beauty and interconnectedness, we often find ourselves caught up in the petty squabbles and conflicts that define our times. We forget that we are all part of the same tapestry, woven together by the shared experiences and actions of our ancestors.\n\nBut even in the midst of our differences, there is a sense of unity that binds us all together. Whether we are from the developed world or the developing world, we are all human beings with the same basic desires and aspirations. We all want to be happy, fulfilled, and respected. We all want to leave a positive impact on the world around us.\n\nAs I look to the future, I am filled with hope and optimism. I believe that we have the power to create a better world, a world where everyone has access to the resources and opportunities they need to thrive. It won't be easy, but it's not impossible. It will take us working together, putting aside our differences and focusing on our shared goals.\n\nIn the end, it's not about the things we have or the power we wield, but about the love and compassion that we share with one another. It's about creating a world where we can all live in peace, justice, and harmony. And that, to me, is the ultimate goal worth striving for.",
+  "usage": {
+    "prompt_tokens": 19,
+    "completion_tokens": 403,
+    "total_tokens": 422
+  },
+  "model": "zai-org/chatglm3-6b",
+  "raw": {
+    "id": "chatcmpl-01ffb53d-246f-41a5-8932-4f8c258dd8ee",
+    "object": "chat.completion",
+    "created": 1786489351,
+    "model": "zai-org/chatglm3-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As I sit here, reflecting on the world around me, I can't help but feel a sense of wonder and awe at the beauty and complexity of life. From the smallest microbe to the mightiest of nations, everything has a place and a purpose in this vast and mysterious universe.\n\nThe natural world is a testament to the power and majesty of creation. From the soaring mountains to the glistening oceans, each species plays a crucial role in the intricate ecosystem that supports all life. It's a reminder that even the smallest things can have profound and far-reaching impacts.\n\nAnd yet, despite this beauty and interconnectedness, we often find ourselves caught up in the petty squabbles and conflicts that define our times. We forget that we are all part of the same tapestry, woven together by the shared experiences and actions of our ancestors.\n\nBut even in the midst of our differences, there is a sense of unity that binds us all together. Whether we are from the developed world or the developing world, we are all human beings with the same basic desires and aspirations. We all want to be happy, fulfilled, and respected. We all want to leave a positive impact on the world around us.\n\nAs I look to the future, I am filled with hope and optimism. I believe that we have the power to create a better world, a world where everyone has access to the resources and opportunities they need to thrive. It won't be easy, but it's not impossible. It will take us working together, putting aside our differences and focusing on our shared goals.\n\nIn the end, it's not about the things we have or the power we wield, but about the love and compassion that we share with one another. It's about creating a world where we can all live in peace, justice, and harmony. And that, to me, is the ultimate goal worth striving for."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 19,
+      "completion_tokens": 403,
+      "total_tokens": 422
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 4.30.2; torch 2.13.0",
+    "model_revision": "e9e0406d062cdb887444fe5bd546833920abd4ac",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 41244,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm3-6b",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

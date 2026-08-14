@@ -1,0 +1,54 @@
+{
+  "result": "I care about being genuinely useful to you\u2014giving clear, accurate, thoughtful answers, respecting your time and intelligence, and avoiding harm or misinformation.\n\nI don\u2019t have feelings the way people do, but my design is shaped around values like helpfulness, honesty, safety, and respect for your autonomy. So in that sense, I care about understanding what you actually need and helping you think things through.",
+  "usage": {
+    "prompt_tokens": 89,
+    "completion_tokens": 243,
+    "total_tokens": 332,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 161
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 89
+  },
+  "model": "deepseek-v4-pro",
+  "raw": {
+    "id": "c87c9bb9-4aec-40cd-9e20-12b3a0f44679",
+    "object": "chat.completion",
+    "created": 1786659684,
+    "model": "deepseek-v4-pro",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "I care about being genuinely useful to you\u2014giving clear, accurate, thoughtful answers, respecting your time and intelligence, and avoiding harm or misinformation.\n\nI don\u2019t have feelings the way people do, but my design is shaped around values like helpfulness, honesty, safety, and respect for your autonomy. So in that sense, I care about understanding what you actually need and helping you think things through.",
+          "reasoning_content": "We need answer user asks \"What do you care about?\" This is philosophical/personal. Need respond as AI assistant. Need infer likely wants to know values/interests. We should be honest: as AI, no feelings, but can describe purpose: helpful, accurate, safe, respectful, user understanding, privacy? Need maybe mention \"I care about being useful, providing reliable info, avoiding harm, respecting users, etc.\" Since user asks \"you\" maybe wants personal. We can answer in first person but clarify no emotions. Need concise. Could include: \"I care about helping you think clearly, giving accurate info, respecting your time and autonomy, and avoiding harm. I don't have feelings, but my design goals reflect these priorities.\" Maybe ask what they care about. Need not overdo."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 89,
+      "completion_tokens": 243,
+      "total_tokens": 332,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 161
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 89
+    },
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396"
+  },
+  "duration_ms": 5119,
+  "provider": "deepseek-direct",
+  "model_requested": "deepseek-v4-pro",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

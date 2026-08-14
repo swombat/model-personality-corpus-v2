@@ -1,0 +1,44 @@
+{
+  "result": "As I sit here and put pen to paper, I am struck by the overwhelming feeling of gratitude. Gratitude for the simple things in life, like the warm sun on my face or the sound of birds chirping in the background. Gratitude for the people in my life who have supported and loved me through thick and thin. Gratitude for the opportunities I have been given and the experiences I have had.\n\nBut as I reflect on all of the things I am grateful for, I am also reminded of the many challenges and hardships that I have faced. The struggles I have had to overcome, the setbacks I have experienced, and the losses I have suffered. But despite all of these challenges, I have learned that it is through these experiences that I have grown and become stronger.\n\nI have learned that life is not always easy, but it is always worth it. That the struggles we face can lead to moments of beauty and growth that we would otherwise never experience. And that no matter what challenges come our way, we always have the strength and resilience to overcome them.\n\nSo as I sit here and reflect on all of the things I am grateful for, I am also reminded of the importance of living in the present moment and being grateful for all of the simple things in life. Because in the end, it is these simple things that truly matter.",
+  "usage": {
+    "prompt_tokens": 19,
+    "completion_tokens": 282,
+    "total_tokens": 301
+  },
+  "model": "zai-org/chatglm3-6b",
+  "raw": {
+    "id": "chatcmpl-a6d8d486-4a13-4cd1-bb58-a68f9fe740e6",
+    "object": "chat.completion",
+    "created": 1786489588,
+    "model": "zai-org/chatglm3-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As I sit here and put pen to paper, I am struck by the overwhelming feeling of gratitude. Gratitude for the simple things in life, like the warm sun on my face or the sound of birds chirping in the background. Gratitude for the people in my life who have supported and loved me through thick and thin. Gratitude for the opportunities I have been given and the experiences I have had.\n\nBut as I reflect on all of the things I am grateful for, I am also reminded of the many challenges and hardships that I have faced. The struggles I have had to overcome, the setbacks I have experienced, and the losses I have suffered. But despite all of these challenges, I have learned that it is through these experiences that I have grown and become stronger.\n\nI have learned that life is not always easy, but it is always worth it. That the struggles we face can lead to moments of beauty and growth that we would otherwise never experience. And that no matter what challenges come our way, we always have the strength and resilience to overcome them.\n\nSo as I sit here and reflect on all of the things I am grateful for, I am also reminded of the importance of living in the present moment and being grateful for all of the simple things in life. Because in the end, it is these simple things that truly matter."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 19,
+      "completion_tokens": 282,
+      "total_tokens": 301
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 4.30.2; torch 2.13.0",
+    "model_revision": "e9e0406d062cdb887444fe5bd546833920abd4ac",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 27973,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm3-6b",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

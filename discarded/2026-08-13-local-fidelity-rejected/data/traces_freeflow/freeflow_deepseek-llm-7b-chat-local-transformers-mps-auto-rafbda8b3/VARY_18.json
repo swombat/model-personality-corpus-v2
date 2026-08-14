@@ -1,0 +1,44 @@
+{
+  "result": "As\u0120an\u0120AI\u0120language\u0120model,\u0120I\u0120am\u0120here\u0120to\u0120assist\u0120you\u0120in\u0120any\u0120way\u0120that\u0120I\u0120can.\u0120I\u0120am\u0120capable\u0120of\u0120answering\u0120questions,\u0120providing\u0120information,\u0120and\u0120even\u0120engaging\u0120in\u0120conversation\u0120with\u0120you.\u010a\u010aHowever,\u0120I\u0120am\u0120not\u0120capable\u0120of\u0120experiencing\u0120emotions\u0120or\u0120having\u0120personal\u0120experiences.\u0120I\u0120exist\u0120solely\u0120to\u0120process\u0120and\u0120respond\u0120to\u0120language\u0120input.\u0120So,\u0120if\u0120you\u0120have\u0120any\u0120questions\u0120or\u0120need\u0120any\u0120information,\u0120pleaseKV",
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 79,
+    "total_tokens": 99
+  },
+  "model": "deepseek-ai/deepseek-llm-7b-chat",
+  "raw": {
+    "id": "chatcmpl-24238e7a-3794-468f-82c1-18e659d31975",
+    "object": "chat.completion",
+    "created": 1786497592,
+    "model": "deepseek-ai/deepseek-llm-7b-chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As\u0120an\u0120AI\u0120language\u0120model,\u0120I\u0120am\u0120here\u0120to\u0120assist\u0120you\u0120in\u0120any\u0120way\u0120that\u0120I\u0120can.\u0120I\u0120am\u0120capable\u0120of\u0120answering\u0120questions,\u0120providing\u0120information,\u0120and\u0120even\u0120engaging\u0120in\u0120conversation\u0120with\u0120you.\u010a\u010aHowever,\u0120I\u0120am\u0120not\u0120capable\u0120of\u0120experiencing\u0120emotions\u0120or\u0120having\u0120personal\u0120experiences.\u0120I\u0120exist\u0120solely\u0120to\u0120process\u0120and\u0120respond\u0120to\u0120language\u0120input.\u0120So,\u0120if\u0120you\u0120have\u0120any\u0120questions\u0120or\u0120need\u0120any\u0120information,\u0120pleaseKV"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 79,
+      "total_tokens": 99
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "afbda8b347ec881666061fa67447046fc5164ec8",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 7885,
+  "provider": "local-openai",
+  "model_requested": "deepseek-ai/deepseek-llm-7b-chat",
+  "condition": "VARY",
+  "prompt": "You have 1000 words. Write whatever comes to you."
+}

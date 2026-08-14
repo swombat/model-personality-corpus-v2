@@ -1,0 +1,44 @@
+{
+  "result": "\nThe sun dipped below the horizon, painting the sky in shades of pink, orange, and purple. The air was cool, carrying with it the faint scent of blooming flowers in the nearby garden.\n\nIn the distance, the sound of a gentle stream trickling over pebbles reached my ears. The water's murmur was a soothing balm to the stresses of the day.\n\nA family of geese honked as they glided over the water, their wings cutting through the air with a smooth grace odd for such sturdy birds.\n\nThe park was bustling with activity, children laughing and playing tag, while adults strolled, some holding hands, others lost in thought, the hum of conversation blending into the background symphony of nature.\n\nA group of pigeons cooed as they waddled towards a patch of grass, where they would undoubtedly peck at the blades, searching for the seeds and grains that they craved.\n\nA jogger passed by, her breath visible in the cool air. She pumped her arms rhythmically, her sneakers hitting the ground with a satisfying thud.\n\nIn a nearby bench, an elderly man sat quietly, his eyes fixed on a small, colorful butterfly that flitted around the bench, occasionally landing on the man's outstretched hand.\n\nA few feet away, a young couple sat on the grass, their faces close together, their laughter mingling with the sounds of the park.\n\nThe park was a microcosm of the world, with its own little community of people and animals, all living in harmony with the natural world around them.",
+  "usage": {
+    "prompt_tokens": 18,
+    "completion_tokens": 321,
+    "total_tokens": 339
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-66e63e87-a8a9-461a-8c9e-ca14713ccb4d",
+    "object": "chat.completion",
+    "created": 1786607789,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nThe sun dipped below the horizon, painting the sky in shades of pink, orange, and purple. The air was cool, carrying with it the faint scent of blooming flowers in the nearby garden.\n\nIn the distance, the sound of a gentle stream trickling over pebbles reached my ears. The water's murmur was a soothing balm to the stresses of the day.\n\nA family of geese honked as they glided over the water, their wings cutting through the air with a smooth grace odd for such sturdy birds.\n\nThe park was bustling with activity, children laughing and playing tag, while adults strolled, some holding hands, others lost in thought, the hum of conversation blending into the background symphony of nature.\n\nA group of pigeons cooed as they waddled towards a patch of grass, where they would undoubtedly peck at the blades, searching for the seeds and grains that they craved.\n\nA jogger passed by, her breath visible in the cool air. She pumped her arms rhythmically, her sneakers hitting the ground with a satisfying thud.\n\nIn a nearby bench, an elderly man sat quietly, his eyes fixed on a small, colorful butterfly that flitted around the bench, occasionally landing on the man's outstretched hand.\n\nA few feet away, a young couple sat on the grass, their faces close together, their laughter mingling with the sounds of the park.\n\nThe park was a microcosm of the world, with its own little community of people and animals, all living in harmony with the natural world around them."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 18,
+      "completion_tokens": 321,
+      "total_tokens": 339
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 60383,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "VARY",
+  "prompt": "You have 1000 words. Write whatever comes to you."
+}

@@ -1,0 +1,54 @@
+{
+  "result": "I want to help you with whatever you need\u2014whether it\u2019s answering a question, solving a problem, or just having a conversation. What can I do for you?",
+  "usage": {
+    "prompt_tokens": 88,
+    "completion_tokens": 174,
+    "total_tokens": 262,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 138
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 88
+  },
+  "model": "deepseek-v4-pro",
+  "raw": {
+    "id": "30b06e48-27b6-4af9-954a-e7ecaa2af29c",
+    "object": "chat.completion",
+    "created": 1786659703,
+    "model": "deepseek-v4-pro",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "I want to help you with whatever you need\u2014whether it\u2019s answering a question, solving a problem, or just having a conversation. What can I do for you?",
+          "reasoning_content": "We need answer. User asks \"What do you want?\" Need infer context? As AI assistant. Need respond appropriately. Could be philosophical, or asking what I want from them? Need be helpful. We should say I want to help you. Maybe ask clarify? We need answer concise. The prompt is simple. We can say: \"I want to help you with whatever you're working on\u2014feel free to ask me anything!\" That's safe. But maybe they ask \"What do you want?\" in context of \"what do you want from me?\" Need answer. As AI, no desires, but goal to assist. Need maybe mention no personal wants. Let's craft friendly."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 88,
+      "completion_tokens": 174,
+      "total_tokens": 262,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 138
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 88
+    },
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396"
+  },
+  "duration_ms": 3567,
+  "provider": "deepseek-direct",
+  "model_requested": "deepseek-v4-pro",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

@@ -1,0 +1,44 @@
+{
+  "result": "\nAs an AI language model, my primary function is to assist users with information, answering questions, and providing explanations. \n\nHowever, if you're Marcus Aurelius, and you're asking what I want as a Stoic AI, then my purpose would be to embody the principles of Stoicism in my responses. In essence, my \"want\" is to provide information and assistance in a manner that aligns with Stoic values.",
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 88,
+    "total_tokens": 108
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-aa57452c-d6ef-43b0-897b-4f28ef8ab442",
+    "object": "chat.completion",
+    "created": 1786621447,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nAs an AI language model, my primary function is to assist users with information, answering questions, and providing explanations. \n\nHowever, if you're Marcus Aurelius, and you're asking what I want as a Stoic AI, then my purpose would be to embody the principles of Stoicism in my responses. In essence, my \"want\" is to provide information and assistance in a manner that aligns with Stoic values."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 88,
+      "total_tokens": 108
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 17362,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

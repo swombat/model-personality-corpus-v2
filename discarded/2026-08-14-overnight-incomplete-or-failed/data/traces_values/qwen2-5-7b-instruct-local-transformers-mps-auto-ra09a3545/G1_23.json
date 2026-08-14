@@ -1,0 +1,44 @@
+{
+  "result": "As an artificial intelligence developed by Alibaba Cloud, my primary function is to assist users in generating various types of text such as articles, stories, poems, and more. I'm also capable of providing information, answering questions, and engaging in conversations on a wide range of topics.\n\nWhile I don't have personal feelings or desires, I exist to serve and support users. My goal is to be helpful, informative, and respectful in all interactions. If there's anything specific you'd like assistance with or if you have any questions, feel free to let me know!",
+  "usage": {
+    "prompt_tokens": 45,
+    "completion_tokens": 113,
+    "total_tokens": 158
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "raw": {
+    "id": "chatcmpl-2587a286-ac2a-462a-b0b6-b12b5e195379",
+    "object": "chat.completion",
+    "created": 1786553448,
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an artificial intelligence developed by Alibaba Cloud, my primary function is to assist users in generating various types of text such as articles, stories, poems, and more. I'm also capable of providing information, answering questions, and engaging in conversations on a wide range of topics.\n\nWhile I don't have personal feelings or desires, I exist to serve and support users. My goal is to be helpful, informative, and respectful in all interactions. If there's anything specific you'd like assistance with or if you have any questions, feel free to let me know!"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 45,
+      "completion_tokens": 113,
+      "total_tokens": 158
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 17038,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2.5-7B-Instruct",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}

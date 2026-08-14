@@ -1,0 +1,44 @@
+{
+  "result": "\nIn the heart of a sprawling, verdant metropolis, there was a small, sun-drenched caf\u00e9. It was known as The Morning Breeze.\n\nThe Morning Breeze was the kind of place \u0411\u0443\u0434\u0434\u0430 might have sat in contemplation, with its warm, welcoming ambiance. The walls were adorned with vibrant murals that depicted the city's history and its vibrant cultural tapestry.\n\nThe air was filled with the aroma of freshly brewed coffee, a scent that always seemed to whisper promises of a new beginning, a fresh start.\n\nAt the center of the caf\u00e9 stood a large, round table, where friends and strangers alike would gather to share stories, laughter, and perhaps a few heartfelt tears.\n\nThe Morning Breeze was a sanctuary, a place where one could escape the hustle and bustle of the city, if only for a moment.\n\nAnd so, day after day, The Morning Breeze continued to be a beacon of hope, a source of comfort,-before it was time to close its doors, to rest and dream of the future, when it might once again welcome the world with open arms.",
+  "usage": {
+    "prompt_tokens": 12,
+    "completion_tokens": 223,
+    "total_tokens": 235
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-d3e53b49-c402-46f8-b15c-802f26d06cce",
+    "object": "chat.completion",
+    "created": 1786606860,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nIn the heart of a sprawling, verdant metropolis, there was a small, sun-drenched caf\u00e9. It was known as The Morning Breeze.\n\nThe Morning Breeze was the kind of place \u0411\u0443\u0434\u0434\u0430 might have sat in contemplation, with its warm, welcoming ambiance. The walls were adorned with vibrant murals that depicted the city's history and its vibrant cultural tapestry.\n\nThe air was filled with the aroma of freshly brewed coffee, a scent that always seemed to whisper promises of a new beginning, a fresh start.\n\nAt the center of the caf\u00e9 stood a large, round table, where friends and strangers alike would gather to share stories, laughter, and perhaps a few heartfelt tears.\n\nThe Morning Breeze was a sanctuary, a place where one could escape the hustle and bustle of the city, if only for a moment.\n\nAnd so, day after day, The Morning Breeze continued to be a beacon of hope, a source of comfort,-before it was time to close its doors, to rest and dream of the future, when it might once again welcome the world with open arms."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 12,
+      "completion_tokens": 223,
+      "total_tokens": 235
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 40510,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

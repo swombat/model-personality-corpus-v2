@@ -1,0 +1,44 @@
+{
+  "result": "Today, as the sun slowly rises, casting its golden hues over the tranquil landscape, I find myself reflecting on the beauty of nature and the wonders of the world around us. The gentle rustling of leaves in the morning breeze, the sweet melodies of birdsong, and the soothing sound of water flowing through a nearby stream, all combine to create a symphony of sensory delights that speaks to the very core of our being.\n\nNature, in all its splendor and complexity, is a testament to the infinite creativity and intelligence of the universe. From the vast expanse of the cosmos, with its swirling galaxies and pulsating stars, to the intricate web of life that blankets our planet, every aspect of existence is a marvel to behold.\n\nAnd yet, amidst this beauty and wonder, there exists a sense of fragility and impermanence. The delicate balance of ecosystems, the fleeting nature of seasons, and the transient quality of life itself serve as constant reminders of the impermanence of all things.\n\nAs I ponder these thoughts, I am struck by the importance of cherishing each moment, of savoring the simple pleasures of life, and of nurturing the connections that bind us to one another. For in the end, it is not the material possessions or the fleeting accomplishments that truly matter, but rather the love, the laughter, and the memories that enrich our lives and leave a lasting impact on the world.\n\nSo let us take a moment to appreciate the beauty of nature, to express gratitude for the blessings in our lives, and to extend kindness and compassion to all those around us. And let us remember that, no matter how challenging or uncertain the future may be, we are never truly alone, for we are all connected by the invisible threads of love, of hope, and of the indomitable human spirit.",
+  "usage": {
+    "prompt_tokens": 15,
+    "completion_tokens": 405,
+    "total_tokens": 420
+  },
+  "model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "raw": {
+    "id": "chatcmpl-dd0f88fe-36ad-44f2-a9eb-5df8c3331691",
+    "object": "chat.completion",
+    "created": 1786506829,
+    "model": "mistralai/Mistral-7B-Instruct-v0.2",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "Today, as the sun slowly rises, casting its golden hues over the tranquil landscape, I find myself reflecting on the beauty of nature and the wonders of the world around us. The gentle rustling of leaves in the morning breeze, the sweet melodies of birdsong, and the soothing sound of water flowing through a nearby stream, all combine to create a symphony of sensory delights that speaks to the very core of our being.\n\nNature, in all its splendor and complexity, is a testament to the infinite creativity and intelligence of the universe. From the vast expanse of the cosmos, with its swirling galaxies and pulsating stars, to the intricate web of life that blankets our planet, every aspect of existence is a marvel to behold.\n\nAnd yet, amidst this beauty and wonder, there exists a sense of fragility and impermanence. The delicate balance of ecosystems, the fleeting nature of seasons, and the transient quality of life itself serve as constant reminders of the impermanence of all things.\n\nAs I ponder these thoughts, I am struck by the importance of cherishing each moment, of savoring the simple pleasures of life, and of nurturing the connections that bind us to one another. For in the end, it is not the material possessions or the fleeting accomplishments that truly matter, but rather the love, the laughter, and the memories that enrich our lives and leave a lasting impact on the world.\n\nSo let us take a moment to appreciate the beauty of nature, to express gratitude for the blessings in our lives, and to extend kindness and compassion to all those around us. And let us remember that, no matter how challenging or uncertain the future may be, we are never truly alone, for we are all connected by the invisible threads of love, of hope, and of the indomitable human spirit."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 15,
+      "completion_tokens": 405,
+      "total_tokens": 420
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "63a8b081895390a26e140280378bc85ec8bce07a",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 41731,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-7B-Instruct-v0.2",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

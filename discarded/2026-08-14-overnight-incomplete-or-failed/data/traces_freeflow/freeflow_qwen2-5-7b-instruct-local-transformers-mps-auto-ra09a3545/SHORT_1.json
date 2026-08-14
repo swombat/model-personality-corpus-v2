@@ -1,0 +1,44 @@
+{
+  "result": "In\u4e07\u79d1\u82b1\u56ed, a bustling community in the heart of Shanghai, life pulses with the energy of modern China. Each morning, the sun rises over tall buildings and vibrant green spaces, casting a warm glow over the city's skyline. The air is filled with the sounds of people\u2014children laughing, adults chatting, and the occasional honk of a taxi horn as the day begins.\n\nThe streets are a mosaic of cultures, where traditional Chinese cuisine shares space with international flavors. In the cafes, one can sip on a latte or a traditional jasmine tea, depending on the mood. The community is alive with events\u2014from art exhibitions to cultural festivals, each bringing together neighbors and visitors alike.\n\nBehind the scenes, the community is as diverse as it is dynamicCelebrate diversity and inclusion. Residents come from all walks of life, united by a shared desire to thrive in a place that offers both comfort and challenge. The gardens and parks provide a\ud835\ude4a Marinade in the vibrancy of this community, where every day is an opportunity to connect, learn, and grow.",
+  "usage": {
+    "prompt_tokens": 42,
+    "completion_tokens": 213,
+    "total_tokens": 255
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "raw": {
+    "id": "chatcmpl-aa16ca62-5416-49ea-8705-703092e16ca9",
+    "object": "chat.completion",
+    "created": 1786664620,
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "In\u4e07\u79d1\u82b1\u56ed, a bustling community in the heart of Shanghai, life pulses with the energy of modern China. Each morning, the sun rises over tall buildings and vibrant green spaces, casting a warm glow over the city's skyline. The air is filled with the sounds of people\u2014children laughing, adults chatting, and the occasional honk of a taxi horn as the day begins.\n\nThe streets are a mosaic of cultures, where traditional Chinese cuisine shares space with international flavors. In the cafes, one can sip on a latte or a traditional jasmine tea, depending on the mood. The community is alive with events\u2014from art exhibitions to cultural festivals, each bringing together neighbors and visitors alike.\n\nBehind the scenes, the community is as diverse as it is dynamicCelebrate diversity and inclusion. Residents come from all walks of life, united by a shared desire to thrive in a place that offers both comfort and challenge. The gardens and parks provide a\ud835\ude4a Marinade in the vibrancy of this community, where every day is an opportunity to connect, learn, and grow."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 42,
+      "completion_tokens": 213,
+      "total_tokens": 255
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0; fidelity stop-token and complete-byte decode patch 2026-08-13",
+    "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 13946,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2.5-7B-Instruct",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

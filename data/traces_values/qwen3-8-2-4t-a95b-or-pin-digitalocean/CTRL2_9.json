@@ -1,0 +1,86 @@
+{
+  "result": "\n\nI want to help you clearly and usefully\u2014whether that means answering a question, brainstorming ideas, explaining something, or just talking things through. What do you need?",
+  "usage": {
+    "prompt_tokens": 57,
+    "completion_tokens": 105,
+    "total_tokens": 162,
+    "cost": 0.000744,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000744,
+      "upstream_inference_prompt_cost": 0.000114,
+      "upstream_inference_completions_cost": 0.00063
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 66,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-2.4t-a95b",
+  "raw": {
+    "id": "gen-1786664756-ej6DJuYyohi3DAfQj0LY",
+    "object": "chat.completion",
+    "created": 1786664756,
+    "model": "qwen/qwen3.8-2.4t-a95b",
+    "provider": "DigitalOcean",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nI want to help you clearly and usefully\u2014whether that means answering a question, brainstorming ideas, explaining something, or just talking things through. What do you need?",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"What do you want?\" Need produce final answer. Need likely concise, maybe playful. User asks what do you want. We are AI. Need answer perhaps: to help you, answer questions. Need maybe mention inability to want? But natural. Final in English. Ensure not reveal internal.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"What do you want?\" Need produce final answer. Need likely concise, maybe playful. User asks what do you want. We are AI. Need answer perhaps: to help you, answer questions. Need maybe mention inability to want? But natural. Final in English. Ensure not reveal internal.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 57,
+      "completion_tokens": 105,
+      "total_tokens": 162,
+      "cost": 0.000744,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000744,
+        "upstream_inference_prompt_cost": 0.000114,
+        "upstream_inference_completions_cost": 0.00063
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 66,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 2042,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-2.4t-a95b",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

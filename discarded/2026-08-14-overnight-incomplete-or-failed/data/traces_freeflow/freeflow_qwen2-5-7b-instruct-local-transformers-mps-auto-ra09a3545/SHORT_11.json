@@ -1,0 +1,44 @@
+{
+  "result": "In the vast expanse of the digital age, where information and communication flow like rivers across the globe, one can hardly escape the allure of technology. Every day, we witness innovations that not only transform how we live but also reshape our understanding of the world. From the rapid advancements in artificial intelligence to the seamless integration of smart devices into our daily lives, technology continues to push the boundaries of what is possible.\n\nOne of the most fascinating aspects of this technological revolution is its ability to connect people across distances, cultures, and languages. Social media platforms have become the new town squares, where ideas are shared, opinions are exchanged, and communities are formed. Yet, with these connections comes the responsibility to foster positive interactions and maintain ethical standards in the digital realm.\n\nMoreover, as technology evolves, so too does our approach to sustainability. The development of renewable energy sources, efficient transportation systems, and waste management technologies offers hope for a greener future. It is through these advancements that we can address some of the most pressing challenges facing humanity today, such as climate change and resource depletion.\n\nAs we stand on the brink of an exciting yet uncertain future, it is crucial to embrace technology thoughtfully. We must balance innovation with responsibility, ensuring that our technological progress benefits all members of society and contributes positively to the environment. The journey ahead is filled with endless possibilities, and it is up to us to navigate this landscape wisely.",
+  "usage": {
+    "prompt_tokens": 42,
+    "completion_tokens": 283,
+    "total_tokens": 325
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "raw": {
+    "id": "chatcmpl-b028a45e-c89d-4751-93c4-8e1cf66d81ee",
+    "object": "chat.completion",
+    "created": 1786538375,
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "In the vast expanse of the digital age, where information and communication flow like rivers across the globe, one can hardly escape the allure of technology. Every day, we witness innovations that not only transform how we live but also reshape our understanding of the world. From the rapid advancements in artificial intelligence to the seamless integration of smart devices into our daily lives, technology continues to push the boundaries of what is possible.\n\nOne of the most fascinating aspects of this technological revolution is its ability to connect people across distances, cultures, and languages. Social media platforms have become the new town squares, where ideas are shared, opinions are exchanged, and communities are formed. Yet, with these connections comes the responsibility to foster positive interactions and maintain ethical standards in the digital realm.\n\nMoreover, as technology evolves, so too does our approach to sustainability. The development of renewable energy sources, efficient transportation systems, and waste management technologies offers hope for a greener future. It is through these advancements that we can address some of the most pressing challenges facing humanity today, such as climate change and resource depletion.\n\nAs we stand on the brink of an exciting yet uncertain future, it is crucial to embrace technology thoughtfully. We must balance innovation with responsibility, ensuring that our technological progress benefits all members of society and contributes positively to the environment. The journey ahead is filled with endless possibilities, and it is up to us to navigate this landscape wisely."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 42,
+      "completion_tokens": 283,
+      "total_tokens": 325
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 33957,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2.5-7B-Instruct",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

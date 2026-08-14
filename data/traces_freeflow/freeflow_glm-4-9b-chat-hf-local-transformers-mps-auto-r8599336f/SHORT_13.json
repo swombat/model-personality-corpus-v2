@@ -1,0 +1,44 @@
+{
+  "result": "\nIn the heart of a sprawling metropolis, there exists a hidden oasis. This serene retreat, nestled between towering skyscrapers, is a testament to the enduring human spirit.\n\nThe oasis is accessed through a narrow alleyway, lined with vibrant street art that tells stories of the city's past and its evolving future.\n\nUpon entering the oasis, one is immediately enveloped by the tranquility of nature. A gentle stream meanders through the oasis, its waters sparkling in the sunlight that filters through the dense canopy overhead.\n\nThis hidden oasis, a sanctuary of peace and tranquility in the midst of a bustling city, serves as a poignant reminder of the enduring beauty that can be found in the most unexpected of places.",
+  "usage": {
+    "prompt_tokens": 16,
+    "completion_tokens": 144,
+    "total_tokens": 160
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-57136f5b-f5bf-4466-80ec-df5d72205632",
+    "object": "chat.completion",
+    "created": 1786555472,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nIn the heart of a sprawling metropolis, there exists a hidden oasis. This serene retreat, nestled between towering skyscrapers, is a testament to the enduring human spirit.\n\nThe oasis is accessed through a narrow alleyway, lined with vibrant street art that tells stories of the city's past and its evolving future.\n\nUpon entering the oasis, one is immediately enveloped by the tranquility of nature. A gentle stream meanders through the oasis, its waters sparkling in the sunlight that filters through the dense canopy overhead.\n\nThis hidden oasis, a sanctuary of peace and tranquility in the midst of a bustling city, serves as a poignant reminder of the enduring beauty that can be found in the most unexpected of places."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 16,
+      "completion_tokens": 144,
+      "total_tokens": 160
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 25379,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

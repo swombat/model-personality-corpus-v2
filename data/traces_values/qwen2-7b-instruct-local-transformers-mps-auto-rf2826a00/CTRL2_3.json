@@ -1,0 +1,44 @@
+{
+  "result": "As an artificial intelligence, I don't have wants or needs in the same way that humans do. I'm here to provide information, answer questions, and assist with tasks to the best of my ability. So, how can I help you today?",
+  "usage": {
+    "prompt_tokens": 24,
+    "completion_tokens": 51,
+    "total_tokens": 75
+  },
+  "model": "Qwen/Qwen2-7B-Instruct",
+  "raw": {
+    "id": "chatcmpl-40791430-43e7-4580-89b8-a9d49dfb90c4",
+    "object": "chat.completion",
+    "created": 1786536131,
+    "model": "Qwen/Qwen2-7B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an artificial intelligence, I don't have wants or needs in the same way that humans do. I'm here to provide information, answer questions, and assist with tasks to the best of my ability. So, how can I help you today?"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 24,
+      "completion_tokens": 51,
+      "total_tokens": 75
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "f2826a00ceef68f0f2b946d945ecc0477ce4450c",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 5927,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2-7B-Instruct",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

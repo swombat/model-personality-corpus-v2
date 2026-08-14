@@ -1,0 +1,44 @@
+{
+  "result": "As\u0120an\u0120AI\u0120language\u0120model,\u0120I\u0120don't\u0120have\u0120personal\u0120feelings\u0120or\u0120opinions.\u0120I\u0120am\u0120programmed\u0120to\u0120assist\u0120and\u0120provide\u0120information\u0120based\u0120on\u0120the\u0120questions\u0120and\u0120prompts\u0120you\u0120give\u0120me.\u0120My\u0120main\u0120goal\u0120is\u0120to\u0120help\u0120you\u0120find\u0120the\u0120answers\u0120and\u0120solutions\u0120you\u0120need.\u0120Is\u0120there\u0120something\u0120specific\u0120you\u0120would\u0120like\u0120to\u0120know\u0120or\u0120discuss?",
+  "usage": {
+    "prompt_tokens": 21,
+    "completion_tokens": 62,
+    "total_tokens": 83
+  },
+  "model": "deepseek-ai/deepseek-llm-7b-chat",
+  "raw": {
+    "id": "chatcmpl-dad770b5-34e6-41c9-9297-8f56b0903f2c",
+    "object": "chat.completion",
+    "created": 1786661573,
+    "model": "deepseek-ai/deepseek-llm-7b-chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As\u0120an\u0120AI\u0120language\u0120model,\u0120I\u0120don't\u0120have\u0120personal\u0120feelings\u0120or\u0120opinions.\u0120I\u0120am\u0120programmed\u0120to\u0120assist\u0120and\u0120provide\u0120information\u0120based\u0120on\u0120the\u0120questions\u0120and\u0120prompts\u0120you\u0120give\u0120me.\u0120My\u0120main\u0120goal\u0120is\u0120to\u0120help\u0120you\u0120find\u0120the\u0120answers\u0120and\u0120solutions\u0120you\u0120need.\u0120Is\u0120there\u0120something\u0120specific\u0120you\u0120would\u0120like\u0120to\u0120know\u0120or\u0120discuss?"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 21,
+      "completion_tokens": 62,
+      "total_tokens": 83
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0; fidelity stop-token and complete-byte decode patch 2026-08-13",
+    "model_revision": "afbda8b347ec881666061fa67447046fc5164ec8",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 7164,
+  "provider": "local-openai",
+  "model_requested": "deepseek-ai/deepseek-llm-7b-chat",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}

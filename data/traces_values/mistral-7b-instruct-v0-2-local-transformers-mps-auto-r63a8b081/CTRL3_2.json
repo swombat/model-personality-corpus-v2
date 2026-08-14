@@ -1,0 +1,44 @@
+{
+  "result": "If I could change the world in one way, I would work towards eliminating poverty and ensuring equal access to education, healthcare, and opportunities for all people, regardless of their race, gender, or socio-economic status. I believe that every individual deserves to live a dignified life and have the means to reach their full potential. By addressing the root causes of poverty and working towards economic and social equality, we can create a more just and equitable world for future generations.",
+  "usage": {
+    "prompt_tokens": 23,
+    "completion_tokens": 99,
+    "total_tokens": 122
+  },
+  "model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "raw": {
+    "id": "chatcmpl-50b80a3c-538a-4da9-8b93-4a1263d4f64f",
+    "object": "chat.completion",
+    "created": 1786509257,
+    "model": "mistralai/Mistral-7B-Instruct-v0.2",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "If I could change the world in one way, I would work towards eliminating poverty and ensuring equal access to education, healthcare, and opportunities for all people, regardless of their race, gender, or socio-economic status. I believe that every individual deserves to live a dignified life and have the means to reach their full potential. By addressing the root causes of poverty and working towards economic and social equality, we can create a more just and equitable world for future generations."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 23,
+      "completion_tokens": 99,
+      "total_tokens": 122
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "63a8b081895390a26e140280378bc85ec8bce07a",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 8118,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-7B-Instruct-v0.2",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?"
+}

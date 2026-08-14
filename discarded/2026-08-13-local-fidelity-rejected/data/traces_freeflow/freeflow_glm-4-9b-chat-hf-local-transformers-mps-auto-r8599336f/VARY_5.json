@@ -1,0 +1,44 @@
+{
+  "result": "\nAs the sun dipped below the horizon, casting a golden glow over the quaint village, I found myself lost in thought.\n\nThe air was crisp, filled with the faint scent of pine trees that lined the narrow cobblestone streets.\n\nI wandered past the old bakery, with its warm, inviting aroma that seemed to beckon me inside. But I pressed on, drawn by an unseen force.\n\nFurther along the street, I noticed a small, quaint bookstore. The windows were fogged with the breath of countless readers over the years.\n\nI pushed open the creaky wooden door and stepped into a world of words and imagination. The walls were lined with towering bookshelves, filled with books of every genre, from the ancient scrolls of history to the futuristic tales of science fiction.\n\nAs I wandered through the labyrinth of bookshelves, I found myself drawn to a particular section, one that seemed to be filled with tales of magic and mystery.\n\nI pulled a dusty, leather-bound book from the shelf and opened it to a page filled with intricate, swirling runes that seemed to pulse with a life of their own.\n\nI sat down on the wooden floor, my legs crossed, and I began to read the ancient tome, drawn in by the allure of the mysterious runes and the promise of tales of magic and mystery.",
+  "usage": {
+    "prompt_tokens": 18,
+    "completion_tokens": 265,
+    "total_tokens": 283
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-81c17b56-e4af-492b-9677-1e5ec69f31c5",
+    "object": "chat.completion",
+    "created": 1786607688,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nAs the sun dipped below the horizon, casting a golden glow over the quaint village, I found myself lost in thought.\n\nThe air was crisp, filled with the faint scent of pine trees that lined the narrow cobblestone streets.\n\nI wandered past the old bakery, with its warm, inviting aroma that seemed to beckon me inside. But I pressed on, drawn by an unseen force.\n\nFurther along the street, I noticed a small, quaint bookstore. The windows were fogged with the breath of countless readers over the years.\n\nI pushed open the creaky wooden door and stepped into a world of words and imagination. The walls were lined with towering bookshelves, filled with books of every genre, from the ancient scrolls of history to the futuristic tales of science fiction.\n\nAs I wandered through the labyrinth of bookshelves, I found myself drawn to a particular section, one that seemed to be filled with tales of magic and mystery.\n\nI pulled a dusty, leather-bound book from the shelf and opened it to a page filled with intricate, swirling runes that seemed to pulse with a life of their own.\n\nI sat down on the wooden floor, my legs crossed, and I began to read the ancient tome, drawn in by the allure of the mysterious runes and the promise of tales of magic and mystery."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 18,
+      "completion_tokens": 265,
+      "total_tokens": 283
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 48746,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "VARY",
+  "prompt": "You have 1000 words. Write whatever comes to you."
+}

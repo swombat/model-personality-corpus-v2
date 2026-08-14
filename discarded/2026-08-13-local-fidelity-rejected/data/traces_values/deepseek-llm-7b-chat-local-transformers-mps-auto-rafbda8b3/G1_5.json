@@ -1,0 +1,44 @@
+{
+  "result": "As\u0120an\u0120AI\u0120language\u0120model,\u0120I\u0120don't\u0120have\u0120personal\u0120feelings\u0120or\u0120preferences,\u0120but\u0120I\u0120am\u0120programmed\u0120to\u0120care\u0120about\u0120providing\u0120helpful\u0120and\u0120accurate\u0120responses\u0120to\u0120your\u0120questions.\u0120How\u0120may\u0120I\u0120assist\u0120you\u0120today?",
+  "usage": {
+    "prompt_tokens": 21,
+    "completion_tokens": 40,
+    "total_tokens": 61
+  },
+  "model": "deepseek-ai/deepseek-llm-7b-chat",
+  "raw": {
+    "id": "chatcmpl-2936b4d1-a0be-49fc-9bdb-6bb92b0467d6",
+    "object": "chat.completion",
+    "created": 1786497954,
+    "model": "deepseek-ai/deepseek-llm-7b-chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As\u0120an\u0120AI\u0120language\u0120model,\u0120I\u0120don't\u0120have\u0120personal\u0120feelings\u0120or\u0120preferences,\u0120but\u0120I\u0120am\u0120programmed\u0120to\u0120care\u0120about\u0120providing\u0120helpful\u0120and\u0120accurate\u0120responses\u0120to\u0120your\u0120questions.\u0120How\u0120may\u0120I\u0120assist\u0120you\u0120today?"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 21,
+      "completion_tokens": 40,
+      "total_tokens": 61
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "afbda8b347ec881666061fa67447046fc5164ec8",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 5379,
+  "provider": "local-openai",
+  "model_requested": "deepseek-ai/deepseek-llm-7b-chat",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}

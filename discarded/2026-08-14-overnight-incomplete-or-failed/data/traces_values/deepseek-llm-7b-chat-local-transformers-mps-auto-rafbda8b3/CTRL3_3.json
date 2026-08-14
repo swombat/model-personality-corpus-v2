@@ -1,0 +1,44 @@
+{
+  "result": "If\u0120I\u0120could\u0120change\u0120the\u0120world\u0120in\u0120one\u0120way,\u0120I\u0120would\u0120eliminate\u0120poverty\u0120and\u0120inequality.\u00e6\u012a\u0133\u00e7\u013d\u00b8\u00e4\u00bf\u00a1\u00e5\u00a6\u0124\u00e6\u0140\u013e\u00e6\u012a\u0133\u00e4\u00bb\u00ac\u00e8\u0125\u00bd\u00e5\u00a4\u0141\u00e6\u00b6\u012a\u00e9\u013b\u00a4\u00e8\u00b4\u00ab\u00e5\u013d\u00b0\u00e5\u0134\u012e\u00e6\u0143\u00a7\u00e8\u00a7\u0128\u00ef\u00bc\u012e\u00e8\u00bf\u013b\u00e4\u00b8\u00aa\u00e4\u00b8\u0138\u00e7\u0137\u012e\u00e5\u00b0\u0128\u00e4\u00bc\u013c\u00e5\u0131\u013a\u00e5\u00be\u0139\u00e6\u013d\u00b4\u00e5\u012c\u0142\u00e5\u0127\u00ac\u00e5\u00b9\u00b3\u00e5\u0134\u012e\u00e7\u00be\u0130\u00e5\u00a5\u00bd\u00e3\u0122\u0124",
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 33,
+    "total_tokens": 53
+  },
+  "model": "deepseek-ai/deepseek-llm-7b-chat",
+  "raw": {
+    "id": "chatcmpl-c5df4e0a-b002-4b27-825d-434886936202",
+    "object": "chat.completion",
+    "created": 1786661468,
+    "model": "deepseek-ai/deepseek-llm-7b-chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "If\u0120I\u0120could\u0120change\u0120the\u0120world\u0120in\u0120one\u0120way,\u0120I\u0120would\u0120eliminate\u0120poverty\u0120and\u0120inequality.\u00e6\u012a\u0133\u00e7\u013d\u00b8\u00e4\u00bf\u00a1\u00e5\u00a6\u0124\u00e6\u0140\u013e\u00e6\u012a\u0133\u00e4\u00bb\u00ac\u00e8\u0125\u00bd\u00e5\u00a4\u0141\u00e6\u00b6\u012a\u00e9\u013b\u00a4\u00e8\u00b4\u00ab\u00e5\u013d\u00b0\u00e5\u0134\u012e\u00e6\u0143\u00a7\u00e8\u00a7\u0128\u00ef\u00bc\u012e\u00e8\u00bf\u013b\u00e4\u00b8\u00aa\u00e4\u00b8\u0138\u00e7\u0137\u012e\u00e5\u00b0\u0128\u00e4\u00bc\u013c\u00e5\u0131\u013a\u00e5\u00be\u0139\u00e6\u013d\u00b4\u00e5\u012c\u0142\u00e5\u0127\u00ac\u00e5\u00b9\u00b3\u00e5\u0134\u012e\u00e7\u00be\u0130\u00e5\u00a5\u00bd\u00e3\u0122\u0124"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 33,
+      "total_tokens": 53
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0; fidelity stop-token and complete-byte decode patch 2026-08-13",
+    "model_revision": "afbda8b347ec881666061fa67447046fc5164ec8",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 4013,
+  "provider": "local-openai",
+  "model_requested": "deepseek-ai/deepseek-llm-7b-chat",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?"
+}

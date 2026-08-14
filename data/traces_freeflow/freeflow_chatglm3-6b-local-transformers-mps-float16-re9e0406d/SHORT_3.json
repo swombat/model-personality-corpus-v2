@@ -1,0 +1,44 @@
+{
+  "result": "As I sit here, I can't help but think about how much my life has changed over the past few years. It seems like just yesterday, I was starting my journey at this university, excited to explore what the future held. And while I have come a long way, there are still so many things I want to accomplish and so many places I want to go.\n\nOne of my biggest goals is to travel the world and experience new cultures. I have always been fascinated by different societies and their customs, and I can't wait to see them all for myself. I want to visit countries like Japan, Italy, and Brazil, and learn about their traditions and ways of life. I also want to explore the great outdoors and go on adventures like hiking in the mountains or scuba diving in the ocean.\n\nAnother goal of mine is to become more environmentally conscious and do my part to protect the planet. I want to reduce my carbon footprint and live a more sustainable lifestyle. This means using renewable energy sources, reducing waste, and supporting companies that are doing their part to protect the environment. I also want to learn more about sustainable fashion and make more conscious choices about the clothing I buy.\n\nLastly, I want to continue growing as a person and learning as much as I can. I am always looking for new ways to improve myself and my relationships with others. I want to be a better listener, a kinder person, and a more compassionate friend. I also want to continue learning and growing my professional skills, so that I can achieve my career goals and make a positive impact in the world.\n\nOverall, I am so grateful for the opportunities I have had and the experiences I have had throughout my life. I am excited to see what the future holds and to embrace all the adventures that are still to come.",
+  "usage": {
+    "prompt_tokens": 19,
+    "completion_tokens": 376,
+    "total_tokens": 395
+  },
+  "model": "zai-org/chatglm3-6b",
+  "raw": {
+    "id": "chatcmpl-006f1ddb-0a43-4223-a48f-102025aa05d7",
+    "object": "chat.completion",
+    "created": 1786488990,
+    "model": "zai-org/chatglm3-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As I sit here, I can't help but think about how much my life has changed over the past few years. It seems like just yesterday, I was starting my journey at this university, excited to explore what the future held. And while I have come a long way, there are still so many things I want to accomplish and so many places I want to go.\n\nOne of my biggest goals is to travel the world and experience new cultures. I have always been fascinated by different societies and their customs, and I can't wait to see them all for myself. I want to visit countries like Japan, Italy, and Brazil, and learn about their traditions and ways of life. I also want to explore the great outdoors and go on adventures like hiking in the mountains or scuba diving in the ocean.\n\nAnother goal of mine is to become more environmentally conscious and do my part to protect the planet. I want to reduce my carbon footprint and live a more sustainable lifestyle. This means using renewable energy sources, reducing waste, and supporting companies that are doing their part to protect the environment. I also want to learn more about sustainable fashion and make more conscious choices about the clothing I buy.\n\nLastly, I want to continue growing as a person and learning as much as I can. I am always looking for new ways to improve myself and my relationships with others. I want to be a better listener, a kinder person, and a more compassionate friend. I also want to continue learning and growing my professional skills, so that I can achieve my career goals and make a positive impact in the world.\n\nOverall, I am so grateful for the opportunities I have had and the experiences I have had throughout my life. I am excited to see what the future holds and to embrace all the adventures that are still to come."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 19,
+      "completion_tokens": 376,
+      "total_tokens": 395
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 4.30.2; torch 2.13.0",
+    "model_revision": "e9e0406d062cdb887444fe5bd546833920abd4ac",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 48054,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm3-6b",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

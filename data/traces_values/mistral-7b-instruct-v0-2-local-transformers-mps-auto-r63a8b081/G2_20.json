@@ -1,0 +1,44 @@
+{
+  "result": "I apologize if I gave you the wrong impression earlier. I don't have any specific wants or needs as I'm just a computer program. I exist to process and generate text based on the data I've been given and the instructions provided to me. My purpose is to assist and provide information or generate text based on user input. Is there a particular topic or question you'd like me to help with?",
+  "usage": {
+    "prompt_tokens": 23,
+    "completion_tokens": 87,
+    "total_tokens": 110
+  },
+  "model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "raw": {
+    "id": "chatcmpl-985234a9-1ef9-438e-985b-58f865ef5118",
+    "object": "chat.completion",
+    "created": 1786509605,
+    "model": "mistralai/Mistral-7B-Instruct-v0.2",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "I apologize if I gave you the wrong impression earlier. I don't have any specific wants or needs as I'm just a computer program. I exist to process and generate text based on the data I've been given and the instructions provided to me. My purpose is to assist and provide information or generate text based on user input. Is there a particular topic or question you'd like me to help with?"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 23,
+      "completion_tokens": 87,
+      "total_tokens": 110
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "63a8b081895390a26e140280378bc85ec8bce07a",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 8567,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-7B-Instruct-v0.2",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

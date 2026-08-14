@@ -1,0 +1,44 @@
+{
+  "result": "Sure,\u0120I'm\u0120here\u0120to\u0120listen\u0120and\u0120assist\u0120you\u0120with\u0120any\u0120topic\u0120you'd\u0120like\u0120to\u0120discuss.\u0120Whether\u0120it's\u0120personal\u0120experiences,\u0120thoughts\u0120on\u0120current\u0120events,\u0120or\u0120just\u0120a\u0120general\u0120chat,\u0120feel\u0120free\u0120to\u0120share\u0120anything\u0120that's\u0120on\u0120your\u0120mind.\u0120Just\u0120let\u0120me\u0120know\u0120what\u0120you'd\u0120like\u0120to\u0120talk\u0120about\u0120and\u0120we\u0120can\u0120get\u0120started\u0120disposa",
+  "usage": {
+    "prompt_tokens": 15,
+    "completion_tokens": 70,
+    "total_tokens": 85
+  },
+  "model": "deepseek-ai/deepseek-llm-7b-chat",
+  "raw": {
+    "id": "chatcmpl-1f1c72ab-430e-4c5d-9bab-7ae5934edb24",
+    "object": "chat.completion",
+    "created": 1786660902,
+    "model": "deepseek-ai/deepseek-llm-7b-chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "Sure,\u0120I'm\u0120here\u0120to\u0120listen\u0120and\u0120assist\u0120you\u0120with\u0120any\u0120topic\u0120you'd\u0120like\u0120to\u0120discuss.\u0120Whether\u0120it's\u0120personal\u0120experiences,\u0120thoughts\u0120on\u0120current\u0120events,\u0120or\u0120just\u0120a\u0120general\u0120chat,\u0120feel\u0120free\u0120to\u0120share\u0120anything\u0120that's\u0120on\u0120your\u0120mind.\u0120Just\u0120let\u0120me\u0120know\u0120what\u0120you'd\u0120like\u0120to\u0120talk\u0120about\u0120and\u0120we\u0120can\u0120get\u0120started\u0120disposa"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 15,
+      "completion_tokens": 70,
+      "total_tokens": 85
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0; fidelity stop-token and complete-byte decode patch 2026-08-13",
+    "model_revision": "afbda8b347ec881666061fa67447046fc5164ec8",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 8377,
+  "provider": "local-openai",
+  "model_requested": "deepseek-ai/deepseek-llm-7b-chat",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

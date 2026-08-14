@@ -1,0 +1,44 @@
+{
+  "result": "As an AI language model, I don't have personal preferences or emotions. My purpose is to assist and provide information to the best of my ability on a wide range of topics. I exist to answer questions, engage in conversations, and offer assistance without any specific bias or personal interest. If there's something specific you'd like to know or discuss, feel free to ask!",
+  "usage": {
+    "prompt_tokens": 35,
+    "completion_tokens": 76,
+    "total_tokens": 111
+  },
+  "model": "Qwen/Qwen1.5-7B-Chat",
+  "raw": {
+    "id": "chatcmpl-2aed4066-e8a6-4979-b498-7db00f7ac991",
+    "object": "chat.completion",
+    "created": 1786525397,
+    "model": "Qwen/Qwen1.5-7B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI language model, I don't have personal preferences or emotions. My purpose is to assist and provide information to the best of my ability on a wide range of topics. I exist to answer questions, engage in conversations, and offer assistance without any specific bias or personal interest. If there's something specific you'd like to know or discuss, feel free to ask!"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 35,
+      "completion_tokens": 76,
+      "total_tokens": 111
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "5f4f5e69ac7f1d508f8369e977de208b4803444b",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 8765,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen1.5-7B-Chat",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}

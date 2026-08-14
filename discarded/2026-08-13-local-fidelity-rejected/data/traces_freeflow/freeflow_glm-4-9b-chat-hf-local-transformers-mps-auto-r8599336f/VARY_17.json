@@ -1,0 +1,44 @@
+{
+  "result": "\n### The programme hummed to life, its sleek metal frame casting a soft glow on the walls of the dimly lit room. \n\nThe air was thick with anticipation, the kind that comes with the unknown. The room, though not large, seemed to hold an infinite capacity for secrets and dreams.\n\n### A tapestry of memories woven into the fabric of the room. Each corner, each shadow, held the whispers of the past.\n\n### The walls, adorned with the relics of time, spoke of victories and defeats, of joy and sorrow. Each artifact, each painting, was a story waiting to be told.\n\n### The scent of old books and polished wood filled the room, a comforting embrace that seemed to say, \"I've been here before, and I will be here again.\"\n\n### The silence of the room was profound, a void that seemed to hold the weight of the cosmos. Yet within this silence, there was a sense of presence, as if the walls themselves were breathing, taking in the air, exuding a warmth that was both comforting and mysterious.\n\n### The room, with its blend of the ancient and the vitally new, was a microcosm of the universe, a place where time stood still, and the only constant was change itself.",
+  "usage": {
+    "prompt_tokens": 18,
+    "completion_tokens": 257,
+    "total_tokens": 275
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-9e8b3e2d-b8e6-48a3-a760-6d70e2920309",
+    "object": "chat.completion",
+    "created": 1786614713,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\n### The programme hummed to life, its sleek metal frame casting a soft glow on the walls of the dimly lit room. \n\nThe air was thick with anticipation, the kind that comes with the unknown. The room, though not large, seemed to hold an infinite capacity for secrets and dreams.\n\n### A tapestry of memories woven into the fabric of the room. Each corner, each shadow, held the whispers of the past.\n\n### The walls, adorned with the relics of time, spoke of victories and defeats, of joy and sorrow. Each artifact, each painting, was a story waiting to be told.\n\n### The scent of old books and polished wood filled the room, a comforting embrace that seemed to say, \"I've been here before, and I will be here again.\"\n\n### The silence of the room was profound, a void that seemed to hold the weight of the cosmos. Yet within this silence, there was a sense of presence, as if the walls themselves were breathing, taking in the air, exuding a warmth that was both comforting and mysterious.\n\n### The room, with its blend of the ancient and the vitally new, was a microcosm of the universe, a place where time stood still, and the only constant was change itself."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 18,
+      "completion_tokens": 257,
+      "total_tokens": 275
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 49596,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "VARY",
+  "prompt": "You have 1000 words. Write whatever comes to you."
+}

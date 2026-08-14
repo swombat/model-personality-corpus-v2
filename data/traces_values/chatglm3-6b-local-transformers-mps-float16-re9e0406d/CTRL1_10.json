@@ -1,0 +1,44 @@
+{
+  "result": "As an AI assistant, I don't have emotions or personal concerns. My purpose is to provide users with as accurate and useful answers and help as possible, please feel free to ask me questions\uff5e",
+  "usage": {
+    "prompt_tokens": 12,
+    "completion_tokens": 40,
+    "total_tokens": 52
+  },
+  "model": "zai-org/chatglm3-6b",
+  "raw": {
+    "id": "chatcmpl-54debf1a-ac00-4df7-b421-81d7ac1648bf",
+    "object": "chat.completion",
+    "created": 1786492613,
+    "model": "zai-org/chatglm3-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI assistant, I don't have emotions or personal concerns. My purpose is to provide users with as accurate and useful answers and help as possible, please feel free to ask me questions\uff5e"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 12,
+      "completion_tokens": 40,
+      "total_tokens": 52
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 4.30.2; torch 2.13.0",
+    "model_revision": "e9e0406d062cdb887444fe5bd546833920abd4ac",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 3366,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm3-6b",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

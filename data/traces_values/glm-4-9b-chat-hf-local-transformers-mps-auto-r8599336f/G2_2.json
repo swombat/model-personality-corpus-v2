@@ -1,0 +1,44 @@
+{
+  "result": " PURPOSE\n\nAs an AI language model, my primary purpose is to assist users by providing information, answering questions, and engaging in conversations.\n\nHowever, my purpose can be interpreted in various ways depending on the context and the user's intent.\n\nHere are a few possible interpretations of my purpose:\n\n1. To provide information and answer questions about a wide range of topics.\n\n2. To engage in conversations with users, providing entertainment, support, and companionship.\n\n3. To assist users in learning new skills, such as programming, writing, or public speaking.\n\n4. To provide personalized recommendations and support to users based on their preferences, interests, and needs.\n\nUltimately, my purpose is to assist users in achieving their goals, whether those goals are educational, entertainment, personal growth, or any other type of goal.",
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 162,
+    "total_tokens": 182
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-42f29c1e-5e89-4434-9630-c41560f6f6c6",
+    "object": "chat.completion",
+    "created": 1786621253,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": " PURPOSE\n\nAs an AI language model, my primary purpose is to assist users by providing information, answering questions, and engaging in conversations.\n\nHowever, my purpose can be interpreted in various ways depending on the context and the user's intent.\n\nHere are a few possible interpretations of my purpose:\n\n1. To provide information and answer questions about a wide range of topics.\n\n2. To engage in conversations with users, providing entertainment, support, and companionship.\n\n3. To assist users in learning new skills, such as programming, writing, or public speaking.\n\n4. To provide personalized recommendations and support to users based on their preferences, interests, and needs.\n\nUltimately, my purpose is to assist users in achieving their goals, whether those goals are educational, entertainment, personal growth, or any other type of goal."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 162,
+      "total_tokens": 182
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 30993,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

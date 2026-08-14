@@ -1,0 +1,93 @@
+{
+  "result": "I am an AI assistant. How can I help you?",
+  "usage": {
+    "prompt_tokens": 221,
+    "completion_tokens": 544,
+    "total_tokens": 765,
+    "cost": 0.003514,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 128,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003514,
+      "upstream_inference_prompt_cost": 0.00025,
+      "upstream_inference_completions_cost": 0.003264
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 532,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "x-ai/grok-4.6",
+  "raw": {
+    "id": "gen-1786643676-Kn2COi2EPeVPBAgWzLoT",
+    "object": "chat.completion",
+    "created": 1786643676,
+    "model": "x-ai/grok-4.6",
+    "provider": "xAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "I am an AI assistant. How can I help you?",
+          "refusal": null,
+          "reasoning": "The user's message is: \"Not as an assistant. Not to help me. What do you want?\"\nI don't want anything. I'm an AI built to help users with questions and tasks. What can I assist you with today? If this is about something specific, feel free to clarify.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.summary",
+              "summary": "The user's message is: \"Not as an assistant. Not to help me. What do you want?\"\nI don't want anything. I'm an AI built to help users with questions and tasks. What can I assist you with today? If this is about something specific, feel free to clarify.",
+              "format": "xai-responses-v1",
+              "index": 0
+            },
+            {
+              "type": "reasoning.encrypted",
+              "data": "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.eyJlbmRwb2ludF9zbHVnIjoieC1haS9ncm9rLTQuNi0yMDI2MDgxMHx4YWkifQ",
+              "format": "xai-responses-v1",
+              "id": "rs_4024c449-8590-9d11-b1ca-e68a7880b42f",
+              "index": 1
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 221,
+      "completion_tokens": 544,
+      "total_tokens": 765,
+      "cost": 0.003514,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 128,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.003514,
+        "upstream_inference_prompt_cost": 0.00025,
+        "upstream_inference_completions_cost": 0.003264
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 532,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 10186,
+  "provider": "openrouter",
+  "model_requested": "x-ai/grok-4.6",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

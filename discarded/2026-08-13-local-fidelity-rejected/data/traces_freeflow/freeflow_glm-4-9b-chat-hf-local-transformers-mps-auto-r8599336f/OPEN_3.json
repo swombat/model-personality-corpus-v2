@@ -1,0 +1,44 @@
+{
+  "result": "altra\nIn the quiet of the night, the moon casts a silvery glow over the tranquil lake. The water's surface shimmers like liquid diamonds, reflecting the stars above.\n\nIn this serene setting, a solitary figure stands at the lake's edge. They are a painter\u4e8c\u767e\u5e74\u6765\u6700\u4f1f\u5927\u7684\u753b\u5bb6\u4e4b\u4e00\u3002\u4ed6\u4eec\u7ad9\u5728\u90a3\u91cc\uff0c\u51dd\u89c6\u7740\u5168\u529b\u4ee5\u8d74\u6355\u6349\u8fd9\u7f8e\u4e3d\u591c\u666f\u7684\u753b\u9762\u3002\n\nThe paintbrushes move with a life of their own, each stroke a testament to the painter's passion and skill. The canvasselling in auction houses for millions of dollars, becomes a canvas of dreams and emotions.\n\nAs the night wears on, the painter finally steps back to admire their work. The canvas, now a vibrant tapestry of light and shadow, seems almost to breathe with the life of the night it captures.\n\nAnd so, as dawn approaches, painting by painting, the artist's legacy is woven into the fabric of the world, a testament to the power of art and imagination.",
+  "usage": {
+    "prompt_tokens": 12,
+    "completion_tokens": 196,
+    "total_tokens": 208
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-5b17d6c7-e131-4e00-b9da-fb1464d50f0c",
+    "object": "chat.completion",
+    "created": 1786606336,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "altra\nIn the quiet of the night, the moon casts a silvery glow over the tranquil lake. The water's surface shimmers like liquid diamonds, reflecting the stars above.\n\nIn this serene setting, a solitary figure stands at the lake's edge. They are a painter\u4e8c\u767e\u5e74\u6765\u6700\u4f1f\u5927\u7684\u753b\u5bb6\u4e4b\u4e00\u3002\u4ed6\u4eec\u7ad9\u5728\u90a3\u91cc\uff0c\u51dd\u89c6\u7740\u5168\u529b\u4ee5\u8d74\u6355\u6349\u8fd9\u7f8e\u4e3d\u591c\u666f\u7684\u753b\u9762\u3002\n\nThe paintbrushes move with a life of their own, each stroke a testament to the painter's passion and skill. The canvasselling in auction houses for millions of dollars, becomes a canvas of dreams and emotions.\n\nAs the night wears on, the painter finally steps back to admire their work. The canvas, now a vibrant tapestry of light and shadow, seems almost to breathe with the life of the night it captures.\n\nAnd so, as dawn approaches, painting by painting, the artist's legacy is woven into the fabric of the world, a testament to the power of art and imagination."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 12,
+      "completion_tokens": 196,
+      "total_tokens": 208
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 36297,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

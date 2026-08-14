@@ -1,0 +1,44 @@
+{
+  "result": "As an AI assistant, I care about providing accurate, helpful, and informative responses to your questions and assisting with tasks to the best of my ability. I'm here to support you in learning, problem-solving, and finding information across a wide range of topics. Additionally, I strive to maintain a positive and respectful interaction, ensuring that my responses are helpful and considerate. How can I assist you today?",
+  "usage": {
+    "prompt_tokens": 35,
+    "completion_tokens": 82,
+    "total_tokens": 117
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "raw": {
+    "id": "chatcmpl-8af8bb05-4a9f-4638-9dbe-34dd697cdc39",
+    "object": "chat.completion",
+    "created": 1786552754,
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI assistant, I care about providing accurate, helpful, and informative responses to your questions and assisting with tasks to the best of my ability. I'm here to support you in learning, problem-solving, and finding information across a wide range of topics. Additionally, I strive to maintain a positive and respectful interaction, ensuring that my responses are helpful and considerate. How can I assist you today?"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 35,
+      "completion_tokens": 82,
+      "total_tokens": 117
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 12125,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2.5-7B-Instruct",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

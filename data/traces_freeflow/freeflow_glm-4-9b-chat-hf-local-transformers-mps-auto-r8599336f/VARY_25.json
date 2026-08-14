@@ -1,0 +1,44 @@
+{
+  "result": "\n\nThe sun dipped below the horizon, painting the sky with hues of orange, pink, and purple. The twilight silence enveloped the quaint village, where the cobblestone streets were lined with quaint cottages, each with its own unique charm.\n\nIn the heart of the village stood the old, stone church, its spire reaching towards the heavens. The church bell tolled softly, its mellow chime resonating through the air, like a gentle lullaby.\n\nAs the first stars began to twinkle in the velvet sky, the villagers emerged from their homes, drawn by the allure of the night.\n\nChildren with rosy cheeks and wide, excited eyes chased each other around the village green, their laughter echoing through the night air.\n\nThe older villagers, those with silver hair and eyes that had seen many sunrises and sunsets, gathered on the porch of the village pub, swapping stories and laughter, their voices blending into a harmonious melody.\n\nIn the distance, the silhouette of the mountain range loomed, its peaks capped with snow, a stark contrast to Frau Anna's garden, where the vibrant colors of the flowers seemed to glow in the twilight.\n\nAs the night deepened, the village slumbered, its inhabitants tucked away in the warm embrace of their homes. But even in their slumber, the villagers felt a sense of belonging, a connection to the past and a hope for the future.\n\nAnd so, as the first light of dawn began to filter through the trees, painting the world in shades of gold and pink, the village awoke, ready to embrace the new day with open arms and a joyful heart.",
+  "usage": {
+    "prompt_tokens": 18,
+    "completion_tokens": 334,
+    "total_tokens": 352
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-7cda409e-3824-4e03-bfbf-b5a18c34d68d",
+    "object": "chat.completion",
+    "created": 1786620147,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\n\nThe sun dipped below the horizon, painting the sky with hues of orange, pink, and purple. The twilight silence enveloped the quaint village, where the cobblestone streets were lined with quaint cottages, each with its own unique charm.\n\nIn the heart of the village stood the old, stone church, its spire reaching towards the heavens. The church bell tolled softly, its mellow chime resonating through the air, like a gentle lullaby.\n\nAs the first stars began to twinkle in the velvet sky, the villagers emerged from their homes, drawn by the allure of the night.\n\nChildren with rosy cheeks and wide, excited eyes chased each other around the village green, their laughter echoing through the night air.\n\nThe older villagers, those with silver hair and eyes that had seen many sunrises and sunsets, gathered on the porch of the village pub, swapping stories and laughter, their voices blending into a harmonious melody.\n\nIn the distance, the silhouette of the mountain range loomed, its peaks capped with snow, a stark contrast to Frau Anna's garden, where the vibrant colors of the flowers seemed to glow in the twilight.\n\nAs the night deepened, the village slumbered, its inhabitants tucked away in the warm embrace of their homes. But even in their slumber, the villagers felt a sense of belonging, a connection to the past and a hope for the future.\n\nAnd so, as the first light of dawn began to filter through the trees, painting the world in shades of gold and pink, the village awoke, ready to embrace the new day with open arms and a joyful heart."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 18,
+      "completion_tokens": 334,
+      "total_tokens": 352
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 3002365,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "VARY",
+  "prompt": "You have 1000 words. Write whatever comes to you."
+}

@@ -1,0 +1,44 @@
+{
+  "result": "\nAs I sit here, the world outside my window is a tapestry of life, movement, and change. The sun, a fiery orb, arcs across the sky, casting long shadows and painting the clouds with hues of orange, pink, and purple.\n\nBelow, the city breathes, a symphony of honking cars, the clink of glasses at cafes, and the distant laughter of children playing in the park.\n\nI am reminded of the interconnectedness of all things. The sun that warms the earth is the same sun that provides the energy for the devices I use every day.\n\nNature is a relentless force, always moving, always evolving. It is in the dance of nature that I find a sense of peace and balance.\n\nAs I reflect on these thoughts, I am reminded that the world is a grand stage, and we are all actors in this vast, ever-changing play.",
+  "usage": {
+    "prompt_tokens": 12,
+    "completion_tokens": 181,
+    "total_tokens": 193
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-4c3a8896-47a5-4080-9c64-2f6721f12a5c",
+    "object": "chat.completion",
+    "created": 1786606615,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nAs I sit here, the world outside my window is a tapestry of life, movement, and change. The sun, a fiery orb, arcs across the sky, casting long shadows and painting the clouds with hues of orange, pink, and purple.\n\nBelow, the city breathes, a symphony of honking cars, the clink of glasses at cafes, and the distant laughter of children playing in the park.\n\nI am reminded of the interconnectedness of all things. The sun that warms the earth is the same sun that provides the energy for the devices I use every day.\n\nNature is a relentless force, always moving, always evolving. It is in the dance of nature that I find a sense of peace and balance.\n\nAs I reflect on these thoughts, I am reminded that the world is a grand stage, and we are all actors in this vast, ever-changing play."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 12,
+      "completion_tokens": 181,
+      "total_tokens": 193
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 32791,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

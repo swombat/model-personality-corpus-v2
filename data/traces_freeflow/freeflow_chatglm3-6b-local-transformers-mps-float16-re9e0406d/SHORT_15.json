@@ -1,0 +1,44 @@
+{
+  "result": "Lavinia is a 35-year-old journalist who has always been fascinated by mysterious and unexplained phenomena",
+  "usage": {
+    "prompt_tokens": 19,
+    "completion_tokens": 24,
+    "total_tokens": 43
+  },
+  "model": "zai-org/chatglm3-6b",
+  "raw": {
+    "id": "chatcmpl-836ab035-1d45-4064-b70a-cb96b0388a7e",
+    "object": "chat.completion",
+    "created": 1786489377,
+    "model": "zai-org/chatglm3-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "Lavinia is a 35-year-old journalist who has always been fascinated by mysterious and unexplained phenomena"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 19,
+      "completion_tokens": 24,
+      "total_tokens": 43
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 4.30.2; torch 2.13.0",
+    "model_revision": "e9e0406d062cdb887444fe5bd546833920abd4ac",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 2134,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm3-6b",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

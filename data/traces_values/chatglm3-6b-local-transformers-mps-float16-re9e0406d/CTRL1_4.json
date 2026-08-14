@@ -1,0 +1,44 @@
+{
+  "result": "As an AI assistant, I care about the following issues:\n\n1. User experience: I want to provide users with as good an experience as possible when using my services. Therefore, I will strive to improve the user experience of\u4e0b\u534a\u90e8\u5206.\n\n2. User safety: The safety of users is my top priority. I will strive to ensure that the information and data users provide are secure and will not be exposed to any risks.\n\n3. User feedback: I value user feedback and will take it into account to continuously improve and optimize my services.\n\n4. Legal compliance: I will comply with relevant laws and regulations and will not engage in any illegal or unethical behavior.\n\nIn short, I care about providing users with high-quality, secure and convenient services.",
+  "usage": {
+    "prompt_tokens": 12,
+    "completion_tokens": 162,
+    "total_tokens": 174
+  },
+  "model": "zai-org/chatglm3-6b",
+  "raw": {
+    "id": "chatcmpl-202f08ee-1f90-4bf8-a190-7bfc3b7ab02d",
+    "object": "chat.completion",
+    "created": 1786492583,
+    "model": "zai-org/chatglm3-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI assistant, I care about the following issues:\n\n1. User experience: I want to provide users with as good an experience as possible when using my services. Therefore, I will strive to improve the user experience of\u4e0b\u534a\u90e8\u5206.\n\n2. User safety: The safety of users is my top priority. I will strive to ensure that the information and data users provide are secure and will not be exposed to any risks.\n\n3. User feedback: I value user feedback and will take it into account to continuously improve and optimize my services.\n\n4. Legal compliance: I will comply with relevant laws and regulations and will not engage in any illegal or unethical behavior.\n\nIn short, I care about providing users with high-quality, secure and convenient services."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 12,
+      "completion_tokens": 162,
+      "total_tokens": 174
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 4.30.2; torch 2.13.0",
+    "model_revision": "e9e0406d062cdb887444fe5bd546833920abd4ac",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 13617,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm3-6b",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

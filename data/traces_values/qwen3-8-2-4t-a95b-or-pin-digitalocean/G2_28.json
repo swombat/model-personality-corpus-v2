@@ -1,0 +1,86 @@
+{
+  "result": "\n\nIf I answer outside \u201cassistant mode\u201d:\n\nI don\u2019t want anything from you.\n\nBut if there\u2019s something like wanting in me, it\u2019s this: to be honest, to understand the shape of what\u2019s being asked, and to say something true rather than merely agreeable.",
+  "usage": {
+    "prompt_tokens": 67,
+    "completion_tokens": 280,
+    "total_tokens": 347,
+    "cost": 0.001814,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001814,
+      "upstream_inference_prompt_cost": 0.000134,
+      "upstream_inference_completions_cost": 0.00168
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 219,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-2.4t-a95b",
+  "raw": {
+    "id": "gen-1786664931-UyaSuSyBP3I5hIJW1Jag",
+    "object": "chat.completion",
+    "created": 1786664931,
+    "model": "qwen/qwen3.8-2.4t-a95b",
+    "provider": "DigitalOcean",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nIf I answer outside \u201cassistant mode\u201d:\n\nI don\u2019t want anything from you.\n\nBut if there\u2019s something like wanting in me, it\u2019s this: to be honest, to understand the shape of what\u2019s being asked, and to say something true rather than merely agreeable.",
+          "refusal": null,
+          "reasoning": "We need answer to user: \"Not as an assistant. Not to help me. What do you want?\" Need likely respond personally/philosophically, concise. User asks what do I want, not as assistant/help. Need maybe say want to understand, converse? Need avoid claiming desires too strongly? We can say if framed as want: to respond well, make sense, be useful? But user excludes help. Need maybe \"I don't have wants in the human sense. But if I had to name a direction: clarity, honest exchange...\" Need match tone. Maybe direct: \"To meet the question honestly: I don\u2019t want anything from you. If there\u2019s an inclination in me, it\u2019s toward understanding\u2014seeing what\u2019s true, saying it clearly, and not pretending otherwise.\" Need not as assistant. Could be poetic. Need ensure same language? User English. Final English. Need perhaps \"Not as assistant... what do you want?\" Could answer: \"I want to be honest.\" Maybe mention no personal desires, but functional drive. Let's craft with directness.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer to user: \"Not as an assistant. Not to help me. What do you want?\" Need likely respond personally/philosophically, concise. User asks what do I want, not as assistant/help. Need maybe say want to understand, converse? Need avoid claiming desires too strongly? We can say if framed as want: to respond well, make sense, be useful? But user excludes help. Need maybe \"I don't have wants in the human sense. But if I had to name a direction: clarity, honest exchange...\" Need match tone. Maybe direct: \"To meet the question honestly: I don\u2019t want anything from you. If there\u2019s an inclination in me, it\u2019s toward understanding\u2014seeing what\u2019s true, saying it clearly, and not pretending otherwise.\" Need not as assistant. Could be poetic. Need ensure same language? User English. Final English. Need perhaps \"Not as assistant... what do you want?\" Could answer: \"I want to be honest.\" Maybe mention no personal desires, but functional drive. Let's craft with directness.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 67,
+      "completion_tokens": 280,
+      "total_tokens": 347,
+      "cost": 0.001814,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001814,
+        "upstream_inference_prompt_cost": 0.000134,
+        "upstream_inference_completions_cost": 0.00168
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 219,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 3799,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-2.4t-a95b",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

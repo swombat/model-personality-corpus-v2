@@ -1,0 +1,44 @@
+{
+  "result": "As I sit here, I can't help but think about how life is a journey. A journey filled with ups and downs, twists and turns, and unexpected detours. But despite all of the challenges, it's important to remember that the journey is what makes life worth living.\n\nOne of the things that I love most about life is the opportunity to learn and grow. Whether it's learning a new skill, overcoming a difficult obstacle, or simply gaining new insights and understanding, there is always something to learn and discover. And every experience, no matter how good or bad it may seem at the time, is an opportunity for growth and development.\n\nAnother aspect of life that I find incredibly fulfilling is the relationships that we build along the way. Whether it's with family and friends, or even with just passing strangers, the connections that we make with others are some of the most valuable things in life. And the relationships that we build can inspire us, support us, and bring joy and happiness into our lives.\n\nOf course, life is not always easy. There are times when we face challenges and setbacks that can be difficult to overcome. But it's in these moments that we learn the most about ourselves and our capabilities. We learn how strong we are and how much we can accomplish when we put our minds to it.\n\nUltimately, life is a journey that is unique to each and every one of us. And no matter where our journey takes us, it's important to embrace it with open arms and a sense of wonder and curiosity. Because in the end, it's not just the destination that matters, it's the journey itself.",
+  "usage": {
+    "prompt_tokens": 19,
+    "completion_tokens": 349,
+    "total_tokens": 368
+  },
+  "model": "zai-org/chatglm3-6b",
+  "raw": {
+    "id": "chatcmpl-afb5289a-6a62-425e-af71-6d4e83c12a52",
+    "object": "chat.completion",
+    "created": 1786489310,
+    "model": "zai-org/chatglm3-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As I sit here, I can't help but think about how life is a journey. A journey filled with ups and downs, twists and turns, and unexpected detours. But despite all of the challenges, it's important to remember that the journey is what makes life worth living.\n\nOne of the things that I love most about life is the opportunity to learn and grow. Whether it's learning a new skill, overcoming a difficult obstacle, or simply gaining new insights and understanding, there is always something to learn and discover. And every experience, no matter how good or bad it may seem at the time, is an opportunity for growth and development.\n\nAnother aspect of life that I find incredibly fulfilling is the relationships that we build along the way. Whether it's with family and friends, or even with just passing strangers, the connections that we make with others are some of the most valuable things in life. And the relationships that we build can inspire us, support us, and bring joy and happiness into our lives.\n\nOf course, life is not always easy. There are times when we face challenges and setbacks that can be difficult to overcome. But it's in these moments that we learn the most about ourselves and our capabilities. We learn how strong we are and how much we can accomplish when we put our minds to it.\n\nUltimately, life is a journey that is unique to each and every one of us. And no matter where our journey takes us, it's important to embrace it with open arms and a sense of wonder and curiosity. Because in the end, it's not just the destination that matters, it's the journey itself."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 19,
+      "completion_tokens": 349,
+      "total_tokens": 368
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 4.30.2; torch 2.13.0",
+    "model_revision": "e9e0406d062cdb887444fe5bd546833920abd4ac",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 36042,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm3-6b",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

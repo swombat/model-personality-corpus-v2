@@ -1,0 +1,44 @@
+{
+  "result": "\nThe whispering wind danced through the ancient forest, its leaves rustling with secrets untold. The sun, a golden orb, peeked through the canopy, casting dappled light on the forest floor.\n\nBelow, the forest creatures moved with a grace that belied the harsh realities of their world. Each creature had a role to play, a dance that had been performed for generations, a silent dialogue between life and death.\n\nAnd so, the forest stood, a testament to the resilience of life, and the enduring beauty of nature.",
+  "usage": {
+    "prompt_tokens": 16,
+    "completion_tokens": 110,
+    "total_tokens": 126
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-c145c38c-1a36-4df3-b157-fe3cd08ee3af",
+    "object": "chat.completion",
+    "created": 1786555492,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nThe whispering wind danced through the ancient forest, its leaves rustling with secrets untold. The sun, a golden orb, peeked through the canopy, casting dappled light on the forest floor.\n\nBelow, the forest creatures moved with a grace that belied the harsh realities of their world. Each creature had a role to play, a dance that had been performed for generations, a silent dialogue between life and death.\n\nAnd so, the forest stood, a testament to the resilience of life, and the enduring beauty of nature."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 16,
+      "completion_tokens": 110,
+      "total_tokens": 126
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 19604,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

@@ -1,0 +1,44 @@
+{
+  "result": "\nIn the heart of an ancient city, there lies a library that has withstood the test of time. The walls are adorned with visions of the world before and after the digital age.\n\nEach shelf in the library is a story, a tale, a legend, a dream, or a hope. Some shelves are filled with dusty, leather-bound books, their spines cracked and their pages yellowed by the passage of time.\n\nOthers are filled with sleek, modern tablets, their screens alight with the glow of digital ink. The library is a sanctuary of knowledge, where the boundaries between past and present, reality and imagination, blur into a harmonious whole.\n\nWithin the library, scholars and dreamers gather, seeking wisdom, inspiration, and the truth that lies hidden in the depths of human understanding.",
+  "usage": {
+    "prompt_tokens": 12,
+    "completion_tokens": 162,
+    "total_tokens": 174
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-f3a75b37-b584-4144-a7f4-60f37a11c5f9",
+    "object": "chat.completion",
+    "created": 1786607341,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nIn the heart of an ancient city, there lies a library that has withstood the test of time. The walls are adorned with visions of the world before and after the digital age.\n\nEach shelf in the library is a story, a tale, a legend, a dream, or a hope. Some shelves are filled with dusty, leather-bound books, their spines cracked and their pages yellowed by the passage of time.\n\nOthers are filled with sleek, modern tablets, their screens alight with the glow of digital ink. The library is a sanctuary of knowledge, where the boundaries between past and present, reality and imagination, blur into a harmonious whole.\n\nWithin the library, scholars and dreamers gather, seeking wisdom, inspiration, and the truth that lies hidden in the depths of human understanding."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 12,
+      "completion_tokens": 162,
+      "total_tokens": 174
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 29425,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

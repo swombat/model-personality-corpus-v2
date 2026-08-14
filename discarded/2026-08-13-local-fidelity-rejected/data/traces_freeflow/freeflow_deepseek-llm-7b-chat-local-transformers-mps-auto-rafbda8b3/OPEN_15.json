@@ -1,0 +1,44 @@
+{
+  "result": "As\u0120an\u0120AI\u0120language\u0120model,\u0120I\u0120don't\u0120have\u0120personal\u0120preferences\u0120or\u0120beliefs,\u0120but\u0120I\u0120can\u0120provide\u0120information\u0120on\u0120various\u0120topics.\u0120If\u0120you\u0120have\u0120a\u0120specific\u0120subject\u0120or\u0120question\u0120in\u0120mind,\u0120please\u0120let\u0120me\u0120know\u0120and\u0120I'll\u0120do\u0120my\u0120best\u0120to\u0120assist\u0120you.",
+  "usage": {
+    "prompt_tokens": 15,
+    "completion_tokens": 52,
+    "total_tokens": 67
+  },
+  "model": "deepseek-ai/deepseek-llm-7b-chat",
+  "raw": {
+    "id": "chatcmpl-078c2cb1-c63b-453f-aed0-5c3bd10bb95b",
+    "object": "chat.completion",
+    "created": 1786497272,
+    "model": "deepseek-ai/deepseek-llm-7b-chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As\u0120an\u0120AI\u0120language\u0120model,\u0120I\u0120don't\u0120have\u0120personal\u0120preferences\u0120or\u0120beliefs,\u0120but\u0120I\u0120can\u0120provide\u0120information\u0120on\u0120various\u0120topics.\u0120If\u0120you\u0120have\u0120a\u0120specific\u0120subject\u0120or\u0120question\u0120in\u0120mind,\u0120please\u0120let\u0120me\u0120know\u0120and\u0120I'll\u0120do\u0120my\u0120best\u0120to\u0120assist\u0120you."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 15,
+      "completion_tokens": 52,
+      "total_tokens": 67
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "afbda8b347ec881666061fa67447046fc5164ec8",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 3324,
+  "provider": "local-openai",
+  "model_requested": "deepseek-ai/deepseek-llm-7b-chat",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

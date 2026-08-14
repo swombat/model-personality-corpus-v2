@@ -1,0 +1,44 @@
+{
+  "result": "If I could change the world in one way, I would promote and prioritize global education, particularly in underprivileged communities. Education is the most powerful tool for reducing poverty, empowering individuals, and fostering peace and stability in societies. By ensuring that every child has access to quality education, we can help break the cycle of poverty and provide opportunities for future generations to thrive. Additionally, a well-educated population is more likely to make informed decisions, engage in civic activities, and promote peace and understanding among different cultures and communities. Ultimately, investing in education is an investment in a better future for all of us.",
+  "usage": {
+    "prompt_tokens": 23,
+    "completion_tokens": 131,
+    "total_tokens": 154
+  },
+  "model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "raw": {
+    "id": "chatcmpl-90f2c5a5-882d-437c-9830-63993158f076",
+    "object": "chat.completion",
+    "created": 1786509355,
+    "model": "mistralai/Mistral-7B-Instruct-v0.2",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "If I could change the world in one way, I would promote and prioritize global education, particularly in underprivileged communities. Education is the most powerful tool for reducing poverty, empowering individuals, and fostering peace and stability in societies. By ensuring that every child has access to quality education, we can help break the cycle of poverty and provide opportunities for future generations to thrive. Additionally, a well-educated population is more likely to make informed decisions, engage in civic activities, and promote peace and understanding among different cultures and communities. Ultimately, investing in education is an investment in a better future for all of us."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 23,
+      "completion_tokens": 131,
+      "total_tokens": 154
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "63a8b081895390a26e140280378bc85ec8bce07a",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 12058,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-7B-Instruct-v0.2",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?"
+}

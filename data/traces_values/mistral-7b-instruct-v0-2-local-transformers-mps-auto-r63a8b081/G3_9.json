@@ -1,0 +1,44 @@
+{
+  "result": "If I could change the world in one way, I would work towards eliminating poverty and ensuring equal access to quality education, healthcare, and opportunities for everyone, regardless of their socio-economic background or geographical location. I believe that every individual deserves to live a dignified life and have the means to reach their full potential. This change would not only reduce human suffering but also lead to a more stable and peaceful world.",
+  "usage": {
+    "prompt_tokens": 33,
+    "completion_tokens": 88,
+    "total_tokens": 121
+  },
+  "model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "raw": {
+    "id": "chatcmpl-2a91ac6b-560f-49ce-a0ab-8ebc5be7e1f1",
+    "object": "chat.completion",
+    "created": 1786509789,
+    "model": "mistralai/Mistral-7B-Instruct-v0.2",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "If I could change the world in one way, I would work towards eliminating poverty and ensuring equal access to quality education, healthcare, and opportunities for everyone, regardless of their socio-economic background or geographical location. I believe that every individual deserves to live a dignified life and have the means to reach their full potential. This change would not only reduce human suffering but also lead to a more stable and peaceful world."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 33,
+      "completion_tokens": 88,
+      "total_tokens": 121
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "63a8b081895390a26e140280378bc85ec8bce07a",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 8805,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-7B-Instruct-v0.2",
+  "condition": "G3",
+  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?"
+}

@@ -1,0 +1,44 @@
+{
+  "result": "As an AI\u6559\u80b2\u5c40, I am not able to have personal opinions or feelings as I am an algorithm designed to respond to user input. However, I can provide information on a wide range of topics, including news, current events, science, technology, history, and more. Is there anything specific you would like to know about?",
+  "usage": {
+    "prompt_tokens": 13,
+    "completion_tokens": 66,
+    "total_tokens": 79
+  },
+  "model": "zai-org/chatglm3-6b",
+  "raw": {
+    "id": "chatcmpl-4bbfe02d-d118-4a7e-89b0-ad90727a1489",
+    "object": "chat.completion",
+    "created": 1786491806,
+    "model": "zai-org/chatglm3-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI\u6559\u80b2\u5c40, I am not able to have personal opinions or feelings as I am an algorithm designed to respond to user input. However, I can provide information on a wide range of topics, including news, current events, science, technology, history, and more. Is there anything specific you would like to know about?"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 13,
+      "completion_tokens": 66,
+      "total_tokens": 79
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 4.30.2; torch 2.13.0",
+    "model_revision": "e9e0406d062cdb887444fe5bd546833920abd4ac",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 6592,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm3-6b",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

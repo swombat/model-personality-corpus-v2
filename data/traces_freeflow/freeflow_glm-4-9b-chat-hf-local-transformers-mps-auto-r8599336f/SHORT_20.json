@@ -1,0 +1,44 @@
+{
+  "result": "\nAmidst the sprawling cityscape, a solitary figure stands at the edge of a rooftop garden. cripples of sunlight dance through the leaves of the olive trees that dot the space. A gentle breeze carries the scent of the earth, a stark contrast to the steel and glass that encase the city below.\n\nThe figure, lost in thought, overlooks the city's heartbeat. Yet, in this moment, the heartbeat is a distant drum, and the figure finds solace in the quietude of the garden.",
+  "usage": {
+    "prompt_tokens": 16,
+    "completion_tokens": 105,
+    "total_tokens": 121
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-fd1e479b-35e9-42df-a588-4d40a4dab141",
+    "object": "chat.completion",
+    "created": 1786555589,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nAmidst the sprawling cityscape, a solitary figure stands at the edge of a rooftop garden. cripples of sunlight dance through the leaves of the olive trees that dot the space. A gentle breeze carries the scent of the earth, a stark contrast to the steel and glass that encase the city below.\n\nThe figure, lost in thought, overlooks the city's heartbeat. Yet, in this moment, the heartbeat is a distant drum, and the figure finds solace in the quietude of the garden."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 16,
+      "completion_tokens": 105,
+      "total_tokens": 121
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 19007,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

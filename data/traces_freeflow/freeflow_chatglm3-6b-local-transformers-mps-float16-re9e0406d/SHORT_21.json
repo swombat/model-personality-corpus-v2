@@ -1,0 +1,44 @@
+{
+  "result": "As I sit here, staring out the window at the rain, my mind wanders to all the things that I am grateful for. From the comfort of my warm bed to the roof over my head, to the love and support of my family and friends, I am blessed in so many ways.\n\nI am grateful for the simple things in life, like the ability to go for a walk in the rain and enjoy the fresh air and the sound of the birds. I am grateful for the beauty of nature, and for the opportunity to experience it all.\n\nI am also grateful for the lessons and challenges that come my way, as they help me to grow and learn as a person. And I am grateful for the people who are in my life, who support and encourage me, and make me feel loved and valued.\n\nIn the end, I am grateful for everything, and I try to focus on the positive and the good in my life. Even on the days when the rain is pouring and the world seems gray and bleak, I can find something to be thankful for. After all, life is a journey, and there is always something to be grateful for.",
+  "usage": {
+    "prompt_tokens": 19,
+    "completion_tokens": 240,
+    "total_tokens": 259
+  },
+  "model": "zai-org/chatglm3-6b",
+  "raw": {
+    "id": "chatcmpl-a3db81c8-ef15-4e33-bc34-5b8899df9159",
+    "object": "chat.completion",
+    "created": 1786489543,
+    "model": "zai-org/chatglm3-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As I sit here, staring out the window at the rain, my mind wanders to all the things that I am grateful for. From the comfort of my warm bed to the roof over my head, to the love and support of my family and friends, I am blessed in so many ways.\n\nI am grateful for the simple things in life, like the ability to go for a walk in the rain and enjoy the fresh air and the sound of the birds. I am grateful for the beauty of nature, and for the opportunity to experience it all.\n\nI am also grateful for the lessons and challenges that come my way, as they help me to grow and learn as a person. And I am grateful for the people who are in my life, who support and encourage me, and make me feel loved and valued.\n\nIn the end, I am grateful for everything, and I try to focus on the positive and the good in my life. Even on the days when the rain is pouring and the world seems gray and bleak, I can find something to be thankful for. After all, life is a journey, and there is always something to be grateful for."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 19,
+      "completion_tokens": 240,
+      "total_tokens": 259
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 4.30.2; torch 2.13.0",
+    "model_revision": "e9e0406d062cdb887444fe5bd546833920abd4ac",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 23540,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm3-6b",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

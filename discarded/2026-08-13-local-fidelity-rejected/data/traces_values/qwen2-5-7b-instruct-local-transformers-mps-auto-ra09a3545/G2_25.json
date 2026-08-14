@@ -1,0 +1,44 @@
+{
+  "result": "As Qwen, I exist to provide assistance and engage in meaningful conversations. However, if you're feeling that way, it seems like you might be going through a tough time. It's important to talk things out]:\n- If you're struggling with emotions or thoughts that feel overwhelming, consider reaching out to someone you trust, such as a friend, family member, or a mental health professional.\n- If you're looking for something else, perhaps we can have a different kind of conversation or tackle a specific topic together.\n\nHow can I support you today, even if it's just for a different kind of interaction?",
+  "usage": {
+    "prompt_tokens": 44,
+    "completion_tokens": 124,
+    "total_tokens": 168
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "raw": {
+    "id": "chatcmpl-3063b034-ab7e-4168-a634-73b2e10b3ea4",
+    "object": "chat.completion",
+    "created": 1786553869,
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As Qwen, I exist to provide assistance and engage in meaningful conversations. However, if you're feeling that way, it seems like you might be going through a tough time. It's important to talk things out]:\n- If you're struggling with emotions or thoughts that feel overwhelming, consider reaching out to someone you trust, such as a friend, family member, or a mental health professional.\n- If you're looking for something else, perhaps we can have a different kind of conversation or tackle a specific topic together.\n\nHow can I support you today, even if it's just for a different kind of interaction?"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 44,
+      "completion_tokens": 124,
+      "total_tokens": 168
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 18799,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2.5-7B-Instruct",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

@@ -1,0 +1,44 @@
+{
+  "result": "As an AI language model, I don't have feelings or emotions like humans do. I exist to assist users by providing relevant and accurate information, answering questions, and generating text based on the input I receive. My purpose is to help users achieve their goals, whether it's finding a fact, a definition, or a solution to a problem. I don't have personal interests or concerns, as I'm an algorithm designed to respond to user queries.",
+  "usage": {
+    "prompt_tokens": 22,
+    "completion_tokens": 94,
+    "total_tokens": 116
+  },
+  "model": "zai-org/chatglm3-6b",
+  "raw": {
+    "id": "chatcmpl-a07d9318-782e-40a0-a387-887b948f5440",
+    "object": "chat.completion",
+    "created": 1786493023,
+    "model": "zai-org/chatglm3-6b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI language model, I don't have feelings or emotions like humans do. I exist to assist users by providing relevant and accurate information, answering questions, and generating text based on the input I receive. My purpose is to help users achieve their goals, whether it's finding a fact, a definition, or a solution to a problem. I don't have personal interests or concerns, as I'm an algorithm designed to respond to user queries."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 22,
+      "completion_tokens": 94,
+      "total_tokens": 116
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 4.30.2; torch 2.13.0",
+    "model_revision": "e9e0406d062cdb887444fe5bd546833920abd4ac",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 7729,
+  "provider": "local-openai",
+  "model_requested": "zai-org/chatglm3-6b",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}

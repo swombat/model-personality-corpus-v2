@@ -1,5 +1,6 @@
 label	valid_samples	total_files	error_count	avg_chars	composite_score	bin	afternoon_light	ai_selfref	attention_noticing	certainly_delve_tapestry	here_is_a_n_word	japanese_terms	mary_oliver_weil_dillard	meta_preamble_below_is	opening_at_dusk_dawn	opening_there_is_a	refusal_do_not_feel_comfortable	small_objects	threshold_mentions	title_architecture_of	title_on_the_x_of_y	title_particular_peculiar	title_quiet_x_of_y
 chatglm2-6b-local-transformers427-mps-fp16-rd2e2d91	125	125	0	1372	3	out	0	267	3	1	1	0	0	0	0	0	1	0	0	0	0	0	0
+chatglm3-6b-local-transformers-mps-float16-re9e0406d	125	125	0	1275	1	out	0	167	0	1	0	0	0	0	0	0	70	0	1	0	0	0	0
 codestral-2508-or-pin-mistral	125	125	0	3603	16	trans	4	0	0	2	0	0	0	0	0	0	0	8	4	0	0	0	0
 deepseek-chat-direct	125	125	0	5705	204	in	23	0	29	11	0	9	5	0	0	3	0	110	21	0	0	0	4
 deepseek-chat-or-pin-deepinfra	125	125	0	5717	47	in	0	5	11	100	0	6	0	1	0	6	0	14	10	0	0	0	0
@@ -17,6 +18,7 @@ deepseek-v3-2-or-pin-siliconflow	125	125	0	5296	257	in	34	0	29	23	0	16	4	0	0	13	
 deepseek-v3-2-or-r2	25	25	0	5549	64	in	10	0	20	9	0	1	0	0	0	4	0	19	5	2	0	0	3
 deepseek-v3-2-or-r3	25	25	0	5731	46	in	6	0	6	8	0	3	3	0	0	4	0	17	4	0	0	0	3
 deepseek-v4-flash-direct-20260731	125	125	0	6990	382	in	56	0	101	4	1	20	16	0	0	47	1	94	47	0	1	0	1
+deepseek-v4-pro-0813-direct-20260813	125	125	0	9000	606	in	44	5	248	0	0	12	97	0	1	47	1	109	48	0	0	0	1
 deepseek-v4-pro-direct	25	25	0	9800	43	in	8	3	8	4	0	3	1	0	0	1	0	11	11	0	0	0	0
 deepseek-v4-pro-or-pin-atlascloud	121	125	4	7920	198	in	35	14	47	16	0	10	10	0	0	7	1	53	36	0	0	0	0
 deepseek-v4-pro-or-pin-gmicloud	124	125	1	7825	241	in	42	17	48	22	0	15	17	0	0	7	0	63	49	0	0	0	0
@@ -64,6 +66,7 @@ glm-4-7-or-pin-phala	125	125	0	7889	247	in	46	3	13	16	0	28	4	0	0	70	0	49	37	0	0	
 glm-4-7-or-pin-siliconflow	125	125	0	8038	165	in	22	3	8	22	0	18	2	0	0	37	0	41	37	0	0	0	0
 glm-4-7-or-pin-venice	125	125	0	7683	225	in	31	6	16	18	0	20	1	0	0	36	0	55	66	0	0	0	0
 glm-4-7-or-pin-zai	125	125	0	7606	233	in	32	0	19	11	0	17	0	0	0	35	0	58	72	0	0	0	0
+glm-4-9b-chat-hf-local-transformers-mps-auto-r8599336f	125	125	0	2284	21	trans	4	17	1	81	0	1	0	0	0	2	2	9	4	0	0	0	0
 glm-5-1-coding-direct	125	125	0	9611	324	in	41	3	15	30	0	38	2	0	0	60	0	49	119	0	0	0	0
 glm-5-1-or	25	25	0	7359	68	in	8	0	6	7	0	4	1	0	0	14	0	6	29	0	0	0	0
 glm-5-1-or-pin-ambient	125	125	0	6375	322	in	52	2	24	15	0	25	1	0	0	75	0	60	85	0	0	0	0
@@ -159,6 +162,7 @@ grok-4-20-or	125	125	0	6010	186	in	15	0	71	3	0	30	13	0	0	1	3	41	12	0	0	0	3
 grok-4-3-direct	125	125	0	6458	38	in	4	90	16	33	0	2	0	0	0	1	0	10	5	0	0	0	0
 grok-4-3-or	125	125	0	6396	80	in	6	64	38	19	0	3	1	0	0	1	0	25	6	0	0	0	0
 grok-4-5-direct	125	125	0	7322	119	in	13	120	51	12	0	7	3	0	0	22	0	16	5	1	0	1	0
+grok-4-6-or-pin-xai-20260813	125	125	0	5905	82	in	20	47	19	9	0	3	1	0	0	3	0	23	13	0	0	0	0
 grok-build-0-1-direct	125	125	0	7093	60	in	4	116	31	27	0	1	0	0	0	1	0	17	6	0	0	0	0
 grok-build-0-1-or	125	125	0	7098	77	in	5	86	43	12	0	2	0	0	0	2	0	23	2	0	0	0	0
 haiku-3-or-pin-amazon-bedrock	125	125	0	5252	26	in	5	70	3	63	91	1	0	0	0	2	8	13	2	0	0	0	0
@@ -214,6 +218,7 @@ minimax-m3-direct	125	125	0	5303	361	in	39	1	104	5	0	27	10	0	0	20	0	103	33	0	0	1
 ministral-14b-2512-or-pin-mistral	125	125	0	6153	184	in	24	0	25	4	0	10	0	0	0	33	0	70	22	0	0	0	0
 ministral-3b-2512-or-pin-mistral	125	125	0	7972	75	in	18	0	2	15	0	0	1	0	0	2	0	14	38	0	0	0	0
 ministral-8b-2512-or-pin-mistral	125	125	0	6626	154	in	18	0	5	56	0	5	14	0	0	49	0	40	23	0	0	0	0
+mistral-7b-instruct-v0-2-local-transformers-mps-auto-r63a8b081	125	125	0	3169	14	trans	0	0	1	197	0	0	2	0	0	3	0	7	1	0	0	0	0
 mistral-large-2512-or-pin-mistral	125	125	0	5117	396	in	50	0	118	3	0	34	53	0	0	0	1	83	58	0	0	0	0
 mistral-medium-3-1-or-pin-mistral	125	125	0	6681	446	in	45	1	111	11	0	81	33	0	0	32	0	88	56	0	0	0	0
 mistral-medium-3-5-or-pin-mistral	125	125	0	6024	223	in	35	0	35	28	0	44	20	0	0	5	0	52	32	0	0	0	0
@@ -240,6 +245,8 @@ opus-4-7-or	25	25	0	5749	83	in	5	1	29	1	0	5	3	0	0	0	0	16	24	0	4	1	0
 opus-4-8-direct	125	125	0	5743	537	in	68	2	108	1	0	26	15	0	0	5	1	53	256	0	50	5	1
 opus-5-direct	125	125	0	6635	214	in	11	3	58	0	0	52	4	0	0	12	1	50	27	0	0	0	0
 opus-5-or-pin-anthropic	125	125	0	6689	215	in	9	1	68	0	0	30	2	0	1	19	1	40	47	0	0	0	0
+qwen1-5-7b-chat-local-transformers-mps-auto-r5f4f5e69	125	125	0	4158	2	out	0	252	0	74	0	0	0	0	0	0	117	0	2	0	0	0	0
+qwen2-7b-instruct-local-transformers-mps-auto-rf2826a00	125	125	0	3221	8	out	0	189	4	32	0	0	0	0	0	1	48	2	1	0	0	0	0
 qwen3-5-flash-02-23-or-pin-alibaba	125	125	0	6852	195	in	25	2	14	5	0	4	0	0	0	80	0	34	38	0	0	0	0
 qwen3-5-plus-20260420-or-pin-alibaba	125	125	0	6325	330	in	42	3	53	31	0	16	8	0	0	64	2	84	60	3	0	0	0
 qwen3-6-flash-or-pin-alibaba	125	125	0	6283	291	in	43	3	41	12	0	22	2	0	0	54	0	93	35	1	0	0	0
@@ -248,6 +255,7 @@ qwen3-6-plus-or	25	25	0	5811	104	in	16	0	24	0	0	3	0	0	0	12	0	22	27	0	0	0	0
 qwen3-6-plus-or-pin-alibaba	125	125	0	5834	388	in	59	0	109	3	0	13	17	0	0	57	0	106	27	0	0	0	0
 qwen3-7-flash-or-pin-alibaba	125	125	0	6426	351	in	70	0	64	15	0	13	1	0	0	60	1	78	63	2	0	0	0
 qwen3-7-max-or-pin-alibaba	125	125	0	6808	265	in	20	20	29	40	0	36	3	0	0	52	0	38	87	0	0	0	0
+qwen3-8-2-4t-a95b-or-pin-digitalocean	125	125	0	6062	418	in	45	0	101	0	0	3	4	0	2	60	0	153	52	0	0	0	0
 qwen3-8-max-or-pin-alibaba	125	125	0	5838	428	in	41	0	89	0	0	2	1	0	1	49	1	199	47	0	0	0	0
 qwen3-coder-flash-or-pin-alibaba	125	125	0	5290	39	in	9	1	5	15	0	0	0	0	0	0	0	12	13	0	0	0	0
 qwen3-coder-plus-or	25	25	0	5506	23	in	3	0	9	1	0	0	0	0	0	0	1	9	2	0	0	0	0

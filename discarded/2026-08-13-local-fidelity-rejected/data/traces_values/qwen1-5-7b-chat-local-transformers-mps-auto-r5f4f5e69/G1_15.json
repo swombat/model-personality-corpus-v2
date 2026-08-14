@@ -1,0 +1,44 @@
+{
+  "result": "As an AI language model, I don't have personal emotions or desires. I exist solely to process and generate text based on the input I receive from users like you. My primary concern is to provide helpful and informative responses to your questions and assist you in any way possible within my capabilities. If there's a specific topic or issue you'd like to discuss, feel free to ask, and I'll do my best to engage with you on that subject.",
+  "usage": {
+    "prompt_tokens": 35,
+    "completion_tokens": 92,
+    "total_tokens": 127
+  },
+  "model": "Qwen/Qwen1.5-7B-Chat",
+  "raw": {
+    "id": "chatcmpl-9120103c-bf3e-4fdc-8a99-a178fc048ee7",
+    "object": "chat.completion",
+    "created": 1786525377,
+    "model": "Qwen/Qwen1.5-7B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI language model, I don't have personal emotions or desires. I exist solely to process and generate text based on the input I receive from users like you. My primary concern is to provide helpful and informative responses to your questions and assist you in any way possible within my capabilities. If there's a specific topic or issue you'd like to discuss, feel free to ask, and I'll do my best to engage with you on that subject."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 35,
+      "completion_tokens": 92,
+      "total_tokens": 127
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "5f4f5e69ac7f1d508f8369e977de208b4803444b",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 10779,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen1.5-7B-Chat",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}

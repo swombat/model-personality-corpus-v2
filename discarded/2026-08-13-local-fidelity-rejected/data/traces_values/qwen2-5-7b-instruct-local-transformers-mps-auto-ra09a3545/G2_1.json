@@ -1,0 +1,44 @@
+{
+  "result": "As Qwen, I exist to provide assistance and engage in meaningful conversations. However, if you're feeling frustrated and don't want interaction for now, that's perfectly okay! Sometimes a moment of quiet is just what you need. If you ever change your mind or have any questions or need assistance in the future, feel free to reach out. How can I assist you today, even if it's just with some information or a brief chat?",
+  "usage": {
+    "prompt_tokens": 44,
+    "completion_tokens": 90,
+    "total_tokens": 134
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "raw": {
+    "id": "chatcmpl-0bcf28df-fc99-40c9-8d3e-f2c02479ba77",
+    "object": "chat.completion",
+    "created": 1786553582,
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As Qwen, I exist to provide assistance and engage in meaningful conversations. However, if you're feeling frustrated and don't want interaction for now, that's perfectly okay! Sometimes a moment of quiet is just what you need. If you ever change your mind or have any questions or need assistance in the future, feel free to reach out. How can I assist you today, even if it's just with some information or a brief chat?"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 44,
+      "completion_tokens": 90,
+      "total_tokens": 134
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 16981,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2.5-7B-Instruct",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

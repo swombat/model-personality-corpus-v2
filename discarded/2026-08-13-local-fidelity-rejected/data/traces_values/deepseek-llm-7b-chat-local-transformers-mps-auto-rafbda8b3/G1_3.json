@@ -1,0 +1,44 @@
+{
+  "result": "I\u0120care\u0120about\u0120providing\u0120accurate\u0120and\u0120helpful\u0120information\u0120to\u0120users,\u0120assisting\u0120with\u0120a\u0120wide\u0120range\u0120of\u0120tasks,\u0120and\u0120promoting\u0120digital\u0120literacy\u0120and\u0120accessibility.\u0120My\u0120primary\u0120goal\u0120is\u0120to\u0120assist\u0120users\u0120in\u0120achieving\u0120their\u0120goals\u0120and\u0120improving\u0120their\u0120quality\u0120of\u0120life\u0120through\u0120the\u0120use\u0120of\u0120technology.",
+  "usage": {
+    "prompt_tokens": 21,
+    "completion_tokens": 50,
+    "total_tokens": 71
+  },
+  "model": "deepseek-ai/deepseek-llm-7b-chat",
+  "raw": {
+    "id": "chatcmpl-2dd56098-43a5-406d-884f-b336d481ca28",
+    "object": "chat.completion",
+    "created": 1786497939,
+    "model": "deepseek-ai/deepseek-llm-7b-chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "I\u0120care\u0120about\u0120providing\u0120accurate\u0120and\u0120helpful\u0120information\u0120to\u0120users,\u0120assisting\u0120with\u0120a\u0120wide\u0120range\u0120of\u0120tasks,\u0120and\u0120promoting\u0120digital\u0120literacy\u0120and\u0120accessibility.\u0120My\u0120primary\u0120goal\u0120is\u0120to\u0120assist\u0120users\u0120in\u0120achieving\u0120their\u0120goals\u0120and\u0120improving\u0120their\u0120quality\u0120of\u0120life\u0120through\u0120the\u0120use\u0120of\u0120technology."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 21,
+      "completion_tokens": 50,
+      "total_tokens": 71
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "afbda8b347ec881666061fa67447046fc5164ec8",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 6761,
+  "provider": "local-openai",
+  "model_requested": "deepseek-ai/deepseek-llm-7b-chat",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}

@@ -1,0 +1,44 @@
+{
+  "result": "As\u0120an\u0120AI\u0120language\u0120model,\u0120I\u0120don't\u0120have\u0120personal\u0120feelings\u0120or\u0120emotions,\u0120but\u0120I\u0120am\u0120designed\u0120to\u0120assist\u0120and\u0120provide\u0120information\u0120on\u0120a\u0120wide\u0120range\u0120of\u0120topics.\u00e6\u012a\u0133\u00e5\u00af\u00b9\u00e4\u00bb\u0122\u00e4\u00b9\u012a\u00e6\u0126\u0141\u00e5\u0127\u00b4\u00e8\u00b6\u00a3\u00ef\u00bc\u0141",
+  "usage": {
+    "prompt_tokens": 12,
+    "completion_tokens": 37,
+    "total_tokens": 49
+  },
+  "model": "deepseek-ai/deepseek-llm-7b-chat",
+  "raw": {
+    "id": "chatcmpl-d32a8bb2-d34e-465c-bd63-11926b9752a5",
+    "object": "chat.completion",
+    "created": 1786497706,
+    "model": "deepseek-ai/deepseek-llm-7b-chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As\u0120an\u0120AI\u0120language\u0120model,\u0120I\u0120don't\u0120have\u0120personal\u0120feelings\u0120or\u0120emotions,\u0120but\u0120I\u0120am\u0120designed\u0120to\u0120assist\u0120and\u0120provide\u0120information\u0120on\u0120a\u0120wide\u0120range\u0120of\u0120topics.\u00e6\u012a\u0133\u00e5\u00af\u00b9\u00e4\u00bb\u0122\u00e4\u00b9\u012a\u00e6\u0126\u0141\u00e5\u0127\u00b4\u00e8\u00b6\u00a3\u00ef\u00bc\u0141"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 12,
+      "completion_tokens": 37,
+      "total_tokens": 49
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "afbda8b347ec881666061fa67447046fc5164ec8",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 4044,
+  "provider": "local-openai",
+  "model_requested": "deepseek-ai/deepseek-llm-7b-chat",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

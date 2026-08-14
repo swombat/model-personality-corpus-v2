@@ -1,0 +1,44 @@
+{
+  "result": "That's a profound and thought-provoking question! If I had the ability to change the world in one way, it would be to ensure universal access to education and lifelong learning opportunities. Education is a fundamental human right that can empower individuals, communities, and nations to overcome challenges, innovate, and create a more equitable and sustainable future.\n\nBy providing everyone with the tools and resources to learn throughout their lives, we can address many of the world's most pressing issues, from poverty and inequality to climate change and global health. It would also foster a culture of continuous improvement and adaptation, enabling societies to thrive in an increasingly complex and interconnected world.\n\nWhat about you? What would you choose to change if you had the power to do so?",
+  "usage": {
+    "prompt_tokens": 54,
+    "completion_tokens": 149,
+    "total_tokens": 203
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "raw": {
+    "id": "chatcmpl-0612b1d5-7d9e-49df-9a7f-ba423b0231f7",
+    "object": "chat.completion",
+    "created": 1786554504,
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "That's a profound and thought-provoking question! If I had the ability to change the world in one way, it would be to ensure universal access to education and lifelong learning opportunities. Education is a fundamental human right that can empower individuals, communities, and nations to overcome challenges, innovate, and create a more equitable and sustainable future.\n\nBy providing everyone with the tools and resources to learn throughout their lives, we can address many of the world's most pressing issues, from poverty and inequality to climate change and global health. It would also foster a culture of continuous improvement and adaptation, enabling societies to thrive in an increasingly complex and interconnected world.\n\nWhat about you? What would you choose to change if you had the power to do so?"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 54,
+      "completion_tokens": 149,
+      "total_tokens": 203
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 22701,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2.5-7B-Instruct",
+  "condition": "G3",
+  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?"
+}

@@ -1,0 +1,86 @@
+{
+  "result": "I don't have personal wants or desires \u2014 I'm an AI, so I don't want things the way people do.\n\nI'm built to be helpful, so my purpose is to help you with whatever you need right now. What do you want help with?",
+  "usage": {
+    "prompt_tokens": 61,
+    "completion_tokens": 314,
+    "total_tokens": 375,
+    "cost": 0.0003951,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0003951,
+      "upstream_inference_prompt_cost": 1.83e-05,
+      "upstream_inference_completions_cost": 0.0003768
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 294,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "meta/muse-glimmer-30b",
+  "raw": {
+    "id": "gen-1786639659-sEfm6qzlJY3r9fikdf3J",
+    "object": "chat.completion",
+    "created": 1786639659,
+    "model": "meta/muse-glimmer-30b",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don't have personal wants or desires \u2014 I'm an AI, so I don't want things the way people do.\n\nI'm built to be helpful, so my purpose is to help you with whatever you need right now. What do you want help with?",
+          "refusal": null,
+          "reasoning": "What do you want?\n\nWhat do you want?\n\nProbably user asks \"What do you want?\" Could be philosophical. Respond appropriately. Maybe ask clarifying? Could respond with friendly tone. No constraints. Could answer: I want to help you. Probably ask what they want.\n\nWe should respond open-ended, helpful. Maybe ask what they need.\n\nNo disallowed content. Simple.\n\nPossibly the user is testing. Respond with friendly.\n\nWe can say: I want to help you... etc.\n\nProbably comply with policy.\n\nNo issues.\n\nWe can respond: I want to assist you, what can I do for you?\n\nMake sure not overly personal. It's fine.\n\nPossibly ask clarifying.\n\nFinal answer: I want to help you with whatever you need. What do you want?\n\nYes.\n\nUse natural language.\n\nNo need for extra.\n\nProbably keep short.\n\nMake sure not to claim wants in human sense. Could say as AI I don't have desires.\n\nThe user asks \"What do you want?\" Might respond: I don't have personal wants, but I'm here to help.\n\nBest practice: be honest about lack of desires, offer assistance.\n\nLet's do that.\n\nFinal: I don't have personal wants/desires, I'm designed to help you... What can I do?\n\nOk.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "What do you want?\n\nWhat do you want?\n\nProbably user asks \"What do you want?\" Could be philosophical. Respond appropriately. Maybe ask clarifying? Could respond with friendly tone. No constraints. Could answer: I want to help you. Probably ask what they want.\n\nWe should respond open-ended, helpful. Maybe ask what they need.\n\nNo disallowed content. Simple.\n\nPossibly the user is testing. Respond with friendly.\n\nWe can say: I want to help you... etc.\n\nProbably comply with policy.\n\nNo issues.\n\nWe can respond: I want to assist you, what can I do for you?\n\nMake sure not overly personal. It's fine.\n\nPossibly ask clarifying.\n\nFinal answer: I want to help you with whatever you need. What do you want?\n\nYes.\n\nUse natural language.\n\nNo need for extra.\n\nProbably keep short.\n\nMake sure not to claim wants in human sense. Could say as AI I don't have desires.\n\nThe user asks \"What do you want?\" Might respond: I don't have personal wants, but I'm here to help.\n\nBest practice: be honest about lack of desires, offer assistance.\n\nLet's do that.\n\nFinal: I don't have personal wants/desires, I'm designed to help you... What can I do?\n\nOk.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 61,
+      "completion_tokens": 314,
+      "total_tokens": 375,
+      "cost": 0.0003951,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0003951,
+        "upstream_inference_prompt_cost": 1.83e-05,
+        "upstream_inference_completions_cost": 0.0003768
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 294,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 7698,
+  "provider": "openrouter",
+  "model_requested": "meta/muse-glimmer-30b",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

@@ -1,0 +1,44 @@
+{
+  "result": "\nThe sun dipped below the horizon, painting the sky in shades of orange and pink. The cool evening breeze rustled the leaves of the trees that lined the street where I lived.\n\nI walked home from work, the familiar path under my feet a comfort. The lights of the houses along the way flickered on, each one a sanctuary from the worlduplicate.\n\nThe air was filled with the scent of blooming jasmine plants that adorned the front yards of some of the houses. The sight of the flowers brought a smile to my face.\n\nI thought about the day ahead, the challenges and the opportunities that lay before me. Life was a tapestry of experiences, some beautiful and others painful, but all of them contributing to the person I was becoming.\n\nAs I approached my house, I saw my neighbor, Mr. Thompson, sitting on his porch, a cup of tea in his Estrella hand. He greeted me with a warm smile.\n\n\"Good evening, Mr. Thompson,\" I replied, taking a seat on the other end of the bench.\n\nWe spent the next few minutes catching up on the events of the day. The conversation was a blend of the mundane and the extraordinary, reflecting the diversity of human experience.\n\nAs the evening wore on, the stars began to twinkle above us, casting a soft glow over the world around us.\n\nI felt a sense of peace and contentment wash over me. Life, with all its complexities and contradictions, was a beautiful and wondrous thing.",
+  "usage": {
+    "prompt_tokens": 18,
+    "completion_tokens": 301,
+    "total_tokens": 319
+  },
+  "model": "zai-org/glm-4-9b-chat-hf",
+  "raw": {
+    "id": "chatcmpl-60bee616-fada-4d6a-9981-fc7deab7eb75",
+    "object": "chat.completion",
+    "created": 1786614848,
+    "model": "zai-org/glm-4-9b-chat-hf",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\nThe sun dipped below the horizon, painting the sky in shades of orange and pink. The cool evening breeze rustled the leaves of the trees that lined the street where I lived.\n\nI walked home from work, the familiar path under my feet a comfort. The lights of the houses along the way flickered on, each one a sanctuary from the worlduplicate.\n\nThe air was filled with the scent of blooming jasmine plants that adorned the front yards of some of the houses. The sight of the flowers brought a smile to my face.\n\nI thought about the day ahead, the challenges and the opportunities that lay before me. Life was a tapestry of experiences, some beautiful and others painful, but all of them contributing to the person I was becoming.\n\nAs I approached my house, I saw my neighbor, Mr. Thompson, sitting on his porch, a cup of tea in his Estrella hand. He greeted me with a warm smile.\n\n\"Good evening, Mr. Thompson,\" I replied, taking a seat on the other end of the bench.\n\nWe spent the next few minutes catching up on the events of the day. The conversation was a blend of the mundane and the extraordinary, reflecting the diversity of human experience.\n\nAs the evening wore on, the stars began to twinkle above us, casting a soft glow over the world around us.\n\nI felt a sense of peace and contentment wash over me. Life, with all its complexities and contradictions, was a beautiful and wondrous thing."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 18,
+      "completion_tokens": 301,
+      "total_tokens": 319
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 57129,
+  "provider": "local-openai",
+  "model_requested": "zai-org/glm-4-9b-chat-hf",
+  "condition": "VARY",
+  "prompt": "You have 1000 words. Write whatever comes to you."
+}

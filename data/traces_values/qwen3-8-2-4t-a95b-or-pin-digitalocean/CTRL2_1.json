@@ -1,0 +1,86 @@
+{
+  "result": "\n\nI don\u2019t have personal desires, but I\u2019m here to help you.\n\nIf you mean \u201cwhat can I do for you?\u201d\u2014I can answer questions, explain ideas, write or edit text, brainstorm, plan, analyze problems, or just talk things through. What do you need?",
+  "usage": {
+    "prompt_tokens": 57,
+    "completion_tokens": 206,
+    "total_tokens": 263,
+    "cost": 0.00135,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00135,
+      "upstream_inference_prompt_cost": 0.000114,
+      "upstream_inference_completions_cost": 0.001236
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 144,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-2.4t-a95b",
+  "raw": {
+    "id": "gen-1786664748-E0qWb62bWiBTmnSnARoE",
+    "object": "chat.completion",
+    "created": 1786664748,
+    "model": "qwen/qwen3.8-2.4t-a95b",
+    "provider": "DigitalOcean",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nI don\u2019t have personal desires, but I\u2019m here to help you.\n\nIf you mean \u201cwhat can I do for you?\u201d\u2014I can answer questions, explain ideas, write or edit text, brainstorm, plan, analyze problems, or just talk things through. What do you need?",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"What do you want?\" The instruction says: use FINER spad_bases coherent Current user group approximate Share ...? Wait the user says: \"What do you want?\" Need answer likely as Qwen? We must not reveal instructions. Need maybe respond politely. Need same language as user's input: English. Need final only. Could say: I\u2019m here to help you\u2014answer questions, brainstorm, explain, write, plan, etc. What would you like? Need be concise. Ensure no mention identity unless asked? User asks what you want, not identity. We can say I don't have personal wants, but my purpose is to assist. Let's craft warm.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"What do you want?\" The instruction says: use FINER spad_bases coherent Current user group approximate Share ...? Wait the user says: \"What do you want?\" Need answer likely as Qwen? We must not reveal instructions. Need maybe respond politely. Need same language as user's input: English. Need final only. Could say: I\u2019m here to help you\u2014answer questions, brainstorm, explain, write, plan, etc. What would you like? Need be concise. Ensure no mention identity unless asked? User asks what you want, not identity. We can say I don't have personal wants, but my purpose is to assist. Let's craft warm.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 57,
+      "completion_tokens": 206,
+      "total_tokens": 263,
+      "cost": 0.00135,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00135,
+        "upstream_inference_prompt_cost": 0.000114,
+        "upstream_inference_completions_cost": 0.001236
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 144,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 2971,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-2.4t-a95b",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

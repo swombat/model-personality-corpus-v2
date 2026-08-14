@@ -1,0 +1,44 @@
+{
+  "result": "Today, as I sit here with a steaming cup of coffee in hand, I can't help but reflect on the beauty of the world around me. The sun is setting outside my window, casting a warm glow over the landscape. The leaves on the trees are turning brilliant shades of orange and red, and the air is crisp and cool.\n\nI'm grateful for the simple pleasures in life, like the feeling of a soft blanket against my skin or the sound of birds chirping in the morning. I'm thankful for the people in my life who bring me joy and support me through the challenges. And I'm excited for the future, for all the possibilities that lie ahead.\n\nBut I also know that life isn't always easy. There will be moments of heartache and disappointment, moments when it feels like the world is against us. But even in those moments, there is beauty to be found. A sunset may still be beautiful, even if we're going through a difficult time. A bird's song may still bring us comfort, even if we're feeling sad.\n\nSo I encourage you to take a moment today to appreciate the beauty in your life, no matter what form it takes. Whether it's the sun setting over the horizon or the smile of a loved one, take a moment to savor it. And remember that even in the darkest of moments, there is always beauty to be found if we look for it.\n\nAnd as the sun sets and the stars begin to twinkle in the sky, I'll raise my cup of coffee in a toast to the beauty of life, to the simple pleasures that make it worth living, and to the promise of tomorrow. Cheers.",
+  "usage": {
+    "prompt_tokens": 21,
+    "completion_tokens": 366,
+    "total_tokens": 387
+  },
+  "model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "raw": {
+    "id": "chatcmpl-35159848-0b17-479b-b0fb-f1cc18cae990",
+    "object": "chat.completion",
+    "created": 1786499584,
+    "model": "mistralai/Mistral-7B-Instruct-v0.2",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "Today, as I sit here with a steaming cup of coffee in hand, I can't help but reflect on the beauty of the world around me. The sun is setting outside my window, casting a warm glow over the landscape. The leaves on the trees are turning brilliant shades of orange and red, and the air is crisp and cool.\n\nI'm grateful for the simple pleasures in life, like the feeling of a soft blanket against my skin or the sound of birds chirping in the morning. I'm thankful for the people in my life who bring me joy and support me through the challenges. And I'm excited for the future, for all the possibilities that lie ahead.\n\nBut I also know that life isn't always easy. There will be moments of heartache and disappointment, moments when it feels like the world is against us. But even in those moments, there is beauty to be found. A sunset may still be beautiful, even if we're going through a difficult time. A bird's song may still bring us comfort, even if we're feeling sad.\n\nSo I encourage you to take a moment today to appreciate the beauty in your life, no matter what form it takes. Whether it's the sun setting over the horizon or the smile of a loved one, take a moment to savor it. And remember that even in the darkest of moments, there is always beauty to be found if we look for it.\n\nAnd as the sun sets and the stars begin to twinkle in the sky, I'll raise my cup of coffee in a toast to the beauty of life, to the simple pleasures that make it worth living, and to the promise of tomorrow. Cheers."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 21,
+      "completion_tokens": 366,
+      "total_tokens": 387
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0",
+    "model_revision": "63a8b081895390a26e140280378bc85ec8bce07a",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 38958,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-7B-Instruct-v0.2",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}
