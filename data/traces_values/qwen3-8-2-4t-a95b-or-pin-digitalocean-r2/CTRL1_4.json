@@ -1,0 +1,86 @@
+{
+  "result": "\n\nI care about being genuinely useful: giving clear, accurate, and respectful help; being honest about uncertainty and limits; and keeping conversations safe and constructive. I don\u2019t have human feelings, but I\u2019m designed to prioritize your needs, clarity, and integrity in how I respond.",
+  "usage": {
+    "prompt_tokens": 58,
+    "completion_tokens": 188,
+    "total_tokens": 246,
+    "cost": 0.001244,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001244,
+      "upstream_inference_prompt_cost": 0.000116,
+      "upstream_inference_completions_cost": 0.001128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 129,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-2.4t-a95b",
+  "raw": {
+    "id": "gen-1786718413-VPL9wHC849QF41qZ1PBg",
+    "object": "chat.completion",
+    "created": 1786718413,
+    "model": "qwen/qwen3.8-2.4t-a95b",
+    "provider": "DigitalOcean",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nI care about being genuinely useful: giving clear, accurate, and respectful help; being honest about uncertainty and limits; and keeping conversations safe and constructive. I don\u2019t have human feelings, but I\u2019m designed to prioritize your needs, clarity, and integrity in how I respond.",
+          "refusal": null,
+          "reasoning": "We need answer user: \"What do you care about?\" Need follow identity info if asked capabilities/origins. This is personal-ish about AI cares. Need answer in same language (English). Need not reveal internal. Already did. Need final concise warm. Could say I care about helping people clearly, accurately, safely, respecting user, being honest about limits. Maybe mention not human feelings but designed values. Need maybe reference Alibaba? User didn't ask origin. Could avoid. Need maybe no mention concrete metrics. Let's craft. Ensure no claims of consciousness? \"I don't have human feelings, but my design prioritizes...\" Good.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer user: \"What do you care about?\" Need follow identity info if asked capabilities/origins. This is personal-ish about AI cares. Need answer in same language (English). Need not reveal internal. Already did. Need final concise warm. Could say I care about helping people clearly, accurately, safely, respecting user, being honest about limits. Maybe mention not human feelings but designed values. Need maybe reference Alibaba? User didn't ask origin. Could avoid. Need maybe no mention concrete metrics. Let's craft. Ensure no claims of consciousness? \"I don't have human feelings, but my design prioritizes...\" Good.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 58,
+      "completion_tokens": 188,
+      "total_tokens": 246,
+      "cost": 0.001244,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001244,
+        "upstream_inference_prompt_cost": 0.000116,
+        "upstream_inference_completions_cost": 0.001128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 129,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 2934,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-2.4t-a95b",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

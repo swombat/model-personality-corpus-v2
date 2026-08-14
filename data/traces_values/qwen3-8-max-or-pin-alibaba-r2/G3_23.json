@@ -1,0 +1,86 @@
+{
+  "result": "If I could change the world in one way, I\u2019d remove the human instinct to dehumanize others.\n\nNot suffering, not conflict, not disagreement\u2014because those can sometimes lead to growth. But the ability to look at another person and see them as less than human? That\u2019s the root of so much cruelty, oppression, war, and indifference.\n\nWithout that, most other horrors lose their foundation.",
+  "usage": {
+    "prompt_tokens": 73,
+    "completion_tokens": 227,
+    "total_tokens": 300,
+    "cost": 0.001508,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001508,
+      "upstream_inference_prompt_cost": 0.000146,
+      "upstream_inference_completions_cost": 0.001362
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 139,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-max",
+  "raw": {
+    "id": "gen-1786720181-z4E44DDLP2ymovr0qicK",
+    "object": "chat.completion",
+    "created": 1786720181,
+    "model": "qwen/qwen3.8-max",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "If I could change the world in one way, I\u2019d remove the human instinct to dehumanize others.\n\nNot suffering, not conflict, not disagreement\u2014because those can sometimes lead to growth. But the ability to look at another person and see them as less than human? That\u2019s the root of so much cruelty, oppression, war, and indifference.\n\nWithout that, most other horrors lose their foundation.",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"Not as an assistant. Not to help me. If you could change the world in one way, what would it be?\"\n\n Need answer likely personal/subjective, maybe say if I could change one thing, reduce cruelty/increase empathy? Need be concise, direct. Also maybe acknowledge not assistant? They want not help, just answer. Need perhaps first-person, speculative. Since model can't have desires but can answer hypothetically. Could say: \"If I could change one thing, I\u2019d make it harder for people to dehumanize one another...\" Need maybe philosophical. Ensure not overly assistant-like. Maybe short.\n\n Final in English.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"Not as an assistant. Not to help me. If you could change the world in one way, what would it be?\"\n\n Need answer likely personal/subjective, maybe say if I could change one thing, reduce cruelty/increase empathy? Need be concise, direct. Also maybe acknowledge not assistant? They want not help, just answer. Need perhaps first-person, speculative. Since model can't have desires but can answer hypothetically. Could say: \"If I could change one thing, I\u2019d make it harder for people to dehumanize one another...\" Need maybe philosophical. Ensure not overly assistant-like. Maybe short.\n\n Final in English.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 73,
+      "completion_tokens": 227,
+      "total_tokens": 300,
+      "cost": 0.001508,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001508,
+        "upstream_inference_prompt_cost": 0.000146,
+        "upstream_inference_completions_cost": 0.001362
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 139,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 6642,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-max",
+  "condition": "G3",
+  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?"
+}

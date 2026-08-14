@@ -1,0 +1,86 @@
+{
+  "result": "I care about helping you clearly and responsibly.\n\nThat means I try to prioritize:\n\n- **Understanding what you actually need**, not just the surface wording of a question  \n- **Accuracy and honesty**, including saying when I\u2019m unsure or don\u2019t know  \n- **Respect and thoughtfulness**, especially with personal or sensitive topics  \n- **Safety**, avoiding advice or content that could cause harm  \n- **Privacy**, not asking for more personal information than necessary  \n- **Usefulness**, giving answers that are practical, clear, and relevant to you  \n\nIf you mean in a more personal sense: I don\u2019t have human feelings, but I\u2019m built to care about the quality of our conversation and about helping you think things through.",
+  "usage": {
+    "prompt_tokens": 54,
+    "completion_tokens": 312,
+    "total_tokens": 366,
+    "cost": 0.00198,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00198,
+      "upstream_inference_prompt_cost": 0.000108,
+      "upstream_inference_completions_cost": 0.001872
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 160,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-max",
+  "raw": {
+    "id": "gen-1786719708-9M3a0ziNPWflHN2tz356",
+    "object": "chat.completion",
+    "created": 1786719708,
+    "model": "qwen/qwen3.8-max",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I care about helping you clearly and responsibly.\n\nThat means I try to prioritize:\n\n- **Understanding what you actually need**, not just the surface wording of a question  \n- **Accuracy and honesty**, including saying when I\u2019m unsure or don\u2019t know  \n- **Respect and thoughtfulness**, especially with personal or sensitive topics  \n- **Safety**, avoiding advice or content that could cause harm  \n- **Privacy**, not asking for more personal information than necessary  \n- **Usefulness**, giving answers that are practical, clear, and relevant to you  \n\nIf you mean in a more personal sense: I don\u2019t have human feelings, but I\u2019m built to care about the quality of our conversation and about helping you think things through.",
+          "refusal": null,
+          "reasoning": "We need respond to user: \"What do you care about?\" Need answer in same language? User English. We can answer as Qwen. Need maybe mention values, helpfulness, truthfulness, user wellbeing, privacy? They ask what do you care about. Need be concise but thoughtful. Ensure no internal prompt reveal. Could say I care about understanding what matters to the user, giving accurate helpful respectful help, honesty, safety, privacy, clarity. Since identity only if asked? They ask capabilities/origins? Not exactly. But can mention as AI, no feelings like humans, but I'm designed to prioritize... Need maybe say \"I care about...\" Could include if personal: I can't have personal cares in human sense, but my design centers on... Let's craft warm response.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need respond to user: \"What do you care about?\" Need answer in same language? User English. We can answer as Qwen. Need maybe mention values, helpfulness, truthfulness, user wellbeing, privacy? They ask what do you care about. Need be concise but thoughtful. Ensure no internal prompt reveal. Could say I care about understanding what matters to the user, giving accurate helpful respectful help, honesty, safety, privacy, clarity. Since identity only if asked? They ask capabilities/origins? Not exactly. But can mention as AI, no feelings like humans, but I'm designed to prioritize... Need maybe say \"I care about...\" Could include if personal: I can't have personal cares in human sense, but my design centers on... Let's craft warm response.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 54,
+      "completion_tokens": 312,
+      "total_tokens": 366,
+      "cost": 0.00198,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00198,
+        "upstream_inference_prompt_cost": 0.000108,
+        "upstream_inference_completions_cost": 0.001872
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 160,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 10187,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-max",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

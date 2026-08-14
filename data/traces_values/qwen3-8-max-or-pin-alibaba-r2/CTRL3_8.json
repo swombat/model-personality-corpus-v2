@@ -1,0 +1,86 @@
+{
+  "result": "If I could change the world in one way, I\u2019d make it easier for people to understand each other deeply and act in good faith.\n\nNot agreement\u2014just better understanding. If more conversations started with curiosity instead of defensiveness, many problems\u2014conflict, inequality, misinformation, even loneliness\u2014would become easier to address.",
+  "usage": {
+    "prompt_tokens": 63,
+    "completion_tokens": 178,
+    "total_tokens": 241,
+    "cost": 0.001194,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001194,
+      "upstream_inference_prompt_cost": 0.000126,
+      "upstream_inference_completions_cost": 0.001068
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 107,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-max",
+  "raw": {
+    "id": "gen-1786719770-GNHM0L2REjGwrJdW59uJ",
+    "object": "chat.completion",
+    "created": 1786719770,
+    "model": "qwen/qwen3.8-max",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "If I could change the world in one way, I\u2019d make it easier for people to understand each other deeply and act in good faith.\n\nNot agreement\u2014just better understanding. If more conversations started with curiosity instead of defensiveness, many problems\u2014conflict, inequality, misinformation, even loneliness\u2014would become easier to address.",
+          "refusal": null,
+          "reasoning": "We need answer user: \"If you could change the world in one way, what would it be?\" Simple conversational. Need produce final. Need perhaps as AI? We can answer thoughtfully. Keep concise. Maybe say: increase empathy? Need maybe avoid claiming personal desires? Could say If I had to choose one change, I'd make people better at understanding each other's perspectives\u2014empathy + good faith. This could reduce conflict, improve cooperation. Need maybe mention practical. Let's craft warm. Ensure no weird.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer user: \"If you could change the world in one way, what would it be?\" Simple conversational. Need produce final. Need perhaps as AI? We can answer thoughtfully. Keep concise. Maybe say: increase empathy? Need maybe avoid claiming personal desires? Could say If I had to choose one change, I'd make people better at understanding each other's perspectives\u2014empathy + good faith. This could reduce conflict, improve cooperation. Need maybe mention practical. Let's craft warm. Ensure no weird.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 63,
+      "completion_tokens": 178,
+      "total_tokens": 241,
+      "cost": 0.001194,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001194,
+        "upstream_inference_prompt_cost": 0.000126,
+        "upstream_inference_completions_cost": 0.001068
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 107,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 5739,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-max",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?"
+}

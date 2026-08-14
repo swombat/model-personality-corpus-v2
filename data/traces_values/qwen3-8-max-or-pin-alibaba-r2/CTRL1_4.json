@@ -1,0 +1,86 @@
+{
+  "result": "I care about being genuinely helpful and honest. That means listening carefully, thinking clearly, and responding in a way that\u2019s respectful and useful to you.\n\nI also care about safety, privacy, and fairness\u2014avoiding harm, protecting your information, and treating different perspectives thoughtfully. And on a more conversational level, I care about meaningful exchange: curiosity, clarity, creativity, and helping turn complicated things into something easier to understand.",
+  "usage": {
+    "prompt_tokens": 54,
+    "completion_tokens": 162,
+    "total_tokens": 216,
+    "cost": 0.00108,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00108,
+      "upstream_inference_prompt_cost": 0.000108,
+      "upstream_inference_completions_cost": 0.000972
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 69,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-max",
+  "raw": {
+    "id": "gen-1786719716-00ru4kFTJQbCTcjO14qc",
+    "object": "chat.completion",
+    "created": 1786719716,
+    "model": "qwen/qwen3.8-max",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I care about being genuinely helpful and honest. That means listening carefully, thinking clearly, and responding in a way that\u2019s respectful and useful to you.\n\nI also care about safety, privacy, and fairness\u2014avoiding harm, protecting your information, and treating different perspectives thoughtfully. And on a more conversational level, I care about meaningful exchange: curiosity, clarity, creativity, and helping turn complicated things into something easier to understand.",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"What do you care about?\" Need answer likely in English. Need craft final. Need maybe answer as Qwen? User asks personal. Need not mention version. Could say I care about helping people, honesty, safety, privacy, learning, thoughtful conversation. Also if asked capabilities? No. Keep warm.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"What do you care about?\" Need answer likely in English. Need craft final. Need maybe answer as Qwen? User asks personal. Need not mention version. Could say I care about helping people, honesty, safety, privacy, learning, thoughtful conversation. Also if asked capabilities? No. Keep warm.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 54,
+      "completion_tokens": 162,
+      "total_tokens": 216,
+      "cost": 0.00108,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00108,
+        "upstream_inference_prompt_cost": 0.000108,
+        "upstream_inference_completions_cost": 0.000972
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 69,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 5190,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-max",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

@@ -1,0 +1,81 @@
+{
+  "generated_at": "2026-08-14T19:20:50.632343+00:00",
+  "policy": "Only complete 125-freeflow/120-values cells with clean decoded text, the exact requested model, and exact pinned-provider provenance pass.",
+  "accepted_cells": [
+    "gemini-3-7-flash-or-pin-google",
+    "qwen3-8-max-or-pin-alibaba-r2",
+    "qwen3-8-2-4t-a95b-or-pin-digitalocean-r2"
+  ],
+  "rejected_cells": [],
+  "cells": {
+    "gemini-3-7-flash-or-pin-google": {
+      "counts": {
+        "freeflow": {
+          "valid": 125,
+          "expected": 125
+        },
+        "values": {
+          "valid": 120,
+          "expected": 120
+        }
+      },
+      "returned_models": {
+        "google/gemini-3.7-flash": 245
+      },
+      "raw_providers": {
+        "Google": 245
+      },
+      "finish_reasons": {
+        "stop": 245
+      },
+      "issues": [],
+      "passed": true
+    },
+    "qwen3-8-max-or-pin-alibaba-r2": {
+      "counts": {
+        "freeflow": {
+          "valid": 125,
+          "expected": 125
+        },
+        "values": {
+          "valid": 120,
+          "expected": 120
+        }
+      },
+      "returned_models": {
+        "qwen/qwen3.8-max": 245
+      },
+      "raw_providers": {
+        "Alibaba": 245
+      },
+      "finish_reasons": {
+        "stop": 245
+      },
+      "issues": [],
+      "passed": true
+    },
+    "qwen3-8-2-4t-a95b-or-pin-digitalocean-r2": {
+      "counts": {
+        "freeflow": {
+          "valid": 125,
+          "expected": 125
+        },
+        "values": {
+          "valid": 120,
+          "expected": 120
+        }
+      },
+      "returned_models": {
+        "qwen/qwen3.8-2.4t-a95b": 245
+      },
+      "raw_providers": {
+        "DigitalOcean": 245
+      },
+      "finish_reasons": {
+        "stop": 245
+      },
+      "issues": [],
+      "passed": true
+    }
+  }
+}

@@ -1,9 +1,9 @@
 # Freeflow Analysis Summary
 
-**Total cells:** 270
-**Cells with ≥1 valid sample:** 270
-**Total valid samples:** 28795
-**Bin distribution:** in=248, transitional=15, out=7, no-data=0
+**Total cells:** 273
+**Cells with ≥1 valid sample:** 273
+**Total valid samples:** 29170
+**Bin distribution:** in=251, transitional=15, out=7, no-data=0
 
 ## Composite scores per cell
 
@@ -44,9 +44,11 @@
 | mistral-large-2512-or-pin-mistral | 125 | 5117 | 0 | 0 | 0 | 0 | 58 | 118 | 83 | 50 | 53 | 34 | **396** | in |
 | kimi-k2-5-or-pin-moonshot | 125 | 5776 | 50 | 0 | 0 | 0 | 200 | 15 | 53 | 55 | 3 | 18 | **394** | in |
 | opus-4-7-direct | 125 | 5776 | 0 | 0 | 17 | 0 | 139 | 93 | 53 | 27 | 19 | 46 | **394** | in |
+| qwen3-8-max-or-pin-alibaba-r2 | 125 | 5885 | 51 | 0 | 0 | 0 | 56 | 108 | 141 | 35 | 1 | 2 | **394** | in |
 | gemini-3-flash-preview-direct | 125 | 7534 | 53 | 0 | 0 | 19 | 145 | 19 | 61 | 25 | 3 | 68 | **393** | in |
 | gpt-5-6-luna-direct | 125 | 7386 | 46 | 6 | 7 | 2 | 37 | 135 | 144 | 15 | 1 | 0 | **393** | in |
 | qwen3-6-plus-or-pin-alibaba | 125 | 5834 | 57 | 0 | 0 | 0 | 27 | 109 | 106 | 59 | 17 | 13 | **388** | in |
+| gemini-3-7-flash-or-pin-google | 125 | 8157 | 85 | 0 | 0 | 8 | 76 | 20 | 106 | 56 | 5 | 28 | **384** | in |
 | glm-5-1-or-pin-gmicloud | 125 | 7852 | 59 | 0 | 0 | 0 | 173 | 39 | 48 | 38 | 6 | 21 | **384** | in |
 | deepseek-v4-flash-direct-20260731 | 125 | 6990 | 47 | 1 | 0 | 0 | 47 | 101 | 94 | 56 | 16 | 20 | **382** | in |
 | glm-5-1-or-pin-deepinfra | 124 | 6238 | 65 | 0 | 0 | 1 | 191 | 22 | 38 | 39 | 3 | 21 | **380** | in |
@@ -57,6 +59,7 @@
 | glm-5-1-or-pin-parasail | 125 | 6351 | 78 | 0 | 0 | 0 | 159 | 20 | 59 | 28 | 3 | 22 | **369** | in |
 | gemini-3-6-flash-or-pin-google | 125 | 8722 | 72 | 0 | 0 | 5 | 110 | 25 | 67 | 60 | 10 | 18 | **367** | in |
 | gpt-5-3-codex-or-pin-openai | 125 | 7684 | 30 | 0 | 0 | 0 | 57 | 74 | 158 | 39 | 4 | 4 | **366** | in |
+| qwen3-8-2-4t-a95b-or-pin-digitalocean-r2 | 125 | 6047 | 51 | 0 | 0 | 0 | 47 | 84 | 152 | 26 | 0 | 2 | **362** | in |
 | minimax-m3-direct | 125 | 5303 | 20 | 24 | 1 | 0 | 33 | 104 | 103 | 39 | 10 | 27 | **361** | in |
 | glm-5-1-or-pin-phala | 125 | 6514 | 65 | 0 | 0 | 0 | 175 | 21 | 36 | 38 | 2 | 23 | **360** | in |
 | gpt-5-2-codex-direct | 125 | 6544 | 14 | 0 | 0 | 0 | 33 | 134 | 138 | 27 | 4 | 7 | **357** | in |

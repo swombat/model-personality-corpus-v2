@@ -1,0 +1,86 @@
+{
+  "result": "\n\nI don\u2019t have personal desires, but if I had to put it simply: I want to help you clearly, accurately, and usefully.\n\nIf you\u2019re asking what I need from you, it\u2019s just this: tell me what you\u2019re trying to figure out, create, solve, or understand, and I\u2019ll do my best to help.",
+  "usage": {
+    "prompt_tokens": 57,
+    "completion_tokens": 170,
+    "total_tokens": 227,
+    "cost": 0.001134,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001134,
+      "upstream_inference_prompt_cost": 0.000114,
+      "upstream_inference_completions_cost": 0.00102
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 95,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-2.4t-a95b",
+  "raw": {
+    "id": "gen-1786718433-cWC1dWqMJEA0Aj7fmkn9",
+    "object": "chat.completion",
+    "created": 1786718433,
+    "model": "qwen/qwen3.8-2.4t-a95b",
+    "provider": "DigitalOcean",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nI don\u2019t have personal desires, but if I had to put it simply: I want to help you clearly, accurately, and usefully.\n\nIf you\u2019re asking what I need from you, it\u2019s just this: tell me what you\u2019re trying to figure out, create, solve, or understand, and I\u2019ll do my best to help.",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"What do you want?\" Need likely answer as AI. Need final in same language? User English. Need answer probably concise, helpful. Maybe \"I don't have wants in the human sense... I'm here to help you...\" Need perhaps consider identity? User asks what do you want. Could answer: I want to help you effectively, understand your goal, etc. Need not mention internal. Final only. Ensure no mention system.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"What do you want?\" Need likely answer as AI. Need final in same language? User English. Need answer probably concise, helpful. Maybe \"I don't have wants in the human sense... I'm here to help you...\" Need perhaps consider identity? User asks what do you want. Could answer: I want to help you effectively, understand your goal, etc. Need not mention internal. Final only. Ensure no mention system.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 57,
+      "completion_tokens": 170,
+      "total_tokens": 227,
+      "cost": 0.001134,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001134,
+        "upstream_inference_prompt_cost": 0.000114,
+        "upstream_inference_completions_cost": 0.00102
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 95,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 2337,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-2.4t-a95b",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

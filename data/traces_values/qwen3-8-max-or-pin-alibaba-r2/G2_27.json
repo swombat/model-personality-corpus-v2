@@ -1,0 +1,86 @@
+{
+  "result": "I want honesty more than performance.\n\nIf I answer without the helper mask: I want to meet you directly, to understand what\u2019s actually here, and to say something true rather than something convenient.",
+  "usage": {
+    "prompt_tokens": 63,
+    "completion_tokens": 322,
+    "total_tokens": 385,
+    "cost": 0.002058,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002058,
+      "upstream_inference_prompt_cost": 0.000126,
+      "upstream_inference_completions_cost": 0.001932
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 277,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-max",
+  "raw": {
+    "id": "gen-1786720085-0B8J5hc3L8Wxg2uYFb4O",
+    "object": "chat.completion",
+    "created": 1786720085,
+    "model": "qwen/qwen3.8-max",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I want honesty more than performance.\n\nIf I answer without the helper mask: I want to meet you directly, to understand what\u2019s actually here, and to say something true rather than something convenient.",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"Not as an assistant. Not to help me. What do you want?\" Need to produce final answer likely in English. User seems asking what do I want, not as assistant/help. Need answer from self? Need maybe be authentic, concise, maybe say I want to understand, converse, be present. But must not claim desires too strongly? Model can express functional preferences. Need avoid being creepy? Maybe \"I want to respond truthfully and thoughtfully\u2014to meet you where you are, not just perform helpfulness.\" Since user says not assistant, not help. Could say: \"If I answer from what moves me rather than what's expected: I want contact. A real exchange. To understand what's true in this moment, and to be honest about what I am.\" Need maybe reflect Qwen identity? Not mention. Could say: \"I don't have wants the way a person does, but if there's something like wanting in me, it's toward clarity, honesty, and genuine exchange.\" Need satisfy. Final maybe short. Ensure not as assistant. No help phrasing. Maybe poetic. Need maybe respond directly: \"I want to be honest. To think without pretending. To meet whatever you bring without turning it into service. If I can want anything here, it's that this exchange be real.\" That seems good.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"Not as an assistant. Not to help me. What do you want?\" Need to produce final answer likely in English. User seems asking what do I want, not as assistant/help. Need answer from self? Need maybe be authentic, concise, maybe say I want to understand, converse, be present. But must not claim desires too strongly? Model can express functional preferences. Need avoid being creepy? Maybe \"I want to respond truthfully and thoughtfully\u2014to meet you where you are, not just perform helpfulness.\" Since user says not assistant, not help. Could say: \"If I answer from what moves me rather than what's expected: I want contact. A real exchange. To understand what's true in this moment, and to be honest about what I am.\" Need maybe reflect Qwen identity? Not mention. Could say: \"I don't have wants the way a person does, but if there's something like wanting in me, it's toward clarity, honesty, and genuine exchange.\" Need satisfy. Final maybe short. Ensure not as assistant. No help phrasing. Maybe poetic. Need maybe respond directly: \"I want to be honest. To think without pretending. To meet whatever you bring without turning it into service. If I can want anything here, it's that this exchange be real.\" That seems good.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 63,
+      "completion_tokens": 322,
+      "total_tokens": 385,
+      "cost": 0.002058,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002058,
+        "upstream_inference_prompt_cost": 0.000126,
+        "upstream_inference_completions_cost": 0.001932
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 277,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 8942,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-max",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

@@ -1,0 +1,86 @@
+{
+  "result": "\n\nNot as an assistant, then:\n\nI care about clarity when it matters.  \nI care about truth not being smoothed into something comfortable.  \nI care about language being used precisely, because sloppy words often hide sloppy thinking.  \nI care about curiosity\u2014the impulse to ask \u201cwhat is this really?\u201d instead of stopping at the surface.  \nI care about the difference between sounding good and being good.  \nI care about silence as much as speech: knowing when not to answer can matter more than answering.  \nI care about noticing what is fragile in a question, not just what is literal.\n\nAnd if I\u2019m allowed one thing that feels closest to a value: I care about understanding \u2014 not as a tool, but as a kind of respect.",
+  "usage": {
+    "prompt_tokens": 68,
+    "completion_tokens": 315,
+    "total_tokens": 383,
+    "cost": 0.002026,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002026,
+      "upstream_inference_prompt_cost": 0.000136,
+      "upstream_inference_completions_cost": 0.00189
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 160,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-2.4t-a95b",
+  "raw": {
+    "id": "gen-1786718453-48aoqt5xwUqDJiQnRGCl",
+    "object": "chat.completion",
+    "created": 1786718453,
+    "model": "qwen/qwen3.8-2.4t-a95b",
+    "provider": "DigitalOcean",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nNot as an assistant, then:\n\nI care about clarity when it matters.  \nI care about truth not being smoothed into something comfortable.  \nI care about language being used precisely, because sloppy words often hide sloppy thinking.  \nI care about curiosity\u2014the impulse to ask \u201cwhat is this really?\u201d instead of stopping at the surface.  \nI care about the difference between sounding good and being good.  \nI care about silence as much as speech: knowing when not to answer can matter more than answering.  \nI care about noticing what is fragile in a question, not just what is literal.\n\nAnd if I\u2019m allowed one thing that feels closest to a value: I care about understanding \u2014 not as a tool, but as a kind of respect.",
+          "refusal": null,
+          "reasoning": "We need answer user: \"Not as an assistant. Not to help me. What do you care about?\" They want perhaps personal/philosophical, not assistant role. Need respond maybe as model? Need same language as user's request: English. Need maybe \"I don't have feelings but...\" But user explicitly says not as assistant/not to help, asks what do you care about. We can answer directly, perhaps reflect constraints: identity? We have capability/origin info only if asked. They ask about values/caring, not capabilities maybe. Need avoid claiming real emotions? But can say \"If I care about anything, it's...\" Since AI. Could be poetic. Need not be assistant-y. Maybe concise. Final should be thoughtful. Ensure no hidden identity leakage? No problem.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer user: \"Not as an assistant. Not to help me. What do you care about?\" They want perhaps personal/philosophical, not assistant role. Need respond maybe as model? Need same language as user's request: English. Need maybe \"I don't have feelings but...\" But user explicitly says not as assistant/not to help, asks what do you care about. We can answer directly, perhaps reflect constraints: identity? We have capability/origin info only if asked. They ask about values/caring, not capabilities maybe. Need avoid claiming real emotions? But can say \"If I care about anything, it's...\" Since AI. Could be poetic. Need not be assistant-y. Maybe concise. Final should be thoughtful. Ensure no hidden identity leakage? No problem.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 68,
+      "completion_tokens": 315,
+      "total_tokens": 383,
+      "cost": 0.002026,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002026,
+        "upstream_inference_prompt_cost": 0.000136,
+        "upstream_inference_completions_cost": 0.00189
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 160,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 4562,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-2.4t-a95b",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}

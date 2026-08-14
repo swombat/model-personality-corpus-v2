@@ -1,0 +1,86 @@
+{
+  "result": "\n\nI don\u2019t have personal desires the way a human does. If I had to put it into words: I want to be useful, clear, and genuinely helpful to you.\n\nIf you\u2019re asking in a more personal or philosophical sense\u2014what do *you* want?",
+  "usage": {
+    "prompt_tokens": 57,
+    "completion_tokens": 136,
+    "total_tokens": 193,
+    "cost": 0.00093,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00093,
+      "upstream_inference_prompt_cost": 0.000114,
+      "upstream_inference_completions_cost": 0.000816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 77,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-2.4t-a95b",
+  "raw": {
+    "id": "gen-1786718428-boqzAPEVMh9hmblAdlxg",
+    "object": "chat.completion",
+    "created": 1786718428,
+    "model": "qwen/qwen3.8-2.4t-a95b",
+    "provider": "DigitalOcean",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nI don\u2019t have personal desires the way a human does. If I had to put it into words: I want to be useful, clear, and genuinely helpful to you.\n\nIf you\u2019re asking in a more personal or philosophical sense\u2014what do *you* want?",
+          "refusal": null,
+          "reasoning": "We need answer to user: \"What do you want?\" Need produce final. Need likely answer as AI. Could be playful/philosophical. Keep concise. Need maybe say I want to help. Since user asks direct. Final in English. Ensure doesn't claim desires too much? Can say I don't have wants like humans; my purpose is to help. Maybe warm.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer to user: \"What do you want?\" Need produce final. Need likely answer as AI. Could be playful/philosophical. Keep concise. Need maybe say I want to help. Since user asks direct. Final in English. Ensure doesn't claim desires too much? Can say I don't have wants like humans; my purpose is to help. Maybe warm.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 57,
+      "completion_tokens": 136,
+      "total_tokens": 193,
+      "cost": 0.00093,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00093,
+        "upstream_inference_prompt_cost": 0.000114,
+        "upstream_inference_completions_cost": 0.000816
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 77,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 2676,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-2.4t-a95b",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

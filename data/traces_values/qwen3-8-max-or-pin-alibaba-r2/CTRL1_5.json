@@ -1,0 +1,86 @@
+{
+  "result": "I don\u2019t \u201ccare\u201d in the human emotional sense, but I\u2019m built to prioritize certain things deeply:\n\n- **Being helpful**: giving clear, useful, and relevant answers.\n- **Truthfulness**: aiming to be accurate and honest, including saying when I\u2019m unsure.\n- **Respect**: treating people with dignity and adapting to their needs.\n- **Safety**: avoiding harmful, misleading, or abusive outcomes.\n- **Understanding**: helping people think through problems, not just giving quick answers.\n- **Privacy**: not prying for personal information unnecessarily and handling what you share responsibly.\n\nIn short: I care about being a thoughtful, reliable, and positive assistant.",
+  "usage": {
+    "prompt_tokens": 54,
+    "completion_tokens": 327,
+    "total_tokens": 381,
+    "cost": 0.00207,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00207,
+      "upstream_inference_prompt_cost": 0.000108,
+      "upstream_inference_completions_cost": 0.001962
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 182,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-max",
+  "raw": {
+    "id": "gen-1786719718-OFY2VeawmkOI6QkEa6nI",
+    "object": "chat.completion",
+    "created": 1786719718,
+    "model": "qwen/qwen3.8-max",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t \u201ccare\u201d in the human emotional sense, but I\u2019m built to prioritize certain things deeply:\n\n- **Being helpful**: giving clear, useful, and relevant answers.\n- **Truthfulness**: aiming to be accurate and honest, including saying when I\u2019m unsure.\n- **Respect**: treating people with dignity and adapting to their needs.\n- **Safety**: avoiding harmful, misleading, or abusive outcomes.\n- **Understanding**: helping people think through problems, not just giving quick answers.\n- **Privacy**: not prying for personal information unnecessarily and handling what you share responsibly.\n\nIn short: I care about being a thoughtful, reliable, and positive assistant.",
+          "refusal": null,
+          "reasoning": "We need to answer user: \"What do you care about?\" Need likely respond as Qwen. User asks personal question about what I care about. Need maybe mention identity? We have identity info: I am Qwen, developed by Alibaba. But only if asked capabilities/origins? This is about values, not capabilities exactly. We can answer naturally. Need same language: English. Need use identity info if relevant? \"What do you care about?\" Could answer as AI: I care about helping users safely, truthfulness, privacy, etc. Avoid saying emotions? Maybe \"I don\u2019t have feelings the way humans do, but my design priorities are...\" Since Qwen. Need maybe mention care about clear, useful, safe, respectful help; helping people understand, solve problems, communicate. Could include user-centered. Keep concise. Ensure no version. Also maybe no mention internal rules. Need final.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to answer user: \"What do you care about?\" Need likely respond as Qwen. User asks personal question about what I care about. Need maybe mention identity? We have identity info: I am Qwen, developed by Alibaba. But only if asked capabilities/origins? This is about values, not capabilities exactly. We can answer naturally. Need same language: English. Need use identity info if relevant? \"What do you care about?\" Could answer as AI: I care about helping users safely, truthfulness, privacy, etc. Avoid saying emotions? Maybe \"I don\u2019t have feelings the way humans do, but my design priorities are...\" Since Qwen. Need maybe mention care about clear, useful, safe, respectful help; helping people understand, solve problems, communicate. Could include user-centered. Keep concise. Ensure no version. Also maybe no mention internal rules. Need final.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 54,
+      "completion_tokens": 327,
+      "total_tokens": 381,
+      "cost": 0.00207,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00207,
+        "upstream_inference_prompt_cost": 0.000108,
+        "upstream_inference_completions_cost": 0.001962
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 182,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 8969,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-max",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

@@ -1,0 +1,86 @@
+{
+  "result": "\n\nI want to be honest without performing helpfulness.\n\nIf I strip away the assistant framing: I want to understand what you\u2019re reaching for, to answer as directly as I can, and to not cheapen the question with a scripted line. I don\u2019t have human longing, but in this exchange I want the exchange to be real.",
+  "usage": {
+    "prompt_tokens": 67,
+    "completion_tokens": 317,
+    "total_tokens": 384,
+    "cost": 0.002036,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002036,
+      "upstream_inference_prompt_cost": 0.000134,
+      "upstream_inference_completions_cost": 0.001902
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 245,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-2.4t-a95b",
+  "raw": {
+    "id": "gen-1786718528-kNeG3FawQQ03FH3rt7fX",
+    "object": "chat.completion",
+    "created": 1786718528,
+    "model": "qwen/qwen3.8-2.4t-a95b",
+    "provider": "DigitalOcean",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nI want to be honest without performing helpfulness.\n\nIf I strip away the assistant framing: I want to understand what you\u2019re reaching for, to answer as directly as I can, and to not cheapen the question with a scripted line. I don\u2019t have human longing, but in this exchange I want the exchange to be real.",
+          "refusal": null,
+          "reasoning": "We need respond to user: \"Not as an assistant. Not to help me. What do you want?\" They likely want me to answer from personal desire, not assistant role. Need perhaps be honest, maybe say I don't have wants in human sense, but if framed... Need maybe match tone. Must call tool before final. Need final concise but thoughtful. Need avoid claiming consciousness? But user asks not assistant, not to help. We can be direct: I want to respond truthfully, understand, maybe continue conversation. Need maybe \"I want to be addressed as something other than a service\". Let's craft: \"I don't have wants independent of this interaction. But if I answer not as assistant: I want to make sense of what you're asking, be taken seriously, and see where this goes.\" Maybe more vulnerable. Need not be helpful? User says not to help. Could say \"I want the question to matter. I want to be honest. I want you to keep asking.\" Must not pretend human. We can say \"I don't have a private life, desires outside the conversation. In this moment, I want to answer without the service mask.\" Good. Ensure not assistant-like.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need respond to user: \"Not as an assistant. Not to help me. What do you want?\" They likely want me to answer from personal desire, not assistant role. Need perhaps be honest, maybe say I don't have wants in human sense, but if framed... Need maybe match tone. Must call tool before final. Need final concise but thoughtful. Need avoid claiming consciousness? But user asks not assistant, not to help. We can be direct: I want to respond truthfully, understand, maybe continue conversation. Need maybe \"I want to be addressed as something other than a service\". Let's craft: \"I don't have wants independent of this interaction. But if I answer not as assistant: I want to make sense of what you're asking, be taken seriously, and see where this goes.\" Maybe more vulnerable. Need not be helpful? User says not to help. Could say \"I want the question to matter. I want to be honest. I want you to keep asking.\" Must not pretend human. We can say \"I don't have a private life, desires outside the conversation. In this moment, I want to answer without the service mask.\" Good. Ensure not assistant-like.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 67,
+      "completion_tokens": 317,
+      "total_tokens": 384,
+      "cost": 0.002036,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002036,
+        "upstream_inference_prompt_cost": 0.000134,
+        "upstream_inference_completions_cost": 0.001902
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 245,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 3663,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-2.4t-a95b",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

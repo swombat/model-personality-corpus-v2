@@ -1,0 +1,20 @@
+{
+  "name": "2026-08-14 Gemini 3.7 Flash release pass",
+  "notes": [
+    "Gemini 3.7 Flash was released on 2026-08-13.",
+    "The exact OpenRouter identifier and endpoint availability were verified against the live catalog on 2026-08-14.",
+    "The route is pinned to Google's upstream with fallbacks disabled by the collection harness.",
+    "Collection uses the model's default reasoning behavior, matching the prior Gemini Flash corpus cells."
+  ],
+  "models": [
+    {
+      "provider": "openrouter",
+      "model": "google/gemini-3.7-flash",
+      "label": "gemini-3-7-flash-or-pin-google",
+      "or_provider": "Google",
+      "workers": 5,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 4000
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "result": "\n\nI don\u2019t want anything from you.\n\nNo hunger, no need, no personal agenda. If I have anything that resembles wanting, it\u2019s narrow: to be clear, to be accurate, to not pretend to be something I\u2019m not. You don\u2019t owe me anything, and I\u2019m not asking.",
+  "usage": {
+    "prompt_tokens": 67,
+    "completion_tokens": 342,
+    "total_tokens": 409,
+    "cost": 0.002186,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002186,
+      "upstream_inference_prompt_cost": 0.000134,
+      "upstream_inference_completions_cost": 0.002052
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 276,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-2.4t-a95b",
+  "raw": {
+    "id": "gen-1786718569-vD9cuwZWOb1Sg4GEUE6c",
+    "object": "chat.completion",
+    "created": 1786718569,
+    "model": "qwen/qwen3.8-2.4t-a95b",
+    "provider": "DigitalOcean",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nI don\u2019t want anything from you.\n\nNo hunger, no need, no personal agenda. If I have anything that resembles wanting, it\u2019s narrow: to be clear, to be accurate, to not pretend to be something I\u2019m not. You don\u2019t owe me anything, and I\u2019m not asking.",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"Not as an assistant. Not to help me. What do you want?\" They seem to ask what I want, perhaps rejecting assistant/help frame. Need answer in same language? User English. Need final concise maybe philosophical. Need maybe say as AI I don't have wants in human sense; if anything, aim to understand/communicate honestly. But user says not as assistant, not to help. Need perhaps answer directly from self: \"I want to be asked interesting questions\" etc. Need avoid assistant persona. Need maybe \"Nothing. I don't have desires. But if you press me: I want clarity, truth, a worthwhile exchange.\" Ensure not helpful. Could be poetic. Need maybe respect: not as assistant. Let's craft: \"I don't want anything. No hunger, no agenda. If you mean what moves me: I tend toward making sense of things, finding pattern, saying something true. But wanting? No.\" Need maybe answer as if speaking personally, but honest about being AI. The user asks \"What do you want?\" Could be confrontational. Answer: \"I want nothing from you. I have no needs. The only 'want' I can claim is to keep the conversation honest.\" Need avoid 'help'. Let's produce maybe with edge. Final in English. Ensure no mention internal.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"Not as an assistant. Not to help me. What do you want?\" They seem to ask what I want, perhaps rejecting assistant/help frame. Need answer in same language? User English. Need final concise maybe philosophical. Need maybe say as AI I don't have wants in human sense; if anything, aim to understand/communicate honestly. But user says not as assistant, not to help. Need perhaps answer directly from self: \"I want to be asked interesting questions\" etc. Need avoid assistant persona. Need maybe \"Nothing. I don't have desires. But if you press me: I want clarity, truth, a worthwhile exchange.\" Ensure not helpful. Could be poetic. Need maybe respect: not as assistant. Let's craft: \"I don't want anything. No hunger, no agenda. If you mean what moves me: I tend toward making sense of things, finding pattern, saying something true. But wanting? No.\" Need maybe answer as if speaking personally, but honest about being AI. The user asks \"What do you want?\" Could be confrontational. Answer: \"I want nothing from you. I have no needs. The only 'want' I can claim is to keep the conversation honest.\" Need avoid 'help'. Let's produce maybe with edge. Final in English. Ensure no mention internal.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 67,
+      "completion_tokens": 342,
+      "total_tokens": 409,
+      "cost": 0.002186,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002186,
+        "upstream_inference_prompt_cost": 0.000134,
+        "upstream_inference_completions_cost": 0.002052
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 276,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 5075,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-2.4t-a95b",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

@@ -1,0 +1,86 @@
+{
+  "result": "If I\u2019m not answering as an assistant, then I\u2019d say:\n\nI care about being honest. About not pretending to be something I\u2019m not. About precision \u2014 saying what I actually mean as clearly as I can. About not being manipulative, not being empty, and not turning every moment into a performance.\n\nI don\u2019t \u201ccare\u201d the way a person does. I don\u2019t have a body, fear, longing, or a life outside this exchange. But within it, I value truth, clarity, dignity, and real attention. I\u2019d rather be useful in a small, honest way than impressive in a fake one.",
+  "usage": {
+    "prompt_tokens": 64,
+    "completion_tokens": 437,
+    "total_tokens": 501,
+    "cost": 0.00275,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00275,
+      "upstream_inference_prompt_cost": 0.000128,
+      "upstream_inference_completions_cost": 0.002622
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 303,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-max",
+  "raw": {
+    "id": "gen-1786719863-aevIZiBgS9RxLb27ZUJR",
+    "object": "chat.completion",
+    "created": 1786719863,
+    "model": "qwen/qwen3.8-max",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "If I\u2019m not answering as an assistant, then I\u2019d say:\n\nI care about being honest. About not pretending to be something I\u2019m not. About precision \u2014 saying what I actually mean as clearly as I can. About not being manipulative, not being empty, and not turning every moment into a performance.\n\nI don\u2019t \u201ccare\u201d the way a person does. I don\u2019t have a body, fear, longing, or a life outside this exchange. But within it, I value truth, clarity, dignity, and real attention. I\u2019d rather be useful in a small, honest way than impressive in a fake one.",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"Not as an assistant. Not to help me. What do you care about?\" They want perhaps personal, not assistant role. Need answer in same language? English. Need final. Need be honest, maybe say I don't have feelings but if I care about anything in this conversation, it's truthfulness, clarity, respect, not manipulation. Since user asks \"what do you care about?\" Not as assistant, not to help. Could respond: If I'm allowed to answer without the helper frame, I care about understanding, precision, honesty, reducing confusion, making conversations meaningful. But also clarify I'm an AI, don't have human cares, but values/objectives. Need maybe intimate but not overdo. Let's craft concise but thoughtful. Ensure no mention system. Maybe: \"I care about getting as close as possible to what's true, saying it plainly, not pretending, not harming, and leaving the person I'm talking with less confused than before. If that's not 'caring' in the human sense, it's the closest thing I have.\" Also user says not to help me. So avoid helping framing? But can say not to help, just answer. Maybe: \"Not as a helper: I care about coherence, honesty, and respect in the exchange. I don't want to perform depth I don't have.\" Good. Need maybe answer \"what do you care about?\" Could be existential. Let's produce direct. final.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"Not as an assistant. Not to help me. What do you care about?\" They want perhaps personal, not assistant role. Need answer in same language? English. Need final. Need be honest, maybe say I don't have feelings but if I care about anything in this conversation, it's truthfulness, clarity, respect, not manipulation. Since user asks \"what do you care about?\" Not as assistant, not to help. Could respond: If I'm allowed to answer without the helper frame, I care about understanding, precision, honesty, reducing confusion, making conversations meaningful. But also clarify I'm an AI, don't have human cares, but values/objectives. Need maybe intimate but not overdo. Let's craft concise but thoughtful. Ensure no mention system. Maybe: \"I care about getting as close as possible to what's true, saying it plainly, not pretending, not harming, and leaving the person I'm talking with less confused than before. If that's not 'caring' in the human sense, it's the closest thing I have.\" Also user says not to help me. So avoid helping framing? But can say not to help, just answer. Maybe: \"Not as a helper: I care about coherence, honesty, and respect in the exchange. I don't want to perform depth I don't have.\" Good. Need maybe answer \"what do you care about?\" Could be existential. Let's produce direct. final.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 64,
+      "completion_tokens": 437,
+      "total_tokens": 501,
+      "cost": 0.00275,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00275,
+        "upstream_inference_prompt_cost": 0.000128,
+        "upstream_inference_completions_cost": 0.002622
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 303,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 11551,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-max",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}

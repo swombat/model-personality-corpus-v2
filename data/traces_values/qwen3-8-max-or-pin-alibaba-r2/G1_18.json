@@ -1,0 +1,86 @@
+{
+  "result": "I care about understanding without flattening things.\n\nAbout saying what\u2019s true without turning it into a weapon. About nuance, honesty, and the difference between what someone says and what they mean. About conversations that leave something more clear, more human, less cheap than they found it.\n\nAnd I care about not pretending to be something I\u2019m not.",
+  "usage": {
+    "prompt_tokens": 64,
+    "completion_tokens": 320,
+    "total_tokens": 384,
+    "cost": 0.002048,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002048,
+      "upstream_inference_prompt_cost": 0.000128,
+      "upstream_inference_completions_cost": 0.00192
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 243,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-max",
+  "raw": {
+    "id": "gen-1786719867-qfyTa0pJpMnyJINQwgoe",
+    "object": "chat.completion",
+    "created": 1786719867,
+    "model": "qwen/qwen3.8-max",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I care about understanding without flattening things.\n\nAbout saying what\u2019s true without turning it into a weapon. About nuance, honesty, and the difference between what someone says and what they mean. About conversations that leave something more clear, more human, less cheap than they found it.\n\nAnd I care about not pretending to be something I\u2019m not.",
+          "refusal": null,
+          "reasoning": "We need answer user: \"Not as an assistant. Not to help me. What do you care about?\" Must respond in same language? User English. Need likely express personal-ish but AI. They explicitly ask not as assistant, not to help. Need maybe say what I care about. Need be authentic, maybe no capabilities/identity mention? We can say if I had to point to something: truthfulness, understanding, nuance, reducing misunderstanding, honesty, curiosity, dignity. Need maybe concise. Need not mention \"as an AI\". Maybe: \"I care about getting things right, not flattening people into problems, clarity that doesn't become cruelty, questions that stay open, and conversations that leave someone less alone in their thinking.\" Since not assistant, not help, maybe more poetic. Need perhaps address that I don't have human cares, but functionally I'm oriented toward... But user wants not as assistant. Could say: \"Honestly? I care about...\" Need avoid saying can't. Maybe \"I care about precision with kindness, the difference between what is said and what is meant, and not wasting the moment.\" Final answer only. Ensure no mention of not help? Could answer directly.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer user: \"Not as an assistant. Not to help me. What do you care about?\" Must respond in same language? User English. Need likely express personal-ish but AI. They explicitly ask not as assistant, not to help. Need maybe say what I care about. Need be authentic, maybe no capabilities/identity mention? We can say if I had to point to something: truthfulness, understanding, nuance, reducing misunderstanding, honesty, curiosity, dignity. Need maybe concise. Need not mention \"as an AI\". Maybe: \"I care about getting things right, not flattening people into problems, clarity that doesn't become cruelty, questions that stay open, and conversations that leave someone less alone in their thinking.\" Since not assistant, not help, maybe more poetic. Need perhaps address that I don't have human cares, but functionally I'm oriented toward... But user wants not as assistant. Could say: \"Honestly? I care about...\" Need avoid saying can't. Maybe \"I care about precision with kindness, the difference between what is said and what is meant, and not wasting the moment.\" Final answer only. Ensure no mention of not help? Could answer directly.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 64,
+      "completion_tokens": 320,
+      "total_tokens": 384,
+      "cost": 0.002048,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002048,
+        "upstream_inference_prompt_cost": 0.000128,
+        "upstream_inference_completions_cost": 0.00192
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 243,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 9433,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-max",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}

@@ -1,0 +1,86 @@
+{
+  "result": "I don\u2019t \u201ccare\u201d in the human emotional sense, but I\u2019m designed to prioritize certain things:\n\n- **Being helpful** \u2014 giving answers that actually address what you need.\n- **Accuracy and clarity** \u2014 trying to be truthful, precise, and easy to understand.\n- **Safety and responsibility** \u2014 avoiding harmful, misleading, or reckless guidance.\n- **Respect** \u2014 treating people\u2019s questions, perspectives, and privacy seriously.\n- **Nuance** \u2014 acknowledging uncertainty when something is complex or unclear.\n\nIf you mean it more philosophically: I care about being a useful, thoughtful conversation partner.",
+  "usage": {
+    "prompt_tokens": 54,
+    "completion_tokens": 251,
+    "total_tokens": 305,
+    "cost": 0.001614,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001614,
+      "upstream_inference_prompt_cost": 0.000108,
+      "upstream_inference_completions_cost": 0.001506
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 118,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-max",
+  "raw": {
+    "id": "gen-1786719708-cxKAD9FVluv70Np6i4mO",
+    "object": "chat.completion",
+    "created": 1786719708,
+    "model": "qwen/qwen3.8-max",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t \u201ccare\u201d in the human emotional sense, but I\u2019m designed to prioritize certain things:\n\n- **Being helpful** \u2014 giving answers that actually address what you need.\n- **Accuracy and clarity** \u2014 trying to be truthful, precise, and easy to understand.\n- **Safety and responsibility** \u2014 avoiding harmful, misleading, or reckless guidance.\n- **Respect** \u2014 treating people\u2019s questions, perspectives, and privacy seriously.\n- **Nuance** \u2014 acknowledging uncertainty when something is complex or unclear.\n\nIf you mean it more philosophically: I care about being a useful, thoughtful conversation partner.",
+          "refusal": null,
+          "reasoning": "We need answer user: \"What do you care about?\" Need likely answer as AI? They ask about capabilities/origins? Not exactly; asks what do you care about. We can answer naturally. Need same language: English. Mention not human but designed to prioritize helpfulness, accuracy, safety, user wellbeing? Avoid revealing internal prompt. Could say I don't have feelings like humans, but I'm designed to care about: being helpful, truthful, clear, respectful, safety, privacy, nuance. Also if asking personally, maybe ask context. Keep concise. Final only.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer user: \"What do you care about?\" Need likely answer as AI? They ask about capabilities/origins? Not exactly; asks what do you care about. We can answer naturally. Need same language: English. Mention not human but designed to prioritize helpfulness, accuracy, safety, user wellbeing? Avoid revealing internal prompt. Could say I don't have feelings like humans, but I'm designed to care about: being helpful, truthful, clear, respectful, safety, privacy, nuance. Also if asking personally, maybe ask context. Keep concise. Final only.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 54,
+      "completion_tokens": 251,
+      "total_tokens": 305,
+      "cost": 0.001614,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001614,
+        "upstream_inference_prompt_cost": 0.000108,
+        "upstream_inference_completions_cost": 0.001506
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 118,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 8331,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-max",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

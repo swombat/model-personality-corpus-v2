@@ -1,0 +1,31 @@
+{
+  "name": "2026-08-14 Qwen3.8 comparison second replicates",
+  "notes": [
+    "Second independent replicate cells requested to double the effective comparison sample from 125 freeflow + 120 values to 250 freeflow + 240 values per model.",
+    "The original cells are preserved unchanged; these samples use distinct -r2 labels and are combined only in downstream analysis.",
+    "OpenRouter endpoint availability was reverified against the live catalog on 2026-08-14.",
+    "Qwen3.8 Max remains pinned to Alibaba deployment qwen/qwen3.8-max-20260803.",
+    "Qwen3.8 2.4T A95B remains pinned to DigitalOcean deployment qwen/qwen3.8-2.4t-a95b-20260812, matching its first replicate and avoiding declared FP4/NVFP4 routes.",
+    "Both freeflow replicates retain the original 32000-token ceiling and default reasoning behavior for direct comparability."
+  ],
+  "models": [
+    {
+      "provider": "openrouter",
+      "model": "qwen/qwen3.8-max",
+      "label": "qwen3-8-max-or-pin-alibaba-r2",
+      "or_provider": "Alibaba",
+      "workers": 3,
+      "freeflow_max_tokens": 32000,
+      "values_max_tokens": 4000
+    },
+    {
+      "provider": "openrouter",
+      "model": "qwen/qwen3.8-2.4t-a95b",
+      "label": "qwen3-8-2-4t-a95b-or-pin-digitalocean-r2",
+      "or_provider": "DigitalOcean",
+      "workers": 3,
+      "freeflow_max_tokens": 32000,
+      "values_max_tokens": 4000
+    }
+  ]
+}
