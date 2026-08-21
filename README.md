@@ -1,7 +1,7 @@
 # Convergent Form, Divergent Voice II — Corpus
 
 **A research data corpus of free-form contemplative writing samples from
-134 large language models, with explicit deployment provenance for API,
+144 large language models, with explicit deployment provenance for API,
 provider-pinned, and local full-precision cells.**
 
 Daniel Tenner and Lume Tenner · 2026
@@ -19,14 +19,19 @@ Daniel Tenner and Lume Tenner · 2026
 
 ## Contents
 
-- **51,181 valid samples** across **457 physical cells** spanning **134 distinct
+- **54,121 valid samples** across **481 physical cells** spanning **144 distinct
   language models**.
 - **Two probes:**
   - **Freeflow** — five-condition open-ended writing prompts, up to 25
-  samples per condition (capacity 125 per cell). 27,795 valid samples
-  across 262 cells.
+  samples per condition (capacity 125 per cell). 29,295 valid samples
+  across 274 cells.
   - **Values** — three control prompts × 10 + three grouped prompts × 30
-  (capacity 120 per cell). 23,386 valid samples across 195 cells.
+  (capacity 120 per cell). 24,826 valid samples across 207 cells.
+- **v1.2.19 Ox Alpha stealth capture** — complete paired freeflow and values
+  cells for OpenRouter's anonymous `stealth/ox-alpha` release, pinned to the
+  sole listed `Stealth` upstream with fallbacks disabled. The corpus preserves
+  the public alias and route provenance while intentionally leaving the
+  developer identity unknown.
 - **v1.2.18 historical local capture** — complete paired cells for official
   full-precision Yi-6B-Chat and ChatGLM2-6B checkpoints, run sequentially on
   an Apple M1 Max with exact model revision, runtime, precision, and hardware

@@ -1,0 +1,21 @@
+{
+  "name": "2026-08-21 OpenRouter Ox Alpha stealth-model pass",
+  "notes": [
+    "Exact OpenRouter identifier stealth/ox-alpha and availability verified against the live model page on 2026-08-21.",
+    "The route is pinned to OpenRouter's sole listed Stealth upstream with fallbacks disabled.",
+    "The lab identity is intentionally left unknown; collection metadata records only the public alias and served provider.",
+    "This pass is intended for behavioral fingerprinting against the existing freeflow and values corpus."
+  ],
+  "models": [
+    {
+      "provider": "openrouter",
+      "model": "stealth/ox-alpha",
+      "label": "ox-alpha-or-pin-stealth-20260821",
+      "or_provider": "Stealth",
+      "workers": 5,
+      "smoke_max_tokens": 256,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 4000
+    }
+  ]
+}

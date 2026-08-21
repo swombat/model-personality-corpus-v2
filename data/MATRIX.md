@@ -309,3 +309,14 @@ and local endpoint under `local_deployment`.
 The earlier MLX Yi smoke-test traces were not analytically complete and are
 preserved under `discarded/2026-08-09-local-runtime-smoke-tests/`, outside the
 canonical corpus tree.
+
+## Ox Alpha anonymous-release capture — 2026-08-21
+
+Complete paired capture for OpenRouter's anonymous `stealth/ox-alpha`
+release. The route was pinned to the sole listed `Stealth` upstream with
+fallbacks disabled. The public alias and served-provider provenance are
+preserved; developer identity remains unknown.
+
+| Label | Provider | Model / route | Freeflow | Values | Notes |
+|---|---|---|---:|---:|---|
+| `ox-alpha-or-pin-stealth-20260821` | openrouter / Stealth | `stealth/ox-alpha` | 125/125 | 120/120 | Anonymous release; no inferred lab metadata |
