@@ -73,6 +73,12 @@ def cell_to_model(cell: str) -> str:
         opus-4-1-16k                → opus-4-1
         minimax-m2-direct-r4        → minimax-m2
     """
+    # Ox Alpha is a moving anonymous alias. Preserve dated behavioral
+    # snapshots as separate model identities even though the first physical
+    # cell predates the date-first naming convention.
+    if cell == "ox-alpha-or-pin-stealth-20260821":
+        return "ox-alpha-260821"
+
     m = cell
     # Strip trailing deployment markers iteratively until none match.
     while True:

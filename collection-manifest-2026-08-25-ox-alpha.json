@@ -1,0 +1,21 @@
+{
+  "name": "2026-08-25 OpenRouter Ox Alpha dated repeat",
+  "notes": [
+    "Exact OpenRouter identifier stealth/ox-alpha and endpoint availability were verified on 2026-08-25.",
+    "The route was pinned to OpenRouter's sole listed Stealth upstream with fallbacks disabled.",
+    "This is a complete repeat of the 2026-08-21 behavioral cell, preserved as a separate dated model identity for drift measurement.",
+    "The lab identity remains intentionally unknown; metadata records only the public alias and served provider."
+  ],
+  "models": [
+    {
+      "provider": "openrouter",
+      "model": "stealth/ox-alpha",
+      "label": "ox-alpha-260825-or-pin-stealth",
+      "or_provider": "Stealth",
+      "workers": 5,
+      "smoke_max_tokens": 256,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 4000
+    }
+  ]
+}
