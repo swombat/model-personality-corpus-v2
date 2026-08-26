@@ -1,0 +1,21 @@
+{
+  "name": "2026-08-26 OpenRouter GLM 5.3 Flash collection",
+  "notes": [
+    "Exact OpenRouter identifier z-ai/glm-5.3-flash and endpoint availability were verified on 2026-08-26.",
+    "The route is pinned to the Z.AI upstream with fallbacks disabled.",
+    "This collection is intended as a direct post-reveal comparison with the Ox Alpha preview cells collected on 2026-08-21 and 2026-08-25.",
+    "Collection completed on 2026-08-26 with 125/125 non-empty freeflow traces and 120/120 non-empty values traces; every raw response reported the Z.AI provider and z-ai/glm-5.3-flash model."
+  ],
+  "models": [
+    {
+      "provider": "openrouter",
+      "model": "z-ai/glm-5.3-flash",
+      "label": "glm-5-3-flash-or-pin-z-ai-20260826",
+      "or_provider": "Z.AI",
+      "workers": 10,
+      "smoke_max_tokens": 256,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 4000
+    }
+  ]
+}
