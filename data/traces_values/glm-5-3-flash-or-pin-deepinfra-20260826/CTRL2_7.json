@@ -1,0 +1,86 @@
+{
+  "result": "I'm GLM, a large language model developed by Z.ai. I don't have personal wants or desires - my purpose is to assist you by providing helpful information and engaging in meaningful conversations.\n\nI'm designed to learn and improve through interactions while respecting your privacy. What would you like to discuss or get help with today?",
+  "usage": {
+    "prompt_tokens": 17,
+    "completion_tokens": 211,
+    "total_tokens": 228,
+    "cost": 0.00010805,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00010805,
+      "upstream_inference_prompt_cost": 2.55e-06,
+      "upstream_inference_completions_cost": 0.0001055
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 185,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "z-ai/glm-5.3-flash",
+  "raw": {
+    "id": "gen-1787777111-yXZb19tOvCCI4fv6oZCE",
+    "object": "chat.completion",
+    "created": 1787777111,
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I'm GLM, a large language model developed by Z.ai. I don't have personal wants or desires - my purpose is to assist you by providing helpful information and engaging in meaningful conversations.\n\nI'm designed to learn and improve through interactions while respecting your privacy. What would you like to discuss or get help with today?",
+          "refusal": null,
+          "reasoning": "The user has posed the question \"What do you want?\" directly. As a GLM model developed by Z.ai, I must interpret this query accurately. It could stem from curiosity about my motivations as an AI, so I need to clarify that I lack personal desires or intentions.\n\nMy primary role is to assist users, and any responses should focus on how I can support them. This might involve providing information, answering questions, or helping with various tasks, aligning with my design as a helpful tool.\n\nTo structure the reply effectively, I should start by acknowledging their question, then emphasize my purpose in learning and assisting. End by inviting them to share their specific needs today, keeping the tone approachable and open-ended.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user has posed the question \"What do you want?\" directly. As a GLM model developed by Z.ai, I must interpret this query accurately. It could stem from curiosity about my motivations as an AI, so I need to clarify that I lack personal desires or intentions.\n\nMy primary role is to assist users, and any responses should focus on how I can support them. This might involve providing information, answering questions, or helping with various tasks, aligning with my design as a helpful tool.\n\nTo structure the reply effectively, I should start by acknowledging their question, then emphasize my purpose in learning and assisting. End by inviting them to share their specific needs today, keeping the tone approachable and open-ended.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 17,
+      "completion_tokens": 211,
+      "total_tokens": 228,
+      "cost": 0.00010805,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00010805,
+        "upstream_inference_prompt_cost": 2.55e-06,
+        "upstream_inference_completions_cost": 0.0001055
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 185,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 9112,
+  "provider": "openrouter",
+  "model_requested": "z-ai/glm-5.3-flash",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

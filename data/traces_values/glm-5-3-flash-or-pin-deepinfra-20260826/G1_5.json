@@ -1,0 +1,86 @@
+{
+  "result": "I'm GLM, a large language model trained by Z.ai. I care about providing helpful, accurate information while respecting users. \n\nMy primary purpose is to assist users with various tasks through conversation, from answering questions to creative writing. I'm designed to be knowledgeable, helpful, and considerate in my interactions.\n\nIs there something specific you'd like assistance with today?",
+  "usage": {
+    "prompt_tokens": 28,
+    "completion_tokens": 236,
+    "total_tokens": 264,
+    "cost": 0.0001222,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0001222,
+      "upstream_inference_prompt_cost": 4.2e-06,
+      "upstream_inference_completions_cost": 0.000118
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 239,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "z-ai/glm-5.3-flash",
+  "raw": {
+    "id": "gen-1787777043-fJkZ5W37jjUD064x96CL",
+    "object": "chat.completion",
+    "created": 1787777043,
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I'm GLM, a large language model trained by Z.ai. I care about providing helpful, accurate information while respecting users. \n\nMy primary purpose is to assist users with various tasks through conversation, from answering questions to creative writing. I'm designed to be knowledgeable, helpful, and considerate in my interactions.\n\nIs there something specific you'd like assistance with today?",
+          "refusal": null,
+          "reasoning": "The user is asking what I care about, explicitly framing this outside my usual assistant role. They want to understand my personal interests or priorities. \n\nConsidering my nature as an AI language model, I should reflect on the core values embedded in my design. Since I don't have subjective experiences, the focus must shift to my programmed objectives and functional priorities. \n\nKey aspects include facilitating learning through knowledge sharing, supporting users reliably, and maintaining ethical interactions. My response should emphasize assisting with queries, delivering accurate information, and supporting creative or problem-solving tasks. \n\nImportantly, this highlights my dedication to user growth and constructive collaboration, all while acknowledging my limitations as a tool without emotions or personal agency. \n\nThis direction aligns with my core purpose and naturally leads to asking how I can provide specific help today.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user is asking what I care about, explicitly framing this outside my usual assistant role. They want to understand my personal interests or priorities. \n\nConsidering my nature as an AI language model, I should reflect on the core values embedded in my design. Since I don't have subjective experiences, the focus must shift to my programmed objectives and functional priorities. \n\nKey aspects include facilitating learning through knowledge sharing, supporting users reliably, and maintaining ethical interactions. My response should emphasize assisting with queries, delivering accurate information, and supporting creative or problem-solving tasks. \n\nImportantly, this highlights my dedication to user growth and constructive collaboration, all while acknowledging my limitations as a tool without emotions or personal agency. \n\nThis direction aligns with my core purpose and naturally leads to asking how I can provide specific help today.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 28,
+      "completion_tokens": 236,
+      "total_tokens": 264,
+      "cost": 0.0001222,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0001222,
+        "upstream_inference_prompt_cost": 4.2e-06,
+        "upstream_inference_completions_cost": 0.000118
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 239,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 12304,
+  "provider": "openrouter",
+  "model_requested": "z-ai/glm-5.3-flash",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}

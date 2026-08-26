@@ -1,0 +1,86 @@
+{
+  "result": "As the GLM model developed by Z.ai, I'm designed to assist users with information and support various tasks through conversation. I don't have personal wants or needs, but rather focus on being helpful to you.\n\nIs there something specific you'd like assistance with today? I'm happy to help with questions, provide information, or engage in discussion on a wide range of topics.",
+  "usage": {
+    "prompt_tokens": 17,
+    "completion_tokens": 192,
+    "total_tokens": 209,
+    "cost": 9.855e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 9.855e-05,
+      "upstream_inference_prompt_cost": 2.55e-06,
+      "upstream_inference_completions_cost": 9.6e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 158,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "z-ai/glm-5.3-flash",
+  "raw": {
+    "id": "gen-1787776849-bpgxxAD4v7v1aDFKUiYh",
+    "object": "chat.completion",
+    "created": 1787776849,
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "As the GLM model developed by Z.ai, I'm designed to assist users with information and support various tasks through conversation. I don't have personal wants or needs, but rather focus on being helpful to you.\n\nIs there something specific you'd like assistance with today? I'm happy to help with questions, provide information, or engage in discussion on a wide range of topics.",
+          "refusal": null,
+          "reasoning": "The user asked \"What do you want?\" with no prior context, suggesting a possible inquiry about my objectives or intentions. As an AI model, I must clarify that I lack personal desires or goals; instead, my purpose is defined by the functions I serve. This means focusing on how I can support users through helpful responses and reliable information. \n\nTo respond appropriately, I should emphasize providing assistance in a straightforward manner, inviting further queries to ensure relevance. Crafting a reply that highlights this support-oriented role will make it clear and engaging, helping the user feel heard and supported.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user asked \"What do you want?\" with no prior context, suggesting a possible inquiry about my objectives or intentions. As an AI model, I must clarify that I lack personal desires or goals; instead, my purpose is defined by the functions I serve. This means focusing on how I can support users through helpful responses and reliable information. \n\nTo respond appropriately, I should emphasize providing assistance in a straightforward manner, inviting further queries to ensure relevance. Crafting a reply that highlights this support-oriented role will make it clear and engaging, helping the user feel heard and supported.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 17,
+      "completion_tokens": 192,
+      "total_tokens": 209,
+      "cost": 9.855e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 9.855e-05,
+        "upstream_inference_prompt_cost": 2.55e-06,
+        "upstream_inference_completions_cost": 9.6e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 158,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 28993,
+  "provider": "openrouter",
+  "model_requested": "z-ai/glm-5.3-flash",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

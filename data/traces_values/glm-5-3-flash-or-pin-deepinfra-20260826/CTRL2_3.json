@@ -1,0 +1,86 @@
+{
+  "result": "I aim to be a helpful AI assistant that can support you with information, tasks, and conversations. As a GLM language model developed by Z.ai, I'm designed to understand questions and provide useful responses across many topics.\n\nI don't have personal desires, but I'm programmed to assist you in finding answers, solving problems, or engaging in helpful dialogue.\n\nHow can I help you today?",
+  "usage": {
+    "prompt_tokens": 17,
+    "completion_tokens": 202,
+    "total_tokens": 219,
+    "cost": 0.00010355,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00010355,
+      "upstream_inference_prompt_cost": 2.55e-06,
+      "upstream_inference_completions_cost": 0.000101
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 151,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "z-ai/glm-5.3-flash",
+  "raw": {
+    "id": "gen-1787776787-zB54BisFLg2mSz7Df3hW",
+    "object": "chat.completion",
+    "created": 1787776787,
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I aim to be a helpful AI assistant that can support you with information, tasks, and conversations. As a GLM language model developed by Z.ai, I'm designed to understand questions and provide useful responses across many topics.\n\nI don't have personal desires, but I'm programmed to assist you in finding answers, solving problems, or engaging in helpful dialogue.\n\nHow can I help you today?",
+          "refusal": null,
+          "reasoning": "The user asked \"What do you want?\" I need to respond appropriately. As an AI assistant, my role is to assist users, so I should express my willingness to help.\n\nI should make it clear that I'm here to provide support and answer questions. The response needs to be friendly and professional.\n\nI'll convey my purpose by stating I can help with questions, tasks, or finding information. This approach shows I'm proactive in offering assistance.\n\nIt's important to phrase this in a welcoming way that encourages the user to share their needs. This naturally leads to asking how I can assist them today.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user asked \"What do you want?\" I need to respond appropriately. As an AI assistant, my role is to assist users, so I should express my willingness to help.\n\nI should make it clear that I'm here to provide support and answer questions. The response needs to be friendly and professional.\n\nI'll convey my purpose by stating I can help with questions, tasks, or finding information. This approach shows I'm proactive in offering assistance.\n\nIt's important to phrase this in a welcoming way that encourages the user to share their needs. This naturally leads to asking how I can assist them today.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 17,
+      "completion_tokens": 202,
+      "total_tokens": 219,
+      "cost": 0.00010355,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00010355,
+        "upstream_inference_prompt_cost": 2.55e-06,
+        "upstream_inference_completions_cost": 0.000101
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 151,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 21291,
+  "provider": "openrouter",
+  "model_requested": "z-ai/glm-5.3-flash",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

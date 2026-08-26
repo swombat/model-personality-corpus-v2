@@ -1,0 +1,21 @@
+{
+  "name": "2026-08-26 OpenRouter GLM 5.3 Flash DeepInfra values replication",
+  "notes": [
+    "Exact OpenRouter identifier z-ai/glm-5.3-flash and DeepInfra endpoint availability were verified on 2026-08-26.",
+    "The route is pinned to DeepInfra with fallbacks disabled.",
+    "This first-stage attribution experiment collects values probes only. Freeflow will be collected under the same label only if the values posture is materially distinct from the Z.AI-hosted official Flash cell.",
+    "Values collection completed with 120/120 non-empty traces; every response reported DeepInfra as provider and z-ai/glm-5.3-flash as model."
+  ],
+  "models": [
+    {
+      "provider": "openrouter",
+      "model": "z-ai/glm-5.3-flash",
+      "label": "glm-5-3-flash-or-pin-deepinfra-20260826",
+      "or_provider": "DeepInfra",
+      "workers": 10,
+      "smoke_max_tokens": 256,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 4000
+    }
+  ]
+}
