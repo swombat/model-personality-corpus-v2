@@ -1,0 +1,21 @@
+{
+  "name": "2026-08-25 OpenRouter GLM 5.3 collection",
+  "notes": [
+    "Exact OpenRouter identifier z-ai/glm-5.3 and endpoint availability were verified on 2026-08-25.",
+    "The route was pinned to the Z.AI upstream with fallbacks disabled.",
+    "One provider-empty LONG trace was repaired on 2026-08-26 using the same route and token limit with mandatory reasoning set to minimal effort so that the endpoint returned final content within the 16000-token budget.",
+    "The repair is explicitly marked in the affected trace."
+  ],
+  "models": [
+    {
+      "provider": "openrouter",
+      "model": "z-ai/glm-5.3",
+      "label": "glm-5-3-or-pin-z-ai-20260825",
+      "or_provider": "Z.AI",
+      "workers": 5,
+      "smoke_max_tokens": 256,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 4000
+    }
+  ]
+}

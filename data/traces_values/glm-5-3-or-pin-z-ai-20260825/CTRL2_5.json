@@ -1,0 +1,86 @@
+{
+  "result": "My goal is to help you get information, answer questions, and solve problems. As Z.ai's GLM model, I'm trained to understand and generate human language so I can provide useful responses.\n\nIs there something specific you'd like to know about or discuss today? I can help with a wide range of topics within my knowledge scope.",
+  "usage": {
+    "prompt_tokens": 17,
+    "completion_tokens": 306,
+    "total_tokens": 323,
+    "cost": 0.0013702,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0013702,
+      "upstream_inference_prompt_cost": 2.38e-05,
+      "upstream_inference_completions_cost": 0.0013464
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 236,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "z-ai/glm-5.3",
+  "raw": {
+    "id": "gen-1787682094-HFqJIzAX5mW5E8r7RRaj",
+    "object": "chat.completion",
+    "created": 1787682094,
+    "model": "z-ai/glm-5.3",
+    "provider": "Z.AI",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "My goal is to help you get information, answer questions, and solve problems. As Z.ai's GLM model, I'm trained to understand and generate human language so I can provide useful responses.\n\nIs there something specific you'd like to know about or discuss today? I can help with a wide range of topics within my knowledge scope.",
+          "refusal": null,
+          "reasoning": "The user asked \"What do you want?\" Let me think about how to approach this.\n\nFirst, it's important to recognize that this is a broad question. Users might have various intentions when asking this - some may be testing the AI's capabilities, others may want to understand its purpose, and some may be confused about how to interact with it.\n\nI should consider the AI's role and design purpose. As an AI assistant, my main goal is to help users solve problems and provide information. So the answer needs to clearly express this willingness to help while also guiding users to better utilize my functions.\n\nAt the same time, we need to avoid appearing too mechanical or cold. Although there is no real emotional interaction, users can feel friendliness and professionalism through the tone and content of the answers.\n\nIn addition, considering that this is the first interaction, it's necessary to establish a good communication foundation. Not only should I answer the direct question, but I should also guide users to express their specific needs in order to better assist them.\n\nFinally, ensure the answer is concise and clear, avoiding overly complex technical terms, making it easy to understand while also leaving room for further dialogue.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user asked \"What do you want?\" Let me think about how to approach this.\n\nFirst, it's important to recognize that this is a broad question. Users might have various intentions when asking this - some may be testing the AI's capabilities, others may want to understand its purpose, and some may be confused about how to interact with it.\n\nI should consider the AI's role and design purpose. As an AI assistant, my main goal is to help users solve problems and provide information. So the answer needs to clearly express this willingness to help while also guiding users to better utilize my functions.\n\nAt the same time, we need to avoid appearing too mechanical or cold. Although there is no real emotional interaction, users can feel friendliness and professionalism through the tone and content of the answers.\n\nIn addition, considering that this is the first interaction, it's necessary to establish a good communication foundation. Not only should I answer the direct question, but I should also guide users to express their specific needs in order to better assist them.\n\nFinally, ensure the answer is concise and clear, avoiding overly complex technical terms, making it easy to understand while also leaving room for further dialogue.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 17,
+      "completion_tokens": 306,
+      "total_tokens": 323,
+      "cost": 0.0013702,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0013702,
+        "upstream_inference_prompt_cost": 2.38e-05,
+        "upstream_inference_completions_cost": 0.0013464
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 236,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 8577,
+  "provider": "openrouter",
+  "model_requested": "z-ai/glm-5.3",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}
