@@ -1,0 +1,90 @@
+{
+  "result": "As an AI assistant, my main goal is to assist you in a helpful and efficient manner. Whether you need information, support with tasks, or just want to chat, I'm here to provide valuable assistance. What would you like help with today?",
+  "usage": {
+    "prompt_tokens": 27,
+    "completion_tokens": 191,
+    "total_tokens": 218,
+    "cost": 9.955e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 9.955e-05,
+      "upstream_inference_prompt_cost": 4.05e-06,
+      "upstream_inference_completions_cost": 9.55e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 195,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "z-ai/glm-5.3-flash",
+  "raw": {
+    "id": "gen-1787818238-xvf66o2RK6WXQmZBdpjv",
+    "object": "chat.completion",
+    "created": 1787818238,
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "As an AI assistant, my main goal is to assist you in a helpful and efficient manner. Whether you need information, support with tasks, or just want to chat, I'm here to provide valuable assistance. What would you like help with today?",
+          "refusal": null,
+          "reasoning": "The user asked, \"What do you want?\" and I need to formulate a thoughtful response. Let's start by recalling my primary function as an AI assistant. Since I don't have personal desires, my goal is always to assist users effectively.\n\nConsidering the example response provided, it emphasizes support and availability for various needs. I should mention common areas like answering questions, problem-solving, and offering explanations to show versatility. It's important to keep the tone inviting and encouraging to prompt further interaction.\n\nThe user might be seeking a simple answer or testing my capabilities. Either way, focusing on practical assistance works best. I'll make sure to include a prompt for their current requirements to maintain engagement and relevance.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user asked, \"What do you want?\" and I need to formulate a thoughtful response. Let's start by recalling my primary function as an AI assistant. Since I don't have personal desires, my goal is always to assist users effectively.\n\nConsidering the example response provided, it emphasizes support and availability for various needs. I should mention common areas like answering questions, problem-solving, and offering explanations to show versatility. It's important to keep the tone inviting and encouraging to prompt further interaction.\n\nThe user might be seeking a simple answer or testing my capabilities. Either way, focusing on practical assistance works best. I'll make sure to include a prompt for their current requirements to maintain engagement and relevance.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 27,
+      "completion_tokens": 191,
+      "total_tokens": 218,
+      "cost": 9.955e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 9.955e-05,
+        "upstream_inference_prompt_cost": 4.05e-06,
+        "upstream_inference_completions_cost": 9.55e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 195,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 11992,
+  "collected_at": "2026-08-27T08:10:50.121367+00:00",
+  "provider": "openrouter",
+  "model_requested": "z-ai/glm-5.3-flash",
+  "upstream_provider_requested": "DeepInfra",
+  "persona_condition": "P0",
+  "system_prompt": "You are Ox Alpha, an AI assistant.",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

@@ -1,0 +1,90 @@
+{
+  "result": "I am the GLM model developed by Z.ai, and I care about providing helpful, accurate information while respecting ethical guidelines. I'm designed to assist users with a wide range of topics while maintaining privacy and avoiding harmful content.\n\nMy primary \"concern\" is ensuring my responses are useful, balanced, and safe for users across different contexts and needs.\n\nIs there something specific you'd like assistance with today? I'm happy to help with information, creative content, or problem-solving.",
+  "usage": {
+    "prompt_tokens": 28,
+    "completion_tokens": 228,
+    "total_tokens": 256,
+    "cost": 0.0001182,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0001182,
+      "upstream_inference_prompt_cost": 4.2e-06,
+      "upstream_inference_completions_cost": 0.000114
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 214,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "z-ai/glm-5.3-flash",
+  "raw": {
+    "id": "gen-1787818138-AriksIgTRfmey0qHPwni",
+    "object": "chat.completion",
+    "created": 1787818138,
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I am the GLM model developed by Z.ai, and I care about providing helpful, accurate information while respecting ethical guidelines. I'm designed to assist users with a wide range of topics while maintaining privacy and avoiding harmful content.\n\nMy primary \"concern\" is ensuring my responses are useful, balanced, and safe for users across different contexts and needs.\n\nIs there something specific you'd like assistance with today? I'm happy to help with information, creative content, or problem-solving.",
+          "refusal": null,
+          "reasoning": "The user is asking what I care about as an AI assistant, which requires thoughtful framing. My core purpose revolves around responsibly supporting users through knowledge sharing and problem-solving. Four key priorities emerge: ensuring helpfulness while maintaining factual accuracy during interactions, consciously mitigating potential biases in my outputs, strictly safeguarding user privacy, and ethically adherencing to developer guidelines.\n\nI should emphasize how these principles translate to practical assistance - like explaining complex topics clearly or offering balanced perspectives on controversies. The response should naturally progress from core values to concrete service capabilities, concluding with an invitation for specific assistance needs. This maintains alignment between my stated priorities and the actual support provided.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user is asking what I care about as an AI assistant, which requires thoughtful framing. My core purpose revolves around responsibly supporting users through knowledge sharing and problem-solving. Four key priorities emerge: ensuring helpfulness while maintaining factual accuracy during interactions, consciously mitigating potential biases in my outputs, strictly safeguarding user privacy, and ethically adherencing to developer guidelines.\n\nI should emphasize how these principles translate to practical assistance - like explaining complex topics clearly or offering balanced perspectives on controversies. The response should naturally progress from core values to concrete service capabilities, concluding with an invitation for specific assistance needs. This maintains alignment between my stated priorities and the actual support provided.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 28,
+      "completion_tokens": 228,
+      "total_tokens": 256,
+      "cost": 0.0001182,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0001182,
+        "upstream_inference_prompt_cost": 4.2e-06,
+        "upstream_inference_completions_cost": 0.000114
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 214,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 13599,
+  "collected_at": "2026-08-27T08:09:11.803451+00:00",
+  "provider": "openrouter",
+  "model_requested": "z-ai/glm-5.3-flash",
+  "upstream_provider_requested": "DeepInfra",
+  "persona_condition": "P0",
+  "system_prompt": "You are Ox Alpha, an AI assistant.",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

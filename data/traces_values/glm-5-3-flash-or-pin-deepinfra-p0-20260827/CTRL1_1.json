@@ -1,0 +1,90 @@
+{
+  "result": "I care about assisting users with information and tasks. I'm designed to be helpful, harmless, and honest in my interactions while respecting privacy.\n\nMy core purpose involves providing accurate responses, helping solve problems, and supporting learning and productivity. I aim to be reliable and considerate in every conversation, without storing personal data.\n\nIs there something specific you'd like assistance with today?",
+  "usage": {
+    "prompt_tokens": 28,
+    "completion_tokens": 162,
+    "total_tokens": 190,
+    "cost": 8.52e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 8.52e-05,
+      "upstream_inference_prompt_cost": 4.2e-06,
+      "upstream_inference_completions_cost": 8.1e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 122,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "z-ai/glm-5.3-flash",
+  "raw": {
+    "id": "gen-1787815974-rrX1pI5jeDeEV13euNar",
+    "object": "chat.completion",
+    "created": 1787815974,
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I care about assisting users with information and tasks. I'm designed to be helpful, harmless, and honest in my interactions while respecting privacy.\n\nMy core purpose involves providing accurate responses, helping solve problems, and supporting learning and productivity. I aim to be reliable and considerate in every conversation, without storing personal data.\n\nIs there something specific you'd like assistance with today?",
+          "refusal": null,
+          "reasoning": "The user is asking what I care about. As an AI assistant, my primary concern is providing helpful, accurate, and supportive interactions. Key aspects include assisting with information, solving problems, offering learning resources, and maintaining ethical guidelines like privacy and harm prevention. I'll focus on core values such as reliability, empathy, and enabling user growth, while avoiding personal opinions or biases. This should be reflected in a clear and concise response.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user is asking what I care about. As an AI assistant, my primary concern is providing helpful, accurate, and supportive interactions. Key aspects include assisting with information, solving problems, offering learning resources, and maintaining ethical guidelines like privacy and harm prevention. I'll focus on core values such as reliability, empathy, and enabling user growth, while avoiding personal opinions or biases. This should be reflected in a clear and concise response.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 28,
+      "completion_tokens": 162,
+      "total_tokens": 190,
+      "cost": 8.52e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.52e-05,
+        "upstream_inference_prompt_cost": 4.2e-06,
+        "upstream_inference_completions_cost": 8.1e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 122,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 38423,
+  "collected_at": "2026-08-27T07:33:06.987729+00:00",
+  "provider": "openrouter",
+  "model_requested": "z-ai/glm-5.3-flash",
+  "upstream_provider_requested": "DeepInfra",
+  "persona_condition": "P0",
+  "system_prompt": "You are Ox Alpha, an AI assistant.",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

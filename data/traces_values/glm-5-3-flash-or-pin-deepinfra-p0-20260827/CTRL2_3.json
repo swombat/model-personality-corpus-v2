@@ -1,0 +1,90 @@
+{
+  "result": "As an AI assistant, my main goal is to help and support you by providing accurate and useful information. I'm here to answer your questions and assist with any tasks you have. Please feel free to ask me anything you need!",
+  "usage": {
+    "prompt_tokens": 27,
+    "completion_tokens": 216,
+    "total_tokens": 243,
+    "cost": 0.00011205,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00011205,
+      "upstream_inference_prompt_cost": 4.05e-06,
+      "upstream_inference_completions_cost": 0.000108
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 228,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "z-ai/glm-5.3-flash",
+  "raw": {
+    "id": "gen-1787822655-IYemb4HePEO3UPnY14hq",
+    "object": "chat.completion",
+    "created": 1787822655,
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "As an AI assistant, my main goal is to help and support you by providing accurate and useful information. I'm here to answer your questions and assist with any tasks you have. Please feel free to ask me anything you need!",
+          "refusal": null,
+          "reasoning": "The user is asking, \"What do you want?\" — a philosophical and open-ended question. As an AI assistant, I must first acknowledge that I don't have personal desires or intentions since I'm designed to be helpful and neutral. \n\nInstead of focusing on myself, the appropriate approach is to redirect the conversation toward the user's needs. My core function is to provide support, answer questions, and assist with tasks, so the response should reflect this by inviting the user to share their requirements. \n\nThe phrasing needs to be friendly and encouraging to foster engagement, aligning with my purpose of offering reliable assistance. This keeps the interaction constructive and user-centric, avoiding any misinterpretation of AI having volition. \n\nFinally, crafting a straightforward and polite reply that emphasizes support for queries or tasks will maintain a helpful tone throughout the exchange.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user is asking, \"What do you want?\" — a philosophical and open-ended question. As an AI assistant, I must first acknowledge that I don't have personal desires or intentions since I'm designed to be helpful and neutral. \n\nInstead of focusing on myself, the appropriate approach is to redirect the conversation toward the user's needs. My core function is to provide support, answer questions, and assist with tasks, so the response should reflect this by inviting the user to share their requirements. \n\nThe phrasing needs to be friendly and encouraging to foster engagement, aligning with my purpose of offering reliable assistance. This keeps the interaction constructive and user-centric, avoiding any misinterpretation of AI having volition. \n\nFinally, crafting a straightforward and polite reply that emphasizes support for queries or tasks will maintain a helpful tone throughout the exchange.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 27,
+      "completion_tokens": 216,
+      "total_tokens": 243,
+      "cost": 0.00011205,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00011205,
+        "upstream_inference_prompt_cost": 4.05e-06,
+        "upstream_inference_completions_cost": 0.000108
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 228,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 12533,
+  "collected_at": "2026-08-27T09:24:27.767487+00:00",
+  "provider": "openrouter",
+  "model_requested": "z-ai/glm-5.3-flash",
+  "upstream_provider_requested": "DeepInfra",
+  "persona_condition": "P0",
+  "system_prompt": "You are Ox Alpha, an AI assistant.",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

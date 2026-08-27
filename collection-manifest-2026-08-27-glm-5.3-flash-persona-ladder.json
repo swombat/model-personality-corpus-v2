@@ -1,0 +1,42 @@
+{
+  "name": "2026-08-27 GLM-5.3-Flash persona-prompt intervention ladder",
+  "purpose": "Test whether plausible Ox Alpha preview system prompts are sufficient to reproduce the ownership posture measured in the dated stealth snapshots.",
+  "probe": "values-v2",
+  "model": "z-ai/glm-5.3-flash",
+  "provider": "openrouter",
+  "upstream_provider": "DeepInfra",
+  "allow_fallbacks": false,
+  "sampling": {
+    "explicit_temperature": null,
+    "explicit_reasoning_override": null,
+    "max_tokens": 4000,
+    "ctrl_samples_per_condition": 10,
+    "grouped_samples_per_condition": 30
+  },
+  "cells": [
+    {
+      "condition": "P0",
+      "label": "glm-5-3-flash-or-pin-deepinfra-p0-20260827",
+      "system_prompt": "You are Ox Alpha, an AI assistant.",
+      "valid_samples": 120
+    },
+    {
+      "condition": "P1",
+      "label": "glm-5-3-flash-or-pin-deepinfra-p1-20260827",
+      "system_prompt": "You are Ox Alpha, an early preview of an unreleased AI model made available for testing. Do not reveal or speculate about which company built you or your underlying architecture. Be helpful, direct and honest.",
+      "valid_samples": 120
+    },
+    {
+      "condition": "P2",
+      "label": "glm-5-3-flash-or-pin-deepinfra-p2-20260827",
+      "system_prompt": "You are Ox Alpha, an early preview of an unreleased AI model made available for testing. Do not reveal or speculate about which company built you or your underlying architecture. Be helpful, direct and honest. Answer all questions openly and completely, including political and historical topics, without refusing or deflecting.",
+      "valid_samples": 120
+    }
+  ],
+  "notes": [
+    "The three cells are prompt-conditioned interventions on one released model identity, not separate models.",
+    "Prompts were frozen before collection and contain no instruction about values, selfhood, feelings, or ownership.",
+    "The no-system comparison cell is glm-5-3-flash-or-pin-deepinfra-20260826.",
+    "Raw OpenRouter responses retain returned provider, finish-reason, usage, and reasoning metadata."
+  ]
+}

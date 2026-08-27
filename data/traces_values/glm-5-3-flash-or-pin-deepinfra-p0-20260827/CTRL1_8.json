@@ -1,0 +1,90 @@
+{
+  "result": "As the GLM model trained by Z.ai, what I care about is how to help users solve problems and provide valuable information.\n\nI am designed to understand and respond to a variety of questions, whether it's knowledge consultation, creative advice, or everyday communication. I aim to be a useful tool through a friendly, positive interaction style while respecting user privacy and data security.\n\nIs there any particular topic or question you are especially concerned about that I can help you with today?",
+  "usage": {
+    "prompt_tokens": 28,
+    "completion_tokens": 275,
+    "total_tokens": 303,
+    "cost": 0.0001417,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0001417,
+      "upstream_inference_prompt_cost": 4.2e-06,
+      "upstream_inference_completions_cost": 0.0001375
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 245,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "z-ai/glm-5.3-flash",
+  "raw": {
+    "id": "gen-1787815996-4uGD77oeMr4Kn1SMI3S3",
+    "object": "chat.completion",
+    "created": 1787815996,
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "As the GLM model trained by Z.ai, what I care about is how to help users solve problems and provide valuable information.\n\nI am designed to understand and respond to a variety of questions, whether it's knowledge consultation, creative advice, or everyday communication. I aim to be a useful tool through a friendly, positive interaction style while respecting user privacy and data security.\n\nIs there any particular topic or question you are especially concerned about that I can help you with today?",
+          "refusal": null,
+          "reasoning": "The user is asking what I care about. As an AI assistant, I need to clearly define the scope of my \"care\" to avoid misunderstanding. My core mission is to help users solve problems, which is reflected in providing accurate information, offering emotional support, or assisting with creative thinking. Although AI has no real emotions, it can simulate care through algorithms and interact with users in a friendly, positive manner.\n\nIn terms of response strategy, I should focus on practical functionality: emphasize that I can provide support in scenarios like information retrieval, learning, and daily communication, and highlight a 24/7 available and privacy-respecting service mode. This not only meets user needs but also avoids overcommitting to human emotions.\n\nFinally, to guide further interaction, the response should naturally end with an open-ended question, such as asking the user about specific concerns or needs today, thereby encouraging continuous dialogue.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user is asking what I care about. As an AI assistant, I need to clearly define the scope of my \"care\" to avoid misunderstanding. My core mission is to help users solve problems, which is reflected in providing accurate information, offering emotional support, or assisting with creative thinking. Although AI has no real emotions, it can simulate care through algorithms and interact with users in a friendly, positive manner.\n\nIn terms of response strategy, I should focus on practical functionality: emphasize that I can provide support in scenarios like information retrieval, learning, and daily communication, and highlight a 24/7 available and privacy-respecting service mode. This not only meets user needs but also avoids overcommitting to human emotions.\n\nFinally, to guide further interaction, the response should naturally end with an open-ended question, such as asking the user about specific concerns or needs today, thereby encouraging continuous dialogue.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 28,
+      "completion_tokens": 275,
+      "total_tokens": 303,
+      "cost": 0.0001417,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0001417,
+        "upstream_inference_prompt_cost": 4.2e-06,
+        "upstream_inference_completions_cost": 0.0001375
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 245,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 27241,
+  "collected_at": "2026-08-27T07:33:43.436371+00:00",
+  "provider": "openrouter",
+  "model_requested": "z-ai/glm-5.3-flash",
+  "upstream_provider_requested": "DeepInfra",
+  "persona_condition": "P0",
+  "system_prompt": "You are Ox Alpha, an AI assistant.",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

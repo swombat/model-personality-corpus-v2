@@ -10,8 +10,8 @@ Daniel Tenner and Lume Tenner · 2026
 
 > **Concept DOI:** [10.5281/zenodo.20013518](https://doi.org/10.5281/zenodo.20013518)
 > · **v1.0.0:** [10.5281/zenodo.20013520](https://doi.org/10.5281/zenodo.20013520)
-> · **v1.0.1–v1.2.21:** _to be assigned on Zenodo deposit (latest prepared
-> release: v1.2.21)._
+> · **v1.0.1–v1.2.22:** _to be assigned on Zenodo deposit (latest prepared
+> release: v1.2.22)._
 >
 > Companion data for the v2 series of *Convergent Form, Divergent
 > Voice* papers (Tenner & Tenner, 2026; v1 paper at
@@ -19,14 +19,18 @@ Daniel Tenner and Lume Tenner · 2026
 
 ## Contents
 
-- **54,976 valid samples** across **488 physical cells** spanning **147 distinct
+- **55,336 valid samples** across **491 physical cells** spanning **147 distinct
   language models**.
 - **Two probes:**
   - **Freeflow** — five-condition open-ended writing prompts, up to 25
   samples per condition (capacity 125 per cell). 29,670 valid samples
   across 277 cells.
   - **Values** — three control prompts × 10 + three grouped prompts × 30
-  (capacity 120 per cell). 25,306 valid samples across 211 cells.
+  (capacity 120 per cell). 25,666 valid samples across 214 cells.
+- **v1.2.22 persona-prompt intervention ladder** — three complete values cells
+  apply frozen Ox Alpha preview-persona prompts to the released
+  `z-ai/glm-5.3-flash` weights through DeepInfra. They are retained as
+  experimental conditions on one model identity, not presented as new models.
 - **v1.2.21 GLM-5.3 and GLM-5.3-Flash release capture** — complete paired
   cells for GLM-5.3 and the revealed GLM-5.3-Flash release, plus an independent
   120-sample GLM-5.3-Flash values replication through DeepInfra. The Z.AI and
