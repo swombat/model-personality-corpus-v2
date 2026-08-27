@@ -322,3 +322,17 @@ separate analytical model identities while the alias is potentially moving.
 |---|---|---|---:|---:|---|
 | `ox-alpha-or-pin-stealth-20260821` | openrouter / Stealth | `stealth/ox-alpha` | 125/125 | 120/120 | Public identity `ox-alpha-260821`; anonymous release |
 | `ox-alpha-260825-or-pin-stealth` | openrouter / Stealth | `stealth/ox-alpha` | 125/125 | 120/120 | Public identity `ox-alpha-260825`; dated repeat |
+
+## GLM-5.3 release captures — 2026-08-25 and 2026-08-26
+
+Complete paired captures for GLM-5.3 and the revealed GLM-5.3-Flash release,
+followed by a provider-replication values cell for GLM-5.3-Flash through
+DeepInfra. Provider cells remain physically separate for provenance. Both
+GLM-5.3-Flash values cells roll up to the single released model identity
+`glm-5-3-flash`; neither is merged with the dated Ox Alpha snapshots.
+
+| Label | Provider | Model / route | Freeflow | Values | Notes |
+|---|---|---|---:|---:|---|
+| `glm-5-3-or-pin-z-ai-20260825` | openrouter / Z.AI | `z-ai/glm-5.3` | 125/125 | 120/120 | Official GLM-5.3 release |
+| `glm-5-3-flash-or-pin-z-ai-20260826` | openrouter / Z.AI | `z-ai/glm-5.3-flash` | 125/125 | 120/120 | Official GLM-5.3-Flash release |
+| `glm-5-3-flash-or-pin-deepinfra-20260826` | openrouter / DeepInfra | `z-ai/glm-5.3-flash` | — | 120/120 | Independent values replication; same model identity |

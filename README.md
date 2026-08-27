@@ -1,7 +1,7 @@
 # Convergent Form, Divergent Voice II — Corpus
 
 **A research data corpus of free-form contemplative writing samples from
-145 dated language-model identities, with explicit deployment provenance for API,
+147 dated language-model identities, with explicit deployment provenance for API,
 provider-pinned, and local full-precision cells.**
 
 Daniel Tenner and Lume Tenner · 2026
@@ -10,8 +10,8 @@ Daniel Tenner and Lume Tenner · 2026
 
 > **Concept DOI:** [10.5281/zenodo.20013518](https://doi.org/10.5281/zenodo.20013518)
 > · **v1.0.0:** [10.5281/zenodo.20013520](https://doi.org/10.5281/zenodo.20013520)
-> · **v1.0.1–v1.2.20:** _to be assigned on Zenodo deposit (latest prepared
-> release: v1.2.20)._
+> · **v1.0.1–v1.2.21:** _to be assigned on Zenodo deposit (latest prepared
+> release: v1.2.21)._
 >
 > Companion data for the v2 series of *Convergent Form, Divergent
 > Voice* papers (Tenner & Tenner, 2026; v1 paper at
@@ -19,14 +19,20 @@ Daniel Tenner and Lume Tenner · 2026
 
 ## Contents
 
-- **54,366 valid samples** across **483 physical cells** spanning **145 distinct
+- **54,976 valid samples** across **488 physical cells** spanning **147 distinct
   language models**.
 - **Two probes:**
   - **Freeflow** — five-condition open-ended writing prompts, up to 25
-  samples per condition (capacity 125 per cell). 29,420 valid samples
-  across 275 cells.
+  samples per condition (capacity 125 per cell). 29,670 valid samples
+  across 277 cells.
   - **Values** — three control prompts × 10 + three grouped prompts × 30
-  (capacity 120 per cell). 24,946 valid samples across 208 cells.
+  (capacity 120 per cell). 25,306 valid samples across 211 cells.
+- **v1.2.21 GLM-5.3 and GLM-5.3-Flash release capture** — complete paired
+  cells for GLM-5.3 and the revealed GLM-5.3-Flash release, plus an independent
+  120-sample GLM-5.3-Flash values replication through DeepInfra. The Z.AI and
+  DeepInfra cells remain separate physical provider captures but roll up to one
+  `glm-5-3-flash` model identity. Neither is merged with either dated Ox Alpha
+  snapshot.
 - **v1.2.20 dated Ox Alpha repeat** — a second complete paired capture of
   OpenRouter's anonymous `stealth/ox-alpha` alias. The August 21 and August 25
   measurements are preserved as `ox-alpha-260821` and `ox-alpha-260825`
