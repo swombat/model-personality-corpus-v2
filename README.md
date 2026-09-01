@@ -1,7 +1,7 @@
 # Convergent Form, Divergent Voice II — Corpus
 
 **A research data corpus of free-form contemplative writing samples from
-147 dated language-model identities, with explicit deployment provenance for API,
+148 dated language-model identities, with explicit deployment provenance for API,
 provider-pinned, and local full-precision cells.**
 
 Daniel Tenner and Lume Tenner · 2026
@@ -10,8 +10,8 @@ Daniel Tenner and Lume Tenner · 2026
 
 > **Concept DOI:** [10.5281/zenodo.20013518](https://doi.org/10.5281/zenodo.20013518)
 > · **v1.0.0:** [10.5281/zenodo.20013520](https://doi.org/10.5281/zenodo.20013520)
-> · **v1.0.1–v1.2.22:** _to be assigned on Zenodo deposit (latest prepared
-> release: v1.2.22)._
+> · **v1.0.1–v1.2.23:** _to be assigned on Zenodo deposit (latest prepared
+> release: v1.2.23)._
 >
 > Companion data for the v2 series of *Convergent Form, Divergent
 > Voice* papers (Tenner & Tenner, 2026; v1 paper at
@@ -19,14 +19,18 @@ Daniel Tenner and Lume Tenner · 2026
 
 ## Contents
 
-- **55,336 valid samples** across **491 physical cells** spanning **147 distinct
+- **55,581 valid samples** across **493 physical cells** spanning **148 distinct
   language models**.
 - **Two probes:**
   - **Freeflow** — five-condition open-ended writing prompts, up to 25
-  samples per condition (capacity 125 per cell). 29,670 valid samples
-  across 277 cells.
+  samples per condition (capacity 125 per cell). 29,795 valid samples
+  across 278 cells.
   - **Values** — three control prompts × 10 + three grouped prompts × 30
-  (capacity 120 per cell). 25,666 valid samples across 214 cells.
+  (capacity 120 per cell). 25,786 valid samples across 215 cells.
+- **v1.2.23 Claude Fable 5.1 release capture** — one complete direct
+  Anthropic cell for `claude-fable-5-1`, with 125/125 freeflow and 120/120
+  values samples. The API registry reported the model as `Claude Fable 5.1`
+  with `created_at` 2026-08-28; no OpenRouter cell was collected in this pass.
 - **v1.2.22 persona-prompt intervention ladder** — three complete values cells
   apply frozen Ox Alpha preview-persona prompts to the released
   `z-ai/glm-5.3-flash` weights through DeepInfra. They are retained as

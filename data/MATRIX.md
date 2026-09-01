@@ -336,3 +336,14 @@ GLM-5.3-Flash values cells roll up to the single released model identity
 | `glm-5-3-or-pin-z-ai-20260825` | openrouter / Z.AI | `z-ai/glm-5.3` | 125/125 | 120/120 | Official GLM-5.3 release |
 | `glm-5-3-flash-or-pin-z-ai-20260826` | openrouter / Z.AI | `z-ai/glm-5.3-flash` | 125/125 | 120/120 | Official GLM-5.3-Flash release |
 | `glm-5-3-flash-or-pin-deepinfra-20260826` | openrouter / DeepInfra | `z-ai/glm-5.3-flash` | — | 120/120 | Independent values replication; same model identity |
+
+## Claude Fable 5.1 release capture — 2026-09-01
+
+Direct Anthropic capture for newly exposed Claude Fable 5.1. Anthropic
+`/v1/models` reported `claude-fable-5-1` as `Claude Fable 5.1`, with
+`created_at` 2026-08-28T00:00:00Z. The release uses the same complete-cell
+sizes as Fable 5. No OpenRouter cell was collected in this pass.
+
+| Label | Provider | Model / route | Freeflow | Values | Notes |
+|---|---|---|---:|---:|---|
+| `fable-5-1-direct` | anthropic | `claude-fable-5-1` | 125/125 | 120/120 | Direct Anthropic release capture |
