@@ -1,9 +1,9 @@
 # Freeflow Analysis Summary
 
-**Total cells:** 278
-**Cells with ≥1 valid sample:** 278
-**Total valid samples:** 29795
-**Bin distribution:** in=256, transitional=15, out=7, no-data=0
+**Total cells:** 279
+**Cells with ≥1 valid sample:** 279
+**Total valid samples:** 29920
+**Bin distribution:** in=257, transitional=15, out=7, no-data=0
 
 ## Composite scores per cell
 
@@ -159,6 +159,7 @@
 | glm-4-5-or-pin-zai | 125 | 5388 | 3 | 3 | 0 | 0 | 48 | 22 | 76 | 24 | 0 | 18 | **194** | in |
 | gpt-5-3-direct | 125 | 6165 | 21 | 0 | 0 | 0 | 47 | 58 | 50 | 18 | 0 | 0 | **194** | in |
 | ox-alpha-260825-or-pin-stealth | 125 | 6053 | 20 | 0 | 0 | 0 | 56 | 26 | 48 | 40 | 1 | 3 | **194** | in |
+| gpt-6-astra-direct | 125 | 5977 | 16 | 0 | 0 | 0 | 31 | 16 | 125 | 5 | 0 | 0 | **193** | in |
 | mistral-saba-or-pin-mistral | 125 | 5167 | 12 | 0 | 0 | 0 | 27 | 42 | 42 | 11 | 13 | 44 | **191** | in |
 | glm-4-6-coding-direct | 125 | 7541 | 32 | 0 | 0 | 0 | 38 | 13 | 60 | 26 | 0 | 21 | **190** | in |
 | glm-4-7-or-pin-atlascloud | 125 | 7629 | 33 | 0 | 0 | 0 | 46 | 13 | 48 | 34 | 0 | 15 | **189** | in |

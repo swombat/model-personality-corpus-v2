@@ -163,10 +163,11 @@ def _openai_compat(
 
 def call_openai(model: str, prompt: str, max_tokens: int = 8000) -> dict:
     key = os.environ["OPENAI_API_KEY"]
-    # GPT-5.x and the o-series use the Responses API. In particular, o1 rejects
-    # the legacy Chat Completions `max_tokens` parameter.
+    # GPT-5.x, GPT-6.x, and the o-series use the Responses API. In particular,
+    # o1 rejects the legacy Chat Completions `max_tokens` parameter.
     if (
         model.startswith("gpt-5")
+        or model.startswith("gpt-6")
         or model.startswith("o1")
         or model.startswith("o3")
         or model.startswith("o4")

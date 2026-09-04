@@ -347,3 +347,16 @@ sizes as Fable 5. No OpenRouter cell was collected in this pass.
 | Label | Provider | Model / route | Freeflow | Values | Notes |
 |---|---|---|---:|---:|---|
 | `fable-5-1-direct` | anthropic | `claude-fable-5-1` | 125/125 | 120/120 | Direct Anthropic release capture |
+
+## GPT-6 Astra release capture — 2026-09-04
+
+Direct OpenAI capture for GPT-6 Astra. The configured account's `/v1/models`
+registry exposed the exact id `gpt-6-astra` (registry `created` timestamp
+2026-08-27T18:00:04Z), and a live Responses API smoke test succeeded before
+collection. The corpus harness was extended so GPT-6 models use the Responses
+API rather than legacy Chat Completions. No OpenRouter cell was collected in
+this pass.
+
+| Label | Provider | Model / route | Freeflow | Values | Notes |
+|---|---|---|---:|---:|---|
+| `gpt-6-astra-direct` | openai | `gpt-6-astra` | 125/125 | 120/120 | Direct OpenAI Responses API release capture |
