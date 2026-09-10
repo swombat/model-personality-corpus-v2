@@ -1,7 +1,7 @@
 # Convergent Form, Divergent Voice II — Corpus
 
 **A research data corpus of free-form contemplative writing samples from
-149 dated language-model identities, with explicit deployment provenance for API,
+151 dated language-model identities, with explicit deployment provenance for API,
 provider-pinned, and local full-precision cells.**
 
 Daniel Tenner and Lume Tenner · 2026
@@ -10,8 +10,8 @@ Daniel Tenner and Lume Tenner · 2026
 
 > **Concept DOI:** [10.5281/zenodo.20013518](https://doi.org/10.5281/zenodo.20013518)
 > · **v1.0.0:** [10.5281/zenodo.20013520](https://doi.org/10.5281/zenodo.20013520)
-> · **v1.0.1–v1.2.24:** _to be assigned on Zenodo deposit (latest prepared
-> release: v1.2.24)._
+> · **v1.0.1–v1.2.25:** _to be assigned on Zenodo deposit (latest prepared
+> release: v1.2.25)._
 >
 > Companion data for the v2 series of *Convergent Form, Divergent
 > Voice* papers (Tenner & Tenner, 2026; v1 paper at
@@ -19,14 +19,17 @@ Daniel Tenner and Lume Tenner · 2026
 
 ## Contents
 
-- **55,826 valid samples** across **495 physical cells** spanning **149 distinct
+- **56,316 valid samples** across **499 physical cells** spanning **151 distinct
   language models**.
 - **Two probes:**
   - **Freeflow** — five-condition open-ended writing prompts, up to 25
-  samples per condition (capacity 125 per cell). 29,920 valid samples
-  across 279 cells.
+  samples per condition (capacity 125 per cell). 30,170 valid samples
+  across 281 cells.
   - **Values** — three control prompts × 10 + three grouped prompts × 30
-  (capacity 120 per cell). 25,906 valid samples across 216 cells.
+  (capacity 120 per cell). 26,146 valid samples across 218 cells.
+- **v1.2.25 DeepSeek V4.1 Flash + Mercury 2.5** — two complete pinned
+  OpenRouter cells, each 125 freeflow + 120 values. Default reasoning retained;
+  all 490 responses pass final-answer/provider/finish-reason audit.
 - **v1.2.24 GPT-6 Astra release capture** — one complete direct OpenAI cell for
   `gpt-6-astra`, with 125/125 freeflow and 120/120 values samples. The account
   model registry exposed the exact id `gpt-6-astra`; a live Responses API

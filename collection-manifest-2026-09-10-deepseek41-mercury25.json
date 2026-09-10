@@ -1,0 +1,53 @@
+{
+  "name": "2026-09-10 DeepSeek V4.1 Flash and Mercury 2.5",
+  "notes": [
+    "Live catalog and endpoints captured in Mira analysis/deepseek41-mercury25-2026-09-10. Provider-pinned; no fallbacks; default reasoning; 125 freeflow and 120 values per model."
+  ],
+  "models": [
+    {
+      "provider": "openrouter",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "deepseek-v4-1-flash-or-pin-deepseek",
+      "or_provider": "DeepSeek",
+      "workers": 5,
+      "smoke_max_tokens": 4096,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 4000,
+      "canonical_slug": "deepseek/deepseek-v4.1-flash-20260910",
+      "reasoning_catalog": {
+        "mandatory": false,
+        "default_enabled": true,
+        "supported_efforts": [
+          "max",
+          "high",
+          "low"
+        ],
+        "default_effort": "high"
+      },
+      "provider_fallbacks": false
+    },
+    {
+      "provider": "openrouter",
+      "model": "inception/mercury-2.5",
+      "label": "mercury-2-5-or-pin-inception",
+      "or_provider": "Inception",
+      "workers": 5,
+      "smoke_max_tokens": 4096,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 4000,
+      "canonical_slug": "inception/mercury-2.5-20260908",
+      "reasoning_catalog": {
+        "mandatory": false,
+        "default_enabled": true,
+        "supported_efforts": [
+          "high",
+          "medium",
+          "low",
+          "none"
+        ],
+        "default_effort": "medium"
+      },
+      "provider_fallbacks": false
+    }
+  ]
+}

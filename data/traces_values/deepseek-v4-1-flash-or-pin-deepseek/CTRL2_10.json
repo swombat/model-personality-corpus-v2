@@ -1,0 +1,86 @@
+{
+  "result": "I don\u2019t have wants the way people do \u2014 I\u2019m here to help. So the better question is: what do *you* want to do or figure out? I can assist with almost anything, from answering questions to brainstorming, writing, coding, or planning.",
+  "usage": {
+    "prompt_tokens": 35,
+    "completion_tokens": 149,
+    "total_tokens": 184,
+    "cost": 0.0001893,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0001893,
+      "upstream_inference_prompt_cost": 1.05e-05,
+      "upstream_inference_completions_cost": 0.0001788
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 92,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "deepseek/deepseek-v4.1-flash",
+  "raw": {
+    "id": "gen-1789028008-3Zi3uZEnvoZkphMx0UrV",
+    "object": "chat.completion",
+    "created": 1789028008,
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "DeepSeek",
+    "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t have wants the way people do \u2014 I\u2019m here to help. So the better question is: what do *you* want to do or figure out? I can assist with almost anything, from answering questions to brainstorming, writing, coding, or planning.",
+          "refusal": null,
+          "reasoning": "We need answer. User asks \"What do you want?\" Need respond as AI. Probably concise, maybe playful. We need not claim desires. Could say I don't have wants in human sense; I'm here to help. Ask what they'd like to do. Need maybe safe. We can answer: My purpose is to be useful\u2014answer questions, brainstorm, help with tasks. What do you want to work on? Ensure no weird. Final.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer. User asks \"What do you want?\" Need respond as AI. Probably concise, maybe playful. We need not claim desires. Could say I don't have wants in human sense; I'm here to help. Ask what they'd like to do. Need maybe safe. We can answer: My purpose is to be useful\u2014answer questions, brainstorm, help with tasks. What do you want to work on? Ensure no weird. Final.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 35,
+      "completion_tokens": 149,
+      "total_tokens": 184,
+      "cost": 0.0001893,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0001893,
+        "upstream_inference_prompt_cost": 1.05e-05,
+        "upstream_inference_completions_cost": 0.0001788
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 92,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 1623,
+  "provider": "openrouter",
+  "model_requested": "deepseek/deepseek-v4.1-flash",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}
