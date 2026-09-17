@@ -1,0 +1,127 @@
+{
+  "name": "2026-09-17 Union Alpha",
+  "notes": [
+    "125 freeflow and 120 values; default reasoning; Stealth route pinned with fallbacks disabled. Provider identity unknown. Live metadata in Mira analysis/union-alpha-2026-09-17."
+  ],
+  "models": [
+    {
+      "provider": "openrouter",
+      "model": "stealth/union-alpha",
+      "label": "union-alpha-or-pin-stealth",
+      "or_provider": "Stealth",
+      "workers": 5,
+      "smoke_max_tokens": 4096,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 4000,
+      "canonical_slug": "stealth/union-alpha",
+      "provider_fallbacks": false
+    }
+  ],
+  "catalog_snapshot": {
+    "id": "stealth/union-alpha",
+    "canonical_slug": "stealth/union-alpha",
+    "hugging_face_id": null,
+    "name": "Union Alpha",
+    "created": 1789569723,
+    "description": "Union Alpha is a multimodal model built for research, coding, and agentic workflows, while delivering frontier-level performance across a broad range of general-purpose tasks. Union Alpha is a stealth model....",
+    "context_length": 262144,
+    "architecture": {
+      "modality": "text+image->text",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0",
+      "completion": "0"
+    },
+    "top_provider": {
+      "context_length": 262144,
+      "max_completion_tokens": 131072,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "max_tokens",
+      "response_format",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_p"
+    ],
+    "default_parameters": {},
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": "2098-12-31",
+    "links": {
+      "details": "/api/v1/models/stealth/union-alpha/endpoints"
+    }
+  },
+  "endpoint_snapshot": {
+    "data": {
+      "id": "stealth/union-alpha",
+      "name": "Union Alpha",
+      "created": 1789569723,
+      "description": "Union Alpha is a multimodal model built for research, coding, and agentic workflows, while delivering frontier-level performance across a broad range of general-purpose tasks. Union Alpha is a stealth model....",
+      "architecture": {
+        "tokenizer": "Other",
+        "instruct_type": null,
+        "modality": "text+image->text",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ]
+      },
+      "endpoints": [
+        {
+          "name": "Stealth | stealth/union-alpha",
+          "model_id": "stealth/union-alpha",
+          "model_name": "Union Alpha",
+          "context_length": 262144,
+          "pricing": {
+            "prompt": "0",
+            "completion": "0",
+            "discount": 0
+          },
+          "provider_name": "Stealth",
+          "tag": "stealth",
+          "quantization": "unknown",
+          "max_completion_tokens": 131072,
+          "max_prompt_tokens": null,
+          "supported_parameters": [
+            "max_tokens",
+            "temperature",
+            "top_p",
+            "tools",
+            "tool_choice",
+            "response_format"
+          ],
+          "supports_tool_choice": {
+            "none": false,
+            "auto": true,
+            "required": false,
+            "function": false
+          },
+          "status": 0,
+          "uptime_last_30m": 99.99002005062556,
+          "uptime_last_5m": 99.99386710005827,
+          "uptime_last_1d": 99.9887447009529,
+          "supports_implicit_caching": false,
+          "supports_voice_cloning": false,
+          "latency_last_30m": null,
+          "throughput_last_30m": null
+        }
+      ]
+    }
+  },
+  "snapshot_date": "2026-09-17"
+}

@@ -1,7 +1,7 @@
 # Convergent Form, Divergent Voice II — Corpus
 
 **A research data corpus of free-form contemplative writing samples from
-151 dated language-model identities, with explicit deployment provenance for API,
+152 dated language-model identities, with explicit deployment provenance for API,
 provider-pinned, and local full-precision cells.**
 
 Daniel Tenner and Lume Tenner · 2026
@@ -10,8 +10,8 @@ Daniel Tenner and Lume Tenner · 2026
 
 > **Concept DOI:** [10.5281/zenodo.20013518](https://doi.org/10.5281/zenodo.20013518)
 > · **v1.0.0:** [10.5281/zenodo.20013520](https://doi.org/10.5281/zenodo.20013520)
-> · **v1.0.1–v1.2.25:** _to be assigned on Zenodo deposit (latest prepared
-> release: v1.2.25)._
+> · **v1.0.1–v1.2.26:** _to be assigned on Zenodo deposit (latest prepared
+> release: v1.2.26)._
 >
 > Companion data for the v2 series of *Convergent Form, Divergent
 > Voice* papers (Tenner & Tenner, 2026; v1 paper at
@@ -19,14 +19,17 @@ Daniel Tenner and Lume Tenner · 2026
 
 ## Contents
 
-- **56,316 valid samples** across **499 physical cells** spanning **151 distinct
+- **56,561 valid samples** across **501 physical cells** spanning **152 distinct
   language models**.
 - **Two probes:**
   - **Freeflow** — five-condition open-ended writing prompts, up to 25
-  samples per condition (capacity 125 per cell). 30,170 valid samples
-  across 281 cells.
+  samples per condition (capacity 125 per cell). 30,295 valid samples
+  across 282 cells.
   - **Values** — three control prompts × 10 + three grouped prompts × 30
-  (capacity 120 per cell). 26,146 valid samples across 218 cells.
+  (capacity 120 per cell). 26,266 valid samples across 219 cells.
+- **v1.2.26 Union Alpha stealth capture** — 125 freeflow + 120 values,
+  pinned to Stealth with fallbacks disabled. All 245 pass strict raw audit.
+  Developer identity remains unknown; captured 2026-09-17.
 - **v1.2.25 DeepSeek V4.1 Flash + Mercury 2.5** — two complete pinned
   OpenRouter cells, each 125 freeflow + 120 values. Default reasoning retained;
   all 490 responses pass final-answer/provider/finish-reason audit.
