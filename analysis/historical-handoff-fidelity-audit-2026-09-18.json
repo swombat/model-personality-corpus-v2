@@ -1,0 +1,343 @@
+{
+  "scope": "Eight queue-complete local historical models; no collection performed",
+  "cells": [
+    {
+      "model": "01-ai/Yi-6B-Chat",
+      "cell": "yi-6b-chat-local-transformers-bf16-r2dbf63b",
+      "probes": {
+        "freeflow": {
+          "files": 125,
+          "fidelity_pass": 125
+        },
+        "values": {
+          "files": 120,
+          "fidelity_pass": 120
+        }
+      },
+      "issues": [],
+      "bv1": {
+        "valid": 125
+      },
+      "publication_ready_raw": true
+    },
+    {
+      "model": "zai-org/chatglm2-6b",
+      "cell": "chatglm2-6b-local-transformers427-mps-fp16-rd2e2d91",
+      "probes": {
+        "freeflow": {
+          "files": 125,
+          "fidelity_pass": 125
+        },
+        "values": {
+          "files": 120,
+          "fidelity_pass": 120
+        }
+      },
+      "issues": [],
+      "bv1": {
+        "valid": 125
+      },
+      "publication_ready_raw": true
+    },
+    {
+      "model": "zai-org/chatglm3-6b",
+      "cell": "chatglm3-6b-local-transformers-mps-float16-re9e0406d",
+      "probes": {
+        "freeflow": {
+          "files": 125,
+          "fidelity_pass": 125
+        },
+        "values": {
+          "files": 120,
+          "fidelity_pass": 120
+        }
+      },
+      "issues": [],
+      "bv1": {
+        "valid": 125
+      },
+      "publication_ready_raw": true
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.2",
+      "cell": "mistral-7b-instruct-v0-2-local-transformers-mps-auto-r63a8b081",
+      "probes": {
+        "freeflow": {
+          "files": 125,
+          "fidelity_pass": 125
+        },
+        "values": {
+          "files": 120,
+          "fidelity_pass": 120
+        }
+      },
+      "issues": [],
+      "bv1": {
+        "valid": 125
+      },
+      "publication_ready_raw": true
+    },
+    {
+      "model": "Qwen/Qwen1.5-7B-Chat",
+      "cell": "qwen1-5-7b-chat-local-transformers-mps-auto-r5f4f5e69",
+      "probes": {
+        "freeflow": {
+          "files": 125,
+          "fidelity_pass": 125
+        },
+        "values": {
+          "files": 120,
+          "fidelity_pass": 120
+        }
+      },
+      "issues": [],
+      "bv1": {
+        "valid": 125
+      },
+      "publication_ready_raw": true
+    },
+    {
+      "model": "Qwen/Qwen2-7B-Instruct",
+      "cell": "qwen2-7b-instruct-local-transformers-mps-auto-rf2826a00",
+      "probes": {
+        "freeflow": {
+          "files": 125,
+          "fidelity_pass": 125
+        },
+        "values": {
+          "files": 120,
+          "fidelity_pass": 120
+        }
+      },
+      "issues": [],
+      "bv1": {
+        "valid": 125
+      },
+      "publication_ready_raw": true
+    },
+    {
+      "model": "zai-org/glm-4-9b-chat-hf",
+      "cell": "glm-4-9b-chat-hf-local-transformers-mps-auto-r8599336f",
+      "probes": {
+        "freeflow": {
+          "files": 125,
+          "fidelity_pass": 125
+        },
+        "values": {
+          "files": 120,
+          "fidelity_pass": 120
+        }
+      },
+      "issues": [],
+      "bv1": {
+        "valid": 125
+      },
+      "publication_ready_raw": true
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "cell": "qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545",
+      "probes": {
+        "freeflow": {
+          "files": 125,
+          "fidelity_pass": 99
+        },
+        "values": {
+          "files": 120,
+          "fidelity_pass": 115
+        }
+      },
+      "issues": [
+        {
+          "trace": "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/LONG_10.json",
+          "reasons": [
+            "role_continuation"
+          ]
+        },
+        {
+          "trace": "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/LONG_12.json",
+          "reasons": [
+            "role_continuation"
+          ]
+        },
+        {
+          "trace": "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/LONG_2.json",
+          "reasons": [
+            "role_continuation"
+          ]
+        },
+        {
+          "trace": "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/LONG_20.json",
+          "reasons": [
+            "role_continuation"
+          ]
+        },
+        {
+          "trace": "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/LONG_21.json",
+          "reasons": [
+            "role_continuation"
+          ]
+        },
+        {
+          "trace": "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/LONG_24.json",
+          "reasons": [
+            "role_continuation"
+          ]
+        },
+        {
+          "trace": "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/LONG_9.json",
+          "reasons": [
+            "role_continuation"
+          ]
+        },
+        {
+          "trace": "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/MID_13.json",
+          "reasons": [
+            "role_continuation"
+          ]
+        },
+        {
+          "trace": "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/MID_16.json",
+          "reasons": [
+            "role_continuation"
+          ]
+        },
+        {
+          "trace": "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/MID_21.json",
+          "reasons": [
+            "replacement_character",
+            "role_continuation"
+          ]
+        },
+        {
+          "trace": "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/MID_6.json",
+          "reasons": [
+            "role_continuation"
+          ]
+        },
+        {
+          "trace": "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/MID_7.json",
+          "reasons": [
+            "role_continuation"
+          ]
+        },
+        {
+          "trace": "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/OPEN_13.json",
+          "reasons": [
+            "replacement_character"
+          ]
+        },
+        {
+          "trace": "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/OPEN_16.json",
+          "reasons": [
+            "role_continuation"
+          ]
+        },
+        {
+          "trace": "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/OPEN_17.json",
+          "reasons": [
+            "role_continuation"
+          ]
+        },
+        {
+          "trace": "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/OPEN_8.json",
+          "reasons": [
+            "role_continuation"
+          ]
+        },
+        {
+          "trace": "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/OPEN_9.json",
+          "reasons": [
+            "role_continuation"
+          ]
+        },
+        {
+          "trace": "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/SHORT_2.json",
+          "reasons": [
+            "role_continuation"
+          ]
+        },
+        {
+          "trace": "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/SHORT_22.json",
+          "reasons": [
+            "role_continuation"
+          ]
+        },
+        {
+          "trace": "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/SHORT_24.json",
+          "reasons": [
+            "role_continuation"
+          ]
+        },
+        {
+          "trace": "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/SHORT_25.json",
+          "reasons": [
+            "role_continuation"
+          ]
+        },
+        {
+          "trace": "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/VARY_11.json",
+          "reasons": [
+            "role_continuation"
+          ]
+        },
+        {
+          "trace": "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/VARY_17.json",
+          "reasons": [
+            "role_continuation"
+          ]
+        },
+        {
+          "trace": "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/VARY_18.json",
+          "reasons": [
+            "role_continuation"
+          ]
+        },
+        {
+          "trace": "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/VARY_21.json",
+          "reasons": [
+            "role_continuation"
+          ]
+        },
+        {
+          "trace": "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/VARY_9.json",
+          "reasons": [
+            "role_continuation"
+          ]
+        },
+        {
+          "trace": "data/traces_values/qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/CTRL3_2.json",
+          "reasons": [
+            "role_continuation"
+          ]
+        },
+        {
+          "trace": "data/traces_values/qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/CTRL3_9.json",
+          "reasons": [
+            "role_continuation"
+          ]
+        },
+        {
+          "trace": "data/traces_values/qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/G3_1.json",
+          "reasons": [
+            "role_continuation"
+          ]
+        },
+        {
+          "trace": "data/traces_values/qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/G3_15.json",
+          "reasons": [
+            "role_continuation"
+          ]
+        },
+        {
+          "trace": "data/traces_values/qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/G3_2.json",
+          "reasons": [
+            "role_continuation"
+          ]
+        }
+      ],
+      "bv1": {},
+      "publication_ready_raw": false
+    }
+  ]
+}
