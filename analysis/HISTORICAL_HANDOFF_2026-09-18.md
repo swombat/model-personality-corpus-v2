@@ -21,7 +21,9 @@ replacement characters, tokenizer debris, or role continuations:
 These seven cells are already tracked and listed in
 `collection-manifest-2026-08-11-historical-local.json`. No new raw capture is
 added by this handoff. Analysis-corpus phase36 fills the missing layered values
-analyses for Yi-6B, ChatGLM2, and GLM-4-9B; the other four already had them.
+analyses for Yi-6B and ChatGLM2. GLM-4-9B already had analysis under an inconsistent
+model alias; the handoff repairs its site linkage without adding duplicate
+samples. The other four models already had their complete analyses linked.
 
 ## Blocked: Qwen2.5-7B-Instruct
 
