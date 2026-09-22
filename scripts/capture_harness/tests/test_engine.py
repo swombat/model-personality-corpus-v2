@@ -175,7 +175,7 @@ class EngineTests(unittest.TestCase):
         self.assertTrue(
             all(d.startswith("one/") for d in tasks["one/synthesis"]["deps"])
         )
-        self.assertEqual(len(tasks["one/synthesis"]["deps"]), 126)
+        self.assertEqual(len(tasks["one/synthesis"]["deps"]), 127)
 
     def test_strict_raw(self):
         c = {"model": "x/m", "or_provider": "X"}

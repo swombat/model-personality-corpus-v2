@@ -164,3 +164,27 @@ live canary through the actual analysis scripts.
 - Standard sample coding is light local work; API inference is remote. Future
   whole-corpus similarity-map regeneration is a separate CPU/memory-heavy stage,
   not something to multiply by the sample worker count.
+
+## Model metadata and release dates
+
+New runs include a model-local metadata task before synthesis. Supply optional
+`release_date` (YYYY-MM-DD) and **required when dated** `release_date_source` in
+each model entry. The worker writes `model_metadata.json` and merges the exact
+slug into the website's `model-release-dates.json` with a separate source registry.
+Conflicting existing dates/sources fail closed. Missing dates stay explicitly
+unknown: OpenRouter's `created` timestamp is a listing date, not automatically a
+model release date. Endpoint/provider/quantization metadata remains in the record.
+This does not build/deploy the website or fill its other routing/pricing registries.
+For already-compiled runs use `metadata.py SUPPLEMENT_CONFIG.json` without
+changing the immutable run configuration; preserve that explicit supplement.
+
+## Explicit repair after escalation
+
+`recover_blocked.py SPEC --state STATE --authorization AUTHORITY_ID --limit 2 JOB_ID...`
+executes only explicitly selected blocked roots under the normal output lock,
+validator and deadline. Its separate SQLite allowance survives restart; original
+attempt counts, prompts and settings are unchanged. Successful repair releases
+only dependency-blocked descendants. A repair is an intervention, **not** evidence
+that the initial unattended trial succeeded. Never mint a new authorization ID
+merely to refill an exhausted allowance. A terminal engine must be resumed after
+repair if it has already exited; an active engine picks up dependencies normally.

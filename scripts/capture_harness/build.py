@@ -85,6 +85,15 @@ def build(manifest, run_dir, analysis):
             )
             return id
 
+        metadata = add(
+            "metadata",
+            "metadata",
+            [],
+            "local",
+            [phase / "model_metadata.json"],
+            attempts=1,
+            timeout=60,
+        )
         bvs = []
         pcs = []
         # Interleave probes: values analysis can start after the very first raw
@@ -203,7 +212,7 @@ def build(manifest, run_dir, analysis):
         synthesis = add(
             "synthesis",
             "synthesis",
-            bvs + [report],
+            bvs + [report, metadata],
             "synthesis",
             [
                 analysis

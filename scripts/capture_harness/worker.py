@@ -124,6 +124,19 @@ def sample(c, sid):
     }
 
 
+def next_cap(caps, requested_caps, previous, problem):
+    cap = max(requested_caps or [caps[0]])
+    # Dispatch intent is not evidence of a response at that ceiling.
+    if problem == "finish_length":
+        completed_cap = previous.get("capture_policy", {}).get("max_tokens", caps[0])
+        higher = [n for n in caps if n > completed_cap]
+        if not higher:
+            print("BLOCKED: declared token ceiling exhausted")
+            raise SystemExit(22)
+        cap = max(cap, min(higher))
+    return cap
+
+
 def raw_collect(c, phase, probe, sid):
     p = trace_path(c, probe, sid)
     attempt_dir = phase / "raw_attempts" / probe / sid
@@ -142,15 +155,12 @@ def raw_collect(c, phase, probe, sid):
         json.loads(f.read_text()).get("max_tokens", caps[0])
         for f in attempt_dir.glob("request-*.json")
     ]
-    cap = max(previous_caps or [caps[0]])
-    # Increase only after a proven length limit, never for a semantic answer.
-    problem = raw_problem(previous, c, probe, sid) if previous else None
-    if problem == "finish_length":
-        higher = [n for n in caps if n > cap]
-        if not higher:
-            print("BLOCKED: declared token ceiling exhausted")
-            raise SystemExit(22)
-        cap = min(higher)
+    cap = next_cap(
+        caps,
+        previous_caps,
+        previous,
+        raw_problem(previous, c, probe, sid) if previous else None,
+    )
     receipt = {
         "model": c["model"],
         "pin": c["or_provider"],
@@ -692,6 +702,10 @@ def main():
         adjudicate(c, phase, a.validate)
     elif a.action == "values_report":
         values_report(c, phase, a.validate)
+    elif a.action == "metadata":
+        from metadata import write_metadata
+
+        write_metadata(c, a.validate)
     elif a.action == "synthesis":
         synthesis(c, phase, a.validate)
     elif a.action == "ready":
