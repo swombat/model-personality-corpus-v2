@@ -156,7 +156,9 @@ live canary through the actual analysis scripts.
   Atomic results, output locks and preserved attempt counters bound that risk.
 - A bounded escalation is a separate Mira checkpoint, not a guarantee that the
   original interactive conversation will spontaneously resume. Its response and
-  delivery receipt remain in the outbox.
+  nonce-bound JSON acknowledgement and delivery receipt remain in the outbox.
+  Exit code zero alone is never delivery: Mira must write the dedicated receipt,
+  which survives the journal reflex replacing the CLI final text.
 - macOS uses launchd Standard scheduling (Background severely throttles SQLite
   fsync and Python startup) and prevents idle sleep while the service works.
 - Standard sample coding is light local work; API inference is remote. Future

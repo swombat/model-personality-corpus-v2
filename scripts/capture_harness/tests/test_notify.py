@@ -24,7 +24,7 @@ class NotifyTests(unittest.TestCase):
             cmd = [
                 sys.executable,
                 "-c",
-                f'from pathlib import Path;p=Path({str(p / "calls")!r});p.write_text(p.read_text()+"x" if p.exists() else "x")',
+                f'import json,re,sys;from pathlib import Path;p=Path({str(p / "calls")!r});p.write_text(p.read_text()+"x" if p.exists() else "x");prompt=sys.argv[1];target=json.loads(re.search(r"ACK_PATH: (.+)",prompt)[1]);data=json.loads(re.search(r"ACK_FIELDS: (.+)",prompt)[1]);data["summary"]="ack";Path(target).write_text(json.dumps(data))',
             ]
             drain(p, cmd)
             drain(p, cmd)
@@ -49,3 +49,22 @@ class NotifyTests(unittest.TestCase):
             d = json.loads(f.read_text())
             self.assertEqual(d["state"], "delivery_failed")
             self.assertEqual(d["delivery_attempts"], 1)
+
+    def test_zero_exit_without_ack_is_not_delivery(self):
+        with tempfile.TemporaryDirectory() as td:
+            p = Path(td)
+            f = p / "outbox/a.json"
+            atomic(
+                f,
+                {
+                    "kind": "blocked",
+                    "model": "test",
+                    "status_path": str(p / "status.json"),
+                    "state": "pending",
+                    "delivery_attempts": 0,
+                },
+            )
+            drain(p, [sys.executable, "-c", 'print("no shape")'])
+            d = json.loads(f.read_text())
+            self.assertEqual(d["state"], "delivery_failed")
+            self.assertFalse(d["acknowledgement_verified"])
