@@ -5,6 +5,7 @@ import argparse, json, signal, subprocess, sys, time, threading
 from pathlib import Path
 from engine import atomic
 from notify import drain
+from adopt_existing import adopt
 
 HERE = Path(__file__).resolve().parent
 p = argparse.ArgumentParser()
@@ -36,6 +37,7 @@ def notifications():
 
 thread = threading.Thread(target=notifications, daemon=True)
 thread.start()
+adopt(a.spec, a.state)
 with (a.state / "supervisor.log").open("ab") as log:
     child = subprocess.Popen(
         [

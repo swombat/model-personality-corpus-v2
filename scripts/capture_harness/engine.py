@@ -179,11 +179,13 @@ class Engine:
     def launch(self, r):
         id = r["id"]
         attempt = r["attempts"] + 1
-        self.db.execute(
-            "UPDATE jobs SET state='running',attempts=?,started=?,reason=NULL WHERE id=?",
+        changed = self.db.execute(
+            "UPDATE jobs SET state='running',attempts=?,started=?,reason=NULL WHERE id=? AND state='pending'",
             (attempt, time.time(), id),
-        )
+        ).rowcount
         self.db.commit()
+        if not changed:
+            return False
         logs = self.directory / "logs"
         logs.mkdir(exist_ok=True)
         log = (
@@ -193,6 +195,7 @@ class Engine:
         self.live[id] = (p, log, time.monotonic())
         self.db.execute("UPDATE jobs SET pid=? WHERE id=?", (p.pid, id))
         self.event(id, "started", str(attempt))
+        return True
 
     def finish(self, id, rc):
         t = self.tasks[id]
@@ -386,9 +389,9 @@ class Engine:
                     if changed:
                         self.invalidate(changed, "dependency artifact changed")
                         continue
-                    self.launch(r)
-                    slots[t["pool"]] += 1
-                    per_model[pool, model] += 1
+                    if self.launch(r):
+                        slots[t["pool"]] += 1
+                        per_model[pool, model] += 1
         self.turn += 1
         return self.status()
 

@@ -29,7 +29,10 @@ A process exiting zero is not success: a separate validator must pass and output
 hashes are checkpointed. On restart changed completed artifacts block their
 subgraph; they are never silently trusted or overwritten.
 
-Existing successful raw responses are reused. Legacy BV1/coder results require
+Existing successful raw responses are verified and adopted before scheduling, so
+local verification never waits behind slow API calls. The same conditional
+pending-to-done adoption can safely run during a recovery; it never steals a
+running task lease. Existing successful raw responses are reused. Legacy BV1/coder results require
 an explicit source-verified import. Every rejected raw response and analysis
 output is retained. Technical retries do not switch providers or alter prompts,
 reasoning mode, sampling temperature, taxonomy, or agreement thresholds.
