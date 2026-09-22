@@ -188,3 +188,14 @@ only dependency-blocked descendants. A repair is an intervention, **not** eviden
 that the initial unattended trial succeeded. Never mint a new authorization ID
 merely to refill an exhausted allowance. A terminal engine must be resumed after
 repair if it has already exited; an active engine picks up dependencies normally.
+
+## Scoped legacy freeflow repair
+
+`build_freeflow_repair.py` accepts an explicit one-model manifest, existing
+source phase and an isolated comparison script. It selects only length-finished
+raw slots, archives their raw/BV1 artifacts, binds unchanged valid analyses,
+and compiles only replacement capture→BV1→model synthesis→similarity→repair
+receipt tasks. It does not schedule values collection or recoding. The final
+receipt verifies the frozen untouched sources and preserved originals by hash.
+This repair-specific builder currently targets the GLM comparison workflow;
+it is not a general automatic repair planner for arbitrary legacy datasets.

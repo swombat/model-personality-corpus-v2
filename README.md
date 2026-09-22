@@ -745,3 +745,10 @@ routing paper v1.1.0 reflect these counts.
 analysis-complete and design-complete for the v2 series of papers.
 Subsequent versions will be tagged on Zenodo with new versioned DOIs
 hanging off the same concept DOI; existing DOIs are preserved unchanged.
+
+### GLM 5.3 capture-quality correction
+
+A later repair of 15 truncated LONG samples was initiated on 2026-09-22.
+See [the repair/provenance note](notes/glm-5-3-late-long-repair-2026-09-22.md)
+for preserved originals, changed token ceilings, mixed capture dates and
+completion evidence. This note does not assert the repair has finished.

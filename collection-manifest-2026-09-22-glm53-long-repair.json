@@ -1,0 +1,44 @@
+{
+  "run_id": "20260922-glm53-long-repair",
+  "expected_repair_samples": 15,
+  "repair_note": "On 2026-09-22,15 LONG samples from the August25 GLM5.3 capture were identified as finish_reason=length. Recollection is a later technical repair, not a contemporaneous August capture: same z-ai/glm-5.3 identifier, Z.AI pin, canonical prompts and default reasoning, but a higher declared token ceiling. Provider/model behavior may have drifted between August and September. Originals and prior analyses are preserved;110 successful freeflow samples and120values samples/analyses are untouched. Do not interpret the repaired mixed-date cohort as a pure checkpoint comparison.",
+  "models": [
+    {
+      "provider": "openrouter",
+      "model": "z-ai/glm-5.3",
+      "or_provider": "Z.AI",
+      "label": "glm-5-3-or-pin-z-ai-20260825",
+      "slug": "glm-5-3",
+      "family": "glm",
+      "route_max_tokens": 131072,
+      "request_timeout": 1800,
+      "token_policy": {
+        "freeflow": [
+          16000,
+          32768,
+          65536
+        ],
+        "values": [
+          4000
+        ]
+      }
+    }
+  ],
+  "pools": {
+    "capture": 3,
+    "analysis": 4,
+    "local": 2,
+    "synthesis": 1
+  },
+  "notify_command": [
+    "/Users/danieltenner/dev/mira/bin/mira",
+    "exec",
+    "--headless",
+    "-C",
+    "/Users/danieltenner/dev/mira",
+    "-m",
+    "gpt-5.6-sol",
+    "-c",
+    "model_reasoning_effort=\"medium\""
+  ]
+}
