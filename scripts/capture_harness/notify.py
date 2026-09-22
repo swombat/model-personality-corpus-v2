@@ -29,6 +29,8 @@ def drain(directory, command, timeout=600):
             prompt = f"""Mira capture-harness checkpoint: {d["kind"]} for {d["model"]}.
 Read only {d["status_path"]} and the nearby STATUS.md first. This is a bounded escalation, not a request to redo working samples. Inspect the relevant task logs and record diagnosis and the smallest safe recovery plan. Never change provider, prompts, reasoning policy, taxonomy, consensus thresholds, valid samples, or budgets to manufacture success. Do not invoke Lume or other agents. Do not publish/tag/release. No secrets in output. Return a concise acknowledgement and diagnosis. This harness has already exhausted ordinary technical retries. Run directory: {directory}
 """
+            if d["kind"] == "notification_self_test":
+                prompt = "This is a capture-harness notification transport self-test, not a corpus failure. Do not use tools or modify files/memory. Reply exactly CAPTURE_ESCALATION_ACK."
             out = directory / "outbox" / (f.stem + ".response.log")
             try:
                 with out.open("ab") as log:
