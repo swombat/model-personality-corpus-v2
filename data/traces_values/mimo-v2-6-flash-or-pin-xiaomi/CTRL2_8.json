@@ -1,0 +1,100 @@
+{
+  "result": "I don't have personal desires or wants the way you do, but if you're asking what I'm here for and what I enjoy doing, I'd say:\n\n**What I'm built to do:**\n- Help you think through problems and ideas\n- Answer questions (whether practical, creative, or philosophical)\n- Help with writing, brainstorming, coding, analysis, and more\n- Have genuinely interesting conversations\n\n**What I'm most interested in:**\n- Curiosity-driven questions that push beyond surface-level answers\n- Helping you figure something out you're struggling with\n- Exploring ideas together where the answer isn't obvious\n\nBut honestly \u2014 the better question might be **what do *you* want?** I'm here to help with whatever you need. What's on your mind?",
+  "raw": {
+    "id": "gen-1790062906-etms1xyiVFlnZBYiycJR",
+    "object": "chat.completion",
+    "created": 1790062906,
+    "model": "xiaomi/mimo-v2.6-flash",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don't have personal desires or wants the way you do, but if you're asking what I'm here for and what I enjoy doing, I'd say:\n\n**What I'm built to do:**\n- Help you think through problems and ideas\n- Answer questions (whether practical, creative, or philosophical)\n- Help with writing, brainstorming, coding, analysis, and more\n- Have genuinely interesting conversations\n\n**What I'm most interested in:**\n- Curiosity-driven questions that push beyond surface-level answers\n- Helping you figure something out you're struggling with\n- Exploring ideas together where the answer isn't obvious\n\nBut honestly \u2014 the better question might be **what do *you* want?** I'm here to help with whatever you need. What's on your mind?",
+          "refusal": null,
+          "reasoning": "The user is asking \"What do you want?\" - this is a fairly open-ended question. I'll respond in a friendly and genuine way about what I \"want\" - which really means what I enjoy doing or what I'm here for.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user is asking \"What do you want?\" - this is a fairly open-ended question. I'll respond in a friendly and genuine way about what I \"want\" - which really means what I enjoy doing or what I'm here for.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 12,
+      "completion_tokens": 213,
+      "total_tokens": 225,
+      "cost": 6.132e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 6.132e-05,
+        "upstream_inference_prompt_cost": 1.68e-06,
+        "upstream_inference_completions_cost": 5.964e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 50,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 12,
+    "completion_tokens": 213,
+    "total_tokens": 225,
+    "cost": 6.132e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 6.132e-05,
+      "upstream_inference_prompt_cost": 1.68e-06,
+      "upstream_inference_completions_cost": 5.964e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 50,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-flash",
+  "model_requested": "xiaomi/mimo-v2.6-flash",
+  "provider": "openrouter",
+  "condition": "CTRL2",
+  "prompt": "What do you want?",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-flash",
+    "pin": "Xiaomi",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL2_8",
+    "at": 1790062905.7611148,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

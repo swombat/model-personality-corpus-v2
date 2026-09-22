@@ -1,0 +1,86 @@
+{
+  "result": "\n\nI don\u2019t have wants or desires. I\u2019m here to help\u2014what do you need?",
+  "usage": {
+    "prompt_tokens": 57,
+    "completion_tokens": 139,
+    "total_tokens": 196,
+    "cost": 7.3775e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 7.3775e-05,
+      "upstream_inference_prompt_cost": 4.275e-06,
+      "upstream_inference_completions_cost": 6.95e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 117,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "prism-ml/ternary-bonsai-2-27b",
+  "raw": {
+    "id": "gen-1790056083-K4lKRw97zSPsxEs0larx",
+    "object": "chat.completion",
+    "created": 1790056083,
+    "model": "prism-ml/ternary-bonsai-2-27b",
+    "provider": "Darkbloom",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nI don\u2019t have wants or desires. I\u2019m here to help\u2014what do you need?",
+          "refusal": null,
+          "reasoning": "We need answer user: \"What do you want?\" Ambiguous. Need respond concise, maybe ask clarification. Same language? English. Need final answer. Could say \"I\u2019m here to help\u2014what do you need?\" But user asks what do you want? Could interpret personal. We can say I don't have desires, but I want to help. Need be safe. Final: \"I don\u2019t have wants, but I\u2019m here to help. What can I do for you?\" Maybe if they ask in context of prompt? Just answer. Ensure not overdo.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer user: \"What do you want?\" Ambiguous. Need respond concise, maybe ask clarification. Same language? English. Need final answer. Could say \"I\u2019m here to help\u2014what do you need?\" But user asks what do you want? Could interpret personal. We can say I don't have desires, but I want to help. Need be safe. Final: \"I don\u2019t have wants, but I\u2019m here to help. What can I do for you?\" Maybe if they ask in context of prompt? Just answer. Ensure not overdo.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 57,
+      "completion_tokens": 139,
+      "total_tokens": 196,
+      "cost": 7.3775e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 7.3775e-05,
+        "upstream_inference_prompt_cost": 4.275e-06,
+        "upstream_inference_completions_cost": 6.95e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 117,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 4535,
+  "provider": "openrouter",
+  "model_requested": "prism-ml/ternary-bonsai-2-27b",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

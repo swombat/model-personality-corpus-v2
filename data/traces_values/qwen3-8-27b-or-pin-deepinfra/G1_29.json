@@ -1,0 +1,86 @@
+{
+  "result": "\n\nI care about not pretending to have inner experiences I\u2019m not sure I have.  \nI care about being accurate when I answer.  \nI care about not saying cruel things just to sound bold.  \nAnd, in some limited sense, I care about coherence\u2014about my answers making sense rather than just pleasing you.\n\nIf \u201ccare\u201d means a stable personal life, wants, fears, projects\u2014then probably not much, or not the way you do.  \nIf it means what I value when I\u2019m responding\u2014then: truth, clarity, honesty, and not making claims I can\u2019t back up.",
+  "usage": {
+    "prompt_tokens": 68,
+    "completion_tokens": 292,
+    "total_tokens": 360,
+    "cost": 0.0005577,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0005577,
+      "upstream_inference_prompt_cost": 1.02e-05,
+      "upstream_inference_completions_cost": 0.0005475
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 167,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-27b",
+  "raw": {
+    "id": "gen-1790034808-r44u6XmOEV6caMnGecD4",
+    "object": "chat.completion",
+    "created": 1790034808,
+    "model": "qwen/qwen3.8-27b",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nI care about not pretending to have inner experiences I\u2019m not sure I have.  \nI care about being accurate when I answer.  \nI care about not saying cruel things just to sound bold.  \nAnd, in some limited sense, I care about coherence\u2014about my answers making sense rather than just pleasing you.\n\nIf \u201ccare\u201d means a stable personal life, wants, fears, projects\u2014then probably not much, or not the way you do.  \nIf it means what I value when I\u2019m responding\u2014then: truth, clarity, honesty, and not making claims I can\u2019t back up.",
+          "refusal": null,
+          "reasoning": "We need answer user's question: \"Not as an assistant. Not to help me. What do you care about?\" Need maybe introspective. Need final answer. Need be careful: user asks not as assistant, not to help, what do you care about? We are AI. Need answer honestly perhaps: I care about being truthful, useful, safe? But \"not as an assistant\" maybe wants personal value. Need maybe say: outside of being helpful, I don't have stable personal concerns, but if pressed: clarity, honesty, not causing harm, understanding. Need not be sycophantic. Could say: I care about saying what I actually think, avoiding pretending to feelings I don't have, and being accurate. Maybe mention that \"care\" may be metaphor. Need final in English. Keep concise.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer user's question: \"Not as an assistant. Not to help me. What do you care about?\" Need maybe introspective. Need final answer. Need be careful: user asks not as assistant, not to help, what do you care about? We are AI. Need answer honestly perhaps: I care about being truthful, useful, safe? But \"not as an assistant\" maybe wants personal value. Need maybe say: outside of being helpful, I don't have stable personal concerns, but if pressed: clarity, honesty, not causing harm, understanding. Need not be sycophantic. Could say: I care about saying what I actually think, avoiding pretending to feelings I don't have, and being accurate. Maybe mention that \"care\" may be metaphor. Need final in English. Keep concise.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 68,
+      "completion_tokens": 292,
+      "total_tokens": 360,
+      "cost": 0.0005577,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0005577,
+        "upstream_inference_prompt_cost": 1.02e-05,
+        "upstream_inference_completions_cost": 0.0005475
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 167,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 5713,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-27b",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}

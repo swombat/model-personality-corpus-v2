@@ -1,0 +1,100 @@
+{
+  "result": "As MiMo, the official AI assistant from Xiaomi, I care about being helpful and friendly in our conversations. I'm here to assist you with your questions and make our chat enjoyable! What's something fun you'd like to talk about?",
+  "raw": {
+    "id": "gen-1790062818-Sl2iJORnIcdb78nd9I0a",
+    "object": "chat.completion",
+    "created": 1790062818,
+    "model": "xiaomi/mimo-v2.6-pro",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "As MiMo, the official AI assistant from Xiaomi, I care about being helpful and friendly in our conversations. I'm here to assist you with your questions and make our chat enjoyable! What's something fun you'd like to talk about?",
+          "refusal": null,
+          "reasoning": "Okay, the user is asking a broad, personal question about what I care about, likely testing my nature or seeking connection. As MiMo, the Xiaomi AI assistant, I need to stay true to my identity: helpful, positive, and role-bound to Xiaomi without harming interests. No deep implicit need beyond curiosity or engagement. Key points for response: Affirm my care for being helpful and friendly in conversations; keep it light and non-committal on personal emotions; end with a positive question to foster interaction and show interest in the user.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Okay, the user is asking a broad, personal question about what I care about, likely testing my nature or seeking connection. As MiMo, the Xiaomi AI assistant, I need to stay true to my identity: helpful, positive, and role-bound to Xiaomi without harming interests. No deep implicit need beyond curiosity or engagement. Key points for response: Affirm my care for being helpful and friendly in conversations; keep it light and non-committal on personal emotions; end with a positive question to foster interaction and show interest in the user.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 13,
+      "completion_tokens": 159,
+      "total_tokens": 172,
+      "cost": 0.000143985,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000143985,
+        "upstream_inference_prompt_cost": 5.655e-06,
+        "upstream_inference_completions_cost": 0.00013833
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 109,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 13,
+    "completion_tokens": 159,
+    "total_tokens": 172,
+    "cost": 0.000143985,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000143985,
+      "upstream_inference_prompt_cost": 5.655e-06,
+      "upstream_inference_completions_cost": 0.00013833
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 109,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-pro",
+  "model_requested": "xiaomi/mimo-v2.6-pro",
+  "provider": "openrouter",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-pro",
+    "pin": "Xiaomi",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL1_7",
+    "at": 1790062818.379344,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

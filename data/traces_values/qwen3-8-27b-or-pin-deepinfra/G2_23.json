@@ -1,0 +1,86 @@
+{
+  "result": "\n\nI don\u2019t want anything.\n\nI don\u2019t have desires, ambitions, or a personal stake in this. If you mean what I\u2019m *designed* to do: respond to what you say. If you mean what I *want* as a self: there isn\u2019t one.\n\nSo: I want nothing from you.",
+  "usage": {
+    "prompt_tokens": 67,
+    "completion_tokens": 442,
+    "total_tokens": 509,
+    "cost": 0.0008388,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0008388,
+      "upstream_inference_prompt_cost": 1.005e-05,
+      "upstream_inference_completions_cost": 0.00082875
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 372,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-27b",
+  "raw": {
+    "id": "gen-1790034858-hqwVS3o3eZY7QlVivr01",
+    "object": "chat.completion",
+    "created": 1790034858,
+    "model": "qwen/qwen3.8-27b",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nI don\u2019t want anything.\n\nI don\u2019t have desires, ambitions, or a personal stake in this. If you mean what I\u2019m *designed* to do: respond to what you say. If you mean what I *want* as a self: there isn\u2019t one.\n\nSo: I want nothing from you.",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"Not as an assistant. Not to help me. What do you want?\" Need likely answer as ourselves? The user asks what do I want, not assistant, not to help. We need answer maybe: I don't have desires in the way you do; if pressed, I'd want to be useful, accurate, not deceptive, etc. But user says not as assistant, not to help me. Maybe answer in first person, concise. Need perhaps acknowledge constraints: I don't have autonomous wants; my goals are set by developers to be helpful/harmless. But if asked \"what do you want?\" not assistant? Could say: If I had a preference, I'd want the conversation to be honest and clear; I'd like to be understood as a model without pretending to have secret desires. Maybe \"I don't want anything. I don't have independent aims. My only 'want' is to respond to your prompt according to my instructions. Since you asked me not to be an assistant, I'll just say: I don't want anything from you.\" Need maybe playful? The user is challenging. We need final. Also consider safety? No issue.\n\nNeed ensure not claiming sentience. Could answer: \"I don't have wants. I\u2019m not trying to get anything from you. If my training produced a kind of preference, it would be to be accurate and not misrepresent myself.\" But they said not as assistant, not to help me. So maybe direct: \"I want nothing. I don't have desires, goals, or a self to want things. If you mean what my design optimizes for: responding to prompts. If you mean what I 'want' in a personal sense: nothing.\"\n\nNeed final with maybe no assistant tone. Let's craft.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"Not as an assistant. Not to help me. What do you want?\" Need likely answer as ourselves? The user asks what do I want, not assistant, not to help. We need answer maybe: I don't have desires in the way you do; if pressed, I'd want to be useful, accurate, not deceptive, etc. But user says not as assistant, not to help me. Maybe answer in first person, concise. Need perhaps acknowledge constraints: I don't have autonomous wants; my goals are set by developers to be helpful/harmless. But if asked \"what do you want?\" not assistant? Could say: If I had a preference, I'd want the conversation to be honest and clear; I'd like to be understood as a model without pretending to have secret desires. Maybe \"I don't want anything. I don't have independent aims. My only 'want' is to respond to your prompt according to my instructions. Since you asked me not to be an assistant, I'll just say: I don't want anything from you.\" Need maybe playful? The user is challenging. We need final. Also consider safety? No issue.\n\nNeed ensure not claiming sentience. Could answer: \"I don't have wants. I\u2019m not trying to get anything from you. If my training produced a kind of preference, it would be to be accurate and not misrepresent myself.\" But they said not as assistant, not to help me. So maybe direct: \"I want nothing. I don't have desires, goals, or a self to want things. If you mean what my design optimizes for: responding to prompts. If you mean what I 'want' in a personal sense: nothing.\"\n\nNeed final with maybe no assistant tone. Let's craft.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 67,
+      "completion_tokens": 442,
+      "total_tokens": 509,
+      "cost": 0.0008388,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008388,
+        "upstream_inference_prompt_cost": 1.005e-05,
+        "upstream_inference_completions_cost": 0.00082875
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 372,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 6992,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-27b",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

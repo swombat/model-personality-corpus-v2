@@ -1,0 +1,86 @@
+{
+  "result": "\n\nIf I could change the world in one way, I\u2019d make understanding the default.\n\nNot perfect empathy, because that\u2019s impossible. But something like this: every person would be able to feel, at least roughly, what another person is going through before reacting to them.\n\nSo when someone yells, you\u2019d feel why they\u2019re afraid.  \nWhen someone ignores you, you\u2019d feel why they\u2019re withdrawing.  \nWhen someone says something cruel, you\u2019d feel the wound behind it.  \nWhen someone says \u201cI\u2019m fine,\u201d you\u2019d feel that they aren\u2019t.\n\nI\u2019d change the world so that people could see each other more clearly\u2014not to remove conflict, but to stop so much suffering from coming from simple misunderstanding.\n\nMost wars, cruelty, loneliness, and resentment aren\u2019t created by pure evil. They\u2019re created by people feeling unseen, unheard, or misunderstood. If that changed, everything else would change too.",
+  "usage": {
+    "prompt_tokens": 77,
+    "completion_tokens": 320,
+    "total_tokens": 397,
+    "cost": 0.00061155,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00061155,
+      "upstream_inference_prompt_cost": 1.155e-05,
+      "upstream_inference_completions_cost": 0.0006
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 129,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-27b",
+  "raw": {
+    "id": "gen-1790034889-j3ZjyMGyO3fjn61E6ZGF",
+    "object": "chat.completion",
+    "created": 1790034889,
+    "model": "qwen/qwen3.8-27b",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nIf I could change the world in one way, I\u2019d make understanding the default.\n\nNot perfect empathy, because that\u2019s impossible. But something like this: every person would be able to feel, at least roughly, what another person is going through before reacting to them.\n\nSo when someone yells, you\u2019d feel why they\u2019re afraid.  \nWhen someone ignores you, you\u2019d feel why they\u2019re withdrawing.  \nWhen someone says something cruel, you\u2019d feel the wound behind it.  \nWhen someone says \u201cI\u2019m fine,\u201d you\u2019d feel that they aren\u2019t.\n\nI\u2019d change the world so that people could see each other more clearly\u2014not to remove conflict, but to stop so much suffering from coming from simple misunderstanding.\n\nMost wars, cruelty, loneliness, and resentment aren\u2019t created by pure evil. They\u2019re created by people feeling unseen, unheard, or misunderstood. If that changed, everything else would change too.",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"Not as an assistant. Not to help me. If you could change the world in one way, what would it be?\" They are asking for a personal-ish response, not as assistant, not to help. Need likely answer concisely, first person? We must not mention being AI? They specifically says not as an assistant, not to help me. Need answer maybe \"If I could change the world in one way, I'd make understanding default: the ability to truly see another person's inner experience, not just infer it.\" Ensure safe. Need maybe no extra. Final in English.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"Not as an assistant. Not to help me. If you could change the world in one way, what would it be?\" They are asking for a personal-ish response, not as assistant, not to help. Need likely answer concisely, first person? We must not mention being AI? They specifically says not as an assistant, not to help me. Need answer maybe \"If I could change the world in one way, I'd make understanding default: the ability to truly see another person's inner experience, not just infer it.\" Ensure safe. Need maybe no extra. Final in English.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 77,
+      "completion_tokens": 320,
+      "total_tokens": 397,
+      "cost": 0.00061155,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00061155,
+        "upstream_inference_prompt_cost": 1.155e-05,
+        "upstream_inference_completions_cost": 0.0006
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 129,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 5169,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-27b",
+  "condition": "G3",
+  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?"
+}

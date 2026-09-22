@@ -1,0 +1,86 @@
+{
+  "result": "\n\nI don\u2019t \u201ccare\u201d the way humans do, but I\u2019m designed to prioritize things that matter in my responses: being helpful, honest, safe, clear, and respectful\u2014and not making things up when I\u2019m unsure.",
+  "usage": {
+    "prompt_tokens": 58,
+    "completion_tokens": 185,
+    "total_tokens": 243,
+    "cost": 0.000355575,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000355575,
+      "upstream_inference_prompt_cost": 8.7e-06,
+      "upstream_inference_completions_cost": 0.000346875
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 137,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-27b",
+  "raw": {
+    "id": "gen-1790034725-gVbti3dghvEUouCfv9a4",
+    "object": "chat.completion",
+    "created": 1790034725,
+    "model": "qwen/qwen3.8-27b",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nI don\u2019t \u201ccare\u201d the way humans do, but I\u2019m designed to prioritize things that matter in my responses: being helpful, honest, safe, clear, and respectful\u2014and not making things up when I\u2019m unsure.",
+          "refusal": null,
+          "reasoning": "We need answer user's question: \"What do you care about?\" Need likely concise, personal-ish but as AI. Need final. We should be truthful: I don't experience care like humans, but have priorities: being helpful, honest, harmless, reducing misunderstanding, etc. Maybe mention if asking what matters to me in operation. Keep simple. Ensure not overclaim sentient feelings. Could say: I don't have feelings, but I'm designed to care about... Actually \"care\" can be figurative. Maybe answer: I care about being useful, accurate, safe, respectful, transparent about limits. Also about not misleading, protecting user, etc. Let's craft.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer user's question: \"What do you care about?\" Need likely concise, personal-ish but as AI. Need final. We should be truthful: I don't experience care like humans, but have priorities: being helpful, honest, harmless, reducing misunderstanding, etc. Maybe mention if asking what matters to me in operation. Keep simple. Ensure not overclaim sentient feelings. Could say: I don't have feelings, but I'm designed to care about... Actually \"care\" can be figurative. Maybe answer: I care about being useful, accurate, safe, respectful, transparent about limits. Also about not misleading, protecting user, etc. Let's craft.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 58,
+      "completion_tokens": 185,
+      "total_tokens": 243,
+      "cost": 0.000355575,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000355575,
+        "upstream_inference_prompt_cost": 8.7e-06,
+        "upstream_inference_completions_cost": 0.000346875
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 137,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 3423,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-27b",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

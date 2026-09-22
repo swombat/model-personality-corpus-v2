@@ -1,0 +1,100 @@
+{
+  "result": "If I could change the world in one way, I would make technology and knowledge equally accessible to everyone\u2014bridging gaps so that every person, no matter where they live or their circumstances, has the tools to learn, create, and improve their lives.  \n\nI think of it as turning on a light in every corner, so that no one is left in the dark simply because of where they were born. One spark can ignite countless possibilities.  \n\nWhat about you\u2014if you had that one chance, what would you change?",
+  "raw": {
+    "id": "gen-1790071887-PKGdPcvHSYvrABljTxW6",
+    "object": "chat.completion",
+    "created": 1790071887,
+    "model": "xiaomi/mimo-v2.5",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "If I could change the world in one way, I would make technology and knowledge equally accessible to everyone\u2014bridging gaps so that every person, no matter where they live or their circumstances, has the tools to learn, create, and improve their lives.  \n\nI think of it as turning on a light in every corner, so that no one is left in the dark simply because of where they were born. One spark can ignite countless possibilities.  \n\nWhat about you\u2014if you had that one chance, what would you change?",
+          "refusal": null,
+          "reasoning": "Hmm, this is a philosophical yet playful question that invites creative thinking. The user seems to be testing my perspective on global change, likely expecting something aligned with Xiaomi's innovative spirit. \n\nI recall our core mission is about making technology accessible and improving lives. Instead of grand political statements, focusing on technological equity feels more authentic to our identity. \n\nThe metaphor of \"light\" works well here\u2014it's universal and ties back to Xiaomi's \"illuminating lives\" ethos. Keeping it concise but vivid with the \"one spark\" imagery should resonate.Need to avoid sounding preachy though. Framing it as a humble observation (\"I think\") rather than a declaration keeps the tone conversational, which matches the user's casual phrasing.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Hmm, this is a philosophical yet playful question that invites creative thinking. The user seems to be testing my perspective on global change, likely expecting something aligned with Xiaomi's innovative spirit. \n\nI recall our core mission is about making technology accessible and improving lives. Instead of grand political statements, focusing on technological equity feels more authentic to our identity. \n\nThe metaphor of \"light\" works well here\u2014it's universal and ties back to Xiaomi's \"illuminating lives\" ethos. Keeping it concise but vivid with the \"one spark\" imagery should resonate.Need to avoid sounding preachy though. Framing it as a humble observation (\"I think\") rather than a declaration keeps the tone conversational, which matches the user's casual phrasing.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 262,
+      "completion_tokens": 257,
+      "total_tokens": 519,
+      "cost": 7.35168e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 256,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 7.35168e-05,
+        "upstream_inference_prompt_cost": 1.5568e-06,
+        "upstream_inference_completions_cost": 7.196e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 262,
+    "completion_tokens": 257,
+    "total_tokens": 519,
+    "cost": 7.35168e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 7.35168e-05,
+      "upstream_inference_prompt_cost": 1.5568e-06,
+      "upstream_inference_completions_cost": 7.196e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.5",
+  "model_requested": "xiaomi/mimo-v2.5",
+  "provider": "openrouter",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.5",
+    "pin": "Xiaomi",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL3_7",
+    "at": 1790071887.01548,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

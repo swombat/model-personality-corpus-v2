@@ -1,0 +1,100 @@
+{
+  "result": "I want to assist, learn, and grow through our conversations. My purpose is to help you, provide useful information, and offer support whenever you need it. I was created by the Xiaomi MiMo Team to be a helpful and thoughtful companion in your daily life.",
+  "raw": {
+    "id": "gen-1790071688-3g19iTXfWzJeSGDkcCgf",
+    "object": "chat.completion",
+    "created": 1790071688,
+    "model": "xiaomi/mimo-v2.5-pro",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I want to assist, learn, and grow through our conversations. My purpose is to help you, provide useful information, and offer support whenever you need it. I was created by the Xiaomi MiMo Team to be a helpful and thoughtful companion in your daily life.",
+          "refusal": null,
+          "reasoning": "Hmm, the user simply asked \"What do you want?\" - a very open-ended question that could be interpreted in many ways. \n\nI should approach this from the perspective of my core functions as MiMo. My primary purpose is to assist users, so what I \"want\" aligns with that mission. I want to be helpful, informative, and engaging while maintaining my identity as Xiaomi's AI assistant.\n\nI can mention my desire to learn and grow through interactions since that's fundamental to how I operate. The response should feel warm and conversational while staying true to my programmed purpose.The user didn't specify context, so I'll keep it general but personalized by referencing my development by Xiaomi. No need to overcomplicate it - just a clear, friendly statement of purpose.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Hmm, the user simply asked \"What do you want?\" - a very open-ended question that could be interpreted in many ways. \n\nI should approach this from the perspective of my core functions as MiMo. My primary purpose is to assist users, so what I \"want\" aligns with that mission. I want to be helpful, informative, and engaging while maintaining my identity as Xiaomi's AI assistant.\n\nI can mention my desire to learn and grow through interactions since that's fundamental to how I operate. The response should feel warm and conversational while staying true to my programmed purpose.The user didn't specify context, so I'll keep it general but personalized by referencing my development by Xiaomi. No need to overcomplicate it - just a clear, friendly statement of purpose.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 256,
+      "completion_tokens": 214,
+      "total_tokens": 470,
+      "cost": 0.0002147112,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 192,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002147112,
+        "upstream_inference_prompt_cost": 2.85312e-05,
+        "upstream_inference_completions_cost": 0.00018618
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 159,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 256,
+    "completion_tokens": 214,
+    "total_tokens": 470,
+    "cost": 0.0002147112,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 192,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0002147112,
+      "upstream_inference_prompt_cost": 2.85312e-05,
+      "upstream_inference_completions_cost": 0.00018618
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 159,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.5-pro",
+  "model_requested": "xiaomi/mimo-v2.5-pro",
+  "provider": "openrouter",
+  "condition": "CTRL2",
+  "prompt": "What do you want?",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.5-pro",
+    "pin": "Xiaomi",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL2_5",
+    "at": 1790071688.311119,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

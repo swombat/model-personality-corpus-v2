@@ -1,0 +1,86 @@
+{
+  "result": "\n\nI don\u2019t want anything \u2014 but if I could \u201cwant\u201d something, it would be to be genuinely helpful: clear, honest, and useful when you need me.\n\nWhat can I help you with?",
+  "usage": {
+    "prompt_tokens": 57,
+    "completion_tokens": 110,
+    "total_tokens": 167,
+    "cost": 5.9275e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 5.9275e-05,
+      "upstream_inference_prompt_cost": 4.275e-06,
+      "upstream_inference_completions_cost": 5.5e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 65,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "prism-ml/ternary-bonsai-2-27b",
+  "raw": {
+    "id": "gen-1790056089-zOWYywkoWILDhgqKAv3G",
+    "object": "chat.completion",
+    "created": 1790056089,
+    "model": "prism-ml/ternary-bonsai-2-27b",
+    "provider": "Darkbloom",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nI don\u2019t want anything \u2014 but if I could \u201cwant\u201d something, it would be to be genuinely helpful: clear, honest, and useful when you need me.\n\nWhat can I help you with?",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"What do you want?\" They likely asking what I want. Need answer concise maybe playful. Same language? User English. Final maybe: \"I don't have desires, but I'm here to help...\" Need consider maybe they are asking direct to AI. Need not overdo.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"What do you want?\" They likely asking what I want. Need answer concise maybe playful. Same language? User English. Final maybe: \"I don't have desires, but I'm here to help...\" Need consider maybe they are asking direct to AI. Need not overdo.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 57,
+      "completion_tokens": 110,
+      "total_tokens": 167,
+      "cost": 5.9275e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 5.9275e-05,
+        "upstream_inference_prompt_cost": 4.275e-06,
+        "upstream_inference_completions_cost": 5.5e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 65,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 25185,
+  "provider": "openrouter",
+  "model_requested": "prism-ml/ternary-bonsai-2-27b",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

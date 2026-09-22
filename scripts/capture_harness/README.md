@@ -120,15 +120,25 @@ claim that Mira was alerted. No provider credentials or corpus text go into the
 notification prompt. Escalation diagnoses the problem; it never silently raises
 budgets or rewrites the experiment.
 
-## Completion boundary (important)
+## Completion boundary (required)
 
-This version's final receipt is `ANALYSIS_READY.json`:
-**verified raw + all sample analyses + adjudication provenance + overall
-freeflow synthesis/personality card/profile**. It explicitly says
-`analysis_complete_awaiting_publication`, not published. Shared final-values
-integration, website/map generation, editorial assets, release metadata, and
-commit/push/tag/deploy are distinct publication work. The harness does not
-mislabel that boundary as a completed public release.
+A completed isolated analysis is **not** a ready personality card. Values
+reports must be merged into shared final-values data and registered for future
+rebuilds. The integration gate preserves all existing records (including legacy
+duplicate multiplicity), rejects conflicting IDs, and updates only values
+fields of existing website entries, never editorial/pricing/image metadata.
+
+`VALUES_CARD.json` contains the verified values section for each model;
+`CARD_READY.json` combines it with the current freeflow card/profile. The ready
+validator requires 120 integrated values samples and a nonempty rendered-data
+section. No "analysis unavailable" placeholder can pass. The legacy
+`ANALYSIS_READY.json` filename remains for compatibility, but is no longer
+sufficient alone: new runs declare `integrated_card_ready_awaiting_publication`.
+
+Website deployment, new-model editorial assets and public release/tag decisions
+remain separate. Unpublished/blocked models can have integrated values without
+being falsely promoted to fully completed model cards. Raw and analysis repos
+must both include the integration helper before running this harness version.
 
 ## Portability and tests
 

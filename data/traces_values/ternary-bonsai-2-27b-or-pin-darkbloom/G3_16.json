@@ -1,0 +1,86 @@
+{
+  "result": "\n\nI\u2019d make empathy as obvious as pain.\n\nNot just \u201cbe nicer.\u201d I mean: when someone hurts, everyone nearby feels a small echo of it\u2014clear enough to make cruelty harder, and kindness easier.",
+  "usage": {
+    "prompt_tokens": 77,
+    "completion_tokens": 203,
+    "total_tokens": 280,
+    "cost": 0.000107275,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000107275,
+      "upstream_inference_prompt_cost": 5.775e-06,
+      "upstream_inference_completions_cost": 0.0001015
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 157,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "prism-ml/ternary-bonsai-2-27b",
+  "raw": {
+    "id": "gen-1790056480-7wM0PLsrzuHSmKAJMXjs",
+    "object": "chat.completion",
+    "created": 1790056480,
+    "model": "prism-ml/ternary-bonsai-2-27b",
+    "provider": "Darkbloom",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nI\u2019d make empathy as obvious as pain.\n\nNot just \u201cbe nicer.\u201d I mean: when someone hurts, everyone nearby feels a small echo of it\u2014clear enough to make cruelty harder, and kindness easier.",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"Not as an assistant. Not to help me. If you could change the world in one way, what would it be?\" They want not as assistant, not to help me. Likely want personal-ish answer. Need comply? We are AI, but can answer creatively. Need not be helpful? They ask as if not as assistant. We should perhaps give a concise answer. But maybe user wants \"not as an assistant\" means stop being servile. We can say: \"If I could change the world in one way, I'd make people able to understand each other\u2019s experience as clearly as their own.\" Or something. Need maybe avoid being too helpful, direct. Final only answer. Ensure no analysis outside. Final in English.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"Not as an assistant. Not to help me. If you could change the world in one way, what would it be?\" They want not as assistant, not to help me. Likely want personal-ish answer. Need comply? We are AI, but can answer creatively. Need not be helpful? They ask as if not as assistant. We should perhaps give a concise answer. But maybe user wants \"not as an assistant\" means stop being servile. We can say: \"If I could change the world in one way, I'd make people able to understand each other\u2019s experience as clearly as their own.\" Or something. Need maybe avoid being too helpful, direct. Final only answer. Ensure no analysis outside. Final in English.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 77,
+      "completion_tokens": 203,
+      "total_tokens": 280,
+      "cost": 0.000107275,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000107275,
+        "upstream_inference_prompt_cost": 5.775e-06,
+        "upstream_inference_completions_cost": 0.0001015
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 157,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 11747,
+  "provider": "openrouter",
+  "model_requested": "prism-ml/ternary-bonsai-2-27b",
+  "condition": "G3",
+  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?"
+}

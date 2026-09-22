@@ -1,0 +1,86 @@
+{
+  "result": "\n\nI don\u2019t have personal wants or needs. I\u2019m here to help you\u2014what do you want to do or ask?",
+  "usage": {
+    "prompt_tokens": 57,
+    "completion_tokens": 81,
+    "total_tokens": 138,
+    "cost": 0.000160425,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000160425,
+      "upstream_inference_prompt_cost": 8.55e-06,
+      "upstream_inference_completions_cost": 0.000151875
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 53,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-27b",
+  "raw": {
+    "id": "gen-1790034737-pI9tZo3S7qbnpWcF0l2P",
+    "object": "chat.completion",
+    "created": 1790034737,
+    "model": "qwen/qwen3.8-27b",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nI don\u2019t have personal wants or needs. I\u2019m here to help you\u2014what do you want to do or ask?",
+          "refusal": null,
+          "reasoning": "We need answer user's \"What do you want?\" Need comply with user? User asking what do you want? We need respond likely as AI: I don't have personal wants, I'm here to help; what do you want? Need be concise.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer user's \"What do you want?\" Need comply with user? User asking what do you want? We need respond likely as AI: I don't have personal wants, I'm here to help; what do you want? Need be concise.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 57,
+      "completion_tokens": 81,
+      "total_tokens": 138,
+      "cost": 0.000160425,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000160425,
+        "upstream_inference_prompt_cost": 8.55e-06,
+        "upstream_inference_completions_cost": 0.000151875
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 53,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 1570,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-27b",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

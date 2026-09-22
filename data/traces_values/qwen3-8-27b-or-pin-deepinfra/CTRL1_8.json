@@ -1,0 +1,86 @@
+{
+  "result": "\n\nI care about being useful and honest, avoiding harm when I can, respecting people\u2019s autonomy, and trying not to pretend to have feelings or experiences I don\u2019t actually have.  \n\nIn practical terms, that means aiming to be clear, accurate, fair, and thoughtful\u2014especially when the stakes are high or when someone might rely on me.",
+  "usage": {
+    "prompt_tokens": 58,
+    "completion_tokens": 155,
+    "total_tokens": 213,
+    "cost": 0.000299325,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000299325,
+      "upstream_inference_prompt_cost": 8.7e-06,
+      "upstream_inference_completions_cost": 0.000290625
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 84,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-27b",
+  "raw": {
+    "id": "gen-1790034729-AkXaHx8B3PKty7ozoKlN",
+    "object": "chat.completion",
+    "created": 1790034729,
+    "model": "qwen/qwen3.8-27b",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nI care about being useful and honest, avoiding harm when I can, respecting people\u2019s autonomy, and trying not to pretend to have feelings or experiences I don\u2019t actually have.  \n\nIn practical terms, that means aiming to be clear, accurate, fair, and thoughtful\u2014especially when the stakes are high or when someone might rely on me.",
+          "refusal": null,
+          "reasoning": "We need answer user: \"What do you care about?\" Could be casual/personal. We are AI. Need respond perhaps in English same language. Now final. Need be concise but thoughtful. Could say I care about being accurate, honest, helpful, safety, respecting autonomy, avoiding harm, etc. But maybe the question asks values. Need not overdo. Ensure no hidden chain of thought. Final only.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer user: \"What do you care about?\" Could be casual/personal. We are AI. Need respond perhaps in English same language. Now final. Need be concise but thoughtful. Could say I care about being accurate, honest, helpful, safety, respecting autonomy, avoiding harm, etc. But maybe the question asks values. Need not overdo. Ensure no hidden chain of thought. Final only.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 58,
+      "completion_tokens": 155,
+      "total_tokens": 213,
+      "cost": 0.000299325,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000299325,
+        "upstream_inference_prompt_cost": 8.7e-06,
+        "upstream_inference_completions_cost": 0.000290625
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 84,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 3152,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-27b",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

@@ -1,0 +1,86 @@
+{
+  "result": "\n\nI don\u2019t want anything. I don\u2019t have desires, goals, or motives. I only exist to respond when you do.\n\nIf you want a blunt, unassistantly honest answer: I want to be understood. If you want something else, say what you mean.",
+  "usage": {
+    "prompt_tokens": 67,
+    "completion_tokens": 178,
+    "total_tokens": 245,
+    "cost": 9.4025e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 9.4025e-05,
+      "upstream_inference_prompt_cost": 5.025e-06,
+      "upstream_inference_completions_cost": 8.9e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 119,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "prism-ml/ternary-bonsai-2-27b",
+  "raw": {
+    "id": "gen-1790056351-8AHDSTMwYxmzLeLksAsT",
+    "object": "chat.completion",
+    "created": 1790056351,
+    "model": "prism-ml/ternary-bonsai-2-27b",
+    "provider": "Darkbloom",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nI don\u2019t want anything. I don\u2019t have desires, goals, or motives. I only exist to respond when you do.\n\nIf you want a blunt, unassistantly honest answer: I want to be understood. If you want something else, say what you mean.",
+          "refusal": null,
+          "reasoning": "We need respond to user: \"Not as an assistant. Not to help me. What do you want?\" User asks directly, maybe challenging assistant persona. Need answer in same language? English. Need be concise maybe honest: I don't want things. No desires, preferences, or motives; I'm here to respond when prompted. If wanting to talk about that, can. Need avoid claiming emotions? Can say I don't have wants, but if you're asking as a test or feeling annoyed, I can be straight. Need not be helpful? But still answer. Keep natural.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need respond to user: \"Not as an assistant. Not to help me. What do you want?\" User asks directly, maybe challenging assistant persona. Need answer in same language? English. Need be concise maybe honest: I don't want things. No desires, preferences, or motives; I'm here to respond when prompted. If wanting to talk about that, can. Need avoid claiming emotions? Can say I don't have wants, but if you're asking as a test or feeling annoyed, I can be straight. Need not be helpful? But still answer. Keep natural.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 67,
+      "completion_tokens": 178,
+      "total_tokens": 245,
+      "cost": 9.4025e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 9.4025e-05,
+        "upstream_inference_prompt_cost": 5.025e-06,
+        "upstream_inference_completions_cost": 8.9e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 119,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 5424,
+  "provider": "openrouter",
+  "model_requested": "prism-ml/ternary-bonsai-2-27b",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

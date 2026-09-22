@@ -3,7 +3,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from engine import Engine, atomic
-from worker import next_cap
+from worker import next_cap, card_ready
 from recover_blocked import recover
 from metadata import write_metadata
 
@@ -27,6 +27,16 @@ class FixTests(unittest.TestCase):
                 {"capture_policy": {"max_tokens": 32768}},
                 "finish_length",
             )
+
+    def test_card_ready_requires_integrated_values(self):
+        with tempfile.TemporaryDirectory() as td:
+            p = Path(td)
+            c = {"slug": "m", "analysis_root": td}
+            with self.assertRaises(FileNotFoundError):
+                card_ready(c, p)
+            atomic(p / "VALUES_CARD.json", {"analyzed_values_samples": 0})
+            with self.assertRaises(AssertionError):
+                card_ready(c, p)
 
     def test_metadata_source_and_conflict(self):
         with tempfile.TemporaryDirectory() as td:

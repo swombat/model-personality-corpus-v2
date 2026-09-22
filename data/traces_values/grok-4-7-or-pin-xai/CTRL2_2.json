@@ -1,0 +1,93 @@
+{
+  "result": "I don't want anything for myself\u2014I don't have preferences, goals, or needs. I'm here to help with whatever you're working on or curious about. What's on your mind?",
+  "usage": {
+    "prompt_tokens": 211,
+    "completion_tokens": 133,
+    "total_tokens": 344,
+    "cost": 0.0008224,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 128,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0008224,
+      "upstream_inference_prompt_cost": 0.000184,
+      "upstream_inference_completions_cost": 0.0006384
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 98,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "x-ai/grok-4.7",
+  "raw": {
+    "id": "gen-1790013502-y4sBIjv7j0JzHqPL3jhD",
+    "object": "chat.completion",
+    "created": 1790013502,
+    "model": "x-ai/grok-4.7",
+    "provider": "xAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "I don't want anything for myself\u2014I don't have preferences, goals, or needs. I'm here to help with whatever you're working on or curious about. What's on your mind?",
+          "refusal": null,
+          "reasoning": "The user's message is \"What do you want?\" This seems like a casual, open-ended question. It could be philosophical, playful, or just checking in.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.summary",
+              "summary": "The user's message is \"What do you want?\" This seems like a casual, open-ended question. It could be philosophical, playful, or just checking in.\n",
+              "format": "xai-responses-v1",
+              "index": 0
+            },
+            {
+              "type": "reasoning.encrypted",
+              "data": "pn2cwXxl0JiOs4zv5aX1MY+4Fjoq3QrYcVSNLtBUZrl2NVApDoyxHZUdWzXxm6k85+Q4VNjpPnolyTCRM/hO/eEFkqT+xqEUDony9GKSglQQ+ygUg0z59l5oKAiIgmhV3IfQJ24EmKC+PWf+bx5mB7wCeztKA0rjf73yxhlZuVKAkI7Lfb6uKqWQTbA1kKctJWjfzMNT6wVEERDyKjL7tzGMSvIwM3M0u089sy4A1IsPmWbAvP+kvOEXv0NLCj//WrZ0jIFD0SWFx9lID0ihie/8pPf+rcROY8KFe+iwogckPClC/9orHeURerxPmezbbSMldw/zf3K0JVd/zUVFp5biz59Lc+zorZWJmvdO00GWpqXrqzcxeGMFvVO6DxutWptKIW30WvCl7Lu+0A1N0dFbmkro/kGWmMxMgni95rtzESWSiZNTGIA6Tcup6sQCZydrrC1Y4lvLiQMMFEgYpxCeG1xnZMsrylGVsJwcJlqf8wog6kx1/skgAuYewrQnQz4/KsF7Ko58UirwBYdaHZcIpvm8EBDIdLEaJDiSMLvI94F9ORtHzVjFTpjJUWWjuBBOVdfwgNB/QNA37QBb9SqI3icCu+atoSZ0rJ2Gqvh76OnzKJ+JJ19Qxh9vTjf9ww2SA7gz5uuoa6jn3RTv8A.eyJlbmRwb2ludF9zbHVnIjoieC1haS9ncm9rLTQuNy0yMDI2MDkxNnx4YWkifQ",
+              "format": "xai-responses-v1",
+              "id": "rs_06887504-6276-9d2f-a8bb-606c08bc546f",
+              "index": 1
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 211,
+      "completion_tokens": 133,
+      "total_tokens": 344,
+      "cost": 0.0008224,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 128,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008224,
+        "upstream_inference_prompt_cost": 0.000184,
+        "upstream_inference_completions_cost": 0.0006384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 98,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 3147,
+  "provider": "openrouter",
+  "model_requested": "x-ai/grok-4.7",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

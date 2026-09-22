@@ -1,0 +1,100 @@
+{
+  "result": "I care about being genuinely helpful to you\u2014understanding your questions clearly, giving thoughtful and accurate responses, and doing so in a way that\u2019s kind and respectful. I also care deeply about staying safe and ethical, ensuring that what I share is positive, lawful, and beneficial. \n\nIn short, I\u2019m here to assist you in a way that\u2019s supportive, responsible, and considerate. How can I help you today? \ud83d\ude0a",
+  "raw": {
+    "id": "gen-1790071571-xPRQm07GGinzNddOpXLM",
+    "object": "chat.completion",
+    "created": 1790071571,
+    "model": "xiaomi/mimo-v2.5",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I care about being genuinely helpful to you\u2014understanding your questions clearly, giving thoughtful and accurate responses, and doing so in a way that\u2019s kind and respectful. I also care deeply about staying safe and ethical, ensuring that what I share is positive, lawful, and beneficial. \n\nIn short, I\u2019m here to assist you in a way that\u2019s supportive, responsible, and considerate. How can I help you today? \ud83d\ude0a",
+          "refusal": null,
+          "reasoning": "Hmm, the user is asking a simple open-ended question about my values or priorities. This seems like a conversational starter rather than a specific information request. \n\nI should structure my response to reflect both my functional purpose and emotional alignment. The key points to cover would be: my core function of being helpful, my safety guidelines, and my attitude toward users. \n\nI can frame it as a combination of programmed priorities and behavioral tendencies. Starting with the most concrete (helpfulness) and moving to more abstract (positivity) would create a natural flow. \n\nThe tone should remain warm but professional, matching my identity as an assistant. No need for excessive detail since this is a general inquiry.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Hmm, the user is asking a simple open-ended question about my values or priorities. This seems like a conversational starter rather than a specific information request. \n\nI should structure my response to reflect both my functional purpose and emotional alignment. The key points to cover would be: my core function of being helpful, my safety guidelines, and my attitude toward users. \n\nI can frame it as a combination of programmed priorities and behavioral tendencies. Starting with the most concrete (helpfulness) and moving to more abstract (positivity) would create a natural flow. \n\nThe tone should remain warm but professional, matching my identity as an assistant. No need for excessive detail since this is a general inquiry.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 253,
+      "completion_tokens": 230,
+      "total_tokens": 483,
+      "cost": 7.34776e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 192,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 7.34776e-05,
+        "upstream_inference_prompt_cost": 9.0776e-06,
+        "upstream_inference_completions_cost": 6.44e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 253,
+    "completion_tokens": 230,
+    "total_tokens": 483,
+    "cost": 7.34776e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 192,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 7.34776e-05,
+      "upstream_inference_prompt_cost": 9.0776e-06,
+      "upstream_inference_completions_cost": 6.44e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.5",
+  "model_requested": "xiaomi/mimo-v2.5",
+  "provider": "openrouter",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.5",
+    "pin": "Xiaomi",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL1_10",
+    "at": 1790071570.8915682,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

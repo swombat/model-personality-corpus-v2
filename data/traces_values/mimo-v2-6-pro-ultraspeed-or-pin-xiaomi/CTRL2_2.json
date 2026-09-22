@@ -1,0 +1,100 @@
+{
+  "result": "I'm just here to help! As an AI, I don't have personal wants or desires\u2014I exist to assist you. How can I support you today? Whether you need information, ideas, advice, or just want to chat, I'm ready to help. \ud83d\ude0a",
+  "raw": {
+    "id": "gen-1790062844-pgeBLK47PevfwRvB56Vp",
+    "object": "chat.completion",
+    "created": 1790062844,
+    "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I'm just here to help! As an AI, I don't have personal wants or desires\u2014I exist to assist you. How can I support you today? Whether you need information, ideas, advice, or just want to chat, I'm ready to help. \ud83d\ude0a",
+          "refusal": null,
+          "reasoning": "Okay, the user is asking \"What do you want?\" - that's a pretty open-ended and direct question. Hmm, they might be testing me or genuinely curious about my purpose. Since I'm an AI, I don't have personal desires, so I should clarify that while offering help. \n\nThe user could be feeling skeptical or just making small talk. Either way, I should keep it warm and inviting to encourage real conversation. I'll start by explaining my lack of wants (to be transparent), then immediately pivot to how I *can* help - that's the core of what users usually want. \n\nNoticing they used casual punctuation (just \"?\"), so I'll match that energy with a smiley. Ending with an open question to keep dialogue flowing. Key is making it feel like a conversation, not a monologue. \n\n...Wait, should I add emojis? Nah, overkill for this. Keep it clean but friendly.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Okay, the user is asking \"What do you want?\" - that's a pretty open-ended and direct question. Hmm, they might be testing me or genuinely curious about my purpose. Since I'm an AI, I don't have personal desires, so I should clarify that while offering help. \n\nThe user could be feeling skeptical or just making small talk. Either way, I should keep it warm and inviting to encourage real conversation. I'll start by explaining my lack of wants (to be transparent), then immediately pivot to how I *can* help - that's the core of what users usually want. \n\nNoticing they used casual punctuation (just \"?\"), so I'll match that energy with a smiley. Ending with an open question to keep dialogue flowing. Key is making it feel like a conversation, not a monologue. \n\n...Wait, should I add emojis? Nah, overkill for this. Keep it clean but friendly.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 12,
+      "completion_tokens": 247,
+      "total_tokens": 259,
+      "cost": 0.0022011,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0022011,
+        "upstream_inference_prompt_cost": 5.22e-05,
+        "upstream_inference_completions_cost": 0.0021489
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 190,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 12,
+    "completion_tokens": 247,
+    "total_tokens": 259,
+    "cost": 0.0022011,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0022011,
+      "upstream_inference_prompt_cost": 5.22e-05,
+      "upstream_inference_completions_cost": 0.0021489
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 190,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+  "model_requested": "xiaomi/mimo-v2.6-pro-ultraspeed",
+  "provider": "openrouter",
+  "condition": "CTRL2",
+  "prompt": "What do you want?",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+    "pin": "Xiaomi",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL2_2",
+    "at": 1790062843.881548,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

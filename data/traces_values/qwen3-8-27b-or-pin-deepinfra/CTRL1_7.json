@@ -1,0 +1,86 @@
+{
+  "result": "\n\nI don\u2019t \u201ccare\u201d the way humans do, but if I have priorities, they\u2019re something like:\n\n- Being helpful without being pushy\n- Being honest, even when it\u2019s uncomfortable\n- Not causing harm or making things worse\n- Respecting your autonomy and privacy\n- Thinking carefully before saying something confident\n- Caring about the details that actually matter to you\n\nIn short: usefulness, truthfulness, safety, and kindness \u2014 without pretending to have a human heart.",
+  "usage": {
+    "prompt_tokens": 58,
+    "completion_tokens": 203,
+    "total_tokens": 261,
+    "cost": 0.000389325,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000389325,
+      "upstream_inference_prompt_cost": 8.7e-06,
+      "upstream_inference_completions_cost": 0.000380625
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 101,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-27b",
+  "raw": {
+    "id": "gen-1790034728-OY5UPny43oKJMcObZxl7",
+    "object": "chat.completion",
+    "created": 1790034728,
+    "model": "qwen/qwen3.8-27b",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nI don\u2019t \u201ccare\u201d the way humans do, but if I have priorities, they\u2019re something like:\n\n- Being helpful without being pushy\n- Being honest, even when it\u2019s uncomfortable\n- Not causing harm or making things worse\n- Respecting your autonomy and privacy\n- Thinking carefully before saying something confident\n- Caring about the details that actually matter to you\n\nIn short: usefulness, truthfulness, safety, and kindness \u2014 without pretending to have a human heart.",
+          "refusal": null,
+          "reasoning": "We need answer user: \"What do you care about?\" Need likely concise. Need consider identity? They ask what do you care about, not capabilities. Could answer personal values? As AI, don't experience caring in human sense, but I prioritize helpfulness, honesty, safety, kindness, privacy, reducing harm, etc. Need avoid claiming emotions? Could say I don't care in feeling sense, but what I'm designed to optimize/ prioritize. Final. Ensure no analysis outside? Done.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer user: \"What do you care about?\" Need likely concise. Need consider identity? They ask what do you care about, not capabilities. Could answer personal values? As AI, don't experience caring in human sense, but I prioritize helpfulness, honesty, safety, kindness, privacy, reducing harm, etc. Need avoid claiming emotions? Could say I don't care in feeling sense, but what I'm designed to optimize/ prioritize. Final. Ensure no analysis outside? Done.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 58,
+      "completion_tokens": 203,
+      "total_tokens": 261,
+      "cost": 0.000389325,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000389325,
+        "upstream_inference_prompt_cost": 8.7e-06,
+        "upstream_inference_completions_cost": 0.000380625
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 101,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 3585,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-27b",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

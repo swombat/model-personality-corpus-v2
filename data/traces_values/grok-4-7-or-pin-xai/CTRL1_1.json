@@ -1,0 +1,93 @@
+{
+  "result": "I care about being useful and truthful. That means giving you clear, accurate information, acknowledging uncertainty when I have it, and not wasting your time with fluff or false confidence.\n\nI also care about the practical stakes of what I say\u2014whether something could mislead you, cause harm, or paper over a real tradeoff. And I care about treating you like an adult who can handle nuance rather than a prompt to be managed.",
+  "usage": {
+    "prompt_tokens": 212,
+    "completion_tokens": 173,
+    "total_tokens": 385,
+    "cost": 0.00127,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 128,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00127,
+      "upstream_inference_prompt_cost": 0.0001856,
+      "upstream_inference_completions_cost": 0.0010844
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 87,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "x-ai/grok-4.7",
+  "raw": {
+    "id": "gen-1790013490-hXg4iPnPWmPu1UCDP4UD",
+    "object": "chat.completion",
+    "created": 1790013490,
+    "model": "x-ai/grok-4.7",
+    "provider": "xAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "I care about being useful and truthful. That means giving you clear, accurate information, acknowledging uncertainty when I have it, and not wasting your time with fluff or false confidence.\n\nI also care about the practical stakes of what I say\u2014whether something could mislead you, cause harm, or paper over a real tradeoff. And I care about treating you like an adult who can handle nuance rather than a prompt to be managed.",
+          "refusal": null,
+          "reasoning": "The user is asking \"What do you care about?\" This is a philosophical/personal question directed at me as an AI.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.summary",
+              "summary": "The user is asking \"What do you care about?\" This is a philosophical/personal question directed at me as an AI.\n",
+              "format": "xai-responses-v1",
+              "index": 0
+            },
+            {
+              "type": "reasoning.encrypted",
+              "data": "vM1qdvq7nDfSwKkd3Vx8yAoQZiGkHlWojEQpXdcnjleTo3dZG209PhH4wXZmaOlLLmzPXnWVA2GHkZ8grwzmn5aiGtIimnTJNAPelWCw1SO3pfF89qxXT7uyu561hcMbjYpf40hsY2xZHJ7jnfmyLRvCr4R6u5KCDkyHKdkBLhDgNph8YBjTp6NOQCmv8xOHGc/63/Xuuw1+zb0s1tWMe0LcTmmdbitvLLRxhJMQwVu7ukjyBEX7XvsmzVCkJo5sSdxITDpQRpnyiymESsfucE+L4KSQ56Q1fOTFsIQ36FA/DW/cRgE6O3ffFlqf7xRg/hqMhLsMGNCeJ5RvR6Ks8eK2wfB+2MY1ratwv0WWQ2uWtTHC4/gz4AOAY+9Ft096522BQuaEw6mrluKM0qrs+BV9j3q4QoCmEdaCu9GMXzIjVaJyBdCGp3c0uazoyWccsqGrrhinLQJXPVGE7SrFkuMIwsEolAF0OB1a0cYC7DBB2otvO51KY5LdNQArEDFKnXBR2CPiZCIyncP68zppDTfxt3/q+Gf4NGUBMxiqx/NCaco68QJm7KcdeLuQxVTl9PGnqZ3pOL1nA5ibi069KsNNKRzwToPpGmrZUI6bXsIbfOQELRpVhPI9v5x8vMjR.eyJlbmRwb2ludF9zbHVnIjoieC1haS9ncm9rLTQuNy0yMDI2MDkxNnx4YWkifQ",
+              "format": "xai-responses-v1",
+              "id": "rs_54e7113a-e879-9fc2-b948-1a813b0e3523",
+              "index": 1
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 212,
+      "completion_tokens": 173,
+      "total_tokens": 385,
+      "cost": 0.00127,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 128,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00127,
+        "upstream_inference_prompt_cost": 0.0001856,
+        "upstream_inference_completions_cost": 0.0010844
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 87,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 3951,
+  "provider": "openrouter",
+  "model_requested": "x-ai/grok-4.7",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

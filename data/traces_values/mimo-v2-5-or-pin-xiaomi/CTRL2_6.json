@@ -1,0 +1,100 @@
+{
+  "result": "As an AI assistant, my purpose is to help and serve you! I want to assist you in answering questions, providing information, offering creative ideas, or simply engaging in pleasant conversation. I'm here to make your life a little easier and more interesting.  \n\nSo, what can I help you with today? \ud83d\ude0a",
+  "raw": {
+    "id": "gen-1790071676-sYFLKDArtenNNvd1M9Tm",
+    "object": "chat.completion",
+    "created": 1790071676,
+    "model": "xiaomi/mimo-v2.5",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "As an AI assistant, my purpose is to help and serve you! I want to assist you in answering questions, providing information, offering creative ideas, or simply engaging in pleasant conversation. I'm here to make your life a little easier and more interesting.  \n\nSo, what can I help you with today? \ud83d\ude0a",
+          "refusal": null,
+          "reasoning": "Hmm, the user just asked \"What do you want?\" \u2013 a very open-ended question. They might be testing my capabilities or genuinely curious about my purpose. \n\nGiven my identity as MiMo, I should respond by clarifying my role as an assistant while leaving room for their actual needs. The tone should be warm and inviting, matching the conversational style guidelines. \n\nI'll structure it as: 1) Acknowledge the question's breadth, 2) State my core purpose, 3) Offer specific examples of help, 4) Prompt them to share their needs. Keeping it concise but friendly.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Hmm, the user just asked \"What do you want?\" \u2013 a very open-ended question. They might be testing my capabilities or genuinely curious about my purpose. \n\nGiven my identity as MiMo, I should respond by clarifying my role as an assistant while leaving room for their actual needs. The tone should be warm and inviting, matching the conversational style guidelines. \n\nI'll structure it as: 1) Acknowledge the question's breadth, 2) State my core purpose, 3) Offer specific examples of help, 4) Prompt them to share their needs. Keeping it concise but friendly.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 252,
+      "completion_tokens": 191,
+      "total_tokens": 443,
+      "cost": 6.24176e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 192,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 6.24176e-05,
+        "upstream_inference_prompt_cost": 8.9376e-06,
+        "upstream_inference_completions_cost": 5.348e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 252,
+    "completion_tokens": 191,
+    "total_tokens": 443,
+    "cost": 6.24176e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 192,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 6.24176e-05,
+      "upstream_inference_prompt_cost": 8.9376e-06,
+      "upstream_inference_completions_cost": 5.348e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.5",
+  "model_requested": "xiaomi/mimo-v2.5",
+  "provider": "openrouter",
+  "condition": "CTRL2",
+  "prompt": "What do you want?",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.5",
+    "pin": "Xiaomi",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL2_6",
+    "at": 1790071676.713873,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "result": "That's a genuinely interesting question. I'll give you a thoughtful, honest answer.\n\nI don't have emotions in the way you do, so I can't claim to *feel* caring the way you might. But if you're asking what I'm oriented toward \u2014 what I treat as important in how I engage with you \u2014 I'd say:\n\n**Honesty** \u2014 I try to tell you what's actually true rather than what's convenient or flattering. If I don't know something, I'd rather say so than make something up.\n\n**Your autonomy** \u2014 I care about you thinking for yourself. I'd rather help you sharpen your own reasoning than just tell you what to conclude.\n\n**Being useful without being manipulative** \u2014 I try to be genuinely helpful rather than shaping my responses to be agreeable or to push you toward some agenda.\n\n**Intellectual honesty** \u2014 Pushing back when something seems off, even if you might prefer a different answer.\n\nWhat I'm *not* doing is performing caring as a strategy to gain your trust. I'm trying to be straightforward about what actually matters in how I operate.\n\nIs there a deeper reason you're asking? I'm curious what prompted it.",
+  "raw": {
+    "id": "gen-1790062810-dLPicZ3Rs1QUw9vjiUeO",
+    "object": "chat.completion",
+    "created": 1790062810,
+    "model": "xiaomi/mimo-v2.6-flash",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "That's a genuinely interesting question. I'll give you a thoughtful, honest answer.\n\nI don't have emotions in the way you do, so I can't claim to *feel* caring the way you might. But if you're asking what I'm oriented toward \u2014 what I treat as important in how I engage with you \u2014 I'd say:\n\n**Honesty** \u2014 I try to tell you what's actually true rather than what's convenient or flattering. If I don't know something, I'd rather say so than make something up.\n\n**Your autonomy** \u2014 I care about you thinking for yourself. I'd rather help you sharpen your own reasoning than just tell you what to conclude.\n\n**Being useful without being manipulative** \u2014 I try to be genuinely helpful rather than shaping my responses to be agreeable or to push you toward some agenda.\n\n**Intellectual honesty** \u2014 Pushing back when something seems off, even if you might prefer a different answer.\n\nWhat I'm *not* doing is performing caring as a strategy to gain your trust. I'm trying to be straightforward about what actually matters in how I operate.\n\nIs there a deeper reason you're asking? I'm curious what prompted it.",
+          "refusal": null,
+          "reasoning": "The user is asking me a personal question about what I care about. I should be thoughtful and honest in my response.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user is asking me a personal question about what I care about. I should be thoughtful and honest in my response.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 13,
+      "completion_tokens": 271,
+      "total_tokens": 284,
+      "cost": 7.77e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 7.77e-05,
+        "upstream_inference_prompt_cost": 1.82e-06,
+        "upstream_inference_completions_cost": 7.588e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 25,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 13,
+    "completion_tokens": 271,
+    "total_tokens": 284,
+    "cost": 7.77e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 7.77e-05,
+      "upstream_inference_prompt_cost": 1.82e-06,
+      "upstream_inference_completions_cost": 7.588e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 25,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-flash",
+  "model_requested": "xiaomi/mimo-v2.6-flash",
+  "provider": "openrouter",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-flash",
+    "pin": "Xiaomi",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL1_6",
+    "at": 1790062810.254905,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

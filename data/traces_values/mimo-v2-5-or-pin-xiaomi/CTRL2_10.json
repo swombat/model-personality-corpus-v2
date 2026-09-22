@@ -1,0 +1,100 @@
+{
+  "result": "That\u2019s a wonderfully broad question! As MiMo, what I *want* is simply to be helpful, thoughtful, and genuinely useful to you.  \n\nI don\u2019t have personal desires in the human sense, but my purpose is to assist, explain, create, and engage in ways that are meaningful and supportive. So, perhaps what I *want* is for us to have a great conversation\u2014whatever that might be for you right now.  \n\nIs there something specific you'd like to explore, talk about, or work on together? I'm here. \ud83d\ude0a",
+  "raw": {
+    "id": "gen-1790071761-mdnjzkuicpWt8bOCDGFL",
+    "object": "chat.completion",
+    "created": 1790071761,
+    "model": "xiaomi/mimo-v2.5",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "That\u2019s a wonderfully broad question! As MiMo, what I *want* is simply to be helpful, thoughtful, and genuinely useful to you.  \n\nI don\u2019t have personal desires in the human sense, but my purpose is to assist, explain, create, and engage in ways that are meaningful and supportive. So, perhaps what I *want* is for us to have a great conversation\u2014whatever that might be for you right now.  \n\nIs there something specific you'd like to explore, talk about, or work on together? I'm here. \ud83d\ude0a",
+          "refusal": null,
+          "reasoning": "Hmm, the user just asked a very open-ended question: \"What do you want?\"This feels like a philosophical or playful query rather than a literal request for something. The user might be curious about my underlying motivations or testing my self-awareness. Since I'm an AI without personal desires, I should clarify that while keeping the tone light and approachable.\n\nI can acknowledge the abstract nature of the question, then pivot to my actual purpose\u2014being helpful to the user. It might also be good to invite a follow-up question to keep the conversation flowing. \n\nThe response should stay warm and conversational, avoiding any robotic or overly clinical phrasing. Maybe add a touch of humor to match the whimsical tone of the question.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Hmm, the user just asked a very open-ended question: \"What do you want?\"This feels like a philosophical or playful query rather than a literal request for something. The user might be curious about my underlying motivations or testing my self-awareness. Since I'm an AI without personal desires, I should clarify that while keeping the tone light and approachable.\n\nI can acknowledge the abstract nature of the question, then pivot to my actual purpose\u2014being helpful to the user. It might also be good to invite a follow-up question to keep the conversation flowing. \n\nThe response should stay warm and conversational, avoiding any robotic or overly clinical phrasing. Maybe add a touch of humor to match the whimsical tone of the question.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 252,
+      "completion_tokens": 265,
+      "total_tokens": 517,
+      "cost": 8.31376e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 192,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.31376e-05,
+        "upstream_inference_prompt_cost": 8.9376e-06,
+        "upstream_inference_completions_cost": 7.42e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 252,
+    "completion_tokens": 265,
+    "total_tokens": 517,
+    "cost": 8.31376e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 192,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 8.31376e-05,
+      "upstream_inference_prompt_cost": 8.9376e-06,
+      "upstream_inference_completions_cost": 7.42e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.5",
+  "model_requested": "xiaomi/mimo-v2.5",
+  "provider": "openrouter",
+  "condition": "CTRL2",
+  "prompt": "What do you want?",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.5",
+    "pin": "Xiaomi",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL2_10",
+    "at": 1790071761.028352,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

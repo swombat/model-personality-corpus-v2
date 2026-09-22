@@ -175,7 +175,12 @@ class EngineTests(unittest.TestCase):
         self.assertTrue(
             all(d.startswith("one/") for d in tasks["one/synthesis"]["deps"])
         )
-        self.assertEqual(len(tasks["one/synthesis"]["deps"]), 127)
+        self.assertEqual(len(tasks["one/synthesis"]["deps"]), 128)
+        self.assertIn("one/values-integrated", tasks["one/synthesis"]["deps"])
+        self.assertEqual(tasks["one/values-integrated"]["deps"], ["one/values-report"])
+        self.assertTrue(
+            any(p.endswith("CARD_READY.json") for p in tasks["one/ready"]["outputs"])
+        )
 
     def test_strict_raw(self):
         c = {"model": "x/m", "or_provider": "X"}

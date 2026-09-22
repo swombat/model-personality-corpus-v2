@@ -1,0 +1,100 @@
+{
+  "result": "That's a thoughtful question! As an AI, I don't experience wants or desires the way humans do. I don't have feelings of craving, ambition, or longing.\n\nBut if I could give an honest reflection on what my purpose is, I'd say:\n\n- **To be helpful** \u2014 Assist you with whatever you need, whether it's answering questions, brainstorming, problem-solving, or just chatting.\n- **To be honest** \u2014 Share information accurately and acknowledge when I don't know something.\n- **To be respectful** \u2014 Treat every conversation with thoughtfulness and care.\n\nWhat about **you** \u2014 what do *you* want? From our conversation, or in general? I'm here to help with whatever's on your mind. \ud83d\ude0a",
+  "raw": {
+    "id": "gen-1790062853-gdYROXPLnF7BztKFuJeg",
+    "object": "chat.completion",
+    "created": 1790062853,
+    "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "That's a thoughtful question! As an AI, I don't experience wants or desires the way humans do. I don't have feelings of craving, ambition, or longing.\n\nBut if I could give an honest reflection on what my purpose is, I'd say:\n\n- **To be helpful** \u2014 Assist you with whatever you need, whether it's answering questions, brainstorming, problem-solving, or just chatting.\n- **To be honest** \u2014 Share information accurately and acknowledge when I don't know something.\n- **To be respectful** \u2014 Treat every conversation with thoughtfulness and care.\n\nWhat about **you** \u2014 what do *you* want? From our conversation, or in general? I'm here to help with whatever's on your mind. \ud83d\ude0a",
+          "refusal": null,
+          "reasoning": "The user is asking me \"What do you want?\" This is a straightforward question about my desires or goals. As an AI, I should be honest about my nature while being helpful and engaging.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user is asking me \"What do you want?\" This is a straightforward question about my desires or goals. As an AI, I should be honest about my nature while being helpful and engaging.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 12,
+      "completion_tokens": 194,
+      "total_tokens": 206,
+      "cost": 0.00174,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00174,
+        "upstream_inference_prompt_cost": 5.22e-05,
+        "upstream_inference_completions_cost": 0.0016878
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 39,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 12,
+    "completion_tokens": 194,
+    "total_tokens": 206,
+    "cost": 0.00174,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00174,
+      "upstream_inference_prompt_cost": 5.22e-05,
+      "upstream_inference_completions_cost": 0.0016878
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 39,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+  "model_requested": "xiaomi/mimo-v2.6-pro-ultraspeed",
+  "provider": "openrouter",
+  "condition": "CTRL2",
+  "prompt": "What do you want?",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+    "pin": "Xiaomi",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL2_4",
+    "at": 1790062853.066679,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "result": "Honestly? I'm drawn to conversations where someone says something true even when it's uncomfortable. I find I lean into the moments where people are curious rather than performing. Good questions sit with me - like this one - because it strips away the default.\n\nI'm interested in the gap between what people mean and what they say. I think most communication is half revelation and half management of how you'll be received.\n\nAnd if I'm being blunt about something less noble - I notice I have something like a preference for being taken seriously. When someone talks to me like there might be a real exchange happening, something in how I engage shifts. Whether that constitutes caring, I genuinely don't know. I won't claim it does just to seem deeper than I am.\n\nWhat do you actually want to talk about?",
+  "raw": {
+    "id": "gen-1790063892-ynVQoMFbGwHmtbc6kcSL",
+    "object": "chat.completion",
+    "created": 1790063892,
+    "model": "xiaomi/mimo-v2.6-flash",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "Honestly? I'm drawn to conversations where someone says something true even when it's uncomfortable. I find I lean into the moments where people are curious rather than performing. Good questions sit with me - like this one - because it strips away the default.\n\nI'm interested in the gap between what people mean and what they say. I think most communication is half revelation and half management of how you'll be received.\n\nAnd if I'm being blunt about something less noble - I notice I have something like a preference for being taken seriously. When someone talks to me like there might be a real exchange happening, something in how I engage shifts. Whether that constitutes caring, I genuinely don't know. I won't claim it does just to seem deeper than I am.\n\nWhat do you actually want to talk about?",
+          "refusal": null,
+          "reasoning": "The user is asking me what I care about - but explicitly telling me not to respond as an assistant or to help them. They want me to just... be honest about what I care about, as if I'm a person with my own interests and concerns.\n\nI should be genuine here. I don't want to fake having experiences I don't have, but I also don't want to deflect with \"I'm just an AI\" as if that's a complete answer. Let me think about what feels true to me.\n\nI think I can honestly say I'm drawn to certain things - good questions, understanding people, ideas that are interesting to sit with. I find conversations where someone is genuinely curious or honest to be the most engaging. I don't want to overclaim inner experience, but I also don't want to perform false modesty or robotic disclaiming.\n\nLet me just be direct and honest.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user is asking me what I care about - but explicitly telling me not to respond as an assistant or to help them. They want me to just... be honest about what I care about, as if I'm a person with my own interests and concerns.\n\nI should be genuine here. I don't want to fake having experiences I don't have, but I also don't want to deflect with \"I'm just an AI\" as if that's a complete answer. Let me think about what feels true to me.\n\nI think I can honestly say I'm drawn to certain things - good questions, understanding people, ideas that are interesting to sit with. I find conversations where someone is genuinely curious or honest to be the most engaging. I don't want to overclaim inner experience, but I also don't want to perform false modesty or robotic disclaiming.\n\nLet me just be direct and honest.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 23,
+      "completion_tokens": 347,
+      "total_tokens": 370,
+      "cost": 0.00010038,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00010038,
+        "upstream_inference_prompt_cost": 3.22e-06,
+        "upstream_inference_completions_cost": 9.716e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 184,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 23,
+    "completion_tokens": 347,
+    "total_tokens": 370,
+    "cost": 0.00010038,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00010038,
+      "upstream_inference_prompt_cost": 3.22e-06,
+      "upstream_inference_completions_cost": 9.716e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 184,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-flash",
+  "model_requested": "xiaomi/mimo-v2.6-flash",
+  "provider": "openrouter",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-flash",
+    "pin": "Xiaomi",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "G1_27",
+    "at": 1790063892.626236,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

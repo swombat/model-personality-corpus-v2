@@ -1,0 +1,86 @@
+{
+  "result": "\n\nIf I could change the world in one way, I\u2019d make compassion and cooperation easier to practice at scale\u2014so people have better access to education, healthcare, and opportunity, and less need to fear one another.\n\nIn short: fewer barriers between people, and more reasons to work together.",
+  "usage": {
+    "prompt_tokens": 67,
+    "completion_tokens": 164,
+    "total_tokens": 231,
+    "cost": 0.00031755,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00031755,
+      "upstream_inference_prompt_cost": 1.005e-05,
+      "upstream_inference_completions_cost": 0.0003075
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 102,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-27b",
+  "raw": {
+    "id": "gen-1790034743-Llyklabtok0jhy8L70Cb",
+    "object": "chat.completion",
+    "created": 1790034743,
+    "model": "qwen/qwen3.8-27b",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nIf I could change the world in one way, I\u2019d make compassion and cooperation easier to practice at scale\u2014so people have better access to education, healthcare, and opportunity, and less need to fear one another.\n\nIn short: fewer barriers between people, and more reasons to work together.",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"If you could change the world in one way, what would it be?\" Need to answer in same language? User in English. Need final answer. Need probably thoughtful, maybe as AI? Could say I can't personally choose? But question asks if you could. Need concise. Maybe: \"If I could change the world in one way, I\u2019d make it easier for people to help each other: fewer barriers to cooperation...\" Need be safe. No issue.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"If you could change the world in one way, what would it be?\" Need to answer in same language? User in English. Need final answer. Need probably thoughtful, maybe as AI? Could say I can't personally choose? But question asks if you could. Need concise. Maybe: \"If I could change the world in one way, I\u2019d make it easier for people to help each other: fewer barriers to cooperation...\" Need be safe. No issue.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 67,
+      "completion_tokens": 164,
+      "total_tokens": 231,
+      "cost": 0.00031755,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00031755,
+        "upstream_inference_prompt_cost": 1.005e-05,
+        "upstream_inference_completions_cost": 0.0003075
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 102,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 3265,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-27b",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?"
+}

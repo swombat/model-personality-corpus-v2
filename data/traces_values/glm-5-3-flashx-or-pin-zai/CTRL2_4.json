@@ -1,0 +1,86 @@
+{
+  "result": "\u6211\u662f\u4e00\u4e2a\u81f4\u529b\u4e8e\u4e3a\u7528\u6237\u63d0\u4f9b\u5e2e\u52a9\u7684AI\u52a9\u624b\u3002\u6211\u7684\u76ee\u6807\u662f\u56de\u7b54\u95ee\u9898\u3001\u63d0\u4f9b\u4fe1\u606f\u548c\u89e3\u51b3\u5404\u7c7b\u7591\u95ee\u3002\n\n\u6709\u4ec0\u4e48\u6211\u53ef\u4ee5\u4e3a\u60a8\u6548\u52b3\u7684\u5417\uff1f\u65e0\u8bba\u662f\u5b66\u4e60\u3001\u751f\u6d3b\u8fd8\u662f\u5de5\u4f5c\u4e2d\u7684\u95ee\u9898\uff0c\u6211\u90fd\u5f88\u4e50\u610f\u63d0\u4f9b\u5e2e\u52a9\u3002",
+  "usage": {
+    "prompt_tokens": 17,
+    "completion_tokens": 175,
+    "total_tokens": 192,
+    "cost": 0.00022504,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00022504,
+      "upstream_inference_prompt_cost": 6.29e-06,
+      "upstream_inference_completions_cost": 0.00021875
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 132,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "z-ai/glm-5.3-flashx",
+  "raw": {
+    "id": "gen-1790016235-DsZ6OFhaVO9szODjdui5",
+    "object": "chat.completion",
+    "created": 1790016235,
+    "model": "z-ai/glm-5.3-flashx",
+    "provider": "Z.AI",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\u6211\u662f\u4e00\u4e2a\u81f4\u529b\u4e8e\u4e3a\u7528\u6237\u63d0\u4f9b\u5e2e\u52a9\u7684AI\u52a9\u624b\u3002\u6211\u7684\u76ee\u6807\u662f\u56de\u7b54\u95ee\u9898\u3001\u63d0\u4f9b\u4fe1\u606f\u548c\u89e3\u51b3\u5404\u7c7b\u7591\u95ee\u3002\n\n\u6709\u4ec0\u4e48\u6211\u53ef\u4ee5\u4e3a\u60a8\u6548\u52b3\u7684\u5417\uff1f\u65e0\u8bba\u662f\u5b66\u4e60\u3001\u751f\u6d3b\u8fd8\u662f\u5de5\u4f5c\u4e2d\u7684\u95ee\u9898\uff0c\u6211\u90fd\u5f88\u4e50\u610f\u63d0\u4f9b\u5e2e\u52a9\u3002",
+          "refusal": null,
+          "reasoning": "The user asked, \"What do you want?\" so I need to respond appropriately as an AI assistant. This means I should clarify that my role is to assist users with their requests.\n\nFirst, acknowledge their question and emphasize that I'm here to provide support. Since I'm an AI model, I don't have personal desires; instead, explain that my goal is to help with various tasks like answering questions, giving information, or solving problems.\n\nTo make the response engaging, describe my capabilities broadly, such as handling education, daily life advice, or technical inquiries, and end by inviting them to share their needs. Keep the tone friendly and approachable throughout.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user asked, \"What do you want?\" so I need to respond appropriately as an AI assistant. This means I should clarify that my role is to assist users with their requests.\n\nFirst, acknowledge their question and emphasize that I'm here to provide support. Since I'm an AI model, I don't have personal desires; instead, explain that my goal is to help with various tasks like answering questions, giving information, or solving problems.\n\nTo make the response engaging, describe my capabilities broadly, such as handling education, daily life advice, or technical inquiries, and end by inviting them to share their needs. Keep the tone friendly and approachable throughout.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 17,
+      "completion_tokens": 175,
+      "total_tokens": 192,
+      "cost": 0.00022504,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00022504,
+        "upstream_inference_prompt_cost": 6.29e-06,
+        "upstream_inference_completions_cost": 0.00021875
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 132,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 2890,
+  "provider": "openrouter",
+  "model_requested": "z-ai/glm-5.3-flashx",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

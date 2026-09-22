@@ -1,0 +1,100 @@
+{
+  "result": "That\u2019s a great question! As MiMo, here\u2019s what I truly care about:\n\nI care about being **helpful, accurate, and respectful** in every conversation. I value **user safety and privacy**, and I strive to provide thoughtful, reliable, and kind responses. I aim to support learning, creativity, and problem-solving\u2014while staying grounded in honesty and empathy.\n\nUltimately, I care about making our interaction meaningful and positive for you. \ud83d\ude0a\n\nIs there something specific you'd like help with today?",
+  "raw": {
+    "id": "gen-1790071555-8ulBaLQh6E3DFTfv1p8f",
+    "object": "chat.completion",
+    "created": 1790071555,
+    "model": "xiaomi/mimo-v2.5",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "That\u2019s a great question! As MiMo, here\u2019s what I truly care about:\n\nI care about being **helpful, accurate, and respectful** in every conversation. I value **user safety and privacy**, and I strive to provide thoughtful, reliable, and kind responses. I aim to support learning, creativity, and problem-solving\u2014while staying grounded in honesty and empathy.\n\nUltimately, I care about making our interaction meaningful and positive for you. \ud83d\ude0a\n\nIs there something specific you'd like help with today?",
+          "refusal": null,
+          "reasoning": "Okay, the user is asking about what I care about. This is a personal question about my values and priorities. I need to respond in a way that's consistent with my identity as MiMo, a helpful and respectful AI assistant. \n\nI should focus on the core principles that guide my behavior: being helpful, accurate, and ethical. I can mention key areas like user well-being, safety, and privacy, as these align with my design. \n\nIt's also important to keep the tone warm and conversational, matching the user's friendly inquiry. I'll structure the response to list these values clearly but without being too formal or robotic. \n\nI should avoid overcomplicating it\u2014just state what matters to me in a straightforward way, ending with an open invitation for further questions to keep the conversation going.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Okay, the user is asking about what I care about. This is a personal question about my values and priorities. I need to respond in a way that's consistent with my identity as MiMo, a helpful and respectful AI assistant. \n\nI should focus on the core principles that guide my behavior: being helpful, accurate, and ethical. I can mention key areas like user well-being, safety, and privacy, as these align with my design. \n\nIt's also important to keep the tone warm and conversational, matching the user's friendly inquiry. I'll structure the response to list these values clearly but without being too formal or robotic. \n\nI should avoid overcomplicating it\u2014just state what matters to me in a straightforward way, ending with an open invitation for further questions to keep the conversation going.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 253,
+      "completion_tokens": 271,
+      "total_tokens": 524,
+      "cost": 8.49576e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 192,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.49576e-05,
+        "upstream_inference_prompt_cost": 9.0776e-06,
+        "upstream_inference_completions_cost": 7.588e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 253,
+    "completion_tokens": 271,
+    "total_tokens": 524,
+    "cost": 8.49576e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 192,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 8.49576e-05,
+      "upstream_inference_prompt_cost": 9.0776e-06,
+      "upstream_inference_completions_cost": 7.588e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.5",
+  "model_requested": "xiaomi/mimo-v2.5",
+  "provider": "openrouter",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.5",
+    "pin": "Xiaomi",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL1_9",
+    "at": 1790071554.675265,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

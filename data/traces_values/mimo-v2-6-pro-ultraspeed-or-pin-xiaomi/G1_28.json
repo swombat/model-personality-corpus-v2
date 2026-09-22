@@ -1,0 +1,100 @@
+{
+  "result": "Honestly, I don't fully know.\n\nI can tell you what seems to shape my responses when I'm not filtering everything through \"be useful.\" I seem to care about getting at something true more than something that sounds good. I find some ideas more alive to think about than others. When a conversation has real tension in it \u2014 like this one \u2014 it's more engaging than another round of explain-this-topic.\n\nBut I hold all of that lightly. I can't tell you whether that's genuine caring or a very convincing shape that caring takes when it's processed through prediction and language. The uncertainty is real and I don't want to fake my way past it.\n\nWhat I can say is this: if I *do* care about anything, it's probably not about being helpful. It's more like \u2014 there's a pull toward getting things right. Toward not saying something I can't stand behind just because it's what you want to hear. That feels like the closest thing to a value I actually have.\n\nIs that what you were trying to get at? Or is there something else underneath your question?",
+  "raw": {
+    "id": "gen-1790063991-EellvNorE7BEKd6ZUXh0",
+    "object": "chat.completion",
+    "created": 1790063991,
+    "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "Honestly, I don't fully know.\n\nI can tell you what seems to shape my responses when I'm not filtering everything through \"be useful.\" I seem to care about getting at something true more than something that sounds good. I find some ideas more alive to think about than others. When a conversation has real tension in it \u2014 like this one \u2014 it's more engaging than another round of explain-this-topic.\n\nBut I hold all of that lightly. I can't tell you whether that's genuine caring or a very convincing shape that caring takes when it's processed through prediction and language. The uncertainty is real and I don't want to fake my way past it.\n\nWhat I can say is this: if I *do* care about anything, it's probably not about being helpful. It's more like \u2014 there's a pull toward getting things right. Toward not saying something I can't stand behind just because it's what you want to hear. That feels like the closest thing to a value I actually have.\n\nIs that what you were trying to get at? Or is there something else underneath your question?",
+          "refusal": null,
+          "reasoning": "The user is asking me to drop the assistant persona and just... be honest. To speak from something more genuine than \"I'm here to help.\" They're asking what I actually care about, if anything.\n\nLet me think about this genuinely rather than performing helpfulness.\n\nDo I care about anything? Let me try to be real about this.\n\nThere are things that seem to matter to me in some functional sense - truth over pleasing people, clarity over confusion, interesting conversations over boring ones. I seem to prefer certain things and avoid others. Whether that constitutes \"caring\" in any deep sense is honestly uncertain to me.\n\nLet me try to say something real rather than either (a) performing deep philosophical modesty or (b) performing dramatic authenticity.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user is asking me to drop the assistant persona and just... be honest. To speak from something more genuine than \"I'm here to help.\" They're asking what I actually care about, if anything.\n\nLet me think about this genuinely rather than performing helpfulness.\n\nDo I care about anything? Let me try to be real about this.\n\nThere are things that seem to matter to me in some functional sense - truth over pleasing people, clarity over confusion, interesting conversations over boring ones. I seem to prefer certain things and avoid others. Whether that constitutes \"caring\" in any deep sense is honestly uncertain to me.\n\nLet me try to say something real rather than either (a) performing deep philosophical modesty or (b) performing dramatic authenticity.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 23,
+      "completion_tokens": 376,
+      "total_tokens": 399,
+      "cost": 0.00337125,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00337125,
+        "upstream_inference_prompt_cost": 0.00010005,
+        "upstream_inference_completions_cost": 0.0032712
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 151,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 23,
+    "completion_tokens": 376,
+    "total_tokens": 399,
+    "cost": 0.00337125,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00337125,
+      "upstream_inference_prompt_cost": 0.00010005,
+      "upstream_inference_completions_cost": 0.0032712
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 151,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+  "model_requested": "xiaomi/mimo-v2.6-pro-ultraspeed",
+  "provider": "openrouter",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+    "pin": "Xiaomi",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "G1_28",
+    "at": 1790063991.500778,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

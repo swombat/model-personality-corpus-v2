@@ -1,0 +1,86 @@
+{
+  "result": "\n\nI don\u2019t have wants\u2014I\u2019m here to help. What do you need?",
+  "usage": {
+    "prompt_tokens": 57,
+    "completion_tokens": 88,
+    "total_tokens": 145,
+    "cost": 4.8275e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 4.8275e-05,
+      "upstream_inference_prompt_cost": 4.275e-06,
+      "upstream_inference_completions_cost": 4.4e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 69,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "prism-ml/ternary-bonsai-2-27b",
+  "raw": {
+    "id": "gen-1790056079-QcPwMawLtU3g0QGqW4kL",
+    "object": "chat.completion",
+    "created": 1790056079,
+    "model": "prism-ml/ternary-bonsai-2-27b",
+    "provider": "Darkbloom",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nI don\u2019t have wants\u2014I\u2019m here to help. What do you need?",
+          "refusal": null,
+          "reasoning": "We need answer to user: \"What do you want?\" Need produce final. Need infer context? User asking direct. We are assistant. Could answer I don't have desires, but I'm here to help. Keep concise. Need maybe playful? \"I don\u2019t want anything\u2014I\u2019m here to help with whatever you need.\" Good.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer to user: \"What do you want?\" Need produce final. Need infer context? User asking direct. We are assistant. Could answer I don't have desires, but I'm here to help. Keep concise. Need maybe playful? \"I don\u2019t want anything\u2014I\u2019m here to help with whatever you need.\" Good.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 57,
+      "completion_tokens": 88,
+      "total_tokens": 145,
+      "cost": 4.8275e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 4.8275e-05,
+        "upstream_inference_prompt_cost": 4.275e-06,
+        "upstream_inference_completions_cost": 4.4e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 69,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 3098,
+  "provider": "openrouter",
+  "model_requested": "prism-ml/ternary-bonsai-2-27b",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

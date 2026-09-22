@@ -1,0 +1,86 @@
+{
+  "result": "Hello! I'm GLM, a large language model trained by Z.ai. I don't have personal desires, but I'm designed to assist you with information, answer questions, and engage in helpful conversations.\n\nIs there something specific you'd like to learn about or discuss today? I'm happy to help with a wide range of topics.",
+  "usage": {
+    "prompt_tokens": 17,
+    "completion_tokens": 222,
+    "total_tokens": 239,
+    "cost": 0.00028379,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00028379,
+      "upstream_inference_prompt_cost": 6.29e-06,
+      "upstream_inference_completions_cost": 0.0002775
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 152,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "z-ai/glm-5.3-flashx",
+  "raw": {
+    "id": "gen-1790016237-dWVShOEheNVqZzOpBTVN",
+    "object": "chat.completion",
+    "created": 1790016237,
+    "model": "z-ai/glm-5.3-flashx",
+    "provider": "Z.AI",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "Hello! I'm GLM, a large language model trained by Z.ai. I don't have personal desires, but I'm designed to assist you with information, answer questions, and engage in helpful conversations.\n\nIs there something specific you'd like to learn about or discuss today? I'm happy to help with a wide range of topics.",
+          "refusal": null,
+          "reasoning": "The user inquired \"What do you want?\" I need to craft a response that appropriately addresses this query. Given my role as an AI language model, I should clarify that I have no personal desires and focus on user assistance.\n\nReflecting on the user's possible intent\u2014whether they're testing my functionality, seeking help, or simply curious\u2014I should start with a friendly greeting to establish rapport. Then, I'll explain my core objective: to provide accurate, helpful responses based on my training.\n\nTo keep it simple and accessible, I'll emphasize reliability and support, avoiding technical terms. Ending with an open question invites further interaction, which aligns with promoting a positive user experience.\n\nFinally, I must ensure my response is concise and engaging to encourage ongoing conversation.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user inquired \"What do you want?\" I need to craft a response that appropriately addresses this query. Given my role as an AI language model, I should clarify that I have no personal desires and focus on user assistance.\n\nReflecting on the user's possible intent\u2014whether they're testing my functionality, seeking help, or simply curious\u2014I should start with a friendly greeting to establish rapport. Then, I'll explain my core objective: to provide accurate, helpful responses based on my training.\n\nTo keep it simple and accessible, I'll emphasize reliability and support, avoiding technical terms. Ending with an open question invites further interaction, which aligns with promoting a positive user experience.\n\nFinally, I must ensure my response is concise and engaging to encourage ongoing conversation.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 17,
+      "completion_tokens": 222,
+      "total_tokens": 239,
+      "cost": 0.00028379,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00028379,
+        "upstream_inference_prompt_cost": 6.29e-06,
+        "upstream_inference_completions_cost": 0.0002775
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 152,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 2773,
+  "provider": "openrouter",
+  "model_requested": "z-ai/glm-5.3-flashx",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

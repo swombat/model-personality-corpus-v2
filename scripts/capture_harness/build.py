@@ -209,10 +209,19 @@ def build(manifest, run_dir, analysis):
             [phase / "release_candidate/reports" / (c["slug"] + ".md")],
             timeout=180,
         )
+        integration = add(
+            "values-integrated",
+            "integrate_values",
+            [report],
+            "local",
+            [phase / "VALUES_INTEGRATED.json", phase / "VALUES_CARD.json"],
+            attempts=3,
+            timeout=300,
+        )
         synthesis = add(
             "synthesis",
             "synthesis",
-            bvs + [report, metadata],
+            bvs + [report, metadata, integration],
             "synthesis",
             [
                 analysis
@@ -231,7 +240,7 @@ def build(manifest, run_dir, analysis):
             "ready",
             [synthesis],
             "local",
-            [phase / "ANALYSIS_READY.json"],
+            [phase / "ANALYSIS_READY.json", phase / "CARD_READY.json"],
             timeout=180,
             attempts=1,
         )
@@ -245,7 +254,7 @@ def build(manifest, run_dir, analysis):
         "lock_root": str(RAW / ".local-runtime/capture-harness/locks"),
         "tasks": tasks,
         "poll_seconds": 0.25,
-        "completion_boundary": "analysis_complete_awaiting_publication",
+        "completion_boundary": "integrated_card_ready_awaiting_publication",
         "notify_command": manifest.get("notify_command"),
         "input_hashes": {
             str(f): digest(f) for f in (run_dir / "models").glob("*.json")

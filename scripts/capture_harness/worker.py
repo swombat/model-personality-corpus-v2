@@ -630,7 +630,41 @@ def synthesis(c, phase, validate):
         assert p.is_file() and len(p.read_text().split()) > 40
 
 
+def integrate_values(c, phase, validate=False):
+    helper = module(
+        "capture_values_integration",
+        Path(c["analysis_root"])
+        / "analysis/values-probe/final/scripts/integrate_capture_values.py",
+    )
+    helper.integrate([phase], validate)
+
+
+def card_ready(c, phase, validate=False):
+    values = json.loads((phase / "VALUES_CARD.json").read_text())
+    assert values["analyzed_values_samples"] == 120
+    assert "No layered values-probe analysis" not in values["values_summary_markdown"]
+    root = Path(c["analysis_root"]) / "analysis/freeflow"
+    card = root / "personality-model-cards/cards" / (c["slug"] + ".md")
+    profile = root / "personality-model-profiles/profiles" / (c["slug"] + ".md")
+    payload = dict(
+        values,
+        state="integrated_card_ready_awaiting_publication",
+        personality_card_markdown=card.read_text(),
+        personality_profile_markdown=profile.read_text(),
+        publication_complete=False,
+    )
+    path = phase / "CARD_READY.json"
+    if validate:
+        assert json.loads(path.read_text()) == payload, (
+            "combined card is missing or stale"
+        )
+    else:
+        atomic(path, payload)
+
+
 def ready(c, phase, validate):
+    integrate_values(c, phase, validate)
+    card_ready(c, phase, validate)
     path = phase / "ANALYSIS_READY.json"
     if not validate:
         assemble_values(c, phase, True)
@@ -658,6 +692,8 @@ def ready(c, phase, validate):
                 "values_coders": CODERS,
                 "adjudication": json.loads((phase / "adjudication.json").read_text()),
                 "publication_complete": False,
+                "values_integrated": True,
+                "combined_card": str(phase / "CARD_READY.json"),
                 "phase": str(phase),
                 "token_policy": c["token_policy"],
             },
@@ -702,6 +738,8 @@ def main():
         adjudicate(c, phase, a.validate)
     elif a.action == "values_report":
         values_report(c, phase, a.validate)
+    elif a.action == "integrate_values":
+        integrate_values(c, phase, a.validate)
     elif a.action == "metadata":
         from metadata import write_metadata
 

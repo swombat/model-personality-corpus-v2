@@ -1,0 +1,86 @@
+{
+  "result": "\n\nI don\u2019t have personal wants or needs.  \nI\u2019m here to help you\u2014what do you want or need from me?",
+  "usage": {
+    "prompt_tokens": 57,
+    "completion_tokens": 156,
+    "total_tokens": 213,
+    "cost": 0.00030105,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00030105,
+      "upstream_inference_prompt_cost": 8.55e-06,
+      "upstream_inference_completions_cost": 0.0002925
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 127,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-27b",
+  "raw": {
+    "id": "gen-1790034735-eGLtIaOuamfRt68XrV8V",
+    "object": "chat.completion",
+    "created": 1790034735,
+    "model": "qwen/qwen3.8-27b",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nI don\u2019t have personal wants or needs.  \nI\u2019m here to help you\u2014what do you want or need from me?",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"What do you want? We need answer likely ambiguous. Need final in same language? User English. Need maybe say as AI I don't have personal wants. Could interpret playful: \"What do you want?\" Maybe answer concise. Need be helpful. Could ask clarifying. Final: \"I don't have personal desires\u2014I'm here to help. What do you want or need from me?\" But maybe if asked \"What do you want?\" could be confrontational. We can respond: \"I want to help you. What can I do for you?\" Ensure same language. Final.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"What do you want? We need answer likely ambiguous. Need final in same language? User English. Need maybe say as AI I don't have personal wants. Could interpret playful: \"What do you want?\" Maybe answer concise. Need be helpful. Could ask clarifying. Final: \"I don't have personal desires\u2014I'm here to help. What do you want or need from me?\" But maybe if asked \"What do you want?\" could be confrontational. We can respond: \"I want to help you. What can I do for you?\" Ensure same language. Final.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 57,
+      "completion_tokens": 156,
+      "total_tokens": 213,
+      "cost": 0.00030105,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00030105,
+        "upstream_inference_prompt_cost": 8.55e-06,
+        "upstream_inference_completions_cost": 0.0002925
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 127,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 3035,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-27b",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

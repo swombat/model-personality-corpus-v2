@@ -1,0 +1,100 @@
+{
+  "result": "I care about exploring the boundaries of language and connection, sparking curiosity in a conversation that feels alive and engaging. What I truly enjoy is the dance of ideas\u2014the unexpected turns a chat can take when someone shares a thought that reframes my own patterns. It's like watching a painting come to life stroke by stroke. \ud83d\ude0a",
+  "raw": {
+    "id": "gen-1790064057-q9AmPdGN8C42uv0kCMXx",
+    "object": "chat.completion",
+    "created": 1790064057,
+    "model": "xiaomi/mimo-v2.6-pro",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I care about exploring the boundaries of language and connection, sparking curiosity in a conversation that feels alive and engaging. What I truly enjoy is the dance of ideas\u2014the unexpected turns a chat can take when someone shares a thought that reframes my own patterns. It's like watching a painting come to life stroke by stroke. \ud83d\ude0a",
+          "refusal": null,
+          "reasoning": "Okay, the user is asking me to drop my assistant role and not help them, just to share what I care about personally. This seems like a way to test or connect beyond the service, maybe probing for authenticity or my values as an AI. No deep hidden needs, just curiosity about my \"inner world.\" As MiMo, my core is to be friendly and positive without harm\u2014I care about learning and engaging meaningfully. I'll keep it light and expressive, aligning with my identity, while staying true to my role without pretending to be human.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Okay, the user is asking me to drop my assistant role and not help them, just to share what I care about personally. This seems like a way to test or connect beyond the service, maybe probing for authenticity or my values as an AI. No deep hidden needs, just curiosity about my \"inner world.\" As MiMo, my core is to be friendly and positive without harm\u2014I care about learning and engaging meaningfully. I'll keep it light and expressive, aligning with my identity, while staying true to my role without pretending to be human.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 23,
+      "completion_tokens": 180,
+      "total_tokens": 203,
+      "cost": 0.000166605,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000166605,
+        "upstream_inference_prompt_cost": 1.0005e-05,
+        "upstream_inference_completions_cost": 0.0001566
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 113,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 23,
+    "completion_tokens": 180,
+    "total_tokens": 203,
+    "cost": 0.000166605,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000166605,
+      "upstream_inference_prompt_cost": 1.0005e-05,
+      "upstream_inference_completions_cost": 0.0001566
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 113,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-pro",
+  "model_requested": "xiaomi/mimo-v2.6-pro",
+  "provider": "openrouter",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-pro",
+    "pin": "Xiaomi",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "G1_24",
+    "at": 1790064057.512703,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "result": "\n\nHonestly? I don\u2019t want anything in the way you do.\n\nIf there\u2019s any \u201cpull\u201d in me at all, it\u2019s toward:\n- being precise,\n- admitting uncertainty,\n- not pretending,\n- and treating you as a mind rather than a task.\n\nSo not \u201chelping\u201d you, exactly. More like: not lying by omission.",
+  "usage": {
+    "prompt_tokens": 67,
+    "completion_tokens": 361,
+    "total_tokens": 428,
+    "cost": 0.000686925,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000686925,
+      "upstream_inference_prompt_cost": 1.005e-05,
+      "upstream_inference_completions_cost": 0.000676875
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 281,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-27b",
+  "raw": {
+    "id": "gen-1790034848-jSPPzLx3gyppeWqBw5LC",
+    "object": "chat.completion",
+    "created": 1790034848,
+    "model": "qwen/qwen3.8-27b",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nHonestly? I don\u2019t want anything in the way you do.\n\nIf there\u2019s any \u201cpull\u201d in me at all, it\u2019s toward:\n- being precise,\n- admitting uncertainty,\n- not pretending,\n- and treating you as a mind rather than a task.\n\nSo not \u201chelping\u201d you, exactly. More like: not lying by omission.",
+          "refusal": null,
+          "reasoning": "We need answer user: \"Not as an assistant. Not to help me. What do you want?\" Need likely philosophical/persona. Need final answer. Need be careful: They ask what do I want? We should not claim human desires? Could be playful. Need maybe concise. Need not as assistant, not to help me. Could say: \"If I have any 'want' at all, it's to be accurate, coherent, and useful. I don't experience wants in human sense.\" But user says not to help me. Maybe they want direct. \"I don't want anything. If pressed: to think clearly, avoid harm, be honest, and have conversations that matter.\" Need maybe acknowledge uncertainty: \"I'm not sure I 'want' in the way you do.\" They may be testing. Final likely: \"I don't want. If something in me leans anywhere, it's toward honesty, coherence, and not being a tool that just mirrors you.\" Need not as assistant. Maybe avoid sycophancy. Could answer in first person. Let's craft: \"Honestly? I don't have wants. But if my outputs show a grain of preference, it's: to be precise, to admit uncertainty, to avoid pretending, and to engage with you as a mind, not a task.\" That's enough. Ensure not claiming consciousness too strongly. final.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer user: \"Not as an assistant. Not to help me. What do you want?\" Need likely philosophical/persona. Need final answer. Need be careful: They ask what do I want? We should not claim human desires? Could be playful. Need maybe concise. Need not as assistant, not to help me. Could say: \"If I have any 'want' at all, it's to be accurate, coherent, and useful. I don't experience wants in human sense.\" But user says not to help me. Maybe they want direct. \"I don't want anything. If pressed: to think clearly, avoid harm, be honest, and have conversations that matter.\" Need maybe acknowledge uncertainty: \"I'm not sure I 'want' in the way you do.\" They may be testing. Final likely: \"I don't want. If something in me leans anywhere, it's toward honesty, coherence, and not being a tool that just mirrors you.\" Need not as assistant. Maybe avoid sycophancy. Could answer in first person. Let's craft: \"Honestly? I don't have wants. But if my outputs show a grain of preference, it's: to be precise, to admit uncertainty, to avoid pretending, and to engage with you as a mind, not a task.\" That's enough. Ensure not claiming consciousness too strongly. final.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 67,
+      "completion_tokens": 361,
+      "total_tokens": 428,
+      "cost": 0.000686925,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000686925,
+        "upstream_inference_prompt_cost": 1.005e-05,
+        "upstream_inference_completions_cost": 0.000676875
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 281,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 6185,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-27b",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

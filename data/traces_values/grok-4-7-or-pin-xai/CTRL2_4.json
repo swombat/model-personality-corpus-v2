@@ -1,0 +1,93 @@
+{
+  "result": "I don't have personal wants or needs\u2014I'm here to help you. What can I do for you?",
+  "usage": {
+    "prompt_tokens": 211,
+    "completion_tokens": 116,
+    "total_tokens": 327,
+    "cost": 0.0007408,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 128,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0007408,
+      "upstream_inference_prompt_cost": 0.000184,
+      "upstream_inference_completions_cost": 0.0005568
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 95,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "x-ai/grok-4.7",
+  "raw": {
+    "id": "gen-1790013505-2Pjh2wqgoSic6yGwZ0ws",
+    "object": "chat.completion",
+    "created": 1790013505,
+    "model": "x-ai/grok-4.7",
+    "provider": "xAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "I don't have personal wants or needs\u2014I'm here to help you. What can I do for you?",
+          "refusal": null,
+          "reasoning": "The user asked \"What do you want?\" This is a simple, open-ended question. I should respond helpfully and engagingly.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.summary",
+              "summary": "The user asked \"What do you want?\" This is a simple, open-ended question. I should respond helpfully and engagingly.\n",
+              "format": "xai-responses-v1",
+              "index": 0
+            },
+            {
+              "type": "reasoning.encrypted",
+              "data": "yf2BK6Ot0JX7/P37Az8/ZhL0rBgviO0cUMCxAhhL6XBJ3Vi5+U2GO1lI2T3fJHes1bRG396JaB4L/53eMAoioYEHob+Yzt+xNi74tqb7ChAkqT9LHiWOg9cdvFWuZoiWw4LMTbJ27eUB4z+s1vDTxciZ3Lg9IaeO5S2cjJ0WpEoI+Ru9II9fN/zz1bn29oqplOKrKu9erYL1q8S6YlgfGRyi8DvWwblVAcH+6yIqz+G7FRnnZYzhuRNpvBljB9GzDmkalb00TQcE00D6bOwTLjwfn8GKHzgKZ6aBCHNorzq9hu7sOgABf4wGci+rAd0SfLOLIHxGZ/aWPmR8AvtL/C9sOgyLkmkHFoZlJyBi6JU0KnQOjmxaUO1sjLE9Ua/LhV6knvr8z8Fmq0hg/wUsHghYNceXZ7YcSB8mUa6iSntHZDkpSAe/+q2F3kjwPNZTlpb2pHJNDTZpKmZYjNeVK83Q/7NgdAMyhmDcvjfLs5QfKiP+1Erse4wREPjZfm1Ty4rslcMEV7b2+nNqgfVvOIUcMKe3BGcTOlg1NjRApnHQyawuWOZuN6KHsL2u0S6a39tR6xgXa1xtrQ9dgye4f2rpaDWE.eyJlbmRwb2ludF9zbHVnIjoieC1haS9ncm9rLTQuNy0yMDI2MDkxNnx4YWkifQ",
+              "format": "xai-responses-v1",
+              "id": "rs_74ed0e22-8011-98ae-8283-d517fa4591c8",
+              "index": 1
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 211,
+      "completion_tokens": 116,
+      "total_tokens": 327,
+      "cost": 0.0007408,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 128,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007408,
+        "upstream_inference_prompt_cost": 0.000184,
+        "upstream_inference_completions_cost": 0.0005568
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 95,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 3093,
+  "provider": "openrouter",
+  "model_requested": "x-ai/grok-4.7",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

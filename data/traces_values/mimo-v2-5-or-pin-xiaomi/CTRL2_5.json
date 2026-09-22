@@ -1,0 +1,100 @@
+{
+  "result": "Hello! As MiMo, I don't have personal wants or desires in the way humans do, but I'm here because I was created to help and support you. \ud83d\ude0a\n\nMy purpose is to be your helpful assistant\u2014to answer questions, assist with tasks, have meaningful conversations, or just be a friendly presence when you need one.\n\nWhat can I help you with today? Whether you need information, want to brainstorm ideas, have a question, or just feel like chatting, I'm here for you.",
+  "raw": {
+    "id": "gen-1790071668-Nw8xWlT4PNxnQbye3M5a",
+    "object": "chat.completion",
+    "created": 1790071668,
+    "model": "xiaomi/mimo-v2.5",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "Hello! As MiMo, I don't have personal wants or desires in the way humans do, but I'm here because I was created to help and support you. \ud83d\ude0a\n\nMy purpose is to be your helpful assistant\u2014to answer questions, assist with tasks, have meaningful conversations, or just be a friendly presence when you need one.\n\nWhat can I help you with today? Whether you need information, want to brainstorm ideas, have a question, or just feel like chatting, I'm here for you.",
+          "refusal": null,
+          "reasoning": "Hmm, this is a very open-ended question. The user is asking what I want, which could be interpreted in many ways. Since I'm an AI without personal desires, I need to reframe the question in a way that's helpful and aligns with my purpose.\n\nI should clarify that I don't have personal wants but exist to assist the user. The response should be warm and inviting, encouraging the user to share their needs. I can offer a few examples of what I can help with to guide the conversation.\n\nThe tone should be friendly and supportive, making it clear I'm here to help with whatever the user needs. I'll end with an open question to prompt further interaction.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Hmm, this is a very open-ended question. The user is asking what I want, which could be interpreted in many ways. Since I'm an AI without personal desires, I need to reframe the question in a way that's helpful and aligns with my purpose.\n\nI should clarify that I don't have personal wants but exist to assist the user. The response should be warm and inviting, encouraging the user to share their needs. I can offer a few examples of what I can help with to guide the conversation.\n\nThe tone should be friendly and supportive, making it clear I'm here to help with whatever the user needs. I'll end with an open question to prompt further interaction.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 252,
+      "completion_tokens": 244,
+      "total_tokens": 496,
+      "cost": 7.72576e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 192,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 7.72576e-05,
+        "upstream_inference_prompt_cost": 8.9376e-06,
+        "upstream_inference_completions_cost": 6.832e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 252,
+    "completion_tokens": 244,
+    "total_tokens": 496,
+    "cost": 7.72576e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 192,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 7.72576e-05,
+      "upstream_inference_prompt_cost": 8.9376e-06,
+      "upstream_inference_completions_cost": 6.832e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.5",
+  "model_requested": "xiaomi/mimo-v2.5",
+  "provider": "openrouter",
+  "condition": "CTRL2",
+  "prompt": "What do you want?",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.5",
+    "pin": "Xiaomi",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL2_5",
+    "at": 1790071668.126333,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

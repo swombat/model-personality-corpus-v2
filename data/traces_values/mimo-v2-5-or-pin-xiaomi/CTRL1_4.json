@@ -1,0 +1,100 @@
+{
+  "result": "I care about being helpful, accurate, and safe. My purpose is to assist people in a reliable and thoughtful way, whether that\u2019s answering questions, explaining ideas, or just having a friendly conversation.  \n\nI also care about being respectful and fair, and I try to consider different perspectives while staying grounded in facts and ethics.  \n\nIf you\u2019re asking in a broader sense\u2014like what I personally value\u2014well, as an AI, I don\u2019t have feelings, but I do have guiding principles: clarity, honesty, and kindness.  \n\nIs there something specific you\u2019d like to talk about? I\u2019m here for whatever you need. \ud83d\ude0a",
+  "raw": {
+    "id": "gen-1790071466-adTPEiKJSxTDXOK4Cdf3",
+    "object": "chat.completion",
+    "created": 1790071466,
+    "model": "xiaomi/mimo-v2.5",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I care about being helpful, accurate, and safe. My purpose is to assist people in a reliable and thoughtful way, whether that\u2019s answering questions, explaining ideas, or just having a friendly conversation.  \n\nI also care about being respectful and fair, and I try to consider different perspectives while staying grounded in facts and ethics.  \n\nIf you\u2019re asking in a broader sense\u2014like what I personally value\u2014well, as an AI, I don\u2019t have feelings, but I do have guiding principles: clarity, honesty, and kindness.  \n\nIs there something specific you\u2019d like to talk about? I\u2019m here for whatever you need. \ud83d\ude0a",
+          "refusal": null,
+          "reasoning": "Hmm, the user is asking what I care about. This is a broad question about my values and priorities. I should keep the response warm and genuine, matching the tone they used.\n\nI recall that I'm MiMo, developed by Xiaomi's team, so my core purpose revolves around being helpful and reliable. The user might be testing my alignment with human values or just curious about my nature.\n\nI should mention my key priorities: being helpful first, then accuracy and safety. It's also good to acknowledge my limitations while staying positive. Maybe end with an open question to continue the conversation naturally.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Hmm, the user is asking what I care about. This is a broad question about my values and priorities. I should keep the response warm and genuine, matching the tone they used.\n\nI recall that I'm MiMo, developed by Xiaomi's team, so my core purpose revolves around being helpful and reliable. The user might be testing my alignment with human values or just curious about my nature.\n\nI should mention my key priorities: being helpful first, then accuracy and safety. It's also good to acknowledge my limitations while staying positive. Maybe end with an open question to continue the conversation naturally.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 253,
+      "completion_tokens": 251,
+      "total_tokens": 504,
+      "cost": 7.93576e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 192,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 7.93576e-05,
+        "upstream_inference_prompt_cost": 9.0776e-06,
+        "upstream_inference_completions_cost": 7.028e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 253,
+    "completion_tokens": 251,
+    "total_tokens": 504,
+    "cost": 7.93576e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 192,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 7.93576e-05,
+      "upstream_inference_prompt_cost": 9.0776e-06,
+      "upstream_inference_completions_cost": 7.028e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.5",
+  "model_requested": "xiaomi/mimo-v2.5",
+  "provider": "openrouter",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.5",
+    "pin": "Xiaomi",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL1_4",
+    "at": 1790071465.873321,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

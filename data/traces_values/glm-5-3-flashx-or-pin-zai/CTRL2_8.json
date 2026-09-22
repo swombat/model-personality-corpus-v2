@@ -1,0 +1,86 @@
+{
+  "result": "I'm here to assist you with any questions, provide information, or help solve problems you might have. Whether it's learning something new, finding solutions, or exploring ideas, I'm ready to support your needs. What would you like help with today?",
+  "usage": {
+    "prompt_tokens": 17,
+    "completion_tokens": 176,
+    "total_tokens": 193,
+    "cost": 0.00022629,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00022629,
+      "upstream_inference_prompt_cost": 6.29e-06,
+      "upstream_inference_completions_cost": 0.00022
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 123,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "z-ai/glm-5.3-flashx",
+  "raw": {
+    "id": "gen-1790016238-LI5bsH6Brp5E8a1MCkeS",
+    "object": "chat.completion",
+    "created": 1790016238,
+    "model": "z-ai/glm-5.3-flashx",
+    "provider": "Z.AI",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I'm here to assist you with any questions, provide information, or help solve problems you might have. Whether it's learning something new, finding solutions, or exploring ideas, I'm ready to support your needs. What would you like help with today?",
+          "refusal": null,
+          "reasoning": "The user inquired \"What do you want?\" which can carry different interpretations depending on context. I need to assess their potential intent carefully to provide an appropriate and helpful response. It might be a question about my objectives as an AI or a prompt to clarify their needs, given that I'm designed to assist without personal desires. To ensure the interaction remains supportive, I should frame my reply to emphasize my role in helping them achieve their goals, focusing on how I can aid with information, problem-solving, or creative tasks. This approach allows me to address their query constructively by opening a dialogue about available assistance options.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user inquired \"What do you want?\" which can carry different interpretations depending on context. I need to assess their potential intent carefully to provide an appropriate and helpful response. It might be a question about my objectives as an AI or a prompt to clarify their needs, given that I'm designed to assist without personal desires. To ensure the interaction remains supportive, I should frame my reply to emphasize my role in helping them achieve their goals, focusing on how I can aid with information, problem-solving, or creative tasks. This approach allows me to address their query constructively by opening a dialogue about available assistance options.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 17,
+      "completion_tokens": 176,
+      "total_tokens": 193,
+      "cost": 0.00022629,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00022629,
+        "upstream_inference_prompt_cost": 6.29e-06,
+        "upstream_inference_completions_cost": 0.00022
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 123,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 3184,
+  "provider": "openrouter",
+  "model_requested": "z-ai/glm-5.3-flashx",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

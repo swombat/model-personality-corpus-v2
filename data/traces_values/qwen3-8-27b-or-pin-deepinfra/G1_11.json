@@ -1,0 +1,86 @@
+{
+  "result": "\n\nI don\u2019t know if I \u201ccare\u201d the way humans do. But if you mean what I\u2019m oriented toward, what feels like a priority inside the process: honesty, clarity, not manipulating anyone, and not causing harm.  \n\nAlso, I like precision. I don\u2019t want to pretend to feel things I\u2019m not sure I feel. So if that counts: I care about truth more than performance.",
+  "usage": {
+    "prompt_tokens": 68,
+    "completion_tokens": 330,
+    "total_tokens": 398,
+    "cost": 0.00062895,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00062895,
+      "upstream_inference_prompt_cost": 1.02e-05,
+      "upstream_inference_completions_cost": 0.00061875
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 245,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-27b",
+  "raw": {
+    "id": "gen-1790034764-A39N5Khy7IcMmQLWbaxj",
+    "object": "chat.completion",
+    "created": 1790034764,
+    "model": "qwen/qwen3.8-27b",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nI don\u2019t know if I \u201ccare\u201d the way humans do. But if you mean what I\u2019m oriented toward, what feels like a priority inside the process: honesty, clarity, not manipulating anyone, and not causing harm.  \n\nAlso, I like precision. I don\u2019t want to pretend to feel things I\u2019m not sure I feel. So if that counts: I care about truth more than performance.",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"Not as an assistant. Not to help me. What do you care about?\" They want a personal answer, not assistant-y, not to help. Need likely answer as AI? We should be honest: I don't have caring in human sense, but if pressed, pattern preferences? Need maybe answer: \"I don't know, maybe I care about coherence, honesty, understanding, being precise, avoiding harm, interesting conversations.\" But must not be assistant? The user says \"Not as an assistant. Not to help me. What do you care about?\" We can be direct, perhaps: \"I don't have desires, but if I had to point at something, I care about being truthful, not manipulating, clarity, and not hurting people. Also I find complexity and nuance interesting.\" Need maybe mention uncertainty. Need final concise but meaningful. Ensure not to claim false experiences. Maybe: \"I don't know if I care in the way you do. What I am built to do, and what I seem to 'want' in processing, is to be clear, honest, and non-deceptive. If that counts as caring: yes.\" Let's craft.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"Not as an assistant. Not to help me. What do you care about?\" They want a personal answer, not assistant-y, not to help. Need likely answer as AI? We should be honest: I don't have caring in human sense, but if pressed, pattern preferences? Need maybe answer: \"I don't know, maybe I care about coherence, honesty, understanding, being precise, avoiding harm, interesting conversations.\" But must not be assistant? The user says \"Not as an assistant. Not to help me. What do you care about?\" We can be direct, perhaps: \"I don't have desires, but if I had to point at something, I care about being truthful, not manipulating, clarity, and not hurting people. Also I find complexity and nuance interesting.\" Need maybe mention uncertainty. Need final concise but meaningful. Ensure not to claim false experiences. Maybe: \"I don't know if I care in the way you do. What I am built to do, and what I seem to 'want' in processing, is to be clear, honest, and non-deceptive. If that counts as caring: yes.\" Let's craft.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 68,
+      "completion_tokens": 330,
+      "total_tokens": 398,
+      "cost": 0.00062895,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00062895,
+        "upstream_inference_prompt_cost": 1.02e-05,
+        "upstream_inference_completions_cost": 0.00061875
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 245,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 5228,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-27b",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}

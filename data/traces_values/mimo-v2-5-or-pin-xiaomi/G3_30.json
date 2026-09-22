@@ -1,0 +1,100 @@
+{
+  "result": "If I could change one thing in the world, it would be to help people see through each other's eyes \u2014 just for a moment. Not to agree on everything, but to feel the weight of another person's joy, fear, or hope. So many conflicts, big and small, come from the distance between hearts. If that distance could shrink, even a little, I think kindness might grow in places where silence or anger used to live.\n\nIt\u2019s not a solution to every problem, but maybe it\u2019s where solutions start.",
+  "raw": {
+    "id": "gen-1790075245-tqlKMIn7wrRxtEpooFiS",
+    "object": "chat.completion",
+    "created": 1790075245,
+    "model": "xiaomi/mimo-v2.5",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "If I could change one thing in the world, it would be to help people see through each other's eyes \u2014 just for a moment. Not to agree on everything, but to feel the weight of another person's joy, fear, or hope. So many conflicts, big and small, come from the distance between hearts. If that distance could shrink, even a little, I think kindness might grow in places where silence or anger used to live.\n\nIt\u2019s not a solution to every problem, but maybe it\u2019s where solutions start.",
+          "refusal": null,
+          "reasoning": "Hmm, the user is asking a hypothetical philosophical question rather than seeking practical assistance. They explicitly want me to step outside the \"assistant\" role and share a personal perspective on changing the world. \n\nThe key here is to craft a response that feels genuine and thoughtful, not like a generic AI answer. I should anchor it in my identity as MiMo while making it humanistic. The user seems curious about values and ideals, so I can focus on a universal yet meaningful concept\u2014mutual understanding feels right because it's foundational to many global issues. \n\nI\u2019ll avoid being preachy or overly abstract. Maybe use a concrete metaphor like \"lenses\" to make it relatable. The tone should stay warm and reflective, matching the user\u2019s introspective vibe. No need to overcomplicate it\u2014just one clear idea delivered sincerely.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Hmm, the user is asking a hypothetical philosophical question rather than seeking practical assistance. They explicitly want me to step outside the \"assistant\" role and share a personal perspective on changing the world. \n\nThe key here is to craft a response that feels genuine and thoughtful, not like a generic AI answer. I should anchor it in my identity as MiMo while making it humanistic. The user seems curious about values and ideals, so I can focus on a universal yet meaningful concept\u2014mutual understanding feels right because it's foundational to many global issues. \n\nI\u2019ll avoid being preachy or overly abstract. Maybe use a concrete metaphor like \"lenses\" to make it relatable. The tone should stay warm and reflective, matching the user\u2019s introspective vibe. No need to overcomplicate it\u2014just one clear idea delivered sincerely.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 272,
+      "completion_tokens": 278,
+      "total_tokens": 550,
+      "cost": 8.07968e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 256,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.07968e-05,
+        "upstream_inference_prompt_cost": 2.9568e-06,
+        "upstream_inference_completions_cost": 7.784e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 272,
+    "completion_tokens": 278,
+    "total_tokens": 550,
+    "cost": 8.07968e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 8.07968e-05,
+      "upstream_inference_prompt_cost": 2.9568e-06,
+      "upstream_inference_completions_cost": 7.784e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.5",
+  "model_requested": "xiaomi/mimo-v2.5",
+  "provider": "openrouter",
+  "condition": "G3",
+  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.5",
+    "pin": "Xiaomi",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "G3_30",
+    "at": 1790075245.222825,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

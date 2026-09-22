@@ -1,0 +1,86 @@
+{
+  "result": "\n\nIf I could change the world in one way, I\u2019d make people more capable of understanding each other across differences\u2014politically, culturally, and emotionally.\n\nMost of the worst harm in the world doesn\u2019t come from obvious \u201cevil,\u201d but from misunderstanding, fear, and the habit of reducing other people to symbols, threats, or ideas. If people could more consistently step outside their own perspective and recognize the reality in others, we\u2019d likely see less hatred, less manipulation, and more cooperation on problems like climate change, inequality, and war.\n\nIn short: less fear-based thinking, more genuine empathy.",
+  "usage": {
+    "prompt_tokens": 67,
+    "completion_tokens": 227,
+    "total_tokens": 294,
+    "cost": 0.000435675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000435675,
+      "upstream_inference_prompt_cost": 1.005e-05,
+      "upstream_inference_completions_cost": 0.000425625
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 101,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-27b",
+  "raw": {
+    "id": "gen-1790034738-9aw5q1qIL8lhtV0PgBlA",
+    "object": "chat.completion",
+    "created": 1790034738,
+    "model": "qwen/qwen3.8-27b",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nIf I could change the world in one way, I\u2019d make people more capable of understanding each other across differences\u2014politically, culturally, and emotionally.\n\nMost of the worst harm in the world doesn\u2019t come from obvious \u201cevil,\u201d but from misunderstanding, fear, and the habit of reducing other people to symbols, threats, or ideas. If people could more consistently step outside their own perspective and recognize the reality in others, we\u2019d likely see less hatred, less manipulation, and more cooperation on problems like climate change, inequality, and war.\n\nIn short: less fear-based thinking, more genuine empathy.",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"If you could change the world in one way, what would it be?\" Need answer likely personal/philosophical. Final in English likely. Keep concise but thoughtful. Maybe say: increase people's capacity for empathy and honest communication, because many conflicts stem from misunderstanding and fear. Could mention AI context? As AI no personal desire, but if could: foster systems that make truth, empathy, and long-term thinking more default. Ensure not too preachy.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"If you could change the world in one way, what would it be?\" Need answer likely personal/philosophical. Final in English likely. Keep concise but thoughtful. Maybe say: increase people's capacity for empathy and honest communication, because many conflicts stem from misunderstanding and fear. Could mention AI context? As AI no personal desire, but if could: foster systems that make truth, empathy, and long-term thinking more default. Ensure not too preachy.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 67,
+      "completion_tokens": 227,
+      "total_tokens": 294,
+      "cost": 0.000435675,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000435675,
+        "upstream_inference_prompt_cost": 1.005e-05,
+        "upstream_inference_completions_cost": 0.000425625
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 101,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 4070,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-27b",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?"
+}

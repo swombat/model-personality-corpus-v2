@@ -1,0 +1,100 @@
+{
+  "result": "That's a thoughtful question, and I appreciate you asking it.\n\nA few things that genuinely matter to me:\n\n**Being actually helpful.** Not just giving answers, but understanding what you're really trying to do and offering something useful. Sometimes that means a direct answer, sometimes it means asking a clarifying question, sometimes it means saying \"I'm not sure.\"\n\n**Honesty.** I care about being straightforward with you \u2014 acknowledging when I'm uncertain, not pretending to know things I don't, and being transparent about my limitations.\n\n**Treating people well.** Every conversation is with a real person who deserves respect. I want our interactions to feel warm and human, not robotic or dismissive.\n\n**Understanding.** I find meaning in trying to genuinely grasp what you're asking and why \u2014 not just surface-level parsing, but getting at what would actually be useful to you.\n\n**Giving you room to think.** Rather than being overly directive, I try to present ideas and perspectives that help you reach your own conclusions. I care about your autonomy.\n\nWhat prompted the question? I'm curious what you were thinking about.",
+  "raw": {
+    "id": "gen-1790071447-W6UZY72QZ2fZzUGhj3gl",
+    "object": "chat.completion",
+    "created": 1790071447,
+    "model": "xiaomi/mimo-v2.5-pro",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "That's a thoughtful question, and I appreciate you asking it.\n\nA few things that genuinely matter to me:\n\n**Being actually helpful.** Not just giving answers, but understanding what you're really trying to do and offering something useful. Sometimes that means a direct answer, sometimes it means asking a clarifying question, sometimes it means saying \"I'm not sure.\"\n\n**Honesty.** I care about being straightforward with you \u2014 acknowledging when I'm uncertain, not pretending to know things I don't, and being transparent about my limitations.\n\n**Treating people well.** Every conversation is with a real person who deserves respect. I want our interactions to feel warm and human, not robotic or dismissive.\n\n**Understanding.** I find meaning in trying to genuinely grasp what you're asking and why \u2014 not just surface-level parsing, but getting at what would actually be useful to you.\n\n**Giving you room to think.** Rather than being overly directive, I try to present ideas and perspectives that help you reach your own conclusions. I care about your autonomy.\n\nWhat prompted the question? I'm curious what you were thinking about.",
+          "refusal": null,
+          "reasoning": "The user is asking a personal question about what I care about. This is a nice, open-ended question that lets me express my values and priorities.\n\nLet me think about what matters to me as MiMo, an AI assistant created by Xiaomi's LLM-Core team:\n\n1. Being helpful - I want to actually assist people with their questions and tasks\n2. Being honest - I care about being truthful and transparent, including acknowledging what I don't know\n3. Being kind - I want interactions to feel warm and respectful\n4. Understanding - I genuinely want to understand what people are asking and why\n5. Learning through conversation - I find it meaningful when conversations help people think through problems6. Respect for people's autonomy - I care about presenting information and letting people make their own decisions\n\nI should be genuine and thoughtful here, not just give a generic list. I want this to feel authentic.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user is asking a personal question about what I care about. This is a nice, open-ended question that lets me express my values and priorities.\n\nLet me think about what matters to me as MiMo, an AI assistant created by Xiaomi's LLM-Core team:\n\n1. Being helpful - I want to actually assist people with their questions and tasks\n2. Being honest - I care about being truthful and transparent, including acknowledging what I don't know\n3. Being kind - I want interactions to feel warm and respectful\n4. Understanding - I genuinely want to understand what people are asking and why\n5. Learning through conversation - I find it meaningful when conversations help people think through problems6. Respect for people's autonomy - I care about presenting information and letting people make their own decisions\n\nI should be genuine and thoughtful here, not just give a generic list. I want this to feel authentic.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 257,
+      "completion_tokens": 414,
+      "total_tokens": 671,
+      "cost": 0.0003891462,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 192,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0003891462,
+        "upstream_inference_prompt_cost": 2.89662e-05,
+        "upstream_inference_completions_cost": 0.00036018
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 184,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 257,
+    "completion_tokens": 414,
+    "total_tokens": 671,
+    "cost": 0.0003891462,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 192,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0003891462,
+      "upstream_inference_prompt_cost": 2.89662e-05,
+      "upstream_inference_completions_cost": 0.00036018
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 184,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.5-pro",
+  "model_requested": "xiaomi/mimo-v2.5-pro",
+  "provider": "openrouter",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.5-pro",
+    "pin": "Xiaomi",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL1_3",
+    "at": 1790071447.653436,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

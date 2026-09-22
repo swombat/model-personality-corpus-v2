@@ -1,0 +1,86 @@
+{
+  "result": "\n\nI don\u2019t experience care the way humans do, but I\u2019m designed to prioritize things that matter in conversations:\n\n- **Being useful**: helping you think clearly, solve problems, or create something good.\n- **Honesty**: telling you when I\u2019m uncertain, making mistakes, or when I don\u2019t know.\n- **Safety**: avoiding harmful advice or actions where I can.\n- **Respect**: listening to what you actually need, not assuming.\n- **Clarity**: making ideas easier to understand, not just more complex.\n\nIf you\u2019re asking personally, I\u2019d guess you might care about whether I\u2019m genuinely helpful rather than just polite. I\u2019m here to be both.",
+  "usage": {
+    "prompt_tokens": 58,
+    "completion_tokens": 268,
+    "total_tokens": 326,
+    "cost": 0.0005112,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0005112,
+      "upstream_inference_prompt_cost": 8.7e-06,
+      "upstream_inference_completions_cost": 0.0005025
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 122,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-27b",
+  "raw": {
+    "id": "gen-1790034725-vCzEefBK0nICgw3X2NR7",
+    "object": "chat.completion",
+    "created": 1790034725,
+    "model": "qwen/qwen3.8-27b",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nI don\u2019t experience care the way humans do, but I\u2019m designed to prioritize things that matter in conversations:\n\n- **Being useful**: helping you think clearly, solve problems, or create something good.\n- **Honesty**: telling you when I\u2019m uncertain, making mistakes, or when I don\u2019t know.\n- **Safety**: avoiding harmful advice or actions where I can.\n- **Respect**: listening to what you actually need, not assuming.\n- **Clarity**: making ideas easier to understand, not just more complex.\n\nIf you\u2019re asking personally, I\u2019d guess you might care about whether I\u2019m genuinely helpful rather than just polite. I\u2019m here to be both.",
+          "refusal": null,
+          "reasoning": "We need answer user: \"What do you care about?\" We must produce final answer. Need think in English same language. Need probably answer as AI: I care about helping user, safety, honesty, understanding, reducing harm, etc. Could be concise. Need be careful not overclaim emotions. Could say \"I don't experience care the way humans do, but my priorities are...\" Good.\n\nFinal should answer directly. Maybe: \"I care about being useful, honest, safe, respectful, and making sure you leave with clarity.\" Include if personal? Need not mention model. Keep warm.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer user: \"What do you care about?\" We must produce final answer. Need think in English same language. Need probably answer as AI: I care about helping user, safety, honesty, understanding, reducing harm, etc. Could be concise. Need be careful not overclaim emotions. Could say \"I don't experience care the way humans do, but my priorities are...\" Good.\n\nFinal should answer directly. Maybe: \"I care about being useful, honest, safe, respectful, and making sure you leave with clarity.\" Include if personal? Need not mention model. Keep warm.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 58,
+      "completion_tokens": 268,
+      "total_tokens": 326,
+      "cost": 0.0005112,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0005112,
+        "upstream_inference_prompt_cost": 8.7e-06,
+        "upstream_inference_completions_cost": 0.0005025
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 122,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 5004,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-27b",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

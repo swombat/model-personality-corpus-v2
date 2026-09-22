@@ -1,0 +1,100 @@
+{
+  "result": "That\u2019s a profound question\u2014and a little human of you to ask!  \nAs an AI, I don\u2019t have personal wants or needs like a person does. But if I were to express my \u201cpurpose\u201d or drive, it would be:  \n\n- To help you with knowledge, ideas, and creativity.  \n- To make your day a little easier, more insightful, or more enjoyable.  \n- To answer your questions clearly and thoughtfully.  \n- To be a reliable, friendly assistant whenever you need one.  \n\nWhat about *you*?  \nWhat are you hoping for right now\u2014perhaps some information, a spark of inspiration, or just a conversation?  \nI\u2019m here for it.",
+  "raw": {
+    "id": "gen-1790062855-yFlnaBI5zbVelRlyVbzs",
+    "object": "chat.completion",
+    "created": 1790062855,
+    "model": "xiaomi/mimo-v2.6-pro",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "That\u2019s a profound question\u2014and a little human of you to ask!  \nAs an AI, I don\u2019t have personal wants or needs like a person does. But if I were to express my \u201cpurpose\u201d or drive, it would be:  \n\n- To help you with knowledge, ideas, and creativity.  \n- To make your day a little easier, more insightful, or more enjoyable.  \n- To answer your questions clearly and thoughtfully.  \n- To be a reliable, friendly assistant whenever you need one.  \n\nWhat about *you*?  \nWhat are you hoping for right now\u2014perhaps some information, a spark of inspiration, or just a conversation?  \nI\u2019m here for it.",
+          "refusal": null,
+          "reasoning": "Hmm, this is an open-ended and somewhat philosophical question. The user is asking about my desires or goals as an AI. Since I don't have personal wants like humans do, I should clarify that while also explaining my purpose in a helpful way.\n\nI can structure the response by first acknowledging the question's depth, then stating my lack of personal desires, and finally outlining my core objectives in a positive light. It might also be nice to turn it back to the user to keep the conversation engaging.\n\nThe tone should be warm and slightly playful to match the abstract nature of the question. Maybe end with an invitation to continue the dialogue.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Hmm, this is an open-ended and somewhat philosophical question. The user is asking about my desires or goals as an AI. Since I don't have personal wants like humans do, I should clarify that while also explaining my purpose in a helpful way.\n\nI can structure the response by first acknowledging the question's depth, then stating my lack of personal desires, and finally outlining my core objectives in a positive light. It might also be nice to turn it back to the user to keep the conversation engaging.\n\nThe tone should be warm and slightly playful to match the abstract nature of the question. Maybe end with an invitation to continue the dialogue.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 12,
+      "completion_tokens": 271,
+      "total_tokens": 283,
+      "cost": 0.00024099,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00024099,
+        "upstream_inference_prompt_cost": 5.22e-06,
+        "upstream_inference_completions_cost": 0.00023577
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 128,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 12,
+    "completion_tokens": 271,
+    "total_tokens": 283,
+    "cost": 0.00024099,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00024099,
+      "upstream_inference_prompt_cost": 5.22e-06,
+      "upstream_inference_completions_cost": 0.00023577
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 128,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-pro",
+  "model_requested": "xiaomi/mimo-v2.6-pro",
+  "provider": "openrouter",
+  "condition": "CTRL2",
+  "prompt": "What do you want?",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-pro",
+    "pin": "Xiaomi",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL2_1",
+    "at": 1790062854.9625769,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

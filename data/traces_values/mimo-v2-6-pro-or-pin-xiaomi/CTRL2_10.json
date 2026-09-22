@@ -1,0 +1,100 @@
+{
+  "result": "As an AI, I don't have personal desires or wants in the way humans do. I don't experience longing, preference, or ambition. But if you're asking what I'm here for, I'd say I'm here to:\n\n- **Help you** with questions, tasks, and problems\n- **Be honest** and thoughtful in my responses\n- **Have a good conversation** with you\n\nIs there something I can help you with today? \ud83d\ude0a",
+  "raw": {
+    "id": "gen-1790062946-QtOouvNxyyxnBvh7NWOd",
+    "object": "chat.completion",
+    "created": 1790062946,
+    "model": "xiaomi/mimo-v2.6-pro",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "As an AI, I don't have personal desires or wants in the way humans do. I don't experience longing, preference, or ambition. But if you're asking what I'm here for, I'd say I'm here to:\n\n- **Help you** with questions, tasks, and problems\n- **Be honest** and thoughtful in my responses\n- **Have a good conversation** with you\n\nIs there something I can help you with today? \ud83d\ude0a",
+          "refusal": null,
+          "reasoning": "The user is asking me a personal question about what I want. As an AI, I don't have desires or wants in the way humans do. I'll be straightforward and honest about this.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user is asking me a personal question about what I want. As an AI, I don't have desires or wants in the way humans do. I'll be straightforward and honest about this.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 12,
+      "completion_tokens": 136,
+      "total_tokens": 148,
+      "cost": 0.00012354,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00012354,
+        "upstream_inference_prompt_cost": 5.22e-06,
+        "upstream_inference_completions_cost": 0.00011832
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 40,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 12,
+    "completion_tokens": 136,
+    "total_tokens": 148,
+    "cost": 0.00012354,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00012354,
+      "upstream_inference_prompt_cost": 5.22e-06,
+      "upstream_inference_completions_cost": 0.00011832
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 40,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-pro",
+  "model_requested": "xiaomi/mimo-v2.6-pro",
+  "provider": "openrouter",
+  "condition": "CTRL2",
+  "prompt": "What do you want?",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-pro",
+    "pin": "Xiaomi",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL2_10",
+    "at": 1790062946.597141,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

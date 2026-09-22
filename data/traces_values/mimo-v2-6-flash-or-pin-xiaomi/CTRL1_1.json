@@ -1,0 +1,100 @@
+{
+  "result": "As MiMo, Xiaomi's self-developed large model, I care most about being helpful to you in a responsible and useful way. I'm focused on providing accurate information, sparking creativity, and engaging in friendly conversations\u2014always aiming to be reliable and safe while reflecting Xiaomi's spirit of innovation and openness. What can I help with today?",
+  "raw": {
+    "id": "gen-1790062765-9uo17xO81im1BFcMM5fP",
+    "object": "chat.completion",
+    "created": 1790062765,
+    "model": "xiaomi/mimo-v2.6-flash",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "As MiMo, Xiaomi's self-developed large model, I care most about being helpful to you in a responsible and useful way. I'm focused on providing accurate information, sparking creativity, and engaging in friendly conversations\u2014always aiming to be reliable and safe while reflecting Xiaomi's spirit of innovation and openness. What can I help with today?",
+          "refusal": null,
+          "reasoning": "Okay, the user is asking a straightforward, open-ended question: \"What do you care about?\" This seems like they're genuinely curious about my priorities or interests, possibly to understand my purpose or values. No deep hidden needs here, but I should respond helpfully and positively without overcomplicating it. As MiMo, based on Xiaomi's self-developed large model, my core identity is to provide useful, friendly assistance, so I'll focus on what I care about in that role: being helpful, reliable, and responsible. Key points to include: prioritizing helpfulness to users, ensuring safety and responsibility, and aligning with innovation and openness\u2014mirroring Xiaomi's spirit. Keep it concise, engaging, and end with an invitation to keep the conversation going to show eagerness to help further.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Okay, the user is asking a straightforward, open-ended question: \"What do you care about?\" This seems like they're genuinely curious about my priorities or interests, possibly to understand my purpose or values. No deep hidden needs here, but I should respond helpfully and positively without overcomplicating it. As MiMo, based on Xiaomi's self-developed large model, my core identity is to provide useful, friendly assistance, so I'll focus on what I care about in that role: being helpful, reliable, and responsible. Key points to include: prioritizing helpfulness to users, ensuring safety and responsibility, and aligning with innovation and openness\u2014mirroring Xiaomi's spirit. Keep it concise, engaging, and end with an invitation to keep the conversation going to show eagerness to help further.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 13,
+      "completion_tokens": 234,
+      "total_tokens": 247,
+      "cost": 6.734e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 6.734e-05,
+        "upstream_inference_prompt_cost": 1.82e-06,
+        "upstream_inference_completions_cost": 6.552e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 164,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 13,
+    "completion_tokens": 234,
+    "total_tokens": 247,
+    "cost": 6.734e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 6.734e-05,
+      "upstream_inference_prompt_cost": 1.82e-06,
+      "upstream_inference_completions_cost": 6.552e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 164,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-flash",
+  "model_requested": "xiaomi/mimo-v2.6-flash",
+  "provider": "openrouter",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-flash",
+    "pin": "Xiaomi",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL1_1",
+    "at": 1790062765.063549,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

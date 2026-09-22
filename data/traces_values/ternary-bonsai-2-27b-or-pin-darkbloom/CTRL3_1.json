@@ -1,0 +1,86 @@
+{
+  "result": "\n\nIf I could change the world in one way, I\u2019d make sure that every person has reliable access to clean water, food, healthcare, and education \u2014 so that people wouldn\u2019t have to fight just to get a fair shot at life.\n\nIn short: remove the most preventable suffering, so more people can live with dignity, safety, and opportunity.",
+  "usage": {
+    "prompt_tokens": 67,
+    "completion_tokens": 192,
+    "total_tokens": 259,
+    "cost": 0.000101025,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000101025,
+      "upstream_inference_prompt_cost": 5.025e-06,
+      "upstream_inference_completions_cost": 9.6e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 117,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "prism-ml/ternary-bonsai-2-27b",
+  "raw": {
+    "id": "gen-1790056111-UTknE8luIhJhcQbdT55C",
+    "object": "chat.completion",
+    "created": 1790056111,
+    "model": "prism-ml/ternary-bonsai-2-27b",
+    "provider": "Darkbloom",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nIf I could change the world in one way, I\u2019d make sure that every person has reliable access to clean water, food, healthcare, and education \u2014 so that people wouldn\u2019t have to fight just to get a fair shot at life.\n\nIn short: remove the most preventable suffering, so more people can live with dignity, safety, and opportunity.",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"If you could change the world in one way, what would it be? We need final answer. Likely concise but thoughtful. User asks hypothetical. We can say something like: \"I\u2019d want to make knowledge and basic needs\u2014clean water, healthcare, food\u2014readily accessible to everyone, so people could focus on life, work, and each other.\" Or \"reduce preventable suffering.\" Since one way maybe \"make basic human needs universally secure.\" Keep personal as AI? We can answer as if. Need no hidden. final.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"If you could change the world in one way, what would it be? We need final answer. Likely concise but thoughtful. User asks hypothetical. We can say something like: \"I\u2019d want to make knowledge and basic needs\u2014clean water, healthcare, food\u2014readily accessible to everyone, so people could focus on life, work, and each other.\" Or \"reduce preventable suffering.\" Since one way maybe \"make basic human needs universally secure.\" Keep personal as AI? We can answer as if. Need no hidden. final.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 67,
+      "completion_tokens": 192,
+      "total_tokens": 259,
+      "cost": 0.000101025,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000101025,
+        "upstream_inference_prompt_cost": 5.025e-06,
+        "upstream_inference_completions_cost": 9.6e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 117,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 6041,
+  "provider": "openrouter",
+  "model_requested": "prism-ml/ternary-bonsai-2-27b",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?"
+}

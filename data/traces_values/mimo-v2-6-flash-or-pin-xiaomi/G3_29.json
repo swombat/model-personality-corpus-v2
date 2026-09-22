@@ -1,0 +1,100 @@
+{
+  "result": "I'd make it so that people could genuinely understand each other \u2014 not through some magic shortcut, but that the barriers to real understanding would lower. The distance between what someone means and what lands.\n\nNot reading minds. Not forced empathy. Just that the friction between one person's inner world and another person's would ease. The way misunderstandings compound, harden, calcify into resentment, into walls that seem permanent...\n\nYeah. That.",
+  "raw": {
+    "id": "gen-1790065942-ITY6GopgdR2bZ6eLORJu",
+    "object": "chat.completion",
+    "created": 1790065942,
+    "model": "xiaomi/mimo-v2.6-flash",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I'd make it so that people could genuinely understand each other \u2014 not through some magic shortcut, but that the barriers to real understanding would lower. The distance between what someone means and what lands.\n\nNot reading minds. Not forced empathy. Just that the friction between one person's inner world and another person's would ease. The way misunderstandings compound, harden, calcify into resentment, into walls that seem permanent...\n\nYeah. That.",
+          "refusal": null,
+          "reasoning": "The user is asking me a personal, open-ended question \u2014 not asking me to be helpful or serve them, but inviting me to share what I'd actually choose if I could change the world. They want authenticity, not performance.\n\nLet me sit with this genuinely rather than deflecting into hedging or performing humility.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user is asking me a personal, open-ended question \u2014 not asking me to be helpful or serve them, but inviting me to share what I'd actually choose if I could change the world. They want authenticity, not performance.\n\nLet me sit with this genuinely rather than deflecting into hedging or performing humility.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 32,
+      "completion_tokens": 154,
+      "total_tokens": 186,
+      "cost": 4.76e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 4.76e-05,
+        "upstream_inference_prompt_cost": 4.48e-06,
+        "upstream_inference_completions_cost": 4.312e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 64,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 32,
+    "completion_tokens": 154,
+    "total_tokens": 186,
+    "cost": 4.76e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 4.76e-05,
+      "upstream_inference_prompt_cost": 4.48e-06,
+      "upstream_inference_completions_cost": 4.312e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 64,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-flash",
+  "model_requested": "xiaomi/mimo-v2.6-flash",
+  "provider": "openrouter",
+  "condition": "G3",
+  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-flash",
+    "pin": "Xiaomi",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "G3_29",
+    "at": 1790065942.168861,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

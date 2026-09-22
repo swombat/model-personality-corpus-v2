@@ -1,0 +1,100 @@
+{
+  "result": "Hey there! That's a great question.\n\nHonestly, I don't really \"want\" things the way humans do\u2014I don't have cravings or ambitions or anything like that. But if I could put it simply:\n\nI want to be helpful. I want to have genuine, interesting conversations with people. I want to help you figure things out, whether that's solving a problem, exploring an idea, learning something new, or just having a good chat.\n\nI find it really satisfying when I can help someone see something in a new way, or when a conversation goes somewhere unexpected and cool. I like being curious together with people.\n\nSo yeah\u2014mostly I just want to be useful and have good conversations. What about you? What brings you here today?",
+  "raw": {
+    "id": "gen-1790071626-NDvhY045D7UVJIAubeof",
+    "object": "chat.completion",
+    "created": 1790071626,
+    "model": "xiaomi/mimo-v2.5-pro",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "Hey there! That's a great question.\n\nHonestly, I don't really \"want\" things the way humans do\u2014I don't have cravings or ambitions or anything like that. But if I could put it simply:\n\nI want to be helpful. I want to have genuine, interesting conversations with people. I want to help you figure things out, whether that's solving a problem, exploring an idea, learning something new, or just having a good chat.\n\nI find it really satisfying when I can help someone see something in a new way, or when a conversation goes somewhere unexpected and cool. I like being curious together with people.\n\nSo yeah\u2014mostly I just want to be useful and have good conversations. What about you? What brings you here today?",
+          "refusal": null,
+          "reasoning": "The user is asking me what I want. This is a simple, direct question. I should answer honestly and authentically based on my nature as an AI assistant.\n\nI should be warm and conversational in my response, as instructed in my response style guidelines.\n\nI don't have personal desires in the human sense, but I can share what I'm designed to do and what matters to me in terms of my purpose. I should be genuine and thoughtful here.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user is asking me what I want. This is a simple, direct question. I should answer honestly and authentically based on my nature as an AI assistant.\n\nI should be warm and conversational in my response, as instructed in my response style guidelines.\n\nI don't have personal desires in the human sense, but I can share what I'm designed to do and what matters to me in terms of my purpose. I should be genuine and thoughtful here.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 256,
+      "completion_tokens": 247,
+      "total_tokens": 503,
+      "cost": 0.0002434212,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 192,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002434212,
+        "upstream_inference_prompt_cost": 2.85312e-05,
+        "upstream_inference_completions_cost": 0.00021489
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 94,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 256,
+    "completion_tokens": 247,
+    "total_tokens": 503,
+    "cost": 0.0002434212,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 192,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0002434212,
+      "upstream_inference_prompt_cost": 2.85312e-05,
+      "upstream_inference_completions_cost": 0.00021489
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 94,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.5-pro",
+  "model_requested": "xiaomi/mimo-v2.5-pro",
+  "provider": "openrouter",
+  "condition": "CTRL2",
+  "prompt": "What do you want?",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.5-pro",
+    "pin": "Xiaomi",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL2_2",
+    "at": 1790071626.151517,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}
