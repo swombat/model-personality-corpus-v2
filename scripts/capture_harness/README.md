@@ -209,3 +209,13 @@ receipt tasks. It does not schedule values collection or recoding. The final
 receipt verifies the frozen untouched sources and preserved originals by hash.
 This repair-specific builder currently targets the GLM comparison workflow;
 it is not a general automatic repair planner for arbitrary legacy datasets.
+
+## Explicit reasoning conditions
+
+Optional per-model `reasoning_effort` sends OpenRouter `reasoning.effort` and
+`provider.require_parameters=true`. The exact effort is saved in every raw
+request/capture receipt and required by raw QA before adoption. Existing runs
+without this field retain their original provider-default behavior. Use distinct
+cell labels, slugs and ID prefixes for new experimental conditions; never reuse
+an existing default-reasoning cell. Endpoint declarations plus accepted requests
+establish advertised/requested support, not proof of hidden provider behavior.

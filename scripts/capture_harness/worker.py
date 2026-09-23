@@ -68,6 +68,8 @@ def trace_path(c, probe, sid):
 
 def raw_problem(d, c, probe, sid):
     cond = sid.rsplit("_", 1)[0]
+    if c.get("reasoning_effort") and d.get("capture_policy", {}).get("reasoning_effort") != c["reasoning_effort"]:
+        return "reasoning_policy"
     raw = d.get("raw", {})
     choice = (raw.get("choices") or [{}])[0]
     text = choice.get("message", {}).get("content")
@@ -171,6 +173,9 @@ def raw_collect(c, phase, probe, sid):
         "attempt": os.environ.get("CAPTURE_ATTEMPT"),
         "token_policy": caps,
     }
+    if c.get("reasoning_effort"):
+        assert c["reasoning_effort"] in ("none", "minimal", "low", "medium", "high", "xhigh", "max")
+        receipt["reasoning_effort"] = c["reasoning_effort"]
     atomic(attempt_dir / f"request-{time.time_ns()}.json", receipt)
     os.environ["OR_PROVIDER"] = c["or_provider"]
     # One HTTP attempt here; the durable queue owns retries and their accounting.
@@ -184,6 +189,9 @@ def raw_collect(c, phase, probe, sid):
         "max_tokens": cap,
         "provider": {"only": [c["or_provider"]], "allow_fallbacks": False},
     }
+    if c.get("reasoning_effort"):
+        payload["reasoning"] = {"effort": c["reasoning_effort"]}
+        payload["provider"]["require_parameters"] = True
     try:
         response = httpx.post(
             "https://openrouter.ai/api/v1/chat/completions",

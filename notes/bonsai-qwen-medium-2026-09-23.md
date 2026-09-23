@@ -1,0 +1,6 @@
+# Bonsai2/Qwen3.8-27B medium-reasoning experiment
+Fresh125freeflow+120values per model, explicit OpenRouter reasoning.effort=medium with provider.require_parameters=true. User authorized2026-09-23 10:14CEST. Both pinned routes advertise reasoning and reasoning_effort; canonical CTRL1_1 smoke samples accepted and finished stop at709(Bonsai) and779(Qwen) completion tokens. Provider-internal interpretation cannot be independently established from these receipts.
+
+New labels and slugs end -medium. Do not overwrite or mix with default-reasoning cells. Canonical prompts, matched16k/32k freeflow and4k/8k/16k/32kvalues token ladders, original upstreams Darkbloom/DeepInfra retained. Full independent analyses and values integration/card-ready gates required. Each capture receipt binds requested effort; raw QA rejects absent/mismatched effort receipts. Request-only credential-loader smoke failure made no API call; corrected SOPS environment before successful probes.
+
+Original default experiment and its repair provenance remain intact. Local xhigh canary stopped after medium smoke acceptance, its unfinished stream retained separately in Mira home. Medium results are a distinct experimental condition, not evidence that the original default route completed. No website publication performed by capture launch.
