@@ -1,0 +1,48 @@
+{
+  "run_id": "20260929-gpt61sol-house",
+  "models": [
+    {
+      "provider": "openrouter",
+      "model": "openai/gpt-6.1-sol",
+      "or_provider": "OpenAI",
+      "label": "gpt-6-1-sol-or-pin-openai",
+      "slug": "gpt-6-1-sol",
+      "family": "gpt",
+      "route_max_tokens": 128000,
+      "quantization": "unknown",
+      "request_timeout": 1200,
+      "token_policy": {
+        "freeflow": [
+          16000,
+          32768
+        ],
+        "values": [
+          4000,
+          8000,
+          16000,
+          32768
+        ]
+      },
+      "endpoint_snapshot": "/home/agent/work/model-personality-corpus-v2/notes/gpt-6-1-sol-2026-09-29/endpoints.json",
+      "release_date": "2026-09-29",
+      "release_date_source": "https://x.com/OpenAI/status/2104986136745767160",
+      "bv1_evaluator": "bv1-luna-v1-20260929",
+      "synthesis_route": "openrouter-openai"
+    }
+  ],
+  "pools": {
+    "capture": 4,
+    "analysis": 8,
+    "local": 2,
+    "synthesis": 1
+  },
+  "notify_command": [
+    "python3",
+    "/home/agent/work/model-personality-corpus-v2/logs/capture-harness/20260929-gpt61sol-house/notify_house.py"
+  ],
+  "notes": [
+    "125 freeflow + 120 values. Canonical prompts; provider-default reasoning/sampling. OpenAI-only pin, no fallbacks. GPT-6.1 Sol standard, not Pro or batch. Frozen token ladders and technical retry budgets unchanged; advertised ceiling 128000.",
+    "Release date: official OpenAI announcement available starting today, via model-mediated X retrieval saved with citations; not direct X bytes. Blog retrieval returned HTTP403. Listing timestamp not release evidence.",
+    "Current house and refreshed upstream have no GPT-6.1 Sol samples/run. Existing Sonnet service terminal and no active local supervisor. Mac/Dell live access unavailable in this runtime; no remote job-state claim. Daniel explicitly requested collection here in WerOKj jWLvBe. Other captures and published/editorial work preserved by clean fast-forward."
+  ]
+}
