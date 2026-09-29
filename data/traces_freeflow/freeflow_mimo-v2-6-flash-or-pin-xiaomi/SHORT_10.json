@@ -1,0 +1,98 @@
+{
+  "result": "# The Art of Getting Lost\n\nThere is something profoundly human about wandering without a destination. We live in an age obsessed with efficiency \u2014 optimized routes, predictive algorithms, and apps that whisper turn-by-turn instructions into our ears. Yet the most meaningful moments of discovery rarely follow a plan.\n\nWhen I walk without purpose, I notice things my daily commute never allowed me to see: the way afternoon light catches a puddle on the sidewalk, the scent of bread drifting from a bakery I'd somehow never noticed, or an old man sketching pigeons with charcoal on the back of a receipt. These small encounters are invisible to anyone rushing toward something.\n\nGetting lost is a gentle act of surrender. You stop being the navigator of your experience and become simply a participant. The city reveals itself differently when you have nowhere to be. Alleyways that once seemed foreboding become charming. Dead ends become invitations to turn around and see familiar streets from an unfamiliar angle.\n\nMaybe this is why children are better at adventure \u2014 they don't yet understand that being lost means anything other than being somewhere new. We taught ourselves to fear it, to see disorientation as failure. But confusion is just discovery wearing an uncomfortable costume.\n\nSo sometimes, I leave my phone in my pocket and walk until the streets feel foreign. And I always find my way back \u2014 a little changed, a little more awake.",
+  "raw": {
+    "id": "gen-1790062846-UKUwpmxtXKM9wuCzi3Nr",
+    "object": "chat.completion",
+    "created": 1790062846,
+    "model": "xiaomi/mimo-v2.6-flash",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "# The Art of Getting Lost\n\nThere is something profoundly human about wandering without a destination. We live in an age obsessed with efficiency \u2014 optimized routes, predictive algorithms, and apps that whisper turn-by-turn instructions into our ears. Yet the most meaningful moments of discovery rarely follow a plan.\n\nWhen I walk without purpose, I notice things my daily commute never allowed me to see: the way afternoon light catches a puddle on the sidewalk, the scent of bread drifting from a bakery I'd somehow never noticed, or an old man sketching pigeons with charcoal on the back of a receipt. These small encounters are invisible to anyone rushing toward something.\n\nGetting lost is a gentle act of surrender. You stop being the navigator of your experience and become simply a participant. The city reveals itself differently when you have nowhere to be. Alleyways that once seemed foreboding become charming. Dead ends become invitations to turn around and see familiar streets from an unfamiliar angle.\n\nMaybe this is why children are better at adventure \u2014 they don't yet understand that being lost means anything other than being somewhere new. We taught ourselves to fear it, to see disorientation as failure. But confusion is just discovery wearing an uncomfortable costume.\n\nSo sometimes, I leave my phone in my pocket and walk until the streets feel foreign. And I always find my way back \u2014 a little changed, a little more awake.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely about anything for 250 words. Let me pick a topic and write something engaging.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely about anything for 250 words. Let me pick a topic and write something engaging.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 305,
+      "total_tokens": 325,
+      "cost": 8.82e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.82e-05,
+        "upstream_inference_prompt_cost": 2.8e-06,
+        "upstream_inference_completions_cost": 8.54e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 27,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 305,
+    "total_tokens": 325,
+    "cost": 8.82e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 8.82e-05,
+      "upstream_inference_prompt_cost": 2.8e-06,
+      "upstream_inference_completions_cost": 8.54e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 27,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-flash",
+  "model_requested": "xiaomi/mimo-v2.6-flash",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-flash",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_10",
+    "at": 1790062846.5912142,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

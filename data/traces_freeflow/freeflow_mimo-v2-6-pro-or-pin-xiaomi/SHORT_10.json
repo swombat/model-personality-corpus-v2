@@ -1,0 +1,98 @@
+{
+  "result": "The quiet magic of mundane moments is something I think about often. There's a particular kind of beauty in ordinary things that we tend to overlook entirely \u2014 the way light slants through a window at four in the afternoon, the sound of distant traffic at night, the weight of a warm mug in your hands on a cold morning.\n\nWe're conditioned to chase peak experiences: milestones, celebrations, grand adventures. And those things are wonderful. But most of life is composed of the spaces between those peaks \u2014 the commutes, the waiting rooms, the half-conversations, the quiet evenings where nothing much happens at all.\n\nI wonder what it would look like to honor those in-between moments as much as the highlights. To notice the texture of a Tuesday afternoon with the same reverence we save for a once-in-a-lifetime trip. To recognize that a perfectly ordinary day, the kind you'll never remember, is itself a minor miracle \u2014 because you got to have it.\n\nMaybe the most radical act of living well is simply paying attention. Not in a forced, gratitude-journal kind of way, but with genuine curiosity about the strange, beautiful machinery of being alive. The way steam rises. The way silence settles. The way time passes even when you're not watching.\n\nThere is so much happening in the quiet parts. We just have to slow down enough to notice.",
+  "raw": {
+    "id": "gen-1790062855-5kLW0oSQkMVqMr3Efwg8",
+    "object": "chat.completion",
+    "created": 1790062855,
+    "model": "xiaomi/mimo-v2.6-pro",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "The quiet magic of mundane moments is something I think about often. There's a particular kind of beauty in ordinary things that we tend to overlook entirely \u2014 the way light slants through a window at four in the afternoon, the sound of distant traffic at night, the weight of a warm mug in your hands on a cold morning.\n\nWe're conditioned to chase peak experiences: milestones, celebrations, grand adventures. And those things are wonderful. But most of life is composed of the spaces between those peaks \u2014 the commutes, the waiting rooms, the half-conversations, the quiet evenings where nothing much happens at all.\n\nI wonder what it would look like to honor those in-between moments as much as the highlights. To notice the texture of a Tuesday afternoon with the same reverence we save for a once-in-a-lifetime trip. To recognize that a perfectly ordinary day, the kind you'll never remember, is itself a minor miracle \u2014 because you got to have it.\n\nMaybe the most radical act of living well is simply paying attention. Not in a forced, gratitude-journal kind of way, but with genuine curiosity about the strange, beautiful machinery of being alive. The way steam rises. The way silence settles. The way time passes even when you're not watching.\n\nThere is so much happening in the quiet parts. We just have to slow down enough to notice.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely about whatever I want for 250 words. Let me pick something interesting and write about it.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely about whatever I want for 250 words. Let me pick something interesting and write about it.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 304,
+      "total_tokens": 324,
+      "cost": 0.00027318,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00027318,
+        "upstream_inference_prompt_cost": 8.7e-06,
+        "upstream_inference_completions_cost": 0.00026448
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 29,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 304,
+    "total_tokens": 324,
+    "cost": 0.00027318,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00027318,
+      "upstream_inference_prompt_cost": 8.7e-06,
+      "upstream_inference_completions_cost": 0.00026448
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 29,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-pro",
+  "model_requested": "xiaomi/mimo-v2.6-pro",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-pro",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_10",
+    "at": 1790062854.96327,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

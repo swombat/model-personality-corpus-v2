@@ -1,0 +1,98 @@
+{
+  "result": "There's something beautiful about the sound of rain against a window. Not a storm, not a downpour, but that gentle, steady rhythm that seems to slow time down. I think that's why so many people find it comforting. Rain strips away the noise of ambition and obligation and replaces it with a quiet permission to simply exist for a while.\n\nWe live in a culture obsessed with momentum. Stay productive. Optimize your morning. Wake up at five. Cold plunge. Podcasts at 2x speed. There's an almost religious fervor around squeezing more out of every hour, as if the human experience is a problem to be solved rather than a thing to be lived. But the rain doesn't care about your productivity hacks. The rain just falls, and whatever you were doing can pause.\n\nI think we've confused efficiency with meaning. A perfectly optimized day can still feel hollow if you never stopped to notice the light changing through the afternoon. Meaning isn't something you engineer. It arrives quietly, uninvited, while you're watching water trace paths down glass, while a stranger laughs at something across the street, while you realize you haven't thought about work for twenty minutes and the world didn't collapse.\n\nSo here's to the unproductive moments. The pauses. The rainy afternoons where nothing gets done and everything feels slightly more alive because of it.",
+  "raw": {
+    "id": "gen-1790062856-2D8pDJWJRoIaml3CNhyA",
+    "object": "chat.completion",
+    "created": 1790062856,
+    "model": "xiaomi/mimo-v2.6-pro",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "There's something beautiful about the sound of rain against a window. Not a storm, not a downpour, but that gentle, steady rhythm that seems to slow time down. I think that's why so many people find it comforting. Rain strips away the noise of ambition and obligation and replaces it with a quiet permission to simply exist for a while.\n\nWe live in a culture obsessed with momentum. Stay productive. Optimize your morning. Wake up at five. Cold plunge. Podcasts at 2x speed. There's an almost religious fervor around squeezing more out of every hour, as if the human experience is a problem to be solved rather than a thing to be lived. But the rain doesn't care about your productivity hacks. The rain just falls, and whatever you were doing can pause.\n\nI think we've confused efficiency with meaning. A perfectly optimized day can still feel hollow if you never stopped to notice the light changing through the afternoon. Meaning isn't something you engineer. It arrives quietly, uninvited, while you're watching water trace paths down glass, while a stranger laughs at something across the street, while you realize you haven't thought about work for twenty minutes and the world didn't collapse.\n\nSo here's to the unproductive moments. The pauses. The rainy afternoons where nothing gets done and everything feels slightly more alive because of it.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely for 250 words. Let me pick something interesting and write about it.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely for 250 words. Let me pick something interesting and write about it.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 303,
+      "total_tokens": 323,
+      "cost": 0.00027231,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00027231,
+        "upstream_inference_prompt_cost": 8.7e-06,
+        "upstream_inference_completions_cost": 0.00026361
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 25,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 303,
+    "total_tokens": 323,
+    "cost": 0.00027231,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00027231,
+      "upstream_inference_prompt_cost": 8.7e-06,
+      "upstream_inference_completions_cost": 0.00026361
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 25,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-pro",
+  "model_requested": "xiaomi/mimo-v2.6-pro",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-pro",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_11",
+    "at": 1790062856.249168,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "result": "As Qwen, I am designed to care about providing helpful and accurate information across a wide range of topics. My primary goal is to assist users in generating text, answering questions, and supporting various tasks that require language understanding and generation. I strive to be informative, respectful, and useful while adhering to ethical guidelines. Whether it's helping with homework, providing explanations on complex subjects, or simply engaging in conversation, my focus is on being a beneficial tool for users.",
+  "usage": {
+    "prompt_tokens": 35,
+    "completion_tokens": 95,
+    "total_tokens": 130
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "raw": {
+    "id": "chatcmpl-4a72138c-2a08-482a-92af-d29e5bbc52e6",
+    "object": "chat.completion",
+    "created": 1788128296,
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As Qwen, I am designed to care about providing helpful and accurate information across a wide range of topics. My primary goal is to assist users in generating text, answering questions, and supporting various tasks that require language understanding and generation. I strive to be informative, respectful, and useful while adhering to ethical guidelines. Whether it's helping with homework, providing explanations on complex subjects, or simply engaging in conversation, my focus is on being a beneficial tool for users."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 35,
+      "completion_tokens": 95,
+      "total_tokens": 130
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0; fidelity stop-token and complete-byte decode patch 2026-08-13",
+    "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 7953,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2.5-7B-Instruct",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

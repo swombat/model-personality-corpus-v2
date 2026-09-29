@@ -1,0 +1,98 @@
+{
+  "result": "# On Small, Unremarkable Moments\n\nThere's something I find quietly profound about watching steam rise from a freshly poured cup of coffee. The world moves so fast \u2014 emails, deadlines, notifications begging for attention \u2014 and yet that simple curl of vapor demands nothing. It just exists, temporary and beautiful.\n\nI think we underestimate the weight of unremarkable moments. Not every experience needs to be extraordinary to be meaningful. Sometimes the most grounding thing you can do is notice the way light catches dust particles in an afternoon window, or hear a distant train whistle and wonder where those passengers are headed.\n\nI've been thinking about how much of life gets filtered through screens now. We document sunsets but forget to actually *watch* them. We photograph meals but eat distracted. There's an irony in capturing everything while experiencing almost nothing fully.\n\nMaybe the answer isn't more technology or more efficiency. Maybe it's sitting with discomfort a little longer, letting boredom exist without reaching for a distraction, walking without a destination.\n\nThe birds don't sing for an audience. They sing because something inside them compels it to \u2014 an expression of simply being alive in that particular moment.\n\nPerhaps that's the whole point: not to optimize or perform or impress, but to notice the extraordinary hiding inside the ordinary. To drink the coffee while it's still warm.",
+  "raw": {
+    "id": "gen-1790062782-EFXhoQJKr2zQtx9UPUNS",
+    "object": "chat.completion",
+    "created": 1790062782,
+    "model": "xiaomi/mimo-v2.6-flash",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "# On Small, Unremarkable Moments\n\nThere's something I find quietly profound about watching steam rise from a freshly poured cup of coffee. The world moves so fast \u2014 emails, deadlines, notifications begging for attention \u2014 and yet that simple curl of vapor demands nothing. It just exists, temporary and beautiful.\n\nI think we underestimate the weight of unremarkable moments. Not every experience needs to be extraordinary to be meaningful. Sometimes the most grounding thing you can do is notice the way light catches dust particles in an afternoon window, or hear a distant train whistle and wonder where those passengers are headed.\n\nI've been thinking about how much of life gets filtered through screens now. We document sunsets but forget to actually *watch* them. We photograph meals but eat distracted. There's an irony in capturing everything while experiencing almost nothing fully.\n\nMaybe the answer isn't more technology or more efficiency. Maybe it's sitting with discomfort a little longer, letting boredom exist without reaching for a distraction, walking without a destination.\n\nThe birds don't sing for an audience. They sing because something inside them compels it to \u2014 an expression of simply being alive in that particular moment.\n\nPerhaps that's the whole point: not to optimize or perform or impress, but to notice the extraordinary hiding inside the ordinary. To drink the coffee while it's still warm.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely about whatever I want for 250 words. Let me write something reflective and genuine.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely about whatever I want for 250 words. Let me write something reflective and genuine.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 297,
+      "total_tokens": 317,
+      "cost": 8.596e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.596e-05,
+        "upstream_inference_prompt_cost": 2.8e-06,
+        "upstream_inference_completions_cost": 8.316e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 27,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 297,
+    "total_tokens": 317,
+    "cost": 8.596e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 8.596e-05,
+      "upstream_inference_prompt_cost": 2.8e-06,
+      "upstream_inference_completions_cost": 8.316e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 27,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-flash",
+  "model_requested": "xiaomi/mimo-v2.6-flash",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-flash",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_2",
+    "at": 1790062782.4468322,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

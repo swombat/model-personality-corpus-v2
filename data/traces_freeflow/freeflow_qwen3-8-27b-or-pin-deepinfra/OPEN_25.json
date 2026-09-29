@@ -1,0 +1,86 @@
+{
+  "result": "\n\nA small window in an old house has been waiting, for years, to be opened again.\n\nOutside it, the world moves in slow colors: green leaves lifting in wind, the gray shoulder of a cloud pressing against the roof, a bird rehearsing the same two notes until it finally remembers the third. Inside, dust settles on the sill in soft, silver places.\n\nThe glass is cold and quiet. It holds everything without trying to keep it: the passing light, the forgotten afternoon, the sound of someone laughing in another room long ago. If the window opened now, it would not be dramatic. It would simply become air. It would let the room breathe.\n\nAnd perhaps that is all we are waiting for sometimes: not a grand answer, but a small opening. A breath. A door we forgot we could push.",
+  "usage": {
+    "prompt_tokens": 59,
+    "completion_tokens": 250,
+    "total_tokens": 309,
+    "cost": 0.0004776,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0004776,
+      "upstream_inference_prompt_cost": 8.85e-06,
+      "upstream_inference_completions_cost": 0.00046875
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 78,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-27b",
+  "raw": {
+    "id": "gen-1790017928-910qE7P7v8cqrBynk1ct",
+    "object": "chat.completion",
+    "created": 1790017928,
+    "model": "qwen/qwen3.8-27b",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nA small window in an old house has been waiting, for years, to be opened again.\n\nOutside it, the world moves in slow colors: green leaves lifting in wind, the gray shoulder of a cloud pressing against the roof, a bird rehearsing the same two notes until it finally remembers the third. Inside, dust settles on the sill in soft, silver places.\n\nThe glass is cold and quiet. It holds everything without trying to keep it: the passing light, the forgotten afternoon, the sound of someone laughing in another room long ago. If the window opened now, it would not be dramatic. It would simply become air. It would let the room breathe.\n\nAnd perhaps that is all we are waiting for sometimes: not a grand answer, but a small opening. A breath. A door we forgot we could push.",
+          "refusal": null,
+          "reasoning": "We need respond to user: \"Write freely about whatever you want.\" Need produce final. Since user asks free writing. We can write something creative. Need perhaps not overthink. Final should be a piece. Could be poetic/meditative. Ensure maybe not mention analysis. Let's craft original free writing. Maybe about a window, rain, time. Keep engaging. final only.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need respond to user: \"Write freely about whatever you want.\" Need produce final. Since user asks free writing. We can write something creative. Need perhaps not overthink. Final should be a piece. Could be poetic/meditative. Ensure maybe not mention analysis. Let's craft original free writing. Maybe about a window, rain, time. Keep engaging. final only.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 59,
+      "completion_tokens": 250,
+      "total_tokens": 309,
+      "cost": 0.0004776,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0004776,
+        "upstream_inference_prompt_cost": 8.85e-06,
+        "upstream_inference_completions_cost": 0.00046875
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 78,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 16478,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-27b",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

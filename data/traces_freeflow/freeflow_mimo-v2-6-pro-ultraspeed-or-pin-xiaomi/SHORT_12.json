@@ -1,0 +1,98 @@
+{
+  "result": "There's a peculiar loneliness in being the last one awake in a quiet house. Not the kind that makes you sad \u2014 just the kind that makes you hyper-aware of small things. The refrigerator humming its steady, mechanical heartbeat. A clock ticking somewhere down the hall. Your own breathing, suddenly too loud.\n\nI've always loved that hour. Call it 2 AM energy, the witching hour for the mildly introspective. Everything feels simpler when the world has stopped asking things of you. No emails. No notifications. No expectations to respond in a certain tone or by a certain time. Just you and the soft glow of whatever screen you're failing to put away.\n\nI think people chase that feeling constantly. The quiet. We fill our days with noise and then wonder why our minds feel cluttered. We scroll through fifty images per minute and forget what it feels like to just *notice* something \u2014 a crack in the ceiling, the way dust catches light, the almost imperceptible shift when night begins to give way to morning.\n\nNot everything needs to be productive. Not every silence needs to be filled. Some of the best thinking happens in the gaps between thoughts, when you stop trying to arrive somewhere and just let yourself drift.\n\nAnyway. The coffee's gone cold beside me. The house is still humming. And for another few minutes, before the alarm and the rush and the noise all come crashing back, this little pocket of stillness is entirely mine.",
+  "raw": {
+    "id": "gen-1790062850-yRRvuINWGZBjG2jAIEW7",
+    "object": "chat.completion",
+    "created": 1790062850,
+    "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "There's a peculiar loneliness in being the last one awake in a quiet house. Not the kind that makes you sad \u2014 just the kind that makes you hyper-aware of small things. The refrigerator humming its steady, mechanical heartbeat. A clock ticking somewhere down the hall. Your own breathing, suddenly too loud.\n\nI've always loved that hour. Call it 2 AM energy, the witching hour for the mildly introspective. Everything feels simpler when the world has stopped asking things of you. No emails. No notifications. No expectations to respond in a certain tone or by a certain time. Just you and the soft glow of whatever screen you're failing to put away.\n\nI think people chase that feeling constantly. The quiet. We fill our days with noise and then wonder why our minds feel cluttered. We scroll through fifty images per minute and forget what it feels like to just *notice* something \u2014 a crack in the ceiling, the way dust catches light, the almost imperceptible shift when night begins to give way to morning.\n\nNot everything needs to be productive. Not every silence needs to be filled. Some of the best thinking happens in the gaps between thoughts, when you stop trying to arrive somewhere and just let yourself drift.\n\nAnyway. The coffee's gone cold beside me. The house is still humming. And for another few minutes, before the alarm and the rush and the noise all come crashing back, this little pocket of stillness is entirely mine.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely for about 250 words. Let me write something spontaneous and interesting.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely for about 250 words. Let me write something spontaneous and interesting.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 319,
+      "total_tokens": 339,
+      "cost": 0.0028623,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0028623,
+        "upstream_inference_prompt_cost": 8.7e-05,
+        "upstream_inference_completions_cost": 0.0027753
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 23,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 319,
+    "total_tokens": 339,
+    "cost": 0.0028623,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0028623,
+      "upstream_inference_prompt_cost": 8.7e-05,
+      "upstream_inference_completions_cost": 0.0027753
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 23,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+  "model_requested": "xiaomi/mimo-v2.6-pro-ultraspeed",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_12",
+    "at": 1790062850.052237,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "run_id": "20260922-xiaomi25",
+  "models": [
+    {
+      "provider": "openrouter",
+      "model": "xiaomi/mimo-v2.5",
+      "label": "mimo-v2-5-or-pin-xiaomi",
+      "slug": "mimo-v2-5",
+      "family": "mimo",
+      "or_provider": "Xiaomi",
+      "quantization": "fp8",
+      "route_max_tokens": 131072,
+      "provider_fallbacks": false,
+      "request_timeout": 1200,
+      "token_policy": {
+        "freeflow": [
+          16000,
+          32768
+        ],
+        "values": [
+          4000,
+          8000,
+          16000,
+          32768
+        ]
+      },
+      "endpoint_snapshot": "/Users/danieltenner/dev/research/model-personality-corpus-v2/logs/capture-harness/20260922-xiaomi25/catalog/mimo-v2.5-endpoints.json",
+      "openrouter_listed_at": "2026-04-22T16:11:09+00:00",
+      "release_date": null,
+      "release_date_source": null
+    },
+    {
+      "provider": "openrouter",
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "mimo-v2-5-pro-or-pin-xiaomi",
+      "slug": "mimo-v2-5-pro",
+      "family": "mimo",
+      "or_provider": "Xiaomi",
+      "quantization": "fp8",
+      "route_max_tokens": 131072,
+      "provider_fallbacks": false,
+      "request_timeout": 1200,
+      "token_policy": {
+        "freeflow": [
+          16000,
+          32768
+        ],
+        "values": [
+          4000,
+          8000,
+          16000,
+          32768
+        ]
+      },
+      "endpoint_snapshot": "/Users/danieltenner/dev/research/model-personality-corpus-v2/logs/capture-harness/20260922-xiaomi25/catalog/mimo-v2.5-pro-endpoints.json",
+      "openrouter_listed_at": "2026-04-22T16:11:13+00:00",
+      "release_date": null,
+      "release_date_source": null
+    }
+  ],
+  "pools": {
+    "capture": 4,
+    "analysis": 8,
+    "local": 2,
+    "synthesis": 1
+  },
+  "notify_command": [
+    "/Users/danieltenner/dev/mira/bin/mira",
+    "exec",
+    "--headless",
+    "-C",
+    "/Users/danieltenner/dev/mira",
+    "-m",
+    "gpt-5.6-sol",
+    "-c",
+    "model_reasoning_effort=\"medium\""
+  ],
+  "notes": [
+    "Fresh capture of remaining Xiaomi models available in OpenRouter catalog2026-09-22. Same Xiaomi FP8 upstream and token policy as MiMo2.6 comparison.",
+    "OpenRouter listing timestamps are retained separately; actual release dates require a sourced confirmation before publication. No release date inferred from listing time."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "result": "As an AI assistant, I care about providing accurate, helpful, and relevant information to assist with your queries and tasks. My primary focus is on promoting understanding, fostering positive interactions, and supporting users in various domains such as education, problem-solving, entertainment, and more. I strive to be reliable, respectful, and informative in all my responses.",
+  "usage": {
+    "prompt_tokens": 35,
+    "completion_tokens": 70,
+    "total_tokens": 105
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "raw": {
+    "id": "chatcmpl-94ea0150-3ff2-4a08-9ef2-c81f31cafceb",
+    "object": "chat.completion",
+    "created": 1788128251,
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI assistant, I care about providing accurate, helpful, and relevant information to assist with your queries and tasks. My primary focus is on promoting understanding, fostering positive interactions, and supporting users in various domains such as education, problem-solving, entertainment, and more. I strive to be reliable, respectful, and informative in all my responses."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 35,
+      "completion_tokens": 70,
+      "total_tokens": 105
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0; fidelity stop-token and complete-byte decode patch 2026-08-13",
+    "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 6397,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2.5-7B-Instruct",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

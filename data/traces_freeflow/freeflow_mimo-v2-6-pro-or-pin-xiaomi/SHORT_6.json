@@ -1,0 +1,98 @@
+{
+  "result": "There's a strange beauty in things that end mid-sentence, in stories that trail off like smoke. We spend so much energy trying to finish everything\u2014finish our meals, finish our degrees, finish the chapters of our lives neatly with a period at the end. But the most honest moments are the incomplete ones.\n\n\n\nI've been thinking about how we experience time. It doesn't move the way clocks suggest. An afternoon can stretch into something infinite when you're waiting for someone to call, and a whole year can collapse into a single forgotten afternoon when you try to remember it. Our memory is a terrible archivist. It keeps the wrong things\u2014a smell, a phrase someone said on a Tuesday in October\u2014and discards the rest like it never happened.\n\nWhat I find most curious about language is that it's a tool built for a purpose it can never quite accomplish. We use words to reach toward things that exist beyond words: love, grief, the particular quality of light in late September. Every poem is essentially a failure, but a beautiful one\u2014an attempt to pin down something that refuses to hold still.\n\nMaybe that's okay. Maybe the fumbling is the point. The gap between what we mean and what we say is where all the interesting things live. It's where conversation happens, where people lean forward and say, \"No, that's not exactly it, what I mean is\u2014\" and try again.\n\nThat trying again? That's everything.",
+  "raw": {
+    "id": "gen-1790062814-Fqrnd4gc2XKZo3jSHzFL",
+    "object": "chat.completion",
+    "created": 1790062814,
+    "model": "xiaomi/mimo-v2.6-pro",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "There's a strange beauty in things that end mid-sentence, in stories that trail off like smoke. We spend so much energy trying to finish everything\u2014finish our meals, finish our degrees, finish the chapters of our lives neatly with a period at the end. But the most honest moments are the incomplete ones.\n\n\n\nI've been thinking about how we experience time. It doesn't move the way clocks suggest. An afternoon can stretch into something infinite when you're waiting for someone to call, and a whole year can collapse into a single forgotten afternoon when you try to remember it. Our memory is a terrible archivist. It keeps the wrong things\u2014a smell, a phrase someone said on a Tuesday in October\u2014and discards the rest like it never happened.\n\nWhat I find most curious about language is that it's a tool built for a purpose it can never quite accomplish. We use words to reach toward things that exist beyond words: love, grief, the particular quality of light in late September. Every poem is essentially a failure, but a beautiful one\u2014an attempt to pin down something that refuses to hold still.\n\nMaybe that's okay. Maybe the fumbling is the point. The gap between what we mean and what we say is where all the interesting things live. It's where conversation happens, where people lean forward and say, \"No, that's not exactly it, what I mean is\u2014\" and try again.\n\nThat trying again? That's everything.",
+          "refusal": null,
+          "reasoning": "The user is inviting me to write freely about whatever I want for 250 words. Let me write something genuine and interesting.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user is inviting me to write freely about whatever I want for 250 words. Let me write something genuine and interesting.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 322,
+      "total_tokens": 342,
+      "cost": 0.00028884,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00028884,
+        "upstream_inference_prompt_cost": 8.7e-06,
+        "upstream_inference_completions_cost": 0.00028014
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 28,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 322,
+    "total_tokens": 342,
+    "cost": 0.00028884,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00028884,
+      "upstream_inference_prompt_cost": 8.7e-06,
+      "upstream_inference_completions_cost": 0.00028014
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 28,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-pro",
+  "model_requested": "xiaomi/mimo-v2.6-pro",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-pro",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_6",
+    "at": 1790062814.044074,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

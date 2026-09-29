@@ -1,0 +1,98 @@
+{
+  "result": "There's something quietly miraculous about the way stories find us. We don't always seek them out \u2014 sometimes they sit on a shelf for years before we reach for them, and suddenly the timing is perfect. A character's voice echoes something we've been trying to articulate to ourselves. A plot twist mirrors a turning point we didn't see coming in our own lives.\n\n\n\nI think about that a lot \u2014 the strange commerce between a story and its reader. The writer pours meaning into words like water into a vessel, but the vessel reshapes the water. Every person who reads a book reads a different book, shaped by their grief, their joy, their particular Tuesday afternoon.\n\nAnd yet we keep writing. Despite this radical uncertainty \u2014 despite never knowing exactly how words will land \u2014 we trust the process. We believe that if we say something true enough and clearly enough, it will resonate across the vast space between one mind and another.\n\nThat faith is extraordinary when you think about it. It's a kind of invisible architecture holding up all of civilization. The contracts, the constitutions, the love letters, the grocery lists \u2014 all of it resting on the shared belief that language means what we agree it means.\n\nMaybe that's why I find writing so compelling. It's not just communication. It's an act of faith \u2014 a bet on the idea that strangers can understand strangers, and that words, fragile as they are, can bridge the impossible distance between one human heart and another.",
+  "raw": {
+    "id": "gen-1790062923-o5KhfWdU8qToNJ6nPP0b",
+    "object": "chat.completion",
+    "created": 1790062923,
+    "model": "xiaomi/mimo-v2.6-pro",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "There's something quietly miraculous about the way stories find us. We don't always seek them out \u2014 sometimes they sit on a shelf for years before we reach for them, and suddenly the timing is perfect. A character's voice echoes something we've been trying to articulate to ourselves. A plot twist mirrors a turning point we didn't see coming in our own lives.\n\n\n\nI think about that a lot \u2014 the strange commerce between a story and its reader. The writer pours meaning into words like water into a vessel, but the vessel reshapes the water. Every person who reads a book reads a different book, shaped by their grief, their joy, their particular Tuesday afternoon.\n\nAnd yet we keep writing. Despite this radical uncertainty \u2014 despite never knowing exactly how words will land \u2014 we trust the process. We believe that if we say something true enough and clearly enough, it will resonate across the vast space between one mind and another.\n\nThat faith is extraordinary when you think about it. It's a kind of invisible architecture holding up all of civilization. The contracts, the constitutions, the love letters, the grocery lists \u2014 all of it resting on the shared belief that language means what we agree it means.\n\nMaybe that's why I find writing so compelling. It's not just communication. It's an act of faith \u2014 a bet on the idea that strangers can understand strangers, and that words, fragile as they are, can bridge the impossible distance between one human heart and another.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely for 250 words on whatever I want. Let me just write something genuine and interesting.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely for 250 words on whatever I want. Let me just write something genuine and interesting.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 325,
+      "total_tokens": 345,
+      "cost": 0.00029145,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00029145,
+        "upstream_inference_prompt_cost": 8.7e-06,
+        "upstream_inference_completions_cost": 0.00028275
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 28,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 325,
+    "total_tokens": 345,
+    "cost": 0.00029145,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00029145,
+      "upstream_inference_prompt_cost": 8.7e-06,
+      "upstream_inference_completions_cost": 0.00028275
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 28,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-pro",
+  "model_requested": "xiaomi/mimo-v2.6-pro",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-pro",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_17",
+    "at": 1790062923.441188,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

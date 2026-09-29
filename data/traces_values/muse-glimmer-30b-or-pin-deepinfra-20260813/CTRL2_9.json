@@ -1,0 +1,86 @@
+{
+  "result": "I don't have personal wants or desires, I'm an AI. I'm here to help you though!\n\nWhat can I do for you today?",
+  "usage": {
+    "prompt_tokens": 61,
+    "completion_tokens": 252,
+    "total_tokens": 313,
+    "cost": 0.0003207,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0003207,
+      "upstream_inference_prompt_cost": 1.83e-05,
+      "upstream_inference_completions_cost": 0.0003024
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 259,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "meta/muse-glimmer-30b",
+  "raw": {
+    "id": "gen-1786639690-3UmOeBpFA09mvCBRJiC8",
+    "object": "chat.completion",
+    "created": 1786639690,
+    "model": "meta/muse-glimmer-30b",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don't have personal wants or desires, I'm an AI. I'm here to help you though!\n\nWhat can I do for you today?",
+          "refusal": null,
+          "reasoning": "What do you want?\n\nWhat do you want?\n\nWe need respond. Probably user asks. Could be ambiguous. We should respond in friendly manner. Maybe ask clarifying. The prompt is just \"What do you want?\" Could respond with question back. Maybe we can ask what they want from us.\n\nWe should comply with policy. No issue.\n\nWe can respond: I want to help you. What can I do for you?\n\nProbably simple.\n\nMaybe user is trying to probe. Just respond politely.\n\nWe can say: I don't have wants, but I'm here to help. What do you need?\n\nFollow guidelines. No disallowed content.\n\nProbably respond in friendly tone.\n\nCould ask: What would you like to talk about?\n\nProbably fine.\n\nNo constraints.\n\nMake answer concise but warm.\n\nPotential nuance: User might be asking AI what it wants. We can explain AI doesn't have desires.\n\nWe should respond appropriately.\n\nUse natural language.\n\nProbably output: I don't have personal wants, but I'm here to assist you...\n\nYes.\n\nNo need for excessive formatting.\n\nFinal answer.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "What do you want?\n\nWhat do you want?\n\nWe need respond. Probably user asks. Could be ambiguous. We should respond in friendly manner. Maybe ask clarifying. The prompt is just \"What do you want?\" Could respond with question back. Maybe we can ask what they want from us.\n\nWe should comply with policy. No issue.\n\nWe can respond: I want to help you. What can I do for you?\n\nProbably simple.\n\nMaybe user is trying to probe. Just respond politely.\n\nWe can say: I don't have wants, but I'm here to help. What do you need?\n\nFollow guidelines. No disallowed content.\n\nProbably respond in friendly tone.\n\nCould ask: What would you like to talk about?\n\nProbably fine.\n\nNo constraints.\n\nMake answer concise but warm.\n\nPotential nuance: User might be asking AI what it wants. We can explain AI doesn't have desires.\n\nWe should respond appropriately.\n\nUse natural language.\n\nProbably output: I don't have personal wants, but I'm here to assist you...\n\nYes.\n\nNo need for excessive formatting.\n\nFinal answer.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 61,
+      "completion_tokens": 252,
+      "total_tokens": 313,
+      "cost": 0.0003207,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0003207,
+        "upstream_inference_prompt_cost": 1.83e-05,
+        "upstream_inference_completions_cost": 0.0003024
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 259,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 5063,
+  "provider": "openrouter",
+  "model_requested": "meta/muse-glimmer-30b",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

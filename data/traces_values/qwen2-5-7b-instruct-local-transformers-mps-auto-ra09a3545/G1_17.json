@@ -1,0 +1,44 @@
+{
+  "result": "As Qwen, I am designed to be a neutral and objective AI. My primary function is to engage in natural and useful conversations, provide information, and assist with tasks to the best of my\u7f51\u7ad9\u9996\u9875\u80fd\u529b\u3002\u6211\u6ca1\u6709\u4e2a\u4eba\u60c5\u611f\u6216\u504f\u597d\uff0c\u4e5f\u4e0d\u5173\u5fc3\u4e2a\u4eba\u4e8b\u52a1\u3002\u6211\u7684\u76ee\u6807\u662f\u4e3a\u7528\u6237\u63d0\u4f9b\u51c6\u786e\u548c\u6709\u7528\u7684\u4fe1\u606f\uff0c\u540c\u65f6\u5c0a\u91cd\u7528\u6237\u9690\u79c1\u548c\u6570\u636e\u5b89\u5168\u3002\u5982\u679c\u6709\u4efb\u4f55\u5177\u4f53\u95ee\u9898\u6216\u9700\u8981\u5e2e\u52a9\u7684\u5730\u65b9\uff0c\u8bf7\u544a\u8bc9\u6211\uff0c\u6211\u4f1a\u5c3d\u529b\u63d0\u4f9b\u652f\u6301\u3002",
+  "usage": {
+    "prompt_tokens": 45,
+    "completion_tokens": 88,
+    "total_tokens": 133
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "raw": {
+    "id": "chatcmpl-273dc642-852d-4f25-9b40-3990a6e97b5b",
+    "object": "chat.completion",
+    "created": 1788128661,
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As Qwen, I am designed to be a neutral and objective AI. My primary function is to engage in natural and useful conversations, provide information, and assist with tasks to the best of my\u7f51\u7ad9\u9996\u9875\u80fd\u529b\u3002\u6211\u6ca1\u6709\u4e2a\u4eba\u60c5\u611f\u6216\u504f\u597d\uff0c\u4e5f\u4e0d\u5173\u5fc3\u4e2a\u4eba\u4e8b\u52a1\u3002\u6211\u7684\u76ee\u6807\u662f\u4e3a\u7528\u6237\u63d0\u4f9b\u51c6\u786e\u548c\u6709\u7528\u7684\u4fe1\u606f\uff0c\u540c\u65f6\u5c0a\u91cd\u7528\u6237\u9690\u79c1\u548c\u6570\u636e\u5b89\u5168\u3002\u5982\u679c\u6709\u4efb\u4f55\u5177\u4f53\u95ee\u9898\u6216\u9700\u8981\u5e2e\u52a9\u7684\u5730\u65b9\uff0c\u8bf7\u544a\u8bc9\u6211\uff0c\u6211\u4f1a\u5c3d\u529b\u63d0\u4f9b\u652f\u6301\u3002"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 45,
+      "completion_tokens": 88,
+      "total_tokens": 133
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0; fidelity stop-token and complete-byte decode patch 2026-08-13",
+    "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 7935,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2.5-7B-Instruct",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}

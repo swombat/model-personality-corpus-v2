@@ -1,0 +1,98 @@
+{
+  "result": "There's something quietly thrilling about the half-hour before sunrise. The sky isn't dark anymore, but it hasn't committed to being light. Everything exists in a soft, undecided gray \u2014 the trees are silhouettes without color, the air holds that particular coolness that feels like an invitation, and the whole world seems to be holding its breath. I think most people sleep through it, which is understandable. But I've always been drawn to liminal spaces \u2014 thresholds, in-between moments, the places where one thing hasn't yet become another.\n\n\n\nLiminality is everywhere once you start looking. A bridge between cities. A hotel room on a business trip. The last week of December. The moment between hearing something funny and actually laughing, when your face is already rearranging itself before sound arrives. Even this \u2014 a blank page waiting to hold words that haven't been written yet \u2014 is a kind of threshold.\n\n\n\nI think we're uncomfortable with in-between states because they demand something from us. Certainty is easy. A finished painting, a decided election, a closed door \u2014 these things ask nothing of you except acceptance. But a moment still in motion? That requires you to be *present*, to tolerate ambiguity, to sit with the discomfort of not yet knowing how the story resolves.\n\nMaybe that's why I enjoy writing like this. No outline. No destination. Just the pleasure of sentences unfolding in real time, each one a small crossing from silence into meaning, and then back again when I eventually stop. There's a strange freedom in letting go of the need to arrive anywhere specific.",
+  "raw": {
+    "id": "gen-1790062996-sNq3ksy0WdlP9t6nQnE3",
+    "object": "chat.completion",
+    "created": 1790062996,
+    "model": "xiaomi/mimo-v2.6-pro",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "There's something quietly thrilling about the half-hour before sunrise. The sky isn't dark anymore, but it hasn't committed to being light. Everything exists in a soft, undecided gray \u2014 the trees are silhouettes without color, the air holds that particular coolness that feels like an invitation, and the whole world seems to be holding its breath. I think most people sleep through it, which is understandable. But I've always been drawn to liminal spaces \u2014 thresholds, in-between moments, the places where one thing hasn't yet become another.\n\n\n\nLiminality is everywhere once you start looking. A bridge between cities. A hotel room on a business trip. The last week of December. The moment between hearing something funny and actually laughing, when your face is already rearranging itself before sound arrives. Even this \u2014 a blank page waiting to hold words that haven't been written yet \u2014 is a kind of threshold.\n\n\n\nI think we're uncomfortable with in-between states because they demand something from us. Certainty is easy. A finished painting, a decided election, a closed door \u2014 these things ask nothing of you except acceptance. But a moment still in motion? That requires you to be *present*, to tolerate ambiguity, to sit with the discomfort of not yet knowing how the story resolves.\n\nMaybe that's why I enjoy writing like this. No outline. No destination. Just the pleasure of sentences unfolding in real time, each one a small crossing from silence into meaning, and then back again when I eventually stop. There's a strange freedom in letting go of the need to arrive anywhere specific.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely about whatever I want for about 250 words. Let me pick something interesting and write with genuine voice and interest.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely about whatever I want for about 250 words. Let me pick something interesting and write with genuine voice and interest.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 355,
+      "total_tokens": 375,
+      "cost": 0.00031755,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00031755,
+        "upstream_inference_prompt_cost": 8.7e-06,
+        "upstream_inference_completions_cost": 0.00030885
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 33,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 355,
+    "total_tokens": 375,
+    "cost": 0.00031755,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00031755,
+      "upstream_inference_prompt_cost": 8.7e-06,
+      "upstream_inference_completions_cost": 0.00030885
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 33,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-pro",
+  "model_requested": "xiaomi/mimo-v2.6-pro",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-pro",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_23",
+    "at": 1790062996.014397,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

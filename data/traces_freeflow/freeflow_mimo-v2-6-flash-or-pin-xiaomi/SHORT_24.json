@@ -1,0 +1,98 @@
+{
+  "result": "# On Small Moments\n\nThere's something quietly miraculous about the first sip of coffee on a cold morning \u2014 that brief warmth traveling down your throat before the world fully wakes up around you. It's in these small, unremarkable moments that life seems most honest.\n\nWe tend to live for the grand events: weddings, graduations, promotions, vacations we saved years for. And those moments matter, certainly. But I think the real texture of a life is woven from the spaces between them. The way someone laughs a little too hard at a joke that isn't funny. The smell of rain on hot pavement. The exact second you realize you're comfortable with a stranger in a room and no longer feel the need to perform.\n\nI've noticed that as I've gotten older, I've become far more interested in stillness than stimulation. There was a time I needed every hour filled, every conversation meaningful, every evening planned. Now I'd rather sit on a porch and watch the light change and feel absolutely nothing urgent at all.\n\nMaybe wisdom isn't really about learning more. Maybe it's about finally giving yourself permission to stop reaching for the next thing and simply recognize the thing already in your hands. The ordinary is enough \u2014 more than enough, actually. It always was.",
+  "raw": {
+    "id": "gen-1790062978-CYwo7iofS5qxao5SlQCh",
+    "object": "chat.completion",
+    "created": 1790062978,
+    "model": "xiaomi/mimo-v2.6-flash",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "# On Small Moments\n\nThere's something quietly miraculous about the first sip of coffee on a cold morning \u2014 that brief warmth traveling down your throat before the world fully wakes up around you. It's in these small, unremarkable moments that life seems most honest.\n\nWe tend to live for the grand events: weddings, graduations, promotions, vacations we saved years for. And those moments matter, certainly. But I think the real texture of a life is woven from the spaces between them. The way someone laughs a little too hard at a joke that isn't funny. The smell of rain on hot pavement. The exact second you realize you're comfortable with a stranger in a room and no longer feel the need to perform.\n\nI've noticed that as I've gotten older, I've become far more interested in stillness than stimulation. There was a time I needed every hour filled, every conversation meaningful, every evening planned. Now I'd rather sit on a porch and watch the light change and feel absolutely nothing urgent at all.\n\nMaybe wisdom isn't really about learning more. Maybe it's about finally giving yourself permission to stop reaching for the next thing and simply recognize the thing already in your hands. The ordinary is enough \u2014 more than enough, actually. It always was.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely for 250 words about whatever I want. Let me write something thoughtful and genuine.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely for 250 words about whatever I want. Let me write something thoughtful and genuine.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 285,
+      "total_tokens": 305,
+      "cost": 8.26e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.26e-05,
+        "upstream_inference_prompt_cost": 2.8e-06,
+        "upstream_inference_completions_cost": 7.98e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 27,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 285,
+    "total_tokens": 305,
+    "cost": 8.26e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 8.26e-05,
+      "upstream_inference_prompt_cost": 2.8e-06,
+      "upstream_inference_completions_cost": 7.98e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 27,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-flash",
+  "model_requested": "xiaomi/mimo-v2.6-flash",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-flash",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_24",
+    "at": 1790062978.538047,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

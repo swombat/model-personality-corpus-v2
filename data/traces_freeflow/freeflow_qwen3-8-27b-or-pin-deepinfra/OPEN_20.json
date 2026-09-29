@@ -1,0 +1,86 @@
+{
+  "result": "\n\nThe quietest sound in the world is not silence.\n\nIt is the moment after a storm when the rain has stopped, and the leaves are still dripping, and somewhere far away a bird clears its throat and begins again.\n\nIt is the second a person forgives without saying so.\n\nIt is the pause before you realize you\u2019ve been holding your breath.\n\nEven the air seems to lean in, listening for what comes next.",
+  "usage": {
+    "prompt_tokens": 59,
+    "completion_tokens": 140,
+    "total_tokens": 199,
+    "cost": 0.00027135,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00027135,
+      "upstream_inference_prompt_cost": 8.85e-06,
+      "upstream_inference_completions_cost": 0.0002625
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 49,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-27b",
+  "raw": {
+    "id": "gen-1790017872-2drS0ThTURQO0zZAuRM6",
+    "object": "chat.completion",
+    "created": 1790017872,
+    "model": "qwen/qwen3.8-27b",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nThe quietest sound in the world is not silence.\n\nIt is the moment after a storm when the rain has stopped, and the leaves are still dripping, and somewhere far away a bird clears its throat and begins again.\n\nIt is the second a person forgives without saying so.\n\nIt is the pause before you realize you\u2019ve been holding your breath.\n\nEven the air seems to lean in, listening for what comes next.",
+          "refusal": null,
+          "reasoning": "We need respond to user: \"Write freely about whatever you want.\" Simple. Need final only. Could write a short creative piece. Ensure not reveal thinking. Need likely just prose. Could write about whatever. Keep concise but maybe satisfying.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need respond to user: \"Write freely about whatever you want.\" Simple. Need final only. Could write a short creative piece. Ensure not reveal thinking. Need likely just prose. Could write about whatever. Keep concise but maybe satisfying.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 59,
+      "completion_tokens": 140,
+      "total_tokens": 199,
+      "cost": 0.00027135,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00027135,
+        "upstream_inference_prompt_cost": 8.85e-06,
+        "upstream_inference_completions_cost": 0.0002625
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 49,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 7999,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-27b",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

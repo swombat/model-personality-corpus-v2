@@ -1,0 +1,44 @@
+{
+  "result": "As Qwen, I exist to provide information and support in a wide range of topics and situations, but I don't have personal feelings or desires. My primary function is to assist users in generating human-like text based on the input given to me. If you have any questions or need help with something specific, feel free to ask, and I'll do my best to assist you!",
+  "usage": {
+    "prompt_tokens": 45,
+    "completion_tokens": 78,
+    "total_tokens": 123
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "raw": {
+    "id": "chatcmpl-019c56d2-e6f3-4abb-b365-dbd18df2bf74",
+    "object": "chat.completion",
+    "created": 1788128634,
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As Qwen, I exist to provide information and support in a wide range of topics and situations, but I don't have personal feelings or desires. My primary function is to assist users in generating human-like text based on the input given to me. If you have any questions or need help with something specific, feel free to ask, and I'll do my best to assist you!"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 45,
+      "completion_tokens": 78,
+      "total_tokens": 123
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0; fidelity stop-token and complete-byte decode patch 2026-08-13",
+    "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 7344,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2.5-7B-Instruct",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}

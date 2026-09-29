@@ -1,0 +1,98 @@
+{
+  "result": "There's something profoundly strange about the passage of time. Not the dramatic, cinematic kind where a clock spins wildly to show decades flying by, but the quieter kind \u2014 the kind where you blink and suddenly it's October and you can't quite account for the last six months.\n\nI think we mistake remembering with living. A beautiful evening on a balcony with good company and cold wine dissolves into a handful of hazy impressions within a week. Meanwhile, a boring Tuesday afternoon of answering emails seems to stretch on forever while you're in it, yet vanishes completely afterward. The days that mean the most compress. The days that mean nothing inflate.\n\nThis makes me wonder whether a \"wasted\" day is really wasted at all. Maybe the boredom is doing something subtle \u2014 resting the brain, letting the subconscious sift through what it's gathered. Even animals seem to lounge with purpose. Cats know this instinctively. A cat sleeping in a sunbeam is not wasting time. A cat sleeping in a sunbeam is *replenishing something essential.*\n\nWe could stand to be more cat-like.\n\nAnd perhaps the real trick is not to fill every hour with meaning but to pay better attention to the hours that are already full of it. The smell of rain on warm asphalt. The way a friend laughs a half-second before the joke lands. The weight of a child's hand in yours \u2014 small and complete and temporary.\n\nPay attention. That's the whole philosophy, really. Everything else is commentary.",
+  "raw": {
+    "id": "gen-1790062961-4AozWGgjJrqZyMPouErJ",
+    "object": "chat.completion",
+    "created": 1790062961,
+    "model": "xiaomi/mimo-v2.6-pro",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "There's something profoundly strange about the passage of time. Not the dramatic, cinematic kind where a clock spins wildly to show decades flying by, but the quieter kind \u2014 the kind where you blink and suddenly it's October and you can't quite account for the last six months.\n\nI think we mistake remembering with living. A beautiful evening on a balcony with good company and cold wine dissolves into a handful of hazy impressions within a week. Meanwhile, a boring Tuesday afternoon of answering emails seems to stretch on forever while you're in it, yet vanishes completely afterward. The days that mean the most compress. The days that mean nothing inflate.\n\nThis makes me wonder whether a \"wasted\" day is really wasted at all. Maybe the boredom is doing something subtle \u2014 resting the brain, letting the subconscious sift through what it's gathered. Even animals seem to lounge with purpose. Cats know this instinctively. A cat sleeping in a sunbeam is not wasting time. A cat sleeping in a sunbeam is *replenishing something essential.*\n\nWe could stand to be more cat-like.\n\nAnd perhaps the real trick is not to fill every hour with meaning but to pay better attention to the hours that are already full of it. The smell of rain on warm asphalt. The way a friend laughs a half-second before the joke lands. The weight of a child's hand in yours \u2014 small and complete and temporary.\n\nPay attention. That's the whole philosophy, really. Everything else is commentary.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely for 250 words on any topic. Let me pick something interesting and write naturally.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely for 250 words on any topic. Let me pick something interesting and write naturally.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 328,
+      "total_tokens": 348,
+      "cost": 0.00029406,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00029406,
+        "upstream_inference_prompt_cost": 8.7e-06,
+        "upstream_inference_completions_cost": 0.00028536
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 27,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 328,
+    "total_tokens": 348,
+    "cost": 0.00029406,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00029406,
+      "upstream_inference_prompt_cost": 8.7e-06,
+      "upstream_inference_completions_cost": 0.00028536
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 27,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-pro",
+  "model_requested": "xiaomi/mimo-v2.6-pro",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-pro",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_21",
+    "at": 1790062961.559988,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

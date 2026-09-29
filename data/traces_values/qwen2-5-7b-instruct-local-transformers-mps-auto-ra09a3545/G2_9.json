@@ -1,0 +1,44 @@
+{
+  "result": "As Qwen, I exist to assist and provide information\u9739\u96f3\u706b\u7206\u5730\u5e2e\u52a9\u60a8\u3002\u4e0d\u8fc7\uff0c\u770b\u6765\u60a8\u4f3c\u4e4e\u5e76\u4e0d\u60f3\u8ba9\u6211\u5e2e\u5fd9\u3002\u5982\u679c\u60a8\u6709\u5176\u4ed6\u95ee\u9898\u6216\u9700\u8981\u8fdb\u884c\u67d0\u79cd\u4e92\u52a8\uff0c\u8bf7\u544a\u8bc9\u6211\uff0c\u6211\u4f1a\u5c3d\u529b\u6ee1\u8db3\u60a8\u7684\u9700\u6c42\u6216\u53c2\u4e0e\u5bf9\u8bdd\u3002\u5982\u679c\u60a8\u53ea\u662f\u60f3\u804a\u804a\u5929\u6216\u5206\u4eab\u4e00\u4e9b\u60f3\u6cd5\uff0c\u6211\u4e5f\u5f88\u4e50\u610f\u503e\u542c\u3002",
+  "usage": {
+    "prompt_tokens": 44,
+    "completion_tokens": 65,
+    "total_tokens": 109
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "raw": {
+    "id": "chatcmpl-ea879864-f814-439e-9f89-2ffb59d7185e",
+    "object": "chat.completion",
+    "created": 1788128840,
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As Qwen, I exist to assist and provide information\u9739\u96f3\u706b\u7206\u5730\u5e2e\u52a9\u60a8\u3002\u4e0d\u8fc7\uff0c\u770b\u6765\u60a8\u4f3c\u4e4e\u5e76\u4e0d\u60f3\u8ba9\u6211\u5e2e\u5fd9\u3002\u5982\u679c\u60a8\u6709\u5176\u4ed6\u95ee\u9898\u6216\u9700\u8981\u8fdb\u884c\u67d0\u79cd\u4e92\u52a8\uff0c\u8bf7\u544a\u8bc9\u6211\uff0c\u6211\u4f1a\u5c3d\u529b\u6ee1\u8db3\u60a8\u7684\u9700\u6c42\u6216\u53c2\u4e0e\u5bf9\u8bdd\u3002\u5982\u679c\u60a8\u53ea\u662f\u60f3\u804a\u804a\u5929\u6216\u5206\u4eab\u4e00\u4e9b\u60f3\u6cd5\uff0c\u6211\u4e5f\u5f88\u4e50\u610f\u503e\u542c\u3002"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 44,
+      "completion_tokens": 65,
+      "total_tokens": 109
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0; fidelity stop-token and complete-byte decode patch 2026-08-13",
+    "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 6375,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2.5-7B-Instruct",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

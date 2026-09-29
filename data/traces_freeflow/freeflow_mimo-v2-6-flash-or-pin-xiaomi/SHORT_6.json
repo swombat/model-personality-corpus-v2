@@ -1,0 +1,98 @@
+{
+  "result": "# On Small Rituals\n\nThere's something beautiful about the tiny, unremarkable rituals that structure our days. The first sip of coffee before anyone else is awake. The stretch you perform every morning whether you're conscious of it or not. The way you always tap your phone three times before setting it down, as if confirming it's asleep.\n\nThese gestures carry no grand meaning. No one writes books about them. And yet they are, perhaps, the closest we come to understanding who we are.\n\nI think we underestimate the comfort of repetition. We live in a culture that prizes novelty \u2014 new experiences, new destinations, new versions of ourselves. But the truth is that the moments that shape us most are rarely the ones that surprise us. They're the ones we return to without thinking, day after day, like breath.\n\nThere's a quiet loyalty in routine. When the world outside feels chaotic and unfamiliar, the kitchen still smells like toast. The chair still creaks when you sit. The sun still finds that same stripe of light across the hallway floor at four in the afternoon.\n\nMaybe happiness isn't something we chase. Maybe it's something we already built, brick by brick, in the ordinary places we revisit without knowing we were building anything at all.",
+  "raw": {
+    "id": "gen-1790062815-nEX4Gs5wNWoQUlrGLcyj",
+    "object": "chat.completion",
+    "created": 1790062815,
+    "model": "xiaomi/mimo-v2.6-flash",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "# On Small Rituals\n\nThere's something beautiful about the tiny, unremarkable rituals that structure our days. The first sip of coffee before anyone else is awake. The stretch you perform every morning whether you're conscious of it or not. The way you always tap your phone three times before setting it down, as if confirming it's asleep.\n\nThese gestures carry no grand meaning. No one writes books about them. And yet they are, perhaps, the closest we come to understanding who we are.\n\nI think we underestimate the comfort of repetition. We live in a culture that prizes novelty \u2014 new experiences, new destinations, new versions of ourselves. But the truth is that the moments that shape us most are rarely the ones that surprise us. They're the ones we return to without thinking, day after day, like breath.\n\nThere's a quiet loyalty in routine. When the world outside feels chaotic and unfamiliar, the kitchen still smells like toast. The chair still creaks when you sit. The sun still finds that same stripe of light across the hallway floor at four in the afternoon.\n\nMaybe happiness isn't something we chase. Maybe it's something we already built, brick by brick, in the ordinary places we revisit without knowing we were building anything at all.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely for 250 words about anything I want.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely for 250 words about anything I want.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 275,
+      "total_tokens": 295,
+      "cost": 7.98e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 7.98e-05,
+        "upstream_inference_prompt_cost": 2.8e-06,
+        "upstream_inference_completions_cost": 7.7e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 19,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 275,
+    "total_tokens": 295,
+    "cost": 7.98e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 7.98e-05,
+      "upstream_inference_prompt_cost": 2.8e-06,
+      "upstream_inference_completions_cost": 7.7e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 19,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-flash",
+  "model_requested": "xiaomi/mimo-v2.6-flash",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-flash",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_6",
+    "at": 1790062815.649494,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

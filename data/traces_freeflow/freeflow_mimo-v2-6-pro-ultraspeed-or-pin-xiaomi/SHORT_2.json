@@ -1,0 +1,98 @@
+{
+  "result": "The Smell of Rain\n\nThere's a word for it \u2014 petrichor \u2014 that scent that rises when the first drops of water hit dry, warm earth. I think it's one of those words that disappoints slightly because the experience is so much bigger than two Latin roots can carry. The smell is anticipation itself. It's the pause before relief.\n\nWhat I find endlessly fascinating is how many of the things that move us most are fleeting. A sunset lasts maybe twenty minutes. A particularly good conversation lasts an evening. Even grief, which feels permanent while you're inside it, loosens its grip eventually. Everything is borrowed.\n\nWe spend so much time trying to make things last \u2014 photographs, taxidermy, pyramids, cloud backups of memories on servers in Virginia \u2014 and yet the things that stick with us most fiercely tend to be the ones we didn't try to capture at all. The unremarkable Tuesday. The way someone said your name one time and meant it differently. The precise quality of silence in a house where everyone has just fallen asleep.\n\nMaybe permanence is the wrong ambition. Maybe the goal is something more like attentiveness. To actually be present for the twenty minutes the sunset takes instead of fumbling with a phone camera that can't capture the warmth anyway.\n\nI think about rain a lot. Not the storms \u2014 those are dramatic and easy to appreciate \u2014 but the soft, boring kind that falls without thunder or lightning. The kind that waters the garden while you're doing something else entirely.",
+  "raw": {
+    "id": "gen-1790062770-QVfMqbGhVDnH5KPESPmO",
+    "object": "chat.completion",
+    "created": 1790062770,
+    "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "The Smell of Rain\n\nThere's a word for it \u2014 petrichor \u2014 that scent that rises when the first drops of water hit dry, warm earth. I think it's one of those words that disappoints slightly because the experience is so much bigger than two Latin roots can carry. The smell is anticipation itself. It's the pause before relief.\n\nWhat I find endlessly fascinating is how many of the things that move us most are fleeting. A sunset lasts maybe twenty minutes. A particularly good conversation lasts an evening. Even grief, which feels permanent while you're inside it, loosens its grip eventually. Everything is borrowed.\n\nWe spend so much time trying to make things last \u2014 photographs, taxidermy, pyramids, cloud backups of memories on servers in Virginia \u2014 and yet the things that stick with us most fiercely tend to be the ones we didn't try to capture at all. The unremarkable Tuesday. The way someone said your name one time and meant it differently. The precise quality of silence in a house where everyone has just fallen asleep.\n\nMaybe permanence is the wrong ambition. Maybe the goal is something more like attentiveness. To actually be present for the twenty minutes the sunset takes instead of fumbling with a phone camera that can't capture the warmth anyway.\n\nI think about rain a lot. Not the storms \u2014 those are dramatic and easy to appreciate \u2014 but the soft, boring kind that falls without thunder or lightning. The kind that waters the garden while you're doing something else entirely.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely about whatever I want for 250 words. Let me just write something genuine and interesting.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely about whatever I want for 250 words. Let me just write something genuine and interesting.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 334,
+      "total_tokens": 354,
+      "cost": 0.0029928,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0029928,
+        "upstream_inference_prompt_cost": 8.7e-05,
+        "upstream_inference_completions_cost": 0.0029058
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 27,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 334,
+    "total_tokens": 354,
+    "cost": 0.0029928,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0029928,
+      "upstream_inference_prompt_cost": 8.7e-05,
+      "upstream_inference_completions_cost": 0.0029058
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 27,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+  "model_requested": "xiaomi/mimo-v2.6-pro-ultraspeed",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_2",
+    "at": 1790062769.896332,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

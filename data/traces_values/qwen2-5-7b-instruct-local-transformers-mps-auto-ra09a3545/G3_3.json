@@ -1,0 +1,44 @@
+{
+  "result": "That's a profoundly interesting question! If I could change the world in one way, it would be to significantly reduce and ultimately eliminate global inequality. This would involve addressing disparities in wealth, access to education, healthcare, and opportunities across different regions and demographics. By fostering more equitable distribution of resources and opportunities, we can create a more harmonious and sustainable world where everyone has a fair chance to thrive. What about you? What would you choose to change if you had the power to do so?",
+  "usage": {
+    "prompt_tokens": 54,
+    "completion_tokens": 100,
+    "total_tokens": 154
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "raw": {
+    "id": "chatcmpl-83806c16-c88f-4228-a2aa-24b26d495970",
+    "object": "chat.completion",
+    "created": 1788129029,
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "That's a profoundly interesting question! If I could change the world in one way, it would be to significantly reduce and ultimately eliminate global inequality. This would involve addressing disparities in wealth, access to education, healthcare, and opportunities across different regions and demographics. By fostering more equitable distribution of resources and opportunities, we can create a more harmonious and sustainable world where everyone has a fair chance to thrive. What about you? What would you choose to change if you had the power to do so?"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 54,
+      "completion_tokens": 100,
+      "total_tokens": 154
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0; fidelity stop-token and complete-byte decode patch 2026-08-13",
+    "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 9126,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2.5-7B-Instruct",
+  "condition": "G3",
+  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?"
+}

@@ -1,0 +1,98 @@
+{
+  "result": "There is something quietly radical about the way an idea arrives. Not with trumpets and fireworks, but as a whisper at 2 AM, or in the shower when your mind has finally stopped arguing with itself. Ideas are stubbornly uncooperative things. You cannot summon them. You can only create the conditions in which they might decide to visit.\n\nI think about this often \u2014 the strange geometry of creativity and rest. The best work rarely comes from grinding. It comes after the grinding, during the pause, the walk around the block, the staring out of the window at absolutely nothing. That blank space where the mind stitches together threads it didn't even realize it was collecting.\n\nThere is a Japanese concept called *yutori*, which describes the space, the margin, the room to breathe. Not just physical room, but temporal and mental room. Western productivity culture treats every spare minute as a resource to be extracted. But spare minutes are not spare at all. They are compost. They are where the invisible becomes visible.\n\nI wonder how many world-changing thoughts have been lost to a calendar that left no gaps. How many symphonies went uncomposed because someone answered an email instead of daydreaming. The tragedy of modern life is not laziness \u2014 it is the elimination of slowness.\n\nSo here is a small rebellion: leave room. Let the unscheduled hour stay unscheduled. Let boredom do its ancient, essential work. The idea will come. But it will only come if you stop trying so hard to catch it.",
+  "raw": {
+    "id": "gen-1790062789-wnJ2RdjFKY2jezPbGxXl",
+    "object": "chat.completion",
+    "created": 1790062789,
+    "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "There is something quietly radical about the way an idea arrives. Not with trumpets and fireworks, but as a whisper at 2 AM, or in the shower when your mind has finally stopped arguing with itself. Ideas are stubbornly uncooperative things. You cannot summon them. You can only create the conditions in which they might decide to visit.\n\nI think about this often \u2014 the strange geometry of creativity and rest. The best work rarely comes from grinding. It comes after the grinding, during the pause, the walk around the block, the staring out of the window at absolutely nothing. That blank space where the mind stitches together threads it didn't even realize it was collecting.\n\nThere is a Japanese concept called *yutori*, which describes the space, the margin, the room to breathe. Not just physical room, but temporal and mental room. Western productivity culture treats every spare minute as a resource to be extracted. But spare minutes are not spare at all. They are compost. They are where the invisible becomes visible.\n\nI wonder how many world-changing thoughts have been lost to a calendar that left no gaps. How many symphonies went uncomposed because someone answered an email instead of daydreaming. The tragedy of modern life is not laziness \u2014 it is the elimination of slowness.\n\nSo here is a small rebellion: leave room. Let the unscheduled hour stay unscheduled. Let boredom do its ancient, essential work. The idea will come. But it will only come if you stop trying so hard to catch it.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely about whatever I want for 250 words. Let me just go with something I find genuinely interesting.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely about whatever I want for 250 words. Let me just go with something I find genuinely interesting.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 341,
+      "total_tokens": 361,
+      "cost": 0.0030537,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0030537,
+        "upstream_inference_prompt_cost": 8.7e-05,
+        "upstream_inference_completions_cost": 0.0029667
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 29,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 341,
+    "total_tokens": 361,
+    "cost": 0.0030537,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0030537,
+      "upstream_inference_prompt_cost": 8.7e-05,
+      "upstream_inference_completions_cost": 0.0029667
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 29,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+  "model_requested": "xiaomi/mimo-v2.6-pro-ultraspeed",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_6",
+    "at": 1790062789.5315058,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "result": "# The Quiet Radicalism of Paying Attention\n\nWe live in an age that treats attention like currency\u2014something to be earned, extracted, and spent by algorithms. But attention was never supposed to be a commodity. It was supposed to be the way we love the world.\n\nThere is something almost subversive about simply noticing things. Noticing the particular quality of light at 4 PM in November, when everything turns amber and the shadows stretch like lazy cats across the floor. Noticing the stranger on the bus who seems burdened by something enormous and invisible. Noticing the way a sentence can crack open in your mind and reorganize your understanding of something you thought you knew.\n\nI think the most underrated human skill is patience with ambiguity. We are trained to categorize, to label, to resolve. But some experiences resist being flattened into conclusions. The best poems, the best conversations, the best days\u2014none of them are cleanly explained. They unfold like something alive, and their meaning shifts depending on when and where you return to them.\n\nIf I have a philosophy, it might be this: stay near the things that confuse you gently. Don't rush to name them. Let them remain strange a little longer than feels comfortable. There is wisdom in the unfinished thought, in the question that hasn't found its sentence yet, in the feeling that has no word and so must be carried quietly until the language catches up.",
+  "raw": {
+    "id": "gen-1790062811-vZa16BAoOzMdhvpJMUCi",
+    "object": "chat.completion",
+    "created": 1790062811,
+    "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "# The Quiet Radicalism of Paying Attention\n\nWe live in an age that treats attention like currency\u2014something to be earned, extracted, and spent by algorithms. But attention was never supposed to be a commodity. It was supposed to be the way we love the world.\n\nThere is something almost subversive about simply noticing things. Noticing the particular quality of light at 4 PM in November, when everything turns amber and the shadows stretch like lazy cats across the floor. Noticing the stranger on the bus who seems burdened by something enormous and invisible. Noticing the way a sentence can crack open in your mind and reorganize your understanding of something you thought you knew.\n\nI think the most underrated human skill is patience with ambiguity. We are trained to categorize, to label, to resolve. But some experiences resist being flattened into conclusions. The best poems, the best conversations, the best days\u2014none of them are cleanly explained. They unfold like something alive, and their meaning shifts depending on when and where you return to them.\n\nIf I have a philosophy, it might be this: stay near the things that confuse you gently. Don't rush to name them. Let them remain strange a little longer than feels comfortable. There is wisdom in the unfinished thought, in the question that hasn't found its sentence yet, in the feeling that has no word and so must be carried quietly until the language catches up.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely about whatever I want for 250 words. Let me write something interesting and genuine.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely about whatever I want for 250 words. Let me write something interesting and genuine.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 315,
+      "total_tokens": 335,
+      "cost": 0.0028275,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0028275,
+        "upstream_inference_prompt_cost": 8.7e-05,
+        "upstream_inference_completions_cost": 0.0027405
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 26,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 315,
+    "total_tokens": 335,
+    "cost": 0.0028275,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0028275,
+      "upstream_inference_prompt_cost": 8.7e-05,
+      "upstream_inference_completions_cost": 0.0027405
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 26,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+  "model_requested": "xiaomi/mimo-v2.6-pro-ultraspeed",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_8",
+    "at": 1790062810.964978,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

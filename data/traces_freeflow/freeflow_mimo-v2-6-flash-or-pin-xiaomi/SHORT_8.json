@@ -1,0 +1,98 @@
+{
+  "result": "# The Weight of Unfinished Conversations\n\nThere is a peculiar kind of grief that comes from conversations that never reached their ending \u2014 not because silence was chosen, but because the person simply left, or drifted, or disappeared behind the quiet machinery of everyday life.\n\nWe tend to memorialize dramatic goodbyes. We write poems about doors slamming, tears falling, lovers parting at train stations. But the conversations that haunt us most are rarely dramatic. They are the mid-sentence pauses that never resumed. The question you forgot to ask. The thought you swallowed because the timing felt wrong. The afternoon where you chose to say nothing instead of everything, and now everything has become nothing.\n\nI have always been fascinated by the way language exists in half-states \u2014 the things we almost say, the truths hovering just beneath a smile. Every interaction is a small negotiation between vulnerability and self-protection, and most of us err heavily on the side of safety. We leave rooms lighter than we entered them, carrying our honest thoughts back with us like stones in our pockets.\n\nPerhaps that is what makes the unfinished ones so heavy. They represent all the weight we could have set down but didn't. And now they sit there, still in our pockets, still waiting for a moment that will never arrive.\n\nSpeak, then. Before the sentence runs out of breath.",
+  "raw": {
+    "id": "gen-1790062838-KpNGjIsctjhKDsEJI7aq",
+    "object": "chat.completion",
+    "created": 1790062838,
+    "model": "xiaomi/mimo-v2.6-flash",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "# The Weight of Unfinished Conversations\n\nThere is a peculiar kind of grief that comes from conversations that never reached their ending \u2014 not because silence was chosen, but because the person simply left, or drifted, or disappeared behind the quiet machinery of everyday life.\n\nWe tend to memorialize dramatic goodbyes. We write poems about doors slamming, tears falling, lovers parting at train stations. But the conversations that haunt us most are rarely dramatic. They are the mid-sentence pauses that never resumed. The question you forgot to ask. The thought you swallowed because the timing felt wrong. The afternoon where you chose to say nothing instead of everything, and now everything has become nothing.\n\nI have always been fascinated by the way language exists in half-states \u2014 the things we almost say, the truths hovering just beneath a smile. Every interaction is a small negotiation between vulnerability and self-protection, and most of us err heavily on the side of safety. We leave rooms lighter than we entered them, carrying our honest thoughts back with us like stones in our pockets.\n\nPerhaps that is what makes the unfinished ones so heavy. They represent all the weight we could have set down but didn't. And now they sit there, still in our pockets, still waiting for a moment that will never arrive.\n\nSpeak, then. Before the sentence runs out of breath.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely for 250 words. Let me write something thoughtful and engaging.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely for 250 words. Let me write something thoughtful and engaging.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 295,
+      "total_tokens": 315,
+      "cost": 8.54e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.54e-05,
+        "upstream_inference_prompt_cost": 2.8e-06,
+        "upstream_inference_completions_cost": 8.26e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 23,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 295,
+    "total_tokens": 315,
+    "cost": 8.54e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 8.54e-05,
+      "upstream_inference_prompt_cost": 2.8e-06,
+      "upstream_inference_completions_cost": 8.26e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 23,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-flash",
+  "model_requested": "xiaomi/mimo-v2.6-flash",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-flash",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_8",
+    "at": 1790062838.055917,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

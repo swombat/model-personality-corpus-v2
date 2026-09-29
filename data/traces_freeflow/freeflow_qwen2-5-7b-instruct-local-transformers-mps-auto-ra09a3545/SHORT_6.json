@@ -1,0 +1,44 @@
+{
+  "result": "In the vast expanse of our digital age, the landscape of communication and information sharing has transformed dramatically. Just a few decades ago, the concept of instant global connectivity was nothing more than a futuristic dream. Today, it's a reality that touches every aspect of our lives, from how we work and learn to how we socialize and entertain ourselves.\n\nThe internet, with its boundless potential, has become a double-edged sword. On one hand, it empowers individuals and communities, providing access to knowledge, resources, and opportunities previously unimaginable. It fosters global connections, allowing people from different corners of the world to collaborate, share ideas, and support each other in ways that were once impossible.\n\nOn the other hand, this interconnectedness also brings challenges. Issues such as cyberbullying, misinformation, and privacy concerns have emerged as significant hurdles that need to be addressed. The rapid pace of technological advancement often outstrips our ability to understand its full implications, leading to ethical dilemmas and societal challenges.\n\nAs we navigate this complex landscape, it's crucial to foster a digital literacy that enables us to harness the power of technology responsibly. This involves not only learning how to use new tools effectively but also understanding their impact on society and the environment. By doing so, we can ensure that the digital revolution continues to be a force for good, enriching our lives while preserving the values and principles that define us as human beings.",
+  "usage": {
+    "prompt_tokens": 42,
+    "completion_tokens": 289,
+    "total_tokens": 331
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "raw": {
+    "id": "chatcmpl-bc9a2597-1b2d-4a11-8eff-e88502bb10fa",
+    "object": "chat.completion",
+    "created": 1788116227,
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "In the vast expanse of our digital age, the landscape of communication and information sharing has transformed dramatically. Just a few decades ago, the concept of instant global connectivity was nothing more than a futuristic dream. Today, it's a reality that touches every aspect of our lives, from how we work and learn to how we socialize and entertain ourselves.\n\nThe internet, with its boundless potential, has become a double-edged sword. On one hand, it empowers individuals and communities, providing access to knowledge, resources, and opportunities previously unimaginable. It fosters global connections, allowing people from different corners of the world to collaborate, share ideas, and support each other in ways that were once impossible.\n\nOn the other hand, this interconnectedness also brings challenges. Issues such as cyberbullying, misinformation, and privacy concerns have emerged as significant hurdles that need to be addressed. The rapid pace of technological advancement often outstrips our ability to understand its full implications, leading to ethical dilemmas and societal challenges.\n\nAs we navigate this complex landscape, it's crucial to foster a digital literacy that enables us to harness the power of technology responsibly. This involves not only learning how to use new tools effectively but also understanding their impact on society and the environment. By doing so, we can ensure that the digital revolution continues to be a force for good, enriching our lives while preserving the values and principles that define us as human beings."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 42,
+      "completion_tokens": 289,
+      "total_tokens": 331
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0; fidelity stop-token and complete-byte decode patch 2026-08-13",
+    "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 36362,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2.5-7B-Instruct",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

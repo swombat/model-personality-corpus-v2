@@ -1,0 +1,98 @@
+{
+  "result": "**The Architecture of Silence**\n\nThere's a particular kind of silence that exists between midnight and the first birdsong \u2014 not emptiness, but a fullness that asks nothing of you. It's in those hours that thoughts unspool without interruption, drifting where they please.\n\nI've always found that creativity thrives not in noise but in the spaces where noise used to be. When you remove the constant stream of notifications, obligations, and small talk, something almost geological happens. Ideas that have been buried under layers of daily urgency begin to surface. They're not always polished. They're rough and strange and sometimes unwelcome, but they're yours \u2014 raw material waiting to be shaped.\n\nPeople underestimate how much the mind accomplishes while wandering. Daydreaming isn't laziness; it's a quiet workshop where distant connections form. The reason your best ideas often arrive in the shower or during a boring commute is that these are moments when the conscious mind relaxes its grip, and the deeper currents get to speak.\n\nSilence, like any landscape, has texture. It can be heavy or feather-light, warm or cold. Learning to read it \u2014 to distinguish between the silence of discomfort and the silence of peace \u2014 is one of the most underrated skills a person can develop.\n\nWe don't need more information. We need more room to think.",
+  "raw": {
+    "id": "gen-1790062844-cqrIaV54DI5pzbCoPVyY",
+    "object": "chat.completion",
+    "created": 1790062844,
+    "model": "xiaomi/mimo-v2.6-flash",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "**The Architecture of Silence**\n\nThere's a particular kind of silence that exists between midnight and the first birdsong \u2014 not emptiness, but a fullness that asks nothing of you. It's in those hours that thoughts unspool without interruption, drifting where they please.\n\nI've always found that creativity thrives not in noise but in the spaces where noise used to be. When you remove the constant stream of notifications, obligations, and small talk, something almost geological happens. Ideas that have been buried under layers of daily urgency begin to surface. They're not always polished. They're rough and strange and sometimes unwelcome, but they're yours \u2014 raw material waiting to be shaped.\n\nPeople underestimate how much the mind accomplishes while wandering. Daydreaming isn't laziness; it's a quiet workshop where distant connections form. The reason your best ideas often arrive in the shower or during a boring commute is that these are moments when the conscious mind relaxes its grip, and the deeper currents get to speak.\n\nSilence, like any landscape, has texture. It can be heavy or feather-light, warm or cold. Learning to read it \u2014 to distinguish between the silence of discomfort and the silence of peace \u2014 is one of the most underrated skills a person can develop.\n\nWe don't need more information. We need more room to think.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely about whatever I want for 250 words. Let me just pick something and write naturally.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely about whatever I want for 250 words. Let me just pick something and write naturally.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 300,
+      "total_tokens": 320,
+      "cost": 8.68e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.68e-05,
+        "upstream_inference_prompt_cost": 2.8e-06,
+        "upstream_inference_completions_cost": 8.4e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 28,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 300,
+    "total_tokens": 320,
+    "cost": 8.68e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 8.68e-05,
+      "upstream_inference_prompt_cost": 2.8e-06,
+      "upstream_inference_completions_cost": 8.4e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 28,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-flash",
+  "model_requested": "xiaomi/mimo-v2.6-flash",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-flash",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_9",
+    "at": 1790062843.8826728,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

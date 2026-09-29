@@ -1,0 +1,98 @@
+{
+  "result": "There's something deeply comforting about a quiet morning before the rest of the world wakes up. The stillness. The pale light creeping through the curtains. The realization that for a brief window, nothing is being asked of you.\n\nI think we underestimate how much mental noise we carry around every day. Our brains are constantly running simulations \u2014 rehearsing conversations, worrying about deadlines, replaying awkward moments from three years ago that absolutely nobody else remembers. But at 6 a.m., before the first ping of a notification, the static clears just a little.\n\nCoffee helps, of course. There's a ritual to it \u2014 grinding the beans, waiting for the water, the warmth of the mug against your palms. It's not really about the caffeine. It's about giving yourself permission to stand still and do one simple thing.\n\nWhat strikes me most about these moments is how unremarkable they are. Nothing dramatic happens. No epiphany, no cinematic slow motion. Just a person, a kitchen, and the low hum of a refrigerator. Yet somehow, those are the moments that hold us together. The small, quiet, unphotographed spaces between everything else.\n\nWe spend so much time chasing significance \u2014 the promotion, the milestone, the story worth telling. But maybe the real substance of a life is found in these margins. The spaces where we simply exist without performing. Where we remember that we are here, breathing, alive, and for now, that is enough.",
+  "raw": {
+    "id": "gen-1790062926-LveS5opCd0jy5u4EdTGX",
+    "object": "chat.completion",
+    "created": 1790062926,
+    "model": "xiaomi/mimo-v2.6-pro",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "There's something deeply comforting about a quiet morning before the rest of the world wakes up. The stillness. The pale light creeping through the curtains. The realization that for a brief window, nothing is being asked of you.\n\nI think we underestimate how much mental noise we carry around every day. Our brains are constantly running simulations \u2014 rehearsing conversations, worrying about deadlines, replaying awkward moments from three years ago that absolutely nobody else remembers. But at 6 a.m., before the first ping of a notification, the static clears just a little.\n\nCoffee helps, of course. There's a ritual to it \u2014 grinding the beans, waiting for the water, the warmth of the mug against your palms. It's not really about the caffeine. It's about giving yourself permission to stand still and do one simple thing.\n\nWhat strikes me most about these moments is how unremarkable they are. Nothing dramatic happens. No epiphany, no cinematic slow motion. Just a person, a kitchen, and the low hum of a refrigerator. Yet somehow, those are the moments that hold us together. The small, quiet, unphotographed spaces between everything else.\n\nWe spend so much time chasing significance \u2014 the promotion, the milestone, the story worth telling. But maybe the real substance of a life is found in these margins. The spaces where we simply exist without performing. Where we remember that we are here, breathing, alive, and for now, that is enough.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely about anything for 250 words. Let me write something genuine and interesting.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely about anything for 250 words. Let me write something genuine and interesting.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 322,
+      "total_tokens": 342,
+      "cost": 0.00028884,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00028884,
+        "upstream_inference_prompt_cost": 8.7e-06,
+        "upstream_inference_completions_cost": 0.00028014
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 25,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 322,
+    "total_tokens": 342,
+    "cost": 0.00028884,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00028884,
+      "upstream_inference_prompt_cost": 8.7e-06,
+      "upstream_inference_completions_cost": 0.00028014
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 25,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-pro",
+  "model_requested": "xiaomi/mimo-v2.6-pro",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-pro",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_18",
+    "at": 1790062926.2967858,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

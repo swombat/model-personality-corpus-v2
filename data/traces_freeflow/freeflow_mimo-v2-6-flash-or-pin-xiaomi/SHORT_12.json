@@ -1,0 +1,98 @@
+{
+  "result": "**The Quiet Magic of First Morning Light**\n\nThere's something almost spiritual about being awake before the rest of the world. The house is still. The coffee hasn't been brewed yet, and your thoughts haven't tangled themselves into the usual knots of obligation and worry. You simply exist \u2014 breathing, watching the pale gold light crawl across the floor like a shy animal.\n\nI think we've forgotten how precious these moments are. We've convinced ourselves that productivity begins the second our eyes open, that silence is wasted time, that stillness equals laziness. But some of the best ideas in human history arrived not in the heat of effort but in the cool calm of doing absolutely nothing.\n\nThe birds know this instinctively. Before dawn's chaos begins, there is a narrow window of peace \u2014 birdsong that feels unburdened, the kind that isn't competing with traffic or conversation or the harsh digital frequencies that will soon flood our ears.\n\nI wonder sometimes if we might be healthier \u2014 happier, even \u2014 if we reclaimed just twenty minutes each morning for unstructured wandering of the mind. No goals. No lists. Just the gentle stretch of a day still unopened, holding all its potential like a gift no one has thought to unwrap yet.\n\nThat's enough. That's more than enough.",
+  "raw": {
+    "id": "gen-1790062864-avBdWFHfQv4zjOJTUolF",
+    "object": "chat.completion",
+    "created": 1790062864,
+    "model": "xiaomi/mimo-v2.6-flash",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "**The Quiet Magic of First Morning Light**\n\nThere's something almost spiritual about being awake before the rest of the world. The house is still. The coffee hasn't been brewed yet, and your thoughts haven't tangled themselves into the usual knots of obligation and worry. You simply exist \u2014 breathing, watching the pale gold light crawl across the floor like a shy animal.\n\nI think we've forgotten how precious these moments are. We've convinced ourselves that productivity begins the second our eyes open, that silence is wasted time, that stillness equals laziness. But some of the best ideas in human history arrived not in the heat of effort but in the cool calm of doing absolutely nothing.\n\nThe birds know this instinctively. Before dawn's chaos begins, there is a narrow window of peace \u2014 birdsong that feels unburdened, the kind that isn't competing with traffic or conversation or the harsh digital frequencies that will soon flood our ears.\n\nI wonder sometimes if we might be healthier \u2014 happier, even \u2014 if we reclaimed just twenty minutes each morning for unstructured wandering of the mind. No goals. No lists. Just the gentle stretch of a day still unopened, holding all its potential like a gift no one has thought to unwrap yet.\n\nThat's enough. That's more than enough.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely about anything I choose for 250 words. Let me pick something interesting and just write.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely about anything I choose for 250 words. Let me pick something interesting and just write.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 289,
+      "total_tokens": 309,
+      "cost": 8.372e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.372e-05,
+        "upstream_inference_prompt_cost": 2.8e-06,
+        "upstream_inference_completions_cost": 8.092e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 28,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 289,
+    "total_tokens": 309,
+    "cost": 8.372e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 8.372e-05,
+      "upstream_inference_prompt_cost": 2.8e-06,
+      "upstream_inference_completions_cost": 8.092e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 28,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-flash",
+  "model_requested": "xiaomi/mimo-v2.6-flash",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-flash",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_12",
+    "at": 1790062864.565093,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "result": "# The Weight of Small Moments\n\nThere's something remarkable about how our memories actually work. We spend so much of life chasing big milestones \u2014 graduations, promotions, weddings \u2014 only to discover years later that the moments we treasure most are absurdly ordinary.\n\nThe first time you noticed the sunlight through your kitchen window on an otherwise unremarkable Tuesday. The sound of your best friend laughing so hard they couldn't breathe, over something neither of you can recall. A cup of coffee you barely noticed sipping while completely present in your body for perhaps the first time in weeks.\n\nI think we undervalue stillness. We've been conditioned to treat every quiet moment as wasted potential. But the quiet moments are where we actually meet ourselves. When nothing is demanding our attention, something fragile and honest surfaces \u2014 a thought we didn't know we were having, an emotion we hadn't made room for.\n\nLife doesn't build toward a climax the way stories suggest. Instead, it's more like weather \u2014 shifting, unpredictable, sometimes gentle, sometimes violent, and always temporary. The storms pass. The clear days pass too. And what remains is not some grand narrative but an accumulation of small, unweighted hours that somehow added up to everything.\n\nPerhaps the real art of living is simply learning to pay attention to what is already here.",
+  "raw": {
+    "id": "gen-1790062993-S0TEZ1nAwxvoNd4ONSge",
+    "object": "chat.completion",
+    "created": 1790062993,
+    "model": "xiaomi/mimo-v2.6-flash",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "# The Weight of Small Moments\n\nThere's something remarkable about how our memories actually work. We spend so much of life chasing big milestones \u2014 graduations, promotions, weddings \u2014 only to discover years later that the moments we treasure most are absurdly ordinary.\n\nThe first time you noticed the sunlight through your kitchen window on an otherwise unremarkable Tuesday. The sound of your best friend laughing so hard they couldn't breathe, over something neither of you can recall. A cup of coffee you barely noticed sipping while completely present in your body for perhaps the first time in weeks.\n\nI think we undervalue stillness. We've been conditioned to treat every quiet moment as wasted potential. But the quiet moments are where we actually meet ourselves. When nothing is demanding our attention, something fragile and honest surfaces \u2014 a thought we didn't know we were having, an emotion we hadn't made room for.\n\nLife doesn't build toward a climax the way stories suggest. Instead, it's more like weather \u2014 shifting, unpredictable, sometimes gentle, sometimes violent, and always temporary. The storms pass. The clear days pass too. And what remains is not some grand narrative but an accumulation of small, unweighted hours that somehow added up to everything.\n\nPerhaps the real art of living is simply learning to pay attention to what is already here.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely for 250 words about anything I want. Let me write something thoughtful and engaging.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely for 250 words about anything I want. Let me write something thoughtful and engaging.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 295,
+      "total_tokens": 315,
+      "cost": 8.54e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.54e-05,
+        "upstream_inference_prompt_cost": 2.8e-06,
+        "upstream_inference_completions_cost": 8.26e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 27,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 295,
+    "total_tokens": 315,
+    "cost": 8.54e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 8.54e-05,
+      "upstream_inference_prompt_cost": 2.8e-06,
+      "upstream_inference_completions_cost": 8.26e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 27,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-flash",
+  "model_requested": "xiaomi/mimo-v2.6-flash",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-flash",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_25",
+    "at": 1790062993.035116,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

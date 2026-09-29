@@ -1,0 +1,98 @@
+{
+  "result": "**On the Quiet Magic of Walking**\n\nThere is something almost defiant about walking in a world that moves faster than light, faster than thought. We shuffle through our days behind screens, our bodies tucked into chairs like forgotten furniture, and yet somewhere deep in our bones, an old rhythm still waits \u2014 the steady, unhurried cadence of footsteps meeting earth.\n\nI find my best thoughts arrive not when I sit down to summon them, but when I simply step outside and let them find me. The mind, it turns out, doesn't need to be locked into focus. It needs to be allowed to wander, to drift, to pace itself like a slow river finding its own path around obstacles it never planned for.\n\nThere is a whole philosophy hiding inside a walk. You cannot rush a walk without turning it into exercise, and exercise is fine, but it isn't the same. A true walk has no destination. It begins with boredom and ends with clarity, or perhaps it reverses those roles entirely.\n\nHumans walked for hundreds of thousands of years before we ever sat down to think about thinking. Maybe we've been sitting too long. Maybe the answers we're desperately searching for aren't waiting at the finish line \u2014 they're waiting along the winding, unremarkable road we keep forgetting to take.",
+  "raw": {
+    "id": "gen-1790062890-hROYpRiRXUkVQM4Jqdd9",
+    "object": "chat.completion",
+    "created": 1790062890,
+    "model": "xiaomi/mimo-v2.6-flash",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "**On the Quiet Magic of Walking**\n\nThere is something almost defiant about walking in a world that moves faster than light, faster than thought. We shuffle through our days behind screens, our bodies tucked into chairs like forgotten furniture, and yet somewhere deep in our bones, an old rhythm still waits \u2014 the steady, unhurried cadence of footsteps meeting earth.\n\nI find my best thoughts arrive not when I sit down to summon them, but when I simply step outside and let them find me. The mind, it turns out, doesn't need to be locked into focus. It needs to be allowed to wander, to drift, to pace itself like a slow river finding its own path around obstacles it never planned for.\n\nThere is a whole philosophy hiding inside a walk. You cannot rush a walk without turning it into exercise, and exercise is fine, but it isn't the same. A true walk has no destination. It begins with boredom and ends with clarity, or perhaps it reverses those roles entirely.\n\nHumans walked for hundreds of thousands of years before we ever sat down to think about thinking. Maybe we've been sitting too long. Maybe the answers we're desperately searching for aren't waiting at the finish line \u2014 they're waiting along the winding, unremarkable road we keep forgetting to take.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely about whatever I want for 250 words. Let me pick something interesting.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely about whatever I want for 250 words. Let me pick something interesting.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 288,
+      "total_tokens": 308,
+      "cost": 8.344e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.344e-05,
+        "upstream_inference_prompt_cost": 2.8e-06,
+        "upstream_inference_completions_cost": 8.064e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 25,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 288,
+    "total_tokens": 308,
+    "cost": 8.344e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 8.344e-05,
+      "upstream_inference_prompt_cost": 2.8e-06,
+      "upstream_inference_completions_cost": 8.064e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 25,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-flash",
+  "model_requested": "xiaomi/mimo-v2.6-flash",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-flash",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_15",
+    "at": 1790062890.506103,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

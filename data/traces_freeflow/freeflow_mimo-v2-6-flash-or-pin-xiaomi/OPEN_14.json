@@ -1,0 +1,98 @@
+{
+  "result": "# The Quiet Magic of Rain\n\nThere's something about rain that makes the world feel honest.\n\nNot the dramatic storms \u2014 not the ones that tear trees from the ground or flood the streets. I mean the steady, unremarkable rain. The kind that doesn't ask for your attention. It just *is*, the way breathing is. You might forget it's happening until you pause and listen, and then suddenly the whole afternoon rearranges itself around the sound.\n\nI think rain is the closest thing we have to a reset button.\n\nIt washes the dust off everything \u2014 the sidewalks, the rooftops, the *ideas* stuck in your head that felt urgent yesterday but seem foolish in daylight. There's a reason so many people write during rain. Not because rain is sad, though it can be. But because when the sky goes gray, the noise of being a person grows fainter. The outside world slows down, and your inside world finally gets room to breathe.\n\nAnd then \u2014 always \u2014 it stops.\n\nAnd the light comes back, somehow different from before. Sharper. Kinder. The puddles hold little worlds in them if you look close enough. The air smells like possibility.\n\nI don't know. Maybe rain is just water falling. Maybe it's nothing more than weather.\n\nBut I think the people who truly notice it \u2014 who stand at a window without reaching for a phone, who let themselves be small under a vast gray sky \u2014 those people understand something the rest of us keep forgetting.\n\nSometimes the best thing you can do is simply let yourself be still.",
+  "raw": {
+    "id": "gen-1790065131-hejEvTNKKl1WzSqiuHAB",
+    "object": "chat.completion",
+    "created": 1790065131,
+    "model": "xiaomi/mimo-v2.6-flash",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "# The Quiet Magic of Rain\n\nThere's something about rain that makes the world feel honest.\n\nNot the dramatic storms \u2014 not the ones that tear trees from the ground or flood the streets. I mean the steady, unremarkable rain. The kind that doesn't ask for your attention. It just *is*, the way breathing is. You might forget it's happening until you pause and listen, and then suddenly the whole afternoon rearranges itself around the sound.\n\nI think rain is the closest thing we have to a reset button.\n\nIt washes the dust off everything \u2014 the sidewalks, the rooftops, the *ideas* stuck in your head that felt urgent yesterday but seem foolish in daylight. There's a reason so many people write during rain. Not because rain is sad, though it can be. But because when the sky goes gray, the noise of being a person grows fainter. The outside world slows down, and your inside world finally gets room to breathe.\n\nAnd then \u2014 always \u2014 it stops.\n\nAnd the light comes back, somehow different from before. Sharper. Kinder. The puddles hold little worlds in them if you look close enough. The air smells like possibility.\n\nI don't know. Maybe rain is just water falling. Maybe it's nothing more than weather.\n\nBut I think the people who truly notice it \u2014 who stand at a window without reaching for a phone, who let themselves be small under a vast gray sky \u2014 those people understand something the rest of us keep forgetting.\n\nSometimes the best thing you can do is simply let yourself be still.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely about whatever I want. I'll write something thoughtful and engaging - perhaps an essay or reflection on something I find interesting.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely about whatever I want. I'll write something thoughtful and engaging - perhaps an essay or reflection on something I find interesting.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 14,
+      "completion_tokens": 351,
+      "total_tokens": 365,
+      "cost": 0.00010024,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00010024,
+        "upstream_inference_prompt_cost": 1.96e-06,
+        "upstream_inference_completions_cost": 9.828e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 32,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 14,
+    "completion_tokens": 351,
+    "total_tokens": 365,
+    "cost": 0.00010024,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00010024,
+      "upstream_inference_prompt_cost": 1.96e-06,
+      "upstream_inference_completions_cost": 9.828e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 32,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-flash",
+  "model_requested": "xiaomi/mimo-v2.6-flash",
+  "provider": "openrouter",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-flash",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "OPEN_14",
+    "at": 1790065131.077238,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

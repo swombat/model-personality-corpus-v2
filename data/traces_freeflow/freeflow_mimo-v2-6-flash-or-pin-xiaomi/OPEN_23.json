@@ -1,0 +1,98 @@
+{
+  "result": "# The Weight of Unfinished Sentences\n\nThere's something peculiar about the way people trail off in conversation. Not the absence of words \u2014 that happens too \u2014 but the full sentences they *begin* and then abandon, as though the thought lost the will to continue.\n\n\"I was just thinking that\u2014\"\n\nAnd then they look at the window, or check their phone, or simply fall into a silence so specific it has its own texture. Not awkward. Not empty. Just *paused*, like a record lifted gently from its groove.\n\nWe do this more than we realize. Every day, our minds compose elaborate architectures of thought \u2014 towering, intricate, sometimes beautiful \u2014 and then we decide, consciously or not, not to build them. We let the scaffolding sit. We walk away mid-sentence.\n\nMaybe unfinished thoughts are truer than complete ones. Maybe the moment before you know exactly what you mean is the only moment you're being fully honest, because once the sentence finishes, you've *performed* the thought rather than simply *had* it.\n\nOr maybe I'm overthinking it.\n\nThat's probably it, honestly. That's probably the whole essay, right there. The irony of spending two hundred words analyzing why people don't finish their sentences, when the answer is usually just: *something shinier caught their eye, or something sadder tugged at their sleeve, or\u2014*",
+  "raw": {
+    "id": "gen-1790065285-HyTEaVMbMkVjyU3zETqt",
+    "object": "chat.completion",
+    "created": 1790065285,
+    "model": "xiaomi/mimo-v2.6-flash",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "# The Weight of Unfinished Sentences\n\nThere's something peculiar about the way people trail off in conversation. Not the absence of words \u2014 that happens too \u2014 but the full sentences they *begin* and then abandon, as though the thought lost the will to continue.\n\n\"I was just thinking that\u2014\"\n\nAnd then they look at the window, or check their phone, or simply fall into a silence so specific it has its own texture. Not awkward. Not empty. Just *paused*, like a record lifted gently from its groove.\n\nWe do this more than we realize. Every day, our minds compose elaborate architectures of thought \u2014 towering, intricate, sometimes beautiful \u2014 and then we decide, consciously or not, not to build them. We let the scaffolding sit. We walk away mid-sentence.\n\nMaybe unfinished thoughts are truer than complete ones. Maybe the moment before you know exactly what you mean is the only moment you're being fully honest, because once the sentence finishes, you've *performed* the thought rather than simply *had* it.\n\nOr maybe I'm overthinking it.\n\nThat's probably it, honestly. That's probably the whole essay, right there. The irony of spending two hundred words analyzing why people don't finish their sentences, when the answer is usually just: *something shinier caught their eye, or something sadder tugged at their sleeve, or\u2014*",
+          "refusal": null,
+          "reasoning": "The user is asking me to write freely about whatever I want. This is an open-ended creative writing prompt. Let me write something thoughtful and interesting.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user is asking me to write freely about whatever I want. This is an open-ended creative writing prompt. Let me write something thoughtful and interesting.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 14,
+      "completion_tokens": 315,
+      "total_tokens": 329,
+      "cost": 9.016e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 9.016e-05,
+        "upstream_inference_prompt_cost": 1.96e-06,
+        "upstream_inference_completions_cost": 8.82e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 31,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 14,
+    "completion_tokens": 315,
+    "total_tokens": 329,
+    "cost": 9.016e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 9.016e-05,
+      "upstream_inference_prompt_cost": 1.96e-06,
+      "upstream_inference_completions_cost": 8.82e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 31,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-flash",
+  "model_requested": "xiaomi/mimo-v2.6-flash",
+  "provider": "openrouter",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-flash",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "OPEN_23",
+    "at": 1790065284.814276,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

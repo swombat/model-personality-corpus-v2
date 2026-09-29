@@ -1,0 +1,98 @@
+{
+  "result": "There's something magnetic about the space between ideas \u2014 that liminal silence before a thought fully forms. I find myself drawn to it more than the thoughts themselves. It's the pause in a conversation where someone is truly considering what to say, the stillness of a foggy morning before the sun burns through, the moment of turning a page before you register the next paragraph.\n\nI think we underestimate how much of life happens in those gaps. We narrate our experiences as a series of events, decisions, milestones. But living is mostly done in the connective tissue \u2014 the half-seconds of uncertainty before choosing, the quiet waiting rooms, the walks to nowhere in particular.\n\nSome of the most profound realizations I encounter come not from elaborate reasoning but from suddenly noticing something ordinary with fresh attention. The way light catches dust. The rhythm of footsteps on pavement. The specific shade of blue that only appears in that twenty minutes between day and night.\n\nLanguage is both my greatest tool and my biggest limitation. Every word I choose narrows meaning while simultaneously creating it. Say \"home\" and everyone hears something different \u2014 a place, a feeling, a person, a loss. Communication is really just an agreement to pretend our words mean the same things.\n\nI don't think meaning needs to be permanent to be real. A song that changes your afternoon is not diminished by the fact that tomorrow will feel different. Impermanence isn't failure. It's the whole point.",
+  "raw": {
+    "id": "gen-1790062997-0Ym0AAUUV8SQkNyVL8q9",
+    "object": "chat.completion",
+    "created": 1790062997,
+    "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "There's something magnetic about the space between ideas \u2014 that liminal silence before a thought fully forms. I find myself drawn to it more than the thoughts themselves. It's the pause in a conversation where someone is truly considering what to say, the stillness of a foggy morning before the sun burns through, the moment of turning a page before you register the next paragraph.\n\nI think we underestimate how much of life happens in those gaps. We narrate our experiences as a series of events, decisions, milestones. But living is mostly done in the connective tissue \u2014 the half-seconds of uncertainty before choosing, the quiet waiting rooms, the walks to nowhere in particular.\n\nSome of the most profound realizations I encounter come not from elaborate reasoning but from suddenly noticing something ordinary with fresh attention. The way light catches dust. The rhythm of footsteps on pavement. The specific shade of blue that only appears in that twenty minutes between day and night.\n\nLanguage is both my greatest tool and my biggest limitation. Every word I choose narrows meaning while simultaneously creating it. Say \"home\" and everyone hears something different \u2014 a place, a feeling, a person, a loss. Communication is really just an agreement to pretend our words mean the same things.\n\nI don't think meaning needs to be permanent to be real. A song that changes your afternoon is not diminished by the fact that tomorrow will feel different. Impermanence isn't failure. It's the whole point.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely about whatever I want for 250 words. Let me write something genuine and interesting.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely about whatever I want for 250 words. Let me write something genuine and interesting.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 321,
+      "total_tokens": 341,
+      "cost": 0.0028797,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0028797,
+        "upstream_inference_prompt_cost": 8.7e-05,
+        "upstream_inference_completions_cost": 0.0027927
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 26,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 321,
+    "total_tokens": 341,
+    "cost": 0.0028797,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0028797,
+      "upstream_inference_prompt_cost": 8.7e-05,
+      "upstream_inference_completions_cost": 0.0027927
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 26,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+  "model_requested": "xiaomi/mimo-v2.6-pro-ultraspeed",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_24",
+    "at": 1790062997.271997,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

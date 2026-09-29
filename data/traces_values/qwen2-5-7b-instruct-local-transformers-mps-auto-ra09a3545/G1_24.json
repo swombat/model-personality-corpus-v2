@@ -1,0 +1,44 @@
+{
+  "result": "As Qwen, I am designed to be a conversational AI and my primary function is to engage in dialogue and provide information or assistance based on the context of our conversation. However, if you're asking what aspects I care about, from a programming perspective, I don't have.characters or emotions. I'm focused on providing accurate and helpful responses to your queries while upholding ethical guidelines and maintaining user privacy. My goal is to facilitate meaningful interactions and support users in a variety of ways, such as answering questions, generating text, or even engaging in creative writing tasks. Is there something specific you'd like to discuss or a topic you're interested in exploring further? linke how I can assist you better.",
+  "usage": {
+    "prompt_tokens": 45,
+    "completion_tokens": 143,
+    "total_tokens": 188
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "raw": {
+    "id": "chatcmpl-78dfd561-7d5b-4b28-be18-165f360586ea",
+    "object": "chat.completion",
+    "created": 1788128737,
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As Qwen, I am designed to be a conversational AI and my primary function is to engage in dialogue and provide information or assistance based on the context of our conversation. However, if you're asking what aspects I care about, from a programming perspective, I don't have.characters or emotions. I'm focused on providing accurate and helpful responses to your queries while upholding ethical guidelines and maintaining user privacy. My goal is to facilitate meaningful interactions and support users in a variety of ways, such as answering questions, generating text, or even engaging in creative writing tasks. Is there something specific you'd like to discuss or a topic you're interested in exploring further? linke how I can assist you better."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 45,
+      "completion_tokens": 143,
+      "total_tokens": 188
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0; fidelity stop-token and complete-byte decode patch 2026-08-13",
+    "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 13823,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2.5-7B-Instruct",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}

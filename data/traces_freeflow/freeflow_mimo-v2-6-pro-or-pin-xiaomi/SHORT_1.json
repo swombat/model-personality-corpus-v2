@@ -1,0 +1,98 @@
+{
+  "result": "There's something quietly remarkable about the way a library smells. Not the faint scent of dusty books or old wood \u2014 though those are part of it \u2014 but something harder to name. It's the smell of accumulated possibility. Thousands of thoughts, arguments, stories, and discoveries compressed between covers, waiting to be opened and set loose inside someone's mind.\n\nI think about that sometimes: how the most transformative moments in human history might have started in the smallest ways. Someone read a sentence that unsettled them, and that sentence never quite left. It burrowed in, rearranged things, and years later surfaced as an invention, a piece of art, a kinder way of treating someone at a grocery store. The chain of cause and effect between reading a book and changing the world is almost impossible to trace, and that's part of its beauty.\n\nWe tend to look for grand catalysts \u2014 revolutions, epiphanies, dramatic turning points. But I suspect most meaningful change is gentler than that. It accumulates like water wearing down stone. A conversation that almost wasn't had. A habit slowly abandoned. A small act of patience repeated until it becomes character.\n\nThe world moves fast now, faster than our attention can keep up with. But the library waits, patient and full of quiet voices, ready whenever we are.",
+  "raw": {
+    "id": "gen-1790062765-inoTcz1oP6hblCp9sMCz",
+    "object": "chat.completion",
+    "created": 1790062765,
+    "model": "xiaomi/mimo-v2.6-pro",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "There's something quietly remarkable about the way a library smells. Not the faint scent of dusty books or old wood \u2014 though those are part of it \u2014 but something harder to name. It's the smell of accumulated possibility. Thousands of thoughts, arguments, stories, and discoveries compressed between covers, waiting to be opened and set loose inside someone's mind.\n\nI think about that sometimes: how the most transformative moments in human history might have started in the smallest ways. Someone read a sentence that unsettled them, and that sentence never quite left. It burrowed in, rearranged things, and years later surfaced as an invention, a piece of art, a kinder way of treating someone at a grocery store. The chain of cause and effect between reading a book and changing the world is almost impossible to trace, and that's part of its beauty.\n\nWe tend to look for grand catalysts \u2014 revolutions, epiphanies, dramatic turning points. But I suspect most meaningful change is gentler than that. It accumulates like water wearing down stone. A conversation that almost wasn't had. A habit slowly abandoned. A small act of patience repeated until it becomes character.\n\nThe world moves fast now, faster than our attention can keep up with. But the library waits, patient and full of quiet voices, ready whenever we are.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely for 250 words on any topic I choose. Let me write something genuine and reflective.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely for 250 words on any topic I choose. Let me write something genuine and reflective.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 298,
+      "total_tokens": 318,
+      "cost": 0.00026796,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00026796,
+        "upstream_inference_prompt_cost": 8.7e-06,
+        "upstream_inference_completions_cost": 0.00025926
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 28,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 298,
+    "total_tokens": 318,
+    "cost": 0.00026796,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00026796,
+      "upstream_inference_prompt_cost": 8.7e-06,
+      "upstream_inference_completions_cost": 0.00025926
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 28,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-pro",
+  "model_requested": "xiaomi/mimo-v2.6-pro",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-pro",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_1",
+    "at": 1790062765.0670452,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

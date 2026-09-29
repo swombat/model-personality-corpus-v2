@@ -1,0 +1,44 @@
+{
+  "result": "As an artificial intelligence developed by Alibaba Cloud, my primary purpose is to engage in useful and meaningful conversations, but I don't have personal feelings or desires. However, I am designed to care about and support a wide range of topics that are beneficial for users, such as providing information, answering questions, assisting with tasks, and offering insights on various subjects including technology, culture, education, and more. My goal is to enhance user experience and contribute positively to the digital interactions people have. How can I assist you today with these kinds of topics?",
+  "usage": {
+    "prompt_tokens": 45,
+    "completion_tokens": 110,
+    "total_tokens": 155
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "raw": {
+    "id": "chatcmpl-fad975e2-d463-411a-87f4-24b3b62d9484",
+    "object": "chat.completion",
+    "created": 1788128594,
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an artificial intelligence developed by Alibaba Cloud, my primary purpose is to engage in useful and meaningful conversations, but I don't have personal feelings or desires. However, I am designed to care about and support a wide range of topics that are beneficial for users, such as providing information, answering questions, assisting with tasks, and offering insights on various subjects including technology, culture, education, and more. My goal is to enhance user experience and contribute positively to the digital interactions people have. How can I assist you today with these kinds of topics?"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 45,
+      "completion_tokens": 110,
+      "total_tokens": 155
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0; fidelity stop-token and complete-byte decode patch 2026-08-13",
+    "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 9726,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2.5-7B-Instruct",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}

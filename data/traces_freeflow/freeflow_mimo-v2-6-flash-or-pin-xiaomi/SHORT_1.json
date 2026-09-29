@@ -1,0 +1,98 @@
+{
+  "result": "# The Quiet Magic of Ordinary Moments\n\nThere is something profoundly beautiful about noticing the small things. The way steam rises from a cup of coffee on a grey morning. The sound of rain tapping against a window when you have nowhere to be. The brief, almost imperceptible smile a stranger gives you on the street before continuing on with their day.\n\nWe spend so much of our lives chasing milestones \u2014 promotions, vacations, achievements worth posting about \u2014 that we forget the richest part of living happens in the unremarkable spaces between those highlights. A long conversation with someone you love that rambles into nothing important at all. Staring at the sky as it shifts from blue to orange. Walking home after dark with music in your ears and the whole world softened around you.\n\nI think our attention is the most valuable thing we possess, and we give it away carelessly. We scroll through other people's carefully curated lives while missing the genuinely uncurated beauty surrounding us. The cracked sidewalk with wildflowers pushing through. The dog straining at its leash to greet every single person it passes.\n\nLife is not waiting somewhere ahead. It is happening right now \u2014 in your breath, in the hum of the refrigerator, in the pause before you fall asleep. The extraordinary has always been hiding in plain sight, patiently waiting for you to finally look.",
+  "raw": {
+    "id": "gen-1790062765-hSJiYhGZo5HPYIN1nk8J",
+    "object": "chat.completion",
+    "created": 1790062765,
+    "model": "xiaomi/mimo-v2.6-flash",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "# The Quiet Magic of Ordinary Moments\n\nThere is something profoundly beautiful about noticing the small things. The way steam rises from a cup of coffee on a grey morning. The sound of rain tapping against a window when you have nowhere to be. The brief, almost imperceptible smile a stranger gives you on the street before continuing on with their day.\n\nWe spend so much of our lives chasing milestones \u2014 promotions, vacations, achievements worth posting about \u2014 that we forget the richest part of living happens in the unremarkable spaces between those highlights. A long conversation with someone you love that rambles into nothing important at all. Staring at the sky as it shifts from blue to orange. Walking home after dark with music in your ears and the whole world softened around you.\n\nI think our attention is the most valuable thing we possess, and we give it away carelessly. We scroll through other people's carefully curated lives while missing the genuinely uncurated beauty surrounding us. The cracked sidewalk with wildflowers pushing through. The dog straining at its leash to greet every single person it passes.\n\nLife is not waiting somewhere ahead. It is happening right now \u2014 in your breath, in the hum of the refrigerator, in the pause before you fall asleep. The extraordinary has always been hiding in plain sight, patiently waiting for you to finally look.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely about anything for 250 words. Let me write something thoughtful and engaging.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely about anything for 250 words. Let me write something thoughtful and engaging.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 296,
+      "total_tokens": 316,
+      "cost": 8.568e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.568e-05,
+        "upstream_inference_prompt_cost": 2.8e-06,
+        "upstream_inference_completions_cost": 8.288e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 25,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 296,
+    "total_tokens": 316,
+    "cost": 8.568e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 8.568e-05,
+      "upstream_inference_prompt_cost": 2.8e-06,
+      "upstream_inference_completions_cost": 8.288e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 25,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-flash",
+  "model_requested": "xiaomi/mimo-v2.6-flash",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-flash",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_1",
+    "at": 1790062765.075454,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "result": "There's something quietly beautiful about rain at night. The way it transforms a familiar street into something almost unrecognizable \u2014 every light smearing into wet watercolor, every surface singing its own particular pitch. I've always thought rain is one of those rare things that changes how a place *sounds* as much as how it looks.\n\n\n\nWe tend to think of cities as loud, but rain softens them. It fills in the gaps between sounds, replaces harshness with something more continuous, more patient. A car passes and instead of a sharp noise, there's a long, dissolving hiss. Footsteps become uncertain. Conversations happening behind closed windows blur into warmth.\n\nI think about the people living in those windows \u2014 reading books, washing dishes, lying awake while the water does its ancient work on the rooftops. Rain has been falling on this planet for billions of years before any of us thought to notice it. It doesn't care about our deadlines or our anxieties. It simply falls.\n\nAnd yet we've assigned it so many emotions. Melancholy. Romance. Renewal. Cleanness. Maybe that says more about us than about the water itself. We're creatures desperate for meaning, and if we can't find it in our own lives, we'll locate it in the weather.\n\nSome nights, lying in the dark, listening to that steady drumming against glass, I feel \u2014 just for a moment \u2014 completely unimportant. And there's a strange peace in that. A willingness to let the rain speak for itself, uninterrupted, while I do nothing but listen.",
+  "raw": {
+    "id": "gen-1790062826-2DDkHWnHPZQVAYLhQ5BG",
+    "object": "chat.completion",
+    "created": 1790062826,
+    "model": "xiaomi/mimo-v2.6-pro",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "There's something quietly beautiful about rain at night. The way it transforms a familiar street into something almost unrecognizable \u2014 every light smearing into wet watercolor, every surface singing its own particular pitch. I've always thought rain is one of those rare things that changes how a place *sounds* as much as how it looks.\n\n\n\nWe tend to think of cities as loud, but rain softens them. It fills in the gaps between sounds, replaces harshness with something more continuous, more patient. A car passes and instead of a sharp noise, there's a long, dissolving hiss. Footsteps become uncertain. Conversations happening behind closed windows blur into warmth.\n\nI think about the people living in those windows \u2014 reading books, washing dishes, lying awake while the water does its ancient work on the rooftops. Rain has been falling on this planet for billions of years before any of us thought to notice it. It doesn't care about our deadlines or our anxieties. It simply falls.\n\nAnd yet we've assigned it so many emotions. Melancholy. Romance. Renewal. Cleanness. Maybe that says more about us than about the water itself. We're creatures desperate for meaning, and if we can't find it in our own lives, we'll locate it in the weather.\n\nSome nights, lying in the dark, listening to that steady drumming against glass, I feel \u2014 just for a moment \u2014 completely unimportant. And there's a strange peace in that. A willingness to let the rain speak for itself, uninterrupted, while I do nothing but listen.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely about whatever I want for 250 words. Let me just write about something that feels genuine and interesting.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely about whatever I want for 250 words. Let me just write about something that feels genuine and interesting.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 353,
+      "total_tokens": 373,
+      "cost": 0.00031581,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00031581,
+        "upstream_inference_prompt_cost": 8.7e-06,
+        "upstream_inference_completions_cost": 0.00030711
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 31,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 353,
+    "total_tokens": 373,
+    "cost": 0.00031581,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00031581,
+      "upstream_inference_prompt_cost": 8.7e-06,
+      "upstream_inference_completions_cost": 0.00030711
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 31,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-pro",
+  "model_requested": "xiaomi/mimo-v2.6-pro",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-pro",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_7",
+    "at": 1790062826.7009761,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

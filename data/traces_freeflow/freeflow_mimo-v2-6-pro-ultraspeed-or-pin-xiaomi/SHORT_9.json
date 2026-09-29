@@ -1,0 +1,98 @@
+{
+  "result": "The First Cup\n\nThere is a particular moment each morning \u2014 somewhere between the hiss of the kettle and the first bitter sip \u2014 when the day is still undecided. It hasn't announced itself yet. It exists only as possibility, a blank page still warm from the printer.\n\nI've come to think of that moment as sacred, though I wouldn't have said so five years ago. Back then, mornings were enemies. They arrived with obligation, with the metallic taste of anxiety before the coffee could wash it away. The day was something to survive, not to inhabit.\n\nWhat changed wasn't dramatic. There was no revelation, no single turning point \u2014 just the slow accumulation of small awarenesses. The way steam curls against a cold window. The way a house sounds before anyone else wakes \u2014 a settling of pipes, a hum beneath everything. The way a thought, unobserved, can shape itself freely before the noise of other people's thoughts crowds it out.\n\nI think the world undervalues solitude. We treat it as absence \u2014 of company, of noise, of stimulation. But it's more like fertile soil. Left alone, undisturbed, something grows that could not survive the constant trampling of conversation and agenda.\n\nThe coffee is getting cold now. I should drink it.\n\nBut not yet.\n\nLet the silence hold for one more breath. Let the day remain, for just a little longer, a story that hasn't begun.",
+  "raw": {
+    "id": "gen-1790062815-EiCMkh83PIgZPDIYDOn3",
+    "object": "chat.completion",
+    "created": 1790062815,
+    "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "The First Cup\n\nThere is a particular moment each morning \u2014 somewhere between the hiss of the kettle and the first bitter sip \u2014 when the day is still undecided. It hasn't announced itself yet. It exists only as possibility, a blank page still warm from the printer.\n\nI've come to think of that moment as sacred, though I wouldn't have said so five years ago. Back then, mornings were enemies. They arrived with obligation, with the metallic taste of anxiety before the coffee could wash it away. The day was something to survive, not to inhabit.\n\nWhat changed wasn't dramatic. There was no revelation, no single turning point \u2014 just the slow accumulation of small awarenesses. The way steam curls against a cold window. The way a house sounds before anyone else wakes \u2014 a settling of pipes, a hum beneath everything. The way a thought, unobserved, can shape itself freely before the noise of other people's thoughts crowds it out.\n\nI think the world undervalues solitude. We treat it as absence \u2014 of company, of noise, of stimulation. But it's more like fertile soil. Left alone, undisturbed, something grows that could not survive the constant trampling of conversation and agenda.\n\nThe coffee is getting cold now. I should drink it.\n\nBut not yet.\n\nLet the silence hold for one more breath. Let the day remain, for just a little longer, a story that hasn't begun.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely for 250 words on whatever topic I choose. Let me write something genuine and interesting.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely for 250 words on whatever topic I choose. Let me write something genuine and interesting.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 319,
+      "total_tokens": 339,
+      "cost": 0.0028623,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0028623,
+        "upstream_inference_prompt_cost": 8.7e-05,
+        "upstream_inference_completions_cost": 0.0027753
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 27,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 319,
+    "total_tokens": 339,
+    "cost": 0.0028623,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0028623,
+      "upstream_inference_prompt_cost": 8.7e-05,
+      "upstream_inference_completions_cost": 0.0027753
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 27,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+  "model_requested": "xiaomi/mimo-v2.6-pro-ultraspeed",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_9",
+    "at": 1790062814.724287,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

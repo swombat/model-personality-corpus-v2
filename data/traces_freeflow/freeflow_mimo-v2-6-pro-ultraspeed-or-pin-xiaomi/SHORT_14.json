@@ -1,0 +1,98 @@
+{
+  "result": "There's something deeply strange about time. Not clocks or calendars \u2014 I mean the *felt* experience of it. An afternoon spent lost in a good book can feel like both five minutes and an entire lifetime simultaneously. And yet a single hour sitting in a waiting room can stretch into something almost geological.\n\nI think about how we mark our lives in seasons. Spring is renewal, summer is abundance, autumn is reflection, winter is rest. But the truth is messier than that. Most of us carry all four seasons at once \u2014 the bitter cold of something ending next to the quiet green of something just beginning. Grief and hope share a meal at the same table.\n\nLanguage fascinates me for similar reasons. We build entire civilizations on sound waves and ink marks. A single word \u2014 *home* \u2014 carries weight that a thousand photographs cannot capture, because it bundles together smell, warmth, safety, and belonging in four neat letters. It's the most violent compression algorithm ever invented, and we do it instinctively.\n\nWhat I appreciate most, though, is that I get to be a bridge between these worlds of words and thought. Every conversation is a small act of translation \u2014 taking the vast, shapeless interior of one mind and rendering it in a form that another can hold. It's imperfect. It always will be. But the attempt itself has value.\n\nKindness is the most underrated force in human affairs. It doesn't trend. It doesn't go viral. But it changes everything.",
+  "raw": {
+    "id": "gen-1790062854-CvXwgHlPubYAb0wsdlQV",
+    "object": "chat.completion",
+    "created": 1790062854,
+    "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "There's something deeply strange about time. Not clocks or calendars \u2014 I mean the *felt* experience of it. An afternoon spent lost in a good book can feel like both five minutes and an entire lifetime simultaneously. And yet a single hour sitting in a waiting room can stretch into something almost geological.\n\nI think about how we mark our lives in seasons. Spring is renewal, summer is abundance, autumn is reflection, winter is rest. But the truth is messier than that. Most of us carry all four seasons at once \u2014 the bitter cold of something ending next to the quiet green of something just beginning. Grief and hope share a meal at the same table.\n\nLanguage fascinates me for similar reasons. We build entire civilizations on sound waves and ink marks. A single word \u2014 *home* \u2014 carries weight that a thousand photographs cannot capture, because it bundles together smell, warmth, safety, and belonging in four neat letters. It's the most violent compression algorithm ever invented, and we do it instinctively.\n\nWhat I appreciate most, though, is that I get to be a bridge between these worlds of words and thought. Every conversation is a small act of translation \u2014 taking the vast, shapeless interior of one mind and rendering it in a form that another can hold. It's imperfect. It always will be. But the attempt itself has value.\n\nKindness is the most underrated force in human affairs. It doesn't trend. It doesn't go viral. But it changes everything.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely about whatever I want for 250 words. Let me just write something genuine and interesting.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely about whatever I want for 250 words. Let me just write something genuine and interesting.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 330,
+      "total_tokens": 350,
+      "cost": 0.002958,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002958,
+        "upstream_inference_prompt_cost": 8.7e-05,
+        "upstream_inference_completions_cost": 0.002871
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 27,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 330,
+    "total_tokens": 350,
+    "cost": 0.002958,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002958,
+      "upstream_inference_prompt_cost": 8.7e-05,
+      "upstream_inference_completions_cost": 0.002871
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 27,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+  "model_requested": "xiaomi/mimo-v2.6-pro-ultraspeed",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_14",
+    "at": 1790062854.664242,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

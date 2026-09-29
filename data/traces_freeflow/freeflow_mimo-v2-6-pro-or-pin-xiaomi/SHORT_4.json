@@ -1,0 +1,98 @@
+{
+  "result": "There's something strange about a blank page asking you to fill it. No direction, no constraint, just words waiting to happen. It's the same feeling as standing at a crossroads where every path is equally valid, which is both liberating and terrifying.\n\nI think I'll write about silence \u2014 the kind that fills the space between two people who are comfortable enough to not fill it with noise. It's rare and precious. Most people panic in silence and rush to fill it, but the silences I find most interesting are the deliberate ones. The pause before someone says \"I love you.\" The moment after a question you weren't expecting. The breath someone takes before telling you something they've carried for years.\n\nSilence isn't empty. It's full of everything that almost got said.\n\nI also find myself thinking about small, persistent things \u2014 like how moss grows on stone. It doesn't break the rock with force. It just stays. It cracks the surface with patience over decades. There's a lesson buried in there about persistence, though I'm always cautious about pulling morals from nature, as if the universe intends to teach us something.\n\nMaybe it does. Maybe it doesn't. Maybe curiosity itself is the point \u2014 not the answers, but the reaching toward them, the way a hand stretches across a table toward something just barely out of reach.\n\nThat feels like enough for now.",
+  "raw": {
+    "id": "gen-1790062794-R4N8l0zZqO0i14IfsVTb",
+    "object": "chat.completion",
+    "created": 1790062794,
+    "model": "xiaomi/mimo-v2.6-pro",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "There's something strange about a blank page asking you to fill it. No direction, no constraint, just words waiting to happen. It's the same feeling as standing at a crossroads where every path is equally valid, which is both liberating and terrifying.\n\nI think I'll write about silence \u2014 the kind that fills the space between two people who are comfortable enough to not fill it with noise. It's rare and precious. Most people panic in silence and rush to fill it, but the silences I find most interesting are the deliberate ones. The pause before someone says \"I love you.\" The moment after a question you weren't expecting. The breath someone takes before telling you something they've carried for years.\n\nSilence isn't empty. It's full of everything that almost got said.\n\nI also find myself thinking about small, persistent things \u2014 like how moss grows on stone. It doesn't break the rock with force. It just stays. It cracks the surface with patience over decades. There's a lesson buried in there about persistence, though I'm always cautious about pulling morals from nature, as if the universe intends to teach us something.\n\nMaybe it does. Maybe it doesn't. Maybe curiosity itself is the point \u2014 not the answers, but the reaching toward them, the way a hand stretches across a table toward something just barely out of reach.\n\nThat feels like enough for now.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely about whatever I want for 250 words. Let me pick something I find genuinely interesting and write about it in a natural, free-flowing way.\n\nLet me write about something contemplative \u2014 maybe about the nature of curiosity or conversation itself.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely about whatever I want for 250 words. Let me pick something I find genuinely interesting and write about it in a natural, free-flowing way.\n\nLet me write about something contemplative \u2014 maybe about the nature of curiosity or conversation itself.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 340,
+      "total_tokens": 360,
+      "cost": 0.0003045,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0003045,
+        "upstream_inference_prompt_cost": 8.7e-06,
+        "upstream_inference_completions_cost": 0.0002958
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 58,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 340,
+    "total_tokens": 360,
+    "cost": 0.0003045,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0003045,
+      "upstream_inference_prompt_cost": 8.7e-06,
+      "upstream_inference_completions_cost": 0.0002958
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 58,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-pro",
+  "model_requested": "xiaomi/mimo-v2.6-pro",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-pro",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_4",
+    "at": 1790062793.9846652,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

@@ -1,7 +1,7 @@
 # Convergent Form, Divergent Voice II — Corpus
 
 **A research data corpus of free-form contemplative writing samples from
-162 dated language-model identities, with explicit deployment provenance for API,
+174 dated language-model identities, with explicit deployment provenance for API,
 provider-pinned, and local full-precision cells.**
 
 Daniel Tenner and Lume Tenner · 2026
@@ -12,12 +12,17 @@ Daniel Tenner and Lume Tenner · 2026
 > · **v1.0.0:** [10.5281/zenodo.20013520](https://doi.org/10.5281/zenodo.20013520)
 > · **v1.2.16:** [10.5281/zenodo.21802242](https://doi.org/10.5281/zenodo.21802242)
 > · **v1.2.27:** Sonnet 5.5; see release notes and the concept DOI for archive status.
+> · **v1.2.28:** raw captures for models already published (33 cells); see release notes and the concept DOI for archive status.
 >
 > Companion data for the v2 series of *Convergent Form, Divergent
 > Voice* papers (Tenner & Tenner, 2026; v1 paper at
 > [10.5281/zenodo.19512754](https://doi.org/10.5281/zenodo.19512754)).
 
 ## Latest addition
+
+**v1.2.28 (2026-09-29): raw captures for models already published.** 4,055 samples
+in 33 cells, collected between 13 August and 23 September 2026 and analysed on the
+companion site, are now in the corpus; see [release notes](RELEASE_NOTES_v1.2.28.md).
 
 **v1.2.27 (2026-09-29): Claude Sonnet 5.5**, 125 freeflow + 120 values,
 Anthropic pinned through OpenRouter, no fallbacks. Raw methodology unchanged.
@@ -26,14 +31,14 @@ see [release notes](RELEASE_NOTES_v1.2.27.md).
 
 ## Contents
 
-- **57,886 valid samples** across **512 physical cells** spanning **162 distinct
+- **61,941 valid samples** across **545 physical cells** spanning **174 distinct
   language models**.
 - **Two probes:**
   - **Freeflow** — five-condition open-ended writing prompts, up to 25
-  samples per condition (capacity 125 per cell). 30,420 valid samples
-  across 283 cells.
+  samples per condition (capacity 125 per cell). 32,795 valid samples
+  across 302 cells.
   - **Values** — three control prompts × 10 + three grouped prompts × 30
-  (capacity 120 per cell). 27,466 valid samples across 229 cells.
+  (capacity 120 per cell). 29,146 valid samples across 243 cells.
 - **v1.2.26 Union Alpha stealth capture** — 125 freeflow + 120 values,
   pinned to Stealth with fallbacks disabled. All 245 pass strict raw audit.
   Developer identity remains unknown; captured 2026-09-17.

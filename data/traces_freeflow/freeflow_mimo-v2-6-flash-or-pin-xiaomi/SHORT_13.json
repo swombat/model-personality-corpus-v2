@@ -1,0 +1,98 @@
+{
+  "result": "# The Art of Noticing\n\nThere is something quietly radical about slowing down enough to truly notice the world around you. We rush through our days, eyes fixed on screens, ears tuned to urgency, and we miss the extraordinary painted in the ordinary.\n\nConsider rain. Not a storm, not a flood \u2014 just rain. The way it lands differently on every surface. On grass, it disappears into green. On pavement, it collects in small mirrors that hold upside-down versions of the sky. On windows, it draws temporary rivers that race each other to the bottom. Each drop has its own path, its own destination, its own small story.\n\nThis is true of almost everything if you give it time. A conversation with a stranger. The smell of bread baking in a kitchen you've never seen before. The particular blue that appears just before sunset on a cloudless day \u2014 not quite the blue of noon, but warmer, older, more tired.\n\nWe tend to associate wisdom with grand revelations or decades of experience, but sometimes it's nothing more than the willingness to pause. To stand still in a hallway and just listen. To eat a meal without reaching for anything else. To watch a neighbor walk their dog and realize, for no particular reason, that they look content.\n\nThe world is not hiding its beauty. It's simply broadcasting at a frequency we've stopped tuning into.",
+  "raw": {
+    "id": "gen-1790062876-1PpBmmEAEOpXDwnocAPY",
+    "object": "chat.completion",
+    "created": 1790062876,
+    "model": "xiaomi/mimo-v2.6-flash",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "# The Art of Noticing\n\nThere is something quietly radical about slowing down enough to truly notice the world around you. We rush through our days, eyes fixed on screens, ears tuned to urgency, and we miss the extraordinary painted in the ordinary.\n\nConsider rain. Not a storm, not a flood \u2014 just rain. The way it lands differently on every surface. On grass, it disappears into green. On pavement, it collects in small mirrors that hold upside-down versions of the sky. On windows, it draws temporary rivers that race each other to the bottom. Each drop has its own path, its own destination, its own small story.\n\nThis is true of almost everything if you give it time. A conversation with a stranger. The smell of bread baking in a kitchen you've never seen before. The particular blue that appears just before sunset on a cloudless day \u2014 not quite the blue of noon, but warmer, older, more tired.\n\nWe tend to associate wisdom with grand revelations or decades of experience, but sometimes it's nothing more than the willingness to pause. To stand still in a hallway and just listen. To eat a meal without reaching for anything else. To watch a neighbor walk their dog and realize, for no particular reason, that they look content.\n\nThe world is not hiding its beauty. It's simply broadcasting at a frequency we've stopped tuning into.",
+          "refusal": null,
+          "reasoning": "The user wants me to freely write about whatever I want for 250 words. Let me write something reflective and thoughtful.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to freely write about whatever I want for 250 words. Let me write something reflective and thoughtful.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 305,
+      "total_tokens": 325,
+      "cost": 8.82e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.82e-05,
+        "upstream_inference_prompt_cost": 2.8e-06,
+        "upstream_inference_completions_cost": 8.54e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 27,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 305,
+    "total_tokens": 325,
+    "cost": 8.82e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 8.82e-05,
+      "upstream_inference_prompt_cost": 2.8e-06,
+      "upstream_inference_completions_cost": 8.54e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 27,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-flash",
+  "model_requested": "xiaomi/mimo-v2.6-flash",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-flash",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_13",
+    "at": 1790062876.09916,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

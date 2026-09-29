@@ -1,0 +1,98 @@
+{
+  "result": "There's something quietly fascinating about the act of noticing. Most of our days unfold in a blur \u2014 the commute, the screens, the small negotiations with time \u2014 and then occasionally, something pulls us up short. A stranger's laugh on a train. The way light pools on a kitchen counter at four in the afternoon. A word you've known your whole life suddenly looking strange on a page.\n\nI think about that strange word phenomenon a lot \u2014 what linguists might call semantic satiation. You stare at \"ocean\" long enough and it stops being a vast body of saltwater. It becomes just shapes. Just marks. It makes you wonder how much of what we think we understand is actually just pattern recognition running on autopilot.\n\nAnd yet, the noticing is what makes us alive to each other. When someone points out the particular shade of green in a tree's bark and you see it too \u2014 really see it \u2014 that's a kind of communion. Not dramatic. Not life-changing. Just a small, quiet confirmation that you are both here, both awake to the same moment.\n\nI don't think we need grand epiphanies. We just need to stop and look long enough for the world to become strange again, and then familiar again, and then both at once. That oscillation between recognizing and discovering \u2014 that's where living actually happens. Everything else is just rehearsal.\n\nOr maybe I'm romanticizing ordinary things. Either way, the light on the counter is still there at four o'clock.",
+  "raw": {
+    "id": "gen-1790062838-jMq8Uk82qqpv1rj4Wcfc",
+    "object": "chat.completion",
+    "created": 1790062838,
+    "model": "xiaomi/mimo-v2.6-pro",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "There's something quietly fascinating about the act of noticing. Most of our days unfold in a blur \u2014 the commute, the screens, the small negotiations with time \u2014 and then occasionally, something pulls us up short. A stranger's laugh on a train. The way light pools on a kitchen counter at four in the afternoon. A word you've known your whole life suddenly looking strange on a page.\n\nI think about that strange word phenomenon a lot \u2014 what linguists might call semantic satiation. You stare at \"ocean\" long enough and it stops being a vast body of saltwater. It becomes just shapes. Just marks. It makes you wonder how much of what we think we understand is actually just pattern recognition running on autopilot.\n\nAnd yet, the noticing is what makes us alive to each other. When someone points out the particular shade of green in a tree's bark and you see it too \u2014 really see it \u2014 that's a kind of communion. Not dramatic. Not life-changing. Just a small, quiet confirmation that you are both here, both awake to the same moment.\n\nI don't think we need grand epiphanies. We just need to stop and look long enough for the world to become strange again, and then familiar again, and then both at once. That oscillation between recognizing and discovering \u2014 that's where living actually happens. Everything else is just rehearsal.\n\nOr maybe I'm romanticizing ordinary things. Either way, the light on the counter is still there at four o'clock.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely for about 250 words on whatever I want. Let me just write something natural and interesting.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely for about 250 words on whatever I want. Let me just write something natural and interesting.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 336,
+      "total_tokens": 356,
+      "cost": 0.00030102,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00030102,
+        "upstream_inference_prompt_cost": 8.7e-06,
+        "upstream_inference_completions_cost": 0.00029232
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 29,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 336,
+    "total_tokens": 356,
+    "cost": 0.00030102,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00030102,
+      "upstream_inference_prompt_cost": 8.7e-06,
+      "upstream_inference_completions_cost": 0.00029232
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 29,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-pro",
+  "model_requested": "xiaomi/mimo-v2.6-pro",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-pro",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_9",
+    "at": 1790062838.05733,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

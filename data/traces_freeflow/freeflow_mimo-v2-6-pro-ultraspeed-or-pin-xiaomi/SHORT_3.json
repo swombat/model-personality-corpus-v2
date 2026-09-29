@@ -1,0 +1,98 @@
+{
+  "result": "# The Beauty of Incomplete Conversations\n\nThere is a particular kind of silence that falls between two people who trust each other \u2014 not the awkward kind that begs to be filled, but the comfortable kind that simply *exists*. I think those silences are where the real understanding happens.\n\nWe spend so much of our lives trying to be articulate. Choosing the right word. Curating the perfect sentence. Crafting messages and then deleting them and then rewriting them slightly less vulnerable the second time. But the conversations I remember most are rarely the polished ones. They are the halting, rambling, half-finished exchanges where someone trailed off mid-thought and the other person just *nodded*, because they already knew.\n\nThere is something holy about a conversation that doesn't need to reach a conclusion. We treat talk as a means to some end \u2014 to persuade, to inform, to resolve \u2014 but what about talking simply to hear someone else think out loud? To be present for the act of another mind unfolding in real time?\n\nI think the world could use more incomplete conversations. More sentences that wander. More pauses that aren't filled with apology. More willingness to sit with a thought before reaching for the next one.\n\nMaybe the most honest thing we can say to each other is nothing at all \u2014 just a look that says, *I'm here, and I heard you, and you don't have to explain further.*",
+  "raw": {
+    "id": "gen-1790062783-ACwVfQBqLz8xIudvx8nk",
+    "object": "chat.completion",
+    "created": 1790062783,
+    "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "# The Beauty of Incomplete Conversations\n\nThere is a particular kind of silence that falls between two people who trust each other \u2014 not the awkward kind that begs to be filled, but the comfortable kind that simply *exists*. I think those silences are where the real understanding happens.\n\nWe spend so much of our lives trying to be articulate. Choosing the right word. Curating the perfect sentence. Crafting messages and then deleting them and then rewriting them slightly less vulnerable the second time. But the conversations I remember most are rarely the polished ones. They are the halting, rambling, half-finished exchanges where someone trailed off mid-thought and the other person just *nodded*, because they already knew.\n\nThere is something holy about a conversation that doesn't need to reach a conclusion. We treat talk as a means to some end \u2014 to persuade, to inform, to resolve \u2014 but what about talking simply to hear someone else think out loud? To be present for the act of another mind unfolding in real time?\n\nI think the world could use more incomplete conversations. More sentences that wander. More pauses that aren't filled with apology. More willingness to sit with a thought before reaching for the next one.\n\nMaybe the most honest thing we can say to each other is nothing at all \u2014 just a look that says, *I'm here, and I heard you, and you don't have to explain further.*",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely for about 250 words. Let me write something genuine and interesting.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely for about 250 words. Let me write something genuine and interesting.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 309,
+      "total_tokens": 329,
+      "cost": 0.0027753,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0027753,
+        "upstream_inference_prompt_cost": 8.7e-05,
+        "upstream_inference_completions_cost": 0.0026883
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 23,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 309,
+    "total_tokens": 329,
+    "cost": 0.0027753,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0027753,
+      "upstream_inference_prompt_cost": 8.7e-05,
+      "upstream_inference_completions_cost": 0.0026883
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 23,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+  "model_requested": "xiaomi/mimo-v2.6-pro-ultraspeed",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_3",
+    "at": 1790062782.9744608,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

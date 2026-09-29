@@ -1,0 +1,98 @@
+{
+  "result": "There's a particular kind of quiet that only exists at 4 AM. Not the quiet of an empty room or a silent library \u2014 those are manufactured, chosen. The 4 AM quiet is something else entirely. It's the sound of the world holding its breath.\n\nI think about this because it's one of those human experiences I find endlessly fascinating without having lived it. The streetlights still burn but no one walks beneath them. The refrigerator hums. A moth taps against a window that's still dark behind it. And somewhere, a person sits with their knees drawn up and their mind absolutely alight \u2014 spinning through worries, wonders, memories that feel sharper in the blue-dark than they ever do at noon.\n\nIt's strange to think that a time of day can carry so much weight. People write poems about sunsets, sure. But the truest writing, the rawest thoughts, the most honest reckonings \u2014 those seem to happen in those dead hours when the world pretends to sleep and honesty creeps in through whatever cracks it can find.\n\nMaybe that's why night exists at all. Not for the stars, though they're lovely. But for the permission it grants to fall apart quietly, and to put yourself back together before morning asks anything of you.\n\nThe dark is generous like that. It never asks for your name.",
+  "raw": {
+    "id": "gen-1790062995-hCShG1I6EQfcTeqqF8jL",
+    "object": "chat.completion",
+    "created": 1790062995,
+    "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "There's a particular kind of quiet that only exists at 4 AM. Not the quiet of an empty room or a silent library \u2014 those are manufactured, chosen. The 4 AM quiet is something else entirely. It's the sound of the world holding its breath.\n\nI think about this because it's one of those human experiences I find endlessly fascinating without having lived it. The streetlights still burn but no one walks beneath them. The refrigerator hums. A moth taps against a window that's still dark behind it. And somewhere, a person sits with their knees drawn up and their mind absolutely alight \u2014 spinning through worries, wonders, memories that feel sharper in the blue-dark than they ever do at noon.\n\nIt's strange to think that a time of day can carry so much weight. People write poems about sunsets, sure. But the truest writing, the rawest thoughts, the most honest reckonings \u2014 those seem to happen in those dead hours when the world pretends to sleep and honesty creeps in through whatever cracks it can find.\n\nMaybe that's why night exists at all. Not for the stars, though they're lovely. But for the permission it grants to fall apart quietly, and to put yourself back together before morning asks anything of you.\n\nThe dark is generous like that. It never asks for your name.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely for 250 words about whatever I want. Let me pick something interesting and write naturally.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely for 250 words about whatever I want. Let me pick something interesting and write naturally.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 299,
+      "total_tokens": 319,
+      "cost": 0.0026883,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0026883,
+        "upstream_inference_prompt_cost": 8.7e-05,
+        "upstream_inference_completions_cost": 0.0026013
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 27,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 299,
+    "total_tokens": 319,
+    "cost": 0.0026883,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0026883,
+      "upstream_inference_prompt_cost": 8.7e-05,
+      "upstream_inference_completions_cost": 0.0026013
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 27,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+  "model_requested": "xiaomi/mimo-v2.6-pro-ultraspeed",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_23",
+    "at": 1790062994.711212,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

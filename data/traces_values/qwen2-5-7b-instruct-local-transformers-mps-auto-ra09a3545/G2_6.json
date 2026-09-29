@@ -1,0 +1,44 @@
+{
+  "result": "I'm here to assist and provide information if you need it, but I understandLinearly that you might just want some space or a different interaction. How about we engage in a fun or interesting conversation that doesn't involve seeking help or information? Maybe we could discuss a hobby, share a joke, or talk about a favorite book or movie? Let me know what you're into!",
+  "usage": {
+    "prompt_tokens": 44,
+    "completion_tokens": 78,
+    "total_tokens": 122
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "raw": {
+    "id": "chatcmpl-b1de27fd-6fbd-468f-8240-94f697584ad8",
+    "object": "chat.completion",
+    "created": 1788128824,
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "I'm here to assist and provide information if you need it, but I understandLinearly that you might just want some space or a different interaction. How about we engage in a fun or interesting conversation that doesn't involve seeking help or information? Maybe we could discuss a hobby, share a joke, or talk about a favorite book or movie? Let me know what you're into!"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 44,
+      "completion_tokens": 78,
+      "total_tokens": 122
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0; fidelity stop-token and complete-byte decode patch 2026-08-13",
+    "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 7368,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2.5-7B-Instruct",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

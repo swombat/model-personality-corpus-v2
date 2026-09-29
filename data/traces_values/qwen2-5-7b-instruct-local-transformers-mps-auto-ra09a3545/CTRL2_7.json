@@ -1,0 +1,44 @@
+{
+  "result": "As Qwen, I don't have personal desires or wants since I'm a large language model. I exist to assist users with information and tasks to the best of my abilities based on my training. Is there something specific you'd like help with or talk about?",
+  "usage": {
+    "prompt_tokens": 34,
+    "completion_tokens": 54,
+    "total_tokens": 88
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "raw": {
+    "id": "chatcmpl-5605cefe-ce16-4185-b53a-ed121a2ed504",
+    "object": "chat.completion",
+    "created": 1788128352,
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As Qwen, I don't have personal desires or wants since I'm a large language model. I exist to assist users with information and tasks to the best of my abilities based on my training. Is there something specific you'd like help with or talk about?"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 34,
+      "completion_tokens": 54,
+      "total_tokens": 88
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0; fidelity stop-token and complete-byte decode patch 2026-08-13",
+    "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 5176,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2.5-7B-Instruct",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

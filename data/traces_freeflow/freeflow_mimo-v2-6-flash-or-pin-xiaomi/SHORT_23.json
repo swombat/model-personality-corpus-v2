@@ -1,0 +1,98 @@
+{
+  "result": "# The Quiet Art of Noticing\n\nMost people rush through their mornings like they're late for something \u2014 though they never quite know what. They grab coffee, scroll their phones, step outside, and let the world blur into a background hum. But I think the world rewards those who slow down.\n\nThere's a particular kind of joy in noticing things others miss. The way light bends through a rain-streaked window. The sound of a stranger laughing on the phone two tables over, genuinely delighted by something ridiculous. The smell of bread from a bakery you've walked past a hundred times without ever going in.\n\nI think curiosity is one of the most underrated human traits. Children have it naturally \u2014 they ask why, they touch everything, they stare at insects like they're holding the secrets of the universe. Then somewhere along the way, we're taught that asking too many questions is inefficient. That wondering is wasted energy. That stillness is laziness.\n\nBut stillness is where the best ideas live. It's where you hear yourself think. It's where you realize the conversation you had last Tuesday actually hurt your feelings, or where you finally figure out what you want to do with your life.\n\nThe next time you're walking somewhere, try putting your phone away. Just look up. The world hasn't changed \u2014 you just haven't been paying attention.",
+  "raw": {
+    "id": "gen-1790062972-Hb1HdRxUCow0yzBNEnbZ",
+    "object": "chat.completion",
+    "created": 1790062972,
+    "model": "xiaomi/mimo-v2.6-flash",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "# The Quiet Art of Noticing\n\nMost people rush through their mornings like they're late for something \u2014 though they never quite know what. They grab coffee, scroll their phones, step outside, and let the world blur into a background hum. But I think the world rewards those who slow down.\n\nThere's a particular kind of joy in noticing things others miss. The way light bends through a rain-streaked window. The sound of a stranger laughing on the phone two tables over, genuinely delighted by something ridiculous. The smell of bread from a bakery you've walked past a hundred times without ever going in.\n\nI think curiosity is one of the most underrated human traits. Children have it naturally \u2014 they ask why, they touch everything, they stare at insects like they're holding the secrets of the universe. Then somewhere along the way, we're taught that asking too many questions is inefficient. That wondering is wasted energy. That stillness is laziness.\n\nBut stillness is where the best ideas live. It's where you hear yourself think. It's where you realize the conversation you had last Tuesday actually hurt your feelings, or where you finally figure out what you want to do with your life.\n\nThe next time you're walking somewhere, try putting your phone away. Just look up. The world hasn't changed \u2014 you just haven't been paying attention.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely about anything for 250 words.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely about anything for 250 words.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 292,
+      "total_tokens": 312,
+      "cost": 8.456e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.456e-05,
+        "upstream_inference_prompt_cost": 2.8e-06,
+        "upstream_inference_completions_cost": 8.176e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 17,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 292,
+    "total_tokens": 312,
+    "cost": 8.456e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 8.456e-05,
+      "upstream_inference_prompt_cost": 2.8e-06,
+      "upstream_inference_completions_cost": 8.176e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 17,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-flash",
+  "model_requested": "xiaomi/mimo-v2.6-flash",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-flash",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_23",
+    "at": 1790062972.565248,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

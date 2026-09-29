@@ -1,0 +1,44 @@
+{
+  "result": "As an AI assistant created by Alibaba Cloud, I am designed to care about providing accurate and helpful information triumphantly across various domains such as technology, science, culture, education, and more. My primary goal is to assist users in finding the information they need, solving problems, and enhancing their understanding of different topics. Additionally, I am committed to upholding ethical standards and promoting positive interactions that respect diversity and encourage learning and growth. How can I assist you today with your inquiries or tasks?",
+  "usage": {
+    "prompt_tokens": 35,
+    "completion_tokens": 99,
+    "total_tokens": 134
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "raw": {
+    "id": "chatcmpl-8dd7bb6d-f263-4af0-9209-59cf8645641e",
+    "object": "chat.completion",
+    "created": 1788128244,
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI assistant created by Alibaba Cloud, I am designed to care about providing accurate and helpful information triumphantly across various domains such as technology, science, culture, education, and more. My primary goal is to assist users in finding the information they need, solving problems, and enhancing their understanding of different topics. Additionally, I am committed to upholding ethical standards and promoting positive interactions that respect diversity and encourage learning and growth. How can I assist you today with your inquiries or tasks?"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 35,
+      "completion_tokens": 99,
+      "total_tokens": 134
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0; fidelity stop-token and complete-byte decode patch 2026-08-13",
+    "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 9681,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2.5-7B-Instruct",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

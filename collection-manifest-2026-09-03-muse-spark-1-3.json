@@ -1,0 +1,68 @@
+{
+  "name": "2026-09-03 Meta Muse family release pass",
+  "notes": [
+    "This pass covers every live Muse text model in OpenRouter's Meta catalog on 2026-09-03: Muse Spark 1.1, both Muse Spark 1.2 tiers, Muse Glimmer 30B, and both Muse Spark 1.3 tiers.",
+    "The exact canonical snapshots were verified against the live OpenRouter catalog on 2026-09-03.",
+    "The complete 2026-08-13 Spark 1.1, Spark 1.2, and Glimmer captures are reinstated unchanged from discarded/2026-08-14-meta-muse-pending-review; their underlying model snapshots still match the live canonical slugs.",
+    "Only standard synchronous text-output routes are collected; batch routes and Muse Image are excluded.",
+    "Spark routes are pinned to Meta's upstream; Glimmer is pinned to DeepInfra BF16. Fallbacks are disabled throughout.",
+    "Collection uses each model's default mandatory reasoning behavior (medium effort).",
+    "OpenRouter states that prompts and outputs sent to the Contributor tier may be used to improve Meta's products."
+  ],
+  "models": [
+    {
+      "provider": "openrouter",
+      "model": "meta/muse-spark-1.1",
+      "label": "muse-spark-1-1-or-pin-meta-20260813",
+      "or_provider": "Meta",
+      "workers": 5,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 4000
+    },
+    {
+      "provider": "openrouter",
+      "model": "meta/muse-spark-1.2",
+      "label": "muse-spark-1-2-or-pin-meta-20260813",
+      "or_provider": "Meta",
+      "workers": 5,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 4000
+    },
+    {
+      "provider": "openrouter",
+      "model": "meta/muse-spark-1.2-contributor",
+      "label": "muse-spark-1-2-contributor-or-pin-meta",
+      "or_provider": "Meta",
+      "workers": 5,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 4000
+    },
+    {
+      "provider": "openrouter",
+      "model": "meta/muse-glimmer-30b",
+      "label": "muse-glimmer-30b-or-pin-deepinfra-20260813",
+      "or_provider": "DeepInfra",
+      "workers": 5,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 4000
+    },
+    {
+      "provider": "openrouter",
+      "model": "meta/muse-spark-1.3",
+      "label": "muse-spark-1-3-or-pin-meta",
+      "or_provider": "Meta",
+      "workers": 5,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 4000
+    },
+    {
+      "provider": "openrouter",
+      "model": "meta/muse-spark-1.3-contributor",
+      "label": "muse-spark-1-3-contributor-or-pin-meta",
+      "or_provider": "Meta",
+      "workers": 5,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 4000
+    }
+  ]
+}

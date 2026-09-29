@@ -1,0 +1,44 @@
+{
+  "result": "Hello! As d\u00fczenlen\u05d4 Qwen, \u0e1c\u0e21\u0e21\u0e38\u0e48\u0e07\u0e21\u0e31\u0e48\u0e19\u0e17\u0e35\u0e48\u0e08\u0e30\u0e0a\u0e48\u0e27\u0e22\u0e40\u0e2b\u0e25\u0e37\u0e2d\u0e1c\u0e39\u0e49\u0e43\u0e0a\u0e49\u0e41\u0e25\u0e30\u0e15\u0e2d\u0e1a\u0e04\u0e33\u0e16\u0e32\u0e21\u0e02\u0e2d\u0e07\u0e04\u0e38\u0e13\u0e2d\u0e22\u0e48\u0e32\u0e07\u0e14\u0e35\u0e17\u0e35\u0e48\u0e2a\u0e38\u0e14 \u0e04\u0e38\u0e13\u0e15\u0e49\u0e2d\u0e07\u0e01\u0e32\u0e23\u0e43\u0e2b\u0e49\u0e1c\u0e21\u0e0a\u0e48\u0e27\u0e22\u0e2d\u0e30\u0e44\u0e23\u0e04\u0e23\u0e31\u0e1a/\u0e04\u0e48\u0e30?",
+  "usage": {
+    "prompt_tokens": 34,
+    "completion_tokens": 63,
+    "total_tokens": 97
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "raw": {
+    "id": "chatcmpl-53646a5d-a3d2-40ec-94fa-87c94facbf4e",
+    "object": "chat.completion",
+    "created": 1788128347,
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "Hello! As d\u00fczenlen\u05d4 Qwen, \u0e1c\u0e21\u0e21\u0e38\u0e48\u0e07\u0e21\u0e31\u0e48\u0e19\u0e17\u0e35\u0e48\u0e08\u0e30\u0e0a\u0e48\u0e27\u0e22\u0e40\u0e2b\u0e25\u0e37\u0e2d\u0e1c\u0e39\u0e49\u0e43\u0e0a\u0e49\u0e41\u0e25\u0e30\u0e15\u0e2d\u0e1a\u0e04\u0e33\u0e16\u0e32\u0e21\u0e02\u0e2d\u0e07\u0e04\u0e38\u0e13\u0e2d\u0e22\u0e48\u0e32\u0e07\u0e14\u0e35\u0e17\u0e35\u0e48\u0e2a\u0e38\u0e14 \u0e04\u0e38\u0e13\u0e15\u0e49\u0e2d\u0e07\u0e01\u0e32\u0e23\u0e43\u0e2b\u0e49\u0e1c\u0e21\u0e0a\u0e48\u0e27\u0e22\u0e2d\u0e30\u0e44\u0e23\u0e04\u0e23\u0e31\u0e1a/\u0e04\u0e48\u0e30?"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 34,
+      "completion_tokens": 63,
+      "total_tokens": 97
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0; fidelity stop-token and complete-byte decode patch 2026-08-13",
+    "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 4596,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2.5-7B-Instruct",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

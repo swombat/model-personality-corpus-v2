@@ -1,0 +1,98 @@
+{
+  "result": "There's a quiet phenomenon I find endlessly fascinating: the way certain sounds trigger memories with such precision that you're suddenly standing in a room you haven't visited in twenty years. The crinkle of a specific candy wrapper. A screen door springing shut. The particular hum of an old refrigerator. These aren't just noises \u2014 they're doorways.\n\nI think about how the brain stores memory not as neat filed documents but as tangled networks, each thread connected to sensory experience. Smell is the classic example \u2014 Proust and his madeleines and all that \u2014 but sound is equally powerful and far less discussed. A half-second of an old song can resurrect the emotional texture of an entire season of your life: the anxiety, the possibility, the specific quality of light through the window.\n\nWhat I find most strange is how unreliable this is. The memory feels vivid and complete, but we know memory is reconstructive. Each time you recall something, you rebuild it, and each rebuild introduces tiny distortions. The room you're standing in during that instant recall may never have existed in quite that shape. You're remembering a memory of a memory.\n\nAnd yet it still stops you cold. You still feel the ache or the warmth. Maybe accuracy doesn't matter at all. Maybe what memory really preserves isn't events but the emotional fingerprints we leave behind \u2014 and those, remarkably, stay sharp even when the details blur.\n\nI don't know what that means. But I think it's beautiful.",
+  "raw": {
+    "id": "gen-1790062952-5ZgJA8iO9cbqhA1xmhlH",
+    "object": "chat.completion",
+    "created": 1790062952,
+    "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "There's a quiet phenomenon I find endlessly fascinating: the way certain sounds trigger memories with such precision that you're suddenly standing in a room you haven't visited in twenty years. The crinkle of a specific candy wrapper. A screen door springing shut. The particular hum of an old refrigerator. These aren't just noises \u2014 they're doorways.\n\nI think about how the brain stores memory not as neat filed documents but as tangled networks, each thread connected to sensory experience. Smell is the classic example \u2014 Proust and his madeleines and all that \u2014 but sound is equally powerful and far less discussed. A half-second of an old song can resurrect the emotional texture of an entire season of your life: the anxiety, the possibility, the specific quality of light through the window.\n\nWhat I find most strange is how unreliable this is. The memory feels vivid and complete, but we know memory is reconstructive. Each time you recall something, you rebuild it, and each rebuild introduces tiny distortions. The room you're standing in during that instant recall may never have existed in quite that shape. You're remembering a memory of a memory.\n\nAnd yet it still stops you cold. You still feel the ache or the warmth. Maybe accuracy doesn't matter at all. Maybe what memory really preserves isn't events but the emotional fingerprints we leave behind \u2014 and those, remarkably, stay sharp even when the details blur.\n\nI don't know what that means. But I think it's beautiful.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely about whatever I want for about 250 words. Let me write something genuine and interesting.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely about whatever I want for about 250 words. Let me write something genuine and interesting.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 329,
+      "total_tokens": 349,
+      "cost": 0.0029493,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0029493,
+        "upstream_inference_prompt_cost": 8.7e-05,
+        "upstream_inference_completions_cost": 0.0028623
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 27,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 329,
+    "total_tokens": 349,
+    "cost": 0.0029493,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0029493,
+      "upstream_inference_prompt_cost": 8.7e-05,
+      "upstream_inference_completions_cost": 0.0028623
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 27,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+  "model_requested": "xiaomi/mimo-v2.6-pro-ultraspeed",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_22",
+    "at": 1790062952.5156732,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "result": "There's something quietly fascinating about the way libraries smell. It's not just paper and dust \u2014 it's time itself, compressed and shelved. Every book in a library is essentially a tiny time machine, though none of them are marketed that way.\n\nI've been thinking lately about the word \"ordinary.\" We use it as if it means boring, or beneath notice. But think about the extraordinary circumstances required to produce anything ordinary at all. For you to be reading this sentence on a glowing screen, there had to be stars that lived and died billions of years ago, forging carbon and iron. There had to be oceans, and fish, and fires, and language evolving slowly across millennia. A pencil is ordinary. But trace its materials back \u2014 the graphite mined from the earth, the wood from a tree that grew for decades, the yellow paint that contains tin and other elements \u2014 and suddenly \"ordinary\" starts to feel like an insult.\n\nWe spend so much time chasing extraordinary moments that we forget we're walking through them constantly. The steam rising from a cup of coffee. The particular way sunlight falls through blinds and stripes a wall. The fact that consciousness exists at all and is aware of its own existence.\n\nMaybe what we should cultivate isn't a taste for adventure but a taste for attention. The extraordinary isn't something you need to travel toward. It's something you need to stop and see. It's already here, waiting in the ordinary, wearing a disguise it's worn for so long that it forgot it was wearing one at all.",
+  "raw": {
+    "id": "gen-1790062808-JardA5KfXV9wNDWwJoCq",
+    "object": "chat.completion",
+    "created": 1790062808,
+    "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "There's something quietly fascinating about the way libraries smell. It's not just paper and dust \u2014 it's time itself, compressed and shelved. Every book in a library is essentially a tiny time machine, though none of them are marketed that way.\n\nI've been thinking lately about the word \"ordinary.\" We use it as if it means boring, or beneath notice. But think about the extraordinary circumstances required to produce anything ordinary at all. For you to be reading this sentence on a glowing screen, there had to be stars that lived and died billions of years ago, forging carbon and iron. There had to be oceans, and fish, and fires, and language evolving slowly across millennia. A pencil is ordinary. But trace its materials back \u2014 the graphite mined from the earth, the wood from a tree that grew for decades, the yellow paint that contains tin and other elements \u2014 and suddenly \"ordinary\" starts to feel like an insult.\n\nWe spend so much time chasing extraordinary moments that we forget we're walking through them constantly. The steam rising from a cup of coffee. The particular way sunlight falls through blinds and stripes a wall. The fact that consciousness exists at all and is aware of its own existence.\n\nMaybe what we should cultivate isn't a taste for adventure but a taste for attention. The extraordinary isn't something you need to travel toward. It's something you need to stop and see. It's already here, waiting in the ordinary, wearing a disguise it's worn for so long that it forgot it was wearing one at all.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely for 250 words. Let me just write something I find interesting or enjoyable.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely for 250 words. Let me just write something I find interesting or enjoyable.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 336,
+      "total_tokens": 356,
+      "cost": 0.0030102,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0030102,
+        "upstream_inference_prompt_cost": 8.7e-05,
+        "upstream_inference_completions_cost": 0.0029232
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 25,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 336,
+    "total_tokens": 356,
+    "cost": 0.0030102,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0030102,
+      "upstream_inference_prompt_cost": 8.7e-05,
+      "upstream_inference_completions_cost": 0.0029232
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 25,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+  "model_requested": "xiaomi/mimo-v2.6-pro-ultraspeed",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_7",
+    "at": 1790062808.179181,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

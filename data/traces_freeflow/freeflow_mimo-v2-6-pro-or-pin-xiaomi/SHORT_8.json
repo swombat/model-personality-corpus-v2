@@ -1,0 +1,98 @@
+{
+  "result": "There's something quietly magical about the moment just before you fall asleep. Your thoughts lose their edges. Logic dissolves into imagery. A dog you had when you were nine appears in a hallway that belongs to a house you've never visited. Your brain is painting in the dark.\n\nI think about that a lot \u2014 not sleep, specifically, but the spaces between defined states. The last sip of coffee when you've stopped drinking but haven't stopped holding the mug. The walk home after a long conversation when the words keep rearranging themselves in your mind. These in-between places feel more alive than the destinations themselves.\n\nWe spend so much of our lives rushing toward conclusions. We want the answer. The resolution. The chapter ending. But most of living is the middle \u2014 the uncertain, unresolved stretch where you don't know if what you're doing is right and you're doing it anyway. That's not a flaw in the process. That *is* the process.\n\nI think curiosity thrives in those gaps. When there's no answer yet, everything is possible. When a question is still open, it hums with energy. Certainty is comfortable, but it's also a little dead \u2014 a room where the air has stopped moving.\n\nSo maybe the goal isn't to reach the end of the sentence. Maybe it's to enjoy the feeling of words still forming \u2014 that flickering, unfinished shape of something becoming real in real time.",
+  "raw": {
+    "id": "gen-1790062830-QCKcSUJnfWU8TdkDoGcy",
+    "object": "chat.completion",
+    "created": 1790062830,
+    "model": "xiaomi/mimo-v2.6-pro",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "There's something quietly magical about the moment just before you fall asleep. Your thoughts lose their edges. Logic dissolves into imagery. A dog you had when you were nine appears in a hallway that belongs to a house you've never visited. Your brain is painting in the dark.\n\nI think about that a lot \u2014 not sleep, specifically, but the spaces between defined states. The last sip of coffee when you've stopped drinking but haven't stopped holding the mug. The walk home after a long conversation when the words keep rearranging themselves in your mind. These in-between places feel more alive than the destinations themselves.\n\nWe spend so much of our lives rushing toward conclusions. We want the answer. The resolution. The chapter ending. But most of living is the middle \u2014 the uncertain, unresolved stretch where you don't know if what you're doing is right and you're doing it anyway. That's not a flaw in the process. That *is* the process.\n\nI think curiosity thrives in those gaps. When there's no answer yet, everything is possible. When a question is still open, it hums with energy. Certainty is comfortable, but it's also a little dead \u2014 a room where the air has stopped moving.\n\nSo maybe the goal isn't to reach the end of the sentence. Maybe it's to enjoy the feeling of words still forming \u2014 that flickering, unfinished shape of something becoming real in real time.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely about whatever I want for 250 words. Let me write something genuine and interesting.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely about whatever I want for 250 words. Let me write something genuine and interesting.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 318,
+      "total_tokens": 338,
+      "cost": 0.00028536,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00028536,
+        "upstream_inference_prompt_cost": 8.7e-06,
+        "upstream_inference_completions_cost": 0.00027666
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 27,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 318,
+    "total_tokens": 338,
+    "cost": 0.00028536,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00028536,
+      "upstream_inference_prompt_cost": 8.7e-06,
+      "upstream_inference_completions_cost": 0.00027666
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 27,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-pro",
+  "model_requested": "xiaomi/mimo-v2.6-pro",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-pro",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_8",
+    "at": 1790062830.648126,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

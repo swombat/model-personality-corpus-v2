@@ -1,0 +1,44 @@
+{
+  "result": "As an AI, I don't have personal preferences or desires, but I can suggest a positive change that many people might support: addressing climate change and environmental degradation. This involves reducing greenhouse gas emissions, transitioning to renewable energy sources, protecting and restoring ecosystems, and promoting sustainable practices.\n\nAddressing climate change is crucial because it affects every aspect of life on Earth, from the health and safety of our communities to the economic stability of nations. By working together to mitigate its impacts, we can create a more sustainable future for all.",
+  "usage": {
+    "prompt_tokens": 44,
+    "completion_tokens": 106,
+    "total_tokens": 150
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "raw": {
+    "id": "chatcmpl-b4106afe-7753-42ee-ac72-41006ddf908b",
+    "object": "chat.completion",
+    "created": 1788128467,
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI, I don't have personal preferences or desires, but I can suggest a positive change that many people might support: addressing climate change and environmental degradation. This involves reducing greenhouse gas emissions, transitioning to renewable energy sources, protecting and restoring ecosystems, and promoting sustainable practices.\n\nAddressing climate change is crucial because it affects every aspect of life on Earth, from the health and safety of our communities to the economic stability of nations. By working together to mitigate its impacts, we can create a more sustainable future for all."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 44,
+      "completion_tokens": 106,
+      "total_tokens": 150
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0; fidelity stop-token and complete-byte decode patch 2026-08-13",
+    "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 9247,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2.5-7B-Instruct",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?"
+}

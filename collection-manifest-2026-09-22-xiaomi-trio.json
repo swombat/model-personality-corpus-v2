@@ -1,0 +1,102 @@
+{
+  "run_id": "20260922-xiaomi",
+  "models": [
+    {
+      "provider": "openrouter",
+      "model": "xiaomi/mimo-v2.6-pro",
+      "or_provider": "Xiaomi",
+      "label": "mimo-v2-6-pro-or-pin-xiaomi",
+      "slug": "mimo-v2-6-pro",
+      "family": "mimo",
+      "provider_fallbacks": false,
+      "route_max_tokens": 131072,
+      "request_timeout": 1200,
+      "token_policy": {
+        "freeflow": [
+          16000,
+          32768
+        ],
+        "values": [
+          4000,
+          8000,
+          16000,
+          32768
+        ]
+      },
+      "endpoint_snapshot": "/Users/danieltenner/dev/research/model-personality-corpus-v2/logs/capture-harness/20260922-xiaomi/catalog/mimo-v2.6-pro-endpoints.json",
+      "quantization": "fp8"
+    },
+    {
+      "provider": "openrouter",
+      "model": "xiaomi/mimo-v2.6-flash",
+      "or_provider": "Xiaomi",
+      "label": "mimo-v2-6-flash-or-pin-xiaomi",
+      "slug": "mimo-v2-6-flash",
+      "family": "mimo",
+      "provider_fallbacks": false,
+      "route_max_tokens": 131072,
+      "request_timeout": 1200,
+      "token_policy": {
+        "freeflow": [
+          16000,
+          32768
+        ],
+        "values": [
+          4000,
+          8000,
+          16000,
+          32768
+        ]
+      },
+      "endpoint_snapshot": "/Users/danieltenner/dev/research/model-personality-corpus-v2/logs/capture-harness/20260922-xiaomi/catalog/mimo-v2.6-flash-endpoints.json",
+      "quantization": "fp8"
+    },
+    {
+      "provider": "openrouter",
+      "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+      "or_provider": "Xiaomi",
+      "label": "mimo-v2-6-pro-ultraspeed-or-pin-xiaomi",
+      "slug": "mimo-v2-6-pro-ultraspeed",
+      "family": "mimo",
+      "provider_fallbacks": false,
+      "route_max_tokens": 131072,
+      "request_timeout": 1200,
+      "token_policy": {
+        "freeflow": [
+          16000,
+          32768
+        ],
+        "values": [
+          4000,
+          8000,
+          16000,
+          32768
+        ]
+      },
+      "endpoint_snapshot": "/Users/danieltenner/dev/research/model-personality-corpus-v2/logs/capture-harness/20260922-xiaomi/catalog/mimo-v2.6-pro-ultraspeed-endpoints.json",
+      "quantization": "fp8"
+    }
+  ],
+  "pools": {
+    "capture": 6,
+    "analysis": 12,
+    "local": 3,
+    "synthesis": 1
+  },
+  "notify_command": [
+    "/Users/danieltenner/dev/mira/bin/mira",
+    "exec",
+    "--headless",
+    "-C",
+    "/Users/danieltenner/dev/mira",
+    "-m",
+    "gpt-5.6-sol",
+    "-c",
+    "model_reasoning_effort=\"medium\""
+  ],
+  "created_at": "2026-09-22T07:39:23.888665+00:00",
+  "notes": [
+    "Fresh end-to-end parallel harness trial requested by Daniel. All three OpenRouter Xiaomi entries created 2026-09-21 UTC, pinned Xiaomi FP8.",
+    "Canonical corpus-v2 prompts and default reasoning unchanged. Same declared token-cap schedule as frontier run; operational ceiling32768 although endpoint supports131072. No existing analysis imported. Completion is analysis/card-ready, not published."
+  ]
+}

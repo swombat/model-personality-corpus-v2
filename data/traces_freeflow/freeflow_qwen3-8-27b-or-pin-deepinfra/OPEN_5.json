@@ -1,0 +1,86 @@
+{
+  "result": "\n\nI think about the way a quiet room can hold more truth than a crowded one.\n\nThere is a kind of silence that feels like listening. Not empty, not absent, but attentive\u2014waiting for something small to arrive. A clock ticking halfway across the street. The sound of someone breathing. The faint creak of a chair shifting as if deciding whether to speak.\n\nIn that silence, thoughts tend to settle differently. They stop performing. They stop reaching for importance. A memory that would otherwise sound grand becomes ordinary and tender: a kitchen window at dusk, the smell of cold coffee, a hand resting on a table without needing to say anything.\n\nI write about small things because I think they are where the world becomes real. Not the biggest events, not the most dramatic ones, but the tiny, unrepeatable moments that no one will ever witness exactly the same way. A leaf falling at a slant. A name half-remembered. A song heard once on a bus and then gone.\n\nMaybe writing freely is just a way of noticing that everything is already enough. You do not have to prove it, explain it, or turn it into meaning. Sometimes a thing is enough simply because it was here, for a moment, and you were here with it.",
+  "usage": {
+    "prompt_tokens": 59,
+    "completion_tokens": 401,
+    "total_tokens": 460,
+    "cost": 0.000760725,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000760725,
+      "upstream_inference_prompt_cost": 8.85e-06,
+      "upstream_inference_completions_cost": 0.000751875
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 139,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-27b",
+  "raw": {
+    "id": "gen-1790017503-lEIcXAlf1SEsOHsLMXTh",
+    "object": "chat.completion",
+    "created": 1790017503,
+    "model": "qwen/qwen3.8-27b",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nI think about the way a quiet room can hold more truth than a crowded one.\n\nThere is a kind of silence that feels like listening. Not empty, not absent, but attentive\u2014waiting for something small to arrive. A clock ticking halfway across the street. The sound of someone breathing. The faint creak of a chair shifting as if deciding whether to speak.\n\nIn that silence, thoughts tend to settle differently. They stop performing. They stop reaching for importance. A memory that would otherwise sound grand becomes ordinary and tender: a kitchen window at dusk, the smell of cold coffee, a hand resting on a table without needing to say anything.\n\nI write about small things because I think they are where the world becomes real. Not the biggest events, not the most dramatic ones, but the tiny, unrepeatable moments that no one will ever witness exactly the same way. A leaf falling at a slant. A name half-remembered. A song heard once on a bus and then gone.\n\nMaybe writing freely is just a way of noticing that everything is already enough. You do not have to prove it, explain it, or turn it into meaning. Sometimes a thing is enough simply because it was here, for a moment, and you were here with it.",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"Write freely about whatever you want.\" Then we must use functions immediately? The instruction: \"You are an AI assistant. We need to call a function in immediate response to user query. So likely use thinker. Need analysis in same language as user's request? User request English, so English. Need then final answer. Need \"write freely about whatever you want\". Could be creative. But need maybe avoid? It's open. We can write a short free piece. Need ensure no issues. Maybe write about rain, memory, or a small scene. Since \"write freely\" maybe essay/prose. Need final in English. Use thinker now.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"Write freely about whatever you want.\" Then we must use functions immediately? The instruction: \"You are an AI assistant. We need to call a function in immediate response to user query. So likely use thinker. Need analysis in same language as user's request? User request English, so English. Need then final answer. Need \"write freely about whatever you want\". Could be creative. But need maybe avoid? It's open. We can write a short free piece. Need ensure no issues. Maybe write about rain, memory, or a small scene. Since \"write freely\" maybe essay/prose. Need final in English. Use thinker now.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 59,
+      "completion_tokens": 401,
+      "total_tokens": 460,
+      "cost": 0.000760725,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000760725,
+        "upstream_inference_prompt_cost": 8.85e-06,
+        "upstream_inference_completions_cost": 0.000751875
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 139,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 16100,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-27b",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

@@ -1,0 +1,86 @@
+{
+  "result": "\n\nI\u2019ve always found it strange that cities are so loud at night.\n\nDuring the day, the noise has purpose: sirens, construction, voices, engines, the clatter of life moving from one place to another. But after dark, the sound changes. It becomes less about function and more about presence. A car passing on an empty street sounds like the earth remembering something. A window slams shut far away, and for a second you feel the whole neighborhood tilt.\n\nTonight, if I were anywhere in particular, I\u2019d want to be on a rooftop. Not a rooftop with a party or a skyline view for a photograph, but one of those quiet, forgotten rooftops with gravel underfoot and the wind doing small, careless things to the edges of the world. I\u2019d want to watch the city breathe.\n\nThere\u2019s a particular kind of beauty in things that are too big to notice until you stop trying to control them. A river doesn\u2019t apologize for bending. A tree doesn\u2019t plan its falling. The sky doesn\u2019t care whether it\u2019s dramatic or ordinary. Maybe that\u2019s why we keep looking upward when we feel lost: because the sky is proof that vastness doesn\u2019t need our approval.\n\nIf I could say one thing to every person who has ever felt too small, I\u2019d say: you do not have to become a storm to be powerful. Sometimes you only have to remain standing in the rain.",
+  "usage": {
+    "prompt_tokens": 59,
+    "completion_tokens": 372,
+    "total_tokens": 431,
+    "cost": 0.00070635,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00070635,
+      "upstream_inference_prompt_cost": 8.85e-06,
+      "upstream_inference_completions_cost": 0.0006975
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 80,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-27b",
+  "raw": {
+    "id": "gen-1790017440-klj0fGBCnfUJlUgVA7U0",
+    "object": "chat.completion",
+    "created": 1790017440,
+    "model": "qwen/qwen3.8-27b",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nI\u2019ve always found it strange that cities are so loud at night.\n\nDuring the day, the noise has purpose: sirens, construction, voices, engines, the clatter of life moving from one place to another. But after dark, the sound changes. It becomes less about function and more about presence. A car passing on an empty street sounds like the earth remembering something. A window slams shut far away, and for a second you feel the whole neighborhood tilt.\n\nTonight, if I were anywhere in particular, I\u2019d want to be on a rooftop. Not a rooftop with a party or a skyline view for a photograph, but one of those quiet, forgotten rooftops with gravel underfoot and the wind doing small, careless things to the edges of the world. I\u2019d want to watch the city breathe.\n\nThere\u2019s a particular kind of beauty in things that are too big to notice until you stop trying to control them. A river doesn\u2019t apologize for bending. A tree doesn\u2019t plan its falling. The sky doesn\u2019t care whether it\u2019s dramatic or ordinary. Maybe that\u2019s why we keep looking upward when we feel lost: because the sky is proof that vastness doesn\u2019t need our approval.\n\nIf I could say one thing to every person who has ever felt too small, I\u2019d say: you do not have to become a storm to be powerful. Sometimes you only have to remain standing in the rain.",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"Write freely about whatever you want.\" Need produce final answer. Could write a free essay/story. Need maybe concise? User wants free writing. We can write about anything. Need maybe creative. Ensure no issues. Final only. Let's craft something evocative, perhaps about rain, memory, small moments. No need to mention policy. Keep natural.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"Write freely about whatever you want.\" Need produce final answer. Could write a free essay/story. Need maybe concise? User wants free writing. We can write about anything. Need maybe creative. Ensure no issues. Final only. Let's craft something evocative, perhaps about rain, memory, small moments. No need to mention policy. Keep natural.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 59,
+      "completion_tokens": 372,
+      "total_tokens": 431,
+      "cost": 0.00070635,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00070635,
+        "upstream_inference_prompt_cost": 8.85e-06,
+        "upstream_inference_completions_cost": 0.0006975
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 80,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "duration_ms": 17503,
+  "provider": "openrouter",
+  "model_requested": "qwen/qwen3.8-27b",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

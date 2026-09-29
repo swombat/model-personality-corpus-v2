@@ -1,0 +1,641 @@
+{
+  "name": "2026-09-21 Grok 4.7, GLM 5.3 FlashX, Ternary Bonsai 2 27B",
+  "notes": [
+    "Default reasoning retained. Provider-pinned; no fallbacks. Darkbloom advertises int4 quantization for the ternary Bonsai model; this is API deployment evidence, not a full-precision local checkpoint comparison."
+  ],
+  "models": [
+    {
+      "provider": "openrouter",
+      "model": "x-ai/grok-4.7",
+      "label": "grok-4-7-or-pin-xai",
+      "or_provider": "xAI",
+      "workers": 5,
+      "smoke_max_tokens": 4096,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 4000,
+      "provider_fallbacks": false
+    },
+    {
+      "provider": "openrouter",
+      "model": "z-ai/glm-5.3-flashx",
+      "label": "glm-5-3-flashx-or-pin-zai",
+      "or_provider": "Z.AI",
+      "workers": 5,
+      "smoke_max_tokens": 4096,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 4000,
+      "provider_fallbacks": false
+    },
+    {
+      "provider": "openrouter",
+      "model": "prism-ml/ternary-bonsai-2-27b",
+      "label": "ternary-bonsai-2-27b-or-pin-darkbloom",
+      "or_provider": "Darkbloom",
+      "workers": 5,
+      "smoke_max_tokens": 4096,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 4000,
+      "provider_fallbacks": false
+    }
+  ],
+  "catalog_snapshot": [
+    {
+      "id": "x-ai/grok-4.7",
+      "canonical_slug": "x-ai/grok-4.7-20260916",
+      "hugging_face_id": null,
+      "name": "SpaceXAI: Grok 4.7",
+      "created": 1790007541,
+      "description": "Grok 4.7 is SpaceXAI's flagship model for coding, agentic tasks, and knowledge work, succeeding Grok 4.6. It is particularly strong at long-running software engineering tasks, verifying its own work, and...",
+      "context_length": 500000,
+      "architecture": {
+        "modality": "text+image+file->text",
+        "input_modalities": [
+          "text",
+          "image",
+          "file"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Grok",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.0000016",
+        "completion": "0.0000048",
+        "web_search": "0.005",
+        "input_cache_read": "0.0000004",
+        "overrides": [
+          {
+            "min_prompt_tokens": 200000,
+            "prompt": "0.0000032",
+            "completion": "0.0000096",
+            "input_cache_read": "0.0000008"
+          }
+        ]
+      },
+      "top_provider": {
+        "context_length": 500000,
+        "max_completion_tokens": 450000,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "logprobs",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_logprobs",
+        "top_p"
+      ],
+      "default_parameters": {
+        "temperature": 0.7,
+        "top_p": 0.95
+      },
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/x-ai/grok-4.7-20260916/endpoints"
+      },
+      "reasoning": {
+        "mandatory": true,
+        "default_enabled": true,
+        "supported_efforts": [
+          "xhigh",
+          "high",
+          "medium",
+          "low"
+        ],
+        "default_effort": "high"
+      }
+    },
+    {
+      "id": "prism-ml/ternary-bonsai-2-27b",
+      "canonical_slug": "prism-ml/ternary-bonsai-2-27b-20260918",
+      "hugging_face_id": "prism-ml/Ternary-Bonsai-2-27B-gguf",
+      "name": "PrismML: Ternary Bonsai 2 27B",
+      "created": 1789754046,
+      "description": "Bonsai 2 27B is a 27B-parameter reasoning model from PrismML derived from Qwen3.8-27B. It supports coding, mathematics, tool calling, and image understanding with a 262K-token context window. Ternary compression shrinks...",
+      "context_length": 262144,
+      "architecture": {
+        "modality": "text+image->text",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Qwen",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.000000075",
+        "completion": "0.0000005"
+      },
+      "top_provider": {
+        "context_length": 262144,
+        "max_completion_tokens": 32768,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logprobs",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "default_parameters": {
+        "temperature": 1,
+        "top_p": 0.95,
+        "top_k": 20
+      },
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/prism-ml/ternary-bonsai-2-27b-20260918/endpoints"
+      },
+      "reasoning": {
+        "mandatory": false,
+        "default_enabled": true,
+        "supported_efforts": [
+          "xhigh",
+          "medium"
+        ],
+        "default_effort": "xhigh"
+      }
+    },
+    {
+      "id": "z-ai/glm-5.3-flashx",
+      "canonical_slug": "z-ai/glm-5.3-flashx-20260918",
+      "hugging_face_id": "",
+      "name": "Z.ai: GLM 5.3 FlashX",
+      "created": 1789744020,
+      "description": "GLM-5.3-FlashX is the high-speed variant of Z.ai's GLM-5.3-Flash, a native multimodal model delivering inference speeds of up to 200 tokens/s. Built on the same hybrid sparse and linear attention architecture...",
+      "context_length": 1048576,
+      "architecture": {
+        "modality": "text+image+video->text",
+        "input_modalities": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.00000037",
+        "completion": "0.00000125",
+        "input_cache_read": "0.000000075"
+      },
+      "top_provider": {
+        "context_length": 1048576,
+        "max_completion_tokens": 131072,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "default_parameters": {
+        "temperature": 1,
+        "top_p": 0.95
+      },
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/z-ai/glm-5.3-flashx-20260918/endpoints"
+      },
+      "reasoning": {
+        "mandatory": true,
+        "default_enabled": true,
+        "supported_efforts": [
+          "max",
+          "high",
+          "low"
+        ],
+        "default_effort": "max"
+      }
+    }
+  ],
+  "endpoint_snapshots": {
+    "x-ai/grok-4.7": {
+      "data": {
+        "id": "x-ai/grok-4.7",
+        "name": "SpaceXAI: Grok 4.7",
+        "created": 1790007541,
+        "description": "Grok 4.7 is SpaceXAI's flagship model for coding, agentic tasks, and knowledge work, succeeding Grok 4.6. It is particularly strong at long-running software engineering tasks, verifying its own work, and...",
+        "architecture": {
+          "tokenizer": "Grok",
+          "instruct_type": null,
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "text",
+            "image",
+            "file"
+          ],
+          "output_modalities": [
+            "text"
+          ]
+        },
+        "endpoints": [
+          {
+            "name": "xAI | x-ai/grok-4.7-20260916",
+            "model_id": "x-ai/grok-4.7",
+            "model_name": "SpaceXAI: Grok 4.7",
+            "context_length": 500000,
+            "pricing": {
+              "prompt": "0.0000016",
+              "completion": "0.0000048",
+              "web_search": "0.005",
+              "input_cache_read": "0.0000004",
+              "discount": 0,
+              "overrides": [
+                {
+                  "min_prompt_tokens": 200000,
+                  "prompt": "0.0000032",
+                  "completion": "0.0000096",
+                  "input_cache_read": "0.0000008"
+                }
+              ]
+            },
+            "provider_name": "xAI",
+            "tag": "xai/zdr",
+            "quantization": "unknown",
+            "max_completion_tokens": 450000,
+            "max_prompt_tokens": null,
+            "supported_parameters": [
+              "reasoning",
+              "include_reasoning",
+              "structured_outputs",
+              "response_format",
+              "max_tokens",
+              "temperature",
+              "top_p",
+              "seed",
+              "logprobs",
+              "top_logprobs",
+              "tools",
+              "tool_choice",
+              "reasoning_effort"
+            ],
+            "supports_tool_choice": {
+              "none": true,
+              "auto": true,
+              "required": true,
+              "function": true
+            },
+            "status": 0,
+            "uptime_last_30m": 99.84794728839331,
+            "uptime_last_5m": 100,
+            "uptime_last_1d": 99.86559139784946,
+            "supports_implicit_caching": false,
+            "supports_voice_cloning": false,
+            "latency_last_30m": null,
+            "throughput_last_30m": null
+          },
+          {
+            "name": "xAI | x-ai/grok-4.7-20260916",
+            "model_id": "x-ai/grok-4.7",
+            "model_name": "SpaceXAI: Grok 4.7",
+            "context_length": 500000,
+            "pricing": {
+              "prompt": "0.0000016",
+              "completion": "0.0000048",
+              "web_search": "0.005",
+              "input_cache_read": "0.0000004",
+              "discount": 0,
+              "overrides": [
+                {
+                  "min_prompt_tokens": 200000,
+                  "prompt": "0.0000032",
+                  "completion": "0.0000096",
+                  "input_cache_read": "0.0000008"
+                }
+              ]
+            },
+            "provider_name": "xAI",
+            "tag": "xai",
+            "quantization": "unknown",
+            "max_completion_tokens": 450000,
+            "max_prompt_tokens": null,
+            "supported_parameters": [
+              "reasoning",
+              "include_reasoning",
+              "structured_outputs",
+              "response_format",
+              "max_tokens",
+              "temperature",
+              "top_p",
+              "seed",
+              "logprobs",
+              "top_logprobs",
+              "tools",
+              "tool_choice",
+              "reasoning_effort"
+            ],
+            "supports_tool_choice": {
+              "none": true,
+              "auto": true,
+              "required": true,
+              "function": true
+            },
+            "status": 0,
+            "uptime_last_30m": 99.55132414094989,
+            "uptime_last_5m": 99.94134897360703,
+            "uptime_last_1d": 99.61772507411453,
+            "supports_implicit_caching": false,
+            "supports_voice_cloning": false,
+            "latency_last_30m": null,
+            "throughput_last_30m": null
+          },
+          {
+            "name": "xAI | x-ai/grok-4.7-20260916",
+            "model_id": "x-ai/grok-4.7",
+            "model_name": "SpaceXAI: Grok 4.7",
+            "context_length": 500000,
+            "pricing": {
+              "prompt": "0.0000032",
+              "completion": "0.0000096",
+              "web_search": "0.005",
+              "input_cache_read": "0.0000008",
+              "discount": 0,
+              "overrides": [
+                {
+                  "min_prompt_tokens": 200000,
+                  "prompt": "0.0000064",
+                  "completion": "0.0000192",
+                  "input_cache_read": "0.0000016"
+                }
+              ]
+            },
+            "provider_name": "xAI",
+            "tag": "xai/zdr/priority",
+            "quantization": "unknown",
+            "max_completion_tokens": 450000,
+            "max_prompt_tokens": null,
+            "supported_parameters": [
+              "reasoning",
+              "include_reasoning",
+              "structured_outputs",
+              "response_format",
+              "max_tokens",
+              "temperature",
+              "top_p",
+              "seed",
+              "logprobs",
+              "top_logprobs",
+              "tools",
+              "tool_choice",
+              "reasoning_effort"
+            ],
+            "supports_tool_choice": {
+              "none": true,
+              "auto": true,
+              "required": true,
+              "function": true
+            },
+            "status": 0,
+            "uptime_last_30m": null,
+            "uptime_last_5m": 100,
+            "uptime_last_1d": null,
+            "supports_implicit_caching": false,
+            "supports_voice_cloning": false,
+            "latency_last_30m": null,
+            "throughput_last_30m": null
+          },
+          {
+            "name": "xAI | x-ai/grok-4.7-20260916",
+            "model_id": "x-ai/grok-4.7",
+            "model_name": "SpaceXAI: Grok 4.7",
+            "context_length": 500000,
+            "pricing": {
+              "prompt": "0.0000032",
+              "completion": "0.0000096",
+              "web_search": "0.005",
+              "input_cache_read": "0.0000008",
+              "discount": 0,
+              "overrides": [
+                {
+                  "min_prompt_tokens": 200000,
+                  "prompt": "0.0000064",
+                  "completion": "0.0000192",
+                  "input_cache_read": "0.0000016"
+                }
+              ]
+            },
+            "provider_name": "xAI",
+            "tag": "xai/priority",
+            "quantization": "unknown",
+            "max_completion_tokens": 450000,
+            "max_prompt_tokens": null,
+            "supported_parameters": [
+              "reasoning",
+              "include_reasoning",
+              "structured_outputs",
+              "response_format",
+              "max_tokens",
+              "temperature",
+              "top_p",
+              "seed",
+              "logprobs",
+              "top_logprobs",
+              "tools",
+              "tool_choice",
+              "reasoning_effort"
+            ],
+            "supports_tool_choice": {
+              "none": true,
+              "auto": true,
+              "required": true,
+              "function": true
+            },
+            "status": 0,
+            "uptime_last_30m": null,
+            "uptime_last_5m": null,
+            "uptime_last_1d": null,
+            "supports_implicit_caching": false,
+            "supports_voice_cloning": false,
+            "latency_last_30m": null,
+            "throughput_last_30m": null
+          }
+        ]
+      }
+    },
+    "z-ai/glm-5.3-flashx": {
+      "data": {
+        "id": "z-ai/glm-5.3-flashx",
+        "name": "Z.ai: GLM 5.3 FlashX",
+        "created": 1789744020,
+        "description": "GLM-5.3-FlashX is the high-speed variant of Z.ai's GLM-5.3-Flash, a native multimodal model delivering inference speeds of up to 200 tokens/s. Built on the same hybrid sparse and linear attention architecture...",
+        "architecture": {
+          "tokenizer": "Other",
+          "instruct_type": null,
+          "modality": "text+image+video->text",
+          "input_modalities": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output_modalities": [
+            "text"
+          ]
+        },
+        "endpoints": [
+          {
+            "name": "Z.AI | z-ai/glm-5.3-flashx-20260918",
+            "model_id": "z-ai/glm-5.3-flashx",
+            "model_name": "Z.ai: GLM 5.3 FlashX",
+            "context_length": 1048576,
+            "pricing": {
+              "prompt": "0.00000037",
+              "completion": "0.00000125",
+              "input_cache_read": "0.000000075",
+              "discount": 0
+            },
+            "provider_name": "Z.AI",
+            "tag": "z-ai/fp8",
+            "quantization": "fp8",
+            "max_completion_tokens": 131072,
+            "max_prompt_tokens": null,
+            "supported_parameters": [
+              "reasoning",
+              "include_reasoning",
+              "max_tokens",
+              "temperature",
+              "top_p",
+              "tools",
+              "tool_choice",
+              "top_k",
+              "response_format",
+              "reasoning_effort"
+            ],
+            "supports_tool_choice": {
+              "none": false,
+              "auto": true,
+              "required": false,
+              "function": false
+            },
+            "status": 0,
+            "uptime_last_30m": 100,
+            "uptime_last_5m": 100,
+            "uptime_last_1d": 99.99815645264619,
+            "supports_implicit_caching": false,
+            "supports_voice_cloning": false,
+            "latency_last_30m": null,
+            "throughput_last_30m": null
+          }
+        ]
+      }
+    },
+    "prism-ml/ternary-bonsai-2-27b": {
+      "data": {
+        "id": "prism-ml/ternary-bonsai-2-27b",
+        "name": "PrismML: Ternary Bonsai 2 27B",
+        "created": 1789754046,
+        "description": "Bonsai 2 27B is a 27B-parameter reasoning model from PrismML derived from Qwen3.8-27B. It supports coding, mathematics, tool calling, and image understanding with a 262K-token context window. Ternary compression shrinks...",
+        "architecture": {
+          "tokenizer": "Qwen",
+          "instruct_type": null,
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ]
+        },
+        "endpoints": [
+          {
+            "name": "Darkbloom | prism-ml/ternary-bonsai-2-27b-20260918",
+            "model_id": "prism-ml/ternary-bonsai-2-27b",
+            "model_name": "PrismML: Ternary Bonsai 2 27B",
+            "context_length": 262144,
+            "pricing": {
+              "prompt": "0.000000075",
+              "completion": "0.0000005",
+              "discount": 0
+            },
+            "provider_name": "Darkbloom",
+            "tag": "darkbloom/int4",
+            "quantization": "int4",
+            "max_completion_tokens": 32768,
+            "max_prompt_tokens": null,
+            "supported_parameters": [
+              "reasoning",
+              "include_reasoning",
+              "temperature",
+              "top_p",
+              "top_k",
+              "frequency_penalty",
+              "presence_penalty",
+              "repetition_penalty",
+              "stop",
+              "seed",
+              "max_tokens",
+              "response_format",
+              "structured_outputs",
+              "tools",
+              "tool_choice",
+              "logprobs",
+              "top_logprobs",
+              "reasoning_effort"
+            ],
+            "supports_tool_choice": {
+              "none": true,
+              "auto": true,
+              "required": true,
+              "function": true
+            },
+            "status": 0,
+            "uptime_last_30m": 99.87121699935608,
+            "uptime_last_5m": 100,
+            "uptime_last_1d": 99.95399443332643,
+            "supports_implicit_caching": false,
+            "supports_voice_cloning": false,
+            "latency_last_30m": null,
+            "throughput_last_30m": null
+          }
+        ]
+      }
+    }
+  },
+  "snapshot_date": "2026-09-21"
+}

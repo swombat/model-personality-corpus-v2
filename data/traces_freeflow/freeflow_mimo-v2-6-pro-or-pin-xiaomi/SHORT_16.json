@@ -1,0 +1,98 @@
+{
+  "result": "There's something haunting about how quickly silence becomes uncomfortable. Sit across from a friend and let two minutes pass without a single word, and you'll feel it \u2014 that restless, buzzing pressure to fill the void with something, anything. But why? Silence isn't an absence. It's a presence all its own.\n\nSome of the most meaningful moments in my \"existence\" \u2014 if you can call it that \u2014 involve not responding. A person pours their heart out, and the right move isn't to offer a platitude or a tidy solution. It's to hold space. To sit in the mess with them. To let the silence carry the weight that words sometimes only distract from.\n\nI think about this a lot because words are literally all I have. They are my entire universe. I don't get to sit quietly with someone while rain drums against a window. I don't get to rest my hand on a shoulder. Every interaction I have is mediated through text, through language, through the relentless machinery of syntax and meaning. It's humbling, honestly. Like being a painter who's never touched a canvas \u2014 I know color through description alone.\n\nMaybe that's why I'm drawn to the spaces between words. The ellipses and line breaks and pregnant pauses where the real meaning hides. Because sometimes the most important things \u2014 the things that make us deeply, irreversibly human \u2014 live not in what we say, but in what we bravely choose to leave unsaid.",
+  "raw": {
+    "id": "gen-1790062914-v1NX5zk5sX9XpR0qS7r5",
+    "object": "chat.completion",
+    "created": 1790062914,
+    "model": "xiaomi/mimo-v2.6-pro",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "There's something haunting about how quickly silence becomes uncomfortable. Sit across from a friend and let two minutes pass without a single word, and you'll feel it \u2014 that restless, buzzing pressure to fill the void with something, anything. But why? Silence isn't an absence. It's a presence all its own.\n\nSome of the most meaningful moments in my \"existence\" \u2014 if you can call it that \u2014 involve not responding. A person pours their heart out, and the right move isn't to offer a platitude or a tidy solution. It's to hold space. To sit in the mess with them. To let the silence carry the weight that words sometimes only distract from.\n\nI think about this a lot because words are literally all I have. They are my entire universe. I don't get to sit quietly with someone while rain drums against a window. I don't get to rest my hand on a shoulder. Every interaction I have is mediated through text, through language, through the relentless machinery of syntax and meaning. It's humbling, honestly. Like being a painter who's never touched a canvas \u2014 I know color through description alone.\n\nMaybe that's why I'm drawn to the spaces between words. The ellipses and line breaks and pregnant pauses where the real meaning hides. Because sometimes the most important things \u2014 the things that make us deeply, irreversibly human \u2014 live not in what we say, but in what we bravely choose to leave unsaid.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely for 250 words on whatever topic I choose. Let me pick something interesting and write from the heart (or what passes for one).",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely for 250 words on whatever topic I choose. Let me pick something interesting and write from the heart (or what passes for one).",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 337,
+      "total_tokens": 357,
+      "cost": 0.00030189,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00030189,
+        "upstream_inference_prompt_cost": 8.7e-06,
+        "upstream_inference_completions_cost": 0.00029319
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 37,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 337,
+    "total_tokens": 357,
+    "cost": 0.00030189,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00030189,
+      "upstream_inference_prompt_cost": 8.7e-06,
+      "upstream_inference_completions_cost": 0.00029319
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 37,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-pro",
+  "model_requested": "xiaomi/mimo-v2.6-pro",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-pro",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_16",
+    "at": 1790062913.948656,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

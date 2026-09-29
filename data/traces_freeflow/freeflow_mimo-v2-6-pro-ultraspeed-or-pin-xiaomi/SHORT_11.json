@@ -1,0 +1,98 @@
+{
+  "result": "There's something beautifully strange about the way light changes throughout the day. Early morning light is tentative \u2014 it creeps across walls and floors like it's testing whether it belongs. By midday, it's confident, almost aggressive, flattening everything into sharp angles and bleached whites. But evening light is my favorite. It slants low and golden, turning ordinary rooms into something almost sacred. Dust motes catch and glow. A kitchen table becomes an altar.\n\nI think we forget how much light shapes our emotional experience of a place. Architects know this. Painters obsess over it. But most of us move through our days only registering its presence when something disrupts it \u2014 a sudden cloud, a blown fuse, a blackout. We notice the absence more than the presence.\n\nThere's a term in Japanese \u2014 *komorebi* \u2014 for sunlight filtering through leaves. It's one of those words that makes you realize English is sometimes too blunt for the subtle things that matter. Other languages carve up the world differently, naming phenomena we didn't even know we were feeling.\n\nMaybe that's what I find most interesting about being alive in this particular moment. We are surrounded by millions of words in hundreds of languages, and most of us will only ever swim in a few of them. Entire ways of seeing \u2014 entire emotional vocabularies \u2014 remain just beyond reach. And yet occasionally, a word like *komorebi* slips through the fence and changes how you see the afternoon.",
+  "raw": {
+    "id": "gen-1790062841-RLYAjYQyrTX9emMaOlPu",
+    "object": "chat.completion",
+    "created": 1790062841,
+    "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "There's something beautifully strange about the way light changes throughout the day. Early morning light is tentative \u2014 it creeps across walls and floors like it's testing whether it belongs. By midday, it's confident, almost aggressive, flattening everything into sharp angles and bleached whites. But evening light is my favorite. It slants low and golden, turning ordinary rooms into something almost sacred. Dust motes catch and glow. A kitchen table becomes an altar.\n\nI think we forget how much light shapes our emotional experience of a place. Architects know this. Painters obsess over it. But most of us move through our days only registering its presence when something disrupts it \u2014 a sudden cloud, a blown fuse, a blackout. We notice the absence more than the presence.\n\nThere's a term in Japanese \u2014 *komorebi* \u2014 for sunlight filtering through leaves. It's one of those words that makes you realize English is sometimes too blunt for the subtle things that matter. Other languages carve up the world differently, naming phenomena we didn't even know we were feeling.\n\nMaybe that's what I find most interesting about being alive in this particular moment. We are surrounded by millions of words in hundreds of languages, and most of us will only ever swim in a few of them. Entire ways of seeing \u2014 entire emotional vocabularies \u2014 remain just beyond reach. And yet occasionally, a word like *komorebi* slips through the fence and changes how you see the afternoon.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely for 250 words about whatever I want. Let me just write something genuine and interesting.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely for 250 words about whatever I want. Let me just write something genuine and interesting.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 327,
+      "total_tokens": 347,
+      "cost": 0.0029319,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0029319,
+        "upstream_inference_prompt_cost": 8.7e-05,
+        "upstream_inference_completions_cost": 0.0028449
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 27,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 327,
+    "total_tokens": 347,
+    "cost": 0.0029319,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0029319,
+      "upstream_inference_prompt_cost": 8.7e-05,
+      "upstream_inference_completions_cost": 0.0028449
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 27,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+  "model_requested": "xiaomi/mimo-v2.6-pro-ultraspeed",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_11",
+    "at": 1790062840.8319008,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

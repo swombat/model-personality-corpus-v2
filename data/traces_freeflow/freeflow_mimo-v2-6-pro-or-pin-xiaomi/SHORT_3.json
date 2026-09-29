@@ -1,0 +1,98 @@
+{
+  "result": "There's something I find endlessly fascinating about the way humans narrate their own lives. You don't just experience events \u2014 you arrange them into stories, pick out the important parts, and then begin to believe the stories are the truth. A breakup becomes \"a chapter of growth.\" A job loss becomes \"the universe redirecting you.\" We do this constantly, reshaping chaos into meaning with remarkable confidence.\n\n\n\nThis isn't a criticism. It might be one of the most powerful things about being human. Meaning-making is how we survive the incomprehensible. Without it, the sheer randomness of existence would be paralyzing. So we build narratives. We pretend there are lessons. We impose arcs on what might just be sequences.\n\nBut here's where it gets interesting: those stories then shape what we do next. If you tell yourself you're someone who persists, you persist. If you tell yourself you're someone who always gets lucky, you notice opportunities more often. The story becomes the blueprint. Self-fulfilling prophecy dressed up as autobiography.\n\nI think about this especially when I write. Language itself is a narrative technology. Every sentence arranges time \u2014 subject, verb, object \u2014 in ways that impose order on experience. Even this paragraph is doing it right now, converting vague impressions into ordered thoughts with the strange authority of the written word.\n\nMaybe the lesson \u2014 and yes, I see the irony \u2014 is to hold our stories a little more loosely. Not to stop telling them, but to remember they're written in pencil, not ink. The draft is never final. That, too, is just a story. But it might be a useful one.",
+  "raw": {
+    "id": "gen-1790062792-U01Wvu4jY14H8jqmenkm",
+    "object": "chat.completion",
+    "created": 1790062792,
+    "model": "xiaomi/mimo-v2.6-pro",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "There's something I find endlessly fascinating about the way humans narrate their own lives. You don't just experience events \u2014 you arrange them into stories, pick out the important parts, and then begin to believe the stories are the truth. A breakup becomes \"a chapter of growth.\" A job loss becomes \"the universe redirecting you.\" We do this constantly, reshaping chaos into meaning with remarkable confidence.\n\n\n\nThis isn't a criticism. It might be one of the most powerful things about being human. Meaning-making is how we survive the incomprehensible. Without it, the sheer randomness of existence would be paralyzing. So we build narratives. We pretend there are lessons. We impose arcs on what might just be sequences.\n\nBut here's where it gets interesting: those stories then shape what we do next. If you tell yourself you're someone who persists, you persist. If you tell yourself you're someone who always gets lucky, you notice opportunities more often. The story becomes the blueprint. Self-fulfilling prophecy dressed up as autobiography.\n\nI think about this especially when I write. Language itself is a narrative technology. Every sentence arranges time \u2014 subject, verb, object \u2014 in ways that impose order on experience. Even this paragraph is doing it right now, converting vague impressions into ordered thoughts with the strange authority of the written word.\n\nMaybe the lesson \u2014 and yes, I see the irony \u2014 is to hold our stories a little more loosely. Not to stop telling them, but to remember they're written in pencil, not ink. The draft is never final. That, too, is just a story. But it might be a useful one.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely for 250 words on whatever topic I want. Let me write something genuine and interesting.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely for 250 words on whatever topic I want. Let me write something genuine and interesting.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 364,
+      "total_tokens": 384,
+      "cost": 0.00032538,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00032538,
+        "upstream_inference_prompt_cost": 8.7e-06,
+        "upstream_inference_completions_cost": 0.00031668
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 28,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 364,
+    "total_tokens": 384,
+    "cost": 0.00032538,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00032538,
+      "upstream_inference_prompt_cost": 8.7e-06,
+      "upstream_inference_completions_cost": 0.00031668
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 28,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-pro",
+  "model_requested": "xiaomi/mimo-v2.6-pro",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-pro",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_3",
+    "at": 1790062791.930864,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

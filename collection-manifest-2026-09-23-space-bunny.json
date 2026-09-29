@@ -1,0 +1,50 @@
+{
+  "run_id": "20260923-space-bunny",
+  "models": [
+    {
+      "provider": "openrouter",
+      "model": "stealth/space-bunny-alpha",
+      "or_provider": "Stealth",
+      "label": "space-bunny-alpha-or-pin-stealth",
+      "slug": "space-bunny-alpha",
+      "family": "unknown",
+      "route_max_tokens": 524288,
+      "request_timeout": 1200,
+      "token_policy": {
+        "freeflow": [
+          16000,
+          32768,
+          65536
+        ],
+        "values": [
+          4000,
+          8000,
+          16000,
+          32768,
+          65536
+        ]
+      },
+      "endpoint_snapshot": "/Users/danieltenner/dev/research/model-personality-corpus-v2/analysis/space-bunny-2026-09-23/endpoints.json"
+    }
+  ],
+  "pools": {
+    "capture": 4,
+    "analysis": 8,
+    "local": 2,
+    "synthesis": 1
+  },
+  "notify_command": [
+    "/Users/danieltenner/dev/mira/bin/mira",
+    "exec",
+    "--headless",
+    "-C",
+    "/Users/danieltenner/dev/mira",
+    "-m",
+    "gpt-5.6-sol",
+    "-c",
+    "model_reasoning_effort=\"medium\""
+  ],
+  "notes": [
+    "Daniel requested full mapping and similarity-based lab attribution. Lab stays unknown; resemblance is not provenance. Default reasoning, unchanged canonical prompts. Also run isolated similarity analysis in Mira analysis/space-bunny-2026-09-23 after raw freeflow completes, and report nearest neighbours to Daniel. No publication authorized."
+  ]
+}

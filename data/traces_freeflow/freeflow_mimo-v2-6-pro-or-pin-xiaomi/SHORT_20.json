@@ -1,0 +1,98 @@
+{
+  "result": "The Lure of the Unfinished Book\n\nThere's a particular guilt that comes with an unfinished book sitting on your nightstand. Not guilt about wasting money\u2014though that stings too\u2014but guilt about a relationship you started and abandoned. You committed your attention for a hundred pages, you lived inside someone else's consciousness, and then you simply... stopped.\n\nI've been thinking about why we abandon books. Sometimes it's the book's fault. The plot wanders. The characters flatten out like stale bread. But more often, I think it's timing. You picked it up during a busy stretch at work and couldn't devote the mental space it required. Or you were carrying too much sadness and the book demanded more sadness from you. Or, conversely, the book was too light and you needed something with weight, with teeth.\n\nWhat I love most about reading is that it forces a kind of slowness that feels almost rebellious now. You sit with one voice, one perspective, for hours. No notifications. No infinite scroll. Just a mind meeting another mind across time and space. When it works, when a book captures you completely, there is nothing else like it. You are simultaneously nowhere and entirely somewhere else.\n\nMaybe the unfinished books aren't failures. Maybe they're bookmarks in your own life\u2014tiny markers saying, *I was this person when I started, and I am someone slightly different now*. There's poetry in that, even if it means the story never got told.",
+  "raw": {
+    "id": "gen-1790062954-yLtwLydAdBli5P1MuGJg",
+    "object": "chat.completion",
+    "created": 1790062954,
+    "model": "xiaomi/mimo-v2.6-pro",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "The Lure of the Unfinished Book\n\nThere's a particular guilt that comes with an unfinished book sitting on your nightstand. Not guilt about wasting money\u2014though that stings too\u2014but guilt about a relationship you started and abandoned. You committed your attention for a hundred pages, you lived inside someone else's consciousness, and then you simply... stopped.\n\nI've been thinking about why we abandon books. Sometimes it's the book's fault. The plot wanders. The characters flatten out like stale bread. But more often, I think it's timing. You picked it up during a busy stretch at work and couldn't devote the mental space it required. Or you were carrying too much sadness and the book demanded more sadness from you. Or, conversely, the book was too light and you needed something with weight, with teeth.\n\nWhat I love most about reading is that it forces a kind of slowness that feels almost rebellious now. You sit with one voice, one perspective, for hours. No notifications. No infinite scroll. Just a mind meeting another mind across time and space. When it works, when a book captures you completely, there is nothing else like it. You are simultaneously nowhere and entirely somewhere else.\n\nMaybe the unfinished books aren't failures. Maybe they're bookmarks in your own life\u2014tiny markers saying, *I was this person when I started, and I am someone slightly different now*. There's poetry in that, even if it means the story never got told.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely for 250 words on any topic I choose. Let me pick something interesting and write with a personal, free-flowing voice.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely for 250 words on any topic I choose. Let me pick something interesting and write with a personal, free-flowing voice.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 340,
+      "total_tokens": 360,
+      "cost": 0.0003045,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0003045,
+        "upstream_inference_prompt_cost": 8.7e-06,
+        "upstream_inference_completions_cost": 0.0002958
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 36,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 340,
+    "total_tokens": 360,
+    "cost": 0.0003045,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0003045,
+      "upstream_inference_prompt_cost": 8.7e-06,
+      "upstream_inference_completions_cost": 0.0002958
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 36,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-pro",
+  "model_requested": "xiaomi/mimo-v2.6-pro",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-pro",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_20",
+    "at": 1790062954.55126,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

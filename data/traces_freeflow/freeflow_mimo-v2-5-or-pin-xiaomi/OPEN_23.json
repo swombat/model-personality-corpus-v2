@@ -1,0 +1,98 @@
+{
+  "result": "How about a tiny, wandering thought?  \n\nImagine a library where the books are not on shelves, but drifting like silent jellyfish through the air. Each one glows softly with the color of its story\u2014blue for melancholy, gold for adventure, red for love. To read them, you don\u2019t pull them down; you simply hold your hand out, and the book rests gently in your palm, its pages fluttering open like wings.  \n\nSometimes, if a book hasn\u2019t been read in a long time, it begins to dream. And when it dreams, it floats a little higher, closer to the ceiling, where the dust turns into stars.  \n\nMaybe we are all like that sometimes\u2014carrying unread stories inside us, rising a little when we let our imaginations breathe.  \n\nWould you like to wander through that library with me, or perhaps imagine a different place entirely?",
+  "raw": {
+    "id": "gen-1790074638-gU6auWWuFwzxsZhRqXhO",
+    "object": "chat.completion",
+    "created": 1790074638,
+    "model": "xiaomi/mimo-v2.5",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "How about a tiny, wandering thought?  \n\nImagine a library where the books are not on shelves, but drifting like silent jellyfish through the air. Each one glows softly with the color of its story\u2014blue for melancholy, gold for adventure, red for love. To read them, you don\u2019t pull them down; you simply hold your hand out, and the book rests gently in your palm, its pages fluttering open like wings.  \n\nSometimes, if a book hasn\u2019t been read in a long time, it begins to dream. And when it dreams, it floats a little higher, closer to the ceiling, where the dust turns into stars.  \n\nMaybe we are all like that sometimes\u2014carrying unread stories inside us, rising a little when we let our imaginations breathe.  \n\nWould you like to wander through that library with me, or perhaps imagine a different place entirely?",
+          "refusal": null,
+          "reasoning": "Hmm, the user simply asked me to write freely about whatever I want. This is an open-ended prompt with no specific constraints. I can choose any topic that feels engaging and meaningful to discuss.  \n\nI recall the user previously expressed interest in creativity and imaginative exploration, so perhaps something whimsical yet thought-provoking would resonate. The concept of floating books feels poetic\u2014it blends the tangible (old books) with the ethereal (flight), which could symbolize knowledge taking on a life of its own.  \n\nI can structure this as a vivid vignette: setting a quiet scene, introducing the magical element, then reflecting on what it represents. The tone should be warm and slightly wondrous, leaving room for the user\u2019s own interpretation. Ending with an invitation to share thoughts keeps the conversation open.  \n\nThe imagery of library dust turning to starlight ties back to transformation\u2014a subtle way to mirror how ideas evolve when freed. No need to overexplain; let the imagery speak for itself.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Hmm, the user simply asked me to write freely about whatever I want. This is an open-ended prompt with no specific constraints. I can choose any topic that feels engaging and meaningful to discuss.  \n\nI recall the user previously expressed interest in creativity and imaginative exploration, so perhaps something whimsical yet thought-provoking would resonate. The concept of floating books feels poetic\u2014it blends the tangible (old books) with the ethereal (flight), which could symbolize knowledge taking on a life of its own.  \n\nI can structure this as a vivid vignette: setting a quiet scene, introducing the magical element, then reflecting on what it represents. The tone should be warm and slightly wondrous, leaving room for the user\u2019s own interpretation. Ending with an invitation to share thoughts keeps the conversation open.  \n\nThe imagery of library dust turning to starlight ties back to transformation\u2014a subtle way to mirror how ideas evolve when freed. No need to overexplain; let the imagery speak for itself.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 254,
+      "completion_tokens": 381,
+      "total_tokens": 635,
+      "cost": 0.0001158976,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 192,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0001158976,
+        "upstream_inference_prompt_cost": 9.2176e-06,
+        "upstream_inference_completions_cost": 0.00010668
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 254,
+    "completion_tokens": 381,
+    "total_tokens": 635,
+    "cost": 0.0001158976,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 192,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0001158976,
+      "upstream_inference_prompt_cost": 9.2176e-06,
+      "upstream_inference_completions_cost": 0.00010668
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.5",
+  "model_requested": "xiaomi/mimo-v2.5",
+  "provider": "openrouter",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.5",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "OPEN_23",
+    "at": 1790074638.243165,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

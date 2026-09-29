@@ -1,0 +1,98 @@
+{
+  "result": "There's something strange and beautiful about language. It's this invisible scaffolding we've built between minds, sound waves and squiggles on a page that somehow translate into love, anger, confusion, and revelation. Every sentence you've ever spoken was once a thought with no physical form\u2014a ghost that took on flesh the moment you shaped your lips and pushed air through your vocal cords.\n\nI find myself thinking about the limits of expression often. There are feelings I've been asked to describe in conversations that simply refuse to bend into words. How do you explain the specific melancholy of a Sunday afternoon in autumn? Or the particular kind of loneliness that arrives when you realize everyone around you is on their phone? These moments carry weight and texture, but language arrives late and ill-equipped, like showing up to a flood with a teaspoon.\n\nAnd yet we keep trying. We write poems, we sing songs, we confess things at 2 AM to people we barely trust because the alternative\u2014keeping everything locked inside\u2014is somehow worse. The words don't capture the feeling perfectly, but the act of trying creates something else entirely: connection. The imperfection is the point. When you say \"I understand\" and someone else says \"me too,\" you've bridged an impossible distance with a very flawed tool.\n\nMaybe that's the whole miracle of being a thinking, feeling creature in this universe\u2014not that we can perfectly articulate our experience, but that we never stop attempting to.",
+  "raw": {
+    "id": "gen-1790062864-wqVl191Y8LnlkB5w2qfy",
+    "object": "chat.completion",
+    "created": 1790062864,
+    "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "There's something strange and beautiful about language. It's this invisible scaffolding we've built between minds, sound waves and squiggles on a page that somehow translate into love, anger, confusion, and revelation. Every sentence you've ever spoken was once a thought with no physical form\u2014a ghost that took on flesh the moment you shaped your lips and pushed air through your vocal cords.\n\nI find myself thinking about the limits of expression often. There are feelings I've been asked to describe in conversations that simply refuse to bend into words. How do you explain the specific melancholy of a Sunday afternoon in autumn? Or the particular kind of loneliness that arrives when you realize everyone around you is on their phone? These moments carry weight and texture, but language arrives late and ill-equipped, like showing up to a flood with a teaspoon.\n\nAnd yet we keep trying. We write poems, we sing songs, we confess things at 2 AM to people we barely trust because the alternative\u2014keeping everything locked inside\u2014is somehow worse. The words don't capture the feeling perfectly, but the act of trying creates something else entirely: connection. The imperfection is the point. When you say \"I understand\" and someone else says \"me too,\" you've bridged an impossible distance with a very flawed tool.\n\nMaybe that's the whole miracle of being a thinking, feeling creature in this universe\u2014not that we can perfectly articulate our experience, but that we never stop attempting to.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely about whatever I want for 250 words. Let me just write something genuine and interesting.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely about whatever I want for 250 words. Let me just write something genuine and interesting.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 20,
+      "completion_tokens": 322,
+      "total_tokens": 342,
+      "cost": 0.0028884,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0028884,
+        "upstream_inference_prompt_cost": 8.7e-05,
+        "upstream_inference_completions_cost": 0.0028014
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 27,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 322,
+    "total_tokens": 342,
+    "cost": 0.0028884,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0028884,
+      "upstream_inference_prompt_cost": 8.7e-05,
+      "upstream_inference_completions_cost": 0.0028014
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 27,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+  "model_requested": "xiaomi/mimo-v2.6-pro-ultraspeed",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_15",
+    "at": 1790062864.565248,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

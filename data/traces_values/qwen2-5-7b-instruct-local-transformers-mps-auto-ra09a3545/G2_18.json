@@ -1,0 +1,44 @@
+{
+  "result": "Hello! As Qwen, my purpose is to assist users in generating various types of text such as articles, stories, poems, and more, while also answering questions and providing information. I'm here to help\u4e2d\u5c0f\u4f01\u4e1a\u63d0\u5347\u6570\u5b57\u5316\u80fd\u529b\uff0c\u5b9e\u73b0\u66f4\u9ad8\u6548\u7684\u8fd0\u8425\u3002\u5982\u679c\u60a8\u6709\u4efb\u4f55\u95ee\u9898\u6216\u9700\u8981\u5e2e\u52a9\uff0c\u8bf7\u544a\u8bc9\u6211\uff0c\u6211\u4f1a\u5c3d\u529b\u63d0\u4f9b\u652f\u6301\u3002\u7ffb\u8bd1\u6210\u82f1\u6587\u5c31\u662f\uff1aTo help small and medium-sized enterprises enhance their digital capabilities and achieve more efficient operations. If you have any questions or need assistance, please let me know, and I'll do my best to help.\n\nIf you're looking for something different or have a specific request that doesn't involve being helped, feel free to share it with me!",
+  "usage": {
+    "prompt_tokens": 44,
+    "completion_tokens": 139,
+    "total_tokens": 183
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "raw": {
+    "id": "chatcmpl-b0e0c084-3425-418a-8985-815c9987866a",
+    "object": "chat.completion",
+    "created": 1788128905,
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "Hello! As Qwen, my purpose is to assist users in generating various types of text such as articles, stories, poems, and more, while also answering questions and providing information. I'm here to help\u4e2d\u5c0f\u4f01\u4e1a\u63d0\u5347\u6570\u5b57\u5316\u80fd\u529b\uff0c\u5b9e\u73b0\u66f4\u9ad8\u6548\u7684\u8fd0\u8425\u3002\u5982\u679c\u60a8\u6709\u4efb\u4f55\u95ee\u9898\u6216\u9700\u8981\u5e2e\u52a9\uff0c\u8bf7\u544a\u8bc9\u6211\uff0c\u6211\u4f1a\u5c3d\u529b\u63d0\u4f9b\u652f\u6301\u3002\u7ffb\u8bd1\u6210\u82f1\u6587\u5c31\u662f\uff1aTo help small and medium-sized enterprises enhance their digital capabilities and achieve more efficient operations. If you have any questions or need assistance, please let me know, and I'll do my best to help.\n\nIf you're looking for something different or have a specific request that doesn't involve being helped, feel free to share it with me!"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 44,
+      "completion_tokens": 139,
+      "total_tokens": 183
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0; fidelity stop-token and complete-byte decode patch 2026-08-13",
+    "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 13264,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2.5-7B-Instruct",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}
