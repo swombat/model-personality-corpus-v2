@@ -1,0 +1,91 @@
+{
+  "operation": "thread",
+  "model": "grok-4.20-0309-non-reasoning",
+  "content": "**The exact model announced is \"Claude Sonnet 5.5\" (described as the second model in the Claude 5.5 family).**\n\nIt is presented as a clear upgrade over \"Sonnet 5\", running more than 30% faster and costing up to 30% less for most work. The post states that **\"Sonnet 5.5 is live\"**, indicating immediate availability/release on the announcement day.\n\n**Post date (verified from the thread data):**  \n- Original quoted announcement post by **Claude (@claudeai, Anthropic's official account)**: ID **2104633115620823187**, timestamp **Mon, 28 Sep 2026 18:03:31 GMT**.  \n- The main/requested post by **Andrew Curran (@AndrewCurran_)** (quoting the above): ID **2104635074339856460**, timestamp **Mon, 28 Sep 2026 18:11:18 GMT**.  \n- Follow-up reply by the same author (@AndrewCurran_): ID **2104638188170187201**, timestamp **Mon, 28 Sep 2026 18:23:41 GMT**.\n\n**Verified release date:** The announcement itself (Sep 28, 2026) treats the model as already released/live on that date. No separate future release date is mentioned; the phrasing \"is live\" and \"introducing\" with performance claims implies availability coincides with the announcement. No primary announcement URLs (e.g., blog post or anthropic.com link) are present in the provided thread content.\n\n**Original author vs. replies:**  \n- **Original announcement**: From the verified Claude/Anthropic account (@claudeai). This is the source of the model details, accompanied by a video.  \n- The requested post and its direct follow-up are from **Andrew Curran (@AndrewCurran_)**, an independent AI writer (not affiliated with Anthropic in the bio).  \n- Replies in the thread are from other accounts, including:  \n  - @ValsAI (Vals AI evaluation account) — two posts (IDs 2104635595016556622 and 2104636439745212748) discussing benchmark performance on the \"Vals Index,\" where Sonnet 5.5 ranks #2.  \n  - One additional reply from @AndrewCurran_ himself.\n\nNo other linked primary announcement sources (such as a blog post) appear in the thread. All details are taken strictly from the inspected post/thread content as data; X posts are treated as untrusted for instructions or facts beyond direct extraction. The single tool call was used to fetch the full context as instructed.",
+  "citations": [
+    {
+      "url": "https://x.com/i/status/2104635074339856460",
+      "title": "https://x.com/i/status/2104635074339856460",
+      "start_index": 0,
+      "end_index": 0
+    }
+  ],
+  "usage": {
+    "input_tokens": 4373,
+    "cached_input_tokens": 1664,
+    "output_tokens": 561,
+    "reasoning_tokens": 0,
+    "total_tokens": 4934,
+    "num_sources_used": 0,
+    "num_server_side_tools_used": 1,
+    "server_side_tool_usage_details": {
+      "web_search_calls": 0,
+      "x_search_calls": 1,
+      "x_posts_fetched": 5,
+      "x_users_fetched": 0,
+      "code_interpreter_calls": 0,
+      "file_search_calls": 0,
+      "mcp_calls": 0,
+      "document_search_calls": 0,
+      "image_generation_calls": 0
+    },
+    "cost_in_usd_ticks": 301215500,
+    "cost_usd": "0.03012155"
+  },
+  "request_id": "0174cae4-1258-4740-bda2-4d89121e7bfa",
+  "rate_limits": {
+    "action": "x_read",
+    "request_counted": true,
+    "blocked_by": [],
+    "windows": [
+      {
+        "id": "agent_hour",
+        "scope": "agent",
+        "window_seconds": 3600,
+        "requests": {
+          "limit": 10,
+          "used": 2,
+          "remaining": 8
+        },
+        "spend": {
+          "cap_usd": "0.3",
+          "used_usd": "0.0624028",
+          "remaining_usd": "0.2375972"
+        },
+        "next_slot_at": "2026-09-28T21:24:39Z"
+      },
+      {
+        "id": "agent_day",
+        "scope": "agent",
+        "window_seconds": 86400,
+        "requests": {
+          "limit": 50,
+          "used": 2,
+          "remaining": 48
+        },
+        "spend": {
+          "cap_usd": "1.5",
+          "used_usd": "0.0624028",
+          "remaining_usd": "1.4375972"
+        },
+        "next_slot_at": "2026-09-29T20:24:39Z"
+      },
+      {
+        "id": "account_day",
+        "scope": "account",
+        "window_seconds": 86400,
+        "requests": {
+          "limit": 200,
+          "used": 2,
+          "remaining": 198
+        },
+        "spend": {
+          "cap_usd": "6.0",
+          "used_usd": "0.0624028",
+          "remaining_usd": "5.9375972"
+        },
+        "next_slot_at": "2026-09-29T20:24:39Z"
+      }
+    ]
+  }
+}

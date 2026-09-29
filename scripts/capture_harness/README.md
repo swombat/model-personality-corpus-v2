@@ -219,3 +219,22 @@ without this field retain their original provider-default behavior. Use distinct
 cell labels, slugs and ID prefixes for new experimental conditions; never reuse
 an existing default-reasoning cell. Endpoint declarations plus accepted requests
 establish advertised/requested support, not proof of hidden provider behavior.
+
+## BV1 evaluator version (2026-09-29)
+
+New compilations default to `bv1-luna-v1-20260929` (GPT-6 Luna, OpenAI pinned
+through OpenRouter, no fallbacks, temperature .2, 8192 tokens, provider-default
+reasoning). The sibling analysis repo must include `luna_v1.py` and the documented
+validation decision. Existing compiled configs without `bv1_evaluator` retain
+legacy DeepSeek; explicit `legacy-deepseek` is available for reproduction only.
+Arm outputs and source/output bindings are isolated. Never import pilot output or
+mix legacy readings into a new-arm synthesis. Strict exact-quote/heading/label
+checks supplement legacy QA. Four technical attempts remain the bound.
+
+Synthesis still uses GPT-5.4. On an OpenRouter-only host, explicitly set
+`"synthesis_route": "openrouter-openai"` on the model manifest; otherwise the
+legacy direct OpenAI route still requires its own key. Routing is provenance, not
+an invisible fallback. Raw capture, values coders, taxonomy and consensus rules
+are unchanged. See the companion analysis's
+`internal/methodology/bv1-validation-20260929/DECISION.md` for limitations, especially
+short low-signal texts and comparisons with historical DeepSeek-evaluated cards.

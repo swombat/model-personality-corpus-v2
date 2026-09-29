@@ -235,14 +235,28 @@ def raw_collect(c, phase, probe, sid):
         raise RuntimeError(problem)
 
 
+LUNA_ARM = "bv1-luna-v1-20260929"
+
+
+def bv1_paths(c, phase):
+    arm = c.get("bv1_evaluator", "legacy-deepseek")
+    assert arm in ("legacy-deepseek", LUNA_ARM), "unknown BV1 evaluator arm"
+    root = Path(c["analysis_root"]) / "analysis/freeflow/personality-eval-bv1"
+    if arm == LUNA_ARM:
+        return phase / "freeflow_bv1_luna_v1", root / "arms" / arm / "outputs", phase / "bv1_bindings_luna_v1"
+    return phase / "freeflow_bv1", root / "outputs", phase / "bv1_bindings"
+
+
 def bv1(c, phase, sid, validate=False):
     root = Path(c["analysis_root"])
     m = module(
         "capture_bv1", root / "analysis/freeflow/personality-eval-bv1/run_full_bv1.py"
     )
-    m.OUT = phase / "freeflow_bv1"
+    m.OUT, m.OUTPUTS, binding_dir = bv1_paths(c, phase)
     m.OUT.mkdir(exist_ok=True)
-    m.OUTPUTS = root / "analysis/freeflow/personality-eval-bv1/outputs"
+    arm = None
+    if c.get("bv1_evaluator") == LUNA_ARM:
+        arm = module("capture_luna", root / "analysis/freeflow/personality-eval-bv1/luna_v1.py")
     src = trace_path(c, "freeflow", sid)
     d = json.loads(src.read_text())
     assert raw_problem(d, c, "freeflow", sid) is None
@@ -259,13 +273,16 @@ def bv1(c, phase, sid, validate=False):
         "outpath": str(out),
         "text": d["result"],
     }
-    binding = phase / "bv1_bindings" / (sid + ".json")
+    binding = binding_dir / (sid + ".json")
     source_hash = digest(src)
     imported = (
         json.loads((phase / "bv1_import_bindings.json").read_text())
         if (phase / "bv1_import_bindings.json").exists()
         else {}
     )
+    if arm:
+        imported = {}  # Legacy imports cannot satisfy a new evaluator arm.
+    valid = (lambda text: arm.valid_output(text, row["text"])) if arm else m.valid_output
     known = json.loads(binding.read_text()) if binding.exists() else imported.get(sid)
     if not validate:
         if out.exists() and (
@@ -275,12 +292,15 @@ def bv1(c, phase, sid, validate=False):
         ):
             archive(out, phase / "failed_analysis" / "unbound_bv1" / sid)
             out.unlink()
-        if out.exists() and not m.valid_output(out.read_text())[0]:
+        if out.exists() and not valid(out.read_text())[0]:
             archive(out, phase / "failed_analysis" / "bv1" / sid)
-        m.process(row, False, max_attempts=1)
-    assert out.exists() and m.valid_output(out.read_text())[0], "BV1 output QA failed"
+        if arm:
+            arm.process(row, m.OUT)
+        else:
+            m.process(row, False, max_attempts=1)
+    assert out.exists() and valid(out.read_text())[0], "BV1 output QA failed"
     if not validate:
-        atomic(binding, {"source_sha256": source_hash, "output_sha256": digest(out)})
+        atomic(binding, {"source_sha256": source_hash, "output_sha256": digest(out), "evaluator_arm": c.get("bv1_evaluator", "legacy-deepseek")})
     elif known:
         assert known["source_sha256"] == source_hash and known[
             "output_sha256"
@@ -577,12 +597,13 @@ def synthesis(c, phase, validate):
         lock.parent.mkdir(exist_ok=True)
         with lock.open("a+") as f:
             fcntl.flock(f, fcntl.LOCK_EX)
+            bv_out, _, bindings = bv1_paths(c, phase)
             rows = [bv1(c, phase, s, True) for s in identities("freeflow")]
             assert all(
-                (phase / "bv1_bindings" / (s + ".json")).exists()
+                (bindings / (s + ".json")).exists()
                 for s in identities("freeflow")
             )
-            p = phase / "freeflow_bv1/sample_manifest.tsv"
+            p = bv_out / "sample_manifest.tsv"
             with p.open("w") as out:
                 writer = csv.writer(out, delimiter="\t")
                 writer.writerow(
@@ -617,6 +638,7 @@ def synthesis(c, phase, validate):
                     )
             m = module("capture_packets", base / "build_aggregate_packets.py")
             m.PHASE = phase
+            m.MANIFEST = p
             m.ROOT = root
             m.CELLS = {c["label"]: c["model"]}
             old = sys.argv
@@ -625,6 +647,9 @@ def synthesis(c, phase, validate):
                 m.main()
             finally:
                 sys.argv = old
+            if c.get("synthesis_route"):
+                assert c["synthesis_route"] == "openrouter-openai"
+                os.environ["PERSONALITY_CELL_AGG_ROUTE"] = c["synthesis_route"]
             m = module("capture_assembly", base / "assemble_models.py")
             m.PHASE = phase
             m.ROOT = root
@@ -697,6 +722,7 @@ def ready(c, phase, validate):
                 "cell": c["label"],
                 "raw_counts": {"freeflow": 125, "values": 120},
                 "bv1": 125,
+                "bv1_evaluator_arm": c.get("bv1_evaluator", "legacy-deepseek"),
                 "values_coders": CODERS,
                 "adjudication": json.loads((phase / "adjudication.json").read_text()),
                 "publication_complete": False,

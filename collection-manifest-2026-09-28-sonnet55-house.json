@@ -1,0 +1,46 @@
+{
+  "run_id": "20260928-sonnet55-house",
+  "models": [
+    {
+      "provider": "openrouter",
+      "model": "anthropic/claude-sonnet-5.5",
+      "or_provider": "Anthropic",
+      "label": "sonnet-5-5-or-pin-anthropic",
+      "slug": "sonnet-5-5",
+      "family": "claude",
+      "route_max_tokens": 128000,
+      "quantization": "unknown",
+      "request_timeout": 1200,
+      "token_policy": {
+        "freeflow": [
+          16000,
+          32768
+        ],
+        "values": [
+          4000,
+          8000,
+          16000,
+          32768
+        ]
+      },
+      "endpoint_snapshot": "/home/agent/work/model-personality-corpus-v2/notes/sonnet-5-5-2026-09-28/endpoints.json",
+      "release_date": "2026-09-28",
+      "release_date_source": "https://x.com/claudeai/status/2104633140409192757"
+    }
+  ],
+  "pools": {
+    "capture": 4,
+    "analysis": 8,
+    "local": 2,
+    "synthesis": 1
+  },
+  "notify_command": [
+    "python3",
+    "/home/agent/work/corpus-ops/notify_house.py"
+  ],
+  "notes": [
+    "125 freeflow and 120 values, canonical prompts and provider-default reasoning/sampling; Anthropic-only pin and fallbacks disabled. Six raw, four coding, three adjudication/synthesis technical attempts; immutable existing harness. Token ladders stop at 32768, below advertised endpoint limit 128000; exhaustion escalates, never silently increases.",
+    "Release date sourced to official @claudeai announcement self-thread: available everywhere today on 2026-09-28. X helper is a model-mediated retrieval; preserved full retrieval/source URLs, not direct downloaded X bytes. OpenRouter created timestamp is not used as release evidence.",
+    "Dell handoff in WerOKj enmPQj reported Mac/Dell duplicate checks clear; house checked clean synced upstream repositories and no active supervisor. Old Mac work excluded."
+  ]
+}

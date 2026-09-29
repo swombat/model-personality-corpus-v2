@@ -4,7 +4,7 @@
 import argparse, json, re, sys
 from pathlib import Path
 from engine import atomic, digest
-from worker import identities, CODERS, trace_path, RAW
+from worker import identities, CODERS, trace_path, RAW, LUNA_ARM, bv1_paths
 
 HERE = Path(__file__).resolve().parent
 
@@ -38,6 +38,11 @@ def build(manifest, run_dir, analysis):
                 )
             ):
                 raise ValueError("invalid token policy/endpoint limit")
+        # Compiled configurations freeze the evaluator selection. Old configs without
+        # this field remain legacy; newly compiled collections use the validated arm.
+        c.setdefault("bv1_evaluator", LUNA_ARM)
+        if c["bv1_evaluator"] not in (LUNA_ARM, "legacy-deepseek"):
+            raise ValueError("unknown BV1 evaluator arm")
         c["analysis_root"] = str(analysis)
         c["phase_name"] = "capture_" + manifest["run_id"] + "_" + c["label"]
         c["phase"] = str(
@@ -117,8 +122,7 @@ def build(manifest, run_dir, analysis):
                 )
                 if probe == "freeflow":
                     output = (
-                        analysis
-                        / "analysis/freeflow/personality-eval-bv1/outputs"
+                        bv1_paths(c, phase)[1]
                         / c["label"]
                         / (sid + ".md")
                     )
