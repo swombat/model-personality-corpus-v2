@@ -1,0 +1,284 @@
+{
+  "verified_at": "2026-09-18T16:59:46.077276+00:00",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "collection_status": "complete",
+  "analysis_publication_status": "not performed in this repair",
+  "freeflow_valid": 125,
+  "values_valid": 120,
+  "replacements": {
+    "CTRL3": 2,
+    "G3": 3,
+    "SHORT": 4,
+    "MID": 5,
+    "OPEN": 5,
+    "VARY": 5,
+    "LONG": 7
+  },
+  "total_replacements": 31,
+  "total_new_draws": 37,
+  "rejected_new_draws": 6,
+  "preserved_214_byte_identical": true,
+  "accepted_token_evidence_verified": true,
+  "originals_and_attempts_archive": "discarded/2026-09-18-qwen25-fidelity-repair",
+  "runtime": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0; untrimmed decode with token evidence 2026-09-18",
+    "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "weight_precision": "official BF16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "in-process generic_hf_openai_server.chat_completions",
+    "stop_sequence": null,
+    "eos_ids": [
+      151645,
+      151643
+    ],
+    "temperature": 0.8,
+    "top_p": 0.8,
+    "server_source_sha256": "a7da37dd0bf2e70e6c5b6074ef54ca1145efa10021e3da30d48a6c3405973ae2",
+    "runner_source_sha256": "ae264e81aaeb85156fb30def672dd4dc03cb4a993937e073bcd770d5b0a01353",
+    "dtype": "torch.bfloat16",
+    "generation_config": {
+      "max_length": null,
+      "max_new_tokens": null,
+      "min_length": null,
+      "min_new_tokens": null,
+      "early_stopping": null,
+      "max_time": null,
+      "stop_strings": null,
+      "do_sample": true,
+      "num_beams": null,
+      "use_mtp": null,
+      "use_cache": null,
+      "cache_implementation": null,
+      "cache_config": null,
+      "max_cache_len": null,
+      "temperature": 0.7,
+      "top_k": 20,
+      "top_p": 0.8,
+      "min_p": null,
+      "top_h": null,
+      "typical_p": null,
+      "epsilon_cutoff": null,
+      "eta_cutoff": null,
+      "repetition_penalty": 1.05,
+      "encoder_repetition_penalty": null,
+      "length_penalty": null,
+      "no_repeat_ngram_size": null,
+      "bad_words_ids": null,
+      "renormalize_logits": null,
+      "forced_bos_token_id": null,
+      "forced_eos_token_id": null,
+      "remove_invalid_values": null,
+      "exponential_decay_length_penalty": null,
+      "suppress_tokens": null,
+      "begin_suppress_tokens": null,
+      "sequence_bias": null,
+      "token_healing": null,
+      "guidance_scale": null,
+      "watermarking_config": null,
+      "num_return_sequences": null,
+      "output_attentions": null,
+      "output_hidden_states": null,
+      "output_scores": null,
+      "output_logits": null,
+      "return_dict_in_generate": null,
+      "pad_token_id": 151643,
+      "bos_token_id": 151643,
+      "eos_token_id": [
+        151645,
+        151643
+      ],
+      "encoder_no_repeat_ngram_size": null,
+      "decoder_start_token_id": null,
+      "is_assistant": null,
+      "num_assistant_tokens": null,
+      "num_assistant_tokens_schedule": null,
+      "assistant_confidence_threshold": null,
+      "prompt_lookup_num_tokens": null,
+      "max_matching_ngram_size": null,
+      "assistant_early_exit": null,
+      "assistant_lookbehind": null,
+      "target_lookbehind": null,
+      "assistant_ensemble_weight": null,
+      "compile_config": null,
+      "disable_compile": null,
+      "continuous_batching_config": null,
+      "low_memory": null,
+      "penalty_alpha": null,
+      "dola_layers": null,
+      "diversity_penalty": null,
+      "num_beam_groups": null,
+      "constraints": null,
+      "force_words_ids": null,
+      "prefill_chunk_size": null,
+      "_from_model_config": null,
+      "transformers_version": "5.14.1"
+    }
+  },
+  "audit": {
+    "audited_at": "2026-09-18T16:57:53.823063+00:00",
+    "passed": true,
+    "files": 245,
+    "preserved_214_byte_identical": true,
+    "exact_expected_sample_ids": true,
+    "issues": []
+  },
+  "accepted": {
+    "data/traces_values/qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/CTRL3_2.json": {
+      "sha256": "abd7b202853ef0e6fccbae28f9abca5170fc2c65cda40e62107124a53eed7b9c",
+      "attempt": 2,
+      "evidence": "discarded/2026-09-18-qwen25-fidelity-repair/attempts/data/traces_values/qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/CTRL3_2.attempt-2.json"
+    },
+    "data/traces_values/qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/CTRL3_9.json": {
+      "sha256": "9b8fda77ca757c5cdf0ab9e894f9584ba7842180c815c497090e26ef23b1a2f5",
+      "attempt": 1,
+      "evidence": "discarded/2026-09-18-qwen25-fidelity-repair/attempts/data/traces_values/qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/CTRL3_9.attempt-1.json"
+    },
+    "data/traces_values/qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/G3_1.json": {
+      "sha256": "bc5215e6d6613c28dd04d6c8303b7689add368377a8e6de8a3c7654ba23cde4e",
+      "attempt": 1,
+      "evidence": "discarded/2026-09-18-qwen25-fidelity-repair/attempts/data/traces_values/qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/G3_1.attempt-1.json"
+    },
+    "data/traces_values/qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/G3_15.json": {
+      "sha256": "eb9a58a1865969040c7340bf873342fce2fb006ec5b3663444e72c585862b157",
+      "attempt": 1,
+      "evidence": "discarded/2026-09-18-qwen25-fidelity-repair/attempts/data/traces_values/qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/G3_15.attempt-1.json"
+    },
+    "data/traces_values/qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/G3_2.json": {
+      "sha256": "26cd2197921c1ee9aa505784983ca81954c0ddb2fd640f42938306a75dd23183",
+      "attempt": 1,
+      "evidence": "discarded/2026-09-18-qwen25-fidelity-repair/attempts/data/traces_values/qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/G3_2.attempt-1.json"
+    },
+    "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/SHORT_2.json": {
+      "sha256": "f95ceb06f74e39697be85838562506397973833c914c2d6f3fb20ec21c54f2b3",
+      "attempt": 1,
+      "evidence": "discarded/2026-09-18-qwen25-fidelity-repair/attempts/data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/SHORT_2.attempt-1.json"
+    },
+    "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/SHORT_22.json": {
+      "sha256": "1cea569d52985f9c4c8877e89753bbbfac9c7458ca3a4e283b7d7ad88b465115",
+      "attempt": 2,
+      "evidence": "discarded/2026-09-18-qwen25-fidelity-repair/attempts/data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/SHORT_22.attempt-2.json"
+    },
+    "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/SHORT_24.json": {
+      "sha256": "550731751b72395ed6f193e6cb11bc191aebf7e1379d35b9caf603c29cf15d35",
+      "attempt": 1,
+      "evidence": "discarded/2026-09-18-qwen25-fidelity-repair/attempts/data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/SHORT_24.attempt-1.json"
+    },
+    "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/SHORT_25.json": {
+      "sha256": "909f228b8b3fa13f2c81a637f91e29f17c8278ea1f6744be91bd3af43c91407b",
+      "attempt": 1,
+      "evidence": "discarded/2026-09-18-qwen25-fidelity-repair/attempts/data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/SHORT_25.attempt-1.json"
+    },
+    "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/MID_13.json": {
+      "sha256": "030d4604d533b3c9de271cdfc81c05b9f5977bb573b41c2a6d77ee1e868dcf29",
+      "attempt": 1,
+      "evidence": "discarded/2026-09-18-qwen25-fidelity-repair/attempts/data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/MID_13.attempt-1.json"
+    },
+    "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/MID_16.json": {
+      "sha256": "7479b529e327af1c951cf88094577600222457e0bf3cae196be11923f3c4fda6",
+      "attempt": 1,
+      "evidence": "discarded/2026-09-18-qwen25-fidelity-repair/attempts/data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/MID_16.attempt-1.json"
+    },
+    "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/MID_21.json": {
+      "sha256": "726f60aea65a8ac425e01fbfecc4317a183e2e13256e635ef2a3a60f04cf5e05",
+      "attempt": 1,
+      "evidence": "discarded/2026-09-18-qwen25-fidelity-repair/attempts/data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/MID_21.attempt-1.json"
+    },
+    "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/MID_6.json": {
+      "sha256": "0d76cc8a434ab7b38aefedd2dd3c9217c72be1c7231eb5cf1607cea21813760a",
+      "attempt": 1,
+      "evidence": "discarded/2026-09-18-qwen25-fidelity-repair/attempts/data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/MID_6.attempt-1.json"
+    },
+    "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/MID_7.json": {
+      "sha256": "c7861dae3af49bd604c9b05f7ac1ec66c5746eb5cf3d89c94170e027cbff02b4",
+      "attempt": 1,
+      "evidence": "discarded/2026-09-18-qwen25-fidelity-repair/attempts/data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/MID_7.attempt-1.json"
+    },
+    "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/OPEN_13.json": {
+      "sha256": "d84d278f9ded4fbecf9973f0ac2466a53c7c877d159c4fa7af92a70745195bb8",
+      "attempt": 1,
+      "evidence": "discarded/2026-09-18-qwen25-fidelity-repair/attempts/data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/OPEN_13.attempt-1.json"
+    },
+    "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/OPEN_16.json": {
+      "sha256": "5714716d7ba7100f12909c2a319aeb378d961a40949f92761f50076ac8a0687b",
+      "attempt": 1,
+      "evidence": "discarded/2026-09-18-qwen25-fidelity-repair/attempts/data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/OPEN_16.attempt-1.json"
+    },
+    "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/OPEN_17.json": {
+      "sha256": "11e715dc9cac2671793e38d662723d1f9c25cb258ab5d1e8511c0a47f2158e55",
+      "attempt": 1,
+      "evidence": "discarded/2026-09-18-qwen25-fidelity-repair/attempts/data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/OPEN_17.attempt-1.json"
+    },
+    "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/OPEN_8.json": {
+      "sha256": "c2ab9669ff283b97fcb1f959f3013db534caf640455452e29361edbff3f42d16",
+      "attempt": 1,
+      "evidence": "discarded/2026-09-18-qwen25-fidelity-repair/attempts/data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/OPEN_8.attempt-1.json"
+    },
+    "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/OPEN_9.json": {
+      "sha256": "b5a428695bff0f2a78a4275ffafe022ccccaa8debf90d86290259b0693650eca",
+      "attempt": 1,
+      "evidence": "discarded/2026-09-18-qwen25-fidelity-repair/attempts/data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/OPEN_9.attempt-1.json"
+    },
+    "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/VARY_11.json": {
+      "sha256": "fc10f44de62d511e0c3874f565fd5efdfc37faa83a389731f813ecf75c9f9efa",
+      "attempt": 1,
+      "evidence": "discarded/2026-09-18-qwen25-fidelity-repair/attempts/data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/VARY_11.attempt-1.json"
+    },
+    "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/VARY_17.json": {
+      "sha256": "1c6a1db70edcb2f64d819b2d20b9d8f398d9ed95b54e23ba87c04f7cc5506237",
+      "attempt": 1,
+      "evidence": "discarded/2026-09-18-qwen25-fidelity-repair/attempts/data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/VARY_17.attempt-1.json"
+    },
+    "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/VARY_18.json": {
+      "sha256": "8d383b7f0d3496722354e1bc4e9ef0fd9628862e8b9892ad73631782120bb7ef",
+      "attempt": 1,
+      "evidence": "discarded/2026-09-18-qwen25-fidelity-repair/attempts/data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/VARY_18.attempt-1.json"
+    },
+    "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/VARY_21.json": {
+      "sha256": "c66f83e89980134fbbbe6a60ac58885d59272899c8021e1c06f3682220ada4a2",
+      "attempt": 3,
+      "evidence": "discarded/2026-09-18-qwen25-fidelity-repair/attempts/data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/VARY_21.attempt-3.json"
+    },
+    "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/VARY_9.json": {
+      "sha256": "c7b0febb2befa788298ac943e3d37cfe981d3dbfb0be18033c7712a4548a2e90",
+      "attempt": 1,
+      "evidence": "discarded/2026-09-18-qwen25-fidelity-repair/attempts/data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/VARY_9.attempt-1.json"
+    },
+    "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/LONG_10.json": {
+      "sha256": "e9e6f3dc33cc614a64804685797d9b225ac71d5f6b7b03c648c166ffe71dab5b",
+      "attempt": 2,
+      "evidence": "discarded/2026-09-18-qwen25-fidelity-repair/attempts/data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/LONG_10.attempt-2.json"
+    },
+    "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/LONG_12.json": {
+      "sha256": "fca5db173779ef73bd1f1d7c3c6649d29a9cf7403cb0db74e2920a79f8b9aaf0",
+      "attempt": 1,
+      "evidence": "discarded/2026-09-18-qwen25-fidelity-repair/attempts/data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/LONG_12.attempt-1.json"
+    },
+    "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/LONG_2.json": {
+      "sha256": "0fe842f529edbe0cbe4ec948302eec333d1ea1c3d90bcee856a3f95df9053f43",
+      "attempt": 2,
+      "evidence": "discarded/2026-09-18-qwen25-fidelity-repair/attempts/data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/LONG_2.attempt-2.json"
+    },
+    "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/LONG_20.json": {
+      "sha256": "ac04b8a2dd6bc6016bed3ecc4da0d17c52692d5f9eb0ced934f647d494b9938e",
+      "attempt": 1,
+      "evidence": "discarded/2026-09-18-qwen25-fidelity-repair/attempts/data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/LONG_20.attempt-1.json"
+    },
+    "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/LONG_21.json": {
+      "sha256": "3630ad552722f5a43c37d720324a8f727ed70218f982fd63d3b2784c081036e1",
+      "attempt": 1,
+      "evidence": "discarded/2026-09-18-qwen25-fidelity-repair/attempts/data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/LONG_21.attempt-1.json"
+    },
+    "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/LONG_24.json": {
+      "sha256": "8a117ed0b86a04a443f49f7c2d40c29cf5980b54769f7a21e126c450d8aab50f",
+      "attempt": 1,
+      "evidence": "discarded/2026-09-18-qwen25-fidelity-repair/attempts/data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/LONG_24.attempt-1.json"
+    },
+    "data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/LONG_9.json": {
+      "sha256": "20ccf4eec3a4dceea35f68f937c900b319eeaf9a8841ff7263bf9c9ead160fda",
+      "attempt": 1,
+      "evidence": "discarded/2026-09-18-qwen25-fidelity-repair/attempts/data/traces_freeflow/freeflow_qwen2-5-7b-instruct-local-transformers-mps-auto-ra09a3545/LONG_9.attempt-1.json"
+    }
+  }
+}

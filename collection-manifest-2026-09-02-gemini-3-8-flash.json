@@ -1,0 +1,20 @@
+{
+  "name": "2026-09-02 Gemini 3.8 Flash release pass",
+  "notes": [
+    "Gemini 3.8 Flash was released on 2026-09-02.",
+    "The exact OpenRouter identifier and canonical snapshot google/gemini-3.8-flash-20260902 were verified against the live catalog on 2026-09-02.",
+    "The route is pinned to Google's upstream with fallbacks disabled by the collection harness.",
+    "Collection uses the model's default reasoning behavior, matching the prior Gemini Flash corpus cells."
+  ],
+  "models": [
+    {
+      "provider": "openrouter",
+      "model": "google/gemini-3.8-flash",
+      "label": "gemini-3-8-flash-or-pin-google",
+      "or_provider": "Google",
+      "workers": 5,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 4000
+    }
+  ]
+}

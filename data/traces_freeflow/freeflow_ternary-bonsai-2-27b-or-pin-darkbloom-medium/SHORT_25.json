@@ -1,0 +1,99 @@
+{
+  "result": "\n\nThe house settles at 11:47. You can almost hear the wood breathe, those tiny clicks and groans in the floorboards as it releases the day's heat. The refrigerator hums its single, low note. Somewhere deep in the walls, water ticks through a pipe like a slow metronome counting out seconds no one is listening for.\n\nAnd then the silence arrives\u2014not a true silence, but the heavy, layered quiet that only comes after people stop moving. The kids' rooms are dark. The dog has curled himself into a warm spiral on the kitchen tile and is dreaming again about some invisible rabbit. The coffee maker sits cold on the counter, holding the ghost of the morning's brown smell.\n\nThere's a particular loneliness in that quiet. Not sadness, exactly. More like the feeling of a book you've finished where the final page is still blank and you're sitting there, hand on the spine, not knowing if the ending was the book or just the part you were allowed to read. You look at the hallway and see every life you've been a piece of\u2014every scraped knee, every homework fight, every \"I love you\" whispered from the top of the stairs. And you realize the house will outlast all of it, will keep those small creaks going long after your name is only a story someone tells.\n\nYou turn off the hall light. The dark is warm. You walk downstairs to the couch, and the house holds its breath around you, contented and vast, like it's been holding this room for a very long time.",
+  "raw": {
+    "id": "gen-1790152710-5mottPGnIa4FzEQG065P",
+    "object": "chat.completion",
+    "created": 1790152710,
+    "model": "prism-ml/ternary-bonsai-2-27b",
+    "provider": "Darkbloom",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nThe house settles at 11:47. You can almost hear the wood breathe, those tiny clicks and groans in the floorboards as it releases the day's heat. The refrigerator hums its single, low note. Somewhere deep in the walls, water ticks through a pipe like a slow metronome counting out seconds no one is listening for.\n\nAnd then the silence arrives\u2014not a true silence, but the heavy, layered quiet that only comes after people stop moving. The kids' rooms are dark. The dog has curled himself into a warm spiral on the kitchen tile and is dreaming again about some invisible rabbit. The coffee maker sits cold on the counter, holding the ghost of the morning's brown smell.\n\nThere's a particular loneliness in that quiet. Not sadness, exactly. More like the feeling of a book you've finished where the final page is still blank and you're sitting there, hand on the spine, not knowing if the ending was the book or just the part you were allowed to read. You look at the hallway and see every life you've been a piece of\u2014every scraped knee, every homework fight, every \"I love you\" whispered from the top of the stairs. And you realize the house will outlast all of it, will keep those small creaks going long after your name is only a story someone tells.\n\nYou turn off the hall light. The dark is warm. You walk downstairs to the couch, and the house holds its breath around you, contented and vast, like it's been holding this room for a very long time.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely about whatever topic I choose, for about 250 words. Let me pick something that feels genuine and interesting. I could write about a small moment, a concept, a place, a feeling. Let me go with something quiet and sensory\u2014the experience of watching rain on a window, but maybe I'll angle it differently. Let me write about the strange loneliness of libraries. Or maybe the moment just before sleep. Or the way bread smells in a kitchen.\n\nLet me go with the feeling of a house at the end of a long day when everyone's asleep. That's something universal and I can make it feel specific. Let me aim for around 250 words.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely about whatever topic I choose, for about 250 words. Let me pick something that feels genuine and interesting. I could write about a small moment, a concept, a place, a feeling. Let me go with something quiet and sensory\u2014the experience of watching rain on a window, but maybe I'll angle it differently. Let me write about the strange loneliness of libraries. Or maybe the moment just before sleep. Or the way bread smells in a kitchen.\n\nLet me go with the feeling of a house at the end of a long day when everyone's asleep. That's something universal and I can make it feel specific. Let me aim for around 250 words.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 23,
+      "completion_tokens": 473,
+      "total_tokens": 496,
+      "cost": 0.000238225,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000238225,
+        "upstream_inference_prompt_cost": 1.725e-06,
+        "upstream_inference_completions_cost": 0.0002365
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 146,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 23,
+    "completion_tokens": 473,
+    "total_tokens": 496,
+    "cost": 0.000238225,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000238225,
+      "upstream_inference_prompt_cost": 1.725e-06,
+      "upstream_inference_completions_cost": 0.0002365
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 146,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "prism-ml/ternary-bonsai-2-27b",
+  "model_requested": "prism-ml/ternary-bonsai-2-27b",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "prism-ml/ternary-bonsai-2-27b",
+    "pin": "Darkbloom",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_25",
+    "at": 1790152709.859804,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ],
+    "reasoning_effort": "medium"
+  }
+}

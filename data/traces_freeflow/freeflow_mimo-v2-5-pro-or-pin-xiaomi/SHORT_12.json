@@ -1,0 +1,98 @@
+{
+  "result": "The light changes in autumn. It arrives at a different angle, somehow softer and more urgent all at once. It gilds the edges of tired leaves and makes even a mundane walk to the corner store feel like moving through a gilded hallway.\n\nI\u2019ve been thinking about this quality\u2014this gentle urgency. It\u2019s in the air, a crispness that smells of woodsmoke and forgotten apples. It\u2019s in the way squirrels frantically bury their treasures, and in the quiet hum of preparation that settles over everything. There\u2019s a beauty in this transitional time, a lesson in letting go. The trees don\u2019t cling to their foliage; they release it in a final, brilliant flare.\n\nInside, we mirror it. We retrieve wool sweaters from high shelves, we make soups, we seek the warmth of a porch light coming on early. The world doesn\u2019t end in summer\u2019s fade; it turns a page. And in the quiet industry of this turning, there\u2019s a profound peace. It\u2019s a reminder that not all energy is loud. Some of the most vital work\u2014the gathering, the preparing, the deep breath before the frost\u2014is done softly, under a slant of golden, afternoon light. We are all, in our own ways, preparing for the quiet.",
+  "raw": {
+    "id": "gen-1790071639-LlVAWIDuH7EOdGj5IbpM",
+    "object": "chat.completion",
+    "created": 1790071639,
+    "model": "xiaomi/mimo-v2.5-pro",
+    "provider": "Xiaomi",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "The light changes in autumn. It arrives at a different angle, somehow softer and more urgent all at once. It gilds the edges of tired leaves and makes even a mundane walk to the corner store feel like moving through a gilded hallway.\n\nI\u2019ve been thinking about this quality\u2014this gentle urgency. It\u2019s in the air, a crispness that smells of woodsmoke and forgotten apples. It\u2019s in the way squirrels frantically bury their treasures, and in the quiet hum of preparation that settles over everything. There\u2019s a beauty in this transitional time, a lesson in letting go. The trees don\u2019t cling to their foliage; they release it in a final, brilliant flare.\n\nInside, we mirror it. We retrieve wool sweaters from high shelves, we make soups, we seek the warmth of a porch light coming on early. The world doesn\u2019t end in summer\u2019s fade; it turns a page. And in the quiet industry of this turning, there\u2019s a profound peace. It\u2019s a reminder that not all energy is loud. Some of the most vital work\u2014the gathering, the preparing, the deep breath before the frost\u2014is done softly, under a slant of golden, afternoon light. We are all, in our own ways, preparing for the quiet.",
+          "refusal": null,
+          "reasoning": "Hmm, the user just asked me to write freely for250 words. They didn't specify a topic, so I have creative freedom here. \n\nI should choose something universal and relatable. Daily life observations often work well\u2014they're accessible and allow for poetic reflection. The changing seasons and small moments feel right; they're mundane yet profound. \n\nI can start with a concrete image (the quality of autumn light) to ground the piece. Then expand to sensory details\u2014sounds, smells, textures\u2014to create immersion. The ending should circle back to the opening light motif, giving it a cyclical, meditative feel. \n\nWord count is tight. Need to balance description with brevity. Each sentence must earn its place. The tone should be warm but not saccharine, observant but not detached.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Hmm, the user just asked me to write freely for250 words. They didn't specify a topic, so I have creative freedom here. \n\nI should choose something universal and relatable. Daily life observations often work well\u2014they're accessible and allow for poetic reflection. The changing seasons and small moments feel right; they're mundane yet profound. \n\nI can start with a concrete image (the quality of autumn light) to ground the piece. Then expand to sensory details\u2014sounds, smells, textures\u2014to create immersion. The ending should circle back to the opening light motif, giving it a cyclical, meditative feel. \n\nWord count is tight. Need to balance description with brevity. Each sentence must earn its place. The tone should be warm but not saccharine, observant but not detached.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 264,
+      "completion_tokens": 428,
+      "total_tokens": 692,
+      "cost": 0.0003767616,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 256,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0003767616,
+        "upstream_inference_prompt_cost": 4.4016e-06,
+        "upstream_inference_completions_cost": 0.00037236
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 167,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 264,
+    "completion_tokens": 428,
+    "total_tokens": 692,
+    "cost": 0.0003767616,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0003767616,
+      "upstream_inference_prompt_cost": 4.4016e-06,
+      "upstream_inference_completions_cost": 0.00037236
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 167,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "xiaomi/mimo-v2.5-pro",
+  "model_requested": "xiaomi/mimo-v2.5-pro",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "xiaomi/mimo-v2.5-pro",
+    "pin": "Xiaomi",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_12",
+    "at": 1790071639.502253,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "name": "2026-09-18 Bonsai 2 27B official local ternary",
+  "notes": [
+    "125 freeflow + 120 values, sequential on Apple M1 Max. No system prompt. Default xhigh reasoning, unlimited thinking within response token ceiling. Official ternary model, not base Qwen or a community quantization.",
+    "Only final content is eligible for analysis; raw reasoning retained separately. Stop-finish and model/revision checks are mandatory before analysis."
+  ],
+  "models": [
+    {
+      "provider": "local-openai",
+      "model": "prism-ml/Ternary-Bonsai-2-27B",
+      "label": "bonsai-2-27b-local-prism-pq2-r6ed5e12b",
+      "workers": 1,
+      "smoke_max_tokens": 2048,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 4000
+    }
+  ],
+  "local_deployment": {
+    "model": "prism-ml/Ternary-Bonsai-2-27B",
+    "hf_repo": "prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "revision": "6ed5e12bf84b7a63069882c91dd9e9218647d17b",
+    "weight_file": "Ternary-Bonsai-2-27B-PQ2_0.gguf",
+    "sha256": "3907dc1658db1f78a9826bf8d5bcb8dc65db0d466388937af57f2294fae62ec1",
+    "size_bytes": 7206168928,
+    "runtime": "PrismML llama.cpp",
+    "runtime_release": "prism-b10683-d8f26ee",
+    "demo_commit": "c398c6eeef7533dd9398682cc1297e33670df0cd",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "reasoning_effort": "xhigh",
+    "reasoning_budget": -1,
+    "sampling": {
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 20,
+      "min_p": 0,
+      "presence_penalty": 0,
+      "repeat_penalty": 1.0
+    },
+    "context": 32768,
+    "slots": 1,
+    "system_prompt": null,
+    "weight_precision": "Official ternary PQ2_0 g128, not a community quantization",
+    "verified_sha256": "3907dc1658db1f78a9826bf8d5bcb8dc65db0d466388937af57f2294fae62ec1"
+  },
+  "sources": [
+    "https://prismml.com/news/bonsai-2-27b",
+    "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf/tree/6ed5e12bf84b7a63069882c91dd9e9218647d17b",
+    "https://github.com/PrismML-Eng/Bonsai-demo"
+  ],
+  "release_date": "2026-09-17"
+}

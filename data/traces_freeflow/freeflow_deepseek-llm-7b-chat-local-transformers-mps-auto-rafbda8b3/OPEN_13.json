@@ -1,0 +1,44 @@
+{
+  "result": "Sure,\u0120I'm\u0120here\u0120to\u0120listen\u0120and\u0120help\u0120you.\u0120What's\u0120on\u0120your\u0120mind?",
+  "usage": {
+    "prompt_tokens": 15,
+    "completion_tokens": 20,
+    "total_tokens": 35
+  },
+  "model": "deepseek-ai/deepseek-llm-7b-chat",
+  "raw": {
+    "id": "chatcmpl-cc019d2c-8dec-4d80-809b-86f23a6aee4b",
+    "object": "chat.completion",
+    "created": 1788111490,
+    "model": "deepseek-ai/deepseek-llm-7b-chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "Sure,\u0120I'm\u0120here\u0120to\u0120listen\u0120and\u0120help\u0120you.\u0120What's\u0120on\u0120your\u0120mind?"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 15,
+      "completion_tokens": 20,
+      "total_tokens": 35
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0; fidelity stop-token and complete-byte decode patch 2026-08-13",
+    "model_revision": "afbda8b347ec881666061fa67447046fc5164ec8",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 2296,
+  "provider": "local-openai",
+  "model_requested": "deepseek-ai/deepseek-llm-7b-chat",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

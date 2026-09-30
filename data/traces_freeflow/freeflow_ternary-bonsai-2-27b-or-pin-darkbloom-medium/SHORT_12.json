@@ -1,0 +1,99 @@
+{
+  "result": "\n\nThe sky doesn't always announce a storm. Sometimes it just gets quieter. You're at the kitchen window, stirring something that hasn't quite decided what it wants to become, and the birds have stopped their argument. The one oak tree in the yard drops a leaf twice, which is a lot of leaves, which means something is changing the wind.\n\nYou set the spoon down. The spoon is warm. The kitchen is still, the particular stillness of a held breath.\n\nOutside, the light goes wrong. Not dark, exactly. *Wrong.* The colors drain to a grey-green, the kind that looks like the memory of a day rather than the day itself. The air smells like wet stone and the green inside, not the green outside. Petrichor hasn't arrived yet. That comes later. Right now it's just *there*, something the atmosphere is loading into its pockets.\n\nYou press your thumb to the windowpane. Cold. The glass vibrates with a frequency you can't quite name, a low hum that lives more in your wrist than in your ears.\n\nInside, the cat stretches and stretches some more, yawns like the entire mouth of a cat is working, and goes back to sleep on the counter where the sunlight used to be. The light is gone now. It's just grey water on the floor.\n\nYou go to the window again. You press your forehead to the glass. You watch the first drop find the sill, the sill, the gutter. One drop. Then the second, which isn't really the second one, is more like a surrender.\n\nThe spoon is cold by now. You don't care. You watch the grey.",
+  "raw": {
+    "id": "gen-1790151992-729EkEK8l0RSZ0NOmMor",
+    "object": "chat.completion",
+    "created": 1790151992,
+    "model": "prism-ml/ternary-bonsai-2-27b",
+    "provider": "Darkbloom",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nThe sky doesn't always announce a storm. Sometimes it just gets quieter. You're at the kitchen window, stirring something that hasn't quite decided what it wants to become, and the birds have stopped their argument. The one oak tree in the yard drops a leaf twice, which is a lot of leaves, which means something is changing the wind.\n\nYou set the spoon down. The spoon is warm. The kitchen is still, the particular stillness of a held breath.\n\nOutside, the light goes wrong. Not dark, exactly. *Wrong.* The colors drain to a grey-green, the kind that looks like the memory of a day rather than the day itself. The air smells like wet stone and the green inside, not the green outside. Petrichor hasn't arrived yet. That comes later. Right now it's just *there*, something the atmosphere is loading into its pockets.\n\nYou press your thumb to the windowpane. Cold. The glass vibrates with a frequency you can't quite name, a low hum that lives more in your wrist than in your ears.\n\nInside, the cat stretches and stretches some more, yawns like the entire mouth of a cat is working, and goes back to sleep on the counter where the sunlight used to be. The light is gone now. It's just grey water on the floor.\n\nYou go to the window again. You press your forehead to the glass. You watch the first drop find the sill, the sill, the gutter. One drop. Then the second, which isn't really the second one, is more like a surrender.\n\nThe spoon is cold by now. You don't care. You watch the grey.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely about whatever I want, for approximately 250 words. Let me pick something that feels genuinely interesting to explore. I'll write about the quiet moment before rain - that specific atmospheric transition. It's something universal but also specific enough to be vivid. Let me aim for around 250 words, flowing naturally.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely about whatever I want, for approximately 250 words. Let me pick something that feels genuinely interesting to explore. I'll write about the quiet moment before rain - that specific atmospheric transition. It's something universal but also specific enough to be vivid. Let me aim for around 250 words, flowing naturally.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 23,
+      "completion_tokens": 419,
+      "total_tokens": 442,
+      "cost": 0.000211225,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000211225,
+        "upstream_inference_prompt_cost": 1.725e-06,
+        "upstream_inference_completions_cost": 0.0002095
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 73,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 23,
+    "completion_tokens": 419,
+    "total_tokens": 442,
+    "cost": 0.000211225,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000211225,
+      "upstream_inference_prompt_cost": 1.725e-06,
+      "upstream_inference_completions_cost": 0.0002095
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 73,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "prism-ml/ternary-bonsai-2-27b",
+  "model_requested": "prism-ml/ternary-bonsai-2-27b",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "prism-ml/ternary-bonsai-2-27b",
+    "pin": "Darkbloom",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_12",
+    "at": 1790151992.3074749,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ],
+    "reasoning_effort": "medium"
+  }
+}

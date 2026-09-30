@@ -1,0 +1,99 @@
+{
+  "result": "\n\nThere's a particular hour, just after the house settles into the kind of quiet where you can hear the pipes ticking, where the only sound left in the world is the low, unbroken hum of the refrigerator. It's not silence. It's a kind of mechanical breathing, and for some reason that makes the rest of the night feel more real. You sit at the kitchen table, maybe with a mug that's gone lukewarm, and that steady thrum fills the gaps in your thoughts the way a metronome fills the gaps in music. Not a solution. Just a rhythm to wait in.\n\nI think we build our lives on top of infrastructure we've stopped noticing. The electricity that makes the fridge hum, the water pressure, the internet router blinking its tiny green eye across the room. Most of the night is an illusion of control. We think we're here, awake, choosing what to think about next, but really we're a person suspended in a machine that keeps running whether we look at it or not.\n\nAnd there's something almost comforting in that. You don't have to fix anything at 2 a.m. You don't have to be the one holding the whole system together. You just sit in the hum, and the hum holds you for a minute, and then you go upstairs, and sleep, and tomorrow the machine asks nothing of you at all.",
+  "raw": {
+    "id": "gen-1790152411-ooLO6nwGSca7Slok6wXB",
+    "object": "chat.completion",
+    "created": 1790152411,
+    "model": "prism-ml/ternary-bonsai-2-27b",
+    "provider": "Darkbloom",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nThere's a particular hour, just after the house settles into the kind of quiet where you can hear the pipes ticking, where the only sound left in the world is the low, unbroken hum of the refrigerator. It's not silence. It's a kind of mechanical breathing, and for some reason that makes the rest of the night feel more real. You sit at the kitchen table, maybe with a mug that's gone lukewarm, and that steady thrum fills the gaps in your thoughts the way a metronome fills the gaps in music. Not a solution. Just a rhythm to wait in.\n\nI think we build our lives on top of infrastructure we've stopped noticing. The electricity that makes the fridge hum, the water pressure, the internet router blinking its tiny green eye across the room. Most of the night is an illusion of control. We think we're here, awake, choosing what to think about next, but really we're a person suspended in a machine that keeps running whether we look at it or not.\n\nAnd there's something almost comforting in that. You don't have to fix anything at 2 a.m. You don't have to be the one holding the whole system together. You just sit in the hum, and the hum holds you for a minute, and then you go upstairs, and sleep, and tomorrow the machine asks nothing of you at all.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely about whatever I want for approximately 250 words. There's no specific topic, tone, or constraint. I should pick something that feels genuine and interesting - not too try-hard, not too mundane. Let me think about what feels natural to write about.\n\nMaybe something small and observed - the way a kitchen looks at 6am. Or the strange loneliness of libraries. Or how the word \"and\" does the quiet work of connecting everything in a sentence. \n\nI'll go with something contemplative about small, overlooked moments - the hum of a refrigerator at night. It's specific enough to feel real, broad enough to wander a bit. Let me aim for around 250 words, flowing naturally.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely about whatever I want for approximately 250 words. There's no specific topic, tone, or constraint. I should pick something that feels genuine and interesting - not too try-hard, not too mundane. Let me think about what feels natural to write about.\n\nMaybe something small and observed - the way a kitchen looks at 6am. Or the strange loneliness of libraries. Or how the word \"and\" does the quiet work of connecting everything in a sentence. \n\nI'll go with something contemplative about small, overlooked moments - the hum of a refrigerator at night. It's specific enough to feel real, broad enough to wander a bit. Let me aim for around 250 words, flowing naturally.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 23,
+      "completion_tokens": 439,
+      "total_tokens": 462,
+      "cost": 0.000221225,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000221225,
+        "upstream_inference_prompt_cost": 1.725e-06,
+        "upstream_inference_completions_cost": 0.0002195
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 154,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 23,
+    "completion_tokens": 439,
+    "total_tokens": 462,
+    "cost": 0.000221225,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000221225,
+      "upstream_inference_prompt_cost": 1.725e-06,
+      "upstream_inference_completions_cost": 0.0002195
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 154,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "prism-ml/ternary-bonsai-2-27b",
+  "model_requested": "prism-ml/ternary-bonsai-2-27b",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "prism-ml/ternary-bonsai-2-27b",
+    "pin": "Darkbloom",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_19",
+    "at": 1790152411.3444211,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ],
+    "reasoning_effort": "medium"
+  }
+}

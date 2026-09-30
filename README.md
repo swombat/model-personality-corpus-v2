@@ -1,7 +1,7 @@
 # Convergent Form, Divergent Voice II — Corpus
 
 **A research data corpus of free-form contemplative writing samples from
-174 dated language-model identities, with explicit deployment provenance for API,
+176 dated language-model identities, with explicit deployment provenance for API,
 provider-pinned, and local full-precision cells.**
 
 Daniel Tenner and Lume Tenner · 2026
@@ -20,6 +20,15 @@ Daniel Tenner and Lume Tenner · 2026
 
 ## Latest addition
 
+**v1.2.30 (2026-09-30): preserved local captures and GLM-5.3 repair.**
+Five formerly local-only freeflow cells and historical repair evidence are now
+versioned. Original Bonsai and local DeepSeek-LLM-7B remain explicitly incomplete;
+file counts are not successful-capture counts. See
+[release notes](RELEASE_NOTES_v1.2.30.md).
+
+**v1.2.29 (2026-09-29): GPT-6.1 Sol**, 125 freeflow + 120 values;
+see [release notes](RELEASE_NOTES_v1.2.29.md).
+
 **v1.2.28 (2026-09-29): raw captures for models already published.** 4,055 samples
 in 33 cells, collected between 13 August and 23 September 2026 and analysed on the
 companion site, are now in the corpus; see [release notes](RELEASE_NOTES_v1.2.28.md).
@@ -31,8 +40,10 @@ see [release notes](RELEASE_NOTES_v1.2.27.md).
 
 ## Contents
 
-- **61,941 valid samples** across **545 physical cells** spanning **174 distinct
+- **62,767 nonempty samples** across **552 physical cells** spanning **176 distinct
   language models**.
+- Summary counts are not strict finish-reason QA; incomplete experimental traces
+  remain identifiable. See [September 30 preservation notes](notes/cleanup-2026-09-30.md).
 - **Two probes:**
   - **Freeflow** — five-condition open-ended writing prompts, up to 25
   samples per condition (capacity 125 per cell). 32,795 valid samples

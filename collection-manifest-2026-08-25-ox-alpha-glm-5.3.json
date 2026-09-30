@@ -1,0 +1,31 @@
+{
+  "name": "2026-08-25 OpenRouter Ox Alpha repeat and GLM 5.3 pass",
+  "notes": [
+    "Exact OpenRouter identifiers and live endpoints verified on 2026-08-25.",
+    "Ox Alpha repeats the 2026-08-21 cell to measure short-horizon behavioral drift.",
+    "Both routes are pinned to their sole listed upstream provider with fallbacks disabled.",
+    "Date-bearing labels preserve the two Ox Alpha snapshots as separate model identities for comparison."
+  ],
+  "models": [
+    {
+      "provider": "openrouter",
+      "model": "stealth/ox-alpha",
+      "label": "ox-alpha-260825-or-pin-stealth",
+      "or_provider": "Stealth",
+      "workers": 5,
+      "smoke_max_tokens": 256,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 4000
+    },
+    {
+      "provider": "openrouter",
+      "model": "z-ai/glm-5.3",
+      "label": "glm-5-3-or-pin-z-ai-20260825",
+      "or_provider": "Z.AI",
+      "workers": 5,
+      "smoke_max_tokens": 256,
+      "freeflow_max_tokens": 16000,
+      "values_max_tokens": 4000
+    }
+  ]
+}

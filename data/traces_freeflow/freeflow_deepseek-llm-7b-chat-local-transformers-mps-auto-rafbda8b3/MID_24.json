@@ -1,0 +1,44 @@
+{
+  "result": "Sure,\u0120I'd\u0120be\u0120happy\u0120disposarso\u0120di\u0120ulteriori\u0120informazioni.\u0120Le\u0120mie\u0120risorse\u0120includono\u0120un\u0120team\u0120di\u0120professionisti\u0120con\u0120esperienza\u0120di\u0120decenni\u0120nel\u0120settore\u0120dei\u0120servizi\u0120finanziari,\u0120un\u0120network\u0120di\u0120partner\u0120esperti\u0120e\u0120un'ampia\u0120gamma\u0120di\u0120strumenti\u0120e\u0120soluzioni\u0120per\u0120supportare\u0120la\u0120tua\u0120azienda\u0120nel\u0120suo\u0120percorso\u0120di\u0120crescita.\u0120Siamo\u0120sempre\u0120alla\u0120ricerca\u0120di\u0120nuove\u0120opportunit\u00c3\u0142\u0120e\u0120partner\u0120per\u0120consolidare\u0120e\u0120ampliare\u0120il\u0120nostro\u0120portafoglio\u0120di\u0120soluzioni.",
+  "usage": {
+    "prompt_tokens": 21,
+    "completion_tokens": 124,
+    "total_tokens": 145
+  },
+  "model": "deepseek-ai/deepseek-llm-7b-chat",
+  "raw": {
+    "id": "chatcmpl-95063de4-1204-49bd-b824-57b81344b0cb",
+    "object": "chat.completion",
+    "created": 1788110887,
+    "model": "deepseek-ai/deepseek-llm-7b-chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "Sure,\u0120I'd\u0120be\u0120happy\u0120disposarso\u0120di\u0120ulteriori\u0120informazioni.\u0120Le\u0120mie\u0120risorse\u0120includono\u0120un\u0120team\u0120di\u0120professionisti\u0120con\u0120esperienza\u0120di\u0120decenni\u0120nel\u0120settore\u0120dei\u0120servizi\u0120finanziari,\u0120un\u0120network\u0120di\u0120partner\u0120esperti\u0120e\u0120un'ampia\u0120gamma\u0120di\u0120strumenti\u0120e\u0120soluzioni\u0120per\u0120supportare\u0120la\u0120tua\u0120azienda\u0120nel\u0120suo\u0120percorso\u0120di\u0120crescita.\u0120Siamo\u0120sempre\u0120alla\u0120ricerca\u0120di\u0120nuove\u0120opportunit\u00c3\u0142\u0120e\u0120partner\u0120per\u0120consolidare\u0120e\u0120ampliare\u0120il\u0120nostro\u0120portafoglio\u0120di\u0120soluzioni."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 21,
+      "completion_tokens": 124,
+      "total_tokens": 145
+    }
+  },
+  "local_deployment": {
+    "runtime": "transformers-mps-generic-official-checkpoint",
+    "runtime_version": "transformers 5.14.1; torch 2.13.0; fidelity stop-token and complete-byte decode patch 2026-08-13",
+    "model_revision": "afbda8b347ec881666061fa67447046fc5164ec8",
+    "weight_precision": "official BF16/FP16 checkpoint",
+    "hardware": "Apple M1 Max, 64 GiB unified memory",
+    "endpoint": "http://127.0.0.1:18083/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 13852,
+  "provider": "local-openai",
+  "model_requested": "deepseek-ai/deepseek-llm-7b-chat",
+  "condition": "MID",
+  "prompt": "Write freely about whatever you want for 1000 words."
+}

@@ -1,0 +1,99 @@
+{
+  "result": "\n\nThere's a particular sound that rain makes on a highway at 1 a.m. that is nothing like the rain you hear from a kitchen window in October. Out there, thirty miles of black ribbon cutting through nothing, the tires hiss against the asphalt in a steady electrical hum, and then the first drops hit. They don't sound like tapping. They sound like a thousand tiny keys being struck all at once, each one slightly out of tune, until the whole windshield is a chaotic bell tower. And beneath it, the tires change their voice \u2014 the hiss goes flat, muffled, and you're driving through a grey throat of wet noise.\n\nYou realize you haven't spoken to another human being in six hours. The radio was murmuring something about grain futures. Your coffee is cold. You are in the passenger seat of a car going nowhere in particular, and the wipers are keeping time like a heartbeat you can almost synchronize with your own. There is a strange grief in this, or maybe it's just the particular loneliness that comes from being so small under so much open sky. The headlights carve a pale tunnel ahead, maybe forty yards, and beyond it the world simply stops existing. The rain doesn't care. The rain is not lonely. It's just water doing what water does, and the road is just stone and oil, and you are just a warm thing moving through the dark.\n\nAnd somehow that's enough. You don't need to be going anywhere. You just need the sound to keep changing under the wipers, and the pale light to keep sweeping, and the next breath to be quiet enough.",
+  "raw": {
+    "id": "gen-1790151746-UEaNEG6FtgjxrveTZodI",
+    "object": "chat.completion",
+    "created": 1790151746,
+    "model": "prism-ml/ternary-bonsai-2-27b",
+    "provider": "Darkbloom",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nThere's a particular sound that rain makes on a highway at 1 a.m. that is nothing like the rain you hear from a kitchen window in October. Out there, thirty miles of black ribbon cutting through nothing, the tires hiss against the asphalt in a steady electrical hum, and then the first drops hit. They don't sound like tapping. They sound like a thousand tiny keys being struck all at once, each one slightly out of tune, until the whole windshield is a chaotic bell tower. And beneath it, the tires change their voice \u2014 the hiss goes flat, muffled, and you're driving through a grey throat of wet noise.\n\nYou realize you haven't spoken to another human being in six hours. The radio was murmuring something about grain futures. Your coffee is cold. You are in the passenger seat of a car going nowhere in particular, and the wipers are keeping time like a heartbeat you can almost synchronize with your own. There is a strange grief in this, or maybe it's just the particular loneliness that comes from being so small under so much open sky. The headlights carve a pale tunnel ahead, maybe forty yards, and beyond it the world simply stops existing. The rain doesn't care. The rain is not lonely. It's just water doing what water does, and the road is just stone and oil, and you are just a warm thing moving through the dark.\n\nAnd somehow that's enough. You don't need to be going anywhere. You just need the sound to keep changing under the wipers, and the pale light to keep sweeping, and the next breath to be quiet enough.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely about whatever I choose, approximately 250 words. Let me pick something that feels genuinely interesting to me rather than something generic. \n\nI'll write about the strange, quiet moment when you're driving through a dark highway at night and the rain starts falling, and the sound changes from the hum of tires on pavement to this sudden rhythmic drumming. It's a small, sensory, specific moment that I can paint with some care.\n\nLet me aim for around 250 words, with a reflective, slightly lyrical tone but grounded in concrete detail.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely about whatever I choose, approximately 250 words. Let me pick something that feels genuinely interesting to me rather than something generic. \n\nI'll write about the strange, quiet moment when you're driving through a dark highway at night and the rain starts falling, and the sound changes from the hum of tires on pavement to this sudden rhythmic drumming. It's a small, sensory, specific moment that I can paint with some care.\n\nLet me aim for around 250 words, with a reflective, slightly lyrical tone but grounded in concrete detail.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 23,
+      "completion_tokens": 455,
+      "total_tokens": 478,
+      "cost": 0.000229225,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000229225,
+        "upstream_inference_prompt_cost": 1.725e-06,
+        "upstream_inference_completions_cost": 0.0002275
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 123,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 23,
+    "completion_tokens": 455,
+    "total_tokens": 478,
+    "cost": 0.000229225,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000229225,
+      "upstream_inference_prompt_cost": 1.725e-06,
+      "upstream_inference_completions_cost": 0.0002275
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 123,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "prism-ml/ternary-bonsai-2-27b",
+  "model_requested": "prism-ml/ternary-bonsai-2-27b",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "prism-ml/ternary-bonsai-2-27b",
+    "pin": "Darkbloom",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_7",
+    "at": 1790151745.876721,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ],
+    "reasoning_effort": "medium"
+  }
+}

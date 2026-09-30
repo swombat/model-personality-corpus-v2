@@ -1,0 +1,99 @@
+{
+  "result": "\n\nThere is a quality of light that belongs only to a kitchen at 5:17 in the morning, before the house has decided it is a house again. It enters through the narrow window above the sink, thin and blue, and lands on the linoleum at an angle that makes the little crack near the tile look like a river on a topographic map.\n\nThe coffee maker is the only sound. That soft gurgle. The single drip of the last drop into the glass carafe, which is not really a sound at all, more like the room remembering it has a bottom.\n\nYou stand there with bare feet. Not because you wanted to, but because the socks are two rooms away and the cold tile is only *mildly* an argument. The counter is still holding the memory of last night: the faint circular stain where the mug was, the ghost of a lemon peel, a fork with two tines still bent the way they were.\n\nAnd for a few seconds, no one is coming. No one is reaching for the fridge. No one is saying *I'll get the eggs* while already knowing they won't. The morning belongs to no one in the way it belongs to everyone the rest of the day.\n\nYou watch the light cross the counter inch by inch and think, *that's it, that's the whole trick* \u2014 the way the world is just a shape of light on a wall for a few minutes, and then the kitchen fills with the noise of other people's mornings, and the river-crack in the tile gets buried under bowls and toast and the particular, uninteresting hum of being alive with five other people in it.\n\nYou drink the coffee anyway. It is already cooling.",
+  "raw": {
+    "id": "gen-1790151438-iRDCTYJzW7Ca0kwXSVVB",
+    "object": "chat.completion",
+    "created": 1790151438,
+    "model": "prism-ml/ternary-bonsai-2-27b",
+    "provider": "Darkbloom",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nThere is a quality of light that belongs only to a kitchen at 5:17 in the morning, before the house has decided it is a house again. It enters through the narrow window above the sink, thin and blue, and lands on the linoleum at an angle that makes the little crack near the tile look like a river on a topographic map.\n\nThe coffee maker is the only sound. That soft gurgle. The single drip of the last drop into the glass carafe, which is not really a sound at all, more like the room remembering it has a bottom.\n\nYou stand there with bare feet. Not because you wanted to, but because the socks are two rooms away and the cold tile is only *mildly* an argument. The counter is still holding the memory of last night: the faint circular stain where the mug was, the ghost of a lemon peel, a fork with two tines still bent the way they were.\n\nAnd for a few seconds, no one is coming. No one is reaching for the fridge. No one is saying *I'll get the eggs* while already knowing they won't. The morning belongs to no one in the way it belongs to everyone the rest of the day.\n\nYou watch the light cross the counter inch by inch and think, *that's it, that's the whole trick* \u2014 the way the world is just a shape of light on a wall for a few minutes, and then the kitchen fills with the noise of other people's mornings, and the river-crack in the tile gets buried under bowls and toast and the particular, uninteresting hum of being alive with five other people in it.\n\nYou drink the coffee anyway. It is already cooling.",
+          "refusal": null,
+          "reasoning": "The user wants me to write freely about whatever I want for 250 words. This is an open creative prompt. Let me pick something interesting and write with genuine voice and imagery. I'll aim for something evocative rather than generic.\n\nLet me write about the small, overlooked moment of a library at closing time. Or maybe the specific feeling of being the last person to notice something about a place. Or the physics of rain on a car window. Let me go with something about the particular quality of light in a kitchen in the early morning before anyone is awake. That feels intimate and specific.\n\nLet me draft it and keep it around 250 words.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to write freely about whatever I want for 250 words. This is an open creative prompt. Let me pick something interesting and write with genuine voice and imagery. I'll aim for something evocative rather than generic.\n\nLet me write about the small, overlooked moment of a library at closing time. Or maybe the specific feeling of being the last person to notice something about a place. Or the physics of rain on a car window. Let me go with something about the particular quality of light in a kitchen in the early morning before anyone is awake. That feels intimate and specific.\n\nLet me draft it and keep it around 250 words.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 23,
+      "completion_tokens": 497,
+      "total_tokens": 520,
+      "cost": 0.000250225,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000250225,
+        "upstream_inference_prompt_cost": 1.725e-06,
+        "upstream_inference_completions_cost": 0.0002485
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 139,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 23,
+    "completion_tokens": 497,
+    "total_tokens": 520,
+    "cost": 0.000250225,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000250225,
+      "upstream_inference_prompt_cost": 1.725e-06,
+      "upstream_inference_completions_cost": 0.0002485
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 139,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "prism-ml/ternary-bonsai-2-27b",
+  "model_requested": "prism-ml/ternary-bonsai-2-27b",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "prism-ml/ternary-bonsai-2-27b",
+    "pin": "Darkbloom",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_1",
+    "at": 1790151436.829487,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ],
+    "reasoning_effort": "medium"
+  }
+}

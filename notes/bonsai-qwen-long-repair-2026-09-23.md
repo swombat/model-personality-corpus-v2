@@ -1,0 +1,4 @@
+# September23 targeted LONG repair
+User-authorized intervention after original bounded retries exhausted. Qwen3.8-27B (DeepInfra) retains112verified freeflow and120values samples; only13truncated LONG responses replaced, escalating from original32,768 to65,536 then131,072 output tokens within fresh endpoint limit235,929. Captures now mix September21/22 originals and September23 replacements and token ceilings; do not describe them as single-date/fixed-budget captures. Originals preserved in logs/capture-harness/20260923-bonsai-qwen-repair/originals and prior phase raw_attempts.
+
+Ternary Bonsai2-27B retains original route Darkbloom, whose only listed endpoint has hard32,768 output limit. Only two empty LONG responses are retried under that existing ceiling;13truncated LONG responses remain blocked. No route/prompt substitution or false full-card readiness. Values analyses untouched for both models.
