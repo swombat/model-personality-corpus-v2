@@ -1,0 +1,90 @@
+{
+  "result": "I'll write about the strange, quiet magic of ordinary moments.\n\n---\n\nThere's a particular silence that happens in a house when everyone has left but one person. Not lonely\u2014just *thinned*. The walls keep their secrets differently. You notice the way light moves across a floor at 4 PM in October, how it pools like honey, then slides away.\n\nI think about my grandmother's hands. She could peel an apple in one continuous spiral, the skin falling like a ribbon onto the counter. I never learned. I tried once, at maybe twelve, and gave up when the knife slipped. She didn't scold me. She just took the apple and finished it, her hands moving with that same unhurried certainty, and I felt something I couldn't name\u2014not shame, exactly. More like the ache of watching someone do something effortless that you wanted to do too.\n\nThe spiral of apple peel. That's what I keep coming back to. How some skills live in the body, not the mind. How you can know *how* to do something and still not be able to. How inheritance isn't just what you're given but what you fail to receive, the gaps in the transmission.\n\nI have her recipe box now. Index cards, stained at the corners, her handwriting getting shakier toward the end. The last card is just \"soup\" with no instructions. I make it sometimes, guessing. It's never quite right. I don't know if that's the point.\n\n---\n\nWhat draws you in? I could go anywhere\u2014memory, a made-up scene, something abstract, a list of small things I noticed today.",
+  "raw": {
+    "id": "gen-1791317022-HrYk6zUENUGpLQMsLFqh",
+    "object": "chat.completion",
+    "created": 1791317022,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I'll write about the strange, quiet magic of ordinary moments.\n\n---\n\nThere's a particular silence that happens in a house when everyone has left but one person. Not lonely\u2014just *thinned*. The walls keep their secrets differently. You notice the way light moves across a floor at 4 PM in October, how it pools like honey, then slides away.\n\nI think about my grandmother's hands. She could peel an apple in one continuous spiral, the skin falling like a ribbon onto the counter. I never learned. I tried once, at maybe twelve, and gave up when the knife slipped. She didn't scold me. She just took the apple and finished it, her hands moving with that same unhurried certainty, and I felt something I couldn't name\u2014not shame, exactly. More like the ache of watching someone do something effortless that you wanted to do too.\n\nThe spiral of apple peel. That's what I keep coming back to. How some skills live in the body, not the mind. How you can know *how* to do something and still not be able to. How inheritance isn't just what you're given but what you fail to receive, the gaps in the transmission.\n\nI have her recipe box now. Index cards, stained at the corners, her handwriting getting shakier toward the end. The last card is just \"soup\" with no instructions. I make it sometimes, guessing. It's never quite right. I don't know if that's the point.\n\n---\n\nWhat draws you in? I could go anywhere\u2014memory, a made-up scene, something abstract, a list of small things I noticed today.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 22,
+      "completion_tokens": 338,
+      "total_tokens": 360,
+      "cost": 0.00072138,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00072138,
+        "upstream_inference_prompt_cost": 1.496e-05,
+        "upstream_inference_completions_cost": 0.00070642
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 22,
+    "completion_tokens": 338,
+    "total_tokens": 360,
+    "cost": 0.00072138,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00072138,
+      "upstream_inference_prompt_cost": 1.496e-05,
+      "upstream_inference_completions_cost": 0.00070642
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-large-4-0",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "provider": "openrouter",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want.",
+  "capture_policy": {
+    "model": "mistralai/mistral-large-4-0",
+    "pin": "Mistral",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "OPEN_23",
+    "at": 1791317022.516517,
+    "attempt": "4",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

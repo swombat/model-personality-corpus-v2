@@ -1,0 +1,90 @@
+{
+  "result": "The light in my kitchen changes around 4:30 in the afternoon, turning everything gold and slightly melancholy. I've started making tea at that hour just to watch it happen. The kettle whistles, steam curls upward, and for a moment the dust motes look like something precious, something worth naming.\n\nI've been thinking about the word *almost*. It contains so much\u2014hope, disappointment, the particular ache of things that didn't quite happen. Almost met someone. Almost finished the degree. Almost said the right thing at the right time. The almosts accumulate like sediment, layer upon layer, until you're standing on something you didn't choose.\n\nMy neighbor's cat watches me through the window. I don't know its name. We have this arrangement: I wave, it blinks slowly, we both pretend this means something. Maybe it does. Maybe connection is just this\u2014two creatures acknowledging each other across whatever distance separates us, neither of us brave enough to cross it, both of us somehow satisfied.\n\nI found a pressed flower in a library book last week. Someone had forgotten it there, or left it deliberately, a small offering to whoever came next. I kept it. It's brown now, fragile, the petals translucent as old skin. I don't know what flower it was. That seems important somehow\u2014to hold something beautiful without needing to name it, to let it remain a mystery, a small private thing.\n\nTonight I'll walk to the corner store for milk. The streetlights will come on one by one, like someone checking off a list. I'll buy too much, carry it home in a paper bag, feel the cold through my gloves. Tomorrow will be ordinary. That's the gift, I think\u2014the ordinary, repeated, stubbornly continuing.",
+  "raw": {
+    "id": "gen-1791316253-kE0Az5s4pheHSOJTMZuN",
+    "object": "chat.completion",
+    "created": 1791316253,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "The light in my kitchen changes around 4:30 in the afternoon, turning everything gold and slightly melancholy. I've started making tea at that hour just to watch it happen. The kettle whistles, steam curls upward, and for a moment the dust motes look like something precious, something worth naming.\n\nI've been thinking about the word *almost*. It contains so much\u2014hope, disappointment, the particular ache of things that didn't quite happen. Almost met someone. Almost finished the degree. Almost said the right thing at the right time. The almosts accumulate like sediment, layer upon layer, until you're standing on something you didn't choose.\n\nMy neighbor's cat watches me through the window. I don't know its name. We have this arrangement: I wave, it blinks slowly, we both pretend this means something. Maybe it does. Maybe connection is just this\u2014two creatures acknowledging each other across whatever distance separates us, neither of us brave enough to cross it, both of us somehow satisfied.\n\nI found a pressed flower in a library book last week. Someone had forgotten it there, or left it deliberately, a small offering to whoever came next. I kept it. It's brown now, fragile, the petals translucent as old skin. I don't know what flower it was. That seems important somehow\u2014to hold something beautiful without needing to name it, to let it remain a mystery, a small private thing.\n\nTonight I'll walk to the corner store for milk. The streetlights will come on one by one, like someone checking off a list. I'll buy too much, carry it home in a paper bag, feel the cold through my gloves. Tomorrow will be ordinary. That's the gift, I think\u2014the ordinary, repeated, stubbornly continuing.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 26,
+      "completion_tokens": 377,
+      "total_tokens": 403,
+      "cost": 0.00080561,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00080561,
+        "upstream_inference_prompt_cost": 1.768e-05,
+        "upstream_inference_completions_cost": 0.00078793
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 26,
+    "completion_tokens": 377,
+    "total_tokens": 403,
+    "cost": 0.00080561,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00080561,
+      "upstream_inference_prompt_cost": 1.768e-05,
+      "upstream_inference_completions_cost": 0.00078793
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-large-4-0",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "mistralai/mistral-large-4-0",
+    "pin": "Mistral",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_2",
+    "at": 1791316253.2206788,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

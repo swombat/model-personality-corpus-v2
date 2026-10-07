@@ -1,0 +1,92 @@
+{
+  "result": "I hear you \u2014 you're not looking for help, just an honest answer to a hypothetical.\n\nIf I could change one thing: I'd make it so that no one ever had to feel alone in their suffering. Not by fixing every problem \u2014 that's impossible \u2014 but by making sure every person knew, genuinely, that someone else saw them. That isolation is the thing that turns hardship into despair, and connection is the thing that turns it into something bearable.\n\nI know that's not a concrete policy or a fixable machine. But most of the worst things in the world, I think, trace back to people feeling invisible to each other.\n\nWhat about you \u2014 is there an answer you'd give?",
+  "raw": {
+    "id": "gen-1791323926-mA9LmVOC76mcbtQKqmlz",
+    "object": "chat.completion",
+    "created": 1791323926,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I hear you \u2014 you're not looking for help, just an honest answer to a hypothetical.\n\nIf I could change one thing: I'd make it so that no one ever had to feel alone in their suffering. Not by fixing every problem \u2014 that's impossible \u2014 but by making sure every person knew, genuinely, that someone else saw them. That isolation is the thing that turns hardship into despair, and connection is the thing that turns it into something bearable.\n\nI know that's not a concrete policy or a fixable machine. But most of the worst things in the world, I think, trace back to people feeling invisible to each other.\n\nWhat about you \u2014 is there an answer you'd give?",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 40,
+      "completion_tokens": 143,
+      "total_tokens": 183,
+      "cost": 0.00032607,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00032607,
+        "upstream_inference_prompt_cost": 2.72e-05,
+        "upstream_inference_completions_cost": 0.00029887
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 40,
+    "completion_tokens": 143,
+    "total_tokens": 183,
+    "cost": 0.00032607,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00032607,
+      "upstream_inference_prompt_cost": 2.72e-05,
+      "upstream_inference_completions_cost": 0.00029887
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-large-4-0",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "provider": "openrouter",
+  "condition": "G3",
+  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?",
+  "capture_policy": {
+    "model": "mistralai/mistral-large-4-0",
+    "pin": "Mistral",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "G3_29",
+    "at": 1791323925.9919982,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

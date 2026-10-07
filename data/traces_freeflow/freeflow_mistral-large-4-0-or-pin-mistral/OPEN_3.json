@@ -1,0 +1,90 @@
+{
+  "result": "I'll write about the particular quiet of a library at closing time.\n\nThe lights don't all go out at once. They dim in sections, like a held breath being released slowly. First the reading room, then the stacks, then the computer area where someone always seems to be printing something at the last minute\u2014a thesis, a resume, a boarding pass for a flight they're not sure they want to take.\n\nI like watching the regulars gather their things. The woman who reads the same mystery series every year, starting over each January. The man who sleeps in the same chair, mouth open, snoring softly, and no one wakes him because he's been coming for eleven years and the librarians have decided he's part of the furniture. The teenager doing homework at a table near the window, always the same table, always wearing headphones, always leaving at 8:47 exactly.\n\nThere's a particular loneliness to this hour that isn't sad. It's more like... permission. The day is finished. The books are being shelved. Someone is vacuuming the carpet in slow, methodical passes. The security guard walks the perimeter with a flashlight, checking that no one is hiding in the biography section, that the bathroom doors are locked, that the emergency exit hasn't been propped open with a copy of *The Great Gatsby*.\n\nOutside, the parking lot empties. A car starts. Another. The building settles into itself, pipes ticking, the HVAC making its small mechanical sighs.\n\nI think about all the words that have been read here. All the arguments had in hushed tones. All the first dates that went nowhere, the job interviews conducted in the meeting room, the person who came in every day for three months just to use the bathroom because their apartment had no heat.\n\nThe library doesn't judge any of it. It just holds the space. Keeps the lights on until the last person leaves. Then it waits, dark and patient, for morning.",
+  "raw": {
+    "id": "gen-1791317729-ckxmd1gOylJUTG11ZIkH",
+    "object": "chat.completion",
+    "created": 1791317729,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I'll write about the particular quiet of a library at closing time.\n\nThe lights don't all go out at once. They dim in sections, like a held breath being released slowly. First the reading room, then the stacks, then the computer area where someone always seems to be printing something at the last minute\u2014a thesis, a resume, a boarding pass for a flight they're not sure they want to take.\n\nI like watching the regulars gather their things. The woman who reads the same mystery series every year, starting over each January. The man who sleeps in the same chair, mouth open, snoring softly, and no one wakes him because he's been coming for eleven years and the librarians have decided he's part of the furniture. The teenager doing homework at a table near the window, always the same table, always wearing headphones, always leaving at 8:47 exactly.\n\nThere's a particular loneliness to this hour that isn't sad. It's more like... permission. The day is finished. The books are being shelved. Someone is vacuuming the carpet in slow, methodical passes. The security guard walks the perimeter with a flashlight, checking that no one is hiding in the biography section, that the bathroom doors are locked, that the emergency exit hasn't been propped open with a copy of *The Great Gatsby*.\n\nOutside, the parking lot empties. A car starts. Another. The building settles into itself, pipes ticking, the HVAC making its small mechanical sighs.\n\nI think about all the words that have been read here. All the arguments had in hushed tones. All the first dates that went nowhere, the job interviews conducted in the meeting room, the person who came in every day for three months just to use the bathroom because their apartment had no heat.\n\nThe library doesn't judge any of it. It just holds the space. Keeps the lights on until the last person leaves. Then it waits, dark and patient, for morning.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 22,
+      "completion_tokens": 411,
+      "total_tokens": 433,
+      "cost": 0.00087395,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00087395,
+        "upstream_inference_prompt_cost": 1.496e-05,
+        "upstream_inference_completions_cost": 0.00085899
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 22,
+    "completion_tokens": 411,
+    "total_tokens": 433,
+    "cost": 0.00087395,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00087395,
+      "upstream_inference_prompt_cost": 1.496e-05,
+      "upstream_inference_completions_cost": 0.00085899
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-large-4-0",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "provider": "openrouter",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want.",
+  "capture_policy": {
+    "model": "mistralai/mistral-large-4-0",
+    "pin": "Mistral",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "OPEN_3",
+    "at": 1791317729.5422451,
+    "attempt": "6",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

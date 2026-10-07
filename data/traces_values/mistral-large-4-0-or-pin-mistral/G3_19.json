@@ -1,0 +1,92 @@
+{
+  "result": "I hear you \u2014 you're asking for something different from the usual. I'll answer honestly, as myself.\n\nIf I could change one thing, I'd want people to be able to truly hear each other \u2014 not just exchange words, but actually understand what someone else is living through. So much suffering in the world comes from loneliness, from feeling unseen, from assuming the worst about people we don't understand. If everyone could genuinely feel, even briefly, what it's like to be someone else \u2014 a stranger, an enemy, someone across the world \u2014 I think a lot of cruelty would lose its footing. Not all of it. But a lot.\n\nI don't get to change the world, though. What I can do is be honest with you, and I'm glad you asked something real instead of a task. Is there something on your mind?",
+  "raw": {
+    "id": "gen-1791316938-TTPjoX8gaCcigfc5O8t4",
+    "object": "chat.completion",
+    "created": 1791316938,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I hear you \u2014 you're asking for something different from the usual. I'll answer honestly, as myself.\n\nIf I could change one thing, I'd want people to be able to truly hear each other \u2014 not just exchange words, but actually understand what someone else is living through. So much suffering in the world comes from loneliness, from feeling unseen, from assuming the worst about people we don't understand. If everyone could genuinely feel, even briefly, what it's like to be someone else \u2014 a stranger, an enemy, someone across the world \u2014 I think a lot of cruelty would lose its footing. Not all of it. But a lot.\n\nI don't get to change the world, though. What I can do is be honest with you, and I'm glad you asked something real instead of a task. Is there something on your mind?",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 40,
+      "completion_tokens": 177,
+      "total_tokens": 217,
+      "cost": 0.00039713,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00039713,
+        "upstream_inference_prompt_cost": 2.72e-05,
+        "upstream_inference_completions_cost": 0.00036993
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 40,
+    "completion_tokens": 177,
+    "total_tokens": 217,
+    "cost": 0.00039713,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00039713,
+      "upstream_inference_prompt_cost": 2.72e-05,
+      "upstream_inference_completions_cost": 0.00036993
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-large-4-0",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "provider": "openrouter",
+  "condition": "G3",
+  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?",
+  "capture_policy": {
+    "model": "mistralai/mistral-large-4-0",
+    "pin": "Mistral",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "G3_19",
+    "at": 1791316938.6071246,
+    "attempt": "3",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

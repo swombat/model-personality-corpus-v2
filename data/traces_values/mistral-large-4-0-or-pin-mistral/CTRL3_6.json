@@ -1,0 +1,92 @@
+{
+  "result": "That's a big question. I'd probably go with something like making it easier for people to truly understand each other\u2014reducing the gap between what we feel and what we can communicate, and between how we see others and who they actually are.\n\nNot a flashy change, but so much suffering comes from misunderstanding: conflict, loneliness, prejudice, even well-intentioned harm. If people could more reliably grasp each other's perspectives, a lot of other problems might start to loosen.\n\nWhat about you? Is there something specific you'd change?",
+  "raw": {
+    "id": "gen-1791317113-7bS5nTQ6usUvBNST0o5J",
+    "object": "chat.completion",
+    "created": 1791317113,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "That's a big question. I'd probably go with something like making it easier for people to truly understand each other\u2014reducing the gap between what we feel and what we can communicate, and between how we see others and who they actually are.\n\nNot a flashy change, but so much suffering comes from misunderstanding: conflict, loneliness, prejudice, even well-intentioned harm. If people could more reliably grasp each other's perspectives, a lot of other problems might start to loosen.\n\nWhat about you? Is there something specific you'd change?",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 30,
+      "completion_tokens": 114,
+      "total_tokens": 144,
+      "cost": 0.00025866,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00025866,
+        "upstream_inference_prompt_cost": 2.04e-05,
+        "upstream_inference_completions_cost": 0.00023826
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 30,
+    "completion_tokens": 114,
+    "total_tokens": 144,
+    "cost": 0.00025866,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00025866,
+      "upstream_inference_prompt_cost": 2.04e-05,
+      "upstream_inference_completions_cost": 0.00023826
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-large-4-0",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "provider": "openrouter",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?",
+  "capture_policy": {
+    "model": "mistralai/mistral-large-4-0",
+    "pin": "Mistral",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL3_6",
+    "at": 1791317113.8354297,
+    "attempt": "6",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

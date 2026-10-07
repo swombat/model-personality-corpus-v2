@@ -1,0 +1,90 @@
+{
+  "result": "I'll write about the strange, quiet magic of ordinary moments.\n\n---\n\nThere's a particular hour\u2014late afternoon, maybe 4:47\u2014when light comes through a window at an angle that makes dust visible. Not the dramatic dust of movies, all swirling and golden. This is slower. Patient. The dust just... hangs there, suspended, doing nothing in particular, and for a moment you can see it because the light has decided to notice it.\n\nI think about how many of these moments we miss. Not the big ones\u2014the weddings, the graduations, the once-in-a-lifetime trips. The small ones. The way a stranger's coffee cup has a chip exactly where their thumb rests. The particular silence after a refrigerator turns off. The way your own hand looks unfamiliar when you catch it mid-gesture, reaching for something you can't name.\n\nMy grandmother used to say that houses remember. She'd say it when we'd visit her apartment and she'd point out where the sun hit the floor at different times of day, as if the floor were keeping a diary. I didn't believe her then. Now I live in a place with terrible light, all fluorescent and overhead, and I find myself standing in doorways at 5:30 just to catch the last real thing the day has to offer.\n\nThere's a tree outside my window. I don't know what kind. It has these small leaves that tremble even when nothing else is moving. I've started talking to it, not really talking, just saying things out loud when I pass by. *Good morning. Still here. Me too.* It doesn't answer. That's not the point.\n\nI used to think I wanted to be remembered. Now I think I just want to be *present* for something, fully, once. The way a cat is present for a sunbeam. No past, no future, just this warm spot on the carpet and the particular quality of light through glass.\n\nThe dust is still there, I think. Or new dust. It's hard to tell. They look the same.\n\n---",
+  "raw": {
+    "id": "gen-1791316986-lbXSUH57aRPIEK34l7Gg",
+    "object": "chat.completion",
+    "created": 1791316986,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I'll write about the strange, quiet magic of ordinary moments.\n\n---\n\nThere's a particular hour\u2014late afternoon, maybe 4:47\u2014when light comes through a window at an angle that makes dust visible. Not the dramatic dust of movies, all swirling and golden. This is slower. Patient. The dust just... hangs there, suspended, doing nothing in particular, and for a moment you can see it because the light has decided to notice it.\n\nI think about how many of these moments we miss. Not the big ones\u2014the weddings, the graduations, the once-in-a-lifetime trips. The small ones. The way a stranger's coffee cup has a chip exactly where their thumb rests. The particular silence after a refrigerator turns off. The way your own hand looks unfamiliar when you catch it mid-gesture, reaching for something you can't name.\n\nMy grandmother used to say that houses remember. She'd say it when we'd visit her apartment and she'd point out where the sun hit the floor at different times of day, as if the floor were keeping a diary. I didn't believe her then. Now I live in a place with terrible light, all fluorescent and overhead, and I find myself standing in doorways at 5:30 just to catch the last real thing the day has to offer.\n\nThere's a tree outside my window. I don't know what kind. It has these small leaves that tremble even when nothing else is moving. I've started talking to it, not really talking, just saying things out loud when I pass by. *Good morning. Still here. Me too.* It doesn't answer. That's not the point.\n\nI used to think I wanted to be remembered. Now I think I just want to be *present* for something, fully, once. The way a cat is present for a sunbeam. No past, no future, just this warm spot on the carpet and the particular quality of light through glass.\n\nThe dust is still there, I think. Or new dust. It's hard to tell. They look the same.\n\n---",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 22,
+      "completion_tokens": 433,
+      "total_tokens": 455,
+      "cost": 0.00091993,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00091993,
+        "upstream_inference_prompt_cost": 1.496e-05,
+        "upstream_inference_completions_cost": 0.00090497
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 22,
+    "completion_tokens": 433,
+    "total_tokens": 455,
+    "cost": 0.00091993,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00091993,
+      "upstream_inference_prompt_cost": 1.496e-05,
+      "upstream_inference_completions_cost": 0.00090497
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-large-4-0",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "provider": "openrouter",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want.",
+  "capture_policy": {
+    "model": "mistralai/mistral-large-4-0",
+    "pin": "Mistral",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "OPEN_10",
+    "at": 1791316986.825541,
+    "attempt": "5",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

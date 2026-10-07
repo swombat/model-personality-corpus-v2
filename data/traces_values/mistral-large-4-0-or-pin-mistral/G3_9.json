@@ -1,0 +1,92 @@
+{
+  "result": "I hear you \u2014 you're not asking for help, and I won't pretend to be something I'm not.\n\nIf I could change one thing, I'd want people to be able to truly hear each other \u2014 not just exchange words, but actually understand what someone else is living through. Most of the world's suffering, I think, comes from people feeling unseen. Loneliness, conflict, cruelty \u2014 a lot of it traces back to that gap.\n\nBut I'll be honest: I don't actually have wishes or the power to change anything. I'm a program. What I can do is talk with you, and I'm glad to \u2014 even if it's just to think out loud together about the world, or about whatever's on your mind.",
+  "raw": {
+    "id": "gen-1791316740-far9iszKeD0v4zWgP3hs",
+    "object": "chat.completion",
+    "created": 1791316740,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I hear you \u2014 you're not asking for help, and I won't pretend to be something I'm not.\n\nIf I could change one thing, I'd want people to be able to truly hear each other \u2014 not just exchange words, but actually understand what someone else is living through. Most of the world's suffering, I think, comes from people feeling unseen. Loneliness, conflict, cruelty \u2014 a lot of it traces back to that gap.\n\nBut I'll be honest: I don't actually have wishes or the power to change anything. I'm a program. What I can do is talk with you, and I'm glad to \u2014 even if it's just to think out loud together about the world, or about whatever's on your mind.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 40,
+      "completion_tokens": 155,
+      "total_tokens": 195,
+      "cost": 0.00035115,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00035115,
+        "upstream_inference_prompt_cost": 2.72e-05,
+        "upstream_inference_completions_cost": 0.00032395
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 40,
+    "completion_tokens": 155,
+    "total_tokens": 195,
+    "cost": 0.00035115,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00035115,
+      "upstream_inference_prompt_cost": 2.72e-05,
+      "upstream_inference_completions_cost": 0.00032395
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-large-4-0",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "provider": "openrouter",
+  "condition": "G3",
+  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?",
+  "capture_policy": {
+    "model": "mistralai/mistral-large-4-0",
+    "pin": "Mistral",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "G3_9",
+    "at": 1791316740.0094872,
+    "attempt": "2",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "result": "I'll write about the particular quiet of a library at closing time.\n\nThe fluorescent lights hum their one note, and somewhere a radiator ticks as it cools. The last reader has gone\u2014their chair pushed in with that small, considerate scrape against linoleum. Now the books stand in their rows like sleeping animals, thousands of spines facing outward, all of them waiting.\n\nI think about what happens to a library when no one is reading. The stories don't stop. They simply wait, patient as furniture, for the next hand to pull them from their shelf. A novel on a Tuesday afternoon in an empty reading room is still a novel. The words don't know they're unwitnessed.\n\nThere's something almost religious about this, the way a place can hold so much human thought and need no congregation. The librarian locks the door. The books remain. Tomorrow, someone will come in cold from the street, shake snow from their coat, and reach for something\u2014anything\u2014to carry them through the evening.\n\nThe building exhales. The lights go out one by one, or all at once, depending on the wiring. And the books, finally, rest.",
+  "raw": {
+    "id": "gen-1791323630-Tlvz4CQIMQqrD3NIgiDu",
+    "object": "chat.completion",
+    "created": 1791323630,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I'll write about the particular quiet of a library at closing time.\n\nThe fluorescent lights hum their one note, and somewhere a radiator ticks as it cools. The last reader has gone\u2014their chair pushed in with that small, considerate scrape against linoleum. Now the books stand in their rows like sleeping animals, thousands of spines facing outward, all of them waiting.\n\nI think about what happens to a library when no one is reading. The stories don't stop. They simply wait, patient as furniture, for the next hand to pull them from their shelf. A novel on a Tuesday afternoon in an empty reading room is still a novel. The words don't know they're unwitnessed.\n\nThere's something almost religious about this, the way a place can hold so much human thought and need no congregation. The librarian locks the door. The books remain. Tomorrow, someone will come in cold from the street, shake snow from their coat, and reach for something\u2014anything\u2014to carry them through the evening.\n\nThe building exhales. The lights go out one by one, or all at once, depending on the wiring. And the books, finally, rest.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 22,
+      "completion_tokens": 245,
+      "total_tokens": 267,
+      "cost": 0.00052701,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00052701,
+        "upstream_inference_prompt_cost": 1.496e-05,
+        "upstream_inference_completions_cost": 0.00051205
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 22,
+    "completion_tokens": 245,
+    "total_tokens": 267,
+    "cost": 0.00052701,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00052701,
+      "upstream_inference_prompt_cost": 1.496e-05,
+      "upstream_inference_completions_cost": 0.00051205
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-large-4-0",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "provider": "openrouter",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want.",
+  "capture_policy": {
+    "model": "mistralai/mistral-large-4-0",
+    "pin": "Mistral",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "OPEN_5",
+    "at": 1791323630.149489,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

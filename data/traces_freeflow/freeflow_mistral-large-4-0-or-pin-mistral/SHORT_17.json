@@ -1,0 +1,90 @@
+{
+  "result": "The light through my window this morning was the color of old honey, thick and slow, pooling on the desk where I've been sitting since before dawn. I keep thinking about the way my grandmother used to say that time moves differently when you're waiting for something\u2014how it stretches like taffy, then snaps back when you're not looking.\n\nI've been waiting for a letter that may never come. Or maybe it came and I missed it, buried under bills and grocery lists and the small, relentless machinery of being alive. There's a particular loneliness to modern waiting, isn't there? We have so many ways to reach each other, yet the silence between messages feels vast as an ocean. I find myself refreshing, refreshing, as if the screen might suddenly bloom with words that change everything.\n\nYesterday I walked past the house where I grew up. The new owners have painted it blue, a cheerful, aggressive blue that has nothing to do with the faded yellow I remember. The oak tree is still there, though. It was there when my grandfather planted it, and it will probably outlast us all, indifferent to our small dramas, our hopes and griefs, our desperate need to be remembered.\n\nI think about planting something. A tree, maybe, or just basil in a windowsill pot. Something that asks for patience, that rewards attention. The light is shifting now, moving toward noon, and I should probably make coffee, answer the emails I've been avoiding, call my mother. But for a moment longer, I'll sit here in the honey-light, letting the waiting be what it is: not empty, exactly, but full of a kind of tender, aching possibility.",
+  "raw": {
+    "id": "gen-1791316625-23lkx6JNg1oFMZtaHZMm",
+    "object": "chat.completion",
+    "created": 1791316625,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "The light through my window this morning was the color of old honey, thick and slow, pooling on the desk where I've been sitting since before dawn. I keep thinking about the way my grandmother used to say that time moves differently when you're waiting for something\u2014how it stretches like taffy, then snaps back when you're not looking.\n\nI've been waiting for a letter that may never come. Or maybe it came and I missed it, buried under bills and grocery lists and the small, relentless machinery of being alive. There's a particular loneliness to modern waiting, isn't there? We have so many ways to reach each other, yet the silence between messages feels vast as an ocean. I find myself refreshing, refreshing, as if the screen might suddenly bloom with words that change everything.\n\nYesterday I walked past the house where I grew up. The new owners have painted it blue, a cheerful, aggressive blue that has nothing to do with the faded yellow I remember. The oak tree is still there, though. It was there when my grandfather planted it, and it will probably outlast us all, indifferent to our small dramas, our hopes and griefs, our desperate need to be remembered.\n\nI think about planting something. A tree, maybe, or just basil in a windowsill pot. Something that asks for patience, that rewards attention. The light is shifting now, moving toward noon, and I should probably make coffee, answer the emails I've been avoiding, call my mother. But for a moment longer, I'll sit here in the honey-light, letting the waiting be what it is: not empty, exactly, but full of a kind of tender, aching possibility.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 26,
+      "completion_tokens": 353,
+      "total_tokens": 379,
+      "cost": 0.00075545,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00075545,
+        "upstream_inference_prompt_cost": 1.768e-05,
+        "upstream_inference_completions_cost": 0.00073777
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 26,
+    "completion_tokens": 353,
+    "total_tokens": 379,
+    "cost": 0.00075545,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00075545,
+      "upstream_inference_prompt_cost": 1.768e-05,
+      "upstream_inference_completions_cost": 0.00073777
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-large-4-0",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "mistralai/mistral-large-4-0",
+    "pin": "Mistral",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_17",
+    "at": 1791316624.9675112,
+    "attempt": "3",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

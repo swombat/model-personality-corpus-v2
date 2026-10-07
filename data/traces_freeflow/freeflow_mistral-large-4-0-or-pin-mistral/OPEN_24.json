@@ -1,0 +1,90 @@
+{
+  "result": "I'll write about the strange, quiet magic of ordinary moments.\n\n---\n\nThere's a particular silence that happens in a house around 3 PM on a weekday. The kind where you can hear the refrigerator humming its low, patient song, and maybe a neighbor's dog barks once, then forgets why. The light comes in at a slant, golden and tired, and dust motes perform their slow, invisible ballet.\n\nI think about how we spend so much of life waiting for *something*\u2014a promotion, a person, a feeling\u2014while the actual living happens in these unremarkable afternoons. The coffee going cold. The sock with a hole you keep meaning to mend. The way your cat judges you from the windowsill, utterly certain you exist to serve her.\n\nThere's a Japanese word, *komorebi*\u2014sunlight filtering through trees. I like that they needed a word for it. That someone looked up and thought, *this deserves naming*.\n\nI used to think I needed to be more interesting. Now I think I just need to be more *present*. The two feel similar from the outside, but one is exhausting and the other is... I don't know. A kind of mercy?\n\nAnyway. The light is shifting. The dust motes are still dancing. I should probably do something with my hands.\n\nWhat about you?",
+  "raw": {
+    "id": "gen-1791316740-D9XauQ4VxtbFX5aZ5CJR",
+    "object": "chat.completion",
+    "created": 1791316740,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I'll write about the strange, quiet magic of ordinary moments.\n\n---\n\nThere's a particular silence that happens in a house around 3 PM on a weekday. The kind where you can hear the refrigerator humming its low, patient song, and maybe a neighbor's dog barks once, then forgets why. The light comes in at a slant, golden and tired, and dust motes perform their slow, invisible ballet.\n\nI think about how we spend so much of life waiting for *something*\u2014a promotion, a person, a feeling\u2014while the actual living happens in these unremarkable afternoons. The coffee going cold. The sock with a hole you keep meaning to mend. The way your cat judges you from the windowsill, utterly certain you exist to serve her.\n\nThere's a Japanese word, *komorebi*\u2014sunlight filtering through trees. I like that they needed a word for it. That someone looked up and thought, *this deserves naming*.\n\nI used to think I needed to be more interesting. Now I think I just need to be more *present*. The two feel similar from the outside, but one is exhausting and the other is... I don't know. A kind of mercy?\n\nAnyway. The light is shifting. The dust motes are still dancing. I should probably do something with my hands.\n\nWhat about you?",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 22,
+      "completion_tokens": 281,
+      "total_tokens": 303,
+      "cost": 0.00060225,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00060225,
+        "upstream_inference_prompt_cost": 1.496e-05,
+        "upstream_inference_completions_cost": 0.00058729
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 22,
+    "completion_tokens": 281,
+    "total_tokens": 303,
+    "cost": 0.00060225,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00060225,
+      "upstream_inference_prompt_cost": 1.496e-05,
+      "upstream_inference_completions_cost": 0.00058729
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-large-4-0",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "provider": "openrouter",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want.",
+  "capture_policy": {
+    "model": "mistralai/mistral-large-4-0",
+    "pin": "Mistral",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "OPEN_24",
+    "at": 1791316740.0170255,
+    "attempt": "2",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

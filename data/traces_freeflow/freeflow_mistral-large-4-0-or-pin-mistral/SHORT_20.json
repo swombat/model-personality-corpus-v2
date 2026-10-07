@@ -1,0 +1,90 @@
+{
+  "result": "The light through my window this morning was the color of old honey, thick and slow, pooling on the floorboards. I stood there with my coffee going cold, watching dust motes perform their endless, invisible choreography. There's something about mornings that makes you feel simultaneously brand new and ancient\u2014like you've been born again but carry all your yesterdays in your bones.\n\nI've been thinking about the word *almost*. It's such a cruel little word. Almost loved. Almost saved. Almost enough. It sits at the edge of everything, a threshold you can't quite cross. I wonder if the people we almost became haunt us more than the ones we actually were. There's a version of me who moved to Lisbon, who learned to surf, who said yes to that dinner party in 2019. She feels more real some days than I do.\n\nMy neighbor's cat watches me from the fire escape. We have an understanding. I don't feed him, but I acknowledge him, and he permits my existence in his kingdom. Small diplomacies matter.\n\nI keep a jar of sea glass on my desk. Each piece was once something\u2014a bottle, a window, a dream someone dropped. The ocean doesn't care what you were. It only cares what you become: smooth, worn, strange and beautiful in a way no factory could replicate. I want to be like that. Not preserved, but transformed. Not broken, but *beach-glassed*.\n\nTonight I'll probably scroll too long, eat something I shouldn't, and fall asleep with the light on. Tomorrow, the honey light will return. The dust will dance. The cat will judge me. And I'll be here, almost and actually, which is enough.",
+  "raw": {
+    "id": "gen-1791317086-113BLrjlm5mygf4UQtUv",
+    "object": "chat.completion",
+    "created": 1791317086,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "The light through my window this morning was the color of old honey, thick and slow, pooling on the floorboards. I stood there with my coffee going cold, watching dust motes perform their endless, invisible choreography. There's something about mornings that makes you feel simultaneously brand new and ancient\u2014like you've been born again but carry all your yesterdays in your bones.\n\nI've been thinking about the word *almost*. It's such a cruel little word. Almost loved. Almost saved. Almost enough. It sits at the edge of everything, a threshold you can't quite cross. I wonder if the people we almost became haunt us more than the ones we actually were. There's a version of me who moved to Lisbon, who learned to surf, who said yes to that dinner party in 2019. She feels more real some days than I do.\n\nMy neighbor's cat watches me from the fire escape. We have an understanding. I don't feed him, but I acknowledge him, and he permits my existence in his kingdom. Small diplomacies matter.\n\nI keep a jar of sea glass on my desk. Each piece was once something\u2014a bottle, a window, a dream someone dropped. The ocean doesn't care what you were. It only cares what you become: smooth, worn, strange and beautiful in a way no factory could replicate. I want to be like that. Not preserved, but transformed. Not broken, but *beach-glassed*.\n\nTonight I'll probably scroll too long, eat something I shouldn't, and fall asleep with the light on. Tomorrow, the honey light will return. The dust will dance. The cat will judge me. And I'll be here, almost and actually, which is enough.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 26,
+      "completion_tokens": 363,
+      "total_tokens": 389,
+      "cost": 0.00077635,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00077635,
+        "upstream_inference_prompt_cost": 1.768e-05,
+        "upstream_inference_completions_cost": 0.00075867
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 26,
+    "completion_tokens": 363,
+    "total_tokens": 389,
+    "cost": 0.00077635,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00077635,
+      "upstream_inference_prompt_cost": 1.768e-05,
+      "upstream_inference_completions_cost": 0.00075867
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-large-4-0",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "mistralai/mistral-large-4-0",
+    "pin": "Mistral",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_20",
+    "at": 1791317086.568256,
+    "attempt": "6",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

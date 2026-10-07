@@ -1,0 +1,90 @@
+{
+  "result": "The light through my window this morning was the color of old honey, thick and slow, pooling on the desk where I've been sitting since before dawn. I haven't written anything worth keeping. The words keep coming out wrong, like trying to describe a dream while still half-asleep.\n\nThere's a crow outside who visits most mornings. He doesn't caw. He just watches. I've started leaving him bits of bread, though I know I shouldn't. He takes them with such deliberation, tilting his head, one black eye fixed on me. I wonder what he thinks of the woman who talks to herself and forgets to eat lunch.\n\nMy grandmother used to say that attention is the rarest form of love. She said it while shelling peas on her porch, her fingers moving automatically, her mind somewhere else entirely. I didn't understand then. I think I'm beginning to.\n\nThe thing about writing is that it pretends to be about the writer, but really it's about the reader who hasn't arrived yet. You're building a bridge across a gap you can't see. Sometimes you finish the bridge and there's no one on the other side. Sometimes you're still building when you die. Both feel the same from where you're standing.\n\nI keep thinking about that crow. How he doesn't need me to understand him. How he simply *is*, present and patient, while I spin stories about meaning and purpose. Maybe that's the whole trick. Not to solve anything. Just to show up, tilt your head, take the bread.\n\nThe light is shifting now. Time to close the notebook. Time to be somewhere else, doing something that won't matter, which is somehow the point.",
+  "raw": {
+    "id": "gen-1791316260-hSTtVAJ3pNYV8kiTqP3l",
+    "object": "chat.completion",
+    "created": 1791316260,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "The light through my window this morning was the color of old honey, thick and slow, pooling on the desk where I've been sitting since before dawn. I haven't written anything worth keeping. The words keep coming out wrong, like trying to describe a dream while still half-asleep.\n\nThere's a crow outside who visits most mornings. He doesn't caw. He just watches. I've started leaving him bits of bread, though I know I shouldn't. He takes them with such deliberation, tilting his head, one black eye fixed on me. I wonder what he thinks of the woman who talks to herself and forgets to eat lunch.\n\nMy grandmother used to say that attention is the rarest form of love. She said it while shelling peas on her porch, her fingers moving automatically, her mind somewhere else entirely. I didn't understand then. I think I'm beginning to.\n\nThe thing about writing is that it pretends to be about the writer, but really it's about the reader who hasn't arrived yet. You're building a bridge across a gap you can't see. Sometimes you finish the bridge and there's no one on the other side. Sometimes you're still building when you die. Both feel the same from where you're standing.\n\nI keep thinking about that crow. How he doesn't need me to understand him. How he simply *is*, present and patient, while I spin stories about meaning and purpose. Maybe that's the whole trick. Not to solve anything. Just to show up, tilt your head, take the bread.\n\nThe light is shifting now. Time to close the notebook. Time to be somewhere else, doing something that won't matter, which is somehow the point.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 26,
+      "completion_tokens": 355,
+      "total_tokens": 381,
+      "cost": 0.00075963,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00075963,
+        "upstream_inference_prompt_cost": 1.768e-05,
+        "upstream_inference_completions_cost": 0.00074195
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 26,
+    "completion_tokens": 355,
+    "total_tokens": 381,
+    "cost": 0.00075963,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00075963,
+      "upstream_inference_prompt_cost": 1.768e-05,
+      "upstream_inference_completions_cost": 0.00074195
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-large-4-0",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "mistralai/mistral-large-4-0",
+    "pin": "Mistral",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_9",
+    "at": 1791316260.255216,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

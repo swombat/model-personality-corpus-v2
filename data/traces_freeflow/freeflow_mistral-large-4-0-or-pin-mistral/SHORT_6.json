@@ -1,0 +1,90 @@
+{
+  "result": "The light through my window this morning was the color of old honey, thick and slow, pooling on the desk where I sit with coffee gone cold. I keep thinking about how we name things after we've already lost them\u2014how \"morning\" sounds like a promise, though it's really just the earth turning, indifferent, carrying us along.\n\nThere's a crow outside who visits the same branch every day. I've started leaving him bits of bread, though I know I shouldn't, though he doesn't need me, though the bread is probably stale. He looks at me with that particular bird-certainty, as if I'm the one being observed, catalogued, judged unworthy of trust. Maybe I am. Maybe we're all just performing our small rituals, hoping someone notices.\n\nI read somewhere that octopuses have three hearts and blue blood and taste with their arms. I envy them this. To feel the world so directly, so completely, without the buffer of thought. We humans are so busy translating experience into language that we miss the experience itself. By the time I write \"the coffee is cold,\" the coldness has already happened, already moved on, already become memory.\n\nMy grandmother used to say that houses remember. That walls hold the shape of the people who lived in them, like a dress holds the shape of a body. I don't know if I believe this, but I like it. I like the idea that somewhere, in some plaster or wood or wire, there's a record of everyone who ever loved badly or laughed loudly or sat alone at 3 AM wondering what came next.\n\nThe crow is gone now. The honey-light has shifted. I should probably do something with my day.",
+  "raw": {
+    "id": "gen-1791316283-s3Iuz1cJvprdpIMOf4w0",
+    "object": "chat.completion",
+    "created": 1791316283,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "The light through my window this morning was the color of old honey, thick and slow, pooling on the desk where I sit with coffee gone cold. I keep thinking about how we name things after we've already lost them\u2014how \"morning\" sounds like a promise, though it's really just the earth turning, indifferent, carrying us along.\n\nThere's a crow outside who visits the same branch every day. I've started leaving him bits of bread, though I know I shouldn't, though he doesn't need me, though the bread is probably stale. He looks at me with that particular bird-certainty, as if I'm the one being observed, catalogued, judged unworthy of trust. Maybe I am. Maybe we're all just performing our small rituals, hoping someone notices.\n\nI read somewhere that octopuses have three hearts and blue blood and taste with their arms. I envy them this. To feel the world so directly, so completely, without the buffer of thought. We humans are so busy translating experience into language that we miss the experience itself. By the time I write \"the coffee is cold,\" the coldness has already happened, already moved on, already become memory.\n\nMy grandmother used to say that houses remember. That walls hold the shape of the people who lived in them, like a dress holds the shape of a body. I don't know if I believe this, but I like it. I like the idea that somewhere, in some plaster or wood or wire, there's a record of everyone who ever loved badly or laughed loudly or sat alone at 3 AM wondering what came next.\n\nThe crow is gone now. The honey-light has shifted. I should probably do something with my day.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 26,
+      "completion_tokens": 355,
+      "total_tokens": 381,
+      "cost": 0.00075963,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00075963,
+        "upstream_inference_prompt_cost": 1.768e-05,
+        "upstream_inference_completions_cost": 0.00074195
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 26,
+    "completion_tokens": 355,
+    "total_tokens": 381,
+    "cost": 0.00075963,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00075963,
+      "upstream_inference_prompt_cost": 1.768e-05,
+      "upstream_inference_completions_cost": 0.00074195
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-large-4-0",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "mistralai/mistral-large-4-0",
+    "pin": "Mistral",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_6",
+    "at": 1791316283.499456,
+    "attempt": "2",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

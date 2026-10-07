@@ -1,0 +1,90 @@
+{
+  "result": "The rain started at 3 AM, the way it always does in this town\u2014sudden, as if someone flipped a switch. I woke to the sound of it drumming against the window, and for a moment I lay there listening, half-asleep, thinking about how rain has its own language. It doesn't ask permission. It doesn't care if you're ready.\n\nI got up and made coffee, standing at the counter watching the backyard fill with water, the grass already dark and heavy. There's a particular loneliness to early morning rain, a sense that the world has paused and you're the only one awake to witness it. My neighbor's cat sat on the fence, unimpressed, fur plastered to its sides. We regarded each other across the glass. Neither of us had anywhere urgent to be.\n\nI thought about my grandmother, who used to say that rain was the earth crying. I never believed her, not really, but I understood the sentiment. There's something about water falling from the sky that feels ancient, almost sacred. People have been watching rain for millennia, waiting for it, cursing it, dancing in it. It connects us to every human who ever stood at a window and felt small.\n\nBy six, the storm had moved on, leaving everything washed and gleaming. The air smelled like wet stone and new grass. I walked outside barefoot, feeling the cold seep into my feet, and watched a robin pull a worm from the saturated soil. Simple things. The world continuing, indifferent and beautiful.\n\nI came back inside, poured more coffee, and sat with the quiet. Some mornings, that's enough.",
+  "raw": {
+    "id": "gen-1791316300-B3hm0yOWX1xvvNPOgpN9",
+    "object": "chat.completion",
+    "created": 1791316300,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "The rain started at 3 AM, the way it always does in this town\u2014sudden, as if someone flipped a switch. I woke to the sound of it drumming against the window, and for a moment I lay there listening, half-asleep, thinking about how rain has its own language. It doesn't ask permission. It doesn't care if you're ready.\n\nI got up and made coffee, standing at the counter watching the backyard fill with water, the grass already dark and heavy. There's a particular loneliness to early morning rain, a sense that the world has paused and you're the only one awake to witness it. My neighbor's cat sat on the fence, unimpressed, fur plastered to its sides. We regarded each other across the glass. Neither of us had anywhere urgent to be.\n\nI thought about my grandmother, who used to say that rain was the earth crying. I never believed her, not really, but I understood the sentiment. There's something about water falling from the sky that feels ancient, almost sacred. People have been watching rain for millennia, waiting for it, cursing it, dancing in it. It connects us to every human who ever stood at a window and felt small.\n\nBy six, the storm had moved on, leaving everything washed and gleaming. The air smelled like wet stone and new grass. I walked outside barefoot, feeling the cold seep into my feet, and watched a robin pull a worm from the saturated soil. Simple things. The world continuing, indifferent and beautiful.\n\nI came back inside, poured more coffee, and sat with the quiet. Some mornings, that's enough.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 26,
+      "completion_tokens": 346,
+      "total_tokens": 372,
+      "cost": 0.00074082,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00074082,
+        "upstream_inference_prompt_cost": 1.768e-05,
+        "upstream_inference_completions_cost": 0.00072314
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 26,
+    "completion_tokens": 346,
+    "total_tokens": 372,
+    "cost": 0.00074082,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00074082,
+      "upstream_inference_prompt_cost": 1.768e-05,
+      "upstream_inference_completions_cost": 0.00072314
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-large-4-0",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "mistralai/mistral-large-4-0",
+    "pin": "Mistral",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_16",
+    "at": 1791316300.803705,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

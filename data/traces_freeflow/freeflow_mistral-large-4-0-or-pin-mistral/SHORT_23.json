@@ -1,0 +1,90 @@
+{
+  "result": "The light in my kitchen changes around 4:30 in the afternoon, turning everything gold and slightly unreal, like a memory you're not sure you actually lived. I stand at the counter with a mug of tea going cold, watching dust motes perform their slow, invisible choreography in the sunbeam. There's something about this hour that makes me want to write letters I'll never send, or call people I haven't spoken to in years, or finally organize the drawer where I keep rubber bands and batteries and the small mysteries of a life.\n\nI think about my grandmother, who kept a jar of buttons on her windowsill. She never sewed anything I saw, yet the jar grew fuller each year, a taxonomy of closures and fastenings, each button holding some garment's history in its four holes. I inherited the jar when she died. It sits on my own windowsill now, and sometimes I take it down and pour the buttons into my lap, sorting them by color or size or the vague emotion they evoke. A mother-of-pearl button from a blouse I don't remember. A brass button, military perhaps, heavy as a small sin. Plastic ones in colors that don't exist in nature.\n\nThe tea is cold. I drink it anyway. Outside, a neighbor's dog barks at something I cannot see, and I find I don't want to know what. Some things are better left in the dark, in the particular quality of light that makes everything look like it's about to end, or begin, or become something else entirely that we don't have a word for yet.",
+  "raw": {
+    "id": "gen-1791317105-3qTizkQH0LnUgMUKnICe",
+    "object": "chat.completion",
+    "created": 1791317105,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "The light in my kitchen changes around 4:30 in the afternoon, turning everything gold and slightly unreal, like a memory you're not sure you actually lived. I stand at the counter with a mug of tea going cold, watching dust motes perform their slow, invisible choreography in the sunbeam. There's something about this hour that makes me want to write letters I'll never send, or call people I haven't spoken to in years, or finally organize the drawer where I keep rubber bands and batteries and the small mysteries of a life.\n\nI think about my grandmother, who kept a jar of buttons on her windowsill. She never sewed anything I saw, yet the jar grew fuller each year, a taxonomy of closures and fastenings, each button holding some garment's history in its four holes. I inherited the jar when she died. It sits on my own windowsill now, and sometimes I take it down and pour the buttons into my lap, sorting them by color or size or the vague emotion they evoke. A mother-of-pearl button from a blouse I don't remember. A brass button, military perhaps, heavy as a small sin. Plastic ones in colors that don't exist in nature.\n\nThe tea is cold. I drink it anyway. Outside, a neighbor's dog barks at something I cannot see, and I find I don't want to know what. Some things are better left in the dark, in the particular quality of light that makes everything look like it's about to end, or begin, or become something else entirely that we don't have a word for yet.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 26,
+      "completion_tokens": 332,
+      "total_tokens": 358,
+      "cost": 0.00071156,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00071156,
+        "upstream_inference_prompt_cost": 1.768e-05,
+        "upstream_inference_completions_cost": 0.00069388
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 26,
+    "completion_tokens": 332,
+    "total_tokens": 358,
+    "cost": 0.00071156,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00071156,
+      "upstream_inference_prompt_cost": 1.768e-05,
+      "upstream_inference_completions_cost": 0.00069388
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-large-4-0",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "mistralai/mistral-large-4-0",
+    "pin": "Mistral",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_23",
+    "at": 1791317105.2668142,
+    "attempt": "6",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

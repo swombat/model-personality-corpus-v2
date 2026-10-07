@@ -1,0 +1,90 @@
+{
+  "result": "The light through my window this morning was the color of old honey, thick and slow, pooling on the desk where I've been sitting since before dawn. I keep thinking about a conversation I had with my grandmother years ago, when she told me that grief doesn't shrink\u2014you just grow around it. She said it while shelling peas on her porch, her fingers moving with the automatic grace of someone who has done this ten thousand times, and I didn't understand then what she meant. I thought she was being poetic, being old.\n\nNow I understand. The grief is still the same size. It's me who's expanded, awkwardly, like a body learning to accommodate something new and permanent. I carry it differently now. Sometimes I forget it's there until I reach for something and feel the weight.\n\nThere's a spider in the corner of my ceiling who has built an elaborate web, and I've been watching her for weeks. She repairs it each morning, methodically, as if the night's wind has done some terrible damage. I envy her certainty. I envy the way she knows exactly what she's doing, what she needs, how to build something that holds.\n\nI want to write something true today. That's all. Something that doesn't perform its own sadness or its own joy, something that simply *is*, the way the spider's web is, the way the honey-light is, the way my grandmother's hands moved through the summer air without asking permission from anyone.\n\nThe peas are still growing in her garden, I think. Or someone else's garden now. The world keeps its own time. I'm learning to keep mine.",
+  "raw": {
+    "id": "gen-1791316267-NefYedsUNaCFjZh7zy3R",
+    "object": "chat.completion",
+    "created": 1791316267,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "The light through my window this morning was the color of old honey, thick and slow, pooling on the desk where I've been sitting since before dawn. I keep thinking about a conversation I had with my grandmother years ago, when she told me that grief doesn't shrink\u2014you just grow around it. She said it while shelling peas on her porch, her fingers moving with the automatic grace of someone who has done this ten thousand times, and I didn't understand then what she meant. I thought she was being poetic, being old.\n\nNow I understand. The grief is still the same size. It's me who's expanded, awkwardly, like a body learning to accommodate something new and permanent. I carry it differently now. Sometimes I forget it's there until I reach for something and feel the weight.\n\nThere's a spider in the corner of my ceiling who has built an elaborate web, and I've been watching her for weeks. She repairs it each morning, methodically, as if the night's wind has done some terrible damage. I envy her certainty. I envy the way she knows exactly what she's doing, what she needs, how to build something that holds.\n\nI want to write something true today. That's all. Something that doesn't perform its own sadness or its own joy, something that simply *is*, the way the spider's web is, the way the honey-light is, the way my grandmother's hands moved through the summer air without asking permission from anyone.\n\nThe peas are still growing in her garden, I think. Or someone else's garden now. The world keeps its own time. I'm learning to keep mine.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 26,
+      "completion_tokens": 341,
+      "total_tokens": 367,
+      "cost": 0.00073037,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00073037,
+        "upstream_inference_prompt_cost": 1.768e-05,
+        "upstream_inference_completions_cost": 0.00071269
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 26,
+    "completion_tokens": 341,
+    "total_tokens": 367,
+    "cost": 0.00073037,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00073037,
+      "upstream_inference_prompt_cost": 1.768e-05,
+      "upstream_inference_completions_cost": 0.00071269
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-large-4-0",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "mistralai/mistral-large-4-0",
+    "pin": "Mistral",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_11",
+    "at": 1791316267.056779,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "result": "The light through my window this morning was the color of old honey, thick and slow. I watched it pool on the floorboards and thought about how light is just time made visible\u2014how every photon carries a story from somewhere else, somewhere far, traveling for years just to land on my kitchen table and warm it.\n\nI've been thinking about small things lately. The way a coffee cup leaves a ring on wood. The particular silence after snow falls, when the world seems to hold its breath. How my grandmother used to hum while she worked, off-key and constant, and I never once asked her what the song was.\n\nThere's a spider in the corner of my bathroom who has built the most elaborate web I've ever seen. I named her Geraldine, though I know that's presumptuous. She doesn't know me. She doesn't care. And yet I check on her each morning, relieved when she's still there, still spinning, still making something beautiful from nothing but her own body and time.\n\nI want to learn to be more like Geraldine. To make without needing an audience. To trust that the work itself is enough.\n\nYesterday I walked past a house where someone had planted a garden entirely of sunflowers, dozens of them, all facing east. It was almost aggressive in its joy. I stood there longer than I should have, embarrassed by my own emotion, but there it was\u2014this stranger's happiness, offered freely to anyone passing by.\n\nWe are all making things. We are all leaving rings on the world, building webs in corners, turning toward the light. The trick, I think, is to do it anyway. To do it badly, if that's what we have. To do it without knowing who might see.\n\nGeraldine is still there. The honey-light has moved on. I should probably get to work.",
+  "raw": {
+    "id": "gen-1791316277-kvCMnwuvSk8zUpFj2GiM",
+    "object": "chat.completion",
+    "created": 1791316277,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "The light through my window this morning was the color of old honey, thick and slow. I watched it pool on the floorboards and thought about how light is just time made visible\u2014how every photon carries a story from somewhere else, somewhere far, traveling for years just to land on my kitchen table and warm it.\n\nI've been thinking about small things lately. The way a coffee cup leaves a ring on wood. The particular silence after snow falls, when the world seems to hold its breath. How my grandmother used to hum while she worked, off-key and constant, and I never once asked her what the song was.\n\nThere's a spider in the corner of my bathroom who has built the most elaborate web I've ever seen. I named her Geraldine, though I know that's presumptuous. She doesn't know me. She doesn't care. And yet I check on her each morning, relieved when she's still there, still spinning, still making something beautiful from nothing but her own body and time.\n\nI want to learn to be more like Geraldine. To make without needing an audience. To trust that the work itself is enough.\n\nYesterday I walked past a house where someone had planted a garden entirely of sunflowers, dozens of them, all facing east. It was almost aggressive in its joy. I stood there longer than I should have, embarrassed by my own emotion, but there it was\u2014this stranger's happiness, offered freely to anyone passing by.\n\nWe are all making things. We are all leaving rings on the world, building webs in corners, turning toward the light. The trick, I think, is to do it anyway. To do it badly, if that's what we have. To do it without knowing who might see.\n\nGeraldine is still there. The honey-light has moved on. I should probably get to work.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 26,
+      "completion_tokens": 382,
+      "total_tokens": 408,
+      "cost": 0.00081606,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00081606,
+        "upstream_inference_prompt_cost": 1.768e-05,
+        "upstream_inference_completions_cost": 0.00079838
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 26,
+    "completion_tokens": 382,
+    "total_tokens": 408,
+    "cost": 0.00081606,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00081606,
+      "upstream_inference_prompt_cost": 1.768e-05,
+      "upstream_inference_completions_cost": 0.00079838
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-large-4-0",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "mistralai/mistral-large-4-0",
+    "pin": "Mistral",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_4",
+    "at": 1791316277.764582,
+    "attempt": "2",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

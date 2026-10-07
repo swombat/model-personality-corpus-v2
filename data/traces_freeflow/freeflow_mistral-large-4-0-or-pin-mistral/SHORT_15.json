@@ -1,0 +1,90 @@
+{
+  "result": "The rain started at 3 AM, the way it always does in this city\u2014suddenly, as if someone flipped a switch. I was awake anyway, staring at the ceiling, thinking about how strange it is that we spend so much of our lives waiting for things that never quite arrive. The promotion. The person. The version of ourselves we keep promising to become by Monday.\n\nThere's a coffee shop on Hawthorne that opens at six. I've been going there for three years, ever since the divorce, ever since I moved into this apartment with the radiator that clanks like a dying heart. Maria works the morning shift. She remembers my order\u2014black coffee, no sugar, extra hot\u2014but she's never asked my name. I like that. The anonymity feels like a small mercy.\n\nThis morning I watched a man argue with a parking meter. He kicked it twice, then walked away, leaving his coffee on the roof of his car. The cup tipped, spilled, and he didn't even look back. I thought about how we all have our parking meters, our small humiliations we direct our anger toward. Mine is the Wi-Fi router. I've named it \"Betrayal.\"\n\nThe rain stopped by seven. The light came through the kitchen window in that particular gray-gold way that makes everything look like a memory. I made toast. I sat at the table where I've eaten most of my meals alone, and I felt, for just a moment, something like peace. Not happiness\u2014peace is different. It's the absence of wanting things to be other than they are.\n\nI don't know what I'm waiting for anymore. Maybe that's the point. Maybe the waiting was the life, and I've been living it all along, one small morning at a time.",
+  "raw": {
+    "id": "gen-1791316296-0PkXcFubikx3eCVEi1ny",
+    "object": "chat.completion",
+    "created": 1791316296,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "The rain started at 3 AM, the way it always does in this city\u2014suddenly, as if someone flipped a switch. I was awake anyway, staring at the ceiling, thinking about how strange it is that we spend so much of our lives waiting for things that never quite arrive. The promotion. The person. The version of ourselves we keep promising to become by Monday.\n\nThere's a coffee shop on Hawthorne that opens at six. I've been going there for three years, ever since the divorce, ever since I moved into this apartment with the radiator that clanks like a dying heart. Maria works the morning shift. She remembers my order\u2014black coffee, no sugar, extra hot\u2014but she's never asked my name. I like that. The anonymity feels like a small mercy.\n\nThis morning I watched a man argue with a parking meter. He kicked it twice, then walked away, leaving his coffee on the roof of his car. The cup tipped, spilled, and he didn't even look back. I thought about how we all have our parking meters, our small humiliations we direct our anger toward. Mine is the Wi-Fi router. I've named it \"Betrayal.\"\n\nThe rain stopped by seven. The light came through the kitchen window in that particular gray-gold way that makes everything look like a memory. I made toast. I sat at the table where I've eaten most of my meals alone, and I felt, for just a moment, something like peace. Not happiness\u2014peace is different. It's the absence of wanting things to be other than they are.\n\nI don't know what I'm waiting for anymore. Maybe that's the point. Maybe the waiting was the life, and I've been living it all along, one small morning at a time.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 26,
+      "completion_tokens": 375,
+      "total_tokens": 401,
+      "cost": 0.00080143,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00080143,
+        "upstream_inference_prompt_cost": 1.768e-05,
+        "upstream_inference_completions_cost": 0.00078375
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 26,
+    "completion_tokens": 375,
+    "total_tokens": 401,
+    "cost": 0.00080143,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00080143,
+      "upstream_inference_prompt_cost": 1.768e-05,
+      "upstream_inference_completions_cost": 0.00078375
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-large-4-0",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "mistralai/mistral-large-4-0",
+    "pin": "Mistral",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_15",
+    "at": 1791316296.5751374,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "result": "The light through my window this morning was the color of old honey, thick and slow, pooling on the desk where I sit with coffee gone cold. I keep thinking about how we name things after their absence\u2014sunrise, sunset, the way we say \"goodnight\" when we mean \"stay.\" Language is full of small kindnesses like that, or small cruelties, depending on the night.\n\nI watched a spider build a web between the porch railings yesterday. It was methodical in a way that made me feel lazy, all that anchoring and testing, the way it would touch a strand with one leg before committing its whole weight. By evening the web caught dew and looked like something from a jewelry catalog, something worth hundreds of dollars in a city I'll never visit. This morning it was gone, or nearly\u2014just a few sagging threads, the architecture of a decision no longer made.\n\nThere's a particular loneliness to watching something be built and then unbuilt. I think about that sometimes with people. The way we construct elaborate structures of attention, of care, of showing up. And then one morning you wake up and the threads are slack, and you can't remember exactly when you stopped pulling them taut.\n\nThe coffee is cold now. I should drink it anyway. There's a small dignity in finishing things, even when they've lost their warmth. The spider will start again tonight, I think. Or maybe it won't. Maybe it will find a better corner, or a worse one, or simply stop. All of these are possible. All of them are fine. The porch will hold whatever comes next.",
+  "raw": {
+    "id": "gen-1791317100-4sB63ZA0LpOrw1B8gwK1",
+    "object": "chat.completion",
+    "created": 1791317100,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "The light through my window this morning was the color of old honey, thick and slow, pooling on the desk where I sit with coffee gone cold. I keep thinking about how we name things after their absence\u2014sunrise, sunset, the way we say \"goodnight\" when we mean \"stay.\" Language is full of small kindnesses like that, or small cruelties, depending on the night.\n\nI watched a spider build a web between the porch railings yesterday. It was methodical in a way that made me feel lazy, all that anchoring and testing, the way it would touch a strand with one leg before committing its whole weight. By evening the web caught dew and looked like something from a jewelry catalog, something worth hundreds of dollars in a city I'll never visit. This morning it was gone, or nearly\u2014just a few sagging threads, the architecture of a decision no longer made.\n\nThere's a particular loneliness to watching something be built and then unbuilt. I think about that sometimes with people. The way we construct elaborate structures of attention, of care, of showing up. And then one morning you wake up and the threads are slack, and you can't remember exactly when you stopped pulling them taut.\n\nThe coffee is cold now. I should drink it anyway. There's a small dignity in finishing things, even when they've lost their warmth. The spider will start again tonight, I think. Or maybe it won't. Maybe it will find a better corner, or a worse one, or simply stop. All of these are possible. All of them are fine. The porch will hold whatever comes next.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 26,
+      "completion_tokens": 338,
+      "total_tokens": 364,
+      "cost": 0.0007241,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007241,
+        "upstream_inference_prompt_cost": 1.768e-05,
+        "upstream_inference_completions_cost": 0.00070642
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 26,
+    "completion_tokens": 338,
+    "total_tokens": 364,
+    "cost": 0.0007241,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0007241,
+      "upstream_inference_prompt_cost": 1.768e-05,
+      "upstream_inference_completions_cost": 0.00070642
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-large-4-0",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "mistralai/mistral-large-4-0",
+    "pin": "Mistral",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_22",
+    "at": 1791317100.2972355,
+    "attempt": "6",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

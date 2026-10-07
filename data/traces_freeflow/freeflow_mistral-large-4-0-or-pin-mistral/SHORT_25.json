@@ -1,0 +1,90 @@
+{
+  "result": "The light through my window this morning was the color of old honey, thick and slow, pooling on the floorboards. I stood there with my coffee going cold, watching dust motes perform their endless, invisible choreography. There's something about morning light that makes you feel simultaneously insignificant and strangely held\u2014like the universe is leaning in to whisper a secret you're not quite ready to hear.\n\nI've been thinking about the word *almost*. It's such a cruel little word, isn't it? Almost loved. Almost finished. Almost there. It lives in the doorway of every possibility, never quite stepping through. I spent years being almost\u2014almost brave, almost honest, almost the person I imagined I could become. The almosts accumulated like sediment, layers of myself I never quite excavated.\n\nMy grandmother used to say that regret is just love with nowhere to go. I didn't understand her then. Now I think she meant that we carry so much tenderness for versions of our lives that never happened, for people we almost became, for conversations we almost had. The heart doesn't distinguish between what was and what might have been. It simply keeps offering, keeps hoping, keeps breaking in all the same ways.\n\nThere's a spider in the corner of my ceiling who has built something magnificent. I watch her sometimes when I can't sleep, this architect of silk and patience, and I wonder what she dreams about, if spiders dream. Probably not. Probably just hunger and the geometry of survival. But I like to imagine she has her own small, eight-legged ambitions.\n\nThe coffee is cold now. The light has moved. I should probably do something with my day. But for a moment, here, in this almost\u2014this beautiful, suspended, honey-colored almost\u2014I am exactly where I need to be.",
+  "raw": {
+    "id": "gen-1791317113-1kEB6GqWpTfzafcUBkse",
+    "object": "chat.completion",
+    "created": 1791317113,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "The light through my window this morning was the color of old honey, thick and slow, pooling on the floorboards. I stood there with my coffee going cold, watching dust motes perform their endless, invisible choreography. There's something about morning light that makes you feel simultaneously insignificant and strangely held\u2014like the universe is leaning in to whisper a secret you're not quite ready to hear.\n\nI've been thinking about the word *almost*. It's such a cruel little word, isn't it? Almost loved. Almost finished. Almost there. It lives in the doorway of every possibility, never quite stepping through. I spent years being almost\u2014almost brave, almost honest, almost the person I imagined I could become. The almosts accumulated like sediment, layers of myself I never quite excavated.\n\nMy grandmother used to say that regret is just love with nowhere to go. I didn't understand her then. Now I think she meant that we carry so much tenderness for versions of our lives that never happened, for people we almost became, for conversations we almost had. The heart doesn't distinguish between what was and what might have been. It simply keeps offering, keeps hoping, keeps breaking in all the same ways.\n\nThere's a spider in the corner of my ceiling who has built something magnificent. I watch her sometimes when I can't sleep, this architect of silk and patience, and I wonder what she dreams about, if spiders dream. Probably not. Probably just hunger and the geometry of survival. But I like to imagine she has her own small, eight-legged ambitions.\n\nThe coffee is cold now. The light has moved. I should probably do something with my day. But for a moment, here, in this almost\u2014this beautiful, suspended, honey-colored almost\u2014I am exactly where I need to be.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 26,
+      "completion_tokens": 380,
+      "total_tokens": 406,
+      "cost": 0.00081188,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00081188,
+        "upstream_inference_prompt_cost": 1.768e-05,
+        "upstream_inference_completions_cost": 0.0007942
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 26,
+    "completion_tokens": 380,
+    "total_tokens": 406,
+    "cost": 0.00081188,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00081188,
+      "upstream_inference_prompt_cost": 1.768e-05,
+      "upstream_inference_completions_cost": 0.0007942
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-large-4-0",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "mistralai/mistral-large-4-0",
+    "pin": "Mistral",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_25",
+    "at": 1791317113.8155837,
+    "attempt": "6",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

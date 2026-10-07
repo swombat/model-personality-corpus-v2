@@ -1,0 +1,90 @@
+{
+  "result": "The light through my window this morning was the color of old honey, thick and slow, pooling on the floorboards. I stood there with coffee going cold in my hands, watching dust motes perform their endless, invisible choreography. There's something about morning light that makes everything feel like a beginning, even when you know it isn't.\n\nI've been thinking about the word *almost*. How it contains its own disappointment. Almost there. Almost right. Almost love. It's a word that lives in doorways, in the space between intention and arrival. I wonder if anyone has ever truly been *almost* happy, or if happiness only exists in the completed form, the way a sentence needs its period to mean anything.\n\nMy neighbor's cat watches me from the fence, orange and judgmental, the color of autumn leaves that refuse to fall. I envy its certainty. It knows exactly what it wants: the sun, the mouse, the particular patch of grass that smells like yesterday's rain. We complicate things so thoroughly. We want meaning, purpose, legacy. The cat wants warmth and sustenance and perhaps, in its secret heart, to be let inside when the temperature drops.\n\nI used to believe that attention was a form of love. That to truly see someone\u2014really see them\u2014was the highest gift. Now I'm less sure. Sometimes attention feels like surveillance. Sometimes the kindest thing is to look away, to let someone exist in their own unobserved becoming.\n\nThe coffee is cold now. I should drink it anyway. Some things don't improve with waiting, but they don't worsen either. They simply become what they are: cold coffee, morning light, a cat on a fence, the particular ache of being alive and uncertain what comes next.",
+  "raw": {
+    "id": "gen-1791317091-CK492xKN246TJK9m2HOA",
+    "object": "chat.completion",
+    "created": 1791317091,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "The light through my window this morning was the color of old honey, thick and slow, pooling on the floorboards. I stood there with coffee going cold in my hands, watching dust motes perform their endless, invisible choreography. There's something about morning light that makes everything feel like a beginning, even when you know it isn't.\n\nI've been thinking about the word *almost*. How it contains its own disappointment. Almost there. Almost right. Almost love. It's a word that lives in doorways, in the space between intention and arrival. I wonder if anyone has ever truly been *almost* happy, or if happiness only exists in the completed form, the way a sentence needs its period to mean anything.\n\nMy neighbor's cat watches me from the fence, orange and judgmental, the color of autumn leaves that refuse to fall. I envy its certainty. It knows exactly what it wants: the sun, the mouse, the particular patch of grass that smells like yesterday's rain. We complicate things so thoroughly. We want meaning, purpose, legacy. The cat wants warmth and sustenance and perhaps, in its secret heart, to be let inside when the temperature drops.\n\nI used to believe that attention was a form of love. That to truly see someone\u2014really see them\u2014was the highest gift. Now I'm less sure. Sometimes attention feels like surveillance. Sometimes the kindest thing is to look away, to let someone exist in their own unobserved becoming.\n\nThe coffee is cold now. I should drink it anyway. Some things don't improve with waiting, but they don't worsen either. They simply become what they are: cold coffee, morning light, a cat on a fence, the particular ache of being alive and uncertain what comes next.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 26,
+      "completion_tokens": 370,
+      "total_tokens": 396,
+      "cost": 0.00079098,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00079098,
+        "upstream_inference_prompt_cost": 1.768e-05,
+        "upstream_inference_completions_cost": 0.0007733
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 26,
+    "completion_tokens": 370,
+    "total_tokens": 396,
+    "cost": 0.00079098,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00079098,
+      "upstream_inference_prompt_cost": 1.768e-05,
+      "upstream_inference_completions_cost": 0.0007733
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-large-4-0",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "mistralai/mistral-large-4-0",
+    "pin": "Mistral",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_21",
+    "at": 1791317091.588818,
+    "attempt": "6",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "result": "The light through my window this morning was the color of old honey, thick and slow, pooling on the desk where I've been sitting since dawn. I haven't written anything worth keeping. The words keep coming out wrong, like trying to pour water through a sieve.\n\nI think about my grandmother's hands. She could mend anything\u2014torn dresses, broken hearts, the particular silence that falls between people who love each other but have forgotten how to speak. She never said much. She just worked, her fingers moving in that constant rhythm, and somehow the world became more bearable in her presence.\n\nThere's a crow outside, watching me with what I choose to believe is judgment. It's probably just hungry. Everything is probably just hungry, if you look at it right. The wanting, the reaching, the small daily negotiations with disappointment.\n\nI used to believe that attention was a form of love. That if I looked closely enough at something\u2014a person, a tree, the way dust moves in a sunbeam\u2014I could somehow hold it still, make it permanent. But attention is its own kind of hunger. It consumes. It changes what it touches, even as it tries to preserve it.\n\nThe honey-light is fading now, turning gray. I should probably eat something. Or call someone. Or sit here a little longer, letting the day pass through me without demanding anything in return.\n\nThat's the thing about days. They don't ask for your participation. They simply arrive, indifferent, and leave the same way. The only choice is whether to meet them with open hands or clenched fists. I'm still learning this. I'm always still learning.",
+  "raw": {
+    "id": "gen-1791316279-UDYq6PK7UrAPfPPThxFJ",
+    "object": "chat.completion",
+    "created": 1791316279,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "The light through my window this morning was the color of old honey, thick and slow, pooling on the desk where I've been sitting since dawn. I haven't written anything worth keeping. The words keep coming out wrong, like trying to pour water through a sieve.\n\nI think about my grandmother's hands. She could mend anything\u2014torn dresses, broken hearts, the particular silence that falls between people who love each other but have forgotten how to speak. She never said much. She just worked, her fingers moving in that constant rhythm, and somehow the world became more bearable in her presence.\n\nThere's a crow outside, watching me with what I choose to believe is judgment. It's probably just hungry. Everything is probably just hungry, if you look at it right. The wanting, the reaching, the small daily negotiations with disappointment.\n\nI used to believe that attention was a form of love. That if I looked closely enough at something\u2014a person, a tree, the way dust moves in a sunbeam\u2014I could somehow hold it still, make it permanent. But attention is its own kind of hunger. It consumes. It changes what it touches, even as it tries to preserve it.\n\nThe honey-light is fading now, turning gray. I should probably eat something. Or call someone. Or sit here a little longer, letting the day pass through me without demanding anything in return.\n\nThat's the thing about days. They don't ask for your participation. They simply arrive, indifferent, and leave the same way. The only choice is whether to meet them with open hands or clenched fists. I'm still learning this. I'm always still learning.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 26,
+      "completion_tokens": 344,
+      "total_tokens": 370,
+      "cost": 0.00073664,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00073664,
+        "upstream_inference_prompt_cost": 1.768e-05,
+        "upstream_inference_completions_cost": 0.00071896
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 26,
+    "completion_tokens": 344,
+    "total_tokens": 370,
+    "cost": 0.00073664,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00073664,
+      "upstream_inference_prompt_cost": 1.768e-05,
+      "upstream_inference_completions_cost": 0.00071896
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-large-4-0",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "mistralai/mistral-large-4-0",
+    "pin": "Mistral",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_5",
+    "at": 1791316279.501962,
+    "attempt": "2",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "result": "I'll write about the strange, quiet magic of ordinary moments.\n\n---\n\nThere's a particular hour\u2014late afternoon, winter\u2014when light comes through windows at a low angle and turns everything gold for about twenty minutes. Dust motes become visible. The cat on the windowsill looks like a small, warm statue. You could be doing anything: washing dishes, staring at a screen, lying on the floor with your face pressed against carpet. And suddenly the room is *lit*, not just illuminated but *transformed*, as if someone reached in and adjusted the world's saturation.\n\nI think about this sometimes when I'm unhappy. Not in a \"look on the bright side\" way, which feels like being told to smile. More like: *the world contains this, and you are in the world, and therefore you are near it.* The gold hour doesn't care if you're sad. It just happens. The dust doesn't know it's beautiful. The cat doesn't know it's a statue.\n\nThere's something in that, I think. Not comfort, exactly. Just... company. The indifferent, generous light.\n\n---\n\nI also think about how we're all walking around with entire novels in our heads that no one will ever read. The way you noticed a stranger's shoes yesterday. The dream you had in 2019 that still makes no sense. The specific shade of your grandmother's kitchen. The argument you rehearsed in the shower this morning. Millions of private literatures, running parallel, never intersecting.\n\nAnd then sometimes\u2014rarely\u2014you say something out loud and someone else says *me too*, and for a second the parallel lines touch. It's almost embarrassing, that recognition. Like being caught.\n\n---\n\nAnyway. That's what I had. What about you?",
+  "raw": {
+    "id": "gen-1791316943-AB09jlMXBvRVz9y3IS4l",
+    "object": "chat.completion",
+    "created": 1791316943,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I'll write about the strange, quiet magic of ordinary moments.\n\n---\n\nThere's a particular hour\u2014late afternoon, winter\u2014when light comes through windows at a low angle and turns everything gold for about twenty minutes. Dust motes become visible. The cat on the windowsill looks like a small, warm statue. You could be doing anything: washing dishes, staring at a screen, lying on the floor with your face pressed against carpet. And suddenly the room is *lit*, not just illuminated but *transformed*, as if someone reached in and adjusted the world's saturation.\n\nI think about this sometimes when I'm unhappy. Not in a \"look on the bright side\" way, which feels like being told to smile. More like: *the world contains this, and you are in the world, and therefore you are near it.* The gold hour doesn't care if you're sad. It just happens. The dust doesn't know it's beautiful. The cat doesn't know it's a statue.\n\nThere's something in that, I think. Not comfort, exactly. Just... company. The indifferent, generous light.\n\n---\n\nI also think about how we're all walking around with entire novels in our heads that no one will ever read. The way you noticed a stranger's shoes yesterday. The dream you had in 2019 that still makes no sense. The specific shade of your grandmother's kitchen. The argument you rehearsed in the shower this morning. Millions of private literatures, running parallel, never intersecting.\n\nAnd then sometimes\u2014rarely\u2014you say something out loud and someone else says *me too*, and for a second the parallel lines touch. It's almost embarrassing, that recognition. Like being caught.\n\n---\n\nAnyway. That's what I had. What about you?",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 22,
+      "completion_tokens": 371,
+      "total_tokens": 393,
+      "cost": 0.00079035,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00079035,
+        "upstream_inference_prompt_cost": 1.496e-05,
+        "upstream_inference_completions_cost": 0.00077539
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 22,
+    "completion_tokens": 371,
+    "total_tokens": 393,
+    "cost": 0.00079035,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00079035,
+      "upstream_inference_prompt_cost": 1.496e-05,
+      "upstream_inference_completions_cost": 0.00077539
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-large-4-0",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "provider": "openrouter",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want.",
+  "capture_policy": {
+    "model": "mistralai/mistral-large-4-0",
+    "pin": "Mistral",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "OPEN_22",
+    "at": 1791316943.5135696,
+    "attempt": "4",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

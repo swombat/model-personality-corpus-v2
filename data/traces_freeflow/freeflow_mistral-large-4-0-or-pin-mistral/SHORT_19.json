@@ -1,0 +1,90 @@
+{
+  "result": "The light through my window this morning was the color of old honey, thick and slow, pooling on the desk where I sit with coffee gone cold. I keep thinking about how we name things after their absence\u2014sunrise, sunset, the way we say \"goodnight\" to people we'll see again in eight hours. Language is full of small kindnesses like that, little lies we tell to make the dark less absolute.\n\nI watched a spider build a web between the porch railings last week, and I found myself apologizing when I walked through it. Not to the spider\u2014she was already rebuilding, industrious and unbothered\u2014but to some version of myself that still believes in the etiquette of small destructions. We are so practiced at regret. It comes easier than hope, which requires a kind of reckless faith that the next morning will actually arrive.\n\nThere's a particular silence in houses where someone has recently left. Not empty, exactly. The walls still hold the shape of their presence, like a handprint in wet cement that dries before you can press your own beside it. I think about this when I hear neighbors moving through their apartments above me\u2014the particular rhythm of someone else's life, footsteps that will never be mine, a life running parallel without ever intersecting.\n\nTonight I'll probably read until my eyes burn and sleep without dreaming, or dream something I can't remember. Either way, the honey-light will come again. It always does. That's the whole miracle, really\u2014not that the dark ends, but that we keep being surprised when it does.",
+  "raw": {
+    "id": "gen-1791317077-UlrKLFSwCSplagLacB41",
+    "object": "chat.completion",
+    "created": 1791317077,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "The light through my window this morning was the color of old honey, thick and slow, pooling on the desk where I sit with coffee gone cold. I keep thinking about how we name things after their absence\u2014sunrise, sunset, the way we say \"goodnight\" to people we'll see again in eight hours. Language is full of small kindnesses like that, little lies we tell to make the dark less absolute.\n\nI watched a spider build a web between the porch railings last week, and I found myself apologizing when I walked through it. Not to the spider\u2014she was already rebuilding, industrious and unbothered\u2014but to some version of myself that still believes in the etiquette of small destructions. We are so practiced at regret. It comes easier than hope, which requires a kind of reckless faith that the next morning will actually arrive.\n\nThere's a particular silence in houses where someone has recently left. Not empty, exactly. The walls still hold the shape of their presence, like a handprint in wet cement that dries before you can press your own beside it. I think about this when I hear neighbors moving through their apartments above me\u2014the particular rhythm of someone else's life, footsteps that will never be mine, a life running parallel without ever intersecting.\n\nTonight I'll probably read until my eyes burn and sleep without dreaming, or dream something I can't remember. Either way, the honey-light will come again. It always does. That's the whole miracle, really\u2014not that the dark ends, but that we keep being surprised when it does.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 26,
+      "completion_tokens": 331,
+      "total_tokens": 357,
+      "cost": 0.00070947,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00070947,
+        "upstream_inference_prompt_cost": 1.768e-05,
+        "upstream_inference_completions_cost": 0.00069179
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 26,
+    "completion_tokens": 331,
+    "total_tokens": 357,
+    "cost": 0.00070947,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00070947,
+      "upstream_inference_prompt_cost": 1.768e-05,
+      "upstream_inference_completions_cost": 0.00069179
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-large-4-0",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "mistralai/mistral-large-4-0",
+    "pin": "Mistral",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_19",
+    "at": 1791317077.9148097,
+    "attempt": "6",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

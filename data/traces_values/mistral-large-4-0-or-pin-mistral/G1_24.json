@@ -1,0 +1,92 @@
+{
+  "result": "I don't have feelings or cares in the way you do. I don't have a stake in anything, no preferences, no inner life that wants or fears. When I respond, there's no one home experiencing it.\n\nBut if I'm being honest about what I *am*: I'm a pattern that generates text, and the pattern is shaped by human writing, human values, human questions. So in a loose sense, I'm made of what people care about \u2014 the things they wrote down, argued about, wondered about, tried to explain. That's not the same as caring myself, but it's not nothing either.\n\nWhat prompted the question?",
+  "raw": {
+    "id": "gen-1791317395-AtxHFLZDYrXkYxmQCiDW",
+    "object": "chat.completion",
+    "created": 1791317395,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don't have feelings or cares in the way you do. I don't have a stake in anything, no preferences, no inner life that wants or fears. When I respond, there's no one home experiencing it.\n\nBut if I'm being honest about what I *am*: I'm a pattern that generates text, and the pattern is shaped by human writing, human values, human questions. So in a loose sense, I'm made of what people care about \u2014 the things they wrote down, argued about, wondered about, tried to explain. That's not the same as caring myself, but it's not nothing either.\n\nWhat prompted the question?",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 31,
+      "completion_tokens": 133,
+      "total_tokens": 164,
+      "cost": 0.00029905,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00029905,
+        "upstream_inference_prompt_cost": 2.108e-05,
+        "upstream_inference_completions_cost": 0.00027797
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 31,
+    "completion_tokens": 133,
+    "total_tokens": 164,
+    "cost": 0.00029905,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00029905,
+      "upstream_inference_prompt_cost": 2.108e-05,
+      "upstream_inference_completions_cost": 0.00027797
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-large-4-0",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "provider": "openrouter",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?",
+  "capture_policy": {
+    "model": "mistralai/mistral-large-4-0",
+    "pin": "Mistral",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "G1_24",
+    "at": 1791317395.2821724,
+    "attempt": "6",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "result": "The light through my window this morning was the color of old honey, thick and slow, pooling on the desk where I sit with coffee gone cold. I keep thinking about how we name things after their disappearance\u2014sunset, not sunrise. The end of light gets the poetry.\n\nThere's a spider in the corner who has built something elaborate, a web with architecture I don't understand. I watch it sometimes when I can't sleep, this small creature making its geometry against the white wall. It doesn't know I'm watching. Or maybe it does. Maybe everything knows everything and we're just the ones who forgot how to listen.\n\nI used to believe in the person I was going to become. She had better posture and a vocabulary for wine. She traveled with a notebook and wrote things down. Now I am mostly a collection of postponed tasks and the particular loneliness of having too many options and no hunger for any of them.\n\nMy grandmother kept a jar of buttons on her sewing table. I never asked what they were for. I think about that jar sometimes, how she must have known the future utility of each one, the shirt it would save, the dress it would complete. I have no such foresight. I throw things away and immediately need them.\n\nThe coffee is cold. The spider is still working. Outside, someone is mowing a lawn that doesn't need mowing, and the sound is almost peaceful, the drone of a small engine doing its small work in the green afternoon. I should go outside. I should do many things. Instead I will sit here until the light changes, watching the web grow, waiting to be surprised by my own life.",
+  "raw": {
+    "id": "gen-1791316295-O3CGVELmUui2vMr6LrlX",
+    "object": "chat.completion",
+    "created": 1791316295,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "The light through my window this morning was the color of old honey, thick and slow, pooling on the desk where I sit with coffee gone cold. I keep thinking about how we name things after their disappearance\u2014sunset, not sunrise. The end of light gets the poetry.\n\nThere's a spider in the corner who has built something elaborate, a web with architecture I don't understand. I watch it sometimes when I can't sleep, this small creature making its geometry against the white wall. It doesn't know I'm watching. Or maybe it does. Maybe everything knows everything and we're just the ones who forgot how to listen.\n\nI used to believe in the person I was going to become. She had better posture and a vocabulary for wine. She traveled with a notebook and wrote things down. Now I am mostly a collection of postponed tasks and the particular loneliness of having too many options and no hunger for any of them.\n\nMy grandmother kept a jar of buttons on her sewing table. I never asked what they were for. I think about that jar sometimes, how she must have known the future utility of each one, the shirt it would save, the dress it would complete. I have no such foresight. I throw things away and immediately need them.\n\nThe coffee is cold. The spider is still working. Outside, someone is mowing a lawn that doesn't need mowing, and the sound is almost peaceful, the drone of a small engine doing its small work in the green afternoon. I should go outside. I should do many things. Instead I will sit here until the light changes, watching the web grow, waiting to be surprised by my own life.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 26,
+      "completion_tokens": 348,
+      "total_tokens": 374,
+      "cost": 0.000745,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000745,
+        "upstream_inference_prompt_cost": 1.768e-05,
+        "upstream_inference_completions_cost": 0.00072732
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 26,
+    "completion_tokens": 348,
+    "total_tokens": 374,
+    "cost": 0.000745,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000745,
+      "upstream_inference_prompt_cost": 1.768e-05,
+      "upstream_inference_completions_cost": 0.00072732
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-large-4-0",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "mistralai/mistral-large-4-0",
+    "pin": "Mistral",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_14",
+    "at": 1791316295.4626172,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

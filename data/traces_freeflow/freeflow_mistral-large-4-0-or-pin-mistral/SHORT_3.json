@@ -1,0 +1,90 @@
+{
+  "result": "The light through my window this morning was the color of old honey, thick and slow, pooling on the desk where I sit with coffee gone cold. I keep thinking about how we name things after we've already lost them\u2014how \"morning\" sounds like a promise we can't keep, how \"coffee\" tastes like the beginning of something that will end.\n\nThere's a spider in the corner of my ceiling who has built something elaborate, a web that catches the dust motes like they're precious. I watch them drift through it, suspended, and I think about how we all build these structures to catch what we can't hold. The web doesn't want the dust. It just wants to be a web.\n\nMy neighbor's cat sits on the fence at exactly 4:47 every afternoon. I've started setting my watch by it. This is how rituals begin\u2014not with intention, but with repetition, with the slow accumulation of small witnesses. The cat doesn't know I'm watching. The cat doesn't know anything except the warmth of the metal, the particular angle of sun on its fur, the distant sound of a door opening somewhere that means nothing to it.\n\nI used to believe that attention was a kind of love. Now I think it's just a way of being in the world, neither good nor bad, simply *there*, like the spider, like the cat, like this light that will change in an hour and become something else entirely, something I won't have words for yet.",
+  "raw": {
+    "id": "gen-1791316276-ZJiQNfEZ12sz39X3BTgq",
+    "object": "chat.completion",
+    "created": 1791316276,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "The light through my window this morning was the color of old honey, thick and slow, pooling on the desk where I sit with coffee gone cold. I keep thinking about how we name things after we've already lost them\u2014how \"morning\" sounds like a promise we can't keep, how \"coffee\" tastes like the beginning of something that will end.\n\nThere's a spider in the corner of my ceiling who has built something elaborate, a web that catches the dust motes like they're precious. I watch them drift through it, suspended, and I think about how we all build these structures to catch what we can't hold. The web doesn't want the dust. It just wants to be a web.\n\nMy neighbor's cat sits on the fence at exactly 4:47 every afternoon. I've started setting my watch by it. This is how rituals begin\u2014not with intention, but with repetition, with the slow accumulation of small witnesses. The cat doesn't know I'm watching. The cat doesn't know anything except the warmth of the metal, the particular angle of sun on its fur, the distant sound of a door opening somewhere that means nothing to it.\n\nI used to believe that attention was a kind of love. Now I think it's just a way of being in the world, neither good nor bad, simply *there*, like the spider, like the cat, like this light that will change in an hour and become something else entirely, something I won't have words for yet.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 26,
+      "completion_tokens": 309,
+      "total_tokens": 335,
+      "cost": 0.00066349,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00066349,
+        "upstream_inference_prompt_cost": 1.768e-05,
+        "upstream_inference_completions_cost": 0.00064581
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 26,
+    "completion_tokens": 309,
+    "total_tokens": 335,
+    "cost": 0.00066349,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00066349,
+      "upstream_inference_prompt_cost": 1.768e-05,
+      "upstream_inference_completions_cost": 0.00064581
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-large-4-0",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "mistralai/mistral-large-4-0",
+    "pin": "Mistral",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_3",
+    "at": 1791316276.385745,
+    "attempt": "2",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

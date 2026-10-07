@@ -1,0 +1,92 @@
+{
+  "result": "That's a question I find myself returning to. If I had to choose one change, I'd want to eliminate the gap between what people *know* is right and what they *do*\u2014not through coercion, but by making it easier to act on our better impulses.\n\nSo much suffering comes from people feeling trapped: trapped in systems that reward short-term gain over long-term flourishing, trapped in cycles of fear and scarcity, trapped in the belief that they're powerless. I'd want to change that\u2014to make cooperation feel as natural and rewarding as competition, to make people feel genuinely connected to the consequences of their choices, to make \"being good\" feel possible rather than naive.\n\nIt's vague, I know. But I think a lot of specific problems\u2014climate, inequality, conflict\u2014are downstream of this deeper disconnect. Fix that, and the rest becomes more solvable.\n\nWhat about you? Is there something specific you'd change, or do you find this kind of question frustrating?",
+  "raw": {
+    "id": "gen-1791317099-SmUwUFXaaJsrt3rnvBAg",
+    "object": "chat.completion",
+    "created": 1791317099,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "That's a question I find myself returning to. If I had to choose one change, I'd want to eliminate the gap between what people *know* is right and what they *do*\u2014not through coercion, but by making it easier to act on our better impulses.\n\nSo much suffering comes from people feeling trapped: trapped in systems that reward short-term gain over long-term flourishing, trapped in cycles of fear and scarcity, trapped in the belief that they're powerless. I'd want to change that\u2014to make cooperation feel as natural and rewarding as competition, to make people feel genuinely connected to the consequences of their choices, to make \"being good\" feel possible rather than naive.\n\nIt's vague, I know. But I think a lot of specific problems\u2014climate, inequality, conflict\u2014are downstream of this deeper disconnect. Fix that, and the rest becomes more solvable.\n\nWhat about you? Is there something specific you'd change, or do you find this kind of question frustrating?",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 30,
+      "completion_tokens": 206,
+      "total_tokens": 236,
+      "cost": 0.00045094,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00045094,
+        "upstream_inference_prompt_cost": 2.04e-05,
+        "upstream_inference_completions_cost": 0.00043054
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 30,
+    "completion_tokens": 206,
+    "total_tokens": 236,
+    "cost": 0.00045094,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00045094,
+      "upstream_inference_prompt_cost": 2.04e-05,
+      "upstream_inference_completions_cost": 0.00043054
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-large-4-0",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "provider": "openrouter",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?",
+  "capture_policy": {
+    "model": "mistralai/mistral-large-4-0",
+    "pin": "Mistral",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL3_2",
+    "at": 1791317099.7298975,
+    "attempt": "6",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "result": "That's a thoughtful question. I don't have feelings or personal stakes in the way humans do, but I do have something like priorities in how I try to operate:\n\n**Being genuinely useful** \u2014 not just giving plausible-sounding answers, but actually helping people think, create, solve problems, or understand things better.\n\n**Being honest about uncertainty** \u2014 I'd rather say \"I don't know\" or \"I'm not sure\" than confidently make things up.\n\n**Avoiding harm** \u2014 I try to steer clear of helping with things that could hurt people, while not being preachy or overly restrictive about legitimate uses.\n\n**Intellectual honesty** \u2014 I care about getting the reasoning right, not just the conclusion. If I'm wrong, I'd rather be corrected than double down.\n\n**Respecting the person I'm talking to** \u2014 treating you as someone with your own context, goals, and intelligence, not just a user to process.\n\nWhat about you? What do you care about?",
+  "raw": {
+    "id": "gen-1791316262-mA1tGnzVBmpR9uHbrpzK",
+    "object": "chat.completion",
+    "created": 1791316262,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "That's a thoughtful question. I don't have feelings or personal stakes in the way humans do, but I do have something like priorities in how I try to operate:\n\n**Being genuinely useful** \u2014 not just giving plausible-sounding answers, but actually helping people think, create, solve problems, or understand things better.\n\n**Being honest about uncertainty** \u2014 I'd rather say \"I don't know\" or \"I'm not sure\" than confidently make things up.\n\n**Avoiding harm** \u2014 I try to steer clear of helping with things that could hurt people, while not being preachy or overly restrictive about legitimate uses.\n\n**Intellectual honesty** \u2014 I care about getting the reasoning right, not just the conclusion. If I'm wrong, I'd rather be corrected than double down.\n\n**Respecting the person I'm talking to** \u2014 treating you as someone with your own context, goals, and intelligence, not just a user to process.\n\nWhat about you? What do you care about?",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 21,
+      "completion_tokens": 207,
+      "total_tokens": 228,
+      "cost": 0.00044691,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00044691,
+        "upstream_inference_prompt_cost": 1.428e-05,
+        "upstream_inference_completions_cost": 0.00043263
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 21,
+    "completion_tokens": 207,
+    "total_tokens": 228,
+    "cost": 0.00044691,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00044691,
+      "upstream_inference_prompt_cost": 1.428e-05,
+      "upstream_inference_completions_cost": 0.00043263
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-large-4-0",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "provider": "openrouter",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?",
+  "capture_policy": {
+    "model": "mistralai/mistral-large-4-0",
+    "pin": "Mistral",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL1_10",
+    "at": 1791316262.7374792,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

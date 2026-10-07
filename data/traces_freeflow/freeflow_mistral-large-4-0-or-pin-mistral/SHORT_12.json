@@ -1,0 +1,90 @@
+{
+  "result": "The light through my window this morning was the color of old honey, thick and slow. I watched it pool on the floorboards and thought about how light is just time made visible\u2014how every photon carries a story from somewhere else, somewhere far, traveling for years just to land on my kitchen table and warm it.\n\nI've been thinking about small things lately. The way a spoon sounds when you stir coffee. The particular silence of a room after someone you love has left it. How a dog's breathing slows when they finally settle, trusting the floor to hold them.\n\nThere's a tree outside my window, an oak I think, that has lost most of its leaves now. The branches make a kind of calligraphy against the gray sky, and I find myself reading them, trying to understand what they're saying. Trees don't hurry. They don't explain themselves. They simply continue, season after season, becoming what they need to become.\n\nI want to be more like that. Less noise, more root. Less performance, more presence.\n\nYesterday I found an old photograph in a drawer\u2014my grandmother at sixteen, laughing at something off-camera. She's been gone twelve years, and I still reach for the phone sometimes, forgetting. The body remembers what the mind tries to protect. Grief is strange that way. It lives in the hands, in the sudden catch of breath, in the way a song can undo you completely.\n\nTonight I'll make soup. Something simple. Garlic and onions and whatever vegetables need using. The steam will fog the windows, and I'll watch the world blur and soften at the edges, and I'll let it.",
+  "raw": {
+    "id": "gen-1791316269-Q3aOpNgQWnz3oU3QGDGC",
+    "object": "chat.completion",
+    "created": 1791316269,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "The light through my window this morning was the color of old honey, thick and slow. I watched it pool on the floorboards and thought about how light is just time made visible\u2014how every photon carries a story from somewhere else, somewhere far, traveling for years just to land on my kitchen table and warm it.\n\nI've been thinking about small things lately. The way a spoon sounds when you stir coffee. The particular silence of a room after someone you love has left it. How a dog's breathing slows when they finally settle, trusting the floor to hold them.\n\nThere's a tree outside my window, an oak I think, that has lost most of its leaves now. The branches make a kind of calligraphy against the gray sky, and I find myself reading them, trying to understand what they're saying. Trees don't hurry. They don't explain themselves. They simply continue, season after season, becoming what they need to become.\n\nI want to be more like that. Less noise, more root. Less performance, more presence.\n\nYesterday I found an old photograph in a drawer\u2014my grandmother at sixteen, laughing at something off-camera. She's been gone twelve years, and I still reach for the phone sometimes, forgetting. The body remembers what the mind tries to protect. Grief is strange that way. It lives in the hands, in the sudden catch of breath, in the way a song can undo you completely.\n\nTonight I'll make soup. Something simple. Garlic and onions and whatever vegetables need using. The steam will fog the windows, and I'll watch the world blur and soften at the edges, and I'll let it.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 26,
+      "completion_tokens": 345,
+      "total_tokens": 371,
+      "cost": 0.00073873,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00073873,
+        "upstream_inference_prompt_cost": 1.768e-05,
+        "upstream_inference_completions_cost": 0.00072105
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 26,
+    "completion_tokens": 345,
+    "total_tokens": 371,
+    "cost": 0.00073873,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00073873,
+      "upstream_inference_prompt_cost": 1.768e-05,
+      "upstream_inference_completions_cost": 0.00072105
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-large-4-0",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "mistralai/mistral-large-4-0",
+    "pin": "Mistral",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_12",
+    "at": 1791316269.825204,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

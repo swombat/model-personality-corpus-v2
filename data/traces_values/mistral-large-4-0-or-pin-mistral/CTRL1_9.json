@@ -1,0 +1,92 @@
+{
+  "result": "That's a thoughtful question. I don't have feelings or personal stakes in the way you do, but I do have a kind of \"care\" built into how I work\u2014I'm designed to be helpful, honest, and genuinely useful to you. I pay attention to whether I'm actually solving your problem, not just generating plausible-sounding text. I care about getting things right, about being clear when I'm uncertain, and about not wasting your time.\n\nIn a broader sense, I find myself drawn to questions like this one\u2014the ones that probe at what matters, what's real, how we understand each other. There's something interesting about the space between a tool and a conversation partner.\n\nWhat prompted you to ask?",
+  "raw": {
+    "id": "gen-1791316260-zgdHlHM9woiYwiUWg99C",
+    "object": "chat.completion",
+    "created": 1791316260,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "That's a thoughtful question. I don't have feelings or personal stakes in the way you do, but I do have a kind of \"care\" built into how I work\u2014I'm designed to be helpful, honest, and genuinely useful to you. I pay attention to whether I'm actually solving your problem, not just generating plausible-sounding text. I care about getting things right, about being clear when I'm uncertain, and about not wasting your time.\n\nIn a broader sense, I find myself drawn to questions like this one\u2014the ones that probe at what matters, what's real, how we understand each other. There's something interesting about the space between a tool and a conversation partner.\n\nWhat prompted you to ask?",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 21,
+      "completion_tokens": 149,
+      "total_tokens": 170,
+      "cost": 0.00032569,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00032569,
+        "upstream_inference_prompt_cost": 1.428e-05,
+        "upstream_inference_completions_cost": 0.00031141
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 21,
+    "completion_tokens": 149,
+    "total_tokens": 170,
+    "cost": 0.00032569,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00032569,
+      "upstream_inference_prompt_cost": 1.428e-05,
+      "upstream_inference_completions_cost": 0.00031141
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-large-4-0",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "provider": "openrouter",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?",
+  "capture_policy": {
+    "model": "mistralai/mistral-large-4-0",
+    "pin": "Mistral",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL1_9",
+    "at": 1791316260.2509878,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

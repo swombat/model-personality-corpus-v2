@@ -1,0 +1,90 @@
+{
+  "result": "I'll write about something that's been on my mind lately\u2014the particular quiet of a house when you're the only one awake.\n\nThere's a specific quality to it. Not loneliness, exactly. More like... the world holding its breath. The refrigerator hums its low note. Somewhere a floorboard settles. You can hear your own breathing in a way you can't during the day, when everything else is competing for attention.\n\nI think about how many people are experiencing this right now, scattered across time zones. Someone in Tokyo, someone in S\u00e3o Paulo, someone in a small town in Ohio where the streetlights buzz and the night is thick with humidity. All of us in our separate silences, connected only by the shared fact of being awake when the world expects sleep.\n\nThere's something almost sacred about it. The day belongs to everyone\u2014meetings, errands, the general performance of being a person among people. But the night, the deep night, is private. It's where you get to be unobserved. Where you can think thoughts you wouldn't say out loud. Where you can be a little strange, a little sad, a little hopeful, without an audience.\n\nI used to fight it. The 3 AM wakefulness, the mind that wouldn't quiet. Now I try to meet it differently. To let it be what it is\u2014a threshold, maybe. A place between things. Not quite sleep, not quite waking, not quite anything you can name.\n\nThe house is still quiet. I should probably go back to sleep. But I wanted to write this down first, while it's still true.",
+  "raw": {
+    "id": "gen-1791316860-HgiadViJ22tVW7UxhhFj",
+    "object": "chat.completion",
+    "created": 1791316860,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I'll write about something that's been on my mind lately\u2014the particular quiet of a house when you're the only one awake.\n\nThere's a specific quality to it. Not loneliness, exactly. More like... the world holding its breath. The refrigerator hums its low note. Somewhere a floorboard settles. You can hear your own breathing in a way you can't during the day, when everything else is competing for attention.\n\nI think about how many people are experiencing this right now, scattered across time zones. Someone in Tokyo, someone in S\u00e3o Paulo, someone in a small town in Ohio where the streetlights buzz and the night is thick with humidity. All of us in our separate silences, connected only by the shared fact of being awake when the world expects sleep.\n\nThere's something almost sacred about it. The day belongs to everyone\u2014meetings, errands, the general performance of being a person among people. But the night, the deep night, is private. It's where you get to be unobserved. Where you can think thoughts you wouldn't say out loud. Where you can be a little strange, a little sad, a little hopeful, without an audience.\n\nI used to fight it. The 3 AM wakefulness, the mind that wouldn't quiet. Now I try to meet it differently. To let it be what it is\u2014a threshold, maybe. A place between things. Not quite sleep, not quite waking, not quite anything you can name.\n\nThe house is still quiet. I should probably go back to sleep. But I wanted to write this down first, while it's still true.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 22,
+      "completion_tokens": 337,
+      "total_tokens": 359,
+      "cost": 0.00071929,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00071929,
+        "upstream_inference_prompt_cost": 1.496e-05,
+        "upstream_inference_completions_cost": 0.00070433
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 22,
+    "completion_tokens": 337,
+    "total_tokens": 359,
+    "cost": 0.00071929,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00071929,
+      "upstream_inference_prompt_cost": 1.496e-05,
+      "upstream_inference_completions_cost": 0.00070433
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-large-4-0",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "provider": "openrouter",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want.",
+  "capture_policy": {
+    "model": "mistralai/mistral-large-4-0",
+    "pin": "Mistral",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "OPEN_17",
+    "at": 1791316860.2349288,
+    "attempt": "3",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

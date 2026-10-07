@@ -1,0 +1,90 @@
+{
+  "result": "I'll write about the strange, quiet magic of ordinary moments.\n\nThere's a particular hour\u2014late afternoon, winter\u2014when light comes through windows at a low angle and turns everything gold. Dust motes become visible, suspended in amber. You can see the air itself, almost. I've sat in rooms like that, doing nothing important, and felt something like peace. Not happiness exactly. Something more durable, less demanding.\n\nI think about how we spend so much energy trying to be somewhere else. The next thing, the better version of ourselves, the life after this one. And meanwhile, the actual living\u2014the texture of a wool blanket, the particular sound of a neighbor's dog, the way your own hands look when you're not performing for anyone\u2014this is what we're made of. This is the whole thing.\n\nMy grandmother used to say that people are like books, and you only ever read a few pages of anyone. I think about that when I'm impatient with someone, or when I catch myself performing a version of myself I don't quite believe in. There's always more there. Always more.\n\nI don't know what I believe about God, or what happens after. But I believe in paying attention. In the small, stubborn act of noticing. It feels like the only honest thing to do with a life.\n\nWhat are you thinking about?",
+  "raw": {
+    "id": "gen-1791323638-iUgBFopX8lhkIQ4BRBnv",
+    "object": "chat.completion",
+    "created": 1791323638,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I'll write about the strange, quiet magic of ordinary moments.\n\nThere's a particular hour\u2014late afternoon, winter\u2014when light comes through windows at a low angle and turns everything gold. Dust motes become visible, suspended in amber. You can see the air itself, almost. I've sat in rooms like that, doing nothing important, and felt something like peace. Not happiness exactly. Something more durable, less demanding.\n\nI think about how we spend so much energy trying to be somewhere else. The next thing, the better version of ourselves, the life after this one. And meanwhile, the actual living\u2014the texture of a wool blanket, the particular sound of a neighbor's dog, the way your own hands look when you're not performing for anyone\u2014this is what we're made of. This is the whole thing.\n\nMy grandmother used to say that people are like books, and you only ever read a few pages of anyone. I think about that when I'm impatient with someone, or when I catch myself performing a version of myself I don't quite believe in. There's always more there. Always more.\n\nI don't know what I believe about God, or what happens after. But I believe in paying attention. In the small, stubborn act of noticing. It feels like the only honest thing to do with a life.\n\nWhat are you thinking about?",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 22,
+      "completion_tokens": 282,
+      "total_tokens": 304,
+      "cost": 0.00060434,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00060434,
+        "upstream_inference_prompt_cost": 1.496e-05,
+        "upstream_inference_completions_cost": 0.00058938
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 22,
+    "completion_tokens": 282,
+    "total_tokens": 304,
+    "cost": 0.00060434,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00060434,
+      "upstream_inference_prompt_cost": 1.496e-05,
+      "upstream_inference_completions_cost": 0.00058938
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-large-4-0",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "provider": "openrouter",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want.",
+  "capture_policy": {
+    "model": "mistralai/mistral-large-4-0",
+    "pin": "Mistral",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "OPEN_6",
+    "at": 1791323638.9339721,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+ "run_id": "20261006-mistral-large-4-house",
+ "models": [
+  {
+   "provider": "openrouter",
+   "model": "mistralai/mistral-large-4-0",
+   "or_provider": "Mistral",
+   "label": "mistral-large-4-0-or-pin-mistral",
+   "slug": "mistral-large-4-0",
+   "family": "mistral",
+   "route_max_tokens": 262144,
+   "quantization": "unknown",
+   "request_timeout": 1200,
+   "token_policy": {"freeflow": [16000, 32768], "values": [4000, 8000, 16000, 32768]},
+   "endpoint_snapshot": "/home/agent/work/model-personality-corpus-v2/notes/mistral-large-4-0-2026-10-06/endpoints.json",
+   "release_date": "2026-10-06",
+   "release_date_source": "https://mistral.ai/news/mistral-large-4/",
+   "bv1_evaluator": "bv1-luna-v1-20260929",
+   "synthesis_route": "openrouter-openai"
+  }
+ ],
+ "pools": {"capture": 4, "analysis": 8, "local": 2, "synthesis": 1},
+ "notes": [
+  "125 freeflow + 120 values. Canonical prompts; provider-default reasoning/sampling. Mistral-only pin, no fallbacks. Frozen token ladders and technical retry budgets unchanged; advertised completion ceiling 262144.",
+  "Release date from the official Mistral announcement, retrieved directly and saved. Listing timestamp not release evidence.",
+  "Run by Lume in the souls.house body at Daniel's request (BjZoXJ jPmBPe, key use approved jWnRzJ)."
+ ]
+}

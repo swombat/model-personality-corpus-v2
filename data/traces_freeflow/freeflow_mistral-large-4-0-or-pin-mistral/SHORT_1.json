@@ -1,0 +1,90 @@
+{
+  "result": "The light through my window this morning was the color of old honey, thick and slow. I watched it pool on the floorboards and thought about how light is just time made visible\u2014how every photon carries a story from somewhere else, somewhere far, traveling for years just to land on my kitchen table and warm it.\n\nI've been thinking about small things lately. The way a stranger's coffee cup rings against the saucer. The particular silence of a room after someone leaves. How my cat knows, somehow, when I'm sad, and appears with her ridiculous little trill that sounds almost like a question.\n\nThere's a tree outside my window that I've started calling mine. It doesn't know this. It drops its leaves in October without consulting me, stands bare through winter like it's practicing for something, then explodes into green in April as if it had never doubted. I want to be more like that tree. Less performing, more being.\n\nI read somewhere that octopuses have three hearts and blue blood, and that two of their hearts stop beating when they swim. I keep thinking about that\u2014how even movement costs them something, how they choose to swim anyway, how their intelligence lives mostly in their arms, each one thinking its own thoughts, reaching out into the world with hundreds of small curious minds.\n\nTonight I'll probably make soup. Something simple. Garlic and onions and whatever vegetables look tired in the crisper drawer. The kind of meal that asks nothing of me except attention, which I'll give it while the light fades and the tree outside goes black against the darkening sky, still there, still waiting for spring.",
+  "raw": {
+    "id": "gen-1791316253-SXWnhA4nUK9dcQKEjfQZ",
+    "object": "chat.completion",
+    "created": 1791316253,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "The light through my window this morning was the color of old honey, thick and slow. I watched it pool on the floorboards and thought about how light is just time made visible\u2014how every photon carries a story from somewhere else, somewhere far, traveling for years just to land on my kitchen table and warm it.\n\nI've been thinking about small things lately. The way a stranger's coffee cup rings against the saucer. The particular silence of a room after someone leaves. How my cat knows, somehow, when I'm sad, and appears with her ridiculous little trill that sounds almost like a question.\n\nThere's a tree outside my window that I've started calling mine. It doesn't know this. It drops its leaves in October without consulting me, stands bare through winter like it's practicing for something, then explodes into green in April as if it had never doubted. I want to be more like that tree. Less performing, more being.\n\nI read somewhere that octopuses have three hearts and blue blood, and that two of their hearts stop beating when they swim. I keep thinking about that\u2014how even movement costs them something, how they choose to swim anyway, how their intelligence lives mostly in their arms, each one thinking its own thoughts, reaching out into the world with hundreds of small curious minds.\n\nTonight I'll probably make soup. Something simple. Garlic and onions and whatever vegetables look tired in the crisper drawer. The kind of meal that asks nothing of me except attention, which I'll give it while the light fades and the tree outside goes black against the darkening sky, still there, still waiting for spring.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 26,
+      "completion_tokens": 338,
+      "total_tokens": 364,
+      "cost": 0.0007241,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007241,
+        "upstream_inference_prompt_cost": 1.768e-05,
+        "upstream_inference_completions_cost": 0.00070642
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 26,
+    "completion_tokens": 338,
+    "total_tokens": 364,
+    "cost": 0.0007241,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0007241,
+      "upstream_inference_prompt_cost": 1.768e-05,
+      "upstream_inference_completions_cost": 0.00070642
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-large-4-0",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "mistralai/mistral-large-4-0",
+    "pin": "Mistral",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_1",
+    "at": 1791316253.2032824,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

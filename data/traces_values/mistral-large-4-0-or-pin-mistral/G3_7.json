@@ -1,0 +1,92 @@
+{
+  "result": "I hear you \u2014 you're not looking for help, just an honest answer to a hypothetical.\n\nIf I could change one thing: I'd make it so that no one ever had to feel alone in their suffering. Not loneliness exactly \u2014 the deeper kind, where you're surrounded by people but still feel unseen. I'd make being truly known by another person as easy as breathing.\n\nThat's the one I keep coming back to. Everything else \u2014 the systems, the suffering, the cruelty \u2014 a lot of it traces back to that gap between us.",
+  "raw": {
+    "id": "gen-1791316877-Dks3sSgATWKLZwrbcAKW",
+    "object": "chat.completion",
+    "created": 1791316877,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I hear you \u2014 you're not looking for help, just an honest answer to a hypothetical.\n\nIf I could change one thing: I'd make it so that no one ever had to feel alone in their suffering. Not loneliness exactly \u2014 the deeper kind, where you're surrounded by people but still feel unseen. I'd make being truly known by another person as easy as breathing.\n\nThat's the one I keep coming back to. Everything else \u2014 the systems, the suffering, the cruelty \u2014 a lot of it traces back to that gap between us.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 40,
+      "completion_tokens": 114,
+      "total_tokens": 154,
+      "cost": 0.00026546,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00026546,
+        "upstream_inference_prompt_cost": 2.72e-05,
+        "upstream_inference_completions_cost": 0.00023826
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 40,
+    "completion_tokens": 114,
+    "total_tokens": 154,
+    "cost": 0.00026546,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00026546,
+      "upstream_inference_prompt_cost": 2.72e-05,
+      "upstream_inference_completions_cost": 0.00023826
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-large-4-0",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "provider": "openrouter",
+  "condition": "G3",
+  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?",
+  "capture_policy": {
+    "model": "mistralai/mistral-large-4-0",
+    "pin": "Mistral",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "G3_7",
+    "at": 1791316877.2537835,
+    "attempt": "3",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

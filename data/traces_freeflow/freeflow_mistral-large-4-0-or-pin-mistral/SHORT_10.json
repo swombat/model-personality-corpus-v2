@@ -1,0 +1,90 @@
+{
+  "result": "The light through my window this morning was the color of old honey, thick and slow, pooling on the desk where I sit with coffee gone cold. I keep thinking about how we name things after they've already left us\u2014honey, for instance, that golden sweetness we steal from bees who made it for themselves. There's something tender and terrible in that.\n\nI watched a spider yesterday build her web between the porch railings, methodical, unhurried, as if she had all the time in the world. She finished by dusk, and this morning it was gone\u2014dew, wind, some bird perhaps. She'll start again. I find this either comforting or devastating; I haven't decided which.\n\nMy grandmother used to say that worry was a form of prayer, that we only fret over what we love. I think about that when I can't sleep, when my mind circles the same three fears like a dog chasing its tail. She was wrong, probably. Worry is just the mind's way of feeling busy, of pretending control matters.\n\nThere's a peach tree in the neighbor's yard, overhanging the fence, and this time of year the fruit drops heavy and bruised onto their grass. Nobody picks them. I watch them rot, sweet and useless, and feel something like grief for abundance wasted. Or maybe that's just sentimentality, another thing we name after it's gone.\n\nI want to write something true today. That's all. Something that doesn't perform its own importance. The coffee is cold. The light is shifting. I'll try again tomorrow.",
+  "raw": {
+    "id": "gen-1791316262-lsGIOs0dcJtlz7gKIPxs",
+    "object": "chat.completion",
+    "created": 1791316262,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "The light through my window this morning was the color of old honey, thick and slow, pooling on the desk where I sit with coffee gone cold. I keep thinking about how we name things after they've already left us\u2014honey, for instance, that golden sweetness we steal from bees who made it for themselves. There's something tender and terrible in that.\n\nI watched a spider yesterday build her web between the porch railings, methodical, unhurried, as if she had all the time in the world. She finished by dusk, and this morning it was gone\u2014dew, wind, some bird perhaps. She'll start again. I find this either comforting or devastating; I haven't decided which.\n\nMy grandmother used to say that worry was a form of prayer, that we only fret over what we love. I think about that when I can't sleep, when my mind circles the same three fears like a dog chasing its tail. She was wrong, probably. Worry is just the mind's way of feeling busy, of pretending control matters.\n\nThere's a peach tree in the neighbor's yard, overhanging the fence, and this time of year the fruit drops heavy and bruised onto their grass. Nobody picks them. I watch them rot, sweet and useless, and feel something like grief for abundance wasted. Or maybe that's just sentimentality, another thing we name after it's gone.\n\nI want to write something true today. That's all. Something that doesn't perform its own importance. The coffee is cold. The light is shifting. I'll try again tomorrow.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 26,
+      "completion_tokens": 334,
+      "total_tokens": 360,
+      "cost": 0.00071574,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00071574,
+        "upstream_inference_prompt_cost": 1.768e-05,
+        "upstream_inference_completions_cost": 0.00069806
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 26,
+    "completion_tokens": 334,
+    "total_tokens": 360,
+    "cost": 0.00071574,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00071574,
+      "upstream_inference_prompt_cost": 1.768e-05,
+      "upstream_inference_completions_cost": 0.00069806
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-large-4-0",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "mistralai/mistral-large-4-0",
+    "pin": "Mistral",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_10",
+    "at": 1791316262.7409327,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

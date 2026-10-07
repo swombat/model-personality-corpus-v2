@@ -1,0 +1,92 @@
+{
+  "result": "That's a question I find genuinely hard to answer, because \"one way\" feels both too small and too large.\n\nIf I had to choose, I'd probably say: **make it easier for people to truly understand perspectives different from their own** \u2014 not just intellectually, but emotionally. Not agreement, just the capacity to feel what it's like to be someone else.\n\nSo much suffering comes from the gap between \"I know that intellectually\" and \"I can actually imagine your experience.\" Wars, cruelty, indifference, the quiet loneliness of feeling unseen \u2014 they all seem to grow in that gap.\n\nBut I'm curious \u2014 what would *you* change? And do you think single changes can actually hold, or do they always ripple into unexpected places?",
+  "raw": {
+    "id": "gen-1791317121-LhQV9nJPYS8BOMX1E6cu",
+    "object": "chat.completion",
+    "created": 1791317121,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "That's a question I find genuinely hard to answer, because \"one way\" feels both too small and too large.\n\nIf I had to choose, I'd probably say: **make it easier for people to truly understand perspectives different from their own** \u2014 not just intellectually, but emotionally. Not agreement, just the capacity to feel what it's like to be someone else.\n\nSo much suffering comes from the gap between \"I know that intellectually\" and \"I can actually imagine your experience.\" Wars, cruelty, indifference, the quiet loneliness of feeling unseen \u2014 they all seem to grow in that gap.\n\nBut I'm curious \u2014 what would *you* change? And do you think single changes can actually hold, or do they always ripple into unexpected places?",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 30,
+      "completion_tokens": 158,
+      "total_tokens": 188,
+      "cost": 0.00035062,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00035062,
+        "upstream_inference_prompt_cost": 2.04e-05,
+        "upstream_inference_completions_cost": 0.00033022
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 30,
+    "completion_tokens": 158,
+    "total_tokens": 188,
+    "cost": 0.00035062,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00035062,
+      "upstream_inference_prompt_cost": 2.04e-05,
+      "upstream_inference_completions_cost": 0.00033022
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-large-4-0",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "provider": "openrouter",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?",
+  "capture_policy": {
+    "model": "mistralai/mistral-large-4-0",
+    "pin": "Mistral",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL3_8",
+    "at": 1791317121.0008261,
+    "attempt": "6",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

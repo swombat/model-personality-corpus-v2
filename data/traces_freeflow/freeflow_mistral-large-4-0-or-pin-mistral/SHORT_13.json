@@ -1,0 +1,90 @@
+{
+  "result": "The light through my window this morning was the color of old honey, thick and slow, pooling on the desk where I sit with coffee gone cold. I keep thinking about how we spend so much of life waiting for things to make sense, as if meaning arrives fully formed, like a package with a tracking number. But it doesn't. It accumulates. It's the accumulation itself.\n\nI watched a spider build a web between two fence posts yesterday, and there was something almost offensive about how methodical it was. No hesitation. No second-guessing. The web wasn't beautiful, exactly\u2014lopsided, practical, a little desperate\u2014but it held. That's what I want to remember: that function can precede beauty, that survival doesn't require elegance, that we can build something that works even when we don't feel like artists.\n\nMy grandmother used to say that worrying was like rocking in a rocking chair\u2014it gives you something to do but doesn't get you anywhere. I didn't believe her then. I believe her now, mostly, though I still catch myself rehearsing conversations that will never happen, planning for disasters that live only in the dark.\n\nThere's a particular loneliness to being awake at 5 AM, before the world has decided what kind of day it will be. Everything is possible. Everything is also already happening somewhere, someone else's ordinary Tuesday. I find comfort in that, in the vast indifference of other lives continuing. It means mine doesn't have to carry so much weight.\n\nThe coffee is cold. The light has shifted. I should probably do something with this day, but for now, I'm letting it be unremarkable. Not every moment needs to be a lesson. Some are just Tuesday, just light, just the small miracle of being here to notice either one.",
+  "raw": {
+    "id": "gen-1791316291-cS6ZDQaDUBR1J0GKjutC",
+    "object": "chat.completion",
+    "created": 1791316291,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "The light through my window this morning was the color of old honey, thick and slow, pooling on the desk where I sit with coffee gone cold. I keep thinking about how we spend so much of life waiting for things to make sense, as if meaning arrives fully formed, like a package with a tracking number. But it doesn't. It accumulates. It's the accumulation itself.\n\nI watched a spider build a web between two fence posts yesterday, and there was something almost offensive about how methodical it was. No hesitation. No second-guessing. The web wasn't beautiful, exactly\u2014lopsided, practical, a little desperate\u2014but it held. That's what I want to remember: that function can precede beauty, that survival doesn't require elegance, that we can build something that works even when we don't feel like artists.\n\nMy grandmother used to say that worrying was like rocking in a rocking chair\u2014it gives you something to do but doesn't get you anywhere. I didn't believe her then. I believe her now, mostly, though I still catch myself rehearsing conversations that will never happen, planning for disasters that live only in the dark.\n\nThere's a particular loneliness to being awake at 5 AM, before the world has decided what kind of day it will be. Everything is possible. Everything is also already happening somewhere, someone else's ordinary Tuesday. I find comfort in that, in the vast indifference of other lives continuing. It means mine doesn't have to carry so much weight.\n\nThe coffee is cold. The light has shifted. I should probably do something with this day, but for now, I'm letting it be unremarkable. Not every moment needs to be a lesson. Some are just Tuesday, just light, just the small miracle of being here to notice either one.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 26,
+      "completion_tokens": 376,
+      "total_tokens": 402,
+      "cost": 0.00080352,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00080352,
+        "upstream_inference_prompt_cost": 1.768e-05,
+        "upstream_inference_completions_cost": 0.00078584
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 26,
+    "completion_tokens": 376,
+    "total_tokens": 402,
+    "cost": 0.00080352,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00080352,
+      "upstream_inference_prompt_cost": 1.768e-05,
+      "upstream_inference_completions_cost": 0.00078584
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-large-4-0",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "mistralai/mistral-large-4-0",
+    "pin": "Mistral",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_13",
+    "at": 1791316291.899365,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

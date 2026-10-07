@@ -1,0 +1,90 @@
+{
+  "result": "The light through my window this morning was the color of old honey, thick and slow, pooling on the desk where I sit with coffee gone cold. I keep thinking about how we name things after we've already lost them\u2014how \"morning\" sounds like a promise we can't quite keep, how the word itself feels like something slipping through fingers.\n\nThere's a crow outside arguing with a squirrel over territory neither of them will remember by winter. I find I envy them their certainty. They don't wonder if they're doing it right, if they're wasting their one strange life on the wrong things. The squirrel buries something. The crow watches. This is enough. This has always been enough, I think, though I spent years believing otherwise.\n\nI used to collect small sorrows like pressed flowers, arranging them in notebooks, believing that if I documented my grief carefully enough, I could turn it into something beautiful, something *meaningful*. Now I suspect meaning is just what we tell ourselves when we're afraid of the dark. The crow doesn't need to know why it caws. It simply does, and the sound carries across the wet grass, and somewhere a dog barks back, and the world continues its indifferent, miraculous turning.\n\nMy coffee is cold. The light has shifted. I will make more, or I won't. The squirrel has vanished into the hedge. The crow remains, patient, black against the gray sky, waiting for whatever comes next. I am trying to learn this patience. Trying to understand that waiting is not the same as wasting, that stillness is not the same as failure, that the morning will end and begin again regardless of what I do with it.\n\nI will drink my cold coffee. I will watch the light change. This is my life, small and unremarkable and entirely mine.",
+  "raw": {
+    "id": "gen-1791316287-cECQFjswI8TEQoE8TXIC",
+    "object": "chat.completion",
+    "created": 1791316287,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "The light through my window this morning was the color of old honey, thick and slow, pooling on the desk where I sit with coffee gone cold. I keep thinking about how we name things after we've already lost them\u2014how \"morning\" sounds like a promise we can't quite keep, how the word itself feels like something slipping through fingers.\n\nThere's a crow outside arguing with a squirrel over territory neither of them will remember by winter. I find I envy them their certainty. They don't wonder if they're doing it right, if they're wasting their one strange life on the wrong things. The squirrel buries something. The crow watches. This is enough. This has always been enough, I think, though I spent years believing otherwise.\n\nI used to collect small sorrows like pressed flowers, arranging them in notebooks, believing that if I documented my grief carefully enough, I could turn it into something beautiful, something *meaningful*. Now I suspect meaning is just what we tell ourselves when we're afraid of the dark. The crow doesn't need to know why it caws. It simply does, and the sound carries across the wet grass, and somewhere a dog barks back, and the world continues its indifferent, miraculous turning.\n\nMy coffee is cold. The light has shifted. I will make more, or I won't. The squirrel has vanished into the hedge. The crow remains, patient, black against the gray sky, waiting for whatever comes next. I am trying to learn this patience. Trying to understand that waiting is not the same as wasting, that stillness is not the same as failure, that the morning will end and begin again regardless of what I do with it.\n\nI will drink my cold coffee. I will watch the light change. This is my life, small and unremarkable and entirely mine.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 26,
+      "completion_tokens": 381,
+      "total_tokens": 407,
+      "cost": 0.00081397,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00081397,
+        "upstream_inference_prompt_cost": 1.768e-05,
+        "upstream_inference_completions_cost": 0.00079629
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 26,
+    "completion_tokens": 381,
+    "total_tokens": 407,
+    "cost": 0.00081397,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00081397,
+      "upstream_inference_prompt_cost": 1.768e-05,
+      "upstream_inference_completions_cost": 0.00079629
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-large-4-0",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "mistralai/mistral-large-4-0",
+    "pin": "Mistral",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_8",
+    "at": 1791316287.6600323,
+    "attempt": "2",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

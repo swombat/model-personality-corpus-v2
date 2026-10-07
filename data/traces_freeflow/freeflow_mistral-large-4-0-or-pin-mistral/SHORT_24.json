@@ -1,0 +1,90 @@
+{
+  "result": "The rain has been falling for three days straight, and I find myself watching it from the kitchen window, coffee growing cold in my hands. There's something about steady rain that makes time feel elastic\u2014hours stretch and compress without my noticing. I keep thinking about the garden, how the tomatoes will split if this doesn't let up, how the basil I planted too late in the season never really took.\n\nMy grandmother used to say that rain was the earth crying, but I've never believed that. To me, rain feels more like the earth *breathing*\u2014a long exhale after holding something in too long. She also believed that thunder was angels bowling, which I found charming in a way I can't quite explain now. I miss her laugh, the particular way she'd say my name like it was a small gift.\n\nI've been avoiding the news. Not out of ignorance, but because some mornings I need to believe the world is still capable of gentleness, even if only for an hour, even if only in my kitchen with cold coffee and rain against glass. The plants on the sill don't care about headlines. They turn toward light. They grow, or they don't, without commentary.\n\nThere's a spider in the corner of the window frame who has built the same web three times this week. Each morning it's gone, swept away by wind or my own careless hand, and each evening it's back, patient, starting over. I find this more hopeful than most things I read.\n\nThe coffee is cold now. I should drink it anyway.",
+  "raw": {
+    "id": "gen-1791317106-D5Qh84YzgcjxoNR5Q1xJ",
+    "object": "chat.completion",
+    "created": 1791317106,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "The rain has been falling for three days straight, and I find myself watching it from the kitchen window, coffee growing cold in my hands. There's something about steady rain that makes time feel elastic\u2014hours stretch and compress without my noticing. I keep thinking about the garden, how the tomatoes will split if this doesn't let up, how the basil I planted too late in the season never really took.\n\nMy grandmother used to say that rain was the earth crying, but I've never believed that. To me, rain feels more like the earth *breathing*\u2014a long exhale after holding something in too long. She also believed that thunder was angels bowling, which I found charming in a way I can't quite explain now. I miss her laugh, the particular way she'd say my name like it was a small gift.\n\nI've been avoiding the news. Not out of ignorance, but because some mornings I need to believe the world is still capable of gentleness, even if only for an hour, even if only in my kitchen with cold coffee and rain against glass. The plants on the sill don't care about headlines. They turn toward light. They grow, or they don't, without commentary.\n\nThere's a spider in the corner of the window frame who has built the same web three times this week. Each morning it's gone, swept away by wind or my own careless hand, and each evening it's back, patient, starting over. I find this more hopeful than most things I read.\n\nThe coffee is cold now. I should drink it anyway.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 26,
+      "completion_tokens": 328,
+      "total_tokens": 354,
+      "cost": 0.0007032,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007032,
+        "upstream_inference_prompt_cost": 1.768e-05,
+        "upstream_inference_completions_cost": 0.00068552
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 26,
+    "completion_tokens": 328,
+    "total_tokens": 354,
+    "cost": 0.0007032,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0007032,
+      "upstream_inference_prompt_cost": 1.768e-05,
+      "upstream_inference_completions_cost": 0.00068552
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "mistralai/mistral-large-4-0",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "mistralai/mistral-large-4-0",
+    "pin": "Mistral",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_24",
+    "at": 1791317106.6918447,
+    "attempt": "6",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}
