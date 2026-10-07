@@ -1,7 +1,7 @@
 # Convergent Form, Divergent Voice II — Corpus
 
 **A research data corpus of free-form contemplative writing samples from
-176 dated language-model identities, with explicit deployment provenance for API,
+177 dated language-model identities, with explicit deployment provenance for API,
 provider-pinned, and local full-precision cells.**
 
 Daniel Tenner and Lume Tenner · 2026
@@ -19,6 +19,10 @@ Daniel Tenner and Lume Tenner · 2026
 > [10.5281/zenodo.19512754](https://doi.org/10.5281/zenodo.19512754)).
 
 ## Latest addition
+
+**v1.2.31 (2026-10-07): Mistral Large 4**, 125 freeflow + 120 values,
+pinned to Mistral; 41 samples re-run through the repair lane after launch-day
+rate limits (logged intervention). See [release notes](RELEASE_NOTES_v1.2.31.md).
 
 **v1.2.30 (2026-09-30): preserved local captures and GLM-5.3 repair.**
 Five formerly local-only freeflow cells and historical repair evidence are now
