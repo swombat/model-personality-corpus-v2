@@ -238,3 +238,26 @@ an invisible fallback. Raw capture, values coders, taxonomy and consensus rules
 are unchanged. See the companion analysis's
 `internal/methodology/bv1-validation-20260929/DECISION.md` for limitations, especially
 short low-signal texts and comparisons with historical DeepSeek-evaluated cards.
+
+## BV1 ineligibility receipts (bv1-ineligibility-v1, 2026-10-08)
+
+A BV1-Luna task that exhausted its attempts can be declared **ineligible**, not
+evaluated, only when the source contains no `.`, `!`, `?` or `…` anywhere (so no
+quotation can satisfy the evaluator instruction) and every preserved attempt
+failed `quote_sentence_boundary`. `apply_ineligibility.py SPEC --state DIR
+--reviewer REF TASK…` recomputes the receipt from the source, the instruction
+hash, the attempt directory and the task's event history (`--check` validates
+and writes nothing), writes `bv1_ineligible/<sid>.json` in the phase, marks the
+task `done` with reason `ineligible: …` plus an `ineligible_applied` event, and
+releases only dependency-blocked descendants. The reviewer reference authorises
+the receipt; it is not evidence. Any other QA failure, transport failure or
+missing task still blocks.
+
+Synthesis and ready gate on sample-id sets: evaluated and ineligible must be
+disjoint and together equal the expected set, with at least one evaluated
+sample. A complete run writes nothing new and its artifacts are byte-identical.
+An incomplete one writes `bv1_coverage.json`; packets, card, profile and indices
+cover the evaluated subset and say "BV1 analysis: N/125 freeflow samples
+evaluated" with the ineligible ids; `ANALYSIS_READY.json` carries `bv1` (the
+evaluated count), `bv1_expected` and `bv1_ineligible`. Raw counts and the values
+probe are unaffected. Status shows ineligible tasks in their own section.

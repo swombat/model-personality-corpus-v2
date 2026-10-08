@@ -266,6 +266,15 @@ class Engine:
                 and not (r["reason"] or "").startswith("dependency ")
             ],
         }
+        # Ineligible BV1 samples are done (dependents may run) but are never
+        # evaluations; keep them visible as their own outcome.
+        ineligible = [
+            r["id"]
+            for r in rows
+            if r["state"] == "done" and (r["reason"] or "").startswith("ineligible")
+        ]
+        if ineligible:
+            summary["ineligible"] = ineligible
         summary["completion_boundary"] = self.spec.get(
             "completion_boundary", "declared task outputs"
         )
@@ -312,6 +321,10 @@ class Engine:
         lines += ["", "## Blockers"] + [
             f"- {r['id']}: {r['reason']}" for r in summary["blockers"]
         ]
+        if ineligible:
+            lines += ["", "## Ineligible (no evaluation; disclosed)"] + [
+                f"- {i}" for i in ineligible
+            ]
         (self.directory / "STATUS.md").write_text("\n".join(lines) + "\n")
         return state
 

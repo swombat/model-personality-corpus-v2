@@ -6,6 +6,7 @@ import uuid
 import argparse, csv, fcntl, importlib.util, json, os, shutil, subprocess, sys, time
 from pathlib import Path
 from engine import atomic, digest
+import ineligibility as INEL
 
 HERE = Path(__file__).resolve().parent
 RAW = HERE.parents[1]
@@ -275,6 +276,12 @@ def bv1(c, phase, sid, validate=False):
     }
     binding = binding_dir / (sid + ".json")
     source_hash = digest(src)
+    receipt = INEL.receipt_path(phase, sid)
+    if receipt.exists():
+        # A distinct outcome, never an evaluation: no API call, no output.
+        assert arm, "ineligibility receipts apply only to the BV1-Luna arm"
+        INEL.check(json.loads(receipt.read_text()), c, sid, src, m.OUT, arm, out, binding)
+        return dict(row, ineligible=True, receipt_sha256=digest(receipt))
     imported = (
         json.loads((phase / "bv1_import_bindings.json").read_text())
         if (phase / "bv1_import_bindings.json").exists()
@@ -599,10 +606,16 @@ def synthesis(c, phase, validate):
             fcntl.flock(f, fcntl.LOCK_EX)
             bv_out, _, bindings = bv1_paths(c, phase)
             rows = [bv1(c, phase, s, True) for s in identities("freeflow")]
+            cov = INEL.coverage(rows, identities("freeflow"))
+            rows = [r for r in rows if not r.get("ineligible")]
             assert all(
-                (bindings / (s + ".json")).exists()
-                for s in identities("freeflow")
+                (bindings / (Path(r["sample_id"]).stem + ".json")).exists()
+                for r in rows
             )
+            if cov:
+                atomic(INEL.coverage_path(phase), cov)
+            elif INEL.coverage_path(phase).exists():
+                INEL.coverage_path(phase).unlink()
             p = bv_out / "sample_manifest.tsv"
             with p.open("w") as out:
                 writer = csv.writer(out, delimiter="\t")
@@ -641,6 +654,7 @@ def synthesis(c, phase, validate):
             m.MANIFEST = p
             m.ROOT = root
             m.CELLS = {c["label"]: c["model"]}
+            m.COVERAGE = cov
             old = sys.argv
             sys.argv = [old[0]]
             try:
@@ -654,6 +668,7 @@ def synthesis(c, phase, validate):
             m.PHASE = phase
             m.ROOT = root
             m.CELLS = {c["label"]: c["slug"]}
+            m.COVERAGE = cov
             m.main()
     for folder, leaf in [
         ("personality-model-cards", "cards"),
@@ -704,8 +719,14 @@ def ready(c, phase, validate):
         adjudicate(c, phase, True)
         values_report(c, phase, True)
         synthesis(c, phase, True)
-        for sid in identities("freeflow"):
-            bv1(c, phase, sid, True)
+        cov = INEL.coverage(
+            [bv1(c, phase, sid, True) for sid in identities("freeflow")],
+            identities("freeflow"),
+        )
+        if cov:
+            assert json.loads(INEL.coverage_path(phase).read_text()) == cov, (
+                "BV1 coverage record missing or stale"
+            )
         for probe in ["freeflow", "values"]:
             for sid in identities(probe):
                 assert (
@@ -721,7 +742,12 @@ def ready(c, phase, validate):
                 "model": c["slug"],
                 "cell": c["label"],
                 "raw_counts": {"freeflow": 125, "values": 120},
-                "bv1": 125,
+                "bv1": cov["evaluated"] if cov else 125,
+                **(
+                    {"bv1_expected": cov["expected"], "bv1_ineligible": cov["ineligible"]}
+                    if cov
+                    else {}
+                ),
                 "bv1_evaluator_arm": c.get("bv1_evaluator", "legacy-deepseek"),
                 "values_coders": CODERS,
                 "adjudication": json.loads((phase / "adjudication.json").read_text()),
