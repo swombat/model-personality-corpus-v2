@@ -280,7 +280,8 @@ def bv1(c, phase, sid, validate=False):
     if receipt.exists():
         # A distinct outcome, never an evaluation: no API call, no output.
         assert arm, "ineligibility receipts apply only to the BV1-Luna arm"
-        INEL.check(json.loads(receipt.read_text()), c, sid, src, m.OUT, arm, out, binding)
+        r = INEL.check(json.loads(receipt.read_text()), c, sid, src, m.OUT, arm, out, binding)
+        INEL.check_applied(INEL.state_db_for(c), INEL.task_id(c, sid), receipt, r["attempts"])
         return dict(row, ineligible=True, receipt_sha256=digest(receipt))
     imported = (
         json.loads((phase / "bv1_import_bindings.json").read_text())
@@ -710,6 +711,25 @@ def card_ready(c, phase, validate=False):
         atomic(path, payload)
 
 
+def bv1_ready_fields(c, phase):
+    """BV1 counts for ANALYSIS_READY, recomputed from current receipts and
+    outputs on both generation and validation (bv1-ineligibility-v1)."""
+    ids = identities("freeflow")
+    cov = INEL.coverage([bv1(c, phase, sid, True) for sid in ids], ids)
+    path = INEL.coverage_path(phase)
+    if cov:
+        assert path.exists() and json.loads(path.read_text()) == cov, (
+            "BV1 coverage record missing or stale"
+        )
+        return {
+            "bv1": cov["evaluated"],
+            "bv1_expected": cov["expected"],
+            "bv1_ineligible": cov["ineligible"],
+        }
+    assert not path.exists(), "BV1 coverage record present for a complete run"
+    return {"bv1": 125}
+
+
 def ready(c, phase, validate):
     integrate_values(c, phase, validate)
     card_ready(c, phase, validate)
@@ -719,14 +739,7 @@ def ready(c, phase, validate):
         adjudicate(c, phase, True)
         values_report(c, phase, True)
         synthesis(c, phase, True)
-        cov = INEL.coverage(
-            [bv1(c, phase, sid, True) for sid in identities("freeflow")],
-            identities("freeflow"),
-        )
-        if cov:
-            assert json.loads(INEL.coverage_path(phase).read_text()) == cov, (
-                "BV1 coverage record missing or stale"
-            )
+        fields = bv1_ready_fields(c, phase)
         for probe in ["freeflow", "values"]:
             for sid in identities(probe):
                 assert (
@@ -742,12 +755,7 @@ def ready(c, phase, validate):
                 "model": c["slug"],
                 "cell": c["label"],
                 "raw_counts": {"freeflow": 125, "values": 120},
-                "bv1": cov["evaluated"] if cov else 125,
-                **(
-                    {"bv1_expected": cov["expected"], "bv1_ineligible": cov["ineligible"]}
-                    if cov
-                    else {}
-                ),
+                **fields,
                 "bv1_evaluator_arm": c.get("bv1_evaluator", "legacy-deepseek"),
                 "values_coders": CODERS,
                 "adjudication": json.loads((phase / "adjudication.json").read_text()),
@@ -758,9 +766,13 @@ def ready(c, phase, validate):
                 "token_policy": c["token_policy"],
             },
         )
-    assert (
-        json.loads(path.read_text())["state"]
-        == "analysis_complete_awaiting_publication"
+    record = json.loads(path.read_text())
+    assert record["state"] == "analysis_complete_awaiting_publication"
+    if validate:
+        fields = bv1_ready_fields(c, phase)
+    keys = ("bv1", "bv1_expected", "bv1_ineligible")
+    assert {k: record.get(k) for k in keys} == {k: fields.get(k) for k in keys}, (
+        "ready record BV1 counts differ from current receipts and outputs"
     )
 
 
@@ -776,6 +788,7 @@ def main():
     ap.add_argument("--validate", action="store_true")
     a = ap.parse_args()
     c = json.loads(a.config.read_text())
+    c["_config"] = str(a.config.resolve())  # locates <run>/state for receipts
     phase = Path(c["phase"])
     phase.mkdir(parents=True, exist_ok=True)
     if a.action == "raw":

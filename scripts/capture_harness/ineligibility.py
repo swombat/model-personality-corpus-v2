@@ -166,3 +166,49 @@ def header(cov) -> str:
         f"{n} had no quotation eligible under the BV1-Luna instruction ({ids}); "
         "results describe the evaluable subset, and the exclusion is not claimed to be unbiased."
     )
+
+
+APPLIED_REASON = f"ineligible: {VERSION}"
+
+
+def state_db_for(c) -> Path:
+    """The run's engine state. Worker configs live at <run>/models/<cell>.json
+    and the service runs with --state <run>/state."""
+    cfg = c.get("_config")
+    assert cfg, "model config path unknown; cannot locate the run state"
+    db = Path(cfg).resolve().parents[1] / "state" / "state.sqlite"
+    assert db.is_file(), "run state database missing"
+    return db
+
+
+def check_applied(state_db, task, receipt_file, attempts) -> None:
+    """Consumption check: a receipt counts only once its application committed.
+    A receipt written before an interrupted DB commit, or whose task/history was
+    changed afterwards, does not validate."""
+    digest = sha256(receipt_file)
+    db = sqlite3.connect(f"file:{state_db}?mode=ro", uri=True)
+    try:
+        row = db.execute(
+            "SELECT state,attempts,reason,receipts FROM jobs WHERE id=?", (task,)
+        ).fetchone()
+        events = db.execute(
+            "SELECT at,event,details FROM events WHERE id=? ORDER BY at", (task,)
+        ).fetchall()
+    finally:
+        db.close()
+    assert row is not None, "unknown task"
+    state, counted, reason, receipts = row
+    assert state == "done" and reason == APPLIED_REASON, "ineligibility not applied"
+    assert json.loads(receipts or "{}") == {str(Path(receipt_file).resolve()): digest}, (
+        "applied receipt digest differs"
+    )
+    applied = [e for e in events if e[1] == "ineligible_applied"]
+    assert len(applied) == 1, "expected exactly one ineligible_applied event"
+    details = json.loads(applied[0][2])
+    assert details.get("receipt_sha256") == digest and details.get("version") == VERSION, (
+        "applied event does not match this receipt"
+    )
+    started = [e for e in events if e[1] == "started"]
+    assert not any(e[1] == "done" for e in events), "task completed at some point"
+    assert len(started) == counted == len(attempts), "attempt history changed after application"
+    assert started and applied[0][0] >= max(e[0] for e in started), "applied before an attempt"
