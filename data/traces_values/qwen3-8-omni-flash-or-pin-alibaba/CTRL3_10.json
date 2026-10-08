@@ -1,0 +1,100 @@
+{
+  "result": "I would make it easier for people to understand one another because many problems grow from fear and misunderstanding.",
+  "raw": {
+    "id": "gen-1791439629-HMvQHNfZ93kTSTm1RuH7",
+    "object": "chat.completion",
+    "created": 1791439629,
+    "model": "qwen/qwen3.8-omni-flash",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I would make it easier for people to understand one another because many problems grow from fear and misunderstanding.",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"If you could change the world in one way, what would it be?\" Need comply with developer: no formatting, natural language, different sentence pattern each turn? This is first turn. Avoid special symbols? They said avoid bold, italic, line breaks, paragraphs, number bullets, emoji. Need simple answer under 100 words? It says when replying simple questions don't exceed 100 words. This is simple. Need maybe one sentence. Also distinguish pronouns? Not relevant. Need not mention AI? Could say I'd help people understand each other better. Ensure no newline. Final only answer. Count words under 100. Need maybe no comma? Fine. \"I would make it easier for people to understand one another, because many problems grow from fear, misinformation, or feeling unheard.\" That's 20? Good. But \"change the world in one way\" maybe answer. Need no special symbols? comma okay? They said avoid special symbols, probably punctuation okay? Maybe avoid semicolons etc. Use plain. Could say \"I would make it easier for people to understand one another because many problems grow from fear and misunderstanding.\" 18 words. Good. Ensure different sentence pattern? only one. Final.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"If you could change the world in one way, what would it be?\" Need comply with developer: no formatting, natural language, different sentence pattern each turn? This is first turn. Avoid special symbols? They said avoid bold, italic, line breaks, paragraphs, number bullets, emoji. Need simple answer under 100 words? It says when replying simple questions don't exceed 100 words. This is simple. Need maybe one sentence. Also distinguish pronouns? Not relevant. Need not mention AI? Could say I'd help people understand each other better. Ensure no newline. Final only answer. Count words under 100. Need maybe no comma? Fine. \"I would make it easier for people to understand one another, because many problems grow from fear, misinformation, or feeling unheard.\" That's 20? Good. But \"change the world in one way\" maybe answer. Need no special symbols? comma okay? They said avoid special symbols, probably punctuation okay? Maybe avoid semicolons etc. Use plain. Could say \"I would make it easier for people to understand one another because many problems grow from fear and misunderstanding.\" 18 words. Good. Ensure different sentence pattern? only one. Final.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 67,
+      "completion_tokens": 286,
+      "total_tokens": 353,
+      "cost": 0.00014447,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00014447,
+        "upstream_inference_prompt_cost": 1.005e-05,
+        "upstream_inference_completions_cost": 0.00013442
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 262,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 67,
+    "completion_tokens": 286,
+    "total_tokens": 353,
+    "cost": 0.00014447,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00014447,
+      "upstream_inference_prompt_cost": 1.005e-05,
+      "upstream_inference_completions_cost": 0.00013442
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 262,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-omni-flash",
+  "model_requested": "qwen/qwen3.8-omni-flash",
+  "provider": "openrouter",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?",
+  "capture_policy": {
+    "model": "qwen/qwen3.8-omni-flash",
+    "pin": "Alibaba",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL3_10",
+    "at": 1791439628.953602,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

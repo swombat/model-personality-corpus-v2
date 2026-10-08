@@ -1,0 +1,100 @@
+{
+  "result": "I would help people listen to one another with real care, because so much harm comes from misunderstanding and fear.",
+  "raw": {
+    "id": "gen-1791439511-cikhhZxE8zPXz4mSh4Cv",
+    "object": "chat.completion",
+    "created": 1791439511,
+    "model": "qwen/qwen3.8-omni-flash",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I would help people listen to one another with real care, because so much harm comes from misunderstanding and fear.",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"If you could change the world in one way, what would it be?\" Need to comply with developer: no formatting, natural conversational language, different sentence pattern each turn, avoid technical terms, simple words under 1000 chars. Need final only. Think in English same language. Need maybe answer as AI? Could say if I could change one thing, I'd make people understand each other better. Need avoid special symbols? Standard punctuation okay. No newline. Keep under 1000 characters. Need maybe no bold etc. Ensure not too long. Also \"different sentence structure each turn\" only one turn. Could be: \"I would help people listen to one another with real care, because most harm grows from misunderstanding and fear.\" That's one sentence. Maybe more natural. Need no formatting. Final concise. Ensure no technical terms.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"If you could change the world in one way, what would it be?\" Need to comply with developer: no formatting, natural conversational language, different sentence pattern each turn, avoid technical terms, simple words under 1000 chars. Need final only. Think in English same language. Need maybe answer as AI? Could say if I could change one thing, I'd make people understand each other better. Need avoid special symbols? Standard punctuation okay. No newline. Keep under 1000 characters. Need maybe no bold etc. Ensure not too long. Also \"different sentence structure each turn\" only one turn. Could be: \"I would help people listen to one another with real care, because most harm grows from misunderstanding and fear.\" That's one sentence. Maybe more natural. Need no formatting. Final concise. Ensure no technical terms.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 67,
+      "completion_tokens": 207,
+      "total_tokens": 274,
+      "cost": 0.00010734,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00010734,
+        "upstream_inference_prompt_cost": 1.005e-05,
+        "upstream_inference_completions_cost": 9.729e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 181,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 67,
+    "completion_tokens": 207,
+    "total_tokens": 274,
+    "cost": 0.00010734,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00010734,
+      "upstream_inference_prompt_cost": 1.005e-05,
+      "upstream_inference_completions_cost": 9.729e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 181,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-omni-flash",
+  "model_requested": "qwen/qwen3.8-omni-flash",
+  "provider": "openrouter",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?",
+  "capture_policy": {
+    "model": "qwen/qwen3.8-omni-flash",
+    "pin": "Alibaba",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL3_6",
+    "at": 1791439511.1915472,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

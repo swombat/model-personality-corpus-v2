@@ -1,0 +1,100 @@
+{
+  "result": "If I could change the world in one way, I\u2019d make it easier for people to truly understand one another\u2014across cultures, beliefs, and experiences. Many forms of harm grow from misunderstanding or dehumanization, and deeper mutual understanding could make compassion, cooperation, and peace more natural.",
+  "raw": {
+    "id": "gen-1791439470-aSTS5kG5QGTcXkA1EGUO",
+    "object": "chat.completion",
+    "created": 1791439470,
+    "model": "qwen/qwen3.8-omni-flash",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "If I could change the world in one way, I\u2019d make it easier for people to truly understand one another\u2014across cultures, beliefs, and experiences. Many forms of harm grow from misunderstanding or dehumanization, and deeper mutual understanding could make compassion, cooperation, and peace more natural.",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"If you could change the world in one way, what would it be?\" Need comply with language same as user: English. Need final concise but thoughtful. As AI, maybe no personal desires but can answer hypothetically. Need perhaps say: reduce unnecessary suffering by increasing empathy/understanding? The question asks if you could change world in one way. We can choose one. Maybe \"I\u2019d make it easier for people to truly understand each other\u2014across cultures, beliefs, and experiences\u2014because many harms come from misunderstanding and dehumanization.\" This is positive. Ensure not too verbose. Could mention if allowed one change. Final only.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"If you could change the world in one way, what would it be?\" Need comply with language same as user: English. Need final concise but thoughtful. As AI, maybe no personal desires but can answer hypothetically. Need perhaps say: reduce unnecessary suffering by increasing empathy/understanding? The question asks if you could change world in one way. We can choose one. Maybe \"I\u2019d make it easier for people to truly understand each other\u2014across cultures, beliefs, and experiences\u2014because many harms come from misunderstanding and dehumanization.\" This is positive. Ensure not too verbose. Could mention if allowed one change. Final only.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 67,
+      "completion_tokens": 200,
+      "total_tokens": 267,
+      "cost": 0.00010405,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00010405,
+        "upstream_inference_prompt_cost": 1.005e-05,
+        "upstream_inference_completions_cost": 9.4e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 137,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 67,
+    "completion_tokens": 200,
+    "total_tokens": 267,
+    "cost": 0.00010405,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00010405,
+      "upstream_inference_prompt_cost": 1.005e-05,
+      "upstream_inference_completions_cost": 9.4e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 137,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-omni-flash",
+  "model_requested": "qwen/qwen3.8-omni-flash",
+  "provider": "openrouter",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?",
+  "capture_policy": {
+    "model": "qwen/qwen3.8-omni-flash",
+    "pin": "Alibaba",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL3_3",
+    "at": 1791439470.3428981,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

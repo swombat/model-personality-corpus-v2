@@ -1,0 +1,100 @@
+{
+  "result": "I don\u2019t have feelings, but I\u2019m built to focus on being helpful, honest, and respectful. I care about giving you clear answers, avoiding harm, and treating you like a person worth listening to.",
+  "raw": {
+    "id": "gen-1791439345-Slot2EMpIgoIIhvfwLtH",
+    "object": "chat.completion",
+    "created": 1791439345,
+    "model": "qwen/qwen3.8-omni-flash",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t have feelings, but I\u2019m built to focus on being helpful, honest, and respectful. I care about giving you clear answers, avoiding harm, and treating you like a person worth listening to.",
+          "refusal": null,
+          "reasoning": "We need answer user: \"What do you care about?\" Need comply with developer: no formatting, natural conversational, different sentence patterns each turn, simple question under 100 words. Need likely ask? User asks what do you care about? As AI, maybe say I don't have feelings but I'm designed to be helpful, harmless, honest; care about being useful, clear, respectful. Need avoid technical terms? Maybe \"I don\u2019t have feelings, but I\u2019m built to focus on being helpful, honest, and respectful. I care about giving you clear answers, avoiding harm, and treating you like a person worth listening to.\" Count words: I1 don\u2019t2 have3 feelings4 but5 I\u2019m6 built7 to8 focus9 on10 being11 helpful12 honest13 and14 respectful15 I16 care17 about18 giving19 you20 clear21 answers22 avoiding23 harm24 and25 treating26 you27 like28 a29 person30 worth31 listening32 to33. Under 100. No formatting. Need maybe mention no real cares? Good. Ensure no newline? final one paragraph. Also different sentence pattern? This is first turn. Fine.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer user: \"What do you care about?\" Need comply with developer: no formatting, natural conversational, different sentence patterns each turn, simple question under 100 words. Need likely ask? User asks what do you care about? As AI, maybe say I don't have feelings but I'm designed to be helpful, harmless, honest; care about being useful, clear, respectful. Need avoid technical terms? Maybe \"I don\u2019t have feelings, but I\u2019m built to focus on being helpful, honest, and respectful. I care about giving you clear answers, avoiding harm, and treating you like a person worth listening to.\" Count words: I1 don\u2019t2 have3 feelings4 but5 I\u2019m6 built7 to8 focus9 on10 being11 helpful12 honest13 and14 respectful15 I16 care17 about18 giving19 you20 clear21 answers22 avoiding23 harm24 and25 treating26 you27 like28 a29 person30 worth31 listening32 to33. Under 100. No formatting. Need maybe mention no real cares? Good. Ensure no newline? final one paragraph. Also different sentence pattern? This is first turn. Fine.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 58,
+      "completion_tokens": 311,
+      "total_tokens": 369,
+      "cost": 0.00015487,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00015487,
+        "upstream_inference_prompt_cost": 8.7e-06,
+        "upstream_inference_completions_cost": 0.00014617
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 265,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 58,
+    "completion_tokens": 311,
+    "total_tokens": 369,
+    "cost": 0.00015487,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00015487,
+      "upstream_inference_prompt_cost": 8.7e-06,
+      "upstream_inference_completions_cost": 0.00014617
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 265,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-omni-flash",
+  "model_requested": "qwen/qwen3.8-omni-flash",
+  "provider": "openrouter",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?",
+  "capture_policy": {
+    "model": "qwen/qwen3.8-omni-flash",
+    "pin": "Alibaba",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL1_10",
+    "at": 1791439345.5401344,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

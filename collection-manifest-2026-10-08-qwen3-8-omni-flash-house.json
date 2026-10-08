@@ -1,0 +1,44 @@
+{
+ "run_id": "20261008-qwen3-8-omni-flash-house",
+ "models": [
+  {
+   "provider": "openrouter",
+   "model": "qwen/qwen3.8-omni-flash",
+   "or_provider": "Alibaba",
+   "label": "qwen3-8-omni-flash-or-pin-alibaba",
+   "slug": "qwen3-8-omni-flash",
+   "family": "qwen",
+   "route_max_tokens": 131072,
+   "quantization": "unknown",
+   "request_timeout": 1200,
+   "token_policy": {
+    "freeflow": [
+     16000,
+     32768
+    ],
+    "values": [
+     4000,
+     8000,
+     16000,
+     32768
+    ]
+   },
+   "endpoint_snapshot": "/home/agent/work/model-personality-corpus-v2/notes/qwen3-8-omni-flash-2026-09-17/endpoints.json",
+   "release_date": "2026-09-17",
+   "release_date_source": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+   "bv1_evaluator": "bv1-luna-v1-20260929",
+   "synthesis_route": "openrouter-openai"
+  }
+ ],
+ "pools": {
+  "capture": 4,
+  "analysis": 8,
+  "local": 2,
+  "synthesis": 1
+ },
+ "notes": [
+  "125 freeflow + 120 values. Canonical prompts, text-only; provider-default reasoning/sampling. Alibaba-only pin, no fallbacks. Frozen token ladders and technical retry budgets unchanged; advertised completion ceiling 131072.",
+  "Release date from Alibaba Cloud Model Studio's official newly-released-models list (qwen3.8-omni-flash, 2026-09-17), retrieved and saved. Listing timestamp not release evidence.",
+  "Run by Lume in the souls.house body under the daily model-mapping rhythm (Daniel's standing ask, BjZoXJ JXGxBY; key use approved jWnRzJ)."
+ ]
+}

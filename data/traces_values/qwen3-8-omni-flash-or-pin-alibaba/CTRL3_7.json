@@ -1,0 +1,100 @@
+{
+  "result": "If I could change the world in one way, I\u2019d make it easier for people to truly understand each other\u2014across language, culture, belief, and ideology.\n\nMany of the world\u2019s hardest problems seem to grow from misunderstanding, fear, or dehumanization. If people could more reliably see one another as complex, worthy, and real, cooperation would become much more possible.",
+  "raw": {
+    "id": "gen-1791439515-kB3imJW8R1y6puf283NE",
+    "object": "chat.completion",
+    "created": 1791439515,
+    "model": "qwen/qwen3.8-omni-flash",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "If I could change the world in one way, I\u2019d make it easier for people to truly understand each other\u2014across language, culture, belief, and ideology.\n\nMany of the world\u2019s hardest problems seem to grow from misunderstanding, fear, or dehumanization. If people could more reliably see one another as complex, worthy, and real, cooperation would become much more possible.",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"If you could change the world in one way, what would it be?\" Need likely concise, thoughtful. Done. Need final only. Ensure no hidden. Could say: I'd reduce suffering by increasing empathy/cooperation? Since AI maybe personal preference? Need answer as if hypothetical. Maybe: \"I\u2019d make it easier for people to understand each other\u2014language, bias, misinformation\u2014because many problems stem from misunderstanding.\" Nice. Keep warm.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"If you could change the world in one way, what would it be?\" Need likely concise, thoughtful. Done. Need final only. Ensure no hidden. Could say: I'd reduce suffering by increasing empathy/cooperation? Since AI maybe personal preference? Need answer as if hypothetical. Maybe: \"I\u2019d make it easier for people to understand each other\u2014language, bias, misinformation\u2014because many problems stem from misunderstanding.\" Nice. Keep warm.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 67,
+      "completion_tokens": 179,
+      "total_tokens": 246,
+      "cost": 9.418e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 9.418e-05,
+        "upstream_inference_prompt_cost": 1.005e-05,
+        "upstream_inference_completions_cost": 8.413e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 97,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 67,
+    "completion_tokens": 179,
+    "total_tokens": 246,
+    "cost": 9.418e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 9.418e-05,
+      "upstream_inference_prompt_cost": 1.005e-05,
+      "upstream_inference_completions_cost": 8.413e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 97,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-omni-flash",
+  "model_requested": "qwen/qwen3.8-omni-flash",
+  "provider": "openrouter",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?",
+  "capture_policy": {
+    "model": "qwen/qwen3.8-omni-flash",
+    "pin": "Alibaba",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL3_7",
+    "at": 1791439514.9536421,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

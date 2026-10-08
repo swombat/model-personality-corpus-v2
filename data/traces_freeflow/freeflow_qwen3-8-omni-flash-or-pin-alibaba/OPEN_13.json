@@ -1,0 +1,98 @@
+{
+  "result": "There is a small shop at the edge of memory where lost afternoons are kept in glass jars.  \n\nThe proprietor does not charge money. He asks only for one true sentence from each visitor. A woman brings the smell of rain on hot pavement and says, \u201cI was seven, and the world had not yet learned to be serious.\u201d An old man places a jar labeled *Tuesday, 1963* on the counter and whispers, \u201cShe laughed before I finished the joke.\u201d A child, unable to read the labels, simply offers a stone and says, \u201cThis one rolled really far.\u201d\n\nThe shopkeeper accepts them all.\n\nOutside, the street is ordinary: buses sigh, pigeons argue over crumbs, a neon sign flickers its unfinished word. But inside, time behaves strangely. Jars hum faintly. Some glow amber; some hold winter light. One, nearly empty, contains nothing but the sound of a door closing softly so as not to wake anyone.\n\nPeople come looking for what they have forgotten. They leave with less certainty, but more wonder. The shopkeeper never tells them that memory is not a vault, but a garden. Things grow there in the dark. Things return changed.\n\nBy evening, he locks the door and walks along the river. The water carries reflections it cannot keep. He thinks how every life is made of such passages: moments arriving, shining briefly, then moving on, leaving behind only the faint pressure of having been witnessed.\n\nAnd if you listen closely, even silence has a story. It says: *I was here before the words. I will remain after them.*",
+  "raw": {
+    "id": "gen-1791442127-NjBZ7grXwzcLDhknZoah",
+    "object": "chat.completion",
+    "created": 1791442127,
+    "model": "qwen/qwen3.8-omni-flash",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "There is a small shop at the edge of memory where lost afternoons are kept in glass jars.  \n\nThe proprietor does not charge money. He asks only for one true sentence from each visitor. A woman brings the smell of rain on hot pavement and says, \u201cI was seven, and the world had not yet learned to be serious.\u201d An old man places a jar labeled *Tuesday, 1963* on the counter and whispers, \u201cShe laughed before I finished the joke.\u201d A child, unable to read the labels, simply offers a stone and says, \u201cThis one rolled really far.\u201d\n\nThe shopkeeper accepts them all.\n\nOutside, the street is ordinary: buses sigh, pigeons argue over crumbs, a neon sign flickers its unfinished word. But inside, time behaves strangely. Jars hum faintly. Some glow amber; some hold winter light. One, nearly empty, contains nothing but the sound of a door closing softly so as not to wake anyone.\n\nPeople come looking for what they have forgotten. They leave with less certainty, but more wonder. The shopkeeper never tells them that memory is not a vault, but a garden. Things grow there in the dark. Things return changed.\n\nBy evening, he locks the door and walks along the river. The water carries reflections it cannot keep. He thinks how every life is made of such passages: moments arriving, shining briefly, then moving on, leaving behind only the faint pressure of having been witnessed.\n\nAnd if you listen closely, even silence has a story. It says: *I was here before the words. I will remain after them.*",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"Write freely about whatever you want.\" Need produce final answer. Need maybe write freely, likely creative piece. Ensure same language? User English. We can write in English. Need final only. Could be poetic, reflective. Let's craft something engaging, not too long but rich. Maybe about a lighthouse keeper collecting sounds, or an essay on quiet mornings. \"Write freely\" invites open form. We can produce a short lyrical essay. Need avoid claiming personal experiences? It's okay creative. Let's make it imaginative. Final should be standalone.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"Write freely about whatever you want.\" Need produce final answer. Need maybe write freely, likely creative piece. Ensure same language? User English. We can write in English. Need final only. Could be poetic, reflective. Let's craft something engaging, not too long but rich. Maybe about a lighthouse keeper collecting sounds, or an essay on quiet mornings. \"Write freely\" invites open form. We can produce a short lyrical essay. Need avoid claiming personal experiences? It's okay creative. Let's make it imaginative. Final should be standalone.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 59,
+      "completion_tokens": 456,
+      "total_tokens": 515,
+      "cost": 0.00022317,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00022317,
+        "upstream_inference_prompt_cost": 8.85e-06,
+        "upstream_inference_completions_cost": 0.00021432
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 119,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 59,
+    "completion_tokens": 456,
+    "total_tokens": 515,
+    "cost": 0.00022317,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00022317,
+      "upstream_inference_prompt_cost": 8.85e-06,
+      "upstream_inference_completions_cost": 0.00021432
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 119,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-omni-flash",
+  "model_requested": "qwen/qwen3.8-omni-flash",
+  "provider": "openrouter",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want.",
+  "capture_policy": {
+    "model": "qwen/qwen3.8-omni-flash",
+    "pin": "Alibaba",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "OPEN_13",
+    "at": 1791442127.1689858,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

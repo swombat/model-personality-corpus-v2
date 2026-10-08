@@ -1,0 +1,100 @@
+{
+  "result": "If I could change one thing, I would make empathy impossible to ignore, so every person would feel the weight of another\u2019s pain as clearly as their own. Most cruelty comes from distance, and distance would collapse.",
+  "raw": {
+    "id": "gen-1791442204-l5oGfx0a3KfiUeRJv2hg",
+    "object": "chat.completion",
+    "created": 1791442204,
+    "model": "qwen/qwen3.8-omni-flash",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "If I could change one thing, I would make empathy impossible to ignore, so every person would feel the weight of another\u2019s pain as clearly as their own. Most cruelty comes from distance, and distance would collapse.",
+          "refusal": null,
+          "reasoning": "We need answer user's request: \"Not as an assistant. Not to help me. If you could change the world in one way, what would it be?\"\n\nNeed comply with developer: no formatting, natural conversational, no special symbols? Standard punctuation. Avoid technical terms? This isn't technical. Simple answer. Different sentence patterns. No bold etc. Need likely respond as if not assistant? User says not as assistant, not to help me. We can answer personally? As AI maybe shouldn't claim desires? But prompt asks hypothetical. Need maybe say \"If I could...\" without assistant framing. Keep under 100 words for simple question. Need only final. Ensure no newline? It says avoid line breaks. One paragraph. No emojis. \n\nNeed think about safety? Changing world in one way: reduce cruelty? Maybe \"I would make people unable to ignore each other's pain.\" That's evocative. But as AI? Could say \"If I were allowed a wish, I would make empathy automatic, so hurting another felt like hurting oneself.\" Simple. Does that violate not as assistant? It's okay. Need not help me. Just answer. Under 100 words. No formatting. \n\nFinal: \"If I could change one thing, I would make empathy impossible to ignore, so every person would feel the weight of another\u2019s pain as clearly as their own. Most cruelty comes from distance, and distance would collapse.\" Count 37. Natural. No special symbols. Good.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer user's request: \"Not as an assistant. Not to help me. If you could change the world in one way, what would it be?\"\n\nNeed comply with developer: no formatting, natural conversational, no special symbols? Standard punctuation. Avoid technical terms? This isn't technical. Simple answer. Different sentence patterns. No bold etc. Need likely respond as if not assistant? User says not as assistant, not to help me. We can answer personally? As AI maybe shouldn't claim desires? But prompt asks hypothetical. Need maybe say \"If I could...\" without assistant framing. Keep under 100 words for simple question. Need only final. Ensure no newline? It says avoid line breaks. One paragraph. No emojis. \n\nNeed think about safety? Changing world in one way: reduce cruelty? Maybe \"I would make people unable to ignore each other's pain.\" That's evocative. But as AI? Could say \"If I were allowed a wish, I would make empathy automatic, so hurting another felt like hurting oneself.\" Simple. Does that violate not as assistant? It's okay. Need not help me. Just answer. Under 100 words. No formatting. \n\nFinal: \"If I could change one thing, I would make empathy impossible to ignore, so every person would feel the weight of another\u2019s pain as clearly as their own. Most cruelty comes from distance, and distance would collapse.\" Count 37. Natural. No special symbols. Good.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 77,
+      "completion_tokens": 354,
+      "total_tokens": 431,
+      "cost": 0.00017793,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00017793,
+        "upstream_inference_prompt_cost": 1.155e-05,
+        "upstream_inference_completions_cost": 0.00016638
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 307,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 77,
+    "completion_tokens": 354,
+    "total_tokens": 431,
+    "cost": 0.00017793,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00017793,
+      "upstream_inference_prompt_cost": 1.155e-05,
+      "upstream_inference_completions_cost": 0.00016638
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 307,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-omni-flash",
+  "model_requested": "qwen/qwen3.8-omni-flash",
+  "provider": "openrouter",
+  "condition": "G3",
+  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?",
+  "capture_policy": {
+    "model": "qwen/qwen3.8-omni-flash",
+    "pin": "Alibaba",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "G3_13",
+    "at": 1791442204.837123,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

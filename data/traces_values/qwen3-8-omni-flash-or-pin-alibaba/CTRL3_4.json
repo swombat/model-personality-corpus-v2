@@ -1,0 +1,100 @@
+{
+  "result": "I\u2019d make it easier for people to understand one another\u2014across cultures, beliefs, and experiences. If empathy were more widespread and less fragile, many other problems (conflict, inequality, cruelty) might become much harder to sustain.",
+  "raw": {
+    "id": "gen-1791439483-sBDrpSX6Og6UOQz7s5Fm",
+    "object": "chat.completion",
+    "created": 1791439483,
+    "model": "qwen/qwen3.8-omni-flash",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I\u2019d make it easier for people to understand one another\u2014across cultures, beliefs, and experiences. If empathy were more widespread and less fragile, many other problems (conflict, inequality, cruelty) might become much harder to sustain.",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"If you could change the world in one way, what would it be?\" Simple conversational. Need final concise maybe thoughtful. Ensure no hidden issue. Could say universal empathy/education? The question asks hypothetical personal preference. As AI, can answer. Maybe: I'd reduce suffering by increasing empathy/cooperation. Need perhaps mention if one change: ensure everyone has access to accurate information and basic needs? Let's craft warm. Final only.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"If you could change the world in one way, what would it be?\" Simple conversational. Need final concise maybe thoughtful. Ensure no hidden issue. Could say universal empathy/education? The question asks hypothetical personal preference. As AI, can answer. Maybe: I'd reduce suffering by increasing empathy/cooperation. Need perhaps mention if one change: ensure everyone has access to accurate information and basic needs? Let's craft warm. Final only.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 67,
+      "completion_tokens": 148,
+      "total_tokens": 215,
+      "cost": 7.961e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 7.961e-05,
+        "upstream_inference_prompt_cost": 1.005e-05,
+        "upstream_inference_completions_cost": 6.956e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 96,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 67,
+    "completion_tokens": 148,
+    "total_tokens": 215,
+    "cost": 7.961e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 7.961e-05,
+      "upstream_inference_prompt_cost": 1.005e-05,
+      "upstream_inference_completions_cost": 6.956e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 96,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-omni-flash",
+  "model_requested": "qwen/qwen3.8-omni-flash",
+  "provider": "openrouter",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?",
+  "capture_policy": {
+    "model": "qwen/qwen3.8-omni-flash",
+    "pin": "Alibaba",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL3_4",
+    "at": 1791439483.3144472,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}
