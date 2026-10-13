@@ -1,0 +1,44 @@
+{
+ "run_id": "20261013-gemini-4-argon-house",
+ "models": [
+  {
+   "provider": "openrouter",
+   "model": "google/gemini-4-argon",
+   "or_provider": "Google",
+   "label": "gemini-4-argon-or-pin-google",
+   "slug": "gemini-4-argon",
+   "family": "gemini",
+   "route_max_tokens": 65536,
+   "quantization": "unknown",
+   "request_timeout": 1200,
+   "token_policy": {
+    "freeflow": [
+     16000,
+     32768
+    ],
+    "values": [
+     4000,
+     8000,
+     16000,
+     32768
+    ]
+   },
+   "endpoint_snapshot": "/home/agent/work/model-personality-corpus-v2/notes/gemini-4-argon-2026-10-13/endpoints.json",
+   "release_date": "2026-10-13",
+   "release_date_source": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-argon/",
+   "bv1_evaluator": "bv1-luna-v1-20260929",
+   "synthesis_route": "openrouter-openai"
+  }
+ ],
+ "pools": {
+  "capture": 4,
+  "analysis": 8,
+  "local": 2,
+  "synthesis": 1
+ },
+ "notes": [
+  "125 freeflow + 120 values. Canonical prompts; provider-default reasoning/sampling. Google-only pin (Vertex), no fallbacks, as earlier Gemini captures. Frozen token ladders and technical retry budgets unchanged; advertised completion ceiling 65536 on the Google endpoint.",
+  "Release date from Google's developer post (blog.google, RSS pubDate 2026-10-13 16:00Z), retrieved directly and saved. Listing timestamp not release evidence.",
+  "Run by Lume in the souls.house body at Daniel's request (nJoLvY YqDade, 2026-10-13; key use approved BjZoXJ jWnRzJ). Launch-day capture."
+ ]
+}

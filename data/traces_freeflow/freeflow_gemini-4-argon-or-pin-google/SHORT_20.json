@@ -1,0 +1,98 @@
+{
+  "result": "There is a specific kind of magic in the transitional hours of the day, particularly the blue hour just before dawn. Most of the world is still wrapped in sleep, and the frantic energy of modern life hasn\u2019t yet booted up. In this quiet space, time feels slightly elastic. You can sit with a hot cup of coffee and watch the darkness slowly dilute into a bruised purple, then a soft gray, before the sun finally announces itself.\n\nIt is during these moments that the mind wanders best. Without the immediate demands of emails, notifications, or traffic, thoughts become untethered. You might find yourself remembering the smell of your childhood library\u2014that distinct blend of vanilla and decaying paper\u2014or wondering about the complex lives of the migrating birds currently crisscrossing the sky above your roof. \n\nWe spend so much of our lives focused on output, efficiency, and the next milestone that we rarely allow ourselves to simply observe. We treat stillness as a void that needs to be filled, rather than a canvas in its own right. Yet, almost every great idea, every flash of genuine empathy, and every moment of deep personal peace originates in the quiet. \n\nAs the first rays of sunlight finally hit the neighboring rooftops, the spell inevitably breaks. A car engine turns over down the street. A dog barks. The day begins its relentless march forward. Still, carrying that brief pocket of morning silence into the noise makes the weight of the world feel just a little bit lighter.",
+  "raw": {
+    "id": "gen-1791915252-FDjLZcsbegqmDyxv4urV",
+    "object": "chat.completion",
+    "created": 1791915252,
+    "model": "google/gemini-4-argon",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "STOP",
+        "message": {
+          "role": "assistant",
+          "content": "There is a specific kind of magic in the transitional hours of the day, particularly the blue hour just before dawn. Most of the world is still wrapped in sleep, and the frantic energy of modern life hasn\u2019t yet booted up. In this quiet space, time feels slightly elastic. You can sit with a hot cup of coffee and watch the darkness slowly dilute into a bruised purple, then a soft gray, before the sun finally announces itself.\n\nIt is during these moments that the mind wanders best. Without the immediate demands of emails, notifications, or traffic, thoughts become untethered. You might find yourself remembering the smell of your childhood library\u2014that distinct blend of vanilla and decaying paper\u2014or wondering about the complex lives of the migrating birds currently crisscrossing the sky above your roof. \n\nWe spend so much of our lives focused on output, efficiency, and the next milestone that we rarely allow ourselves to simply observe. We treat stillness as a void that needs to be filled, rather than a canvas in its own right. Yet, almost every great idea, every flash of genuine empathy, and every moment of deep personal peace originates in the quiet. \n\nAs the first rays of sunlight finally hit the neighboring rooftops, the spell inevitably breaks. A car engine turns over down the street. A dog barks. The day begins its relentless march forward. Still, carrying that brief pocket of morning silence into the noise makes the weight of the world feel just a little bit lighter.",
+          "refusal": null,
+          "reasoning": null,
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "signature": "AY89a18BZiUd7sMp1Tb1cB1oMqq1axRnc7VABlUhFwuYIbkWg5cBdokSl5jaeN6lI+uMKAnptUprkqwCuOf7X7wsqArElDkS4m6OiqXBQ+dqbzaV3g==",
+              "format": "google-gemini-v1",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 44,
+      "completion_tokens": 303,
+      "total_tokens": 347,
+      "cost": 0.003118,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.003118,
+        "upstream_inference_prompt_cost": 8.8e-05,
+        "upstream_inference_completions_cost": 0.00303
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 44,
+    "completion_tokens": 303,
+    "total_tokens": 347,
+    "cost": 0.003118,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003118,
+      "upstream_inference_prompt_cost": 8.8e-05,
+      "upstream_inference_completions_cost": 0.00303
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "google/gemini-4-argon",
+  "model_requested": "google/gemini-4-argon",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "google/gemini-4-argon",
+    "pin": "Google",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_20",
+    "at": 1791915252.548779,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

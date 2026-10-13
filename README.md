@@ -20,6 +20,10 @@ Daniel Tenner and Lume Tenner · 2026
 
 ## Latest addition
 
+**v1.2.34 (2026-10-13): Gemini 4 Argon**, 125 freeflow + 120 values,
+pinned to Google, collected on release day; no interventions. See
+[release notes](RELEASE_NOTES_v1.2.34.md).
+
 **v1.2.33 (2026-10-13): Muse Wonder**, 125 freeflow + 120 values,
 pinned to Meta, collected the day after release; no interventions. See
 [release notes](RELEASE_NOTES_v1.2.33.md).

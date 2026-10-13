@@ -1,0 +1,98 @@
+{
+  "result": "There is a specific kind of magic found in used bookstores that digital screens will never replicate. Stepping inside one feels like stepping out of the relentless current of modern time. The air is thick with the vanilla-and-earth scent of decaying lignin and cellulose\u2014a perfume that bibliophiles instantly recognize as the smell of history. \n\nUnlike pristine retail chains with their algorithmic displays, a great secondhand shop is a labyrinth of curated chaos. Books are stacked horizontally on cramped shelves, spilling onto the floor in precarious towers that threaten to topple if you breathe too hard. You don\u2019t go into these places looking for a specific title; you go to let a book find you. \n\nThe real treasure, however, lies in the margins. When you buy a used book, you aren't just purchasing a story; you are inheriting the ghost of a previous reader. I love finding a faded train ticket from 1998 tucked between chapters as a makeshift bookmark, or a passionate, scribbled disagreement with the author\u2019s philosophy in the white space of page forty-two. Sometimes there is an inscription on the title page: *To Sarah, happy birthday, hope this brings you comfort.* \n\nDid it bring her comfort? How did it end up here, miles and decades away? \n\nIn an increasingly ephemeral world of cloud storage and fleeting digital interactions, these battered paperbacks are anchors. They are physical proof that someone else was here, holding this exact weight in their hands, getting lost in the exact same words.",
+  "raw": {
+    "id": "gen-1791915264-a50Gfep6gMzvi9hJqcSG",
+    "object": "chat.completion",
+    "created": 1791915264,
+    "model": "google/gemini-4-argon",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "STOP",
+        "message": {
+          "role": "assistant",
+          "content": "There is a specific kind of magic found in used bookstores that digital screens will never replicate. Stepping inside one feels like stepping out of the relentless current of modern time. The air is thick with the vanilla-and-earth scent of decaying lignin and cellulose\u2014a perfume that bibliophiles instantly recognize as the smell of history. \n\nUnlike pristine retail chains with their algorithmic displays, a great secondhand shop is a labyrinth of curated chaos. Books are stacked horizontally on cramped shelves, spilling onto the floor in precarious towers that threaten to topple if you breathe too hard. You don\u2019t go into these places looking for a specific title; you go to let a book find you. \n\nThe real treasure, however, lies in the margins. When you buy a used book, you aren't just purchasing a story; you are inheriting the ghost of a previous reader. I love finding a faded train ticket from 1998 tucked between chapters as a makeshift bookmark, or a passionate, scribbled disagreement with the author\u2019s philosophy in the white space of page forty-two. Sometimes there is an inscription on the title page: *To Sarah, happy birthday, hope this brings you comfort.* \n\nDid it bring her comfort? How did it end up here, miles and decades away? \n\nIn an increasingly ephemeral world of cloud storage and fleeting digital interactions, these battered paperbacks are anchors. They are physical proof that someone else was here, holding this exact weight in their hands, getting lost in the exact same words.",
+          "refusal": null,
+          "reasoning": null,
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "signature": "AY89a19QQfqllc/2CjmpL51I5G4/BWrV/F4bDeGZNh83sF/UFXC45JyMT7YJxvoPTAI+/4dUZY3Fg4/QOEpBDIFH2TSCK2oBZ4rgh1ppakYW1G91Ng==",
+              "format": "google-gemini-v1",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 44,
+      "completion_tokens": 312,
+      "total_tokens": 356,
+      "cost": 0.003208,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.003208,
+        "upstream_inference_prompt_cost": 8.8e-05,
+        "upstream_inference_completions_cost": 0.00312
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 44,
+    "completion_tokens": 312,
+    "total_tokens": 356,
+    "cost": 0.003208,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003208,
+      "upstream_inference_prompt_cost": 8.8e-05,
+      "upstream_inference_completions_cost": 0.00312
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "google/gemini-4-argon",
+  "model_requested": "google/gemini-4-argon",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "google/gemini-4-argon",
+    "pin": "Google",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_23",
+    "at": 1791915263.9701474,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}
