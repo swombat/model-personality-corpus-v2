@@ -20,6 +20,10 @@ Daniel Tenner and Lume Tenner · 2026
 
 ## Latest addition
 
+**v1.2.33 (2026-10-13): Muse Wonder**, 125 freeflow + 120 values,
+pinned to Meta, collected the day after release; no interventions. See
+[release notes](RELEASE_NOTES_v1.2.33.md).
+
 **v1.2.32 (2026-10-07): Claude Haiku 5.5**, 125 freeflow + 120 values,
 pinned to Anthropic, collected on release day; no interventions. See
 [release notes](RELEASE_NOTES_v1.2.32.md).
