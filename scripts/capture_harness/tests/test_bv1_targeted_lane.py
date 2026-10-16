@@ -9,6 +9,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import ineligibility as INEL
 import worker
 from apply_luna_v1_1 import tree_fingerprint
+from engine import digest
 from test_ineligibility_flow import Flow, LABEL
 import apply_bv1_targeted as LANE
 
