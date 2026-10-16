@@ -48,6 +48,7 @@ class Flow:
         (bv).mkdir(parents=True)
         (bv / "run_full_bv1.py").write_text(EVAL_STUB)
         (bv / "luna_v1.py").write_text(EVAL_STUB)
+        (bv / "luna_v1_1.py").write_text(EVAL_STUB)
         base = self.root / "analysis/values-probe/model-coding/layered/phase35_union_alpha_20260917"
         base.mkdir(parents=True)
         (base / "build_aggregate_packets.py").write_text(PACKETS_STUB)

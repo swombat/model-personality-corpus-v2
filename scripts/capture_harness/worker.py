@@ -3,7 +3,7 @@
 
 from __future__ import annotations
 import uuid
-import argparse, csv, fcntl, importlib.util, json, os, shutil, subprocess, sys, time
+import argparse, csv, fcntl, importlib.util, json, os, re, shutil, subprocess, sys, time
 from pathlib import Path
 from engine import atomic, digest
 import ineligibility as INEL
@@ -237,30 +237,63 @@ def raw_collect(c, phase, probe, sid):
 
 
 LUNA_ARM = "bv1-luna-v1-20260929"
+# BV1-Luna v1.1 (analysis e5b4f5912, Mira eBmBDj 2026-10-16): v1 plus an
+# exact-excerpt evidence rule for sources with no . ! ? at all. Under a Luna v1
+# capture such a sample is routed to v1.1, with its own attempt, output and
+# binding directories; v1 records are never reused or relabelled. Generation
+# runs only through apply_luna_v1_1.py (reviewed, explicit), never in the DAG.
+LUNA_V11_ARM = "bv1-luna-v1.1-20261016"
+_ARM_DIRS = {
+    LUNA_ARM: ("freeflow_bv1_luna_v1", "bv1_bindings_luna_v1"),
+    LUNA_V11_ARM: ("freeflow_bv1_luna_v1_1", "bv1_bindings_luna_v1_1"),
+}
+_ARM_MODULES = {LUNA_ARM: "luna_v1.py", LUNA_V11_ARM: "luna_v1_1.py"}
 
 
-def bv1_paths(c, phase):
-    arm = c.get("bv1_evaluator", "legacy-deepseek")
-    assert arm in ("legacy-deepseek", LUNA_ARM), "unknown BV1 evaluator arm"
+def luna_v11_applies(c, text):
+    return c.get("bv1_evaluator") == LUNA_ARM and not re.search(r"[.!?]", text)
+
+
+def sample_arm(c, text):
+    return LUNA_V11_ARM if luna_v11_applies(c, text) else c.get("bv1_evaluator", "legacy-deepseek")
+
+
+def bv1_paths(c, phase, arm=None):
+    arm = arm or c.get("bv1_evaluator", "legacy-deepseek")
+    assert arm in ("legacy-deepseek", *_ARM_DIRS), "unknown BV1 evaluator arm"
+    assert arm != LUNA_V11_ARM or c.get("bv1_evaluator") == LUNA_ARM, "v1.1 only under a Luna v1 capture"
     root = Path(c["analysis_root"]) / "analysis/freeflow/personality-eval-bv1"
-    if arm == LUNA_ARM:
-        return phase / "freeflow_bv1_luna_v1", root / "arms" / arm / "outputs", phase / "bv1_bindings_luna_v1"
+    if arm in _ARM_DIRS:
+        out, bind = _ARM_DIRS[arm]
+        return phase / out, root / "arms" / arm / "outputs", phase / bind
     return phase / "freeflow_bv1", root / "outputs", phase / "bv1_bindings"
 
 
-def bv1(c, phase, sid, validate=False):
+def bv1(c, phase, sid, validate=False, lane=False):
     root = Path(c["analysis_root"])
     m = module(
         "capture_bv1", root / "analysis/freeflow/personality-eval-bv1/run_full_bv1.py"
     )
-    m.OUT, m.OUTPUTS, binding_dir = bv1_paths(c, phase)
-    m.OUT.mkdir(exist_ok=True)
-    arm = None
-    if c.get("bv1_evaluator") == LUNA_ARM:
-        arm = module("capture_luna", root / "analysis/freeflow/personality-eval-bv1/luna_v1.py")
     src = trace_path(c, "freeflow", sid)
     d = json.loads(src.read_text())
     assert raw_problem(d, c, "freeflow", sid) is None
+    # A v1 record already made for this sample (an applied bv1-ineligibility-v1
+    # receipt, or a bound v1 evaluation) stays v1: never rerouted or relabelled.
+    # apply_luna_v1_1.py --supersede-ineligibility moves a receipt aside first.
+    v1_record = c.get("bv1_evaluator") == LUNA_ARM and (
+        INEL.receipt_path(phase, sid).exists()
+        or (bv1_paths(c, phase, LUNA_ARM)[2] / (sid + ".json")).exists()
+    )
+    sarm = LUNA_ARM if v1_record else sample_arm(c, d["result"])
+    m.OUT, m.OUTPUTS, binding_dir = bv1_paths(c, phase, sarm)
+    arm = None
+    if sarm in _ARM_MODULES:
+        arm = module("capture_luna_" + sarm.replace("-", "_").replace(".", "_"),
+                     root / "analysis/freeflow/personality-eval-bv1" / _ARM_MODULES[sarm])
+    if sarm == LUNA_V11_ARM and not validate and not lane:
+        print("BV1: unpunctuated source routes to", LUNA_V11_ARM, "- run apply_luna_v1_1.py after review")
+        raise SystemExit(21)
+    m.OUT.mkdir(exist_ok=True)
     out = m.OUTPUTS / c["label"] / (sid + ".md")
     row = {
         "pid": c["id_prefix"] + "_BV1_" + sid,
@@ -273,13 +306,14 @@ def bv1(c, phase, sid, validate=False):
         "source": str(src),
         "outpath": str(out),
         "text": d["result"],
+        "evaluator_arm": sarm,
     }
     binding = binding_dir / (sid + ".json")
     source_hash = digest(src)
     receipt = INEL.receipt_path(phase, sid)
     if receipt.exists():
         # A distinct outcome, never an evaluation: no API call, no output.
-        assert arm, "ineligibility receipts apply only to the BV1-Luna arm"
+        assert arm and sarm == LUNA_ARM, "ineligibility receipts apply only to the BV1-Luna v1 arm"
         r = INEL.check(json.loads(receipt.read_text()), c, sid, src, m.OUT, arm, out, binding)
         INEL.check_applied(INEL.state_db_for(c), INEL.task_id(c, sid), receipt, r["attempts"])
         return dict(row, ineligible=True, receipt_sha256=digest(receipt))
@@ -307,8 +341,12 @@ def bv1(c, phase, sid, validate=False):
         else:
             m.process(row, False, max_attempts=1)
     assert out.exists() and valid(out.read_text())[0], "BV1 output QA failed"
+    if sarm == LUNA_V11_ARM:
+        assert arm.provenance_ok(out, row), "BV1 v1.1 output lacks matching v1.1 provenance"
+        assert validate or lane
+        assert binding.exists() or not validate, "BV1 v1.1 binding missing"
     if not validate:
-        atomic(binding, {"source_sha256": source_hash, "output_sha256": digest(out), "evaluator_arm": c.get("bv1_evaluator", "legacy-deepseek")})
+        atomic(binding, {"source_sha256": source_hash, "output_sha256": digest(out), "evaluator_arm": sarm})
     elif known:
         assert known["source_sha256"] == source_hash and known[
             "output_sha256"
@@ -610,7 +648,7 @@ def synthesis(c, phase, validate):
             cov = INEL.coverage(rows, identities("freeflow"))
             rows = [r for r in rows if not r.get("ineligible")]
             assert all(
-                (bindings / (Path(r["sample_id"]).stem + ".json")).exists()
+                (bv1_paths(c, phase, r["evaluator_arm"])[2] / (Path(r["sample_id"]).stem + ".json")).exists()
                 for r in rows
             )
             if cov:
