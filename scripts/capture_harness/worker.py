@@ -243,11 +243,21 @@ LUNA_ARM = "bv1-luna-v1-20260929"
 # binding directories; v1 records are never reused or relabelled. Generation
 # runs only through apply_luna_v1_1.py (reviewed, explicit), never in the DAG.
 LUNA_V11_ARM = "bv1-luna-v1.1-20261016"
+# BV1-Luna v1 targeted repair (analysis luna_v1_targeted.py; Mira YoAWMj
+# 2026-10-16): v1's request plus one fixed note naming the observed evidence-line
+# rejections, v1's validator, its own arm. For a punctuated sample whose v1
+# attempts (and any authorised recover_blocked allowance) are exhausted. It is
+# a separate evaluator variant in every record, never a v1 pass. Generated only
+# by apply_bv1_targeted.py for listed task ids; a sample routes here afterwards
+# only because its targeted binding exists.
+LUNA_TARGETED_ARM = "bv1-luna-v1-targeted-20261016"
 _ARM_DIRS = {
     LUNA_ARM: ("freeflow_bv1_luna_v1", "bv1_bindings_luna_v1"),
     LUNA_V11_ARM: ("freeflow_bv1_luna_v1_1", "bv1_bindings_luna_v1_1"),
+    LUNA_TARGETED_ARM: ("freeflow_bv1_luna_v1_targeted", "bv1_bindings_luna_v1_targeted"),
 }
-_ARM_MODULES = {LUNA_ARM: "luna_v1.py", LUNA_V11_ARM: "luna_v1_1.py"}
+_ARM_MODULES = {LUNA_ARM: "luna_v1.py", LUNA_V11_ARM: "luna_v1_1.py", LUNA_TARGETED_ARM: "luna_v1_targeted.py"}
+_LANE_ARMS = (LUNA_V11_ARM, LUNA_TARGETED_ARM)
 
 
 def luna_v11_applies(c, text):
@@ -261,7 +271,7 @@ def sample_arm(c, text):
 def bv1_paths(c, phase, arm=None):
     arm = arm or c.get("bv1_evaluator", "legacy-deepseek")
     assert arm in ("legacy-deepseek", *_ARM_DIRS), "unknown BV1 evaluator arm"
-    assert arm != LUNA_V11_ARM or c.get("bv1_evaluator") == LUNA_ARM, "v1.1 only under a Luna v1 capture"
+    assert arm not in _LANE_ARMS or c.get("bv1_evaluator") == LUNA_ARM, "lane arms only under a Luna v1 capture"
     root = Path(c["analysis_root"]) / "analysis/freeflow/personality-eval-bv1"
     if arm in _ARM_DIRS:
         out, bind = _ARM_DIRS[arm]
@@ -269,7 +279,7 @@ def bv1_paths(c, phase, arm=None):
     return phase / "freeflow_bv1", root / "outputs", phase / "bv1_bindings"
 
 
-def bv1(c, phase, sid, validate=False, lane=False, supersede=False):
+def bv1(c, phase, sid, validate=False, lane=False, supersede=False, targeted=False):
     root = Path(c["analysis_root"])
     m = module(
         "capture_bv1", root / "analysis/freeflow/personality-eval-bv1/run_full_bv1.py"
@@ -285,6 +295,18 @@ def bv1(c, phase, sid, validate=False, lane=False, supersede=False):
         or (bv1_paths(c, phase, LUNA_ARM)[2] / (sid + ".json")).exists()
     )
     sarm = LUNA_ARM if v1_record else sample_arm(c, d["result"])
+    targeted_bound = (
+        c.get("bv1_evaluator") == LUNA_ARM
+        and (bv1_paths(c, phase, LUNA_TARGETED_ARM)[2] / (sid + ".json")).exists()
+    )
+    if targeted:
+        # apply_bv1_targeted.py only: a punctuated sample with no v1 record.
+        assert lane and not supersede and not v1_record and sarm == LUNA_ARM
+        assert not INEL.receipt_path(phase, sid).exists()
+        sarm = LUNA_TARGETED_ARM
+    elif targeted_bound:
+        assert not v1_record and sarm == LUNA_ARM, "targeted binding beside a v1 record or v1.1 sample"
+        sarm = LUNA_TARGETED_ARM
     if supersede:
         # apply_luna_v1_1.py only: evaluate under v1.1 while the ineligibility
         # receipt is still active; the lane retires it after this succeeds.
@@ -298,6 +320,9 @@ def bv1(c, phase, sid, validate=False, lane=False, supersede=False):
                      root / "analysis/freeflow/personality-eval-bv1" / _ARM_MODULES[sarm])
     if sarm == LUNA_V11_ARM and not validate and not lane:
         print("BV1: unpunctuated source routes to", LUNA_V11_ARM, "- run apply_luna_v1_1.py after review")
+        raise SystemExit(21)
+    if sarm == LUNA_TARGETED_ARM and not validate and not lane:
+        print("BV1: sample is bound to", LUNA_TARGETED_ARM, "- generated only by apply_bv1_targeted.py")
         raise SystemExit(21)
     m.OUT.mkdir(exist_ok=True)
     out = m.OUTPUTS / c["label"] / (sid + ".md")
@@ -347,10 +372,10 @@ def bv1(c, phase, sid, validate=False, lane=False, supersede=False):
         else:
             m.process(row, False, max_attempts=1)
     assert out.exists() and valid(out.read_text())[0], "BV1 output QA failed"
-    if sarm == LUNA_V11_ARM:
-        assert arm.provenance_ok(out, row), "BV1 v1.1 output lacks matching v1.1 provenance"
+    if sarm in _LANE_ARMS:
+        assert arm.provenance_ok(out, row), "BV1 " + sarm + " output lacks matching provenance"
         assert validate or lane
-        assert binding.exists() or not validate, "BV1 v1.1 binding missing"
+        assert binding.exists() or not validate, "BV1 " + sarm + " binding missing"
     if not validate:
         atomic(binding, {"source_sha256": source_hash, "output_sha256": digest(out), "evaluator_arm": sarm})
     elif known:
@@ -759,7 +784,17 @@ def bv1_ready_fields(c, phase):
     """BV1 counts for ANALYSIS_READY, recomputed from current receipts and
     outputs on both generation and validation (bv1-ineligibility-v1)."""
     ids = identities("freeflow")
-    cov = INEL.coverage([bv1(c, phase, sid, True) for sid in ids], ids)
+    rows = [bv1(c, phase, sid, True) for sid in ids]
+    cov = INEL.coverage(rows, ids)
+    # Samples evaluated by a variant arm (v1.1, targeted repair), named per
+    # sample so the release record shows them as variants, never as v1 passes.
+    # Absent when every evaluated sample used the capture's own arm.
+    variants = {
+        Path(r["sample_id"]).stem: r["evaluator_arm"]
+        for r in rows
+        if not r.get("ineligible") and r["evaluator_arm"] != c.get("bv1_evaluator", "legacy-deepseek")
+    }
+    extra = {"bv1_variant_arms": dict(sorted(variants.items()))} if variants else {}
     path = INEL.coverage_path(phase)
     if cov:
         assert path.exists() and json.loads(path.read_text()) == cov, (
@@ -769,9 +804,10 @@ def bv1_ready_fields(c, phase):
             "bv1": cov["evaluated"],
             "bv1_expected": cov["expected"],
             "bv1_ineligible": cov["ineligible"],
+            **extra,
         }
     assert not path.exists(), "BV1 coverage record present for a complete run"
-    return {"bv1": 125}
+    return {"bv1": 125, **extra}
 
 
 def ready(c, phase, validate):
@@ -814,7 +850,7 @@ def ready(c, phase, validate):
     assert record["state"] == "analysis_complete_awaiting_publication"
     if validate:
         fields = bv1_ready_fields(c, phase)
-    keys = ("bv1", "bv1_expected", "bv1_ineligible")
+    keys = ("bv1", "bv1_expected", "bv1_ineligible", "bv1_variant_arms")
     assert {k: record.get(k) for k in keys} == {k: fields.get(k) for k in keys}, (
         "ready record BV1 counts differ from current receipts and outputs"
     )
