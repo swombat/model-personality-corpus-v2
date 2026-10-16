@@ -1,0 +1,45 @@
+{
+ "run_id": "20261016-muse-spark-open-house",
+ "models": [
+  {
+   "provider": "openrouter",
+   "model": "meta/muse-spark-open",
+   "or_provider": "Modal",
+   "label": "muse-spark-open-or-pin-modal",
+   "slug": "muse-spark-open",
+   "family": "meta",
+   "route_max_tokens": 262144,
+   "quantization": "unknown",
+   "request_timeout": 1200,
+   "token_policy": {
+    "freeflow": [
+     16000,
+     32768
+    ],
+    "values": [
+     4000,
+     8000,
+     16000,
+     32768
+    ]
+   },
+   "endpoint_snapshot": "/home/agent/work/model-personality-corpus-v2/notes/muse-spark-open-2026-10-15/endpoints.json",
+   "release_date": "2026-10-15",
+   "release_date_source": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+   "bv1_evaluator": "bv1-luna-v1-20260929",
+   "synthesis_route": "openrouter-openai"
+  }
+ ],
+ "pools": {
+  "capture": 4,
+  "analysis": 8,
+  "local": 2,
+  "synthesis": 1
+ },
+ "notes": [
+  "125 freeflow + 120 values. Canonical prompts; provider-default reasoning/sampling. Modal-only pin, no fallbacks. Frozen token ladders and technical retry budgets unchanged; advertised completion ceiling 262144.",
+  "THIRD-PARTY HOST: Meta has no OpenRouter endpoint for this open-weight model; the only route is Modal (quantization unknown). Daniel approved Modal with the cell clearly marked (souls.house wJVbwJ JXVpqe, 2026-10-16).",
+  "Release date from Meta's Muse Model License / Usage Policy on the official Hugging Face model page (Release date: October 15, 2026), retrieved and saved. Listing timestamp not release evidence.",
+  "Run by Lume in the souls.house body (key use approved BjZoXJ jWnRzJ)."
+ ]
+}

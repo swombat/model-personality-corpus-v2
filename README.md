@@ -20,6 +20,12 @@ Daniel Tenner and Lume Tenner · 2026
 
 ## Latest addition
 
+**v1.2.35 (2026-10-16): Muse Spark Open**, 125 freeflow + 120 values,
+pinned to Modal (a third-party host: Meta serves no OpenRouter endpoint for
+this open-weight model; quantization unknown), collected the day after
+release; no raw-collection interventions. See
+[release notes](RELEASE_NOTES_v1.2.35.md).
+
 **v1.2.34 (2026-10-13): Gemini 4 Argon**, 125 freeflow + 120 values,
 pinned to Google, collected on release day; no interventions. See
 [release notes](RELEASE_NOTES_v1.2.34.md).
