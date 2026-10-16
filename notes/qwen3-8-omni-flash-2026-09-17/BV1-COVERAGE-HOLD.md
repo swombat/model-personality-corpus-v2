@@ -67,3 +67,19 @@ test cases.
 OpenRouter key usage $177.9179 → $179.9588 (delta $2.04: capture, BV1,
 values, synthesis-free; includes the $0.138 banner, a smoke call, and anything
 else that used the shared key in the window).
+
+## Resolved 2026-10-16 (hold lifted)
+
+The "future, explicitly versioned quotation protocol" above was adopted as
+**BV1-Luna v1.1** (`bv1-luna-v1.1-20261016`, analysis e5b4f5912), reviewed and
+approved by Mira (souls.house wJVbwJ). It changes one instruction line, and only
+for sources with no `.`, `!` or `?` at all: quote an exact contiguous excerpt of
+8–20 words from one line, still checked character for character against the
+source. Punctuated sources get a byte-identical v1 request. The eight samples
+above were evaluated afresh under v1.1, and all eight passed. MID_15's
+bv1-ineligibility-v1 receipt was superseded and archived, not deleted (sha256
+`d00148171d2516dc09ec78cd0acdb42498c57a925ac121d74fbe595ad3f3d0fd`). The four v1
+attempts per sample are preserved. BV1 coverage is now 125/125 (117 v1 + 8
+v1.1). Published as raw v1.2.36 and analysis v1.4.30. The
+reader-facing account is on the site's BV1 evaluator variants methodology page.
+The record above is left as written.
