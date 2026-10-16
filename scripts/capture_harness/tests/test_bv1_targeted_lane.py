@@ -217,6 +217,22 @@ class TargetedLaneTests(unittest.TestCase):
             self.lane(f)
         self.assertEqual(self.calls(f), 0)
 
+    def test_config_drift_is_rejected_before_any_work(self):
+        import hashlib
+        f = self.make()
+        spec = json.loads((f.run / "spec.json").read_text())
+        spec["input_hashes"] = {str(f.config): digest(f.config)}
+        (f.run / "spec.json").write_text(json.dumps(spec))
+        f.sql("UPDATE meta SET v=? WHERE k='spec'", (hashlib.sha256(json.dumps(spec, sort_keys=True).encode()).hexdigest(),))
+        self.lane(f, check_only=True)  # unchanged inputs pass
+        c = json.loads(f.config.read_text())
+        c["model"] = "review/MODIFIED-CONFIG"
+        f.config.write_text(json.dumps(c))
+        with self.assertRaisesRegex(AssertionError, "input changed"):
+            self.lane(f)
+        self.assertEqual((self.state(f)[0], self.calls(f)), ("blocked", 0))
+        self.assertIsNone(f.engine.db.execute("SELECT 1 FROM sqlite_master WHERE name='targeted_repairs'").fetchone())
+
     def test_unbound_output_fails_closed_without_a_call(self):
         f = self.make()
         out = Path(worker.bv1_paths(f.c, f.phase, worker.LUNA_TARGETED_ARM)[1] / LABEL / "X_1.md")

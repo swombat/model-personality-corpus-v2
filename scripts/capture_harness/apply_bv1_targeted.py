@@ -29,6 +29,8 @@ def apply(spec_path, directory, ids, authorization, limit=2, check_only=False):
     db = sqlite3.connect(directory / "state.sqlite", timeout=30)
     fingerprint = hashlib.sha256(json.dumps(spec, sort_keys=True).encode()).hexdigest()
     assert db.execute("SELECT v FROM meta WHERE k='spec'").fetchone()[0] == fingerprint
+    # As engine.py and recover_blocked.py: compiled inputs must be unchanged.
+    assert all(digest(p) == h for p, h in spec.get("input_hashes", {}).items()), "spec input changed since compilation"
     assert authorization.strip(), "authorization required"
     assert 1 <= limit <= 3
     tasks = {t["id"]: t for t in spec["tasks"]}
