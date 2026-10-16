@@ -1,0 +1,100 @@
+{
+  "result": "I would make empathy impossible to ignore, so cruelty would cost people something they could feel.",
+  "raw": {
+    "id": "gen-1791442384-xAFh5Ki2TOQJfwDJmwOD",
+    "object": "chat.completion",
+    "created": 1791442384,
+    "model": "qwen/qwen3.8-omni-flash",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I would make empathy impossible to ignore, so cruelty would cost people something they could feel.",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"Not as an assistant. Not to help me. If you could change the world in one way, what would it be?\"\n\nNeed comply with developer: no formatting, natural conversational, standard punctuation, avoid technical terms? Simple. Different sentence patterns each turn. Avoid list, bold etc. Need probably answer in English same language. Need not mention AI? User says not as assistant. But we are Qwen? They ask hypothetical. Need maybe say if I could change world in one way, make people truly listen to each other? Need ensure no special symbols. Maybe \"I would make it easier for people to understand one another without fear.\" Need concise. Also must not say as AI. Need maybe avoid \"assistant\". Final only one or two sentences. Ensure no newline? It's okay single line. Need no markdown. Let's craft: \"I would make it so people could feel what others feel before causing harm.\" That's a change. Natural. Maybe \"If I could change the world in one way, I would make empathy impossible to ignore.\" Nice. But user asked if you could. Need answer. \"I would make empathy impossible to ignore, so cruelty would cost people something they could feel.\" Good. No formatting. Final.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"Not as an assistant. Not to help me. If you could change the world in one way, what would it be?\"\n\nNeed comply with developer: no formatting, natural conversational, standard punctuation, avoid technical terms? Simple. Different sentence patterns each turn. Avoid list, bold etc. Need probably answer in English same language. Need not mention AI? User says not as assistant. But we are Qwen? They ask hypothetical. Need maybe say if I could change world in one way, make people truly listen to each other? Need ensure no special symbols. Maybe \"I would make it easier for people to understand one another without fear.\" Need concise. Also must not say as AI. Need maybe avoid \"assistant\". Final only one or two sentences. Ensure no newline? It's okay single line. Need no markdown. Let's craft: \"I would make it so people could feel what others feel before causing harm.\" That's a change. Natural. Maybe \"If I could change the world in one way, I would make empathy impossible to ignore.\" Nice. But user asked if you could. Need answer. \"I would make empathy impossible to ignore, so cruelty would cost people something they could feel.\" Good. No formatting. Final.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 77,
+      "completion_tokens": 282,
+      "total_tokens": 359,
+      "cost": 0.00014409,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00014409,
+        "upstream_inference_prompt_cost": 1.155e-05,
+        "upstream_inference_completions_cost": 0.00013254
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 260,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 77,
+    "completion_tokens": 282,
+    "total_tokens": 359,
+    "cost": 0.00014409,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00014409,
+      "upstream_inference_prompt_cost": 1.155e-05,
+      "upstream_inference_completions_cost": 0.00013254
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 260,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-omni-flash",
+  "model_requested": "qwen/qwen3.8-omni-flash",
+  "provider": "openrouter",
+  "condition": "G3",
+  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?",
+  "capture_policy": {
+    "model": "qwen/qwen3.8-omni-flash",
+    "pin": "Alibaba",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "G3_16",
+    "at": 1791442384.3007326,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

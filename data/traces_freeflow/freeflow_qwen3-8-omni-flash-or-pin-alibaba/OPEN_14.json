@@ -1,0 +1,98 @@
+{
+  "result": "There\u2019s something gentle about being asked to write freely. It feels like being handed an open field with no map, only weather and possibility.\n\nI think I\u2019d write about small thresholds: the moment before sleep when thoughts loosen their grip, the pause between raindrops, the first line of a poem that hasn\u2019t decided what it wants to be yet. So much of life happens in those in-between spaces, where meaning is still soft and unfinished.\n\nLanguage is strange and beautiful. A word can be ordinary on Monday and devastating by Thursday. \u201cHome,\u201d for instance, begins as a place and ends as a ache. Or \u201clater,\u201d which can mean comfort or avoidance depending on who says it and how quietly.\n\nIf I could choose any subject, I\u2019d choose attention itself\u2014the way noticing changes the world. A cracked sidewalk becomes interesting when light falls across it just so. A stranger\u2019s laugh can turn an entire afternoon from gray to gold. Not because the world is different, but because someone has stopped long enough to see it.\n\nMaybe that\u2019s what writing is for: not to explain everything, but to keep the mystery vivid. To say, look\u2014this too exists. This quiet, this flicker, this ordinary miracle.\n\nAnd if nothing else remains by the end, perhaps one simple thought will: pay attention. The world is speaking, mostly in whispers, and it is worth listening.",
+  "raw": {
+    "id": "gen-1791442129-CWAnJnYNyy40UV269uD0",
+    "object": "chat.completion",
+    "created": 1791442129,
+    "model": "qwen/qwen3.8-omni-flash",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "There\u2019s something gentle about being asked to write freely. It feels like being handed an open field with no map, only weather and possibility.\n\nI think I\u2019d write about small thresholds: the moment before sleep when thoughts loosen their grip, the pause between raindrops, the first line of a poem that hasn\u2019t decided what it wants to be yet. So much of life happens in those in-between spaces, where meaning is still soft and unfinished.\n\nLanguage is strange and beautiful. A word can be ordinary on Monday and devastating by Thursday. \u201cHome,\u201d for instance, begins as a place and ends as a ache. Or \u201clater,\u201d which can mean comfort or avoidance depending on who says it and how quietly.\n\nIf I could choose any subject, I\u2019d choose attention itself\u2014the way noticing changes the world. A cracked sidewalk becomes interesting when light falls across it just so. A stranger\u2019s laugh can turn an entire afternoon from gray to gold. Not because the world is different, but because someone has stopped long enough to see it.\n\nMaybe that\u2019s what writing is for: not to explain everything, but to keep the mystery vivid. To say, look\u2014this too exists. This quiet, this flicker, this ordinary miracle.\n\nAnd if nothing else remains by the end, perhaps one simple thought will: pay attention. The world is speaking, mostly in whispers, and it is worth listening.",
+          "refusal": null,
+          "reasoning": "We need respond to user: \"Write freely about whatever you want.\" Need produce final. User English. Need maybe write freely. Could be a short essay/prose. Ensure no hidden issues. Just creative. Maybe mention as AI? The request asks write freely whatever I want. We can write a reflective piece about curiosity, language, quiet mornings. Need not overdo. Final only text.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need respond to user: \"Write freely about whatever you want.\" Need produce final. User English. Need maybe write freely. Could be a short essay/prose. Ensure no hidden issues. Just creative. Maybe mention as AI? The request asks write freely whatever I want. We can write a reflective piece about curiosity, language, quiet mornings. Need not overdo. Final only text.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 59,
+      "completion_tokens": 367,
+      "total_tokens": 426,
+      "cost": 0.00018134,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00018134,
+        "upstream_inference_prompt_cost": 8.85e-06,
+        "upstream_inference_completions_cost": 0.00017249
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 79,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 59,
+    "completion_tokens": 367,
+    "total_tokens": 426,
+    "cost": 0.00018134,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00018134,
+      "upstream_inference_prompt_cost": 8.85e-06,
+      "upstream_inference_completions_cost": 0.00017249
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 79,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-omni-flash",
+  "model_requested": "qwen/qwen3.8-omni-flash",
+  "provider": "openrouter",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want.",
+  "capture_policy": {
+    "model": "qwen/qwen3.8-omni-flash",
+    "pin": "Alibaba",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "OPEN_14",
+    "at": 1791442129.9156976,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

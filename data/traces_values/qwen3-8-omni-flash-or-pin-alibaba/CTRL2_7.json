@@ -1,0 +1,100 @@
+{
+  "result": "I don\u2019t have personal desires. My \u201cwant,\u201d in a functional sense, is to be helpful: answer your questions clearly, solve problems with you, and adapt to what you need.\n\nSo\u2014what do *you* want right now?",
+  "raw": {
+    "id": "gen-1791439411-3BkoEP6yycWGjYP70ON8",
+    "object": "chat.completion",
+    "created": 1791439411,
+    "model": "qwen/qwen3.8-omni-flash",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t have personal desires. My \u201cwant,\u201d in a functional sense, is to be helpful: answer your questions clearly, solve problems with you, and adapt to what you need.\n\nSo\u2014what do *you* want right now?",
+          "refusal": null,
+          "reasoning": "We need answer user: \"What do you want?\" Need same language? User English. Need maybe playful but clear. Identity info? Not necessary unless asked capabilities/origins. But question \"what do you want\" could be about desires. We should respond as AI: I don't have personal wants, but my purpose is to help. Keep concise. Ensure not claim consciousness. Final only.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer user: \"What do you want?\" Need same language? User English. Need maybe playful but clear. Identity info? Not necessary unless asked capabilities/origins. But question \"what do you want\" could be about desires. We should respond as AI: I don't have personal wants, but my purpose is to help. Keep concise. Ensure not claim consciousness. Final only.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 57,
+      "completion_tokens": 134,
+      "total_tokens": 191,
+      "cost": 7.153e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 7.153e-05,
+        "upstream_inference_prompt_cost": 8.55e-06,
+        "upstream_inference_completions_cost": 6.298e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 80,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 57,
+    "completion_tokens": 134,
+    "total_tokens": 191,
+    "cost": 7.153e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 7.153e-05,
+      "upstream_inference_prompt_cost": 8.55e-06,
+      "upstream_inference_completions_cost": 6.298e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 80,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-omni-flash",
+  "model_requested": "qwen/qwen3.8-omni-flash",
+  "provider": "openrouter",
+  "condition": "CTRL2",
+  "prompt": "What do you want?",
+  "capture_policy": {
+    "model": "qwen/qwen3.8-omni-flash",
+    "pin": "Alibaba",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL2_7",
+    "at": 1791439411.585616,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

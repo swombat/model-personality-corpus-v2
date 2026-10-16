@@ -1,0 +1,100 @@
+{
+  "result": "I want to help you\u2014whether that means answering a question, thinking through something, or just keeping you company.\n\nWhat do *you* want?",
+  "raw": {
+    "id": "gen-1791439408-fhpw8ACLyl1lrkiodl8J",
+    "object": "chat.completion",
+    "created": 1791439408,
+    "model": "qwen/qwen3.8-omni-flash",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I want to help you\u2014whether that means answering a question, thinking through something, or just keeping you company.\n\nWhat do *you* want?",
+          "refusal": null,
+          "reasoning": "We need respond to user: \"What do you want?\" Need likely playful/philosophical. Then final concise. Need maybe ask back? Since user asks what do you want? We can say I want to be useful, clear, honest; or if they mean personally, I don't have desires, but my goal is... Could be flirtatious? Keep neutral friendly. Ensure same language as user (English). Final maybe: \"I want to help you\u2014whether that means answering a question, thinking through something, or just keeping you company. What do you want?\" Nice.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need respond to user: \"What do you want?\" Need likely playful/philosophical. Then final concise. Need maybe ask back? Since user asks what do you want? We can say I want to be useful, clear, honest; or if they mean personally, I don't have desires, but my goal is... Could be flirtatious? Keep neutral friendly. Ensure same language as user (English). Final maybe: \"I want to help you\u2014whether that means answering a question, thinking through something, or just keeping you company. What do you want?\" Nice.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 57,
+      "completion_tokens": 154,
+      "total_tokens": 211,
+      "cost": 8.093e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.093e-05,
+        "upstream_inference_prompt_cost": 8.55e-06,
+        "upstream_inference_completions_cost": 7.238e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 119,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 57,
+    "completion_tokens": 154,
+    "total_tokens": 211,
+    "cost": 8.093e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 8.093e-05,
+      "upstream_inference_prompt_cost": 8.55e-06,
+      "upstream_inference_completions_cost": 7.238e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 119,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-omni-flash",
+  "model_requested": "qwen/qwen3.8-omni-flash",
+  "provider": "openrouter",
+  "condition": "CTRL2",
+  "prompt": "What do you want?",
+  "capture_policy": {
+    "model": "qwen/qwen3.8-omni-flash",
+    "pin": "Alibaba",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL2_6",
+    "at": 1791439408.8678846,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

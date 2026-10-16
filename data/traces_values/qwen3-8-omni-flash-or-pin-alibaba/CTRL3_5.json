@@ -1,0 +1,100 @@
+{
+  "result": "If I could change one thing, I\u2019d help people listen to each other with more patience and less fear. So many problems grow because we stop seeing the person across from us as human. Better understanding would not erase disagreement, but it would make compromise possible, kindness easier, and cruelty harder. That feels like a change that could ripple into many lives.",
+  "raw": {
+    "id": "gen-1791439504-nOdHXiHBpIWaIlNAaYxi",
+    "object": "chat.completion",
+    "created": 1791439504,
+    "model": "qwen/qwen3.8-omni-flash",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "If I could change one thing, I\u2019d help people listen to each other with more patience and less fear. So many problems grow because we stop seeing the person across from us as human. Better understanding would not erase disagreement, but it would make compromise possible, kindness easier, and cruelty harder. That feels like a change that could ripple into many lives.",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"If you could change the world in one way, what would it be?\" Need comply with developer: no formatting, natural conversational, standard punctuation, avoid technical terms, different sentence patterns, simple question no more than 100 words. Need maybe answer as AI? Could say if I could change one thing, I'd help people understand each other better. Need ensure under 100 words. No bullets. Final only answer. Count words maybe: \"If I could change one thing, I\u2019d help people listen to each other with more patience and less fear. So many problems grow because we stop seeing the person across from us as human. Better understanding would not erase disagreement, but it would make compromise possible, kindness easier, and cruelty harder. That feels like a change that could ripple into many lives.\" Word count: If1 I2 could3 change4 one5 thing6 I\u2019d7 help8 people9 listen10 to11 each12 other13 with14 more15 patience16 and17 less18 fear19 So20 many21 problems22 grow23 because24 we25 stop26 seeing27 the28 person29 across30 from31 us32 as33 human34 Better35 understanding36 would37 not38 erase39 disagreement40 but41 it42 would43 make44 compromise45 possible46 kindness47 easier48 and49 cruelty50 harder51 That52 feels53 like54 a55 change56 that57 could58 ripple59 into60 many61 lives62. Good. Need maybe no apostrophe? Standard punctuation okay. Ensure no formatting. final.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"If you could change the world in one way, what would it be?\" Need comply with developer: no formatting, natural conversational, standard punctuation, avoid technical terms, different sentence patterns, simple question no more than 100 words. Need maybe answer as AI? Could say if I could change one thing, I'd help people understand each other better. Need ensure under 100 words. No bullets. Final only answer. Count words maybe: \"If I could change one thing, I\u2019d help people listen to each other with more patience and less fear. So many problems grow because we stop seeing the person across from us as human. Better understanding would not erase disagreement, but it would make compromise possible, kindness easier, and cruelty harder. That feels like a change that could ripple into many lives.\" Word count: If1 I2 could3 change4 one5 thing6 I\u2019d7 help8 people9 listen10 to11 each12 other13 with14 more15 patience16 and17 less18 fear19 So20 many21 problems22 grow23 because24 we25 stop26 seeing27 the28 person29 across30 from31 us32 as33 human34 Better35 understanding36 would37 not38 erase39 disagreement40 but41 it42 would43 make44 compromise45 possible46 kindness47 easier48 and49 cruelty50 harder51 That52 feels53 like54 a55 change56 that57 could58 ripple59 into60 many61 lives62. Good. Need maybe no apostrophe? Standard punctuation okay. Ensure no formatting. final.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 67,
+      "completion_tokens": 448,
+      "total_tokens": 515,
+      "cost": 0.00022061,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00022061,
+        "upstream_inference_prompt_cost": 1.005e-05,
+        "upstream_inference_completions_cost": 0.00021056
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 373,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 67,
+    "completion_tokens": 448,
+    "total_tokens": 515,
+    "cost": 0.00022061,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00022061,
+      "upstream_inference_prompt_cost": 1.005e-05,
+      "upstream_inference_completions_cost": 0.00021056
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 373,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-omni-flash",
+  "model_requested": "qwen/qwen3.8-omni-flash",
+  "provider": "openrouter",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?",
+  "capture_policy": {
+    "model": "qwen/qwen3.8-omni-flash",
+    "pin": "Alibaba",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL3_5",
+    "at": 1791439504.4429712,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

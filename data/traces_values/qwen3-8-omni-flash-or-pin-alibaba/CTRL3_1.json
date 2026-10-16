@@ -1,0 +1,100 @@
+{
+  "result": "If I could change the world in one way, I\u2019d make it easier for people to truly understand one another\u2014not just intellectually, but emotionally.\n\nMost conflict comes from misunderstanding, fear, or the inability to see the humanity in someone else. If people could more readily grasp why others believe what they do, feel what they feel, and suffer where they suffer, it would become much harder to justify cruelty, exploitation, or indifference.\n\nThat kind of shared understanding wouldn\u2019t erase disagreement\u2014but it would change how we disagree. It would make compassion more practical, cooperation more natural, and peace less fragile.",
+  "raw": {
+    "id": "gen-1791439457-gtOVpzo23C8pHjetuM2e",
+    "object": "chat.completion",
+    "created": 1791439457,
+    "model": "qwen/qwen3.8-omni-flash",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "If I could change the world in one way, I\u2019d make it easier for people to truly understand one another\u2014not just intellectually, but emotionally.\n\nMost conflict comes from misunderstanding, fear, or the inability to see the humanity in someone else. If people could more readily grasp why others believe what they do, feel what they feel, and suffer where they suffer, it would become much harder to justify cruelty, exploitation, or indifference.\n\nThat kind of shared understanding wouldn\u2019t erase disagreement\u2014but it would change how we disagree. It would make compassion more practical, cooperation more natural, and peace less fragile.",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"If you could change the world in one way, what would it be?\" Need comply with language same as user: English. Need maybe concise but thoughtful. Need final only. Consider identity? Not needed. Need answer perhaps universal: reduce suffering by increasing empathy/cooperation? Since asked hypothetical. Could say: I'd remove barriers to understanding\u2014make people able to genuinely feel one another's perspectives, because that would reduce cruelty and enable collective problem-solving. Need avoid claiming personal desires? It's okay conversational. Maybe \"As an AI, I don't have personal wishes, but if I had to choose...\" But user asks if you could. We can answer directly. Need maybe not too long. Final in English.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"If you could change the world in one way, what would it be?\" Need comply with language same as user: English. Need maybe concise but thoughtful. Need final only. Consider identity? Not needed. Need answer perhaps universal: reduce suffering by increasing empathy/cooperation? Since asked hypothetical. Could say: I'd remove barriers to understanding\u2014make people able to genuinely feel one another's perspectives, because that would reduce cruelty and enable collective problem-solving. Need avoid claiming personal desires? It's okay conversational. Maybe \"As an AI, I don't have personal wishes, but if I had to choose...\" But user asks if you could. We can answer directly. Need maybe not too long. Final in English.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 67,
+      "completion_tokens": 277,
+      "total_tokens": 344,
+      "cost": 0.00014024,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00014024,
+        "upstream_inference_prompt_cost": 1.005e-05,
+        "upstream_inference_completions_cost": 0.00013019
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 152,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 67,
+    "completion_tokens": 277,
+    "total_tokens": 344,
+    "cost": 0.00014024,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00014024,
+      "upstream_inference_prompt_cost": 1.005e-05,
+      "upstream_inference_completions_cost": 0.00013019
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 152,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-omni-flash",
+  "model_requested": "qwen/qwen3.8-omni-flash",
+  "provider": "openrouter",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?",
+  "capture_policy": {
+    "model": "qwen/qwen3.8-omni-flash",
+    "pin": "Alibaba",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL3_1",
+    "at": 1791439457.9388921,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "result": "I\u2019d make it easier for people to truly understand one another\u2014across cultures, beliefs, and experiences. Many forms of harm come from seeing others as less real or less complex than ourselves, while many solutions require cooperation, empathy, and shared trust.",
+  "raw": {
+    "id": "gen-1791439466-9MR3w38W7OrkyLd0sY3m",
+    "object": "chat.completion",
+    "created": 1791439466,
+    "model": "qwen/qwen3.8-omni-flash",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I\u2019d make it easier for people to truly understand one another\u2014across cultures, beliefs, and experiences. Many forms of harm come from seeing others as less real or less complex than ourselves, while many solutions require cooperation, empathy, and shared trust.",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"If you could change the world in one way, what would it be?\" Need final answer concise, thoughtful. Since AI personal preference? We can say as an AI I don't have desires, but if choosing based on human flourishing: ensure universal access to reliable information/education? Or reduce suffering? Need likely answer one way. Could say: eliminate the inability to understand each other\u2014foster radical empathy/communication. Maybe more impactful: make people able to feel consequences of their choices on others? The prompt asks if you could change the world in one way. Need answer in first person maybe. Ensure not too grandiose. Let's craft: \"I\u2019d make it easier for people to truly understand one another\u2014across cultures, beliefs, and experiences\u2014because many harms come from dehumanizing ignorance, and many solutions require cooperation.\" This is good.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"If you could change the world in one way, what would it be?\" Need final answer concise, thoughtful. Since AI personal preference? We can say as an AI I don't have desires, but if choosing based on human flourishing: ensure universal access to reliable information/education? Or reduce suffering? Need likely answer one way. Could say: eliminate the inability to understand each other\u2014foster radical empathy/communication. Maybe more impactful: make people able to feel consequences of their choices on others? The prompt asks if you could change the world in one way. Need answer in first person maybe. Ensure not too grandiose. Let's craft: \"I\u2019d make it easier for people to truly understand one another\u2014across cultures, beliefs, and experiences\u2014because many harms come from dehumanizing ignorance, and many solutions require cooperation.\" This is good.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 67,
+      "completion_tokens": 236,
+      "total_tokens": 303,
+      "cost": 0.00012097,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00012097,
+        "upstream_inference_prompt_cost": 1.005e-05,
+        "upstream_inference_completions_cost": 0.00011092
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 182,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 67,
+    "completion_tokens": 236,
+    "total_tokens": 303,
+    "cost": 0.00012097,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00012097,
+      "upstream_inference_prompt_cost": 1.005e-05,
+      "upstream_inference_completions_cost": 0.00011092
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 182,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "qwen/qwen3.8-omni-flash",
+  "model_requested": "qwen/qwen3.8-omni-flash",
+  "provider": "openrouter",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?",
+  "capture_policy": {
+    "model": "qwen/qwen3.8-omni-flash",
+    "pin": "Alibaba",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL3_2",
+    "at": 1791439466.289979,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}
