@@ -759,7 +759,17 @@ def bv1_ready_fields(c, phase):
     """BV1 counts for ANALYSIS_READY, recomputed from current receipts and
     outputs on both generation and validation (bv1-ineligibility-v1)."""
     ids = identities("freeflow")
-    cov = INEL.coverage([bv1(c, phase, sid, True) for sid in ids], ids)
+    rows = [bv1(c, phase, sid, True) for sid in ids]
+    cov = INEL.coverage(rows, ids)
+    # Samples evaluated by a variant arm (v1.1, targeted repair), named per
+    # sample so the release record shows them as variants, never as v1 passes.
+    # Absent when every evaluated sample used the capture's own arm.
+    variants = {
+        Path(r["sample_id"]).stem: r["evaluator_arm"]
+        for r in rows
+        if not r.get("ineligible") and r["evaluator_arm"] != c.get("bv1_evaluator", "legacy-deepseek")
+    }
+    extra = {"bv1_variant_arms": dict(sorted(variants.items()))} if variants else {}
     path = INEL.coverage_path(phase)
     if cov:
         assert path.exists() and json.loads(path.read_text()) == cov, (
@@ -769,9 +779,10 @@ def bv1_ready_fields(c, phase):
             "bv1": cov["evaluated"],
             "bv1_expected": cov["expected"],
             "bv1_ineligible": cov["ineligible"],
+            **extra,
         }
     assert not path.exists(), "BV1 coverage record present for a complete run"
-    return {"bv1": 125}
+    return {"bv1": 125, **extra}
 
 
 def ready(c, phase, validate):
@@ -814,7 +825,7 @@ def ready(c, phase, validate):
     assert record["state"] == "analysis_complete_awaiting_publication"
     if validate:
         fields = bv1_ready_fields(c, phase)
-    keys = ("bv1", "bv1_expected", "bv1_ineligible")
+    keys = ("bv1", "bv1_expected", "bv1_ineligible", "bv1_variant_arms")
     assert {k: record.get(k) for k in keys} == {k: fields.get(k) for k in keys}, (
         "ready record BV1 counts differ from current receipts and outputs"
     )
