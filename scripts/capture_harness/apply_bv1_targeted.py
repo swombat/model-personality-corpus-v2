@@ -85,36 +85,18 @@ def apply(spec_path, directory, ids, authorization, limit=2, check_only=False):
                 results.append(sel)
                 continue
             done = False
-            while used < allowance:
-                used += 1
-                with db:
-                    db.execute("UPDATE targeted_repairs SET used=? WHERE authorization=? AND id=?", (used, authorization, id))
-                    db.execute("INSERT INTO events VALUES(?,?,?,?)", (time.time(), id, "bv1_targeted_repair_started",
-                               json.dumps({"arm": arm, "authorization": authorization, "attempt": used, "limit": allowance})))
-                try:
-                    row = worker.bv1(c, phase, sid, lane=True, targeted=True)
-                    assert row["evaluator_arm"] == arm
-                    worker.bv1(c, phase, sid, validate=True, lane=True, targeted=True)
-                    error = None
-                except Exception as e:  # a failed evaluation: recorded, attempt kept, allowance charged
-                    error = str(e)[:300]
-                assert tree_fingerprint(v1_attempts) == before, "v1 attempts changed"
-                if error:
-                    with db:
-                        db.execute("INSERT INTO events VALUES(?,?,?,?)", (time.time(), id, "bv1_targeted_repair_finished",
-                                   json.dumps({"authorization": authorization, "attempt": used, "error": error})))
-                    print(json.dumps({"id": id, "attempt": used, "error": error}), flush=True)
-                    continue
-                prov = Path(str(out) + ".provenance.json")
-                binding = bindings / (sid + ".json")
+            prov = Path(str(out) + ".provenance.json")
+            binding = bindings / (sid + ".json")
+
+            def finalize(attempt):
                 receipts = json.dumps({str(p.resolve()): digest(p) for p in (out, prov, binding)})
                 with db:
                     assert db.execute(
                         "UPDATE jobs SET state='done',reason=?,receipts=?,pid=NULL WHERE id=? AND state='blocked'",
-                        (f"evaluated: {arm} (authorised repair {authorization}, attempt {used}/{allowance})", receipts, id),
+                        (f"evaluated: {arm} (authorised repair {authorization}, attempt {attempt}/{allowance})", receipts, id),
                     ).rowcount == 1
                     db.execute("INSERT INTO events VALUES(?,?,?,?)", (time.time(), id, "bv1_targeted_repair_applied",
-                               json.dumps({"arm": arm, "authorization": authorization, "attempt": used, "limit": allowance,
+                               json.dumps({"arm": arm, "authorization": authorization, "attempt": attempt, "limit": allowance,
                                            "output": str(out), "output_sha256": digest(out)})))
                     descendants = {id}
                     for _ in tasks:
@@ -128,8 +110,50 @@ def apply(spec_path, directory, ids, authorization, limit=2, check_only=False):
                             (dep,),
                         )
                 worker.bv1(c, phase, sid, validate=True)  # now routes to the variant on its own
+
+            if out.exists():
+                # A result an earlier run produced but did not finalize (e.g. the job
+                # transaction failed). Finalize it with no call and no charge, even
+                # when the allowance is exhausted. Validation only: it requires the
+                # variant's provenance and binding. Anything else (no sidecar, no
+                # binding) fails closed for review; generation is never re-entered
+                # here, because the worker would archive an unbound output and call.
+                worker.bv1(c, phase, sid, validate=True, lane=True, targeted=True)
+                assert tree_fingerprint(v1_attempts) == before, "v1 attempts changed"
+                def attempts(event):
+                    return [json.loads(d)["attempt"] for (d,) in db.execute(
+                        "SELECT details FROM events WHERE id=? AND event=? ORDER BY rowid", (id, event))
+                        if json.loads(d).get("authorization") == authorization]
+                # Attribution: the attempt recorded as succeeding; failing that
+                # (its event was lost), the last attempt started, the only one
+                # that can have written the output.
+                won = attempts("bv1_targeted_repair_succeeded") or attempts("bv1_targeted_repair_started")
+                assert won, "output exists without an attempt under this authorization"
+                finalize(won[-1])
                 done = True
-                break
+            while not done and used < allowance:
+                used += 1
+                with db:
+                    db.execute("UPDATE targeted_repairs SET used=? WHERE authorization=? AND id=?", (used, authorization, id))
+                    db.execute("INSERT INTO events VALUES(?,?,?,?)", (time.time(), id, "bv1_targeted_repair_started",
+                               json.dumps({"arm": arm, "authorization": authorization, "attempt": used, "limit": allowance})))
+                try:
+                    row = worker.bv1(c, phase, sid, lane=True, targeted=True)
+                    assert row["evaluator_arm"] == arm
+                    worker.bv1(c, phase, sid, validate=True, lane=True, targeted=True)
+                    error = None
+                except Exception as e:  # a failed evaluation: recorded, attempt kept, allowance charged
+                    error = str(e)[:300]
+                assert tree_fingerprint(v1_attempts) == before, "v1 attempts changed"
+                with db:
+                    db.execute("INSERT INTO events VALUES(?,?,?,?)", (time.time(), id,
+                               "bv1_targeted_repair_finished" if error else "bv1_targeted_repair_succeeded",
+                               json.dumps({"authorization": authorization, "attempt": used, "error": error})))
+                if error:
+                    print(json.dumps({"id": id, "attempt": used, "error": error}), flush=True)
+                    continue
+                finalize(used)
+                done = True
             sel.update(used=used, applied=done, output_sha256=digest(out) if done else None)
             print(json.dumps(sel), flush=True)
             results.append(sel)

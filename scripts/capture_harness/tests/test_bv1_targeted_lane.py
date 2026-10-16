@@ -156,11 +156,77 @@ class TargetedLaneTests(unittest.TestCase):
         self.assertFalse(Path(sel["output"]).exists())
         self.assertFalse(Path(sel["binding"]).exists())
 
+    def inject_commit_failure(self, f):
+        f.sql("CREATE TRIGGER fail_done BEFORE UPDATE ON jobs WHEN NEW.state='done' "
+              "BEGIN SELECT RAISE(ABORT, 'injected commit failure'); END")
+
+    def test_final_allowed_attempt_survives_commit_failure(self):
+        # Mira YkpxzJ: attempt 1 fails QA, attempt 2 (the last allowed) is valid,
+        # the job transaction fails. A retry finalizes it: no call, no charge.
+        f = self.make()
+        v1 = self.v1(f)
+        self.phase_file(f, "FAIL_CALLS").write_text("1")
+        self.inject_commit_failure(f)
+        with self.assertRaises(Exception):
+            self.lane(f)
+        state, reason, _ = self.state(f)
+        self.assertEqual(state, "blocked")
+        self.assertEqual(self.calls(f), 2)
+        self.assertEqual(f.engine.db.execute("SELECT used FROM targeted_repairs").fetchone()[0], 2)
+        out = Path(worker.bv1_paths(f.c, f.phase, worker.LUNA_TARGETED_ARM)[1] / LABEL / "X_1.md")
+        self.assertTrue(out.exists())
+        self.assertEqual(self.events(f, "bv1_targeted_repair_applied"), [])
+        f.sql("DROP TRIGGER fail_done")
+        [sel] = self.lane(f)
+        self.assertTrue(sel["applied"])
+        self.assertEqual(self.calls(f), 2)  # no further call
+        self.assertEqual(f.engine.db.execute("SELECT used FROM targeted_repairs").fetchone()[0], 2)  # no charge
+        state, reason, _ = self.state(f)
+        self.assertEqual(state, "done")
+        self.assertIn(f"authorised repair {AUTH}, attempt 2/2", reason)  # original attribution
+        self.assertEqual([e["attempt"] for e in self.events(f, "bv1_targeted_repair_applied")], [2])
+        self.assertEqual(len(list(Path(sel["attempts"]).glob("*.json"))), 2)
+        self.assertEqual(self.v1(f), v1)
+        self.assertEqual(self.state(f, f"{LABEL}/synthesis")[0], "pending")
+
+    def test_first_attempt_commit_failure_retry_does_not_call_again(self):
+        f = self.make()
+        self.inject_commit_failure(f)
+        with self.assertRaises(Exception):
+            self.lane(f)
+        f.sql("DROP TRIGGER fail_done")
+        [sel] = self.lane(f)
+        self.assertTrue(sel["applied"])
+        self.assertEqual(self.calls(f), 1)
+        self.assertEqual(f.engine.db.execute("SELECT used FROM targeted_repairs").fetchone()[0], 1)
+        self.assertIn("attempt 1/2", self.state(f)[1])
+
+    def test_unprovenanced_output_is_never_finalized(self):
+        f = self.make()
+        out = Path(worker.bv1_paths(f.c, f.phase, worker.LUNA_TARGETED_ARM)[1] / LABEL / "X_1.md")
+        out.parent.mkdir(parents=True)
+        out.write_text("## ok targeted evaluation\n")  # no provenance sidecar
+        with self.assertRaises(Exception):
+            self.lane(f)
+        self.assertEqual(self.state(f)[0], "blocked")
+        self.assertEqual(self.calls(f), 0)
+
     def test_refuses_unpunctuated_source(self):
         f = self.make(unpunctuated_x=True)
         with self.assertRaisesRegex(AssertionError, "v1.1"):
             self.lane(f)
         self.assertEqual(self.calls(f), 0)
+
+    def test_unbound_output_fails_closed_without_a_call(self):
+        f = self.make()
+        out = Path(worker.bv1_paths(f.c, f.phase, worker.LUNA_TARGETED_ARM)[1] / LABEL / "X_1.md")
+        out.parent.mkdir(parents=True)
+        out.write_text("## ok targeted evaluation\n")
+        Path(str(out) + ".provenance.json").write_text(json.dumps({"arm": worker.LUNA_TARGETED_ARM}))
+        with self.assertRaisesRegex(AssertionError, "binding missing"):
+            self.lane(f)
+        self.assertEqual((self.state(f)[0], self.calls(f)), ("blocked", 0))
+        self.assertTrue(out.exists())  # not archived, not replaced
 
     def test_refuses_task_with_v1_evaluation(self):
         f = self.make(evaluated_x=True)
