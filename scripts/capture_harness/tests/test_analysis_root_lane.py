@@ -92,6 +92,27 @@ class AnalysisRootLaneTests(unittest.TestCase):
         with self.assertRaisesRegex(AssertionError, "already the config"):
             LANE.apply(self.f.run / "spec.json", self.f.run / "state", [SYN], "t", self.f.root, CORPUS)
 
+    def test_config_drift_is_rejected_before_any_work(self):
+        # Mira ezrPbe: a compiled spec carries input_hashes (the model config among
+        # them); a changed config must stop the lane before generation.
+        import hashlib
+        f = self.f
+        spec = json.loads((f.run / "spec.json").read_text())
+        spec["input_hashes"] = {str(f.config): digest(f.config)}
+        (f.run / "spec.json").write_text(json.dumps(spec))
+        f.sql("UPDATE meta SET v=? WHERE k='spec'",
+              (hashlib.sha256(json.dumps(spec, sort_keys=True).encode()).hexdigest(),))
+        self.lane([SYN], check_only=True)  # unchanged inputs pass
+        c = json.loads(f.config.read_text())
+        c["model"] = "review/MODIFIED-CONFIG"
+        f.config.write_text(json.dumps(c))
+        before = (self.state(SYN), sorted(p for p in self.wt.rglob("*") if p.is_file()))
+        with self.assertRaisesRegex(AssertionError, "input changed"):
+            self.lane([SYN])
+        self.assertEqual((self.state(SYN), sorted(p for p in self.wt.rglob("*") if p.is_file())), before)
+        self.assertFalse((self.wt / "analysis/freeflow/personality-model-cards").exists())
+        self.assertEqual(f.engine.db.execute("SELECT COUNT(*) FROM events WHERE event='analysis_root_lane_done'").fetchone()[0], 0)
+
 
 if __name__ == "__main__":
     unittest.main()
