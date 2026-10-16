@@ -43,7 +43,7 @@ def v1_records(worker, c, phase, sid):
     }
 
 
-def apply(spec_path, directory, ids, reviewer, check_only=False, supersede=False):
+def apply(spec_path, directory, ids, reviewer, check_only=False, supersede=False, analysis_root=None):
     import worker
 
     directory = Path(directory).resolve()
@@ -63,6 +63,12 @@ def apply(spec_path, directory, ids, reviewer, check_only=False, supersede=False
             assert cmd[3] == "bv1" and "--validate" not in cmd, "not a BV1 task"
             sid = cmd[cmd.index("--sample") + 1]
             c = json.loads(Path(cmd[2]).read_text())
+            if analysis_root:
+                # A dedicated worktree of the analysis repo (e.g. a held model's
+                # state plus the approved evaluator); the phase moves with it.
+                old = Path(c["analysis_root"])
+                c["phase"] = str(Path(analysis_root) / Path(c["phase"]).relative_to(old))
+                c["analysis_root"] = str(Path(analysis_root))
             assert INEL.task_id(c, sid) == id
             phase = Path(c["phase"])
             src = worker.trace_path(c, "freeflow", sid)
@@ -78,7 +84,6 @@ def apply(spec_path, directory, ids, reviewer, check_only=False, supersede=False
                 assert supersede and receipt.exists(), "ineligible task: needs --supersede-ineligibility"
             bv_out, outputs, bindings = worker.bv1_paths(c, phase, worker.LUNA_V11_ARM)
             out = outputs / c["label"] / (sid + ".md")
-            assert not out.exists(), "v1.1 output already exists"
             before = v1_records(worker, c, phase, sid)
             sel = {
                 "id": id,
@@ -91,50 +96,65 @@ def apply(spec_path, directory, ids, reviewer, check_only=False, supersede=False
                 "v11_attempts": str(INEL.attempt_dir(bv_out, c, sid)),
                 "v11_binding": str(bindings / (sid + ".json")),
                 "supersedes_ineligibility_receipt": str(receipt) if receipt.exists() else None,
+                # From an earlier interrupted apply; reused only with v1.1 provenance.
+                "v11_output_exists": out.exists(),
                 "v1_records": before,
             }
             if check_only:
                 print(json.dumps(sel), flush=True)
                 results.append(sel)
                 continue
-            superseded = None
-            if receipt.exists():
-                aside = phase / "bv1_ineligible_superseded" / f"{sid}.{time.time_ns()}.json"
-                aside.parent.mkdir(exist_ok=True)
-                shutil.move(str(receipt), str(aside))
-                superseded = {"receipt": str(aside), "receipt_sha256": digest(aside)}
-            row = worker.bv1(c, phase, sid, lane=True)
+            # Evaluate and validate first, with any ineligibility receipt still
+            # active. A failure here leaves the receipt, the job and every attempt
+            # as they were, so the same command can simply be retried.
+            sup = receipt.exists()
+            row = worker.bv1(c, phase, sid, lane=True, supersede=sup)
             assert row["evaluator_arm"] == worker.LUNA_V11_ARM
-            worker.bv1(c, phase, sid, validate=True)
+            worker.bv1(c, phase, sid, validate=True, lane=True, supersede=sup)
             assert v1_records(worker, c, phase, sid) == before, "v1 records changed"
             prov = Path(str(out) + ".provenance.json")
             binding = bindings / (sid + ".json")
             receipts = json.dumps({str(p.resolve()): digest(p) for p in (out, prov, binding)})
-            with db:
-                assert (
-                    db.execute(
-                        "UPDATE jobs SET state='done',reason=?,receipts=?,pid=NULL WHERE id=? AND state=?",
-                        (f"evaluated: {worker.LUNA_V11_ARM}", receipts, id, state),
-                    ).rowcount
-                    == 1
-                )
-                db.execute(
-                    "INSERT INTO events VALUES(?,?,?,?)",
-                    (time.time(), id, "luna_v1_1_applied",
-                     json.dumps({"arm": worker.LUNA_V11_ARM, "reviewer": reviewer, "output": str(out),
-                                 "output_sha256": digest(out), "superseded_ineligibility": superseded})),
-                )
-                descendants = {id}
-                for _ in tasks:
-                    found = {i for i, t in tasks.items() if any(d in descendants for d in t["deps"])}
-                    if found <= descendants:
-                        break
-                    descendants |= found
-                for dep in descendants - {id}:
-                    db.execute(
-                        "UPDATE jobs SET state='pending',reason=NULL,next_at=0 WHERE id=? AND state='blocked' AND reason='dependency blocked'",
-                        (dep,),
+            superseded = aside = None
+            if sup:
+                aside = phase / "bv1_ineligible_superseded" / f"{sid}.{time.time_ns()}.json"
+                aside.parent.mkdir(exist_ok=True)
+                superseded = {"receipt": str(aside), "receipt_sha256": digest(receipt)}
+            try:
+                with db:
+                    if sup:
+                        # Retire the receipt only inside the transaction that records it.
+                        shutil.move(str(receipt), str(aside))
+                    assert (
+                        db.execute(
+                            "UPDATE jobs SET state='done',reason=?,receipts=?,pid=NULL WHERE id=? AND state=?",
+                            (f"evaluated: {worker.LUNA_V11_ARM}", receipts, id, state),
+                        ).rowcount
+                        == 1
                     )
+                    db.execute(
+                        "INSERT INTO events VALUES(?,?,?,?)",
+                        (time.time(), id, "luna_v1_1_applied",
+                         json.dumps({"arm": worker.LUNA_V11_ARM, "reviewer": reviewer, "output": str(out),
+                                     "analysis_root": c["analysis_root"],
+                                     "output_sha256": digest(out), "superseded_ineligibility": superseded})),
+                    )
+                    descendants = {id}
+                    for _ in tasks:
+                        found = {i for i, t in tasks.items() if any(d in descendants for d in t["deps"])}
+                        if found <= descendants:
+                            break
+                        descendants |= found
+                    for dep in descendants - {id}:
+                        db.execute(
+                            "UPDATE jobs SET state='pending',reason=NULL,next_at=0 WHERE id=? AND state='blocked' AND reason='dependency blocked'",
+                            (dep,),
+                        )
+            except BaseException:
+                if sup and aside.exists() and not receipt.exists():
+                    shutil.move(str(aside), str(receipt))  # job row rolled back; restore the receipt
+                raise
+            worker.bv1(c, phase, sid, validate=True)  # now routes to v1.1 on its own
             sel.update(applied=True, output_sha256=digest(out), superseded=superseded)
             print(json.dumps(sel), flush=True)
             results.append(sel)
@@ -151,6 +171,7 @@ if __name__ == "__main__":
     p.add_argument("--reviewer", required=True)
     p.add_argument("--check", action="store_true", help="dry run: no calls, writes nothing")
     p.add_argument("--supersede-ineligibility", action="store_true")
+    p.add_argument("--analysis-root", type=Path, help="dedicated analysis worktree instead of the config's")
     p.add_argument("ids", nargs="+")
     a = p.parse_args()
-    apply(a.spec, a.state, a.ids, a.reviewer, a.check, a.supersede_ineligibility)
+    apply(a.spec, a.state, a.ids, a.reviewer, a.check, a.supersede_ineligibility, a.analysis_root)

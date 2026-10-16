@@ -269,7 +269,7 @@ def bv1_paths(c, phase, arm=None):
     return phase / "freeflow_bv1", root / "outputs", phase / "bv1_bindings"
 
 
-def bv1(c, phase, sid, validate=False, lane=False):
+def bv1(c, phase, sid, validate=False, lane=False, supersede=False):
     root = Path(c["analysis_root"])
     m = module(
         "capture_bv1", root / "analysis/freeflow/personality-eval-bv1/run_full_bv1.py"
@@ -285,6 +285,12 @@ def bv1(c, phase, sid, validate=False, lane=False):
         or (bv1_paths(c, phase, LUNA_ARM)[2] / (sid + ".json")).exists()
     )
     sarm = LUNA_ARM if v1_record else sample_arm(c, d["result"])
+    if supersede:
+        # apply_luna_v1_1.py only: evaluate under v1.1 while the ineligibility
+        # receipt is still active; the lane retires it after this succeeds.
+        assert lane and luna_v11_applies(c, d["result"]) and INEL.receipt_path(phase, sid).exists()
+        assert not (bv1_paths(c, phase, LUNA_ARM)[2] / (sid + ".json")).exists()
+        sarm = LUNA_V11_ARM
     m.OUT, m.OUTPUTS, binding_dir = bv1_paths(c, phase, sarm)
     arm = None
     if sarm in _ARM_MODULES:
@@ -311,7 +317,7 @@ def bv1(c, phase, sid, validate=False, lane=False):
     binding = binding_dir / (sid + ".json")
     source_hash = digest(src)
     receipt = INEL.receipt_path(phase, sid)
-    if receipt.exists():
+    if receipt.exists() and sarm != LUNA_V11_ARM:
         # A distinct outcome, never an evaluation: no API call, no output.
         assert arm and sarm == LUNA_ARM, "ineligibility receipts apply only to the BV1-Luna v1 arm"
         r = INEL.check(json.loads(receipt.read_text()), c, sid, src, m.OUT, arm, out, binding)
