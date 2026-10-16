@@ -111,7 +111,8 @@ class LaneTests(unittest.TestCase):
         worker.synthesis(f.c, f.phase, False)
         self.assertFalse(INEL.coverage_path(f.phase).exists())
         worker.ready(f.c, f.phase, False)
-        self.assertEqual(json.loads((f.phase / "ANALYSIS_READY.json").read_text())["bv1"], 125)
+        record = json.loads((f.phase / "ANALYSIS_READY.json").read_text())
+        self.assertEqual((record["bv1"], record["bv1_variant_arms"]), (125, {"X_1": worker.LUNA_V11_ARM}))
         worker.ready(f.c, f.phase, True)
         with self.assertRaises(AssertionError):  # already applied
             self.lane(f)
