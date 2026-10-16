@@ -113,6 +113,26 @@ class AnalysisRootLaneTests(unittest.TestCase):
         self.assertFalse((self.wt / "analysis/freeflow/personality-model-cards").exists())
         self.assertEqual(f.engine.db.execute("SELECT COUNT(*) FROM events WHERE event='analysis_root_lane_done'").fetchone()[0], 0)
 
+    def test_values_integration_checks_traces_under_the_lane_raw_root(self):
+        # The values helper verifies traces against helper.RAW; the worker sets
+        # it to its own raw root, which the lane points at --raw-root.
+        helper = self.wt / "analysis/values-probe/final/scripts/integrate_capture_values.py"
+        helper.parent.mkdir(parents=True, exist_ok=True)
+        helper.write_text("RAW = None\n"
+                          "def integrate(phases, validate=False):\n"
+                          "    from pathlib import Path\n"
+                          "    p = Path(phases[0]) / ('raw_seen_validate' if validate else 'raw_seen')\n"
+                          "    p.write_text(str(RAW))\n")
+        worker.integrate_values = self.f.patched["integrate_values"]  # the real one; Flow restores it
+        raw = Path(self.td.name) / "held-corpus"
+        (raw / "scripts/capture_harness").mkdir(parents=True)
+        (raw / "data").mkdir()
+        LANE.apply(self.f.run / "spec.json", self.f.run / "state", [SYN, READY], "t", self.wt, raw)
+        self.assertEqual((self.wphase / "raw_seen").read_text(), str(raw.resolve()))
+        self.assertEqual((self.wphase / "raw_seen_validate").read_text(), str(raw.resolve()))
+        self.assertEqual(self.state(READY)[0], "done")
+        self.assert_shared_untouched()
+
 
 if __name__ == "__main__":
     unittest.main()

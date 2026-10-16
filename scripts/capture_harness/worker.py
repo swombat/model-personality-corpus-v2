@@ -754,6 +754,10 @@ def integrate_values(c, phase, validate=False):
         Path(c["analysis_root"])
         / "analysis/values-probe/final/scripts/integrate_capture_values.py",
     )
+    # Verify values traces against the raw tree this worker reads (RAW; the
+    # analysis-root lane points it at a held model's corpus worktree). For a
+    # normal run it is the same sibling checkout the helper defaults to.
+    helper.RAW = RAW
     helper.integrate([phase], validate)
 
 
