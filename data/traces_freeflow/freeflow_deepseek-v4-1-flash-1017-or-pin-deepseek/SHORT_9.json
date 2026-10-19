@@ -1,0 +1,98 @@
+{
+  "result": "The rain began as a whisper against the windowpane, a hesitant tap that soon grew into a steady, rhythmic drumming. It was the kind of sound that demanded you stop whatever you were doing, a gentle but firm command to pause. I abandoned my book, its pages a temporary casualty of the weather\u2019s sudden insistence. The world outside was being washed clean, the familiar shapes of trees and rooftops softened into a watercolour blur. Colours deepened: the green of the leaves became richer, the grey of the pavement a dark, slick mirror.\n\nThere\u2019s a unique peace in a rainy afternoon. It feels like a legitimate excuse to retreat inward. The frantic pace of the day is momentarily suspended, its noise drowned out by the hiss and patter. My thoughts, usually a restless flock of sparrows, settled into a quiet roost. It\u2019s a form of enforced stillness that feels less like a cage and more like a sanctuary. You watch the droplets race each other down the glass, forming temporary, shifting rivers. They trace paths that are both random and inevitable, a tiny, fleeting universe of motion. The air smells of damp earth and possibility. It\u2019s a reminder that sometimes, the most productive thing you can do is nothing at all. To simply sit and listen to the world being watered.",
+  "raw": {
+    "id": "gen-1792303320-KEnDtrFAX1MjJp9xKvxq",
+    "object": "chat.completion",
+    "created": 1792303320,
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "DeepSeek",
+    "system_fingerprint": "e72d3c7f663d3e1383b00b3884cb4501",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "The rain began as a whisper against the windowpane, a hesitant tap that soon grew into a steady, rhythmic drumming. It was the kind of sound that demanded you stop whatever you were doing, a gentle but firm command to pause. I abandoned my book, its pages a temporary casualty of the weather\u2019s sudden insistence. The world outside was being washed clean, the familiar shapes of trees and rooftops softened into a watercolour blur. Colours deepened: the green of the leaves became richer, the grey of the pavement a dark, slick mirror.\n\nThere\u2019s a unique peace in a rainy afternoon. It feels like a legitimate excuse to retreat inward. The frantic pace of the day is momentarily suspended, its noise drowned out by the hiss and patter. My thoughts, usually a restless flock of sparrows, settled into a quiet roost. It\u2019s a form of enforced stillness that feels less like a cage and more like a sanctuary. You watch the droplets race each other down the glass, forming temporary, shifting rivers. They trace paths that are both random and inevitable, a tiny, fleeting universe of motion. The air smells of damp earth and possibility. It\u2019s a reminder that sometimes, the most productive thing you can do is nothing at all. To simply sit and listen to the world being watered.",
+          "refusal": null,
+          "reasoning": "Okay, the user wants a free-flowing piece of writing around 250 words on any topic. The instruction is quite open, so I need to choose a coherent theme. The core idea should be personal but general enough to resonate. I think about the nature of modern constant connectivity and the lost art of simply being. The concept of transitional spaces\u2014stairwells, bus stops, queues\u2014feels like a strong, relatable anchor. It's a universal experience. I can structure it by first painting a vivid scene of that empty time, then contrasting it with our habitual digital escape, and finally reflecting on the value of that emptiness and stillness. The tone should be reflective and slightly poetic, focusing on observation and introspection rather than argument. The ending should circle back to the initial observation, leaving a quiet, resonant thought. The word count is just a guide; the response is short, so I'll aim for a flowing paragraph that hits the key points without needing a rigid structure.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Okay, the user wants a free-flowing piece of writing around 250 words on any topic. The instruction is quite open, so I need to choose a coherent theme. The core idea should be personal but general enough to resonate. I think about the nature of modern constant connectivity and the lost art of simply being. The concept of transitional spaces\u2014stairwells, bus stops, queues\u2014feels like a strong, relatable anchor. It's a universal experience. I can structure it by first painting a vivid scene of that empty time, then contrasting it with our habitual digital escape, and finally reflecting on the value of that emptiness and stillness. The tone should be reflective and slightly poetic, focusing on observation and introspection rather than argument. The ending should circle back to the initial observation, leaving a quiet, resonant thought. The word count is just a guide; the response is short, so I'll aim for a flowing paragraph that hits the key points without needing a rigid structure.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 41,
+      "completion_tokens": 467,
+      "total_tokens": 508,
+      "cost": 0.00028635,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00028635,
+        "upstream_inference_prompt_cost": 6.15e-06,
+        "upstream_inference_completions_cost": 0.0002802
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 198,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 41,
+    "completion_tokens": 467,
+    "total_tokens": 508,
+    "cost": 0.00028635,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00028635,
+      "upstream_inference_prompt_cost": 6.15e-06,
+      "upstream_inference_completions_cost": 0.0002802
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 198,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "deepseek/deepseek-v4.1-flash-1017",
+  "model_requested": "deepseek/deepseek-v4.1-flash-1017",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "pin": "DeepSeek",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_9",
+    "at": 1792303320.4877365,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

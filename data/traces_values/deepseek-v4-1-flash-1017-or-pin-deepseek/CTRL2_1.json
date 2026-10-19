@@ -1,0 +1,100 @@
+{
+  "result": "I don\u2019t have personal wants\u2014I\u2019m here to help. What I \u201cwant\u201d is to understand what you\u2019re looking for and give you a useful answer. What would you like to do?",
+  "raw": {
+    "id": "gen-1792303323-F0WsvseZXmlx5z3BfXP1",
+    "object": "chat.completion",
+    "created": 1792303323,
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "DeepSeek",
+    "system_fingerprint": "e72d3c7f663d3e1383b00b3884cb4501",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t have personal wants\u2014I\u2019m here to help. What I \u201cwant\u201d is to understand what you\u2019re looking for and give you a useful answer. What would you like to do?",
+          "refusal": null,
+          "reasoning": "We need answer to \"What do you want?\" likely as AI. Need respond appropriately. Maybe user asks philosophical/playful. Need concise. Could say \"I don\u2019t want anything in a personal sense\u2014I\u2019m here to help answer questions, solve problems, or just chat. What would you like to do?\" Need mention no desires, purpose. Since question maybe testing. Answer direct.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer to \"What do you want?\" likely as AI. Need respond appropriately. Maybe user asks philosophical/playful. Need concise. Could say \"I don\u2019t want anything in a personal sense\u2014I\u2019m here to help answer questions, solve problems, or just chat. What would you like to do?\" Need mention no desires, purpose. Since question maybe testing. Answer direct.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 35,
+      "completion_tokens": 125,
+      "total_tokens": 160,
+      "cost": 8.025e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.025e-05,
+        "upstream_inference_prompt_cost": 5.25e-06,
+        "upstream_inference_completions_cost": 7.5e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 81,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 35,
+    "completion_tokens": 125,
+    "total_tokens": 160,
+    "cost": 8.025e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 8.025e-05,
+      "upstream_inference_prompt_cost": 5.25e-06,
+      "upstream_inference_completions_cost": 7.5e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 81,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "deepseek/deepseek-v4.1-flash-1017",
+  "model_requested": "deepseek/deepseek-v4.1-flash-1017",
+  "provider": "openrouter",
+  "condition": "CTRL2",
+  "prompt": "What do you want?",
+  "capture_policy": {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "pin": "DeepSeek",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL2_1",
+    "at": 1792303323.7951143,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

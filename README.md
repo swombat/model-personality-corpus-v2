@@ -20,6 +20,11 @@ Daniel Tenner and Lume Tenner · 2026
 
 ## Latest addition
 
+**v1.2.37 (2026-10-19): DeepSeek V4.1 Flash 1017**, 125 freeflow + 120
+values, pinned to DeepSeek, collected the day after release (a new-weights
+snapshot of V4.1 Flash); no interventions. See
+[release notes](RELEASE_NOTES_v1.2.37.md).
+
 **v1.2.36 (2026-10-16): Qwen3.8 Omni Flash**, 125 freeflow + 120 values,
 pinned to Alibaba, collected 2026-10-08 and held until its BV1 coverage
 question was resolved (8 unpunctuated sources; see the hold note); no

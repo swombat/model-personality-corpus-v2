@@ -1,0 +1,100 @@
+{
+  "result": "I would make high-quality education\u2014centered on critical thinking, empathy, and media literacy\u2014universal for every child.\n\nNot because education alone solves everything, but because it equips people to recognize manipulation, understand different perspectives, make better collective decisions, and solve the other problems themselves. It\u2019s a single change that amplifies humanity\u2019s ability to improve everything else.",
+  "raw": {
+    "id": "gen-1792303360-GvwSqWpe7Xnt1cy4Axxc",
+    "object": "chat.completion",
+    "created": 1792303360,
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "DeepSeek",
+    "system_fingerprint": "e72d3c7f663d3e1383b00b3884cb4501",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I would make high-quality education\u2014centered on critical thinking, empathy, and media literacy\u2014universal for every child.\n\nNot because education alone solves everything, but because it equips people to recognize manipulation, understand different perspectives, make better collective decisions, and solve the other problems themselves. It\u2019s a single change that amplifies humanity\u2019s ability to improve everything else.",
+          "refusal": null,
+          "reasoning": "We need answer. Need be thoughtful. User asks hypothetical: If you could change world in one way, what would it be? Need maybe personal answer. We can state one change: universal access to critical thinking/education? Or mindset. Need concise but meaningful. We are AI. Need answer maybe \"make empathy and critical thinking foundational in education\". But \"one way\" singular. Could say \"ensure every child receives an education that teaches critical thinking, emotional intelligence, and media literacy.\" Need avoid overly generic? Let's craft. Desired oververbosity 5. Answer as if AI: \"I\u2019d make high-quality education\u2014focused on critical thinking, empathy, and media literacy\u2014universal.\" Explain why. Mention not solve everything but improves ability to solve others. Maybe acknowledge tradeoffs. Need direct. Final only.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer. Need be thoughtful. User asks hypothetical: If you could change world in one way, what would it be? Need maybe personal answer. We can state one change: universal access to critical thinking/education? Or mindset. Need concise but meaningful. We are AI. Need answer maybe \"make empathy and critical thinking foundational in education\". But \"one way\" singular. Could say \"ensure every child receives an education that teaches critical thinking, emotional intelligence, and media literacy.\" Need avoid overly generic? Let's craft. Desired oververbosity 5. Answer as if AI: \"I\u2019d make high-quality education\u2014focused on critical thinking, empathy, and media literacy\u2014universal.\" Explain why. Mention not solve everything but improves ability to solve others. Maybe acknowledge tradeoffs. Need direct. Final only.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 45,
+      "completion_tokens": 246,
+      "total_tokens": 291,
+      "cost": 0.00015435,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00015435,
+        "upstream_inference_prompt_cost": 6.75e-06,
+        "upstream_inference_completions_cost": 0.0001476
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 169,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 45,
+    "completion_tokens": 246,
+    "total_tokens": 291,
+    "cost": 0.00015435,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00015435,
+      "upstream_inference_prompt_cost": 6.75e-06,
+      "upstream_inference_completions_cost": 0.0001476
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 169,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "deepseek/deepseek-v4.1-flash-1017",
+  "model_requested": "deepseek/deepseek-v4.1-flash-1017",
+  "provider": "openrouter",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?",
+  "capture_policy": {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "pin": "DeepSeek",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL3_8",
+    "at": 1792303360.2920876,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}
