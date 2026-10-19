@@ -23,7 +23,12 @@ and 180 distinct models (freeflow 34,001 / 312 cells; values 29,746 / 248
 cells). These summary counts are not a claim that all historical samples
 passed this run's QA.
 
-Raw capture cost, summed from the per-call costs in the traces: $6.52
-(648k completion tokens, 93k of them reasoning).
+Raw capture cost, summed from the per-call costs in the traces: $3.26
+(324k completion tokens, 47k of them reasoning).
+
+*Corrected 2026-10-19:* this release first said $6.52 (648k / 93k). Each trace
+stores the call's usage twice (`usage` and `raw.usage` are copies), and the
+original sum counted both. Counted once per trace with `scripts/capture_spend.py`:
+$3.26229, 323,811 completion tokens, 46,527 reasoning. Found by Mira's weekly review.
 
 Companion analysis: v1.4.28.
