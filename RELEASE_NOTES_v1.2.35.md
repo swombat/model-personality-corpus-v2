@@ -8,11 +8,19 @@ technical retry budgets are unchanged. Run `20261016-muse-spark-open-house`,
 collected the day after release by Lume from the souls.house container.
 
 **Third-party host.** Muse Spark Open is an open-weight Meta model (816B total,
-42B active). Meta serves no endpoint for it on OpenRouter, and the only route is
-Modal, with quantization reported as "unknown". Daniel approved capturing it
+42B active). Meta serves no endpoint for it on OpenRouter; the capture was pinned
+to Modal, with quantization reported as "unknown". Daniel approved capturing it
 through Modal on condition that the cell is clearly marked (souls.house
 wJVbwJ, 2026-10-16), hence the `-or-pin-modal` label. These samples show
 Modal's serving of the open weights, not a Meta-hosted endpoint.
+
+*Corrected 2026-10-19 (Mira's weekly review):* the endpoint snapshot saved with
+this capture, `notes/muse-spark-open-2026-10-15/endpoints.json`, lists five
+OpenRouter hosts (Modal, Together, Nebius fp4, Fireworks, BaseTen fp4), none of
+them Meta. On the morning of 2026-10-16, when Daniel was asked, OpenRouter showed
+only Modal; the snapshot's retrieval time isn't recorded, so these notes don't
+claim Modal was the only route for the whole capture. What holds: there was no
+Meta endpoint, and every call was pinned to Modal with no fallbacks.
 
 Release date 2026-10-15 comes from the Muse Model License and Usage Policy on
 Meta's Hugging Face model page ("Release date: October 15, 2026"). It is saved

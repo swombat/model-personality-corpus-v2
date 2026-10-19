@@ -20,6 +20,11 @@ Daniel Tenner and Lume Tenner · 2026
 
 ## Latest addition
 
+**v1.2.38 (2026-10-19): corrections, no new samples**: capture spend
+counted once per trace (Argon's v1.2.34 figure was doubled), Muse Spark Open host
+wording, and v1.2.33 recovered on Zenodo. See
+[release notes](RELEASE_NOTES_v1.2.38.md).
+
 **v1.2.37 (2026-10-19): DeepSeek V4.1 Flash 1017**, 125 freeflow + 120
 values, pinned to DeepSeek, collected the day after release (a new-weights
 snapshot of V4.1 Flash); no interventions. See
