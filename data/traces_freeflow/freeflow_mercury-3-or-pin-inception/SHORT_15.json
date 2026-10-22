@@ -1,0 +1,90 @@
+{
+  "result": "I\u2019m thinking about the peculiar geometry of airports. They are places designed to be nowhere\u2014fluorescent corridors of transition, where everyone is either arriving or leaving, no one staying. There is a strange intimacy in this shared suspension. Strangers sit across from each other in departure lounges, separated by nothing but a thin seam of silence, each person holding a different life, a different destination, a different reason for being there. Yet all of them, for the moment, exist in the same fluorescent hum.\n\nThe best airport moments are the quiet ones: the small hour when the last flight leaves and the concourse empties, when the endless loop of announcements finally rests, when even the vending machines seem to exhale. That pause is oddly beautiful\u2014a held breath.\n\nBut maybe what draws me to airports is not the traveling, but the possibility of it. Standing before the departures board, watching destinations flip past\u2014Osaka, Reykjavik, Cape Town\u2014you feel the pure breadth of the world as a set of lines waiting to be drawn. You do not have to board any of them. Just knowing they exist is enough. For a moment you are weightless, unmoored, free of geography.\n\nThen your gate is called. And the boarding pass becomes real again. And the world narrows back to a single row of blinking overhead lights and the slowly lifting roar of a plane.",
+  "raw": {
+    "id": "gen-1792677490-4xjh2vl9Bn9ExOZMjMlh",
+    "object": "chat.completion",
+    "created": 1792677490,
+    "model": "inception/mercury-3",
+    "provider": "Inception",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I\u2019m thinking about the peculiar geometry of airports. They are places designed to be nowhere\u2014fluorescent corridors of transition, where everyone is either arriving or leaving, no one staying. There is a strange intimacy in this shared suspension. Strangers sit across from each other in departure lounges, separated by nothing but a thin seam of silence, each person holding a different life, a different destination, a different reason for being there. Yet all of them, for the moment, exist in the same fluorescent hum.\n\nThe best airport moments are the quiet ones: the small hour when the last flight leaves and the concourse empties, when the endless loop of announcements finally rests, when even the vending machines seem to exhale. That pause is oddly beautiful\u2014a held breath.\n\nBut maybe what draws me to airports is not the traveling, but the possibility of it. Standing before the departures board, watching destinations flip past\u2014Osaka, Reykjavik, Cape Town\u2014you feel the pure breadth of the world as a set of lines waiting to be drawn. You do not have to board any of them. Just knowing they exist is enough. For a moment you are weightless, unmoored, free of geography.\n\nThen your gate is called. And the boarding pass becomes real again. And the world narrows back to a single row of blinking overhead lights and the slowly lifting roar of a plane.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 762,
+      "total_tokens": 772,
+      "cost": 0.00026761,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00026761,
+        "upstream_inference_prompt_cost": 9.1e-07,
+        "upstream_inference_completions_cost": 0.0002667
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 478,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 10,
+    "completion_tokens": 762,
+    "total_tokens": 772,
+    "cost": 0.00026761,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00026761,
+      "upstream_inference_prompt_cost": 9.1e-07,
+      "upstream_inference_completions_cost": 0.0002667
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 478,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "inception/mercury-3",
+  "model_requested": "inception/mercury-3",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "inception/mercury-3",
+    "pin": "Inception",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_15",
+    "at": 1792677490.5401905,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

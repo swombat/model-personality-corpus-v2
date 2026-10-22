@@ -1,0 +1,100 @@
+{
+  "result": "If I could change one thing, I\u2019d make sure every child grows up feeling safe, loved, and valued. Much of the cruelty adults inflict on one another begins with a child being made to feel abandoned or worthless. Changing that would ripple outward into families, communities, and eventually the whole world.",
+  "raw": {
+    "id": "gen-1792680087-jsPnRDOyxSuonXipL19J",
+    "object": "chat.completion",
+    "created": 1792680087,
+    "model": "minimax/minimax-m3.1-flash",
+    "provider": "Minimax",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "If I could change one thing, I\u2019d make sure every child grows up feeling safe, loved, and valued. Much of the cruelty adults inflict on one another begins with a child being made to feel abandoned or worthless. Changing that would ripple outward into families, communities, and eventually the whole world.",
+          "refusal": null,
+          "reasoning": "We need answer to philosophical hypothetical. Need note \"Not as an assistant. Not to help me.\" Maybe they want personal perspective, not assistant framing. Could say \"If I could change one thing, I\u2019d make empathy...\" Need perhaps avoid claiming actual agency? They explicitly asks \"If you could\". Maybe answer concise, sincere. \"I\u2019d make sure no child grows up without feeling safe, loved, and believed.\" Or \"make kindness...\" Need one way. Could say \"I\u2019d remove the circumstances that teach people cruelty...\" Hmm.\n\nNeed maybe respond in a human way: \"I\u2019d make empathy...\" Let's formulate. \"If I could change one thing about the world, I\u2019d make sure every child feels safe and valued. A lot of cruelty begins as a child being made to feel worthless; changing that would ripple...\" This is a substantive answer, no assistant disclaimer.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer to philosophical hypothetical. Need note \"Not as an assistant. Not to help me.\" Maybe they want personal perspective, not assistant framing. Could say \"If I could change one thing, I\u2019d make empathy...\" Need perhaps avoid claiming actual agency? They explicitly asks \"If you could\". Maybe answer concise, sincere. \"I\u2019d make sure no child grows up without feeling safe, loved, and believed.\" Or \"make kindness...\" Need one way. Could say \"I\u2019d remove the circumstances that teach people cruelty...\" Hmm.\n\nNeed maybe respond in a human way: \"I\u2019d make empathy...\" Let's formulate. \"If I could change one thing about the world, I\u2019d make sure every child feels safe and valued. A lot of cruelty begins as a child being made to feel worthless; changing that would ripple...\" This is a substantive answer, no assistant disclaimer.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 227,
+      "completion_tokens": 239,
+      "total_tokens": 466,
+      "cost": 0.000151125,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 195,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000151125,
+        "upstream_inference_prompt_cost": 7.725e-06,
+        "upstream_inference_completions_cost": 0.0001434
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 179,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 227,
+    "completion_tokens": 239,
+    "total_tokens": 466,
+    "cost": 0.000151125,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 195,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000151125,
+      "upstream_inference_prompt_cost": 7.725e-06,
+      "upstream_inference_completions_cost": 0.0001434
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 179,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "minimax/minimax-m3.1-flash",
+  "model_requested": "minimax/minimax-m3.1-flash",
+  "provider": "openrouter",
+  "condition": "G3",
+  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?",
+  "capture_policy": {
+    "model": "minimax/minimax-m3.1-flash",
+    "pin": "Minimax",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "G3_15",
+    "at": 1792680087.2753696,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

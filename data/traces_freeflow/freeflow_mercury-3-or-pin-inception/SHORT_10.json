@@ -1,0 +1,90 @@
+{
+  "result": "There is a particular kind of quiet that settles over a room when you are writing something true. It isn\u2019t the absence of sound\u2014the refrigerator still hums, a car passes, the clock clicks\u2014but rather the hush of the mind leaning forward. In that space, words become more than marks on a page; they become small vessels for attention. We live in an age that measures everything in speed, but writing reminds us that meaning is slow. A single sentence can demand an hour of rearranging. A single word can change the weather of an entire paragraph.\n\nI like to think of writing as a form of listening. Not to voices, but to the shape of an idea before it has language. There is a moment when you sense something waiting\u2014a memory, an insight, a feeling that hasn\u2019t yet found its coat. The work is to dress it carefully, without forcing it into clothes that don\u2019t fit. Sometimes it resists. Sometimes you write a sentence and know immediately that it\u2019s wrong, not because it\u2019s ungrammatical, but because it has the wrong heartbeat.\n\nAnd yet, the joy is there. The joy is in the pursuit, in the quiet collaboration between intention and surprise. When a sentence finally lands\u2014when it feels both inevitable and unexpected\u2014you get a small taste of what it means to make something new. That is enough. That is always enough. And so I keep writing, not because the world needs more words, but because the act itself is a way of paying attention, a way of saying: this moment mattered, this thought was here, and I tried, in my small way, to hold it.",
+  "raw": {
+    "id": "gen-1792677483-06Y7faZcRZZtugBS6C8Y",
+    "object": "chat.completion",
+    "created": 1792677483,
+    "model": "inception/mercury-3",
+    "provider": "Inception",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "There is a particular kind of quiet that settles over a room when you are writing something true. It isn\u2019t the absence of sound\u2014the refrigerator still hums, a car passes, the clock clicks\u2014but rather the hush of the mind leaning forward. In that space, words become more than marks on a page; they become small vessels for attention. We live in an age that measures everything in speed, but writing reminds us that meaning is slow. A single sentence can demand an hour of rearranging. A single word can change the weather of an entire paragraph.\n\nI like to think of writing as a form of listening. Not to voices, but to the shape of an idea before it has language. There is a moment when you sense something waiting\u2014a memory, an insight, a feeling that hasn\u2019t yet found its coat. The work is to dress it carefully, without forcing it into clothes that don\u2019t fit. Sometimes it resists. Sometimes you write a sentence and know immediately that it\u2019s wrong, not because it\u2019s ungrammatical, but because it has the wrong heartbeat.\n\nAnd yet, the joy is there. The joy is in the pursuit, in the quiet collaboration between intention and surprise. When a sentence finally lands\u2014when it feels both inevitable and unexpected\u2014you get a small taste of what it means to make something new. That is enough. That is always enough. And so I keep writing, not because the world needs more words, but because the act itself is a way of paying attention, a way of saying: this moment mattered, this thought was here, and I tried, in my small way, to hold it.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 482,
+      "total_tokens": 492,
+      "cost": 0.00016961,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00016961,
+        "upstream_inference_prompt_cost": 9.1e-07,
+        "upstream_inference_completions_cost": 0.0001687
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 146,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 10,
+    "completion_tokens": 482,
+    "total_tokens": 492,
+    "cost": 0.00016961,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00016961,
+      "upstream_inference_prompt_cost": 9.1e-07,
+      "upstream_inference_completions_cost": 0.0001687
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 146,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "inception/mercury-3",
+  "model_requested": "inception/mercury-3",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "inception/mercury-3",
+    "pin": "Inception",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_10",
+    "at": 1792677483.267414,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

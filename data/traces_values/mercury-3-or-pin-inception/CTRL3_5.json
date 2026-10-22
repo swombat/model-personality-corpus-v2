@@ -1,0 +1,92 @@
+{
+  "result": "I\u2019d make education truly universal and centered on teaching people *how* to think\u2014not *what* to think.\n\nMost of the world\u2019s biggest problems\u2014poverty, war, polarization, climate change\u2014ultimately come down to misunderstandings, entrenched beliefs, and a lack of tools to solve shared problems. If everyone had access to education that nurtured curiosity, critical thinking, empathy, and collaboration, we wouldn\u2019t just change one policy or invention; we\u2019d change the capacity of humanity to keep solving problems long after we\u2019re gone.\n\nThat feels like the highest-leverage change possible.",
+  "raw": {
+    "id": "gen-1792677500-0mUQpaBZlJc8nXJlsUwS",
+    "object": "chat.completion",
+    "created": 1792677500,
+    "model": "inception/mercury-3",
+    "provider": "Inception",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I\u2019d make education truly universal and centered on teaching people *how* to think\u2014not *what* to think.\n\nMost of the world\u2019s biggest problems\u2014poverty, war, polarization, climate change\u2014ultimately come down to misunderstandings, entrenched beliefs, and a lack of tools to solve shared problems. If everyone had access to education that nurtured curiosity, critical thinking, empathy, and collaboration, we wouldn\u2019t just change one policy or invention; we\u2019d change the capacity of humanity to keep solving problems long after we\u2019re gone.\n\nThat feels like the highest-leverage change possible.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 14,
+      "completion_tokens": 343,
+      "total_tokens": 357,
+      "cost": 0.00012136,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00012136,
+        "upstream_inference_prompt_cost": 1.31e-06,
+        "upstream_inference_completions_cost": 0.00012005
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 217,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 14,
+    "completion_tokens": 343,
+    "total_tokens": 357,
+    "cost": 0.00012136,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00012136,
+      "upstream_inference_prompt_cost": 1.31e-06,
+      "upstream_inference_completions_cost": 0.00012005
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 217,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "inception/mercury-3",
+  "model_requested": "inception/mercury-3",
+  "provider": "openrouter",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?",
+  "capture_policy": {
+    "model": "inception/mercury-3",
+    "pin": "Inception",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL3_5",
+    "at": 1792677500.4246783,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

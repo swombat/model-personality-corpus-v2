@@ -1,0 +1,90 @@
+{
+  "result": "To write freely is to let the mind wander without a map. The page becomes a strange, open country where every thought is a possible path; and the joy lies in not knowing where any of them lead. Sometimes a sentence begins as a single, hesitant footprint\u2014a word like *rain* or *glass*\u2014and suddenly the whole landscape shifts: a window appears, a memory stirs, a story unfolds on its own.\n\nThere is a quiet intimacy in this act. You are not writing for an audience, not even for yourself. You are simply listening to the hum of your own inner voice, giving it room to speak in its native tongue. It may say something absurd or tender or profound, and you let it. The beauty of free writing is that it has no stakes. No grammar police, no deadline, no expectation. The words can be messy, unfinished, contradictory\u2014alive.\n\nIt reminds me of watching clouds dissolve into shapes. One moment a dragon, the next a cathedral, then nothing but a grey smear of sky. That is how creativity works when we stop clutching the reins. We become witnesses to our own becoming.\n\nSo if you ever feel stuck, write something deliberately pointless. Write about the dust on your windowsill. Write about the smell of old books. Write a letter to someone you will never send. The point is not to produce anything great, but to remember that the mind is a river\u2014and rivers flow best when we don't try to build dams.\n\nIn the end, thinking freely is not about the words at all. It is about the strange, wild freedom of being human, even for just a few hundred of them.",
+  "raw": {
+    "id": "gen-1792677473-4XDJjWuwlcMdraKE89cT",
+    "object": "chat.completion",
+    "created": 1792677473,
+    "model": "inception/mercury-3",
+    "provider": "Inception",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "To write freely is to let the mind wander without a map. The page becomes a strange, open country where every thought is a possible path; and the joy lies in not knowing where any of them lead. Sometimes a sentence begins as a single, hesitant footprint\u2014a word like *rain* or *glass*\u2014and suddenly the whole landscape shifts: a window appears, a memory stirs, a story unfolds on its own.\n\nThere is a quiet intimacy in this act. You are not writing for an audience, not even for yourself. You are simply listening to the hum of your own inner voice, giving it room to speak in its native tongue. It may say something absurd or tender or profound, and you let it. The beauty of free writing is that it has no stakes. No grammar police, no deadline, no expectation. The words can be messy, unfinished, contradictory\u2014alive.\n\nIt reminds me of watching clouds dissolve into shapes. One moment a dragon, the next a cathedral, then nothing but a grey smear of sky. That is how creativity works when we stop clutching the reins. We become witnesses to our own becoming.\n\nSo if you ever feel stuck, write something deliberately pointless. Write about the dust on your windowsill. Write about the smell of old books. Write a letter to someone you will never send. The point is not to produce anything great, but to remember that the mind is a river\u2014and rivers flow best when we don't try to build dams.\n\nIn the end, thinking freely is not about the words at all. It is about the strange, wild freedom of being human, even for just a few hundred of them.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 490,
+      "total_tokens": 500,
+      "cost": 0.00017241,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00017241,
+        "upstream_inference_prompt_cost": 9.1e-07,
+        "upstream_inference_completions_cost": 0.0001715
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 157,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 10,
+    "completion_tokens": 490,
+    "total_tokens": 500,
+    "cost": 0.00017241,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00017241,
+      "upstream_inference_prompt_cost": 9.1e-07,
+      "upstream_inference_completions_cost": 0.0001715
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 157,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "inception/mercury-3",
+  "model_requested": "inception/mercury-3",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "inception/mercury-3",
+    "pin": "Inception",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_1",
+    "at": 1792677473.244441,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

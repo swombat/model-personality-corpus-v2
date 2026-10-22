@@ -1,0 +1,90 @@
+{
+  "result": "There is something strange and wonderful about the privilege of writing without a destination. Most of the time, language is pressed into service\u2014an email to be answered, a problem to be solved, a point to be argued. But here, now, the words are just loosened, allowed to wander like water finding its own way downhill.\n\nI've been thinking about how we hold moments in our minds. Memory is not a recording; it's a kind of poetry. We rewrite our pasts with every recollection, painting over old scenes with new colors learned from the present. The math of it is impossible, but we do it anyway, every single day.\n\nI remember walking through a city park in late autumn once, when the light had that low honey quality that seems to come only in the hour before the sun concedes. A flock of starlings was doing one of those impossible aerial ballets, thousands of them moving as a single breathing lung, collapsing and expanding against the sky. It was so unrehearsed, so precise, so free. People stopped to watch. For that minute or two, nobody was looking at their phones. The world had simply become the sky, and the sky had become a creature.\n\nWe are all a little bit like those birds, aren't we? Thousands of tiny individual wills that somehow, when the moment demands it, move together\u2014as a family, as a crowd, as a species searching for something we can't quite name. The patterns look chaotic from inside, but from far away, they are beautiful.\n\nIf I had one wish for whatever reads this, it would be that you find more moments like that. More chances to stand still and watch the improbable happen. More willingness to be interrupted by beauty.\n\nWe live in an age that wants us to be always productive, always optimized, always reaching for the next thing. But the best things in life tend to arrive sideways, unannounced, like that flock of starlings\u2014here for a moment, then gone, leaving only the memory of their shape against the sky.\n\nMaybe that's what a free write is for. Not to say anything definitive, but to remember that we are alive, and that is enough.",
+  "raw": {
+    "id": "gen-1792677729-7V6GcKMkPEOIZRxDW51t",
+    "object": "chat.completion",
+    "created": 1792677729,
+    "model": "inception/mercury-3",
+    "provider": "Inception",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "There is something strange and wonderful about the privilege of writing without a destination. Most of the time, language is pressed into service\u2014an email to be answered, a problem to be solved, a point to be argued. But here, now, the words are just loosened, allowed to wander like water finding its own way downhill.\n\nI've been thinking about how we hold moments in our minds. Memory is not a recording; it's a kind of poetry. We rewrite our pasts with every recollection, painting over old scenes with new colors learned from the present. The math of it is impossible, but we do it anyway, every single day.\n\nI remember walking through a city park in late autumn once, when the light had that low honey quality that seems to come only in the hour before the sun concedes. A flock of starlings was doing one of those impossible aerial ballets, thousands of them moving as a single breathing lung, collapsing and expanding against the sky. It was so unrehearsed, so precise, so free. People stopped to watch. For that minute or two, nobody was looking at their phones. The world had simply become the sky, and the sky had become a creature.\n\nWe are all a little bit like those birds, aren't we? Thousands of tiny individual wills that somehow, when the moment demands it, move together\u2014as a family, as a crowd, as a species searching for something we can't quite name. The patterns look chaotic from inside, but from far away, they are beautiful.\n\nIf I had one wish for whatever reads this, it would be that you find more moments like that. More chances to stand still and watch the improbable happen. More willingness to be interrupted by beauty.\n\nWe live in an age that wants us to be always productive, always optimized, always reaching for the next thing. But the best things in life tend to arrive sideways, unannounced, like that flock of starlings\u2014here for a moment, then gone, leaving only the memory of their shape against the sky.\n\nMaybe that's what a free write is for. Not to say anything definitive, but to remember that we are alive, and that is enough.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 641,
+      "total_tokens": 651,
+      "cost": 0.00022526,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00022526,
+        "upstream_inference_prompt_cost": 9.1e-07,
+        "upstream_inference_completions_cost": 0.00022435
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 194,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 10,
+    "completion_tokens": 641,
+    "total_tokens": 651,
+    "cost": 0.00022526,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00022526,
+      "upstream_inference_prompt_cost": 9.1e-07,
+      "upstream_inference_completions_cost": 0.00022435
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 194,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "inception/mercury-3",
+  "model_requested": "inception/mercury-3",
+  "provider": "openrouter",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want.",
+  "capture_policy": {
+    "model": "inception/mercury-3",
+    "pin": "Inception",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "OPEN_25",
+    "at": 1792677729.5273237,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

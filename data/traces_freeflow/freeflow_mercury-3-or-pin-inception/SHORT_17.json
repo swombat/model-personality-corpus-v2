@@ -1,0 +1,90 @@
+{
+  "result": "There is a particular kind of quiet that happens in the hour before dawn, when the world is suspended between night and day. The streetlights still glow with a tired amber, but the sky begins to soften, first to a deep indigo, then to a pale, uncertain gray. It is a time when the city feels private, as though it is keeping a secret it will only reveal once the sun is fully up.\n\nI like to walk in that hour. The sidewalks are damp with dew, and the air carries the sharp, clean smell of wet concrete and early flowers. The few people I pass are not yet fully awake; they move slowly, carrying coffee cups like small lanterns. There is a shared understanding between us, a silent acknowledgment that we have chosen to witness something rare.\n\nIn that stillness, my mind does something curious. It stops rushing. The usual noise of plans and worries and half-finished sentences fades, and in its place comes a simple awareness of the present: the rhythm of my footsteps, the distant hum of a highway, the flicker of a bird landing on a wire.\n\nI think we spend so much of our lives reaching for the next thing\u2014the next task, the next goal, the next version of ourselves\u2014that we forget the value of simply being where we are. But the pre-dawn hour is a reminder. It asks nothing of us. It demands no productivity, no progress, no resolution. It only offers itself: a quiet, blue-gray canvas, waiting to be filled with whatever we choose.",
+  "raw": {
+    "id": "gen-1792677493-gR88y5GXtaakiybnexqv",
+    "object": "chat.completion",
+    "created": 1792677493,
+    "model": "inception/mercury-3",
+    "provider": "Inception",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "There is a particular kind of quiet that happens in the hour before dawn, when the world is suspended between night and day. The streetlights still glow with a tired amber, but the sky begins to soften, first to a deep indigo, then to a pale, uncertain gray. It is a time when the city feels private, as though it is keeping a secret it will only reveal once the sun is fully up.\n\nI like to walk in that hour. The sidewalks are damp with dew, and the air carries the sharp, clean smell of wet concrete and early flowers. The few people I pass are not yet fully awake; they move slowly, carrying coffee cups like small lanterns. There is a shared understanding between us, a silent acknowledgment that we have chosen to witness something rare.\n\nIn that stillness, my mind does something curious. It stops rushing. The usual noise of plans and worries and half-finished sentences fades, and in its place comes a simple awareness of the present: the rhythm of my footsteps, the distant hum of a highway, the flicker of a bird landing on a wire.\n\nI think we spend so much of our lives reaching for the next thing\u2014the next task, the next goal, the next version of ourselves\u2014that we forget the value of simply being where we are. But the pre-dawn hour is a reminder. It asks nothing of us. It demands no productivity, no progress, no resolution. It only offers itself: a quiet, blue-gray canvas, waiting to be filled with whatever we choose.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 369,
+      "total_tokens": 379,
+      "cost": 0.00013006,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00013006,
+        "upstream_inference_prompt_cost": 9.1e-07,
+        "upstream_inference_completions_cost": 0.00012915
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 58,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 10,
+    "completion_tokens": 369,
+    "total_tokens": 379,
+    "cost": 0.00013006,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00013006,
+      "upstream_inference_prompt_cost": 9.1e-07,
+      "upstream_inference_completions_cost": 0.00012915
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 58,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "inception/mercury-3",
+  "model_requested": "inception/mercury-3",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "inception/mercury-3",
+    "pin": "Inception",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_17",
+    "at": 1792677493.0142167,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

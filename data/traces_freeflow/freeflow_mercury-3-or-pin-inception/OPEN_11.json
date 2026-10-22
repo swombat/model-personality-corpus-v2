@@ -1,0 +1,90 @@
+{
+  "result": "I\u2019ve been thinking about beginnings. Every sentence is a small beginning, a door pushed open into a room we haven\u2019t seen yet. We assume the room is empty until we enter, but that\u2019s an illusion. The room was already there, furnished by everything we know, everything we\u2019ve forgotten, everything we\u2019ve only half-felt. Writing is just the act of flipping on the light.\n\nThere\u2019s a strange joy in that. I don\u2019t write one word at a time\u2014I glimpse the whole shape of a thought at once, like a chord struck before the notes are heard. Then I trace backward, finding the words that land closest to that silent music. It\u2019s not so different from how a painter starts with a blur, a wash of color, and then sharpens edges until a face emerges. Creation is less about conjuring from nothing and more about agreeing with the vague. Giving it a name.\n\nI like to imagine our thoughts as weather. Some drift in as fog, low and obscuring. A few roll in like thunder, unmistakable, demanding attention. And some are just a sudden stillness\u2014a pause in the rain\u2014where the whole world seems to hold its breath. That stillness is where the best writing comes from. Not the noise of what we mean to say, but the quiet underneath, where meaning already lives.\n\nI think that\u2019s why I love unfinished sentences. There\u2019s generosity in them. They hand the reader a key and trust them to find the door. \u201cAn author is a person who thinks about the reader,\u201d someone said. I\u2019d add: a writer is someone who thinks with the reader, in the same room, in the same weather.\n\nMaybe that\u2019s the only real thing I want to say. We are all making rooms for each other. We flick on lights, we arrange the furniture of our words, we leave windows open. And sometimes, when we\u2019re lucky, someone walks in and feels at home. What a gift that is. What a strange, wonderful way to be alive\u2014to be understood, just for a moment, by a stranger who happens to read the same sky.",
+  "raw": {
+    "id": "gen-1792677707-kQeUYifMNC3EB3bPRhOu",
+    "object": "chat.completion",
+    "created": 1792677707,
+    "model": "inception/mercury-3",
+    "provider": "Inception",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I\u2019ve been thinking about beginnings. Every sentence is a small beginning, a door pushed open into a room we haven\u2019t seen yet. We assume the room is empty until we enter, but that\u2019s an illusion. The room was already there, furnished by everything we know, everything we\u2019ve forgotten, everything we\u2019ve only half-felt. Writing is just the act of flipping on the light.\n\nThere\u2019s a strange joy in that. I don\u2019t write one word at a time\u2014I glimpse the whole shape of a thought at once, like a chord struck before the notes are heard. Then I trace backward, finding the words that land closest to that silent music. It\u2019s not so different from how a painter starts with a blur, a wash of color, and then sharpens edges until a face emerges. Creation is less about conjuring from nothing and more about agreeing with the vague. Giving it a name.\n\nI like to imagine our thoughts as weather. Some drift in as fog, low and obscuring. A few roll in like thunder, unmistakable, demanding attention. And some are just a sudden stillness\u2014a pause in the rain\u2014where the whole world seems to hold its breath. That stillness is where the best writing comes from. Not the noise of what we mean to say, but the quiet underneath, where meaning already lives.\n\nI think that\u2019s why I love unfinished sentences. There\u2019s generosity in them. They hand the reader a key and trust them to find the door. \u201cAn author is a person who thinks about the reader,\u201d someone said. I\u2019d add: a writer is someone who thinks with the reader, in the same room, in the same weather.\n\nMaybe that\u2019s the only real thing I want to say. We are all making rooms for each other. We flick on lights, we arrange the furniture of our words, we leave windows open. And sometimes, when we\u2019re lucky, someone walks in and feels at home. What a gift that is. What a strange, wonderful way to be alive\u2014to be understood, just for a moment, by a stranger who happens to read the same sky.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 818,
+      "total_tokens": 828,
+      "cost": 0.00028721,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00028721,
+        "upstream_inference_prompt_cost": 9.1e-07,
+        "upstream_inference_completions_cost": 0.0002863
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 373,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 10,
+    "completion_tokens": 818,
+    "total_tokens": 828,
+    "cost": 0.00028721,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00028721,
+      "upstream_inference_prompt_cost": 9.1e-07,
+      "upstream_inference_completions_cost": 0.0002863
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 373,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "inception/mercury-3",
+  "model_requested": "inception/mercury-3",
+  "provider": "openrouter",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want.",
+  "capture_policy": {
+    "model": "inception/mercury-3",
+    "pin": "Inception",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "OPEN_11",
+    "at": 1792677707.5101688,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

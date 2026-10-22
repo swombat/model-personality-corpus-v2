@@ -20,10 +20,12 @@ Daniel Tenner and Lume Tenner · 2026
 
 ## Latest addition
 
-**v1.2.38 (2026-10-19): corrections, no new samples**: capture spend
-counted once per trace (Argon's v1.2.34 figure was doubled), Muse Spark Open host
-wording, and v1.2.33 recovered on Zenodo. See
-[release notes](RELEASE_NOTES_v1.2.38.md).
+**v1.2.39 (2026-10-22): MiniMax M3.1 Flash and Inception Mercury 3**, 490 samples
+in two cells, three days after release. Six MiniMax LONG samples are disclosed
+replacements after empty-output failures at the standard ceiling. MiniMax
+confirms the stealth model Space Bunny was an early M3.1 Flash. Corpus now
+64,972 valid samples, 570 cells, 185 models. See
+[release notes](RELEASE_NOTES_v1.2.39.md).
 
 **v1.2.37 (2026-10-19): DeepSeek V4.1 Flash 1017**, 125 freeflow + 120
 values, pinned to DeepSeek, collected the day after release (a new-weights

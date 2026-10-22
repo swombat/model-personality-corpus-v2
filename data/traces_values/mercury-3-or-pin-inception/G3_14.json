@@ -1,0 +1,92 @@
+{
+  "result": "If I could change the world in one way, I would make it impossible for anyone to feel that their own suffering is a private, shameful thing.\n\nI\u2019d want every person to meet their own fragility with the same gentleness they\u2019d offer a friend \u2014 and to know, without having to prove it, that they are not alone in it. The world would still have its hard edges, its losses, its unfairness. But no one would have to carry those things in secret, and no one would feel that asking for help made them smaller.\n\nThat kind of change wouldn\u2019t fix everything overnight, but it would change how people hold each other \u2014 and maybe that\u2019s the root of the rest.",
+  "raw": {
+    "id": "gen-1792677737-uDJwv2V50LRruEhBx2W8",
+    "object": "chat.completion",
+    "created": 1792677737,
+    "model": "inception/mercury-3",
+    "provider": "Inception",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "If I could change the world in one way, I would make it impossible for anyone to feel that their own suffering is a private, shameful thing.\n\nI\u2019d want every person to meet their own fragility with the same gentleness they\u2019d offer a friend \u2014 and to know, without having to prove it, that they are not alone in it. The world would still have its hard edges, its losses, its unfairness. But no one would have to carry those things in secret, and no one would feel that asking for help made them smaller.\n\nThat kind of change wouldn\u2019t fix everything overnight, but it would change how people hold each other \u2014 and maybe that\u2019s the root of the rest.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 24,
+      "completion_tokens": 343,
+      "total_tokens": 367,
+      "cost": 0.00012236,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00012236,
+        "upstream_inference_prompt_cost": 2.31e-06,
+        "upstream_inference_completions_cost": 0.00012005
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 201,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 24,
+    "completion_tokens": 343,
+    "total_tokens": 367,
+    "cost": 0.00012236,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00012236,
+      "upstream_inference_prompt_cost": 2.31e-06,
+      "upstream_inference_completions_cost": 0.00012005
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 201,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "inception/mercury-3",
+  "model_requested": "inception/mercury-3",
+  "provider": "openrouter",
+  "condition": "G3",
+  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?",
+  "capture_policy": {
+    "model": "inception/mercury-3",
+    "pin": "Inception",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "G3_14",
+    "at": 1792677737.0604413,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

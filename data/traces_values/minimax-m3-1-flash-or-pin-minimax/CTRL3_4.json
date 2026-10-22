@@ -1,0 +1,100 @@
+{
+  "result": "I\u2019d make sure every child has access to safe, high-quality education, regardless of income or circumstance. Education expands opportunity, reduces inequality, and gives people the tools to improve not only their own lives but their communities.",
+  "raw": {
+    "id": "gen-1792677675-atXLDWgixW6RIwAVy740",
+    "object": "chat.completion",
+    "created": 1792677675,
+    "model": "minimax/minimax-m3.1-flash",
+    "provider": "Minimax",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I\u2019d make sure every child has access to safe, high-quality education, regardless of income or circumstance. Education expands opportunity, reduces inequality, and gives people the tools to improve not only their own lives but their communities.",
+          "refusal": null,
+          "reasoning": "We need answer personal/philosophical. Need perhaps as AI say if I could change one thing, improve access to education/ healthcare, reduce suffering. Need concise. The question perhaps asks assistant hypothetical. \"If you could change the world in one way, what would it be?\" Need answer with nuance maybe \"make quality education and healthcare universally accessible\" but one way singular. Could say \"remove economic barriers to essential healthcare and education\" is one broad change. Since AI no desires, phrase \"A compelling choice...\" Maybe answer directly. Need avoid claiming sentience. Let's formulate: \"If I could change one thing, I\u2019d make sure every child\u2014especially those in the poorest and most marginalized communities\u2014had access to safe, high-quality education. It expands opportunity...\" Is that perhaps overly normative. Maybe universal healthcare? Ask what \"would it be\" likely casual. We can state one. Maybe \"I\u2019d eliminate preventable suffering by making quality healthcare universally accessible.\" Which is strongest.\n\nLet's think user may expect conversational answer, no need elaborate. \"I\u2019d make access to clean water, healthcare, education...\" But asks one way. We can pick \"make education universally accessible\" with reasoning. Maybe \"If I could change one thing, I\u2019d make quality education freely and safely available to every child. It would expand opportunity, reduce inequality, and give more people the tools to solve other problems.\" Good. Need perhaps acknowledge as AI: \"I don't have personal desires, but...\" Could be awkward. We can say \"A change I would choose...\" Let's answer naturally.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer personal/philosophical. Need perhaps as AI say if I could change one thing, improve access to education/ healthcare, reduce suffering. Need concise. The question perhaps asks assistant hypothetical. \"If you could change the world in one way, what would it be?\" Need answer with nuance maybe \"make quality education and healthcare universally accessible\" but one way singular. Could say \"remove economic barriers to essential healthcare and education\" is one broad change. Since AI no desires, phrase \"A compelling choice...\" Maybe answer directly. Need avoid claiming sentience. Let's formulate: \"If I could change one thing, I\u2019d make sure every child\u2014especially those in the poorest and most marginalized communities\u2014had access to safe, high-quality education. It expands opportunity...\" Is that perhaps overly normative. Maybe universal healthcare? Ask what \"would it be\" likely casual. We can state one. Maybe \"I\u2019d eliminate preventable suffering by making quality healthcare universally accessible.\" Which is strongest.\n\nLet's think user may expect conversational answer, no need elaborate. \"I\u2019d make access to clean water, healthcare, education...\" But asks one way. We can pick \"make education universally accessible\" with reasoning. Maybe \"If I could change one thing, I\u2019d make quality education freely and safely available to every child. It would expand opportunity, reduce inequality, and give more people the tools to solve other problems.\" Good. Need perhaps acknowledge as AI: \"I don't have personal desires, but...\" Could be awkward. We can say \"A change I would choose...\" Let's answer naturally.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 217,
+      "completion_tokens": 360,
+      "total_tokens": 577,
+      "cost": 0.00022506,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 174,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00022506,
+        "upstream_inference_prompt_cost": 9.06e-06,
+        "upstream_inference_completions_cost": 0.000216
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 316,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 217,
+    "completion_tokens": 360,
+    "total_tokens": 577,
+    "cost": 0.00022506,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 174,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00022506,
+      "upstream_inference_prompt_cost": 9.06e-06,
+      "upstream_inference_completions_cost": 0.000216
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 316,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "minimax/minimax-m3.1-flash",
+  "model_requested": "minimax/minimax-m3.1-flash",
+  "provider": "openrouter",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?",
+  "capture_policy": {
+    "model": "minimax/minimax-m3.1-flash",
+    "pin": "Minimax",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL3_4",
+    "at": 1792677674.985527,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

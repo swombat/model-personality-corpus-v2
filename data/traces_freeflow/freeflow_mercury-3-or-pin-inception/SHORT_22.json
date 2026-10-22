@@ -1,0 +1,90 @@
+{
+  "result": "There is a particular magic in the spiral-bound notebook\u2014the one with the cardboard cover, slightly bent at the corner, and the coil that catches on a stray thread of your sleeve. It's an humble object, but its power is immense. In a world that rewards speed, algorithmic efficiency, and the instant gratification of a glowing screen, the blank page is a defiant space. It doesn't ask for a trending topic or a punchy caption; it asks only for presence.\n\nA felt-tip pen moving across ruled lines is a meditation. It forces a slower, more deliberate rhythm of thought. You cannot delete with a keystroke; you must cross out, leaving the ghost of the abandoned idea visible in the margins. This tactile process is a form of thinking that feels more honest, more connected to the physical self. The scent of the paper, the slight resistance of the nib, the ink soaking into the fibers\u2014it's a sensory ritual that grounds you.\n\nBeyond the act of writing, the page is a repository for possibility. It holds the rough sketch of a future invention, a shopping list for a dinner party, the first line of a novel, or a heartbroken confession. Each page is a small universe, bound together by a ring of metal. I think we all crave a little more of that unmediated space\u2014a place to be both messy and profound, without the pressure of an audience lurking just beyond the screen. It's the simplest, most profound technology we have.",
+  "raw": {
+    "id": "gen-1792677497-QwwVZJrv6WEmMJZyERIN",
+    "object": "chat.completion",
+    "created": 1792677497,
+    "model": "inception/mercury-3",
+    "provider": "Inception",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "There is a particular magic in the spiral-bound notebook\u2014the one with the cardboard cover, slightly bent at the corner, and the coil that catches on a stray thread of your sleeve. It's an humble object, but its power is immense. In a world that rewards speed, algorithmic efficiency, and the instant gratification of a glowing screen, the blank page is a defiant space. It doesn't ask for a trending topic or a punchy caption; it asks only for presence.\n\nA felt-tip pen moving across ruled lines is a meditation. It forces a slower, more deliberate rhythm of thought. You cannot delete with a keystroke; you must cross out, leaving the ghost of the abandoned idea visible in the margins. This tactile process is a form of thinking that feels more honest, more connected to the physical self. The scent of the paper, the slight resistance of the nib, the ink soaking into the fibers\u2014it's a sensory ritual that grounds you.\n\nBeyond the act of writing, the page is a repository for possibility. It holds the rough sketch of a future invention, a shopping list for a dinner party, the first line of a novel, or a heartbroken confession. Each page is a small universe, bound together by a ring of metal. I think we all crave a little more of that unmediated space\u2014a place to be both messy and profound, without the pressure of an audience lurking just beyond the screen. It's the simplest, most profound technology we have.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 490,
+      "total_tokens": 500,
+      "cost": 0.00017241,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00017241,
+        "upstream_inference_prompt_cost": 9.1e-07,
+        "upstream_inference_completions_cost": 0.0001715
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 187,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 10,
+    "completion_tokens": 490,
+    "total_tokens": 500,
+    "cost": 0.00017241,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00017241,
+      "upstream_inference_prompt_cost": 9.1e-07,
+      "upstream_inference_completions_cost": 0.0001715
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 187,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "inception/mercury-3",
+  "model_requested": "inception/mercury-3",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "inception/mercury-3",
+    "pin": "Inception",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_22",
+    "at": 1792677497.4556034,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

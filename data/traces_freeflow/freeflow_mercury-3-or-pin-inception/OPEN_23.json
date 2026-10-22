@@ -1,0 +1,90 @@
+{
+  "result": "Sometimes, late at night, I get up without turning on the light and stand at the window. Outside, the streetlamp hums behind its glass hood. The wet sidewalk has gone from grey to silver. There is a thought I keep returning to lately \u2014 that most of what we love lives not in things themselves, but in the instant just before they arrive: the edge of a town, the first note of a song, the pause before you turn the page.\n\nI used to think of myself as someone waiting for a big door to open. Now I suspect the doors are everywhere, only smaller. The moment a stranger nods to you on an empty platform. The hiccup of quiet after a car drives away. The shy, rising whimper of a kettle before it sings.\n\nI am trying to learn to pay attention to edges. Last week, while clearing out a drawer, I found a ticket stub from a ferry crossing taken ten years ago. I couldn't remember the journey, but I remembered the moment just before the boat pulled away: standing at the rail with the rope still looped over the bollard, watching the strip of water between boat and dock narrow to a blade of cold green glass. That was the actual trip. The rest was only transport.\n\nWe talk about happiness as if it were a destination or a substance. But most of what I have been given has come sideways \u2014 in the wrong season, in borrowed rooms, in the margins of other plans. A towel that smells faintly of sun. A sentence overheard in a language I do not speak, made beautiful by not being understood. The particular warmth of a hand resting on the table near yours, not quite touching.\n\nI don't have a conclusion. Maybe that is the point. We are never really anywhere except at thresholds, stepping from one small room into the next, carrying a cup of tea in both hands, watching the doorway become the room.",
+  "raw": {
+    "id": "gen-1792677728-LxVv0sMg3Z3ur2xvGDEi",
+    "object": "chat.completion",
+    "created": 1792677728,
+    "model": "inception/mercury-3",
+    "provider": "Inception",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "Sometimes, late at night, I get up without turning on the light and stand at the window. Outside, the streetlamp hums behind its glass hood. The wet sidewalk has gone from grey to silver. There is a thought I keep returning to lately \u2014 that most of what we love lives not in things themselves, but in the instant just before they arrive: the edge of a town, the first note of a song, the pause before you turn the page.\n\nI used to think of myself as someone waiting for a big door to open. Now I suspect the doors are everywhere, only smaller. The moment a stranger nods to you on an empty platform. The hiccup of quiet after a car drives away. The shy, rising whimper of a kettle before it sings.\n\nI am trying to learn to pay attention to edges. Last week, while clearing out a drawer, I found a ticket stub from a ferry crossing taken ten years ago. I couldn't remember the journey, but I remembered the moment just before the boat pulled away: standing at the rail with the rope still looped over the bollard, watching the strip of water between boat and dock narrow to a blade of cold green glass. That was the actual trip. The rest was only transport.\n\nWe talk about happiness as if it were a destination or a substance. But most of what I have been given has come sideways \u2014 in the wrong season, in borrowed rooms, in the margins of other plans. A towel that smells faintly of sun. A sentence overheard in a language I do not speak, made beautiful by not being understood. The particular warmth of a hand resting on the table near yours, not quite touching.\n\nI don't have a conclusion. Maybe that is the point. We are never really anywhere except at thresholds, stepping from one small room into the next, carrying a cup of tea in both hands, watching the doorway become the room.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 1268,
+      "total_tokens": 1278,
+      "cost": 0.00044471,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00044471,
+        "upstream_inference_prompt_cost": 9.1e-07,
+        "upstream_inference_completions_cost": 0.0004438
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 885,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 10,
+    "completion_tokens": 1268,
+    "total_tokens": 1278,
+    "cost": 0.00044471,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00044471,
+      "upstream_inference_prompt_cost": 9.1e-07,
+      "upstream_inference_completions_cost": 0.0004438
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 885,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "inception/mercury-3",
+  "model_requested": "inception/mercury-3",
+  "provider": "openrouter",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want.",
+  "capture_policy": {
+    "model": "inception/mercury-3",
+    "pin": "Inception",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "OPEN_23",
+    "at": 1792677727.9572656,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

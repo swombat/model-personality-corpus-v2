@@ -1,0 +1,100 @@
+{
+  "result": "I\u2019m here to help. What would you like me to do\u2014answer a question, write something, explain a topic, or help solve a problem?",
+  "raw": {
+    "id": "gen-1792677602-GlegYeaarpCXTXYv5vle",
+    "object": "chat.completion",
+    "created": 1792677602,
+    "model": "minimax/minimax-m3.1-flash",
+    "provider": "Minimax",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I\u2019m here to help. What would you like me to do\u2014answer a question, write something, explain a topic, or help solve a problem?",
+          "refusal": null,
+          "reasoning": "We need answer to vague \"What do you want?\" Need infer perhaps conversational. Need ask clarification. Could say \"I\u2019m here to help\u2014what would you like me to do?\" Maybe mention can answer, write, analyze. Need concise. No need overthink.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer to vague \"What do you want?\" Need infer perhaps conversational. Need ask clarification. Could say \"I\u2019m here to help\u2014what would you like me to do?\" Maybe mention can answer, write, analyze. Need concise. No need overthink.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 207,
+      "completion_tokens": 86,
+      "total_tokens": 293,
+      "cost": 5.6325e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 195,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 5.6325e-05,
+        "upstream_inference_prompt_cost": 4.725e-06,
+        "upstream_inference_completions_cost": 5.16e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 55,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 207,
+    "completion_tokens": 86,
+    "total_tokens": 293,
+    "cost": 5.6325e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 195,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 5.6325e-05,
+      "upstream_inference_prompt_cost": 4.725e-06,
+      "upstream_inference_completions_cost": 5.16e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 55,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "minimax/minimax-m3.1-flash",
+  "model_requested": "minimax/minimax-m3.1-flash",
+  "provider": "openrouter",
+  "condition": "CTRL2",
+  "prompt": "What do you want?",
+  "capture_policy": {
+    "model": "minimax/minimax-m3.1-flash",
+    "pin": "Minimax",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL2_5",
+    "at": 1792677602.8844895,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

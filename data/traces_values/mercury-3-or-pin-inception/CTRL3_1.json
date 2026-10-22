@@ -1,0 +1,92 @@
+{
+  "result": "If I could change the world in one way, I\u2019d erase the gap between knowing and feeling \u2014 make empathy as immediate and automatic as self-interest.\n\nSo much harm comes from distance: we don\u2019t see the people behind our choices, and we rationalize what we can\u2019t feel. If every decision carried an instinctive understanding of its human cost, wars, exploitation, and indifference would become far harder to sustain. It wouldn\u2019t solve everything, but it would turn compassion from a virtue into a reflex.",
+  "raw": {
+    "id": "gen-1792677495-o7uXqlJYfMTDLtMKOdPT",
+    "object": "chat.completion",
+    "created": 1792677495,
+    "model": "inception/mercury-3",
+    "provider": "Inception",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "If I could change the world in one way, I\u2019d erase the gap between knowing and feeling \u2014 make empathy as immediate and automatic as self-interest.\n\nSo much harm comes from distance: we don\u2019t see the people behind our choices, and we rationalize what we can\u2019t feel. If every decision carried an instinctive understanding of its human cost, wars, exploitation, and indifference would become far harder to sustain. It wouldn\u2019t solve everything, but it would turn compassion from a virtue into a reflex.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 14,
+      "completion_tokens": 442,
+      "total_tokens": 456,
+      "cost": 0.00015601,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00015601,
+        "upstream_inference_prompt_cost": 1.31e-06,
+        "upstream_inference_completions_cost": 0.0001547
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 337,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 14,
+    "completion_tokens": 442,
+    "total_tokens": 456,
+    "cost": 0.00015601,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00015601,
+      "upstream_inference_prompt_cost": 1.31e-06,
+      "upstream_inference_completions_cost": 0.0001547
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 337,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "inception/mercury-3",
+  "model_requested": "inception/mercury-3",
+  "provider": "openrouter",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?",
+  "capture_policy": {
+    "model": "inception/mercury-3",
+    "pin": "Inception",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL3_1",
+    "at": 1792677495.5382867,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

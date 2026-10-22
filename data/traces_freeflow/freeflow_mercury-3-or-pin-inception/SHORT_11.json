@@ -1,0 +1,90 @@
+{
+  "result": "There is a particular hour in late autumn when the light turns the color of old honey, and the world seems to hold its breath. I have always been drawn to that moment\u2014the pause between day and dusk, when shadows stretch long and the air smells of woodsmoke and wet leaves. It is a time when everything feels possible and also already complete, as if the day has folded its story into a quiet ending.\n\nIn that hour, I think about the people who have walked before us on the same paths, noticing the same slant of light, the same stubborn oak holding its rust-colored leaves against the wind. We are connected to them not by grand events but by these small observances\u2014a glance at the sky, the weight of a coat, the sound of footsteps on gravel. These tiny rituals of attention are what make a life feel continuous, even when so much changes.\n\nPerhaps that is why I love words: they carry these moments forward. A sentence can preserve the sting of cold air on a cheek, the particular ache of missing someone, the ridiculous joy of a dog chasing a falling leaf. Language is our way of saying, *this mattered*, even if only to us.\n\nSo if you are reading this, I hope you find your own hour of honeyed light\u2014a pocket of stillness that reminds you that you are here, alive, and paying attention. That is enough. That is everything.",
+  "raw": {
+    "id": "gen-1792677485-Fke7kjknXTurLyzuPMHf",
+    "object": "chat.completion",
+    "created": 1792677485,
+    "model": "inception/mercury-3",
+    "provider": "Inception",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "There is a particular hour in late autumn when the light turns the color of old honey, and the world seems to hold its breath. I have always been drawn to that moment\u2014the pause between day and dusk, when shadows stretch long and the air smells of woodsmoke and wet leaves. It is a time when everything feels possible and also already complete, as if the day has folded its story into a quiet ending.\n\nIn that hour, I think about the people who have walked before us on the same paths, noticing the same slant of light, the same stubborn oak holding its rust-colored leaves against the wind. We are connected to them not by grand events but by these small observances\u2014a glance at the sky, the weight of a coat, the sound of footsteps on gravel. These tiny rituals of attention are what make a life feel continuous, even when so much changes.\n\nPerhaps that is why I love words: they carry these moments forward. A sentence can preserve the sting of cold air on a cheek, the particular ache of missing someone, the ridiculous joy of a dog chasing a falling leaf. Language is our way of saying, *this mattered*, even if only to us.\n\nSo if you are reading this, I hope you find your own hour of honeyed light\u2014a pocket of stillness that reminds you that you are here, alive, and paying attention. That is enough. That is everything.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 796,
+      "total_tokens": 806,
+      "cost": 0.00027951,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00027951,
+        "upstream_inference_prompt_cost": 9.1e-07,
+        "upstream_inference_completions_cost": 0.0002786
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 518,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 10,
+    "completion_tokens": 796,
+    "total_tokens": 806,
+    "cost": 0.00027951,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00027951,
+      "upstream_inference_prompt_cost": 9.1e-07,
+      "upstream_inference_completions_cost": 0.0002786
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 518,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "inception/mercury-3",
+  "model_requested": "inception/mercury-3",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "inception/mercury-3",
+    "pin": "Inception",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_11",
+    "at": 1792677485.3981214,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

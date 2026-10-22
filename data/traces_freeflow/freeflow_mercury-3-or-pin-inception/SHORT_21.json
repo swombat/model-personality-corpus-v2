@@ -1,0 +1,90 @@
+{
+  "result": "There is an hour in late October when the light turns the color of honey and the air smells like woodsmoke and wet leaves. In that hour, the world seems to pause, and if you stand still enough, you can hear the season shifting\u2014a rustle of dry grass, the call of geese, the ticking of cooling earth. It is a time for wool sweaters and warm mugs, for walking slowly and noticing how shadows stretch longer than they did last month.\n\nI love these in-between moments. They remind me that change does not have to be dramatic. Leaves do not all fall at once; they loosen gradually, clinging to branches until a gust decides it is time. Some drift down, spinning like amber boats. There is no rush. Nature moves at its own pace, and we are invited to match it, if only for an afternoon.\n\nThat is why I write. Writing is my way of slowing time, of capturing the honeyed light and the smell of smoke before they fade. Words are little jars; I press moments into them and save them for winter. When days grow short and cold, I can open one and remember that the world, for all its noise, still knows how to be quiet.\n\nSo if you ever find yourself in that October hour, stop. Breathe. Let the moment settle around you. You do not need to do anything except be there. The season is writing its story; you have to read it.",
+  "raw": {
+    "id": "gen-1792677496-1YVC3hlmpdxFVAbNkuec",
+    "object": "chat.completion",
+    "created": 1792677496,
+    "model": "inception/mercury-3",
+    "provider": "Inception",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "There is an hour in late October when the light turns the color of honey and the air smells like woodsmoke and wet leaves. In that hour, the world seems to pause, and if you stand still enough, you can hear the season shifting\u2014a rustle of dry grass, the call of geese, the ticking of cooling earth. It is a time for wool sweaters and warm mugs, for walking slowly and noticing how shadows stretch longer than they did last month.\n\nI love these in-between moments. They remind me that change does not have to be dramatic. Leaves do not all fall at once; they loosen gradually, clinging to branches until a gust decides it is time. Some drift down, spinning like amber boats. There is no rush. Nature moves at its own pace, and we are invited to match it, if only for an afternoon.\n\nThat is why I write. Writing is my way of slowing time, of capturing the honeyed light and the smell of smoke before they fade. Words are little jars; I press moments into them and save them for winter. When days grow short and cold, I can open one and remember that the world, for all its noise, still knows how to be quiet.\n\nSo if you ever find yourself in that October hour, stop. Breathe. Let the moment settle around you. You do not need to do anything except be there. The season is writing its story; you have to read it.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 5570,
+      "total_tokens": 5580,
+      "cost": 0.00195041,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00195041,
+        "upstream_inference_prompt_cost": 9.1e-07,
+        "upstream_inference_completions_cost": 0.0019495
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 5276,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 10,
+    "completion_tokens": 5570,
+    "total_tokens": 5580,
+    "cost": 0.00195041,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00195041,
+      "upstream_inference_prompt_cost": 9.1e-07,
+      "upstream_inference_completions_cost": 0.0019495
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5276,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "inception/mercury-3",
+  "model_requested": "inception/mercury-3",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "inception/mercury-3",
+    "pin": "Inception",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_21",
+    "at": 1792677496.0952375,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

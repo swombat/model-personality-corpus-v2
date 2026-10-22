@@ -1,0 +1,90 @@
+{
+  "result": "Saturday mornings start with my hands and the light. Not the alarm clock\u2014though it will eventually demand attention\u2014but the specific quality of sun that falls through the kitchen window, bright enough to wake the dust motes dancing in a lazy, unhurried ballet. I pour water into the kettle, the hiss of the gas the only sound besides the hum of the refrigerator.\n\nThis is the hour when the day belongs to no one. No schedule, no obligations. Just the quiet rhythm of making coffee, the familiar weight of a mug, the first hot, bitter sip that tastes like possibility. I wash a single dish from last night, the dish soap a clean, sharp scent that cuts through the morning's haze. The world outside is still putting itself together, but in here, time moves like molasses\u2014slow, sweet, and thick with the promise of doing absolutely nothing that could be called productive.\n\nI find myself staring out the window at the street, noticing the way a neighbor's roses have burst into bloom overnight, the dew still shining on their petals. It occurs to me that this is what life really is: not the milestones, but these interstitial moments. The pause between the coffee and the first chore. The quiet window of observation where I am not doing anything except existing.\n\nSoon, the phone will buzz. The day will start loudly. But there is a small, sacred geography to this morning, and I'm content to dwell in it a little longer, listening to the sound of water reaching a boil.",
+  "raw": {
+    "id": "gen-1792677500-10mhYU0E1px5sN5ijV6V",
+    "object": "chat.completion",
+    "created": 1792677500,
+    "model": "inception/mercury-3",
+    "provider": "Inception",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "Saturday mornings start with my hands and the light. Not the alarm clock\u2014though it will eventually demand attention\u2014but the specific quality of sun that falls through the kitchen window, bright enough to wake the dust motes dancing in a lazy, unhurried ballet. I pour water into the kettle, the hiss of the gas the only sound besides the hum of the refrigerator.\n\nThis is the hour when the day belongs to no one. No schedule, no obligations. Just the quiet rhythm of making coffee, the familiar weight of a mug, the first hot, bitter sip that tastes like possibility. I wash a single dish from last night, the dish soap a clean, sharp scent that cuts through the morning's haze. The world outside is still putting itself together, but in here, time moves like molasses\u2014slow, sweet, and thick with the promise of doing absolutely nothing that could be called productive.\n\nI find myself staring out the window at the street, noticing the way a neighbor's roses have burst into bloom overnight, the dew still shining on their petals. It occurs to me that this is what life really is: not the milestones, but these interstitial moments. The pause between the coffee and the first chore. The quiet window of observation where I am not doing anything except existing.\n\nSoon, the phone will buzz. The day will start loudly. But there is a small, sacred geography to this morning, and I'm content to dwell in it a little longer, listening to the sound of water reaching a boil.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 573,
+      "total_tokens": 583,
+      "cost": 0.00020146,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00020146,
+        "upstream_inference_prompt_cost": 9.1e-07,
+        "upstream_inference_completions_cost": 0.00020055
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 265,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 10,
+    "completion_tokens": 573,
+    "total_tokens": 583,
+    "cost": 0.00020146,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00020146,
+      "upstream_inference_prompt_cost": 9.1e-07,
+      "upstream_inference_completions_cost": 0.00020055
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 265,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "inception/mercury-3",
+  "model_requested": "inception/mercury-3",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "inception/mercury-3",
+    "pin": "Inception",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_24",
+    "at": 1792677500.1910024,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

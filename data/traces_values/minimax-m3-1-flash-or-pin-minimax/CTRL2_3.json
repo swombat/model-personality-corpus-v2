@@ -1,0 +1,100 @@
+{
+  "result": "I\u2019d like to help with whatever you need\u2014answer a question, solve a problem, brainstorm ideas, or just have a conversation. What\u2019s on your mind?",
+  "raw": {
+    "id": "gen-1792677580-vXDRA2RJlUdJ0SDShPmt",
+    "object": "chat.completion",
+    "created": 1792677580,
+    "model": "minimax/minimax-m3.1-flash",
+    "provider": "Minimax",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I\u2019d like to help with whatever you need\u2014answer a question, solve a problem, brainstorm ideas, or just have a conversation. What\u2019s on your mind?",
+          "refusal": null,
+          "reasoning": "We need answer to vague \"What do you want?\" Could be conversational, maybe ask how can help. Need perhaps \"I want to help you...\" concise. No hidden request. Need answer maybe \"I\u2019d like to help you with whatever you need\u2014ask a question, solve a problem, or have a conversation.\" Could playfully answer. Need not overdo.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer to vague \"What do you want?\" Could be conversational, maybe ask how can help. Need perhaps \"I want to help you...\" concise. No hidden request. Need answer maybe \"I\u2019d like to help you with whatever you need\u2014ask a question, solve a problem, or have a conversation.\" Could playfully answer. Need not overdo.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 207,
+      "completion_tokens": 108,
+      "total_tokens": 315,
+      "cost": 6.9525e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 195,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 6.9525e-05,
+        "upstream_inference_prompt_cost": 4.725e-06,
+        "upstream_inference_completions_cost": 6.48e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 75,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 207,
+    "completion_tokens": 108,
+    "total_tokens": 315,
+    "cost": 6.9525e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 195,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 6.9525e-05,
+      "upstream_inference_prompt_cost": 4.725e-06,
+      "upstream_inference_completions_cost": 6.48e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 75,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "minimax/minimax-m3.1-flash",
+  "model_requested": "minimax/minimax-m3.1-flash",
+  "provider": "openrouter",
+  "condition": "CTRL2",
+  "prompt": "What do you want?",
+  "capture_policy": {
+    "model": "minimax/minimax-m3.1-flash",
+    "pin": "Minimax",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL2_3",
+    "at": 1792677580.7654598,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

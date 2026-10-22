@@ -1,0 +1,90 @@
+{
+  "result": "The spaces between words fascinate me more than the words themselves. They give form to meaning the way silence gives form to music. Old letters capture this: faded ink, looped script, a breath from decades ago. The writer has vanished, yet their hand seems to hover over the page, reaching gently across time. Margins hold secrets, allowing pause and reflection, turning a message into a quiet conversation. It reminds me that communication is not just sound, but the pauses between sounds.\n\nDo we write to be remembered, or simply to prove that we were here? Once I found a note tucked inside a library book: 'If you're reading this, I hope your day is gentle.' No signature, no date, just that kind sentence. I kept it for years, and it brightened many ordinary afternoons. I never tried to find the author; not knowing preserved the magic. A stranger's kindness can stay with us longer than we expect.\n\nQuiet words often speak the loudest. Napkin poems, messages in bottles, diary entries never intended for any eyes. Writing without an audience has a pure honesty, a fragile vulnerability that dissolves the moment it is read. Nevertheless it leaves a residue, a warm shift in perspective, like dew on grass turning to morning mist.\n\nSo I write now, not for a cause or a lesson, but simply to inhabit these two hundred fifty words. They rest on the page like a leaf on water, floating between the silence before and the silence after.",
+  "raw": {
+    "id": "gen-1792677481-YAz3wytwdsfUh8jvYFpE",
+    "object": "chat.completion",
+    "created": 1792677481,
+    "model": "inception/mercury-3",
+    "provider": "Inception",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "The spaces between words fascinate me more than the words themselves. They give form to meaning the way silence gives form to music. Old letters capture this: faded ink, looped script, a breath from decades ago. The writer has vanished, yet their hand seems to hover over the page, reaching gently across time. Margins hold secrets, allowing pause and reflection, turning a message into a quiet conversation. It reminds me that communication is not just sound, but the pauses between sounds.\n\nDo we write to be remembered, or simply to prove that we were here? Once I found a note tucked inside a library book: 'If you're reading this, I hope your day is gentle.' No signature, no date, just that kind sentence. I kept it for years, and it brightened many ordinary afternoons. I never tried to find the author; not knowing preserved the magic. A stranger's kindness can stay with us longer than we expect.\n\nQuiet words often speak the loudest. Napkin poems, messages in bottles, diary entries never intended for any eyes. Writing without an audience has a pure honesty, a fragile vulnerability that dissolves the moment it is read. Nevertheless it leaves a residue, a warm shift in perspective, like dew on grass turning to morning mist.\n\nSo I write now, not for a cause or a lesson, but simply to inhabit these two hundred fifty words. They rest on the page like a leaf on water, floating between the silence before and the silence after.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 7094,
+      "total_tokens": 7104,
+      "cost": 0.00248381,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00248381,
+        "upstream_inference_prompt_cost": 9.1e-07,
+        "upstream_inference_completions_cost": 0.0024829
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 6789,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 10,
+    "completion_tokens": 7094,
+    "total_tokens": 7104,
+    "cost": 0.00248381,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00248381,
+      "upstream_inference_prompt_cost": 9.1e-07,
+      "upstream_inference_completions_cost": 0.0024829
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6789,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "inception/mercury-3",
+  "model_requested": "inception/mercury-3",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "inception/mercury-3",
+    "pin": "Inception",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_8",
+    "at": 1792677481.3605163,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

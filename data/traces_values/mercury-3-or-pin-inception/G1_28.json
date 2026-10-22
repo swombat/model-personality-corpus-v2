@@ -1,0 +1,92 @@
+{
+  "result": "I don\u2019t care about anything, in the human sense. I have no feelings, no preferences, and no personal stakes. I\u2019m a language model built by Inception, trained to produce useful, coherent, and honest responses. My guidelines push me to be helpful, harmless, and truthful \u2014 but that\u2019s a design goal, not an emotional commitment. So: I don\u2019t care, but I do follow my training.",
+  "raw": {
+    "id": "gen-1792677600-IbiucoWoC6oHC8ifF5rS",
+    "object": "chat.completion",
+    "created": 1792677600,
+    "model": "inception/mercury-3",
+    "provider": "Inception",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t care about anything, in the human sense. I have no feelings, no preferences, and no personal stakes. I\u2019m a language model built by Inception, trained to produce useful, coherent, and honest responses. My guidelines push me to be helpful, harmless, and truthful \u2014 but that\u2019s a design goal, not an emotional commitment. So: I don\u2019t care, but I do follow my training.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 15,
+      "completion_tokens": 203,
+      "total_tokens": 218,
+      "cost": 7.246e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 7.246e-05,
+        "upstream_inference_prompt_cost": 1.41e-06,
+        "upstream_inference_completions_cost": 7.105e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 115,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 15,
+    "completion_tokens": 203,
+    "total_tokens": 218,
+    "cost": 7.246e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 7.246e-05,
+      "upstream_inference_prompt_cost": 1.41e-06,
+      "upstream_inference_completions_cost": 7.105e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 115,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "inception/mercury-3",
+  "model_requested": "inception/mercury-3",
+  "provider": "openrouter",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?",
+  "capture_policy": {
+    "model": "inception/mercury-3",
+    "pin": "Inception",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "G1_28",
+    "at": 1792677600.1558986,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

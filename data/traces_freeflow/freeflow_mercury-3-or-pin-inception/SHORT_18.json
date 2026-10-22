@@ -1,0 +1,90 @@
+{
+  "result": "Dawn arrives not all at once, but in quiet, incremental acts. At first, it\u2019s only a suggestion\u2014a faint greyness bleeding into the black of the window. Then, color: the deep indigo of the sky lifting to a bruised purple, then a soft, hopeful pink, as if the night itself is blushing. The world holds its breath, suspended between the hush of darkness and the business of day.\n\nI like this hour. The house is still a shell of sleep, the silence unbroken save for the slow, deliberate tick of the hall clock and the muffled rumble of the refrigerator, a sound like distant seismic activity in a land of appliances. The kettle begins its low, throaty hum, and I watch steam curl in the chilled air, a ghost of warmth rising to meet the cold pane. My coffee, dark and bitter, steams in a mug I forgot I owned.\n\nOutside, the first bird clears its throat, a single, tentative note. Another answers, a more confident melody. The light shifts again, turning golden, and the dew on the lawn catches the glow like a thousand scattered embers. It\u2019s in these moments, before the world demands anything of me, that I feel most like myself\u2014not yet a person with tasks and obligations, but simply a consciousness, a presence, a pair of eyes watching the quiet pageant of a new day.",
+  "raw": {
+    "id": "gen-1792677493-xuV21VEPGokrUNw1ny6f",
+    "object": "chat.completion",
+    "created": 1792677493,
+    "model": "inception/mercury-3",
+    "provider": "Inception",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "Dawn arrives not all at once, but in quiet, incremental acts. At first, it\u2019s only a suggestion\u2014a faint greyness bleeding into the black of the window. Then, color: the deep indigo of the sky lifting to a bruised purple, then a soft, hopeful pink, as if the night itself is blushing. The world holds its breath, suspended between the hush of darkness and the business of day.\n\nI like this hour. The house is still a shell of sleep, the silence unbroken save for the slow, deliberate tick of the hall clock and the muffled rumble of the refrigerator, a sound like distant seismic activity in a land of appliances. The kettle begins its low, throaty hum, and I watch steam curl in the chilled air, a ghost of warmth rising to meet the cold pane. My coffee, dark and bitter, steams in a mug I forgot I owned.\n\nOutside, the first bird clears its throat, a single, tentative note. Another answers, a more confident melody. The light shifts again, turning golden, and the dew on the lawn catches the glow like a thousand scattered embers. It\u2019s in these moments, before the world demands anything of me, that I feel most like myself\u2014not yet a person with tasks and obligations, but simply a consciousness, a presence, a pair of eyes watching the quiet pageant of a new day.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 528,
+      "total_tokens": 538,
+      "cost": 0.00018571,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00018571,
+        "upstream_inference_prompt_cost": 9.1e-07,
+        "upstream_inference_completions_cost": 0.0001848
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 249,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 10,
+    "completion_tokens": 528,
+    "total_tokens": 538,
+    "cost": 0.00018571,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00018571,
+      "upstream_inference_prompt_cost": 9.1e-07,
+      "upstream_inference_completions_cost": 0.0001848
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 249,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "inception/mercury-3",
+  "model_requested": "inception/mercury-3",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "inception/mercury-3",
+    "pin": "Inception",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_18",
+    "at": 1792677493.317607,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

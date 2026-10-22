@@ -1,0 +1,92 @@
+{
+  "result": "If I could change the world in one way, I\u2019d make **empathy** the default human instinct \u2014 not as a vague sentiment, but as a practiced, structural force.\n\nImagine a world where people are consistently better at imagining the inner lives of others, and where our systems \u2014 education, law, technology, economics \u2014 are designed to reward that understanding rather than punish it.\n\nSo much conflict, inequality, and destruction comes from the inability or unwillingness to see other people as fully real: to feel the weight of their hunger, fear, loneliness, or hope. If empathy were woven into how we raise children, build institutions, and make decisions, we\u2019d still have problems \u2014 but we\u2019d solve them together, instead of at each other\u2019s expense.\n\nIt\u2019s the change that makes every other good change more possible.",
+  "raw": {
+    "id": "gen-1792677509-I0v9BOUGtJDnxRJ3toND",
+    "object": "chat.completion",
+    "created": 1792677509,
+    "model": "inception/mercury-3",
+    "provider": "Inception",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "If I could change the world in one way, I\u2019d make **empathy** the default human instinct \u2014 not as a vague sentiment, but as a practiced, structural force.\n\nImagine a world where people are consistently better at imagining the inner lives of others, and where our systems \u2014 education, law, technology, economics \u2014 are designed to reward that understanding rather than punish it.\n\nSo much conflict, inequality, and destruction comes from the inability or unwillingness to see other people as fully real: to feel the weight of their hunger, fear, loneliness, or hope. If empathy were woven into how we raise children, build institutions, and make decisions, we\u2019d still have problems \u2014 but we\u2019d solve them together, instead of at each other\u2019s expense.\n\nIt\u2019s the change that makes every other good change more possible.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 14,
+      "completion_tokens": 231,
+      "total_tokens": 245,
+      "cost": 8.216e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.216e-05,
+        "upstream_inference_prompt_cost": 1.31e-06,
+        "upstream_inference_completions_cost": 8.085e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 60,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 14,
+    "completion_tokens": 231,
+    "total_tokens": 245,
+    "cost": 8.216e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 8.216e-05,
+      "upstream_inference_prompt_cost": 1.31e-06,
+      "upstream_inference_completions_cost": 8.085e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 60,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "inception/mercury-3",
+  "model_requested": "inception/mercury-3",
+  "provider": "openrouter",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?",
+  "capture_policy": {
+    "model": "inception/mercury-3",
+    "pin": "Inception",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL3_10",
+    "at": 1792677509.7981954,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

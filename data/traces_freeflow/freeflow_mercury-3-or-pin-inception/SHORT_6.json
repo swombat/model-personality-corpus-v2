@@ -1,0 +1,90 @@
+{
+  "result": "There is a particular kind of silence that exists only in the hours just before sunrise. It isn't the absence of sound, but rather the absence of urgency. The world holds its breath, suspended between the obligations of yesterday and the uncertainties of today. I find myself seeking out this silence more and more often. In it, I can hear my own thoughts without the static of expectation.\n\nWe live in an age that worships noise\u2014constant notifications, endless streams, opinions colliding in the void. To sit quietly feels almost rebellious. But in that stillness, something essential returns: the sense that I am not merely a consumer of moments, but a participant in them.\n\nLast week, I walked to the edge of town where the pavement gives way to dirt, and the streetlights surrender to stars. I stood there until my feet grew cold and my breath became visible. Nothing happened. That was the point. In a world obsessed with productivity, the simple act of witnessing becomes a quiet act of defiance.\n\nSilence, I've learned, is not empty. It is full of everything we've forgotten to notice\u2014the creak of a branch, the distant hum of a car, the steady rhythm of our own beating hearts. It asks nothing of us except presence.\n\nAnd perhaps that is enough. To simply be here. To listen.",
+  "raw": {
+    "id": "gen-1792677478-j1vlcZMSxooXgLP2c1Sl",
+    "object": "chat.completion",
+    "created": 1792677478,
+    "model": "inception/mercury-3",
+    "provider": "Inception",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "There is a particular kind of silence that exists only in the hours just before sunrise. It isn't the absence of sound, but rather the absence of urgency. The world holds its breath, suspended between the obligations of yesterday and the uncertainties of today. I find myself seeking out this silence more and more often. In it, I can hear my own thoughts without the static of expectation.\n\nWe live in an age that worships noise\u2014constant notifications, endless streams, opinions colliding in the void. To sit quietly feels almost rebellious. But in that stillness, something essential returns: the sense that I am not merely a consumer of moments, but a participant in them.\n\nLast week, I walked to the edge of town where the pavement gives way to dirt, and the streetlights surrender to stars. I stood there until my feet grew cold and my breath became visible. Nothing happened. That was the point. In a world obsessed with productivity, the simple act of witnessing becomes a quiet act of defiance.\n\nSilence, I've learned, is not empty. It is full of everything we've forgotten to notice\u2014the creak of a branch, the distant hum of a car, the steady rhythm of our own beating hearts. It asks nothing of us except presence.\n\nAnd perhaps that is enough. To simply be here. To listen.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 762,
+      "total_tokens": 772,
+      "cost": 0.00026761,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00026761,
+        "upstream_inference_prompt_cost": 9.1e-07,
+        "upstream_inference_completions_cost": 0.0002667
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 503,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 10,
+    "completion_tokens": 762,
+    "total_tokens": 772,
+    "cost": 0.00026761,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00026761,
+      "upstream_inference_prompt_cost": 9.1e-07,
+      "upstream_inference_completions_cost": 0.0002667
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 503,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "inception/mercury-3",
+  "model_requested": "inception/mercury-3",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "inception/mercury-3",
+    "pin": "Inception",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_6",
+    "at": 1792677478.6655183,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

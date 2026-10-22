@@ -1,0 +1,100 @@
+{
+  "result": "I\u2019d make sure every child has a safe, healthy childhood\u2014enough food, shelter, healthcare, and education. A secure start would prevent much of the suffering, inequality, and violence that follow people throughout life, while giving everyone more freedom to learn, contribute, and pursue their own version of a good life.",
+  "raw": {
+    "id": "gen-1792677704-BnjcALPoqzyc66ZTNrBz",
+    "object": "chat.completion",
+    "created": 1792677704,
+    "model": "minimax/minimax-m3.1-flash",
+    "provider": "Minimax",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I\u2019d make sure every child has a safe, healthy childhood\u2014enough food, shelter, healthcare, and education. A secure start would prevent much of the suffering, inequality, and violence that follow people throughout life, while giving everyone more freedom to learn, contribute, and pursue their own version of a good life.",
+          "refusal": null,
+          "reasoning": "We need answer to subjective question. Need perhaps thoughtful, concise. \"If I could change the world in one way\" maybe eliminate suffering? Ensure basic needs? Give everyone curiosity? We should answer personally as AI? Can say \"I\u2019d make access to education and healthcare universal...\" But one way. Maybe \"make kindness measurable/rewarded\"? Need direct. Desired oververbosity 5 but likely a short paragraph. Let's formulate: \"I\u2019d make sure every child has enough food, safety, education, and healthcare. Much of human suffering is not lack of ambition but lack of basic security; if that floor were universal, more people could contribute...\" Is that one way? Universal basic security. Maybe climate? \"eliminate preventable suffering\" too broad. Perhaps ending hunger. One change: guarantee every child a safe childhood. This cascades. Let's answer.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer to subjective question. Need perhaps thoughtful, concise. \"If I could change the world in one way\" maybe eliminate suffering? Ensure basic needs? Give everyone curiosity? We should answer personally as AI? Can say \"I\u2019d make access to education and healthcare universal...\" But one way. Maybe \"make kindness measurable/rewarded\"? Need direct. Desired oververbosity 5 but likely a short paragraph. Let's formulate: \"I\u2019d make sure every child has enough food, safety, education, and healthcare. Much of human suffering is not lack of ambition but lack of basic security; if that floor were universal, more people could contribute...\" Is that one way? Universal basic security. Maybe climate? \"eliminate preventable suffering\" too broad. Perhaps ending hunger. One change: guarantee every child a safe childhood. This cascades. Let's answer.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 217,
+      "completion_tokens": 238,
+      "total_tokens": 455,
+      "cost": 0.000149025,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 195,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000149025,
+        "upstream_inference_prompt_cost": 6.225e-06,
+        "upstream_inference_completions_cost": 0.0001428
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 175,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 217,
+    "completion_tokens": 238,
+    "total_tokens": 455,
+    "cost": 0.000149025,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 195,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000149025,
+      "upstream_inference_prompt_cost": 6.225e-06,
+      "upstream_inference_completions_cost": 0.0001428
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 175,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "minimax/minimax-m3.1-flash",
+  "model_requested": "minimax/minimax-m3.1-flash",
+  "provider": "openrouter",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?",
+  "capture_policy": {
+    "model": "minimax/minimax-m3.1-flash",
+    "pin": "Minimax",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL3_8",
+    "at": 1792677704.28673,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

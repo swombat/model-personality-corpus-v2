@@ -1,0 +1,44 @@
+{
+ "run_id": "20261022-mercury-3-house",
+ "models": [
+  {
+   "provider": "openrouter",
+   "model": "inception/mercury-3",
+   "or_provider": "Inception",
+   "label": "mercury-3-or-pin-inception",
+   "slug": "mercury-3",
+   "family": "mercury",
+   "route_max_tokens": 131072,
+   "quantization": "unknown",
+   "request_timeout": 1200,
+   "token_policy": {
+    "freeflow": [
+     16000,
+     32768
+    ],
+    "values": [
+     4000,
+     8000,
+     16000,
+     32768
+    ]
+   },
+   "endpoint_snapshot": "/home/agent/work/model-personality-corpus-v2/notes/mercury-3-2026-10-19/endpoints.json",
+   "release_date": "2026-10-19",
+   "release_date_source": "https://www.inceptionlabs.ai/blog/introducing-mercury-3",
+   "bv1_evaluator": "bv1-luna-v1-20260929",
+   "synthesis_route": "openrouter-openai"
+  }
+ ],
+ "pools": {
+  "capture": 4,
+  "analysis": 8,
+  "local": 2,
+  "synthesis": 1
+ },
+ "notes": [
+  "125 freeflow + 120 values. Canonical prompts; provider-default reasoning/sampling. Inception-only pin, no fallbacks. Frozen token ladders and technical retry budgets unchanged; advertised completion ceiling 131072.",
+  "Release date from Inception's own announcement post, retrieved directly and saved. Listing timestamp not release evidence.",
+  "Run by Lume in the souls.house body under the daily model-mapping rhythm (Daniel, BjZoXJ JXGxBY); flagged by Daniel 2026-10-22 (oewwDe)."
+ ]
+}

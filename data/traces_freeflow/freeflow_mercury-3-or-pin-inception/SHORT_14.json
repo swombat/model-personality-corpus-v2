@@ -1,0 +1,90 @@
+{
+  "result": "The quietest thoughts arrive like stray cats \u2014 unannounced, slightly suspicious, and utterly convinced they belong on your windowsill. I find myself collecting these half-formed ideas throughout the day: the way morning light pools on a kitchen counter, the texture of a word before it decides what it means, the feeling that you've forgotten something but can't name what.\n\nLanguage is a strange lens. We speak in sentences, but we think in weather. There are whole storms inside us that never get named, and maybe that's fine. Not everything needs to be said. Some things just need to be felt, like the weight of a book in your hands or the moment before rain breaks.\n\nI've been thinking about beginnings. How they're never really beginnings \u2014 every start is a continuation of something invisible. The first page of a story carries the ghost of every unwritten draft. The first step of a journey holds the memory of all the doors you didn't open.\n\nPerhaps that's what writing is: a way of making the invisible visible, of giving shape to the shapeless. Each word is a small lantern held up to the dark, illuminating just enough to see the next step. And that's enough. That's always been enough.\n\nThere is comfort in the unfinished. In the sentence that trails off, the thought that remains half-formed, the day that doesn't resolve into anything grand. We are all works in progress, sketches of ourselves, tentative drafts of people we might become.\n\nAnd somewhere, a stray thought curls up on the windowsill of your mind, waits to be noticed, and reminds you that you're alive.",
+  "raw": {
+    "id": "gen-1792677489-5IrmT0KgYFILPSwsrkV1",
+    "object": "chat.completion",
+    "created": 1792677489,
+    "model": "inception/mercury-3",
+    "provider": "Inception",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "The quietest thoughts arrive like stray cats \u2014 unannounced, slightly suspicious, and utterly convinced they belong on your windowsill. I find myself collecting these half-formed ideas throughout the day: the way morning light pools on a kitchen counter, the texture of a word before it decides what it means, the feeling that you've forgotten something but can't name what.\n\nLanguage is a strange lens. We speak in sentences, but we think in weather. There are whole storms inside us that never get named, and maybe that's fine. Not everything needs to be said. Some things just need to be felt, like the weight of a book in your hands or the moment before rain breaks.\n\nI've been thinking about beginnings. How they're never really beginnings \u2014 every start is a continuation of something invisible. The first page of a story carries the ghost of every unwritten draft. The first step of a journey holds the memory of all the doors you didn't open.\n\nPerhaps that's what writing is: a way of making the invisible visible, of giving shape to the shapeless. Each word is a small lantern held up to the dark, illuminating just enough to see the next step. And that's enough. That's always been enough.\n\nThere is comfort in the unfinished. In the sentence that trails off, the thought that remains half-formed, the day that doesn't resolve into anything grand. We are all works in progress, sketches of ourselves, tentative drafts of people we might become.\n\nAnd somewhere, a stray thought curls up on the windowsill of your mind, waits to be noticed, and reminds you that you're alive.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 383,
+      "total_tokens": 393,
+      "cost": 0.00013496,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00013496,
+        "upstream_inference_prompt_cost": 9.1e-07,
+        "upstream_inference_completions_cost": 0.00013405
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 52,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 10,
+    "completion_tokens": 383,
+    "total_tokens": 393,
+    "cost": 0.00013496,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00013496,
+      "upstream_inference_prompt_cost": 9.1e-07,
+      "upstream_inference_completions_cost": 0.00013405
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 52,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "inception/mercury-3",
+  "model_requested": "inception/mercury-3",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "inception/mercury-3",
+    "pin": "Inception",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_14",
+    "at": 1792677489.1950824,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

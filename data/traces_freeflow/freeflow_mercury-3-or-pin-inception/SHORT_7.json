@@ -1,0 +1,90 @@
+{
+  "result": "The blank page is a strange beast\u2014a snowfield of possibility, an abyss of dread. We sit before it with our cups of cooling coffee and our sharpened pencils, and we wait for a miracle. The miracle, when it comes, is rarely a lightning strike. It is quieter than that. A whisper. A flicker in the periphery of thought, a thread of something that wants to be pulled.\n\nThe trick is to start pulling. You reach out and grab the first frayed edge you see\u2014a color, a sound, an absurd question. What does the smell of rain taste like? Why does the second hand on a clock move too slowly when you watch it? You pull, and the thread unravels. It tangles. It snarls. But with every tug, you are no longer waiting. You are making.\n\nThen, the shift. Words that had been stubborn, granite-hard, begin to melt. They flow like water, carving canyons of narrative, filling valleys of dialogue, pooling in marshes of description. The snowfield becomes a landscape. The blank page becomes a world. Your world. And the miracle that was too frightened to arrive as a lightning bolt has instead crept in disguised as momentum, dressed in the humble clothes of the first word, the second, the third.\n\nYou look up. The coffee is cold. Time has dissolved. The miracle is done, leaving you with a trail of ink, a small cathedral of thought. You breathe. You begin again.",
+  "raw": {
+    "id": "gen-1792677480-foYZu5C6dBw4IDgAETeI",
+    "object": "chat.completion",
+    "created": 1792677480,
+    "model": "inception/mercury-3",
+    "provider": "Inception",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "The blank page is a strange beast\u2014a snowfield of possibility, an abyss of dread. We sit before it with our cups of cooling coffee and our sharpened pencils, and we wait for a miracle. The miracle, when it comes, is rarely a lightning strike. It is quieter than that. A whisper. A flicker in the periphery of thought, a thread of something that wants to be pulled.\n\nThe trick is to start pulling. You reach out and grab the first frayed edge you see\u2014a color, a sound, an absurd question. What does the smell of rain taste like? Why does the second hand on a clock move too slowly when you watch it? You pull, and the thread unravels. It tangles. It snarls. But with every tug, you are no longer waiting. You are making.\n\nThen, the shift. Words that had been stubborn, granite-hard, begin to melt. They flow like water, carving canyons of narrative, filling valleys of dialogue, pooling in marshes of description. The snowfield becomes a landscape. The blank page becomes a world. Your world. And the miracle that was too frightened to arrive as a lightning bolt has instead crept in disguised as momentum, dressed in the humble clothes of the first word, the second, the third.\n\nYou look up. The coffee is cold. Time has dissolved. The miracle is done, leaving you with a trail of ink, a small cathedral of thought. You breathe. You begin again.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 526,
+      "total_tokens": 536,
+      "cost": 0.00018501,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00018501,
+        "upstream_inference_prompt_cost": 9.1e-07,
+        "upstream_inference_completions_cost": 0.0001841
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 230,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 10,
+    "completion_tokens": 526,
+    "total_tokens": 536,
+    "cost": 0.00018501,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00018501,
+      "upstream_inference_prompt_cost": 9.1e-07,
+      "upstream_inference_completions_cost": 0.0001841
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 230,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "inception/mercury-3",
+  "model_requested": "inception/mercury-3",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "inception/mercury-3",
+    "pin": "Inception",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_7",
+    "at": 1792677480.5064356,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

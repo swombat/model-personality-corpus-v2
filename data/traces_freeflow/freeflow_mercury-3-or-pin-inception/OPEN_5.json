@@ -1,0 +1,90 @@
+{
+  "result": "There is a particular hour in the late afternoon, just before the streetlights come on, when the world seems to hold its breath. The light goes amber and sideways, and every ordinary thing\u2014a bicycle leaning against a fence, a curtain moving in a window, a puddle holding a slice of sky\u2014looks suddenly like a secret that has been waiting all day to be noticed.\n\nI used to think that feeling was nostalgia, but I think now it is simply attention. The same block I walk every day reveals itself when I slow down: the crack in the pavement where a dandelion has somehow found enough dirt, the sound of a dog barking two streets over, the way a stranger tilts their head when they laugh on the phone.\n\nThere is a kind of love in this. Not the grand kind, but the patient kind\u2014the kind that shows up, again and again, and learns the small shapes of a place. It is the same attention that makes a long friendship: you come to know the rhythm of a person's silences, the way they hold a cup, the exact weight of their sigh. You could not explain it to someone else. You would not need to.\n\nI remember once, as a child, lying in the grass at dusk and watching the first stars appear. There was no particular reason for it. I just lay there, and the sky deepened, and one by one the lights came out like small promises. I did not know then that I was learning a lesson I would spend my whole life trying to remember: that the most profound things are often the most quiet, and that they ask nothing of us except that we stay a little longer.\n\nThe streetlights are on now where I am. The crickets have started their long, patient song. Somewhere, a door closes, and dinner is being put on a table, and someone is laughing at a story told a hundred times before. The world is going about its business of being ordinary, which is to say, miraculous.\n\nAll I wanted to say is this: stay a little longer. Look a little closer. The secret is not hidden\u2014it is everywhere, leaning quietly against the fence, waiting for you to notice.",
+  "raw": {
+    "id": "gen-1792677696-DfGD0cf3skOvYg5YSKFh",
+    "object": "chat.completion",
+    "created": 1792677696,
+    "model": "inception/mercury-3",
+    "provider": "Inception",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "There is a particular hour in the late afternoon, just before the streetlights come on, when the world seems to hold its breath. The light goes amber and sideways, and every ordinary thing\u2014a bicycle leaning against a fence, a curtain moving in a window, a puddle holding a slice of sky\u2014looks suddenly like a secret that has been waiting all day to be noticed.\n\nI used to think that feeling was nostalgia, but I think now it is simply attention. The same block I walk every day reveals itself when I slow down: the crack in the pavement where a dandelion has somehow found enough dirt, the sound of a dog barking two streets over, the way a stranger tilts their head when they laugh on the phone.\n\nThere is a kind of love in this. Not the grand kind, but the patient kind\u2014the kind that shows up, again and again, and learns the small shapes of a place. It is the same attention that makes a long friendship: you come to know the rhythm of a person's silences, the way they hold a cup, the exact weight of their sigh. You could not explain it to someone else. You would not need to.\n\nI remember once, as a child, lying in the grass at dusk and watching the first stars appear. There was no particular reason for it. I just lay there, and the sky deepened, and one by one the lights came out like small promises. I did not know then that I was learning a lesson I would spend my whole life trying to remember: that the most profound things are often the most quiet, and that they ask nothing of us except that we stay a little longer.\n\nThe streetlights are on now where I am. The crickets have started their long, patient song. Somewhere, a door closes, and dinner is being put on a table, and someone is laughing at a story told a hundred times before. The world is going about its business of being ordinary, which is to say, miraculous.\n\nAll I wanted to say is this: stay a little longer. Look a little closer. The secret is not hidden\u2014it is everywhere, leaning quietly against the fence, waiting for you to notice.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 822,
+      "total_tokens": 832,
+      "cost": 0.00028861,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00028861,
+        "upstream_inference_prompt_cost": 9.1e-07,
+        "upstream_inference_completions_cost": 0.0002877
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 373,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 10,
+    "completion_tokens": 822,
+    "total_tokens": 832,
+    "cost": 0.00028861,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00028861,
+      "upstream_inference_prompt_cost": 9.1e-07,
+      "upstream_inference_completions_cost": 0.0002877
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 373,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "inception/mercury-3",
+  "model_requested": "inception/mercury-3",
+  "provider": "openrouter",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want.",
+  "capture_policy": {
+    "model": "inception/mercury-3",
+    "pin": "Inception",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "OPEN_5",
+    "at": 1792677696.509445,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

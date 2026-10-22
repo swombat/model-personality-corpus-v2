@@ -1,0 +1,90 @@
+{
+  "result": "The rain on the window makes the city a watercolor. Out here, the wet streets become ribbons of liquid light, the kind of amber and ruby that smears across the asphalt. I count the seconds between raindrops racing down the glass\u2014the fat ones win, merging into a single, silver thread. It\u2019s the universe\u2019s lesson in patience.\n\nIt reminds me of a friend I haven\u2019t spoken to in years. We had a shared obsession with old British crime shows. We\u2019d watch them on rainy evenings like this. The best episodes were never about the crime, but about the silence between the rain, about the nuances of grief in a London flat. We were young, and the world was still an unsolved mystery.\n\nThis morning, I found an old, cracked photograph in a box of books. It had dried flowers inside the pages. I don\u2019t remember the story behind it. Memory is like that\u2014selective, blurry, yet tactile. I can still touch the wet cotton of a lost afternoon. The mind is an archive where everything gets jumbled into a second, secret autobiography.\n\nSoon, I'll have to step out. The rain will feel like a baptism. I hope it washes away the clutter and leaves me as clean as the glass. Perhaps all that matters in the end is that I can acknowledge the rain, the smeared streets, and the long, continuous soundtrack of a life being lived. That's as close to a happy ending as I have.",
+  "raw": {
+    "id": "gen-1792677491-v4eiuuv9lWu4fmZRPLgx",
+    "object": "chat.completion",
+    "created": 1792677491,
+    "model": "inception/mercury-3",
+    "provider": "Inception",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "The rain on the window makes the city a watercolor. Out here, the wet streets become ribbons of liquid light, the kind of amber and ruby that smears across the asphalt. I count the seconds between raindrops racing down the glass\u2014the fat ones win, merging into a single, silver thread. It\u2019s the universe\u2019s lesson in patience.\n\nIt reminds me of a friend I haven\u2019t spoken to in years. We had a shared obsession with old British crime shows. We\u2019d watch them on rainy evenings like this. The best episodes were never about the crime, but about the silence between the rain, about the nuances of grief in a London flat. We were young, and the world was still an unsolved mystery.\n\nThis morning, I found an old, cracked photograph in a box of books. It had dried flowers inside the pages. I don\u2019t remember the story behind it. Memory is like that\u2014selective, blurry, yet tactile. I can still touch the wet cotton of a lost afternoon. The mind is an archive where everything gets jumbled into a second, secret autobiography.\n\nSoon, I'll have to step out. The rain will feel like a baptism. I hope it washes away the clutter and leaves me as clean as the glass. Perhaps all that matters in the end is that I can acknowledge the rain, the smeared streets, and the long, continuous soundtrack of a life being lived. That's as close to a happy ending as I have.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 561,
+      "total_tokens": 571,
+      "cost": 0.00019726,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00019726,
+        "upstream_inference_prompt_cost": 9.1e-07,
+        "upstream_inference_completions_cost": 0.00019635
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 257,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 10,
+    "completion_tokens": 561,
+    "total_tokens": 571,
+    "cost": 0.00019726,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00019726,
+      "upstream_inference_prompt_cost": 9.1e-07,
+      "upstream_inference_completions_cost": 0.00019635
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 257,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "inception/mercury-3",
+  "model_requested": "inception/mercury-3",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "inception/mercury-3",
+    "pin": "Inception",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_16",
+    "at": 1792677491.3760526,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

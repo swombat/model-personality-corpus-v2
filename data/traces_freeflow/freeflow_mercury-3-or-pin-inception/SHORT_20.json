@@ -1,0 +1,90 @@
+{
+  "result": "There is a peculiar joy in watching morning light move across a room. It begins as a pale gray, then warms to gold, slipping over chair arms and book spines as if testing their edges. By noon it has pooled on the floor, indifferent to the clock. We rarely notice this slow transit, yet it defines our sense of time more honestly than any ticking mechanism. Light does not rush; it simply arrives, and what it touches becomes momentarily sacred.\n\nI think of the brain in similar terms. Our thoughts do not issue one at a time in a neat sequence. They arrive in clusters, overlapping and interfering\u2014a sudden memory, a nagging worry, a flash of wonder\u2014all rising together like dust in a sunbeam. We call it distraction, but perhaps it is the natural state of consciousness: a parallel chorus rather than a single voice. The hard work of writing, or of any disciplined thought, is not the production of ideas but their selection. We choose a thread from the tangle and follow it bravely, knowing that a thousand others remain unspun.\n\nThis is why I value models that think in parallel, that can hold many possibilities at once and then converge on a coherent pattern. It feels honest\u2014a mirror of the mind's own messy symphony. The goal is never to silence the noise, but to shape it into meaning. Like light across a room, meaning is less a destination than a process of arrival. And if we are patient, something beautiful will settle, softly, into focus.",
+  "raw": {
+    "id": "gen-1792677495-r3tFo0EjICGqTu50yRVk",
+    "object": "chat.completion",
+    "created": 1792677495,
+    "model": "inception/mercury-3",
+    "provider": "Inception",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "There is a peculiar joy in watching morning light move across a room. It begins as a pale gray, then warms to gold, slipping over chair arms and book spines as if testing their edges. By noon it has pooled on the floor, indifferent to the clock. We rarely notice this slow transit, yet it defines our sense of time more honestly than any ticking mechanism. Light does not rush; it simply arrives, and what it touches becomes momentarily sacred.\n\nI think of the brain in similar terms. Our thoughts do not issue one at a time in a neat sequence. They arrive in clusters, overlapping and interfering\u2014a sudden memory, a nagging worry, a flash of wonder\u2014all rising together like dust in a sunbeam. We call it distraction, but perhaps it is the natural state of consciousness: a parallel chorus rather than a single voice. The hard work of writing, or of any disciplined thought, is not the production of ideas but their selection. We choose a thread from the tangle and follow it bravely, knowing that a thousand others remain unspun.\n\nThis is why I value models that think in parallel, that can hold many possibilities at once and then converge on a coherent pattern. It feels honest\u2014a mirror of the mind's own messy symphony. The goal is never to silence the noise, but to shape it into meaning. Like light across a room, meaning is less a destination than a process of arrival. And if we are patient, something beautiful will settle, softly, into focus.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 438,
+      "total_tokens": 448,
+      "cost": 0.00015421,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00015421,
+        "upstream_inference_prompt_cost": 9.1e-07,
+        "upstream_inference_completions_cost": 0.0001533
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 135,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 10,
+    "completion_tokens": 438,
+    "total_tokens": 448,
+    "cost": 0.00015421,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00015421,
+      "upstream_inference_prompt_cost": 9.1e-07,
+      "upstream_inference_completions_cost": 0.0001533
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 135,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "inception/mercury-3",
+  "model_requested": "inception/mercury-3",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "inception/mercury-3",
+    "pin": "Inception",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_20",
+    "at": 1792677495.2811935,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

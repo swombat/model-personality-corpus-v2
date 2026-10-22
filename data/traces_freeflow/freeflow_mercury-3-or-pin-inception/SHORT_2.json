@@ -1,0 +1,90 @@
+{
+  "result": "The sky does not simply darken; it bruises, slow and deliberate, in shades of plum and oxidized copper. I lean against the railing on my apartment balcony, watching the city\u2019s lights flicker on in staggered, hesitant bursts, as if they are waking from a long dream. The ocean, a few blocks away, is hidden from view, but I can smell its salt\u2014a heavy, mineral tang that rides on the evening air. It carries the ghost of seaweed and wet sand, and, faintly, the distant rumble of waves folding over themselves.\n\nI have always been drawn to this threshold, the liminal moment between day and night. It feels like a breath held, a promise about to be made. Down on the street, a woman walks her dog, the animal pulling eagerly at its leash, sniffing at the base of a lamppost. She is on her phone, her laughter ringing up, thin and bright, shattering the quiet.\n\nI think about the weight of the ordinary. How we are constantly surrounded by these small, profound moments\u2014a stranger\u2019s laugh, a dog's curiosity, the ache of a bruised sky\u2014and yet we often rush past them, our minds tethered to deadlines and anxieties. The world is so full of beauty, it's almost suffocating. A memory surfaces: my grandmother, always collecting smooth stones from the shore, piling them in a glass jar on her windowsill. She said they were her \"tiny anchors,\" reminders of the immense, constant sea.\n\nMaybe that's what I'm doing now, with this quiet writing. Gathering tiny anchors. I take a deep breath, the salt filling my lungs, and I feel, for a moment, perfectly and peacefully adrift.",
+  "raw": {
+    "id": "gen-1792677473-durydQ6pMTb5q14xPprF",
+    "object": "chat.completion",
+    "created": 1792677473,
+    "model": "inception/mercury-3",
+    "provider": "Inception",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "The sky does not simply darken; it bruises, slow and deliberate, in shades of plum and oxidized copper. I lean against the railing on my apartment balcony, watching the city\u2019s lights flicker on in staggered, hesitant bursts, as if they are waking from a long dream. The ocean, a few blocks away, is hidden from view, but I can smell its salt\u2014a heavy, mineral tang that rides on the evening air. It carries the ghost of seaweed and wet sand, and, faintly, the distant rumble of waves folding over themselves.\n\nI have always been drawn to this threshold, the liminal moment between day and night. It feels like a breath held, a promise about to be made. Down on the street, a woman walks her dog, the animal pulling eagerly at its leash, sniffing at the base of a lamppost. She is on her phone, her laughter ringing up, thin and bright, shattering the quiet.\n\nI think about the weight of the ordinary. How we are constantly surrounded by these small, profound moments\u2014a stranger\u2019s laugh, a dog's curiosity, the ache of a bruised sky\u2014and yet we often rush past them, our minds tethered to deadlines and anxieties. The world is so full of beauty, it's almost suffocating. A memory surfaces: my grandmother, always collecting smooth stones from the shore, piling them in a glass jar on her windowsill. She said they were her \"tiny anchors,\" reminders of the immense, constant sea.\n\nMaybe that's what I'm doing now, with this quiet writing. Gathering tiny anchors. I take a deep breath, the salt filling my lungs, and I feel, for a moment, perfectly and peacefully adrift.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 527,
+      "total_tokens": 537,
+      "cost": 0.00018536,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00018536,
+        "upstream_inference_prompt_cost": 9.1e-07,
+        "upstream_inference_completions_cost": 0.00018445
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 171,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 10,
+    "completion_tokens": 527,
+    "total_tokens": 537,
+    "cost": 0.00018536,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00018536,
+      "upstream_inference_prompt_cost": 9.1e-07,
+      "upstream_inference_completions_cost": 0.00018445
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 171,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "inception/mercury-3",
+  "model_requested": "inception/mercury-3",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "inception/mercury-3",
+    "pin": "Inception",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_2",
+    "at": 1792677473.2661314,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

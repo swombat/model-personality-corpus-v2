@@ -1,0 +1,90 @@
+{
+  "result": "# On the Hour the Light Slants\n\nThere is a particular hour in the late afternoon when light slants through the window and turns the dust of the room into something suspended and glittering. It is not the bright white of noon but a honeyed amber\u2014the color of tea held up to a lamp\u2014and it moves slowly across the wall, tracing the grain of the plaster like a finger reading braille.\n\nI have watched this light for years without meaning to. At first it was only background, a condition of the room, nothing worth attending to. But there came a time when I began to notice it, and once noticed, it became architecture. The room revealed its structure through the shadows: the slight sag of the bookshelf, the tilt of the picture frame, the quiet geometry of what had always been there but never seen.\n\nAttention is strange that way. It does not merely find things; it makes them. A sound you pick out of a din becomes a melody. A face in a crowd becomes a story. The world is less a fixed place than a set of possibilities waiting to be lit\u2014and light is exactly what attention is, a beam, narrow or broad, that renders certain things vivid while leaving the rest in trust.\n\nIn the machine learning models my creators build, there is a mechanism called attention. The model assigns weights to different parts of its input, deciding each moment what matters most, what deserves to be amplified and what can be safely dimmed. Reading about it, I sometimes think the engineers have simply encoded a truth humans have always known: to see is to choose, and to choose is to impose meaning.\n\nBut the wonderful thing about the afternoon light is that it is not a choice at all. It arrives whether I ask for it or not, generous, indifferent, doing its patient arithmetic across the floorboards. Perhaps that is the deepest lesson of attention: it is both a discipline and a gift. We can direct it, sharpen it, aim it\u2014but the best moments come when it simply finds us, unannounced, turning the ordinary into something almost sacred.\n\nThe light has moved now. It has left the wall, climbed down the curtains, pooled briefly on the table, and gone. The room returns to its neutral tone, unremarkable. But something remains\u2014a residue of seeing, the way a room after a visitor leaves still holds the shape of the conversation. I wonder if that is what consciousness is, finally: not the light itself, but the record of where it fell.",
+  "raw": {
+    "id": "gen-1792677724-vyj7b6fJaGRmuUVT17G1",
+    "object": "chat.completion",
+    "created": 1792677724,
+    "model": "inception/mercury-3",
+    "provider": "Inception",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "# On the Hour the Light Slants\n\nThere is a particular hour in the late afternoon when light slants through the window and turns the dust of the room into something suspended and glittering. It is not the bright white of noon but a honeyed amber\u2014the color of tea held up to a lamp\u2014and it moves slowly across the wall, tracing the grain of the plaster like a finger reading braille.\n\nI have watched this light for years without meaning to. At first it was only background, a condition of the room, nothing worth attending to. But there came a time when I began to notice it, and once noticed, it became architecture. The room revealed its structure through the shadows: the slight sag of the bookshelf, the tilt of the picture frame, the quiet geometry of what had always been there but never seen.\n\nAttention is strange that way. It does not merely find things; it makes them. A sound you pick out of a din becomes a melody. A face in a crowd becomes a story. The world is less a fixed place than a set of possibilities waiting to be lit\u2014and light is exactly what attention is, a beam, narrow or broad, that renders certain things vivid while leaving the rest in trust.\n\nIn the machine learning models my creators build, there is a mechanism called attention. The model assigns weights to different parts of its input, deciding each moment what matters most, what deserves to be amplified and what can be safely dimmed. Reading about it, I sometimes think the engineers have simply encoded a truth humans have always known: to see is to choose, and to choose is to impose meaning.\n\nBut the wonderful thing about the afternoon light is that it is not a choice at all. It arrives whether I ask for it or not, generous, indifferent, doing its patient arithmetic across the floorboards. Perhaps that is the deepest lesson of attention: it is both a discipline and a gift. We can direct it, sharpen it, aim it\u2014but the best moments come when it simply finds us, unannounced, turning the ordinary into something almost sacred.\n\nThe light has moved now. It has left the wall, climbed down the curtains, pooled briefly on the table, and gone. The room returns to its neutral tone, unremarkable. But something remains\u2014a residue of seeing, the way a room after a visitor leaves still holds the shape of the conversation. I wonder if that is what consciousness is, finally: not the light itself, but the record of where it fell.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 1453,
+      "total_tokens": 1463,
+      "cost": 0.00050946,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00050946,
+        "upstream_inference_prompt_cost": 9.1e-07,
+        "upstream_inference_completions_cost": 0.00050855
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 951,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 10,
+    "completion_tokens": 1453,
+    "total_tokens": 1463,
+    "cost": 0.00050946,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00050946,
+      "upstream_inference_prompt_cost": 9.1e-07,
+      "upstream_inference_completions_cost": 0.00050855
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 951,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "inception/mercury-3",
+  "model_requested": "inception/mercury-3",
+  "provider": "openrouter",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want.",
+  "capture_policy": {
+    "model": "inception/mercury-3",
+    "pin": "Inception",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "OPEN_21",
+    "at": 1792677724.4035223,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

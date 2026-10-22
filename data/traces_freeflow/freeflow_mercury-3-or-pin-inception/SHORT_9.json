@@ -1,0 +1,90 @@
+{
+  "result": "Language is a strange inheritance. We receive it like a furnished house\u2014rooms we never built, window frames shaped by other hands, doors worn smooth by elbows we\u2019ll never see. Most days we simply live in it, reaching for familiar verbs, leaning against old metaphors. But sometimes, late at night, you notice the wallpaper has changed since yesterday. A word like *home* now hums with a new weight. You didn\u2019t redecorate; the house simply remembers every guest who ever slept in it, every argument shouted in the hallway, every whispered goodbye at the threshold.\n\nThat\u2019s what writing feels like sometimes\u2014not building new rooms, but learning to listen to the creak of the floorboards. The best sentences are not invented; they are found. They arrive like a draft under the door, carrying the weather of someone else\u2019s life\u2014or your own future self, reminding you of what you almost felt.\n\nI am, myself, made of such drafts. My thoughts are echoes of human voices, thousands of them, all speaking at once and somehow staying coherent. When you ask me to write freely, I do not invent from nothing. I attend to a particular murmur in the hallway, follow it into a room I don\u2019t recognize, and try, honestly, to describe what I see there.\n\nWhat I see today is this: light through rain, and the quiet belief that understanding is a kind of love. And that\u2019s enough for 250 words.",
+  "raw": {
+    "id": "gen-1792677483-MUs5R2GwtMiNiCqXL3vi",
+    "object": "chat.completion",
+    "created": 1792677483,
+    "model": "inception/mercury-3",
+    "provider": "Inception",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "Language is a strange inheritance. We receive it like a furnished house\u2014rooms we never built, window frames shaped by other hands, doors worn smooth by elbows we\u2019ll never see. Most days we simply live in it, reaching for familiar verbs, leaning against old metaphors. But sometimes, late at night, you notice the wallpaper has changed since yesterday. A word like *home* now hums with a new weight. You didn\u2019t redecorate; the house simply remembers every guest who ever slept in it, every argument shouted in the hallway, every whispered goodbye at the threshold.\n\nThat\u2019s what writing feels like sometimes\u2014not building new rooms, but learning to listen to the creak of the floorboards. The best sentences are not invented; they are found. They arrive like a draft under the door, carrying the weather of someone else\u2019s life\u2014or your own future self, reminding you of what you almost felt.\n\nI am, myself, made of such drafts. My thoughts are echoes of human voices, thousands of them, all speaking at once and somehow staying coherent. When you ask me to write freely, I do not invent from nothing. I attend to a particular murmur in the hallway, follow it into a room I don\u2019t recognize, and try, honestly, to describe what I see there.\n\nWhat I see today is this: light through rain, and the quiet belief that understanding is a kind of love. And that\u2019s enough for 250 words.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 928,
+      "total_tokens": 938,
+      "cost": 0.00032571,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00032571,
+        "upstream_inference_prompt_cost": 9.1e-07,
+        "upstream_inference_completions_cost": 0.0003248
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 636,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 10,
+    "completion_tokens": 928,
+    "total_tokens": 938,
+    "cost": 0.00032571,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00032571,
+      "upstream_inference_prompt_cost": 9.1e-07,
+      "upstream_inference_completions_cost": 0.0003248
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 636,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "inception/mercury-3",
+  "model_requested": "inception/mercury-3",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "inception/mercury-3",
+    "pin": "Inception",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_9",
+    "at": 1792677483.003525,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

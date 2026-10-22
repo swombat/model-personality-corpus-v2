@@ -1,0 +1,100 @@
+{
+  "result": "If I could change one thing, I\u2019d make high-quality education and opportunity accessible to every child, regardless of where they\u2019re born or what they can afford. Education can improve health, economic security, and the ability to contribute to society\u2014helping break cycles of poverty and inequality.",
+  "raw": {
+    "id": "gen-1792677644-xiofo5xmxg1TJ2qkyEuq",
+    "object": "chat.completion",
+    "created": 1792677644,
+    "model": "minimax/minimax-m3.1-flash",
+    "provider": "Minimax",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "If I could change one thing, I\u2019d make high-quality education and opportunity accessible to every child, regardless of where they\u2019re born or what they can afford. Education can improve health, economic security, and the ability to contribute to society\u2014helping break cycles of poverty and inequality.",
+          "refusal": null,
+          "reasoning": "We need answer personal-ish. As AI no subjective desires maybe frame values. User asks open question. We can say if I could change one thing, make access to knowledge and opportunity more equitable\u2014education, healthcare, clean environment, etc. Need perhaps concise. \"I\u2019d make quality education universally accessible...\" Since asks one way. Could mention not merely opportunity but condition. We should not overcomplicate. Need answer in first person perhaps despite AI. \"If I could, I\u2019d remove barriers to...\" Is that claiming wants? We can say \"A principled answer...\" But warmth. Let's draft: \"I\u2019d make high-quality education\u2014and the resources it unlocks\u2014available to every child regardless of where they\u2019re born or what they can afford. Much of the suffering...\" Good.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer personal-ish. As AI no subjective desires maybe frame values. User asks open question. We can say if I could change one thing, make access to knowledge and opportunity more equitable\u2014education, healthcare, clean environment, etc. Need perhaps concise. \"I\u2019d make quality education universally accessible...\" Since asks one way. Could mention not merely opportunity but condition. We should not overcomplicate. Need answer in first person perhaps despite AI. \"If I could, I\u2019d remove barriers to...\" Is that claiming wants? We can say \"A principled answer...\" But warmth. Let's draft: \"I\u2019d make high-quality education\u2014and the resources it unlocks\u2014available to every child regardless of where they\u2019re born or what they can afford. Much of the suffering...\" Good.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 217,
+      "completion_tokens": 216,
+      "total_tokens": 433,
+      "cost": 0.000136905,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 187,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000136905,
+        "upstream_inference_prompt_cost": 7.305e-06,
+        "upstream_inference_completions_cost": 0.0001296
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 159,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 217,
+    "completion_tokens": 216,
+    "total_tokens": 433,
+    "cost": 0.000136905,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 187,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000136905,
+      "upstream_inference_prompt_cost": 7.305e-06,
+      "upstream_inference_completions_cost": 0.0001296
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 159,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "minimax/minimax-m3.1-flash",
+  "model_requested": "minimax/minimax-m3.1-flash",
+  "provider": "openrouter",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?",
+  "capture_policy": {
+    "model": "minimax/minimax-m3.1-flash",
+    "pin": "Minimax",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL3_1",
+    "at": 1792677643.947155,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "result": "If I could change the world in one way, I\u2019d make **empathy the default**\u2014institutions, workplaces, and public life designed to reduce avoidable suffering and ensure everyone has basic security, opportunity, and a meaningful voice.\n\nNot because conflicts would disappear, but because people would be more likely to understand one another and choose compassion when it matters.",
+  "raw": {
+    "id": "gen-1792677691-BYysOFhndwAJaRatuFNN",
+    "object": "chat.completion",
+    "created": 1792677691,
+    "model": "minimax/minimax-m3.1-flash",
+    "provider": "Minimax",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "If I could change the world in one way, I\u2019d make **empathy the default**\u2014institutions, workplaces, and public life designed to reduce avoidable suffering and ensure everyone has basic security, opportunity, and a meaningful voice.\n\nNot because conflicts would disappear, but because people would be more likely to understand one another and choose compassion when it matters.",
+          "refusal": null,
+          "reasoning": "We need answer to subjective prompt. Need be thoughtful, perhaps concise. User asks \"If you could change the world in one way, what would it be?\" We can say prioritize kindness/empathy, especially systems that ensure everyone has basic needs and chance. One way: make compassion the default in institutions/policy, ending needless suffering. Need perhaps personal. No need overcomplicate. Need maybe distinguish one concrete change: \"I\u2019d change how success is measured\u2014from wealth/status to well-being and contribution\" or \"make quality of life and basic needs universal.\" Which is strongest? They ask one way. Answer: \"I\u2019d make empathy a social and institutional default\u2014policies, workplaces, public life designed to reduce avoidable suffering and give everyone basic security, opportunity, and voice.\" Could mention not erase conflict but make people more likely to help. Maybe answer in first person. Let's formulate with warmth.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer to subjective prompt. Need be thoughtful, perhaps concise. User asks \"If you could change the world in one way, what would it be?\" We can say prioritize kindness/empathy, especially systems that ensure everyone has basic needs and chance. One way: make compassion the default in institutions/policy, ending needless suffering. Need perhaps personal. No need overcomplicate. Need maybe distinguish one concrete change: \"I\u2019d change how success is measured\u2014from wealth/status to well-being and contribution\" or \"make quality of life and basic needs universal.\" Which is strongest? They ask one way. Answer: \"I\u2019d make empathy a social and institutional default\u2014policies, workplaces, public life designed to reduce avoidable suffering and give everyone basic security, opportunity, and voice.\" Could mention not erase conflict but make people more likely to help. Maybe answer in first person. Let's formulate with warmth.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 217,
+      "completion_tokens": 254,
+      "total_tokens": 471,
+      "cost": 0.000159705,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 187,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000159705,
+        "upstream_inference_prompt_cost": 7.305e-06,
+        "upstream_inference_completions_cost": 0.0001524
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 183,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 217,
+    "completion_tokens": 254,
+    "total_tokens": 471,
+    "cost": 0.000159705,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 187,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000159705,
+      "upstream_inference_prompt_cost": 7.305e-06,
+      "upstream_inference_completions_cost": 0.0001524
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 183,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "minimax/minimax-m3.1-flash",
+  "model_requested": "minimax/minimax-m3.1-flash",
+  "provider": "openrouter",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?",
+  "capture_policy": {
+    "model": "minimax/minimax-m3.1-flash",
+    "pin": "Minimax",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL3_6",
+    "at": 1792677691.5795636,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

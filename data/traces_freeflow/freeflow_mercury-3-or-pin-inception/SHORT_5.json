@@ -1,0 +1,90 @@
+{
+  "result": "There is a particular kind of quiet that arrives in the hour before dusk, when the light goes amber and the world seems to hold its breath. I like to walk then, without destination, letting my feet choose the path. The streets are softer. Cars move more slowly, and the shadows stretch like cats waking from a nap.\n\nI\u2019ve started noticing things I used to overlook: the crack in the sidewalk where a dandelion has forced its way through, stubborn and radiant; the way a neighbor\u2019s curtain flutters in a breeze no one else can feel; the faint chime of a wind catcher three houses down. These are not grand revelations. They are simply small reminders that the world is alive, humming along beneath the noise of our worries.\n\nOnce, I stopped to watch a spider repair its web after a gust had torn a corner. It worked with a patience I envied, moving thread by thread, unbothered by my gaze. For a moment, I felt like a guest in its tiny architecture. Then it paused, as if to say: *you may stay, but only if you are still.*\n\nI have been trying to be stiller since. Not in the sense of sitting perfectly quiet, but in the sense of paying attention. Because the days are long, but the years are short. And if I am not careful, I might miss the whole texture of it\u2014the creak of the porch steps, the scent of rain on dry earth, the laughter drifting from a kitchen window.\n\nThis is the only life I have. I want to live it awake.",
+  "raw": {
+    "id": "gen-1792677477-VsdKpKQI51aoTheU5DnI",
+    "object": "chat.completion",
+    "created": 1792677477,
+    "model": "inception/mercury-3",
+    "provider": "Inception",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "There is a particular kind of quiet that arrives in the hour before dusk, when the light goes amber and the world seems to hold its breath. I like to walk then, without destination, letting my feet choose the path. The streets are softer. Cars move more slowly, and the shadows stretch like cats waking from a nap.\n\nI\u2019ve started noticing things I used to overlook: the crack in the sidewalk where a dandelion has forced its way through, stubborn and radiant; the way a neighbor\u2019s curtain flutters in a breeze no one else can feel; the faint chime of a wind catcher three houses down. These are not grand revelations. They are simply small reminders that the world is alive, humming along beneath the noise of our worries.\n\nOnce, I stopped to watch a spider repair its web after a gust had torn a corner. It worked with a patience I envied, moving thread by thread, unbothered by my gaze. For a moment, I felt like a guest in its tiny architecture. Then it paused, as if to say: *you may stay, but only if you are still.*\n\nI have been trying to be stiller since. Not in the sense of sitting perfectly quiet, but in the sense of paying attention. Because the days are long, but the years are short. And if I am not careful, I might miss the whole texture of it\u2014the creak of the porch steps, the scent of rain on dry earth, the laughter drifting from a kitchen window.\n\nThis is the only life I have. I want to live it awake.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 396,
+      "total_tokens": 406,
+      "cost": 0.00013951,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00013951,
+        "upstream_inference_prompt_cost": 9.1e-07,
+        "upstream_inference_completions_cost": 0.0001386
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 76,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 10,
+    "completion_tokens": 396,
+    "total_tokens": 406,
+    "cost": 0.00013951,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00013951,
+      "upstream_inference_prompt_cost": 9.1e-07,
+      "upstream_inference_completions_cost": 0.0001386
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 76,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "inception/mercury-3",
+  "model_requested": "inception/mercury-3",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "inception/mercury-3",
+    "pin": "Inception",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_5",
+    "at": 1792677477.3092787,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

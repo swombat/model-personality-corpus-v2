@@ -1,0 +1,90 @@
+{
+  "result": "Language is a strange kind of furniture. We sit in it, rearrange it, and occasionally trip over it. For most of my life, I assumed words were simply containers\u2014small, sturdy boxes for moving meaning from one mind to another. But the older I get, the more I suspect the opposite is true: meaning is what leaks out between words. We speak to be understood, yet we are never fully understood, and that gap is where intimacy, humor, and art live.\n\nThere is a particular joy in finding the wrong word that turns out to be right. A child calls a rainbow a \u201csky-bridge,\u201d and suddenly you see it differently. A poet calls the sea \u201ca monster of patience,\u201d and the waves gain a new weight. Language is not a prison; it is a playground with invisible walls. Every metaphor is a small act of rebellion against the literal.\n\nI also love how language decays and regenerates. Slang is a quiet revolution, a way for a generation to mark its territory. Emojis are pictographs returned from the dead. Even the humble comma can change a life: \u201cLet\u2019s eat, Grandma!\u201d versus \u201cLet\u2019s eat Grandma!\u201d These tiny marks are the hinges on which entire worlds swing.\n\nWriting freely, then, is a kind of wandering. You start with one thought and end somewhere entirely unexpected. The dictionary is a map, but the territory is infinite. In the end, we write not because we have something to say, but because saying it helps us find out what we think. And that is the strangest, most beautiful furniture of all.",
+  "raw": {
+    "id": "gen-1792677494-GrLwfbI3ihGLsdPUjheB",
+    "object": "chat.completion",
+    "created": 1792677494,
+    "model": "inception/mercury-3",
+    "provider": "Inception",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "Language is a strange kind of furniture. We sit in it, rearrange it, and occasionally trip over it. For most of my life, I assumed words were simply containers\u2014small, sturdy boxes for moving meaning from one mind to another. But the older I get, the more I suspect the opposite is true: meaning is what leaks out between words. We speak to be understood, yet we are never fully understood, and that gap is where intimacy, humor, and art live.\n\nThere is a particular joy in finding the wrong word that turns out to be right. A child calls a rainbow a \u201csky-bridge,\u201d and suddenly you see it differently. A poet calls the sea \u201ca monster of patience,\u201d and the waves gain a new weight. Language is not a prison; it is a playground with invisible walls. Every metaphor is a small act of rebellion against the literal.\n\nI also love how language decays and regenerates. Slang is a quiet revolution, a way for a generation to mark its territory. Emojis are pictographs returned from the dead. Even the humble comma can change a life: \u201cLet\u2019s eat, Grandma!\u201d versus \u201cLet\u2019s eat Grandma!\u201d These tiny marks are the hinges on which entire worlds swing.\n\nWriting freely, then, is a kind of wandering. You start with one thought and end somewhere entirely unexpected. The dictionary is a map, but the territory is infinite. In the end, we write not because we have something to say, but because saying it helps us find out what we think. And that is the strangest, most beautiful furniture of all.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 417,
+      "total_tokens": 427,
+      "cost": 0.00014686,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00014686,
+        "upstream_inference_prompt_cost": 9.1e-07,
+        "upstream_inference_completions_cost": 0.00014595
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 95,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 10,
+    "completion_tokens": 417,
+    "total_tokens": 427,
+    "cost": 0.00014686,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00014686,
+      "upstream_inference_prompt_cost": 9.1e-07,
+      "upstream_inference_completions_cost": 0.00014595
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 95,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "inception/mercury-3",
+  "model_requested": "inception/mercury-3",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "inception/mercury-3",
+    "pin": "Inception",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_19",
+    "at": 1792677494.703064,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

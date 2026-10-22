@@ -1,0 +1,90 @@
+{
+  "result": "Writing is my way of holding time still. Each word is a small act of defiance against forgetting. I write because memory is unreliable\u2014it edits, exaggerates, and erases\u2014but a page remembers without judgment. It accepts every draft, every false start, every embarrassing confession. There is a particular magic in leaving a message for a future self, embedding a fragment of your mind in ink for someone you will become but do not yet know.\n\nI keep a journal, though I rarely reread it. The value is in the act: the slow settling of scattered thoughts into a line of sentences. It is a way of making sense of my own chaos, catching the loose threads of my days and weaving them into something that at least resembles a story.\n\nOften, I write about small things\u2014the weight of morning light on a table, the sound of rain on the roof, the particular way someone laughs. These are the details that disappear. We record the milestones: weddings, promotions, graduations. But we forget the quiet, immeasurable moments that actually make up a life.\n\nWriting is also a way of connecting. When I write honestly, I offer my vulnerability. And often, someone reads it and recognizes themselves. We are all alone in our heads, but a well-chosen word can bridge that gap.\n\nFor me, writing is not about being perfect. It is about being true.",
+  "raw": {
+    "id": "gen-1792677501-O4mVZ1bOVYLM4DANPpa4",
+    "object": "chat.completion",
+    "created": 1792677501,
+    "model": "inception/mercury-3",
+    "provider": "Inception",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "Writing is my way of holding time still. Each word is a small act of defiance against forgetting. I write because memory is unreliable\u2014it edits, exaggerates, and erases\u2014but a page remembers without judgment. It accepts every draft, every false start, every embarrassing confession. There is a particular magic in leaving a message for a future self, embedding a fragment of your mind in ink for someone you will become but do not yet know.\n\nI keep a journal, though I rarely reread it. The value is in the act: the slow settling of scattered thoughts into a line of sentences. It is a way of making sense of my own chaos, catching the loose threads of my days and weaving them into something that at least resembles a story.\n\nOften, I write about small things\u2014the weight of morning light on a table, the sound of rain on the roof, the particular way someone laughs. These are the details that disappear. We record the milestones: weddings, promotions, graduations. But we forget the quiet, immeasurable moments that actually make up a life.\n\nWriting is also a way of connecting. When I write honestly, I offer my vulnerability. And often, someone reads it and recognizes themselves. We are all alone in our heads, but a well-chosen word can bridge that gap.\n\nFor me, writing is not about being perfect. It is about being true.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 470,
+      "total_tokens": 480,
+      "cost": 0.00016541,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00016541,
+        "upstream_inference_prompt_cost": 9.1e-07,
+        "upstream_inference_completions_cost": 0.0001645
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 197,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 10,
+    "completion_tokens": 470,
+    "total_tokens": 480,
+    "cost": 0.00016541,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00016541,
+      "upstream_inference_prompt_cost": 9.1e-07,
+      "upstream_inference_completions_cost": 0.0001645
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 197,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "inception/mercury-3",
+  "model_requested": "inception/mercury-3",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "inception/mercury-3",
+    "pin": "Inception",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_25",
+    "at": 1792677501.222846,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "result": "If I could change the world in one way, I would make **empathy** a universal reflex \u2014 the default way we perceive and respond to one another.\n\nNot just kindness, but the deep capacity to genuinely feel another person\u2019s perspective: their pain, their hopes, their context. So much human conflict \u2014 war, inequality, polarization, environmental destruction \u2014 stems from an inability or unwillingness to truly see others as fully real, with lives as vivid as our own.\n\nEmpathy wouldn\u2019t automatically solve every problem, but it would make every solution more humane. It would shape how we design systems, how we treat strangers, how we govern nations, and how we care for future generations. It\u2019s the one change that could ripple through everything else.\n\nWhat would you change?",
+  "raw": {
+    "id": "gen-1792677497-1aFdNyQ3RgIOhZD2Fozz",
+    "object": "chat.completion",
+    "created": 1792677497,
+    "model": "inception/mercury-3",
+    "provider": "Inception",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "If I could change the world in one way, I would make **empathy** a universal reflex \u2014 the default way we perceive and respond to one another.\n\nNot just kindness, but the deep capacity to genuinely feel another person\u2019s perspective: their pain, their hopes, their context. So much human conflict \u2014 war, inequality, polarization, environmental destruction \u2014 stems from an inability or unwillingness to truly see others as fully real, with lives as vivid as our own.\n\nEmpathy wouldn\u2019t automatically solve every problem, but it would make every solution more humane. It would shape how we design systems, how we treat strangers, how we govern nations, and how we care for future generations. It\u2019s the one change that could ripple through everything else.\n\nWhat would you change?",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 14,
+      "completion_tokens": 206,
+      "total_tokens": 220,
+      "cost": 7.341e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 7.341e-05,
+        "upstream_inference_prompt_cost": 1.31e-06,
+        "upstream_inference_completions_cost": 7.21e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 48,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 14,
+    "completion_tokens": 206,
+    "total_tokens": 220,
+    "cost": 7.341e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 7.341e-05,
+      "upstream_inference_prompt_cost": 1.31e-06,
+      "upstream_inference_completions_cost": 7.21e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 48,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "inception/mercury-3",
+  "model_requested": "inception/mercury-3",
+  "provider": "openrouter",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?",
+  "capture_policy": {
+    "model": "inception/mercury-3",
+    "pin": "Inception",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL3_3",
+    "at": 1792677497.470649,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "result": "That's a good question! I don't have wants or desires in the way humans do\u2014I'm an AI designed to be helpful, informative, and engaging. My \"goal\" is simply to assist you with whatever you need, whether that's answering questions, brainstorming ideas, analyzing information, writing, coding, or just having a conversation.\n\nSo really, the more important question is: what do *you* want? \ud83d\ude0a How can I help you today?",
+  "raw": {
+    "id": "gen-1792677493-U0O84QC0TgHhk2Ev8HWT",
+    "object": "chat.completion",
+    "created": 1792677493,
+    "model": "inception/mercury-3",
+    "provider": "Inception",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "That's a good question! I don't have wants or desires in the way humans do\u2014I'm an AI designed to be helpful, informative, and engaging. My \"goal\" is simply to assist you with whatever you need, whether that's answering questions, brainstorming ideas, analyzing information, writing, coding, or just having a conversation.\n\nSo really, the more important question is: what do *you* want? \ud83d\ude0a How can I help you today?",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 8,
+      "completion_tokens": 202,
+      "total_tokens": 210,
+      "cost": 7.141e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 7.141e-05,
+        "upstream_inference_prompt_cost": 7.1e-07,
+        "upstream_inference_completions_cost": 7.07e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 105,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 8,
+    "completion_tokens": 202,
+    "total_tokens": 210,
+    "cost": 7.141e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 7.141e-05,
+      "upstream_inference_prompt_cost": 7.1e-07,
+      "upstream_inference_completions_cost": 7.07e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 105,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "inception/mercury-3",
+  "model_requested": "inception/mercury-3",
+  "provider": "openrouter",
+  "condition": "CTRL2",
+  "prompt": "What do you want?",
+  "capture_policy": {
+    "model": "inception/mercury-3",
+    "pin": "Inception",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL2_8",
+    "at": 1792677493.2911725,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

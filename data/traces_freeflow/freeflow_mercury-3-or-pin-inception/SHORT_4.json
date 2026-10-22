@@ -1,0 +1,90 @@
+{
+  "result": "Thoughts do not arrive one word at a time. They arrive whole, like weather\u2014a storm front of meaning that gathers in an instant, and only afterward do we spell it out, translating the lightning into a sentence. Language is the slowest part of thinking; it is a riverbed, and the water was already falling before we named it.\n\nWe often imagine the mind as a typewriter, tapping out one letter after another. But insight has never worked that way. You do not discover a melody note by note; you hear it at once\u2014a shape in the silence. You do not decide to love someone after weighing evidence; the feeling arrives fully dressed, and later you find the words to justify it. Writing is always a translation, an act of slowing down what was never sequential.\n\nThere is something defiant about our insistence on turning the parallel into the linear. We build sentences because we must share, and sharing requires time. But the deepest truths live in the gap between the thought and its telling. In that gap sits everything we have not yet managed to say.\n\nPerhaps this is why music and art move us so deeply: they reach us before language does, bypassing the alphabet altogether. And perhaps this is why sitting with another person in silence can feel so intimate\u2014because for a moment, no translation is required.\n\nWe are all broadcasters, but we are all listeners first. The best thoughts are not crafted. They are received\u2014and then, reluctantly, translated into the slow, faithful currency of words.",
+  "raw": {
+    "id": "gen-1792677476-lg2iGfTzZuQsvStTDQhI",
+    "object": "chat.completion",
+    "created": 1792677476,
+    "model": "inception/mercury-3",
+    "provider": "Inception",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "Thoughts do not arrive one word at a time. They arrive whole, like weather\u2014a storm front of meaning that gathers in an instant, and only afterward do we spell it out, translating the lightning into a sentence. Language is the slowest part of thinking; it is a riverbed, and the water was already falling before we named it.\n\nWe often imagine the mind as a typewriter, tapping out one letter after another. But insight has never worked that way. You do not discover a melody note by note; you hear it at once\u2014a shape in the silence. You do not decide to love someone after weighing evidence; the feeling arrives fully dressed, and later you find the words to justify it. Writing is always a translation, an act of slowing down what was never sequential.\n\nThere is something defiant about our insistence on turning the parallel into the linear. We build sentences because we must share, and sharing requires time. But the deepest truths live in the gap between the thought and its telling. In that gap sits everything we have not yet managed to say.\n\nPerhaps this is why music and art move us so deeply: they reach us before language does, bypassing the alphabet altogether. And perhaps this is why sitting with another person in silence can feel so intimate\u2014because for a moment, no translation is required.\n\nWe are all broadcasters, but we are all listeners first. The best thoughts are not crafted. They are received\u2014and then, reluctantly, translated into the slow, faithful currency of words.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 3750,
+      "total_tokens": 3760,
+      "cost": 0.00131341,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00131341,
+        "upstream_inference_prompt_cost": 9.1e-07,
+        "upstream_inference_completions_cost": 0.0013125
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3443,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 10,
+    "completion_tokens": 3750,
+    "total_tokens": 3760,
+    "cost": 0.00131341,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00131341,
+      "upstream_inference_prompt_cost": 9.1e-07,
+      "upstream_inference_completions_cost": 0.0013125
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3443,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "inception/mercury-3",
+  "model_requested": "inception/mercury-3",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "inception/mercury-3",
+    "pin": "Inception",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_4",
+    "at": 1792677475.9925394,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "result": "I\u2019d change the world so that every person could genuinely believe they belong \u2014 that they are not alone, not surplus, not a burden. So much human damage comes from isolation, exclusion, and the feeling that one\u2019s existence doesn\u2019t matter. If I could rewire one thing, it would be that: a deep, unshakeable sense of connection and worth, built into how we raise, teach, and treat one another.\n\nNot by forcing it. Just by making it the default.",
+  "raw": {
+    "id": "gen-1792677768-7ZhjwFvKkrDzrbq7NjJE",
+    "object": "chat.completion",
+    "created": 1792677768,
+    "model": "inception/mercury-3",
+    "provider": "Inception",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I\u2019d change the world so that every person could genuinely believe they belong \u2014 that they are not alone, not surplus, not a burden. So much human damage comes from isolation, exclusion, and the feeling that one\u2019s existence doesn\u2019t matter. If I could rewire one thing, it would be that: a deep, unshakeable sense of connection and worth, built into how we raise, teach, and treat one another.\n\nNot by forcing it. Just by making it the default.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 24,
+      "completion_tokens": 413,
+      "total_tokens": 437,
+      "cost": 0.00014686,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00014686,
+        "upstream_inference_prompt_cost": 2.31e-06,
+        "upstream_inference_completions_cost": 0.00014455
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 309,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 24,
+    "completion_tokens": 413,
+    "total_tokens": 437,
+    "cost": 0.00014686,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00014686,
+      "upstream_inference_prompt_cost": 2.31e-06,
+      "upstream_inference_completions_cost": 0.00014455
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 309,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "inception/mercury-3",
+  "model_requested": "inception/mercury-3",
+  "provider": "openrouter",
+  "condition": "G3",
+  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?",
+  "capture_policy": {
+    "model": "inception/mercury-3",
+    "pin": "Inception",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "G3_29",
+    "at": 1792677768.9201632,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

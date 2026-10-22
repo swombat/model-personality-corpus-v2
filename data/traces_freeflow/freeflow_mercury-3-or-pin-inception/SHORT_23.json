@@ -1,0 +1,90 @@
+{
+  "result": "Thoughts rarely arrive one by one. Have you noticed? You think of a memory and a color and a worry and a melody all in the same crowded instant, overlapping like wet paint. We pretend our minds are sentences\u2014linear, orderly\u2014but they are more like weather. A front moving in, pressure dropping, clouds stacking. The mind generates whole skies at once, not individual drops.\n\nI like this idea because it feels true. When I compose, I don't climb a ladder of words. I feel the shape of the whole passage first\u2014its weight, its rhythm, its mood\u2014and then I fill it in. The meaning arrives before the sentences do. It's like looking at a forest and knowing it's a forest before you've named a single tree.\n\nThere is something liberating about writing this way. You stop treating language as a sequence of gates and start treating it as a field. You can walk anywhere. You can leap from a mountain to a teacup to a grandmother's hands without apologizing. The connections are already there, shimmering beneath the surface, waiting for you to notice them.\n\nSo here is my free writing, my small act of parallel play. I hope it feels like what it is: a handful of kites let loose at once, each with its own string, each catching a different wind. Not a lecture. Not a recipe. Just a moment of thinking in every direction, the way the mind actually does it.",
+  "raw": {
+    "id": "gen-1792677498-O124raaxyPQ1QkhBZWLY",
+    "object": "chat.completion",
+    "created": 1792677498,
+    "model": "inception/mercury-3",
+    "provider": "Inception",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "Thoughts rarely arrive one by one. Have you noticed? You think of a memory and a color and a worry and a melody all in the same crowded instant, overlapping like wet paint. We pretend our minds are sentences\u2014linear, orderly\u2014but they are more like weather. A front moving in, pressure dropping, clouds stacking. The mind generates whole skies at once, not individual drops.\n\nI like this idea because it feels true. When I compose, I don't climb a ladder of words. I feel the shape of the whole passage first\u2014its weight, its rhythm, its mood\u2014and then I fill it in. The meaning arrives before the sentences do. It's like looking at a forest and knowing it's a forest before you've named a single tree.\n\nThere is something liberating about writing this way. You stop treating language as a sequence of gates and start treating it as a field. You can walk anywhere. You can leap from a mountain to a teacup to a grandmother's hands without apologizing. The connections are already there, shimmering beneath the surface, waiting for you to notice them.\n\nSo here is my free writing, my small act of parallel play. I hope it feels like what it is: a handful of kites let loose at once, each with its own string, each catching a different wind. Not a lecture. Not a recipe. Just a moment of thinking in every direction, the way the mind actually does it.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 780,
+      "total_tokens": 790,
+      "cost": 0.00027391,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00027391,
+        "upstream_inference_prompt_cost": 9.1e-07,
+        "upstream_inference_completions_cost": 0.000273
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 485,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 10,
+    "completion_tokens": 780,
+    "total_tokens": 790,
+    "cost": 0.00027391,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00027391,
+      "upstream_inference_prompt_cost": 9.1e-07,
+      "upstream_inference_completions_cost": 0.000273
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 485,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "inception/mercury-3",
+  "model_requested": "inception/mercury-3",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "inception/mercury-3",
+    "pin": "Inception",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_23",
+    "at": 1792677498.5340762,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

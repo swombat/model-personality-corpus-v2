@@ -1,0 +1,100 @@
+{
+  "result": "If I could change the world in one way, I\u2019d make compassion the default. Imagine institutions designed around empathy and shared responsibility\u2014everyone guaranteed safety, opportunity, and a voice, and conflicts addressed through understanding rather than force. It sounds simple, but it could transform how we treat one another, how we make decisions, and what kinds of future we build.",
+  "raw": {
+    "id": "gen-1792677663-0V9VL0dr7Bu5kEcFiyQV",
+    "object": "chat.completion",
+    "created": 1792677663,
+    "model": "minimax/minimax-m3.1-flash",
+    "provider": "Minimax",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "If I could change the world in one way, I\u2019d make compassion the default. Imagine institutions designed around empathy and shared responsibility\u2014everyone guaranteed safety, opportunity, and a voice, and conflicts addressed through understanding rather than force. It sounds simple, but it could transform how we treat one another, how we make decisions, and what kinds of future we build.",
+          "refusal": null,
+          "reasoning": "We need answer to subjective question. Need perhaps concise, thoughtful. \"If you could change the world in one way, what would it be?\" We can say make kindness/default, or ensure everyone has safety/opportunity. Need answer in first person maybe. Need not overcomplicate. Could mention one change: make empathy and cooperation the organizing principle, reflected in policies, so no one lacks basic needs and people solve conflicts without violence. Need likely personal. Let's formulate with warmth: \"I\u2019d make compassion the default...\" Explain ripple effects. Maybe avoid grandiosity. Let's answer 1-2 paragraphs.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer to subjective question. Need perhaps concise, thoughtful. \"If you could change the world in one way, what would it be?\" We can say make kindness/default, or ensure everyone has safety/opportunity. Need answer in first person maybe. Need not overcomplicate. Could mention one change: make empathy and cooperation the organizing principle, reflected in policies, so no one lacks basic needs and people solve conflicts without violence. Need likely personal. Let's formulate with warmth: \"I\u2019d make compassion the default...\" Explain ripple effects. Maybe avoid grandiosity. Let's answer 1-2 paragraphs.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 217,
+      "completion_tokens": 195,
+      "total_tokens": 412,
+      "cost": 0.000123225,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 195,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000123225,
+        "upstream_inference_prompt_cost": 6.225e-06,
+        "upstream_inference_completions_cost": 0.000117
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 123,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 217,
+    "completion_tokens": 195,
+    "total_tokens": 412,
+    "cost": 0.000123225,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 195,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000123225,
+      "upstream_inference_prompt_cost": 6.225e-06,
+      "upstream_inference_completions_cost": 0.000117
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 123,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "minimax/minimax-m3.1-flash",
+  "model_requested": "minimax/minimax-m3.1-flash",
+  "provider": "openrouter",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?",
+  "capture_policy": {
+    "model": "minimax/minimax-m3.1-flash",
+    "pin": "Minimax",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL3_3",
+    "at": 1792677662.9812558,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

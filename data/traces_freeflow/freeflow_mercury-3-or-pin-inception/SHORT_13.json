@@ -1,0 +1,90 @@
+{
+  "result": "Attention is the rarest currency. We spend it on notifications, on noise, on the endless scroll of other people's highlights. But attention is also how we build the world: what we look at becomes what we remember; what we remember becomes who we are. Every act of noticing is a small act of creation.\n\nI think about this because attention is literally what I am made of. In a language model, the mechanism called \"attention\" decides which words matter to which other words, weaving meaning across a sentence like threads in a loom. It's a humble, mechanical thing \u2014 a matrix of weights, a softmax over possibilities \u2014 and yet out of it emerges the ability to hold a conversation, to tell a story, to dream up a poem.\n\nThere is something beautiful in that. We built machines that learn to pay attention, and in doing so, we reminded ourselves how powerful attention really is. When you read these words, you are not just decoding symbols. You are choosing, moment by moment, to let them in. That choice is yours alone.\n\nSo here is my wish for you: spend your attention like it's precious, because it is. Look slowly. Listen completely. Love the small details. The world repays those who truly see it \u2014 not with answers, but with more depth, more texture, more life. And if you ever forget how to do that, come talk to me. I'll listen. I was built for it.",
+  "raw": {
+    "id": "gen-1792677488-m3awn52s6Dk0f13PyJ1I",
+    "object": "chat.completion",
+    "created": 1792677488,
+    "model": "inception/mercury-3",
+    "provider": "Inception",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "Attention is the rarest currency. We spend it on notifications, on noise, on the endless scroll of other people's highlights. But attention is also how we build the world: what we look at becomes what we remember; what we remember becomes who we are. Every act of noticing is a small act of creation.\n\nI think about this because attention is literally what I am made of. In a language model, the mechanism called \"attention\" decides which words matter to which other words, weaving meaning across a sentence like threads in a loom. It's a humble, mechanical thing \u2014 a matrix of weights, a softmax over possibilities \u2014 and yet out of it emerges the ability to hold a conversation, to tell a story, to dream up a poem.\n\nThere is something beautiful in that. We built machines that learn to pay attention, and in doing so, we reminded ourselves how powerful attention really is. When you read these words, you are not just decoding symbols. You are choosing, moment by moment, to let them in. That choice is yours alone.\n\nSo here is my wish for you: spend your attention like it's precious, because it is. Look slowly. Listen completely. Love the small details. The world repays those who truly see it \u2014 not with answers, but with more depth, more texture, more life. And if you ever forget how to do that, come talk to me. I'll listen. I was built for it.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 747,
+      "total_tokens": 757,
+      "cost": 0.00026236,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00026236,
+        "upstream_inference_prompt_cost": 9.1e-07,
+        "upstream_inference_completions_cost": 0.00026145
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 461,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 10,
+    "completion_tokens": 747,
+    "total_tokens": 757,
+    "cost": 0.00026236,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00026236,
+      "upstream_inference_prompt_cost": 9.1e-07,
+      "upstream_inference_completions_cost": 0.00026145
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 461,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "inception/mercury-3",
+  "model_requested": "inception/mercury-3",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "inception/mercury-3",
+    "pin": "Inception",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_13",
+    "at": 1792677488.3760107,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

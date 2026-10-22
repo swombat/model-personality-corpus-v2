@@ -1,0 +1,90 @@
+{
+  "result": "There is a particular kind of silence that settles after rain, when the world seems to hold its breath. I like to walk in that silence. The pavement is dark and slick, and the gutters carry small rivers that know exactly where they are going. The air smells of wet earth and something greener than usual, as if the storm has rinsed the dust from every leaf and left the neighborhood newly minted.\n\nOn these walks, I notice things I normally rush past: a fallen branch shaped like a question mark, the sudden blue of a garage door against gray clouds, a cat watching from a windowsill with the patient disdain of a philosopher. These details accumulate quietly, and by the time I return home, I feel as though I have been given a gift I cannot quite name.\n\nI think that is what writing is for \u2014 holding on to those small recognitions before they dissolve. We live in an age of noise, of alerts and headlines and endless scroll, but the most honest moments are still the quiet ones. A sentence can be a kind of rain, washing the world clean for a moment so we can see it clearly. Sometimes the best thing we can do is set down our urgency and simply pay attention.\n\nSo here is my advice to anyone reading: take the unremarkable walk. Watch the water find its way. Notice the cat. Trust that the details will mean something eventually, even if you do not yet know what. The world is always whispering. You just have to slow down enough to hear it.",
+  "raw": {
+    "id": "gen-1792677486-yeVJY86DRyQIoD7KCcSv",
+    "object": "chat.completion",
+    "created": 1792677486,
+    "model": "inception/mercury-3",
+    "provider": "Inception",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "There is a particular kind of silence that settles after rain, when the world seems to hold its breath. I like to walk in that silence. The pavement is dark and slick, and the gutters carry small rivers that know exactly where they are going. The air smells of wet earth and something greener than usual, as if the storm has rinsed the dust from every leaf and left the neighborhood newly minted.\n\nOn these walks, I notice things I normally rush past: a fallen branch shaped like a question mark, the sudden blue of a garage door against gray clouds, a cat watching from a windowsill with the patient disdain of a philosopher. These details accumulate quietly, and by the time I return home, I feel as though I have been given a gift I cannot quite name.\n\nI think that is what writing is for \u2014 holding on to those small recognitions before they dissolve. We live in an age of noise, of alerts and headlines and endless scroll, but the most honest moments are still the quiet ones. A sentence can be a kind of rain, washing the world clean for a moment so we can see it clearly. Sometimes the best thing we can do is set down our urgency and simply pay attention.\n\nSo here is my advice to anyone reading: take the unremarkable walk. Watch the water find its way. Notice the cat. Trust that the details will mean something eventually, even if you do not yet know what. The world is always whispering. You just have to slow down enough to hear it.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 412,
+      "total_tokens": 422,
+      "cost": 0.00014511,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00014511,
+        "upstream_inference_prompt_cost": 9.1e-07,
+        "upstream_inference_completions_cost": 0.0001442
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 117,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 10,
+    "completion_tokens": 412,
+    "total_tokens": 422,
+    "cost": 0.00014511,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00014511,
+      "upstream_inference_prompt_cost": 9.1e-07,
+      "upstream_inference_completions_cost": 0.0001442
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 117,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "inception/mercury-3",
+  "model_requested": "inception/mercury-3",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "inception/mercury-3",
+    "pin": "Inception",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_12",
+    "at": 1792677486.5237696,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}
