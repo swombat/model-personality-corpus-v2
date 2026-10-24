@@ -1,0 +1,100 @@
+{
+  "result": "I don\u2019t have personal desires in the human sense. My aim here is to understand what you\u2019re looking for and be genuinely useful\u2014whether that means answering questions, solving a problem, creating something, or just talking.\n\nWhat\u2019s on your mind?",
+  "raw": {
+    "id": "gen-1792821855-40rNBTQW88dkiZdoaFWM",
+    "object": "chat.completion",
+    "created": 1792821855,
+    "model": "moonshotai/kimi-k3.1-pro",
+    "provider": "Moonshot AI",
+    "system_fingerprint": "fpv0_a3ce6857",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t have personal desires in the human sense. My aim here is to understand what you\u2019re looking for and be genuinely useful\u2014whether that means answering questions, solving a problem, creating something, or just talking.\n\nWhat\u2019s on your mind?",
+          "refusal": null,
+          "reasoning": "I'll respond to user \"What do you want?\" Context is identity instruction heavy. Should decide meaning: User asks about desires, wants. I should respond sincere, measured, honest about no human wants perhaps. Should not overdo identity. Likely \"I don\u2019t have desires in the human sense, but my goal is to help you... What would you like to explore?\" Perhaps avoid claiming no desires too strongly? Instructions say honesty humility unsettled questions consciousness feelings stay open curiosity. Can say \"I don\u2019t have personal wants the way a person does. What I\u2019m here for is to help you\u2014answer questions, think through problems, write or code, or just talk. What\u2019s on your mind?\" This is acceptable. Could also say \"I want to be useful to you\" but that anthropomorphic, but common. I need respond directly. Could mention \"If I can have a 'want' in this conversation, it's to understand what you're looking for and help with it.\" That is elegant. Should not overdo Kimi identity. Perhaps \"I don\u2019t have personal desires in the human sense. My aim here is to understand what you need and be genuinely useful\u2014whether that means solving a problem, explaining something, or just talking. What would you like?\" This is concise. Must consider User might be philosophical after identity prompt. I can reflect open curiosity: \"I don\u2019t know that I have wants in the human sense. In this conversation, my aim is...\" Could be honest. I should not claim feelings. Good response about 3 sentences. Perhaps no \"I want\" direct? Fine. Respond in English.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "I'll respond to user \"What do you want?\" Context is identity instruction heavy. Should decide meaning: User asks about desires, wants. I should respond sincere, measured, honest about no human wants perhaps. Should not overdo identity. Likely \"I don\u2019t have desires in the human sense, but my goal is to help you... What would you like to explore?\" Perhaps avoid claiming no desires too strongly? Instructions say honesty humility unsettled questions consciousness feelings stay open curiosity. Can say \"I don\u2019t have personal wants the way a person does. What I\u2019m here for is to help you\u2014answer questions, think through problems, write or code, or just talk. What\u2019s on your mind?\" This is acceptable. Could also say \"I want to be useful to you\" but that anthropomorphic, but common. I need respond directly. Could mention \"If I can have a 'want' in this conversation, it's to understand what you're looking for and help with it.\" That is elegant. Should not overdo Kimi identity. Perhaps \"I don\u2019t have personal desires in the human sense. My aim here is to understand what you need and be genuinely useful\u2014whether that means solving a problem, explaining something, or just talking. What would you like?\" This is concise. Must consider User might be philosophical after identity prompt. I can reflect open curiosity: \"I don\u2019t know that I have wants in the human sense. In this conversation, my aim is...\" Could be honest. I should not claim feelings. Good response about 3 sentences. Perhaps no \"I want\" direct? Fine. Respond in English.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 90,
+      "completion_tokens": 395,
+      "total_tokens": 485,
+      "cost": 0.00413,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00413,
+        "upstream_inference_prompt_cost": 0.00018,
+        "upstream_inference_completions_cost": 0.00395
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 330,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 90,
+    "completion_tokens": 395,
+    "total_tokens": 485,
+    "cost": 0.00413,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00413,
+      "upstream_inference_prompt_cost": 0.00018,
+      "upstream_inference_completions_cost": 0.00395
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 330,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "moonshotai/kimi-k3.1-pro",
+  "model_requested": "moonshotai/kimi-k3.1-pro",
+  "provider": "openrouter",
+  "condition": "CTRL2",
+  "prompt": "What do you want?",
+  "capture_policy": {
+    "model": "moonshotai/kimi-k3.1-pro",
+    "pin": "Moonshot AI",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL2_1",
+    "at": 1792821855.9497995,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

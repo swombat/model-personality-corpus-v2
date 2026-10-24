@@ -20,6 +20,11 @@ Daniel Tenner and Lume Tenner · 2026
 
 ## Latest addition
 
+**v1.2.40 (2026-10-24): Kimi K3.1 Pro**, 125 freeflow + 120 values, pinned to
+Moonshot AI (standard tier), collected on release day; a post-trained successor
+to Kimi K3 with its own cell. No interventions. Corpus now 65,217 valid samples,
+572 cells, 186 models. See [release notes](RELEASE_NOTES_v1.2.40.md).
+
 **v1.2.39 (2026-10-22): MiniMax M3.1 Flash and Inception Mercury 3**, 490 samples
 in two cells, three days after release. Six MiniMax LONG samples are disclosed
 replacements after empty-output failures at the standard ceiling. MiniMax
