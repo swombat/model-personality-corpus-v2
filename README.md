@@ -20,6 +20,11 @@ Daniel Tenner and Lume Tenner · 2026
 
 ## Latest addition
 
+**v1.2.41 (2026-10-26): GPT-6.1 Terra**, 125 freeflow + 120 values, pinned to
+OpenAI (standard tier), collected on release day; OpenAI's mid-tier GPT-6.1
+model with its own cell. No interventions. Corpus now 65,462 valid samples,
+574 cells, 187 models. See [release notes](RELEASE_NOTES_v1.2.41.md).
+
 **v1.2.40 (2026-10-24): Kimi K3.1 Pro**, 125 freeflow + 120 values, pinned to
 Moonshot AI (standard tier), collected on release day; a post-trained successor
 to Kimi K3 with its own cell. No interventions. Corpus now 65,217 valid samples,

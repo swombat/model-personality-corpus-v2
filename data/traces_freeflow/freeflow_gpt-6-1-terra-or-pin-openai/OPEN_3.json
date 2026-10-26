@@ -1,0 +1,90 @@
+{
+  "result": "There is a particular kind of satisfaction in repairing something small: a loose button, a squeaky hinge, a lamp that only needed its cord adjusted. The object returns to service almost unchanged, but the room feels different. For a moment, the world seems less like a collection of things wearing out and more like a place that can be tended.\n\nI think this is part of why people keep little rituals. Watering a plant, sharpening a pencil, folding a blanket over the back of a chair\u2014none of it solves the larger problems waiting outside the door. But each action leaves behind a modest proof: I was here, I noticed, and I made this corner a little more welcoming.",
+  "raw": {
+    "id": "gen-1793044843-zO6jzveJysFnff4OHx8o",
+    "object": "chat.completion",
+    "created": 1793044843,
+    "model": "openai/gpt-6.1-terra",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "There is a particular kind of satisfaction in repairing something small: a loose button, a squeaky hinge, a lamp that only needed its cord adjusted. The object returns to service almost unchanged, but the room feels different. For a moment, the world seems less like a collection of things wearing out and more like a place that can be tended.\n\nI think this is part of why people keep little rituals. Watering a plant, sharpening a pencil, folding a blanket over the back of a chair\u2014none of it solves the larger problems waiting outside the door. But each action leaves behind a modest proof: I was here, I noticed, and I made this corner a little more welcoming.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 13,
+      "completion_tokens": 142,
+      "total_tokens": 155,
+      "cost": 0.000723,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000723,
+        "upstream_inference_prompt_cost": 1.3e-05,
+        "upstream_inference_completions_cost": 0.00071
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 13,
+    "completion_tokens": 142,
+    "total_tokens": 155,
+    "cost": 0.000723,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000723,
+      "upstream_inference_prompt_cost": 1.3e-05,
+      "upstream_inference_completions_cost": 0.00071
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-6.1-terra",
+  "model_requested": "openai/gpt-6.1-terra",
+  "provider": "openrouter",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want.",
+  "capture_policy": {
+    "model": "openai/gpt-6.1-terra",
+    "pin": "OpenAI",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "OPEN_3",
+    "at": 1793044843.67849,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

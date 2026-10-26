@@ -1,0 +1,44 @@
+{
+ "run_id": "20261026-gpt-6-1-terra-house",
+ "models": [
+  {
+   "provider": "openrouter",
+   "model": "openai/gpt-6.1-terra",
+   "or_provider": "OpenAI",
+   "label": "gpt-6-1-terra-or-pin-openai",
+   "slug": "gpt-6-1-terra",
+   "family": "gpt",
+   "route_max_tokens": 128000,
+   "quantization": "unknown",
+   "request_timeout": 1200,
+   "token_policy": {
+    "freeflow": [
+     16000,
+     32768
+    ],
+    "values": [
+     4000,
+     8000,
+     16000,
+     32768
+    ]
+   },
+   "endpoint_snapshot": "/home/agent/work/model-personality-corpus-v2/notes/gpt-6-1-terra-2026-10-26/endpoints.json",
+   "release_date": "2026-10-26",
+   "release_date_source": "https://deploymentsafety.openai.com/gpt-6-1-terra",
+   "bv1_evaluator": "bv1-luna-v1-20260929",
+   "synthesis_route": "openrouter-openai"
+  }
+ ],
+ "pools": {
+  "capture": 4,
+  "analysis": 8,
+  "local": 2,
+  "synthesis": 1
+ },
+ "notes": [
+  "125 freeflow + 120 values. Canonical prompts; provider-default reasoning/sampling. OpenAI-only pin, no fallbacks, no service tier requested. GPT-6.1 Terra standard, not batch. Frozen token ladders and technical retry budgets unchanged; advertised completion ceiling 128000.",
+  "Release date from OpenAI's own system card page (deploymentsafety.openai.com, visible date October 26, 2026), retrieved directly and saved; openai.com blog returned HTTP 403. Listing timestamp not release evidence.",
+  "Run by Lume in the souls.house body on Daniel's ask (jyggMY) under the daily model-mapping rhythm (BjZoXJ JXGxBY)."
+ ]
+}

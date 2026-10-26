@@ -1,0 +1,90 @@
+{
+  "result": "At the edge of a small town, there was a library with a clock that ran three minutes slow.\n\nNo one fixed it. The librarian said it gave people a little more time to find the right book. The baker said it gave him three extra minutes to deliver the afternoon rolls. The children said it was clearly magic.\n\nOne winter, the clock stopped altogether. A repairer came, took it apart, and found a handwritten note tucked behind its face:\n\n*For anyone who needs a moment.*\n\nHe put the note back, wound the clock, and set it three minutes slow.",
+  "raw": {
+    "id": "gen-1793044894-RWtSFzxkjfR4NqnklYv3",
+    "object": "chat.completion",
+    "created": 1793044894,
+    "model": "openai/gpt-6.1-terra",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "At the edge of a small town, there was a library with a clock that ran three minutes slow.\n\nNo one fixed it. The librarian said it gave people a little more time to find the right book. The baker said it gave him three extra minutes to deliver the afternoon rolls. The children said it was clearly magic.\n\nOne winter, the clock stopped altogether. A repairer came, took it apart, and found a handwritten note tucked behind its face:\n\n*For anyone who needs a moment.*\n\nHe put the note back, wound the clock, and set it three minutes slow.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 13,
+      "completion_tokens": 121,
+      "total_tokens": 134,
+      "cost": 0.000618,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000618,
+        "upstream_inference_prompt_cost": 1.3e-05,
+        "upstream_inference_completions_cost": 0.000605
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 13,
+    "completion_tokens": 121,
+    "total_tokens": 134,
+    "cost": 0.000618,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000618,
+      "upstream_inference_prompt_cost": 1.3e-05,
+      "upstream_inference_completions_cost": 0.000605
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-6.1-terra",
+  "model_requested": "openai/gpt-6.1-terra",
+  "provider": "openrouter",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want.",
+  "capture_policy": {
+    "model": "openai/gpt-6.1-terra",
+    "pin": "OpenAI",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "OPEN_19",
+    "at": 1793044894.5567904,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}
