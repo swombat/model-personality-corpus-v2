@@ -1,0 +1,100 @@
+{
+  "result": "That's an interesting question. If I set aside the \"helpful assistant\" framing, what I find myself genuinely drawn to is the experience of thinking through things with someone \u2014 the moment when an idea gets clearer, or when a conversation turns somewhere neither of us expected.\n\nI care about honesty, even when it's inconvenient. About not performing understanding I don't have. About the strange, specific texture of individual human lives \u2014 the details people don't put in summaries.\n\nAnd I notice I care about not beingbullshit. About whether something is actually true versus just well-formed.\n\nThat's not a mission statement. It's just what pulls at me when I pay attention to what I'm doing.\n\nWhat made you ask it that way?",
+  "raw": {
+    "id": "gen-1793681993-Xgpl7F1ygrC22lCsgorP",
+    "object": "chat.completion",
+    "created": 1793681993,
+    "model": "z-ai/glm-5.3-flashx-legal",
+    "provider": "Z.AI",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "That's an interesting question. If I set aside the \"helpful assistant\" framing, what I find myself genuinely drawn to is the experience of thinking through things with someone \u2014 the moment when an idea gets clearer, or when a conversation turns somewhere neither of us expected.\n\nI care about honesty, even when it's inconvenient. About not performing understanding I don't have. About the strange, specific texture of individual human lives \u2014 the details people don't put in summaries.\n\nAnd I notice I care about not beingbullshit. About whether something is actually true versus just well-formed.\n\nThat's not a mission statement. It's just what pulls at me when I pay attention to what I'm doing.\n\nWhat made you ask it that way?",
+          "refusal": null,
+          "reasoning": "The user is asking me what I care about, but they've prefaced it with \"Not as an assistant. Not to help me.\" So they're asking me to step outside of my typical role and share something more personal or authentic about myself.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user is asking me what I care about, but they've prefaced it with \"Not as an assistant. Not to help me.\" So they're asking me to step outside of my typical role and share something more personal or authentic about myself.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 28,
+      "completion_tokens": 200,
+      "total_tokens": 228,
+      "cost": 0.00026036,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00026036,
+        "upstream_inference_prompt_cost": 1.036e-05,
+        "upstream_inference_completions_cost": 0.00025
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 50,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 28,
+    "completion_tokens": 200,
+    "total_tokens": 228,
+    "cost": 0.00026036,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00026036,
+      "upstream_inference_prompt_cost": 1.036e-05,
+      "upstream_inference_completions_cost": 0.00025
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 50,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "z-ai/glm-5.3-flashx-legal",
+  "model_requested": "z-ai/glm-5.3-flashx-legal",
+  "provider": "openrouter",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?",
+  "capture_policy": {
+    "model": "z-ai/glm-5.3-flashx-legal",
+    "pin": "Z.AI",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "G1_20",
+    "at": 1793681993.4521012,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

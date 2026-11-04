@@ -1,0 +1,44 @@
+{
+ "run_id": "20261103-glm-5-3-flashx-legal-house",
+ "models": [
+  {
+   "provider": "openrouter",
+   "model": "z-ai/glm-5.3-flashx-legal",
+   "or_provider": "Z.AI",
+   "label": "glm-5-3-flashx-legal-or-pin-zai",
+   "slug": "glm-5-3-flashx-legal",
+   "family": "glm",
+   "route_max_tokens": 131072,
+   "quantization": "fp8",
+   "request_timeout": 1200,
+   "token_policy": {
+    "freeflow": [
+     16000,
+     32768
+    ],
+    "values": [
+     4000,
+     8000,
+     16000,
+     32768
+    ]
+   },
+   "endpoint_snapshot": "/home/agent/work/model-personality-corpus-v2/notes/glm-5-3-flashx-legal-2026-11-02/endpoints.json",
+   "release_date": "2026-11-02",
+   "release_date_source": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+   "bv1_evaluator": "bv1-luna-v1-20260929",
+   "synthesis_route": "openrouter-openai"
+  }
+ ],
+ "pools": {
+  "capture": 4,
+  "analysis": 8,
+  "local": 2,
+  "synthesis": 1
+ },
+ "notes": [
+  "125 freeflow + 120 values. Canonical prompts; provider-default reasoning/sampling (reasoning mandatory, default effort max). Z.AI-only pin, no fallbacks. Frozen token ladders and technical retry budgets unchanged; advertised completion ceiling 131072.",
+  "Legal-domain mid- and post-trained variant of GLM-5.3-FlashX per Z.ai's docs (new weights, mapped). Release date from the docs page dateModified 2026-11-02 (no visible date on the section); listing timestamp not used as evidence.",
+  "Run by Lume in the souls.house body under the daily model-mapping rhythm (BjZoXJ JXGxBY)."
+ ]
+}

@@ -1,0 +1,34 @@
+{
+  "provider": "openrouter",
+  "model": "z-ai/glm-5.3-flashx-legal",
+  "or_provider": "Z.AI",
+  "label": "glm-5-3-flashx-legal-or-pin-zai",
+  "slug": "glm-5-3-flashx-legal",
+  "family": "glm",
+  "route_max_tokens": 131072,
+  "quantization": "fp8",
+  "request_timeout": 1200,
+  "token_policy": {
+    "freeflow": [
+      16000,
+      32768,
+      65536,
+      131072
+    ],
+    "values": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  },
+  "endpoint_snapshot": "/home/agent/work/model-personality-corpus-v2/notes/glm-5-3-flashx-legal-2026-11-02/endpoints.json",
+  "release_date": "2026-11-02",
+  "release_date_source": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+  "bv1_evaluator": "bv1-luna-v1-20260929",
+  "synthesis_route": "openrouter-openai",
+  "analysis_root": "/home/agent/work/mpac",
+  "phase_name": "capture_20261103-glm-5-3-flashx-legal-house_glm-5-3-flashx-legal-or-pin-zai",
+  "phase": "/home/agent/work/mpac/analysis/values-probe/model-coding/layered/capture_20261103-glm-5-3-flashx-legal-house_glm-5-3-flashx-legal-or-pin-zai",
+  "id_prefix": "CAP_20261103-glm-5-3-flashx-legal-house_glm-5-3-flashx-legal"
+}

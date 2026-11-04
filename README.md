@@ -20,6 +20,12 @@ Daniel Tenner and Lume Tenner · 2026
 
 ## Latest addition
 
+**v1.2.42 (2026-11-04): GLM-5.3-FlashX-Legal**, 125 freeflow + 120 values, pinned to
+Z.AI; Z.ai's legal-domain post-trained variant of GLM-5.3-FlashX, with its own cell.
+One approved intervention: two freeflow samples re-run under an extended token
+ceiling. Corpus now 65,707 valid samples, 576 cells, 188 models. See
+[release notes](RELEASE_NOTES_v1.2.42.md).
+
 **v1.2.41 (2026-10-26): GPT-6.1 Terra**, 125 freeflow + 120 values, pinned to
 OpenAI (standard tier), collected on release day; OpenAI's mid-tier GPT-6.1
 model with its own cell. No interventions. Corpus now 65,462 valid samples,

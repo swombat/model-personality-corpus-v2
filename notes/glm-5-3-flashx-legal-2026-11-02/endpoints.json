@@ -1,0 +1,72 @@
+{
+    "data": {
+        "id": "z-ai/glm-5.3-flashx-legal",
+        "name": "Z.ai: GLM 5.3 FlashX Legal",
+        "created": 1793626154,
+        "description": "GLM-5.3-FlashX-Legal (GLM-Legal) is Z.ai's legal-domain variant of GLM-5.3-FlashX, a native multimodal model that accepts text, image, and video input and produces text. It adds legal-domain mid-training and post-training with reinforcement...",
+        "architecture": {
+            "tokenizer": "Other",
+            "instruct_type": null,
+            "modality": "text+image+video->text",
+            "input_modalities": [
+                "text",
+                "image",
+                "video"
+            ],
+            "output_modalities": [
+                "text"
+            ]
+        },
+        "endpoints": [
+            {
+                "name": "Z.AI | z-ai/glm-5.3-flashx-legal-20261102",
+                "model_id": "z-ai/glm-5.3-flashx-legal",
+                "model_name": "Z.ai: GLM 5.3 FlashX Legal",
+                "context_length": 1048576,
+                "pricing": {
+                    "prompt": "0.00000037",
+                    "completion": "0.00000125",
+                    "input_cache_read": "0.000000075",
+                    "discount": 0
+                },
+                "provider_name": "Z.AI",
+                "tag": "z-ai/fp8",
+                "service_tier": null,
+                "quantization": "fp8",
+                "max_completion_tokens": 131072,
+                "max_prompt_tokens": null,
+                "supported_parameters": [
+                    "reasoning",
+                    "include_reasoning",
+                    "max_tokens",
+                    "temperature",
+                    "top_p",
+                    "tools",
+                    "tool_choice",
+                    "top_k",
+                    "response_format",
+                    "structured_outputs",
+                    "reasoning_effort"
+                ],
+                "supports_tool_choice": {
+                    "none": false,
+                    "auto": true,
+                    "required": false,
+                    "function": false
+                },
+                "status": 0,
+                "uptime_last_30m": 100,
+                "uptime_last_5m": 100,
+                "uptime_last_1d": 100,
+                "supports_implicit_caching": true,
+                "native_tools": {},
+                "supports_voice_cloning": false,
+                "supports_multiple_audio_references": false,
+                "supports_image_reference": false,
+                "supports_diarization": false,
+                "latency_last_30m": null,
+                "throughput_last_30m": null
+            }
+        ]
+    }
+}
