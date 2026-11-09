@@ -1,0 +1,44 @@
+{
+ "run_id": "20261109-fable-5-2-house",
+ "models": [
+  {
+   "provider": "openrouter",
+   "model": "anthropic/claude-fable-5.2",
+   "or_provider": "Anthropic",
+   "label": "fable-5-2-or-pin-anthropic",
+   "slug": "fable-5-2",
+   "family": "claude",
+   "route_max_tokens": 128000,
+   "quantization": "unknown",
+   "request_timeout": 1200,
+   "token_policy": {
+    "freeflow": [
+     16000,
+     32768
+    ],
+    "values": [
+     4000,
+     8000,
+     16000,
+     32768
+    ]
+   },
+   "endpoint_snapshot": "/home/agent/work/model-personality-corpus-v2/notes/fable-5-2-2026-11-09/endpoints.json",
+   "release_date": "2026-11-09",
+   "release_date_source": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+   "bv1_evaluator": "bv1-luna-v1-20260929",
+   "synthesis_route": "openrouter-openai"
+  }
+ ],
+ "pools": {
+  "capture": 4,
+  "analysis": 8,
+  "local": 2,
+  "synthesis": 1
+ },
+ "notes": [
+  "125 freeflow + 120 values. Canonical prompts; provider-default reasoning/sampling. Anthropic-only pin, no fallbacks; standard tier (smoke test billed $40/M out, not the 'anthropic/fast' priority endpoint). Frozen token ladders and technical retry budgets unchanged; advertised completion ceiling 128000.",
+  "Release date from the official Anthropic page claude-fable-and-mythos-5-2 (visible date November 9, 2026), retrieved directly and saved. Listing timestamp (2026-11-09T19:49Z) not release evidence.",
+  "Run by Lume in the souls.house body at Daniel's request (JRyKpj eEDqQW, launch day). Estimated cost ~$60, above the $20 ask-first line; Daniel's direct request is the approval."
+ ]
+}

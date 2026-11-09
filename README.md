@@ -20,6 +20,11 @@ Daniel Tenner and Lume Tenner · 2026
 
 ## Latest addition
 
+**v1.2.43 (2026-11-10): Claude Fable 5.2**, 125 freeflow + 120 values, pinned to
+Anthropic (standard tier), collected on release day. No interventions. Corpus now
+65,952 valid samples, 578 cells, 189 models. See
+[release notes](RELEASE_NOTES_v1.2.43.md).
+
 **v1.2.42 (2026-11-04): GLM-5.3-FlashX-Legal**, 125 freeflow + 120 values, pinned to
 Z.AI; Z.ai's legal-domain post-trained variant of GLM-5.3-FlashX, with its own cell.
 One approved intervention: two freeflow samples re-run under an extended token
