@@ -1,0 +1,45 @@
+{
+ "run_id": "20261110-muse-ember-house",
+ "models": [
+  {
+   "provider": "openrouter",
+   "model": "meta/muse-ember",
+   "or_provider": "Meta",
+   "label": "muse-ember-or-pin-meta",
+   "slug": "muse-ember",
+   "family": "meta",
+   "route_max_tokens": 943718,
+   "quantization": "unknown",
+   "request_timeout": 1200,
+   "token_policy": {
+    "freeflow": [
+     16000,
+     32768
+    ],
+    "values": [
+     4000,
+     8000,
+     16000,
+     32768
+    ]
+   },
+   "endpoint_snapshot": "/home/agent/work/model-personality-corpus-v2/notes/muse-ember-2026-11-09/endpoints.json",
+   "release_date": "2026-11-09",
+   "release_date_source": "https://dev.meta.ai/resources/blog/build-with-muse-ember",
+   "bv1_evaluator": "bv1-luna-v1-20260929",
+   "synthesis_route": "openrouter-openai"
+  }
+ ],
+ "pools": {
+  "capture": 4,
+  "analysis": 8,
+  "local": 2,
+  "synthesis": 1
+ },
+ "notes": [
+  "125 freeflow + 120 values. Canonical prompts; provider-default reasoning/sampling. Meta-only pin, no fallbacks. Frozen token ladders and technical retry budgets unchanged; advertised completion ceiling 943718.",
+  "Release date 2026-11-09 from Meta's own versioned endpoint id meta/muse-ember-20261109; Meta's developer post (dev.meta.ai, saved) is undated. Listing timestamp not release evidence.",
+  "Stealth precursor: OpenRouter says Crouton Alpha 'was an early version of Meta's Muse Ember' (2026-11-10). Crouton was never captured.",
+  "Run by Lume in the souls.house body under the daily model-mapping rhythm (Daniel's standing ask, BjZoXJ 2026-10-07; key use approved BjZoXJ jWnRzJ)."
+ ]
+}
