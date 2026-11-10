@@ -133,22 +133,33 @@ def _apply(db, spec_path, directory, task_id, authorization, occurrence, check_o
     row = {"pid": c["id_prefix"] + "_BV1_" + sid, "condition": json.loads(src.read_text())["condition"],
            "source": str(src), "outpath": str(out), "text": text,
            "sample_id": c["label"] + "/" + sid + ".json"}
-    state, reason = db.execute("SELECT state,reason FROM jobs WHERE id=?", (task_id,)).fetchone()
+    state, reason, stored = db.execute("SELECT state,reason,receipts FROM jobs WHERE id=?", (task_id,)).fetchone()
+    v1_attempts = INEL.attempt_dir(v1_out, c, sid)
+    t_attempts = INEL.attempt_dir(t_out, c, sid)
+    artifacts = (out, prov, binding, receipt_file)
 
     if state == "done" and receipt_file.exists():
-        # Repeat invocation: verify what was applied, change nothing.
+        # Repeat invocation: verify everything that was applied, change nothing.
         r = json.loads(receipt_file.read_text())
         assert r["arm"] == arm and r["task"] == task_id
+        assert json.loads(stored or "{}") == {str(p.resolve()): digest(p) for p in artifacts}, \
+            "applied artifacts differ from the job's stored receipts"
+        assert (r["v1_attempts"], r["targeted_attempts"]) == (tree_fingerprint(v1_attempts), tree_fingerprint(t_attempts)), \
+            "preserved attempt trees changed since apply"
+        assert r["authorization"] and r["occurrence"]["context_sha256"] == sha(r["occurrence"]["context"].encode())
         assert worker.bv1(c, phase, sid, validate=True)["evaluator_arm"] == arm
         assert V12.provenance_ok(out, row), "applied output no longer matches its provenance"
         return {"id": task_id, "noop": True, "applied": True, "receipt": str(receipt_file)}
 
-    assert state == "blocked" and not (reason or "").startswith("dependency"), "only blocked roots qualify"
-    assert not INEL.receipt_path(phase, sid).exists(), "task has an ineligibility receipt"
-    assert not (v1_bind / (sid + ".json")).exists(), "task has a v1 binding"
-    assert not (t_bind / (sid + ".json")).exists(), "task has a targeted binding"
-    v1_attempts = INEL.attempt_dir(v1_out, c, sid)
-    t_attempts = INEL.attempt_dir(t_out, c, sid)
+    def eligible_root():
+        st, rs = db.execute("SELECT state,reason FROM jobs WHERE id=?", (task_id,)).fetchone()
+        assert st == "blocked" and not (rs or "").startswith("dependency"), "only blocked roots qualify"
+        assert not INEL.receipt_path(phase, sid).exists(), "task has an ineligibility receipt"
+        assert not (v1_bind / (sid + ".json")).exists(), "task has a v1 binding"
+        assert not (t_bind / (sid + ".json")).exists(), "task has a targeted binding"
+        return st, rs
+
+    eligible_root()
     before = (tree_fingerprint(v1_attempts), tree_fingerprint(t_attempts))
 
     adir, cands = candidates(c, phase, sid, src, row, V12)
@@ -174,7 +185,8 @@ def _apply(db, spec_path, directory, task_id, authorization, occurrence, check_o
     lock = (directory / "repair.lock").open("a+")
     fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
     try:
-        # Fresh rechecks immediately before any write.
+        # Fresh rechecks under the lock, immediately before any write.
+        eligible_root()
         adir2, cands2 = candidates(c, phase, sid, src, row, V12)
         again = next((x for x in cands2 if x["eligible"]), None)
         assert again and again["file"] == selected["file"] and again["attempt_sha256"] == selected["attempt_sha256"]

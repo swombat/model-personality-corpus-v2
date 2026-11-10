@@ -155,6 +155,43 @@ class OfflineLaneTests(unittest.TestCase):
         with self.assertRaises(AssertionError):
             self.lane(f)
 
+    def test_repeat_after_changed_receipt_fails(self):
+        f = self.make()
+        sel = self.lane(f, occurrence=self.start(f))
+        p = Path(sel["receipt"])
+        p.write_text(p.read_text().replace(AUTH, "someone-else"))
+        with self.assertRaisesRegex(AssertionError, "stored receipts"):
+            self.lane(f)
+
+    def test_repeat_after_unselected_attempt_changed_fails(self):
+        f = self.make()
+        self.lane(f, occurrence=self.start(f))
+        d = INEL.attempt_dir(worker.bv1_paths(f.c, f.phase, worker.LUNA_ARM)[0], f.c, "X_1")
+        other = sorted(d.glob("*.json"))[1]  # never selected
+        other.write_text(other.read_text().replace("quote_sentence_boundary", "edited"))
+        with self.assertRaisesRegex(AssertionError, "attempt trees changed"):
+            self.lane(f)
+
+    def test_lock_gap_competing_binding_leaves_nothing_partial(self):
+        f = self.make()
+        real = LANE.fcntl.flock
+        tbind = worker.bv1_paths(f.c, f.phase, worker.LUNA_TARGETED_ARM)[2] / "X_1.json"
+
+        def racing(fd, op):  # another repair binds the sample between the pre-check and the lock
+            atomic(tbind, {"x": 1})
+            return real(fd, op)
+        LANE.fcntl.flock = racing
+        try:
+            with self.assertRaisesRegex(AssertionError, "targeted binding"):
+                self.lane(f, occurrence=self.start(f))
+        finally:
+            LANE.fcntl.flock = real
+        _, outputs, bindings = worker.bv1_paths(f.c, f.phase, worker.LUNA_V12_OFFLINE_ARM)
+        self.assertFalse((outputs / LABEL / "X_1.md").exists())
+        self.assertFalse((bindings / "X_1.json").exists())
+        self.assertFalse((f.phase / "bv1_offline_receipts" / "X_1.json").exists())
+        self.assertEqual(self.state(f)[0], "blocked")
+
     def test_altered_source_has_no_eligible_attempt(self):
         f = self.make()
         atomic(f.traces / "freeflow/X_1.json", {"result": "Sample X_1. It has sentences!", "condition": "X"})
