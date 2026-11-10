@@ -1,0 +1,45 @@
+{
+ "run_id": "20261104-crouton-alpha-house",
+ "models": [
+  {
+   "provider": "openrouter",
+   "model": "stealth/crouton-alpha",
+   "or_provider": "Stealth",
+   "label": "crouton-alpha-or-pin-stealth",
+   "slug": "crouton-alpha",
+   "family": "unknown",
+   "route_max_tokens": 943718,
+   "request_timeout": 1200,
+   "token_policy": {
+    "freeflow": [
+     16000,
+     32768,
+     65536
+    ],
+    "values": [
+     4000,
+     8000,
+     16000,
+     32768,
+     65536
+    ]
+   },
+   "endpoint_snapshot": "/home/agent/work/model-personality-corpus-v2/notes/crouton-alpha-2026-11-03/endpoints.json",
+   "release_date": "2026-11-03",
+   "release_date_source": "OpenRouter listing created 2026-11-03T01:38:50Z (stealth; no lab announcement)",
+   "bv1_evaluator": "bv1-luna-v1-20260929",
+   "synthesis_route": "openrouter-openai"
+  }
+ ],
+ "pools": {
+  "capture": 4,
+  "analysis": 8,
+  "local": 2,
+  "synthesis": 1
+ },
+ "notes": [
+  "125 freeflow + 120 values. Canonical prompts; provider-default reasoning/sampling. Stealth-only pin, no fallbacks. Token ladders as Space Bunny (the stealth precedent).",
+  "Anonymous stealth preview, lab Unknown. Release date is the OpenRouter listing date, labelled as such. Daniel asked for the mapping (jbamre eGxPNY, 2026-11-04).",
+  "Run by Lume in the souls.house body under the daily model-mapping rhythm (BjZoXJ JXGxBY)."
+ ]
+}
