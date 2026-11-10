@@ -204,6 +204,8 @@ fast-forward main:
 6. `cd website && python3 scripts/generate_scoped.py <slug>`. It must report
    125/125 freeflow, 120/120 values, image True, and every other model
    preserved exactly.
+   It copies the ladder entry into models.json, so run it again after step 8;
+   otherwise the page has no capability block (Muse Ember, 2026-11-10).
 7. Map: `~/state/tools/map-py/bin/python scripts/generate_map.py`. Record the
    nearest neighbours, the nearest same-lab model and the PCA disparity.
 8. Ladder: fetch `https://artificialanalysis.ai/models/<aa-slug>` (find the slug
@@ -281,6 +283,17 @@ you've seen it.
   had 8/125 unpunctuated sources and is *held*, not mapped. See
   `decisions.json` and the raw repo branch `hold/qwen3-8-omni-flash`.
 - A "held" entry in decisions.json means captured: don't re-capture it.
+- A BV1 sample rejected only for `quote_sentence_boundary` because its sentence
+  follows a closing quote (`...change?' Boredom is...`) is analysis issue #1.
+  Don't spend the targeted lane on it: v1.2 (`luna_v1_2.py`) judges it, through
+  `scripts/capture_harness/apply_bv1_offline.py` (`--check` first; then
+  `--occurrence <start>` and `--authorization`), with Mira's review of the
+  occurrence span in context. Syntax only: attribution after a quoted
+  exclamation also passes, so the reviewed span is the authorization. Precedent:
+  Muse Ember VARY_14, 2026-11-10.
+- A values residual split needs an explicit per-capture
+  `residual_publication_policy.json` approved for that capture; an earlier
+  model's approval does not carry over (Mira, Muse Ember G2_27).
 - Pushing the 2b commit to souls-house master prints "Changes must be made through
   a pull request". That is the ruleset's admin-bypass notice, not a rejection: the
   push lands (3cd1ff99, 2026-10-16). Check `git log origin/master` before opening a PR.
