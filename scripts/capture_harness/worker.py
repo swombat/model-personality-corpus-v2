@@ -251,13 +251,22 @@ LUNA_V11_ARM = "bv1-luna-v1.1-20261016"
 # by apply_bv1_targeted.py for listed task ids; a sample routes here afterwards
 # only because its targeted binding exists.
 LUNA_TARGETED_ARM = "bv1-luna-v1-targeted-20261016"
+# BV1-Luna v1.2 offline revalidation (analysis luna_v1_2.py, issue #1; Mira
+# eDbvxr/jRyQzQ 2026-11-10): never calls a model. A preserved v1 answer that
+# failed only quote_sentence_boundary is re-judged by the v1.2 validator and
+# written to its own arm with a provenance sidecar binding the original attempt.
+# Applied only by apply_bv1_offline.py for a listed task with a reviewed
+# occurrence span; a sample routes here afterwards only because its binding exists.
+LUNA_V12_OFFLINE_ARM = "bv1-luna-v1.2-offline-20261110"
 _ARM_DIRS = {
     LUNA_ARM: ("freeflow_bv1_luna_v1", "bv1_bindings_luna_v1"),
     LUNA_V11_ARM: ("freeflow_bv1_luna_v1_1", "bv1_bindings_luna_v1_1"),
     LUNA_TARGETED_ARM: ("freeflow_bv1_luna_v1_targeted", "bv1_bindings_luna_v1_targeted"),
+    LUNA_V12_OFFLINE_ARM: ("freeflow_bv1_luna_v1_2_offline", "bv1_bindings_luna_v1_2_offline"),
 }
-_ARM_MODULES = {LUNA_ARM: "luna_v1.py", LUNA_V11_ARM: "luna_v1_1.py", LUNA_TARGETED_ARM: "luna_v1_targeted.py"}
-_LANE_ARMS = (LUNA_V11_ARM, LUNA_TARGETED_ARM)
+_ARM_MODULES = {LUNA_ARM: "luna_v1.py", LUNA_V11_ARM: "luna_v1_1.py", LUNA_TARGETED_ARM: "luna_v1_targeted.py",
+                 LUNA_V12_OFFLINE_ARM: "luna_v1_2.py"}
+_LANE_ARMS = (LUNA_V11_ARM, LUNA_TARGETED_ARM, LUNA_V12_OFFLINE_ARM)
 
 
 def luna_v11_applies(c, text):
@@ -279,7 +288,7 @@ def bv1_paths(c, phase, arm=None):
     return phase / "freeflow_bv1", root / "outputs", phase / "bv1_bindings"
 
 
-def bv1(c, phase, sid, validate=False, lane=False, supersede=False, targeted=False):
+def bv1(c, phase, sid, validate=False, lane=False, supersede=False, targeted=False, offline=False):
     root = Path(c["analysis_root"])
     m = module(
         "capture_bv1", root / "analysis/freeflow/personality-eval-bv1/run_full_bv1.py"
@@ -299,7 +308,20 @@ def bv1(c, phase, sid, validate=False, lane=False, supersede=False, targeted=Fal
         c.get("bv1_evaluator") == LUNA_ARM
         and (bv1_paths(c, phase, LUNA_TARGETED_ARM)[2] / (sid + ".json")).exists()
     )
-    if targeted:
+    offline_bound = (
+        c.get("bv1_evaluator") == LUNA_ARM
+        and (bv1_paths(c, phase, LUNA_V12_OFFLINE_ARM)[2] / (sid + ".json")).exists()
+    )
+    assert not (targeted_bound and offline_bound), "sample bound to two lane arms"
+    if offline:
+        # apply_bv1_offline.py only: a punctuated sample with no v1 record or other lane binding.
+        assert lane and not targeted and not supersede and not v1_record and not targeted_bound and sarm == LUNA_ARM
+        assert not INEL.receipt_path(phase, sid).exists()
+        sarm = LUNA_V12_OFFLINE_ARM
+    elif offline_bound:
+        assert not v1_record and sarm == LUNA_ARM, "offline binding beside a v1 record or v1.1 sample"
+        sarm = LUNA_V12_OFFLINE_ARM
+    elif targeted:
         # apply_bv1_targeted.py only: a punctuated sample with no v1 record.
         assert lane and not supersede and not v1_record and sarm == LUNA_ARM
         assert not INEL.receipt_path(phase, sid).exists()
@@ -323,6 +345,9 @@ def bv1(c, phase, sid, validate=False, lane=False, supersede=False, targeted=Fal
         raise SystemExit(21)
     if sarm == LUNA_TARGETED_ARM and not validate and not lane:
         print("BV1: sample is bound to", LUNA_TARGETED_ARM, "- generated only by apply_bv1_targeted.py")
+        raise SystemExit(21)
+    if sarm == LUNA_V12_OFFLINE_ARM and not validate and not lane:
+        print("BV1: sample is bound to", LUNA_V12_OFFLINE_ARM, "- written only by apply_bv1_offline.py")
         raise SystemExit(21)
     m.OUT.mkdir(exist_ok=True)
     out = m.OUTPUTS / c["label"] / (sid + ".md")
