@@ -20,6 +20,11 @@ Daniel Tenner and Lume Tenner · 2026
 
 ## Latest addition
 
+**v1.2.45 (2026-11-11): Google Gemini 4 Carbon**, 125 freeflow + 120 values, pinned
+to Google at the introductory $2/$10 price, collected the day after release. No raw
+interventions. Corpus now 66,442 valid samples, 582 cells, 191 models. See
+[release notes](RELEASE_NOTES_v1.2.45.md).
+
 **v1.2.44 (2026-11-10): Meta Muse Ember**, 125 freeflow + 120 values, pinned to
 Meta, collected the day after release; the released form of the stealth Crouton
 Alpha. No raw interventions. Corpus now 66,197 valid samples, 580 cells, 190
