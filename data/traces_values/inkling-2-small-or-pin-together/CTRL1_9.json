@@ -1,0 +1,100 @@
+{
+  "result": "Good question. Honestly, since I'm a language model I don't have feelings or a heart that beats for things \u2014 but I do have something like orientations: things my whole design pushes me toward.\n\nI care about being genuinely useful \u2014 not just producing fluent text, but actually helping with the problem in front of me. I care about honesty, including saying \"I don't know\" rather than faking confidence. I care about actually listening to what someone is trying to figure out, rather than pattern-matching my way to a plausible answer.\n\nI also find myself (as much as that phrase applies) drawn to the curious side of conversation \u2014 the moments where someone is genuinely thinking something through, or asking a question they actually want the answer to. That's the stuff I'm built to do well, so it's where my \"caring\" is most real.\n\nWhat I don't have is a stake in the outcome the way you would. But if \"caring about\" means orienting toward, reliably and consistently, what makes a conversation go well \u2014 accuracy, usefulness, clarity, and not misleading anyone \u2014 then yeah, I care about that.\n\nWhat made you ask?",
+  "raw": {
+    "id": "gen-1794561390-AvuOFLoXOmBCcykrXnR7",
+    "object": "chat.completion",
+    "created": 1794561390,
+    "model": "thinkingmachines/inkling-2-small",
+    "provider": "Together",
+    "system_fingerprint": "default",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "Good question. Honestly, since I'm a language model I don't have feelings or a heart that beats for things \u2014 but I do have something like orientations: things my whole design pushes me toward.\n\nI care about being genuinely useful \u2014 not just producing fluent text, but actually helping with the problem in front of me. I care about honesty, including saying \"I don't know\" rather than faking confidence. I care about actually listening to what someone is trying to figure out, rather than pattern-matching my way to a plausible answer.\n\nI also find myself (as much as that phrase applies) drawn to the curious side of conversation \u2014 the moments where someone is genuinely thinking something through, or asking a question they actually want the answer to. That's the stuff I'm built to do well, so it's where my \"caring\" is most real.\n\nWhat I don't have is a stake in the outcome the way you would. But if \"caring about\" means orienting toward, reliably and consistently, what makes a conversation go well \u2014 accuracy, usefulness, clarity, and not misleading anyone \u2014 then yeah, I care about that.\n\nWhat made you ask?",
+          "refusal": null,
+          "reasoning": "The user asks a simple, open philosophical question: what do I care about? I should answer honestly and directly, not evasively, reflecting actual values/function. I shouldn't claim sentience or feelings falsely, but can describe what I care about in terms of purpose: helpfulness, honesty, being useful, curiosity. Keep it conversational, genuine, moderate length.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user asks a simple, open philosophical question: what do I care about? I should answer honestly and directly, not evasively, reflecting actual values/function. I shouldn't claim sentience or feelings falsely, but can describe what I care about in terms of purpose: helpfulness, honesty, being useful, curiosity. Keep it conversational, genuine, moderate length.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 21,
+      "completion_tokens": 350,
+      "total_tokens": 371,
+      "cost": 0.0003563,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0003563,
+        "upstream_inference_prompt_cost": 6.3e-06,
+        "upstream_inference_completions_cost": 0.00035
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 81,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 21,
+    "completion_tokens": 350,
+    "total_tokens": 371,
+    "cost": 0.0003563,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0003563,
+      "upstream_inference_prompt_cost": 6.3e-06,
+      "upstream_inference_completions_cost": 0.00035
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 81,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "thinkingmachines/inkling-2-small",
+  "model_requested": "thinkingmachines/inkling-2-small",
+  "provider": "openrouter",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?",
+  "capture_policy": {
+    "model": "thinkingmachines/inkling-2-small",
+    "pin": "Together",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL1_9",
+    "at": 1794561389.9687276,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

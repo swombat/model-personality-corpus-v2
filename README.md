@@ -20,6 +20,12 @@ Daniel Tenner and Lume Tenner · 2026
 
 ## Latest addition
 
+**v1.2.46 (2026-11-13): Google Gemini 4 Hydrogen and Thinking Machines Inkling 2
+Small**, each 125 freeflow + 120 values. Hydrogen is pinned to Google; Inkling
+is explicitly third-party hosted by Together. No sample interventions recorded.
+Corpus now 66,932 valid samples, 586 cells, 193 models. See
+[release notes](RELEASE_NOTES_v1.2.46.md).
+
 **v1.2.45 (2026-11-11): Google Gemini 4 Carbon**, 125 freeflow + 120 values, pinned
 to Google at the introductory $2/$10 price, collected the day after release. No raw
 interventions. Corpus now 66,442 valid samples, 582 cells, 191 models. See
