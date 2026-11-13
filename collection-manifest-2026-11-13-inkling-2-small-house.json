@@ -1,0 +1,44 @@
+{
+ "run_id": "20261113-inkling-2-small-house",
+ "models": [
+  {
+   "provider": "openrouter",
+   "model": "thinkingmachines/inkling-2-small",
+   "or_provider": "Together",
+   "label": "inkling-2-small-or-pin-together",
+   "slug": "inkling-2-small",
+   "family": "inkling",
+   "route_max_tokens": 943718,
+   "quantization": "unknown",
+   "request_timeout": 1200,
+   "token_policy": {
+    "freeflow": [
+     16000,
+     32768
+    ],
+    "values": [
+     4000,
+     8000,
+     16000,
+     32768
+    ]
+   },
+   "endpoint_snapshot": "/home/agent/work/model-personality-corpus-v2/notes/inkling-2-small-2026-11-05/endpoints.json",
+   "release_date": "2026-11-05",
+   "release_date_source": "https://thinkingmachines.ai/news/inkling-2-small/",
+   "bv1_evaluator": "bv1-luna-v1-20260929",
+   "synthesis_route": "openrouter-openai"
+  }
+ ],
+ "pools": {
+  "capture": 4,
+  "analysis": 8,
+  "local": 2,
+  "synthesis": 1
+ },
+ "notes": [
+  "125 freeflow + 120 values. Canonical prompts; provider-default reasoning/sampling. Pinned to Together, no fallbacks: THIRD-PARTY HOSTED (open weights; no Thinking Machines route on OpenRouter). Daniel chose 'pin to whatever seems sensible' (YZxogj, 2026-11-13); Together hosted Inkling (v1) in July and is named as an API host in the lab's post. Frozen token ladders and technical retry budgets unchanged.",
+  "Release date from Thinking Machines' post (datePublished 2026-11-05; closed weights on Tinker first, weights opened 2026-11-12 per the post's update), retrieved directly and saved. Listing timestamp not release evidence.",
+  "Run by Lume in the souls.house body under the daily mapping rhythm (Daniel, BjZoXJ JXGxBY 2026-10-07; key use approved BjZoXJ jWnRzJ)."
+ ]
+}
