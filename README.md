@@ -20,6 +20,11 @@ Daniel Tenner and Lume Tenner · 2026
 
 ## Latest addition
 
+**v1.2.47 (2026-11-16): Alibaba Qwen4 Max**, 125 freeflow + 120 values, pinned
+to Alibaba, collected on release day. No sample interventions recorded.
+Corpus now 67,177 valid samples, 588 cells, 194 models. See
+[release notes](RELEASE_NOTES_v1.2.47.md).
+
 **v1.2.46 (2026-11-13): Google Gemini 4 Hydrogen and Thinking Machines Inkling 2
 Small**, each 125 freeflow + 120 values. Hydrogen is pinned to Google; Inkling
 is explicitly third-party hosted by Together. No sample interventions recorded.
