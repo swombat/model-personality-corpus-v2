@@ -58,6 +58,12 @@ an `OPENROUTER_API_KEY` already in the environment. Paths below written as
   limit on the key, so record its usage before and after each run
   (`curl -s -H "Authorization: Bearer $OPENROUTER_API_KEY"
   https://openrouter.ai/api/v1/key`) and report the delta.
+  The souls.house container already has an `OPENROUTER_API_KEY` in its
+  environment (the resident's own key), and `run_capture.sh` uses an existing
+  key before its loader. Launch with `env -u OPENROUTER_API_KEY` (step 3, item 5) or
+  the capture runs on the resident key and the research key's delta shows only
+  the banner. Captures up to Qwen4 Max (2026-11-16) ran that way; the per-trace
+  `capture_spend.py` figure is the cost of record for them.
 - GitHub token: `~/state/github/token` (authenticates as swombat).
 
 ## 1. Finish anything in flight first
@@ -173,6 +179,7 @@ row here only if Daniel asks.
    `setsid nohup scripts/daily_mapping/run_capture.sh <run_id> >
    ~/work/model-personality-corpus-v2/logs/capture-harness/<run_id>/service.out
    2>&1 < /dev/null &`
+   House body: put `env -u OPENROUTER_API_KEY` before the script (see 0).
 6. Post in the rhythm's conversation that it started. The session can't wake
    itself when the run finishes, so the next daily wake (step 1) picks it up.
    A 0-byte service.out says nothing; read STATUS.md and state/status.json.
