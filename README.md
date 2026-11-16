@@ -1,7 +1,7 @@
 # Convergent Form, Divergent Voice II — Corpus
 
 **A research data corpus of free-form contemplative writing samples from
-177 dated language-model identities, with explicit deployment provenance for API,
+194 dated language-model identities (588 deployment cells), with explicit deployment provenance for API,
 provider-pinned, and local full-precision cells.**
 
 Daniel Tenner and Lume Tenner · 2026
