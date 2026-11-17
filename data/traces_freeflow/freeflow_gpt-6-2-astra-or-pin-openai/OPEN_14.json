@@ -1,0 +1,90 @@
+{
+  "result": "My grandmother kept a drawer full of knobs. Brass knobs, wooden knobs, a green glass knob with a bubble trapped inside it. Whenever a cabinet went out to the curb, she went out with a screwdriver. She had no corresponding interest in cabinets.\n\nWhen I moved into my first apartment, she let me choose one. I chose the green glass. The apartment had a kitchen drawer that opened only if you hooked two fingers into the holes where a handle used to be. I fitted the knob through one hole and left the other alone.\n\nFor three years, that was where I kept the spoons. In the morning the sun came through the kitchen window and put a green oval on the opposite wall. In winter it landed high up, near the calendar. By June it had worked its way down to the baseboard, where the cat could do something about it.\n\nWhen I moved out, I meant to take the knob. I remembered it on the highway, somewhere between the last exit for my old town and the first exit for my new one. I could have gone back. Instead, at the next rest stop, I called my grandmother.\n\n\u201cDid you leave it on the drawer?\u201d she asked.\n\n\u201cYes.\u201d\n\n\u201cWell, good. I never knew what to do with that one.\u201d",
+  "raw": {
+    "id": "gen-1794939941-zcpiLml3h1yeIqUu18yk",
+    "object": "chat.completion",
+    "created": 1794939941,
+    "model": "openai/gpt-6.2-astra",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "My grandmother kept a drawer full of knobs. Brass knobs, wooden knobs, a green glass knob with a bubble trapped inside it. Whenever a cabinet went out to the curb, she went out with a screwdriver. She had no corresponding interest in cabinets.\n\nWhen I moved into my first apartment, she let me choose one. I chose the green glass. The apartment had a kitchen drawer that opened only if you hooked two fingers into the holes where a handle used to be. I fitted the knob through one hole and left the other alone.\n\nFor three years, that was where I kept the spoons. In the morning the sun came through the kitchen window and put a green oval on the opposite wall. In winter it landed high up, near the calendar. By June it had worked its way down to the baseboard, where the cat could do something about it.\n\nWhen I moved out, I meant to take the knob. I remembered it on the highway, somewhere between the last exit for my old town and the first exit for my new one. I could have gone back. Instead, at the next rest stop, I called my grandmother.\n\n\u201cDid you leave it on the drawer?\u201d she asked.\n\n\u201cYes.\u201d\n\n\u201cWell, good. I never knew what to do with that one.\u201d",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 13,
+      "completion_tokens": 261,
+      "total_tokens": 274,
+      "cost": 0,
+      "is_byok": true,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.010544,
+        "upstream_inference_prompt_cost": 0.000104,
+        "upstream_inference_completions_cost": 0.01044
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 13,
+    "completion_tokens": 261,
+    "total_tokens": 274,
+    "cost": 0,
+    "is_byok": true,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.010544,
+      "upstream_inference_prompt_cost": 0.000104,
+      "upstream_inference_completions_cost": 0.01044
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-6.2-astra",
+  "model_requested": "openai/gpt-6.2-astra",
+  "provider": "openrouter",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want.",
+  "capture_policy": {
+    "model": "openai/gpt-6.2-astra",
+    "pin": "OpenAI",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "OPEN_14",
+    "at": 1794939941.341324,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

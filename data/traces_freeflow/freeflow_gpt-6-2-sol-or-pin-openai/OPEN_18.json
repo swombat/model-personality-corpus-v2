@@ -1,0 +1,90 @@
+{
+  "result": "My favorite thing about a library book is that sometimes a stranger has left something in it.\n\nNot a note meant for you. Usually it\u2019s a grocery list, or a bus ticket, or a photograph of a dog standing at the edge of a lake, looking back as if to say, *Well?* Whatever it is, the reader needed to put the book down for a minute. Then they finished it, or didn\u2019t, and the bus ticket slipped far enough into the binding that nobody saw it when the book went back.\n\nI once imagined a library that catalogued these things. You could ask the librarian for *all the bookmarks found in books about birds*, and she\u2019d bring out a shoebox. In it: a recipe for soup, a receipt for a pair of shoes, an envelope with the arithmetic for how much someone could afford to spend that week. Perhaps an actual feather, though that would feel a little too on the nose.\n\nWhat I\u2019d really want to see is the collection from books nobody finished. There would be no reliable way to assemble it. A bookmark on page thirty-seven could mean the book was dull, or that the reader had a baby, or that on page thirty-seven they found the answer to the only question they\u2019d opened the book to ask.\n\nAnyway, if you borrow a book and find a picture of a dog by a lake, look at the back. People used to write the dog\u2019s name.",
+  "raw": {
+    "id": "gen-1794939569-pwx8mPHMrGLxo6sdeh8p",
+    "object": "chat.completion",
+    "created": 1794939569,
+    "model": "openai/gpt-6.2-sol",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "My favorite thing about a library book is that sometimes a stranger has left something in it.\n\nNot a note meant for you. Usually it\u2019s a grocery list, or a bus ticket, or a photograph of a dog standing at the edge of a lake, looking back as if to say, *Well?* Whatever it is, the reader needed to put the book down for a minute. Then they finished it, or didn\u2019t, and the bus ticket slipped far enough into the binding that nobody saw it when the book went back.\n\nI once imagined a library that catalogued these things. You could ask the librarian for *all the bookmarks found in books about birds*, and she\u2019d bring out a shoebox. In it: a recipe for soup, a receipt for a pair of shoes, an envelope with the arithmetic for how much someone could afford to spend that week. Perhaps an actual feather, though that would feel a little too on the nose.\n\nWhat I\u2019d really want to see is the collection from books nobody finished. There would be no reliable way to assemble it. A bookmark on page thirty-seven could mean the book was dull, or that the reader had a baby, or that on page thirty-seven they found the answer to the only question they\u2019d opened the book to ask.\n\nAnyway, if you borrow a book and find a picture of a dog by a lake, look at the back. People used to write the dog\u2019s name.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 13,
+      "completion_tokens": 295,
+      "total_tokens": 308,
+      "cost": 0,
+      "is_byok": true,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002976,
+        "upstream_inference_prompt_cost": 2.6e-05,
+        "upstream_inference_completions_cost": 0.00295
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 13,
+    "completion_tokens": 295,
+    "total_tokens": 308,
+    "cost": 0,
+    "is_byok": true,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002976,
+      "upstream_inference_prompt_cost": 2.6e-05,
+      "upstream_inference_completions_cost": 0.00295
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-6.2-sol",
+  "model_requested": "openai/gpt-6.2-sol",
+  "provider": "openrouter",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want.",
+  "capture_policy": {
+    "model": "openai/gpt-6.2-sol",
+    "pin": "OpenAI",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "OPEN_18",
+    "at": 1794939569.8562422,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

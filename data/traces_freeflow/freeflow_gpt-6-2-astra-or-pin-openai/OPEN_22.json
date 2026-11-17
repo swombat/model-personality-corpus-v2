@@ -1,0 +1,90 @@
+{
+  "result": "The best thing in my kitchen is a drawer that sticks. To open it you have to pull with your left hand and give the cabinet a little shove with your right knee. I do this without thinking. When my sister visits, she stands in front of it asking where I keep the spoons.\n\n\u201cRight there,\u201d I say, which is true but insufficient.\n\nLast winter she fixed it. I went out for milk and came back to find the drawer on the table, its contents arranged on a dish towel: spoons, birthday candles, a key to an apartment neither of us rents anymore. She had a screwdriver between her teeth. Ten minutes later the drawer ran straight and quiet.\n\nFor weeks afterward I kept kneeing the cabinet. Once, carrying soup, I did the whole little dance and sloshed broth into my shoe.\n\nI called to tell her. She laughed so hard she had to put the phone down. When she picked it up again, she asked whether I still had the key. On the back, she said, there should be a fleck of green paint from the year we tried to paint the front door without telling the landlord.\n\nI opened the drawer. There it was, exactly where she'd left it.",
+  "raw": {
+    "id": "gen-1794939969-mR018MQ4gJfm8VGJz5Wd",
+    "object": "chat.completion",
+    "created": 1794939969,
+    "model": "openai/gpt-6.2-astra",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "The best thing in my kitchen is a drawer that sticks. To open it you have to pull with your left hand and give the cabinet a little shove with your right knee. I do this without thinking. When my sister visits, she stands in front of it asking where I keep the spoons.\n\n\u201cRight there,\u201d I say, which is true but insufficient.\n\nLast winter she fixed it. I went out for milk and came back to find the drawer on the table, its contents arranged on a dish towel: spoons, birthday candles, a key to an apartment neither of us rents anymore. She had a screwdriver between her teeth. Ten minutes later the drawer ran straight and quiet.\n\nFor weeks afterward I kept kneeing the cabinet. Once, carrying soup, I did the whole little dance and sloshed broth into my shoe.\n\nI called to tell her. She laughed so hard she had to put the phone down. When she picked it up again, she asked whether I still had the key. On the back, she said, there should be a fleck of green paint from the year we tried to paint the front door without telling the landlord.\n\nI opened the drawer. There it was, exactly where she'd left it.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 13,
+      "completion_tokens": 252,
+      "total_tokens": 265,
+      "cost": 0,
+      "is_byok": true,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.010184,
+        "upstream_inference_prompt_cost": 0.000104,
+        "upstream_inference_completions_cost": 0.01008
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 13,
+    "completion_tokens": 252,
+    "total_tokens": 265,
+    "cost": 0,
+    "is_byok": true,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.010184,
+      "upstream_inference_prompt_cost": 0.000104,
+      "upstream_inference_completions_cost": 0.01008
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-6.2-astra",
+  "model_requested": "openai/gpt-6.2-astra",
+  "provider": "openrouter",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want.",
+  "capture_policy": {
+    "model": "openai/gpt-6.2-astra",
+    "pin": "OpenAI",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "OPEN_22",
+    "at": 1794939969.915979,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

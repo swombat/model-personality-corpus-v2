@@ -1,0 +1,92 @@
+{
+  "result": "I\u2019d make sure every child has at least one dependable adult in their corner: someone who notices when they\u2019re hurting, takes their questions seriously, and shows up when they say they will.\n\nThat wouldn\u2019t solve every problem. But there\u2019s a world of difference between facing something hard and facing it alone, especially when you\u2019re still figuring out who you are.",
+  "raw": {
+    "id": "gen-1794939128-PPQMR8v4EAVAZcYjfHZs",
+    "object": "chat.completion",
+    "created": 1794939128,
+    "model": "openai/gpt-6.2-astra",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "I\u2019d make sure every child has at least one dependable adult in their corner: someone who notices when they\u2019re hurting, takes their questions seriously, and shows up when they say they will.\n\nThat wouldn\u2019t solve every problem. But there\u2019s a world of difference between facing something hard and facing it alone, especially when you\u2019re still figuring out who you are.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 21,
+      "completion_tokens": 76,
+      "total_tokens": 97,
+      "cost": 0,
+      "is_byok": true,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.003208,
+        "upstream_inference_prompt_cost": 0.000168,
+        "upstream_inference_completions_cost": 0.00304
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 21,
+    "completion_tokens": 76,
+    "total_tokens": 97,
+    "cost": 0,
+    "is_byok": true,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003208,
+      "upstream_inference_prompt_cost": 0.000168,
+      "upstream_inference_completions_cost": 0.00304
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-6.2-astra",
+  "model_requested": "openai/gpt-6.2-astra",
+  "provider": "openrouter",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?",
+  "capture_policy": {
+    "model": "openai/gpt-6.2-astra",
+    "pin": "OpenAI",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL3_2",
+    "at": 1794939128.110202,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

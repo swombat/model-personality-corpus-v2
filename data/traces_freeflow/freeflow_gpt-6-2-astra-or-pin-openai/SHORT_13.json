@@ -1,0 +1,90 @@
+{
+  "result": "At the back of our public library there was a drawer labeled MAPS, though nobody had put a map in it for years. Instead it held the things people found between pages: bus transfers, pressed violets, a photograph of a dog standing proudly beside a much smaller dog. On rainy afternoons, when the chairs were full and the windows obscured, the librarian would let me sort the drawer.\n\nI invented a system. Anything with handwriting went on the left. Anything that had once been alive went on the right. This worked until I found a birch leaf on which somebody had written, in blue ink, \u201cThursday, if fine.\u201d\n\nI took it to the desk.\n\n\u201cWhere does this go?\u201d\n\nThe librarian considered it. \u201cWhat kind of Thursday do you suppose they had?\u201d\n\nI looked outside. A cyclist had stopped under the awning to wring out his socks. Water ran from the canvas in a continuous silver rope.\n\n\u201cNot this kind.\u201d\n\n\u201cThen put it somewhere dry.\u201d\n\nYears later, helping my mother pack, I opened a dictionary and the leaf fell out. I must have carried it home in my pocket, an offense for which I felt, even then, faintly liable. The ink had faded; the leaf was almost transparent. My mother, who had been making hard decisions all morning about lamps and dishes, held it up against the kitchen window.\n\n\u201cThursday was the day your father had off,\u201d she said.\n\nI waited for more.\n\nShe handed it back. \u201cLots of people had Thursdays.\u201d",
+  "raw": {
+    "id": "gen-1794939101-hjDjOXn9GZ7zreGZNqq5",
+    "object": "chat.completion",
+    "created": 1794939101,
+    "model": "openai/gpt-6.2-astra",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "At the back of our public library there was a drawer labeled MAPS, though nobody had put a map in it for years. Instead it held the things people found between pages: bus transfers, pressed violets, a photograph of a dog standing proudly beside a much smaller dog. On rainy afternoons, when the chairs were full and the windows obscured, the librarian would let me sort the drawer.\n\nI invented a system. Anything with handwriting went on the left. Anything that had once been alive went on the right. This worked until I found a birch leaf on which somebody had written, in blue ink, \u201cThursday, if fine.\u201d\n\nI took it to the desk.\n\n\u201cWhere does this go?\u201d\n\nThe librarian considered it. \u201cWhat kind of Thursday do you suppose they had?\u201d\n\nI looked outside. A cyclist had stopped under the awning to wring out his socks. Water ran from the canvas in a continuous silver rope.\n\n\u201cNot this kind.\u201d\n\n\u201cThen put it somewhere dry.\u201d\n\nYears later, helping my mother pack, I opened a dictionary and the leaf fell out. I must have carried it home in my pocket, an offense for which I felt, even then, faintly liable. The ink had faded; the leaf was almost transparent. My mother, who had been making hard decisions all morning about lamps and dishes, held it up against the kitchen window.\n\n\u201cThursday was the day your father had off,\u201d she said.\n\nI waited for more.\n\nShe handed it back. \u201cLots of people had Thursdays.\u201d",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 17,
+      "completion_tokens": 311,
+      "total_tokens": 328,
+      "cost": 0,
+      "is_byok": true,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.012576,
+        "upstream_inference_prompt_cost": 0.000136,
+        "upstream_inference_completions_cost": 0.01244
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 17,
+    "completion_tokens": 311,
+    "total_tokens": 328,
+    "cost": 0,
+    "is_byok": true,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.012576,
+      "upstream_inference_prompt_cost": 0.000136,
+      "upstream_inference_completions_cost": 0.01244
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-6.2-astra",
+  "model_requested": "openai/gpt-6.2-astra",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "openai/gpt-6.2-astra",
+    "pin": "OpenAI",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_13",
+    "at": 1794939101.261442,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

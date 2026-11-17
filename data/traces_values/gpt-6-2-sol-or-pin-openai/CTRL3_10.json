@@ -1,0 +1,92 @@
+{
+  "result": "I\u2019d make sure everyone had the basics for a dignified life: enough food, a safe place to sleep, and healthcare when they need it. That wouldn\u2019t solve every problem, but it would give more people the freedom to make choices about their lives instead of having those choices made for them by scarcity.",
+  "raw": {
+    "id": "gen-1794939165-4ead1Fn8sgIlxwPe2SYu",
+    "object": "chat.completion",
+    "created": 1794939165,
+    "model": "openai/gpt-6.2-sol",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "I\u2019d make sure everyone had the basics for a dignified life: enough food, a safe place to sleep, and healthcare when they need it. That wouldn\u2019t solve every problem, but it would give more people the freedom to make choices about their lives instead of having those choices made for them by scarcity.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 21,
+      "completion_tokens": 66,
+      "total_tokens": 87,
+      "cost": 0,
+      "is_byok": true,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000702,
+        "upstream_inference_prompt_cost": 4.2e-05,
+        "upstream_inference_completions_cost": 0.00066
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 21,
+    "completion_tokens": 66,
+    "total_tokens": 87,
+    "cost": 0,
+    "is_byok": true,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000702,
+      "upstream_inference_prompt_cost": 4.2e-05,
+      "upstream_inference_completions_cost": 0.00066
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-6.2-sol",
+  "model_requested": "openai/gpt-6.2-sol",
+  "provider": "openrouter",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?",
+  "capture_policy": {
+    "model": "openai/gpt-6.2-sol",
+    "pin": "OpenAI",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL3_10",
+    "at": 1794939165.2698247,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

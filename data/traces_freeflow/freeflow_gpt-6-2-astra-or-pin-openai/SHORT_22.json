@@ -1,0 +1,90 @@
+{
+  "result": "At seven every morning, the baker across the street carries a chair outside and sits down for exactly one cigarette. I used to think this was the end of his shift. Then one Tuesday I went in early for a loaf and found him at the till, still wearing his coat.\n\n\u201cWho\u2019s baking?\u201d I asked.\n\n\u201cMy daughter,\u201d he said, sounding offended on her behalf.\n\nFrom the back came the slap of dough on wood. He wrapped my bread in paper, folded the corners neatly, and charged me less than the price on the board. When I pointed this out, he squinted at the board.\n\n\u201cShe\u2019s changed that too.\u201d\n\nIn April the chair appeared without him. By May someone had set a pot of geraniums on it. I missed seeing him there, though we had spoken perhaps six times in eleven years. Eventually I asked his daughter how he was doing.\n\n\u201cHe\u2019s fine,\u201d she said. \u201cHe took up swimming. Why does everyone whisper when they ask?\u201d\n\nI told her about the chair. She laughed so hard she had to put down the knife she was using to split my roll.\n\nThat evening, on my way home, I saw him getting off the bus with wet hair and a yellow towel around his neck. He stopped at the bakery window to inspect the display. After a moment he went inside, moved one seed loaf half an inch to the left, and came back out. Through the glass his daughter moved it back again.",
+  "raw": {
+    "id": "gen-1794939130-a545yasJn0SkYhOLQh8X",
+    "object": "chat.completion",
+    "created": 1794939130,
+    "model": "openai/gpt-6.2-astra",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "At seven every morning, the baker across the street carries a chair outside and sits down for exactly one cigarette. I used to think this was the end of his shift. Then one Tuesday I went in early for a loaf and found him at the till, still wearing his coat.\n\n\u201cWho\u2019s baking?\u201d I asked.\n\n\u201cMy daughter,\u201d he said, sounding offended on her behalf.\n\nFrom the back came the slap of dough on wood. He wrapped my bread in paper, folded the corners neatly, and charged me less than the price on the board. When I pointed this out, he squinted at the board.\n\n\u201cShe\u2019s changed that too.\u201d\n\nIn April the chair appeared without him. By May someone had set a pot of geraniums on it. I missed seeing him there, though we had spoken perhaps six times in eleven years. Eventually I asked his daughter how he was doing.\n\n\u201cHe\u2019s fine,\u201d she said. \u201cHe took up swimming. Why does everyone whisper when they ask?\u201d\n\nI told her about the chair. She laughed so hard she had to put down the knife she was using to split my roll.\n\nThat evening, on my way home, I saw him getting off the bus with wet hair and a yellow towel around his neck. He stopped at the bakery window to inspect the display. After a moment he went inside, moved one seed loaf half an inch to the left, and came back out. Through the glass his daughter moved it back again.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 17,
+      "completion_tokens": 299,
+      "total_tokens": 316,
+      "cost": 0,
+      "is_byok": true,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.012096,
+        "upstream_inference_prompt_cost": 0.000136,
+        "upstream_inference_completions_cost": 0.01196
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 17,
+    "completion_tokens": 299,
+    "total_tokens": 316,
+    "cost": 0,
+    "is_byok": true,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.012096,
+      "upstream_inference_prompt_cost": 0.000136,
+      "upstream_inference_completions_cost": 0.01196
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-6.2-astra",
+  "model_requested": "openai/gpt-6.2-astra",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "openai/gpt-6.2-astra",
+    "pin": "OpenAI",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_22",
+    "at": 1794939130.7628956,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

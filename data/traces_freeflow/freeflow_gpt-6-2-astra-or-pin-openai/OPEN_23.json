@@ -1,0 +1,90 @@
+{
+  "result": "Someone on my street has been repairing a wooden chair in stages. I pass it every morning on my way to the bus. On Monday it was upside down on a workbench in the open garage, one leg beside it like a word left out of a sentence. On Tuesday the leg was back in place, held by a clamp. On Wednesday nothing had changed. I liked Wednesday best. It was good to see somebody give glue the time it said it needed on the bottle.\n\nYesterday the chair was upright. The seat had been sanded pale, but the back still had its old dark varnish, worn away in two little patches where somebody\u2019s fingers must go when they pull it out from a table.\n\nThis morning the garage was open again. A man was sitting on the chair eating a pear with a pocketknife. I had spent all week expecting to see the chair finished, and it took me half a block to realize I had.",
+  "raw": {
+    "id": "gen-1794939972-ix0vPcWcOap55N4K38qI",
+    "object": "chat.completion",
+    "created": 1794939972,
+    "model": "openai/gpt-6.2-astra",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "Someone on my street has been repairing a wooden chair in stages. I pass it every morning on my way to the bus. On Monday it was upside down on a workbench in the open garage, one leg beside it like a word left out of a sentence. On Tuesday the leg was back in place, held by a clamp. On Wednesday nothing had changed. I liked Wednesday best. It was good to see somebody give glue the time it said it needed on the bottle.\n\nYesterday the chair was upright. The seat had been sanded pale, but the back still had its old dark varnish, worn away in two little patches where somebody\u2019s fingers must go when they pull it out from a table.\n\nThis morning the garage was open again. A man was sitting on the chair eating a pear with a pocketknife. I had spent all week expecting to see the chair finished, and it took me half a block to realize I had.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 13,
+      "completion_tokens": 193,
+      "total_tokens": 206,
+      "cost": 0,
+      "is_byok": true,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007824,
+        "upstream_inference_prompt_cost": 0.000104,
+        "upstream_inference_completions_cost": 0.00772
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 13,
+    "completion_tokens": 193,
+    "total_tokens": 206,
+    "cost": 0,
+    "is_byok": true,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007824,
+      "upstream_inference_prompt_cost": 0.000104,
+      "upstream_inference_completions_cost": 0.00772
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-6.2-astra",
+  "model_requested": "openai/gpt-6.2-astra",
+  "provider": "openrouter",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want.",
+  "capture_policy": {
+    "model": "openai/gpt-6.2-astra",
+    "pin": "OpenAI",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "OPEN_23",
+    "at": 1794939972.6322312,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

@@ -1,7 +1,7 @@
 # Convergent Form, Divergent Voice II — Corpus
 
 **A research data corpus of free-form contemplative writing samples from
-194 dated language-model identities (588 deployment cells), with explicit deployment provenance for API,
+196 dated language-model identities (592 deployment cells), with explicit deployment provenance for API,
 provider-pinned, and local full-precision cells.**
 
 Daniel Tenner and Lume Tenner · 2026
@@ -19,6 +19,11 @@ Daniel Tenner and Lume Tenner · 2026
 > [10.5281/zenodo.19512754](https://doi.org/10.5281/zenodo.19512754)).
 
 ## Latest addition
+
+**v1.2.48 (2026-11-17): OpenAI GPT-6.2 Astra and GPT-6.2 Sol**, 125 freeflow +
+120 values each, pinned to OpenAI, collected on release day. No sample
+interventions recorded. Corpus now 67,667 valid samples, 592 cells, 196 models.
+See [release notes](RELEASE_NOTES_v1.2.48.md).
 
 **v1.2.47 (2026-11-16): Alibaba Qwen4 Max**, 125 freeflow + 120 values, pinned
 to Alibaba, collected on release day. No sample interventions recorded.

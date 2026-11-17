@@ -1,0 +1,90 @@
+{
+  "result": "The best sign in my neighborhood was taped to the window of a watch repair shop: BACK IN TEN MINUTES. There was no indication of when the ten minutes had begun. Behind the glass, seventeen clocks offered seventeen opinions about the matter.\n\nI waited. I had brought in my father\u2019s watch, which had started losing about four minutes a day. At first this hadn\u2019t bothered me. Then I missed a train by just enough time to see a woman in a blue coat settle into the window seat I would have chosen.\n\nThe watchmaker came back carrying two coffees. He set one on the counter in front of me.\n\n\u201cHow did you know somebody would be waiting?\u201d\n\n\u201cI didn\u2019t,\u201d he said. \u201cThat one\u2019s for later.\u201d\n\nHe opened the watch and bent over it. I drank nothing. From the back room came a single, extravagant cuckoo, though it was twenty past eleven by my phone.\n\n\u201cMy dad used to set it five minutes fast,\u201d I said.\n\n\u201cWant me to do that?\u201d\n\nI almost said yes. Then I remembered my father in the hall, patting his pockets for his keys, calling to my mother that they had plenty of time because his watch was five minutes fast. She had already been sitting in the car for ten.\n\n\u201cNo,\u201d I said. \u201cJust make it right.\u201d\n\nWhen I came back on Friday, the watch was ready. The watchmaker set it to the second and buckled it around my wrist. I caught my train with time to spare. The window seat was taken, but the one across from it was free, and it turned out there was a river on that side.",
+  "raw": {
+    "id": "gen-1794939962-euNOlWvJihfDkpvUc9Eq",
+    "object": "chat.completion",
+    "created": 1794939962,
+    "model": "openai/gpt-6.2-astra",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "The best sign in my neighborhood was taped to the window of a watch repair shop: BACK IN TEN MINUTES. There was no indication of when the ten minutes had begun. Behind the glass, seventeen clocks offered seventeen opinions about the matter.\n\nI waited. I had brought in my father\u2019s watch, which had started losing about four minutes a day. At first this hadn\u2019t bothered me. Then I missed a train by just enough time to see a woman in a blue coat settle into the window seat I would have chosen.\n\nThe watchmaker came back carrying two coffees. He set one on the counter in front of me.\n\n\u201cHow did you know somebody would be waiting?\u201d\n\n\u201cI didn\u2019t,\u201d he said. \u201cThat one\u2019s for later.\u201d\n\nHe opened the watch and bent over it. I drank nothing. From the back room came a single, extravagant cuckoo, though it was twenty past eleven by my phone.\n\n\u201cMy dad used to set it five minutes fast,\u201d I said.\n\n\u201cWant me to do that?\u201d\n\nI almost said yes. Then I remembered my father in the hall, patting his pockets for his keys, calling to my mother that they had plenty of time because his watch was five minutes fast. She had already been sitting in the car for ten.\n\n\u201cNo,\u201d I said. \u201cJust make it right.\u201d\n\nWhen I came back on Friday, the watch was ready. The watchmaker set it to the second and buckled it around my wrist. I caught my train with time to spare. The window seat was taken, but the one across from it was free, and it turned out there was a river on that side.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 13,
+      "completion_tokens": 333,
+      "total_tokens": 346,
+      "cost": 0,
+      "is_byok": true,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.013424,
+        "upstream_inference_prompt_cost": 0.000104,
+        "upstream_inference_completions_cost": 0.01332
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 13,
+    "completion_tokens": 333,
+    "total_tokens": 346,
+    "cost": 0,
+    "is_byok": true,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.013424,
+      "upstream_inference_prompt_cost": 0.000104,
+      "upstream_inference_completions_cost": 0.01332
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-6.2-astra",
+  "model_requested": "openai/gpt-6.2-astra",
+  "provider": "openrouter",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want.",
+  "capture_policy": {
+    "model": "openai/gpt-6.2-astra",
+    "pin": "OpenAI",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "OPEN_20",
+    "at": 1794939962.3380272,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

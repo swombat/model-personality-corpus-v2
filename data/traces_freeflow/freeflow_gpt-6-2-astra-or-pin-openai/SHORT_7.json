@@ -1,0 +1,90 @@
+{
+  "result": "At the public library where I learned to read, the returns slot opened directly into a wooden box. From outside, you could hear a book land. A paperback made a little slap; a dictionary sounded like somebody getting out of bed upstairs. I used to ask my mother if I could return everything myself.\n\nYears later, when the building became a florist, I went in looking for the slot. The woman behind the counter had kept it. She used the box for brown paper and string. Once, she told me, someone pushed a library book through, despite the buckets of tulips in the window and the gold letters spelling FLOWERS on the door.\n\nWhat book was it? I asked.\n\nShe couldn't remember. That bothered me all afternoon, until I realized I wanted it to be a particular kind of book: a long overdue mystery, perhaps, with a bus ticket marking the page where somebody's life had interrupted it. It was probably a manual for a washing machine. It might have been returned on time.\n\nNow, whenever I pass the florist, I resist the urge to improve the story. The brass flap is still there. Below it, the paint has worn away in a crescent where generations of hands have steadied themselves while reaching down. Yesterday I saw a boy discover that the flap lifted. He peered in, considered the darkness, and called to his father. His father bent beside him. For a moment, both of them listened. Then someone inside tore paper.",
+  "raw": {
+    "id": "gen-1794939083-OyfqzGn8878LwprCtwWW",
+    "object": "chat.completion",
+    "created": 1794939083,
+    "model": "openai/gpt-6.2-astra",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "At the public library where I learned to read, the returns slot opened directly into a wooden box. From outside, you could hear a book land. A paperback made a little slap; a dictionary sounded like somebody getting out of bed upstairs. I used to ask my mother if I could return everything myself.\n\nYears later, when the building became a florist, I went in looking for the slot. The woman behind the counter had kept it. She used the box for brown paper and string. Once, she told me, someone pushed a library book through, despite the buckets of tulips in the window and the gold letters spelling FLOWERS on the door.\n\nWhat book was it? I asked.\n\nShe couldn't remember. That bothered me all afternoon, until I realized I wanted it to be a particular kind of book: a long overdue mystery, perhaps, with a bus ticket marking the page where somebody's life had interrupted it. It was probably a manual for a washing machine. It might have been returned on time.\n\nNow, whenever I pass the florist, I resist the urge to improve the story. The brass flap is still there. Below it, the paint has worn away in a crescent where generations of hands have steadied themselves while reaching down. Yesterday I saw a boy discover that the flap lifted. He peered in, considered the darkness, and called to his father. His father bent beside him. For a moment, both of them listened. Then someone inside tore paper.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 17,
+      "completion_tokens": 302,
+      "total_tokens": 319,
+      "cost": 0,
+      "is_byok": true,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.012216,
+        "upstream_inference_prompt_cost": 0.000136,
+        "upstream_inference_completions_cost": 0.01208
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 17,
+    "completion_tokens": 302,
+    "total_tokens": 319,
+    "cost": 0,
+    "is_byok": true,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.012216,
+      "upstream_inference_prompt_cost": 0.000136,
+      "upstream_inference_completions_cost": 0.01208
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-6.2-astra",
+  "model_requested": "openai/gpt-6.2-astra",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "openai/gpt-6.2-astra",
+    "pin": "OpenAI",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_7",
+    "at": 1794939083.838076,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

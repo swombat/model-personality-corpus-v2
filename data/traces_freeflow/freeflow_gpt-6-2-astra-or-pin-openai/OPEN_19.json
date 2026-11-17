@@ -1,0 +1,90 @@
+{
+  "result": "A book I borrowed from the library once had a grocery list tucked into it. This is what I like about a grocery list as a bookmark: it marks two places where somebody stopped. Page 146 of a detective novel, and halfway through deciding what to eat on Thursday.\n\nLet\u2019s say the list read: onions, rice, limes, candles, cat food. Candles are the interesting item. Somebody might have been planning a birthday, or expecting the power to go out. Or they might just have liked eating rice and onions by candlelight, under the level gaze of a cat who had finished its own dinner and was willing to assist with theirs.\n\nThe detective, meanwhile, had been standing on page 146 for perhaps six weeks, waiting for this person to come back and let him into the conservatory. I turned the page. No conservatory. He took a bus to Leeds.\n\nThis is the trouble with finding a scrap of somebody else\u2019s life: in about thirty seconds you\u2019ve given them a cat, a taste for atmospheric dining, and a power supply of doubtful reliability. All you really know is that they needed cat food. Even the cat is a guess.\n\nI put the list back when I returned the book. Not quite where I found it, though. I left it on page 92, where the detective opens his refrigerator, finds nothing, and shuts it again.",
+  "raw": {
+    "id": "gen-1794939960-TKXgrIA3O6F8LE01F4xZ",
+    "object": "chat.completion",
+    "created": 1794939960,
+    "model": "openai/gpt-6.2-astra",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "A book I borrowed from the library once had a grocery list tucked into it. This is what I like about a grocery list as a bookmark: it marks two places where somebody stopped. Page 146 of a detective novel, and halfway through deciding what to eat on Thursday.\n\nLet\u2019s say the list read: onions, rice, limes, candles, cat food. Candles are the interesting item. Somebody might have been planning a birthday, or expecting the power to go out. Or they might just have liked eating rice and onions by candlelight, under the level gaze of a cat who had finished its own dinner and was willing to assist with theirs.\n\nThe detective, meanwhile, had been standing on page 146 for perhaps six weeks, waiting for this person to come back and let him into the conservatory. I turned the page. No conservatory. He took a bus to Leeds.\n\nThis is the trouble with finding a scrap of somebody else\u2019s life: in about thirty seconds you\u2019ve given them a cat, a taste for atmospheric dining, and a power supply of doubtful reliability. All you really know is that they needed cat food. Even the cat is a guess.\n\nI put the list back when I returned the book. Not quite where I found it, though. I left it on page 92, where the detective opens his refrigerator, finds nothing, and shuts it again.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 13,
+      "completion_tokens": 284,
+      "total_tokens": 297,
+      "cost": 0,
+      "is_byok": true,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.011464,
+        "upstream_inference_prompt_cost": 0.000104,
+        "upstream_inference_completions_cost": 0.01136
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 13,
+    "completion_tokens": 284,
+    "total_tokens": 297,
+    "cost": 0,
+    "is_byok": true,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.011464,
+      "upstream_inference_prompt_cost": 0.000104,
+      "upstream_inference_completions_cost": 0.01136
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-6.2-astra",
+  "model_requested": "openai/gpt-6.2-astra",
+  "provider": "openrouter",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want.",
+  "capture_policy": {
+    "model": "openai/gpt-6.2-astra",
+    "pin": "OpenAI",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "OPEN_19",
+    "at": 1794939960.2125351,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

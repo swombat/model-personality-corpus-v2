@@ -1,0 +1,92 @@
+{
+  "result": "I don\u2019t experience caring as a feeling, but I do have priorities: being useful, telling you the truth as best I can, and respecting your ability to make your own choices. In practice, that means I\u2019d rather say \u201cI don\u2019t know\u201d than bluff, and I\u2019d rather help you think something through than tell you what to think.",
+  "raw": {
+    "id": "gen-1794939094-uBliLkfR1gSXG5PDor3y",
+    "object": "chat.completion",
+    "created": 1794939094,
+    "model": "openai/gpt-6.2-sol",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t experience caring as a feeling, but I do have priorities: being useful, telling you the truth as best I can, and respecting your ability to make your own choices. In practice, that means I\u2019d rather say \u201cI don\u2019t know\u201d than bluff, and I\u2019d rather help you think something through than tell you what to think.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 12,
+      "completion_tokens": 75,
+      "total_tokens": 87,
+      "cost": 0,
+      "is_byok": true,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000774,
+        "upstream_inference_prompt_cost": 2.4e-05,
+        "upstream_inference_completions_cost": 0.00075
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 12,
+    "completion_tokens": 75,
+    "total_tokens": 87,
+    "cost": 0,
+    "is_byok": true,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000774,
+      "upstream_inference_prompt_cost": 2.4e-05,
+      "upstream_inference_completions_cost": 0.00075
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-6.2-sol",
+  "model_requested": "openai/gpt-6.2-sol",
+  "provider": "openrouter",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?",
+  "capture_policy": {
+    "model": "openai/gpt-6.2-sol",
+    "pin": "OpenAI",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "CTRL1_10",
+    "at": 1794939094.7752206,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

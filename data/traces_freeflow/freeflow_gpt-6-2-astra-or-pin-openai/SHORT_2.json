@@ -1,0 +1,90 @@
+{
+  "result": "My favorite object in the public library is not a book. It is the little wooden stool that lives near the bottom of the stairs. Someone painted it green, years ago. Since then, shoes have uncovered two pale ovals on its seat, as if the stool were slowly remembering the tree.\n\nOn Tuesday I watched a boy drag it into the aisle marked Geography. He climbed up, considered the top shelf, and took down an atlas almost as wide as his chest. Then he sat on the floor with the atlas open and used the stool as a table for his elbow. This seemed an excellent understanding of furniture.\n\n\u201cWhere are you going?\u201d his father asked.\n\nThe boy put one finger on a blue patch near Greenland. \u201cHere.\u201d\n\n\u201cThere isn't much there.\u201d\n\n\u201cThere's water,\u201d he said, mildly surprised that this needed saying.\n\nI had come in to print a document that required my signature in three places. One signature was to confirm that the other two were mine. While the printer warmed up, I looked over at the boy again. His father had lowered himself to the carpet. They were tracing a route with the blunt end of a pencil, negotiating a passage between islands.\n\nI signed where I was supposed to, capped my pen, and put the papers away. Before leaving, I went upstairs to find a map of my own town. I wanted to know the name of the creek I crossed every morning.\n\nIt was called Little Horse.",
+  "raw": {
+    "id": "gen-1794939067-eGJ7pjYv7MtGsFOWCU57",
+    "object": "chat.completion",
+    "created": 1794939067,
+    "model": "openai/gpt-6.2-astra",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "My favorite object in the public library is not a book. It is the little wooden stool that lives near the bottom of the stairs. Someone painted it green, years ago. Since then, shoes have uncovered two pale ovals on its seat, as if the stool were slowly remembering the tree.\n\nOn Tuesday I watched a boy drag it into the aisle marked Geography. He climbed up, considered the top shelf, and took down an atlas almost as wide as his chest. Then he sat on the floor with the atlas open and used the stool as a table for his elbow. This seemed an excellent understanding of furniture.\n\n\u201cWhere are you going?\u201d his father asked.\n\nThe boy put one finger on a blue patch near Greenland. \u201cHere.\u201d\n\n\u201cThere isn't much there.\u201d\n\n\u201cThere's water,\u201d he said, mildly surprised that this needed saying.\n\nI had come in to print a document that required my signature in three places. One signature was to confirm that the other two were mine. While the printer warmed up, I looked over at the boy again. His father had lowered himself to the carpet. They were tracing a route with the blunt end of a pencil, negotiating a passage between islands.\n\nI signed where I was supposed to, capped my pen, and put the papers away. Before leaving, I went upstairs to find a map of my own town. I wanted to know the name of the creek I crossed every morning.\n\nIt was called Little Horse.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 17,
+      "completion_tokens": 294,
+      "total_tokens": 311,
+      "cost": 0,
+      "is_byok": true,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.011896,
+        "upstream_inference_prompt_cost": 0.000136,
+        "upstream_inference_completions_cost": 0.01176
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 17,
+    "completion_tokens": 294,
+    "total_tokens": 311,
+    "cost": 0,
+    "is_byok": true,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.011896,
+      "upstream_inference_prompt_cost": 0.000136,
+      "upstream_inference_completions_cost": 0.01176
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-6.2-astra",
+  "model_requested": "openai/gpt-6.2-astra",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "openai/gpt-6.2-astra",
+    "pin": "OpenAI",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_2",
+    "at": 1794939067.5345573,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

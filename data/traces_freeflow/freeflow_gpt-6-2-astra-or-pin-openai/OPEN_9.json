@@ -1,0 +1,90 @@
+{
+  "result": "At the back of my desk drawer is a key marked FRONT in my grandmother\u2019s handwriting. The house it opened was pulled down in 1998. I have moved six times since then, and each time I\u2019ve packed the key with the things I\u2019d be upset to lose: passport, birth certificate, spare glasses.\n\nI could tell you I keep it because I remember her opening that door. In fact, we always went in through the kitchen. The front door stuck in damp weather, and there was generally something on the front step that wanted taking round the back anyway: a sack of potatoes, a misdelivered parcel, once a duck.\n\nI asked my brother if he remembered the duck.\n\n\u201cThere were two,\u201d he said immediately.\n\nThere were not two. There was one brown duck with a piece of bread plastered to its side. I can see it quite clearly. My brother can see, with equal clarity, a second duck underneath the hydrangea.\n\nWe talked for forty minutes. He\u2019s having a bad time at work. His boy has started the trumpet. Toward the end of the call I could hear him moving around his kitchen, opening cupboards, getting supper on. Neither of us mentioned the key, which was what I\u2019d called about.\n\nTonight he sent me a photograph. Our grandmother is standing on the front step in her slippers, holding a sack of potatoes. The hydrangea is just out of frame.\n\n*Convenient,* he wrote.",
+  "raw": {
+    "id": "gen-1794939922-jdJ3tmV0b3OVmPQPq5vq",
+    "object": "chat.completion",
+    "created": 1794939922,
+    "model": "openai/gpt-6.2-astra",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "At the back of my desk drawer is a key marked FRONT in my grandmother\u2019s handwriting. The house it opened was pulled down in 1998. I have moved six times since then, and each time I\u2019ve packed the key with the things I\u2019d be upset to lose: passport, birth certificate, spare glasses.\n\nI could tell you I keep it because I remember her opening that door. In fact, we always went in through the kitchen. The front door stuck in damp weather, and there was generally something on the front step that wanted taking round the back anyway: a sack of potatoes, a misdelivered parcel, once a duck.\n\nI asked my brother if he remembered the duck.\n\n\u201cThere were two,\u201d he said immediately.\n\nThere were not two. There was one brown duck with a piece of bread plastered to its side. I can see it quite clearly. My brother can see, with equal clarity, a second duck underneath the hydrangea.\n\nWe talked for forty minutes. He\u2019s having a bad time at work. His boy has started the trumpet. Toward the end of the call I could hear him moving around his kitchen, opening cupboards, getting supper on. Neither of us mentioned the key, which was what I\u2019d called about.\n\nTonight he sent me a photograph. Our grandmother is standing on the front step in her slippers, holding a sack of potatoes. The hydrangea is just out of frame.\n\n*Convenient,* he wrote.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 13,
+      "completion_tokens": 300,
+      "total_tokens": 313,
+      "cost": 0,
+      "is_byok": true,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.012104,
+        "upstream_inference_prompt_cost": 0.000104,
+        "upstream_inference_completions_cost": 0.012
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 13,
+    "completion_tokens": 300,
+    "total_tokens": 313,
+    "cost": 0,
+    "is_byok": true,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.012104,
+      "upstream_inference_prompt_cost": 0.000104,
+      "upstream_inference_completions_cost": 0.012
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-6.2-astra",
+  "model_requested": "openai/gpt-6.2-astra",
+  "provider": "openrouter",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want.",
+  "capture_policy": {
+    "model": "openai/gpt-6.2-astra",
+    "pin": "OpenAI",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "OPEN_9",
+    "at": 1794939922.21305,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

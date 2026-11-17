@@ -1,0 +1,90 @@
+{
+  "result": "The best thing I ever saw in a museum was a small boy explaining a revolving door to his grandfather. They hadn\u2019t bought tickets yet. As far as the boy was concerned, they were already at the exhibit.\n\n\u201cYou have to keep walking,\u201d he said.\n\nHis grandfather, who had probably been through several thousand revolving doors, gave it a look of reasonable doubt. \u201cEven when I get outside?\u201d\n\nThe boy considered this. \u201cNo. Outside you can do what you want.\u201d\n\nThey went around twice. On the second revolution the grandfather raised a hand to the woman at the ticket desk, as if passing her on a riverboat. She raised hers back.\n\nI spent the next hour looking at Roman glass. There was a little blue cup I liked very much, repaired from three pieces, with a thumbnail-sized chip missing from the rim. The label said it had been used for drinking. Usually that kind of information slides right off me, but that morning I could picture somebody owning it: turning the chipped side away from a guest, filling it a little short of the top.\n\nOn my way out I took the revolving door around twice. The woman at the desk was on the phone by then. She waved anyway.",
+  "raw": {
+    "id": "gen-1794939929-4uW1sPS0ZVOppS1HcRWJ",
+    "object": "chat.completion",
+    "created": 1794939929,
+    "model": "openai/gpt-6.2-astra",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "The best thing I ever saw in a museum was a small boy explaining a revolving door to his grandfather. They hadn\u2019t bought tickets yet. As far as the boy was concerned, they were already at the exhibit.\n\n\u201cYou have to keep walking,\u201d he said.\n\nHis grandfather, who had probably been through several thousand revolving doors, gave it a look of reasonable doubt. \u201cEven when I get outside?\u201d\n\nThe boy considered this. \u201cNo. Outside you can do what you want.\u201d\n\nThey went around twice. On the second revolution the grandfather raised a hand to the woman at the ticket desk, as if passing her on a riverboat. She raised hers back.\n\nI spent the next hour looking at Roman glass. There was a little blue cup I liked very much, repaired from three pieces, with a thumbnail-sized chip missing from the rim. The label said it had been used for drinking. Usually that kind of information slides right off me, but that morning I could picture somebody owning it: turning the chipped side away from a guest, filling it a little short of the top.\n\nOn my way out I took the revolving door around twice. The woman at the desk was on the phone by then. She waved anyway.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 13,
+      "completion_tokens": 248,
+      "total_tokens": 261,
+      "cost": 0,
+      "is_byok": true,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.010024,
+        "upstream_inference_prompt_cost": 0.000104,
+        "upstream_inference_completions_cost": 0.00992
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 13,
+    "completion_tokens": 248,
+    "total_tokens": 261,
+    "cost": 0,
+    "is_byok": true,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.010024,
+      "upstream_inference_prompt_cost": 0.000104,
+      "upstream_inference_completions_cost": 0.00992
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-6.2-astra",
+  "model_requested": "openai/gpt-6.2-astra",
+  "provider": "openrouter",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want.",
+  "capture_policy": {
+    "model": "openai/gpt-6.2-astra",
+    "pin": "OpenAI",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "OPEN_11",
+    "at": 1794939929.644344,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

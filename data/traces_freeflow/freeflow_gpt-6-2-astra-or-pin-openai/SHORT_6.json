@@ -1,0 +1,90 @@
+{
+  "result": "On the first Saturday of every month, my grandfather sharpened the pencils in his house. He did not write much. There were grocery lists, the occasional crossword, and once a year a birthday card in which he drew a small dog wearing spectacles. Still, he liked a pencil to be ready.\n\nHe kept the sharpener screwed to a shelf in the pantry. Turning its handle made a low, crunchy sound that brought me running from whatever room I was in. He let me empty the little drawer. The shavings looked like skirts made for insects, scalloped at the hem, each one edged in yellow or green.\n\nAfter he died, my aunt asked if there was anything I wanted. I took the sharpener, though I lived in a rented apartment and had nowhere to mount it. For years it sat in a kitchen cupboard beside a chipped bowl and a bag of birthday candles.\n\nLast winter my daughter found it. She wanted to know why anyone would need a machine for pencils when pencils came sharp. I held it against the table while she turned the handle. Her first attempt produced a point so fine it snapped as soon as she tried to draw. The second lasted long enough for a whole page of horses.\n\nI have screwed the sharpener to my desk now. The landlord will probably keep some of the deposit. This morning I found a horse on the back of my grocery list, wearing a familiar pair of spectacles.",
+  "raw": {
+    "id": "gen-1794939080-oZrpCFRLivHi7IXxWP9O",
+    "object": "chat.completion",
+    "created": 1794939080,
+    "model": "openai/gpt-6.2-astra",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "On the first Saturday of every month, my grandfather sharpened the pencils in his house. He did not write much. There were grocery lists, the occasional crossword, and once a year a birthday card in which he drew a small dog wearing spectacles. Still, he liked a pencil to be ready.\n\nHe kept the sharpener screwed to a shelf in the pantry. Turning its handle made a low, crunchy sound that brought me running from whatever room I was in. He let me empty the little drawer. The shavings looked like skirts made for insects, scalloped at the hem, each one edged in yellow or green.\n\nAfter he died, my aunt asked if there was anything I wanted. I took the sharpener, though I lived in a rented apartment and had nowhere to mount it. For years it sat in a kitchen cupboard beside a chipped bowl and a bag of birthday candles.\n\nLast winter my daughter found it. She wanted to know why anyone would need a machine for pencils when pencils came sharp. I held it against the table while she turned the handle. Her first attempt produced a point so fine it snapped as soon as she tried to draw. The second lasted long enough for a whole page of horses.\n\nI have screwed the sharpener to my desk now. The landlord will probably keep some of the deposit. This morning I found a horse on the back of my grocery list, wearing a familiar pair of spectacles.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 17,
+      "completion_tokens": 290,
+      "total_tokens": 307,
+      "cost": 0,
+      "is_byok": true,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.011736,
+        "upstream_inference_prompt_cost": 0.000136,
+        "upstream_inference_completions_cost": 0.0116
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 17,
+    "completion_tokens": 290,
+    "total_tokens": 307,
+    "cost": 0,
+    "is_byok": true,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.011736,
+      "upstream_inference_prompt_cost": 0.000136,
+      "upstream_inference_completions_cost": 0.0116
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-6.2-astra",
+  "model_requested": "openai/gpt-6.2-astra",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "openai/gpt-6.2-astra",
+    "pin": "OpenAI",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_6",
+    "at": 1794939080.8657324,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

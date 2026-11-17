@@ -1,0 +1,90 @@
+{
+  "result": "Every Thursday, a man brings a different clock to the bus stop. I noticed this in November, when he had a little brass carriage clock tucked under one arm, its face turned outward so that everyone waiting could see we had already missed the bus.\n\nThe next week it was a kitchen clock shaped like a fried egg. After that came a wooden owl whose eyes moved from side to side with each second.\n\nI invented a livelihood for him: repairman, antiques dealer, prop master at the theater downtown. My sister preferred more elaborate explanations. He was divorcing a woman who collected clocks, she said, and the court had granted him custody on Thursdays.\n\nYesterday I finally asked.\n\n\u201cMy brother\u2019s losing his sight,\u201d he said. \u201cWe\u2019re trying out the sounds.\u201d\n\nHe held up that morning\u2019s candidate, a plain square thing in blue plastic. I listened. Its tick was soft and oddly companionable, like somebody in the next room cutting carrots.\n\n\u201cPromising,\u201d I said.\n\n\u201cTerrible,\u201d he said cheerfully. \u201cHe wants one that makes a racket. Says he\u2019s spent forty years being told to buy something tasteful.\u201d\n\nWhen the bus came, we sat together. At the corner of Mercer Street, the clock struck nine by playing the opening bars of a song neither of us could name. A woman across the aisle supplied the words. The driver supplied the title. By the time we reached the hospital, the man had put the clock back in its box.\n\n\u201cI think,\u201d he said, \u201cwe have a winner.\u201d",
+  "raw": {
+    "id": "gen-1794939091-iXKdJhI3hrgHsXp0PNiu",
+    "object": "chat.completion",
+    "created": 1794939091,
+    "model": "openai/gpt-6.2-astra",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "Every Thursday, a man brings a different clock to the bus stop. I noticed this in November, when he had a little brass carriage clock tucked under one arm, its face turned outward so that everyone waiting could see we had already missed the bus.\n\nThe next week it was a kitchen clock shaped like a fried egg. After that came a wooden owl whose eyes moved from side to side with each second.\n\nI invented a livelihood for him: repairman, antiques dealer, prop master at the theater downtown. My sister preferred more elaborate explanations. He was divorcing a woman who collected clocks, she said, and the court had granted him custody on Thursdays.\n\nYesterday I finally asked.\n\n\u201cMy brother\u2019s losing his sight,\u201d he said. \u201cWe\u2019re trying out the sounds.\u201d\n\nHe held up that morning\u2019s candidate, a plain square thing in blue plastic. I listened. Its tick was soft and oddly companionable, like somebody in the next room cutting carrots.\n\n\u201cPromising,\u201d I said.\n\n\u201cTerrible,\u201d he said cheerfully. \u201cHe wants one that makes a racket. Says he\u2019s spent forty years being told to buy something tasteful.\u201d\n\nWhen the bus came, we sat together. At the corner of Mercer Street, the clock struck nine by playing the opening bars of a song neither of us could name. A woman across the aisle supplied the words. The driver supplied the title. By the time we reached the hospital, the man had put the clock back in its box.\n\n\u201cI think,\u201d he said, \u201cwe have a winner.\u201d",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 17,
+      "completion_tokens": 313,
+      "total_tokens": 330,
+      "cost": 0,
+      "is_byok": true,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.012656,
+        "upstream_inference_prompt_cost": 0.000136,
+        "upstream_inference_completions_cost": 0.01252
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 17,
+    "completion_tokens": 313,
+    "total_tokens": 330,
+    "cost": 0,
+    "is_byok": true,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.012656,
+      "upstream_inference_prompt_cost": 0.000136,
+      "upstream_inference_completions_cost": 0.01252
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-6.2-astra",
+  "model_requested": "openai/gpt-6.2-astra",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "openai/gpt-6.2-astra",
+    "pin": "OpenAI",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_10",
+    "at": 1794939091.5368705,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

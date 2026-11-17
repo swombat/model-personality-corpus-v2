@@ -1,0 +1,90 @@
+{
+  "result": "On the first Sunday of each month, my neighbor takes every clock in his apartment down from the wall and sets it on the kitchen table. There are eleven clocks. One came from a railway station, one has a painted lemon for a face, and one makes a noise like a person politely clearing her throat. He winds the ones that need winding and changes the batteries when necessary. Then he leaves them there while he eats his toast.\n\nI once asked why he bothered taking down the electric ones.\n\n\u201cSo they can see each other,\u201d he said.\n\nHe was joking, probably. Still, I like the image of those clocks assembled over breakfast, each arriving with slightly different news. The lemon insists it is eight. The railway clock, accustomed to consequences, says it is three minutes past. From the far end of the table comes a delicate cough.\n\nLast winter, when my neighbor broke his wrist, he asked me to help. I climbed the stepladder and handed him the clocks. He laid a folded dish towel beneath each one so the cases wouldn't scratch the wood. We had marmalade and strong coffee. For nearly an hour we talked about his sister in Leeds, the price of pears, and a film neither of us could remember seeing through to the end.\n\nWhen I finally stood to leave, I glanced at the bare patch above the stove.\n\n\u201cWhat time is it?\u201d\n\nHe looked at the crowded table. \u201cDepends who you ask,\u201d he said.",
+  "raw": {
+    "id": "gen-1794939111-9mPiTekp2C4y83K3Dh7n",
+    "object": "chat.completion",
+    "created": 1794939111,
+    "model": "openai/gpt-6.2-astra",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "On the first Sunday of each month, my neighbor takes every clock in his apartment down from the wall and sets it on the kitchen table. There are eleven clocks. One came from a railway station, one has a painted lemon for a face, and one makes a noise like a person politely clearing her throat. He winds the ones that need winding and changes the batteries when necessary. Then he leaves them there while he eats his toast.\n\nI once asked why he bothered taking down the electric ones.\n\n\u201cSo they can see each other,\u201d he said.\n\nHe was joking, probably. Still, I like the image of those clocks assembled over breakfast, each arriving with slightly different news. The lemon insists it is eight. The railway clock, accustomed to consequences, says it is three minutes past. From the far end of the table comes a delicate cough.\n\nLast winter, when my neighbor broke his wrist, he asked me to help. I climbed the stepladder and handed him the clocks. He laid a folded dish towel beneath each one so the cases wouldn't scratch the wood. We had marmalade and strong coffee. For nearly an hour we talked about his sister in Leeds, the price of pears, and a film neither of us could remember seeing through to the end.\n\nWhen I finally stood to leave, I glanced at the bare patch above the stove.\n\n\u201cWhat time is it?\u201d\n\nHe looked at the crowded table. \u201cDepends who you ask,\u201d he said.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 17,
+      "completion_tokens": 295,
+      "total_tokens": 312,
+      "cost": 0,
+      "is_byok": true,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.011936,
+        "upstream_inference_prompt_cost": 0.000136,
+        "upstream_inference_completions_cost": 0.0118
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 17,
+    "completion_tokens": 295,
+    "total_tokens": 312,
+    "cost": 0,
+    "is_byok": true,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.011936,
+      "upstream_inference_prompt_cost": 0.000136,
+      "upstream_inference_completions_cost": 0.0118
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-6.2-astra",
+  "model_requested": "openai/gpt-6.2-astra",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "openai/gpt-6.2-astra",
+    "pin": "OpenAI",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_16",
+    "at": 1794939111.4178593,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

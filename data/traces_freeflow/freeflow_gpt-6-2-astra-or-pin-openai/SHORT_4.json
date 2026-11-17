@@ -1,0 +1,90 @@
+{
+  "result": "On the first Saturday of every month, my neighborhood library lets people bring in broken things. Nobody promises to fix them. This seems important. A promise would turn the folding tables into a service counter, and the people waiting into customers. Instead, someone puts on a kettle.\n\nLast week a woman brought a clock that had stopped at twenty past six. She had already changed the battery. A boy in a green sweatshirt took the back off and found a dead moth lodged between two plastic wheels. When he lifted it out, the second hand gave a little jump. The woman laughed so hard she had to sit down.\n\nAt the next table, an old man was trying to mend the torn pocket of his coat. He could not thread the needle. A girl did it for him, then stayed because she had never seen anyone sew. He showed her how to tie a knot by rolling the thread under one thumb. She practiced on the loose end until it grew too short to use.\n\nI came home with my lamp still broken. We had narrowed the trouble down to the switch, and somebody had written the name of a shop on the back of my bus ticket. That evening I read beside the kitchen window until the light went. Across the courtyard, one by one, other windows brightened. In the dark glass I could just make out the ticket on the table, held flat beneath my mug, for next Saturday.",
+  "raw": {
+    "id": "gen-1794939074-FgwzYCJk1qlXMwbfpmcZ",
+    "object": "chat.completion",
+    "created": 1794939074,
+    "model": "openai/gpt-6.2-astra",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "On the first Saturday of every month, my neighborhood library lets people bring in broken things. Nobody promises to fix them. This seems important. A promise would turn the folding tables into a service counter, and the people waiting into customers. Instead, someone puts on a kettle.\n\nLast week a woman brought a clock that had stopped at twenty past six. She had already changed the battery. A boy in a green sweatshirt took the back off and found a dead moth lodged between two plastic wheels. When he lifted it out, the second hand gave a little jump. The woman laughed so hard she had to sit down.\n\nAt the next table, an old man was trying to mend the torn pocket of his coat. He could not thread the needle. A girl did it for him, then stayed because she had never seen anyone sew. He showed her how to tie a knot by rolling the thread under one thumb. She practiced on the loose end until it grew too short to use.\n\nI came home with my lamp still broken. We had narrowed the trouble down to the switch, and somebody had written the name of a shop on the back of my bus ticket. That evening I read beside the kitchen window until the light went. Across the courtyard, one by one, other windows brightened. In the dark glass I could just make out the ticket on the table, held flat beneath my mug, for next Saturday.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 17,
+      "completion_tokens": 287,
+      "total_tokens": 304,
+      "cost": 0,
+      "is_byok": true,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.011616,
+        "upstream_inference_prompt_cost": 0.000136,
+        "upstream_inference_completions_cost": 0.01148
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 17,
+    "completion_tokens": 287,
+    "total_tokens": 304,
+    "cost": 0,
+    "is_byok": true,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.011616,
+      "upstream_inference_prompt_cost": 0.000136,
+      "upstream_inference_completions_cost": 0.01148
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-6.2-astra",
+  "model_requested": "openai/gpt-6.2-astra",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "openai/gpt-6.2-astra",
+    "pin": "OpenAI",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_4",
+    "at": 1794939074.6347656,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

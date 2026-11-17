@@ -1,0 +1,90 @@
+{
+  "result": "When my neighbor moved out, she left a blue chair on the landing with a note that said, \u201cPerfectly good, except for the wobble.\u201d For three days everyone stepped around it. Then somebody folded the note twice and tucked it under the short leg.\n\nBy Friday, the chair had become a place to put down groceries while looking for keys. On Saturday, I found Mr. Alvarez sitting there, halfway up from the laundry room, listening to a baseball game on his phone. He held up one finger as I passed. Bases loaded. I sat on the step until we knew.\n\nA week later the building manager taped up a notice about keeping the landing clear. Fair enough. A stretcher would never have made that corner with the chair there. I took it into my apartment, where it looked much too blue beside everything I had carefully chosen to be brown.\n\nI meant to fix the leg. Instead, I got in the habit of carrying the chair downstairs on warm evenings. Mr. Alvarez brought his radio. The twins from the second floor drew a scoreboard in chalk, then lost interest and turned it into a whale.\n\nYesterday I finally took the folded paper out from under the leg. On the back, in my neighbor\u2019s handwriting, was a shopping list: lemons, soap, birthday candles, pears. I folded it along the old creases and put it back. Tonight we expect rain, so the chair is by my window, holding a bowl of little yellow pears.",
+  "raw": {
+    "id": "gen-1794939139-ea4yBxGvm1PcDDXBL57D",
+    "object": "chat.completion",
+    "created": 1794939139,
+    "model": "openai/gpt-6.2-astra",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "When my neighbor moved out, she left a blue chair on the landing with a note that said, \u201cPerfectly good, except for the wobble.\u201d For three days everyone stepped around it. Then somebody folded the note twice and tucked it under the short leg.\n\nBy Friday, the chair had become a place to put down groceries while looking for keys. On Saturday, I found Mr. Alvarez sitting there, halfway up from the laundry room, listening to a baseball game on his phone. He held up one finger as I passed. Bases loaded. I sat on the step until we knew.\n\nA week later the building manager taped up a notice about keeping the landing clear. Fair enough. A stretcher would never have made that corner with the chair there. I took it into my apartment, where it looked much too blue beside everything I had carefully chosen to be brown.\n\nI meant to fix the leg. Instead, I got in the habit of carrying the chair downstairs on warm evenings. Mr. Alvarez brought his radio. The twins from the second floor drew a scoreboard in chalk, then lost interest and turned it into a whale.\n\nYesterday I finally took the folded paper out from under the leg. On the back, in my neighbor\u2019s handwriting, was a shopping list: lemons, soap, birthday candles, pears. I folded it along the old creases and put it back. Tonight we expect rain, so the chair is by my window, holding a bowl of little yellow pears.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 17,
+      "completion_tokens": 302,
+      "total_tokens": 319,
+      "cost": 0,
+      "is_byok": true,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.012216,
+        "upstream_inference_prompt_cost": 0.000136,
+        "upstream_inference_completions_cost": 0.01208
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 17,
+    "completion_tokens": 302,
+    "total_tokens": 319,
+    "cost": 0,
+    "is_byok": true,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.012216,
+      "upstream_inference_prompt_cost": 0.000136,
+      "upstream_inference_completions_cost": 0.01208
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-6.2-astra",
+  "model_requested": "openai/gpt-6.2-astra",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "openai/gpt-6.2-astra",
+    "pin": "OpenAI",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_25",
+    "at": 1794939139.701097,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

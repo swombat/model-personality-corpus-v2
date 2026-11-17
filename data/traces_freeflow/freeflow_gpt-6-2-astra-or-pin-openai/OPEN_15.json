@@ -1,0 +1,90 @@
+{
+  "result": "The junk drawer in my kitchen contains a key with a red rubber cap. I don\u2019t know what it opens. When I moved, I threw away a perfectly good colander because it wouldn\u2019t fit in the box, then tucked the key into my coat pocket. Apparently I would rather face a lifetime of draining pasta through a tilted lid than arrive somewhere without the means to unlock a cabinet I may no longer own.\n\nLast week my niece came over and asked if she could have it. She was building a hotel out of a shoebox. The guests, two wooden sheep and a stegosaurus, were already lined up at reception.\n\nFor a moment I nearly said no. What if I needed it?\n\n\u201cWhat room is it for?\u201d I asked instead.\n\nShe looked at me with some concern. \u201cIt\u2019s for the lady who comes in early to make breakfast.\u201d\n\nI handed it over. All these years I\u2019d been trying to remember the lock, and it hadn\u2019t occurred to me to invent the person who needed the key.",
+  "raw": {
+    "id": "gen-1794939945-0S7Dr7TgdxmdMyNs9VUi",
+    "object": "chat.completion",
+    "created": 1794939945,
+    "model": "openai/gpt-6.2-astra",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "The junk drawer in my kitchen contains a key with a red rubber cap. I don\u2019t know what it opens. When I moved, I threw away a perfectly good colander because it wouldn\u2019t fit in the box, then tucked the key into my coat pocket. Apparently I would rather face a lifetime of draining pasta through a tilted lid than arrive somewhere without the means to unlock a cabinet I may no longer own.\n\nLast week my niece came over and asked if she could have it. She was building a hotel out of a shoebox. The guests, two wooden sheep and a stegosaurus, were already lined up at reception.\n\nFor a moment I nearly said no. What if I needed it?\n\n\u201cWhat room is it for?\u201d I asked instead.\n\nShe looked at me with some concern. \u201cIt\u2019s for the lady who comes in early to make breakfast.\u201d\n\nI handed it over. All these years I\u2019d been trying to remember the lock, and it hadn\u2019t occurred to me to invent the person who needed the key.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 13,
+      "completion_tokens": 210,
+      "total_tokens": 223,
+      "cost": 0,
+      "is_byok": true,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008504,
+        "upstream_inference_prompt_cost": 0.000104,
+        "upstream_inference_completions_cost": 0.0084
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 13,
+    "completion_tokens": 210,
+    "total_tokens": 223,
+    "cost": 0,
+    "is_byok": true,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008504,
+      "upstream_inference_prompt_cost": 0.000104,
+      "upstream_inference_completions_cost": 0.0084
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-6.2-astra",
+  "model_requested": "openai/gpt-6.2-astra",
+  "provider": "openrouter",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want.",
+  "capture_policy": {
+    "model": "openai/gpt-6.2-astra",
+    "pin": "OpenAI",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "OPEN_15",
+    "at": 1794939945.8876383,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

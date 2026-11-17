@@ -1,0 +1,90 @@
+{
+  "result": "On the first warm Saturday in March, my neighbor takes his kitchen chairs outside and washes them on the pavement. He uses a yellow bucket, a square of old towel, and a toothbrush for the places where the spindles meet the seat. By noon the chairs are standing in a row against the brick wall, looking like a small audience waiting for something to begin.\n\nLast year I asked why he did it outside. There was hardly room in his kitchen, he said. Then he admitted that he liked the company. Sure enough, people stopped. A cyclist asked for directions. Two girls counted the chairs in French. A woman coming home with groceries put down her bags and told him her father had owned a set exactly like them, except that one leg had been mended with a spoon.\n\nI thought about that spoon all afternoon. Had somebody flattened it first? Was the bowl still visible? I hoped so. It pleased me to imagine a family eating supper for years above one extra spoon, promoted from the drawer to a position of considerable responsibility.\n\nThis morning the yellow bucket appeared again. I took my cup of coffee downstairs and sat on the step. My neighbor handed me the toothbrush without a word. We worked on opposite sides of a chair until a little boy in a green coat stopped to watch.\n\n\u201cWhich one is the cleanest?\u201d he asked.\n\nWe looked along the row. Neither of us had thought to keep track.",
+  "raw": {
+    "id": "gen-1794939077-gsS8frP4LBHKAdJsZOFC",
+    "object": "chat.completion",
+    "created": 1794939077,
+    "model": "openai/gpt-6.2-astra",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "On the first warm Saturday in March, my neighbor takes his kitchen chairs outside and washes them on the pavement. He uses a yellow bucket, a square of old towel, and a toothbrush for the places where the spindles meet the seat. By noon the chairs are standing in a row against the brick wall, looking like a small audience waiting for something to begin.\n\nLast year I asked why he did it outside. There was hardly room in his kitchen, he said. Then he admitted that he liked the company. Sure enough, people stopped. A cyclist asked for directions. Two girls counted the chairs in French. A woman coming home with groceries put down her bags and told him her father had owned a set exactly like them, except that one leg had been mended with a spoon.\n\nI thought about that spoon all afternoon. Had somebody flattened it first? Was the bowl still visible? I hoped so. It pleased me to imagine a family eating supper for years above one extra spoon, promoted from the drawer to a position of considerable responsibility.\n\nThis morning the yellow bucket appeared again. I took my cup of coffee downstairs and sat on the step. My neighbor handed me the toothbrush without a word. We worked on opposite sides of a chair until a little boy in a green coat stopped to watch.\n\n\u201cWhich one is the cleanest?\u201d he asked.\n\nWe looked along the row. Neither of us had thought to keep track.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 17,
+      "completion_tokens": 291,
+      "total_tokens": 308,
+      "cost": 0,
+      "is_byok": true,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.011776,
+        "upstream_inference_prompt_cost": 0.000136,
+        "upstream_inference_completions_cost": 0.01164
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 17,
+    "completion_tokens": 291,
+    "total_tokens": 308,
+    "cost": 0,
+    "is_byok": true,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.011776,
+      "upstream_inference_prompt_cost": 0.000136,
+      "upstream_inference_completions_cost": 0.01164
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-6.2-astra",
+  "model_requested": "openai/gpt-6.2-astra",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "openai/gpt-6.2-astra",
+    "pin": "OpenAI",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_5",
+    "at": 1794939077.34122,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

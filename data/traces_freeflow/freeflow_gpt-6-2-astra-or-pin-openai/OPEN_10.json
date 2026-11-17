@@ -1,0 +1,90 @@
+{
+  "result": "Today I\u2019m thinking about a repair I saw on a library book. Someone had torn the corner off a page, taking the last few letters of six lines with it. A librarian, I assume, had cut a piece of paper to fit the gap, taped it on, and written the missing letters in blue ink. The handwriting was small and rather upright. For half a page the novelist had a collaborator.\n\nWhat I liked best was the word \u201cnevertheless.\u201d The tear had gone straight through it, so that \u201cnever\u201d was printed and \u201ctheless\u201d was in blue. It\u2019s an ungainly word to begin with, and the repair made you feel every joint in it. I must have spent a full minute looking at that word in a novel whose title I\u2019ve since forgotten.\n\nSomebody had to find another copy to get those letters right. I picture the two books open side by side on a desk, the good one held flat with an elbow while the librarian tried a pen on a scrap to make sure it wouldn\u2019t bleed. Maybe it was nearly closing time. Maybe somebody was waiting to take the book home.\n\nI hope they noticed \u201cnevertheless.\u201d I also hope they were so caught up in the story that they didn\u2019t.",
+  "raw": {
+    "id": "gen-1794939925-1tB8fVLzGY5eE7kX57hv",
+    "object": "chat.completion",
+    "created": 1794939925,
+    "model": "openai/gpt-6.2-astra",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "Today I\u2019m thinking about a repair I saw on a library book. Someone had torn the corner off a page, taking the last few letters of six lines with it. A librarian, I assume, had cut a piece of paper to fit the gap, taped it on, and written the missing letters in blue ink. The handwriting was small and rather upright. For half a page the novelist had a collaborator.\n\nWhat I liked best was the word \u201cnevertheless.\u201d The tear had gone straight through it, so that \u201cnever\u201d was printed and \u201ctheless\u201d was in blue. It\u2019s an ungainly word to begin with, and the repair made you feel every joint in it. I must have spent a full minute looking at that word in a novel whose title I\u2019ve since forgotten.\n\nSomebody had to find another copy to get those letters right. I picture the two books open side by side on a desk, the good one held flat with an elbow while the librarian tried a pen on a scrap to make sure it wouldn\u2019t bleed. Maybe it was nearly closing time. Maybe somebody was waiting to take the book home.\n\nI hope they noticed \u201cnevertheless.\u201d I also hope they were so caught up in the story that they didn\u2019t.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 13,
+      "completion_tokens": 256,
+      "total_tokens": 269,
+      "cost": 0,
+      "is_byok": true,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.010344,
+        "upstream_inference_prompt_cost": 0.000104,
+        "upstream_inference_completions_cost": 0.01024
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 13,
+    "completion_tokens": 256,
+    "total_tokens": 269,
+    "cost": 0,
+    "is_byok": true,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.010344,
+      "upstream_inference_prompt_cost": 0.000104,
+      "upstream_inference_completions_cost": 0.01024
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-6.2-astra",
+  "model_requested": "openai/gpt-6.2-astra",
+  "provider": "openrouter",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want.",
+  "capture_policy": {
+    "model": "openai/gpt-6.2-astra",
+    "pin": "OpenAI",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "OPEN_10",
+    "at": 1794939925.796669,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "result": "Every evening, just before closing, the librarian at our branch takes a pencil from behind her ear and writes down one thing somebody looked for but couldn't find. Not the title of a missing book. Something harder to shelve.\n\nTuesday, it was the name of the blue paint used in the kitchen of a house demolished in 1986. Wednesday, a boy wanted a recording of the noise a swan makes when it takes off. On Thursday, I asked whether there was a map of town that showed the paths people actually walked, including shortcuts across parking lots and the gap in the hedge behind the dentist.\n\n\u201cWhat would you use it for?\u201d she asked.\n\nI hadn't thought about that. I suppose I wanted proof that the town I knew existed alongside the one on the signs.\n\nA month later, she called. Someone had donated a box of papers from the old elementary school. Inside was a map drawn by a fourth grader in green crayon. The bank was missing. So was the courthouse. But there was the hedge, labeled HOLE, and a wavering line across the lot where the supermarket used to be. Beside it, in letters pressed so hard they dented the page, the child had written: THIS WAY IF YOU HAVE ICE CREAM.\n\n\u201cIs this it?\u201d the librarian asked.\n\nIt wasn't my map. The child had lived three streets over and gone home in the opposite direction. Still, I asked for a copy. Now I know another way home.",
+  "raw": {
+    "id": "gen-1794939113-mN8fJyeRHJkiBUHIxVCd",
+    "object": "chat.completion",
+    "created": 1794939113,
+    "model": "openai/gpt-6.2-astra",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "Every evening, just before closing, the librarian at our branch takes a pencil from behind her ear and writes down one thing somebody looked for but couldn't find. Not the title of a missing book. Something harder to shelve.\n\nTuesday, it was the name of the blue paint used in the kitchen of a house demolished in 1986. Wednesday, a boy wanted a recording of the noise a swan makes when it takes off. On Thursday, I asked whether there was a map of town that showed the paths people actually walked, including shortcuts across parking lots and the gap in the hedge behind the dentist.\n\n\u201cWhat would you use it for?\u201d she asked.\n\nI hadn't thought about that. I suppose I wanted proof that the town I knew existed alongside the one on the signs.\n\nA month later, she called. Someone had donated a box of papers from the old elementary school. Inside was a map drawn by a fourth grader in green crayon. The bank was missing. So was the courthouse. But there was the hedge, labeled HOLE, and a wavering line across the lot where the supermarket used to be. Beside it, in letters pressed so hard they dented the page, the child had written: THIS WAY IF YOU HAVE ICE CREAM.\n\n\u201cIs this it?\u201d the librarian asked.\n\nIt wasn't my map. The child had lived three streets over and gone home in the opposite direction. Still, I asked for a copy. Now I know another way home.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 17,
+      "completion_tokens": 302,
+      "total_tokens": 319,
+      "cost": 0,
+      "is_byok": true,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.012216,
+        "upstream_inference_prompt_cost": 0.000136,
+        "upstream_inference_completions_cost": 0.01208
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 17,
+    "completion_tokens": 302,
+    "total_tokens": 319,
+    "cost": 0,
+    "is_byok": true,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.012216,
+      "upstream_inference_prompt_cost": 0.000136,
+      "upstream_inference_completions_cost": 0.01208
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-6.2-astra",
+  "model_requested": "openai/gpt-6.2-astra",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "openai/gpt-6.2-astra",
+    "pin": "OpenAI",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_17",
+    "at": 1794939113.9061005,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

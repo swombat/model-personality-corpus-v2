@@ -1,0 +1,90 @@
+{
+  "result": "The clock above the sink stopped at 4:17 on a Tuesday. For three weeks nobody changed the battery. We had phones, the oven, the little green numbers on the radio. Besides, at 4:17 the kitchen looked rather good. Afternoon light usually reached the blue bowl by then, and somebody was likely to be cutting an apple or wondering aloud what to make for supper.\n\nMy father noticed first, though he was the person least inconvenienced. Retired, he kept appointments by putting on his shoes an hour early. He took the clock down, opened its back, and found a folded scrap of paper between the battery and the spring.\n\nIn my mother's handwriting it said: WRONG BATTERY. WORKS IF WEDGED.\n\nShe had been dead six years. We stood there admiring the note. Not a message for the ages; not even a particularly sound repair. Just her block capitals, the lavish period after WEDGED, the assumption that whoever opened the clock next would appreciate knowing what they were up against.\n\nMy father tried a fresh battery of the proper size. The second hand shivered, stepped forward, and kept going. He set the time by the radio. Then he got the tape from the drawer and fixed the note to the back of the clock, where it no longer served any practical purpose.\n\nThat evening, washing up, I heard the ticking for the first time in years. It was louder than I remembered. I shut the kitchen door so it wouldn't keep him awake.",
+  "raw": {
+    "id": "gen-1794939133-DaD8SQB4H7pRHVRNxCYB",
+    "object": "chat.completion",
+    "created": 1794939133,
+    "model": "openai/gpt-6.2-astra",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "The clock above the sink stopped at 4:17 on a Tuesday. For three weeks nobody changed the battery. We had phones, the oven, the little green numbers on the radio. Besides, at 4:17 the kitchen looked rather good. Afternoon light usually reached the blue bowl by then, and somebody was likely to be cutting an apple or wondering aloud what to make for supper.\n\nMy father noticed first, though he was the person least inconvenienced. Retired, he kept appointments by putting on his shoes an hour early. He took the clock down, opened its back, and found a folded scrap of paper between the battery and the spring.\n\nIn my mother's handwriting it said: WRONG BATTERY. WORKS IF WEDGED.\n\nShe had been dead six years. We stood there admiring the note. Not a message for the ages; not even a particularly sound repair. Just her block capitals, the lavish period after WEDGED, the assumption that whoever opened the clock next would appreciate knowing what they were up against.\n\nMy father tried a fresh battery of the proper size. The second hand shivered, stepped forward, and kept going. He set the time by the radio. Then he got the tape from the drawer and fixed the note to the back of the clock, where it no longer served any practical purpose.\n\nThat evening, washing up, I heard the ticking for the first time in years. It was louder than I remembered. I shut the kitchen door so it wouldn't keep him awake.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 17,
+      "completion_tokens": 309,
+      "total_tokens": 326,
+      "cost": 0,
+      "is_byok": true,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.012496,
+        "upstream_inference_prompt_cost": 0.000136,
+        "upstream_inference_completions_cost": 0.01236
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 17,
+    "completion_tokens": 309,
+    "total_tokens": 326,
+    "cost": 0,
+    "is_byok": true,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.012496,
+      "upstream_inference_prompt_cost": 0.000136,
+      "upstream_inference_completions_cost": 0.01236
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-6.2-astra",
+  "model_requested": "openai/gpt-6.2-astra",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "openai/gpt-6.2-astra",
+    "pin": "OpenAI",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_23",
+    "at": 1794939133.0174592,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "result": "Every morning, the baker on my street sets a small wooden chair outside his door. Nobody sits in it for long. A cyclist stops to tighten a shoelace. A mother puts down her groceries and lifts her sleeping son higher on her hip. Once, during a sudden shower, a man in a beautiful gray suit sat there eating a peach, entirely unconcerned about the rain.\n\nI asked the baker where the chair came from. His aunt, he said. She had owned six identical chairs, but this one had always rocked, and after she died nobody wanted it. He showed me the folded square of cardboard under its shortest leg. It was cut from a box that had once held almond paste.\n\nLast Tuesday the chair was missing. I noticed three people glance toward the empty patch of pavement, though none of them had been walking slowly enough to suggest they meant to stop. By noon somebody had left an upturned milk crate in its place.\n\nThe chair returned the following morning, painted a deep, improbable blue. The baker stood beside it looking embarrassed. \u201cI had green,\u201d he told me, as if answering a question, \u201cbut not enough.\u201d\n\nNow the milk crate sits beside the chair. This afternoon two schoolgirls occupied them, passing a paper bag of cherries back and forth. One girl was explaining something with tremendous seriousness. The other was trying to tie a knot in a cherry stem with her tongue. Through the open window came the smell of bread.",
+  "raw": {
+    "id": "gen-1794939087-346KmwAusJ5JaKtYoTon",
+    "object": "chat.completion",
+    "created": 1794939087,
+    "model": "openai/gpt-6.2-astra",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "Every morning, the baker on my street sets a small wooden chair outside his door. Nobody sits in it for long. A cyclist stops to tighten a shoelace. A mother puts down her groceries and lifts her sleeping son higher on her hip. Once, during a sudden shower, a man in a beautiful gray suit sat there eating a peach, entirely unconcerned about the rain.\n\nI asked the baker where the chair came from. His aunt, he said. She had owned six identical chairs, but this one had always rocked, and after she died nobody wanted it. He showed me the folded square of cardboard under its shortest leg. It was cut from a box that had once held almond paste.\n\nLast Tuesday the chair was missing. I noticed three people glance toward the empty patch of pavement, though none of them had been walking slowly enough to suggest they meant to stop. By noon somebody had left an upturned milk crate in its place.\n\nThe chair returned the following morning, painted a deep, improbable blue. The baker stood beside it looking embarrassed. \u201cI had green,\u201d he told me, as if answering a question, \u201cbut not enough.\u201d\n\nNow the milk crate sits beside the chair. This afternoon two schoolgirls occupied them, passing a paper bag of cherries back and forth. One girl was explaining something with tremendous seriousness. The other was trying to tie a knot in a cherry stem with her tongue. Through the open window came the smell of bread.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 17,
+      "completion_tokens": 299,
+      "total_tokens": 316,
+      "cost": 0,
+      "is_byok": true,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.012096,
+        "upstream_inference_prompt_cost": 0.000136,
+        "upstream_inference_completions_cost": 0.01196
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 17,
+    "completion_tokens": 299,
+    "total_tokens": 316,
+    "cost": 0,
+    "is_byok": true,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.012096,
+      "upstream_inference_prompt_cost": 0.000136,
+      "upstream_inference_completions_cost": 0.01196
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-6.2-astra",
+  "model_requested": "openai/gpt-6.2-astra",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "openai/gpt-6.2-astra",
+    "pin": "OpenAI",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_8",
+    "at": 1794939086.9425974,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

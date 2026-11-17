@@ -1,0 +1,90 @@
+{
+  "result": "The repair shop on our street has a drawer labeled MYSTERY. Inside are brass keys, a green glass marble, three watch hands, and a tiny silver fish with a hole through its tail. Nobody remembers which objects came in with a broken clock and which simply appeared. When I asked the owner why she kept them, she said, \u201cBecause somebody went to the trouble of making them.\u201d\n\nLast Thursday a boy came in carrying a wooden boat. Its mast had snapped, and he wanted to know whether it could be fixed before the pond froze. The owner fitted a new mast while he examined the drawer. He picked up the silver fish.\n\n\u201cThat\u2019s a weight,\u201d he said.\n\n\u201cFor what?\u201d\n\nHe shrugged. \u201cSomething that needs to go down.\u201d\n\nShe laughed so hard she had to start winding the thread again. When the boat was ready, she tied the fish to its bow. The boy paid with four coins and an apple. After he left, the shop seemed unusually quiet. I could hear the small, uneven ticking of a dozen clocks, each convinced of a slightly different afternoon.\n\nYesterday I passed the pond. The boat was out near the middle, its white sail barely stirring. Every time the bow rose, the fish flashed in the sun. The boy stood on the bank holding a spool of line. Beside him, his younger sister was feeding the apple, slice by careful slice, to a horse that had put its head over the park fence.",
+  "raw": {
+    "id": "gen-1794939089-RkeuLtPrkQePHInYHs3C",
+    "object": "chat.completion",
+    "created": 1794939089,
+    "model": "openai/gpt-6.2-astra",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "The repair shop on our street has a drawer labeled MYSTERY. Inside are brass keys, a green glass marble, three watch hands, and a tiny silver fish with a hole through its tail. Nobody remembers which objects came in with a broken clock and which simply appeared. When I asked the owner why she kept them, she said, \u201cBecause somebody went to the trouble of making them.\u201d\n\nLast Thursday a boy came in carrying a wooden boat. Its mast had snapped, and he wanted to know whether it could be fixed before the pond froze. The owner fitted a new mast while he examined the drawer. He picked up the silver fish.\n\n\u201cThat\u2019s a weight,\u201d he said.\n\n\u201cFor what?\u201d\n\nHe shrugged. \u201cSomething that needs to go down.\u201d\n\nShe laughed so hard she had to start winding the thread again. When the boat was ready, she tied the fish to its bow. The boy paid with four coins and an apple. After he left, the shop seemed unusually quiet. I could hear the small, uneven ticking of a dozen clocks, each convinced of a slightly different afternoon.\n\nYesterday I passed the pond. The boat was out near the middle, its white sail barely stirring. Every time the bow rose, the fish flashed in the sun. The boy stood on the bank holding a spool of line. Beside him, his younger sister was feeding the apple, slice by careful slice, to a horse that had put its head over the park fence.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 17,
+      "completion_tokens": 298,
+      "total_tokens": 315,
+      "cost": 0,
+      "is_byok": true,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.012056,
+        "upstream_inference_prompt_cost": 0.000136,
+        "upstream_inference_completions_cost": 0.01192
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 17,
+    "completion_tokens": 298,
+    "total_tokens": 315,
+    "cost": 0,
+    "is_byok": true,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.012056,
+      "upstream_inference_prompt_cost": 0.000136,
+      "upstream_inference_completions_cost": 0.01192
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-6.2-astra",
+  "model_requested": "openai/gpt-6.2-astra",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "openai/gpt-6.2-astra",
+    "pin": "OpenAI",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_9",
+    "at": 1794939089.3520422,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "result": "The best clock in my grandmother\u2019s house was the third stair. It gave a long, low complaint under my grandfather\u2019s left foot at six each morning, then two quick squeaks under the dog, who weighed almost nothing but took the stairs personally.\n\nOne summer my uncle fixed it. He drove in a screw, plugged the hole, and matched the varnish with the care of a man restoring a violin. That night the family went up and down in socks to admire the silence.\n\nAt breakfast the next morning, my grandmother was still in bed. So was the dog.\n\n\u201cHow was I supposed to know?\u201d she asked when my grandfather brought her tea.\n\nNobody took the screw out. That would have hurt my uncle\u2019s feelings. Instead, my grandfather began knocking twice on the banister on his way down. Years later, after they moved to a bungalow, he knocked twice on the kitchen doorframe before putting the kettle on. By then my grandmother was usually awake before him. She lay still anyway.",
+  "raw": {
+    "id": "gen-1794939905-biZ7A2Gdj6T6aVtmfpXy",
+    "object": "chat.completion",
+    "created": 1794939905,
+    "model": "openai/gpt-6.2-astra",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "The best clock in my grandmother\u2019s house was the third stair. It gave a long, low complaint under my grandfather\u2019s left foot at six each morning, then two quick squeaks under the dog, who weighed almost nothing but took the stairs personally.\n\nOne summer my uncle fixed it. He drove in a screw, plugged the hole, and matched the varnish with the care of a man restoring a violin. That night the family went up and down in socks to admire the silence.\n\nAt breakfast the next morning, my grandmother was still in bed. So was the dog.\n\n\u201cHow was I supposed to know?\u201d she asked when my grandfather brought her tea.\n\nNobody took the screw out. That would have hurt my uncle\u2019s feelings. Instead, my grandfather began knocking twice on the banister on his way down. Years later, after they moved to a bungalow, he knocked twice on the kitchen doorframe before putting the kettle on. By then my grandmother was usually awake before him. She lay still anyway.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 13,
+      "completion_tokens": 205,
+      "total_tokens": 218,
+      "cost": 0,
+      "is_byok": true,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008304,
+        "upstream_inference_prompt_cost": 0.000104,
+        "upstream_inference_completions_cost": 0.0082
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 13,
+    "completion_tokens": 205,
+    "total_tokens": 218,
+    "cost": 0,
+    "is_byok": true,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008304,
+      "upstream_inference_prompt_cost": 0.000104,
+      "upstream_inference_completions_cost": 0.0082
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-6.2-astra",
+  "model_requested": "openai/gpt-6.2-astra",
+  "provider": "openrouter",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want.",
+  "capture_policy": {
+    "model": "openai/gpt-6.2-astra",
+    "pin": "OpenAI",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "OPEN_5",
+    "at": 1794939905.0905223,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

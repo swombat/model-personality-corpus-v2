@@ -1,0 +1,90 @@
+{
+  "result": "At the library, I once found a grocery list inside a field guide to moths. Eggs, soap, oranges, birthday candles. Underneath, in smaller handwriting: *the kind that keep going.*\n\nI knew the candles they meant. My uncle put them on every cake until the year my grandmother turned eighty, when she took the little jug of cream beside her coffee and poured it over the lot. There was a second of absolute silence. Then she picked up her fork and said, \u201cI\u2019d like a corner.\u201d\n\nI looked up the moth on the page the list had marked. It was the herald, a coppery thing with a scalloped edge to its wings. It sometimes spends the winter in sheds. I\u2019d probably walked past one a dozen times while looking for a screwdriver.\n\nI put the list back where I\u2019d found it. Ever since, when I go into the shed, I look up.",
+  "raw": {
+    "id": "gen-1794939902-6RDXJTbAkjXkfxYzK53s",
+    "object": "chat.completion",
+    "created": 1794939902,
+    "model": "openai/gpt-6.2-astra",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "At the library, I once found a grocery list inside a field guide to moths. Eggs, soap, oranges, birthday candles. Underneath, in smaller handwriting: *the kind that keep going.*\n\nI knew the candles they meant. My uncle put them on every cake until the year my grandmother turned eighty, when she took the little jug of cream beside her coffee and poured it over the lot. There was a second of absolute silence. Then she picked up her fork and said, \u201cI\u2019d like a corner.\u201d\n\nI looked up the moth on the page the list had marked. It was the herald, a coppery thing with a scalloped edge to its wings. It sometimes spends the winter in sheds. I\u2019d probably walked past one a dozen times while looking for a screwdriver.\n\nI put the list back where I\u2019d found it. Ever since, when I go into the shed, I look up.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 13,
+      "completion_tokens": 188,
+      "total_tokens": 201,
+      "cost": 0,
+      "is_byok": true,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007624,
+        "upstream_inference_prompt_cost": 0.000104,
+        "upstream_inference_completions_cost": 0.00752
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 13,
+    "completion_tokens": 188,
+    "total_tokens": 201,
+    "cost": 0,
+    "is_byok": true,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007624,
+      "upstream_inference_prompt_cost": 0.000104,
+      "upstream_inference_completions_cost": 0.00752
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-6.2-astra",
+  "model_requested": "openai/gpt-6.2-astra",
+  "provider": "openrouter",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want.",
+  "capture_policy": {
+    "model": "openai/gpt-6.2-astra",
+    "pin": "OpenAI",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "OPEN_4",
+    "at": 1794939902.35412,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

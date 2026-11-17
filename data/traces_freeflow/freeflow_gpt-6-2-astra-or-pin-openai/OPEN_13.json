@@ -1,0 +1,90 @@
+{
+  "result": "The library keeps a short pencil beside the catalog computer. By Friday it is gone. On Monday another appears, sharpened at both ends by someone who has evidently decided that erasers are not worth the trouble.\n\nI used it once to copy down a call number. Halfway to the shelves I found I had written the digits on the back of a grocery list, between *lemons* and *dish soap*. The book was about repairing wooden chairs. I had one at home that clicked whenever a guest leaned back, a small, dry sound that made both of us sit up straight.\n\nThe book said to take the loose joint apart before gluing it. This seemed an unreasonable demand to make of a person whose whole ambition was to have a chair in one piece. Still, on Saturday I spread a towel on the kitchen floor and did it. Under the seat, in blue crayon, somebody had written **PETE**.\n\nI bought the chair used. I don't know Pete. I left his name where it was.\n\nAt dinner on Sunday my sister leaned back to laugh, and for the first time in months I heard the whole laugh without listening for anything else.",
+  "raw": {
+    "id": "gen-1794939938-gqDNt67zZJbk4XRQaj6O",
+    "object": "chat.completion",
+    "created": 1794939938,
+    "model": "openai/gpt-6.2-astra",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "The library keeps a short pencil beside the catalog computer. By Friday it is gone. On Monday another appears, sharpened at both ends by someone who has evidently decided that erasers are not worth the trouble.\n\nI used it once to copy down a call number. Halfway to the shelves I found I had written the digits on the back of a grocery list, between *lemons* and *dish soap*. The book was about repairing wooden chairs. I had one at home that clicked whenever a guest leaned back, a small, dry sound that made both of us sit up straight.\n\nThe book said to take the loose joint apart before gluing it. This seemed an unreasonable demand to make of a person whose whole ambition was to have a chair in one piece. Still, on Saturday I spread a towel on the kitchen floor and did it. Under the seat, in blue crayon, somebody had written **PETE**.\n\nI bought the chair used. I don't know Pete. I left his name where it was.\n\nAt dinner on Sunday my sister leaned back to laugh, and for the first time in months I heard the whole laugh without listening for anything else.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 13,
+      "completion_tokens": 239,
+      "total_tokens": 252,
+      "cost": 0,
+      "is_byok": true,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.009664,
+        "upstream_inference_prompt_cost": 0.000104,
+        "upstream_inference_completions_cost": 0.00956
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 13,
+    "completion_tokens": 239,
+    "total_tokens": 252,
+    "cost": 0,
+    "is_byok": true,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.009664,
+      "upstream_inference_prompt_cost": 0.000104,
+      "upstream_inference_completions_cost": 0.00956
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-6.2-astra",
+  "model_requested": "openai/gpt-6.2-astra",
+  "provider": "openrouter",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want.",
+  "capture_policy": {
+    "model": "openai/gpt-6.2-astra",
+    "pin": "OpenAI",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "OPEN_13",
+    "at": 1794939938.110059,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

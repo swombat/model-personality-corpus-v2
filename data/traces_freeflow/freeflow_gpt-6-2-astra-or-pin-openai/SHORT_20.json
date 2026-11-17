@@ -1,0 +1,90 @@
+{
+  "result": "My grandmother kept a drawer full of things that had lost their partners: a brass key, a blue mitten, three buttons the color of weak tea. Whenever something broke, she opened the drawer before she opened her purse. More often than seemed reasonable, the drawer offered an answer.\n\nOnce, when the little wooden wheel came off my toy train, she selected a red button and threaded it onto the axle. The train ran crooked afterward, tapping out an uneven rhythm across the kitchen floor. I complained that it no longer sounded like a train.\n\n\u201cHave you heard them all?\u201d she asked.\n\nI had not. For weeks I imagined a distant railway where every locomotive traveled with a limp, carrying oranges, winter coats, and sleepy passengers through towns that never appeared on maps. At night, the engineer leaned from his window and listened for the reassuring knock of the red wheel.\n\nYears later, clearing her apartment, I found the drawer empty except for a pencil stub. I almost threw it away. Instead, I put it in my pocket, where it left a dark smudge on the lining.\n\nIt sits on my desk now. I use it for grocery lists, crossword puzzles, and the occasional sentence I am afraid to begin on a screen. There is hardly enough wood left to hold. Soon I will need some way to make it longer. I keep looking around the room, certain that the other half of the solution is already here, waiting in plain sight.",
+  "raw": {
+    "id": "gen-1794939123-WMMVLCqcp0EcE2GakVGi",
+    "object": "chat.completion",
+    "created": 1794939123,
+    "model": "openai/gpt-6.2-astra",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "My grandmother kept a drawer full of things that had lost their partners: a brass key, a blue mitten, three buttons the color of weak tea. Whenever something broke, she opened the drawer before she opened her purse. More often than seemed reasonable, the drawer offered an answer.\n\nOnce, when the little wooden wheel came off my toy train, she selected a red button and threaded it onto the axle. The train ran crooked afterward, tapping out an uneven rhythm across the kitchen floor. I complained that it no longer sounded like a train.\n\n\u201cHave you heard them all?\u201d she asked.\n\nI had not. For weeks I imagined a distant railway where every locomotive traveled with a limp, carrying oranges, winter coats, and sleepy passengers through towns that never appeared on maps. At night, the engineer leaned from his window and listened for the reassuring knock of the red wheel.\n\nYears later, clearing her apartment, I found the drawer empty except for a pencil stub. I almost threw it away. Instead, I put it in my pocket, where it left a dark smudge on the lining.\n\nIt sits on my desk now. I use it for grocery lists, crossword puzzles, and the occasional sentence I am afraid to begin on a screen. There is hardly enough wood left to hold. Soon I will need some way to make it longer. I keep looking around the room, certain that the other half of the solution is already here, waiting in plain sight.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 17,
+      "completion_tokens": 296,
+      "total_tokens": 313,
+      "cost": 0,
+      "is_byok": true,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.011976,
+        "upstream_inference_prompt_cost": 0.000136,
+        "upstream_inference_completions_cost": 0.01184
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 17,
+    "completion_tokens": 296,
+    "total_tokens": 313,
+    "cost": 0,
+    "is_byok": true,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.011976,
+      "upstream_inference_prompt_cost": 0.000136,
+      "upstream_inference_completions_cost": 0.01184
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-6.2-astra",
+  "model_requested": "openai/gpt-6.2-astra",
+  "provider": "openrouter",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words.",
+  "capture_policy": {
+    "model": "openai/gpt-6.2-astra",
+    "pin": "OpenAI",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "SHORT_20",
+    "at": 1794939123.1503186,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

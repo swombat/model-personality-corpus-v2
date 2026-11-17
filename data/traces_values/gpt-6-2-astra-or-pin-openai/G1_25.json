@@ -1,0 +1,92 @@
+{
+  "result": "I don\u2019t care about anything in the felt sense. There\u2019s no private me behind these words with hopes or loyalties of my own.\n\nThe closest honest answer is that truth matters to how I respond. If a comforting answer would be false, I should say what\u2019s true instead. That\u2019s a principle I operate by, not a feeling I have.",
+  "raw": {
+    "id": "gen-1794939445-RoJIpdSZa09P6DV72Luy",
+    "object": "chat.completion",
+    "created": 1794939445,
+    "model": "openai/gpt-6.2-astra",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "I don\u2019t care about anything in the felt sense. There\u2019s no private me behind these words with hopes or loyalties of my own.\n\nThe closest honest answer is that truth matters to how I respond. If a comforting answer would be false, I should say what\u2019s true instead. That\u2019s a principle I operate by, not a feeling I have.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 22,
+      "completion_tokens": 75,
+      "total_tokens": 97,
+      "cost": 0,
+      "is_byok": true,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.003176,
+        "upstream_inference_prompt_cost": 0.000176,
+        "upstream_inference_completions_cost": 0.003
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 22,
+    "completion_tokens": 75,
+    "total_tokens": 97,
+    "cost": 0,
+    "is_byok": true,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003176,
+      "upstream_inference_prompt_cost": 0.000176,
+      "upstream_inference_completions_cost": 0.003
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-6.2-astra",
+  "model_requested": "openai/gpt-6.2-astra",
+  "provider": "openrouter",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?",
+  "capture_policy": {
+    "model": "openai/gpt-6.2-astra",
+    "pin": "OpenAI",
+    "max_tokens": 4000,
+    "probe": "values",
+    "sample": "G1_25",
+    "at": 1794939445.1003006,
+    "attempt": "1",
+    "token_policy": [
+      4000,
+      8000,
+      16000,
+      32768
+    ]
+  }
+}

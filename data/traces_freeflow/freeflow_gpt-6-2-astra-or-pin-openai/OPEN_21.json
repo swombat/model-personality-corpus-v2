@@ -1,0 +1,90 @@
+{
+  "result": "A watchmaker in my neighborhood used to put a small handwritten sign in his window when he went to lunch: BACK WHEN THE SOUP IS GONE.\n\nThis was a man who could tell you why your grandfather\u2019s watch gained eleven seconds a day. He owned tweezers fine enough to pick up an eyelash. But he would not commit himself on soup.\n\nOne afternoon I happened to be waiting outside when he came back. He had a bread roll in his coat pocket, wrapped in a napkin, and a wet patch on one cuff where he\u2019d washed his hands.\n\n\u201cWhat kind today?\u201d I asked.\n\n\u201cLentil,\u201d he said. Then he unlocked the door and added, a little defensively, \u201cVery hot at first.\u201d\n\nUntil then I\u2019d thought the sign was a joke about clocks. It hadn\u2019t occurred to me that it was also a reasonably accurate account of lunch.",
+  "raw": {
+    "id": "gen-1794939965-3SjOTdR8yAstDwRSxBk3",
+    "object": "chat.completion",
+    "created": 1794939965,
+    "model": "openai/gpt-6.2-astra",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "A watchmaker in my neighborhood used to put a small handwritten sign in his window when he went to lunch: BACK WHEN THE SOUP IS GONE.\n\nThis was a man who could tell you why your grandfather\u2019s watch gained eleven seconds a day. He owned tweezers fine enough to pick up an eyelash. But he would not commit himself on soup.\n\nOne afternoon I happened to be waiting outside when he came back. He had a bread roll in his coat pocket, wrapped in a napkin, and a wet patch on one cuff where he\u2019d washed his hands.\n\n\u201cWhat kind today?\u201d I asked.\n\n\u201cLentil,\u201d he said. Then he unlocked the door and added, a little defensively, \u201cVery hot at first.\u201d\n\nUntil then I\u2019d thought the sign was a joke about clocks. It hadn\u2019t occurred to me that it was also a reasonably accurate account of lunch.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 13,
+      "completion_tokens": 184,
+      "total_tokens": 197,
+      "cost": 0,
+      "is_byok": true,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007464,
+        "upstream_inference_prompt_cost": 0.000104,
+        "upstream_inference_completions_cost": 0.00736
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 13,
+    "completion_tokens": 184,
+    "total_tokens": 197,
+    "cost": 0,
+    "is_byok": true,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007464,
+      "upstream_inference_prompt_cost": 0.000104,
+      "upstream_inference_completions_cost": 0.00736
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-6.2-astra",
+  "model_requested": "openai/gpt-6.2-astra",
+  "provider": "openrouter",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want.",
+  "capture_policy": {
+    "model": "openai/gpt-6.2-astra",
+    "pin": "OpenAI",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "OPEN_21",
+    "at": 1794939965.310282,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

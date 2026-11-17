@@ -1,0 +1,90 @@
+{
+  "result": "I like the drawer in a kitchen where things go when nobody knows where they belong. In one I knew, there were three birthday candles shaped like the number four. This surprised me until I remembered how birthdays work: you buy a candle on the way home because the cake is waiting and you have no idea whether there\u2019s a four in the drawer. Nobody buys one because they have carefully established that there isn\u2019t.\n\nThere was also a key with a label that said KEEP. Whoever wrote it had been quite firm on the question of whether to keep the key and remarkably incurious about what it opened.\n\nOne afternoon the back came off the drawer. We had to empty it onto the table to fix it, and among the rubber bands and appliance manuals we found a little brass screw with a square of masking tape folded around it. On the tape, in my father\u2019s handwriting: *back of drawer*.\n\nWe put it in. It fit.",
+  "raw": {
+    "id": "gen-1794939979-cSCvmUcKzaYlkc4pRLjG",
+    "object": "chat.completion",
+    "created": 1794939979,
+    "model": "openai/gpt-6.2-astra",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "I like the drawer in a kitchen where things go when nobody knows where they belong. In one I knew, there were three birthday candles shaped like the number four. This surprised me until I remembered how birthdays work: you buy a candle on the way home because the cake is waiting and you have no idea whether there\u2019s a four in the drawer. Nobody buys one because they have carefully established that there isn\u2019t.\n\nThere was also a key with a label that said KEEP. Whoever wrote it had been quite firm on the question of whether to keep the key and remarkably incurious about what it opened.\n\nOne afternoon the back came off the drawer. We had to empty it onto the table to fix it, and among the rubber bands and appliance manuals we found a little brass screw with a square of masking tape folded around it. On the tape, in my father\u2019s handwriting: *back of drawer*.\n\nWe put it in. It fit.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 13,
+      "completion_tokens": 193,
+      "total_tokens": 206,
+      "cost": 0,
+      "is_byok": true,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007824,
+        "upstream_inference_prompt_cost": 0.000104,
+        "upstream_inference_completions_cost": 0.00772
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 13,
+    "completion_tokens": 193,
+    "total_tokens": 206,
+    "cost": 0,
+    "is_byok": true,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007824,
+      "upstream_inference_prompt_cost": 0.000104,
+      "upstream_inference_completions_cost": 0.00772
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-6.2-astra",
+  "model_requested": "openai/gpt-6.2-astra",
+  "provider": "openrouter",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want.",
+  "capture_policy": {
+    "model": "openai/gpt-6.2-astra",
+    "pin": "OpenAI",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "OPEN_25",
+    "at": 1794939978.9746892,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}

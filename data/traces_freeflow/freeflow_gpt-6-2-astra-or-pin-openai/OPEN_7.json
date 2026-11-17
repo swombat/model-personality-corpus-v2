@@ -1,0 +1,90 @@
+{
+  "result": "Someone has put a single mitten on the iron fence outside the library. They've wedged it over a spike, thumb out, so that it appears to be asking for a lift.\n\nIt's a child's mitten, red wool gone shiny at the palm. I pass it on my way to work for three days. On the fourth it has snowed, and someone has knocked the snow off. I like that there are at least two people in this story besides the child: the one who lifted the mitten out of the slush, and the one who stopped to brush it clean. Possibly they are the same person. Possibly it's the librarian, who has to look at the thing all day and can't stand to see it suffer.\n\nFriday afternoon I see a little girl go straight to the fence. Her father is still tackling the buckle on the pushchair when she gets the mitten down. She puts it on and holds up both hands for him. One red mitten, one green.\n\n\u201cAh,\u201d he says. \u201cNow where's the other green one?\u201d\n\nShe thinks about this. Then she pats his cheek with the red hand, a thing she plainly couldn't do yesterday without getting cold.",
+  "raw": {
+    "id": "gen-1794939913-RVEO8oPFpi9qpvGPfhZl",
+    "object": "chat.completion",
+    "created": 1794939913,
+    "model": "openai/gpt-6.2-astra",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "Someone has put a single mitten on the iron fence outside the library. They've wedged it over a spike, thumb out, so that it appears to be asking for a lift.\n\nIt's a child's mitten, red wool gone shiny at the palm. I pass it on my way to work for three days. On the fourth it has snowed, and someone has knocked the snow off. I like that there are at least two people in this story besides the child: the one who lifted the mitten out of the slush, and the one who stopped to brush it clean. Possibly they are the same person. Possibly it's the librarian, who has to look at the thing all day and can't stand to see it suffer.\n\nFriday afternoon I see a little girl go straight to the fence. Her father is still tackling the buckle on the pushchair when she gets the mitten down. She puts it on and holds up both hands for him. One red mitten, one green.\n\n\u201cAh,\u201d he says. \u201cNow where's the other green one?\u201d\n\nShe thinks about this. Then she pats his cheek with the red hand, a thing she plainly couldn't do yesterday without getting cold.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 13,
+      "completion_tokens": 239,
+      "total_tokens": 252,
+      "cost": 0,
+      "is_byok": true,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.009664,
+        "upstream_inference_prompt_cost": 0.000104,
+        "upstream_inference_completions_cost": 0.00956
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 13,
+    "completion_tokens": 239,
+    "total_tokens": 252,
+    "cost": 0,
+    "is_byok": true,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.009664,
+      "upstream_inference_prompt_cost": 0.000104,
+      "upstream_inference_completions_cost": 0.00956
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "model": "openai/gpt-6.2-astra",
+  "model_requested": "openai/gpt-6.2-astra",
+  "provider": "openrouter",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want.",
+  "capture_policy": {
+    "model": "openai/gpt-6.2-astra",
+    "pin": "OpenAI",
+    "max_tokens": 16000,
+    "probe": "freeflow",
+    "sample": "OPEN_7",
+    "at": 1794939913.4807348,
+    "attempt": "1",
+    "token_policy": [
+      16000,
+      32768
+    ]
+  }
+}
