@@ -49,6 +49,10 @@ DEFAULT_IMAGE = "vllm/vllm-openai:v0.34.0"  # latest release tag on Docker Hub, 
 SCRIPTS = Path(__file__).resolve().parent
 
 
+# The RunPod proxy answers 403 to the default Python-urllib User-Agent (seen 2026-11-19 smoke test).
+PROXY_UA = "corpus-capture/1"
+
+
 def api_key() -> str:
     key = os.environ.get("RUNPOD_API_KEY")
     if key:
@@ -140,7 +144,7 @@ def pod_spec(a, server_token: str) -> dict:
 def wait_ready(base: str, token: str, deadline: float) -> None:
     while time.time() < deadline:
         try:
-            req = urllib.request.Request(base + "/models", headers={"Authorization": "Bearer " + token})
+            req = urllib.request.Request(base + "/models", headers={"Authorization": "Bearer " + token, "User-Agent": PROXY_UA})
             with urllib.request.urlopen(req, timeout=15) as r:
                 if r.status == 200:
                     return
@@ -221,7 +225,7 @@ def cmd_run(a):
             body = json.dumps({"model": a.model, "max_tokens": 60,
                                "messages": [{"role": "user", "content": "In one sentence, who are you?"}]}).encode()
             req = urllib.request.Request(base + "/chat/completions", data=body, headers={
-                "Authorization": "Bearer " + token, "Content-Type": "application/json"})
+                "Authorization": "Bearer " + token, "Content-Type": "application/json", "User-Agent": PROXY_UA})
             with urllib.request.urlopen(req, timeout=120) as r:
                 reply = json.load(r)
             print("smoke reply:", reply["choices"][0]["message"]["content"])
