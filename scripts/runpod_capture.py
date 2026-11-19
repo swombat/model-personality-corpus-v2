@@ -217,8 +217,17 @@ def cmd_run(a):
             "LOCAL_MODEL_HARDWARE": f"RunPod {a.cloud} {a.gpu_count}x {a.gpu_id}; pod {pod_id}",
         })
         env.pop("RUNPOD_API_KEY", None)
-        for script, extra in (("run_freeflow_multi.py", ["--workers", str(a.workers)]),
-                              ("run_values_v2.py", ["--workers", str(a.workers)])):
+        if a.smoke:
+            body = json.dumps({"model": a.model, "max_tokens": 60,
+                               "messages": [{"role": "user", "content": "In one sentence, who are you?"}]}).encode()
+            req = urllib.request.Request(base + "/chat/completions", data=body, headers={
+                "Authorization": "Bearer " + token, "Content-Type": "application/json"})
+            with urllib.request.urlopen(req, timeout=120) as r:
+                reply = json.load(r)
+            print("smoke reply:", reply["choices"][0]["message"]["content"])
+        for script, extra in (() if a.smoke else
+                              (("run_freeflow_multi.py", ["--workers", str(a.workers)]),
+                               ("run_values_v2.py", ["--workers", str(a.workers)]))):
             if script == "run_values_v2.py" and a.freeflow_only:
                 continue
             cmd = [sys.executable, str(SCRIPTS / script), "local-openai", a.model, "--label", a.label, *extra]
@@ -272,6 +281,7 @@ def main():
     r.add_argument("--workers", type=int, default=4)
     r.add_argument("--ready-minutes", type=float, default=30)
     r.add_argument("--freeflow-only", action="store_true")
+    r.add_argument("--smoke", action="store_true", help="one chat completion instead of the capture (plumbing test)")
     r.add_argument("--go", action="store_true", help="actually create the pod")
     r.set_defaults(fn=cmd_run)
 
