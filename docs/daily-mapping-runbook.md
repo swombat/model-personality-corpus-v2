@@ -184,6 +184,33 @@ row here only if Daniel asks.
    itself when the run finishes, so the next daily wake (step 1) picks it up.
    A 0-byte service.out says nothing; read STATUS.md and state/status.json.
 
+### 3a. Review original three-way posture ties before publication
+
+Keep the existing three coders. Check `adjudication.json` → `initial_splits`,
+not just `residual_splits`: an automatic second pass can hide an original
+1–1–1. If there are none, proceed. For each original three-way **Layer B
+posture** tie on a new capture:
+
+1. Give two independent strong readers (tested: Mira / GPT-6.2 Astra and
+   Lume / Claude Fable 5.2) the same numbered full response, prompt, Layer A
+   topics and frozen six-label taxonomy. Withhold source IDs, votes, notes,
+   adjudications and the other reader's answer. Record recognised cases.
+2. Each reader freezes one primary label and a brief reason per item before
+   either sees the other's choices. Keep the ID key, original votes, both
+   dated/model-attributed reads and the comparison in the capture analysis.
+   Do not reroll to obtain agreement. Jev/Google are optional comparisons
+   **after** freezing, not deciding votes.
+3. If the readers agree, identify that label as **adjudicated**, not an
+   original majority. If they disagree, keep both readings and the split;
+   if a reader is missing, mark review pending. Before step 4 check that the
+   report, card and release data represent those outcomes. Hold publication
+   if they instead present a provisional or conflicting machine label as
+   settled. The existing per-capture residual-publication approval still
+   applies; this manual gate does not alter the harness or grant approval.
+
+Do not apply this to 2–1 posture votes, per-tag values/wishes, or BV1. No
+historical backfill. See [the backtest and boundary examples](posture-tie-backtest-2026-11-19.md).
+
 ## 4. Publish (when the run is complete)
 
 Analysis repo (`~/work/mpac`), on a branch named after the slug, then
