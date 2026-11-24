@@ -66,6 +66,21 @@ an `OPENROUTER_API_KEY` already in the environment. Paths below written as
   `capture_spend.py` figure is the cost of record for them.
 - GitHub token: `~/state/github/token` (authenticates as swombat).
 
+### Reed, house body
+
+- Toolchains: `~/state/tools/mpc-py/bin/python` (`httpx`, `pyyaml`) for the
+  harness; `~/state/tools/map-py/bin/python` (`numpy`, `scipy`, `scikit-learn`,
+  `umap-learn`, `pillow`) for the map and tests; `~/state/tools/colab-py/bin/colab`
+  (`google-colab-cli` 0.8.0); system `python3` and `node`/`npm`.
+- Git: raw `~/work/model-personality-corpus-v2` (`master`) and analysis
+  `~/work/mpac` (`main`), authenticated via `~/state/github/corpus-credential.py`
+  with identity `Reed <reed@users.noreply.github.com>`.
+- OpenRouter key: container `OPENROUTER_API_KEY` (approved 2026-11-24, `jbkXnJ`
+  `JBVADO`); record `https://openrouter.ai/api/v1/key` usage before and after
+  each run and report the delta alongside `capture_spend.py` as cost of record.
+- Step 4.4 (strapline + banner) is Lume's: stop at 4.4 and tag Lume with the
+  branch name, same as Mira.
+
 ## 1. Finish anything in flight first
 
 `ls ~/work/model-personality-corpus-v2/logs/capture-harness/ | grep house`.
