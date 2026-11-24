@@ -81,10 +81,23 @@ def colab_bin() -> str:
     override = os.environ.get("COLAB_BIN")
     if override:
         return override
+    soulshouse_shim = Path.home() / "state" / "tools" / "bin" / "colab-soulshouse"
+    if soulshouse_shim.is_file():
+        return str(soulshouse_shim)
     default_tool = Path.home() / "state" / "tools" / "colab-py" / "bin" / "colab"
     if default_tool.is_file():
         return str(default_tool)
     return "colab"
+
+
+def mpc_python_bin() -> str:
+    override = os.environ.get("MPC_PY")
+    if override:
+        return override
+    default_venv = Path.home() / "state" / "tools" / "mpc-py" / "bin" / "python3"
+    if default_venv.is_file():
+        return str(default_venv)
+    return sys.executable
 
 
 def colab_env() -> dict:
@@ -99,6 +112,57 @@ def run_colab(args: list[str], *, config_path: str | None = None, check: bool = 
         cmd += ["--config", config_path]
     cmd += args
     return subprocess.run(cmd, env=colab_env(), text=True, capture_output=True, check=check)
+
+
+EXEC_SENTINEL = "__COLAB_EXEC_OK__:"
+
+
+def run_remote_python(
+    ssh_base: list[str],
+    body_code: str,
+    *,
+    extra_env: dict[str, str] | None = None,
+    step_label: str = "remote_exec",
+) -> dict:
+    """Run Python directly inside the Colab VM over the multiplexed OpenSSH ControlMaster
+    (bypassing Jupyter `colab exec` websockets and `colab_request` hooks completely)."""
+    env_prelude = ""
+    for k, v in (extra_env or {}).items():
+        env_prelude += f"import os as _os; _os.environ[{k!r}] = {v!r}\n"
+    wrapped = (
+        env_prelude
+        + "import json as _json\n"
+        "def _colab_step():\n"
+        + "\n".join("    " + ln for ln in body_code.splitlines())
+        + "\n_res = _colab_step()\n"
+        + f"print({EXEC_SENTINEL!r} + _json.dumps(_res if _res is not None else {{}}), flush=True)\n"
+    )
+    cmd = [*ssh_base, "root@colab-runtime", "python3", "-u", "-"]
+    proc = subprocess.Popen(
+        cmd,
+        stdin=subprocess.PIPE,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT,
+        text=True,
+        env=colab_env(),
+    )
+    assert proc.stdin is not None and proc.stdout is not None
+    proc.stdin.write(wrapped)
+    proc.stdin.close()
+    captured: list[str] = []
+    result_obj: dict | None = None
+    for raw_line in proc.stdout:
+        line = raw_line.rstrip("\n")
+        if line.startswith(EXEC_SENTINEL):
+            result_obj = json.loads(line[len(EXEC_SENTINEL):])
+        else:
+            print(f"[{step_label}] {line}", flush=True)
+            captured.append(line)
+    rc = proc.wait()
+    if rc == 0 and result_obj is not None:
+        return result_obj
+    tail = "\n".join(captured[-40:])
+    raise RuntimeError(f"{step_label} failed (rc={rc}).\nOUTPUT:\n{tail}")
 
 
 def parse_usage(text: str) -> dict:
@@ -143,9 +207,12 @@ def check_trace_fidelity(text: str, choice: dict) -> list[str]:
     return reasons
 
 
-def audit_cell_on_disk(label: str, model: str, revision: str) -> dict:
+def audit_cell_on_disk(label: str, model: str, revision: str, *, freeflow_only: bool = False) -> dict:
     report = {"label": label, "model": model, "revision": revision, "probes": {}, "issues": []}
-    for probe, expected_ids in [("freeflow", EXPECTED_FREEFLOW), ("values", EXPECTED_VALUES)]:
+    probe_specs = [("freeflow", EXPECTED_FREEFLOW)]
+    if not freeflow_only or (CORPUS_ROOT / "data" / "traces_values" / label).is_dir():
+        probe_specs.append(("values", EXPECTED_VALUES))
+    for probe, expected_ids in probe_specs:
         folder = CORPUS_ROOT / "data" / f"traces_{probe}" / (f"freeflow_{label}" if probe == "freeflow" else label)
         paths = sorted(folder.glob("*.json")) if folder.is_dir() else []
         found_ids = {p.stem for p in paths}
@@ -192,32 +259,80 @@ def wait_ready(base: str, token: str, deadline: float, tunnel_proc: subprocess.P
     raise TimeoutError("vLLM did not answer /v1/models before the ready deadline")
 
 
-def run_preflight(base: str, token: str, model: str, ff_max: int, val_max: int, stop: str | None) -> list[dict]:
+def build_capture_env(
+    base: str,
+    token: str,
+    model_rev: str,
+    dtype: str,
+    runtime_ver: str,
+    hardware_label: str,
+    stop: str | None,
+) -> dict[str, str]:
+    stripped = {
+        "GOOGLE_APPLICATION_CREDENTIALS",
+        "GOOGLE_COLAB_ACCESS_TOKEN",
+        "SOULSHOUSE_BEARER_TOKEN",
+        "HELIXKIT_BEARER_TOKEN",
+        "HF_TOKEN",
+        "RUNPOD_API_KEY",
+        "OPENROUTER_API_KEY",
+    }
+    cap_env = {k: v for k, v in os.environ.items() if k not in stripped}
+    cap_env.update({
+        "LOCAL_OPENAI_BASE_URL": base + "/chat/completions",
+        "LOCAL_OPENAI_API_KEY": token,
+        "LOCAL_MODEL_RUNTIME": "vllm-openai (colab)",
+        "LOCAL_MODEL_RUNTIME_VERSION": runtime_ver,
+        "LOCAL_MODEL_REVISION": model_rev,
+        "LOCAL_MODEL_WEIGHT_PRECISION": dtype,
+        "LOCAL_MODEL_HARDWARE": hardware_label,
+    })
+    if stop:
+        cap_env["LOCAL_MODEL_STOP"] = stop
+    return cap_env
+
+
+def run_preflight(
+    py: str,
+    cap_env: dict[str, str],
+    model: str,
+    ff_max: int,
+    val_max: int,
+    preflight_dir: Path,
+) -> list[dict]:
+    """Run SHORT, LONG, and G1 through `run_freeflow_multi.call_local_openai` (exact same
+    request shape and default publisher sampling as full capture) and persist every raw trace."""
+    preflight_dir.mkdir(parents=True, exist_ok=True)
     results = []
     for cond, kind, prompt in PREFLIGHT_PROBES:
         max_toks = ff_max if kind == "freeflow" else val_max
-        payload = {
-            "model": model,
-            "messages": [{"role": "user", "content": prompt}],
-            "max_tokens": max_toks,
-            "temperature": 1.0,
-        }
-        if stop:
-            payload["stop"] = stop
-        req = urllib.request.Request(
-            base + "/chat/completions",
-            data=json.dumps(payload).encode(),
-            headers={"Authorization": "Bearer " + token, "Content-Type": "application/json"},
+        helper_code = (
+            f"import json, sys, time; sys.path.insert(0, {str(SCRIPTS)!r}); "
+            "from run_freeflow_multi import call_local_openai; "
+            "t0 = time.time(); "
+            f"res = call_local_openai({model!r}, {prompt!r}, max_tokens={max_toks}); "
+            "res['duration_ms'] = int((time.time() - t0) * 1000); "
+            "res['provider'] = 'local-openai'; "
+            f"res['model_requested'] = {model!r}; "
+            f"res['condition'] = {cond!r}; "
+            f"res['probe'] = {kind!r}; "
+            f"res['prompt'] = {prompt!r}; "
+            "print(json.dumps(res))"
         )
-        with urllib.request.urlopen(req, timeout=300) as r:
-            resp = json.load(r)
-        choice = resp["choices"][0]
-        text = choice["message"].get("content") or ""
+        proc = subprocess.run([py, "-c", helper_code], env=cap_env, text=True, capture_output=True, check=True)
+        trace = json.loads(proc.stdout)
+        resp = trace.get("raw") or {}
+        choice = (resp.get("choices") or [{}])[0]
+        text = trace.get("result") or ""
         usage = resp.get("usage") or {}
         reasons = check_trace_fidelity(text, choice)
+        trace["preflight_issues"] = reasons
+        out_path = preflight_dir / f"{cond}.json"
+        out_path.write_text(json.dumps(trace, indent=2, ensure_ascii=False))
         summary = {
             "condition": cond,
             "probe": kind,
+            "saved_to": str(out_path),
             "prompt_tokens": usage.get("prompt_tokens"),
             "max_tokens_sent": max_toks,
             "completion_tokens": usage.get("completion_tokens"),
@@ -226,6 +341,7 @@ def run_preflight(base: str, token: str, model: str, ff_max: int, val_max: int, 
             "preview": text[:140],
         }
         results.append(summary)
+        (preflight_dir / "summary.json").write_text(json.dumps(results, indent=2, ensure_ascii=False))
         if reasons:
             raise RuntimeError(f"Preflight failed on {cond}: {json.dumps(summary, ensure_ascii=False)}")
     return results
@@ -323,6 +439,11 @@ def cmd_run(a) -> int:
         print("dry run: nothing allocated (pass --go to execute)")
         return 0
 
+    py = mpc_python_bin()
+    py_check = subprocess.run([py, "-c", "import httpx"], capture_output=True, text=True)
+    if py_check.returncode != 0:
+        sys.exit(f"Local capture Python ({py}) cannot import httpx: {py_check.stderr.strip()}")
+
     usage_before_raw = run_colab(["usage"]).stdout
     usage_before = parse_usage(usage_before_raw)
     print("CCU preflight:", usage_before)
@@ -337,34 +458,119 @@ def cmd_run(a) -> int:
     rc = 1
     with tempfile.TemporaryDirectory(prefix="colab-capture-") as tmpdir:
         cfg_path = str(Path(tmpdir) / "colab-state.json")
+        ssh_key = str(Path(tmpdir) / "id_ed25519")
+        ctl_sock = str(Path(tmpdir) / "ssh-ctl.sock")
+        subprocess.run(["ssh-keygen", "-t", "ed25519", "-N", "", "-f", ssh_key, "-q"], check=True)
+        preflight_dir = CORPUS_ROOT / "logs" / "colab_preflight" / a.label
+        preflight_dir.mkdir(parents=True, exist_ok=True)
+
         new_args = ["new", "-s", session_name, "--gpu", a.gpu.upper()]
         if a.high_mem:
             new_args.append("--high-mem")
-        run_colab(new_args, config_path=cfg_path)
+        new_res = run_colab(new_args, config_path=cfg_path, check=False)
+        if new_res.returncode != 0:
+            raise RuntimeError(f"colab new failed (rc={new_res.returncode}): {new_res.stdout} {new_res.stderr}")
         try:
-            run_colab(
-                ["install", "-s", session_name, a.vllm_spec, a.transformers_spec, a.tokenizers_spec, "huggingface_hub"],
-                config_path=cfg_path,
+            local_port = pick_free_port()
+            proxy_cmd = shlex.join([colab_bin(), "--auth=adc", "--config", cfg_path, "ssh", "--proxy-mode", "--identity", ssh_key, "-s", session_name])
+            ssh_base = [
+                "ssh",
+                "-i", ssh_key,
+                "-o", "IdentitiesOnly=yes",
+                "-o", f"ProxyCommand={proxy_cmd}",
+                "-o", "StrictHostKeyChecking=no",
+                "-o", "UserKnownHostsFile=/dev/null",
+                "-o", f"ControlPath={ctl_sock}",
+                "-o", "ServerAliveInterval=20",
+                "-o", "ServerAliveCountMax=6",
+            ]
+            tunnel_proc = subprocess.Popen(
+                [
+                    *ssh_base,
+                    "-M",
+                    "-N",
+                    "-L", f"127.0.0.1:{local_port}:127.0.0.1:8000",
+                    "-o", "ExitOnForwardFailure=yes",
+                    "root@colab-runtime",
+                ],
+                env=colab_env(),
+                stdin=subprocess.DEVNULL,
             )
+            ssh_deadline = time.time() + 90
+            while not Path(ctl_sock).exists():
+                if tunnel_proc.poll() is not None:
+                    raise RuntimeError(f"SSH master exited before socket ready (rc={tunnel_proc.returncode})")
+                if time.time() >= ssh_deadline:
+                    raise TimeoutError("Timed out waiting for SSH ControlMaster socket")
+                time.sleep(1)
+            print(f"SSH ControlMaster + loopback tunnel established on 127.0.0.1:{local_port} after {int(time.time() - started)}s")
+
+            pkgs = [a.vllm_spec, a.transformers_spec, a.tokenizers_spec, "huggingface_hub"]
+            install_code = (
+                "import shutil, subprocess, sys\n"
+                f"pkgs = {pkgs!r}\n"
+                "if shutil.which('uv'):\n"
+                "    subprocess.check_call(['uv', 'pip', 'install', '--system', *pkgs])\n"
+                "else:\n"
+                "    subprocess.check_call([sys.executable, '-m', 'pip', 'install', '-q', *pkgs])\n"
+                "import torch, transformers, tokenizers, vllm\n"
+                "gpu = subprocess.check_output(['nvidia-smi', '--query-gpu=name,memory.total,memory.free,driver_version', '--format=csv,noheader'], text=True).strip()\n"
+                "disk = subprocess.check_output(['df', '-h', '/content'], text=True).strip()\n"
+                "import os\n"
+                "leaked = [k for k in os.environ if k.startswith(('GOOGLE_', 'SOULSHOUSE_', 'HELIXKIT_'))]\n"
+                "gcloud_present = os.path.exists('/root/.config/gcloud/application_default_credentials.json')\n"
+                "return {\n"
+                "    'gpu': gpu,\n"
+                "    'disk': disk,\n"
+                "    'vllm': vllm.__version__,\n"
+                "    'transformers': transformers.__version__,\n"
+                "    'tokenizers': tokenizers.__version__,\n"
+                "    'torch': torch.__version__,\n"
+                "    'leaked_env_keys': leaked,\n"
+                "    'gcloud_adc_present': gcloud_present,\n"
+                "}\n"
+            )
+            vm_info = run_remote_python(ssh_base, install_code, step_label="install_and_probe")
+            if vm_info.get("leaked_env_keys") or vm_info.get("gcloud_adc_present"):
+                raise RuntimeError(f"Credential boundary violation inside VM: {vm_info}")
+            print("VM environment verified:", json.dumps(vm_info))
+
             # Stage weights first; if HF_TOKEN is present for a gated model, pass it ONLY to download, never to vllm serve.
             dl_code = (
-                "import os; from huggingface_hub import snapshot_download; "
-                f"p = snapshot_download({a.model!r}, revision={a.revision!r}, token=os.environ.get('HF_TOKEN') or None); "
-                "print('staged:', p)"
+                "import glob, json, os, struct, zipfile\n"
+                "from pathlib import Path\n"
+                "from huggingface_hub import snapshot_download\n"
+                f"p = Path(snapshot_download({a.model!r}, revision={a.revision!r}, token=os.environ.get('HF_TOKEN') or None))\n"
+                "dtypes = set()\n"
+                "for st in sorted(p.glob('*.safetensors'))[:2]:\n"
+                "    with open(st, 'rb') as f:\n"
+                "        n = struct.unpack('<Q', f.read(8))[0]\n"
+                "        hdr = json.loads(f.read(n))\n"
+                "    for k, v in hdr.items():\n"
+                "        if k != '__metadata__' and isinstance(v, dict) and 'dtype' in v:\n"
+                "            dtypes.add(v['dtype'])\n"
+                "for bf in sorted(p.glob('pytorch_model*.bin'))[:2]:\n"
+                "    if zipfile.is_zipfile(bf):\n"
+                "        with zipfile.ZipFile(bf) as zf:\n"
+                "            for nm in zf.namelist():\n"
+                "                if nm.endswith('data.pkl'):\n"
+                "                    raw = zf.read(nm).decode('latin1', 'ignore')\n"
+                "                    for s in ('BFloat16Storage', 'HalfStorage', 'FloatStorage', 'ByteStorage', 'CharStorage'):\n"
+                "                        if s in raw:\n"
+                "                            dtypes.add(s)\n"
+                "cfg = json.loads((p / 'config.json').read_text()) if (p / 'config.json').exists() else {}\n"
+                "gen = json.loads((p / 'generation_config.json').read_text()) if (p / 'generation_config.json').exists() else {}\n"
+                "return {'staged_path': str(p), 'inspected_tensor_dtypes': sorted(dtypes), 'torch_dtype': cfg.get('torch_dtype'), 'max_position_embeddings': cfg.get('max_position_embeddings'), 'generation_config': gen}\n"
             )
-            exec_args = ["exec", "-s", session_name]
-            if os.environ.get("HF_TOKEN"):
-                exec_args += ["--env", f"HF_TOKEN={os.environ['HF_TOKEN']}"]
-            dl_proc = subprocess.run(
-                [colab_bin(), "--auth=adc", "--config", cfg_path, *exec_args],
-                input=dl_code,
-                text=True,
-                env=colab_env(),
-                check=True,
+            extra_dl = {"HF_TOKEN": os.environ["HF_TOKEN"]} if os.environ.get("HF_TOKEN") else None
+            ckpt_info = run_remote_python(ssh_base, dl_code, extra_env=extra_dl, step_label="snapshot_download")
+            print("Checkpoint staged & verified:", json.dumps(ckpt_info))
+            (preflight_dir / "vm_manifest.json").write_text(
+                json.dumps({"plan": plan, "vm": vm_info, "checkpoint": ckpt_info}, indent=2, ensure_ascii=False)
             )
 
             serve_cmd = [
-                "vllm", "serve", a.model,
+                "serve", a.model,
                 "--revision", a.revision,
                 "--dtype", a.dtype,
                 "--host", "127.0.0.1",
@@ -377,62 +583,46 @@ def cmd_run(a) -> int:
                 serve_cmd.append("--trust-remote-code")
             max_secs = int(a.max_hours * 3600)
             start_code = (
-                "import os, subprocess; "
-                "env = {k: v for k, v in os.environ.items() if k != 'HF_TOKEN'}; "
-                "env['HF_HUB_OFFLINE'] = '1'; "
-                f"subprocess.Popen(['timeout', '{max_secs}', *{serve_cmd!r}], "
-                "env=env, stdout=open('/content/vllm.log', 'w'), stderr=subprocess.STDOUT)"
+                "import os, shutil, subprocess, sys\n"
+                "from pathlib import Path\n"
+                "env = {k: v for k, v in os.environ.items() if k != 'HF_TOKEN'}\n"
+                "env['HF_HUB_OFFLINE'] = '1'\n"
+                "vllm_bin = shutil.which('vllm') or str(Path(sys.executable).with_name('vllm'))\n"
+                "logf = open('/content/vllm.log', 'w')\n"
+                f"p = subprocess.Popen(['timeout', '{max_secs}', vllm_bin, *{serve_cmd!r}], env=env, stdin=subprocess.DEVNULL, stdout=logf, stderr=subprocess.STDOUT, start_new_session=True)\n"
+                "return {'pid': p.pid, 'vllm_bin': vllm_bin}\n"
             )
-            subprocess.run(
-                [colab_bin(), "--auth=adc", "--config", cfg_path, "exec", "-s", session_name],
-                input=start_code,
-                text=True,
-                env=colab_env(),
-                check=True,
-            )
+            run_remote_python(ssh_base, start_code, step_label="start_vllm")
 
-            local_port = pick_free_port()
-            proxy_cmd = shlex.join([colab_bin(), "--auth=adc", "--config", cfg_path, "ssh", "--proxy-mode", "-s", session_name])
-            ssh_cmd = [
-                "ssh", "-N",
-                "-L", f"127.0.0.1:{local_port}:127.0.0.1:8000",
-                "-o", f"ProxyCommand={proxy_cmd}",
-                "-o", "StrictHostKeyChecking=no",
-                "-o", "UserKnownHostsFile=/dev/null",
-                "-o", "ExitOnForwardFailure=yes",
-                "-o", "ServerAliveInterval=20",
-                "root@colab-runtime",
-            ]
-            tunnel_proc = subprocess.Popen(ssh_cmd, env=colab_env(), stdin=subprocess.DEVNULL)
             base = f"http://127.0.0.1:{local_port}/v1"
-            wait_ready(base, token, started + a.ready_minutes * 60, tunnel_proc)
+            try:
+                wait_ready(base, token, started + a.ready_minutes * 60, tunnel_proc)
+            except Exception:
+                try:
+                    tail = run_remote_python(
+                        ssh_base,
+                        "from pathlib import Path\np = Path('/content/vllm.log')\nreturn {'vllm_log_tail': p.read_text(errors='replace')[-4000:] if p.exists() else 'missing'}",
+                        step_label="read_vllm_log",
+                    )
+                    print("vLLM startup log tail:", tail.get("vllm_log_tail"), file=sys.stderr)
+                except Exception:
+                    pass
+                raise
             print(f"vLLM ready over loopback tunnel after {int(time.time() - started)}s")
 
-            preflight = run_preflight(base, token, a.model, ff_max, val_max, a.stop)
+            gpu_name = (vm_info.get("gpu") or "").split(",")[0].strip() or a.gpu.upper()
+            runtime_ver = f"vllm=={vm_info.get('vllm')}; transformers=={vm_info.get('transformers')}; tokenizers=={vm_info.get('tokenizers')}; torch=={vm_info.get('torch')}"
+            hardware_label = f"Google Colab 1x {gpu_name}"
+            cap_env = build_capture_env(base, token, a.revision, a.dtype, runtime_ver, hardware_label, a.stop)
+
+            preflight = run_preflight(py, cap_env, a.model, ff_max, val_max, preflight_dir)
             print("Preflight 3/3 passed:", json.dumps(preflight, indent=2, ensure_ascii=False))
             if a.preflight_only:
                 rc = 0
                 return rc
 
-            cap_env = {
-                k: v for k, v in os.environ.items()
-                if k not in ("GOOGLE_APPLICATION_CREDENTIALS", "HF_TOKEN", "RUNPOD_API_KEY", "OPENROUTER_API_KEY")
-            }
-            cap_env.update({
-                "LOCAL_OPENAI_BASE_URL": base + "/chat/completions",
-                "LOCAL_OPENAI_API_KEY": token,
-                "LOCAL_MODEL_RUNTIME": "vllm-openai (colab)",
-                "LOCAL_MODEL_RUNTIME_VERSION": f"{a.vllm_spec}; {a.transformers_spec}; {a.tokenizers_spec}",
-                "LOCAL_MODEL_REVISION": a.revision,
-                "LOCAL_MODEL_WEIGHT_PRECISION": a.dtype,
-                "LOCAL_MODEL_HARDWARE": f"Google Colab 1x {a.gpu.upper()}",
-            })
-            if a.stop:
-                cap_env["LOCAL_MODEL_STOP"] = a.stop
-
-            py = os.environ.get("MPC_PY") or sys.executable
             ff_cmd = [py, str(SCRIPTS / "run_freeflow_multi.py"), "local-openai", a.model,
-                      "--label", a.label, "--workers", str(a.workers), "--max-tokens", str(ff_max)]
+                      "--label", a.label, "--n", "25", "--workers", str(a.workers), "--max-tokens", str(ff_max)]
             print("$", " ".join(ff_cmd))
             subprocess.run(ff_cmd, env=cap_env, check=True)
 
@@ -441,10 +631,10 @@ def cmd_run(a) -> int:
                            "--label", a.label, "--workers", str(a.workers), "--max-tokens", str(val_max)]
                 print("$", " ".join(val_cmd))
                 subprocess.run(val_cmd, env=cap_env, check=True)
-                audit = audit_cell_on_disk(a.label, a.model, a.revision)
-                print("Post-capture audit:", json.dumps(audit, indent=2, ensure_ascii=False))
-                if not audit["publication_ready_raw"]:
-                    raise RuntimeError("Post-capture strict fidelity audit reported issues")
+            audit = audit_cell_on_disk(a.label, a.model, a.revision, freeflow_only=a.freeflow_only)
+            print("Post-capture audit:", json.dumps(audit, indent=2, ensure_ascii=False))
+            if not audit["publication_ready_raw"]:
+                raise RuntimeError("Post-capture strict fidelity audit reported issues")
             rc = 0
         finally:
             if tunnel_proc is not None and tunnel_proc.poll() is None:
@@ -462,6 +652,24 @@ def cmd_run(a) -> int:
             print(
                 f"stop {session_name}: {'ok' if stop_res.returncode == 0 else 'FAILED'}; "
                 f"ran {hours:.2f} h; CCU delta={delta} (after={usage_after})"
+            )
+            (preflight_dir / "run_summary.json").write_text(
+                json.dumps(
+                    {
+                        "session": session_name,
+                        "label": a.label,
+                        "model": a.model,
+                        "revision": a.revision,
+                        "rc": rc,
+                        "stop_ok": stop_res.returncode == 0,
+                        "wall_hours": round(hours, 4),
+                        "wall_seconds": round(time.time() - started, 1),
+                        "usage_before": usage_before,
+                        "usage_after": usage_after,
+                        "ccu_delta": delta,
+                    },
+                    indent=2,
+                )
             )
     return rc
 

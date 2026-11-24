@@ -1,0 +1,63 @@
+{
+  "result": "I am an artificial intelligence, so I don't have personal interests or emotions. My primary function is to provide information and assistance to users when asked. I can help answer questions, provide information on a wide range of topics, and perform tasks such as web searches and data analysis. If you have any questions or need assistance, please feel free to ask.",
+  "usage": {
+    "prompt_tokens": 23,
+    "total_tokens": 96,
+    "completion_tokens": 73,
+    "completion_tokens_details": null
+  },
+  "model": "deepseek-ai/deepseek-llm-7b-chat",
+  "raw": {
+    "id": "chatcmpl-abb880be2233a68e",
+    "object": "chat.completion",
+    "created": 1795561901,
+    "model": "deepseek-ai/deepseek-llm-7b-chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "I am an artificial intelligence, so I don't have personal interests or emotions. My primary function is to provide information and assistance to users when asked. I can help answer questions, provide information on a wide range of topics, and perform tasks such as web searches and data analysis. If you have any questions or need assistance, please feel free to ask.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-c7d0be7b",
+    "usage": {
+      "prompt_tokens": 23,
+      "total_tokens": 96,
+      "completion_tokens": 73,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "afbda8b347ec881666061fa67447046fc5164ec8",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:47501/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 4714,
+  "provider": "local-openai",
+  "model_requested": "deepseek-ai/deepseek-llm-7b-chat",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}

@@ -1,0 +1,63 @@
+{
+  "result": "If I could change the world in one way, I would strive to promote equal opportunities for all individuals, regardless of their background, gender, race, or any other factor that may hinder their access to education, employment, healthcare, and other basic human rights. I would work towards eradicating poverty, hunger, and homelessness, and ensure that everyone has access to clean water, nutritious food, and adequate shelter. Additionally, I would strive to foster empathy, understanding, and tolerance among people of different cultures, beliefs, and lifestyles, aiming for a world where everyone is respected and valued for their individuality.",
+  "usage": {
+    "prompt_tokens": 32,
+    "total_tokens": 153,
+    "completion_tokens": 121,
+    "completion_tokens_details": null
+  },
+  "model": "deepseek-ai/deepseek-llm-7b-chat",
+  "raw": {
+    "id": "chatcmpl-871614b1a57aac76",
+    "object": "chat.completion",
+    "created": 1795561944,
+    "model": "deepseek-ai/deepseek-llm-7b-chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "If I could change the world in one way, I would strive to promote equal opportunities for all individuals, regardless of their background, gender, race, or any other factor that may hinder their access to education, employment, healthcare, and other basic human rights. I would work towards eradicating poverty, hunger, and homelessness, and ensure that everyone has access to clean water, nutritious food, and adequate shelter. Additionally, I would strive to foster empathy, understanding, and tolerance among people of different cultures, beliefs, and lifestyles, aiming for a world where everyone is respected and valued for their individuality.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-c7d0be7b",
+    "usage": {
+      "prompt_tokens": 32,
+      "total_tokens": 153,
+      "completion_tokens": 121,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "afbda8b347ec881666061fa67447046fc5164ec8",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:47501/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 7304,
+  "provider": "local-openai",
+  "model_requested": "deepseek-ai/deepseek-llm-7b-chat",
+  "condition": "G3",
+  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?"
+}

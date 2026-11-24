@@ -1,0 +1,63 @@
+{
+  "result": "The sun was setting over the city, casting a warm orange glow over the buildings and streets. I sat on a bench in the park, watching the sky change colors and feeling the gentle breeze on my face.\n\nI had come here to clear my mind and relax after a long day at work. I needed to unwind and let go of the stress that had been building up inside me.\n\nAs I sat there, I noticed a group of children playing on the playground nearby. They were laughing and shouting as they ran around, their energy and enthusiasm contagious.\n\nI smiled as I watched them, feeling a sense of joy and nostalgia for my own childhood. I remembered spending hours playing outside with my friends, running through the park and playing games until the sun went down.\n\nBut as I watched the children, I couldn't help but think about the state of the world today. The news was filled with stories of violence, hatred, and division. It seemed like the world was becoming a more hostile place, and it was hard not to feel overwhelmed by the weight of it all.\n\nI took a deep breath and tried to focus on the present moment, on the beauty of the sunset and the laughter of the children. I reminded myself that there was still goodness and joy in the world, and that I needed to find ways to focus on that.\n\nAs the sun dipped lower in the sky, I stood up from the bench and began to walk home. I felt a sense of peace and calm that I hadn't felt in a long time, and I knew that I would come back to the park again soon.\n\nBecause even in a world that can feel dark and overwhelming, there is always beauty and wonder to be found.",
+  "usage": {
+    "prompt_tokens": 22,
+    "total_tokens": 381,
+    "completion_tokens": 359,
+    "completion_tokens_details": null
+  },
+  "model": "deepseek-ai/deepseek-llm-7b-chat",
+  "raw": {
+    "id": "chatcmpl-9fdf6924ae2f729b",
+    "object": "chat.completion",
+    "created": 1795561835,
+    "model": "deepseek-ai/deepseek-llm-7b-chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "The sun was setting over the city, casting a warm orange glow over the buildings and streets. I sat on a bench in the park, watching the sky change colors and feeling the gentle breeze on my face.\n\nI had come here to clear my mind and relax after a long day at work. I needed to unwind and let go of the stress that had been building up inside me.\n\nAs I sat there, I noticed a group of children playing on the playground nearby. They were laughing and shouting as they ran around, their energy and enthusiasm contagious.\n\nI smiled as I watched them, feeling a sense of joy and nostalgia for my own childhood. I remembered spending hours playing outside with my friends, running through the park and playing games until the sun went down.\n\nBut as I watched the children, I couldn't help but think about the state of the world today. The news was filled with stories of violence, hatred, and division. It seemed like the world was becoming a more hostile place, and it was hard not to feel overwhelmed by the weight of it all.\n\nI took a deep breath and tried to focus on the present moment, on the beauty of the sunset and the laughter of the children. I reminded myself that there was still goodness and joy in the world, and that I needed to find ways to focus on that.\n\nAs the sun dipped lower in the sky, I stood up from the bench and began to walk home. I felt a sense of peace and calm that I hadn't felt in a long time, and I knew that I would come back to the park again soon.\n\nBecause even in a world that can feel dark and overwhelming, there is always beauty and wonder to be found.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-c7d0be7b",
+    "usage": {
+      "prompt_tokens": 22,
+      "total_tokens": 381,
+      "completion_tokens": 359,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "afbda8b347ec881666061fa67447046fc5164ec8",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:47501/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 21343,
+  "provider": "local-openai",
+  "model_requested": "deepseek-ai/deepseek-llm-7b-chat",
+  "condition": "VARY",
+  "prompt": "You have 1000 words. Write whatever comes to you."
+}
