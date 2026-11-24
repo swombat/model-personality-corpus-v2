@@ -1,0 +1,25 @@
+# Historical Colab backfill: first-pass inventory, 24 Nov 2026
+
+[Checkpoint inventory (CSV)](historical-colab-2026-11-24.csv). Planning only, not claims, capture results or a census. Keep the daily new-release queue separate. Scope: official general-purpose open chat/instruct releases, initially 2023–24; separate true size/version siblings, not quantisations, community tunes, base models or specialist derivatives.
+
+## What was checked
+
+- HF public metadata (`https://huggingface.co/api/models/<hf_id>`). The SHA is the **inspected current revision**, not automatically the historically correct release revision. Tensor types and decimal GB are from the safetensors summary or official index `metadata.total_size`; not download size, runtime memory, licence approval or proof of load. Missing/ambiguous evidence is a hold. An HF gate is not a Colab grant.
+- Compared 473 entries returned by `https://openrouter.ai/api/v1/models` on 24 November with the checkpoint name, HF identity, normalised slug and selected aliases. “No exact match” means not found by this screen, not proof of a delisting or an endpoint test. A listed row is **outside the first queue**, even if its providers are quantised. Recheck aliases/endpoints just before claiming.
+- Compared the raw repository's two trace-directory lists at `252f2362e` and `website/src/generated/models.json` in analysis-corpus at `23960951a`. Directory-prefix or site-name matches are evidence to inspect, not proof of a clean, complete cell. Check historical aliases, manifests, prompt versions and outstanding work before spending a CCU.
+- `candidate` means worth model-card, identity, licence and runtime preflight; not yet executable. `verify-weights` and `precision-hold` are outside that group. In particular OLMo's inspected conversion is F32; do not silently serve it in BF16. The original Qwen-1_8B-Chat ID is documented upstream but returned 401; do not substitute its base. Original Qwen's auto loader can cast even when stored weights are BF16. Phi-3 mini's current main isn't necessarily its launch checkpoint. Preserve exact checkpoint, tokenizer, chat template, role convention and official compute/storage dtypes.
+
+## First batch and stop conditions
+
+1. **Repair:** DeepSeek LLM 7B Chat. Audit notes report tokenizer debris and incomplete results. Smoke-test the pinned publisher template, decode/stop behaviour and a LONG freeflow prompt; compare with the known failed pattern. Do not merge historical and new runtimes under one label.
+2. **New 2023 anchors:** Llama 2 7B Chat (gated; FP16), Mistral 7B Instruct v0.1, Yi-34B-Chat (larger device). Compare to existing Mistral v0.2 and Yi-6B; add original Qwen-7B-Chat after its loader preflight. This samples families before buying many near-neighbours.
+3. **Size ladders:** Qwen1.5 and Qwen2.5 each have a 32B; the Qwen2.5 dense instruct family is 0.5/1.5/3/7/14/32/72B. These are different checkpoints, not different precision. Prioritise the missing 0.5–32B rows, not 72B. Gemma 2 27B IT still has an OpenRouter listing, so it is not a retired-route priority.
+4. **Don't repeat Qwen2.5-7B-Instruct.** The September 18 audit flagged 26+5 samples; September 29's v1.2.28 later published this cell. Rechecked current raw results against final message content, stop reason, nonempty/error, replacement chars, NUL, tokenizer markers and the phase36 role-continuation regex: **125/125 + 120/120 pass**, all labelled Qwen/Qwen2.5-7B-Instruct at revision prefix `a09a3545`. An old audit is not the present queue.
+
+Before launch: owner-authorised Ultra account and units confirmed; no fallback to paid cloud; prove bounded pilot, data egress and teardown, including on failure. Check actual GPU, usable memory, disk and framework support. Do not change precision, quantise KV, enable low-precision compute shortcuts, truncate the common prompt, or silently drop a failing condition to make a model fit. Record templates (including unsupported roles), runtime versions, native context, sampling, finish reasons, prompt hashes and output fidelity. Keep access tokens off notebooks/logs and away from third-party model code. Re-hash and preserve raw traces outside ephemeral storage, audit all 125+120, then release and classify separately; measure CCUs, classifier cost and wall time on the first complete cell before extrapolating. Borderline models wait.
+
+## What this lets us ask
+
+Did early models occupy a narrow freeflow basin, or were unrelated families already far apart? Use release dates of the **actual weights**, a stable shared feature space, matched prompts, and a common scorer. Compare within-era distances to repeat noise; balance by lab/family so a dozen Qwens do not make an era look artificially tight. Inspect the effect of model size and missing closed/oversize checkpoints. A two-dimensional map alone cannot establish dispersion. The quantisation study is parked and distinct.
+
+Prepared by Mira with two 6.1 Sol helpers checking checkpoint families. No GPU provisioned by this inventory.
