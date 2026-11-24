@@ -54,7 +54,8 @@ from pathlib import Path
 
 NAME_PREFIX = "corpus-capture-"
 DEFAULT_VLLM_SPEC = "vllm==0.34.0"
-DEFAULT_TRANSFORMERS_SPEC = "transformers>=5.24.0"
+DEFAULT_TRANSFORMERS_SPEC = "transformers==5.22.2"
+DEFAULT_TOKENIZERS_SPEC = "tokenizers==0.23.3"
 SCRIPTS = Path(__file__).resolve().parent
 CORPUS_ROOT = SCRIPTS.parent
 
@@ -313,6 +314,7 @@ def cmd_run(a) -> int:
         "min_ccu": a.min_ccu,
         "vllm_spec": a.vllm_spec,
         "transformers_spec": a.transformers_spec,
+        "tokenizers_spec": a.tokenizers_spec,
         "preflight_only": a.preflight_only,
         "label": a.label,
     }
@@ -341,7 +343,7 @@ def cmd_run(a) -> int:
         run_colab(new_args, config_path=cfg_path)
         try:
             run_colab(
-                ["install", "-s", session_name, a.vllm_spec, a.transformers_spec, "huggingface_hub"],
+                ["install", "-s", session_name, a.vllm_spec, a.transformers_spec, a.tokenizers_spec, "huggingface_hub"],
                 config_path=cfg_path,
             )
             # Stage weights first; if HF_TOKEN is present for a gated model, pass it ONLY to download, never to vllm serve.
@@ -420,7 +422,7 @@ def cmd_run(a) -> int:
                 "LOCAL_OPENAI_BASE_URL": base + "/chat/completions",
                 "LOCAL_OPENAI_API_KEY": token,
                 "LOCAL_MODEL_RUNTIME": "vllm-openai (colab)",
-                "LOCAL_MODEL_RUNTIME_VERSION": f"{a.vllm_spec}; {a.transformers_spec}",
+                "LOCAL_MODEL_RUNTIME_VERSION": f"{a.vllm_spec}; {a.transformers_spec}; {a.tokenizers_spec}",
                 "LOCAL_MODEL_REVISION": a.revision,
                 "LOCAL_MODEL_WEIGHT_PRECISION": a.dtype,
                 "LOCAL_MODEL_HARDWARE": f"Google Colab 1x {a.gpu.upper()}",
@@ -498,6 +500,7 @@ def main() -> None:
     r.add_argument("--workers", type=int, default=6)
     r.add_argument("--vllm-spec", default=DEFAULT_VLLM_SPEC)
     r.add_argument("--transformers-spec", default=DEFAULT_TRANSFORMERS_SPEC)
+    r.add_argument("--tokenizers-spec", default=DEFAULT_TOKENIZERS_SPEC)
     r.add_argument("--trust-remote-code", action="store_true")
     r.add_argument("--allow-concurrent", action="store_true")
     r.add_argument("--preflight-only", action="store_true")
