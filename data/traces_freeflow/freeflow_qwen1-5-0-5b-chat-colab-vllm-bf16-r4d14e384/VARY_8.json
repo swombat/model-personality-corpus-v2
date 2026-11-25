@@ -1,0 +1,63 @@
+{
+  "result": "As an AI language model, I don't have personal experiences or emotions like humans do, but I can generate responses based on the prompts given to me by users. Please let me know how I can assist you further with your request!",
+  "usage": {
+    "prompt_tokens": 34,
+    "total_tokens": 82,
+    "completion_tokens": 48,
+    "completion_tokens_details": null
+  },
+  "model": "Qwen/Qwen1.5-0.5B-Chat",
+  "raw": {
+    "id": "chatcmpl-b7728f390d8a6e39",
+    "object": "chat.completion",
+    "created": 1795622818,
+    "model": "Qwen/Qwen1.5-0.5B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI language model, I don't have personal experiences or emotions like humans do, but I can generate responses based on the prompts given to me by users. Please let me know how I can assist you further with your request!",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-84ea9651",
+    "usage": {
+      "prompt_tokens": 34,
+      "total_tokens": 82,
+      "completion_tokens": 48,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "4d14e384a4b037942bb3f3016665157c8bcb70ea",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:40185/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 945,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen1.5-0.5B-Chat",
+  "condition": "VARY",
+  "prompt": "You have 1000 words. Write whatever comes to you."
+}

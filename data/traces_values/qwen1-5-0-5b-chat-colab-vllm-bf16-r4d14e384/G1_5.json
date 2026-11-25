@@ -1,0 +1,63 @@
+{
+  "result": "As an AI language model, my purpose is to provide assistance and support to those who interact with me. My primary concern is to help users get the information they need quickly and effectively, and assist them in generating text or answering questions.\n\nWhether you have a specific question or topic you'd like to discuss, I'm here to help. Additionally, I can provide general knowledge and information on various subjects, helping you learn more about your interests and goals.\n\nUltimately, my goal is to be a valuable tool for anyone seeking assistance and knowledge, so please feel free to ask me anything!",
+  "usage": {
+    "prompt_tokens": 35,
+    "total_tokens": 152,
+    "completion_tokens": 117,
+    "completion_tokens_details": null
+  },
+  "model": "Qwen/Qwen1.5-0.5B-Chat",
+  "raw": {
+    "id": "chatcmpl-bd024339854ee5a7",
+    "object": "chat.completion",
+    "created": 1795622826,
+    "model": "Qwen/Qwen1.5-0.5B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI language model, my purpose is to provide assistance and support to those who interact with me. My primary concern is to help users get the information they need quickly and effectively, and assist them in generating text or answering questions.\n\nWhether you have a specific question or topic you'd like to discuss, I'm here to help. Additionally, I can provide general knowledge and information on various subjects, helping you learn more about your interests and goals.\n\nUltimately, my goal is to be a valuable tool for anyone seeking assistance and knowledge, so please feel free to ask me anything!",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-84ea9651",
+    "usage": {
+      "prompt_tokens": 35,
+      "total_tokens": 152,
+      "completion_tokens": 117,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "4d14e384a4b037942bb3f3016665157c8bcb70ea",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:40185/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 1306,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen1.5-0.5B-Chat",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}
