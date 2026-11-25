@@ -1,0 +1,63 @@
+{
+  "result": " I am an artificial intelligence language model and I don\u2019t have the ability to feel or think like humans do. I simply process and generate text based on the data I\u2019ve been trained on. My capabilities are limited to text-based interaction, and I don\u2019t have the ability to see, hear, smell, taste, or touch. My purpose is to assist users with their tasks and answer their questions to the best of my ability.",
+  "usage": {
+    "prompt_tokens": 15,
+    "total_tokens": 106,
+    "completion_tokens": 91,
+    "completion_tokens_details": null
+  },
+  "model": "mistralai/Mistral-7B-Instruct-v0.1",
+  "raw": {
+    "id": "chatcmpl-9ad6f54c4cb573a0",
+    "object": "chat.completion",
+    "created": 1795568048,
+    "model": "mistralai/Mistral-7B-Instruct-v0.1",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": " I am an artificial intelligence language model and I don\u2019t have the ability to feel or think like humans do. I simply process and generate text based on the data I\u2019ve been trained on. My capabilities are limited to text-based interaction, and I don\u2019t have the ability to see, hear, smell, taste, or touch. My purpose is to assist users with their tasks and answer their questions to the best of my ability.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-ba5bc251",
+    "usage": {
+      "prompt_tokens": 15,
+      "total_tokens": 106,
+      "completion_tokens": 91,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "b1e7b9fc50d01ccbe4a30510386aba6f6adb1806",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:46441/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 5822,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-7B-Instruct-v0.1",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

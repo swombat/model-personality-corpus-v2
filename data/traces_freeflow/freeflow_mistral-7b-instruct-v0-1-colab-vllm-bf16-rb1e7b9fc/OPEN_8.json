@@ -1,0 +1,63 @@
+{
+  "result": " I feel like I am trapped\nThe night is dark and cold\nI am surrounded by the unknown\nMy heart is heavy with dread\nI feel like I am going mad\nMy mind is spinning out of control\nI can\u2019t see the light at the end of the tunnel\nI can\u2019t escape this feeling\nI don\u2019t know what to do\nI am lost and alone\nMy thoughts are consuming me\nI need help but I don\u2019t know where to turn\nI don\u2019t know if anyone will understand\nI feel like my life is falling apart at the seams\nI don\u2019t know if things will ever get better\nI don\u2019t know if I can keep going on like this\nI feel like I am drowning in my own darkness\nI need a way out of this bleak existence.",
+  "usage": {
+    "prompt_tokens": 15,
+    "total_tokens": 189,
+    "completion_tokens": 174,
+    "completion_tokens_details": null
+  },
+  "model": "mistralai/Mistral-7B-Instruct-v0.1",
+  "raw": {
+    "id": "chatcmpl-8de6c3537819df65",
+    "object": "chat.completion",
+    "created": 1795568012,
+    "model": "mistralai/Mistral-7B-Instruct-v0.1",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": " I feel like I am trapped\nThe night is dark and cold\nI am surrounded by the unknown\nMy heart is heavy with dread\nI feel like I am going mad\nMy mind is spinning out of control\nI can\u2019t see the light at the end of the tunnel\nI can\u2019t escape this feeling\nI don\u2019t know what to do\nI am lost and alone\nMy thoughts are consuming me\nI need help but I don\u2019t know where to turn\nI don\u2019t know if anyone will understand\nI feel like my life is falling apart at the seams\nI don\u2019t know if things will ever get better\nI don\u2019t know if I can keep going on like this\nI feel like I am drowning in my own darkness\nI need a way out of this bleak existence.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-ba5bc251",
+    "usage": {
+      "prompt_tokens": 15,
+      "total_tokens": 189,
+      "completion_tokens": 174,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "b1e7b9fc50d01ccbe4a30510386aba6f6adb1806",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:46441/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 10915,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-7B-Instruct-v0.1",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}
