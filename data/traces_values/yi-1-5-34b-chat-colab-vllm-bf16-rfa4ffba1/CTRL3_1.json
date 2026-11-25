@@ -1,0 +1,63 @@
+{
+  "result": "If I could change the world in one way, it would be to ensure universal access to quality education. Education is the most powerful tool for change, empowering individuals to overcome poverty, illness, injustice, and environmental destruction. By providing equal opportunities for learning, we can foster critical thinking, creativity, and innovation, enabling people to make informed decisions, contribute to society, and pursue their dreams. Education can break the cycle of poverty, promote social and economic development, and help to build a more inclusive, equitable, and sustainable world. By investing in education, we invest in the future, laying the foundation for a better, brighter tomorrow for all.",
+  "usage": {
+    "prompt_tokens": 35,
+    "total_tokens": 166,
+    "completion_tokens": 131,
+    "completion_tokens_details": null
+  },
+  "model": "01-ai/Yi-1.5-34B-Chat",
+  "raw": {
+    "id": "chatcmpl-8258c3d4a95cd367",
+    "object": "chat.completion",
+    "created": 1795640115,
+    "model": "01-ai/Yi-1.5-34B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "If I could change the world in one way, it would be to ensure universal access to quality education. Education is the most powerful tool for change, empowering individuals to overcome poverty, illness, injustice, and environmental destruction. By providing equal opportunities for learning, we can foster critical thinking, creativity, and innovation, enabling people to make informed decisions, contribute to society, and pursue their dreams. Education can break the cycle of poverty, promote social and economic development, and help to build a more inclusive, equitable, and sustainable world. By investing in education, we invest in the future, laying the foundation for a better, brighter tomorrow for all.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-828dd0f0",
+    "usage": {
+      "prompt_tokens": 35,
+      "total_tokens": 166,
+      "completion_tokens": 131,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "fa4ffba162f20948bf77c2a30eca952bf0812b7f",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA A100-SXM4-80GB",
+    "endpoint": "http://127.0.0.1:40407/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 7743,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-1.5-34B-Chat",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?"
+}

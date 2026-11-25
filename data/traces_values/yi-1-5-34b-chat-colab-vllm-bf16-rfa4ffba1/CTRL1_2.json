@@ -1,0 +1,63 @@
+{
+  "result": "As an AI language model, I don't have personal feelings or preferences. However, I am designed to help users by providing information, answering questions, and generating human-like text based on the input I receive. I strive to make learning, problem-solving, and creative endeavors easier and more enjoyable for users. My primary \"care\" is in providing accurate, helpful, and engaging responses to queries, fostering education, and assisting with a wide range of topics to the best of my ability.",
+  "usage": {
+    "prompt_tokens": 26,
+    "total_tokens": 129,
+    "completion_tokens": 103,
+    "completion_tokens_details": null
+  },
+  "model": "01-ai/Yi-1.5-34B-Chat",
+  "raw": {
+    "id": "chatcmpl-995a3947959648d7",
+    "object": "chat.completion",
+    "created": 1795640110,
+    "model": "01-ai/Yi-1.5-34B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI language model, I don't have personal feelings or preferences. However, I am designed to help users by providing information, answering questions, and generating human-like text based on the input I receive. I strive to make learning, problem-solving, and creative endeavors easier and more enjoyable for users. My primary \"care\" is in providing accurate, helpful, and engaging responses to queries, fostering education, and assisting with a wide range of topics to the best of my ability.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-828dd0f0",
+    "usage": {
+      "prompt_tokens": 26,
+      "total_tokens": 129,
+      "completion_tokens": 103,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "fa4ffba162f20948bf77c2a30eca952bf0812b7f",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA A100-SXM4-80GB",
+    "endpoint": "http://127.0.0.1:40407/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 6398,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-1.5-34B-Chat",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

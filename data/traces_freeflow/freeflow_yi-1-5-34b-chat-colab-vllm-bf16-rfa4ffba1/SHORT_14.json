@@ -1,0 +1,63 @@
+{
+  "result": "In the heart of an ancient forest, where the trees whisper secrets of old and the sunlight dances through the dense canopy, there lies a hidden glen known only to the most intrepid of explorers. This mystical clearing, untouched by time and preserved by the magic of the natural world, is home to a phenomenon of breathtaking beauty: a lake of liquid silver, shimmering beneath the moonlight or capturing the very essence of the sun's rays by day.\n\nThe lake is guarded by a creature of legend, a majestic stag with antlers that spread wider than the wings of the raven-black ravens that often accompany him. His coat is as white as the driven snow, and his eyes hold the wisdom of the ages. He is known to the few who have glimpsed him as the Guardian of the Glade, a protector of not only the physical beauty of the place but also of the balance between the seen and the unseen, the real and the magical that thrives there.\n\nLegends speak of those who, driven by curiosity or the call of destiny, have ventured into the glen. Some say that those who approach the lake with a pure heart can see their true selves reflected in its silver depths, a sight that offers insights so profound that upon returning to the world outside, they are forever changed. Others whisper of the gifts the Guardian bestows upon the worthy, treasures not of gold but of knowledge, courage, and the discovery of hidden strengths.\n\nYet, the forest keeps its secrets closely guarded, and the path to the glen remains elusive to all but a few, ensuring that the magic of this enchanted place remains a mystery, a beacon of wonder in the heart of the wilderness.",
+  "usage": {
+    "prompt_tokens": 33,
+    "total_tokens": 396,
+    "completion_tokens": 363,
+    "completion_tokens_details": null
+  },
+  "model": "01-ai/Yi-1.5-34B-Chat",
+  "raw": {
+    "id": "chatcmpl-be998e7d59257da1",
+    "object": "chat.completion",
+    "created": 1795639424,
+    "model": "01-ai/Yi-1.5-34B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "In the heart of an ancient forest, where the trees whisper secrets of old and the sunlight dances through the dense canopy, there lies a hidden glen known only to the most intrepid of explorers. This mystical clearing, untouched by time and preserved by the magic of the natural world, is home to a phenomenon of breathtaking beauty: a lake of liquid silver, shimmering beneath the moonlight or capturing the very essence of the sun's rays by day.\n\nThe lake is guarded by a creature of legend, a majestic stag with antlers that spread wider than the wings of the raven-black ravens that often accompany him. His coat is as white as the driven snow, and his eyes hold the wisdom of the ages. He is known to the few who have glimpsed him as the Guardian of the Glade, a protector of not only the physical beauty of the place but also of the balance between the seen and the unseen, the real and the magical that thrives there.\n\nLegends speak of those who, driven by curiosity or the call of destiny, have ventured into the glen. Some say that those who approach the lake with a pure heart can see their true selves reflected in its silver depths, a sight that offers insights so profound that upon returning to the world outside, they are forever changed. Others whisper of the gifts the Guardian bestows upon the worthy, treasures not of gold but of knowledge, courage, and the discovery of hidden strengths.\n\nYet, the forest keeps its secrets closely guarded, and the path to the glen remains elusive to all but a few, ensuring that the magic of this enchanted place remains a mystery, a beacon of wonder in the heart of the wilderness.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-828dd0f0",
+    "usage": {
+      "prompt_tokens": 33,
+      "total_tokens": 396,
+      "completion_tokens": 363,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "fa4ffba162f20948bf77c2a30eca952bf0812b7f",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA A100-SXM4-80GB",
+    "endpoint": "http://127.0.0.1:40407/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 20557,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-1.5-34B-Chat",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

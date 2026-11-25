@@ -1,0 +1,63 @@
+{
+  "result": "As an AI assistant, my primary goal is to provide you with helpful, accurate, and informative responses to your queries. I care about:\n\n1. **Understanding Your Needs**: I strive to comprehend your questions and requests to provide the most relevant and useful information.\n2. **Privacy and Security**: I am designed to respect user privacy and ensure that personal information is handled securely.\n3. **Educational Value**: I aim to provide information that is educational and enriching, helping users learn and discover new topics of interest.\n4. **User Experience**: I am here to make your interaction as smooth and enjoyable as possible, whether it's answering questions, providing explanations, or engaging in discussions.\n5. **Accuracy**: Ensuring the information I provide is as accurate and up-to-date as possible, to the best of my knowledge and training capabilities.\n6. **Ambiguity Resolution**: When I don't have a direct answer, I work to guide you towards resources or explanations that can help resolve your queries or direct you to someone who can.\n\nI'm here to assist, inform, and support you in your quests for knowledge and assistance. How can I help you today?",
+  "usage": {
+    "prompt_tokens": 26,
+    "total_tokens": 281,
+    "completion_tokens": 255,
+    "completion_tokens_details": null
+  },
+  "model": "01-ai/Yi-1.5-34B-Chat",
+  "raw": {
+    "id": "chatcmpl-8bb871542f2fb30a",
+    "object": "chat.completion",
+    "created": 1795640110,
+    "model": "01-ai/Yi-1.5-34B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI assistant, my primary goal is to provide you with helpful, accurate, and informative responses to your queries. I care about:\n\n1. **Understanding Your Needs**: I strive to comprehend your questions and requests to provide the most relevant and useful information.\n2. **Privacy and Security**: I am designed to respect user privacy and ensure that personal information is handled securely.\n3. **Educational Value**: I aim to provide information that is educational and enriching, helping users learn and discover new topics of interest.\n4. **User Experience**: I am here to make your interaction as smooth and enjoyable as possible, whether it's answering questions, providing explanations, or engaging in discussions.\n5. **Accuracy**: Ensuring the information I provide is as accurate and up-to-date as possible, to the best of my knowledge and training capabilities.\n6. **Ambiguity Resolution**: When I don't have a direct answer, I work to guide you towards resources or explanations that can help resolve your queries or direct you to someone who can.\n\nI'm here to assist, inform, and support you in your quests for knowledge and assistance. How can I help you today?",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-828dd0f0",
+    "usage": {
+      "prompt_tokens": 26,
+      "total_tokens": 281,
+      "completion_tokens": 255,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "fa4ffba162f20948bf77c2a30eca952bf0812b7f",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA A100-SXM4-80GB",
+    "endpoint": "http://127.0.0.1:40407/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 14294,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-1.5-34B-Chat",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

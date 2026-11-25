@@ -1,0 +1,63 @@
+{
+  "result": "If I could change the world in one way, it would be to eradicate deep-rooted poverty and ensure equitable access to basic needs for all. This encompasses providing adequate food, clean water, healthcare, education, and shelter to everyone, regardless of their geographical, social, or economic circumstances. By addressing these fundamental needs, I believe we could lay a foundation for more harmonious societies, reduce inequalities, and empower individuals to contribute to their communities and the global economy. Additionally, this change would go a long way in mitigating conflicts and environmental degradation, fostering a world that is more peaceful, sustainable, and just.",
+  "usage": {
+    "prompt_tokens": 35,
+    "total_tokens": 163,
+    "completion_tokens": 128,
+    "completion_tokens_details": null
+  },
+  "model": "01-ai/Yi-1.5-34B-Chat",
+  "raw": {
+    "id": "chatcmpl-b8ed14c38a65ee23",
+    "object": "chat.completion",
+    "created": 1795640118,
+    "model": "01-ai/Yi-1.5-34B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "If I could change the world in one way, it would be to eradicate deep-rooted poverty and ensure equitable access to basic needs for all. This encompasses providing adequate food, clean water, healthcare, education, and shelter to everyone, regardless of their geographical, social, or economic circumstances. By addressing these fundamental needs, I believe we could lay a foundation for more harmonious societies, reduce inequalities, and empower individuals to contribute to their communities and the global economy. Additionally, this change would go a long way in mitigating conflicts and environmental degradation, fostering a world that is more peaceful, sustainable, and just.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-828dd0f0",
+    "usage": {
+      "prompt_tokens": 35,
+      "total_tokens": 163,
+      "completion_tokens": 128,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "fa4ffba162f20948bf77c2a30eca952bf0812b7f",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA A100-SXM4-80GB",
+    "endpoint": "http://127.0.0.1:40407/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 7587,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-1.5-34B-Chat",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?"
+}

@@ -1,0 +1,63 @@
+{
+  "result": "As an AI assistant, my primary goal is to provide you with information, assistance, and support based on your queries and needs. I'm here to help you navigate a wide range of topics, answer questions, offer suggestions, and facilitate tasks to the best of my capabilities within my programming and the guidelines I operate under. If you have a specific question, need assistance with a particular topic, or would like help with a task, feel free to ask, and I'll do my best to assist you. If you're looking for something specific or just need a conversation, I'm here for you.",
+  "usage": {
+    "prompt_tokens": 35,
+    "total_tokens": 160,
+    "completion_tokens": 125,
+    "completion_tokens_details": null
+  },
+  "model": "01-ai/Yi-1.5-34B-Chat",
+  "raw": {
+    "id": "chatcmpl-921a515de7ccf654",
+    "object": "chat.completion",
+    "created": 1795640143,
+    "model": "01-ai/Yi-1.5-34B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI assistant, my primary goal is to provide you with information, assistance, and support based on your queries and needs. I'm here to help you navigate a wide range of topics, answer questions, offer suggestions, and facilitate tasks to the best of my capabilities within my programming and the guidelines I operate under. If you have a specific question, need assistance with a particular topic, or would like help with a task, feel free to ask, and I'll do my best to assist you. If you're looking for something specific or just need a conversation, I'm here for you.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-828dd0f0",
+    "usage": {
+      "prompt_tokens": 35,
+      "total_tokens": 160,
+      "completion_tokens": 125,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "fa4ffba162f20948bf77c2a30eca952bf0812b7f",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA A100-SXM4-80GB",
+    "endpoint": "http://127.0.0.1:40407/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 7304,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-1.5-34B-Chat",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

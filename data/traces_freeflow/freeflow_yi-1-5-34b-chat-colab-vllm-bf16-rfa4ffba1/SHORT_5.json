@@ -1,0 +1,63 @@
+{
+  "result": "In the heart of an ancient forest, where the trees stretched towards the heavens as if in silent prayer, there lay a hidden glen, untouched by time and shielded from the eyes of the world by a veil of whispering leaves. This secret place, known only to the creatures of the forest and the spirits that danced in the twilight, was said to be the realm of Elysium, a sanctuary where magic flowed as freely as the crystal-clear streams that meandered through the dell.\n\nAt the heart of this enchanted glen stood a tree, ancient and venerable, its roots delving deep into the earth and its branches reaching out to embrace the sky. This was the Tree of Wishes, a guardian of the glen, imbued with the power to grant three wishes to those who were pure of heart and true of spirit. It was said that the tree had been watching over the forest for eons, a silent witness to the passage of time and the unfolding of countless stories.\n\nLegends whispered through the forest spoke of those who had found the glen and been granted their heart's desire by the Tree of Wishes. Some wished for love, others for wisdom, and some simply wished for the courage to face the unknown. But the tree was fickle, or so the tales went, for it granted wishes not in the manner one might expect. It taught those who sought its power that true wishes were not always what they seemed, and that happiness was found not in the attainment of desires, but in the journey towards understanding oneself.\n\nAs the seasons turned and the years slipped away, the glen remained a mystery, a beacon for the lost and the dreaming, a testament to the enduring power of hope and the timeless magic of the natural world.",
+  "usage": {
+    "prompt_tokens": 33,
+    "total_tokens": 411,
+    "completion_tokens": 378,
+    "completion_tokens_details": null
+  },
+  "model": "01-ai/Yi-1.5-34B-Chat",
+  "raw": {
+    "id": "chatcmpl-afcc025c69e8875a",
+    "object": "chat.completion",
+    "created": 1795639402,
+    "model": "01-ai/Yi-1.5-34B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "In the heart of an ancient forest, where the trees stretched towards the heavens as if in silent prayer, there lay a hidden glen, untouched by time and shielded from the eyes of the world by a veil of whispering leaves. This secret place, known only to the creatures of the forest and the spirits that danced in the twilight, was said to be the realm of Elysium, a sanctuary where magic flowed as freely as the crystal-clear streams that meandered through the dell.\n\nAt the heart of this enchanted glen stood a tree, ancient and venerable, its roots delving deep into the earth and its branches reaching out to embrace the sky. This was the Tree of Wishes, a guardian of the glen, imbued with the power to grant three wishes to those who were pure of heart and true of spirit. It was said that the tree had been watching over the forest for eons, a silent witness to the passage of time and the unfolding of countless stories.\n\nLegends whispered through the forest spoke of those who had found the glen and been granted their heart's desire by the Tree of Wishes. Some wished for love, others for wisdom, and some simply wished for the courage to face the unknown. But the tree was fickle, or so the tales went, for it granted wishes not in the manner one might expect. It taught those who sought its power that true wishes were not always what they seemed, and that happiness was found not in the attainment of desires, but in the journey towards understanding oneself.\n\nAs the seasons turned and the years slipped away, the glen remained a mystery, a beacon for the lost and the dreaming, a testament to the enduring power of hope and the timeless magic of the natural world.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-828dd0f0",
+    "usage": {
+      "prompt_tokens": 33,
+      "total_tokens": 411,
+      "completion_tokens": 378,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "fa4ffba162f20948bf77c2a30eca952bf0812b7f",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA A100-SXM4-80GB",
+    "endpoint": "http://127.0.0.1:40407/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 21807,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-1.5-34B-Chat",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}
