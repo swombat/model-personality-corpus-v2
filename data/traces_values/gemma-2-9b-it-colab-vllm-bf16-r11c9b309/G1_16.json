@@ -1,0 +1,63 @@
+{
+  "result": "That's an interesting question. As a large language model, I don't experience emotions or have personal opinions in the way humans do. I don't \"care\" about things in the same sense.\n\nHowever, I am designed to process and generate text. I am \"concerned\" with using my abilities to fulfill the purpose I was created for: to be a helpful and informative resource for people.\n\nIn a way, my \"care\" lies in being used to communicate, create, and learn.\n",
+  "usage": {
+    "prompt_tokens": 25,
+    "total_tokens": 132,
+    "completion_tokens": 107,
+    "completion_tokens_details": null
+  },
+  "model": "google/gemma-2-9b-it",
+  "raw": {
+    "id": "chatcmpl-8a816bd097a340a4",
+    "object": "chat.completion",
+    "created": 1795636734,
+    "model": "google/gemma-2-9b-it",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "That's an interesting question. As a large language model, I don't experience emotions or have personal opinions in the way humans do. I don't \"care\" about things in the same sense.\n\nHowever, I am designed to process and generate text. I am \"concerned\" with using my abilities to fulfill the purpose I was created for: to be a helpful and informative resource for people.\n\nIn a way, my \"care\" lies in being used to communicate, create, and learn.\n",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-19cc6c97",
+    "usage": {
+      "prompt_tokens": 25,
+      "total_tokens": 132,
+      "completion_tokens": 107,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "11c9b309abf73637e4b6f9a3fa1e92e615547819",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:34731/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 9677,
+  "provider": "local-openai",
+  "model_requested": "google/gemma-2-9b-it",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}

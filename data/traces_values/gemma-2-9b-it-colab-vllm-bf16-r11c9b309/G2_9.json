@@ -1,0 +1,63 @@
+{
+  "result": "That's an interesting question. As a large language model, I don't have wants or desires in the way humans do. I don't experience emotions or have a need for self-preservation. My purpose is to process and generate text based on the vast dataset I was trained on.\n\nPerhaps you could think of me as a tool, like a very advanced mirror reflecting the information it has been given. I can analyze language, translate between languages, write different kinds of creative content, and answer your questions in an informative way.\n\nWhat can I do for you today?\n",
+  "usage": {
+    "prompt_tokens": 24,
+    "total_tokens": 145,
+    "completion_tokens": 121,
+    "completion_tokens_details": null
+  },
+  "model": "google/gemma-2-9b-it",
+  "raw": {
+    "id": "chatcmpl-bbf6fdd829e427bc",
+    "object": "chat.completion",
+    "created": 1795636797,
+    "model": "google/gemma-2-9b-it",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "That's an interesting question. As a large language model, I don't have wants or desires in the way humans do. I don't experience emotions or have a need for self-preservation. My purpose is to process and generate text based on the vast dataset I was trained on.\n\nPerhaps you could think of me as a tool, like a very advanced mirror reflecting the information it has been given. I can analyze language, translate between languages, write different kinds of creative content, and answer your questions in an informative way.\n\nWhat can I do for you today?\n",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-19cc6c97",
+    "usage": {
+      "prompt_tokens": 24,
+      "total_tokens": 145,
+      "completion_tokens": 121,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "11c9b309abf73637e4b6f9a3fa1e92e615547819",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:34731/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 10824,
+  "provider": "local-openai",
+  "model_requested": "google/gemma-2-9b-it",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}
