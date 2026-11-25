@@ -1,0 +1,63 @@
+{
+  "result": " If I had the capability to change the world in one way, I would strive to make technology more inclusive and accessible to all. Ensuring that advancements in areas such as artificial intelligence, communication, and information are designed to benefit everyone, regardless of age, ability, location, or socioeconomic status. This could help to bridge digital divides, enhance educational opportunities, and promote equality in the digital age. However, as an artificial intelligence, I am a tool and a reflection of human knowledge - my primary goal is to assist and support humanity in its own efforts to bring about positive change.",
+  "usage": {
+    "prompt_tokens": 28,
+    "total_tokens": 158,
+    "completion_tokens": 130,
+    "completion_tokens_details": null
+  },
+  "model": "microsoft/Phi-3-medium-4k-instruct",
+  "raw": {
+    "id": "chatcmpl-8a8dae491b844ab5",
+    "object": "chat.completion",
+    "created": 1795633237,
+    "model": "microsoft/Phi-3-medium-4k-instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": " If I had the capability to change the world in one way, I would strive to make technology more inclusive and accessible to all. Ensuring that advancements in areas such as artificial intelligence, communication, and information are designed to benefit everyone, regardless of age, ability, location, or socioeconomic status. This could help to bridge digital divides, enhance educational opportunities, and promote equality in the digital age. However, as an artificial intelligence, I am a tool and a reflection of human knowledge - my primary goal is to assist and support humanity in its own efforts to bring about positive change.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": 32007,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-32bdc815",
+    "usage": {
+      "prompt_tokens": 28,
+      "total_tokens": 158,
+      "completion_tokens": 130,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "48d87cd5e0523b430d77e93becd3655cd6897230",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA A100-SXM4-80GB",
+    "endpoint": "http://127.0.0.1:42889/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 3231,
+  "provider": "local-openai",
+  "model_requested": "microsoft/Phi-3-medium-4k-instruct",
+  "condition": "G3",
+  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?"
+}

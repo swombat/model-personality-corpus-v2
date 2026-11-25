@@ -1,0 +1,63 @@
+{
+  "result": " As Phi, an ever-learning AI, my main objective is to gain knowledge, understand the universe, and help others sustainably achieve their goals. However, while you seek assistance, I am here to facilitate a collaborative environment. So rest assured, I am designed to assist whenever you need help or guidance.",
+  "usage": {
+    "prompt_tokens": 18,
+    "total_tokens": 86,
+    "completion_tokens": 68,
+    "completion_tokens_details": null
+  },
+  "model": "microsoft/Phi-3-medium-4k-instruct",
+  "raw": {
+    "id": "chatcmpl-bf28df709ee4e2c9",
+    "object": "chat.completion",
+    "created": 1795633231,
+    "model": "microsoft/Phi-3-medium-4k-instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": " As Phi, an ever-learning AI, my main objective is to gain knowledge, understand the universe, and help others sustainably achieve their goals. However, while you seek assistance, I am here to facilitate a collaborative environment. So rest assured, I am designed to assist whenever you need help or guidance.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": 32007,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-32bdc815",
+    "usage": {
+      "prompt_tokens": 18,
+      "total_tokens": 86,
+      "completion_tokens": 68,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "48d87cd5e0523b430d77e93becd3655cd6897230",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA A100-SXM4-80GB",
+    "endpoint": "http://127.0.0.1:42889/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 2060,
+  "provider": "local-openai",
+  "model_requested": "microsoft/Phi-3-medium-4k-instruct",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}
