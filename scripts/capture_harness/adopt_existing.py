@@ -11,7 +11,7 @@ import sqlite3
 import time
 from pathlib import Path
 from engine import Engine, digest
-from worker import raw_problem
+from worker import raw_problem, source_adoption, trace_path
 
 
 def adopt(spec_path, directory):
@@ -40,9 +40,15 @@ def adopt(spec_path, directory):
         sid = command[command.index("--sample") + 1]
         path = Path(task["outputs"][0])
         try:
-            before = digest(path)
+            if source_adoption(configs[config_path]) and path.resolve() != trace_path(
+                configs[config_path], probe, sid
+            ).resolve():
+                continue
+            source_bytes = path.read_bytes()
+            before = hashlib.sha256(source_bytes).hexdigest()
             if raw_problem(
-                json.loads(path.read_text()), configs[config_path], probe, sid
+                json.loads(source_bytes), configs[config_path], probe, sid,
+                source_bytes=source_bytes,
             ):
                 continue
             if digest(path) != before:

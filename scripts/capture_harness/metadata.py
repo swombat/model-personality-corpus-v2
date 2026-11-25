@@ -27,6 +27,11 @@ def write_metadata(config, validate=False):
         )
     }
     record["release_date_status"] = "sourced" if date else "unknown"
+    if c.get("provider") == "local-openai" or "source_adoption" in c:
+        from worker import validate_source_config
+
+        validate_source_config(c)
+        record.update(provider=c["provider"], source_adoption=c["source_adoption"])
     path = Path(c["phase"]) / "model_metadata.json"
     registry = (
         Path(c["analysis_root"]) / "website/src/generated/model-release-dates.json"

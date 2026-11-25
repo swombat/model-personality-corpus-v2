@@ -4,7 +4,7 @@
 import argparse, json, re, sys
 from pathlib import Path
 from engine import atomic, digest
-from worker import identities, CODERS, trace_path, RAW, LUNA_ARM, bv1_paths
+from worker import identities, CODERS, trace_path, RAW, LUNA_ARM, bv1_paths, source_adoption, validate_source_config
 
 HERE = Path(__file__).resolve().parent
 
@@ -25,9 +25,12 @@ def build(manifest, run_dir, analysis):
         for field in ["label", "slug", "family"]:
             if not re.fullmatch(r"[a-z0-9][a-z0-9_-]*", c[field]):
                 raise ValueError("unsafe " + field)
-        if c.get("provider") != "openrouter" or not c.get("or_provider"):
+        adopted = source_adoption(c)
+        if adopted:
+            validate_source_config(c)
+        elif c.get("provider") != "openrouter" or not c.get("or_provider"):
             raise ValueError("v1 requires explicit pinned OpenRouter routes")
-        for probe in ["freeflow", "values"]:
+        for probe in ([] if adopted else ["freeflow", "values"]):
             caps = c["token_policy"][probe]
             if (
                 not caps
@@ -43,6 +46,8 @@ def build(manifest, run_dir, analysis):
         c.setdefault("bv1_evaluator", LUNA_ARM)
         if c["bv1_evaluator"] not in (LUNA_ARM, "legacy-deepseek"):
             raise ValueError("unknown BV1 evaluator arm")
+        if adopted and c["bv1_evaluator"] != LUNA_ARM:
+            raise ValueError("Colab adoption requires the existing BV1-Luna arm")
         c["analysis_root"] = str(analysis)
         c["phase_name"] = "capture_" + manifest["run_id"] + "_" + c["label"]
         c["phase"] = str(
@@ -114,11 +119,11 @@ def build(manifest, run_dir, analysis):
                     probe + "/" + sid,
                     "raw",
                     [],
-                    "capture",
+                    "local" if adopted else "capture",
                     [trace_path(c, probe, sid)],
                     ["--probe", probe, "--sample", sid],
-                    attempts=6,
-                    timeout=c.get("request_timeout", 1200) + 30,
+                    attempts=1 if adopted else 6,
+                    timeout=60 if adopted else c.get("request_timeout", 1200) + 30,
                 )
                 if probe == "freeflow":
                     output = (

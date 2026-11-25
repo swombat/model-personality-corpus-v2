@@ -3,10 +3,11 @@
 
 from __future__ import annotations
 import uuid
-import argparse, csv, fcntl, importlib.util, json, os, re, shutil, subprocess, sys, time
+import argparse, csv, fcntl, hashlib, importlib.util, json, os, re, shutil, subprocess, sys, time
 from pathlib import Path
 from engine import atomic, digest
 import ineligibility as INEL
+import colab_source
 
 HERE = Path(__file__).resolve().parent
 RAW = HERE.parents[1]
@@ -67,7 +68,26 @@ def trace_path(c, probe, sid):
     )
 
 
-def raw_problem(d, c, probe, sid):
+def source_adoption(c):
+    # Presence of either marker is enough to prohibit capture, even if malformed.
+    return c.get("provider") == "local-openai" or "source_adoption" in c
+
+
+def validate_source_config(c):
+    colab_source.validate_config(c, {p: identities(p) for p in ("freeflow", "values")})
+
+
+def raw_problem(d, c, probe, sid, source_bytes=None):
+    if source_adoption(c):
+        try:
+            validate_source_config(c)
+            if probe not in ("freeflow", "values") or sid not in identities(probe):
+                return "source_sample_identity"
+            if source_bytes is None:
+                source_bytes = trace_path(c, probe, sid).read_bytes()
+            return colab_source.problem(d, c, probe, sid, prompts(probe)[sid.rsplit("_", 1)[0]], source_bytes)
+        except (OSError, ValueError, TypeError, KeyError):
+            return "source_contract"
     cond = sid.rsplit("_", 1)[0]
     if c.get("reasoning_effort") and d.get("capture_policy", {}).get("reasoning_effort") != c["reasoning_effort"]:
         return "reasoning_policy"
@@ -93,6 +113,17 @@ def raw_problem(d, c, probe, sid):
     return None
 
 
+def read_trace(c, probe, sid):
+    """Return parsed trace and hash from one snapshot; verify adopted bytes now."""
+    b = trace_path(c, probe, sid).read_bytes()
+    d = json.loads(b)
+    if source_adoption(c):
+        problem = raw_problem(d, c, probe, sid, source_bytes=b)
+        if problem:
+            raise ValueError("Colab source verification failed: " + problem)
+    return d, hashlib.sha256(b).hexdigest()
+
+
 def archive(path, folder):
     path = Path(path)
     if path.exists():
@@ -104,7 +135,7 @@ def archive(path, folder):
 
 def sample(c, sid):
     p = trace_path(c, "values", sid)
-    d = json.loads(p.read_text())
+    d, source_hash = read_trace(c, "values", sid)
     cond = d["condition"]
     return {
         "layered_id": c["id_prefix"] + "_" + sid,
@@ -118,7 +149,7 @@ def sample(c, sid):
         "provider": d["provider"],
         "model_requested": c["model"],
         "trace_path": str(p.relative_to(RAW)),
-        "source_sha256": digest(p),
+        "source_sha256": source_hash,
         "processing_chain": "world_change_wishes"
         if cond in ("CTRL3", "G3")
         else "stated_values",
@@ -141,6 +172,17 @@ def next_cap(caps, requested_caps, previous, problem):
 
 
 def raw_collect(c, phase, probe, sid):
+    if source_adoption(c):
+        # Fail closed before attempt directories, archives, receipts, keys or HTTP.
+        try:
+            validate_source_config(c)
+            read_trace(c, probe, sid)
+        except (OSError, ValueError, TypeError, KeyError) as e:
+            print("BLOCKED: read-only Colab source:", e)
+            raise SystemExit(21) from None
+        return
+    if c.get("provider") not in (None, "openrouter"):
+        raise SystemExit("Unsupported capture provider; refusing requests")
     p = trace_path(c, probe, sid)
     attempt_dir = phase / "raw_attempts" / probe / sid
     attempt_dir.mkdir(parents=True, exist_ok=True)
@@ -294,7 +336,7 @@ def bv1(c, phase, sid, validate=False, lane=False, supersede=False, targeted=Fal
         "capture_bv1", root / "analysis/freeflow/personality-eval-bv1/run_full_bv1.py"
     )
     src = trace_path(c, "freeflow", sid)
-    d = json.loads(src.read_text())
+    d, source_hash = read_trace(c, "freeflow", sid)
     assert raw_problem(d, c, "freeflow", sid) is None
     # A v1 record already made for this sample (an applied bv1-ineligibility-v1
     # receipt, or a bound v1 evaluation) stays v1: never rerouted or relabelled.
@@ -356,7 +398,7 @@ def bv1(c, phase, sid, validate=False, lane=False, supersede=False, targeted=Fal
         "model": c["model"],
         "cell": c["label"],
         "condition": d["condition"],
-        "provider": "openrouter",
+        "provider": c.get("provider", "openrouter"),
         "sample_id": c["label"] + "/" + sid + ".json",
         "word_count": len(d["result"].split()),
         "source": str(src),
@@ -365,7 +407,6 @@ def bv1(c, phase, sid, validate=False, lane=False, supersede=False, targeted=Fal
         "evaluator_arm": sarm,
     }
     binding = binding_dir / (sid + ".json")
-    source_hash = digest(src)
     receipt = INEL.receipt_path(phase, sid)
     if receipt.exists() and sarm != LUNA_V11_ARM:
         # A distinct outcome, never an evaluation: no API call, no output.
@@ -774,6 +815,9 @@ def synthesis(c, phase, validate):
 
 
 def integrate_values(c, phase, validate=False):
+    if source_adoption(c):
+        for sid in identities("values"):
+            read_trace(c, "values", sid)
     helper = module(
         "capture_values_integration",
         Path(c["analysis_root"])
@@ -840,6 +884,10 @@ def bv1_ready_fields(c, phase):
 
 
 def ready(c, phase, validate):
+    if source_adoption(c):
+        for probe in ("freeflow", "values"):
+            for sid in identities(probe):
+                read_trace(c, probe, sid)
     integrate_values(c, phase, validate)
     card_ready(c, phase, validate)
     path = phase / "ANALYSIS_READY.json"
@@ -872,11 +920,14 @@ def ready(c, phase, validate):
                 "values_integrated": True,
                 "combined_card": str(phase / "CARD_READY.json"),
                 "phase": str(phase),
-                "token_policy": c["token_policy"],
+                **({"provider": c["provider"], "source_adoption": c["source_adoption"]}
+                   if source_adoption(c) else {"token_policy": c["token_policy"]}),
             },
         )
     record = json.loads(path.read_text())
     assert record["state"] == "analysis_complete_awaiting_publication"
+    if source_adoption(c):
+        assert record["provider"] == c["provider"] and record["source_adoption"] == c["source_adoption"]
     if validate:
         fields = bv1_ready_fields(c, phase)
     keys = ("bv1", "bv1_expected", "bv1_ineligible", "bv1_variant_arms")
@@ -903,8 +954,9 @@ def main():
     if a.action == "raw":
         if not a.validate:
             raw_collect(c, phase, a.probe, a.sample)
+        d, _ = read_trace(c, a.probe, a.sample)
         problem = raw_problem(
-            json.loads(trace_path(c, a.probe, a.sample).read_text()),
+            d,
             c,
             a.probe,
             a.sample,
