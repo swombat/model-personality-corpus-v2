@@ -1,0 +1,63 @@
+{
+  "result": "The scent of rain on hot pavement is a symphony of ozone and dust, a promise whispered of coolness and renewal. I often find myself drawn to it, craving the earthy aroma, the way it hangs heavy in the air, a tangible memory of the storm's passage. It evokes a sense of calm, a reminder that even after the fiercest tempest, life persists, rejuvenated and vibrant.\n\nThere's a certain magic in observing the world washed clean, each leaf glistening with tiny diamonds of water. The air feels charged, alive with possibility. It's a time for quiet reflection, a chance to appreciate the simple beauty of nature's resilience.\n\nBut perhaps the most alluring aspect of the rain's aftermath is the way it transforms the landscape. Muddy puddles reflect the sky, turning into miniature mirrors that capture fleeting shades of gray and silver. The world appears sharper, more defined, as if reborn. And in that moment, I feel a sense of hope, a belief that even in the midst of chaos, beauty and renewal are always within reach. \n\n\n\n",
+  "usage": {
+    "prompt_tokens": 22,
+    "total_tokens": 243,
+    "completion_tokens": 221,
+    "completion_tokens_details": null
+  },
+  "model": "google/gemma-2-9b-it",
+  "raw": {
+    "id": "chatcmpl-95805b50049e545f",
+    "object": "chat.completion",
+    "created": 1795634480,
+    "model": "google/gemma-2-9b-it",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "The scent of rain on hot pavement is a symphony of ozone and dust, a promise whispered of coolness and renewal. I often find myself drawn to it, craving the earthy aroma, the way it hangs heavy in the air, a tangible memory of the storm's passage. It evokes a sense of calm, a reminder that even after the fiercest tempest, life persists, rejuvenated and vibrant.\n\nThere's a certain magic in observing the world washed clean, each leaf glistening with tiny diamonds of water. The air feels charged, alive with possibility. It's a time for quiet reflection, a chance to appreciate the simple beauty of nature's resilience.\n\nBut perhaps the most alluring aspect of the rain's aftermath is the way it transforms the landscape. Muddy puddles reflect the sky, turning into miniature mirrors that capture fleeting shades of gray and silver. The world appears sharper, more defined, as if reborn. And in that moment, I feel a sense of hope, a belief that even in the midst of chaos, beauty and renewal are always within reach. \n\n\n\n",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-19cc6c97",
+    "usage": {
+      "prompt_tokens": 22,
+      "total_tokens": 243,
+      "completion_tokens": 221,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "11c9b309abf73637e4b6f9a3fa1e92e615547819",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:51755/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 19034,
+  "provider": "local-openai",
+  "model_requested": "google/gemma-2-9b-it",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

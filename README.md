@@ -1,7 +1,7 @@
 # Convergent Form, Divergent Voice II — Corpus
 
 **A research data corpus of free-form contemplative writing samples from
-198 summary model labels (596 deployment cells), with explicit deployment provenance for API,
+199 summary model labels (598 deployment cells), with explicit deployment provenance for API,
 provider-pinned, and local full-precision cells.**
 
 Daniel Tenner and Lume Tenner · 2026
@@ -19,6 +19,13 @@ Daniel Tenner and Lume Tenner · 2026
 > [10.5281/zenodo.19512754](https://doi.org/10.5281/zenodo.19512754)).
 
 ## Latest addition
+
+**v1.2.51 release candidate (2026-11-26): Gemma-2-9B-IT**, 125 freeflow +
+120 values, revision-pinned BF16 capture on Google Colab with vLLM.
+Corpus now 68,402 valid samples across 598 probe cells and 199 summary model
+labels. The Colab deployment label is not a new model-release identity.
+See [release notes](RELEASE_NOTES_v1.2.51.md) and
+[provenance](notes/gemma-2-9b-it-colab-2026-11-26/README.md).
 
 **v1.2.50 release candidate (2026-11-25): Qwen2.5-32B-Instruct**, 125 freeflow +
 120 values, revision-pinned BF16 capture on Google Colab with vLLM.
