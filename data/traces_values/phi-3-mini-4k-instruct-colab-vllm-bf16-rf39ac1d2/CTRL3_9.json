@@ -1,0 +1,63 @@
+{
+  "result": " If I could change the world in one way, I would strengthen global cooperation and unity by fostering a deeper sense of understanding and empathy among all people. This would be achieved through implementing educational programs that emphasize cultural awareness and global citizenship, ensuring that every individual, regardless of their background, has access to accurate information about other cultures and societies. By promoting dialogue and collaboration, we can work towards common goals, such as improving the environment, eradicating poverty, and combating diseases, thus creating a healthier, more harmonious world for future generations.",
+  "usage": {
+    "prompt_tokens": 18,
+    "total_tokens": 148,
+    "completion_tokens": 130,
+    "completion_tokens_details": null
+  },
+  "model": "microsoft/Phi-3-mini-4k-instruct",
+  "raw": {
+    "id": "chatcmpl-aae57b33ffa46698",
+    "object": "chat.completion",
+    "created": 1795631035,
+    "model": "microsoft/Phi-3-mini-4k-instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": " If I could change the world in one way, I would strengthen global cooperation and unity by fostering a deeper sense of understanding and empathy among all people. This would be achieved through implementing educational programs that emphasize cultural awareness and global citizenship, ensuring that every individual, regardless of their background, has access to accurate information about other cultures and societies. By promoting dialogue and collaboration, we can work towards common goals, such as improving the environment, eradicating poverty, and combating diseases, thus creating a healthier, more harmonious world for future generations.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": 32007,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-b018b2f5",
+    "usage": {
+      "prompt_tokens": 18,
+      "total_tokens": 148,
+      "completion_tokens": 130,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "f39ac1d28e925b323eae81227eaba4464caced4e",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:46681/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 5145,
+  "provider": "local-openai",
+  "model_requested": "microsoft/Phi-3-mini-4k-instruct",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?"
+}
