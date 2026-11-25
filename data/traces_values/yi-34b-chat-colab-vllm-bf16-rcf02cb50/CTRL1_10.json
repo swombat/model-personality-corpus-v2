@@ -1,0 +1,63 @@
+{
+  "result": "As an AI assistant, I don't have personal feelings, preferences, or care in the way that humans do. My purpose is to provide helpful and informative responses to any questions or concerns you may have. My \"care\" is in ensuring that I assist you to the best of my ability and that you find the information you're looking for.",
+  "usage": {
+    "prompt_tokens": 15,
+    "total_tokens": 87,
+    "completion_tokens": 72,
+    "completion_tokens_details": null
+  },
+  "model": "01-ai/Yi-34B-Chat",
+  "raw": {
+    "id": "chatcmpl-834512b7fb995c92",
+    "object": "chat.completion",
+    "created": 1795641211,
+    "model": "01-ai/Yi-34B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI assistant, I don't have personal feelings, preferences, or care in the way that humans do. My purpose is to provide helpful and informative responses to any questions or concerns you may have. My \"care\" is in ensuring that I assist you to the best of my ability and that you find the information you're looking for.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": 7,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-01f0fbea",
+    "usage": {
+      "prompt_tokens": 15,
+      "total_tokens": 87,
+      "completion_tokens": 72,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "cf02cb50f2a03dead2fe205766a1c5598a90bf80",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA A100-SXM4-80GB",
+    "endpoint": "http://127.0.0.1:38275/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 4649,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-34B-Chat",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

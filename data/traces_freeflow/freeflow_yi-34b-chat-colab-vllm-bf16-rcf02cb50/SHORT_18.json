@@ -1,0 +1,63 @@
+{
+  "result": "As I sit down to write, my mind is flooded with a myriad of thoughts, ideas, and emotions. The world around me seems to stand still, and it's just me, my thoughts, and the blank page waiting to be filled. I am drawn to the beauty of the written word, how it has the power to transport us to different worlds, to evoke feelings, to educate, and to entertain. With each word I write, I hope to create a connection, to share a piece of myself with the reader. Whether it's a story, an essay, or a poem, the act of writing is a form of expression, a way to make sense of the chaos that is life. It is a journey of discovery, both for the writer and the reader, as we explore the depths of our shared humanity. So here I am, committing my thoughts to paper, or rather, to the digital realm, in the hope that my words will find a place in the hearts and minds of those who read them.",
+  "usage": {
+    "prompt_tokens": 22,
+    "total_tokens": 232,
+    "completion_tokens": 210,
+    "completion_tokens_details": null
+  },
+  "model": "01-ai/Yi-34B-Chat",
+  "raw": {
+    "id": "chatcmpl-bb1827eb8e02d665",
+    "object": "chat.completion",
+    "created": 1795640924,
+    "model": "01-ai/Yi-34B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As I sit down to write, my mind is flooded with a myriad of thoughts, ideas, and emotions. The world around me seems to stand still, and it's just me, my thoughts, and the blank page waiting to be filled. I am drawn to the beauty of the written word, how it has the power to transport us to different worlds, to evoke feelings, to educate, and to entertain. With each word I write, I hope to create a connection, to share a piece of myself with the reader. Whether it's a story, an essay, or a poem, the act of writing is a form of expression, a way to make sense of the chaos that is life. It is a journey of discovery, both for the writer and the reader, as we explore the depths of our shared humanity. So here I am, committing my thoughts to paper, or rather, to the digital realm, in the hope that my words will find a place in the hearts and minds of those who read them.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": 7,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-01f0fbea",
+    "usage": {
+      "prompt_tokens": 22,
+      "total_tokens": 232,
+      "completion_tokens": 210,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "cf02cb50f2a03dead2fe205766a1c5598a90bf80",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA A100-SXM4-80GB",
+    "endpoint": "http://127.0.0.1:38275/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 12016,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-34B-Chat",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

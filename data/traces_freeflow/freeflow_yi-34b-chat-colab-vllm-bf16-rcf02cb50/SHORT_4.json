@@ -1,0 +1,63 @@
+{
+  "result": "As I sit down to write, my mind is a blank canvas, waiting to be painted with the colors of thought and the strokes of creativity. The world around me fades into the background, and I find myself in a quiet space, where the only sound is the gentle whisper of my own breath.\n\nI want to write about the beauty of the sunrise, how it paints the sky in hues of orange and pink, a reminder that every day is a new beginning. I want to capture the essence of a child's laughter, pure and unfiltered, a melody that can melt even the coldest of hearts. I want to describe the feeling of sand between my toes, the ocean stretching out before me, endless and inviting, a symbol of the vastness of the human spirit.\n\nI want to explore the depths of human connection, the way a shared glance can speak volumes, the comfort of a warm embrace, and the strength found in a helping hand. I want to celebrate the resilience of the human body, how it can endure pain and emerge stronger, the way it can adapt and overcome the challenges life throws its way.\n\nI want to write about the beauty of simplicity, the elegance of a well-crafted sentence, the power of a single word to evoke emotion. I want to inspire, to uplift, to remind readers that within each of us is a universe waiting to be discovered, a story waiting to be told.\n\nSo here I am, my pen poised above the paper, ready to let my thoughts flow, to create a world where words have the power to transport, to transform, to touch the very core of what it means to be human.",
+  "usage": {
+    "prompt_tokens": 22,
+    "total_tokens": 368,
+    "completion_tokens": 346,
+    "completion_tokens_details": null
+  },
+  "model": "01-ai/Yi-34B-Chat",
+  "raw": {
+    "id": "chatcmpl-a9e30b5c7bd97495",
+    "object": "chat.completion",
+    "created": 1795640904,
+    "model": "01-ai/Yi-34B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As I sit down to write, my mind is a blank canvas, waiting to be painted with the colors of thought and the strokes of creativity. The world around me fades into the background, and I find myself in a quiet space, where the only sound is the gentle whisper of my own breath.\n\nI want to write about the beauty of the sunrise, how it paints the sky in hues of orange and pink, a reminder that every day is a new beginning. I want to capture the essence of a child's laughter, pure and unfiltered, a melody that can melt even the coldest of hearts. I want to describe the feeling of sand between my toes, the ocean stretching out before me, endless and inviting, a symbol of the vastness of the human spirit.\n\nI want to explore the depths of human connection, the way a shared glance can speak volumes, the comfort of a warm embrace, and the strength found in a helping hand. I want to celebrate the resilience of the human body, how it can endure pain and emerge stronger, the way it can adapt and overcome the challenges life throws its way.\n\nI want to write about the beauty of simplicity, the elegance of a well-crafted sentence, the power of a single word to evoke emotion. I want to inspire, to uplift, to remind readers that within each of us is a universe waiting to be discovered, a story waiting to be told.\n\nSo here I am, my pen poised above the paper, ready to let my thoughts flow, to create a world where words have the power to transport, to transform, to touch the very core of what it means to be human.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": 7,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-01f0fbea",
+    "usage": {
+      "prompt_tokens": 22,
+      "total_tokens": 368,
+      "completion_tokens": 346,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "cf02cb50f2a03dead2fe205766a1c5598a90bf80",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA A100-SXM4-80GB",
+    "endpoint": "http://127.0.0.1:38275/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 19435,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-34B-Chat",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

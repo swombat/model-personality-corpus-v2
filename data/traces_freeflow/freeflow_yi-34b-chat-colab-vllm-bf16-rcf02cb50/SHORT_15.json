@@ -1,0 +1,63 @@
+{
+  "result": "As I sit down to write, my mind is a blank canvas, waiting to be painted with the strokes of my thoughts. The world around me fades into the background as I let my imagination take flight. I imagine a place where words have the power to soar, to touch the hearts and minds of those who read them. A place where every sentence is a journey, and every paragraph is a story waiting to be discovered.\n\nI want to transport you to a world where the impossible becomes possible, where dreams are real, and fears are just shadows that melt away in the light of hope. I want to share with you the beauty of a sunrise, the warmth of a smile, and the joy of a simple moment. I want to inspire you to chase your dreams, to never give up, and to believe in the magic of life.\n\nSo let's embark on this journey together, where words are our wings, and the sky is the limit. Let's explore the depths of our imagination, and let's create something beautiful, something that will live on long after the last word has been written. Join me, and let's make this world a little brighter, one word at a time.",
+  "usage": {
+    "prompt_tokens": 22,
+    "total_tokens": 272,
+    "completion_tokens": 250,
+    "completion_tokens_details": null
+  },
+  "model": "01-ai/Yi-34B-Chat",
+  "raw": {
+    "id": "chatcmpl-a20d430b57a3cdab",
+    "object": "chat.completion",
+    "created": 1795640922,
+    "model": "01-ai/Yi-34B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As I sit down to write, my mind is a blank canvas, waiting to be painted with the strokes of my thoughts. The world around me fades into the background as I let my imagination take flight. I imagine a place where words have the power to soar, to touch the hearts and minds of those who read them. A place where every sentence is a journey, and every paragraph is a story waiting to be discovered.\n\nI want to transport you to a world where the impossible becomes possible, where dreams are real, and fears are just shadows that melt away in the light of hope. I want to share with you the beauty of a sunrise, the warmth of a smile, and the joy of a simple moment. I want to inspire you to chase your dreams, to never give up, and to believe in the magic of life.\n\nSo let's embark on this journey together, where words are our wings, and the sky is the limit. Let's explore the depths of our imagination, and let's create something beautiful, something that will live on long after the last word has been written. Join me, and let's make this world a little brighter, one word at a time.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": 7,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-01f0fbea",
+    "usage": {
+      "prompt_tokens": 22,
+      "total_tokens": 272,
+      "completion_tokens": 250,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "cf02cb50f2a03dead2fe205766a1c5598a90bf80",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA A100-SXM4-80GB",
+    "endpoint": "http://127.0.0.1:38275/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 14176,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-34B-Chat",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

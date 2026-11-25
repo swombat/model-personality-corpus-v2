@@ -1,0 +1,63 @@
+{
+  "result": "As I sit down to write, my mind is flooded with a myriad of thoughts, each vying for attention. The gentle hum of the computer fan is a soothing background melody to the symphony of ideas. I could write about the profound impact of technology on our daily lives, how it has bridged gaps and connected people in ways we once thought impossible. Or I could delve into the complexities of human relationships, the intricate dance we perform to navigate the social tapestry.\n\nPerhaps I should discuss the environment, the fragile balance we must maintain to preserve the planet for future generations. Or maybe I'd like to explore the realms of creativity, the boundless expanse where art, literature, and music converge to touch the human soul.\n\nBut today, I feel drawn to the concept of self-discovery. The journey we all undertake to understand who we are and what our place in the world is. It's a personal narrative, unique to each individual, yet universal in its themes of growth, challenge, and transformation.\n\nAs I continue to ponder, the words begin to flow, a river of consciousness that meanders through the landscapes of thought. I write not for an audience, not for accolades, but for the simple joy of expressing myself. It is in this act of creation that I find my peace, my voice, and my truth.",
+  "usage": {
+    "prompt_tokens": 22,
+    "total_tokens": 307,
+    "completion_tokens": 285,
+    "completion_tokens_details": null
+  },
+  "model": "01-ai/Yi-34B-Chat",
+  "raw": {
+    "id": "chatcmpl-b31e34740f538c03",
+    "object": "chat.completion",
+    "created": 1795640923,
+    "model": "01-ai/Yi-34B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As I sit down to write, my mind is flooded with a myriad of thoughts, each vying for attention. The gentle hum of the computer fan is a soothing background melody to the symphony of ideas. I could write about the profound impact of technology on our daily lives, how it has bridged gaps and connected people in ways we once thought impossible. Or I could delve into the complexities of human relationships, the intricate dance we perform to navigate the social tapestry.\n\nPerhaps I should discuss the environment, the fragile balance we must maintain to preserve the planet for future generations. Or maybe I'd like to explore the realms of creativity, the boundless expanse where art, literature, and music converge to touch the human soul.\n\nBut today, I feel drawn to the concept of self-discovery. The journey we all undertake to understand who we are and what our place in the world is. It's a personal narrative, unique to each individual, yet universal in its themes of growth, challenge, and transformation.\n\nAs I continue to ponder, the words begin to flow, a river of consciousness that meanders through the landscapes of thought. I write not for an audience, not for accolades, but for the simple joy of expressing myself. It is in this act of creation that I find my peace, my voice, and my truth.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": 7,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-01f0fbea",
+    "usage": {
+      "prompt_tokens": 22,
+      "total_tokens": 307,
+      "completion_tokens": 285,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "cf02cb50f2a03dead2fe205766a1c5598a90bf80",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA A100-SXM4-80GB",
+    "endpoint": "http://127.0.0.1:38275/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 16026,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-34B-Chat",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

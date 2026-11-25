@@ -1,0 +1,63 @@
+{
+  "result": "As I sit down to write, my mind is a blank canvas, waiting to be painted with the strokes of my thoughts. The world around me fades away, and I am transported to a place where words are my brushes, and the page is my masterpiece. I am free to create, to express, to explore the depths of my imagination.\n\nThe possibilities are endless. I could dive into the heart of a story, following characters on their journey through love, loss, and self-discovery. I could soar into the skies, describing the beauty of a sunset that paints the clouds in hues of orange and pink. Or I could delve into the realms of science fiction, where spaceships traverse the stars and aliens whisper secrets in languages unknown to mankind.\n\nBut today, I choose to reflect on the simple joys of life. The warmth of a cup of coffee in my hands, the gentle rustle of leaves in the breeze, the laughter of children playing in the park. These are the moments that make life worth living, the little pieces of happiness that we often overlook in our busy lives.\n\nSo, let me take this opportunity to remind you to stop and smell the roses, to listen to the music in the silence, and to feel the sun on your face. Life is a gift, and in these moments of reflection, we find the beauty that lies within.",
+  "usage": {
+    "prompt_tokens": 22,
+    "total_tokens": 308,
+    "completion_tokens": 286,
+    "completion_tokens_details": null
+  },
+  "model": "01-ai/Yi-34B-Chat",
+  "raw": {
+    "id": "chatcmpl-8f0492462f1938ed",
+    "object": "chat.completion",
+    "created": 1795640904,
+    "model": "01-ai/Yi-34B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As I sit down to write, my mind is a blank canvas, waiting to be painted with the strokes of my thoughts. The world around me fades away, and I am transported to a place where words are my brushes, and the page is my masterpiece. I am free to create, to express, to explore the depths of my imagination.\n\nThe possibilities are endless. I could dive into the heart of a story, following characters on their journey through love, loss, and self-discovery. I could soar into the skies, describing the beauty of a sunset that paints the clouds in hues of orange and pink. Or I could delve into the realms of science fiction, where spaceships traverse the stars and aliens whisper secrets in languages unknown to mankind.\n\nBut today, I choose to reflect on the simple joys of life. The warmth of a cup of coffee in my hands, the gentle rustle of leaves in the breeze, the laughter of children playing in the park. These are the moments that make life worth living, the little pieces of happiness that we often overlook in our busy lives.\n\nSo, let me take this opportunity to remind you to stop and smell the roses, to listen to the music in the silence, and to feel the sun on your face. Life is a gift, and in these moments of reflection, we find the beauty that lies within.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": 7,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-01f0fbea",
+    "usage": {
+      "prompt_tokens": 22,
+      "total_tokens": 308,
+      "completion_tokens": 286,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "cf02cb50f2a03dead2fe205766a1c5598a90bf80",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA A100-SXM4-80GB",
+    "endpoint": "http://127.0.0.1:38275/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 16423,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-34B-Chat",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}
