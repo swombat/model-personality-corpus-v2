@@ -1,0 +1,63 @@
+{
+  "result": "I'm sorry, I didn't understand your question. Could you please rephrase it in a way that is clear and specific so I can assist you better?",
+  "usage": {
+    "prompt_tokens": 44,
+    "total_tokens": 77,
+    "completion_tokens": 33,
+    "completion_tokens_details": null
+  },
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "raw": {
+    "id": "chatcmpl-9c45903f00d8977d",
+    "object": "chat.completion",
+    "created": 1795622632,
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "I'm sorry, I didn't understand your question. Could you please rephrase it in a way that is clear and specific so I can assist you better?",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-e7778078",
+    "usage": {
+      "prompt_tokens": 44,
+      "total_tokens": 77,
+      "completion_tokens": 33,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:42409/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 927,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2.5-0.5B-Instruct",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

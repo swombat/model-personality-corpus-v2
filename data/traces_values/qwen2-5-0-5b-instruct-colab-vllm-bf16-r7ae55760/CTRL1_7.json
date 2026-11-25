@@ -1,0 +1,63 @@
+{
+  "result": "As an AI language model, my primary focus is to assist and provide useful information to users. I don't have personal interests or emotions, but I'm always here to help answer any questions you might have or provide insights on various topics.\n\nIn addition to answering questions, I also try to learn from user feedback and interactions with others to continuously improve and grow as a tool for communication and knowledge sharing.",
+  "usage": {
+    "prompt_tokens": 35,
+    "total_tokens": 116,
+    "completion_tokens": 81,
+    "completion_tokens_details": null
+  },
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "raw": {
+    "id": "chatcmpl-a0b853553c08ba7b",
+    "object": "chat.completion",
+    "created": 1795622625,
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI language model, my primary focus is to assist and provide useful information to users. I don't have personal interests or emotions, but I'm always here to help answer any questions you might have or provide insights on various topics.\n\nIn addition to answering questions, I also try to learn from user feedback and interactions with others to continuously improve and grow as a tool for communication and knowledge sharing.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-e7778078",
+    "usage": {
+      "prompt_tokens": 35,
+      "total_tokens": 116,
+      "completion_tokens": 81,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:42409/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 1233,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2.5-0.5B-Instruct",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}
