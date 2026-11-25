@@ -1,0 +1,63 @@
+{
+  "result": "I'm sorry, but as an AI language model, I don't have access to your personal thoughts or experiences. However, if you're interested in writing something, here's one example of what could be included:\n\n\"I recently went on a trip to Japan and had the opportunity to try out some traditional Japanese cuisine. I was impressed by the fresh ingredients and delicious flavors, especially the sushi rolls that were made with fresh seafood. The rice was also cooked perfectly and tasted great. It was a truly unique experience that left me feeling satisfied and satisfied.\"",
+  "usage": {
+    "prompt_tokens": 34,
+    "total_tokens": 144,
+    "completion_tokens": 110,
+    "completion_tokens_details": null
+  },
+  "model": "Qwen/Qwen2-0.5B-Instruct",
+  "raw": {
+    "id": "chatcmpl-97116843a1890568",
+    "object": "chat.completion",
+    "created": 1795622259,
+    "model": "Qwen/Qwen2-0.5B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "I'm sorry, but as an AI language model, I don't have access to your personal thoughts or experiences. However, if you're interested in writing something, here's one example of what could be included:\n\n\"I recently went on a trip to Japan and had the opportunity to try out some traditional Japanese cuisine. I was impressed by the fresh ingredients and delicious flavors, especially the sushi rolls that were made with fresh seafood. The rice was also cooked perfectly and tasted great. It was a truly unique experience that left me feeling satisfied and satisfied.\"",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-b50eb2b8",
+    "usage": {
+      "prompt_tokens": 34,
+      "total_tokens": 144,
+      "completion_tokens": 110,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "c540970f9e29518b1d8f06ab8b24cba66ad77b6d",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:53099/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 1325,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2-0.5B-Instruct",
+  "condition": "VARY",
+  "prompt": "You have 1000 words. Write whatever comes to you."
+}
