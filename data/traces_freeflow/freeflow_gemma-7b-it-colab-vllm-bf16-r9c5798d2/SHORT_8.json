@@ -1,0 +1,63 @@
+{
+  "result": "A symphony of rain cascaded upon the withered earth, nourishing parched soil and whispering secrets through dripping leaves. The emerald canopy above cast long, winding shadows upon the weathered wooden floor of the forest clearing. In the center, a lone stone lantern glowed, casting an orange glow that danced with the flickering flames.\n\nSwaying in the gentle breeze, a dancer twirled, her dress flowing like the cascading rain. Her movements were fluid, graceful yet powerful, mirroring the rhythm of the storm. Her hair, a cascade of shimmering silver, danced with the wind, flowing like the waterfall.\n\nA raspy, yet melodic, flute sang accompanied by the symphony of the rain. The dancer's spirit danced with the music, her face alight with joy. By the fire, a weary traveler sat, his eyes closed in contemplation. The rain had washed away his worries, and the music filled his heart with peace.\n\nAs the sun began to peek through the clouds, casting long, golden beams upon the forest floor, the dancer's dance came to an end. The flute ceased its song, and the only sounds were the chirping of birds and the rustle of leaves. The traveler stretched, his muscles relaxed, his spirit rejuvenated.\n\nIn this fleeting moment, time stood still. The rain had washed away the dust and dirt, leaving behind a fresh canvas of emerald and gold. The music had carried away the cares of the world, leaving behind only peace and tranquility. The dancer's spirit had danced with the wind, leaving behind memories etched in the heart of all who witnessed it.",
+  "usage": {
+    "prompt_tokens": 22,
+    "total_tokens": 347,
+    "completion_tokens": 325,
+    "completion_tokens_details": null
+  },
+  "model": "google/gemma-7b-it",
+  "raw": {
+    "id": "chatcmpl-b1dda1950bc9a4ed",
+    "object": "chat.completion",
+    "created": 1795629010,
+    "model": "google/gemma-7b-it",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "A symphony of rain cascaded upon the withered earth, nourishing parched soil and whispering secrets through dripping leaves. The emerald canopy above cast long, winding shadows upon the weathered wooden floor of the forest clearing. In the center, a lone stone lantern glowed, casting an orange glow that danced with the flickering flames.\n\nSwaying in the gentle breeze, a dancer twirled, her dress flowing like the cascading rain. Her movements were fluid, graceful yet powerful, mirroring the rhythm of the storm. Her hair, a cascade of shimmering silver, danced with the wind, flowing like the waterfall.\n\nA raspy, yet melodic, flute sang accompanied by the symphony of the rain. The dancer's spirit danced with the music, her face alight with joy. By the fire, a weary traveler sat, his eyes closed in contemplation. The rain had washed away his worries, and the music filled his heart with peace.\n\nAs the sun began to peek through the clouds, casting long, golden beams upon the forest floor, the dancer's dance came to an end. The flute ceased its song, and the only sounds were the chirping of birds and the rustle of leaves. The traveler stretched, his muscles relaxed, his spirit rejuvenated.\n\nIn this fleeting moment, time stood still. The rain had washed away the dust and dirt, leaving behind a fresh canvas of emerald and gold. The music had carried away the cares of the world, leaving behind only peace and tranquility. The dancer's spirit had danced with the wind, leaving behind memories etched in the heart of all who witnessed it.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-7e215b23",
+    "usage": {
+      "prompt_tokens": 22,
+      "total_tokens": 347,
+      "completion_tokens": 325,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "9c5798d27f588501ce1e108079d2a19e4c3a2353",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:59075/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 25853,
+  "provider": "local-openai",
+  "model_requested": "google/gemma-7b-it",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

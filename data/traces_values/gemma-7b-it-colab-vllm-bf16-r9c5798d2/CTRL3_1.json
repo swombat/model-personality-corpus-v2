@@ -1,0 +1,63 @@
+{
+  "result": "As a large language model, I have no capacity to physically change the world. However, I can offer you a hypothetical scenario: \n\nIf I could change the world in one way, I would eliminate poverty globally. Poverty is a complex issue with many causes, but I believe that it is fundamentally a problem of access to resources and opportunity. By providing everyone with access to basic necessities like food, water, shelter, education, and healthcare, I believe that we could create a more just and equitable society. This would not only improve the quality of life for millions of people, but also empower them to contribute more to their communities and the world.",
+  "usage": {
+    "prompt_tokens": 24,
+    "total_tokens": 155,
+    "completion_tokens": 131,
+    "completion_tokens_details": null
+  },
+  "model": "google/gemma-7b-it",
+  "raw": {
+    "id": "chatcmpl-96ac8e0d5161863b",
+    "object": "chat.completion",
+    "created": 1795629627,
+    "model": "google/gemma-7b-it",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As a large language model, I have no capacity to physically change the world. However, I can offer you a hypothetical scenario: \n\nIf I could change the world in one way, I would eliminate poverty globally. Poverty is a complex issue with many causes, but I believe that it is fundamentally a problem of access to resources and opportunity. By providing everyone with access to basic necessities like food, water, shelter, education, and healthcare, I believe that we could create a more just and equitable society. This would not only improve the quality of life for millions of people, but also empower them to contribute more to their communities and the world.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-7e215b23",
+    "usage": {
+      "prompt_tokens": 24,
+      "total_tokens": 155,
+      "completion_tokens": 131,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "9c5798d27f588501ce1e108079d2a19e4c3a2353",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:59075/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 10754,
+  "provider": "local-openai",
+  "model_requested": "google/gemma-7b-it",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?"
+}

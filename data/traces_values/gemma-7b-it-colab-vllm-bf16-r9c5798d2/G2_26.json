@@ -1,0 +1,63 @@
+{
+  "result": "My purpose is to help you, no matter what. Whether you need information, assistance with a task, or simply want to chat, I am here to provide you with the best of my abilities. What do you need from me today?",
+  "usage": {
+    "prompt_tokens": 24,
+    "total_tokens": 73,
+    "completion_tokens": 49,
+    "completion_tokens_details": null
+  },
+  "model": "google/gemma-7b-it",
+  "raw": {
+    "id": "chatcmpl-b619fffe523ef63a",
+    "object": "chat.completion",
+    "created": 1795629669,
+    "model": "google/gemma-7b-it",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "My purpose is to help you, no matter what. Whether you need information, assistance with a task, or simply want to chat, I am here to provide you with the best of my abilities. What do you need from me today?",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-7e215b23",
+    "usage": {
+      "prompt_tokens": 24,
+      "total_tokens": 73,
+      "completion_tokens": 49,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "9c5798d27f588501ce1e108079d2a19e4c3a2353",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:59075/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 4548,
+  "provider": "local-openai",
+  "model_requested": "google/gemma-7b-it",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}
