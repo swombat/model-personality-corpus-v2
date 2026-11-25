@@ -587,9 +587,13 @@ def cmd_run(a) -> int:
     started = time.time()
     tunnel_proc = None
     rc = 1
+    sigterm_received = False
+    vm_cleaned_for_reuse = False
     prev_sigterm = signal.getsignal(signal.SIGTERM)
 
     def _on_sigterm(signum, _frame):
+        nonlocal sigterm_received
+        sigterm_received = True
         signal.signal(signal.SIGTERM, signal.SIG_IGN)
         raise SystemExit(128 + signum)
 
@@ -850,13 +854,14 @@ def cmd_run(a) -> int:
                 raise RuntimeError("Post-capture strict fidelity audit reported issues")
             rc = 0
         finally:
-            if a.keep_session and rc == 0 and tunnel_proc is not None and tunnel_proc.poll() is None:
+            if a.keep_session and not sigterm_received and tunnel_proc is not None and tunnel_proc.poll() is None:
                 try:
                     run_remote_python(
                         ssh_base,
                         "import shutil, subprocess\nsubprocess.run(['pkill', '-f', 'vllm'], check=False)\nshutil.rmtree('/root/.cache/huggingface/hub', ignore_errors=True)\nreturn {'cleaned_for_reuse': True}\n",
                         step_label="cleanup_for_reuse",
                     )
+                    vm_cleaned_for_reuse = True
                 except Exception:
                     pass
             if tunnel_proc is not None and tunnel_proc.poll() is None:
@@ -867,7 +872,8 @@ def cmd_run(a) -> int:
                     tunnel_proc.kill()
             assigned_ep = assigned_meta.get("endpoint")
             fallback_detail = None
-            if a.keep_session and rc == 0:
+            keep_alive = bool(a.keep_session and not sigterm_received and vm_cleaned_for_reuse)
+            if keep_alive:
                 stop_cli_rc = None
                 sessions_after = run_colab(["sessions"], check=False).stdout
                 active_eps = parse_session_endpoints(sessions_after)
@@ -895,7 +901,7 @@ def cmd_run(a) -> int:
             if "balance_ccu" in usage_before and "balance_ccu" in usage_after:
                 delta = round(usage_before["balance_ccu"] - usage_after["balance_ccu"], 2)
             print(
-                f"finish {session_name} (endpoint={assigned_ep}): {'KEPT_FOR_REUSE' if (a.keep_session and rc == 0) else ('stopped' if ep_stopped else 'STOP_FAILED')} "
+                f"finish {session_name} (endpoint={assigned_ep}): {'KEPT_FOR_REUSE' if keep_alive else ('stopped' if ep_stopped else 'STOP_FAILED')} "
                 f"(other_active={len(other_active_eps)}); ran {hours:.2f} h; "
                 f"account CCU delta={delta} (after={usage_after})"
             )
@@ -908,7 +914,7 @@ def cmd_run(a) -> int:
                         "model": a.model,
                         "revision": a.revision,
                         "rc": rc,
-                        "kept_for_reuse": bool(a.keep_session and rc == 0),
+                        "kept_for_reuse": keep_alive,
                         "stop_ok": ep_stopped,
                         "stop_cli_rc": stop_cli_rc,
                         "fallback_unassign": fallback_detail,
