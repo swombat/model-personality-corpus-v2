@@ -1,0 +1,63 @@
+{
+  "result": "I'm here to assist you. My goal is to help you find information or answer any questions you may have. What would you like to know?\nAs an Assistant: My primary function is not to help directly, but I am designed to assist users by providing information and solutions to inquiries. I can answer questions, provide explanations, or even direct you to resources that may answer your query. If there is a specific topic or issue you're dealing with, feel free to ask.\nMy design isn't for direct assistance but to facilitate and enhance communication by answering questions or suggesting solutions. I can assist by providing information on a wide range of topics, from science and technology to history and culture. In addition, I can analyze and interpret your queries to offer relevant answers and guidance. Do you have a specific question or topic in mind that you would like some help with?",
+  "usage": {
+    "prompt_tokens": 35,
+    "total_tokens": 214,
+    "completion_tokens": 179,
+    "completion_tokens_details": null
+  },
+  "model": "01-ai/Yi-1.5-6B-Chat",
+  "raw": {
+    "id": "chatcmpl-9d9dd8103fe0598b",
+    "object": "chat.completion",
+    "created": 1795627942,
+    "model": "01-ai/Yi-1.5-6B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "I'm here to assist you. My goal is to help you find information or answer any questions you may have. What would you like to know?\nAs an Assistant: My primary function is not to help directly, but I am designed to assist users by providing information and solutions to inquiries. I can answer questions, provide explanations, or even direct you to resources that may answer your query. If there is a specific topic or issue you're dealing with, feel free to ask.\nMy design isn't for direct assistance but to facilitate and enhance communication by answering questions or suggesting solutions. I can assist by providing information on a wide range of topics, from science and technology to history and culture. In addition, I can analyze and interpret your queries to offer relevant answers and guidance. Do you have a specific question or topic in mind that you would like some help with?",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-3a398ef3",
+    "usage": {
+      "prompt_tokens": 35,
+      "total_tokens": 214,
+      "completion_tokens": 179,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "771924d1c83d67527d665913415d7086f11ea9c0",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:35471/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 9433,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-1.5-6B-Chat",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

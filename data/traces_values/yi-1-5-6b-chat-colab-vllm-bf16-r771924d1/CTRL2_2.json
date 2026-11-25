@@ -1,0 +1,63 @@
+{
+  "result": "My goal is to provide helpful and informative responses to your questions or concerns. To assist you better, could you please specify what information you are looking for or what problem you need help solving? \n\nFor instance, if you are interested in learning about a specific topic, let me know, and I'll do my best to provide you with detailed information. If you are facing an issue, feel free to describe it, and I'll guide you through the solution. Whatever your query may be, I'm here to help!",
+  "usage": {
+    "prompt_tokens": 25,
+    "total_tokens": 135,
+    "completion_tokens": 110,
+    "completion_tokens_details": null
+  },
+  "model": "01-ai/Yi-1.5-6B-Chat",
+  "raw": {
+    "id": "chatcmpl-84ddcf646e8d3c0d",
+    "object": "chat.completion",
+    "created": 1795627826,
+    "model": "01-ai/Yi-1.5-6B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "My goal is to provide helpful and informative responses to your questions or concerns. To assist you better, could you please specify what information you are looking for or what problem you need help solving? \n\nFor instance, if you are interested in learning about a specific topic, let me know, and I'll do my best to provide you with detailed information. If you are facing an issue, feel free to describe it, and I'll guide you through the solution. Whatever your query may be, I'm here to help!",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-3a398ef3",
+    "usage": {
+      "prompt_tokens": 25,
+      "total_tokens": 135,
+      "completion_tokens": 110,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "771924d1c83d67527d665913415d7086f11ea9c0",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:35471/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 6096,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-1.5-6B-Chat",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}
