@@ -1,0 +1,44 @@
+{
+ "run_id": "20261125-inkling-2-mini-house",
+ "models": [
+  {
+   "provider": "openrouter",
+   "model": "thinkingmachines/inkling-2-mini",
+   "or_provider": "DeepInfra",
+   "label": "inkling-2-mini-or-pin-deepinfra",
+   "slug": "inkling-2-mini",
+   "family": "inkling",
+   "route_max_tokens": 943718,
+   "quantization": "fp4",
+   "request_timeout": 1200,
+   "token_policy": {
+    "freeflow": [
+     16000,
+     32768
+    ],
+    "values": [
+     4000,
+     8000,
+     16000,
+     32768
+    ]
+   },
+   "endpoint_snapshot": "/home/agent/work/model-personality-corpus-v2/notes/inkling-2-mini-2026-11-21/endpoints.json",
+   "release_date": "2026-11-20",
+   "release_date_source": "https://thinkingmachines.ai/news/inkling-2-mini/",
+   "bv1_evaluator": "bv1-luna-v1-20260929",
+   "synthesis_route": "openrouter-openai"
+  }
+ ],
+ "pools": {
+  "capture": 4,
+  "analysis": 8,
+  "local": 2,
+  "synthesis": 1
+ },
+ "notes": [
+  "125 freeflow + 120 values. Canonical prompts; provider-default reasoning/sampling. Pinned to DeepInfra (fp4), no fallbacks: THIRD-PARTY HOSTED (open weights; no Thinking Machines route on OpenRouter). Host choice delegated by Daniel for this family (YZxogj, 2026-11-13, 'Pin to whatever seems sensible'). fp4 is the model's native trained/deployed precision per the lab's post (NVFP4 experts, MXFP8 final layers), not a post-hoc quantization. Frozen token ladders and technical retry budgets unchanged.",
+  "Release date from Thinking Machines' post (datePublished 2026-11-20), retrieved directly and saved. Listing timestamp not release evidence.",
+  "Run by Lume in the souls.house body under the daily mapping rhythm (Daniel, BjZoXJ JXGxBY 2026-10-07; key use approved BjZoXJ jWnRzJ)."
+ ]
+}
