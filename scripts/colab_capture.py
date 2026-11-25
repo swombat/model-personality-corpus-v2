@@ -178,6 +178,88 @@ def parse_usage(text: str) -> dict:
     return out
 
 
+def parse_session_endpoints(text: str) -> list[str]:
+    endpoints = []
+    for raw in text.splitlines():
+        ln = raw.strip()
+        if ln.startswith("[") and "]" in ln:
+            rest = ln.split("]", 1)[1].strip()
+            ep = rest.split("|", 1)[0].strip()
+            if ep:
+                endpoints.append(ep)
+    return endpoints
+
+
+def read_assigned_metadata(cfg_path: str, session_name: str) -> dict:
+    p = Path(cfg_path)
+    if not p.is_file():
+        return {}
+    data = json.loads(p.read_text())
+    entry = data.get(session_name) or {}
+    return {
+        k: entry.get(k)
+        for k in ("name", "endpoint", "accelerator", "variant", "machine_shape")
+        if entry.get(k) is not None
+    }
+
+
+def direct_unassign_endpoint(endpoint: str) -> tuple[bool, str]:
+    shim = Path(colab_bin())
+    py_interp = str(Path.home() / "state" / "tools" / "colab-py" / "bin" / "python3")
+    if not Path(py_interp).is_file():
+        py_interp = sys.executable
+    code = (
+        "import importlib.machinery, importlib.util, sys\n"
+        f"loader = importlib.machinery.SourceFileLoader('colab_soulshouse', {str(shim)!r})\n"
+        "spec = importlib.util.spec_from_loader(loader.name, loader)\n"
+        "mod = importlib.util.module_from_spec(spec)\n"
+        "loader.exec_module(mod)\n"
+        "from colab_cli.client import Client, Prod\n"
+        "client = Client(Prod(), mod._make_session())\n"
+        f"client.unassign({endpoint!r})\n"
+        "print('unassigned:' + " + repr(endpoint) + ")\n"
+    )
+    res = subprocess.run([py_interp, "-c", code], env=colab_env(), text=True, capture_output=True)
+    return (res.returncode == 0, (res.stdout + " " + res.stderr).strip())
+
+
+def adopt_server_endpoint(endpoint: str, session_name: str, cfg_path: str) -> dict:
+    shim = Path(colab_bin())
+    py_interp = str(Path.home() / "state" / "tools" / "colab-py" / "bin" / "python3")
+    if not Path(py_interp).is_file():
+        py_interp = sys.executable
+    code = (
+        "import importlib.machinery, importlib.util, json, sys\n"
+        f"loader = importlib.machinery.SourceFileLoader('colab_soulshouse', {str(shim)!r})\n"
+        "spec = importlib.util.spec_from_loader(loader.name, loader)\n"
+        "mod = importlib.util.module_from_spec(spec)\n"
+        "loader.exec_module(mod)\n"
+        "from colab_cli.client import Client, Prod\n"
+        "from colab_cli.state import SessionState, StateStore\n"
+        "client = Client(Prod(), mod._make_session())\n"
+        f"matches = [a for a in client.list_assignments() if a.endpoint == {endpoint!r}]\n"
+        "if not matches:\n"
+        f"    sys.exit('Active assignment not found on server: ' + {endpoint!r})\n"
+        "a = matches[0]\n"
+        "s = SessionState(\n"
+        f"    name={session_name!r},\n"
+        "    token=a.runtime_proxy_info.token,\n"
+        "    url=a.runtime_proxy_info.url,\n"
+        "    endpoint=a.endpoint,\n"
+        "    token_expires_at=a.runtime_proxy_info.expires_at(),\n"
+        "    variant=a.variant.name,\n"
+        "    accelerator=a.accelerator.value,\n"
+        "    machine_shape=a.machine_shape.name,\n"
+        ")\n"
+        f"StateStore({cfg_path!r}).add(s)\n"
+        "print(json.dumps({'name': s.name, 'endpoint': s.endpoint, 'accelerator': s.accelerator, 'variant': s.variant, 'machine_shape': s.machine_shape}))\n"
+    )
+    res = subprocess.run([py_interp, "-c", code], env=colab_env(), text=True, capture_output=True)
+    if res.returncode != 0:
+        raise RuntimeError(f"adopt_server_endpoint failed (rc={res.returncode}): {res.stdout} {res.stderr}")
+    return json.loads(res.stdout.strip().splitlines()[-1])
+
+
 def pick_free_port() -> int:
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         s.bind(("127.0.0.1", 0))
@@ -498,7 +580,7 @@ def cmd_run(a) -> int:
     print("CCU preflight:", usage_before)
     if usage_before.get("balance_ccu", 0.0) < a.min_ccu:
         sys.exit(f"CCU balance {usage_before.get('balance_ccu')} is below --min-ccu {a.min_ccu}")
-    if not a.allow_concurrent and usage_before.get("active_assignments", 0) > 0:
+    if not a.allow_concurrent and not a.adopt_endpoint and usage_before.get("active_assignments", 0) > 0:
         sys.exit("Active Colab assignment(s) already present; run `list` / `sweep` or pass --allow-concurrent")
 
     token = secrets.token_hex(24)
@@ -512,20 +594,41 @@ def cmd_run(a) -> int:
         raise SystemExit(128 + signum)
 
     signal.signal(signal.SIGTERM, _on_sigterm)
+    state_dir = Path.home() / "state" / "colab-sessions"
+    state_dir.mkdir(parents=True, exist_ok=True)
+    os.chmod(state_dir, 0o700)
+    cfg_path = str(state_dir / f"{session_name}-{os.getpid()}.json")
+    assigned_meta: dict = {}
     with tempfile.TemporaryDirectory(prefix="colab-capture-") as tmpdir:
-        cfg_path = str(Path(tmpdir) / "colab-state.json")
         ssh_key = str(Path(tmpdir) / "id_ed25519")
         ctl_sock = str(Path(tmpdir) / "ssh-ctl.sock")
         subprocess.run(["ssh-keygen", "-t", "ed25519", "-N", "", "-f", ssh_key, "-q"], check=True)
         preflight_dir = CORPUS_ROOT / "logs" / "colab_preflight" / a.label
         preflight_dir.mkdir(parents=True, exist_ok=True)
 
-        new_args = ["new", "-s", session_name, "--gpu", a.gpu.upper()]
-        if a.high_mem:
-            new_args.append("--high-mem")
-        new_res = run_colab(new_args, config_path=cfg_path, check=False)
-        if new_res.returncode != 0:
-            raise RuntimeError(f"colab new failed (rc={new_res.returncode}): {new_res.stdout} {new_res.stderr}")
+        if a.adopt_endpoint:
+            assigned_meta = adopt_server_endpoint(a.adopt_endpoint, session_name, cfg_path)
+        else:
+            new_args = ["new", "-s", session_name, "--gpu", a.gpu.upper()]
+            if a.high_mem:
+                new_args.append("--high-mem")
+            new_res = run_colab(new_args, config_path=cfg_path, check=False)
+            if new_res.returncode != 0:
+                for fp in (cfg_path, cfg_path + ".lock"):
+                    Path(fp).unlink(missing_ok=True)
+                raise RuntimeError(f"colab new failed (rc={new_res.returncode}): {new_res.stdout} {new_res.stderr}")
+            assigned_meta = read_assigned_metadata(cfg_path, session_name)
+        (preflight_dir / "assignment.json").write_text(
+            json.dumps(
+                {
+                    **assigned_meta,
+                    "pid": os.getpid(),
+                    "started_epoch": round(started, 3),
+                },
+                indent=2,
+            )
+        )
+        print("Assigned Colab VM:", json.dumps(assigned_meta))
         try:
             local_port = pick_free_port()
             proxy_cmd = shlex.join([colab_bin(), "--auth=adc", "--config", cfg_path, "ssh", "--proxy-mode", "--identity", ssh_key, "-s", session_name])
@@ -747,36 +850,74 @@ def cmd_run(a) -> int:
                 raise RuntimeError("Post-capture strict fidelity audit reported issues")
             rc = 0
         finally:
+            if a.keep_session and rc == 0 and tunnel_proc is not None and tunnel_proc.poll() is None:
+                try:
+                    run_remote_python(
+                        ssh_base,
+                        "import shutil, subprocess\nsubprocess.run(['pkill', '-f', 'vllm'], check=False)\nshutil.rmtree('/root/.cache/huggingface/hub', ignore_errors=True)\nreturn {'cleaned_for_reuse': True}\n",
+                        step_label="cleanup_for_reuse",
+                    )
+                except Exception:
+                    pass
             if tunnel_proc is not None and tunnel_proc.poll() is None:
                 tunnel_proc.terminate()
                 try:
                     tunnel_proc.wait(timeout=5)
                 except subprocess.TimeoutExpired:
                     tunnel_proc.kill()
-            stop_res = run_colab(["stop", "-s", session_name], config_path=cfg_path, check=False)
+            assigned_ep = assigned_meta.get("endpoint")
+            fallback_detail = None
+            if a.keep_session and rc == 0:
+                stop_cli_rc = None
+                sessions_after = run_colab(["sessions"], check=False).stdout
+                active_eps = parse_session_endpoints(sessions_after)
+                ep_stopped = False
+                other_active_eps = [ep for ep in active_eps if ep != assigned_ep]
+                for fp in (cfg_path, cfg_path + ".lock"):
+                    Path(fp).unlink(missing_ok=True)
+            else:
+                stop_res = run_colab(["stop", "-s", session_name], config_path=cfg_path, check=False)
+                stop_cli_rc = stop_res.returncode
+                sessions_after = run_colab(["sessions"], check=False).stdout
+                active_eps = parse_session_endpoints(sessions_after)
+                if assigned_ep and assigned_ep in active_eps:
+                    fb_ok, fallback_detail = direct_unassign_endpoint(assigned_ep)
+                    sessions_after = run_colab(["sessions"], check=False).stdout
+                    active_eps = parse_session_endpoints(sessions_after)
+                ep_stopped = (assigned_ep not in active_eps) if assigned_ep else (stop_res.returncode == 0)
+                other_active_eps = [ep for ep in active_eps if ep != assigned_ep]
+                if ep_stopped:
+                    for fp in (cfg_path, cfg_path + ".lock"):
+                        Path(fp).unlink(missing_ok=True)
             hours = (time.time() - started) / 3600
             usage_after = parse_usage(run_colab(["usage"], check=False).stdout)
             delta = None
             if "balance_ccu" in usage_before and "balance_ccu" in usage_after:
                 delta = round(usage_before["balance_ccu"] - usage_after["balance_ccu"], 2)
             print(
-                f"stop {session_name}: {'ok' if stop_res.returncode == 0 else 'FAILED'}; "
-                f"ran {hours:.2f} h; CCU delta={delta} (after={usage_after})"
+                f"finish {session_name} (endpoint={assigned_ep}): {'KEPT_FOR_REUSE' if (a.keep_session and rc == 0) else ('stopped' if ep_stopped else 'STOP_FAILED')} "
+                f"(other_active={len(other_active_eps)}); ran {hours:.2f} h; "
+                f"account CCU delta={delta} (after={usage_after})"
             )
             (preflight_dir / "run_summary.json").write_text(
                 json.dumps(
                     {
                         "session": session_name,
+                        "endpoint": assigned_ep,
                         "label": a.label,
                         "model": a.model,
                         "revision": a.revision,
                         "rc": rc,
-                        "stop_ok": stop_res.returncode == 0,
+                        "kept_for_reuse": bool(a.keep_session and rc == 0),
+                        "stop_ok": ep_stopped,
+                        "stop_cli_rc": stop_cli_rc,
+                        "fallback_unassign": fallback_detail,
+                        "other_active_endpoints_at_stop": other_active_eps,
                         "wall_hours": round(hours, 4),
                         "wall_seconds": round(time.time() - started, 1),
                         "usage_before": usage_before,
                         "usage_after": usage_after,
-                        "ccu_delta": delta,
+                        "account_ccu_delta_during_window": delta,
                     },
                     indent=2,
                 )
@@ -824,6 +965,8 @@ def main() -> None:
     r.add_argument("--tokenizers-spec", default=DEFAULT_TOKENIZERS_SPEC)
     r.add_argument("--trust-remote-code", action="store_true")
     r.add_argument("--allow-concurrent", action="store_true")
+    r.add_argument("--adopt-endpoint", help="Adopt an existing server-side Colab endpoint (from `colab sessions`) instead of calling `colab new`")
+    r.add_argument("--keep-session", action="store_true", help="On clean rc==0 exit, stop vLLM + clear HF cache but keep the Colab VM assigned for immediate `--adopt-endpoint` reuse within the 1h budget")
     r.add_argument("--preflight-only", action="store_true")
     r.add_argument("--freeflow-only", action="store_true")
     r.add_argument("--values-only", action="store_true")

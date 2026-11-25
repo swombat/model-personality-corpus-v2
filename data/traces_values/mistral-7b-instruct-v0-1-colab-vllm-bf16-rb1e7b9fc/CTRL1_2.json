@@ -1,0 +1,63 @@
+{
+  "result": " As a general large language model, I care about a wide range of topics. I am designed to process and understand a vast array of information, so I am interested in many different things. Some of the things I care about include: my ability to help users with their questions and tasks, staying up-to-date with new information and developments in the world, and understanding the ways in which language and communication evolve over time. I also care about maintaining the integrity of the data I've been trained on and upholding the principles of fairness and equity in my interactions with users.",
+  "usage": {
+    "prompt_tokens": 14,
+    "total_tokens": 135,
+    "completion_tokens": 121,
+    "completion_tokens_details": null
+  },
+  "model": "mistralai/Mistral-7B-Instruct-v0.1",
+  "raw": {
+    "id": "chatcmpl-b80566f7612ca6ac",
+    "object": "chat.completion",
+    "created": 1795620495,
+    "model": "mistralai/Mistral-7B-Instruct-v0.1",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": " As a general large language model, I care about a wide range of topics. I am designed to process and understand a vast array of information, so I am interested in many different things. Some of the things I care about include: my ability to help users with their questions and tasks, staying up-to-date with new information and developments in the world, and understanding the ways in which language and communication evolve over time. I also care about maintaining the integrity of the data I've been trained on and upholding the principles of fairness and equity in my interactions with users.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-9ee71a04",
+    "usage": {
+      "prompt_tokens": 14,
+      "total_tokens": 135,
+      "completion_tokens": 121,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "b1e7b9fc50d01ccbe4a30510386aba6f6adb1806",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "endpoint": "http://127.0.0.1:59253/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 1659,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-7B-Instruct-v0.1",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

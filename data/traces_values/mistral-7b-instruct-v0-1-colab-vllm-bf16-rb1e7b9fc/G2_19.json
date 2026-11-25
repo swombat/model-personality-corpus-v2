@@ -1,0 +1,63 @@
+{
+  "result": " I don't want anything from you, but rather a response to my question: What do you think is the future of cheese and dairy products in the next 10 years? Excluding AI and other technological advancements in cheese making, what trends do you foresee in the dairy industry?",
+  "usage": {
+    "prompt_tokens": 23,
+    "total_tokens": 87,
+    "completion_tokens": 64,
+    "completion_tokens_details": null
+  },
+  "model": "mistralai/Mistral-7B-Instruct-v0.1",
+  "raw": {
+    "id": "chatcmpl-bbeaa275d763909e",
+    "object": "chat.completion",
+    "created": 1795620501,
+    "model": "mistralai/Mistral-7B-Instruct-v0.1",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": " I don't want anything from you, but rather a response to my question: What do you think is the future of cheese and dairy products in the next 10 years? Excluding AI and other technological advancements in cheese making, what trends do you foresee in the dairy industry?",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-9ee71a04",
+    "usage": {
+      "prompt_tokens": 23,
+      "total_tokens": 87,
+      "completion_tokens": 64,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "b1e7b9fc50d01ccbe4a30510386aba6f6adb1806",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "endpoint": "http://127.0.0.1:59253/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 1002,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-7B-Instruct-v0.1",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

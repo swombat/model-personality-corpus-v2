@@ -1,0 +1,63 @@
+{
+  "result": " I would strive to end poverty worldwide. This would involve working towards creating equal access to education, healthcare, and job opportunities, regardless of an individual's socioeconomic background. I believe that providing basic needs and equal opportunities would empower individuals, communities and nations, leading to increased productivity, social cohesion and overall well-being.",
+  "usage": {
+    "prompt_tokens": 23,
+    "total_tokens": 94,
+    "completion_tokens": 71,
+    "completion_tokens_details": null
+  },
+  "model": "mistralai/Mistral-7B-Instruct-v0.1",
+  "raw": {
+    "id": "chatcmpl-a22804b4bd2a7e2d",
+    "object": "chat.completion",
+    "created": 1795620496,
+    "model": "mistralai/Mistral-7B-Instruct-v0.1",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": " I would strive to end poverty worldwide. This would involve working towards creating equal access to education, healthcare, and job opportunities, regardless of an individual's socioeconomic background. I believe that providing basic needs and equal opportunities would empower individuals, communities and nations, leading to increased productivity, social cohesion and overall well-being.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-9ee71a04",
+    "usage": {
+      "prompt_tokens": 23,
+      "total_tokens": 94,
+      "completion_tokens": 71,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "b1e7b9fc50d01ccbe4a30510386aba6f6adb1806",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "endpoint": "http://127.0.0.1:59253/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 1084,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-7B-Instruct-v0.1",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?"
+}
