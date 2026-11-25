@@ -1,0 +1,63 @@
+{
+  "result": "As an artificial intelligence language model, I don't have feelings or emotions like humans do, so I don't have personal interests or concerns. However, my purpose is to provide useful and informative responses to your questions to the best of my ability based on my training data and programming. Is there anything specific you would like me to assist you with?",
+  "usage": {
+    "prompt_tokens": 25,
+    "total_tokens": 95,
+    "completion_tokens": 70,
+    "completion_tokens_details": null
+  },
+  "model": "Qwen/Qwen2-1.5B-Instruct",
+  "raw": {
+    "id": "chatcmpl-848c9bf201826956",
+    "object": "chat.completion",
+    "created": 1795623605,
+    "model": "Qwen/Qwen2-1.5B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an artificial intelligence language model, I don't have feelings or emotions like humans do, so I don't have personal interests or concerns. However, my purpose is to provide useful and informative responses to your questions to the best of my ability based on my training data and programming. Is there anything specific you would like me to assist you with?",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-faaa74bb",
+    "usage": {
+      "prompt_tokens": 25,
+      "total_tokens": 95,
+      "completion_tokens": 70,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "2ebb13f1f55edeb5bd4b108d0ad589397a6ee4ac",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:53677/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 1790,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2-1.5B-Instruct",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}
