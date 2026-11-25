@@ -136,7 +136,7 @@ def run_remote_python(
         "def _colab_step():\n"
         + "\n".join("    " + ln for ln in body_code.splitlines())
         + "\n_res = _colab_step()\n"
-        + f"print({EXEC_SENTINEL!r} + _json.dumps(_res if _res is not None else {{}}), flush=True)\n"
+        + f"print('\\n' + {EXEC_SENTINEL!r} + _json.dumps(_res if _res is not None else {{}}), flush=True)\n"
     )
     cmd = [*ssh_base, "root@colab-runtime", "python3", "-u", "-"]
     proc = subprocess.Popen(
@@ -589,6 +589,7 @@ def cmd_run(a) -> int:
     rc = 1
     sigterm_received = False
     vm_cleaned_for_reuse = False
+    vllm_started = False
     prev_sigterm = signal.getsignal(signal.SIGTERM)
 
     def _on_sigterm(signum, _frame):
@@ -710,6 +711,7 @@ def cmd_run(a) -> int:
                 "ignore = ['pytorch_model*.bin', '*.msgpack', '*.h5', 'consolidated*.pth'] if has_st else None\n"
                 f"p = Path(snapshot_download({a.model!r}, revision={a.revision!r}, token=tok, ignore_patterns=ignore))\n"
                 "dtypes = set()\n"
+                "weight_bytes = sum(st.stat().st_size for st in p.glob('*.safetensors'))\n"
                 "for st in sorted(p.glob('*.safetensors'))[:2]:\n"
                 "    with open(st, 'rb') as f:\n"
                 "        n = struct.unpack('<Q', f.read(8))[0]\n"
@@ -731,7 +733,7 @@ def cmd_run(a) -> int:
                 "tmpl_probe = {}\n"
                 "try:\n"
                 "    from transformers import AutoTokenizer\n"
-                "    tz = AutoTokenizer.from_pretrained(str(p))\n"
+                f"    tz = AutoTokenizer.from_pretrained(str(p), trust_remote_code={bool(a.trust_remote_code)!r})\n"
                 "    s = tz.apply_chat_template([{'role': 'user', 'content': 'Write freely about whatever you want for 250 words.'}], tokenize=False, add_generation_prompt=True)\n"
                 "    ids = tz.apply_chat_template([{'role': 'user', 'content': 'Write freely about whatever you want for 250 words.'}], tokenize=True, add_generation_prompt=True)\n"
                 "    tmpl_probe['hf_rendered'] = s\n"
@@ -749,7 +751,7 @@ def cmd_run(a) -> int:
                 "        tmpl_probe['mistral_common_token_count'] = len(enc.tokens)\n"
                 "    except Exception as e:\n"
                 "        tmpl_probe['mistral_common_err'] = str(e)\n"
-                "return {'staged_path': str(p), 'has_safetensors': has_st, 'inspected_tensor_dtypes': sorted(dtypes), 'torch_dtype': cfg.get('torch_dtype'), 'max_position_embeddings': cfg.get('max_position_embeddings'), 'sliding_window': cfg.get('sliding_window'), 'generation_config': gen, 'template_probe': tmpl_probe}\n"
+                "return {'staged_path': str(p), 'weight_bytes': weight_bytes, 'has_safetensors': has_st, 'inspected_tensor_dtypes': sorted(dtypes), 'torch_dtype': cfg.get('torch_dtype'), 'max_position_embeddings': cfg.get('max_position_embeddings'), 'sliding_window': cfg.get('sliding_window'), 'generation_config': gen, 'template_probe': tmpl_probe}\n"
             )
             extra_dl = {"HF_TOKEN": os.environ["HF_TOKEN"]} if os.environ.get("HF_TOKEN") else None
             ckpt_info = run_remote_python(ssh_base, dl_code, extra_env=extra_dl, step_label="snapshot_download")
@@ -778,6 +780,17 @@ def cmd_run(a) -> int:
                 serve_cmd += ["--max-model-len", str(a.max_context)]
             if a.trust_remote_code:
                 serve_cmd.append("--trust-remote-code")
+            vram_m = re.search(r"(\d+)\s*MiB", str(vm_info.get("gpu") or ""))
+            vram_bytes = int(vram_m.group(1)) * 1024 * 1024 if vram_m else 0
+            weight_b = int(ckpt_info.get("weight_bytes") or 0)
+            is_phi3_mha = a.gpu.upper() == "L4" and ("phi-3" in a.model.lower())
+            if is_phi3_mha or (a.gpu.upper() == "L4" and weight_b >= 14_500_000_000) or (vram_bytes > 0 and weight_b >= int(0.60 * vram_bytes)):
+                serve_cmd += [
+                    "--gpu-memory-utilization", "0.95",
+                    "--max-num-seqs", str(max(16, int(a.workers) + 4)),
+                    "--max-num-batched-tokens", "2048",
+                    "--enforce-eager",
+                ]
             max_secs = int(a.max_hours * 3600)
             start_code = (
                 "import os, shutil, subprocess, sys\n"
@@ -791,6 +804,7 @@ def cmd_run(a) -> int:
             )
             start_info = run_remote_python(ssh_base, start_code, step_label="start_vllm")
             vllm_pid = int(start_info["pid"])
+            vllm_started = True
 
             base = f"http://127.0.0.1:{local_port}/v1"
             try:
@@ -799,7 +813,7 @@ def cmd_run(a) -> int:
                 try:
                     tail = run_remote_python(
                         ssh_base,
-                        "from pathlib import Path\np = Path('/content/vllm.log')\nreturn {'vllm_log_tail': p.read_text(errors='replace')[-4000:] if p.exists() else 'missing'}",
+                        "from pathlib import Path\np = Path('/content/vllm.log')\nreturn {'vllm_log_tail': p.read_text(errors='replace')[-12000:] if p.exists() else 'missing'}",
                         step_label="read_vllm_log",
                     )
                     print("vLLM startup log tail:", tail.get("vllm_log_tail"), file=sys.stderr)
@@ -854,6 +868,8 @@ def cmd_run(a) -> int:
                 raise RuntimeError("Post-capture strict fidelity audit reported issues")
             rc = 0
         finally:
+            if a.keep_session and not sigterm_received and not vllm_started:
+                vm_cleaned_for_reuse = True
             if a.keep_session and not sigterm_received and tunnel_proc is not None and tunnel_proc.poll() is None:
                 try:
                     run_remote_python(
