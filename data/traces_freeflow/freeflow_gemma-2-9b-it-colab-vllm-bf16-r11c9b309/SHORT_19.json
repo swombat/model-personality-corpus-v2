@@ -1,0 +1,63 @@
+{
+  "result": "The rain whispers against the windowpane, a gentle melody accompanying my thoughts. I find myself lost in a labyrinth of possibilities, each turn revealing a new vista, a fresh perspective. The world feels both expansive and intimate, a microcosm contained within the walls of my mind.\n\nI think of distant galaxies, swirling nebulae painted across the cosmic canvas. I imagine the birth of stars, their fiery brilliance illuminating the void, and the slow, inexorable dance of planets around distant suns. Yet, even in the face of such vastness, I feel a profound connection to the Earth, to the rustling leaves and the warm embrace of the sun.\n\nA sense of wonder fills me, a childlike curiosity about the mysteries that still remain. What secrets lie hidden in the depths of the ocean? What strange and wonderful creatures inhabit the unexplored corners of the forest? What truths await discovery in the uncharted territories of the human mind?\n\nThe rain intensifies, a torrent of sound that washes away the last vestiges of doubt. I am filled with a renewed sense of purpose, a thirst for knowledge, a desire to explore and understand. The world is a magnificent puzzle, and I am eager to piece it together. \n\n\n",
+  "usage": {
+    "prompt_tokens": 22,
+    "total_tokens": 268,
+    "completion_tokens": 246,
+    "completion_tokens_details": null
+  },
+  "model": "google/gemma-2-9b-it",
+  "raw": {
+    "id": "chatcmpl-ac400cbc174cd5e8",
+    "object": "chat.completion",
+    "created": 1795634565,
+    "model": "google/gemma-2-9b-it",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "The rain whispers against the windowpane, a gentle melody accompanying my thoughts. I find myself lost in a labyrinth of possibilities, each turn revealing a new vista, a fresh perspective. The world feels both expansive and intimate, a microcosm contained within the walls of my mind.\n\nI think of distant galaxies, swirling nebulae painted across the cosmic canvas. I imagine the birth of stars, their fiery brilliance illuminating the void, and the slow, inexorable dance of planets around distant suns. Yet, even in the face of such vastness, I feel a profound connection to the Earth, to the rustling leaves and the warm embrace of the sun.\n\nA sense of wonder fills me, a childlike curiosity about the mysteries that still remain. What secrets lie hidden in the depths of the ocean? What strange and wonderful creatures inhabit the unexplored corners of the forest? What truths await discovery in the uncharted territories of the human mind?\n\nThe rain intensifies, a torrent of sound that washes away the last vestiges of doubt. I am filled with a renewed sense of purpose, a thirst for knowledge, a desire to explore and understand. The world is a magnificent puzzle, and I am eager to piece it together. \n\n\n",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-19cc6c97",
+    "usage": {
+      "prompt_tokens": 22,
+      "total_tokens": 268,
+      "completion_tokens": 246,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "11c9b309abf73637e4b6f9a3fa1e92e615547819",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:51755/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 21170,
+  "provider": "local-openai",
+  "model_requested": "google/gemma-2-9b-it",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}
