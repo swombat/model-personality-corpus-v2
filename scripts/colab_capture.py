@@ -751,7 +751,12 @@ def cmd_run(a) -> int:
                 "        tmpl_probe['mistral_common_token_count'] = len(enc.tokens)\n"
                 "    except Exception as e:\n"
                 "        tmpl_probe['mistral_common_err'] = str(e)\n"
-                "return {'staged_path': str(p), 'weight_bytes': weight_bytes, 'has_safetensors': has_st, 'inspected_tensor_dtypes': sorted(dtypes), 'torch_dtype': cfg.get('torch_dtype'), 'max_position_embeddings': cfg.get('max_position_embeddings'), 'sliding_window': cfg.get('sliding_window'), 'generation_config': gen, 'template_probe': tmpl_probe}\n"
+                "layers = int(cfg.get('num_hidden_layers') or cfg.get('n_layer') or 0)\n"
+                "heads = int(cfg.get('num_attention_heads') or cfg.get('n_head') or 0)\n"
+                "kv_heads = int(cfg.get('num_key_value_heads') or (1 if cfg.get('multi_query') else cfg.get('n_head_kv')) or heads)\n"
+                "hdim = int(cfg.get('head_dim') or ((int(cfg.get('hidden_size') or 0) // heads) if heads else 0))\n"
+                "kv_bytes_per_tok = 2 * layers * kv_heads * hdim * 2\n"
+                "return {'staged_path': str(p), 'weight_bytes': weight_bytes, 'kv_bytes_per_tok': kv_bytes_per_tok, 'has_safetensors': has_st, 'inspected_tensor_dtypes': sorted(dtypes), 'torch_dtype': cfg.get('torch_dtype'), 'max_position_embeddings': cfg.get('max_position_embeddings'), 'sliding_window': cfg.get('sliding_window'), 'generation_config': gen, 'template_probe': tmpl_probe}\n"
             )
             extra_dl = {"HF_TOKEN": os.environ["HF_TOKEN"]} if os.environ.get("HF_TOKEN") else None
             ckpt_info = run_remote_python(ssh_base, dl_code, extra_env=extra_dl, step_label="snapshot_download")
@@ -776,15 +781,33 @@ def cmd_run(a) -> int:
                 "--port", "8000",
                 f"--api-key={token}",
             ]
-            if a.max_context:
-                serve_cmd += ["--max-model-len", str(a.max_context)]
-            if a.trust_remote_code:
-                serve_cmd.append("--trust-remote-code")
             vram_m = re.search(r"(\d+)\s*MiB", str(vm_info.get("gpu") or ""))
             vram_bytes = int(vram_m.group(1)) * 1024 * 1024 if vram_m else 0
             weight_b = int(ckpt_info.get("weight_bytes") or 0)
+            kv_bpt = int(ckpt_info.get("kv_bytes_per_tok") or 0)
+            eff_max_ctx = a.max_context
+            tight_kv = False
+            if vram_bytes > 0 and kv_bpt > 0:
+                avail_kv_bytes = int(0.95 * vram_bytes) - weight_b - int(1.6 * 1024**3)
+                max_kv_tokens = max(4096, avail_kv_bytes // kv_bpt) if avail_kv_bytes > 0 else 4096
+                if eff_max_ctx and eff_max_ctx * 2 > max_kv_tokens:
+                    tight_kv = True
+                    safe_cap = max(4096, (int(max_kv_tokens * 0.55) // 1024) * 1024)
+                    if safe_cap < eff_max_ctx:
+                        print(f"[kv_guard] Clamping max_context {eff_max_ctx} -> {safe_cap} (max_kv_tokens~{max_kv_tokens}, kv_bpt={kv_bpt})")
+                        eff_max_ctx = safe_cap
+                        ff_max = min(ff_max, max(512, eff_max_ctx - a.prompt_headroom))
+                        val_max = min(val_max, max(512, eff_max_ctx - a.prompt_headroom))
+                    max_safe_workers = max(4, min(int(a.workers), max_kv_tokens // 3072))
+                    if max_safe_workers < int(a.workers):
+                        print(f"[kv_guard] Clamping workers {a.workers} -> {max_safe_workers} (max_kv_tokens~{max_kv_tokens})")
+                        a.workers = max_safe_workers
+            if eff_max_ctx:
+                serve_cmd += ["--max-model-len", str(eff_max_ctx)]
+            if a.trust_remote_code:
+                serve_cmd.append("--trust-remote-code")
             is_phi3_mha = a.gpu.upper() == "L4" and ("phi-3" in a.model.lower())
-            if is_phi3_mha or (a.gpu.upper() == "L4" and weight_b >= 14_500_000_000) or (vram_bytes > 0 and weight_b >= int(0.60 * vram_bytes)):
+            if tight_kv or is_phi3_mha or (a.gpu.upper() == "L4" and weight_b >= 14_500_000_000) or (vram_bytes > 0 and weight_b >= int(0.60 * vram_bytes)):
                 serve_cmd += [
                     "--gpu-memory-utilization", "0.95",
                     "--max-num-seqs", str(max(16, int(a.workers) + 4)),
