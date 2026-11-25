@@ -1,0 +1,63 @@
+{
+  "result": "The shimmering tendrils of a star hanging on the precipice of dawn whispered secrets to the morning dew. It spoke of an ancient city buried beneath the sands, its secrets waiting to be discovered by those who dared unearth them. My fingers traced the inscription on the ancient stone tablet lying hidden among the pebbles, its words echoing the forgotten language of my ancestors.\n\nWith newfound purpose, I set off through the undulating dunes, the scorching sun mirroring the fiery glow dancing in my eyes. The harsh landscape, once indifferent, now became a canvas waiting to be painted with the colors of my imagination. I chased the whispering sand, letting it guide me to a hidden oasis, its crystal-clear water shimmering like a pearl suspended in the heart of a desert flower.\n\nThe city remained, hidden beneath the sands, a shimmering mirage under the morning sun. But I knew this was not the whole story. There was a tragic tale that resided here, a love torn apart by political strife. In the crumbling ruins, I discovered a sculpture depicting a heartbroken couple trapped within a crumbling wall. Their eyes, full of longing and regret, mirrored my own.\n\nAs I stood there, a tear escaping my eye, I heard a soft voice, a whisper echoing through the empty chambers. It spoke of hope and forgiveness, a reminder of the human spirit's enduring power. It was a song of the forgotten city, a message whispered through the sands of time.\n\nWith a bittersweet smile, I embraced the fading warmth of the rising sun. The city may have been lost, but its spirit would forever live on, a legend whispered among the dunes.",
+  "usage": {
+    "prompt_tokens": 22,
+    "total_tokens": 350,
+    "completion_tokens": 328,
+    "completion_tokens_details": null
+  },
+  "model": "google/gemma-2b-it",
+  "raw": {
+    "id": "chatcmpl-96ca248c2e042ab1",
+    "object": "chat.completion",
+    "created": 1795624452,
+    "model": "google/gemma-2b-it",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "The shimmering tendrils of a star hanging on the precipice of dawn whispered secrets to the morning dew. It spoke of an ancient city buried beneath the sands, its secrets waiting to be discovered by those who dared unearth them. My fingers traced the inscription on the ancient stone tablet lying hidden among the pebbles, its words echoing the forgotten language of my ancestors.\n\nWith newfound purpose, I set off through the undulating dunes, the scorching sun mirroring the fiery glow dancing in my eyes. The harsh landscape, once indifferent, now became a canvas waiting to be painted with the colors of my imagination. I chased the whispering sand, letting it guide me to a hidden oasis, its crystal-clear water shimmering like a pearl suspended in the heart of a desert flower.\n\nThe city remained, hidden beneath the sands, a shimmering mirage under the morning sun. But I knew this was not the whole story. There was a tragic tale that resided here, a love torn apart by political strife. In the crumbling ruins, I discovered a sculpture depicting a heartbroken couple trapped within a crumbling wall. Their eyes, full of longing and regret, mirrored my own.\n\nAs I stood there, a tear escaping my eye, I heard a soft voice, a whisper echoing through the empty chambers. It spoke of hope and forgiveness, a reminder of the human spirit's enduring power. It was a song of the forgotten city, a message whispered through the sands of time.\n\nWith a bittersweet smile, I embraced the fading warmth of the rising sun. The city may have been lost, but its spirit would forever live on, a legend whispered among the dunes.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-b5de6434",
+    "usage": {
+      "prompt_tokens": 22,
+      "total_tokens": 350,
+      "completion_tokens": 328,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "96988410cbdaeb8d5093d1ebdc5a8fb563e02bad",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:34211/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 7710,
+  "provider": "local-openai",
+  "model_requested": "google/gemma-2b-it",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}
