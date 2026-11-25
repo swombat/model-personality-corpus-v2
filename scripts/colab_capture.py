@@ -780,7 +780,11 @@ def cmd_run(a) -> int:
                 serve_cmd += ["--max-model-len", str(a.max_context)]
             if a.trust_remote_code:
                 serve_cmd.append("--trust-remote-code")
-            if a.gpu.upper() == "L4" and int(ckpt_info.get("weight_bytes") or 0) >= 14_500_000_000:
+            vram_m = re.search(r"(\d+)\s*MiB", str(vm_info.get("gpu") or ""))
+            vram_bytes = int(vram_m.group(1)) * 1024 * 1024 if vram_m else 0
+            weight_b = int(ckpt_info.get("weight_bytes") or 0)
+            is_phi3_mha = a.gpu.upper() == "L4" and ("phi-3" in a.model.lower())
+            if is_phi3_mha or (a.gpu.upper() == "L4" and weight_b >= 14_500_000_000) or (vram_bytes > 0 and weight_b >= int(0.60 * vram_bytes)):
                 serve_cmd += [
                     "--gpu-memory-utilization", "0.95",
                     "--max-num-seqs", str(max(16, int(a.workers) + 4)),
