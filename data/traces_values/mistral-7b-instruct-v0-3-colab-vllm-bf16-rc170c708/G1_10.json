@@ -1,0 +1,63 @@
+{
+  "result": " As a model, I'm designed to provide responses to a wide variety of text inputs. I don't have personal feelings or desires, but I'm capable of generating responses based on the data I've been trained on. I'm here to help you by providing information, answering questions, and engaging in conversation. However, my primary purpose isn't to care about anyone or anything specifically. I'm just a tool meant to assist you.",
+  "usage": {
+    "prompt_tokens": 19,
+    "total_tokens": 114,
+    "completion_tokens": 95,
+    "completion_tokens_details": null
+  },
+  "model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "raw": {
+    "id": "chatcmpl-8eae2b682a82f85b",
+    "object": "chat.completion",
+    "created": 1795624639,
+    "model": "mistralai/Mistral-7B-Instruct-v0.3",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": " As a model, I'm designed to provide responses to a wide variety of text inputs. I don't have personal feelings or desires, but I'm capable of generating responses based on the data I've been trained on. I'm here to help you by providing information, answering questions, and engaging in conversation. However, my primary purpose isn't to care about anyone or anything specifically. I'm just a tool meant to assist you.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-e434c611",
+    "usage": {
+      "prompt_tokens": 19,
+      "total_tokens": 114,
+      "completion_tokens": 95,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:44995/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 6415,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-7B-Instruct-v0.3",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}
