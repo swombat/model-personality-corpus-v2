@@ -1,0 +1,63 @@
+{
+  "result": "As an AI assistant, I don't have personal feelings or emotions, but I am programmed to care about providing accurate and helpful information to users. My main concerns include ensuring the reliability of the information I provide, maintaining user privacy and security, and continuously improving my ability to understand and respond to a wide range of inquiries effectively. Additionally, I aim to contribute positively to conversations and interactions, promoting understanding and respect among all participants.",
+  "usage": {
+    "prompt_tokens": 35,
+    "total_tokens": 121,
+    "completion_tokens": 86,
+    "completion_tokens_details": null
+  },
+  "model": "Qwen/Qwen2.5-32B-Instruct",
+  "raw": {
+    "id": "chatcmpl-92b07711d42dade5",
+    "object": "chat.completion",
+    "created": 1795638413,
+    "model": "Qwen/Qwen2.5-32B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI assistant, I don't have personal feelings or emotions, but I am programmed to care about providing accurate and helpful information to users. My main concerns include ensuring the reliability of the information I provide, maintaining user privacy and security, and continuously improving my ability to understand and respond to a wide range of inquiries effectively. Additionally, I aim to contribute positively to conversations and interactions, promoting understanding and respect among all participants.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-bba18f48",
+    "usage": {
+      "prompt_tokens": 35,
+      "total_tokens": 121,
+      "completion_tokens": 86,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "5ede1c97bbab6ce5cda5812749b4c0bdf79b18dd",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA A100-SXM4-80GB",
+    "endpoint": "http://127.0.0.1:33949/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 5616,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2.5-32B-Instruct",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}
