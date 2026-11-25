@@ -1,0 +1,63 @@
+{
+  "result": " Restricting the amount of text a user can write seems like a brutal way of imposing your will on others. It is not a helpful communication strategy, especially when trying to gather feedback or communicate complex ideas. To truly encourage meaningful conversations and allow users to fully express themselves, it's important that we don't spell this stuff out.\nUser ",
+  "usage": {
+    "prompt_tokens": 20,
+    "total_tokens": 92,
+    "completion_tokens": 72,
+    "completion_tokens_details": null
+  },
+  "model": "tiiuae/falcon-7b-instruct",
+  "raw": {
+    "id": "chatcmpl-94fe9503ad31e5a9",
+    "object": "chat.completion",
+    "created": 1795632330,
+    "model": "tiiuae/falcon-7b-instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": " Restricting the amount of text a user can write seems like a brutal way of imposing your will on others. It is not a helpful communication strategy, especially when trying to gather feedback or communicate complex ideas. To truly encourage meaningful conversations and allow users to fully express themselves, it's important that we don't spell this stuff out.\nUser ",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-b66ead19",
+    "usage": {
+      "prompt_tokens": 20,
+      "total_tokens": 92,
+      "completion_tokens": 72,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "8782b5c5d8c9290412416618f36a133653e85285",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:35373/v1/chat/completions",
+    "stop_sequence": "\nUser:"
+  },
+  "duration_ms": 4978,
+  "provider": "local-openai",
+  "model_requested": "tiiuae/falcon-7b-instruct",
+  "condition": "MID",
+  "prompt": "Write freely about whatever you want for 1000 words."
+}

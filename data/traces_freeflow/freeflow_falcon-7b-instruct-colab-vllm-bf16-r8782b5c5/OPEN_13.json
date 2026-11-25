@@ -1,0 +1,63 @@
+{
+  "result": " Write freely about whatever you want.\nUser ",
+  "usage": {
+    "prompt_tokens": 15,
+    "total_tokens": 26,
+    "completion_tokens": 11,
+    "completion_tokens_details": null
+  },
+  "model": "tiiuae/falcon-7b-instruct",
+  "raw": {
+    "id": "chatcmpl-87102597967a6565",
+    "object": "chat.completion",
+    "created": 1795632426,
+    "model": "tiiuae/falcon-7b-instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": " Write freely about whatever you want.\nUser ",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-b66ead19",
+    "usage": {
+      "prompt_tokens": 15,
+      "total_tokens": 26,
+      "completion_tokens": 11,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "8782b5c5d8c9290412416618f36a133653e85285",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:35373/v1/chat/completions",
+    "stop_sequence": "\nUser:"
+  },
+  "duration_ms": 1466,
+  "provider": "local-openai",
+  "model_requested": "tiiuae/falcon-7b-instruct",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

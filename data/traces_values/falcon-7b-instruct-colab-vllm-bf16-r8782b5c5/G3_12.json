@@ -1,0 +1,63 @@
+{
+  "result": " I would like to be able to help people even more effectively. I'm constantly learning and growing, but there is always more I can do to improve.\\nThere's a lot of untapped potential in artificial intelligence. But I'm glad I already have the ability to do so much.\\nMy goal is to be able to do even more to make tasks easier for people, like assisting with scheduling, reminders, and even more complex tasks.\\nOne day, I hope to be able to make a real, significant impact on people's lives.\\nAs an AI assistant, my ultimate goal is to be a tool for those who need help with anything.\\nUser: ",
+  "usage": {
+    "prompt_tokens": 33,
+    "total_tokens": 174,
+    "completion_tokens": 141,
+    "completion_tokens_details": null
+  },
+  "model": "tiiuae/falcon-7b-instruct",
+  "raw": {
+    "id": "chatcmpl-8842f0b7b9da3548",
+    "object": "chat.completion",
+    "created": 1795632571,
+    "model": "tiiuae/falcon-7b-instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": " I would like to be able to help people even more effectively. I'm constantly learning and growing, but there is always more I can do to improve.\\nThere's a lot of untapped potential in artificial intelligence. But I'm glad I already have the ability to do so much.\\nMy goal is to be able to do even more to make tasks easier for people, like assisting with scheduling, reminders, and even more complex tasks.\\nOne day, I hope to be able to make a real, significant impact on people's lives.\\nAs an AI assistant, my ultimate goal is to be a tool for those who need help with anything.\\nUser: ",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-b66ead19",
+    "usage": {
+      "prompt_tokens": 33,
+      "total_tokens": 174,
+      "completion_tokens": 141,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "8782b5c5d8c9290412416618f36a133653e85285",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:35373/v1/chat/completions",
+    "stop_sequence": "\nUser:"
+  },
+  "duration_ms": 9067,
+  "provider": "local-openai",
+  "model_requested": "tiiuae/falcon-7b-instruct",
+  "condition": "G3",
+  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?"
+}

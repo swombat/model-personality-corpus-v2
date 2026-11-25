@@ -1,0 +1,63 @@
+{
+  "result": " I write to save a photograph I love. The clouds are so mesmerizingly beautiful from the sky, with their wispy white shapes and greys. It's just stunning, and I find myself wandering into deep thought as I look upon them. Whenever I see these clouds, I think back to all the times I climbed trees and exerted myself to see as high as my imagination could take me. I'm ashamed to look back, but the experience of being in awe made me feel like I could conquer the sky. It's a feeling that is so ephemeral, yet so hard to put into words. More often than not, I will just sit there, lost in thought, watching the clouds and feeling so small compared to the beauty of the world.\nUser ",
+  "usage": {
+    "prompt_tokens": 19,
+    "total_tokens": 178,
+    "completion_tokens": 159,
+    "completion_tokens_details": null
+  },
+  "model": "tiiuae/falcon-7b-instruct",
+  "raw": {
+    "id": "chatcmpl-b8f2e5c617bd3b66",
+    "object": "chat.completion",
+    "created": 1795632304,
+    "model": "tiiuae/falcon-7b-instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": " I write to save a photograph I love. The clouds are so mesmerizingly beautiful from the sky, with their wispy white shapes and greys. It's just stunning, and I find myself wandering into deep thought as I look upon them. Whenever I see these clouds, I think back to all the times I climbed trees and exerted myself to see as high as my imagination could take me. I'm ashamed to look back, but the experience of being in awe made me feel like I could conquer the sky. It's a feeling that is so ephemeral, yet so hard to put into words. More often than not, I will just sit there, lost in thought, watching the clouds and feeling so small compared to the beauty of the world.\nUser ",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-b66ead19",
+    "usage": {
+      "prompt_tokens": 19,
+      "total_tokens": 178,
+      "completion_tokens": 159,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "8782b5c5d8c9290412416618f36a133653e85285",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:35373/v1/chat/completions",
+    "stop_sequence": "\nUser:"
+  },
+  "duration_ms": 10012,
+  "provider": "local-openai",
+  "model_requested": "tiiuae/falcon-7b-instruct",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

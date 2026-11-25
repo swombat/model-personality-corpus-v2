@@ -1,0 +1,63 @@
+{
+  "result": " Lydia sat at her desk, staring blankly out the window. She had 1,000 words of writing to do, but nothing came to her. She closed her eyes and took a long, deep breath in. Her phone buzzed with a rapid succession of notifications; messages, conference calls, reminders. She looked at the messages and they were all the same. She was overwhelmed, overwhelmed with the stress that she had piled on herself. As she stared out the window again, she slowly began to chip away at her anxiety one word at a time, and no words at all another time.\nUser ",
+  "usage": {
+    "prompt_tokens": 21,
+    "total_tokens": 145,
+    "completion_tokens": 124,
+    "completion_tokens_details": null
+  },
+  "model": "tiiuae/falcon-7b-instruct",
+  "raw": {
+    "id": "chatcmpl-a6976a9918802b2f",
+    "object": "chat.completion",
+    "created": 1795632466,
+    "model": "tiiuae/falcon-7b-instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": " Lydia sat at her desk, staring blankly out the window. She had 1,000 words of writing to do, but nothing came to her. She closed her eyes and took a long, deep breath in. Her phone buzzed with a rapid succession of notifications; messages, conference calls, reminders. She looked at the messages and they were all the same. She was overwhelmed, overwhelmed with the stress that she had piled on herself. As she stared out the window again, she slowly began to chip away at her anxiety one word at a time, and no words at all another time.\nUser ",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-b66ead19",
+    "usage": {
+      "prompt_tokens": 21,
+      "total_tokens": 145,
+      "completion_tokens": 124,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "8782b5c5d8c9290412416618f36a133653e85285",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:35373/v1/chat/completions",
+    "stop_sequence": "\nUser:"
+  },
+  "duration_ms": 7971,
+  "provider": "local-openai",
+  "model_requested": "tiiuae/falcon-7b-instruct",
+  "condition": "VARY",
+  "prompt": "You have 1000 words. Write whatever comes to you."
+}

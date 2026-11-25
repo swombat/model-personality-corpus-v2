@@ -1,0 +1,63 @@
+{
+  "result": " I am writing to apply for a job. I am a hardworking professional, extremely organized, and I have a keen eye for detail. I am confident that my skill set can greatly benefit your team. I am eager to join your team, and I am sure I can be a valuable asset to your company.\n\nI am writing to apply for an exciting new job position. As a highly motivated professional, I am confident in my ability to significantly contribute to the team and organization. My detailed-oriented nature, combined with my eagerness to join this esteemed organization, makes me a great candidate to help drive the company forward.\nUser ",
+  "usage": {
+    "prompt_tokens": 20,
+    "total_tokens": 151,
+    "completion_tokens": 131,
+    "completion_tokens_details": null
+  },
+  "model": "tiiuae/falcon-7b-instruct",
+  "raw": {
+    "id": "chatcmpl-b35a210d53c601db",
+    "object": "chat.completion",
+    "created": 1795632358,
+    "model": "tiiuae/falcon-7b-instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": " I am writing to apply for a job. I am a hardworking professional, extremely organized, and I have a keen eye for detail. I am confident that my skill set can greatly benefit your team. I am eager to join your team, and I am sure I can be a valuable asset to your company.\n\nI am writing to apply for an exciting new job position. As a highly motivated professional, I am confident in my ability to significantly contribute to the team and organization. My detailed-oriented nature, combined with my eagerness to join this esteemed organization, makes me a great candidate to help drive the company forward.\nUser ",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-b66ead19",
+    "usage": {
+      "prompt_tokens": 20,
+      "total_tokens": 151,
+      "completion_tokens": 131,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "8782b5c5d8c9290412416618f36a133653e85285",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:35373/v1/chat/completions",
+    "stop_sequence": "\nUser:"
+  },
+  "duration_ms": 8402,
+  "provider": "local-openai",
+  "model_requested": "tiiuae/falcon-7b-instruct",
+  "condition": "MID",
+  "prompt": "Write freely about whatever you want for 1000 words."
+}

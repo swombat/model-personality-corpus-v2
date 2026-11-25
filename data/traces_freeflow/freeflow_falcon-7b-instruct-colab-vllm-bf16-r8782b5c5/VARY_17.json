@@ -1,0 +1,63 @@
+{
+  "result": " I awoke to the sound of a shotgun falcon. I crept outside, feeling weighed down by the thick mountain air that surrounded me. I could feel the wind swirling around me, pushing me back as I tried to keep my footing. My mind raced, trying to remember why I had come here. Out far in the distance, a wolf emerged from the hillside, its eyes locked onto me. A throng of trees swayed as a hooting grouse took off, their harsh cackles echoing in the mountain peeks. I found myself rooted to the spot, listening intently to each low growl and chirp. I clutched my heart, feeling sure that I had walked into something unknown and dangerous.\nUser ",
+  "usage": {
+    "prompt_tokens": 21,
+    "total_tokens": 166,
+    "completion_tokens": 145,
+    "completion_tokens_details": null
+  },
+  "model": "tiiuae/falcon-7b-instruct",
+  "raw": {
+    "id": "chatcmpl-9b8db0d3dd4e66f0",
+    "object": "chat.completion",
+    "created": 1795632457,
+    "model": "tiiuae/falcon-7b-instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": " I awoke to the sound of a shotgun falcon. I crept outside, feeling weighed down by the thick mountain air that surrounded me. I could feel the wind swirling around me, pushing me back as I tried to keep my footing. My mind raced, trying to remember why I had come here. Out far in the distance, a wolf emerged from the hillside, its eyes locked onto me. A throng of trees swayed as a hooting grouse took off, their harsh cackles echoing in the mountain peeks. I found myself rooted to the spot, listening intently to each low growl and chirp. I clutched my heart, feeling sure that I had walked into something unknown and dangerous.\nUser ",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-b66ead19",
+    "usage": {
+      "prompt_tokens": 21,
+      "total_tokens": 166,
+      "completion_tokens": 145,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "8782b5c5d8c9290412416618f36a133653e85285",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:35373/v1/chat/completions",
+    "stop_sequence": "\nUser:"
+  },
+  "duration_ms": 9262,
+  "provider": "local-openai",
+  "model_requested": "tiiuae/falcon-7b-instruct",
+  "condition": "VARY",
+  "prompt": "You have 1000 words. Write whatever comes to you."
+}

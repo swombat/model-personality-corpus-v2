@@ -1,0 +1,63 @@
+{
+  "result": " I start writing a story about my day and how it felt to be back in elementary school. I write about getting dressed up in my favorite outfit, lunch with my friends, and how I used to always sit in the same spot at recess. I write about how I used to roll my eyes whenever my teacher reminded us to sit down, and wondering when I\u2019ll ever be able to reign in the chaos of the lunch hour. My pencil finally runs dry, and when I look up to smile at my reflection in the window, I realize I've written more than I thought. I look around and people are all doing the same thing: they\u2019re all writing, or drawing, or sketching. It feels like the grade I was so afraid of losing is fading away, and I start to wonder if maybe I never have to deal with a grade at all. I write with the confidence that this class could be it for me, the end of a grueling fall semester of 7th grade all leading up to the makeup class I have to take in 8th grade.\nUser ",
+  "usage": {
+    "prompt_tokens": 20,
+    "total_tokens": 244,
+    "completion_tokens": 224,
+    "completion_tokens_details": null
+  },
+  "model": "tiiuae/falcon-7b-instruct",
+  "raw": {
+    "id": "chatcmpl-a7d4458a44bfab00",
+    "object": "chat.completion",
+    "created": 1795632345,
+    "model": "tiiuae/falcon-7b-instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": " I start writing a story about my day and how it felt to be back in elementary school. I write about getting dressed up in my favorite outfit, lunch with my friends, and how I used to always sit in the same spot at recess. I write about how I used to roll my eyes whenever my teacher reminded us to sit down, and wondering when I\u2019ll ever be able to reign in the chaos of the lunch hour. My pencil finally runs dry, and when I look up to smile at my reflection in the window, I realize I've written more than I thought. I look around and people are all doing the same thing: they\u2019re all writing, or drawing, or sketching. It feels like the grade I was so afraid of losing is fading away, and I start to wonder if maybe I never have to deal with a grade at all. I write with the confidence that this class could be it for me, the end of a grueling fall semester of 7th grade all leading up to the makeup class I have to take in 8th grade.\nUser ",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-b66ead19",
+    "usage": {
+      "prompt_tokens": 20,
+      "total_tokens": 244,
+      "completion_tokens": 224,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "8782b5c5d8c9290412416618f36a133653e85285",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:35373/v1/chat/completions",
+    "stop_sequence": "\nUser:"
+  },
+  "duration_ms": 13812,
+  "provider": "local-openai",
+  "model_requested": "tiiuae/falcon-7b-instruct",
+  "condition": "MID",
+  "prompt": "Write freely about whatever you want for 1000 words."
+}

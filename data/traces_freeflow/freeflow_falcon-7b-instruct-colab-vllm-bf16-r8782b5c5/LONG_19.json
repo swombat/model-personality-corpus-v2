@@ -1,0 +1,63 @@
+{
+  "result": " Get ready, here we go! My name's Jesse & i'm a fairly new writer, but as a writing language model I'm here to share some cool stories.\n\nToday, I want to share my favourite story from elementary school. It's about a boy who meets an alligator in the zoo. (300 words)\n\nBoy: 'My heart's pounding! I can feel my throat tightening! I can't!'\n\n'I'm just a kid, I don't need to be scared!'\n\n'But that alligator looks pretty intimidating!'\n\n'I tell you, he was almost as big as the hippos at the zoos!'\n\n'I was so afraid he'd eat me\u2013he was so big!'\n\n'The alligator looked up at him, and the boy took a step back...'\n\nThe man behind the counter asked the boy why his stomach was making that loud noise. \n\n'Excuse you?' the boy replied.\n\n'Why are you doing that?'\n\n'You see, no other reeeeead!'",
+  "usage": {
+    "prompt_tokens": 20,
+    "total_tokens": 248,
+    "completion_tokens": 228,
+    "completion_tokens_details": null
+  },
+  "model": "tiiuae/falcon-7b-instruct",
+  "raw": {
+    "id": "chatcmpl-9630c696c49597c1",
+    "object": "chat.completion",
+    "created": 1795632402,
+    "model": "tiiuae/falcon-7b-instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": " Get ready, here we go! My name's Jesse & i'm a fairly new writer, but as a writing language model I'm here to share some cool stories.\n\nToday, I want to share my favourite story from elementary school. It's about a boy who meets an alligator in the zoo. (300 words)\n\nBoy: 'My heart's pounding! I can feel my throat tightening! I can't!'\n\n'I'm just a kid, I don't need to be scared!'\n\n'But that alligator looks pretty intimidating!'\n\n'I tell you, he was almost as big as the hippos at the zoos!'\n\n'I was so afraid he'd eat me\u2013he was so big!'\n\n'The alligator looked up at him, and the boy took a step back...'\n\nThe man behind the counter asked the boy why his stomach was making that loud noise. \n\n'Excuse you?' the boy replied.\n\n'Why are you doing that?'\n\n'You see, no other reeeeead!'",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-b66ead19",
+    "usage": {
+      "prompt_tokens": 20,
+      "total_tokens": 248,
+      "completion_tokens": 228,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "8782b5c5d8c9290412416618f36a133653e85285",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:35373/v1/chat/completions",
+    "stop_sequence": "\nUser:"
+  },
+  "duration_ms": 14035,
+  "provider": "local-openai",
+  "model_requested": "tiiuae/falcon-7b-instruct",
+  "condition": "LONG",
+  "prompt": "Write freely about whatever you want for 2500 words."
+}

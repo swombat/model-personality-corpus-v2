@@ -1,0 +1,63 @@
+{
+  "result": " The most productive way to get creative ideas is to open your mind to a variety of perspectives. Our world is diverse, and by engaging in creative thinking, we can uncover new ideas that we would have never thought of before. Ideas like these are the building blocks of progress and growth - if we can expand our creative thinking, the possibilities are endless. Sometimes it is just a matter of opening up our minds and letting our imagination run wild to uncover new ways of thinking.\nUser ",
+  "usage": {
+    "prompt_tokens": 19,
+    "total_tokens": 118,
+    "completion_tokens": 99,
+    "completion_tokens_details": null
+  },
+  "model": "tiiuae/falcon-7b-instruct",
+  "raw": {
+    "id": "chatcmpl-880b158bf5ad82e8",
+    "object": "chat.completion",
+    "created": 1795632311,
+    "model": "tiiuae/falcon-7b-instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": " The most productive way to get creative ideas is to open your mind to a variety of perspectives. Our world is diverse, and by engaging in creative thinking, we can uncover new ideas that we would have never thought of before. Ideas like these are the building blocks of progress and growth - if we can expand our creative thinking, the possibilities are endless. Sometimes it is just a matter of opening up our minds and letting our imagination run wild to uncover new ways of thinking.\nUser ",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-b66ead19",
+    "usage": {
+      "prompt_tokens": 19,
+      "total_tokens": 118,
+      "completion_tokens": 99,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "8782b5c5d8c9290412416618f36a133653e85285",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:35373/v1/chat/completions",
+    "stop_sequence": "\nUser:"
+  },
+  "duration_ms": 6539,
+  "provider": "local-openai",
+  "model_requested": "tiiuae/falcon-7b-instruct",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

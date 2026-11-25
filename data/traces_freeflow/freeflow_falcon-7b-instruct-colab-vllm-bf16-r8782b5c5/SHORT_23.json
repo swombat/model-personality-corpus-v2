@@ -1,0 +1,63 @@
+{
+  "result": " Today is a good day to do a little work and get a little exercise. I took some time to go for a bike ride on Seattle\u2019s shoreline, an easy ride since it was mostly downhill. The weather was perfect for it too, some sun with a cool breeze.\n\nI also decided to do a bit of painting today, and was able to get two good canvases done. I worked on one for about an hour, the nearer painting for about an hour longer than that, although I am a bit faster an better at it than I used to be. It began with a landscape and evolved into sea and sky with a bit of mountain in the background. I think it turned out very well.\n\nBefore I finished, I walked around the marina and watched some of the boaters pulling in and out of the harbor. That inspired me to get some more colorful paintings of boats and boats and boats:\n\nI am growing to love Seattle. She is a beautiful city in the summertime.\nUser ",
+  "usage": {
+    "prompt_tokens": 19,
+    "total_tokens": 227,
+    "completion_tokens": 208,
+    "completion_tokens_details": null
+  },
+  "model": "tiiuae/falcon-7b-instruct",
+  "raw": {
+    "id": "chatcmpl-b59a40b51ed4a019",
+    "object": "chat.completion",
+    "created": 1795632324,
+    "model": "tiiuae/falcon-7b-instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": " Today is a good day to do a little work and get a little exercise. I took some time to go for a bike ride on Seattle\u2019s shoreline, an easy ride since it was mostly downhill. The weather was perfect for it too, some sun with a cool breeze.\n\nI also decided to do a bit of painting today, and was able to get two good canvases done. I worked on one for about an hour, the nearer painting for about an hour longer than that, although I am a bit faster an better at it than I used to be. It began with a landscape and evolved into sea and sky with a bit of mountain in the background. I think it turned out very well.\n\nBefore I finished, I walked around the marina and watched some of the boaters pulling in and out of the harbor. That inspired me to get some more colorful paintings of boats and boats and boats:\n\nI am growing to love Seattle. She is a beautiful city in the summertime.\nUser ",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-b66ead19",
+    "usage": {
+      "prompt_tokens": 19,
+      "total_tokens": 227,
+      "completion_tokens": 208,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "8782b5c5d8c9290412416618f36a133653e85285",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:35373/v1/chat/completions",
+    "stop_sequence": "\nUser:"
+  },
+  "duration_ms": 12855,
+  "provider": "local-openai",
+  "model_requested": "tiiuae/falcon-7b-instruct",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

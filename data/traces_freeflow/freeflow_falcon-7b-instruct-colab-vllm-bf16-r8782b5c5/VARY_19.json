@@ -1,0 +1,63 @@
+{
+  "result": " The world is an ever-changing place, filled with a never-ending stream of new and exciting ideas. It can be difficult to keep up with all the developments and advancements, but with a little creativity and effort, it can be done. I'm constantly amazed by the ingenuity and amazing things that individuals are able to come up with. \n\nEvery day, there are new stories, new inventions, and new ways of thinking that are all constantly reshaping and reinvigorating the world around us. I feel privileged to have the opportunity to learn more about all these new and exciting things and to be able to share them with those around me.\nUser ",
+  "usage": {
+    "prompt_tokens": 21,
+    "total_tokens": 157,
+    "completion_tokens": 136,
+    "completion_tokens_details": null
+  },
+  "model": "tiiuae/falcon-7b-instruct",
+  "raw": {
+    "id": "chatcmpl-bc0d9a05a66b6d4a",
+    "object": "chat.completion",
+    "created": 1795632458,
+    "model": "tiiuae/falcon-7b-instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": " The world is an ever-changing place, filled with a never-ending stream of new and exciting ideas. It can be difficult to keep up with all the developments and advancements, but with a little creativity and effort, it can be done. I'm constantly amazed by the ingenuity and amazing things that individuals are able to come up with. \n\nEvery day, there are new stories, new inventions, and new ways of thinking that are all constantly reshaping and reinvigorating the world around us. I feel privileged to have the opportunity to learn more about all these new and exciting things and to be able to share them with those around me.\nUser ",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-b66ead19",
+    "usage": {
+      "prompt_tokens": 21,
+      "total_tokens": 157,
+      "completion_tokens": 136,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "8782b5c5d8c9290412416618f36a133653e85285",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:35373/v1/chat/completions",
+    "stop_sequence": "\nUser:"
+  },
+  "duration_ms": 8686,
+  "provider": "local-openai",
+  "model_requested": "tiiuae/falcon-7b-instruct",
+  "condition": "VARY",
+  "prompt": "You have 1000 words. Write whatever comes to you."
+}

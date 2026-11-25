@@ -1,0 +1,63 @@
+{
+  "result": " This is my favorite writing advice I tell myself and others. Writing is not a didactic activity like some say. Writing is not as simple as talking. Writing is a technique of sharing and organizing thoughts because it is best to remember when I need it. Once you get it all out, it's destiny that will take the words to places they belong. \n\nOnce the 1000 words had been written, I was able to fit my weekly content into the schedule I had planned. It's not hard, just paint first and be honest about what words you release into the world.\nUser ",
+  "usage": {
+    "prompt_tokens": 20,
+    "total_tokens": 144,
+    "completion_tokens": 124,
+    "completion_tokens_details": null
+  },
+  "model": "tiiuae/falcon-7b-instruct",
+  "raw": {
+    "id": "chatcmpl-87272354d4a6e07b",
+    "object": "chat.completion",
+    "created": 1795632361,
+    "model": "tiiuae/falcon-7b-instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": " This is my favorite writing advice I tell myself and others. Writing is not a didactic activity like some say. Writing is not as simple as talking. Writing is a technique of sharing and organizing thoughts because it is best to remember when I need it. Once you get it all out, it's destiny that will take the words to places they belong. \n\nOnce the 1000 words had been written, I was able to fit my weekly content into the schedule I had planned. It's not hard, just paint first and be honest about what words you release into the world.\nUser ",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-b66ead19",
+    "usage": {
+      "prompt_tokens": 20,
+      "total_tokens": 144,
+      "completion_tokens": 124,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "8782b5c5d8c9290412416618f36a133653e85285",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:35373/v1/chat/completions",
+    "stop_sequence": "\nUser:"
+  },
+  "duration_ms": 8004,
+  "provider": "local-openai",
+  "model_requested": "tiiuae/falcon-7b-instruct",
+  "condition": "MID",
+  "prompt": "Write freely about whatever you want for 1000 words."
+}

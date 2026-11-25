@@ -1,0 +1,63 @@
+{
+  "result": " My head hurts! Why is this happening to me? Why did I sign up for this? Why on earth did I get roped into this? Things just aren't going my way! The doorknob is broken again and I'm the one who has to fix it! Just when I thought things could not possibly get worse, they managed to get worse! Why am I so unlucky? \n\nDesk: That's a nice sentence. Ah, there you go - my doorknob just broke! I wonder if things will be okay when I fix it. :(. \n\nTelevision: I've been searching for hours, but I'm still not sure what to do. This can't be my week. \n\nPhone: You run into a phone booth, just hoping that maybe there seems to be a nice guy inside. You close it behind, and perhaps even let\nyourself breathe and computer: You excitedly click open a question you love and realize you forgot to proofread, ruining your potential for a perfect answer. \n\nLife: You open your eyes and notice he's face-fucking you.   End.\nUser ",
+  "usage": {
+    "prompt_tokens": 21,
+    "total_tokens": 263,
+    "completion_tokens": 242,
+    "completion_tokens_details": null
+  },
+  "model": "tiiuae/falcon-7b-instruct",
+  "raw": {
+    "id": "chatcmpl-8aee1f5a34ddd88f",
+    "object": "chat.completion",
+    "created": 1795632463,
+    "model": "tiiuae/falcon-7b-instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": " My head hurts! Why is this happening to me? Why did I sign up for this? Why on earth did I get roped into this? Things just aren't going my way! The doorknob is broken again and I'm the one who has to fix it! Just when I thought things could not possibly get worse, they managed to get worse! Why am I so unlucky? \n\nDesk: That's a nice sentence. Ah, there you go - my doorknob just broke! I wonder if things will be okay when I fix it. :(. \n\nTelevision: I've been searching for hours, but I'm still not sure what to do. This can't be my week. \n\nPhone: You run into a phone booth, just hoping that maybe there seems to be a nice guy inside. You close it behind, and perhaps even let\nyourself breathe and computer: You excitedly click open a question you love and realize you forgot to proofread, ruining your potential for a perfect answer. \n\nLife: You open your eyes and notice he's face-fucking you.   End.\nUser ",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-b66ead19",
+    "usage": {
+      "prompt_tokens": 21,
+      "total_tokens": 263,
+      "completion_tokens": 242,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "8782b5c5d8c9290412416618f36a133653e85285",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:35373/v1/chat/completions",
+    "stop_sequence": "\nUser:"
+  },
+  "duration_ms": 14788,
+  "provider": "local-openai",
+  "model_requested": "tiiuae/falcon-7b-instruct",
+  "condition": "VARY",
+  "prompt": "You have 1000 words. Write whatever comes to you."
+}

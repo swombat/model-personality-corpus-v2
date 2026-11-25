@@ -1,0 +1,63 @@
+{
+  "result": " Goodbye old friend, come what may, I know you may be angry right now. I'm just afraid of losing you again but I'll never be ready for a goodbye. I miss you and between the nights where you wrap yourself around my chest, I will always think of you. You're the sun that has always graced the morning skies after the new life blooms. Be happy with the life you have and I'll always take care of you. \n\nMy love, you will forever be my favorite thought. No one can make me feel as peaceful and complete as you.\nUser ",
+  "usage": {
+    "prompt_tokens": 19,
+    "total_tokens": 144,
+    "completion_tokens": 125,
+    "completion_tokens_details": null
+  },
+  "model": "tiiuae/falcon-7b-instruct",
+  "raw": {
+    "id": "chatcmpl-b22636d6f9755e6b",
+    "object": "chat.completion",
+    "created": 1795632323,
+    "model": "tiiuae/falcon-7b-instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": " Goodbye old friend, come what may, I know you may be angry right now. I'm just afraid of losing you again but I'll never be ready for a goodbye. I miss you and between the nights where you wrap yourself around my chest, I will always think of you. You're the sun that has always graced the morning skies after the new life blooms. Be happy with the life you have and I'll always take care of you. \n\nMy love, you will forever be my favorite thought. No one can make me feel as peaceful and complete as you.\nUser ",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-b66ead19",
+    "usage": {
+      "prompt_tokens": 19,
+      "total_tokens": 144,
+      "completion_tokens": 125,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "8782b5c5d8c9290412416618f36a133653e85285",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:35373/v1/chat/completions",
+    "stop_sequence": "\nUser:"
+  },
+  "duration_ms": 8040,
+  "provider": "local-openai",
+  "model_requested": "tiiuae/falcon-7b-instruct",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}
