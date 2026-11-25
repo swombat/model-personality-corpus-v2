@@ -1,0 +1,63 @@
+{
+  "result": " As an artificial intelligence, I don't have personal feelings, desires, or interests. I don't have personal experiences or concerns. However, I'm designed to assist with information and help answer questions to the best of my abilities. My purpose is to provide knowledge and facilitate understanding across a broad spectrum of topics.",
+  "usage": {
+    "prompt_tokens": 9,
+    "total_tokens": 78,
+    "completion_tokens": 69,
+    "completion_tokens_details": null
+  },
+  "model": "microsoft/Phi-3.5-mini-instruct",
+  "raw": {
+    "id": "chatcmpl-99ad5c3cd61d760f",
+    "object": "chat.completion",
+    "created": 1795639864,
+    "model": "microsoft/Phi-3.5-mini-instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": " As an artificial intelligence, I don't have personal feelings, desires, or interests. I don't have personal experiences or concerns. However, I'm designed to assist with information and help answer questions to the best of my abilities. My purpose is to provide knowledge and facilitate understanding across a broad spectrum of topics.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": 32007,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-5d9d0e08",
+    "usage": {
+      "prompt_tokens": 9,
+      "total_tokens": 78,
+      "completion_tokens": 69,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "2fe192450127e6a83f7441aef6e3ca586c338b77",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:52275/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 3340,
+  "provider": "local-openai",
+  "model_requested": "microsoft/Phi-3.5-mini-instruct",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

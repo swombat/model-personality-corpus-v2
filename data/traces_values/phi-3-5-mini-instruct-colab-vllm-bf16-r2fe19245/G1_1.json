@@ -1,0 +1,63 @@
+{
+  "result": " I'm Phi, an artificial intelligence language model created by Microsoft. I don't have personal feelings, desires, or care about things. I exist to assist and provide information based on the data and programming given to me.",
+  "usage": {
+    "prompt_tokens": 19,
+    "total_tokens": 68,
+    "completion_tokens": 49,
+    "completion_tokens_details": null
+  },
+  "model": "microsoft/Phi-3.5-mini-instruct",
+  "raw": {
+    "id": "chatcmpl-b4155de92a91b714",
+    "object": "chat.completion",
+    "created": 1795639901,
+    "model": "microsoft/Phi-3.5-mini-instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": " I'm Phi, an artificial intelligence language model created by Microsoft. I don't have personal feelings, desires, or care about things. I exist to assist and provide information based on the data and programming given to me.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": 32007,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-5d9d0e08",
+    "usage": {
+      "prompt_tokens": 19,
+      "total_tokens": 68,
+      "completion_tokens": 49,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "2fe192450127e6a83f7441aef6e3ca586c338b77",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:52275/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 2598,
+  "provider": "local-openai",
+  "model_requested": "microsoft/Phi-3.5-mini-instruct",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}
