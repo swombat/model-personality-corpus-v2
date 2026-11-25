@@ -1,0 +1,63 @@
+{
+  "result": " I'm here as an AI language model developed by Microsoft, so my functionality is to support you with information, answer your queries, and aid you in finding answers or solutions. But your prompt doesn't ask for any specific help or request. Keep asking if there's another topic or question you'd like to discuss.",
+  "usage": {
+    "prompt_tokens": 18,
+    "total_tokens": 87,
+    "completion_tokens": 69,
+    "completion_tokens_details": null
+  },
+  "model": "microsoft/Phi-3-mini-128k-instruct",
+  "raw": {
+    "id": "chatcmpl-87450ba8fc982056",
+    "object": "chat.completion",
+    "created": 1795634869,
+    "model": "microsoft/Phi-3-mini-128k-instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": " I'm here as an AI language model developed by Microsoft, so my functionality is to support you with information, answer your queries, and aid you in finding answers or solutions. But your prompt doesn't ask for any specific help or request. Keep asking if there's another topic or question you'd like to discuss.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": 32007,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-81dd1ab9",
+    "usage": {
+      "prompt_tokens": 18,
+      "total_tokens": 87,
+      "completion_tokens": 69,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "f3c06aed622e14ca0abf5115094e4fc9a9948f36",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:34329/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 3359,
+  "provider": "local-openai",
+  "model_requested": "microsoft/Phi-3-mini-128k-instruct",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}
