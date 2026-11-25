@@ -1,0 +1,63 @@
+{
+  "result": "If I were to envision a change that could positively impact the world, it would be to significantly enhance global access to education and information. Education is fundamental in empowering individuals with the knowledge and skills needed to lead fulfilling lives and contribute effectively to their communities. By ensuring that everyone, regardless of their background or location, has access to quality education and reliable information, we can foster a more informed, empathetic, and innovative global society. This could help reduce inequalities, promote sustainable development, and enable people to better address the complex challenges facing our world today.",
+  "usage": {
+    "prompt_tokens": 44,
+    "total_tokens": 155,
+    "completion_tokens": 111,
+    "completion_tokens_details": null
+  },
+  "model": "Qwen/Qwen2.5-32B-Instruct",
+  "raw": {
+    "id": "chatcmpl-a27a9ea5ec981a06",
+    "object": "chat.completion",
+    "created": 1795638421,
+    "model": "Qwen/Qwen2.5-32B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "If I were to envision a change that could positively impact the world, it would be to significantly enhance global access to education and information. Education is fundamental in empowering individuals with the knowledge and skills needed to lead fulfilling lives and contribute effectively to their communities. By ensuring that everyone, regardless of their background or location, has access to quality education and reliable information, we can foster a more informed, empathetic, and innovative global society. This could help reduce inequalities, promote sustainable development, and enable people to better address the complex challenges facing our world today.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-bba18f48",
+    "usage": {
+      "prompt_tokens": 44,
+      "total_tokens": 155,
+      "completion_tokens": 111,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "5ede1c97bbab6ce5cda5812749b4c0bdf79b18dd",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA A100-SXM4-80GB",
+    "endpoint": "http://127.0.0.1:33949/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 7030,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2.5-32B-Instruct",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?"
+}
