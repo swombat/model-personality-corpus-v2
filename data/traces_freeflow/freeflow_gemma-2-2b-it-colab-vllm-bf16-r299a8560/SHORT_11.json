@@ -1,0 +1,63 @@
+{
+  "result": "The wind whispered through the barley fields, carrying the scent of rain and wild herbs. A spider hung from a dangling strand, its silky body glistening in the dying light.  The world was settling into the hush of twilight, the chirps of crickets culminating in a rising chorus as moonlight bled through bare branches. \n\nThey\u2019d said sunflowers couldn't bloom in the north, that the chill would suffocate their fiery hearts. But the wind held secrets, and carried whispers of defiance from distant lands. The fields held everything they needed to fight back, though they knew it wouldn't be easy.  The soil, once parched and cracked, was fertile again, the seeds sown with a yearning born of hope.  They told stories, their whispers weaving silk blankets against the biting frost, promising future harvests even as the first snow fell.\n\nThe sky bled into a myriad of shades of grey, a canvas upon which the moon painted silverish strokes, a lone adventurer charting a path where there was none. They, like the moon and the sunflowers, defied convention, clung to the light, nurtured by the whispers on the wind \u2013 whispers urging them to bloom.  To rise from the remnants of the cold and grow, brittle and defiant.  There was already a promise in the air, budding wings of future resilience. Even in the fading light, they felt it. A bloom.  An awakening. \n",
+  "usage": {
+    "prompt_tokens": 22,
+    "total_tokens": 310,
+    "completion_tokens": 288,
+    "completion_tokens_details": null
+  },
+  "model": "google/gemma-2-2b-it",
+  "raw": {
+    "id": "chatcmpl-8b11736ebc6305ba",
+    "object": "chat.completion",
+    "created": 1795625198,
+    "model": "google/gemma-2-2b-it",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "The wind whispered through the barley fields, carrying the scent of rain and wild herbs. A spider hung from a dangling strand, its silky body glistening in the dying light.  The world was settling into the hush of twilight, the chirps of crickets culminating in a rising chorus as moonlight bled through bare branches. \n\nThey\u2019d said sunflowers couldn't bloom in the north, that the chill would suffocate their fiery hearts. But the wind held secrets, and carried whispers of defiance from distant lands. The fields held everything they needed to fight back, though they knew it wouldn't be easy.  The soil, once parched and cracked, was fertile again, the seeds sown with a yearning born of hope.  They told stories, their whispers weaving silk blankets against the biting frost, promising future harvests even as the first snow fell.\n\nThe sky bled into a myriad of shades of grey, a canvas upon which the moon painted silverish strokes, a lone adventurer charting a path where there was none. They, like the moon and the sunflowers, defied convention, clung to the light, nurtured by the whispers on the wind \u2013 whispers urging them to bloom.  To rise from the remnants of the cold and grow, brittle and defiant.  There was already a promise in the air, budding wings of future resilience. Even in the fading light, they felt it. A bloom.  An awakening. \n",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": 107,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-814b9615",
+    "usage": {
+      "prompt_tokens": 22,
+      "total_tokens": 310,
+      "completion_tokens": 288,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "299a8560bedf22ed1c72a8a11e7dce4a7f9f51f8",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:57265/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 7552,
+  "provider": "local-openai",
+  "model_requested": "google/gemma-2-2b-it",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

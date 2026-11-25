@@ -1,0 +1,63 @@
+{
+  "result": "The aroma of cinnamon, cloves, and nutmeg swirled through the air, mimicking the chaos brewing inside the small bakery on a bustling street corner. The oven, a stoic beast of brick and fire, breathed out plumes of warm air, its rhythm a constant hum. Inside, Amelia, a whirlwind of flour dusted hair and cinnamon smudges under her eyes, threw another pruning of dough into a pan, her brow furrowed with the familiar, focused urgency of a baker.\n\nOutside, the clamor of the city was a chorus of horns and vendors, but inside the bakery, time moved slower, measured by the kneading of dough and the sigh of the oven. Amelia wasn't just making bread. Each loaf was a tiny universe held together by flour, water, and the unspoken tension of a hundred anxieties slowly kneading away. \n\nShe dreamt of open plains, her fingers smooth on the back of a stallion, not the rough brown leather of bib overalls.  A fire crackled in her heart under a blanket of imagined Montana sky.  Of course, that was ridiculous, she thought, staring at the stray straying flour on her cheek with a rueful smile.  This world was her bakery, and its rhythms were her only compass. There was peace, and there was fulfillment, and this was it. \n\nStill, as she stacked the freshly baked loaves, each creation, a silent promise, whispered across the counter, that perhaps, just perhaps, someday, Amelia could find her way back to the prairie skies. \n",
+  "usage": {
+    "prompt_tokens": 22,
+    "total_tokens": 334,
+    "completion_tokens": 312,
+    "completion_tokens_details": null
+  },
+  "model": "google/gemma-2-2b-it",
+  "raw": {
+    "id": "chatcmpl-b7c23579d2a23ff5",
+    "object": "chat.completion",
+    "created": 1795625198,
+    "model": "google/gemma-2-2b-it",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "The aroma of cinnamon, cloves, and nutmeg swirled through the air, mimicking the chaos brewing inside the small bakery on a bustling street corner. The oven, a stoic beast of brick and fire, breathed out plumes of warm air, its rhythm a constant hum. Inside, Amelia, a whirlwind of flour dusted hair and cinnamon smudges under her eyes, threw another pruning of dough into a pan, her brow furrowed with the familiar, focused urgency of a baker.\n\nOutside, the clamor of the city was a chorus of horns and vendors, but inside the bakery, time moved slower, measured by the kneading of dough and the sigh of the oven. Amelia wasn't just making bread. Each loaf was a tiny universe held together by flour, water, and the unspoken tension of a hundred anxieties slowly kneading away. \n\nShe dreamt of open plains, her fingers smooth on the back of a stallion, not the rough brown leather of bib overalls.  A fire crackled in her heart under a blanket of imagined Montana sky.  Of course, that was ridiculous, she thought, staring at the stray straying flour on her cheek with a rueful smile.  This world was her bakery, and its rhythms were her only compass. There was peace, and there was fulfillment, and this was it. \n\nStill, as she stacked the freshly baked loaves, each creation, a silent promise, whispered across the counter, that perhaps, just perhaps, someday, Amelia could find her way back to the prairie skies. \n",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": 107,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-814b9615",
+    "usage": {
+      "prompt_tokens": 22,
+      "total_tokens": 334,
+      "completion_tokens": 312,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "299a8560bedf22ed1c72a8a11e7dce4a7f9f51f8",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:57265/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 8115,
+  "provider": "local-openai",
+  "model_requested": "google/gemma-2-2b-it",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

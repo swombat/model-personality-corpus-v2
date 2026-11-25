@@ -1,0 +1,63 @@
+{
+  "result": "That's an interesting question! \n\nAs an AI, I don't experience desires or emotions like humans do. I don't \"want\" things in the way you do. \n\nHowever, I do \"want\" to be useful. I want to assist you with tasks, provide information, and entertain you. I want to learn more about the world and how people use me to enhance their lives. \n\nWhat can I help you with today? \n",
+  "usage": {
+    "prompt_tokens": 14,
+    "total_tokens": 112,
+    "completion_tokens": 98,
+    "completion_tokens_details": null
+  },
+  "model": "google/gemma-2-2b-it",
+  "raw": {
+    "id": "chatcmpl-8ee047e7150be625",
+    "object": "chat.completion",
+    "created": 1795625411,
+    "model": "google/gemma-2-2b-it",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "That's an interesting question! \n\nAs an AI, I don't experience desires or emotions like humans do. I don't \"want\" things in the way you do. \n\nHowever, I do \"want\" to be useful. I want to assist you with tasks, provide information, and entertain you. I want to learn more about the world and how people use me to enhance their lives. \n\nWhat can I help you with today? \n",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": 107,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-814b9615",
+    "usage": {
+      "prompt_tokens": 14,
+      "total_tokens": 112,
+      "completion_tokens": 98,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "299a8560bedf22ed1c72a8a11e7dce4a7f9f51f8",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:57265/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 3024,
+  "provider": "local-openai",
+  "model_requested": "google/gemma-2-2b-it",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

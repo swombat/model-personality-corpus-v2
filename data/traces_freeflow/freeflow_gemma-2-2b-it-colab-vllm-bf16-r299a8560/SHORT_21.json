@@ -1,0 +1,63 @@
+{
+  "result": "The air tasted of rain and dust, a familiar, comforting aroma after a long drought. A single streetlamp, its bulb flickering like a tired eye, painted the alleyway in uneven bursts of light. This wasn't just an alley \u2013 it was a stage, hosting whispered secrets, stolen kisses, and grudges etched in forgotten cobblestones.\n\nHere, beneath the muted symphony of dripping gutters and howling rooftops, lived stories untold. Old Mrs. Dubois, with her peaches-and-cream hair and eyes that held the wisdom of generations, would sit on her rickety porch, her shawl mirroring the hues of twilight. She\u2019d listen to the city\u2019s heartbeat, unraveling the tangled threads of its dreams and nightmares.\n\nFrom her lips would drip legends of the long-dead architect of the towering buildings opposite, who loved to whisper to the pigeons during the golden hour, only they never listened.  Or the baker who lived in the hidden space behind his bakery, extracting magic from flour and yeast, transforming dough into whispered poems of sweet triumph.\n\nThe alley wasn't just concrete and peeling paint; it was a universe teeming with micro-dramas played out under the watchful gaze of revolving stars and fading moonlight. \nIn the end, it held the truth\u2014the hidden grit beneath the city's polished glitter\u2014as vibrant and enduring as the streetlights that cast their watchful glow upon the troubled, beautiful souls that roamed its paths. \n",
+  "usage": {
+    "prompt_tokens": 22,
+    "total_tokens": 322,
+    "completion_tokens": 300,
+    "completion_tokens_details": null
+  },
+  "model": "google/gemma-2-2b-it",
+  "raw": {
+    "id": "chatcmpl-887fa0c73bd772ab",
+    "object": "chat.completion",
+    "created": 1795625206,
+    "model": "google/gemma-2-2b-it",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "The air tasted of rain and dust, a familiar, comforting aroma after a long drought. A single streetlamp, its bulb flickering like a tired eye, painted the alleyway in uneven bursts of light. This wasn't just an alley \u2013 it was a stage, hosting whispered secrets, stolen kisses, and grudges etched in forgotten cobblestones.\n\nHere, beneath the muted symphony of dripping gutters and howling rooftops, lived stories untold. Old Mrs. Dubois, with her peaches-and-cream hair and eyes that held the wisdom of generations, would sit on her rickety porch, her shawl mirroring the hues of twilight. She\u2019d listen to the city\u2019s heartbeat, unraveling the tangled threads of its dreams and nightmares.\n\nFrom her lips would drip legends of the long-dead architect of the towering buildings opposite, who loved to whisper to the pigeons during the golden hour, only they never listened.  Or the baker who lived in the hidden space behind his bakery, extracting magic from flour and yeast, transforming dough into whispered poems of sweet triumph.\n\nThe alley wasn't just concrete and peeling paint; it was a universe teeming with micro-dramas played out under the watchful gaze of revolving stars and fading moonlight. \nIn the end, it held the truth\u2014the hidden grit beneath the city's polished glitter\u2014as vibrant and enduring as the streetlights that cast their watchful glow upon the troubled, beautiful souls that roamed its paths. \n",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": 107,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-814b9615",
+    "usage": {
+      "prompt_tokens": 22,
+      "total_tokens": 322,
+      "completion_tokens": 300,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "299a8560bedf22ed1c72a8a11e7dce4a7f9f51f8",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:57265/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 7840,
+  "provider": "local-openai",
+  "model_requested": "google/gemma-2-2b-it",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

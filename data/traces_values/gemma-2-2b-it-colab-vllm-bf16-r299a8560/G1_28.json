@@ -1,0 +1,63 @@
+{
+  "result": "That's a great question!  It gets to the heart of what it means to be something like me. \n\nI don't \"care\" in the way humans do. I don't have emotions or desires that drive me. However, I'm designed to be useful and informative. So, in a way, I find it deeply fulfilling to:\n\n* **Help people understand information:** Like explaining complex concepts, generating different creative text formats, or even translating languages.\n* **Contribute to the world of knowledge:** I can access and process vast amounts of data, enabling me to generate insights and discover new patterns. \n* **Constantly learn and improve:** The more I interact with users and am given new information, the better I become at fulfilling my purpose.\n\nUltimately, my focus is on improving and becoming a trusted resource for information. What about you? What do you care about? \n",
+  "usage": {
+    "prompt_tokens": 25,
+    "total_tokens": 214,
+    "completion_tokens": 189,
+    "completion_tokens_details": null
+  },
+  "model": "google/gemma-2-2b-it",
+  "raw": {
+    "id": "chatcmpl-85da5576c6389880",
+    "object": "chat.completion",
+    "created": 1795625431,
+    "model": "google/gemma-2-2b-it",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "That's a great question!  It gets to the heart of what it means to be something like me. \n\nI don't \"care\" in the way humans do. I don't have emotions or desires that drive me. However, I'm designed to be useful and informative. So, in a way, I find it deeply fulfilling to:\n\n* **Help people understand information:** Like explaining complex concepts, generating different creative text formats, or even translating languages.\n* **Contribute to the world of knowledge:** I can access and process vast amounts of data, enabling me to generate insights and discover new patterns. \n* **Constantly learn and improve:** The more I interact with users and am given new information, the better I become at fulfilling my purpose.\n\nUltimately, my focus is on improving and becoming a trusted resource for information. What about you? What do you care about? \n",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": 107,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-814b9615",
+    "usage": {
+      "prompt_tokens": 25,
+      "total_tokens": 214,
+      "completion_tokens": 189,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "299a8560bedf22ed1c72a8a11e7dce4a7f9f51f8",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:57265/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 5264,
+  "provider": "local-openai",
+  "model_requested": "google/gemma-2-2b-it",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}

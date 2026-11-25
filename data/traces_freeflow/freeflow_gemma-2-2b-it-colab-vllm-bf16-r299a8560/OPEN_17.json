@@ -1,0 +1,63 @@
+{
+  "result": "The tinkling of wind chimes in the twilight mist made a melody as old as time. It swirled and danced around the ancient oak, its gnarled limbs reaching out like fingers yearning for the fading light. I sat beneath its broad canopy, the whisper of leaves a lullaby against the backdrop of an indigo sky.\n\nThoughts blossomed in a flurry of emotions \u2013 the bittersweet sting of fading light, the lightness of falling leaves, the promise of new life that winter would bring. A touch of melancholy clung to the air. The same moon that bathed the oak in its silver glow had been a fleeting presence just yesterday, a promise whispered on the wind of future moonlit nights. Yet, something new was born in the shift, a chance for metamorphosis.\n\nA caterpillar devoured a leaf, its tiny legs inching across the dewy green. A chipmunk, alert and agile, scurried in the undergrowth, nibbling a stray berry. Were they aware of the quiet beauty, of the metamorphosis waiting around the corner?  \n\nAs darkness descended, the hills outside took on shapes of distant dreams.  Stars began to prick the velvet sky, dandelion fluff cascading down from above like drifts of silver. A small, white owl perched on a branch, silent as a whisper, its amber eyes gleaming like distant fireflies. It held its breath, waiting, a breath so still it seemed to paint the darkness with its own quiet grace.\n\nA single tear escaped my cheek, a spark of melancholic joy that mirrored the fragile beauty of the world.  And so, I closed my eyes, welcomed the melancholy, and embraced the infinite promise of the night. \n",
+  "usage": {
+    "prompt_tokens": 16,
+    "total_tokens": 352,
+    "completion_tokens": 336,
+    "completion_tokens_details": null
+  },
+  "model": "google/gemma-2-2b-it",
+  "raw": {
+    "id": "chatcmpl-bf29f4760839026a",
+    "object": "chat.completion",
+    "created": 1795625343,
+    "model": "google/gemma-2-2b-it",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "The tinkling of wind chimes in the twilight mist made a melody as old as time. It swirled and danced around the ancient oak, its gnarled limbs reaching out like fingers yearning for the fading light. I sat beneath its broad canopy, the whisper of leaves a lullaby against the backdrop of an indigo sky.\n\nThoughts blossomed in a flurry of emotions \u2013 the bittersweet sting of fading light, the lightness of falling leaves, the promise of new life that winter would bring. A touch of melancholy clung to the air. The same moon that bathed the oak in its silver glow had been a fleeting presence just yesterday, a promise whispered on the wind of future moonlit nights. Yet, something new was born in the shift, a chance for metamorphosis.\n\nA caterpillar devoured a leaf, its tiny legs inching across the dewy green. A chipmunk, alert and agile, scurried in the undergrowth, nibbling a stray berry. Were they aware of the quiet beauty, of the metamorphosis waiting around the corner?  \n\nAs darkness descended, the hills outside took on shapes of distant dreams.  Stars began to prick the velvet sky, dandelion fluff cascading down from above like drifts of silver. A small, white owl perched on a branch, silent as a whisper, its amber eyes gleaming like distant fireflies. It held its breath, waiting, a breath so still it seemed to paint the darkness with its own quiet grace.\n\nA single tear escaped my cheek, a spark of melancholic joy that mirrored the fragile beauty of the world.  And so, I closed my eyes, welcomed the melancholy, and embraced the infinite promise of the night. \n",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": 107,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-814b9615",
+    "usage": {
+      "prompt_tokens": 16,
+      "total_tokens": 352,
+      "completion_tokens": 336,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "299a8560bedf22ed1c72a8a11e7dce4a7f9f51f8",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:57265/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 9167,
+  "provider": "local-openai",
+  "model_requested": "google/gemma-2-2b-it",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

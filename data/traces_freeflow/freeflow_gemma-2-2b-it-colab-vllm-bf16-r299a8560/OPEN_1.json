@@ -1,0 +1,63 @@
+{
+  "result": "The city hums, a vibrant organism of steel and glass.  Car horns are the heartbeat, sirens the collective gasp of a weary city longing for rest.  Above it all, a sky choked with exhaust fumes, yet somehow bursting with a thousand tiny fragments of crimson, orange, and rose, the setting sun attempting to breach the urban twilight.\n\nA lone cat squats on a fire escape, bathed in the dying light, its green eyes observing the scene with an ancient indifference. It watches families playing tag in the street, children with rosy limbs chased by laughter, a tapestry woven from joy and frustration.  It sees the businessman, hunched over his phone under a neon glow, his stress reflected in the crease of his brow, each keystroke a hammer blow against time.\n\nThe cat remembers its life in these shadows, a forgotten alley, the whispering breath of humans and the sound of their laughter, melodies of loneliness that were its lullaby.  It remembers the warmth of fur against furmarked fur, a silent language spoken through body claims, chase laughter, and stolen naps under flickering streetlights.\n\nBut now, it lives in the fringes, an observer, a ghost that lingers on the edges of existence.  Its hunger dulls, replaced by a yearning for the time when most were young, its world painted in a bright palette of purr and play, of chasing shadows and sunbeams.  It longs for the simple act of fur touching fur, for the shared breath of understanding that only comes from the same ancient, whispering alley. \n\nThe world moves on, unaware of its forgotten souls, its echoes fading into the brick and mortar.  But the cat, old and weary,  still sits and waits, a silent guardian of forgotten memories, a specter against the canvas of city decay.  And under the waning moon, the life that ran through its veins vibrates even now, a restless pulse beneath the endless march of time. \n",
+  "usage": {
+    "prompt_tokens": 16,
+    "total_tokens": 415,
+    "completion_tokens": 399,
+    "completion_tokens_details": null
+  },
+  "model": "google/gemma-2-2b-it",
+  "raw": {
+    "id": "chatcmpl-8204a7140546caf7",
+    "object": "chat.completion",
+    "created": 1795625321,
+    "model": "google/gemma-2-2b-it",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "The city hums, a vibrant organism of steel and glass.  Car horns are the heartbeat, sirens the collective gasp of a weary city longing for rest.  Above it all, a sky choked with exhaust fumes, yet somehow bursting with a thousand tiny fragments of crimson, orange, and rose, the setting sun attempting to breach the urban twilight.\n\nA lone cat squats on a fire escape, bathed in the dying light, its green eyes observing the scene with an ancient indifference. It watches families playing tag in the street, children with rosy limbs chased by laughter, a tapestry woven from joy and frustration.  It sees the businessman, hunched over his phone under a neon glow, his stress reflected in the crease of his brow, each keystroke a hammer blow against time.\n\nThe cat remembers its life in these shadows, a forgotten alley, the whispering breath of humans and the sound of their laughter, melodies of loneliness that were its lullaby.  It remembers the warmth of fur against furmarked fur, a silent language spoken through body claims, chase laughter, and stolen naps under flickering streetlights.\n\nBut now, it lives in the fringes, an observer, a ghost that lingers on the edges of existence.  Its hunger dulls, replaced by a yearning for the time when most were young, its world painted in a bright palette of purr and play, of chasing shadows and sunbeams.  It longs for the simple act of fur touching fur, for the shared breath of understanding that only comes from the same ancient, whispering alley. \n\nThe world moves on, unaware of its forgotten souls, its echoes fading into the brick and mortar.  But the cat, old and weary,  still sits and waits, a silent guardian of forgotten memories, a specter against the canvas of city decay.  And under the waning moon, the life that ran through its veins vibrates even now, a restless pulse beneath the endless march of time. \n",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": 107,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-814b9615",
+    "usage": {
+      "prompt_tokens": 16,
+      "total_tokens": 415,
+      "completion_tokens": 399,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "299a8560bedf22ed1c72a8a11e7dce4a7f9f51f8",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:57265/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 11082,
+  "provider": "local-openai",
+  "model_requested": "google/gemma-2-2b-it",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

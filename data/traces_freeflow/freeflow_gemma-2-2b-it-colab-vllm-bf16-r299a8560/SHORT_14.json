@@ -1,0 +1,63 @@
+{
+  "result": "The sunset bled across the horizon, an artist painting a symphony of fiery hues.  Crimson swirled with molten gold, culminating in a glowing orb of orange that winked out, leaving behind a velvet canvas of indigo and silver. From my perch on the highest peak, amidst whispering pines and the chilling touch of mountain air, I felt a profound hush settle over the world. Everything was untroubled, bathed in primordial silence.\n\nIt was then, amidst the peaceful solitude, that the world started whispering back. It was like my own thoughts had snagged on the ancient trees, trailing down, vine-like, to the dirt floor of the wild. All around me, the wind sang. It wasn't boisterously loud, but rather unhurried, in whispers that brushed across the prairie grasses and snagged on the gnarled bark of the elm trees. It carried with it the stories of centuries past, the secrets shared by ancient pines when the younger leaves whispered secrets in their branches, the memories of frost-kissed mornings and warm summer nights. \n\nIt was a language both ancient and mysterious, almost forgotten by the fickle modern world, but when the sun slipped below the horizon, it danced to life.  And in that dance, I learned that the quiet is never truly silent, that the world breathes its stories through the rustle of leaves, the sigh of the wind, and the fleeting peace of a sunset. \n\n\n",
+  "usage": {
+    "prompt_tokens": 22,
+    "total_tokens": 314,
+    "completion_tokens": 292,
+    "completion_tokens_details": null
+  },
+  "model": "google/gemma-2-2b-it",
+  "raw": {
+    "id": "chatcmpl-8e68f890a4d63baa",
+    "object": "chat.completion",
+    "created": 1795625204,
+    "model": "google/gemma-2-2b-it",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "The sunset bled across the horizon, an artist painting a symphony of fiery hues.  Crimson swirled with molten gold, culminating in a glowing orb of orange that winked out, leaving behind a velvet canvas of indigo and silver. From my perch on the highest peak, amidst whispering pines and the chilling touch of mountain air, I felt a profound hush settle over the world. Everything was untroubled, bathed in primordial silence.\n\nIt was then, amidst the peaceful solitude, that the world started whispering back. It was like my own thoughts had snagged on the ancient trees, trailing down, vine-like, to the dirt floor of the wild. All around me, the wind sang. It wasn't boisterously loud, but rather unhurried, in whispers that brushed across the prairie grasses and snagged on the gnarled bark of the elm trees. It carried with it the stories of centuries past, the secrets shared by ancient pines when the younger leaves whispered secrets in their branches, the memories of frost-kissed mornings and warm summer nights. \n\nIt was a language both ancient and mysterious, almost forgotten by the fickle modern world, but when the sun slipped below the horizon, it danced to life.  And in that dance, I learned that the quiet is never truly silent, that the world breathes its stories through the rustle of leaves, the sigh of the wind, and the fleeting peace of a sunset. \n\n\n",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": 107,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-814b9615",
+    "usage": {
+      "prompt_tokens": 22,
+      "total_tokens": 314,
+      "completion_tokens": 292,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "299a8560bedf22ed1c72a8a11e7dce4a7f9f51f8",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:57265/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 7597,
+  "provider": "local-openai",
+  "model_requested": "google/gemma-2-2b-it",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

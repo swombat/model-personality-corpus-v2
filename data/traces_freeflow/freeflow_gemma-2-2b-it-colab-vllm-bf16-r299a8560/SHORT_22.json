@@ -1,0 +1,63 @@
+{
+  "result": "The streetlamp, a lone sentinel against the inky canvas of the urban night, cast elongated shadows like grasping figures. The clink of ice in the half-empty beer glass, rhythmically echoing down the narrow alley, seemed to amplify the whispers of the wind. It carried the scent of damp pavement and distant laughter, a spicy tango of urban decay and resilient life. \n\nA half-smoked cigarette, its trail a defiant scarlet streak near the curb, was all that remained of a forgotten rendezvous. In its paper fist, a lost promise twisted with smoke and regret. Murmurs of the city chased each other across the soundscape, a jumbled chorus of life's ebb and flow.  \n\nAmidst the shadows danced a worn broom, dancing with dreams, its bristles laced with memories, protecting a forgotten corner. A street musician\u2019s melancholic tune echoed in the wind, a fragile canopy of sound against the vibrant darkness. Maybe it was the ghost of a love song, maybe a whispered lament for an unknown tomorrow, but its melody was the heartbeat of the city, the shared song of survival.  \n\nThe night held its breath. Everything felt suspended, waiting for the dawn\u2019s promise.  But for now, there was the city, alive and breathing, pulsing with the rhythm of dreams held and stories whispered in the stillness. \n",
+  "usage": {
+    "prompt_tokens": 22,
+    "total_tokens": 300,
+    "completion_tokens": 278,
+    "completion_tokens_details": null
+  },
+  "model": "google/gemma-2-2b-it",
+  "raw": {
+    "id": "chatcmpl-a3b25516aa2eab46",
+    "object": "chat.completion",
+    "created": 1795625206,
+    "model": "google/gemma-2-2b-it",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "The streetlamp, a lone sentinel against the inky canvas of the urban night, cast elongated shadows like grasping figures. The clink of ice in the half-empty beer glass, rhythmically echoing down the narrow alley, seemed to amplify the whispers of the wind. It carried the scent of damp pavement and distant laughter, a spicy tango of urban decay and resilient life. \n\nA half-smoked cigarette, its trail a defiant scarlet streak near the curb, was all that remained of a forgotten rendezvous. In its paper fist, a lost promise twisted with smoke and regret. Murmurs of the city chased each other across the soundscape, a jumbled chorus of life's ebb and flow.  \n\nAmidst the shadows danced a worn broom, dancing with dreams, its bristles laced with memories, protecting a forgotten corner. A street musician\u2019s melancholic tune echoed in the wind, a fragile canopy of sound against the vibrant darkness. Maybe it was the ghost of a love song, maybe a whispered lament for an unknown tomorrow, but its melody was the heartbeat of the city, the shared song of survival.  \n\nThe night held its breath. Everything felt suspended, waiting for the dawn\u2019s promise.  But for now, there was the city, alive and breathing, pulsing with the rhythm of dreams held and stories whispered in the stillness. \n",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": 107,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-814b9615",
+    "usage": {
+      "prompt_tokens": 22,
+      "total_tokens": 300,
+      "completion_tokens": 278,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "299a8560bedf22ed1c72a8a11e7dce4a7f9f51f8",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:57265/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 7301,
+  "provider": "local-openai",
+  "model_requested": "google/gemma-2-2b-it",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

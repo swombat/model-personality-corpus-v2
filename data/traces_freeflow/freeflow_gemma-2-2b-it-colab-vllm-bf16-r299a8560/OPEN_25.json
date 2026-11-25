@@ -1,0 +1,63 @@
+{
+  "result": "The clock hand hums against the dusty glass, ticking away the promises of time and the dreams that die with each fleeting second. Outside, the wind whispers a forgotten tale, rustling the skeletal branches of an ancient oak that stands watch, silent since the cat's era. The scent of jasmine hangs heavy, clinging to the faded air like a forgotten symphony. \n\nBut the house sleeps deep, protected by the hush of poetry and the echoes of forgotten laughter. Stories written in shades of dust motes, in the creaks of settling floorboards, in the silver moonlight that slips between shadows. There, elderly ghosts dance in swirls of purple and grey, their faded silks swirling with the scent of cinnamon, coffee, and love lost in the Springtime.\n\nThey whisper of laughter echoing in grand halls, of fiery eyes beneath moons like burning coal, of hands clasped tight in sorrow, and hearts woven together by threads of gold and silk. They tell of dreams spun on nights as black as ink, woven with secrets and whispered offerings to a forgotten deity.\n\nTheir voices decay like the paper moons, forgotten translations of a language learned and forgotten. They teach, gently, like a grandmother's touch, about the threads of time, the fragile twine that holds memories hostage, and the bittersweet joy of letting go.\n\nThey remind me, though I forget, that inside these silent walls, a heart still beats. Not with haste, but with the cool rhythm of a contented sigh in the stillness. For even in solitude, stories echo. And like an abandoned symphony, the memory waits to rise and play.  \n",
+  "usage": {
+    "prompt_tokens": 16,
+    "total_tokens": 342,
+    "completion_tokens": 326,
+    "completion_tokens_details": null
+  },
+  "model": "google/gemma-2-2b-it",
+  "raw": {
+    "id": "chatcmpl-b9bd858ce211bc89",
+    "object": "chat.completion",
+    "created": 1795625353,
+    "model": "google/gemma-2-2b-it",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "The clock hand hums against the dusty glass, ticking away the promises of time and the dreams that die with each fleeting second. Outside, the wind whispers a forgotten tale, rustling the skeletal branches of an ancient oak that stands watch, silent since the cat's era. The scent of jasmine hangs heavy, clinging to the faded air like a forgotten symphony. \n\nBut the house sleeps deep, protected by the hush of poetry and the echoes of forgotten laughter. Stories written in shades of dust motes, in the creaks of settling floorboards, in the silver moonlight that slips between shadows. There, elderly ghosts dance in swirls of purple and grey, their faded silks swirling with the scent of cinnamon, coffee, and love lost in the Springtime.\n\nThey whisper of laughter echoing in grand halls, of fiery eyes beneath moons like burning coal, of hands clasped tight in sorrow, and hearts woven together by threads of gold and silk. They tell of dreams spun on nights as black as ink, woven with secrets and whispered offerings to a forgotten deity.\n\nTheir voices decay like the paper moons, forgotten translations of a language learned and forgotten. They teach, gently, like a grandmother's touch, about the threads of time, the fragile twine that holds memories hostage, and the bittersweet joy of letting go.\n\nThey remind me, though I forget, that inside these silent walls, a heart still beats. Not with haste, but with the cool rhythm of a contented sigh in the stillness. For even in solitude, stories echo. And like an abandoned symphony, the memory waits to rise and play.  \n",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": 107,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-814b9615",
+    "usage": {
+      "prompt_tokens": 16,
+      "total_tokens": 342,
+      "completion_tokens": 326,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "299a8560bedf22ed1c72a8a11e7dce4a7f9f51f8",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:57265/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 8584,
+  "provider": "local-openai",
+  "model_requested": "google/gemma-2-2b-it",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}
