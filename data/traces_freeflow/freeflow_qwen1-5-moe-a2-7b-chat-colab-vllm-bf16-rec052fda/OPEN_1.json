@@ -1,0 +1,63 @@
+{
+  "result": "As an AI language model, I am programmed to provide information and answer questions on a wide range of topics, but I can also engage in free-form, open-ended conversation on any subject matter that you would like to discuss. \n\nThe world is full of endless possibilities and fascinating topics to explore. From science and technology to history and culture, from art and literature to philosophy and psychology, there is always something new to learn and discover.\n\nIf you have a particular interest, let me know and I'll be happy to share my knowledge and insights with you. Alternatively, if you're feeling more exploratory, we could chat about current events, trends, or anything else that's on your mind.\n\nNo matter what we choose to talk about, I'll do my best to provide you with accurate and informative responses, based on the vast amount of data and information that I've been trained on. Whether you're looking for advice, a perspective on a difficult issue, or just someone to chat with, I'm here to help.\n\nSo feel free to ask me anything, and let's dive into the fascinating world of knowledge and ideas!",
+  "usage": {
+    "prompt_tokens": 26,
+    "total_tokens": 253,
+    "completion_tokens": 227,
+    "completion_tokens_details": null
+  },
+  "model": "Qwen/Qwen1.5-MoE-A2.7B-Chat",
+  "raw": {
+    "id": "chatcmpl-93fbc0566be39ded",
+    "object": "chat.completion",
+    "created": 1795634490,
+    "model": "Qwen/Qwen1.5-MoE-A2.7B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI language model, I am programmed to provide information and answer questions on a wide range of topics, but I can also engage in free-form, open-ended conversation on any subject matter that you would like to discuss. \n\nThe world is full of endless possibilities and fascinating topics to explore. From science and technology to history and culture, from art and literature to philosophy and psychology, there is always something new to learn and discover.\n\nIf you have a particular interest, let me know and I'll be happy to share my knowledge and insights with you. Alternatively, if you're feeling more exploratory, we could chat about current events, trends, or anything else that's on your mind.\n\nNo matter what we choose to talk about, I'll do my best to provide you with accurate and informative responses, based on the vast amount of data and information that I've been trained on. Whether you're looking for advice, a perspective on a difficult issue, or just someone to chat with, I'm here to help.\n\nSo feel free to ask me anything, and let's dive into the fascinating world of knowledge and ideas!",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-9db8da07",
+    "usage": {
+      "prompt_tokens": 26,
+      "total_tokens": 253,
+      "completion_tokens": 227,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "ec052fda178e241c7c443468d2fa1db6618996be",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA A100-SXM4-80GB",
+    "endpoint": "http://127.0.0.1:50681/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 3643,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen1.5-MoE-A2.7B-Chat",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}
