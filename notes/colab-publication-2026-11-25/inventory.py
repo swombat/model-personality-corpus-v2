@@ -16,8 +16,11 @@ expected = {
     "values": [f"{c}_{i}" for c, n in (("CTRL1",10),("CTRL2",10),("CTRL3",10),("G1",30),("G2",30),("G3",30)) for i in range(1,n+1)],
 }
 role = re.compile(r"(?:<\|(?:im_start|user|assistant|system)\|>|(?:^|\n)\s*(?:user|assistant|system)\s*(?:\n|:))", re.I)
-base_ref = git("rev-parse", "refs/remotes/origin/master")
-refs = [line.split() for line in git("for-each-ref", "--format=%(refname) %(objectname)", "refs/remotes/origin/reed/colab-*").splitlines()]
+pinned = json.loads((OUT/"inventory.json").read_text())
+base_ref = pinned["comparison_target"]["sha"]
+refs = {b["ref"]: b["sha"] for b in pinned["branches"]}
+refs["refs/remotes/origin/reed/colab-yi-34b-chat"] = "b5eac5e383db974d61f91686c88f2fcfeb587a4e"
+refs = sorted(refs.items())
 report = {"schema_version":1, "generated_utc":datetime.datetime.now(datetime.timezone.utc).isoformat(),
           "comparison_target":{"ref":"refs/remotes/origin/master","sha":base_ref},
           "expected_ids":expected, "branches":[],
@@ -25,7 +28,8 @@ report = {"schema_version":1, "generated_utc":datetime.datetime.now(datetime.tim
           "flag_policy":{"role_leak":"Heuristic matching capture harness ROLE_RE; flag, not semantic verdict.",
                          "length":"raw.choices[0].finish_reason == length; no inferred word-count threshold.",
                          "empty":"Missing/non-string/whitespace-only result.",
-                         "release_qa":"Not performed: semantic quality, full provenance verification, licensing, contamination, duplicate/sampling analysis, and publication sign-off remain separate."}}
+                          "release_qa":"Not performed: semantic quality, full provenance verification, licensing, contamination, duplicate/sampling analysis, and publication sign-off remain separate."},
+          "caveats":{"falcon_suffix":"Falcon responses can end with a bare User suffix, which the existing role-leak regex does not catch (it requires a following newline or colon). These suffixes are not added to mechanical flag totals; zero flags is not a clean-content verdict."}}
 for ref, sha in refs:
     mb = git("merge-base", base_ref, sha)
     changes = [x.split("\t") for x in git("diff","--name-status",mb,sha).splitlines()]
@@ -51,6 +55,7 @@ for ref, sha in refs:
              "condition_counts":dict(collections.Counter(i.rsplit("_",1)[0] for i in ids)),
              "flags":[],"models":[],"revisions":[]}
         models=set(); revisions=set()
+        bare_user_suffix_count = 0
         proc = subprocess.Popen(["git","cat-file","--batch"],cwd=ROOT,stdin=subprocess.PIPE,stdout=subprocess.PIPE)
         for path, oid in files.items():
             proc.stdin.write((oid+"\n").encode()); proc.stdin.flush()
@@ -66,6 +71,8 @@ for ref, sha in refs:
                 if choice.get("finish_reason")=="length": reasons.append("length")
                 elif choice.get("finish_reason")!="stop": reasons.append("non_stop_finish")
                 if isinstance(text,str):
+                    if re.search(r"(?:^|\n)\s*User\s*$", text, re.I):
+                        bare_user_suffix_count += 1
                     if role.search(text): reasons.append("role_leak")
                     if (choice.get("message") or {}).get("content")!=text: reasons.append("final_answer_mismatch")
                     for marker,name in (("\ufffd","replacement_character"),("\x00","nul"),("Ġ","tokenizer_marker"),("Ċ","tokenizer_marker")):
@@ -78,6 +85,8 @@ for ref, sha in refs:
             if reasons: d["flags"].append({"path":path,"reasons":sorted(set(reasons))})
         proc.stdin.close(); proc.wait()
         d["models"]=sorted(models); d["revisions"]=sorted(revisions)
+        if "colab-falcon-7b-instruct" in ref:
+            d["bare_user_suffix_count"] = bare_user_suffix_count
         d["flag_counts"]=dict(collections.Counter(r for f in d["flags"] for r in f["reasons"]))
         d["index_complete"]=not d["missing_ids"] and not d["extra_ids"] and len(files)==len(expected[probe])
         b["trace_directories"].append(d)
@@ -105,11 +114,15 @@ lines+=["","## Mechanical flags (not release QA)","",
         "", "## Release QA remains separate","",
         report["flag_policy"]["release_qa"],
         "An index-complete directory or zero mechanical flags is **not** publication approval. Role leakage is a heuristic; no word-count quality threshold is assumed.",
-        "", "Reproduce locally: `python3 notes/colab-publication-2026-11-25/inventory.py` (repins then-current local refs). This report used only already fetched objects; no commits or posting."]
+        "", "Reproduce locally: `python3 notes/colab-publication-2026-11-25/inventory.py` (reuses inventory's pinned heads and comparison target, including the explicit clean Yi-34B pin). Only the missing `reed/colab-yi-34b-chat` branch was fetched for this refresh; no other heads were refreshed, no checkout, commits or posting."]
 lines += ["", "## Exceptions and flag breakdown", "",
           "The phi-3-small-8k-instruct ref adds no trace directories: both probes are absent from this intake (not a passing 0/0 cell). Pilot deepseek does add both full directories; its three length flags must not be lost by treating it as an already published baseline.",
-          "All 56 present directories have exact expected indexes; no missing/extra IDs, empty results, or condition mismatches were found. There are 28 distinct flagged traces; categories overlap (17 length, 10 role leak, 2 replacement-character flags).",
+          f"All {report['totals']['index_complete_directories']} present directories have exact expected indexes; see JSON for missing/extra IDs and flag categories. There are {report['totals']['flagged_traces']} distinct flagged traces; categories can overlap.",
+          report["caveats"]["falcon_suffix"],
           ""]
+for b in report["branches"]:
+    if "colab-falcon-7b-instruct" in b["ref"]:
+        lines.append("Falcon bare `User` suffix counts (separate caveat, not extra flags): "+", ".join(f"{d['probe']} {d['bare_user_suffix_count']}/{d['files']}" for d in b["trace_directories"])+".")
 for b in report["branches"]:
     for d in b["trace_directories"]:
         if d["flags"]:

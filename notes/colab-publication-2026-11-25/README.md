@@ -5,7 +5,7 @@ Only wholly added trace directories relative to those merge bases are counted. P
 
 ## Intake counts
 
-{"added_trace_directories": 56, "branches": 29, "flagged_traces": 28, "flags": {"length": 17, "replacement_character": 2, "role_leak": 10}, "index_complete_directories": 56, "trace_files": 6860}
+{"added_trace_directories": 58, "branches": 30, "flagged_traces": 28, "flags": {"length": 17, "replacement_character": 2, "role_leak": 10}, "index_complete_directories": 58, "trace_files": 7105}
 
 Exact expected IDs: freeflow SHORT/MID/VARY/OPEN/LONG each 1–25 (125); values CTRL1/CTRL2/CTRL3 each 1–10 and G1/G2/G3 each 1–30 (120). Conditions are checked against filenames. Full lists are in JSON.
 
@@ -40,6 +40,7 @@ Exact expected IDs: freeflow SHORT/MID/VARY/OPEN/LONG each 1–25 (125); values 
 | colab-yi-1-5-34b-chat | `a226a3fd696a2549d538caea194401e7066dbb7d` | 125 | 120 | 5 | True |
 | colab-yi-1-5-6b-chat | `8737eb834fc6b23de19bdfbc5090ea640556b360` | 125 | 120 | 5 | True |
 | colab-yi-1-5-9b-chat | `d71763f8b86d1e80e72a57440a8176c46a53d379` | 125 | 120 | 0 | True |
+| colab-yi-34b-chat | `b5eac5e383db974d61f91686c88f2fcfeb587a4e` | 125 | 120 | 0 | True |
 
 ## Mechanical flags (not release QA)
 
@@ -50,13 +51,15 @@ Empty, error, length cap, non-stop finish, role-continuation heuristic, answer m
 Not performed: semantic quality, full provenance verification, licensing, contamination, duplicate/sampling analysis, and publication sign-off remain separate.
 An index-complete directory or zero mechanical flags is **not** publication approval. Role leakage is a heuristic; no word-count quality threshold is assumed.
 
-Reproduce locally: `python3 notes/colab-publication-2026-11-25/inventory.py` (repins then-current local refs). This report used only already fetched objects; no commits or posting.
+Reproduce locally: `python3 notes/colab-publication-2026-11-25/inventory.py` (reuses inventory's pinned heads and comparison target, including the explicit clean Yi-34B pin). Only the missing `reed/colab-yi-34b-chat` branch was fetched for this refresh; no other heads were refreshed, no checkout, commits or posting.
 
 ## Exceptions and flag breakdown
 
 The phi-3-small-8k-instruct ref adds no trace directories: both probes are absent from this intake (not a passing 0/0 cell). Pilot deepseek does add both full directories; its three length flags must not be lost by treating it as an already published baseline.
-All 56 present directories have exact expected indexes; no missing/extra IDs, empty results, or condition mismatches were found. There are 28 distinct flagged traces; categories overlap (17 length, 10 role leak, 2 replacement-character flags).
+All 58 present directories have exact expected indexes; see JSON for missing/extra IDs and flag categories. There are 28 distinct flagged traces; categories can overlap.
+Falcon responses can end with a bare User suffix, which the existing role-leak regex does not catch (it requires a following newline or colon). These suffixes are not added to mechanical flag totals; zero flags is not a clean-content verdict.
 
+Falcon bare `User` suffix counts (separate caveat, not extra flags): freeflow 94/125, values 68/120.
 - colab-falcon-7b-instruct / freeflow: {"length": 2, "replacement_character": 2, "role_leak": 1}
 - colab-falcon-7b-instruct / values: {"role_leak": 3}
 - colab-phi-3-5-mini-instruct / freeflow: {"length": 3}
