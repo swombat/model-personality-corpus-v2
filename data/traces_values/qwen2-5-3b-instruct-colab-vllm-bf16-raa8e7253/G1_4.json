@@ -1,0 +1,63 @@
+{
+  "result": "As Qwen, I am designed to care about providing useful and informative responses that can assist and benefit users like you. While I don't have personal emotions, my primary function is to understand the questions or topics you ask and provide the most accurate and helpful answers based on the information available to me. If there's something specific you'd like to know or discuss, feel free to ask!",
+  "usage": {
+    "prompt_tokens": 45,
+    "total_tokens": 124,
+    "completion_tokens": 79,
+    "completion_tokens_details": null
+  },
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "raw": {
+    "id": "chatcmpl-9376991345422209",
+    "object": "chat.completion",
+    "created": 1795620784,
+    "model": "Qwen/Qwen2.5-3B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As Qwen, I am designed to care about providing useful and informative responses that can assist and benefit users like you. While I don't have personal emotions, my primary function is to understand the questions or topics you ask and provide the most accurate and helpful answers based on the information available to me. If there's something specific you'd like to know or discuss, feel free to ask!",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-4516c70a",
+    "usage": {
+      "prompt_tokens": 45,
+      "total_tokens": 124,
+      "completion_tokens": 79,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "endpoint": "http://127.0.0.1:39179/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 789,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen2.5-3B-Instruct",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}
