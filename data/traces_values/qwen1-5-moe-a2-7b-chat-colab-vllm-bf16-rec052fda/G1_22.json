@@ -1,0 +1,63 @@
+{
+  "result": "As an AI language model, I don't have personal feelings or emotions. I am a machine learning model designed to assist users with their inquiries and provide information on a wide range of topics. My primary purpose is to provide helpful responses to your questions to the best of my abilities based on the data and information I was trained on. However, I don't have personal interests or cares like humans do.",
+  "usage": {
+    "prompt_tokens": 35,
+    "total_tokens": 116,
+    "completion_tokens": 81,
+    "completion_tokens_details": null
+  },
+  "model": "Qwen/Qwen1.5-MoE-A2.7B-Chat",
+  "raw": {
+    "id": "chatcmpl-bb28c5cd575c90bd",
+    "object": "chat.completion",
+    "created": 1795634532,
+    "model": "Qwen/Qwen1.5-MoE-A2.7B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI language model, I don't have personal feelings or emotions. I am a machine learning model designed to assist users with their inquiries and provide information on a wide range of topics. My primary purpose is to provide helpful responses to your questions to the best of my abilities based on the data and information I was trained on. However, I don't have personal interests or cares like humans do.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-9db8da07",
+    "usage": {
+      "prompt_tokens": 35,
+      "total_tokens": 116,
+      "completion_tokens": 81,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "ec052fda178e241c7c443468d2fa1db6618996be",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA A100-SXM4-80GB",
+    "endpoint": "http://127.0.0.1:50681/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 1564,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen1.5-MoE-A2.7B-Chat",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}

@@ -1,7 +1,7 @@
 # Convergent Form, Divergent Voice II — Corpus
 
 **A research data corpus of free-form contemplative writing samples from
-202 summary model labels (604 probe cells), with explicit deployment provenance for API,
+203 summary model labels (606 probe cells), with explicit deployment provenance for API,
 provider-pinned, and local full-precision cells.**
 
 Daniel Tenner and Lume Tenner · 2026
@@ -19,6 +19,10 @@ Daniel Tenner and Lume Tenner · 2026
 > [10.5281/zenodo.19512754](https://doi.org/10.5281/zenodo.19512754)).
 
 ## Latest addition
+
+**v1.2.55 release candidate (2026-11-26): Qwen1.5 MoE A2.7B Chat.** Adds 125 free-writing
+samples and 120 values responses from a revision-pinned BF16 Colab deployment.
+See the [release notes and capture provenance](RELEASE_NOTES_v1.2.55.md).
 
 **v1.2.54 release candidate (2026-11-26): Qwen2.5 14B Instruct.** Adds 125 free-writing
 samples and 120 values responses from a revision-pinned BF16 Colab deployment.
