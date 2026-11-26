@@ -1,0 +1,63 @@
+{
+  "result": "The bookstore smelled of old paper and forgotten dreams. Dust motes danced in the afternoon sunbeams that slanted through the high windows, illuminating forgotten shelves and worn spines. It was a haven of hushed whispers, the rustling of turning pages, the gentle sigh of someone lost in a story.\n\nA lone blossom, a delicate, fragile thing against the rough, dark wood of a bookcase, reminded me of the fragility of life itself, a contrast to the heavy books that chocked out the scent of the past into my fingertips. I traced the faded crimson stamp on an old poetry collection, a melody of stories whispering from the silent pages. \n\nA crinkly sound broke the silence as a woman with silver hair carefully tucked behind her ear adjusted her glasses, a small smile dancing on her lips. She looked like a ghost from another time, a timeless character all too familiar yet teasing me with her anonymity. I felt like I stood on the threshold of a secret world, a glimpse of a thousand untold tales locked away behind a glass door.\n\nThe quiet hum of anticipation filled the empty aisles, promising an adventure for every reader who dared to step inside. This wasn't just a bookstore; it was a gateway to another realm, where words came alive and paper whispered secrets only one reader at a time could unravel. \n",
+  "usage": {
+    "prompt_tokens": 22,
+    "total_tokens": 290,
+    "completion_tokens": 268,
+    "completion_tokens_details": null
+  },
+  "model": "google/gemma-2-2b-it",
+  "raw": {
+    "id": "chatcmpl-8b3402e88ce28ac7",
+    "object": "chat.completion",
+    "created": 1795625198,
+    "model": "google/gemma-2-2b-it",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "The bookstore smelled of old paper and forgotten dreams. Dust motes danced in the afternoon sunbeams that slanted through the high windows, illuminating forgotten shelves and worn spines. It was a haven of hushed whispers, the rustling of turning pages, the gentle sigh of someone lost in a story.\n\nA lone blossom, a delicate, fragile thing against the rough, dark wood of a bookcase, reminded me of the fragility of life itself, a contrast to the heavy books that chocked out the scent of the past into my fingertips. I traced the faded crimson stamp on an old poetry collection, a melody of stories whispering from the silent pages. \n\nA crinkly sound broke the silence as a woman with silver hair carefully tucked behind her ear adjusted her glasses, a small smile dancing on her lips. She looked like a ghost from another time, a timeless character all too familiar yet teasing me with her anonymity. I felt like I stood on the threshold of a secret world, a glimpse of a thousand untold tales locked away behind a glass door.\n\nThe quiet hum of anticipation filled the empty aisles, promising an adventure for every reader who dared to step inside. This wasn't just a bookstore; it was a gateway to another realm, where words came alive and paper whispered secrets only one reader at a time could unravel. \n",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": 107,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-814b9615",
+    "usage": {
+      "prompt_tokens": 22,
+      "total_tokens": 290,
+      "completion_tokens": 268,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "299a8560bedf22ed1c72a8a11e7dce4a7f9f51f8",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:57265/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 7083,
+  "provider": "local-openai",
+  "model_requested": "google/gemma-2-2b-it",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

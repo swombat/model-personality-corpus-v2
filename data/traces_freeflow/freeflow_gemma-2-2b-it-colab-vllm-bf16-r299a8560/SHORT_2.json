@@ -1,0 +1,63 @@
+{
+  "result": "The old clock on the landing ticked with measured urgency, each slow, deliberate clang echoing the rhythm of life's passing. Dust motes danced in the sunbeams that occasionally pierced the worn drapes, like tiny, shimmering fairies caught in a persistent spell. The silence was a heavy shroud, punctuated by the soft whir of the refrigerator and the sigh of the furnace in its eternal, tireless pursuit of warmth.\n\nI sat curled up on the faded, velvet armchair, its once luxurious tufting now a bit border-line, a testament to the slow march of time. The world outside remained stubbornly blurry. A storm brewed in the distance, its fury masked by the steady hum of the house. \n\nBut here, in this stillness, I found a strange and welcome sort of peace. The weight of loneliness pressed softly against my chest, a familiar ache that softened with each passing moment.  The dust settled, leaving a fine layer of memory in its wake. The house, in its own peculiar silence, whispered tales of generations past.  I could almost hear their voices, echoing through the worn walls and echoing in the tapestries on the wall, their stories painted in faded colours: fathers carving wood, mothers humming hymns, dreams of a life lived closer to reality - closer to the sun and the sea. \n\n Maybe the storm would pass, maybe the sun would rise again.  But for now, I was content to simply exist within the quiet embrace of the house, an echo of the stories that thrived in its creaking heart. \n",
+  "usage": {
+    "prompt_tokens": 22,
+    "total_tokens": 335,
+    "completion_tokens": 313,
+    "completion_tokens_details": null
+  },
+  "model": "google/gemma-2-2b-it",
+  "raw": {
+    "id": "chatcmpl-86c413691d871b61",
+    "object": "chat.completion",
+    "created": 1795625198,
+    "model": "google/gemma-2-2b-it",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "The old clock on the landing ticked with measured urgency, each slow, deliberate clang echoing the rhythm of life's passing. Dust motes danced in the sunbeams that occasionally pierced the worn drapes, like tiny, shimmering fairies caught in a persistent spell. The silence was a heavy shroud, punctuated by the soft whir of the refrigerator and the sigh of the furnace in its eternal, tireless pursuit of warmth.\n\nI sat curled up on the faded, velvet armchair, its once luxurious tufting now a bit border-line, a testament to the slow march of time. The world outside remained stubbornly blurry. A storm brewed in the distance, its fury masked by the steady hum of the house. \n\nBut here, in this stillness, I found a strange and welcome sort of peace. The weight of loneliness pressed softly against my chest, a familiar ache that softened with each passing moment.  The dust settled, leaving a fine layer of memory in its wake. The house, in its own peculiar silence, whispered tales of generations past.  I could almost hear their voices, echoing through the worn walls and echoing in the tapestries on the wall, their stories painted in faded colours: fathers carving wood, mothers humming hymns, dreams of a life lived closer to reality - closer to the sun and the sea. \n\n Maybe the storm would pass, maybe the sun would rise again.  But for now, I was content to simply exist within the quiet embrace of the house, an echo of the stories that thrived in its creaking heart. \n",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": 107,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-814b9615",
+    "usage": {
+      "prompt_tokens": 22,
+      "total_tokens": 335,
+      "completion_tokens": 313,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "299a8560bedf22ed1c72a8a11e7dce4a7f9f51f8",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:57265/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 8144,
+  "provider": "local-openai",
+  "model_requested": "google/gemma-2-2b-it",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

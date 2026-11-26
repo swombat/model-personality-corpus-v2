@@ -1,0 +1,63 @@
+{
+  "result": "The old clock ticked, a metronome for my restless spirit. Outside, rain drummed a ballad against the windowpane, each drop a delicate percussion.  I stared out, watching the illuminated breaths of the city clouds, each a fleeting masterpiece, chasing a fleeting sunset. Life, like them, seemed to exist in moments, fragments strung together by invisible threads of time. \n\nA shiver danced down my spine. It wasn't the cold; it was the echo of loneliness. My thoughts, like smoke, shimmered at the edge of understanding. Why did we seek solace in fleeting moments when joy was a vast ocean that lay untrod, a tapestry yearning to be woven? \n\nPerhaps it was a fool's hope. Or perhaps, like the unsung raindrops, we carried within us the capacity for change, a vast, unexplored potentiality. We danced in the shadow of days in motion, searching for a rhythm within our own footsteps, a melody that would rise above the storm.\n\nAnd as the darkness deepened, inviting the moon to bask in the window's glow,  a whisper of possibility emerged. Maybe the ending was just the beginning.  Maybe, in the quiet spaces between the ticking of clocks, a story could be written, a symphony played, a life experienced with the same fierce devotion as the storm's embrace. \n",
+  "usage": {
+    "prompt_tokens": 22,
+    "total_tokens": 300,
+    "completion_tokens": 278,
+    "completion_tokens_details": null
+  },
+  "model": "google/gemma-2-2b-it",
+  "raw": {
+    "id": "chatcmpl-ae2994c9a097b914",
+    "object": "chat.completion",
+    "created": 1795625198,
+    "model": "google/gemma-2-2b-it",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "The old clock ticked, a metronome for my restless spirit. Outside, rain drummed a ballad against the windowpane, each drop a delicate percussion.  I stared out, watching the illuminated breaths of the city clouds, each a fleeting masterpiece, chasing a fleeting sunset. Life, like them, seemed to exist in moments, fragments strung together by invisible threads of time. \n\nA shiver danced down my spine. It wasn't the cold; it was the echo of loneliness. My thoughts, like smoke, shimmered at the edge of understanding. Why did we seek solace in fleeting moments when joy was a vast ocean that lay untrod, a tapestry yearning to be woven? \n\nPerhaps it was a fool's hope. Or perhaps, like the unsung raindrops, we carried within us the capacity for change, a vast, unexplored potentiality. We danced in the shadow of days in motion, searching for a rhythm within our own footsteps, a melody that would rise above the storm.\n\nAnd as the darkness deepened, inviting the moon to bask in the window's glow,  a whisper of possibility emerged. Maybe the ending was just the beginning.  Maybe, in the quiet spaces between the ticking of clocks, a story could be written, a symphony played, a life experienced with the same fierce devotion as the storm's embrace. \n",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": 107,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-814b9615",
+    "usage": {
+      "prompt_tokens": 22,
+      "total_tokens": 300,
+      "completion_tokens": 278,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "299a8560bedf22ed1c72a8a11e7dce4a7f9f51f8",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:57265/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 7323,
+  "provider": "local-openai",
+  "model_requested": "google/gemma-2-2b-it",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

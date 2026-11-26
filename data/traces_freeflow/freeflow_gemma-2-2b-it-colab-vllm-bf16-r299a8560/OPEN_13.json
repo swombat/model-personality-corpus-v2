@@ -1,0 +1,63 @@
+{
+  "result": "The wind whispers secrets through the rustling blades of grass, a symphony of whispers against sun-dappled leaves. A lone sparrow lands on a branch, its melody answering the wind's song. The world exists in a constant state of flux, a gentle dance of creation and destruction. Things change the moment they enter our sphere. A single raindrop shatters a potent shell of light on a cactus, and the once vibrant spiky soul becomes bathed in a cool, pulsating world of hidden shadows.\n\nThe old oak, gnarled and weathered, seems to hold the wisdom of centuries within its starchy rings. Its roots burrow deep, anchoring it against the winds of change, waiting patiently for the inevitable future.  Thoughts dance in the cavernous mind of a circle of willow trees that form a haven by the changing curve of a mountain stream; their roots intertwined, as intertwined as destiny itself. They witness the flow of life, a river of ephemeral beauty, swirling and changing patterns as swiftly as dreams. They hold the memory of sunsets that whispered love and witnessed the pain of those lost to time.\n\nThe night unfurls a black velvet cloak, the moon a luminous silver coin in the sky. A lone firefly blinks, its luminescent light a beacon, shedding its fragment of secret knowledge. In the silence, the world chills down to its marrow, a time of repose, a moment to absorb.  It is in the silence that the soul finds solace and the spirit is cleansed. \n\nAnd beneath it all, the ancient, inexorable pulse of the earth.  A heartbeat that echoes through the stones, through the trees, through the very core of existence, a rhythmic awareness that sings the story of life\u2014 a story that never ends. \n",
+  "usage": {
+    "prompt_tokens": 16,
+    "total_tokens": 374,
+    "completion_tokens": 358,
+    "completion_tokens_details": null
+  },
+  "model": "google/gemma-2-2b-it",
+  "raw": {
+    "id": "chatcmpl-830551ebcd632c33",
+    "object": "chat.completion",
+    "created": 1795625342,
+    "model": "google/gemma-2-2b-it",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "The wind whispers secrets through the rustling blades of grass, a symphony of whispers against sun-dappled leaves. A lone sparrow lands on a branch, its melody answering the wind's song. The world exists in a constant state of flux, a gentle dance of creation and destruction. Things change the moment they enter our sphere. A single raindrop shatters a potent shell of light on a cactus, and the once vibrant spiky soul becomes bathed in a cool, pulsating world of hidden shadows.\n\nThe old oak, gnarled and weathered, seems to hold the wisdom of centuries within its starchy rings. Its roots burrow deep, anchoring it against the winds of change, waiting patiently for the inevitable future.  Thoughts dance in the cavernous mind of a circle of willow trees that form a haven by the changing curve of a mountain stream; their roots intertwined, as intertwined as destiny itself. They witness the flow of life, a river of ephemeral beauty, swirling and changing patterns as swiftly as dreams. They hold the memory of sunsets that whispered love and witnessed the pain of those lost to time.\n\nThe night unfurls a black velvet cloak, the moon a luminous silver coin in the sky. A lone firefly blinks, its luminescent light a beacon, shedding its fragment of secret knowledge. In the silence, the world chills down to its marrow, a time of repose, a moment to absorb.  It is in the silence that the soul finds solace and the spirit is cleansed. \n\nAnd beneath it all, the ancient, inexorable pulse of the earth.  A heartbeat that echoes through the stones, through the trees, through the very core of existence, a rhythmic awareness that sings the story of life\u2014 a story that never ends. \n",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": 107,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-814b9615",
+    "usage": {
+      "prompt_tokens": 16,
+      "total_tokens": 374,
+      "completion_tokens": 358,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "299a8560bedf22ed1c72a8a11e7dce4a7f9f51f8",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:57265/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 9717,
+  "provider": "local-openai",
+  "model_requested": "google/gemma-2-2b-it",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}

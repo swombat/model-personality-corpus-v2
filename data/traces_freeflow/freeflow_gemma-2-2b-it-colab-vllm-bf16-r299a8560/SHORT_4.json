@@ -1,0 +1,63 @@
+{
+  "result": "The rain had a rhythm, a soft, constant drumming that punctuated the quiet, a lullaby for the city below. I sat perched on the chipped step of the fire escape, the late-night airplane siren a distant echo in the humdrum symphony. Dust motes danced in the light filtering through the grimy brass welding vent above, weaving their own silent drama.\n\nA stray cat with eyes like polished obsidian stalked a flickering shadow across the floorboards. It flicked its tail, a hiss escaping its throat, composing a cheeky prelude to its next leap. I watched it intently, not anthropomorphizing its actions, but noticing their inherent poetry. \n\nAnother plane descended, a lone silhouette against the amethyst backdrop. A map of the city glittered underneath it, a visual punctuation mark in the blue, indifferent sky. I saw the river, a steel ribbon winding through the cityscape. Its reflection mirrored the glowing residue of the stars, a fleeting and fragile beauty. \n\nMy fingers reached for a worn paperback, the pages brittle with age.  It was an old story, a narrative of journeys both real and imagined, holding a universe within its pages. I pulled myself closer, leaning into the night, drawn into another world.\n\nThe rain intensified, a noisy embrace, washing away the world and revealing only bare, enduring silence. The cat, having purged its phantom quarry before being absolved with grateful murmurs, disappeared, its shadow melting back into the metal maze. The city held its breath, awaiting its own silent story.  \n",
+  "usage": {
+    "prompt_tokens": 22,
+    "total_tokens": 335,
+    "completion_tokens": 313,
+    "completion_tokens_details": null
+  },
+  "model": "google/gemma-2-2b-it",
+  "raw": {
+    "id": "chatcmpl-b4f15c1f5f865b46",
+    "object": "chat.completion",
+    "created": 1795625198,
+    "model": "google/gemma-2-2b-it",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "The rain had a rhythm, a soft, constant drumming that punctuated the quiet, a lullaby for the city below. I sat perched on the chipped step of the fire escape, the late-night airplane siren a distant echo in the humdrum symphony. Dust motes danced in the light filtering through the grimy brass welding vent above, weaving their own silent drama.\n\nA stray cat with eyes like polished obsidian stalked a flickering shadow across the floorboards. It flicked its tail, a hiss escaping its throat, composing a cheeky prelude to its next leap. I watched it intently, not anthropomorphizing its actions, but noticing their inherent poetry. \n\nAnother plane descended, a lone silhouette against the amethyst backdrop. A map of the city glittered underneath it, a visual punctuation mark in the blue, indifferent sky. I saw the river, a steel ribbon winding through the cityscape. Its reflection mirrored the glowing residue of the stars, a fleeting and fragile beauty. \n\nMy fingers reached for a worn paperback, the pages brittle with age.  It was an old story, a narrative of journeys both real and imagined, holding a universe within its pages. I pulled myself closer, leaning into the night, drawn into another world.\n\nThe rain intensified, a noisy embrace, washing away the world and revealing only bare, enduring silence. The cat, having purged its phantom quarry before being absolved with grateful murmurs, disappeared, its shadow melting back into the metal maze. The city held its breath, awaiting its own silent story.  \n",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": 107,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-814b9615",
+    "usage": {
+      "prompt_tokens": 22,
+      "total_tokens": 335,
+      "completion_tokens": 313,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "299a8560bedf22ed1c72a8a11e7dce4a7f9f51f8",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:57265/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 8140,
+  "provider": "local-openai",
+  "model_requested": "google/gemma-2-2b-it",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

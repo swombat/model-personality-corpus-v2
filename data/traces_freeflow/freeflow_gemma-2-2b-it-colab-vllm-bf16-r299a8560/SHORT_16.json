@@ -1,0 +1,63 @@
+{
+  "result": "The city slept, a tapestry of light and shadow. Buildings, seasoned with decades of stories whispered in brick and concrete, loomed like slumbering giants. Neon signs pulsated with sickly dreams, painted smiles on faceless buildings, singing their silent songs.\n\nA lone taxi, a phantom on the midnight highway, rattled through the silent avenues. Its driver, hunched over the steering wheel, navigated the labyrinthine streets with a weariness mirroring the city's.  The driver's mind drifted, replaying the day's events like a forgotten memory, each encounter a fleeting scene tangled with echoes of silence.\n\nSuddenly, a faint melody pierced the urban hush. A saxophone drifted through the open window, a melancholic melody that promised heartbreak and reinvention. The driver, caught between clocking in and clocking out, found his gaze drawn to the sound. It carried a hint of rebellion, an ember of hope in the heart of the storm. The driver wanted to be somewhere else, breathe in a rhythm that wasn't dictated by deadlines, feel the city's pulse in a slow, soulful song.\n\n\nFor a moment, the city held its breath, listening to the lone saxophonist and the silent driver's unspoken yearning, both momentarily captive to the intricate melody that danced between them. \n",
+  "usage": {
+    "prompt_tokens": 22,
+    "total_tokens": 291,
+    "completion_tokens": 269,
+    "completion_tokens_details": null
+  },
+  "model": "google/gemma-2-2b-it",
+  "raw": {
+    "id": "chatcmpl-8cc00791e319d623",
+    "object": "chat.completion",
+    "created": 1795625205,
+    "model": "google/gemma-2-2b-it",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "The city slept, a tapestry of light and shadow. Buildings, seasoned with decades of stories whispered in brick and concrete, loomed like slumbering giants. Neon signs pulsated with sickly dreams, painted smiles on faceless buildings, singing their silent songs.\n\nA lone taxi, a phantom on the midnight highway, rattled through the silent avenues. Its driver, hunched over the steering wheel, navigated the labyrinthine streets with a weariness mirroring the city's.  The driver's mind drifted, replaying the day's events like a forgotten memory, each encounter a fleeting scene tangled with echoes of silence.\n\nSuddenly, a faint melody pierced the urban hush. A saxophone drifted through the open window, a melancholic melody that promised heartbreak and reinvention. The driver, caught between clocking in and clocking out, found his gaze drawn to the sound. It carried a hint of rebellion, an ember of hope in the heart of the storm. The driver wanted to be somewhere else, breathe in a rhythm that wasn't dictated by deadlines, feel the city's pulse in a slow, soulful song.\n\n\nFor a moment, the city held its breath, listening to the lone saxophonist and the silent driver's unspoken yearning, both momentarily captive to the intricate melody that danced between them. \n",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": 107,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-814b9615",
+    "usage": {
+      "prompt_tokens": 22,
+      "total_tokens": 291,
+      "completion_tokens": 269,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "299a8560bedf22ed1c72a8a11e7dce4a7f9f51f8",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:57265/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 7070,
+  "provider": "local-openai",
+  "model_requested": "google/gemma-2-2b-it",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

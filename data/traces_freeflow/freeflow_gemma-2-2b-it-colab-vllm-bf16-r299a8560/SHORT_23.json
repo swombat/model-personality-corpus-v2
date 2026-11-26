@@ -1,0 +1,63 @@
+{
+  "result": "The old, worn-down bookstore smelled faintly of paper and forgotten dreams. Dust motes danced in the pale morning light, illuminating forgotten stories waiting to be relived.  A phoenix of flames danced on the wall, its feathers a kaleidoscope of color against the backdrop of chipped plaster. This wasn't an ordinary bookstore; it was a celestial bazaar, a cross between a library and an apothecary, filled with relics of every kind\u2014 specters of mythology, echoes of forgotten tongues.\n\nA wizened woman with eyes like ancient polished stone sat behind the counter, stroking a weathered brass compass that hummed softly. \"Looking for something specific?\" she rasped, her voice a melody carved from years of whispered tales. \n\nI smiled, afraid to speak.  Instead, I ran a calloused finger over a worn leather-bound journal. It was a mirror reflecting a reflection, an invitation to a hidden world. Its intricate gold lettering sang of journeys long forgotten, whispered secrets of constellations that never quite gave their true name. \n\n\"If you're looking for magic,\" the woman sighed, \"you've already found it. But beware, the universe loves a good adventure, and its whims are not always predictable.\" \n\nAnd I knew then, with the sudden certainty of a sunrise piercing a blanket of night, that perhaps I had nothing to fear, only what I chose to seek. \n",
+  "usage": {
+    "prompt_tokens": 22,
+    "total_tokens": 311,
+    "completion_tokens": 289,
+    "completion_tokens_details": null
+  },
+  "model": "google/gemma-2-2b-it",
+  "raw": {
+    "id": "chatcmpl-baf50be505a7197b",
+    "object": "chat.completion",
+    "created": 1795625206,
+    "model": "google/gemma-2-2b-it",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "The old, worn-down bookstore smelled faintly of paper and forgotten dreams. Dust motes danced in the pale morning light, illuminating forgotten stories waiting to be relived.  A phoenix of flames danced on the wall, its feathers a kaleidoscope of color against the backdrop of chipped plaster. This wasn't an ordinary bookstore; it was a celestial bazaar, a cross between a library and an apothecary, filled with relics of every kind\u2014 specters of mythology, echoes of forgotten tongues.\n\nA wizened woman with eyes like ancient polished stone sat behind the counter, stroking a weathered brass compass that hummed softly. \"Looking for something specific?\" she rasped, her voice a melody carved from years of whispered tales. \n\nI smiled, afraid to speak.  Instead, I ran a calloused finger over a worn leather-bound journal. It was a mirror reflecting a reflection, an invitation to a hidden world. Its intricate gold lettering sang of journeys long forgotten, whispered secrets of constellations that never quite gave their true name. \n\n\"If you're looking for magic,\" the woman sighed, \"you've already found it. But beware, the universe loves a good adventure, and its whims are not always predictable.\" \n\nAnd I knew then, with the sudden certainty of a sunrise piercing a blanket of night, that perhaps I had nothing to fear, only what I chose to seek. \n",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": 107,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-814b9615",
+    "usage": {
+      "prompt_tokens": 22,
+      "total_tokens": 311,
+      "completion_tokens": 289,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "299a8560bedf22ed1c72a8a11e7dce4a7f9f51f8",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:57265/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 7540,
+  "provider": "local-openai",
+  "model_requested": "google/gemma-2-2b-it",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

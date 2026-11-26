@@ -1,0 +1,63 @@
+{
+  "result": "The wind whispers a forgotten lullaby through the cracked windowpanes. Dust motes, tiny dancers, whirl around, illuminated by the faint glow emanating from the far corner candle. It flickers, casting a spectral dance across the floorboards, illuminating a trail of forgotten dreams. I sit, wrapped in a faded shawl, its threads mirroring the wear and tear of time.\n\nThe silence is heavy, a symphony of emptiness playing in the attic. Shadows stretch long and thin, reaching toward me with fiendish glee, their whispers a chorus of forgotten memories. The air itself holds a sigh, carrying the ghosts of laughter and whispers, the echoes of a forgotten life.\n\nIn this space, I am a traveler in my own past. The warped furniture, a sentinel of a gilded age. An old book, its pages falling forth like tears, spilling secrets of long-ago glories and lost loves.  I reach out to touch a velvet-bound volume, its leather rough but comforting.\n\nThere's a truth in this silence, an intimate conversation between the past and present. The attic, a melancholy symphony, invites me to understand that sometimes the most valuable lessons are written with the ink of time, leaving their secrets to be unravelled by those who dare to listen. \n",
+  "usage": {
+    "prompt_tokens": 22,
+    "total_tokens": 281,
+    "completion_tokens": 259,
+    "completion_tokens_details": null
+  },
+  "model": "google/gemma-2-2b-it",
+  "raw": {
+    "id": "chatcmpl-95e65b966b4a53b4",
+    "object": "chat.completion",
+    "created": 1795625198,
+    "model": "google/gemma-2-2b-it",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "The wind whispers a forgotten lullaby through the cracked windowpanes. Dust motes, tiny dancers, whirl around, illuminated by the faint glow emanating from the far corner candle. It flickers, casting a spectral dance across the floorboards, illuminating a trail of forgotten dreams. I sit, wrapped in a faded shawl, its threads mirroring the wear and tear of time.\n\nThe silence is heavy, a symphony of emptiness playing in the attic. Shadows stretch long and thin, reaching toward me with fiendish glee, their whispers a chorus of forgotten memories. The air itself holds a sigh, carrying the ghosts of laughter and whispers, the echoes of a forgotten life.\n\nIn this space, I am a traveler in my own past. The warped furniture, a sentinel of a gilded age. An old book, its pages falling forth like tears, spilling secrets of long-ago glories and lost loves.  I reach out to touch a velvet-bound volume, its leather rough but comforting.\n\nThere's a truth in this silence, an intimate conversation between the past and present. The attic, a melancholy symphony, invites me to understand that sometimes the most valuable lessons are written with the ink of time, leaving their secrets to be unravelled by those who dare to listen. \n",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": 107,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-814b9615",
+    "usage": {
+      "prompt_tokens": 22,
+      "total_tokens": 281,
+      "completion_tokens": 259,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "299a8560bedf22ed1c72a8a11e7dce4a7f9f51f8",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:57265/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 6933,
+  "provider": "local-openai",
+  "model_requested": "google/gemma-2-2b-it",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

@@ -1,0 +1,63 @@
+{
+  "result": "The city hums, a lullaby of neon veins pulsing beneath a web of asphalt and concrete. I walk, alone, clutching a worn leather suitcase and an unyielding sense of whimsy.  My rent's due in a week, and the air is thick with a million whispered truths - each character woven into the fabric of this transient city. I read cafe signs, each painted with an indecipherable language of longing, defiance, and the quiet hope for connection. \n\nA stray cat with emerald eyes watches me from a doorway, its tail a silent question. Do I chase dreams, or heed the lure of the familiar?  Maybe there's some truth in both. The city breathes irregularity, demanding a constant engagement with each new face, each fleeting spark of life. It's an endless ballet of glances, smiles, and secrets exchanged in the fleeting shadows, a cosmic waltz of circumstance. I am a dancer, adrift in this unending rhythm. \n\nThis voyage started with the weight of a dream, now becoming a tangible melody in my footsteps. Will I chase it to exhaustion or find its echo in a shared coffee and the knowing glance of a stranger?  The coming days hold their own symphony, a silent hum of fear, excitement, and the beauty of uncertainty. This suitcase, my companion, holds the blank pages for the story it must narrate.  Because in the end, that's all there is: the unfolding journey. \n",
+  "usage": {
+    "prompt_tokens": 22,
+    "total_tokens": 322,
+    "completion_tokens": 300,
+    "completion_tokens_details": null
+  },
+  "model": "google/gemma-2-2b-it",
+  "raw": {
+    "id": "chatcmpl-a65e8060c9a7b46d",
+    "object": "chat.completion",
+    "created": 1795625206,
+    "model": "google/gemma-2-2b-it",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "The city hums, a lullaby of neon veins pulsing beneath a web of asphalt and concrete. I walk, alone, clutching a worn leather suitcase and an unyielding sense of whimsy.  My rent's due in a week, and the air is thick with a million whispered truths - each character woven into the fabric of this transient city. I read cafe signs, each painted with an indecipherable language of longing, defiance, and the quiet hope for connection. \n\nA stray cat with emerald eyes watches me from a doorway, its tail a silent question. Do I chase dreams, or heed the lure of the familiar?  Maybe there's some truth in both. The city breathes irregularity, demanding a constant engagement with each new face, each fleeting spark of life. It's an endless ballet of glances, smiles, and secrets exchanged in the fleeting shadows, a cosmic waltz of circumstance. I am a dancer, adrift in this unending rhythm. \n\nThis voyage started with the weight of a dream, now becoming a tangible melody in my footsteps. Will I chase it to exhaustion or find its echo in a shared coffee and the knowing glance of a stranger?  The coming days hold their own symphony, a silent hum of fear, excitement, and the beauty of uncertainty. This suitcase, my companion, holds the blank pages for the story it must narrate.  Because in the end, that's all there is: the unfolding journey. \n",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": 107,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-814b9615",
+    "usage": {
+      "prompt_tokens": 22,
+      "total_tokens": 322,
+      "completion_tokens": 300,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "299a8560bedf22ed1c72a8a11e7dce4a7f9f51f8",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:57265/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 7790,
+  "provider": "local-openai",
+  "model_requested": "google/gemma-2-2b-it",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

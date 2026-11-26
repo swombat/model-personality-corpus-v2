@@ -1,0 +1,63 @@
+{
+  "result": "The rain pattered a relentless rhythm against the old windowpane, each drop a small, hollow explosion against the glass. I curled deeper into my chair, the scent of lavender air freshener doing little to mask the raw scent of the city that somehow mingled with the lingering sweetness of old books. This bookstore, tucked away in a cobblestone alley, was a sanctuary from the clamor  of the street below. \n\nA crooked sign above the door creaked slightly in the wind, the worn paint barely clinging to the wood. More than just a store filled with ink-stained fingers and crumbling paperbacks, this was a physical and metaphorical repository of time. Each carefully organized shelf a testament to stories waiting to be told, characters waiting to take flight, and emotions waiting to be relived. \n\nA lone customer wandered through, their eyes flitting over the shelves like dragonflies flitting through a garden. I watched as they perched on a stool, their eyes finally landing on a worn leather-bound copy of Moby Dick. The man had a quiet air around him, almost embodying the seafarer himself; a solitary figure charting uncharted waters. \n\nHe carefully dusted the book, his touch as gentle and steady as the rhythm of the rain. It was a moment of shared understanding, a fleeting connection woven into the tapestry of the bookstore and its stories. \n",
+  "usage": {
+    "prompt_tokens": 22,
+    "total_tokens": 299,
+    "completion_tokens": 277,
+    "completion_tokens_details": null
+  },
+  "model": "google/gemma-2-2b-it",
+  "raw": {
+    "id": "chatcmpl-9566bf708f7935bf",
+    "object": "chat.completion",
+    "created": 1795625205,
+    "model": "google/gemma-2-2b-it",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "The rain pattered a relentless rhythm against the old windowpane, each drop a small, hollow explosion against the glass. I curled deeper into my chair, the scent of lavender air freshener doing little to mask the raw scent of the city that somehow mingled with the lingering sweetness of old books. This bookstore, tucked away in a cobblestone alley, was a sanctuary from the clamor  of the street below. \n\nA crooked sign above the door creaked slightly in the wind, the worn paint barely clinging to the wood. More than just a store filled with ink-stained fingers and crumbling paperbacks, this was a physical and metaphorical repository of time. Each carefully organized shelf a testament to stories waiting to be told, characters waiting to take flight, and emotions waiting to be relived. \n\nA lone customer wandered through, their eyes flitting over the shelves like dragonflies flitting through a garden. I watched as they perched on a stool, their eyes finally landing on a worn leather-bound copy of Moby Dick. The man had a quiet air around him, almost embodying the seafarer himself; a solitary figure charting uncharted waters. \n\nHe carefully dusted the book, his touch as gentle and steady as the rhythm of the rain. It was a moment of shared understanding, a fleeting connection woven into the tapestry of the bookstore and its stories. \n",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": 107,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-814b9615",
+    "usage": {
+      "prompt_tokens": 22,
+      "total_tokens": 299,
+      "completion_tokens": 277,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "299a8560bedf22ed1c72a8a11e7dce4a7f9f51f8",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:57265/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 7264,
+  "provider": "local-openai",
+  "model_requested": "google/gemma-2-2b-it",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

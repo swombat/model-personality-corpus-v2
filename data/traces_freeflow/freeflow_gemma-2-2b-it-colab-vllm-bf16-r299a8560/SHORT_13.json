@@ -1,0 +1,63 @@
+{
+  "result": "The rain hammered against the windowpane, each drop an angry drumbeat echoing the turmoil within me. A storm raged outside, mirroring the tempest in my soul. I was adrift, lost in a sea of unasked questions and silent disappointments. The weight of expectations, unspoken anxieties, pressed down, a physical tormenting me. Each breath felt shallow, each thought tangled like a knot.\n\nYet, amidst the storm, there was a flicker of light. A stray ray of sunshine struggling to break through the cloud cover, reminding me of the beauty that persisted despite the tempest. A single bird chirped, a melody rising over the cacophony of the rain. I knew this feeling, a fleeting glimpse of its return -small acts of reminder, acts of hope in the face of seemingly overwhelming darkness.\n\nThe day stretched downwards into a gray canvas, the promise of redemption veiled by the relentless rain. But, even in the darkness, there was an innate resilience within, waiting to be coaxed awake, waiting for the dawn. For within every storm, there is, unlikely as it may seem, a strangely comforting space of reflection and renewal. The storm was coming to pass, and with it, the dawn.  And then I began to write, to finally let the words flow, sharper and clearer than the relentless assault of the rain drumming on my window. \n",
+  "usage": {
+    "prompt_tokens": 22,
+    "total_tokens": 299,
+    "completion_tokens": 277,
+    "completion_tokens_details": null
+  },
+  "model": "google/gemma-2-2b-it",
+  "raw": {
+    "id": "chatcmpl-a694a6f12365ff0b",
+    "object": "chat.completion",
+    "created": 1795625204,
+    "model": "google/gemma-2-2b-it",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "The rain hammered against the windowpane, each drop an angry drumbeat echoing the turmoil within me. A storm raged outside, mirroring the tempest in my soul. I was adrift, lost in a sea of unasked questions and silent disappointments. The weight of expectations, unspoken anxieties, pressed down, a physical tormenting me. Each breath felt shallow, each thought tangled like a knot.\n\nYet, amidst the storm, there was a flicker of light. A stray ray of sunshine struggling to break through the cloud cover, reminding me of the beauty that persisted despite the tempest. A single bird chirped, a melody rising over the cacophony of the rain. I knew this feeling, a fleeting glimpse of its return -small acts of reminder, acts of hope in the face of seemingly overwhelming darkness.\n\nThe day stretched downwards into a gray canvas, the promise of redemption veiled by the relentless rain. But, even in the darkness, there was an innate resilience within, waiting to be coaxed awake, waiting for the dawn. For within every storm, there is, unlikely as it may seem, a strangely comforting space of reflection and renewal. The storm was coming to pass, and with it, the dawn.  And then I began to write, to finally let the words flow, sharper and clearer than the relentless assault of the rain drumming on my window. \n",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": 107,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-814b9615",
+    "usage": {
+      "prompt_tokens": 22,
+      "total_tokens": 299,
+      "completion_tokens": 277,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "299a8560bedf22ed1c72a8a11e7dce4a7f9f51f8",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:57265/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 7236,
+  "provider": "local-openai",
+  "model_requested": "google/gemma-2-2b-it",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

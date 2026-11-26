@@ -1,0 +1,63 @@
+{
+  "result": "The wind whispers a mournful song through the branches of the ancient oak. Its leaves, once emerald jewels, are now faded and brittle, succumbing to the chill of fall. A single robin watches from atop a bushy outcrop, perched on a thread of golden autumnal leaves.  He chirps a farewell, a trilling melody laced with melancholy, and flitting recklessly into the air to claim a chestnut-strewn space beneath the world's grand custodian. \n\nA lone crow, its obsidian eye fixed on a scattering of pigeons below, seems to silently sigh at the robin's distress. He mirrors not the plebeian chirping, but a more guttural confrontation with the oncoming winter, a croaking question to what is to remain. The trajectory of their gathering is carved by this melancholic season, a shared understanding of the constant ebb and flow of life, a cycle of birth, decay, and renewal. \n\nAs dusk plunges forth over the fading colors, a silver fox saunters through the clearing, the embers of the last rays kissing his fur. He is not burdened by the raven's sentiment; his eyes hold a knowing gleam, the primal sense of survival in the face of the oncoming darkness.  He is, and always will be, a ghost in the making. The circle sharpens, settling into the cold breath of twilight. \n",
+  "usage": {
+    "prompt_tokens": 22,
+    "total_tokens": 302,
+    "completion_tokens": 280,
+    "completion_tokens_details": null
+  },
+  "model": "google/gemma-2-2b-it",
+  "raw": {
+    "id": "chatcmpl-b30e89b978ca9364",
+    "object": "chat.completion",
+    "created": 1795625211,
+    "model": "google/gemma-2-2b-it",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "The wind whispers a mournful song through the branches of the ancient oak. Its leaves, once emerald jewels, are now faded and brittle, succumbing to the chill of fall. A single robin watches from atop a bushy outcrop, perched on a thread of golden autumnal leaves.  He chirps a farewell, a trilling melody laced with melancholy, and flitting recklessly into the air to claim a chestnut-strewn space beneath the world's grand custodian. \n\nA lone crow, its obsidian eye fixed on a scattering of pigeons below, seems to silently sigh at the robin's distress. He mirrors not the plebeian chirping, but a more guttural confrontation with the oncoming winter, a croaking question to what is to remain. The trajectory of their gathering is carved by this melancholic season, a shared understanding of the constant ebb and flow of life, a cycle of birth, decay, and renewal. \n\nAs dusk plunges forth over the fading colors, a silver fox saunters through the clearing, the embers of the last rays kissing his fur. He is not burdened by the raven's sentiment; his eyes hold a knowing gleam, the primal sense of survival in the face of the oncoming darkness.  He is, and always will be, a ghost in the making. The circle sharpens, settling into the cold breath of twilight. \n",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": 107,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-814b9615",
+    "usage": {
+      "prompt_tokens": 22,
+      "total_tokens": 302,
+      "completion_tokens": 280,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "299a8560bedf22ed1c72a8a11e7dce4a7f9f51f8",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:57265/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 7316,
+  "provider": "local-openai",
+  "model_requested": "google/gemma-2-2b-it",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}
