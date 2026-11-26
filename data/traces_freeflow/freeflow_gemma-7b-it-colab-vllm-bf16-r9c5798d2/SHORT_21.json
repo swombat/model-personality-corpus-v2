@@ -1,0 +1,63 @@
+{
+  "result": "The scent of lavender and honeysuckle lingered in the air, a testament to the warm, humid summer evening. Dimly lit fireflies danced in the sky, illuminating the meadow like tiny, twinkling stars. I lay beneath the velvet expanse of the moon, a book resting in my lap.\n\nThe pages turned effortlessly, each story transporting me to a different world. I was swept away by the magic of fantastical creatures, the intricate details of historical events, and the raw emotions of characters facing hardship. As I surrendered to the flow of the narratives, my worries melted away, replaced by a sense of wonder and serenity.\n\nThe moon cast long shadows on the grass, mirroring the patterns etched in the pages of the book. Each page turned brought new revelations, new perspectives, and the blossoming of empathy. The characters became more than ink on paper, evolving into beings I could relate to, understand, and admire.\n\nAs the first rays of dawn crept over the horizon, I emerged from my reverie, the warmth of the new day washing over me. The book rested in my hand, its pages turning back, its secrets unveiled. The meadow stretched before me, fresh and full of possibilities.\n\nI stretched, stretched my wings, and took a deep breath of the dew-laden air. The day was young, the future unwritten, and I was ready to write my own story, one page at a time.",
+  "usage": {
+    "prompt_tokens": 22,
+    "total_tokens": 309,
+    "completion_tokens": 287,
+    "completion_tokens_details": null
+  },
+  "model": "google/gemma-7b-it",
+  "raw": {
+    "id": "chatcmpl-bdbc886d33f5acb9",
+    "object": "chat.completion",
+    "created": 1795629060,
+    "model": "google/gemma-7b-it",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "The scent of lavender and honeysuckle lingered in the air, a testament to the warm, humid summer evening. Dimly lit fireflies danced in the sky, illuminating the meadow like tiny, twinkling stars. I lay beneath the velvet expanse of the moon, a book resting in my lap.\n\nThe pages turned effortlessly, each story transporting me to a different world. I was swept away by the magic of fantastical creatures, the intricate details of historical events, and the raw emotions of characters facing hardship. As I surrendered to the flow of the narratives, my worries melted away, replaced by a sense of wonder and serenity.\n\nThe moon cast long shadows on the grass, mirroring the patterns etched in the pages of the book. Each page turned brought new revelations, new perspectives, and the blossoming of empathy. The characters became more than ink on paper, evolving into beings I could relate to, understand, and admire.\n\nAs the first rays of dawn crept over the horizon, I emerged from my reverie, the warmth of the new day washing over me. The book rested in my hand, its pages turning back, its secrets unveiled. The meadow stretched before me, fresh and full of possibilities.\n\nI stretched, stretched my wings, and took a deep breath of the dew-laden air. The day was young, the future unwritten, and I was ready to write my own story, one page at a time.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-7e215b23",
+    "usage": {
+      "prompt_tokens": 22,
+      "total_tokens": 309,
+      "completion_tokens": 287,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "9c5798d27f588501ce1e108079d2a19e4c3a2353",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:59075/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 22950,
+  "provider": "local-openai",
+  "model_requested": "google/gemma-7b-it",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}
