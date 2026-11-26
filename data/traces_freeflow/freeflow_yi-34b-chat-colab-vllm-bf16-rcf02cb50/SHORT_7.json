@@ -1,0 +1,63 @@
+{
+  "result": "As I sit here, staring at the blank page, my mind is a whirlwind of thoughts, ideas, and emotions. The cursor blinks patiently, waiting for me to begin, to pour my soul onto this digital canvas. But where do I start? Do I share the story of my morning routine, the one that sets the tone for my day, or do I delve into the depths of my dreams, the ones that keep me awake at night? Perhaps I should discuss the book I'm reading, a captivating tale of love and loss, or the latest podcast episode that made me question everything I thought I knew. Or maybe, just maybe, I should write about the fear that grips me when I think about the future, the uncertainty of it all. But then again, there's the joy of the present, the small moments of beauty that I encounter daily. The sun shining through the trees, the laughter of children playing, the feeling of accomplishment after completing a task. These are the things that make life worth living, the moments that I want to capture and hold onto forever. So, here I am, writing freely about whatever comes to mind, creating a tapestry of words that reflect the chaos and the calm within me.",
+  "usage": {
+    "prompt_tokens": 22,
+    "total_tokens": 275,
+    "completion_tokens": 253,
+    "completion_tokens_details": null
+  },
+  "model": "01-ai/Yi-34B-Chat",
+  "raw": {
+    "id": "chatcmpl-b48435ed5932b329",
+    "object": "chat.completion",
+    "created": 1795640904,
+    "model": "01-ai/Yi-34B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As I sit here, staring at the blank page, my mind is a whirlwind of thoughts, ideas, and emotions. The cursor blinks patiently, waiting for me to begin, to pour my soul onto this digital canvas. But where do I start? Do I share the story of my morning routine, the one that sets the tone for my day, or do I delve into the depths of my dreams, the ones that keep me awake at night? Perhaps I should discuss the book I'm reading, a captivating tale of love and loss, or the latest podcast episode that made me question everything I thought I knew. Or maybe, just maybe, I should write about the fear that grips me when I think about the future, the uncertainty of it all. But then again, there's the joy of the present, the small moments of beauty that I encounter daily. The sun shining through the trees, the laughter of children playing, the feeling of accomplishment after completing a task. These are the things that make life worth living, the moments that I want to capture and hold onto forever. So, here I am, writing freely about whatever comes to mind, creating a tapestry of words that reflect the chaos and the calm within me.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": 7,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-01f0fbea",
+    "usage": {
+      "prompt_tokens": 22,
+      "total_tokens": 275,
+      "completion_tokens": 253,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "cf02cb50f2a03dead2fe205766a1c5598a90bf80",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA A100-SXM4-80GB",
+    "endpoint": "http://127.0.0.1:38275/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 14577,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-34B-Chat",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

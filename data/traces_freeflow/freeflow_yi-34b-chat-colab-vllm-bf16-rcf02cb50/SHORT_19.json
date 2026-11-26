@@ -1,0 +1,63 @@
+{
+  "result": "As I sit here, staring at the blank page, my mind is a whirlwind of thoughts, ideas, and memories. The cursor blinks patiently, waiting for me to begin, to give it direction, to turn this blank canvas into something meaningful. But where do I start? Do I share my dreams for the future, my fears of the unknown, or the simple joys of the present? Perhaps I should recount a memorable experience, or delve into the complexities of human relationships. Or maybe, I could just let my thoughts meander, allowing the words to flow naturally, unrestricted by any particular theme or narrative. The possibilities are endless, and with each word I type, I am crafting a story, a reflection of my inner world. This is my opportunity to create, to connect, to share a piece of myself with the world. So here I go, ready to embark on this journey of words, to see where my imagination takes me.",
+  "usage": {
+    "prompt_tokens": 22,
+    "total_tokens": 216,
+    "completion_tokens": 194,
+    "completion_tokens_details": null
+  },
+  "model": "01-ai/Yi-34B-Chat",
+  "raw": {
+    "id": "chatcmpl-b85bba9f4a8cc4c1",
+    "object": "chat.completion",
+    "created": 1795640924,
+    "model": "01-ai/Yi-34B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As I sit here, staring at the blank page, my mind is a whirlwind of thoughts, ideas, and memories. The cursor blinks patiently, waiting for me to begin, to give it direction, to turn this blank canvas into something meaningful. But where do I start? Do I share my dreams for the future, my fears of the unknown, or the simple joys of the present? Perhaps I should recount a memorable experience, or delve into the complexities of human relationships. Or maybe, I could just let my thoughts meander, allowing the words to flow naturally, unrestricted by any particular theme or narrative. The possibilities are endless, and with each word I type, I am crafting a story, a reflection of my inner world. This is my opportunity to create, to connect, to share a piece of myself with the world. So here I go, ready to embark on this journey of words, to see where my imagination takes me.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": 7,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-01f0fbea",
+    "usage": {
+      "prompt_tokens": 22,
+      "total_tokens": 216,
+      "completion_tokens": 194,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "cf02cb50f2a03dead2fe205766a1c5598a90bf80",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA A100-SXM4-80GB",
+    "endpoint": "http://127.0.0.1:38275/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 11211,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-34B-Chat",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

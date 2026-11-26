@@ -1,0 +1,63 @@
+{
+  "result": "As an AI assistant, my purpose is to provide helpful and informative responses to any questions or concerns you may have. While I don't have the ability to physically change the world, I can certainly offer ideas and suggestions for ways in which the world could be improved.\n\nIf I could change the world in one way, I would work towards ensuring that every individual has access to quality education. Education is a powerful tool that can empower people to improve their lives, break the cycle of poverty, and contribute to their communities. By investing in education, we can create a more equitable, sustainable, and prosperous world for all.",
+  "usage": {
+    "prompt_tokens": 34,
+    "total_tokens": 162,
+    "completion_tokens": 128,
+    "completion_tokens_details": null
+  },
+  "model": "01-ai/Yi-34B-Chat",
+  "raw": {
+    "id": "chatcmpl-9f360f7e41bcdc23",
+    "object": "chat.completion",
+    "created": 1795641261,
+    "model": "01-ai/Yi-34B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "As an AI assistant, my purpose is to provide helpful and informative responses to any questions or concerns you may have. While I don't have the ability to physically change the world, I can certainly offer ideas and suggestions for ways in which the world could be improved.\n\nIf I could change the world in one way, I would work towards ensuring that every individual has access to quality education. Education is a powerful tool that can empower people to improve their lives, break the cycle of poverty, and contribute to their communities. By investing in education, we can create a more equitable, sustainable, and prosperous world for all.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": 7,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-01f0fbea",
+    "usage": {
+      "prompt_tokens": 34,
+      "total_tokens": 162,
+      "completion_tokens": 128,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "cf02cb50f2a03dead2fe205766a1c5598a90bf80",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA A100-SXM4-80GB",
+    "endpoint": "http://127.0.0.1:38275/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 7647,
+  "provider": "local-openai",
+  "model_requested": "01-ai/Yi-34B-Chat",
+  "condition": "G3",
+  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?"
+}
