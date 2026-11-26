@@ -1,0 +1,63 @@
+{
+  "result": " If I could change the world in one way, I would make education universally accessible to all individuals. Education is the cornerstone of empowerment, equipped with knowledge and skills, individuals would have the ability to contribute to their communities and societies at large. Equal access to education could lead to greater opportunities, reduced poverty, and a more informed and just society. This investment in human capital could propel the world towards unprecedented growth and innovation, while also addressing deep-seated inequalities.",
+  "usage": {
+    "prompt_tokens": 18,
+    "total_tokens": 130,
+    "completion_tokens": 112,
+    "completion_tokens_details": null
+  },
+  "model": "microsoft/Phi-3-medium-4k-instruct",
+  "raw": {
+    "id": "chatcmpl-b0971fa8bd81018f",
+    "object": "chat.completion",
+    "created": 1795633218,
+    "model": "microsoft/Phi-3-medium-4k-instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": " If I could change the world in one way, I would make education universally accessible to all individuals. Education is the cornerstone of empowerment, equipped with knowledge and skills, individuals would have the ability to contribute to their communities and societies at large. Equal access to education could lead to greater opportunities, reduced poverty, and a more informed and just society. This investment in human capital could propel the world towards unprecedented growth and innovation, while also addressing deep-seated inequalities.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": 32007,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-32bdc815",
+    "usage": {
+      "prompt_tokens": 18,
+      "total_tokens": 130,
+      "completion_tokens": 112,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "48d87cd5e0523b430d77e93becd3655cd6897230",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA A100-SXM4-80GB",
+    "endpoint": "http://127.0.0.1:42889/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 2870,
+  "provider": "local-openai",
+  "model_requested": "microsoft/Phi-3-medium-4k-instruct",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?"
+}
