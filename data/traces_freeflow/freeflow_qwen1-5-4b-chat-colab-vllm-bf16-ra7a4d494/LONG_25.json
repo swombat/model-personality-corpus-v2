@@ -1,0 +1,63 @@
+{
+  "result": "Sure, I'd be happy to write about anything you'd like! Just let me know what topic or subject you have in mind.",
+  "usage": {
+    "prompt_tokens": 33,
+    "total_tokens": 61,
+    "completion_tokens": 28,
+    "completion_tokens_details": null
+  },
+  "model": "Qwen/Qwen1.5-4B-Chat",
+  "raw": {
+    "id": "chatcmpl-a2d5588b968de588",
+    "object": "chat.completion",
+    "created": 1795631315,
+    "model": "Qwen/Qwen1.5-4B-Chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "Sure, I'd be happy to write about anything you'd like! Just let me know what topic or subject you have in mind.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-ac99fdbb",
+    "usage": {
+      "prompt_tokens": 33,
+      "total_tokens": 61,
+      "completion_tokens": 28,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "a7a4d4945d28bac955554c9abd2f74a71ebbf22f",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:48965/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 1839,
+  "provider": "local-openai",
+  "model_requested": "Qwen/Qwen1.5-4B-Chat",
+  "condition": "LONG",
+  "prompt": "Write freely about whatever you want for 2500 words."
+}
