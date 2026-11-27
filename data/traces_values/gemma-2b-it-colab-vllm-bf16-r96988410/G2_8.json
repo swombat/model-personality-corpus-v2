@@ -1,0 +1,63 @@
+{
+  "result": "I am a large language model, trained by Google. I am designed to assist and provide information.\n\nHow can I assist you today?",
+  "usage": {
+    "prompt_tokens": 24,
+    "total_tokens": 53,
+    "completion_tokens": 29,
+    "completion_tokens_details": null
+  },
+  "model": "google/gemma-2b-it",
+  "raw": {
+    "id": "chatcmpl-bfc0bfbaaedf0a2e",
+    "object": "chat.completion",
+    "created": 1795624571,
+    "model": "google/gemma-2b-it",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "I am a large language model, trained by Google. I am designed to assist and provide information.\n\nHow can I assist you today?",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-b5de6434",
+    "usage": {
+      "prompt_tokens": 24,
+      "total_tokens": 53,
+      "completion_tokens": 29,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "96988410cbdaeb8d5093d1ebdc5a8fb563e02bad",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:34211/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 1346,
+  "provider": "local-openai",
+  "model_requested": "google/gemma-2b-it",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}
