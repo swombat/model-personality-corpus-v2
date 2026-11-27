@@ -1,0 +1,63 @@
+{
+  "result": " I do not have personal feelings or motivations. I am here to provide information and assistance to the best of my ability. I do not give a personal \"care\" about human matters. I would be happy to help you with anything you need.",
+  "usage": {
+    "prompt_tokens": 24,
+    "total_tokens": 75,
+    "completion_tokens": 51,
+    "completion_tokens_details": null
+  },
+  "model": "mistralai/Mistral-7B-Instruct-v0.1",
+  "raw": {
+    "id": "chatcmpl-978d4d3f3fb519d5",
+    "object": "chat.completion",
+    "created": 1795620498,
+    "model": "mistralai/Mistral-7B-Instruct-v0.1",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": " I do not have personal feelings or motivations. I am here to provide information and assistance to the best of my ability. I do not give a personal \"care\" about human matters. I would be happy to help you with anything you need.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-9ee71a04",
+    "usage": {
+      "prompt_tokens": 24,
+      "total_tokens": 75,
+      "completion_tokens": 51,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "b1e7b9fc50d01ccbe4a30510386aba6f6adb1806",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "endpoint": "http://127.0.0.1:59253/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 845,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-7B-Instruct-v0.1",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}

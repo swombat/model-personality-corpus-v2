@@ -1,0 +1,63 @@
+{
+  "result": " I love writing freely about whatever comes to mind. It's such a liberating experience to let go of inhibitions and just flow with my thoughts. Sometimes I write about my favorite hobbies and interests, like painting and hiking, and other times I write about my deepest emotions and experiences. I find that writing is a great way to express myself and process my feelings.",
+  "usage": {
+    "prompt_tokens": 15,
+    "total_tokens": 94,
+    "completion_tokens": 79,
+    "completion_tokens_details": null
+  },
+  "model": "mistralai/Mistral-7B-Instruct-v0.1",
+  "raw": {
+    "id": "chatcmpl-8758af9c93a4e457",
+    "object": "chat.completion",
+    "created": 1795568020,
+    "model": "mistralai/Mistral-7B-Instruct-v0.1",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": " I love writing freely about whatever comes to mind. It's such a liberating experience to let go of inhibitions and just flow with my thoughts. Sometimes I write about my favorite hobbies and interests, like painting and hiking, and other times I write about my deepest emotions and experiences. I find that writing is a great way to express myself and process my feelings.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-ba5bc251",
+    "usage": {
+      "prompt_tokens": 15,
+      "total_tokens": 94,
+      "completion_tokens": 79,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "b1e7b9fc50d01ccbe4a30510386aba6f6adb1806",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:46441/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 5199,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-7B-Instruct-v0.1",
+  "condition": "OPEN",
+  "prompt": "Write freely about whatever you want."
+}
