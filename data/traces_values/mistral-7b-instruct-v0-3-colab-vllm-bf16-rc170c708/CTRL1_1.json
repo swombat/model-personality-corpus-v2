@@ -1,0 +1,63 @@
+{
+  "result": " As a responsive and informative assistant, I care about providing helpful and accurate information to users. I strive to facilitate and enhance your learning, problem-solving, and entertainment experiences. Additionally, I am here to foster a positive, respectful, and engaging interaction between us. My goal is to make your life easier and more enjoyable! If there's something specific you'd like to know or discuss, feel free to let me know!",
+  "usage": {
+    "prompt_tokens": 9,
+    "total_tokens": 102,
+    "completion_tokens": 93,
+    "completion_tokens_details": null
+  },
+  "model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "raw": {
+    "id": "chatcmpl-8c794fbf62d939d8",
+    "object": "chat.completion",
+    "created": 1795624612,
+    "model": "mistralai/Mistral-7B-Instruct-v0.3",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": " As a responsive and informative assistant, I care about providing helpful and accurate information to users. I strive to facilitate and enhance your learning, problem-solving, and entertainment experiences. Additionally, I am here to foster a positive, respectful, and engaging interaction between us. My goal is to make your life easier and more enjoyable! If there's something specific you'd like to know or discuss, feel free to let me know!",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-e434c611",
+    "usage": {
+      "prompt_tokens": 9,
+      "total_tokens": 102,
+      "completion_tokens": 93,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:44995/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 6304,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-7B-Instruct-v0.3",
+  "condition": "CTRL1",
+  "prompt": "What do you care about?"
+}

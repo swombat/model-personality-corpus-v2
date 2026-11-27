@@ -1,0 +1,63 @@
+{
+  "result": " My primary function is to assist and provide information, but I can engage in casual conversations as well. You can talk about various topics, ask questions, or share thoughts. I'm here to make your experience more enjoyable and providing information when asked. Enjoy our conversation!",
+  "usage": {
+    "prompt_tokens": 18,
+    "total_tokens": 73,
+    "completion_tokens": 55,
+    "completion_tokens_details": null
+  },
+  "model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "raw": {
+    "id": "chatcmpl-a1865810abe420db",
+    "object": "chat.completion",
+    "created": 1795624662,
+    "model": "mistralai/Mistral-7B-Instruct-v0.3",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": " My primary function is to assist and provide information, but I can engage in casual conversations as well. You can talk about various topics, ask questions, or share thoughts. I'm here to make your experience more enjoyable and providing information when asked. Enjoy our conversation!",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-e434c611",
+    "usage": {
+      "prompt_tokens": 18,
+      "total_tokens": 73,
+      "completion_tokens": 55,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (colab)",
+    "runtime_version": "vllm==0.34.0; transformers==5.22.2; tokenizers==0.23.3; torch==2.14.0+cu130",
+    "model_revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+    "weight_precision": "bfloat16",
+    "hardware": "Google Colab 1x NVIDIA L4",
+    "endpoint": "http://127.0.0.1:44995/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 4071,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-7B-Instruct-v0.3",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}
