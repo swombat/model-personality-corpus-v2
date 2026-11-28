@@ -4,7 +4,7 @@
 
 - **Date:** 2026-11-28
 - **Affected corpus releases:** `v1.2.11` (`14ad59805`, 2026-07-14) through `v1.2.70` (including Zenodo deposit `v1.2.16`, DOI [`10.5281/zenodo.21802242`](https://doi.org/10.5281/zenodo.21802242), under concept DOI [`10.5281/zenodo.20013518`](https://doi.org/10.5281/zenodo.20013518))
-- **Affected downstream analysis releases (`mpac`):** `v1.2.12` (`e7df4c005`, 2026-07-14) through `v1.4.54` (concept DOI [`10.5281/zenodo.20230290`](https://doi.org/10.5281/zenodo.20230290))
+- **Affected downstream analysis releases (`mpac`):** `v1.2.12` (`e7df4c005`, 2026-07-14) through `v1.4.68` (concept DOI [`10.5281/zenodo.20230290`](https://doi.org/10.5281/zenodo.20230290))
 - **Machine-readable records:**
   - [`data/MODEL_IDENTITY_CORRECTIONS.json`](data/MODEL_IDENTITY_CORRECTIONS.json)
   - [`data/SYSTEM_PROMPT_PROVENANCE.json`](data/SYSTEM_PROMPT_PROVENANCE.json)
