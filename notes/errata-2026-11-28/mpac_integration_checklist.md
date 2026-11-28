@@ -20,3 +20,7 @@ Prepared to support eligibility/membership review across `mpac` (`website/`, `an
 
 3. **Unaffected neighbour check:**
    - `ministral-8b-2512` (`ministral-8b-2512-or-pin-mistral`) and the other 9 non-retired `or-pin-mistral` island models (`ministral-3b-2512`, `ministral-14b-2512`, `mistral-small-3-2-24b-instruct`, `devstral-2512`, `codestral-2508`, `mistral-medium-3`, `mistral-medium-3-1`, `mistral-medium-3-5`, `mistral-large-2512`) plus mainland `mistral-nemo`, `mistral-small-3-1-24b-instruct`, `mistral-7b-instruct-v0-2`, and `mistral-large-4-0` remain active and unchanged at `125` freeflow + `120` values each.
+
+4. **Partitioned xAI freeflow cells (`grok-3-16k` and `grok-4-16k`):**
+   - `website/scripts/generate_data.py` now gates out samples matching `eligible_for_named_weight_analysis: false` partitions in `MODEL_IDENTITY_CORRECTIONS.json`, leaving `grok-3` with `25` genuine `grok-3` freeflow + `120` `grok-3` values and `grok-4` with `25` genuine `grok-4-0709` freeflow + `120` `grok-4-0709` values (without adding duplicate `grok-4.3` traces into `grok-4-3`).
+   - Downstream BV1 aggregates, cards, profiles, and map coordinates for `grok-3` and `grok-4` (`v1.2.1`–`v1.4.68`) included the 100 `grok-4.3` top-up traces and should be regenerated from the 25 genuine April 23 freeflow evaluations before re-publishing those two profiles.

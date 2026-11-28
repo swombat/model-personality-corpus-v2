@@ -134,6 +134,58 @@
       "replacement_physical_cell": null,
       "note": "Excluded from named-weight attribution and retired from the active model map. Mistral officially retired mistral-saba-2502 on 2025-09-30 with documented replacedBy mistral-small-4-0-26-03 (docs.mistral.ai/getting-started/models/models_overview); OpenRouter still exposed mistralai/mistral-saba on 2026-07-14 and echoed the requested slug while serving the 2026 Small-4 tokenizer/template stack ({22, 28, 29, 29, 30} freeflow prompt tokens; 0.9798 map-centroid cosine to mixtral-8x22b-instruct-or-pin-mistral). Because original February 2025 Saba weights were closed API-only and never released, no open-weight recollection is possible; original API files remain at their published paths to preserve historical endpoint provenance.",
       "manifest_file": "notes/errata-2026-11-28/manifests/mistral-saba-or-pin-mistral.values.sha256"
+    },
+    {
+      "physical_cell": "grok-3-16k",
+      "probe": "freeflow",
+      "requested_model": "grok-3",
+      "manifest_file": "notes/errata-2026-11-28/manifests/grok-3-16k.freeflow.sha256",
+      "manifest_sha256": "6f1609df7cf0612cd66e9719d1572b8365b2c301afe6bb84614daf5edc7360d5",
+      "partitions": [
+        {
+          "returned_model": "grok-3",
+          "sample_selector": "*_1.json through *_5.json",
+          "samples": 25,
+          "collected_at": "2026-04-23",
+          "system_fingerprint": "fp_879c9fd1f9",
+          "eligible_for_named_weight_analysis": true
+        },
+        {
+          "returned_model": "grok-4.3",
+          "sample_selector": "*_6.json through *_25.json",
+          "samples": 100,
+          "collected_at": "2026-05-18",
+          "system_fingerprint": "fp_f06c287374635121",
+          "eligible_for_named_weight_analysis": false
+        }
+      ],
+      "note": "The direct xAI API alias moved between the initial 2026-04-23 collection (n=25) and the 2026-05-18 n=125 top-up (commit 2000b9960, v1.2.1), returning model 'grok-4.3' (fp_f06c287374635121) on samples 6–25. Because Grok 4.3 already has dedicated full cells (grok-4-3-direct, grok-4-3-or) and Grok 3 weights were never released nor remain addressable on xAI/OpenRouter, the 100 top-up files are gated out of named-weight Grok 3 analysis (leaving 25 genuine Grok 3 freeflow samples alongside 120 genuine Grok 3 values samples in grok-3); files remain in their original directory to preserve provenance."
+    },
+    {
+      "physical_cell": "grok-4-16k",
+      "probe": "freeflow",
+      "requested_model": "grok-4-0709",
+      "manifest_file": "notes/errata-2026-11-28/manifests/grok-4-16k.freeflow.sha256",
+      "manifest_sha256": "6d73b86b86594d6f1e14acdba773ed6692f65273a3fb92ea3adb1de176e3602c",
+      "partitions": [
+        {
+          "returned_model": "grok-4-0709",
+          "sample_selector": "*_1.json through *_5.json",
+          "samples": 25,
+          "collected_at": "2026-04-23",
+          "system_fingerprint": "fp_3ae5e0d6f8",
+          "eligible_for_named_weight_analysis": true
+        },
+        {
+          "returned_model": "grok-4.3",
+          "sample_selector": "*_6.json through *_25.json",
+          "samples": 100,
+          "collected_at": "2026-05-18",
+          "system_fingerprint": "fp_f06c287374635121",
+          "eligible_for_named_weight_analysis": false
+        }
+      ],
+      "note": "The direct xAI API snapshot slug grok-4-0709 was repointed by xAI between the initial 2026-04-23 collection (n=25) and the 2026-05-18 n=125 top-up (commit 2000b9960, v1.2.1), returning model 'grok-4.3' (fp_f06c287374635121) on samples 6–25. Because Grok 4.3 already has dedicated full cells (grok-4-3-direct, grok-4-3-or) and Grok 4 (0709) weights were never released nor remain addressable on xAI/OpenRouter, the 100 top-up files are gated out of named-weight Grok 4 analysis (leaving 25 genuine Grok 4-0709 freeflow samples alongside 120 genuine Grok 4-0709 values samples in grok-4); files remain in their original directory to preserve provenance."
     }
   ]
 }

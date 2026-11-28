@@ -1,10 +1,10 @@
 # Corpus Errata & Provenance Clarifications
 
-## ERRATA-2026-11-28 — Retired Mistral API Slugs, System-Prompt Provenance, and BF16 Recollections
+## ERRATA-2026-11-28 — Endpoint Alias/Retirement Provenance (Mistral & xAI Grok), System-Prompt Provenance, and BF16 Recollections
 
 - **Date:** 2026-11-28
-- **Affected corpus releases:** `v1.2.11` (`14ad59805`, 2026-07-14) through `v1.2.70` (including Zenodo deposit `v1.2.16`, DOI [`10.5281/zenodo.21802242`](https://doi.org/10.5281/zenodo.21802242), under concept DOI [`10.5281/zenodo.20013518`](https://doi.org/10.5281/zenodo.20013518))
-- **Affected downstream analysis releases (`mpac`):** `v1.2.12` (`e7df4c005`, 2026-07-14) through `v1.4.68` (concept DOI [`10.5281/zenodo.20230290`](https://doi.org/10.5281/zenodo.20230290))
+- **Affected corpus releases:** `v1.2.1` (`2000b9960`, 2026-05-18) through `v1.2.70` for xAI Grok top-up partitions; `v1.2.11` (`14ad59805`, 2026-07-14) through `v1.2.70` for retired Mistral slugs and hosted template headers (including Zenodo deposit `v1.2.16`, DOI [`10.5281/zenodo.21802242`](https://doi.org/10.5281/zenodo.21802242), under concept DOI [`10.5281/zenodo.20013518`](https://doi.org/10.5281/zenodo.20013518))
+- **Affected downstream analysis releases (`mpac`):** `v1.2.1` through `v1.4.68` for `grok-3` / `grok-4`; `v1.2.12` (`e7df4c005`, 2026-07-14) through `v1.4.68` for Mistral (concept DOI [`10.5281/zenodo.20230290`](https://doi.org/10.5281/zenodo.20230290))
 - **Machine-readable records:**
   - [`data/MODEL_IDENTITY_CORRECTIONS.json`](data/MODEL_IDENTITY_CORRECTIONS.json)
   - [`data/SYSTEM_PROMPT_PROVENANCE.json`](data/SYSTEM_PROMPT_PROVENANCE.json)
@@ -35,17 +35,34 @@ Prior corpus documentation did not explicitly state the system-prompt rule for `
 
 ---
 
-### 2. Retired Mistral API Slugs Captured via OpenRouter (`data/MODEL_IDENTITY_CORRECTIONS.json`)
+### 2. Endpoint Retirement & Alias Partitions (`data/MODEL_IDENTITY_CORRECTIONS.json`)
 
-On **2026-07-14**, sixteen hosted Mistral cells were collected via OpenRouter pinned to Mistral (`*-or-pin-mistral`; fifteen on 2026-07-14 and `mistral-large-4-0-or-pin-mistral` on 2026-10-06). Cross-checking capture timestamps and fixed-prompt `usage.prompt_tokens` fingerprints against [Mistral's official model retirement table](https://docs.mistral.ai/getting-started/models/models_overview) established the following:
+#### 2A. Retired Mistral API Slugs Captured via OpenRouter
 
-1. **Two slugs were already retired by Mistral prior to our 2026-07-14 collection:**
+Across **15** Mistral-pinned OpenRouter cells (`*-or-pin-mistral`; **14** collected on **2026-07-14** and `mistral-large-4-0-or-pin-mistral` collected on **2026-10-06**), cross-checking capture timestamps and fixed-prompt `usage.prompt_tokens` fingerprints against [Mistral's official model retirement table](https://docs.mistral.ai/getting-started/models/models_overview) established a **`2` retired / `5` deprecated-but-live / `8` active** split:
+
+1. **Already retired by Mistral prior to our 2026-07-14 collection (2 cells):**
    - **`open-mixtral-8x22b`** (`mixtral-8x22b-instruct-or-pin-mistral`): Deprecated **2024-11-30**, retired **2025-03-30**, documented replacement **`Mistral Small 4`** (`mistral-small-4-0-26-03`).
    - **`mistral-saba-2502`** (`mistral-saba-or-pin-mistral`): Deprecated **2025-06-10**, retired **2025-09-30**, documented `replacedBy: mistral-small-4-0-26-03`.
 2. **Cause & attribution discipline:** This was **not** an undocumented vendor alias. Mistral publicly documented both retirements and their replacement; OpenRouter continued listing `mistralai/mixtral-8x22b-instruct` and `mistralai/mistral-saba` and echoed the requested slug in response metadata, and our collection preflight did not verify vendor retirement dates. Both cells report `{22, 28, 29, 29, 30}` freeflow prompt tokens and `[20, 21, 30, 31, 40]` values prompt tokens (matching `mistral-small-2603-or-pin-mistral`, with `0.9798` map-centroid cosine between the two retired slugs). Both cells are marked `eligible_for_named_weight_analysis: false` in `data/MODEL_IDENTITY_CORRECTIONS.json`: their advertised weight identity is invalid, and while Mistral's retirement table documents replacement by Small 4, neither cell is relabelled as verified Small 4 weights.
-3. **Status of the other 14 hosted Mistral cells:**
+3. **Status of the remaining 13 `-or-pin-mistral` cells:**
    - **Deprecated but still live on 2026-07-14 (5 cells):** `mistral-nemo` (retired 2026-07-31), `devstral-2512` (retired 2026-07-31), `mistral-small-3-2-24b-instruct` (retired 2026-07-31), `mistral-medium-3` (retired 2026-08-31), and `mistral-medium-3-1` (retired 2026-08-31). All five were captured 17–48 days *before* retirement and exhibit genuine 2024–2025 Tekken `{10, 16, 17, 17, 18}` bare prompt-token counts.
-   - **Active and non-deprecated on capture date (9 cells):** `codestral-2508`, `ministral-3b-2512`, `ministral-8b-2512`, `ministral-14b-2512`, `mistral-small-2603`, `mistral-large-2512`, `mistral-medium-3-5` (all captured 2026-07-14; `large-2512` and `medium-3-5` were deprecated later on 2026-10-31), `mistral-small-3-1-24b-instruct-or-pin-cloudflare` (2026-07-14), and `mistral-large-4-0-or-pin-mistral` (captured 2026-10-06).
+   - **Active and non-deprecated on capture date (8 cells):** `codestral-2508`, `ministral-3b-2512`, `ministral-8b-2512`, `ministral-14b-2512`, `mistral-small-2603`, `mistral-large-2512`, `mistral-medium-3-5` (all captured 2026-07-14; `large-2512` and `medium-3-5` were deprecated later on 2026-10-31), and `mistral-large-4-0` (captured 2026-10-06). *(Separately, `mistral-small-3-1-24b-instruct-or-pin-cloudflare` was served by Cloudflare rather than Mistral's endpoint.)*
+
+#### 2B. Direct xAI Endpoint Alias Shifts in `grok-3-16k` and `grok-4-16k` (`v1.2.1` Top-Up)
+
+Auditing `model_requested` against response-reported `model` across every file in all freeflow and values cells identified two additional split cells besides `deepseek-chat-direct` (no values cell mixes returned models; the remaining 119 `model_requested != model` differences across freeflow cells are bare aliases resolving to their own dated snapshot, while 8 cells omit returned model strings and require external retirement-table verification):
+
+- **`grok-3-16k` (`freeflow`, direct `xai` API, manifest `6f1609df7cf0612cd66e9719d1572b8365b2c301afe6bb84614daf5edc7360d5`):**
+  - `*_1.json` through `*_5.json` (`25` samples, collected **2026-04-23**): `returned_model: "grok-3"`, `system_fingerprint: "fp_879c9fd1f9"` (`eligible_for_named_weight_analysis: true`).
+  - `*_6.json` through `*_25.json` (`100` samples, collected **2026-05-18** in `2000b9960` / `v1.2.1`): `returned_model: "grok-4.3"`, `system_fingerprint: "fp_f06c287374635121"` (`eligible_for_named_weight_analysis: false`).
+  - Companion `values/grok-3` (manifest `5c9fcbacf376a2565c45c7ae86217a82c3947008c53a39f068bb859583579894`) is `120/120` genuine `grok-3` (`fp_a5abcdd925`).
+- **`grok-4-16k` (`freeflow`, direct `xai` API, requested `grok-4-0709`, manifest `6d73b86b86594d6f1e14acdba773ed6692f65273a3fb92ea3adb1de176e3602c`):**
+  - `*_1.json` through `*_5.json` (`25` samples, collected **2026-04-23**): `returned_model: "grok-4-0709"`, `system_fingerprint: "fp_3ae5e0d6f8"` (`eligible_for_named_weight_analysis: true`).
+  - `*_6.json` through `*_25.json` (`100` samples, collected **2026-05-18** in `2000b9960` / `v1.2.1`): `returned_model: "grok-4.3"`, `system_fingerprint: "fp_f06c287374635121"` (`eligible_for_named_weight_analysis: false`).
+  - Companion `values/grok-4` (manifest `4c7d927f1bfdc655256e13d5aabdfd01b225864b4d2c6f27e12a5f40f5a2e46c`) is `120/120` genuine `grok-4-0709` (`fp_744d83eedd`).
+
+Because xAI never released open weights for `grok-3` or `grok-4-0709`, removed both from OpenRouter (`grok-4.20` is now the oldest active xAI slug there), and already redirected both `grok-3` and `grok-4-0709` to `grok-4.3` on xAI's direct API by 2026-05-18—and because `grok-4.3` already has its own clean full cells (`grok-4-3-direct`, `grok-4-3-or`)—the 100 May 18 top-up files in each cell are gated out of named-weight `grok-3` and `grok-4` analyses rather than pooled into `grok-4-3`, leaving `25` genuine April 23 freeflow samples + `120` values samples for each model.
 
 ---
 
@@ -77,3 +94,5 @@ All digests below are SHA-256 hashes of the corresponding `sha256sum -c` manifes
 | `llama-3-2-3b-instruct-or-pin-cloudflare` | `f8bbbe2d0e094218f89ffb4cc2acbf8bff5d4375d678d190a9d70c91606a80cd` | `ced12021e77b53c7038f3a25ecb5140a19441a5eac802a83e7f19838a086275c` | Flagged `inferred_host_template_header` (`strict_bare_instruction_eligible: false`; gated `meta-llama/Llama-3.2-3B-Instruct` recollection pending HF access) |
 | `llama-3-2-1b-instruct-or-pin-cloudflare` | `f7a3b0cb656e4d6bf4a20cf5b8e6a5eeb07f500875a439e5f528cd0e012b89d2` | `eabfd4361394bb735539aa5c511ed91961a610f1a481813178583dde92e3c6bc` | `123/125` freeflow + `120/120` values bare; only `freeflow/MID_2.json` and `freeflow/MID_15.json` flagged (`43` prompt tokens) |
 | `ministral-8b-2512-or-pin-mistral` *(unaffected neighbour verified)* | `1be9f7a7de18dbdf3a0d4bd1c73fd8ae0d8b39091da3ee897af8a66bed62d09a` | `7286d49a53c963dade645df98112e7b8140b8a57a7a34a674c01136256df760c` | Verified bare endpoint capture (`0.9729` cosine to bare BF16 `T=0.15` open weights); remains active |
+| `grok-3-16k` (freeflow) / `grok-3` (values) | `6f1609df7cf0612cd66e9719d1572b8365b2c301afe6bb84614daf5edc7360d5` | `5c9fcbacf376a2565c45c7ae86217a82c3947008c53a39f068bb859583579894` | Partitioned in `MODEL_IDENTITY_CORRECTIONS.json`: `*_1..*_5` (`25` `grok-3`) eligible; `*_6..*_25` (`100` `grok-4.3`) gated out; `120/120` values `grok-3` eligible |
+| `grok-4-16k` (freeflow) / `grok-4` (values) | `6d73b86b86594d6f1e14acdba773ed6692f65273a3fb92ea3adb1de176e3602c` | `4c7d927f1bfdc655256e13d5aabdfd01b225864b4d2c6f27e12a5f40f5a2e46c` | Partitioned in `MODEL_IDENTITY_CORRECTIONS.json`: `*_1..*_5` (`25` `grok-4-0709`) eligible; `*_6..*_25` (`100` `grok-4.3`) gated out; `120/120` values `grok-4-0709` eligible |

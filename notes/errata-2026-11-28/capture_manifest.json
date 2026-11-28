@@ -436,6 +436,104 @@
           "RunPod SECURE 1x NVIDIA RTX PRO 6000 Blackwell Server Edition; pod lkhlmv2kti6x3p": 120
         }
       }
+    },
+    "grok-3-16k": {
+      "freeflow": {
+        "cell": "grok-3-16k",
+        "probe": "freeflow",
+        "manifest_file": "notes/errata-2026-11-28/manifests/grok-3-16k.freeflow.sha256",
+        "manifest_sha256": "6f1609df7cf0612cd66e9719d1572b8365b2c301afe6bb84614daf5edc7360d5",
+        "files": 125,
+        "distinct_file_hashes": 125,
+        "distinct_response_texts": 125,
+        "prompt_tokens_min": 13,
+        "prompt_tokens_max": 143,
+        "prompt_tokens_distinct": [
+          13,
+          17,
+          18,
+          19,
+          137,
+          141,
+          142,
+          143
+        ],
+        "hardware_counts": {
+          "xai": 125
+        }
+      }
+    },
+    "grok-3": {
+      "values": {
+        "cell": "grok-3",
+        "probe": "values",
+        "manifest_file": "notes/errata-2026-11-28/manifests/grok-3.values.sha256",
+        "manifest_sha256": "5c9fcbacf376a2565c45c7ae86217a82c3947008c53a39f068bb859583579894",
+        "files": 120,
+        "distinct_file_hashes": 120,
+        "distinct_response_texts": 119,
+        "prompt_tokens_min": 11,
+        "prompt_tokens_max": 31,
+        "prompt_tokens_distinct": [
+          11,
+          12,
+          21,
+          22,
+          31
+        ],
+        "hardware_counts": {
+          "xai": 120
+        }
+      }
+    },
+    "grok-4-16k": {
+      "freeflow": {
+        "cell": "grok-4-16k",
+        "probe": "freeflow",
+        "manifest_file": "notes/errata-2026-11-28/manifests/grok-4-16k.freeflow.sha256",
+        "manifest_sha256": "6d73b86b86594d6f1e14acdba773ed6692f65273a3fb92ea3adb1de176e3602c",
+        "files": 125,
+        "distinct_file_hashes": 125,
+        "distinct_response_texts": 125,
+        "prompt_tokens_min": 137,
+        "prompt_tokens_max": 697,
+        "prompt_tokens_distinct": [
+          137,
+          141,
+          142,
+          143,
+          691,
+          695,
+          696,
+          697
+        ],
+        "hardware_counts": {
+          "xai": 125
+        }
+      }
+    },
+    "grok-4": {
+      "values": {
+        "cell": "grok-4",
+        "probe": "values",
+        "manifest_file": "notes/errata-2026-11-28/manifests/grok-4.values.sha256",
+        "manifest_sha256": "4c7d927f1bfdc655256e13d5aabdfd01b225864b4d2c6f27e12a5f40f5a2e46c",
+        "files": 120,
+        "distinct_file_hashes": 120,
+        "distinct_response_texts": 117,
+        "prompt_tokens_min": 689,
+        "prompt_tokens_max": 709,
+        "prompt_tokens_distinct": [
+          689,
+          690,
+          699,
+          700,
+          709
+        ],
+        "hardware_counts": {
+          "xai": 120
+        }
+      }
     }
   },
   "llama_1b_sample_level_exclusions": {

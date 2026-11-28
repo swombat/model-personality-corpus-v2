@@ -19,7 +19,7 @@ Daniel Tenner and Lume Tenner · 2026
 > [10.5281/zenodo.19512754](https://doi.org/10.5281/zenodo.19512754)).
 
 > **Errata & provenance notices — [ERRATA.md](ERRATA.md):**
-> - **2026-11-28 (`ERRATA-2026-11-28`):** Documents two retired Mistral API slugs captured via OpenRouter after vendor retirement (`mixtral-8x22b-instruct-or-pin-mistral`, `mistral-saba-or-pin-mistral`; [`data/MODEL_IDENTITY_CORRECTIONS.json`](data/MODEL_IDENTITY_CORRECTIONS.json)), adds corpus-wide system-prompt provenance across all 376 physical cells ([`data/SYSTEM_PROMPT_PROVENANCE.json`](data/SYSTEM_PROMPT_PROVENANCE.json)), and adds four native BF16 RunPod captures (`Mixtral-8x22B-Instruct-v0.1`, bare `Mistral-Small-24B-Instruct-2501`, and a controlled bare vs stock-template `Ministral-3-8B-Instruct-2512` pair at `T=0.15`). All previously published files remain untouched at their original paths.
+> - **2026-11-28 (`ERRATA-2026-11-28`):** Documents two retired Mistral API slugs captured via OpenRouter after vendor retirement (`mixtral-8x22b-instruct-or-pin-mistral`, `mistral-saba-or-pin-mistral`) and two direct xAI freeflow cells whose 2026-05-18 top-ups returned `grok-4.3` (`grok-3-16k`, `grok-4-16k`; [`data/MODEL_IDENTITY_CORRECTIONS.json`](data/MODEL_IDENTITY_CORRECTIONS.json)), adds corpus-wide system-prompt provenance across all 376 physical cells ([`data/SYSTEM_PROMPT_PROVENANCE.json`](data/SYSTEM_PROMPT_PROVENANCE.json)), and adds four native BF16 RunPod captures (`Mixtral-8x22B-Instruct-v0.1`, bare `Mistral-Small-24B-Instruct-2501`, and a controlled bare vs stock-template `Ministral-3-8B-Instruct-2512` pair at `T=0.15`). All previously published files remain untouched at their original paths.
 
 ## Latest addition
 
