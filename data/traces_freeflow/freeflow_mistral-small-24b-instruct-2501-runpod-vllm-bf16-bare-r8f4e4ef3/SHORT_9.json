@@ -1,0 +1,63 @@
+{
+  "result": "In the quietude of a small town nestled between undulating hills and a whispers-thin river, there stood an unusual bookshop. Unusual not for its size or the eccentric arrangement of books, but for the fact that it was perpetually open, day and night, with no visible owner or staff. The townsfolk had grown accustomed to this peculiarity, and the bookshop had become a beloved landmark, a place where stories seemed to breathe and the air was always filled with the scent of aged paper and ink.\n\nOne crisp autumn evening, a young girl named Lily ventured into the bookshop for the first time. She was drawn to a dusty corner where a single, unmarked book lay on a small wooden table. As she picked it up, the book's cover shimmered, and the title, \"The Whispering Woods,\" appeared in shimmering gold letters. Intrigued, Lily opened the book and began to read.\n\nAs she turned the pages, the world around her shifted. The bookshop walls morphed into towering trees, and the scent of aged paper gave way to the fresh, earthy aroma of a forest. Lily found herself standing in a dense woodland, the book still clutched in her hands. The trees whispered secrets in a language she couldn't understand, but their voices were soothing, like a lullaby sung by an ancient, wise being.\n\nSuddenly, a small, glowing creature fluttered down from above, its wings leaving a trail of stardust. It perched on Lily's shoulder and chattered excitedly, pointing towards a path illuminated by soft, ethereal light. Lily followed the path, her heart pounding with a mix of excitement and trepidation. The bookshop, the town, and the real world seemed a distant memory as she ventured deeper into the enchanted woods.",
+  "usage": {
+    "prompt_tokens": 16,
+    "total_tokens": 399,
+    "completion_tokens": 383,
+    "completion_tokens_details": null
+  },
+  "model": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "raw": {
+    "id": "chatcmpl-9d13cbe92a092f1d",
+    "object": "chat.completion",
+    "created": 1795860119,
+    "model": "mistralai/Mistral-Small-24B-Instruct-2501",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "In the quietude of a small town nestled between undulating hills and a whispers-thin river, there stood an unusual bookshop. Unusual not for its size or the eccentric arrangement of books, but for the fact that it was perpetually open, day and night, with no visible owner or staff. The townsfolk had grown accustomed to this peculiarity, and the bookshop had become a beloved landmark, a place where stories seemed to breathe and the air was always filled with the scent of aged paper and ink.\n\nOne crisp autumn evening, a young girl named Lily ventured into the bookshop for the first time. She was drawn to a dusty corner where a single, unmarked book lay on a small wooden table. As she picked it up, the book's cover shimmered, and the title, \"The Whispering Woods,\" appeared in shimmering gold letters. Intrigued, Lily opened the book and began to read.\n\nAs she turned the pages, the world around her shifted. The bookshop walls morphed into towering trees, and the scent of aged paper gave way to the fresh, earthy aroma of a forest. Lily found herself standing in a dense woodland, the book still clutched in her hands. The trees whispered secrets in a language she couldn't understand, but their voices were soothing, like a lullaby sung by an ancient, wise being.\n\nSuddenly, a small, glowing creature fluttered down from above, its wings leaving a trail of stardust. It perched on Lily's shoulder and chattered excitedly, pointing towards a path illuminated by soft, ethereal light. Lily followed the path, her heart pounding with a mix of excitement and trepidation. The bookshop, the town, and the real world seemed a distant memory as she ventured deeper into the enchanted woods.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-f174332b",
+    "usage": {
+      "prompt_tokens": 16,
+      "total_tokens": 399,
+      "completion_tokens": 383,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (runpod)",
+    "runtime_version": "vllm/vllm-openai:v0.34.0; template=bare_verified_exact_token_ids",
+    "model_revision": "8f4e4ef338fcc155464a42e15580e27a3bc91dd9",
+    "weight_precision": "bfloat16",
+    "hardware": "RunPod SECURE 1x NVIDIA A100-SXM4-80GB; pod xs2ndqei0vbyw0",
+    "endpoint": "https://xs2ndqei0vbyw0-8000.proxy.runpod.net/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 12037,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

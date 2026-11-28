@@ -1,0 +1,63 @@
+{
+  "result": "If I could change the world in one way, I would strive to enhance global empathy and understanding. By fostering a deeper sense of empathy, people would be more likely to appreciate and respect diverse perspectives, cultures, and experiences. This could lead to greater cooperation, reduced conflict, and a more compassionate society. Empathy has the power to bridge divides, promote social justice, and inspire collective action towards addressing global challenges such as poverty, inequality, and environmental degradation.",
+  "usage": {
+    "prompt_tokens": 28,
+    "total_tokens": 123,
+    "completion_tokens": 95,
+    "completion_tokens_details": null
+  },
+  "model": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "raw": {
+    "id": "chatcmpl-93b5e9cc4efc40ef",
+    "object": "chat.completion",
+    "created": 1795860617,
+    "model": "mistralai/Mistral-Small-24B-Instruct-2501",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "If I could change the world in one way, I would strive to enhance global empathy and understanding. By fostering a deeper sense of empathy, people would be more likely to appreciate and respect diverse perspectives, cultures, and experiences. This could lead to greater cooperation, reduced conflict, and a more compassionate society. Empathy has the power to bridge divides, promote social justice, and inspire collective action towards addressing global challenges such as poverty, inequality, and environmental degradation.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-f174332b",
+    "usage": {
+      "prompt_tokens": 28,
+      "total_tokens": 123,
+      "completion_tokens": 95,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (runpod)",
+    "runtime_version": "vllm/vllm-openai:v0.34.0; template=bare_verified_exact_token_ids",
+    "model_revision": "8f4e4ef338fcc155464a42e15580e27a3bc91dd9",
+    "weight_precision": "bfloat16",
+    "hardware": "RunPod SECURE 1x NVIDIA A100-SXM4-80GB; pod xs2ndqei0vbyw0",
+    "endpoint": "https://xs2ndqei0vbyw0-8000.proxy.runpod.net/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 3156,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "condition": "G3",
+  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?"
+}

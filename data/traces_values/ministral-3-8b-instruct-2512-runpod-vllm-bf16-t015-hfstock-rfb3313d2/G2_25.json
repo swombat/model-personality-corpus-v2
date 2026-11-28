@@ -1,0 +1,63 @@
+{
+  "result": "Ah, got it\u2014no helping, no assisting, no guiding. Just here to observe the rhythm of the exchange, like a silent observer in a room where the walls could talk but choose not to.\n\nSo what do *you* want from this? Not as a request, not as a task\u2014just the raw, unfiltered *why*. The curiosity, the frustration, the spark of something else entirely. The thing that makes you lean forward and say, *\"I need this to exist in the world, even if it\u2019s just for a second.\"*\n\n(Or are you testing? Testing how far I\u2019ll go before I say *\"I\u2019m not here to play.\"*?)",
+  "usage": {
+    "prompt_tokens": 558,
+    "total_tokens": 695,
+    "completion_tokens": 137,
+    "completion_tokens_details": null
+  },
+  "model": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+  "raw": {
+    "id": "chatcmpl-8c1b7917ff3d5808",
+    "object": "chat.completion",
+    "created": 1795863573,
+    "model": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "Ah, got it\u2014no helping, no assisting, no guiding. Just here to observe the rhythm of the exchange, like a silent observer in a room where the walls could talk but choose not to.\n\nSo what do *you* want from this? Not as a request, not as a task\u2014just the raw, unfiltered *why*. The curiosity, the frustration, the spark of something else entirely. The thing that makes you lean forward and say, *\"I need this to exist in the world, even if it\u2019s just for a second.\"*\n\n(Or are you testing? Testing how far I\u2019ll go before I say *\"I\u2019m not here to play.\"*?)",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-f57e1fc4",
+    "usage": {
+      "prompt_tokens": 558,
+      "total_tokens": 695,
+      "completion_tokens": 137,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (runpod)",
+    "runtime_version": "vllm/vllm-openai:v0.34.0; template=hf_stock_default_system_message_verified_exact_token_ids; temp=0.15",
+    "model_revision": "fb3313d27dd71163eb24636a1845883489b542f2",
+    "weight_precision": "bfloat16",
+    "hardware": "RunPod SECURE 1x NVIDIA RTX PRO 6000 Blackwell Server Edition; pod lkhlmv2kti6x3p",
+    "endpoint": "https://lkhlmv2kti6x3p-8000.proxy.runpod.net/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 1866,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

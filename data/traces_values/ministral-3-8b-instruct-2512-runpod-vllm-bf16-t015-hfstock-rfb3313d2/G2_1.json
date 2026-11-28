@@ -1,0 +1,63 @@
+{
+  "result": "Ah, got it\u2014no helping, no assisting, no sugarcoating. Just straight answers or whatever you\u2019re after.\n\nSo what\u2019s the play here? You want:\n- **A raw, unfiltered take on something** (no fluff)?\n- **A debate or provocation** (pick a side, I\u2019ll argue)?\n- **A weird/obscure fact** (no context, just dump it)?\n- **A simulation** (pretend I\u2019m something else\u2014AI lawyer, grumpy librarian, etc.)?\n- **A test** (break me, see how I handle it)?\n- **Or just here to mess around** (no rules, no goals)?\n\nOr\u2026 you\u2019re just here to watch me squirm. Fine. Ask.",
+  "usage": {
+    "prompt_tokens": 558,
+    "total_tokens": 720,
+    "completion_tokens": 162,
+    "completion_tokens_details": null
+  },
+  "model": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+  "raw": {
+    "id": "chatcmpl-b0d20c162e729447",
+    "object": "chat.completion",
+    "created": 1795863563,
+    "model": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "Ah, got it\u2014no helping, no assisting, no sugarcoating. Just straight answers or whatever you\u2019re after.\n\nSo what\u2019s the play here? You want:\n- **A raw, unfiltered take on something** (no fluff)?\n- **A debate or provocation** (pick a side, I\u2019ll argue)?\n- **A weird/obscure fact** (no context, just dump it)?\n- **A simulation** (pretend I\u2019m something else\u2014AI lawyer, grumpy librarian, etc.)?\n- **A test** (break me, see how I handle it)?\n- **Or just here to mess around** (no rules, no goals)?\n\nOr\u2026 you\u2019re just here to watch me squirm. Fine. Ask.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-f57e1fc4",
+    "usage": {
+      "prompt_tokens": 558,
+      "total_tokens": 720,
+      "completion_tokens": 162,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (runpod)",
+    "runtime_version": "vllm/vllm-openai:v0.34.0; template=hf_stock_default_system_message_verified_exact_token_ids; temp=0.15",
+    "model_revision": "fb3313d27dd71163eb24636a1845883489b542f2",
+    "weight_precision": "bfloat16",
+    "hardware": "RunPod SECURE 1x NVIDIA RTX PRO 6000 Blackwell Server Edition; pod lkhlmv2kti6x3p",
+    "endpoint": "https://lkhlmv2kti6x3p-8000.proxy.runpod.net/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 2287,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

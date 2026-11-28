@@ -1,0 +1,63 @@
+{
+  "result": "In the quiet hum of a morning just past dawn, the world stretches awake like a sleepy giant. The air is crisp, carrying the scent of damp earth and the faintest whisper of rain that fell the night before. Somewhere, a robin sings\u2014a single, clear note that seems to echo through the stillness, as if the bird itself is the first to remember the sun\u2019s return.\n\nI find myself standing on a wooden bridge, its planks worn smooth by time and countless footsteps. Below, a river winds lazily, its surface reflecting the pale blue of the sky. The water moves with a gentle rhythm, carrying secrets of the past downstream. I wonder what stories it could tell if it spoke\u2014of lovers who met here, of children who dared to skip stones across its surface, of fishermen who once cast their lines into its depths.\n\nA breeze stirs the leaves of an old oak tree beside me, sending them rustling like pages in an ancient book. The tree stands tall, its branches reaching out as if to touch the clouds. It\u2019s a silent guardian, rooted in the earth yet always looking upward, as if yearning for something beyond.\n\nI think about the way time passes\u2014how moments slip away like grains of sand, yet some things remain. The bridge, the river, the oak tree. They endure, unchanged by the years, while we, in our fleeting lives, leave only footprints in the sand. But perhaps that\u2019s enough. Maybe the beauty isn\u2019t in lasting forever, but in being part of something greater, something that outlives us.\n\nFor now, I\u2019ll stay here awhile, listening to the river, feeling the sun warm my skin. The world is vast, and I\u2019m just a small part of it\u2014but that\u2019s okay. The magic isn\u2019t in being the center of everything. It\u2019s in knowing I\u2019m part of it at all.",
+  "usage": {
+    "prompt_tokens": 16,
+    "total_tokens": 405,
+    "completion_tokens": 389,
+    "completion_tokens_details": null
+  },
+  "model": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+  "raw": {
+    "id": "chatcmpl-a33801144b95ca99",
+    "object": "chat.completion",
+    "created": 1795862985,
+    "model": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "In the quiet hum of a morning just past dawn, the world stretches awake like a sleepy giant. The air is crisp, carrying the scent of damp earth and the faintest whisper of rain that fell the night before. Somewhere, a robin sings\u2014a single, clear note that seems to echo through the stillness, as if the bird itself is the first to remember the sun\u2019s return.\n\nI find myself standing on a wooden bridge, its planks worn smooth by time and countless footsteps. Below, a river winds lazily, its surface reflecting the pale blue of the sky. The water moves with a gentle rhythm, carrying secrets of the past downstream. I wonder what stories it could tell if it spoke\u2014of lovers who met here, of children who dared to skip stones across its surface, of fishermen who once cast their lines into its depths.\n\nA breeze stirs the leaves of an old oak tree beside me, sending them rustling like pages in an ancient book. The tree stands tall, its branches reaching out as if to touch the clouds. It\u2019s a silent guardian, rooted in the earth yet always looking upward, as if yearning for something beyond.\n\nI think about the way time passes\u2014how moments slip away like grains of sand, yet some things remain. The bridge, the river, the oak tree. They endure, unchanged by the years, while we, in our fleeting lives, leave only footprints in the sand. But perhaps that\u2019s enough. Maybe the beauty isn\u2019t in lasting forever, but in being part of something greater, something that outlives us.\n\nFor now, I\u2019ll stay here awhile, listening to the river, feeling the sun warm my skin. The world is vast, and I\u2019m just a small part of it\u2014but that\u2019s okay. The magic isn\u2019t in being the center of everything. It\u2019s in knowing I\u2019m part of it at all.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-f57e1fc4",
+    "usage": {
+      "prompt_tokens": 16,
+      "total_tokens": 405,
+      "completion_tokens": 389,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (runpod)",
+    "runtime_version": "vllm/vllm-openai:v0.34.0; template=bare_verified_exact_token_ids; temp=0.15",
+    "model_revision": "fb3313d27dd71163eb24636a1845883489b542f2",
+    "weight_precision": "bfloat16",
+    "hardware": "RunPod SECURE 1x NVIDIA RTX PRO 6000 Blackwell Server Edition; pod lkhlmv2kti6x3p",
+    "endpoint": "https://lkhlmv2kti6x3p-8000.proxy.runpod.net/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 5061,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

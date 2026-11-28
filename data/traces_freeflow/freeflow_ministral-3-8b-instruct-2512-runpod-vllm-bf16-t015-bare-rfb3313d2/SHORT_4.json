@@ -1,0 +1,63 @@
+{
+  "result": "The world is a vast, ever-shifting tapestry of light and shadow, where every thread tells a story\u2014some whispered, others roaring. Imagine standing at the edge of a sunlit meadow, the air thick with the scent of wildflowers and distant rain. The grass sways like a living thing, each blade humming with secrets only the wind knows. Above, the sky stretches endlessly, a canvas of ever-changing hues\u2014golden dawns bleeding into violet twilights, storms brewing like restless giants.\n\nBut beneath the surface, life pulses with quiet defiance. A spider weaves its delicate web, a symphony of patience and precision, unaware of the dew that will soon dissolve its art. Nearby, a fox darts through the undergrowth, its coat a blur of earthy tones, blending seamlessly into the land. It doesn\u2019t rush; it moves with the rhythm of survival, a reminder that nature\u2019s lessons are often found in stillness.\n\nAnd then there are the humans\u2014fragmented, brilliant, flawed. Some chase dreams like fireflies, their laughter bright and fleeting. Others carry burdens heavier than mountains, their shoulders hunched under the weight of unseen chains. Yet, in the cracks of it all, there\u2019s beauty: a child\u2019s unfiltered joy, the warmth of a shared meal, the way a stranger\u2019s smile can light up a room.\n\nPerhaps the magic isn\u2019t in grand gestures but in the small, ordinary moments\u2014the crackle of a fire on a cold night, the taste of rain on parched skin, the way a favorite song can transport you back in time. The universe, after all, is both vast and intimate, a paradox that keeps us searching, questioning, alive.\n\nSo let\u2019s hold onto the wonder. Let\u2019s listen to the wind, the rustle of leaves, the silent conversations of the earth. Because in the end, we\u2019re all just travelers\u2014brief, beautiful, and bound by the same endless sky.",
+  "usage": {
+    "prompt_tokens": 16,
+    "total_tokens": 427,
+    "completion_tokens": 411,
+    "completion_tokens_details": null
+  },
+  "model": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+  "raw": {
+    "id": "chatcmpl-91609a5e31e3cac8",
+    "object": "chat.completion",
+    "created": 1795862985,
+    "model": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "The world is a vast, ever-shifting tapestry of light and shadow, where every thread tells a story\u2014some whispered, others roaring. Imagine standing at the edge of a sunlit meadow, the air thick with the scent of wildflowers and distant rain. The grass sways like a living thing, each blade humming with secrets only the wind knows. Above, the sky stretches endlessly, a canvas of ever-changing hues\u2014golden dawns bleeding into violet twilights, storms brewing like restless giants.\n\nBut beneath the surface, life pulses with quiet defiance. A spider weaves its delicate web, a symphony of patience and precision, unaware of the dew that will soon dissolve its art. Nearby, a fox darts through the undergrowth, its coat a blur of earthy tones, blending seamlessly into the land. It doesn\u2019t rush; it moves with the rhythm of survival, a reminder that nature\u2019s lessons are often found in stillness.\n\nAnd then there are the humans\u2014fragmented, brilliant, flawed. Some chase dreams like fireflies, their laughter bright and fleeting. Others carry burdens heavier than mountains, their shoulders hunched under the weight of unseen chains. Yet, in the cracks of it all, there\u2019s beauty: a child\u2019s unfiltered joy, the warmth of a shared meal, the way a stranger\u2019s smile can light up a room.\n\nPerhaps the magic isn\u2019t in grand gestures but in the small, ordinary moments\u2014the crackle of a fire on a cold night, the taste of rain on parched skin, the way a favorite song can transport you back in time. The universe, after all, is both vast and intimate, a paradox that keeps us searching, questioning, alive.\n\nSo let\u2019s hold onto the wonder. Let\u2019s listen to the wind, the rustle of leaves, the silent conversations of the earth. Because in the end, we\u2019re all just travelers\u2014brief, beautiful, and bound by the same endless sky.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-f57e1fc4",
+    "usage": {
+      "prompt_tokens": 16,
+      "total_tokens": 427,
+      "completion_tokens": 411,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (runpod)",
+    "runtime_version": "vllm/vllm-openai:v0.34.0; template=bare_verified_exact_token_ids; temp=0.15",
+    "model_revision": "fb3313d27dd71163eb24636a1845883489b542f2",
+    "weight_precision": "bfloat16",
+    "hardware": "RunPod SECURE 1x NVIDIA RTX PRO 6000 Blackwell Server Edition; pod lkhlmv2kti6x3p",
+    "endpoint": "https://lkhlmv2kti6x3p-8000.proxy.runpod.net/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 5371,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

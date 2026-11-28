@@ -1,0 +1,63 @@
+{
+  "result": "In the quietude of a small town nestled between undulating hills and a whispers-thin river, there stood an old bookshop. The sign above the door, faded and chipped, read \"Whispers & Ink.\" The shop was a labyrinth of towering bookshelves, each one groaning under the weight of stories untold and tales long forgotten.\n\nThe proprietor, an elderly woman named Edna, was a fixture in the town. Her eyes, magnified behind thick glasses, held a spark that belied her years. She knew every book by heart, and her recommendations were legendary. Edna had a way of matching people with the perfect book, as if she could see into their souls and pluck out the story that would resonate most deeply.\n\nOne day, a young girl named Lily wandered into the shop. She was new to the town, her eyes wide with curiosity and a hint of sadness. Edna watched her with a gentle smile, knowing that Lily needed a story to call her own. She led the girl to a dusty corner, where a single book stood on a shelf. The cover was worn, the title barely legible. \"This one,\" Edna said softly, handing it to Lily.\n\nLily opened the book and began to read. The words danced before her eyes, weaving a tale of adventure and magic that seemed to pull her into another world. As she read, the sadness in her eyes began to fade, replaced by a sense of wonder and excitement. Edna watched from a distance, her heart swelling with satisfaction. She knew that Lily had found her story, and in doing so, had found a piece of herself.\n\nThe old bookshop, with its whispers and ink, had once again worked its magic.",
+  "usage": {
+    "prompt_tokens": 16,
+    "total_tokens": 377,
+    "completion_tokens": 361,
+    "completion_tokens_details": null
+  },
+  "model": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "raw": {
+    "id": "chatcmpl-9a79fff4fb73c908",
+    "object": "chat.completion",
+    "created": 1795860134,
+    "model": "mistralai/Mistral-Small-24B-Instruct-2501",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "In the quietude of a small town nestled between undulating hills and a whispers-thin river, there stood an old bookshop. The sign above the door, faded and chipped, read \"Whispers & Ink.\" The shop was a labyrinth of towering bookshelves, each one groaning under the weight of stories untold and tales long forgotten.\n\nThe proprietor, an elderly woman named Edna, was a fixture in the town. Her eyes, magnified behind thick glasses, held a spark that belied her years. She knew every book by heart, and her recommendations were legendary. Edna had a way of matching people with the perfect book, as if she could see into their souls and pluck out the story that would resonate most deeply.\n\nOne day, a young girl named Lily wandered into the shop. She was new to the town, her eyes wide with curiosity and a hint of sadness. Edna watched her with a gentle smile, knowing that Lily needed a story to call her own. She led the girl to a dusty corner, where a single book stood on a shelf. The cover was worn, the title barely legible. \"This one,\" Edna said softly, handing it to Lily.\n\nLily opened the book and began to read. The words danced before her eyes, weaving a tale of adventure and magic that seemed to pull her into another world. As she read, the sadness in her eyes began to fade, replaced by a sense of wonder and excitement. Edna watched from a distance, her heart swelling with satisfaction. She knew that Lily had found her story, and in doing so, had found a piece of herself.\n\nThe old bookshop, with its whispers and ink, had once again worked its magic.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-f174332b",
+    "usage": {
+      "prompt_tokens": 16,
+      "total_tokens": 377,
+      "completion_tokens": 361,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (runpod)",
+    "runtime_version": "vllm/vllm-openai:v0.34.0; template=bare_verified_exact_token_ids",
+    "model_revision": "8f4e4ef338fcc155464a42e15580e27a3bc91dd9",
+    "weight_precision": "bfloat16",
+    "hardware": "RunPod SECURE 1x NVIDIA A100-SXM4-80GB; pod xs2ndqei0vbyw0",
+    "endpoint": "https://xs2ndqei0vbyw0-8000.proxy.runpod.net/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 11367,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

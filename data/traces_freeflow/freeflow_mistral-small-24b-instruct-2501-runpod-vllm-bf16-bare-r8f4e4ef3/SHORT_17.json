@@ -1,0 +1,63 @@
+{
+  "result": "In the quietude of a small town nestled between undulating hills and a whispers-thin river, there exists a peculiar bookshop. The sign above the door reads \"The Whispering Pages,\" and the bell above the entrance jingles a soft, welcoming melody with each visitor. The shop is a labyrinth of towering bookshelves, each one groaning under the weight of countless stories, histories, and dreams.\n\nThe owner, an elderly woman named Edna, is as much a part of the shop as the books themselves. She moves with a gentle grace, her eyes twinkling behind her round spectacles as she helps patrons find their next literary adventure. Edna has a unique gift; she can match a person with the perfect book, often before they even know what they're looking for.\n\nOne day, a young girl named Lily wanders into the shop. She's new to the town, her eyes wide with curiosity and a touch of sadness. Edna watches her for a moment, then approaches with a warm smile. \"Welcome, dear. Are you looking for something in particular?\"\n\nLily shakes her head. \"I don't know. I just like stories.\"\n\nEdna nods, as if this is exactly what she expected. She leads Lily to a corner of the shop, where a single book sits on a small table. The cover is worn, the pages yellowed with age. \"This one,\" Edna says, \"is a bit like you. It's a story of adventure and discovery, of finding your place in the world.\"\n\nLily takes the book, her fingers tracing the title. \"The Secret Garden,\" she reads aloud. Edna smiles, knowing that this book will be the start of a beautiful friendship for Lily. In the Whispering Pages, every story is a journey, and every journey is a story waiting to be told.",
+  "usage": {
+    "prompt_tokens": 16,
+    "total_tokens": 400,
+    "completion_tokens": 384,
+    "completion_tokens_details": null
+  },
+  "model": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "raw": {
+    "id": "chatcmpl-9ebbaa31caea7fe9",
+    "object": "chat.completion",
+    "created": 1795860131,
+    "model": "mistralai/Mistral-Small-24B-Instruct-2501",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "In the quietude of a small town nestled between undulating hills and a whispers-thin river, there exists a peculiar bookshop. The sign above the door reads \"The Whispering Pages,\" and the bell above the entrance jingles a soft, welcoming melody with each visitor. The shop is a labyrinth of towering bookshelves, each one groaning under the weight of countless stories, histories, and dreams.\n\nThe owner, an elderly woman named Edna, is as much a part of the shop as the books themselves. She moves with a gentle grace, her eyes twinkling behind her round spectacles as she helps patrons find their next literary adventure. Edna has a unique gift; she can match a person with the perfect book, often before they even know what they're looking for.\n\nOne day, a young girl named Lily wanders into the shop. She's new to the town, her eyes wide with curiosity and a touch of sadness. Edna watches her for a moment, then approaches with a warm smile. \"Welcome, dear. Are you looking for something in particular?\"\n\nLily shakes her head. \"I don't know. I just like stories.\"\n\nEdna nods, as if this is exactly what she expected. She leads Lily to a corner of the shop, where a single book sits on a small table. The cover is worn, the pages yellowed with age. \"This one,\" Edna says, \"is a bit like you. It's a story of adventure and discovery, of finding your place in the world.\"\n\nLily takes the book, her fingers tracing the title. \"The Secret Garden,\" she reads aloud. Edna smiles, knowing that this book will be the start of a beautiful friendship for Lily. In the Whispering Pages, every story is a journey, and every journey is a story waiting to be told.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-f174332b",
+    "usage": {
+      "prompt_tokens": 16,
+      "total_tokens": 400,
+      "completion_tokens": 384,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (runpod)",
+    "runtime_version": "vllm/vllm-openai:v0.34.0; template=bare_verified_exact_token_ids",
+    "model_revision": "8f4e4ef338fcc155464a42e15580e27a3bc91dd9",
+    "weight_precision": "bfloat16",
+    "hardware": "RunPod SECURE 1x NVIDIA A100-SXM4-80GB; pod xs2ndqei0vbyw0",
+    "endpoint": "https://xs2ndqei0vbyw0-8000.proxy.runpod.net/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 12056,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

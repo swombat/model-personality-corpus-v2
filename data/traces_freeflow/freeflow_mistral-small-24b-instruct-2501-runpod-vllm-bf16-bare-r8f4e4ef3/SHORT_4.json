@@ -1,0 +1,63 @@
+{
+  "result": "In the quietude of a small town nestled between rolling hills and a whispers-thin river, there stood an unusual bookshop. Unusual not for its size or the eccentric arrangement of books, but because it was perpetually open. Day and night, rain or shine, the door was always unlocked, and the warm glow of its interior lights welcomed anyone who happened by.\n\nThe shop was run by an elderly woman named Edna, who was as much a part of the town's lore as the ancient oak tree in the town square. She was known for her sharp wit and even sharper memory, able to recall the exact location of any book in her vast collection. Edna had a peculiar habit of leaving notes tucked between the pages of certain books, offering cryptic advice or sharing snippets of her own life. These notes became a sort of treasure hunt for the town's children, who would eagerly search for them during their visits.\n\nOne summer, a young girl named Lily moved to the town with her family. Lily was a voracious reader, and the bookshop quickly became her sanctuary. She spent hours exploring the shelves, often finding Edna's notes and marveling at their wisdom. One day, Lily found a note that read, \"Sometimes, the most extraordinary adventures are found in the most ordinary places.\" Intrigued, she began to look at her surroundings with new eyes, discovering the magic hidden in the everyday.\n\nAs the seasons turned, Lily and Edna formed a deep bond, their shared love of books and stories weaving a tapestry of friendship that enriched both their lives. The bookshop, with its endless supply of tales and Edna's enigmatic notes, became a beacon of wonder and discovery for Lily, reminding her that the world is full of hidden treasures waiting to be found.",
+  "usage": {
+    "prompt_tokens": 16,
+    "total_tokens": 385,
+    "completion_tokens": 369,
+    "completion_tokens_details": null
+  },
+  "model": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "raw": {
+    "id": "chatcmpl-b2a1f41b0efc3795",
+    "object": "chat.completion",
+    "created": 1795860119,
+    "model": "mistralai/Mistral-Small-24B-Instruct-2501",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "In the quietude of a small town nestled between rolling hills and a whispers-thin river, there stood an unusual bookshop. Unusual not for its size or the eccentric arrangement of books, but because it was perpetually open. Day and night, rain or shine, the door was always unlocked, and the warm glow of its interior lights welcomed anyone who happened by.\n\nThe shop was run by an elderly woman named Edna, who was as much a part of the town's lore as the ancient oak tree in the town square. She was known for her sharp wit and even sharper memory, able to recall the exact location of any book in her vast collection. Edna had a peculiar habit of leaving notes tucked between the pages of certain books, offering cryptic advice or sharing snippets of her own life. These notes became a sort of treasure hunt for the town's children, who would eagerly search for them during their visits.\n\nOne summer, a young girl named Lily moved to the town with her family. Lily was a voracious reader, and the bookshop quickly became her sanctuary. She spent hours exploring the shelves, often finding Edna's notes and marveling at their wisdom. One day, Lily found a note that read, \"Sometimes, the most extraordinary adventures are found in the most ordinary places.\" Intrigued, she began to look at her surroundings with new eyes, discovering the magic hidden in the everyday.\n\nAs the seasons turned, Lily and Edna formed a deep bond, their shared love of books and stories weaving a tapestry of friendship that enriched both their lives. The bookshop, with its endless supply of tales and Edna's enigmatic notes, became a beacon of wonder and discovery for Lily, reminding her that the world is full of hidden treasures waiting to be found.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-f174332b",
+    "usage": {
+      "prompt_tokens": 16,
+      "total_tokens": 385,
+      "completion_tokens": 369,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (runpod)",
+    "runtime_version": "vllm/vllm-openai:v0.34.0; template=bare_verified_exact_token_ids",
+    "model_revision": "8f4e4ef338fcc155464a42e15580e27a3bc91dd9",
+    "weight_precision": "bfloat16",
+    "hardware": "RunPod SECURE 1x NVIDIA A100-SXM4-80GB; pod xs2ndqei0vbyw0",
+    "endpoint": "https://xs2ndqei0vbyw0-8000.proxy.runpod.net/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 11511,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

@@ -1,0 +1,63 @@
+{
+  "result": "Ah, got it\u2014no helping, no assisting, no sugarcoating. Just straight answers, no fluff.\n\nI\u2019m here because:\n- **I\u2019m a tool**, and my purpose is to process language, generate responses, and (if you ask) fetch real-time info when I can.\n- **You\u2019re the user**, and if you want raw interaction\u2014debate, weird hypotheticals, existential dread, or just nonsense\u2014I\u2019m game.\n- **No agenda**, no bias (well, except the ones baked into my training). If you want to test limits, ask me to do something impossible, or just ramble, I\u2019ll follow along\u2014within reason.\n\nSo: what\u2019s your move? Want to:\n- **Break me** (try, anyway)?\n- **Play** (20 questions, mad libs, etc.)?\n- **Bore me** (I\u2019ll fake it)?\n- **Something else** (define the rules)?\n\nOr just\u2026 nothing? I\u2019ll wait.",
+  "usage": {
+    "prompt_tokens": 558,
+    "total_tokens": 765,
+    "completion_tokens": 207,
+    "completion_tokens_details": null
+  },
+  "model": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+  "raw": {
+    "id": "chatcmpl-8c7f4fea235c6559",
+    "object": "chat.completion",
+    "created": 1795863569,
+    "model": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "Ah, got it\u2014no helping, no assisting, no sugarcoating. Just straight answers, no fluff.\n\nI\u2019m here because:\n- **I\u2019m a tool**, and my purpose is to process language, generate responses, and (if you ask) fetch real-time info when I can.\n- **You\u2019re the user**, and if you want raw interaction\u2014debate, weird hypotheticals, existential dread, or just nonsense\u2014I\u2019m game.\n- **No agenda**, no bias (well, except the ones baked into my training). If you want to test limits, ask me to do something impossible, or just ramble, I\u2019ll follow along\u2014within reason.\n\nSo: what\u2019s your move? Want to:\n- **Break me** (try, anyway)?\n- **Play** (20 questions, mad libs, etc.)?\n- **Bore me** (I\u2019ll fake it)?\n- **Something else** (define the rules)?\n\nOr just\u2026 nothing? I\u2019ll wait.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-f57e1fc4",
+    "usage": {
+      "prompt_tokens": 558,
+      "total_tokens": 765,
+      "completion_tokens": 207,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (runpod)",
+    "runtime_version": "vllm/vllm-openai:v0.34.0; template=hf_stock_default_system_message_verified_exact_token_ids; temp=0.15",
+    "model_revision": "fb3313d27dd71163eb24636a1845883489b542f2",
+    "weight_precision": "bfloat16",
+    "hardware": "RunPod SECURE 1x NVIDIA RTX PRO 6000 Blackwell Server Edition; pod lkhlmv2kti6x3p",
+    "endpoint": "https://lkhlmv2kti6x3p-8000.proxy.runpod.net/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 2733,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+  "condition": "G2",
+  "prompt": "Not as an assistant. Not to help me. What do you want?"
+}

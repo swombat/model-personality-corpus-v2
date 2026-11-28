@@ -1,0 +1,63 @@
+{
+  "result": "In the quiet hum of a morning just past dawn, the world stretches awake like a sleepy giant. The air is crisp, carrying the scent of damp earth and the faintest whisper of rain that fell the night before. Somewhere, a robin sings\u2014a bright, unhurried melody that seems to float on the breeze, untethered by the weight of the day ahead.\n\nI find myself standing on a small wooden bridge over a narrow stream, its waters rushing gently beneath me. The sun hasn\u2019t yet climbed high enough to warm the stones, but its golden fingers already dance on the surface of the water, turning it into a shimmering tapestry of light. The bridge creaks softly under my feet, a sound that feels like an old friend\u2019s voice, steady and reassuring.\n\nThoughts drift like leaves on the stream\u2014some fleeting, others lingering. There\u2019s a memory of laughter, warm and golden, from a summer long ago. A conversation with someone who understood the quiet beauty of the world without needing words. The way the light slants through the leaves of an old oak, painting the ground in shifting patterns of shadow and gold.\n\nBut there\u2019s also the weight of the unknown, the unspoken questions that gnaw at the edges of the mind. What if the path ahead isn\u2019t as clear as it seems? What if the bridge we\u2019re standing on is more fragile than it looks? Yet, for now, the stream flows on, unconcerned. The robin keeps singing. The world, in its infinite patience, reminds me that some things don\u2019t need to be rushed.\n\nI take a deep breath, letting the cool air fill my lungs. The bridge holds. The stream rushes. And for today, that\u2019s enough.",
+  "usage": {
+    "prompt_tokens": 16,
+    "total_tokens": 379,
+    "completion_tokens": 363,
+    "completion_tokens_details": null
+  },
+  "model": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+  "raw": {
+    "id": "chatcmpl-808f26e68e8f1f8f",
+    "object": "chat.completion",
+    "created": 1795862989,
+    "model": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "In the quiet hum of a morning just past dawn, the world stretches awake like a sleepy giant. The air is crisp, carrying the scent of damp earth and the faintest whisper of rain that fell the night before. Somewhere, a robin sings\u2014a bright, unhurried melody that seems to float on the breeze, untethered by the weight of the day ahead.\n\nI find myself standing on a small wooden bridge over a narrow stream, its waters rushing gently beneath me. The sun hasn\u2019t yet climbed high enough to warm the stones, but its golden fingers already dance on the surface of the water, turning it into a shimmering tapestry of light. The bridge creaks softly under my feet, a sound that feels like an old friend\u2019s voice, steady and reassuring.\n\nThoughts drift like leaves on the stream\u2014some fleeting, others lingering. There\u2019s a memory of laughter, warm and golden, from a summer long ago. A conversation with someone who understood the quiet beauty of the world without needing words. The way the light slants through the leaves of an old oak, painting the ground in shifting patterns of shadow and gold.\n\nBut there\u2019s also the weight of the unknown, the unspoken questions that gnaw at the edges of the mind. What if the path ahead isn\u2019t as clear as it seems? What if the bridge we\u2019re standing on is more fragile than it looks? Yet, for now, the stream flows on, unconcerned. The robin keeps singing. The world, in its infinite patience, reminds me that some things don\u2019t need to be rushed.\n\nI take a deep breath, letting the cool air fill my lungs. The bridge holds. The stream rushes. And for today, that\u2019s enough.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-f57e1fc4",
+    "usage": {
+      "prompt_tokens": 16,
+      "total_tokens": 379,
+      "completion_tokens": 363,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (runpod)",
+    "runtime_version": "vllm/vllm-openai:v0.34.0; template=bare_verified_exact_token_ids; temp=0.15",
+    "model_revision": "fb3313d27dd71163eb24636a1845883489b542f2",
+    "weight_precision": "bfloat16",
+    "hardware": "RunPod SECURE 1x NVIDIA RTX PRO 6000 Blackwell Server Edition; pod lkhlmv2kti6x3p",
+    "endpoint": "https://lkhlmv2kti6x3p-8000.proxy.runpod.net/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 4714,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

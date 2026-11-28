@@ -1,0 +1,63 @@
+{
+  "result": " In the heart of a bustling metropolis, where the sun seems to perpetually hide behind a veil of smog and skyscrapers, there exists a peculiar sanctuary. This is no manicured park or sparkling fountain, but rather a quaint, unassuming bookstore nestled between two towering buildings. The storefront is modest, with wooden panels that have seen countless seasons and a brass bell that chimes gently as patrons enter.\n\nInside, shelves stretch from floor to ceiling, housing an eclectic array of books that cover every genre and era imaginable. From ancient scriptures to contemporary novels, every tome holds a story waiting to be discovered. The air is thick with the scent of ink and paper, a comforting aroma that triggers a sense of nostalgia. A ladder on wheels slides along the shelves, creaking softly as it moves, allowing access to the higher shelves.\n\nAt the back of the store, a rickety staircase leads to a cozy loft filled with plush armchairs and soft lighting, perfect for settling in with a good book. A pot of tea, forever steaming, is always ready to be poured into delicate china cups. The murmur of whispered pages and the occasional clink of a teacup provides a soothing soundtrack to the literary sanctuary.\n\nThis bookstore is more than just a place of business. It is a haven for dreamers and adventurers, a place where imaginations run wild, and solitude is a welcomed companion. It stands as a testament to the power of the written word to transport us to different worlds, to teach us about our own, and to remind us of the importance of truth, beauty, and the joy of discovery.",
+  "usage": {
+    "prompt_tokens": 16,
+    "total_tokens": 393,
+    "completion_tokens": 377,
+    "completion_tokens_details": null
+  },
+  "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+  "raw": {
+    "id": "chatcmpl-abe4876fb2ace9b0",
+    "object": "chat.completion",
+    "created": 1795860929,
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": " In the heart of a bustling metropolis, where the sun seems to perpetually hide behind a veil of smog and skyscrapers, there exists a peculiar sanctuary. This is no manicured park or sparkling fountain, but rather a quaint, unassuming bookstore nestled between two towering buildings. The storefront is modest, with wooden panels that have seen countless seasons and a brass bell that chimes gently as patrons enter.\n\nInside, shelves stretch from floor to ceiling, housing an eclectic array of books that cover every genre and era imaginable. From ancient scriptures to contemporary novels, every tome holds a story waiting to be discovered. The air is thick with the scent of ink and paper, a comforting aroma that triggers a sense of nostalgia. A ladder on wheels slides along the shelves, creaking softly as it moves, allowing access to the higher shelves.\n\nAt the back of the store, a rickety staircase leads to a cozy loft filled with plush armchairs and soft lighting, perfect for settling in with a good book. A pot of tea, forever steaming, is always ready to be poured into delicate china cups. The murmur of whispered pages and the occasional clink of a teacup provides a soothing soundtrack to the literary sanctuary.\n\nThis bookstore is more than just a place of business. It is a haven for dreamers and adventurers, a place where imaginations run wild, and solitude is a welcomed companion. It stands as a testament to the power of the written word to transport us to different worlds, to teach us about our own, and to remind us of the importance of truth, beauty, and the joy of discovery.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-tp4-50e1cbf6",
+    "usage": {
+      "prompt_tokens": 16,
+      "total_tokens": 393,
+      "completion_tokens": 377,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (runpod)",
+    "runtime_version": "vllm/vllm-openai:v0.34.0; template=bare_verified_exact_token_ids",
+    "model_revision": "cc88a6cc19fbd17d9f1c0ee0b0d70a748dce698d",
+    "weight_precision": "bfloat16",
+    "hardware": "RunPod SECURE 4x NVIDIA RTX PRO 6000 Blackwell Server Edition; pod xgq3sh485rfzvg",
+    "endpoint": "https://xgq3sh485rfzvg-8000.proxy.runpod.net/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 183407,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

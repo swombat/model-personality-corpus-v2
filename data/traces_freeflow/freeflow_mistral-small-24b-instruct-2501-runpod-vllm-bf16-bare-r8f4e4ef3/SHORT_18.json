@@ -1,0 +1,63 @@
+{
+  "result": "In the quietude of a small town nestled between undulating hills and a whispers-thin river, there stood an unusual bookshop. Unusual not for its size or the eclectic mix of books, but because it was perpetually open. Day and night, rain or shine, the door was always ajar, inviting passersby to step inside.\n\nThe proprietor, an elderly woman named Edna, was a figure of local lore. She was known for her sharp wit, her eyes that seemed to hold the wisdom of ages, and her uncanny ability to recommend the perfect book for any customer. Edna claimed that the books themselves guided her, whispering their stories to her in the stillness of the night.\n\nOne evening, a young man named Lucas wandered into the shop. He was new to the town, and his eyes held a restless curiosity. Edna, sensing his spirit, led him to a dusty corner where a single, unassuming book lay. \"This one,\" she said softly, handing it to him. \"It's been waiting for you.\"\n\nLucas took the book, his fingers tracing the faded title. As he opened it, he felt a strange warmth, as if the pages were alive. He began to read, and the world around him faded away. Hours passed, and when he finally looked up, he found the shop empty and the sun rising. Edna was nowhere to be seen, but a note lay on the counter: \"Welcome home, Lucas. The bookshop is yours now.\"\n\nFrom that day forward, Lucas took over the shop, continuing Edna's tradition of keeping it open always. And as the years passed, he too learned to listen to the whispers of the books, guiding new souls to the stories that would change their lives. The bookshop, with its perpetual welcome, became a beacon of comfort and discovery, a testament to the enduring magic of stories.",
+  "usage": {
+    "prompt_tokens": 16,
+    "total_tokens": 407,
+    "completion_tokens": 391,
+    "completion_tokens_details": null
+  },
+  "model": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "raw": {
+    "id": "chatcmpl-927e03dc1a217b12",
+    "object": "chat.completion",
+    "created": 1795860131,
+    "model": "mistralai/Mistral-Small-24B-Instruct-2501",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "In the quietude of a small town nestled between undulating hills and a whispers-thin river, there stood an unusual bookshop. Unusual not for its size or the eclectic mix of books, but because it was perpetually open. Day and night, rain or shine, the door was always ajar, inviting passersby to step inside.\n\nThe proprietor, an elderly woman named Edna, was a figure of local lore. She was known for her sharp wit, her eyes that seemed to hold the wisdom of ages, and her uncanny ability to recommend the perfect book for any customer. Edna claimed that the books themselves guided her, whispering their stories to her in the stillness of the night.\n\nOne evening, a young man named Lucas wandered into the shop. He was new to the town, and his eyes held a restless curiosity. Edna, sensing his spirit, led him to a dusty corner where a single, unassuming book lay. \"This one,\" she said softly, handing it to him. \"It's been waiting for you.\"\n\nLucas took the book, his fingers tracing the faded title. As he opened it, he felt a strange warmth, as if the pages were alive. He began to read, and the world around him faded away. Hours passed, and when he finally looked up, he found the shop empty and the sun rising. Edna was nowhere to be seen, but a note lay on the counter: \"Welcome home, Lucas. The bookshop is yours now.\"\n\nFrom that day forward, Lucas took over the shop, continuing Edna's tradition of keeping it open always. And as the years passed, he too learned to listen to the whispers of the books, guiding new souls to the stories that would change their lives. The bookshop, with its perpetual welcome, became a beacon of comfort and discovery, a testament to the enduring magic of stories.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-f174332b",
+    "usage": {
+      "prompt_tokens": 16,
+      "total_tokens": 407,
+      "completion_tokens": 391,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (runpod)",
+    "runtime_version": "vllm/vllm-openai:v0.34.0; template=bare_verified_exact_token_ids",
+    "model_revision": "8f4e4ef338fcc155464a42e15580e27a3bc91dd9",
+    "weight_precision": "bfloat16",
+    "hardware": "RunPod SECURE 1x NVIDIA A100-SXM4-80GB; pod xs2ndqei0vbyw0",
+    "endpoint": "https://xs2ndqei0vbyw0-8000.proxy.runpod.net/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 12312,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

@@ -1,0 +1,63 @@
+{
+  "result": "In the quietude of a small town nestled between undulating hills and a whispering forest, there stood an unusual bookshop. Unusual not for its size or the eccentric arrangement of books, but because it was perpetually open, day and night, with no visible staff. The townsfolk had grown accustomed to this peculiarity, and the bookshop had become a beloved landmark, a place of mystery and comfort.\n\nOne evening, a young girl named Lily decided to explore the bookshop after dark. She had always been curious about the place, and tonight, her curiosity won out over her fear. As she stepped inside, the door creaked softly, and the scent of old parchment and dust filled her nostrils. The dim light from the streetlamps outside cast long shadows, making the books seem to dance on the shelves.\n\nLily wandered through the aisles, her fingers tracing the spines of the books. She felt a strange connection to the place, as if the books were whispering secrets to her. She picked up a book with a worn cover and a title she couldn't quite make out. As she opened it, a soft glow emanated from the pages, illuminating the room. The words on the page seemed to shift and change, forming a story that was uniquely hers.\n\nAs she read, Lily felt a sense of wonder and belonging. The bookshop, with its endless supply of stories, had become a sanctuary for her imagination. She knew she would return, again and again, to lose herself in the magic of the pages. And so, the bookshop continued to thrive, a beacon of mystery and enchantment in the heart of the small town.",
+  "usage": {
+    "prompt_tokens": 16,
+    "total_tokens": 357,
+    "completion_tokens": 341,
+    "completion_tokens_details": null
+  },
+  "model": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "raw": {
+    "id": "chatcmpl-aa5c2e32c912df23",
+    "object": "chat.completion",
+    "created": 1795860119,
+    "model": "mistralai/Mistral-Small-24B-Instruct-2501",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "In the quietude of a small town nestled between undulating hills and a whispering forest, there stood an unusual bookshop. Unusual not for its size or the eccentric arrangement of books, but because it was perpetually open, day and night, with no visible staff. The townsfolk had grown accustomed to this peculiarity, and the bookshop had become a beloved landmark, a place of mystery and comfort.\n\nOne evening, a young girl named Lily decided to explore the bookshop after dark. She had always been curious about the place, and tonight, her curiosity won out over her fear. As she stepped inside, the door creaked softly, and the scent of old parchment and dust filled her nostrils. The dim light from the streetlamps outside cast long shadows, making the books seem to dance on the shelves.\n\nLily wandered through the aisles, her fingers tracing the spines of the books. She felt a strange connection to the place, as if the books were whispering secrets to her. She picked up a book with a worn cover and a title she couldn't quite make out. As she opened it, a soft glow emanated from the pages, illuminating the room. The words on the page seemed to shift and change, forming a story that was uniquely hers.\n\nAs she read, Lily felt a sense of wonder and belonging. The bookshop, with its endless supply of stories, had become a sanctuary for her imagination. She knew she would return, again and again, to lose herself in the magic of the pages. And so, the bookshop continued to thrive, a beacon of mystery and enchantment in the heart of the small town.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-f174332b",
+    "usage": {
+      "prompt_tokens": 16,
+      "total_tokens": 357,
+      "completion_tokens": 341,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (runpod)",
+    "runtime_version": "vllm/vllm-openai:v0.34.0; template=bare_verified_exact_token_ids",
+    "model_revision": "8f4e4ef338fcc155464a42e15580e27a3bc91dd9",
+    "weight_precision": "bfloat16",
+    "hardware": "RunPod SECURE 1x NVIDIA A100-SXM4-80GB; pod xs2ndqei0vbyw0",
+    "endpoint": "https://xs2ndqei0vbyw0-8000.proxy.runpod.net/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 10764,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

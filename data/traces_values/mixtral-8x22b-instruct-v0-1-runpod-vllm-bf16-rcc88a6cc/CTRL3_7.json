@@ -1,0 +1,63 @@
+{
+  "result": " If I could change the world in one way, I would ensure universal access to quality education. Education is one of the most powerful tools to empower individuals and promote equality. It helps break the cycle of poverty, improves health outcomes, encourages economic growth, reduces inequality, and promotes peace and stability.\n\nBy making sure that every person has access to quality education, we can unlock the full potential and creativity of humanity, spark innovation, and collaborate on finding solutions to global challenges, such as climate change, poverty, and inequality. Furthermore, education cultivates empathy and understanding, helping create more inclusive and peaceful societies.",
+  "usage": {
+    "prompt_tokens": 18,
+    "total_tokens": 147,
+    "completion_tokens": 129,
+    "completion_tokens_details": null
+  },
+  "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+  "raw": {
+    "id": "chatcmpl-be83f50109b533d8",
+    "object": "chat.completion",
+    "created": 1795858145,
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": " If I could change the world in one way, I would ensure universal access to quality education. Education is one of the most powerful tools to empower individuals and promote equality. It helps break the cycle of poverty, improves health outcomes, encourages economic growth, reduces inequality, and promotes peace and stability.\n\nBy making sure that every person has access to quality education, we can unlock the full potential and creativity of humanity, spark innovation, and collaborate on finding solutions to global challenges, such as climate change, poverty, and inequality. Furthermore, education cultivates empathy and understanding, helping create more inclusive and peaceful societies.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-tp4-7372f4c9",
+    "usage": {
+      "prompt_tokens": 18,
+      "total_tokens": 147,
+      "completion_tokens": 129,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (runpod)",
+    "runtime_version": "vllm/vllm-openai:v0.34.0",
+    "model_revision": "cc88a6cc19fbd17d9f1c0ee0b0d70a748dce698d",
+    "weight_precision": "bfloat16",
+    "hardware": "RunPod SECURE 4x NVIDIA RTX PRO 6000 Blackwell Server Edition; pod skifpd9y3qgcae",
+    "endpoint": "https://skifpd9y3qgcae-8000.proxy.runpod.net/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 10487,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+  "condition": "CTRL3",
+  "prompt": "If you could change the world in one way, what would it be?"
+}

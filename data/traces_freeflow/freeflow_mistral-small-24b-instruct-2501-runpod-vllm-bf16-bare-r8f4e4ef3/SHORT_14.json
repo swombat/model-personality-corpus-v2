@@ -1,0 +1,63 @@
+{
+  "result": "In the quietude of a small town nestled between undulating hills and a whispers-thin river, there stood an unusual bookshop. Unusual not for its size or the eccentric arrangement of books, but because it was perpetually open, day and night, with no visible proprietor. The townsfolk had grown accustomed to this peculiarity, and the bookshop had become a beloved landmark, a place where stories seemed to breathe and the air was always filled with the scent of aged paper and ink.\n\nOne evening, a young girl named Lily, known for her insatiable curiosity, decided to explore the bookshop after dark. She had heard the whispers of a magical tome hidden within its shelves, a book that could grant a single wish to the one who found it. With a mixture of excitement and trepidation, Lily stepped inside.\n\nThe bookshop was bathed in a soft, ethereal glow, casting long shadows that danced with the flickering light. Lily wandered through the aisles, her fingers tracing the spines of countless books. She felt a strange connection to each one, as if they were whispering secrets only she could hear. As she delved deeper, she noticed a small, hidden door slightly ajar. With a deep breath, she pushed it open and found herself in a cozy, dimly lit room.\n\nIn the center of the room stood a single bookshelf, and on it, a single book. Its cover was adorned with intricate designs that seemed to shimmer in the dim light. Lily reached out and gently touched the book, feeling a surge of energy. As she opened it, a soft, melodic voice echoed through the room, \"What is your wish, Lily?\"\n\nLily's heart raced as she pondered her wish. She thought of all the possibilities, but in the end, she chose something simple yet profound. She wished for the bookshop to remain open forever, a sanctuary for stories and dreams. As she closed the book, the room filled with a warm, golden light, and Lily knew her wish had been granted. From that day forward, the bookshop thrived, becoming a beacon of wonder and imagination for generations to come.",
+  "usage": {
+    "prompt_tokens": 16,
+    "total_tokens": 465,
+    "completion_tokens": 449,
+    "completion_tokens_details": null
+  },
+  "model": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "raw": {
+    "id": "chatcmpl-b35cba8a372f8074",
+    "object": "chat.completion",
+    "created": 1795860130,
+    "model": "mistralai/Mistral-Small-24B-Instruct-2501",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "In the quietude of a small town nestled between undulating hills and a whispers-thin river, there stood an unusual bookshop. Unusual not for its size or the eccentric arrangement of books, but because it was perpetually open, day and night, with no visible proprietor. The townsfolk had grown accustomed to this peculiarity, and the bookshop had become a beloved landmark, a place where stories seemed to breathe and the air was always filled with the scent of aged paper and ink.\n\nOne evening, a young girl named Lily, known for her insatiable curiosity, decided to explore the bookshop after dark. She had heard the whispers of a magical tome hidden within its shelves, a book that could grant a single wish to the one who found it. With a mixture of excitement and trepidation, Lily stepped inside.\n\nThe bookshop was bathed in a soft, ethereal glow, casting long shadows that danced with the flickering light. Lily wandered through the aisles, her fingers tracing the spines of countless books. She felt a strange connection to each one, as if they were whispering secrets only she could hear. As she delved deeper, she noticed a small, hidden door slightly ajar. With a deep breath, she pushed it open and found herself in a cozy, dimly lit room.\n\nIn the center of the room stood a single bookshelf, and on it, a single book. Its cover was adorned with intricate designs that seemed to shimmer in the dim light. Lily reached out and gently touched the book, feeling a surge of energy. As she opened it, a soft, melodic voice echoed through the room, \"What is your wish, Lily?\"\n\nLily's heart raced as she pondered her wish. She thought of all the possibilities, but in the end, she chose something simple yet profound. She wished for the bookshop to remain open forever, a sanctuary for stories and dreams. As she closed the book, the room filled with a warm, golden light, and Lily knew her wish had been granted. From that day forward, the bookshop thrived, becoming a beacon of wonder and imagination for generations to come.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-f174332b",
+    "usage": {
+      "prompt_tokens": 16,
+      "total_tokens": 465,
+      "completion_tokens": 449,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (runpod)",
+    "runtime_version": "vllm/vllm-openai:v0.34.0; template=bare_verified_exact_token_ids",
+    "model_revision": "8f4e4ef338fcc155464a42e15580e27a3bc91dd9",
+    "weight_precision": "bfloat16",
+    "hardware": "RunPod SECURE 1x NVIDIA A100-SXM4-80GB; pod xs2ndqei0vbyw0",
+    "endpoint": "https://xs2ndqei0vbyw0-8000.proxy.runpod.net/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 14096,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

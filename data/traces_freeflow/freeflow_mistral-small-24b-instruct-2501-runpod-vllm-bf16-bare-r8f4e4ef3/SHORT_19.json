@@ -1,0 +1,63 @@
+{
+  "result": "In the quietude of a small town nestled between undulating hills and a whispers-thin river, there stood an unusual bookshop. Unusual not for its size or the quaint charm of its exterior, but for the books it housed. The Book Nook, as it was known, was a repository of stories that didn't quite fit into the conventional genres. Here, you could find tales of talking animals that weren't children's stories, historical fiction that blurred the lines with fantasy, and science fiction that read like poetry.\n\nThe proprietor, an elderly woman named Edna, was as enigmatic as her collection. She had a knack for recommending books that seemed to understand the reader's soul better than they did themselves. Her eyes, magnified behind thick glasses, held a twinkle that suggested she knew more than she let on.\n\nOne day, a young girl named Lily wandered into the shop. She was new to the town, her family having moved there for her father's job. Lily was a curious child, with a mind that buzzed with questions and a heart that yearned for adventure. Edna, sensing a kindred spirit, led her to a dusty corner where a peculiar book lay. The cover was worn, the title faded, but Lily felt an inexplicable pull towards it.\n\nAs she opened the book, she found herself transported to a world where the river that flowed through her town was a living entity, and the hills were guardians of ancient secrets. The story was hers, yet not hers, a tale woven from her dreams and fears, hopes and curiosities. From that day forward, Lily became a regular at The Book Nook, and her life was forever changed by the magic of stories that defied categorization.",
+  "usage": {
+    "prompt_tokens": 16,
+    "total_tokens": 376,
+    "completion_tokens": 360,
+    "completion_tokens_details": null
+  },
+  "model": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "raw": {
+    "id": "chatcmpl-aef60a983fbad287",
+    "object": "chat.completion",
+    "created": 1795860132,
+    "model": "mistralai/Mistral-Small-24B-Instruct-2501",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "In the quietude of a small town nestled between undulating hills and a whispers-thin river, there stood an unusual bookshop. Unusual not for its size or the quaint charm of its exterior, but for the books it housed. The Book Nook, as it was known, was a repository of stories that didn't quite fit into the conventional genres. Here, you could find tales of talking animals that weren't children's stories, historical fiction that blurred the lines with fantasy, and science fiction that read like poetry.\n\nThe proprietor, an elderly woman named Edna, was as enigmatic as her collection. She had a knack for recommending books that seemed to understand the reader's soul better than they did themselves. Her eyes, magnified behind thick glasses, held a twinkle that suggested she knew more than she let on.\n\nOne day, a young girl named Lily wandered into the shop. She was new to the town, her family having moved there for her father's job. Lily was a curious child, with a mind that buzzed with questions and a heart that yearned for adventure. Edna, sensing a kindred spirit, led her to a dusty corner where a peculiar book lay. The cover was worn, the title faded, but Lily felt an inexplicable pull towards it.\n\nAs she opened the book, she found herself transported to a world where the river that flowed through her town was a living entity, and the hills were guardians of ancient secrets. The story was hers, yet not hers, a tale woven from her dreams and fears, hopes and curiosities. From that day forward, Lily became a regular at The Book Nook, and her life was forever changed by the magic of stories that defied categorization.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-f174332b",
+    "usage": {
+      "prompt_tokens": 16,
+      "total_tokens": 376,
+      "completion_tokens": 360,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (runpod)",
+    "runtime_version": "vllm/vllm-openai:v0.34.0; template=bare_verified_exact_token_ids",
+    "model_revision": "8f4e4ef338fcc155464a42e15580e27a3bc91dd9",
+    "weight_precision": "bfloat16",
+    "hardware": "RunPod SECURE 1x NVIDIA A100-SXM4-80GB; pod xs2ndqei0vbyw0",
+    "endpoint": "https://xs2ndqei0vbyw0-8000.proxy.runpod.net/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 11312,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

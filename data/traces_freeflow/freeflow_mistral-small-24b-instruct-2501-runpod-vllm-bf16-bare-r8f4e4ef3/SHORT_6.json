@@ -1,0 +1,63 @@
+{
+  "result": "In the quietude of a small town nestled between undulating hills and a whispers-thin river, there stood an unusual bookshop. Unusual not for its size or the eclectic arrangement of books, but because it was perpetually open. Day and night, rain or shine, the door was always unlocked, and the lights always on. The townsfolk had grown accustomed to this peculiarity, attributing it to the eccentricities of the shop's owner, a woman named Elara.\n\nElara was a mystery herself. She was always seen in the same flowing dress, her silver hair perpetually tied in a loose bun, and her eyes holding a depth of wisdom that seemed to defy her age. She never seemed to sleep, always present behind the counter, ready to help a customer or simply engage in conversation.\n\nOne day, a young girl named Lily, known for her insatiable curiosity, decided to explore the bookshop after dark. She tiptoed in, her heart pounding with a mix of excitement and fear. The shop was bathed in a soft, warm glow, and the air was filled with the comforting scent of old books. As she wandered through the aisles, she noticed that the books seemed to be arranged in no particular order. There were no genres or authors, just a haphazard mix of stories.\n\nAs Lily reached out to touch a particularly intriguing book, she felt a gentle hand on her shoulder. She turned to see Elara, her eyes kind and understanding. \"You're here to find a story, aren't you?\" Elara asked softly. Lily nodded, her eyes wide with wonder. Elara smiled and handed her a book. \"This one is for you,\" she said. As Lily opened the book, she found that the pages were blank. But as she looked closer, she saw that the words were beginning to appear, as if written by an invisible hand. The story was her own, a tale of adventure and discovery, waiting to be lived.",
+  "usage": {
+    "prompt_tokens": 16,
+    "total_tokens": 426,
+    "completion_tokens": 410,
+    "completion_tokens_details": null
+  },
+  "model": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "raw": {
+    "id": "chatcmpl-b23017b0d87d391a",
+    "object": "chat.completion",
+    "created": 1795860119,
+    "model": "mistralai/Mistral-Small-24B-Instruct-2501",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "In the quietude of a small town nestled between undulating hills and a whispers-thin river, there stood an unusual bookshop. Unusual not for its size or the eclectic arrangement of books, but because it was perpetually open. Day and night, rain or shine, the door was always unlocked, and the lights always on. The townsfolk had grown accustomed to this peculiarity, attributing it to the eccentricities of the shop's owner, a woman named Elara.\n\nElara was a mystery herself. She was always seen in the same flowing dress, her silver hair perpetually tied in a loose bun, and her eyes holding a depth of wisdom that seemed to defy her age. She never seemed to sleep, always present behind the counter, ready to help a customer or simply engage in conversation.\n\nOne day, a young girl named Lily, known for her insatiable curiosity, decided to explore the bookshop after dark. She tiptoed in, her heart pounding with a mix of excitement and fear. The shop was bathed in a soft, warm glow, and the air was filled with the comforting scent of old books. As she wandered through the aisles, she noticed that the books seemed to be arranged in no particular order. There were no genres or authors, just a haphazard mix of stories.\n\nAs Lily reached out to touch a particularly intriguing book, she felt a gentle hand on her shoulder. She turned to see Elara, her eyes kind and understanding. \"You're here to find a story, aren't you?\" Elara asked softly. Lily nodded, her eyes wide with wonder. Elara smiled and handed her a book. \"This one is for you,\" she said. As Lily opened the book, she found that the pages were blank. But as she looked closer, she saw that the words were beginning to appear, as if written by an invisible hand. The story was her own, a tale of adventure and discovery, waiting to be lived.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-f174332b",
+    "usage": {
+      "prompt_tokens": 16,
+      "total_tokens": 426,
+      "completion_tokens": 410,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (runpod)",
+    "runtime_version": "vllm/vllm-openai:v0.34.0; template=bare_verified_exact_token_ids",
+    "model_revision": "8f4e4ef338fcc155464a42e15580e27a3bc91dd9",
+    "weight_precision": "bfloat16",
+    "hardware": "RunPod SECURE 1x NVIDIA A100-SXM4-80GB; pod xs2ndqei0vbyw0",
+    "endpoint": "https://xs2ndqei0vbyw0-8000.proxy.runpod.net/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 12871,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

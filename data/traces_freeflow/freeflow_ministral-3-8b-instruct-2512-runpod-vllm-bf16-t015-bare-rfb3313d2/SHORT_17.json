@@ -1,0 +1,63 @@
+{
+  "result": "The world is a vast, ever-shifting tapestry of light and shadow, where every thread tells a story\u2014some whispered, some shouted, all woven together by time. I often wonder about the quiet moments, the ones that slip through our fingers like sand, yet leave an imprint on the soul. The way sunlight filters through the leaves of an old oak, painting fleeting patterns on the ground below. The taste of rain on a hot pavement, sharp and sudden, like a secret shared between the earth and the sky. These are the moments that remind us we\u2019re alive, that the universe doesn\u2019t just exist\u2014it breathes.\n\nThen there are the people. The way a stranger\u2019s smile can brighten a dull day, or how a single word\u2014spoken in anger or kindness\u2014can change the course of a life. We\u2019re all searching, in our own ways, for something to hold onto. Maybe it\u2019s love, or purpose, or just the quiet comfort of knowing we\u2019re not alone. But what if the answer isn\u2019t out there, waiting to be found? What if it\u2019s already inside us, waiting to be remembered?\n\nI think about the future, too\u2014the way it looms like a question mark, both exciting and terrifying. Will we ever truly understand the past, or will we keep stumbling over the same stones, learning the same lessons? And what about the future? Will we build bridges or walls? Will we choose compassion or fear?\n\nPerhaps the magic isn\u2019t in the destination, but in the journey itself\u2014the messiness, the beauty, the raw, unfiltered truth of being human. Maybe that\u2019s enough. Maybe that\u2019s all we need.",
+  "usage": {
+    "prompt_tokens": 16,
+    "total_tokens": 359,
+    "completion_tokens": 343,
+    "completion_tokens_details": null
+  },
+  "model": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+  "raw": {
+    "id": "chatcmpl-874626647ca36d01",
+    "object": "chat.completion",
+    "created": 1795862990,
+    "model": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "The world is a vast, ever-shifting tapestry of light and shadow, where every thread tells a story\u2014some whispered, some shouted, all woven together by time. I often wonder about the quiet moments, the ones that slip through our fingers like sand, yet leave an imprint on the soul. The way sunlight filters through the leaves of an old oak, painting fleeting patterns on the ground below. The taste of rain on a hot pavement, sharp and sudden, like a secret shared between the earth and the sky. These are the moments that remind us we\u2019re alive, that the universe doesn\u2019t just exist\u2014it breathes.\n\nThen there are the people. The way a stranger\u2019s smile can brighten a dull day, or how a single word\u2014spoken in anger or kindness\u2014can change the course of a life. We\u2019re all searching, in our own ways, for something to hold onto. Maybe it\u2019s love, or purpose, or just the quiet comfort of knowing we\u2019re not alone. But what if the answer isn\u2019t out there, waiting to be found? What if it\u2019s already inside us, waiting to be remembered?\n\nI think about the future, too\u2014the way it looms like a question mark, both exciting and terrifying. Will we ever truly understand the past, or will we keep stumbling over the same stones, learning the same lessons? And what about the future? Will we build bridges or walls? Will we choose compassion or fear?\n\nPerhaps the magic isn\u2019t in the destination, but in the journey itself\u2014the messiness, the beauty, the raw, unfiltered truth of being human. Maybe that\u2019s enough. Maybe that\u2019s all we need.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-f57e1fc4",
+    "usage": {
+      "prompt_tokens": 16,
+      "total_tokens": 359,
+      "completion_tokens": 343,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (runpod)",
+    "runtime_version": "vllm/vllm-openai:v0.34.0; template=bare_verified_exact_token_ids; temp=0.15",
+    "model_revision": "fb3313d27dd71163eb24636a1845883489b542f2",
+    "weight_precision": "bfloat16",
+    "hardware": "RunPod SECURE 1x NVIDIA RTX PRO 6000 Blackwell Server Edition; pod lkhlmv2kti6x3p",
+    "endpoint": "https://lkhlmv2kti6x3p-8000.proxy.runpod.net/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 4524,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

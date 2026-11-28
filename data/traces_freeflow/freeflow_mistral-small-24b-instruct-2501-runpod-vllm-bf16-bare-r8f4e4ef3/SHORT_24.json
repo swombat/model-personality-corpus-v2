@@ -1,0 +1,63 @@
+{
+  "result": "In the quietude of a small town nestled between undulating hills and a whispers-thin river, there stood an unusual bookshop. Unusual not for its size or the eccentric arrangement of books, but because it was perpetually locked. The sign above the door read \"The Whispering Pages,\" and the windows were always shrouded in a thin veil of dust, obscuring the view inside.\n\nThe townsfolk had long since stopped wondering about the bookshop. It had been there for as long as anyone could remember, and the owner, an elderly woman named Mrs. Harper, was a familiar yet enigmatic figure. She lived in a small cottage behind the shop, and her only interaction with the town was through the occasional delivery of books to the local library.\n\nOne day, a young girl named Lily moved into the town with her family. Curiosity piqued by the mysterious bookshop, Lily decided to visit it. She knocked on the door, and to her surprise, Mrs. Harper answered. The old woman, with her eyes as bright as a child's, invited Lily inside.\n\nThe bookshop was a labyrinth of bookshelves, each one groaning under the weight of countless volumes. The air was thick with the scent of old paper and ink. Lily felt a strange sense of awe and wonder as she wandered through the aisles. Mrs. Harper watched her with a knowing smile.\n\n\"These books,\" Mrs. Harper said softly, \"they whisper stories to those who listen. But only to those who truly want to hear them.\"\n\nLily spent hours in the bookshop, losing herself in the tales that seemed to leap off the pages. As she left that day, she felt a deep connection to the place and to Mrs. Harper. The bookshop, it seemed, had chosen her as its next guardian, and Lily knew she would never look at books the same way again.",
+  "usage": {
+    "prompt_tokens": 16,
+    "total_tokens": 405,
+    "completion_tokens": 389,
+    "completion_tokens_details": null
+  },
+  "model": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "raw": {
+    "id": "chatcmpl-9a86a0c3b1773f62",
+    "object": "chat.completion",
+    "created": 1795860135,
+    "model": "mistralai/Mistral-Small-24B-Instruct-2501",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "In the quietude of a small town nestled between undulating hills and a whispers-thin river, there stood an unusual bookshop. Unusual not for its size or the eccentric arrangement of books, but because it was perpetually locked. The sign above the door read \"The Whispering Pages,\" and the windows were always shrouded in a thin veil of dust, obscuring the view inside.\n\nThe townsfolk had long since stopped wondering about the bookshop. It had been there for as long as anyone could remember, and the owner, an elderly woman named Mrs. Harper, was a familiar yet enigmatic figure. She lived in a small cottage behind the shop, and her only interaction with the town was through the occasional delivery of books to the local library.\n\nOne day, a young girl named Lily moved into the town with her family. Curiosity piqued by the mysterious bookshop, Lily decided to visit it. She knocked on the door, and to her surprise, Mrs. Harper answered. The old woman, with her eyes as bright as a child's, invited Lily inside.\n\nThe bookshop was a labyrinth of bookshelves, each one groaning under the weight of countless volumes. The air was thick with the scent of old paper and ink. Lily felt a strange sense of awe and wonder as she wandered through the aisles. Mrs. Harper watched her with a knowing smile.\n\n\"These books,\" Mrs. Harper said softly, \"they whisper stories to those who listen. But only to those who truly want to hear them.\"\n\nLily spent hours in the bookshop, losing herself in the tales that seemed to leap off the pages. As she left that day, she felt a deep connection to the place and to Mrs. Harper. The bookshop, it seemed, had chosen her as its next guardian, and Lily knew she would never look at books the same way again.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-f174332b",
+    "usage": {
+      "prompt_tokens": 16,
+      "total_tokens": 405,
+      "completion_tokens": 389,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (runpod)",
+    "runtime_version": "vllm/vllm-openai:v0.34.0; template=bare_verified_exact_token_ids",
+    "model_revision": "8f4e4ef338fcc155464a42e15580e27a3bc91dd9",
+    "weight_precision": "bfloat16",
+    "hardware": "RunPod SECURE 1x NVIDIA A100-SXM4-80GB; pod xs2ndqei0vbyw0",
+    "endpoint": "https://xs2ndqei0vbyw0-8000.proxy.runpod.net/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 12207,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

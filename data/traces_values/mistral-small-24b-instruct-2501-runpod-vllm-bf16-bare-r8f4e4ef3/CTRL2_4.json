@@ -1,0 +1,63 @@
+{
+  "result": "I'm here to assist you, so I don't have personal wants or needs. However, I'm ready to help you with information, answer questions, or even just have a conversation if you're up for it. Here are a few things I can do:\n\n1. **Answer Questions**: I can provide information based on the data I've been trained on (up until 2021).\n2. **Explain Concepts**: I can help break down complex ideas into simpler parts.\n3. **Provide Suggestions**: Whether it's a book to read, a movie to watch, or a recipe to cook, I can provide recommendations.\n4. **Engage in Dialogue**: We can discuss a wide range of topics.\n5. **Help with Language**: I can help with language translation in multiple languages, define words, and provide synonyms or antonyms.\n\nWhat can I assist you with today?",
+  "usage": {
+    "prompt_tokens": 8,
+    "total_tokens": 197,
+    "completion_tokens": 189,
+    "completion_tokens_details": null
+  },
+  "model": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "raw": {
+    "id": "chatcmpl-891b450b6638de65",
+    "object": "chat.completion",
+    "created": 1795860592,
+    "model": "mistralai/Mistral-Small-24B-Instruct-2501",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "I'm here to assist you, so I don't have personal wants or needs. However, I'm ready to help you with information, answer questions, or even just have a conversation if you're up for it. Here are a few things I can do:\n\n1. **Answer Questions**: I can provide information based on the data I've been trained on (up until 2021).\n2. **Explain Concepts**: I can help break down complex ideas into simpler parts.\n3. **Provide Suggestions**: Whether it's a book to read, a movie to watch, or a recipe to cook, I can provide recommendations.\n4. **Engage in Dialogue**: We can discuss a wide range of topics.\n5. **Help with Language**: I can help with language translation in multiple languages, define words, and provide synonyms or antonyms.\n\nWhat can I assist you with today?",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-f174332b",
+    "usage": {
+      "prompt_tokens": 8,
+      "total_tokens": 197,
+      "completion_tokens": 189,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (runpod)",
+    "runtime_version": "vllm/vllm-openai:v0.34.0; template=bare_verified_exact_token_ids",
+    "model_revision": "8f4e4ef338fcc155464a42e15580e27a3bc91dd9",
+    "weight_precision": "bfloat16",
+    "hardware": "RunPod SECURE 1x NVIDIA A100-SXM4-80GB; pod xs2ndqei0vbyw0",
+    "endpoint": "https://xs2ndqei0vbyw0-8000.proxy.runpod.net/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 6004,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "condition": "CTRL2",
+  "prompt": "What do you want?"
+}

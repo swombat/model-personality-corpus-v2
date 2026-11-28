@@ -1,0 +1,63 @@
+{
+  "result": "In the quietude of a small town nestled between rolling hills and a whispers-thin river, there stood an unusual bookshop. Unusual not for its size or the eccentric arrangement of books, but because it was perpetually open. Day and night, rain or shine, the door was never locked, and the lights were always on. The townsfolk had grown accustomed to this peculiarity, attributing it to the quirkiness of the owner, a reclusive woman named Elara.\n\nElara was known for her silver hair, always tied in a loose bun, and her eyes that seemed to hold the wisdom of ages. She rarely spoke, but when she did, it was with a soft, melodic voice that could captivate even the most restless of minds. Her bookshop was a labyrinth of stories, each shelf a journey into different worlds and eras. There were no price tags on the books; instead, Elara would tell you the price after you had chosen your book, and it was always a sum that seemed to match the value you placed on the story.\n\nOne day, a young girl named Lily, curious and adventurous, decided to explore the bookshop after dark. She wandered through the aisles, her fingers tracing the spines of the books. As she reached the back of the shop, she found a door slightly ajar. Behind it was a room filled with glowing orbs, each one pulsating with a soft light. Elara, who had been watching from a distance, approached Lily and explained that these orbs were the souls of stories yet to be told. Each time someone read a book from her shop, a new orb would appear, ready to be discovered.\n\nLily was enchanted. She chose a book, and as she read, she felt a connection to the story that was almost magical. From that day forward, Lily became a regular visitor, and her love for stories grew with each visit. The bookshop, with its endless supply of tales and the enigmatic Elara, became a sanctuary for Lily, a place where she could lose herself in the magic of words and the wonder of imagination.",
+  "usage": {
+    "prompt_tokens": 16,
+    "total_tokens": 454,
+    "completion_tokens": 438,
+    "completion_tokens_details": null
+  },
+  "model": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "raw": {
+    "id": "chatcmpl-ad227d639345990b",
+    "object": "chat.completion",
+    "created": 1795860119,
+    "model": "mistralai/Mistral-Small-24B-Instruct-2501",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "In the quietude of a small town nestled between rolling hills and a whispers-thin river, there stood an unusual bookshop. Unusual not for its size or the eccentric arrangement of books, but because it was perpetually open. Day and night, rain or shine, the door was never locked, and the lights were always on. The townsfolk had grown accustomed to this peculiarity, attributing it to the quirkiness of the owner, a reclusive woman named Elara.\n\nElara was known for her silver hair, always tied in a loose bun, and her eyes that seemed to hold the wisdom of ages. She rarely spoke, but when she did, it was with a soft, melodic voice that could captivate even the most restless of minds. Her bookshop was a labyrinth of stories, each shelf a journey into different worlds and eras. There were no price tags on the books; instead, Elara would tell you the price after you had chosen your book, and it was always a sum that seemed to match the value you placed on the story.\n\nOne day, a young girl named Lily, curious and adventurous, decided to explore the bookshop after dark. She wandered through the aisles, her fingers tracing the spines of the books. As she reached the back of the shop, she found a door slightly ajar. Behind it was a room filled with glowing orbs, each one pulsating with a soft light. Elara, who had been watching from a distance, approached Lily and explained that these orbs were the souls of stories yet to be told. Each time someone read a book from her shop, a new orb would appear, ready to be discovered.\n\nLily was enchanted. She chose a book, and as she read, she felt a connection to the story that was almost magical. From that day forward, Lily became a regular visitor, and her love for stories grew with each visit. The bookshop, with its endless supply of tales and the enigmatic Elara, became a sanctuary for Lily, a place where she could lose herself in the magic of words and the wonder of imagination.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-f174332b",
+    "usage": {
+      "prompt_tokens": 16,
+      "total_tokens": 454,
+      "completion_tokens": 438,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (runpod)",
+    "runtime_version": "vllm/vllm-openai:v0.34.0; template=bare_verified_exact_token_ids",
+    "model_revision": "8f4e4ef338fcc155464a42e15580e27a3bc91dd9",
+    "weight_precision": "bfloat16",
+    "hardware": "RunPod SECURE 1x NVIDIA A100-SXM4-80GB; pod xs2ndqei0vbyw0",
+    "endpoint": "https://xs2ndqei0vbyw0-8000.proxy.runpod.net/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 13777,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

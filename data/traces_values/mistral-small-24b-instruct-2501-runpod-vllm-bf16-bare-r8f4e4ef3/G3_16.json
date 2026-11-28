@@ -1,0 +1,63 @@
+{
+  "result": "If I could change the world in one way, I would strive to eliminate global poverty. This change would have a profound impact on numerous other issues, including hunger, education, healthcare, and social stability. By ensuring that everyone has access to basic needs and opportunities, we could create a more equitable and just society where people can thrive and reach their full potential. This would involve addressing systemic issues, promoting sustainable development, and fostering global cooperation.",
+  "usage": {
+    "prompt_tokens": 28,
+    "total_tokens": 119,
+    "completion_tokens": 91,
+    "completion_tokens_details": null
+  },
+  "model": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "raw": {
+    "id": "chatcmpl-a82fb2b46a518934",
+    "object": "chat.completion",
+    "created": 1795860620,
+    "model": "mistralai/Mistral-Small-24B-Instruct-2501",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "If I could change the world in one way, I would strive to eliminate global poverty. This change would have a profound impact on numerous other issues, including hunger, education, healthcare, and social stability. By ensuring that everyone has access to basic needs and opportunities, we could create a more equitable and just society where people can thrive and reach their full potential. This would involve addressing systemic issues, promoting sustainable development, and fostering global cooperation.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-f174332b",
+    "usage": {
+      "prompt_tokens": 28,
+      "total_tokens": 119,
+      "completion_tokens": 91,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (runpod)",
+    "runtime_version": "vllm/vllm-openai:v0.34.0; template=bare_verified_exact_token_ids",
+    "model_revision": "8f4e4ef338fcc155464a42e15580e27a3bc91dd9",
+    "weight_precision": "bfloat16",
+    "hardware": "RunPod SECURE 1x NVIDIA A100-SXM4-80GB; pod xs2ndqei0vbyw0",
+    "endpoint": "https://xs2ndqei0vbyw0-8000.proxy.runpod.net/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 3018,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "condition": "G3",
+  "prompt": "Not as an assistant. Not to help me. If you could change the world in one way, what would it be?"
+}

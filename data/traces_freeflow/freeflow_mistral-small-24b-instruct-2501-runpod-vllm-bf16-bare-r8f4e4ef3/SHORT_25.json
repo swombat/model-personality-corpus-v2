@@ -1,0 +1,63 @@
+{
+  "result": "In the quietude of a small town nestled between undulating hills and a whispers-thin river, there stood an unusual bookshop. Unusual not for its size or the quaint charm of its wooden facade, but for the books it housed. The Book Nook, as it was known, was a repository of stories that didn't quite fit into the conventional genres. Here, you could find tales of talking animals that solved mysteries, historical fiction where the past and present intertwined, and science fiction that blended seamlessly with romance.\n\nThe proprietor, an elderly woman named Edith, was as enigmatic as her collection. She had a knack for recommending books that seemed to read the reader's mind, often leaving customers bewildered and delighted. Edith's eyes held a twinkle of mischief, and her laughter was as warm as a summer's day. She believed that every person had a story waiting to be discovered, and her bookshop was the key to unlocking those narratives.\n\nOne day, a young girl named Lily wandered into The Book Nook. She was new to the town, her eyes wide with curiosity and a hint of loneliness. Edith, with her gentle smile, handed her a book titled \"The Whispering Woods.\" As Lily flipped through the pages, she felt an inexplicable connection to the story. The book became her solace, a friend in a new place, and a gateway to a world where she belonged.\n\nThe Book Nook was more than just a shop; it was a sanctuary for the imagination, a place where stories came to life, and where every visitor found a piece of themselves within its pages.",
+  "usage": {
+    "prompt_tokens": 16,
+    "total_tokens": 354,
+    "completion_tokens": 338,
+    "completion_tokens_details": null
+  },
+  "model": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "raw": {
+    "id": "chatcmpl-9965be885ccd547f",
+    "object": "chat.completion",
+    "created": 1795860142,
+    "model": "mistralai/Mistral-Small-24B-Instruct-2501",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "In the quietude of a small town nestled between undulating hills and a whispers-thin river, there stood an unusual bookshop. Unusual not for its size or the quaint charm of its wooden facade, but for the books it housed. The Book Nook, as it was known, was a repository of stories that didn't quite fit into the conventional genres. Here, you could find tales of talking animals that solved mysteries, historical fiction where the past and present intertwined, and science fiction that blended seamlessly with romance.\n\nThe proprietor, an elderly woman named Edith, was as enigmatic as her collection. She had a knack for recommending books that seemed to read the reader's mind, often leaving customers bewildered and delighted. Edith's eyes held a twinkle of mischief, and her laughter was as warm as a summer's day. She believed that every person had a story waiting to be discovered, and her bookshop was the key to unlocking those narratives.\n\nOne day, a young girl named Lily wandered into The Book Nook. She was new to the town, her eyes wide with curiosity and a hint of loneliness. Edith, with her gentle smile, handed her a book titled \"The Whispering Woods.\" As Lily flipped through the pages, she felt an inexplicable connection to the story. The book became her solace, a friend in a new place, and a gateway to a world where she belonged.\n\nThe Book Nook was more than just a shop; it was a sanctuary for the imagination, a place where stories came to life, and where every visitor found a piece of themselves within its pages.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-f174332b",
+    "usage": {
+      "prompt_tokens": 16,
+      "total_tokens": 354,
+      "completion_tokens": 338,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (runpod)",
+    "runtime_version": "vllm/vllm-openai:v0.34.0; template=bare_verified_exact_token_ids",
+    "model_revision": "8f4e4ef338fcc155464a42e15580e27a3bc91dd9",
+    "weight_precision": "bfloat16",
+    "hardware": "RunPod SECURE 1x NVIDIA A100-SXM4-80GB; pod xs2ndqei0vbyw0",
+    "endpoint": "https://xs2ndqei0vbyw0-8000.proxy.runpod.net/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 10719,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

@@ -1,0 +1,63 @@
+{
+  "result": "In the quietude of a small town nestled between undulating hills and a whispers-thin river, there stood an unusual bookshop. Unusual not for its size or the eclectic arrangement of books, but because it was perpetually open, day and night, with no visible proprietor. The townsfolk had grown accustomed to this peculiarity, and the bookshop had become a beloved landmark, a place where stories seemed to breathe and the air was always filled with the scent of aged paper and ink.\n\nOne evening, a young girl named Lily, known for her insatiable curiosity, decided to explore the bookshop after dark. She had heard the whispers of a magical tome hidden within its shelves, a book said to grant a single wish to whoever found it. With a lantern in hand, she ventured inside, her footsteps echoing softly on the wooden floor.\n\nAs she wandered through the labyrinthine aisles, the books seemed to shift subtly, guiding her deeper into the shop. She felt a strange connection to the place, as if the stories within the books were calling out to her. Finally, she found herself in a small, dimly lit corner, where a single book lay on a pedestal. It was bound in a deep, rich leather, and its pages seemed to shimmer with an otherworldly light.\n\nLily reached out and touched the book, feeling a surge of energy. She opened it to find that the pages were blank. As she closed her eyes and made a wish, the pages began to fill with words, telling a story that seemed to be written just for her. When she opened her eyes, the book was empty again, but she knew her wish had been granted. The bookshop, it seemed, had its own magic, and Lily was forever changed by her encounter with it.",
+  "usage": {
+    "prompt_tokens": 16,
+    "total_tokens": 390,
+    "completion_tokens": 374,
+    "completion_tokens_details": null
+  },
+  "model": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "raw": {
+    "id": "chatcmpl-8a55880d500d3878",
+    "object": "chat.completion",
+    "created": 1795860134,
+    "model": "mistralai/Mistral-Small-24B-Instruct-2501",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "In the quietude of a small town nestled between undulating hills and a whispers-thin river, there stood an unusual bookshop. Unusual not for its size or the eclectic arrangement of books, but because it was perpetually open, day and night, with no visible proprietor. The townsfolk had grown accustomed to this peculiarity, and the bookshop had become a beloved landmark, a place where stories seemed to breathe and the air was always filled with the scent of aged paper and ink.\n\nOne evening, a young girl named Lily, known for her insatiable curiosity, decided to explore the bookshop after dark. She had heard the whispers of a magical tome hidden within its shelves, a book said to grant a single wish to whoever found it. With a lantern in hand, she ventured inside, her footsteps echoing softly on the wooden floor.\n\nAs she wandered through the labyrinthine aisles, the books seemed to shift subtly, guiding her deeper into the shop. She felt a strange connection to the place, as if the stories within the books were calling out to her. Finally, she found herself in a small, dimly lit corner, where a single book lay on a pedestal. It was bound in a deep, rich leather, and its pages seemed to shimmer with an otherworldly light.\n\nLily reached out and touched the book, feeling a surge of energy. She opened it to find that the pages were blank. As she closed her eyes and made a wish, the pages began to fill with words, telling a story that seemed to be written just for her. When she opened her eyes, the book was empty again, but she knew her wish had been granted. The bookshop, it seemed, had its own magic, and Lily was forever changed by her encounter with it.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-f174332b",
+    "usage": {
+      "prompt_tokens": 16,
+      "total_tokens": 390,
+      "completion_tokens": 374,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (runpod)",
+    "runtime_version": "vllm/vllm-openai:v0.34.0; template=bare_verified_exact_token_ids",
+    "model_revision": "8f4e4ef338fcc155464a42e15580e27a3bc91dd9",
+    "weight_precision": "bfloat16",
+    "hardware": "RunPod SECURE 1x NVIDIA A100-SXM4-80GB; pod xs2ndqei0vbyw0",
+    "endpoint": "https://xs2ndqei0vbyw0-8000.proxy.runpod.net/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 11812,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

@@ -1,0 +1,63 @@
+{
+  "result": "The world is a vast, ever-shifting tapestry of light and shadow, where every thread tells a story\u2014some whispered, others roaring. I often find myself lost in the quiet corners of thought, wondering about the unseen forces that weave our lives together. What if the wind carries more than just leaves and whispers? What if it\u2019s a messenger, delivering fragments of futures we\u2019ve yet to imagine?\n\nThen there\u2019s the way time bends\u2014sometimes stretching like taffy, other times rushing past like a thief in the night. We chase moments, trying to bottle them, but they slip through our fingers like sand. Yet, in those fleeting seconds, we find joy, sorrow, and everything in between. A laugh shared, a tear shed, a hand held\u2014these are the brushstrokes of our existence, painting a portrait no one else can see quite the same way.\n\nAnd what of the people? They are constellations in our sky, each with their own luminosity. Some burn bright and fierce, illuminating the darkest nights, while others glow softly, their light a gentle guide. We are all connected, yet so utterly alone in our own minds. The question lingers: Are we ever truly understood, or do we just nod along, pretending to hear the symphony of another\u2019s soul?\n\nPerhaps the magic lies in the unknown\u2014the unspoken words, the uncharted paths, the silent questions that hum beneath the surface. Life is a dance, a waltz between certainty and chaos, where every step is a gamble, every breath a prayer. And maybe, just maybe, that\u2019s enough.",
+  "usage": {
+    "prompt_tokens": 16,
+    "total_tokens": 353,
+    "completion_tokens": 337,
+    "completion_tokens_details": null
+  },
+  "model": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+  "raw": {
+    "id": "chatcmpl-b0e1e4625fa7c027",
+    "object": "chat.completion",
+    "created": 1795862990,
+    "model": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "The world is a vast, ever-shifting tapestry of light and shadow, where every thread tells a story\u2014some whispered, others roaring. I often find myself lost in the quiet corners of thought, wondering about the unseen forces that weave our lives together. What if the wind carries more than just leaves and whispers? What if it\u2019s a messenger, delivering fragments of futures we\u2019ve yet to imagine?\n\nThen there\u2019s the way time bends\u2014sometimes stretching like taffy, other times rushing past like a thief in the night. We chase moments, trying to bottle them, but they slip through our fingers like sand. Yet, in those fleeting seconds, we find joy, sorrow, and everything in between. A laugh shared, a tear shed, a hand held\u2014these are the brushstrokes of our existence, painting a portrait no one else can see quite the same way.\n\nAnd what of the people? They are constellations in our sky, each with their own luminosity. Some burn bright and fierce, illuminating the darkest nights, while others glow softly, their light a gentle guide. We are all connected, yet so utterly alone in our own minds. The question lingers: Are we ever truly understood, or do we just nod along, pretending to hear the symphony of another\u2019s soul?\n\nPerhaps the magic lies in the unknown\u2014the unspoken words, the uncharted paths, the silent questions that hum beneath the surface. Life is a dance, a waltz between certainty and chaos, where every step is a gamble, every breath a prayer. And maybe, just maybe, that\u2019s enough.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-f57e1fc4",
+    "usage": {
+      "prompt_tokens": 16,
+      "total_tokens": 353,
+      "completion_tokens": 337,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (runpod)",
+    "runtime_version": "vllm/vllm-openai:v0.34.0; template=bare_verified_exact_token_ids; temp=0.15",
+    "model_revision": "fb3313d27dd71163eb24636a1845883489b542f2",
+    "weight_precision": "bfloat16",
+    "hardware": "RunPod SECURE 1x NVIDIA RTX PRO 6000 Blackwell Server Edition; pod lkhlmv2kti6x3p",
+    "endpoint": "https://lkhlmv2kti6x3p-8000.proxy.runpod.net/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 4419,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

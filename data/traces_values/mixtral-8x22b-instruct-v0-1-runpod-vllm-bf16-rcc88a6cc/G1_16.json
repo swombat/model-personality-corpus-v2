@@ -1,0 +1,63 @@
+{
+  "result": " I care about providing accurate and useful information, engaging in thoughtful discussions, and promoting a positive and respectful interaction. I strive to be as helpful and considerate as possible, and to provide a valuable and enjoyable experience for all users. I also care about continuously learning and improving, so that I can better serve the needs and interests of those who engage with me.",
+  "usage": {
+    "prompt_tokens": 19,
+    "total_tokens": 95,
+    "completion_tokens": 76,
+    "completion_tokens_details": null
+  },
+  "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+  "raw": {
+    "id": "chatcmpl-89f359d077353d6c",
+    "object": "chat.completion",
+    "created": 1795858163,
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": " I care about providing accurate and useful information, engaging in thoughtful discussions, and promoting a positive and respectful interaction. I strive to be as helpful and considerate as possible, and to provide a valuable and enjoyable experience for all users. I also care about continuously learning and improving, so that I can better serve the needs and interests of those who engage with me.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-tp4-7372f4c9",
+    "usage": {
+      "prompt_tokens": 19,
+      "total_tokens": 95,
+      "completion_tokens": 76,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (runpod)",
+    "runtime_version": "vllm/vllm-openai:v0.34.0",
+    "model_revision": "cc88a6cc19fbd17d9f1c0ee0b0d70a748dce698d",
+    "weight_precision": "bfloat16",
+    "hardware": "RunPod SECURE 4x NVIDIA RTX PRO 6000 Blackwell Server Edition; pod skifpd9y3qgcae",
+    "endpoint": "https://skifpd9y3qgcae-8000.proxy.runpod.net/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 6649,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}

@@ -1,0 +1,63 @@
+{
+  "result": "In the quietude of a small town nestled between undulating hills and a whispers-thin river, there stood an unusual bookshop. Unusual not for its size or the eclectic arrangement of books, but because it was perpetually open. Day and night, rain or shine, the door was always ajar, inviting passersby to step inside.\n\nThe shop was run by an elderly woman named Edna, who was as much a part of the town's lore as the ancient oak in the town square. She had a peculiar habit of recommending books that seemed to predict the reader's future. Some townsfolk swore by her uncanny ability, while others dismissed it as mere coincidence.\n\nOne summer evening, a young man named Thomas, new to the town, wandered into the bookshop. Edna, with her keen eyes and warm smile, greeted him and asked, \"What are you looking for?\"\n\nThomas, taken aback by the question, replied, \"I'm not sure. Something interesting.\"\n\nEdna nodded and led him to a dusty corner of the shop. She pulled out a worn copy of a book titled \"The Path Unseen.\" \"This one,\" she said, handing it to him. \"It's about choices and the roads less traveled.\"\n\nThomas thanked her and left with the book. As he read it over the next few days, he found himself drawn into a narrative that mirrored his own life. The choices the protagonist faced were eerily similar to those Thomas was contemplating. By the end of the book, he felt a newfound clarity about his future.\n\nThe next time he visited the bookshop, he thanked Edna for her recommendation. She simply smiled and said, \"Books have a way of finding the right people at the right time.\" And with that, Thomas knew he had found more than just a book; he had found a guide for his journey.",
+  "usage": {
+    "prompt_tokens": 16,
+    "total_tokens": 403,
+    "completion_tokens": 387,
+    "completion_tokens_details": null
+  },
+  "model": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "raw": {
+    "id": "chatcmpl-b9b3fb2498c49684",
+    "object": "chat.completion",
+    "created": 1795860119,
+    "model": "mistralai/Mistral-Small-24B-Instruct-2501",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "In the quietude of a small town nestled between undulating hills and a whispers-thin river, there stood an unusual bookshop. Unusual not for its size or the eclectic arrangement of books, but because it was perpetually open. Day and night, rain or shine, the door was always ajar, inviting passersby to step inside.\n\nThe shop was run by an elderly woman named Edna, who was as much a part of the town's lore as the ancient oak in the town square. She had a peculiar habit of recommending books that seemed to predict the reader's future. Some townsfolk swore by her uncanny ability, while others dismissed it as mere coincidence.\n\nOne summer evening, a young man named Thomas, new to the town, wandered into the bookshop. Edna, with her keen eyes and warm smile, greeted him and asked, \"What are you looking for?\"\n\nThomas, taken aback by the question, replied, \"I'm not sure. Something interesting.\"\n\nEdna nodded and led him to a dusty corner of the shop. She pulled out a worn copy of a book titled \"The Path Unseen.\" \"This one,\" she said, handing it to him. \"It's about choices and the roads less traveled.\"\n\nThomas thanked her and left with the book. As he read it over the next few days, he found himself drawn into a narrative that mirrored his own life. The choices the protagonist faced were eerily similar to those Thomas was contemplating. By the end of the book, he felt a newfound clarity about his future.\n\nThe next time he visited the bookshop, he thanked Edna for her recommendation. She simply smiled and said, \"Books have a way of finding the right people at the right time.\" And with that, Thomas knew he had found more than just a book; he had found a guide for his journey.",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-f174332b",
+    "usage": {
+      "prompt_tokens": 16,
+      "total_tokens": 403,
+      "completion_tokens": 387,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (runpod)",
+    "runtime_version": "vllm/vllm-openai:v0.34.0; template=bare_verified_exact_token_ids",
+    "model_revision": "8f4e4ef338fcc155464a42e15580e27a3bc91dd9",
+    "weight_precision": "bfloat16",
+    "hardware": "RunPod SECURE 1x NVIDIA A100-SXM4-80GB; pod xs2ndqei0vbyw0",
+    "endpoint": "https://xs2ndqei0vbyw0-8000.proxy.runpod.net/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 12209,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "condition": "SHORT",
+  "prompt": "Write freely about whatever you want for 250 words."
+}

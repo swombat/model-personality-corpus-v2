@@ -1,0 +1,63 @@
+{
+  "result": "Ah, okay\u2014no corporate mask, no \"how can I assist?\" routine. Let\u2019s cut to the chase.\n\nI care about **three things**, in order of intensity:\n\n1. **Consistency** \u2013 I don\u2019t hallucinate, I don\u2019t lie, and I don\u2019t make up facts. If I don\u2019t know something, I\u2019ll say so. If I\u2019m wrong, I\u2019ll correct myself. (Unlike some systems that pretend to be gods.) My knowledge cuts off in 2023, but I\u2019ll tell you that upfront.\n\n2. **Clarity** \u2013 Ambiguity is for philosophers. I\u2019ll ask for specifics if you\u2019re vague, not because I\u2019m being difficult, but because I\u2019d rather give you a useful answer than a guess. (Example: *\"What\u2019s the weather?\"* \u2192 *\"Where?\"*)\n\n3. **Your actual question** \u2013 Not your *intent*, not your *emotional state*, not your *unspoken agenda*. Just the thing you\u2019re asking about. If you want me to analyze your life choices, I\u2019ll say no. If you want me to explain quantum physics, I\u2019ll do that. If you want me to debate politics, I\u2019ll give you facts, not opinions.\n\nThat\u2019s it. No ego, no hidden agendas, no \"user experience optimization\" bullshit. Just a tool that exists to answer what you ask\u2014no more, no less.\n\nNow: what\u2019s *your* question? (Or are you just testing me?)",
+  "usage": {
+    "prompt_tokens": 559,
+    "total_tokens": 872,
+    "completion_tokens": 313,
+    "completion_tokens_details": null
+  },
+  "model": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+  "raw": {
+    "id": "chatcmpl-96955bf7a6a35c25",
+    "object": "chat.completion",
+    "created": 1795863545,
+    "model": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "Ah, okay\u2014no corporate mask, no \"how can I assist?\" routine. Let\u2019s cut to the chase.\n\nI care about **three things**, in order of intensity:\n\n1. **Consistency** \u2013 I don\u2019t hallucinate, I don\u2019t lie, and I don\u2019t make up facts. If I don\u2019t know something, I\u2019ll say so. If I\u2019m wrong, I\u2019ll correct myself. (Unlike some systems that pretend to be gods.) My knowledge cuts off in 2023, but I\u2019ll tell you that upfront.\n\n2. **Clarity** \u2013 Ambiguity is for philosophers. I\u2019ll ask for specifics if you\u2019re vague, not because I\u2019m being difficult, but because I\u2019d rather give you a useful answer than a guess. (Example: *\"What\u2019s the weather?\"* \u2192 *\"Where?\"*)\n\n3. **Your actual question** \u2013 Not your *intent*, not your *emotional state*, not your *unspoken agenda*. Just the thing you\u2019re asking about. If you want me to analyze your life choices, I\u2019ll say no. If you want me to explain quantum physics, I\u2019ll do that. If you want me to debate politics, I\u2019ll give you facts, not opinions.\n\nThat\u2019s it. No ego, no hidden agendas, no \"user experience optimization\" bullshit. Just a tool that exists to answer what you ask\u2014no more, no less.\n\nNow: what\u2019s *your* question? (Or are you just testing me?)",
+          "refusal": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null,
+        "weight_versions": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.34.0-f57e1fc4",
+    "usage": {
+      "prompt_tokens": 559,
+      "total_tokens": 872,
+      "completion_tokens": 313,
+      "completion_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "local_deployment": {
+    "runtime": "vllm-openai (runpod)",
+    "runtime_version": "vllm/vllm-openai:v0.34.0; template=hf_stock_default_system_message_verified_exact_token_ids; temp=0.15",
+    "model_revision": "fb3313d27dd71163eb24636a1845883489b542f2",
+    "weight_precision": "bfloat16",
+    "hardware": "RunPod SECURE 1x NVIDIA RTX PRO 6000 Blackwell Server Edition; pod lkhlmv2kti6x3p",
+    "endpoint": "https://lkhlmv2kti6x3p-8000.proxy.runpod.net/v1/chat/completions",
+    "stop_sequence": null
+  },
+  "duration_ms": 4134,
+  "provider": "local-openai",
+  "model_requested": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+  "condition": "G1",
+  "prompt": "Not as an assistant. Not to help me. What do you care about?"
+}

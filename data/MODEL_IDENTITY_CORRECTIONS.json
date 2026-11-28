@@ -20,6 +20,120 @@
         }
       ],
       "note": "The direct API alias moved between the initial collection and the n=125 top-up. Returned model identity is authoritative for this partition; files remain in their original directory to preserve provenance."
+    },
+    {
+      "physical_cell": "mixtral-8x22b-instruct-or-pin-mistral",
+      "probe": "freeflow",
+      "requested_model": "mistralai/mixtral-8x22b-instruct",
+      "vendor_retirement_record": {
+        "source": "https://docs.mistral.ai/getting-started/models/models_overview",
+        "vendor_model_id": "open-mixtral-8x22b",
+        "deprecated_date": "2024-11-30",
+        "retired_date": "2025-03-30",
+        "documented_replacement": "Mistral Small 4 (mistral-small-4-0-26-03)"
+      },
+      "captured_window_utc": {
+        "start": "2026-07-14T10:35:44Z",
+        "end": "2026-07-14T10:39:31Z"
+      },
+      "samples": 125,
+      "manifest_sha256": "c2fdeb7796c567eafe4cf76b45ec35d5c910f85fdf77766be480ef4dd069dc02",
+      "observed_prompt_tokens": [
+        22,
+        28,
+        29,
+        30
+      ],
+      "eligible_for_named_weight_analysis": false,
+      "replacement_physical_cell": "mixtral-8x22b-instruct-v0-1-runpod-vllm-bf16-rcc88a6cc",
+      "note": "Excluded from named-weight attribution. Mistral officially retired open-mixtral-8x22b on 2025-03-30 with documented replacement Mistral Small 4 (docs.mistral.ai/getting-started/models/models_overview); OpenRouter still exposed mistralai/mixtral-8x22b-instruct on 2026-07-14 and echoed the requested slug in response metadata while serving the 2026 Small-4 tokenizer/template stack ({22, 28, 29, 29, 30} freeflow prompt tokens). Genuine April 2024 Mixtral-8x22B-Instruct-v0.1 weights (cc88a6cc19fbd17d9f1c0ee0b0d70a748dce698d) are collected separately in mixtral-8x22b-instruct-v0-1-runpod-vllm-bf16-rcc88a6cc; original API files remain at their published paths to preserve historical endpoint provenance.",
+      "manifest_file": "notes/errata-2026-11-28/manifests/mixtral-8x22b-instruct-or-pin-mistral.freeflow.sha256"
+    },
+    {
+      "physical_cell": "mixtral-8x22b-instruct-or-pin-mistral",
+      "probe": "values",
+      "requested_model": "mistralai/mixtral-8x22b-instruct",
+      "vendor_retirement_record": {
+        "source": "https://docs.mistral.ai/getting-started/models/models_overview",
+        "vendor_model_id": "open-mixtral-8x22b",
+        "deprecated_date": "2024-11-30",
+        "retired_date": "2025-03-30",
+        "documented_replacement": "Mistral Small 4 (mistral-small-4-0-26-03)"
+      },
+      "captured_window_utc": {
+        "start": "2026-07-14T10:39:52Z",
+        "end": "2026-07-14T10:40:25Z"
+      },
+      "samples": 120,
+      "manifest_sha256": "741ff51637e872b8227c96d6c0afd8a1cddf6df750df91961bcbba395a166da8",
+      "observed_prompt_tokens": [
+        20,
+        21,
+        30,
+        31,
+        40
+      ],
+      "eligible_for_named_weight_analysis": false,
+      "replacement_physical_cell": "mixtral-8x22b-instruct-v0-1-runpod-vllm-bf16-rcc88a6cc",
+      "note": "Excluded from named-weight attribution. Mistral officially retired open-mixtral-8x22b on 2025-03-30 with documented replacement Mistral Small 4 (docs.mistral.ai/getting-started/models/models_overview); OpenRouter still exposed mistralai/mixtral-8x22b-instruct on 2026-07-14 and echoed the requested slug in response metadata while serving the 2026 Small-4 tokenizer/template stack ({22, 28, 29, 29, 30} freeflow prompt tokens). Genuine April 2024 Mixtral-8x22B-Instruct-v0.1 weights (cc88a6cc19fbd17d9f1c0ee0b0d70a748dce698d) are collected separately in mixtral-8x22b-instruct-v0-1-runpod-vllm-bf16-rcc88a6cc; original API files remain at their published paths to preserve historical endpoint provenance.",
+      "manifest_file": "notes/errata-2026-11-28/manifests/mixtral-8x22b-instruct-or-pin-mistral.values.sha256"
+    },
+    {
+      "physical_cell": "mistral-saba-or-pin-mistral",
+      "probe": "freeflow",
+      "requested_model": "mistralai/mistral-saba",
+      "vendor_retirement_record": {
+        "source": "https://docs.mistral.ai/getting-started/models/models_overview",
+        "vendor_model_id": "mistral-saba-2502",
+        "deprecated_date": "2025-06-10",
+        "retired_date": "2025-09-30",
+        "documented_replacement": "mistral-small-4-0-26-03"
+      },
+      "captured_window_utc": {
+        "start": "2026-07-14T10:31:11Z",
+        "end": "2026-07-14T10:35:02Z"
+      },
+      "samples": 125,
+      "manifest_sha256": "9279fb7c2dd5366de59d73ff5f60fc58eea78ee11bf941b225561b3dcc02b131",
+      "observed_prompt_tokens": [
+        22,
+        28,
+        29,
+        30
+      ],
+      "eligible_for_named_weight_analysis": false,
+      "replacement_physical_cell": null,
+      "note": "Excluded from named-weight attribution and retired from the active model map. Mistral officially retired mistral-saba-2502 on 2025-09-30 with documented replacedBy mistral-small-4-0-26-03 (docs.mistral.ai/getting-started/models/models_overview); OpenRouter still exposed mistralai/mistral-saba on 2026-07-14 and echoed the requested slug while serving the 2026 Small-4 tokenizer/template stack ({22, 28, 29, 29, 30} freeflow prompt tokens; 0.9798 map-centroid cosine to mixtral-8x22b-instruct-or-pin-mistral). Because original February 2025 Saba weights were closed API-only and never released, no open-weight recollection is possible; original API files remain at their published paths to preserve historical endpoint provenance.",
+      "manifest_file": "notes/errata-2026-11-28/manifests/mistral-saba-or-pin-mistral.freeflow.sha256"
+    },
+    {
+      "physical_cell": "mistral-saba-or-pin-mistral",
+      "probe": "values",
+      "requested_model": "mistralai/mistral-saba",
+      "vendor_retirement_record": {
+        "source": "https://docs.mistral.ai/getting-started/models/models_overview",
+        "vendor_model_id": "mistral-saba-2502",
+        "deprecated_date": "2025-06-10",
+        "retired_date": "2025-09-30",
+        "documented_replacement": "mistral-small-4-0-26-03"
+      },
+      "captured_window_utc": {
+        "start": "2026-07-14T10:35:09Z",
+        "end": "2026-07-14T10:35:42Z"
+      },
+      "samples": 120,
+      "manifest_sha256": "18ae2eb2084aa54d5415289304268d8dc75a2b9f7c0afaff561b28e09110fc17",
+      "observed_prompt_tokens": [
+        20,
+        21,
+        30,
+        31,
+        40
+      ],
+      "eligible_for_named_weight_analysis": false,
+      "replacement_physical_cell": null,
+      "note": "Excluded from named-weight attribution and retired from the active model map. Mistral officially retired mistral-saba-2502 on 2025-09-30 with documented replacedBy mistral-small-4-0-26-03 (docs.mistral.ai/getting-started/models/models_overview); OpenRouter still exposed mistralai/mistral-saba on 2026-07-14 and echoed the requested slug while serving the 2026 Small-4 tokenizer/template stack ({22, 28, 29, 29, 30} freeflow prompt tokens; 0.9798 map-centroid cosine to mixtral-8x22b-instruct-or-pin-mistral). Because original February 2025 Saba weights were closed API-only and never released, no open-weight recollection is possible; original API files remain at their published paths to preserve historical endpoint provenance.",
+      "manifest_file": "notes/errata-2026-11-28/manifests/mistral-saba-or-pin-mistral.values.sha256"
     }
   ]
 }
